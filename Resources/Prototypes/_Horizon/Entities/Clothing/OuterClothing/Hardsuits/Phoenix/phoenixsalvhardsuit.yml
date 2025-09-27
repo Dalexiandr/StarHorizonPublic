@@ -1,0 +1,61 @@
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: PhoenixSalvHardsuit
+  name: М12 "Крот"
+  description: Скафандр с жёсткой подкладкой, созданный специально для глубокого бурения. Способен выдерживать высокие температуры, удары космической фауны Альфа-класса и радиационное излучение, но внутренняя защита очень нестабильно разлетается при попадании точечных кинетических зарядов.
+  suffix: Феникс, Работяги
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Hardsuits/phoenix/phoenixsalv.rsi
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: _Horizon/Clothing/OuterClothing/Hardsuits/phoenix/phoenixsalv.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 1.5
+  - type: StaminaResistance
+    damageCoefficient: 0.3
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 1.3
+        Heat: 0.5
+        Radiation: 0
+        Caustic: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: HardsuitHelmSalvPI
+  - type: Tag
+    tags:
+    - Hardsuit
+
+- type: entity
+  parent: ClothingHeadHardsuitBase
+  id: HardsuitHelmSalvPI
+  name: М12Ш "Каска"
+  description: Тяжёлый шлем, разработанный специально для глубокого бурения
+  suffix: Феникс, Работяги
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Head/Phoenix/salvhardsuithelm.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Head/Phoenix/salvhardsuithelm.rsi
+  - type: PNV
+    color: "#CC5500"
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Heat: 0.9

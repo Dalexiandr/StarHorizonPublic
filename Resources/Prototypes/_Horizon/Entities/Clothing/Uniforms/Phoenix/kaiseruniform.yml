@@ -1,0 +1,11 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: Kaiseruniform
+  name: Костюм Кайзера
+  suffix: Феникс, Лидерское
+  description: Роскошная униформа лидера Инициативы, в таком костюме хоть галактику порабощай. 
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Uniforms/Jumpsuit/Phoenix/Kaiser.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Uniforms/Jumpsuit/Phoenix/Kaiser.rsi

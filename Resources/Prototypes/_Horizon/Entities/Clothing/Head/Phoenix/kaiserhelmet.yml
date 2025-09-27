@@ -1,0 +1,17 @@
+- type: entity
+  parent: ClothingHeadHelmetBase
+  id: PIWarburgHelmet
+  name: Роскошный Пикельхельм
+  description: Особый Пикельхельм, принадлежащий Лаину Варбургу. Обеспечивает достойную защиту от посягательств на голову носителя.
+  suffix: Феникс, Лидерское
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Head/Phoenix/leaderhelm.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Head/Phoenix/leaderhelm.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8

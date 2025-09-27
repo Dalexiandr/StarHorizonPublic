@@ -1,0 +1,62 @@
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: PhoenixSecHardsuit
+  name: Скафандр СБ-ИФ
+  description: Качественный скафандр армейского класса, созданный по той же схеме, что и боевые скафандры Мародёров Горлекса. Обеспечивает высокие характеристики защиты, приемлимую скорость передвижения и распределение получаемой энергии, будь то тепловой или кинетической.
+  suffix: Феникс, СБ
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Hardsuits/phoenix/phoenixsec.rsi
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: _Horizon/Clothing/OuterClothing/Hardsuits/phoenix/phoenixsec.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: StaminaResistance
+    damageCoefficient: 0.75
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.5
+        Heat: 0.5
+        Radiation: 0.5
+        Caustic: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: HardsuitHelmSecPI
+  - type: Tag
+    tags:
+    - Hardsuit
+
+- type: entity
+  parent: ClothingHeadHardsuitBase
+  id: HardsuitHelmSecPI
+  name: Шлем СБ-ИФ
+  description: Головная часть боевого скафандра СБ-ИФ
+  suffix: Феникс, СБ
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Head/Phoenix/sechardsuithelm.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Head/Phoenix/sechardsuithelm.rsi
+  - type: PNV
+    color: "#CC5500"
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9

@@ -1,0 +1,11 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: pssalvageuniform
+  name: Костюм техника ИФ
+  suffix: Феникс, Работяги
+  description: Простенький рабочий костюм с подтяжками
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Uniforms/Jumpsuit/Phoenix/salvage.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Uniforms/Jumpsuit/Phoenix/salvage.rsi

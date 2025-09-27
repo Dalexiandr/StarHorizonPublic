@@ -1,0 +1,11 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: psecuniform
+  name: Костюм СБ-ИФ
+  suffix: Феникс, СБ
+  description: Качественный тактический костюм Службы Безопасности Инициативы.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Uniforms/Jumpsuit/Phoenix/Sec.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Uniforms/Jumpsuit/Phoenix/Sec.rsi
