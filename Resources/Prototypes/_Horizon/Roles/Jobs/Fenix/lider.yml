@@ -1,0 +1,17 @@
+- type: job
+  id: PhoenixLeader
+  name: job-name-phoenix-leader
+  description: job-description-phoenix-leader
+  playTimeTracker: JobPhoenixLeader
+  whitelisted: false
+  startingGear: CaptainGear
+  alwaysUseSpawner: false
+  icon: "JobIconCaptain"
+  supervisors: job-supervisors-centcom
+  weight: 170
+  canBeAntag: false
+  accessGroups:
+    - AllAccess
+  special:
+    - !type:AddImplantSpecial
+      implants: [MindShieldImplant]

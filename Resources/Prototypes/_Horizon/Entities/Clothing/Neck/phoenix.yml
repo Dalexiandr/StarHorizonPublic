@@ -1,0 +1,19 @@
+- type: entity
+  parent: ClothingScarfBase
+  id: ClothingNeckScarKaiser
+  name: Плащ Кайзера
+  suffix: Феникс, лидер
+  description: Подчинись!
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Neck/phoenix/kaiserplash.rsi
+
+- type: entity
+  parent: ClothingScarfBase
+  id: ClothingNeckScarSec
+  name: Плащ СБ-ИФ
+  suffix: Феникс, СБ
+  description: Подчинись!
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Neck/phoenix/sec.rsi

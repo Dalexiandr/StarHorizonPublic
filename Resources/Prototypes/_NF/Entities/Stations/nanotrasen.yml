@@ -17,6 +17,12 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Transform
+  - type: StationJobs
+    availableJobs:
+      PhoenixLeader: [1,1]
+      PhoenixBrigadier: [1,1]
+      PhoenixSecurityOfficer: [1,1]
+      PhoenixTechnician: [1,1]
 
 # region Dev
 - type: entity
@@ -61,6 +67,13 @@
   - StandardFrontierOutpost
   - BaseStationRecords
   categories: [ HideSpawnMenu ]
+  components:
+  - type: StationJobs
+    availableJobs:
+      PhoenixLeader: [1,1]
+      PhoenixBrigadier: [1,1]
+      PhoenixSecurityOfficer: [1,1]
+      PhoenixTechnician: [1,1]
 
 - type: entity
   id: DeadDropRecordsFrontierOutpost

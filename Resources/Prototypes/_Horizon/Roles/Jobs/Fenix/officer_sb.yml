@@ -1,0 +1,17 @@
+- type: job
+  id: PhoenixSecurityOfficer
+  name: job-name-phoenix-security-officer
+  description: job-description-phoenix-security-officer
+  playTimeTracker: JobPhoenixSecurityOfficer
+  whitelisted: false
+  startingGear: SecurityOfficerGear
+  alwaysUseSpawner: false
+  icon: "JobIconSecurityOfficer"
+  supervisors: job-supervisors-hos
+  weight: 170
+  canBeAntag: false
+  accessGroups:
+    - AllAccess
+  special:
+    - !type:AddImplantSpecial
+      implants: [MindShieldImplant]

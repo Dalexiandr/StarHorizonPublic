@@ -59,3 +59,67 @@
     - ContractorImplanter
     - ContractorBackpackItems
     - ContractorHandItems
+
+- type: roleLoadout
+  id: JobPhoenixLeader
+  groups:
+    - NFSpeciesSpecific
+    - ContractorFace
+    - ContractorGlasses
+    - ContractorBelt
+    - ContractorEars
+    - ContractorEncryptionKey
+    - ContractorBoxSurvival
+    - ContractorWallet
+    - ContractorCartridge
+    - ContractorImplanter
+    - ContractorBackpackItems
+    - ContractorHandItems
+
+- type: roleLoadout
+  id: JobPhoenixBrigadier
+  groups:
+    - NFSpeciesSpecific
+    - ContractorFace
+    - ContractorGlasses
+    - ContractorBelt
+    - ContractorEars
+    - ContractorEncryptionKey
+    - ContractorBoxSurvival
+    - ContractorWallet
+    - ContractorCartridge
+    - ContractorImplanter
+    - ContractorBackpackItems
+    - ContractorHandItems
+
+- type: roleLoadout
+  id: JobPhoenixSecurityOfficer
+  groups:
+    - NFSpeciesSpecific
+    - ContractorFace
+    - ContractorGlasses
+    - ContractorBelt
+    - ContractorEars
+    - ContractorEncryptionKey
+    - ContractorBoxSurvival
+    - ContractorWallet
+    - ContractorCartridge
+    - ContractorImplanter
+    - ContractorBackpackItems
+    - ContractorHandItems
+
+- type: roleLoadout
+  id: JobPhoenixTechnician
+  groups:
+    - NFSpeciesSpecific
+    - ContractorFace
+    - ContractorGlasses
+    - ContractorBelt
+    - ContractorEars
+    - ContractorEncryptionKey
+    - ContractorBoxSurvival
+    - ContractorWallet
+    - ContractorCartridge
+    - ContractorImplanter
+    - ContractorBackpackItems
+    - ContractorHandItems

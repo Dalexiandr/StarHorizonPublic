@@ -1,0 +1,61 @@
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: PhoenixBrigHardsuit
+  name: М18 "Надзиратель"
+  description: Особый скафандр Бригадиров Инициативы, предоставляющий им всю необходимую защиту от бунтующих шахтёров и угроз астероидов.
+  suffix: Феникс, Работяги
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Hardsuits/phoenix/brigadir.rsi
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: _Horizon/Clothing/OuterClothing/Hardsuits/phoenix/brigadir.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: StaminaResistance
+    damageCoefficient: 0.3
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.6
+        Heat: 0.5
+        Radiation: 0
+        Caustic: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: HardsuitHelmBrigPI
+  - type: Tag
+    tags:
+    - Hardsuit
+
+- type: entity
+  parent: ClothingHeadHardsuitBase
+  id: HardsuitHelmBrigPI
+  name: М18Ш "Панцирь"
+  description: Тяжёлый шлем, разработанный специально для глубокого бурения и надзора
+  suffix: Феникс, Работяги
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Head/Phoenix/brighelm.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Head/Phoenix/brighelm.rsi
+  - type: PNV
+    color: "#CC5500"
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Heat: 0.9

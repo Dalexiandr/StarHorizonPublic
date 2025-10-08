@@ -1,0 +1,17 @@
+- type: job
+  id: PhoenixBrigadier
+  name: job-name-phoenix-brigadier
+  description: job-description-phoenix-brigadier
+  playTimeTracker: JobPhoenixBrigadier
+  whitelisted: false
+  startingGear: HoSGear
+  alwaysUseSpawner: false
+  icon: "JobIconHeadOfSecurity"
+  supervisors: job-supervisors-captain
+  weight: 170
+  canBeAntag: false
+  accessGroups:
+    - AllAccess
+  special:
+    - !type:AddImplantSpecial
+      implants: [MindShieldImplant]

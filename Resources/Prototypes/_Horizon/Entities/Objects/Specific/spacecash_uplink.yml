@@ -1,0 +1,28 @@
+# Entity for the new Phoenix Uplink with SpaceCash currency
+
+- type: entity
+  parent: [BaseItem]
+  id: BaseSpaceCashUplinkRadio
+  name: Phoenix Uplink
+  description: Device for purchasing items with SpaceCash.
+  suffix: Empty
+  components:
+  - type: Sprite
+    sprite: Objects/Devices/communication.rsi
+    layers:
+    - state: old-radio
+  - type: Item
+    sprite: Objects/Devices/communication.rsi
+    heldPrefix: old-radio
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Store
+    balance:
+      SpaceCash: 100
+  - type: Tag
+    tags:
+    - SpaceCashUplink

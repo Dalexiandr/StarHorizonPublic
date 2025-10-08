@@ -1,0 +1,51 @@
+# Catalog for Phoenix Uplink using SpaceCash currency
+
+- type: listing
+  id: PhoenixUplinkCigarette
+  name: Cigarette
+  description: A regular cigarette for relaxation.
+  productEntity: Cigarette
+  cost:
+    SpaceCash: 10
+  categories:
+  - UplinkPointless
+
+- type: listing
+  id: PhoenixUplinkBeer
+  name: Beer
+  description: Cold beer to quench thirst.
+  productEntity: DrinkBeerCan
+  cost:
+    SpaceCash: 20
+  categories:
+  - UplinkPointless
+
+- type: listing
+  id: PhoenixUplinkFlashlight
+  name: Flashlight
+  description: A simple flashlight for illumination.
+  productEntity: FlashlightLantern
+  cost:
+    SpaceCash: 50
+  categories:
+  - UplinkUtility
+
+- type: listing
+  id: PhoenixUplinkCrowbar
+  name: Crowbar
+  description: A universal tool for breaking in.
+  productEntity: Crowbar
+  cost:
+    SpaceCash: 100
+  categories:
+  - UplinkUtility
+
+- type: listing
+  id: PhoenixUplinkStunbaton
+  name: Stunbaton
+  description: An electroshock baton for self-defense.
+  productEntity: Stunbaton
+  cost:
+    SpaceCash: 200
+  categories:
+  - UplinkWeaponry

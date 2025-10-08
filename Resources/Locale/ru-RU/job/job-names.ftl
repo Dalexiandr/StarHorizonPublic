@@ -142,3 +142,12 @@ JobSyndicateFirstMate = { job-name-syndicate-first-mate }
 JobSyndicateEngineer = { job-name-syndicate-engineer }
 JobSyndicateDoctor = { job-name-syndicate-doctor }
 JobSyndicatePilot = { job-name-syndicate-pilot }
+# Инициатива Феникс
+job-name-phoenix-leader = Лидер Инициативы Феникс
+job-name-phoenix-brigadier = Бригадир Инициативы Феникс
+job-name-phoenix-security-officer = Офицер Безопасности Инициативы Феникс
+job-name-phoenix-technician = Техник Инициативы Феникс
+JobPhoenixLeader = { job-name-phoenix-leader }
+JobPhoenixBrigadier = { job-name-phoenix-brigadier }
+JobPhoenixSecurityOfficer = { job-name-phoenix-security-officer }
+JobPhoenixTechnician = { job-name-phoenix-technician }

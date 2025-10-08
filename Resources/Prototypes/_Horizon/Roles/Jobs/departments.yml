@@ -1,7 +1,7 @@
 - type: department
   id: TraumaTeam
   name: department-Trauma
-  description: department-Trauma-description 
+  description: department-Trauma-description
   color: "#00ab86"
   weight: -10
   roles:
@@ -9,3 +9,15 @@
   - TraumaParamedic
   - TraumaRessurector
   - TraumaRepresentative
+
+- type: department
+  id: PhoenixInitiative
+  name: department-Phoenix
+  description: department-Phoenix-description
+  color: "#ff4500"
+  weight: -10
+  roles:
+  - PhoenixLeader
+  - PhoenixBrigadier
+  - PhoenixSecurityOfficer
+  - PhoenixTechnician

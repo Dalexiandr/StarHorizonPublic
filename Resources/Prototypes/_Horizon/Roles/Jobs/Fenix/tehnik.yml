@@ -1,0 +1,17 @@
+- type: job
+  id: PhoenixTechnician
+  name: job-name-phoenix-technician
+  description: job-description-phoenix-technician
+  playTimeTracker: JobPhoenixTechnician
+  whitelisted: false
+  startingGear: StationEngineerGear
+  alwaysUseSpawner: false
+  icon: "JobIconStationEngineer"
+  supervisors: job-supervisors-ce
+  weight: 170
+  canBeAntag: false
+  accessGroups:
+    - AllAccess
+  special:
+    - !type:AddImplantSpecial
+      implants: [MindShieldImplant]
