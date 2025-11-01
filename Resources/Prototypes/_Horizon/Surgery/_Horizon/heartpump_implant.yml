@@ -11,11 +11,11 @@
 
 - type: entity
   id: BloodPumpImplant
-  name: blood pump
-  description: ...
+  name: Бионическая Помпа Крови
+  description: Усиливает поток крови между всем телом позволяя очень эффективно использовать кислород.
   parent: BaseBloodPumpImplant
   components:
   - type: Sprite
     state: implant
   - type: FunctionalOrgan
-    speed: 0.1
+    speed: 0.2

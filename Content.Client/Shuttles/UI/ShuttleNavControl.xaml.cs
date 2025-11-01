@@ -490,6 +490,9 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
                     var lines = labelText.Split('\n');
                     var mainLabel = lines[0];
 
+                    var circleShader = handle.GetShader(); // StarHorizon
+                    handle.UseShader(null); // StarHorizon
+
                     // Draw main ship label with company color if available
                     handle.DrawString(Font, (uiPosition + labelOffset) * UIScale, mainLabel, UIScale * 0.9f, displayColor);
 
@@ -505,6 +508,8 @@ public sealed partial class ShuttleNavControl : BaseShuttleControl
                         };
                         handle.DrawString(Font, (uiPosition + coordOffset) * UIScale, coordsText, 0.7f * UIScale, displayColor);
                     }
+
+                    handle.UseShader(circleShader); // StarHorizon
                 }
 
                 NfAddBlipToList(blipDataList, isOutsideRadarCircle, uiPosition, uiXCentre, uiYCentre, labelColor, gUid); // Frontier code

@@ -11,8 +11,8 @@
 
 - type: entity
   id: VesselsImplant
-  name: vessels implant
-  description: Oh...how heavy it is...
+  name: Искуственные бионические сосуды
+  description: Очень странно видеть сосуды вне тела. Они кажется извиваются и всегда пытаются себя соединить.
   parent: BaseVesselsImplant
   components:
   - type: Sprite
@@ -21,4 +21,4 @@
     armor:
       modifiers:
       coefficients:
-        Bloodloss: 0.50
+        Bloodloss: 0.4

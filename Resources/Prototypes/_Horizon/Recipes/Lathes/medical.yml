@@ -338,9 +338,12 @@
   category: Implants
   completetime: 5
   materials:
-    Steel: 200
-    Plasma: 300
-    Glass: 150
+    Steel: 600
+    Plasma: 250
+    Glass: 400
+
+# Exoskeletons
+# Bone
 
 - type: latheRecipe
   id: BoneLightImplant
@@ -348,7 +351,9 @@
   category: Implants
   completetime: 5
   materials:
-    Plastic: 1500
+    Plastic: 2500
+    Plasma: 450
+    Plasteel: 400
 
 - type: latheRecipe
   id: BoneHeavyImplant
@@ -356,7 +361,8 @@
   category: Implants
   completetime: 5
   materials:
-    Plasteel: 1500
+    Plasteel: 3400
+    Plasma: 600
 
 - type: latheRecipe
   id: SubcutaneousArmor
@@ -364,7 +370,9 @@
   category: Implants
   completetime: 5
   materials:
-    Steel: 1500
+    Steel: 2500
+    Plasma: 350
+    Plastic: 400
 
 - type: latheRecipe
   id: UpgradedSubcutaneousArmor
@@ -372,7 +380,8 @@
   category: Implants
   completetime: 5
   materials:
-    Plasteel: 1500
+    Plasteel: 2400
+    Plasma: 750
 
 - type: latheRecipe
   id: HeatSubcutaneousArmor
@@ -380,7 +389,9 @@
   category: Implants
   completetime: 5
   materials:
-    Steel: 1500
+    Steel: 2000
+    Glass: 600
+    Plasma: 150
 
 - type: latheRecipe
   id: HeatUpgradeSubcutaneousArmor
@@ -388,7 +399,9 @@
   category: Implants
   completetime: 5
   materials:
-    Plasteel: 1500
+    Plasteel: 200
+    Plasma: 650
+    Plastic: 400
 
 - type: latheRecipe
   id: RadiationSubcutaneousArmor
@@ -396,7 +409,9 @@
   category: Implants
   completetime: 5
   materials:
-    Plasteel: 1500
+    Plasteel: 2400
+    Plastic: 650
+    Plasma: 150
 
 - type: latheRecipe
   id: BloodFilterImplant
@@ -405,6 +420,8 @@
   completetime: 5
   materials:
     Plastic: 1500
+    Plasma: 500
+    Steel: 1500
 
 - type: latheRecipe
   id: BloodPumpImplant
@@ -413,6 +430,8 @@
   completetime: 5
   materials:
     Plastic: 1500
+    Plasma: 2100
+    Plasteel: 600
 
 - type: latheRecipe
   id: IzolationHandImplant
@@ -429,6 +448,8 @@
   completetime: 5
   materials:
     Plastic: 1500
+    Plasteel: 400
+    Plasma: 250
 
 # Nekomimis
 

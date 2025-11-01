@@ -12,8 +12,8 @@
 # То же самое что и печень ставить вместо печени.
 - type: entity
   id: BloodFilterImplant
-  name: blood filter implant
-  description: ...
+  name: Кибернетический Фильтр Крови
+  description: На вид напоминает печень. Похоже на многослоенный пирог с фильтрами по всей поверхности.
   parent: BaseBloodFilter
   components:
   - type: Sprite
@@ -22,4 +22,4 @@
     armor:
       modifiers:
       coefficients:
-        Poison: 0.50
+        Poison: 0.4

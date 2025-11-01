@@ -14,7 +14,7 @@
   - type: SolutionContainerManager
     solutions:
       stomach:
-        maxVol: 100
+        maxVol: 240
       food:
         maxVol: 5
         reagents:
@@ -49,7 +49,7 @@
   - type: SolutionContainerManager
     solutions:
       stomach:
-        maxVol: 60
+        maxVol: 75
       food:
         maxVol: 5
         reagents:
@@ -80,6 +80,8 @@
   - type: Item
     size: Small
     heldPrefix: stomach
+  - type: Stomach
+    updateInterval: 0.75
   - type: SolutionContainerManager
     solutions:
       stomach:
@@ -119,7 +121,7 @@
     metabolizerTypes: [ Human ]
     groups:
     - id: Gas
-      rateModifier: 100.0
+      rateModifier: 75.0
   - type: OrganDamage
     insertDamage:
       types:
@@ -130,7 +132,7 @@
   - type: SolutionContainerManager
     solutions:
       Lung:
-        maxVol: 2000.0
+        maxVol: 7500.0
         canReact: false
 
 - type: entity
@@ -200,7 +202,7 @@
   id: OrganBsHeart
   parent: OrganHumanHeart
   name: блюспейс сердце
-  description: " Блюспейс-сердце. Имеет маркировку HR-BX-3-1. Произведено и импортировано корпорацией BioXen."
+  description: " Блюспейс-сердце. Максимально эффективно распределяет химикаты по всему телу за счёт блюспейс технологий. Имеет маркировку HR-BX-3-1. Произведено и импортировано корпорацией BioXen."
   suffix: Horizon, BioXen
   components:
   - type: WorldItem
@@ -210,6 +212,7 @@
     layers:
       - state: heart
   - type: Metabolizer
+    updateInterval: 0.3
     maxReagents: 3
     metabolizerTypes: [Human]
     groups:
