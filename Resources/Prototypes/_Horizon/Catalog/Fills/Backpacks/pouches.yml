@@ -1,0 +1,11 @@
+﻿- type: entity
+  parent: NFPouchScience
+  id: NFPouchScienceSlimes
+  name: набор ксенобиолога
+  description: "Набор ксенобиолога, с экстрактами слаймов внутри."
+  components:
+  - type: StorageFill
+    contents:
+    - id: GreySlimeExtract
+    - id: GreySlimeExtract
+    - id: GreySlimeExtract

@@ -1,0 +1,73 @@
+# Author Info
+# GitHub: Checkraze (https://github.com/Cheackraze)
+# Discord: ???
+
+# Maintainer Info
+# GitHub: dustylens (https://github.com/dustylens)
+# Discord: dustylens
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Barge
+  parent: BaseVessel
+  name: NC Barge
+  description: A medium shipping vessel repurposed in a salvage and material exploitation vessel.
+  price: 52000 # 42889 0.2 51466.8
+  category: Medium
+  group: Shipyard
+  shuttlePath: /Maps/_NF/Shuttles/barge.yml
+  guidebookPage: ShipyardBarge
+  class:
+  - Cargo
+  - Salvage
+  engine:
+  - Solar
+  - Uranium
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:RoleModifier
+      role: "PlantTechnician"
+      costMultiplier: 0.9
+    - !type:RoleModifier
+      role: "PlantManager"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionEdison"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionLVHI"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionUAC"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionNakamura"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: Barge
+  mapName: 'NC Barge'
+  mapPath: /Maps/_NF/Shuttles/barge.yml
+  minPlayers: 0
+  stations:
+    Barge:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Barge {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

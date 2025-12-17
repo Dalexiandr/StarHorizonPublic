@@ -1,0 +1,12 @@
+cargo-account-cargo-name = Бюджет снабжения станции
+cargo-account-cargo-code = СНБ
+cargo-account-engineering-name = Сбережения на ремонт
+cargo-account-engineering-code = ИНЖ
+cargo-account-medical-name = Фонд медицинского обслуживания экипажа
+cargo-account-medical-code = МЕД
+cargo-account-science-name = Финансирование межзвездных разработок
+cargo-account-science-code = НИО
+cargo-account-security-name = Резерв на оборону станции
+cargo-account-security-code = СБ
+cargo-account-service-name = Коллективные активы обслуживания
+cargo-account-service-code = СРВ

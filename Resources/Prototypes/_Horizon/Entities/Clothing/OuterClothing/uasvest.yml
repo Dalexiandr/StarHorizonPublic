@@ -1,0 +1,51 @@
+- type: entity
+  parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing, BaseUASContraband]
+  categories: [ HideSpawnMenu ]
+  id: UASVests
+  suffix: StarHorizon, UAS
+  name: бронежилет UAS
+  description: Бронежилет из казмия с прослойкой из EFS.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/OuterClothing/Vests/uasvest.rsi
+  - type: Tag
+    tags: [] # Выносим с ВЛа для хамелеонки
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/OuterClothing/Vests/uasvest.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.5
+        Heat: 0.6
+  - type: ExplosionResistance
+    damageCoefficient: 0.7
+  - type: StaticPrice
+    price: 10000
+
+- type: entity
+  parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing, BaseUASContraband, ClothingOuterCoatHoSTrench]
+  categories: [ HideSpawnMenu ]
+  id: UAScoastconsul
+  suffix: StarHorizon, UAS
+  name: плащ совета UAS
+  description: Уреплённый плащ совета, созданный для стиля и безопасности.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/OuterClothing/Coats/uascoastconsul.rsi
+  - type: Tag
+    tags: [] # Выносим с ВЛа для хамелеонки
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/OuterClothing/Coats/uascoastconsul.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.4
+        Slash: 0.5
+        Piercing: 0.3
+        Heat: 0.5
+        Caustic: 0.6
+  - type: ExplosionResistance
+    damageCoefficient: 0.6
+

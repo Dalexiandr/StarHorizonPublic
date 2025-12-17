@@ -1,0 +1,10 @@
+ent-WeaponKineticBase = { ent-BaseItem }
+    .desc = { ent-BaseItem.desc }
+ent-WeaponKineticSpear = kinetic spear
+    .desc = A long-ranged melee weapon which trades damage for a two-tile reach, similar to reagent/bone spears.
+ent-WeaponKineticHammer = kinetic hammer
+    .desc = A beefy, two-handed weapon that inflicts knockback and heavier damage than a crusher, but cannot backstab.
+ent-WeaponKineticClaws = kinetic claws
+    .desc = Unleash your inner edgelord with this two-handed claw small enough to fit in your backpack. Deals a paltry 45 damage on mark detonation, but sports a massive 120 damage backstab bonus.
+ent-WeaponKineticMachete = kinetic machete
+    .desc = A smaller, one-handed variant of the crusher. Deals about 40 less damage than the PKC, but has a 15% melee block chance.

@@ -1,0 +1,22 @@
+## Dynamic
+
+- type: latheRecipePack
+  id: HorizonPKAPack
+  recipes:
+  - WeaponKineticSpear
+  - WeaponKineticHammer
+  - WeaponKineticClaws
+  - WeaponKineticMachete
+  - WeaponProtoKineticPistol
+  - WeaponProtoKineticRepeater
+  - WeaponProtoKineticRailgun
+  - WeaponProtoKineticShotgun
+  - PKAUpgradeDamage
+  - PKAUpgradeRange
+  - PKAUpgradeFireRate
+  - PKAUpgradeLight
+  - EngieTovar
+  - GoldTovar
+  - ArmoryTovar
+  - SciTovar
+  - EnergoTovar

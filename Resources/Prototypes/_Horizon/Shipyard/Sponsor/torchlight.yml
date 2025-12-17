@@ -1,0 +1,52 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: amir7036
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: TorchLight
+  parent: BaseVessel
+  name: NECG Torchlight
+  description: Небольшой шаттл для одиночных путешествий люкс класса.
+  price: 150000 # 25086, наценка верфи 30% = 32612
+  category: Small
+  group: Shipyard
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/Sponsor/torchlight.yml
+  class:
+  - Civilian
+  engine:
+  - Uranium
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+  # Horizon end
+
+- type: gameMap
+  id: TorchLight
+  mapName: 'NECG Torchlight'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/Sponsor/torchlight.yml
+  minPlayers: 0
+  stations:
+    TorchLight:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'TorchLight {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

@@ -1,0 +1,107 @@
+################################################################################
+##### General ##################################################################
+
+[net]
+port = 1212
+bindto = "0.0.0.0"
+log_late_msg = false
+
+[database]
+engine = "postgres"
+pg_host = "database"
+pg_port = 5432
+pg_database = "ss14"
+pg_username = "ss14_user"
+pg_password = "%pg_password%"
+
+[game]
+hostname = "StarHorizon - Frontier [💫] [18+]"
+desc = "Тестовый сервер StarHorizon"
+soft_max_players = 100
+lobbyduration = 180
+defaultpreset = "nfpirate"
+fallbackpreset = "nfadventure"
+
+[hub]
+advertise = false
+#tags = "lang:ru,region:eu_e,rp:med"
+#server_url = "ss14://ss14.starhorizon.ru:1212"
+## Wizard's Den hub
+#hub_urls = "https://hub.spacestation14.com/"
+
+[server]
+rules_file = "FrontierRuleset"
+lobby_name = "StarHorizon"
+
+[console]
+login_host_user = "Makot"
+
+[admin]
+see_own_notes = true
+note_fresh_days = 0
+message_wait_time = 1
+new_player_threshold = 180
+afk_time = 180.0
+admins_count_in_playercount = true # отображает админов в счетчике
+
+[interaction]
+rate_limit_announce_admins_delay = -1 # убирает спам о превышении лимитов игроком
+
+[ahelp]
+admin_prefix = true # отображает ранг адмема в АХелп
+admin_prefix_webhook = true
+
+[infolinks]
+discord = "https://discord.starhorizon.ru"
+wiki = "https://wiki.starhorizon.ru/"
+
+################################################################################
+##### In Game ##################################################################
+
+[atmos]
+space_wind = false
+monstermos_rip_tiles = false
+mmos_spacing_speed = 0.95
+mmos_max_wind = 1000.0
+
+[biomass]
+easy_mode = false
+
+[vote]
+timermap = 30
+map_enabled = true
+restart_not_allowed_when_admin_online = false
+
+[shuttle]
+auto_call_time = 2880
+emergency_authorize_time = 30
+
+[rules]
+time = 90.0
+
+[tips]
+enabled = false
+
+[ooc]
+enable_during_round = false
+
+[looc]
+enabled_crit = false
+
+[chat]
+max_announcement_length = 2048
+
+[ic]
+flavor_text = true
+
+################################################################################
+##### Discord ##################################################################
+
+[discord]
+#ahelp_webhook = "%webhook_ahelp%"
+#ban_webhook = "%webhook_ban%"
+#round_update_webhook = "%webhook_round_update%"
+#round_end_role = "%round_end_role%"
+
+[events]
+enabled = true

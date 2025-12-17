@@ -1,0 +1,14 @@
+ent-MaterialHideRosyMothroach = шкура розовой клёновой тараканомоли
+    .desc = Тонкий слой шкуры розовой клёновой тараканомоли.
+ent-MaterialBiomass50 = { ent-MaterialBiomass }
+    .desc = { ent-MaterialBiomass.desc }
+    .suffix = 50
+ent-MaterialAnomalite = аномалит
+    .desc = Немного радужный розовато-фиолетовый кристалл. Тихо гудит.
+    .suffix = Полный
+ent-MaterialAnomalite1 = { ent-MaterialAnomalite }
+    .suffix = 1
+    .desc = { ent-MaterialAnomalite.desc }
+ent-MaterialAnomalite3 = { ent-MaterialAnomalite }
+    .suffix = 3
+    .desc = { ent-MaterialAnomalite.desc }

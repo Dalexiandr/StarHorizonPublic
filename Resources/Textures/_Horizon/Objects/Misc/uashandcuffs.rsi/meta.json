@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "license": "CLA with hosting restrictions",
+  "copyright": "Sprited by Xigovir DS:623559319543349268",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "handcuff"
+    },
+    {
+      "name": "equipped-BELT",
+      "directions": 4
+    },
+	  {
+      "name": "body-overlay-2",
+      "directions": 4
+    },
+	  {
+      "name": "body-overlay-4",
+      "directions": 4
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    }
+  ]
+}

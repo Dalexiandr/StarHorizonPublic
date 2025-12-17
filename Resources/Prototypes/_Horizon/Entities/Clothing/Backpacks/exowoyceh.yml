@@ -1,0 +1,17 @@
+- type: entity
+  parent: NFClothingBackpack
+  id: ClothingBackpackExoWoyceh
+  name: Экзоскелет
+  description: Экспериментальный образец грузового экзоскелета. В нём устранены конструктивные недостатки, кардинально снижавшие подвижность.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Backpacks/exowoyceh.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.10
+    sprintModifier: 1.30
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,9,6

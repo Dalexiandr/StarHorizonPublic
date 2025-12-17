@@ -1,0 +1,949 @@
+# region Energy Weapons
+# Легкие энергетические орудия (доступны всем пиратам)
+- type: listing
+  id: PirateWeaponTurretM25
+  name: M25 Импульсный бурильщик
+  description: Использует механизмы для запуска... чего-то. Легко разрушает породу.
+  productEntity: WeaponTurretM25
+  cost:
+    Doubloon: 20
+  categories:
+    - UplinkPirateGunneryEnergy
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+
+- type: listing
+  id: PirateWeaponTurretM220
+  name: M220 РУБИКОН EMP пусковая установка
+  description: Запускает EMP снаряды по кораблям, выводя системы из строя мощными электромагнитными импульсами. Идеально для нелетальных столкновений.
+  productEntity: WeaponTurretM220
+  cost:
+    Doubloon: 35
+  categories:
+    - UplinkPirateGunneryEnergy
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+
+# Средние энергетические орудия (доступны Captain, FirstMate)
+- type: listing
+  id: PirateWeaponTurretType35
+  name: Type-35 МАРОДЁР плазменная пушка
+  description: Запускает магнетически сдерживаемые шары плазмы по целям.
+  productEntity: WeaponTurretType35
+  cost:
+    Doubloon: 70
+  categories:
+    - UplinkPirateGunneryEnergy
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+- type: listing
+  id: PirateWeaponTurretTarnyxReload
+  name: АДБХ-31 ТАРНИКС 150мм ЭМИ Пушка
+  description: Тяжелая ЭМИ пушка, созданная Aetherion Dynamics, предназначенная для выведения из строя больших участков вражеских кораблей одним мощным выстрелом. Эффективна в асимметричных боях.
+  productEntity: WeaponTurretTarnyxReload
+  cost:
+    Doubloon: 70
+  categories:
+    - UplinkPirateGunneryEnergy
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+# region Kinetic Weapons
+# Легкие кинетические орудия (доступны всем пиратам)
+- type: listing
+  id: PirateWeaponTurretL85Autocannon
+  name: автопушка L85 калибра 20мм
+  description: Лёгкая 20мм баллистическая автопушка, предназначенная для быстрого огня и подавления небольших целей на ближней дистанции. Дешёвая, лёгкая.
+  productEntity: WeaponTurretL85Autocannon
+  cost:
+    Doubloon: 35
+  categories:
+    - UplinkPirateGunneryKinetic
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+
+# Средние кинетические орудия (доступны Captain, FirstMate)
+- type: listing
+  id: PirateWeaponTurretDravon
+  name: автопушка ADBP-7 ДРАВОН 57мм
+  description: Одноствольная автопушка от Aetherion Dynamics. Среднее артиллерийское орудие с высокой скорострельностью, но относительно низкой мощностью, использующее снаряды HEAT для поражения брони и систем корабля.
+  productEntity: WeaponTurretDravon
+  cost:
+    Doubloon: 70
+  categories:
+    - UplinkPirateGunneryKinetic
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+- type: listing
+  id: PirateWeaponTurretAK570
+  name: тяжёлая автопушка AK570 калибра 90мм
+  description: Двуствольная тяжёлая 90мм автопушка, стреляющая универсальными снарядами APHE, эффективна для продолжительного огня по средним целям.
+  productEntity: WeaponTurretAK570
+  cost:
+    Doubloon: 70
+  categories:
+    - UplinkPirateGunneryKinetic
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+- type: listing
+  id: PirateWeaponTurretCharonette
+  name: ускоритель массы M194 ШАРОНЕТТ
+  description: Меньший, более компактный рельсотрон, стреляющий крупными снарядами на высокой скорости, способный нанести значительный урон вражеским кораблям. Средний линейный ускоритель.
+  productEntity: WeaponTurretCharonette
+  cost:
+    Doubloon: 70
+  categories:
+    - UplinkPirateGunneryKinetic
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+# region Missile Weapons
+# Легкие ракетные орудия (доступны всем пиратам)
+- type: listing
+  id: PirateWeaponTurretLightMunitionsBay
+  name: легкая пусковая установка GPOB-L
+  description: Относительно небольшой бронированный отсек для боеприпасов, способный вместить до двух легких боевых зарядов. Обычно используется на легких космических кораблях, особенно на бомбардировщиках, и обеспечивает ограниченный способ нанесения урона целям, значительно превосходящим пользователя по массе.
+  productEntity: WeaponTurretLightMunitionsBay
+  cost:
+    Doubloon: 35
+  categories:
+    - UplinkPirateGunneryMissile
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+
+# Средние ракетные орудия (доступны Captain, FirstMate)
+- type: listing
+  id: PirateWeaponTurretVespera
+  name: АДМП-27 ВЕСПЕРА быстрострельная установка
+  description: Быстрострельная ройная ракетная установка, произведённая Aetherion Dynamics. Насыщает цели управляемыми боеголовками, чтобы подавить защиту.
+  productEntity: WeaponTurretVespera
+  cost:
+    Doubloon: 70
+  categories:
+    - UplinkPirateGunneryMissile
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+- type: listing
+  id: PirateWeaponTurretASM501
+  name: установка АСМ-501
+  description: Торпедная установка для крейсеров. Выпускает тяжёлые торпеды для нанесения высоких повреждений большим кораблям и станциям.
+  productEntity: WeaponTurretASM501
+  cost:
+    Doubloon: 70
+  categories:
+    - UplinkPirateGunneryMissile
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+- type: listing
+  id: PirateWeaponTurretVanyk
+  name: АСМ-302 установка
+  description: Эскортная ракетная установка, произведённая Aetherion Dynamics. Запускает управляемые ракеты для базового корабельного боя и блокирования зон.
+  productEntity: WeaponTurretVanyk
+  cost:
+    Doubloon: 70
+  categories:
+    - UplinkPirateGunneryMissile
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+- type: listing
+  id: PirateWeaponTurretASM220
+  name: торпедная установка ASM-220
+  description: Тяжелая торпедная установка вертикального пуска, работающая на ручной загрузке, обычно выполняемой в порту. Однако она оснащена высокоэффективными ракетами для своего размера.
+  productEntity: WeaponTurretASM220
+  cost:
+    Doubloon: 70
+  categories:
+    - UplinkPirateGunneryMissile
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+# region Shuttle Equipment
+# Различные консоли, сервера и экипировка для шаттла
+
+- type: listing
+  id: PirateShuttleEquipmentGunneryControl
+  name: Консоль контроля орудий
+  description: Машинная плата для консоли контроля орудий. Позволяет управлять корабельными орудиями и координировать огонь.
+  productEntity: GunneryControlComputerCircuitboard
+  cost:
+    Doubloon: 8
+  categories:
+    - UplinkPirateGunneryConsoles
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+
+- type: listing
+  id: PirateShuttleEquipmentGCSLow
+  name: Маломощный сервер контроля орудий
+  description: Машинная плата для СКО. Базовый сервер для управления корабельными орудиями с ограниченной производительностью.
+  productEntity: MachineGCSLowCircuitboard
+  cost:
+    Doubloon: 15
+  categories:
+    - UplinkPirateGunneryConsoles
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+
+- type: listing
+  id: PirateShuttleEquipmentGCSMedium
+  name: Среднемощный сервер контроля орудий
+  description: Машинная плата для СКО. Улучшенный сервер для управления корабельными орудиями с повышенной производительностью.
+  productEntity: MachineGCSMediumCircuitboard
+  cost:
+    Doubloon: 30
+  categories:
+    - UplinkPirateGunneryConsoles
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+- type: listing
+  id: PirateShuttleEquipmentShieldLight
+  name: Генератор щита CIR-C1A
+  description: Машинная плата для генератора щита CIR-C1A. Легкий генератор защитного поля для базовой защиты корабля.
+  productEntity: MachineShieldLightCircuitboard
+  cost:
+    Doubloon: 60
+  categories:
+    - UplinkPirateGunneryConsoles
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+- type: listing
+  id: PirateShuttleEquipmentStealthConsole
+  name: Стелс консоль IFF
+  description: Позволяет управлять системой идентификации "свой-чужой" и стелс-характеристиками корабля.
+  productEntity: ComputerIFFSyndicateCircuitboard
+  cost:
+    Doubloon: 200
+  categories:
+    - UplinkPirateGunneryConsoles
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+# region Kinetic Ammunition
+# Легкие кинетические боеприпасы (доступны всем пиратам)
+- type: listing
+  id: PirateAmmoGPO
+  name: Бомба GPO-L 50кг неуправляемая
+  description: Прочная и мощная неуправляемая бомба. Наносит сокрушительный урон при прямом попадании.
+  productEntity: LightFighterOrdinanceGPOItem
+  cost:
+    Doubloon: 6
+  categories:
+    - UplinkPirateGunneryAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+
+- type: listing
+  id: PirateAmmoZenith
+  name: Ракета ASM(LF)5 'Zenith' противокорабельная
+  description: Управляемая ракета для легких космических кораблей. Точная и быстрая, но не очень прочная.
+  productEntity: LightFighterOrdinanceZenithItem
+  cost:
+    Doubloon: 9
+  categories:
+    - UplinkPirateGunneryAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+
+- type: listing
+  id: PirateAmmoQuasar
+  name: Гиперпенетратор AD-901 'QUASAR'
+  description: Экспериментальный гиперускорительный боеприпас. Слабая, но сверхбыстрая ракета, неуязвимая для ПРО.
+  productEntity: LightFighterOrdinanceQuasarItem
+  cost:
+    Doubloon: 15
+  categories:
+    - UplinkPirateGunneryAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+
+# Средние кинетические боеприпасы (доступны Captain, FirstMate)
+- type: listing
+  id: PirateAmmoTarnyxAP
+  name: Снаряд TARNYX 150мм бронебойный
+  description: Бронебойный снаряд для 150мм пушки TARNYX. Не самое эффективное решение, но работает в ближнем бою.
+  productEntity: 150mmApShell
+  cost:
+    Doubloon: 9
+  categories:
+    - UplinkPirateGunneryAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+- type: listing
+  id: PirateAmmoASM220HE
+  name: Торпеда ASM-220 фугасная
+  description: Торпеда с мощным фугасным зарядом. Наносит огромные повреждения корпусам кораблей.
+  productEntity: Asm220TorpedoHE
+  cost:
+    Doubloon: 14
+  categories:
+    - UplinkPirateGunneryAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+- type: listing
+  id: PirateAmmoASM220LOSAT
+  name: Ракета ASM-220 LOSAT гиперпенетратор
+  description: Сверхпрочный гиперпенетратор из синтасплава. Легко пробивает самые прочные корпуса.
+  productEntity: Asm220TorpedoLOSAT
+  cost:
+    Doubloon: 23
+  categories:
+    - UplinkPirateGunneryAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+# region Energy Ammunition
+# Средние энергетические боеприпасы (доступны Captain, FirstMate)
+- type: listing
+  id: PirateAmmoTarnyxEMP
+  name: Снаряд TARNYX 150мм EMP
+  description: EMP снаряд для 150мм пушки TARNYX. Выводит из строя электронику вражеских кораблей мощным электромагнитным импульсом.
+  productEntity: 150mmEmpShell
+  cost:
+    Doubloon: 12
+  categories:
+    - UplinkPirateGunneryAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+- type: listing
+  id: PirateAmmoASM220ECM
+  name: Торпеда ASM-220 ECM
+  description: EMP торпеда. Крайне опасна для электроники, но почти безвредна для корпусов.
+  productEntity: Asm220TorpedoECM
+  cost:
+    Doubloon: 17
+  categories:
+    - UplinkPirateGunneryAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+# region Mechas
+- type: listing
+  id: PirateMechRipley
+  name: Пиратский Рипли
+  description: "Стоп... почему у этого Рипли боевое вооружение и что... это попугай?"
+  productEntity: MechRipleyMk2TitanBattery
+  cost:
+    Doubloon: 150
+  categories:
+    - UplinkPirateMechas
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+- type: listing
+  id: PirateMechClarke
+  name: Пиратский Кларк
+  description: "Стоп... почему у этого Кларка боевое вооружение и что... это попугай?"
+  productEntity: MechClarkeVeteranBattery
+  cost:
+    Doubloon: 200
+  categories:
+    - UplinkPirateMechas
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+
+# region Mech Weapons
+# Легкое кинетическое оружие для мехов (доступны Captain, FirstMate)
+- type: listing
+  id: PirateMechGunScattershot
+  name: LBX AC 10 "Scattershot"
+  description: Дробовик для меха. Эффективен на ближней дистанции.
+  productEntity: MechGunScattershot
+  cost:
+    Doubloon: 30
+  categories:
+    - UplinkPirateMechas
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+- type: listing
+  id: PirateMechGunAutocannonUAC2
+  name: Ultra AC 2
+  description: Скорострельная автопушка для меха. Высокая скорострельность, умеренный урон.
+  productEntity: MechGunAutocannonUAC2
+  cost:
+    Doubloon: 30
+  categories:
+    - UplinkPirateMechas
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+- type: listing
+  id: PirateMechGunCarbineHades
+  name: FNX-99 "Hades" Carbine
+  description: Карбин с зажигательными патронами. Наносит тепловой урон.
+  productEntity: MechGunCarbineHades
+  cost:
+    Doubloon: 30
+  categories:
+    - UplinkPirateMechas
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+# Легкое энергетическое оружие для мехов (доступны Captain, FirstMate)
+- type: listing
+  id: PirateMechGunLaser
+  name: CH-PS "Immolator" Laser
+  description: Лазерная пушка для меха. Надежное энергетическое оружие.
+  productEntity: MechGunLaser
+  cost:
+    Doubloon: 23
+  categories:
+    - UplinkPirateMechas
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+- type: listing
+  id: PirateMechGunDisabler
+  name: Disabler "Peacemaker"
+  description: Оглушающее энергетическое оружие. Идеально для нелетальных операций.
+  productEntity: MechGunDisabler
+  cost:
+    Doubloon: 23
+  categories:
+    - UplinkPirateMechas
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+# region Mech Ammunition
+# Боеприпасы для мехов (доступны Captain, FirstMate)
+- type: listing
+  id: PirateMechAmmoAC2Ultra
+  name: Патроны AC-2 "ultra"
+  description: Боеприпасы для скорострельной автопушки Ultra AC 2.
+  productEntity: BoxAmmoAC2Ultra
+  cost:
+    Doubloon: 5
+  categories:
+    - UplinkPirateMechas
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+- type: listing
+  id: PirateMechAmmoScattershot
+  name: Патроны LBX AC 10 "Scattershot"
+  description: Дробовые патроны для дробовика Scattershot.
+  productEntity: BoxAmmoScattershot
+  cost:
+    Doubloon: 5
+  categories:
+    - UplinkPirateMechas
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+- type: listing
+  id: PirateMechAmmoHades
+  name: Патроны FNX-99 "Hades"
+  description: Зажигательные патроны для карбина Hades.
+  productEntity: BoxAmmoHades
+  cost:
+    Doubloon: 5
+  categories:
+    - UplinkPirateMechas
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+- type: listing
+  id: PirateMechDrill
+  name: бур
+  description: Просверлит всё! Стены, двери, руду, столы ковры, ваших врагов!
+  productEntity: MechEquipmentDrill
+  cost:
+    Doubloon: 10
+  categories:
+    - UplinkPirateMechas
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+- type: listing
+  id: PirateMechDiamondDrill
+  name: алмазный бур
+  description: Сильно просверлит всё! Стены, двери, руду, столы ковры, ваших врагов!
+  productEntity: MechEquipmentDiamondDrill
+  cost:
+    Doubloon: 20
+  categories:
+    - UplinkPirateMechas
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+- type: listing
+  id: PirateMechJetpack
+  name: джетпак меха
+  description: Позволяет механизированному костюму летать и перемещать объекты.
+  productEntity: MechEquipmentJet
+  cost:
+    Doubloon: 20
+  categories:
+    - UplinkPirateMechas
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+# region Utility
+
+- type: listing
+  id: UplinkPirateShockCollar
+  name: электрический ошейник
+  description: Электрический ошейник, который включается по сигналу.
+  productEntity: ClothingNeckShockCollar
+  cost:
+    Doubloon: 5
+  categories:
+    - UplinkPirateUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+
+- type: listing
+  id: UplinkPirateTechDiskDelivery
+  name: uplink-pirate-tech-disk-delivery-name
+  description: uplink-pirate-tech-disk-delivery-desc
+  icon: { sprite: Objects/Specific/Cargo/mail.rsi, state: icon }
+  productEntity: PresentTechDisk
+  cost:
+    Doubloon: 50
+  categories:
+    - UplinkPirateUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+- type: listing
+  id: UplinkPirateCombatBorg
+  name: uplink-combat-borg-name
+  description: uplink-combat-borg-desc
+  productEntity: BorgChassisSelectableCombat
+  cost:
+    Doubloon: 50
+  categories:
+  - UplinkPirateBorges
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - NFPirateCaptain
+        - NFPirateFirstMate
+
+# region Combat Borg Modules
+
+- type: listing
+  id: UplinkPirateCombatBorgPKA
+  name: uplink-pirate-borg-pka-name
+  description: uplink-pirate-borg-pka-desc
+  productEntity: BorgModuleCombatPKA
+  cost:
+    Doubloon: 10
+  categories:
+    - UplinkPirateBorges
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+
+- type: listing
+  id: UplinkPirateCombatBorgEchis
+  name: uplink-pirate-borg-echis-name
+  description: uplink-pirate-borg-echis-desc
+  productEntity: BorgModuleCombatEchis
+  cost:
+    Doubloon: 15
+  categories:
+    - UplinkPirateBorges
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+
+- type: listing
+  id: UplinkPirateCombatBorgLaserAdvanced
+  name: uplink-pirate-borg-laser-advanced-name
+  description: uplink-pirate-borg-laser-advanced-desc
+  productEntity: BorgModuleCombatLaserAdvanced
+  cost:
+    Doubloon: 15
+  categories:
+    - UplinkPirateBorges
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+
+- type: listing
+  id: UplinkPirateCombatBorgPKAHeavy
+  name: uplink-pirate-borg-pka-heavy-name
+  description: uplink-pirate-borg-pka-heavy-desc
+  productEntity: BorgModuleCombatPKAHeavy
+  cost:
+    Doubloon: 15
+  categories:
+    - UplinkPirateBorges
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+
+- type: listing
+  id: UplinkPirateCombatBorgL6C
+  name: uplink-pirate-borg-l6c-name
+  description: uplink-pirate-borg-l6c-desc
+  productEntity: BorgModuleCombatL6C
+  cost:
+    Doubloon: 25
+  categories:
+    - UplinkPirateBorges
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+
+- type: listing
+  id: UplinkPirateCombatBorgPKARailgun
+  name: uplink-pirate-borg-pka-railgun-name
+  description: uplink-pirate-borg-pka-railgun-desc
+  productEntity: BorgModuleCombatPKARailgun
+  cost:
+    Doubloon: 25
+  categories:
+    - UplinkPirateBorges
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+
+- type: listing
+  id: UplinkPirateCombatBorgPKARepeater
+  name: uplink-pirate-borg-pka-repeater-name
+  description: uplink-pirate-borg-pka-repeater-desc
+  productEntity: BorgModuleCombatPKARepeater
+  cost:
+    Doubloon: 25
+  categories:
+    - UplinkPirateBorges
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+
+- type: listing
+  id: UplinkPirateCombatBorgPKAShotgun
+  name: uplink-pirate-borg-pka-shotgun-name
+  description: uplink-pirate-borg-pka-shotgun-desc
+  productEntity: BorgModuleCombatPKAShotgun
+  cost:
+    Doubloon: 25
+  categories:
+    - UplinkPirateBorges
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+
+- type: listing
+  id: UplinkPirateCombatBorgLaserHeavy
+  name: uplink-pirate-borg-laser-heavy-name
+  description: uplink-pirate-borg-laser-heavy-desc
+  productEntity: BorgModuleCombatLaserHeavy
+  cost:
+    Doubloon: 25
+  categories:
+    - UplinkPirateBorges
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+
+- type: listing
+  id: UplinkPirateRemoteControlConsole
+  name: uplink-pirate-remote-control-console-name
+  description: uplink-pirate-remote-control-console-desc
+  productEntity: RemoteControllerComputer
+  cost:
+    Doubloon: 5
+  categories:
+    - UplinkPirateBorges
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink
+
+- type: listing
+  id: UplinkPirateRemoteControlDevice
+  name: uplink-pirate-remote-control-device-name
+  description: uplink-pirate-remote-control-device-desc
+  productEntity: RemoteControlDevice
+  cost:
+    Doubloon: 5
+  categories:
+    - UplinkPirateBorges
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - PirateUplink

@@ -1,0 +1,265 @@
+- type: randomHumanoidSettings
+  id: EventHumanoidUASAgent
+  parent: EventHumanoid
+  components:
+    - type: AntagImmune
+
+# советник
+- type: randomHumanoidSettings
+  id: GhostUASCounselor
+  parent: EventHumanoidUASAgent
+  randomizeName: false
+  speciesBlacklist:
+  - Geth
+  - Diona
+  - Gingerbread
+  - SkeletonPerson
+  - Vox
+  - Orc
+  components:
+    - type: GhostRole
+      name: советник UAS
+      description: uas-Counselor-agent-description
+      rules: uas-Counselor-agent-rule
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ UASCounselorGear ]
+    - type: RandomMetadata
+      nameSegments:
+        - "Советник"
+        - NamesLastMilitaryUAS
+    - type: AutoImplant
+      implants:
+      - UASTrakerImplant
+# титан
+- type: randomHumanoidSettings
+  id: GhostUASTitan
+  parent: EventHumanoidUASAgent
+  randomizeName: false
+  speciesBlacklist:
+  - Geth
+  - Diona
+  - Gingerbread
+  - SkeletonPerson
+  - Vox
+  - Orc
+  components:
+    - type: GhostRole
+      name: офицер Титан UAS
+      description: uas-Titan-agent-description
+      rules: uas-Titan-agent-rule
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ UASTitanGear ]
+    - type: RandomMetadata
+      nameSegments:
+        - "Титан"
+        - NamesLastMilitaryUAS
+    - type: AutoImplant
+      implants:
+      - UASTrakerImplant
+# паук
+- type: randomHumanoidSettings
+  id: GhostUASSpider
+  parent: EventHumanoidUASAgent
+  randomizeName: false
+  speciesBlacklist:
+  - Geth
+  - Diona
+  - Gingerbread
+  - SkeletonPerson
+  - Vox
+  - Orc
+  components:
+    - type: GhostRole
+      name: офицер Паук UAS
+      description: uas-Spider-agent-description
+      rules: uas-Spider-agent-rule
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ UASSpiderGear ]
+    - type: RandomMetadata
+      nameSegments:
+        - "Паук"
+        - NamesLastMilitaryUAS
+    - type: AutoImplant
+      implants:
+      - UASTrakerImplant
+# рыцарь
+- type: randomHumanoidSettings
+  id: GhostUASKnight
+  parent: EventHumanoidUASAgent
+  randomizeName: false
+  speciesBlacklist:
+  - Geth
+  - Diona
+  - Gingerbread
+  - SkeletonPerson
+  - Vox
+  - Orc
+  components:
+    - type: GhostRole
+      name: офицер Рыцарь UAS
+      description: uas-Knight-agent-description
+      rules: uas-Knight-agent-rule
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ UASKnightGear ]
+    - type: RandomMetadata
+      nameSegments:
+        - "Рыцарь"
+        - NamesLastMilitaryUAS
+    - type: AutoImplant
+      implants:
+      - UASTrakerImplant
+# офицер
+- type: randomHumanoidSettings
+  id: GhostUASOfficer
+  parent: EventHumanoidUASAgent
+  randomizeName: false
+  speciesBlacklist:
+  - Geth
+  - Diona
+  - Gingerbread
+  - SkeletonPerson
+  - Vox
+  - Orc
+  components:
+    - type: GhostRole
+      name: офицер UAS
+      description: uas-Officer-agent-description
+      rules: uas-Officer-agent-rule
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ UASOfficerGear ]
+    - type: RandomMetadata
+      nameSegments:
+        - "Офицер"
+        - NamesLastMilitaryUAS
+    - type: AutoImplant
+      implants:
+      - UASTrakerImplant
+# Кадет
+- type: randomHumanoidSettings
+  id: GhostUASCadet
+  parent: EventHumanoidUASAgent
+  randomizeName: false
+  speciesBlacklist:
+  - Geth
+  - Diona
+  - Gingerbread
+  - SkeletonPerson
+  - Vox
+  - Orc
+  components:
+    - type: GhostRole
+      name: кадет UAS
+      description: uas-Cadet-agent-description
+      rules: uas-Cadet-agent-rule
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ UASCadetGear ]
+    - type: RandomMetadata
+      nameSegments:
+        - "Кадет"
+        - NamesLastMilitaryUAS
+    - type: AutoImplant
+      implants:
+      - UASTrakerImplant
+# короче да, заново
+# Совет
+- type: entity
+  id: RandomHumanoidSpawnerUASCounselor
+  name: советник UAS
+  suffix: StarHorizon, UAS
+  components:
+    - type: Sprite
+      sprite: _Horizon/Markers/Jobs/uasmarkers.rsi
+      state: counselor
+    - type: RandomMetadata
+      nameSegments:
+        - "Советник"
+        - NamesLastMilitaryUAS
+    - type: RandomHumanoidSpawner
+      settings: GhostUASCounselor
+# Титан
+- type: entity
+  id: RandomHumanoidSpawnerUASTitan
+  name: офицер Титан UAS
+  suffix: StarHorizon, UAS
+  components:
+    - type: Sprite
+      sprite: _Horizon/Markers/Jobs/uasmarkers.rsi
+      state: titan
+    - type: RandomMetadata
+      nameSegments:
+        - "Титан"
+        - NamesLastMilitaryUAS
+    - type: RandomHumanoidSpawner
+      settings: GhostUASTitan
+# Паук
+- type: entity
+  id: RandomHumanoidSpawnerUASSpider
+  name: офицер Паук UAS
+  suffix: StarHorizon, UAS
+  components:
+    - type: Sprite
+      sprite: _Horizon/Markers/Jobs/uasmarkers.rsi
+      state: spider
+    - type: RandomMetadata
+      nameSegments:
+        - "Паук"
+        - NamesLastMilitaryUAS
+    - type: RandomHumanoidSpawner
+      settings: GhostUASSpider
+# Рыцарь
+- type: entity
+  id: RandomHumanoidSpawnerUASKnight
+  name: офицер РыцарьUAS
+  suffix: StarHorizon, UAS
+  components:
+    - type: Sprite
+      sprite: _Horizon/Markers/Jobs/uasmarkers.rsi
+      state: knight
+    - type: RandomMetadata
+      nameSegments:
+        - "Рыцарь"
+        - NamesLastMilitaryUAS
+    - type: RandomHumanoidSpawner
+      settings: GhostUASKnight
+# Офицер
+- type: entity
+  id: RandomHumanoidSpawnerUASOfficer
+  name: офицер UAS
+  suffix: StarHorizon, UAS
+  components:
+    - type: Sprite
+      sprite: _Horizon/Markers/Jobs/uasmarkers.rsi
+      state: officer
+    - type: RandomMetadata
+      nameSegments:
+        - "Офицер"
+        - NamesLastMilitaryUAS
+    - type: RandomHumanoidSpawner
+      settings: GhostUASOfficer
+# Кадет
+- type: entity
+  id: RandomHumanoidSpawnerUASCadet
+  name: кадет UAS
+  suffix: StarHorizon, UAS
+  components:
+    - type: Sprite
+      sprite: _Horizon/Markers/Jobs/uasmarkers.rsi
+      state: cadet
+    - type: RandomMetadata
+      nameSegments:
+        - "Кадет"
+        - NamesLastMilitaryUAS
+    - type: RandomHumanoidSpawner
+      settings: GhostUASCadet

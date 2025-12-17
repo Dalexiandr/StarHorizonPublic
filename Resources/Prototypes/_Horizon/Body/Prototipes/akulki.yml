@@ -1,0 +1,61 @@
+- type: body
+  id: Akulki
+  name: "Akulki"
+  root: torso
+  slots:
+    head:
+      part: HeadAkulki
+      connections:
+      - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganHumanEyes
+        tongue: OrganHumanTongue
+        eye_implant: null # Horizon
+        cyberdeka_implant: null # Horizon
+    torso:
+      part: TorsoAkulki
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      organs:
+        heart: OrganAkulkiHeart
+        lungs: OrganHumanLungs
+        stomach: OrganReptilianStomach
+        liver: OrganAkulkiLiver
+        kidneys: OrganHumanKidneys
+        vessels_implant: null # Horizon
+        blood_pump_implant: null
+        skin_implant: null # Horizon
+        bone_implant: null # Horizon
+        cavity: null # Horizon
+    right arm:
+      part: RightArmAkulki
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmAkulki
+      connections:
+      - left hand
+    right hand:
+      part: RightHandAkulki
+      organs:
+        hands_implant: null # _Horizon
+    left hand:
+      part: LeftHandAkulki
+      organs:
+        hands_implant: null # _Horizon
+    right leg:
+      part: RightLegAkulki
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegAkulki
+      connections:
+      - left foot
+    right foot:
+      part: RightFootAkulki
+    left foot:
+      part: LeftFootAkulki

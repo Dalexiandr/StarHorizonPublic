@@ -1,0 +1,31 @@
+- type: latheCategory
+  id: MechGygax
+  name: lathe-category-mechs-gygax
+
+- type: latheCategory
+  id: MechOdysseus
+  name: lathe-category-mechs-odysseus
+
+- type: latheCategory
+  id: MechClarke
+  name: lathe-category-mechs-clarke
+
+- type: latheCategory
+  id: MechDurand
+  name: lathe-category-mechs-durand
+
+- type: latheCategory
+  id: MechPhazon
+  name: lathe-category-mechs-phazon
+
+- type: latheCategory
+  id: Surgery
+  name: lathe-category-surgery
+
+- type: latheCategory
+  id: Cyberlimbs
+  name: lathe-category-cyberlimbs
+
+- type: latheCategory
+  id: Implants
+  name: lathe-category-implants

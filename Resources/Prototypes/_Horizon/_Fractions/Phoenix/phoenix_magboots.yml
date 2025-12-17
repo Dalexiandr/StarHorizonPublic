@@ -1,0 +1,14 @@
+- type: entity
+  parent: ClothingShoesBootsMagBase
+  id: ClothingShoesBootsMagPhoenix
+  name: Магбутсы ИФ
+  description: Магнитные ботинки службы безопасности ИФ.
+  suffix: Феникс, работяги
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/hardsuits/magboots.rsi
+    layers:
+    - state: icon
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Phoenix/hardsuits/magboots.rsi

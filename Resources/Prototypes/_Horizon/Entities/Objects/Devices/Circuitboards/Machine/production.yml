@@ -1,0 +1,41 @@
+﻿- type: entity
+  parent: BaseMachineCircuitboard
+  id: MachineBluespaceHarvesterCircuitboard
+  name: Bluespace Harvester board
+  description: A machine board for a Bluespace Harvester
+  components:
+  - type: Sprite
+    sprite: _Horizon/Bluespace/module.rsi
+    state: bluespace
+  - type: Item
+    size: Normal
+  - type: MachineBoard
+    prototype: BluespaceHarvester
+    requirements:
+      Capacitor: 5
+      MatterBin: 15
+    stackRequirements:
+      Glass: 15
+      Steel: 15
+      CableHV: 5
+      Bluespace: 5
+
+- type: entity
+  parent: BaseMachineCircuitboard
+  id: MachineBluespaceTransitorCircuitboard
+  name: bluespace T.R.A.N.S.I.T.O.R board
+  description: A machine board for a bluespace T.R.A.N.S.I.T.O.R
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: bluespacearray
+  - type: Item
+    size: Normal
+  - type: MachineBoard
+    prototype: BluespaceTransitor
+    requirements:
+      Capacitor: 15
+    stackRequirements:
+      Steel: 10
+      CableHV: 30
+      Bluespace: 5

@@ -1,0 +1,63 @@
+- type: technology
+  id: ArsenalUnderbarrelModules
+  name: research-technology-modules-underbarrel
+  entityIcon: TechUnder
+  discipline: NFArsenalNfsd
+  tier: 2
+  cost: 7500
+  recipeUnlocks:
+  - AttachmentVerticalGrip
+  - AttachmentLaserSight
+  - AttachmentM90UnderbarrelShotgun
+  - AttachmentM90GrenadeLauncher
+  technologyPrerequisites:
+  - NFBasicAmmunitionProduction
+  position: 1, 59
+
+- type: technology
+  id: ArsenalUpperplankModules
+  name: research-technology-modules-upperplank
+  entityIcon: TechUpper
+  discipline: NFArsenalNfsd
+  tier: 2
+  cost: 7500
+  recipeUnlocks:
+  - AttachmentReflexSight
+  - AttachmentMagneticHarness
+  - AttachmentT2Miniscope
+  technologyPrerequisites:
+  - NFBasicAmmunitionProduction
+  position: 1, 60
+
+- type: technology
+  id: ArsenalBarrelModules
+  name: research-technology-modules-barrel
+  entityIcon: TechRail
+  discipline: NFArsenalNfsd
+  tier: 2
+  cost: 7500
+  recipeUnlocks:
+  - AttachmentSuppressor
+  - AttachmentAntiLyingWarrior
+  technologyPrerequisites:
+  - NFBasicAmmunitionProduction
+  position: 1, 61
+
+- type: technology
+  id: ArsenalAmmoModules
+  name: research-technology-modules-ammo
+  entityIcon: 40mmGrenadeBaton
+  discipline: NFArsenalNfsd
+  tier: 2
+  cost: 7500
+  recipeUnlocks:
+  - 40mmGrenadeHEAT
+  - 40mmGrenadeBaton
+  - 40mmGrenadeEMP
+  - 40mmGrenadeFlash
+  - 40mmGrenadeSmoke
+  technologyPrerequisites:
+  - ArsenalUnderbarrelModules
+  position: 2, 59
+  researchTargets:
+  - TechnologyDiscArsenalAmmoModules

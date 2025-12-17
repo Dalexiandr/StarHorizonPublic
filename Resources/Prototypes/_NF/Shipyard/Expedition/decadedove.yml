@@ -1,0 +1,59 @@
+# Author Info
+# GitHub: crystalHex (https://github.com/crystalHex)
+# Discord: ???
+
+# Maintainer Info
+# GitHub: crystalHex (https://github.com/crystalHex)
+# Discord: ???
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: DecadeDove
+  parent: BaseVessel
+  name: DYS Dove
+  description: Versatile expedition-capable multi-purpose light freighter.
+  price: 77000 # 64078 0.2 76893.6
+  category: Medium
+  group: Expedition
+  shuttlePath: /Maps/_NF/Shuttles/Expedition/decadedove.yml
+  guidebookPage: Null
+  class:
+  - Expedition
+  engine:
+  - AME
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:FactionCostModifier
+      faction: "FactionSIU"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionArcadia"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: DecadeDove
+  mapName: 'DYS Dove'
+  mapPath: /Maps/_NF/Shuttles/Expedition/decadedove.yml
+  minPlayers: 0
+  stations:
+    DecadeDove:
+      stationProto: StandardFrontierExpeditionVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Dove {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

@@ -1,0 +1,29 @@
+
+- type: entity
+  id: OrganKatunianStomach
+  name: желудок катунианца
+  parent: OrganHumanStomach
+  noSpawn: true
+  components:
+  - type: Stomach
+    maxVolume: 50
+  - type: Metabolizer
+    maxReagents: 3
+    metabolizerTypes: [Katunian]
+    groups:
+    - id: Food
+    - id: Drink
+
+- type: entity
+  id: OrganKatunianHeart
+  parent: OrganHumanHeart
+  noSpawn: true
+  components:
+  - type: Metabolizer
+    maxReagents: 2
+    metabolizerTypes: [Katunian]
+    groups:
+    - id: Medicine
+    - id: Cryogenic # Frontier
+    - id: Poison
+    - id: Narcotic

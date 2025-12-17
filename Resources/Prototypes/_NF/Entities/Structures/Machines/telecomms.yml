@@ -1,0 +1,68 @@
+- type: entity
+  parent: TelecomServer
+  id: NFTelecomServerFilled
+  suffix: Filled All
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyCommon
+      - EncryptionKeyCargo
+      - EncryptionKeyEngineering
+      - EncryptionKeyMedical
+      - EncryptionKeyScience
+      - EncryptionKeySecurity
+      - EncryptionKeyService
+      - EncryptionKeyCommand
+      - EncryptionKeyNfsd
+      - EncryptionKeyTraffic
+      - EncryptionKeyGreeting
+
+- type: entity
+  parent: TelecomServer
+  id: TelecomServerFilledNfsd
+  suffix: Ship, NFSD
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyCommon
+      - EncryptionKeyCargo
+      - EncryptionKeyEngineering
+      - EncryptionKeyMedical
+      - EncryptionKeyScience
+      - EncryptionKeySecurity
+      - EncryptionKeyService
+      - EncryptionKeyNfsd
+      - EncryptionKeyTraffic
+
+- type: entity
+  parent: TelecomServer
+  id: TelecomServerFilledShuttle
+  suffix: Ship
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyCommon
+      - EncryptionKeyMedical
+
+- type: entity
+  parent: TelecomServer
+  id: TelecomServerFilledSyndicate
+  suffix: Syndicate
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeySyndie
+
+- type: entity
+  parent: TelecomServer
+  id: TelecomServerFilledFreelance
+  suffix: Freelance
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyFreelance

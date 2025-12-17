@@ -1,0 +1,11 @@
+ent-ShieldGeneratorBase = Shield Generator
+    .desc = { ent-BaseMachinePowered.desc }
+ent-ShieldGeneratorSmall = { ent-ShieldGeneratorBase }
+    .suffix = CIR-C1A
+    .desc = { ent-ShieldGeneratorBase.desc }
+ent-ShieldGeneratorMedium = { ent-ShieldGeneratorBase }
+    .suffix = CIR-C2B
+    .desc = { ent-ShieldGeneratorBase.desc }
+ent-ShieldGeneratorLarge = { ent-ShieldGeneratorBase }
+    .suffix = CIR-C3C
+    .desc = { ent-ShieldGeneratorBase.desc }

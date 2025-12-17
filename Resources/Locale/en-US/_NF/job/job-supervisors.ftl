@@ -1,0 +1,11 @@
+job-supervisors-sr = the Station Representative
+job-supervisors-bailiff = the Bailiff
+job-supervisors-cadet = all higher ranking NFSD personnel
+job-supervisors-freebooters-union = the Freebooters' Union
+job-supervisors-nf-pirate = the First Mate and Captain
+job-supervisors-nf-pirate-captain = the Captain
+job-supervisors-nfsd = Deputies, the Bailiff, and the Sheriff
+job-supervisors-plant-manager = the Plant Manager
+job-supervisors-prisoner = all NFSD personnel
+job-supervisors-sergeant = the Sergeant
+job-supervisors-sheriff = the Sheriff

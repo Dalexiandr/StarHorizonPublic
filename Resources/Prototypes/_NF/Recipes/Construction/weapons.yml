@@ -1,0 +1,95 @@
+- type: construction
+  id: ImprovisedCrossbow
+  graph: ImprovisedCrossbow
+  startNode: start
+  targetNode: ImprovisedCrossbow
+  category: construction-category-weapons
+  objectType: Item
+
+- type: construction
+  id: CraftCrossbowBoltGlassShard
+  graph: CraftCrossbowBoltGlassShard
+  startNode: start
+  targetNode: CraftCrossbowBoltGlassShard
+  category: construction-category-weapons
+  objectType: Item
+
+- type: construction
+  id: CraftCrossbowBoltPlasmaGlassShard
+  graph: CraftCrossbowBoltPlasmaGlassShard
+  startNode: start
+  targetNode: CraftCrossbowBoltPlasmaGlassShard
+  category: construction-category-weapons
+  objectType: Item
+
+- type: construction
+  id: CraftCrossbowBoltUraniumGlassShard
+  graph: CraftCrossbowBoltUraniumGlassShard
+  startNode: start
+  targetNode: CraftCrossbowBoltUraniumGlassShard
+  category: construction-category-weapons
+  objectType: Item
+
+- type: construction
+  id: CraftCrossbowBoltSyringe
+  graph: CraftCrossbowBoltSyringe
+  startNode: start
+  targetNode: CraftCrossbowBoltSyringe
+  category: construction-category-weapons
+  objectType: Item
+
+- type: construction
+  id: CraftCrossbowBoltPlasteel
+  graph: CraftCrossbowBoltPlasteel
+  startNode: start
+  targetNode: CraftCrossbowBoltPlasteel
+  category: construction-category-weapons
+  objectType: Item
+
+- type: construction
+  id: CraftCrossbowBoltExplosive
+  graph: CraftCrossbowBoltExplosive
+  startNode: start
+  targetNode: CraftCrossbowBoltExplosive
+  category: construction-category-weapons
+  objectType: Item
+
+- type: construction
+  id: CraftCrossbowBoltEMP
+  graph: CraftCrossbowBoltEMP
+  startNode: start
+  targetNode: CraftCrossbowBoltEMP
+  category: construction-category-weapons
+  objectType: Item
+
+- type: construction
+  id: CraftCrossbowBoltIncendiary
+  graph: CraftCrossbowBoltIncendiary
+  startNode: start
+  targetNode: CraftCrossbowBoltIncendiary
+  category: construction-category-weapons
+  objectType: Item
+
+- type: construction
+  id: CraftCrossbowBoltShrapnel
+  graph: CraftCrossbowBoltShrapnel
+  startNode: start
+  targetNode: CraftCrossbowBoltShrapnel
+  category: construction-category-weapons
+  objectType: Item
+
+- type: construction
+  id: RecipeWoodenStake
+  graph: WoodenStakeCraftingGraph
+  startNode: start
+  targetNode: WoodenStakeNode
+  category: construction-category-weapons
+  objectType: Item
+
+- type: construction
+  id: club
+  graph: CavemanClub
+  startNode: start
+  targetNode: club
+  category: construction-category-weapons
+  objectType: Item

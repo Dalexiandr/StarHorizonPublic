@@ -1,0 +1,22 @@
+﻿- type: npcFaction
+  id: XenobioSlime
+  hostile:
+  - Passive
+  - Zombie
+  - Flesh
+  - Xeno
+
+- type: npcFaction
+  id: UASSecurBot
+  hostile:
+  - Xeno
+  - Revolutionary
+  - Dragon
+  - SimpleNeutral
+  - Passive
+  - Mouse
+  - SimpleHostile
+  - NanoTrasen
+  - Syndicate
+  - PetsNT
+  - Zombie

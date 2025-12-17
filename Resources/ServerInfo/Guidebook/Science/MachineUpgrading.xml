@@ -1,0 +1,40 @@
+<Document>
+  # Улучшение машин
+
+  Машины помогают станции работать бесперебойно, а учёные могут сделать их ещё эффективнее!
+
+  ## Комплектующие
+  <Box>Базовые компоненты:</Box>
+  <Box>
+    <GuideEntityEmbed Entity="CapacitorStockPart"/>
+    <GuideEntityEmbed Entity="MatterBinStockPart"/>
+    <GuideEntityEmbed Entity="MicroManipulatorStockPart"/>
+  </Box>
+  При осмотре каждого компонента можно увидеть его тип и уровень (от 1 до 4).
+
+  Компоненты более высоких уровней можно исследовать или найти в артефактах и утиле.
+  <Box>
+    <GuideEntityEmbed Entity="AdvancedMatterBinStockPart"/>
+    <GuideEntityEmbed Entity="SuperMatterBinStockPart"/>
+    <GuideEntityEmbed Entity="BluespaceMatterBinStockPart"/>
+  </Box>
+  Эти компоненты используются для создания различных машин.
+
+  ## Процесс улучшения
+  Чтобы проверить возможность улучшения машины, осмотрите её - иконка [color=#a4885c]молнии[/color] в правом нижнем углу укажет на доступные улучшения.
+
+  Необходимые компоненты можно узнать, осмотрев плату машины. Примеры:
+  <Box Orientation="Vertical">
+    <GuideEntityEmbed Entity="ProtolatheMachineCircuitboard"/>
+    <GuideEntityEmbed Entity="CloningPodMachineCircuitboard"/>
+    <GuideEntityEmbed Entity="ThermomachineFreezerMachineCircuitBoard"/>
+  </Box>
+  Можно использовать компоненты любого уровня, но более высокие уровни повысят эффективность машины.
+
+  Для улучшения существующей машины:
+  1. Разберите её отвёрткой и ломом
+  2. Замените старые компоненты на более совершенные
+
+  Быстрое улучшение возможно с помощью РПЭД (RPED) - загрузите в него компоненты и кликните по машине для автоматической замены.
+  <GuideEntityEmbed Entity="RPED"/>
+</Document>

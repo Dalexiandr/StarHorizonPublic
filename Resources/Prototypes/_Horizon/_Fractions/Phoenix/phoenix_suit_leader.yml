@@ -1,0 +1,11 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitPhoenixLeader
+  name: Костюм Кайзера
+  description: Элитный комбинезон для лидера СБ-ИФ - Лаина Варбурга
+  suffix: Феникс, Лидер
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/uniform/kaiseruniform.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Phoenix/uniform/kaiseruniform.rsi

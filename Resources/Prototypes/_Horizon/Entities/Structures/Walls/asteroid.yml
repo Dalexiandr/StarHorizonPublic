@@ -1,0 +1,206 @@
+- type: entity
+  id: WallRockChromiteEmerald
+  parent: NFWallRockChromiteOre
+  description: An ore vein rich with emeralds.
+  suffix: Emerald
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: OreEmerald
+  - type: Sprite
+    layers:
+    - state: rock_chromite
+    - map: [ "enum.EdgeLayer.South" ]
+      state: rock_chromite_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: rock_chromite_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: rock_chromite_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: rock_chromite_west
+    - state: rock_emerald
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: WallRockChromiteRuby
+  parent: NFWallRockChromiteOre
+  description: An ore vein rich with rubines.
+  suffix: Ruby
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: OreRuby
+  - type: Sprite
+    layers:
+    - state: rock_chromite
+    - map: [ "enum.EdgeLayer.South" ]
+      state: rock_chromite_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: rock_chromite_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: rock_chromite_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: rock_chromite_west
+    - state: rock_ruby
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: WallRockChromiteSapphire
+  parent: NFWallRockChromiteOre
+  description: An ore vein rich with sapphires.
+  suffix: Sapphire
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: OreSapphire
+  - type: Sprite
+    layers:
+    - state: rock_chromite
+    - map: [ "enum.EdgeLayer.South" ]
+      state: rock_chromite_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: rock_chromite_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: rock_chromite_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: rock_chromite_west
+    - state: rock_saphire
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: WallRockChromiteTopaz
+  parent: NFWallRockChromiteOre
+  description: An ore vein rich with topaz.
+  suffix: Topaz
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: OreTopaz
+  - type: Sprite
+    layers:
+    - state: rock_chromite
+    - map: [ "enum.EdgeLayer.South" ]
+      state: rock_chromite_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: rock_chromite_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: rock_chromite_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: rock_chromite_west
+    - state: rock_topaz
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: WallRockChromitePsycore
+  parent: NFWallRockChromiteOre
+  description: An ore vein rich with psycore.
+  suffix: Psycore
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: OrePsycore
+  - type: Sprite
+    layers:
+    - state: rock_chromite
+    - map: [ "enum.EdgeLayer.South" ]
+      state: rock_chromite_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: rock_chromite_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: rock_chromite_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: rock_chromite_west
+    - state: rock_psycore
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: WallRockChromiteTitan
+  parent: NFWallRockChromiteOre
+  description: An ore vein rich with titan.
+  suffix: Titan
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: OreTitan
+  - type: Sprite
+    layers:
+    - state: rock_chromite
+    - map: [ "enum.EdgeLayer.South" ]
+      state: rock_chromite_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: rock_chromite_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: rock_chromite_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: rock_chromite_west
+    - state: rock_titan
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: WallRockChromitePlutonium
+  parent: NFWallRockChromiteOre
+  description: An ore vein rich with plutonium.
+  suffix: Plutonium
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: OrePlutonium
+  - type: Sprite
+    layers:
+    - state: rock_chromite
+    - map: [ "enum.EdgeLayer.South" ]
+      state: rock_chromite_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: rock_chromite_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: rock_chromite_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: rock_chromite_west
+    - state: rock_plutonium
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: WallRockChromiteNeptunium
+  parent: NFWallRockChromiteOre
+  description: An ore vein rich with neptunium.
+  suffix: Neptunium
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: OreNeptunium
+  - type: Sprite
+    layers:
+    - state: rock_chromite
+    - map: [ "enum.EdgeLayer.South" ]
+      state: rock_chromite_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: rock_chromite_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: rock_chromite_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: rock_chromite_west
+    - state: rock_neptunium
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: WallRockChromiteTorium
+  parent: NFWallRockChromiteOre
+  description: An ore vein rich with torium.
+  suffix: Torium
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: OreTorium
+  - type: Sprite
+    layers:
+    - state: rock_chromite
+    - map: [ "enum.EdgeLayer.South" ]
+      state: rock_chromite_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: rock_chromite_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: rock_chromite_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: rock_chromite_west
+    - state: rock_torium
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]

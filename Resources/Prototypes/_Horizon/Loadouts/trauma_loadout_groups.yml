@@ -1,0 +1,16 @@
+# - type: loadoutGroup
+#   id: TraumaJumpsuit
+#   name: loadout-group-contractor-jumpsuit
+#   loadouts:
+#     - ClothingUniformJumpsuitMilitaryColorGrey
+#   fallbacks:
+#     - ClothingUniformJumpsuitMilitaryColorGrey
+
+# - type: loadoutGroup
+#   id: TraumaParamedicPDA
+#   name: loadout-group-contractor-pda
+#   hidden: true
+#   loadouts:
+#     - TraumaParamedicIDCard
+#   fallbacks:
+#     - TraumaParamedicIDCard

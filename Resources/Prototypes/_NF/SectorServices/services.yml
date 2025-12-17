@@ -1,0 +1,65 @@
+- type: sectorService
+  id: PirateBounties
+  components:
+  - type: SectorPirateBountyDatabase
+
+- type: sectorService
+  id: Mail
+  components:
+  - type: SectorLogisticStats
+  - type: SectorMail # Contains sector-wide mail parameters
+
+- type: sectorService
+  id: ShuttleRecords
+  components:
+  - type: SectorShuttleRecords
+
+- type: sectorService
+  id: BankAccounts
+  components:
+  - type: SectorBank
+    accounts:
+      Frontier:
+        !type:SectorBankAccountInfo
+        balance: 8000
+        increasePerSecond: 1 # TODO: move to ~65K per hour (~18/s), about enough for minimum wage for Frontier employees
+      Nfsd:
+        !type:SectorBankAccountInfo
+        balance: 8000
+        increasePerSecond: 25 # 90K per hour, will offset the "Loss" of the vault money
+      Medical:
+        !type:SectorBankAccountInfo
+        balance: 8000
+        increasePerSecond: 6 # 21.6K per hour, a bit over for the DOC MOM's wage.
+      Edison:
+        !type:SectorBankAccountInfo
+        balance: 8000
+        increasePerSecond: 1 # A trickle - generate your own power to sell for stuff.
+      # Horizon start
+      Trauma: 
+        !type:SectorBankAccountInfo
+        balance: 8000
+        increasePerSecond: 4 # Продавайте подписки, 14к в час хватит.
+      # Horizon end
+
+# A global source of character records (DNA, fingerprints, criminal records, etc.)
+- type: sectorService
+  id: SectorRecords
+  components:
+  - type: StationRecords
+
+- type: sectorService
+  id: Alerts
+  components:
+  - type: AlertLevel
+    alertLevelPrototype: stationAlerts
+
+- type: sectorService
+  id: BountyContracts
+  components:
+  - type: BountyContractData
+
+- type: sectorService
+  id: PublicTransit
+  components:
+  - type: SectorPublicTransit

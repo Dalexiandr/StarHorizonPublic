@@ -1,0 +1,81 @@
+- type: roleLoadout
+  id: JobTraumaParamedic
+  groups:
+    - NFSpeciesSpecific
+    - ContractorFace
+    - ContractorGlasses
+    - ContractorBelt
+    - ContractorEars
+    - ContractorEncryptionKey
+    - ContractorBoxSurvival
+    - ContractorWallet
+    - ContractorCartridge
+    - ContractorImplanter
+    - ContractorBackpackItems
+    - ContractorHandItems
+    # Horizon start
+    - Top
+    - Bottom
+    - Socks
+    # Horizon end
+
+- type: roleLoadout
+  id: JobTraumaMedTech
+  groups:
+    - NFSpeciesSpecific
+    - ContractorFace
+    - ContractorGlasses
+    - ContractorBelt
+    - ContractorEars
+    - ContractorEncryptionKey
+    - ContractorBoxSurvival
+    - ContractorWallet
+    - ContractorCartridge
+    - ContractorImplanter
+    - ContractorBackpackItems
+    - ContractorHandItems
+    # Horizon start
+    - Top
+    - Bottom
+    - Socks
+    # Horizon end
+
+- type: roleLoadout
+  id: JobTraumaRessurector
+  groups:
+    - NFSpeciesSpecific
+    - ContractorFace
+    - ContractorGlasses
+    - ContractorBelt
+    - ContractorEars
+    - ContractorEncryptionKey
+    - ContractorBoxSurvival
+    - ContractorWallet
+    - ContractorCartridge
+    - ContractorImplanter
+    - ContractorBackpackItems
+    - ContractorHandItems
+    # Horizon start
+    - Top
+    - Bottom
+    - Socks
+    # Horizon end
+
+- type: roleLoadout
+  id: JobTraumaRepresentative
+  groups:
+    - NFSpeciesSpecific
+    - ContractorFace
+    - ContractorEars
+    - ContractorEncryptionKey
+    - ContractorBoxSurvival
+    - ContractorWallet
+    - ContractorCartridge
+    - ContractorImplanter
+    - ContractorBackpackItems
+    - ContractorHandItems
+    # Horizon start
+    - Top
+    - Bottom
+    - Socks
+    # Horizon end

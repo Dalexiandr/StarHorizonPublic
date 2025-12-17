@@ -1,0 +1,822 @@
+# region Остальное 
+- type: entity
+  id: CrateMrakoniRandom
+  parent: CrateMrakoni
+  suffix: Лут Босса | Измерение Забвения 
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: MrakoniTitan
+
+- type: entityTable
+  id: MrakoniTitan
+  table: !type:AllSelector
+    children:
+    - id: MaterialBones
+    - id: trophiestitan
+    - !type:GroupSelector
+      children:
+      - id: ClothingOuterArmorCult
+      - id: ClothingHeadHelmetCult
+    - id: Telecrystal10
+      prob: 0.3
+    - id: WeaponProtoTitan
+      prob: 0.9
+
+
+- type: entity
+  parent: CrateBaseSecure
+  id: CrateMrakoni
+  name: Мраконевый Ящик
+  suffix: Измерение Забвения 
+  components:
+    - type: Icon
+      sprite: _Horizon/_Fractions/Zabvenie/weaponsiy.rsi
+    - type: Sprite
+      sprite: _Horizon/_Fractions/Zabvenie/weaponsiy.rsi
+
+# region Мраконевые Пустоши 
+- type: entity
+  id: WallOblivion
+  parent: BaseWall
+  name: Порода Мракония
+  description: Холодный и мрачный камень, вечно окутанный тенью. Кажется или он поглощает свет и тепло, словно живое проклятие.
+  suffix: Измерение Забвения 
+  components:
+    - type: Transform
+      noRot: true
+    - type: SoundOnGather
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Metallic
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 200
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: IconSmooth
+      key: walls
+      mode: NoSprite
+    - type: Icon
+      sprite: _Horizon/_Fractions/Zabvenie/rock.rsi
+      state: rock
+    - type: MiningScannerViewable
+    - type: SmoothEdge
+    - type: Sprite
+      sprite: _Horizon/_Fractions/Zabvenie/rock.rsi
+      layers:
+        - state: rock
+        - map: [ "enum.EdgeLayer.South" ]
+          state: rock_south
+        - map: [ "enum.EdgeLayer.East" ]
+          state: rock_east
+        - map: [ "enum.EdgeLayer.North" ]
+          state: rock_north
+        - map: [ "enum.EdgeLayer.West" ]
+          state: rock_west
+
+- type: entity
+  parent: BaseWall
+  id: WallStoneOblivion
+  name: Древняя кирпичная стена из Мракония 
+  description: Древний и крайне пыльный кирпич, по всей видимости сделанный из смеси Мракония с каким-то ещё камнем.. Веет холодом.. 
+  suffix: Измерение Забвения 
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/rockwals.rsi
+  - type: Icon
+    sprite: _Horizon/_Fractions/Zabvenie/rockwals.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: IconSmooth
+    key: walls
+    base: necropolis
+
+- type: entity
+  id: BaseRockOblivion
+  name: Обломок Мракония
+  description: Обломок холодного и мрачного камня, вечно окутанного тенью. Кажется или он поглощает свет и тепло, словно живое проклятие.
+  abstract: true
+  components:
+  - type: Clickable
+  - type: Sprite
+    noRot: true
+    sprite: _Horizon/_Fractions/Zabvenie/rockssolid.rsi
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.4
+        density: 1000
+        layer:
+        - HalfWallLayer
+        - Opaque
+  - type: Climbable
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 150
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 75
+        behaviors:
+          - !type:PlaySoundBehavior
+           sound:
+             path: /Audio/Effects/break_stone.ogg
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              RockRysOblivion:
+                min: 1
+                max: 3
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseRockOblivion
+  id: OblivionRockSolid
+  name: Обломок Мракония
+  description: Обломок холодного и мрачного камня, вечно окутанного тенью. Кажется или он поглощает свет и тепло, словно живое проклятие.
+  suffix: Измерение Забвения 
+  components:
+  - type: Sprite
+    layers:
+    - state: rocksolid01
+      map: ["random"]
+  - type: RandomSprite
+    available:
+    - random:
+        rocksolid01: ""
+        rocksolid02: ""
+        rocksolid03: ""
+        rocksolid04: ""
+        rocksolid05: ""
+        rocksolid06: ""
+
+- type: entity
+  parent: BaseRockOblivion
+  id: OblivionRockObelisk
+  name: Обелиск Мракония 
+  description: Высокий и острый обелиск из Мракония. Намного старше чем на вид, при этом скорее всего является природным образованием.. Как минимум на это большая надежда. 
+  suffix: Измерение Забвения 
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Horizon/_Fractions/Zabvenie/rockssolidbig.rsi
+    layers:
+    - state: rocksolid01
+      map: ["random"]
+  - type: RandomSprite
+    available:
+    - random:
+        rocksolid01: ""
+        rocksolid02: ""
+        rocksolid03: ""
+        rocksolid04: ""
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 300
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 150
+        behaviors:
+          - !type:PlaySoundBehavior
+           sound:
+             path: /Audio/Effects/break_stone.ogg
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              OblivionRockSolid:
+                min: 1
+                max: 1
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+
+# region Растения 
+
+- type: entity
+  id: BaseFloraOblivion
+  parent: BaseStructure
+  name: Увядающие
+  description: Растения состоящие из смерти..
+  abstract: true
+  components:
+  - type: Sprite
+    drawdepth: FloorTiles
+  - type: Icon
+    state: full
+  - type: IconSmooth
+    key: full
+    base: carpet_
+  - type: Tag
+    tags:
+    - ForceFixRotations
+  - type: Physics
+    canCollide: false
+  - type: Fixtures
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+  - type: Butcherable
+    butcheringType: Knife
+    butcherDelay: 2
+    spawned:
+    - id: MaterialCloth1
+      amount: 1
+  - type: TrayScanReveal
+
+- type: entity
+  id: OblivionWitherplant
+  name: Увядочник
+  description: Небольшое растения похожее на грибы.. Кажется безопасным? 
+  parent: BaseFloraOblivion
+  suffix: Измерение Забвения 
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/Witherplant.rsi
+  - type: Icon
+    sprite: _Horizon/_Fractions/Zabvenie/Witherplant.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 50
+        
+        behaviors:
+          - !type:PlaySoundBehavior
+           sound:
+             path: /Audio/Effects/break_stone.ogg
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              WitherplantItems:
+                min: 1
+                max: 2
+
+- type: entity
+  id: OblivionShadowsPlant
+  name: Мракоцвет
+  description: Тёмно-фиолетовые цветкообразные растения, при большем рассмотрении напоминают экзотический цветок.
+  parent: BaseFloraOblivion
+  suffix: Измерение Забвения 
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/WShadowplant.rsi
+  - type: Icon
+    sprite: _Horizon/_Fractions/Zabvenie/WShadowplant.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 50
+        
+        behaviors:
+          - !type:PlaySoundBehavior
+           sound:
+             path: /Audio/Effects/break_stone.ogg
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              ShadowsPlantItems:
+                min: 1
+                max: 1
+
+- type: entity
+  parent: BaseItem
+  id: RockRysOblivion
+  name: Осколок Мракония 
+  suffix: Измерение Забвения 
+  description: Небольшой осколок Мракония
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/items/trophies.rsi
+    state: base03
+  - type: StaticPrice
+    price: 3500
+
+# region Мраконевые Спавнеры 
+- type: entity
+  parent: BaseRockOblivion
+  id: OblivionRockSpawnersCrab
+  name: Мраконевая Скульптура 
+  description: Обломок холодного и мрачного камня, вечно окутанного тенью. Кажется или он поглощает свет и тепло, словно живое проклятие.
+  suffix: СпавнКраб | Измерение Забвения 
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Horizon/_Fractions/Zabvenie/Spawners.rsi
+    state: rocksolid01
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 50
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 25
+        behaviors:
+          - !type:PlaySoundBehavior
+           sound:
+             path: /Audio/Effects/break_stone.ogg
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              MobSpawnCrab:
+                min: 1
+                max: 1
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+
+- type: entity
+  parent: [ BaseMob, MobCombat ]
+  id: MobSpawnCrab
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/Spawners.rsi
+    layers:
+    - state: rocksolid02
+  - type: TimedDespawn
+    lifetime: 1
+  - type: SpawnOnDespawn
+    prototype: MobCrabOblivion
+
+
+- type: entity
+  parent: BaseRockOblivion
+  id: OblivionRockSpawnersGolems
+  name: Мраконевая Статуя
+  description: Обломок холодного и мрачного камня, вечно окутанного тенью. Кажется или он поглощает свет и тепло, словно живое проклятие.
+  suffix: СпавнГолем | Измерение Забвения 
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Horizon/_Fractions/Zabvenie/Spawners.rsi
+    state: rocksolid04
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 50
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 25
+        behaviors:
+          - !type:PlaySoundBehavior
+           sound:
+             path: /Audio/Effects/break_stone.ogg
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              MobSpawnGolems:
+                min: 1
+                max: 1
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+
+- type: entity
+  parent: [ BaseMob, MobCombat ]
+  id: MobSpawnGolems
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/Spawners.rsi
+    layers:
+    - state: rocksolid03
+  - type: TimedDespawn
+    lifetime: 1
+  - type: SpawnOnDespawn
+    prototype: MobGolemOblivion
+
+
+
+- type: entity
+  parent: BaseRockOblivion
+  id: OblivionRockSpawnersBoss
+  name: Статуя Павшего 
+  description: Обломок холодного и мрачного камня, вечно окутанного тенью. Кажется или он поглощает свет и тепло, словно живое проклятие.
+  suffix: СпавнГолем | Измерение Забвения 
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Horizon/_Fractions/Zabvenie/rockssolidboss.rsi
+    state: rocksolid
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 75
+        behaviors:
+          - !type:PlaySoundBehavior
+           sound:
+             path: /Audio/Effects/break_stone.ogg
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              MobSpawnBoss:
+                min: 1
+                max: 1
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.9
+        density: 300
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+
+- type: entity
+  parent: [ BaseMob, MobCombat ]
+  id: MobSpawnBoss
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/rockssolidboss.rsi
+    layers:
+    - state: spawn
+  - type: TimedDespawn
+    lifetime: 1
+  - type: SpawnOnDespawn
+    prototype: MobBossOblivions
+
+
+
+
+
+
+
+# region ТЕНЕВОЙ БИОМ
+
+- type: entity
+  id: WallShadowOblivion
+  parent: BaseWall
+  name: Пустотная Порода 
+  description: Зараженная порода мракония пропитанная тенями.. Кажется или камень питает древней силой. Смотря на него вы чувствуете как у вас кружится голова. 
+  suffix: Измерение Забвения 
+  components:
+    - type: Transform
+      noRot: true
+    - type: SoundOnGather
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Metallic
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 300
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+    - type: IconSmooth
+      key: walls
+      mode: NoSprite
+    - type: Icon
+      sprite: _Horizon/_Fractions/Zabvenie/ShadowRock.rsi
+      state: rock
+    - type: MiningScannerViewable
+    - type: SmoothEdge
+    - type: Sprite
+      sprite: _Horizon/_Fractions/Zabvenie/ShadowRock.rsi
+      layers:
+        - state: rock
+        - map: [ "enum.EdgeLayer.South" ]
+          state: rock_south
+        - map: [ "enum.EdgeLayer.East" ]
+          state: rock_east
+        - map: [ "enum.EdgeLayer.North" ]
+          state: rock_north
+        - map: [ "enum.EdgeLayer.West" ]
+          state: rock_west
+
+- type: entity
+  parent: BaseRockOblivion
+  id: OblivionShadowsObelisk
+  name: Мрачный обелиск Мракония 
+  description: По всей видимости зараженный высокий и острый обелиск из Мракония. Намного старше чем на вид, при этом скорее всего является природным образованием.. Как минимум на это большая надежда. 
+  suffix: Бездна | Измерение Забвения 
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Horizon/_Fractions/Zabvenie/ShadowsRockDree.rsi
+    layers:
+    - state: rocksolid01
+      map: ["random"]
+  - type: RandomSprite
+    available:
+    - random:
+        rocksolid01: ""
+        rocksolid02: ""
+        rocksolid03: ""
+        rocksolid04: ""
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 450
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 150
+        behaviors:
+          - !type:PlaySoundBehavior
+           sound:
+             path: /Audio/Effects/demon_attack1.ogg
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              OblivionRockSolid:
+                min: 1
+                max: 1
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseRockOblivion
+  id: OblivionShadowStatue
+  name: Статуя из Мракония
+  description: Необычная статуя изображающая странного героя.. 
+  suffix: Бездна | Измерение Забвения 
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Horizon/_Fractions/Zabvenie/rockStatue.rsi
+    layers:
+    - state: rocksolid01
+      map: ["random"]
+  - type: RandomSprite
+    available:
+    - random:
+        rocksolid01: ""
+        rocksolid02: ""
+        rocksolid03: ""
+        rocksolid04: ""
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 450
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 150
+        behaviors:
+          - !type:PlaySoundBehavior
+           sound:
+             path: /Audio/Effects/demon_attack1.ogg
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              OblivionRockSolid:
+                min: 1
+                max: 1
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseRockOblivion
+  id: OblivionShadowSolid
+  name: Мрачный обломок Мракония
+  description: Покрытый пустотой лбломок холодного и мрачного камня, вечно окутанного тенью. Кажется или он поглощает свет и тепло, словно живое проклятие.
+  suffix: Бездна | Измерение Забвения 
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Horizon/_Fractions/Zabvenie/ShadowRockssolid.rsi
+    layers:
+    - state: rocksolid01
+      map: ["random"]
+  - type: RandomSprite
+    available:
+    - random:
+        rocksolid01: ""
+        rocksolid02: ""
+        rocksolid03: ""
+        rocksolid04: ""
+        rocksolid05: ""
+        rocksolid06: ""
+
+- type: entity
+  id: FloorShadowsEntity
+  name: Пустота
+  description: Неописуемая черная жидкость, на вид довольно холодная, непрозрачная.. Но кажется её может усмирить свет.. 
+  suffix: Бездна | Измерение Забвения 
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: FloorOccluder
+  - type: Transform
+    anchored: true
+  - type: SyncSprite
+  - type: Clickable
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/water.rsi
+    drawdepth: BelowFloor
+    layers:
+      - state: shoreline_water
+  - type: SolutionContainerManager
+    solutions:
+      pool:
+        maxVol: 9999999 #.inf seems to break the whole yaml file, but would definitely be preferable. 
+        reagents:
+        - ReagentId: Water
+          Quantity: 9999999
+  - type: SolutionRegeneration
+    solution: tank
+    generated:
+      reagents:
+      - ReagentId: Water
+        Quantity: 100
+  - type: DrainableSolution
+    solution: pool
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.3
+    sprintSpeedModifier: 0.3
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        layer:
+          - SlipLayer
+        mask:
+          - ItemMask
+        density: 1000
+        hard: false
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepWater
+      params:
+        volume: 8
+  - type: StepTrigger
+    requiredTriggeredSpeed: 0
+    intersectRatio: 0.1
+    blacklist:
+      tags:
+        - Catwalk
+  - type: TileEntityEffect
+    effects:
+    - !type:ExtinguishReaction
+
+- type: entity
+  parent: BaseGateway
+  id: ShadowGate
+  name: Врата Забвения 
+  description: Неизвестные врата из пустоты, кажется или их открытие станет началом отсчёта вашей погибели, сама рама портала дрожжит хотя он и выключен.. А его поверхность отдаёт небольшим поглощающим свет блеском
+  suffix: Бездна | Измерение Забвения 
+  components:
+  - type: ActivatableUI
+    key: enum.GatewayUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.GatewayUiKey.Key:
+        type: GatewayBoundUserInterface
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/Shadowgateway.rsi
+    noRot: true
+    layers:
+    - state: frame
+
+- type: entity
+  parent: BaseGateway
+  id: ShadowGateON
+  name: Врата Забвения 
+  description: Древнее устройство.. Неизвестные врата из пустоты, которые всё ещё испускают энергию. 
+  suffix: Бездна | Измерение Забвения 
+  components:
+  - type: ActivatableUI
+    key: enum.GatewayUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.GatewayUiKey.Key:
+        type: GatewayBoundUserInterface
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/Shadowgateway.rsi
+    noRot: true
+    layers:
+    - state: Shadovsframe
+
+
+- type: entity
+  id: BezdnaShadows
+  name: Пустота 
+  description: Неописуемая черная жидкость, на вид довольно холодная, непрозрачная.. Но кажется её может усмирить свет.. 
+  suffix: Бездна | Измерение Забвения 
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Transform
+    anchored: true
+  - type: Clickable
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/shadows_chasm.rsi
+    drawdepth: BelowFloor
+    layers:
+    - state: chasm
+  - type: Icon
+    sprite: _Horizon/_Fractions/Zabvenie/shadows_chasm.rsi
+    state: full
+  - type: IconSmooth
+    key: chasm
+    additionalKeys:
+    - walls
+    base: chasm
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        layer:
+        - WallLayer
+        mask:
+        - ItemMask
+        density: 1000
+        hard: false
+  - type: Tag
+    tags:
+    - HideContextMenu
+
+- type: entity
+  parent: BezdnaShadows
+  id: FloorBezdnaShadows
+  name: Пустота 
+  description: Неописуемая черная жидкость, на вид довольно холодная, непрозрачная.. Но кажется её может усмирить свет.. 
+  suffix: Бездна | Измерение Забвения 
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/shadows_chasm.rsi
+  - type: Icon
+    sprite: _Horizon/_Fractions/Zabvenie/shadows_chasm.rsi

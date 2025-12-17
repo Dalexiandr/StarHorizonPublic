@@ -1,0 +1,12 @@
+ent-BoxAmmoAC2Ultra = ammo box AC-2 "ultra"
+    .desc = { ent-BaseItem.desc }
+ent-BoxAmmoScattershot = ammo box LBX AC 10 "Scattershot"
+    .desc = { ent-BaseItem.desc }
+ent-BoxAmmoHades = ammo box FNX-99 "Hades"
+    .desc = { ent-BaseItem.desc }
+ent-BoxAmmoSniper = ammo box mHAR-21 "Ma Deuce"
+    .desc = { ent-BaseItem.desc }
+ent-BoxAmmoGranade = universal granade box
+    .desc = { ent-BaseItem.desc }
+ent-BoxPlasmaBox = plasma ammo box
+    .desc = { ent-BaseItem.desc }

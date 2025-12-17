@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "license": "CLA",
+  "copyright": "sprite by TheGypsyBaron",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "eyeball-l"
+    },
+    {
+      "name": "eyeball-r"
+    },
+    {
+      "name": "eyeballs-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "eyeballs-inhand-right",
+      "directions": 4
+    },
+    {
+        "name": "tongue"
+    },
+    {
+      "name": "heart-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "heart-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "heart-on",
+      "delays": [
+        [
+          0.6,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "heart-off"
+    },
+    {
+      "name": "lung-l"
+    },
+    {
+      "name": "lung-r"
+    },
+    {
+      "name": "muscle"
+    },
+    {
+      "name": "stomach"
+    },
+    {
+      "name": "stomach-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "stomach-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "web-gland"
+    },
+    {
+      "name": "brain"
+    },
+    {
+      "name": "kidney-l"
+    },
+    {
+      "name": "kidney-r"
+    },
+    {
+      "name": "liver"
+    },
+    {
+      "name": "brain_world"
+    },
+    {
+      "name": "eyeballs_world"
+    },
+    {
+      "name": "heart-off_world"
+    },
+    {
+      "name": "heart-on_world",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.6
+        ]
+      ]
+    },
+    {
+      "name": "kidney_world"
+    },
+    {
+      "name": "lungs_world"
+    },
+    {
+      "name": "muscle_world"
+    },
+    {
+      "name": "stomach_world"
+    },
+    {
+      "name": "tongue_world"
+    },
+    {
+      "name": "web-gland_world"
+    },
+    {
+      "name": "liver_world"
+    }
+  ]
+}

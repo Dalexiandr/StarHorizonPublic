@@ -1,0 +1,120 @@
+- type: entity
+  parent: BaseItem
+  id: BotanicDNADisk
+  name: диск с ДНК семян
+  description: Диск предназначен для хранения информации о мутациях в семенах.
+  suffix: Horizon
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    layers:
+    - state: datadisk_hydro
+      map: [ "enum.DamageStateVisualLayers.Base" ]
+    - state: datadisk_label
+    - state: datadisk_gene
+  - type: DnaDisk
+
+- type: entity
+  parent: BaseItem
+  id: XenoBioResearchDisk2000
+  name: ксеноядро
+  description: Странная часть ксеноса, которую можно исследовать для получения очков (2000).
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Research/xenobio_disc.rsi
+    state: biodisc
+  - type: ResearchDisk
+    points: 2000
+
+- type: entity
+  parent: BaseItem
+  id: XenoBioResearchDisk5000
+  name: ксеноядро
+  description: Странная часть ксеноса, которую можно исследовать для получения очков (5000).
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Research/xenobio_disc.rsi
+    state: biodisc
+  - type: ResearchDisk
+    points: 5000
+
+- type: entity
+  parent: BaseItem
+  id: XenoBioResearchDisk10000
+  name: ксеноядро
+  description: Странная часть ксеноса, которую можно исследовать для получения очков (10000).
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Research/xenobio_disc.rsi
+    state: biodisc
+  - type: ResearchDisk
+    points: 10000
+
+- type: entity
+  parent: BaseItem
+  id: TechnologyDiscBase
+  abstract: true
+  name: technology disc
+  description: A disk containing some technological data.
+  suffix: Horizon
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    layers:
+    - state: rndmajordisk
+  - type: StaticPrice
+    price: 10000
+
+- type: entity
+  parent: TechnologyDiscBase
+  id: TechnologyDiscAdvancedPKAModules
+  name: technology disc [PKA Modules]
+  description: A disk containing data about PKA Modules.
+
+- type: entity
+  parent: TechnologyDiscBase
+  id: TechnologyDiscDurandTechnology
+  name: technology disc [Durand]
+  description: A disk containing data about Durand Mech.
+
+- type: entity
+  parent: TechnologyDiscBase
+  id: TechnologyDiscPhazonTechnology
+  name: technology disc [Phazon]
+  description: A disk containing data about Phazon Mech.
+
+- type: entity
+  parent: TechnologyDiscBase
+  id: TechnologyDiscArsenalAmmoModules
+  name: technology disc [Ammo Modules]
+  description: A disk containing data about Ammo Modules.
+
+- type: entity
+  parent: TechnologyDiscBase
+  id: TechnologyDiscArsenalAmmunition
+  name: technology disc [Arsenal Ammunition]
+  description: A disk containing data about Arsenal Ammunition.
+
+- type: entity
+  parent: TechnologyDiscBase
+  id: TechnologyDiscHydroponicsDNAManip
+  name: technology disc [DNA Manipulator]
+  description: A disk containing data about Botannical DNA Manipulator.
+
+- type: entity
+  parent: TechnologyDiscBase
+  id: TechnologyDiscUniversalTranslator
+  name: technology disc [Universal Translator]
+  description: A disk containing data about Universal Translator.
+
+- type: entity
+  parent: TechnologyDiscBase
+  id: TechnologyDiscCombatCybernetics
+  name: technology disc [Combat Cybernetics]
+  description: A disk containing data about Combat Cybernetics systems.
+
+- type: entity
+  parent: TechnologyDiscBase
+  id: TechnologyDiscCombatCyborgs
+  name: technology disc [Combat Cyborgs]
+  description: A disk containing data about Combat Cyborg technology.

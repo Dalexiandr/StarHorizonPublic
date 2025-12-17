@@ -1,0 +1,20 @@
+- type: entity
+  name: ножны сабли капитана ИФ
+  id: CaptainSabreHiltPhoenix
+  parent: CaptainSabreHilt
+  description: Немного бесполезно, не так ли?
+  suffix: Феникс, Лидер
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/weapon/FenixSabre/Sheat.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Phoenix/weapon/FenixSabre/Sheat.rsi
+    slots:
+    - BELT
+  - type: ItemSlots
+    slots:
+      item:
+        name: CaptainSabre
+        whitelist:
+          tags:
+          - CaptainSabre

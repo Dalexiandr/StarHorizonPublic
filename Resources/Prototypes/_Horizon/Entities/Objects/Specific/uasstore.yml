@@ -1,0 +1,428 @@
+# валюта
+- type: currency
+  id: CitadelCoin
+  displayName: ТЗ
+  cash:
+    1: CitadelCoin1
+  canWithdraw: true
+
+- type: stack
+  id: CitadelCoin
+  name: токен запроса
+  icon: _Horizon/Objects/Specific/UAS/uascoin.rsi
+  spawn: CitadelCoin1
+
+- type: entity
+  parent: CitadelCoin
+  id: CitadelCoin1
+  suffix: StarHorizon, UAS, 1 TЗ
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  name: токен запроса
+  parent: [BaseItem, BaseUASContraband]
+  categories: [ HideSpawnMenu ]
+  id: CitadelCoin
+  suffix: StarHorizon, UAS, 20 TЗ
+  description: Кажется, он пульсирует подозрительно манящей энергией.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/UAS/uascoin.rsi
+    state: uascoin
+  - type: Item
+    sprite: _Horizon/Objects/Specific/UAS/uascoin.rsi
+    size: Tiny
+  - type: Stack
+    count: 20
+    stackType: CitadelCoin
+  - type: StaticPrice
+    price: 0
+  - type: StackPrice
+    price: 200
+  - type: Currency
+    price:
+      CitadelCoin: 1
+# конец валюты
+# категории
+- type: entity
+  id: UASStore
+  abstract: true
+  components:
+  - type: Store
+    name: Консоль Запроса
+    categories:
+    - UASUplinkWeaponry
+    - UASUplinkAmmo
+    - UASUplinkExplosives
+    - UASUplinkChemicals
+    - UASUplinkPointless
+    - UASUplinkDisruption
+    - UASUplinkWearables
+    - UASUplinkKit
+    currencyWhitelist:
+    - CitadelCoin
+
+- type: storeCategory
+  id: UASUplinkWeaponry
+  name: store-category-weapons
+  priority: 0
+
+- type: storeCategory
+  id: UASUplinkWearables
+  name: store-category-wearables
+  priority: 1
+
+- type: storeCategory
+  id: UASUplinkAmmo
+  name: store-category-ammo
+  priority: 2
+
+- type: storeCategory
+  id: UASUplinkExplosives
+  name: store-category-explosives
+  priority: 3
+
+- type: storeCategory
+  id: UASUplinkChemicals
+  name: store-category-chemicals
+  priority: 4
+
+- type: storeCategory
+  id: UASUplinkDisruption
+  name: store-category-disruption
+  priority: 5
+
+- type: storeCategory
+  id: UASUplinkKit
+  name: Наборы
+  priority: 6
+
+- type: storeCategory
+  id: UASUplinkPointless
+  name: store-category-pointless
+  priority: 10
+
+#  товары
+
+# безделушки
+
+- type: listing
+  id: UASBoxStoreUniform
+  name: Набор одежды агента UAS
+  description: Ящик, содержащий набор униформы агента UAS.
+  productEntity: UASBoxStoreUniform
+  icon: { sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/uasuniform.rsi, state: icon }
+  discountCategory: usualDiscounts
+  discountDownTo:
+    CitadelCoin: 2
+  cost:
+    CitadelCoin: 5
+  categories:
+  - UASUplinkPointless
+
+- type: listing
+  id: UASBoxStoreAccessory
+  name: Набор аксессуаров UAS
+  description: Ящик, содержащий набор аксессуаров UAS.
+  productEntity: UASBoxStoreAccessory
+  icon: { sprite: _StarHorizon/Clothing/Neck/Cloaks/uascloak.rsi, state: icon }
+  discountCategory: usualDiscounts
+  discountDownTo:
+    CitadelCoin: 2
+  cost:
+    CitadelCoin: 5
+  categories:
+  - UASUplinkPointless
+
+# вооружение
+
+- type: listing
+  id: UASBoxStoreLasGun
+  name: Набор с модифицированным ПП
+  description: Ящик, содержащий модифицированный ПП UAS.
+  productEntity: UASBoxStoreLasGun
+  icon: { sprite: _StarHorizon/Objects/Weapons/Guns/Battery/uasmachinegun.rsi, state: icon }
+  discountCategory: usualDiscounts
+  discountDownTo:
+    CitadelCoin: 2
+  cost:
+    CitadelCoin: 5
+  categories:
+  - UASUplinkWeaponry
+
+- type: listing
+  id: UASBoxStoreLasGunKnight
+  name: Набор с лазерной винтовкой
+  description: Ящик, содержащий лазерную винтовку UAS.
+  productEntity: UASBoxStoreLasGunKnight
+  icon: { sprite: _StarHorizon/Objects/Weapons/Guns/Battery/uasriflegun.rsi, state: icon }
+  discountCategory: usualDiscounts
+  discountDownTo:
+    CitadelCoin: 2
+  cost:
+    CitadelCoin: 5
+  categories:
+  - UASUplinkWeaponry
+
+- type: listing
+  id: UASBoxStoreUASSword
+  name: Энергетический EFS меч
+  description: Сегментированный меч, созданный чтобы нарезать врагов на такие же сегменты.
+  productEntity: UASSword
+  icon: { sprite: _StarHorizon/Objects/Weapons/Melee/uassword.rsi, state: icon }
+  discountCategory: usualDiscounts
+  discountDownTo:
+    CitadelCoin: 2
+  cost:
+    CitadelCoin: 15
+  categories:
+  - UASUplinkWeaponry
+
+- type: listing
+  id: UASBoxStoreWeaponLaserMinigunUAS
+  name: Энергетический пулемет
+  description: Энергетический пулемет с огромным боевым потенциалом.
+  productEntity: WeaponLaserMinigunUAS
+  icon: { sprite: _StarHorizon/Objects/Weapons/Guns/Battery/uasminigun.rsi, state: icon }
+  discountCategory: usualDiscounts
+  discountDownTo:
+    CitadelCoin: 2
+  cost:
+    CitadelCoin: 30
+  categories:
+  - UASUplinkWeaponry
+
+- type: listing
+  id: UASBoxStoreWeaponLaserGranadeUAS
+  name: Энергетический гранатомет
+  description: Энергетический гранатомет с огромным боевым потенциалом.
+  productEntity: WeaponLaserGranadeUAS
+  icon: { sprite: _StarHorizon/Objects/Weapons/Guns/Battery/uasgranadegun.rsi, state: icon }
+  discountCategory: usualDiscounts
+  discountDownTo:
+    CitadelCoin: 2
+  cost:
+    CitadelCoin: 30
+  categories:
+  - UASUplinkWeaponry
+
+# саботаж
+
+- type: listing
+  id: UASBoxStoreHack
+  name: Набор для взлома
+  description: Ящик, содержащий набор для взлома шлюзов.
+  productEntity: UASBoxStoreHack
+  icon: { sprite: _Horizon/Objects/Tools/uasomegatool.rsi, state: icon }
+  discountCategory: usualDiscounts
+  discountDownTo:
+    CitadelCoin: 2
+  cost:
+    CitadelCoin: 10
+  categories:
+  - UASUplinkDisruption
+
+#- type: listing
+#  id: UASBoxStoreBug
+#  name: Набор с жуками
+#  description: Ящик, содержащий набор из 4 жуков и комбинезон.
+#  productEntity: UASBoxStoreBug
+#  icon: { sprite: _Horizon/Mobs/Elemental/uasbot.rsi, state: icon }
+#  discountCategory: usualDiscounts
+#  discountDownTo:
+#    CitadelCoin: 2
+#  cost:
+#    CitadelCoin: 10
+#  categories:
+#  - UASUplinkDisruption
+
+- type: listing
+  id: UASBoxStoreStun
+  name: Набор c нелетальным снаряжением
+  description: Ящик, содержащий набор c нелетальным снаряжением.
+  productEntity: UASBoxStoreStun
+  icon: { sprite: _Horizon/Objects/Misc/uashandcuffs.rsi, state: handcuff }
+  discountCategory: usualDiscounts
+  discountDownTo:
+    CitadelCoin: 2
+  cost:
+    CitadelCoin: 10
+  categories:
+  - UASUplinkDisruption
+
+# наборы
+
+- type: listing
+  id: UASStoreOfficer
+  name: Набор экипировки Офицера
+  description: Маяк для запроса шкафа с снаряжением Офицера. Содержит в себе снаряжение и вооружение.
+  productEntity: UASBombOfficer
+  icon: { sprite: _StarHorizon/Clothing/OuterClothing/Vests/uasvest.rsi, state: icon }
+  discountCategory: usualDiscounts
+  discountDownTo:
+    CitadelCoin: 2
+  cost:
+    CitadelCoin: 40
+  categories:
+  - UASUplinkKit
+
+- type: listing
+  id: UASStoreSpider
+  name: Набор экипировки Паука
+  description: Маяк для запроса шкафа с снаряжением Паука. Содержит в себе снаряжение и вооружение.
+  productEntity: UASBombSpider
+  icon: { sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/uasspider.rsi, state: icon }
+  discountCategory: usualDiscounts
+  discountDownTo:
+    CitadelCoin: 2
+  cost:
+    CitadelCoin: 50
+  categories:
+  - UASUplinkKit
+
+- type: listing
+  id: UASStoreKnight
+  name: Набор экипировки Рыцаря
+  description: Маяк для запроса шкафа с снаряжением Рыцаря. Содержит в себе снаряжение и вооружение.
+  productEntity: UASBombKnight
+  icon: { sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/uasknight.rsi, state: icon }
+  discountCategory: usualDiscounts
+  discountDownTo:
+    CitadelCoin: 2
+  cost:
+    CitadelCoin: 60
+  categories:
+  - UASUplinkKit
+
+# Химия
+
+#- type: listing
+#  id: UASStoreCombatMedipenUAS
+#  name: Боевой медипен
+#  description: Медипен, предназначен для лечения обширных повреждений. Внимание, может вызвать рвоту.
+#  productEntity: CombatMedipenUAS
+#  icon: { sprite: _Horizon/Objects/Specific/Medical/uasmedipen.rsi, state: omega }
+#  discountCategory: usualDiscounts
+#  discountDownTo:
+#    CitadelCoin: 2
+#  cost:
+#    CitadelCoin: 5
+#  categories:
+#  - UASUplinkChemicals
+
+#- type: listing
+#  id: UASStoreNanitMedipenUAS
+#  name: Нанитовый медипен
+#  description: Медипен, содержащий наниты. Используйте на свой страх и риск.
+#  productEntity: NanitMedipenUAS
+#  icon: { sprite: _Horizon/Objects/Specific/Medical/uasmedipen.rsi, state: omega }
+#  discountCategory: usualDiscounts
+#  discountDownTo:
+#    CitadelCoin: 2
+#  cost:
+#    CitadelCoin: 10
+#  categories:
+#  - UASUplinkChemicals
+
+#- type: listing
+#  id: UASStoreReliableContainerUASnanits
+#  name: Контейнер с нанитами
+#  description: Сверхпрочный контейнер хранящий в себе нанитов.
+#  productEntity: ReliableContainerUASnanits
+#  icon: { sprite: _Horizon/Objects/Specific/Chemistry/uascontainer.rsi, state: container }
+#  discountCategory: usualDiscounts
+#  discountDownTo:
+#    CitadelCoin: 2
+#  cost:
+#    CitadelCoin: 40
+#  categories:
+#  - UASUplinkChemicals
+
+#  снаряжение
+
+- type: listing
+  id: UASStoreClothingEyesGlassesUAS
+  name: Очки офицера UAS
+  description: Улучшенные очки, обеспечивающие защиту от вспышек и предоставляющие интерфейс Службы Безопасности.
+  productEntity: ClothingEyesGlassesUAS
+  icon: { sprite: _StarHorizon/Clothing/Eyes/uasglasseshud.rsi, state: icon }
+  discountCategory: usualDiscounts
+  discountDownTo:
+    CitadelCoin: 2
+  cost:
+    CitadelCoin: 5
+  categories:
+  - UASUplinkWearables
+
+- type: listing
+  id: UASStoreClothingHeadsetUAS
+  name: Гарнитура UAS
+  description: Гарнитура с каналол связи UAS.
+  productEntity: ClothingHeadsetUAS
+  icon: { sprite: _StarHorizon/Clothing/Headset/uasears.rsi, state: icon }
+  discountCategory: usualDiscounts
+  discountDownTo:
+    CitadelCoin: 2
+  cost:
+    CitadelCoin: 15
+  categories:
+  - UASUplinkWearables
+
+- type: listing
+  id: UASStoreUASClothingShoesBootsMag
+  name: Магнитные сапоги
+  description: Ботинки облегчённой конструкции. Обладают продвинутой системой магнитов.
+  productEntity: UASClothingShoesBootsMag
+  icon: { sprite: _StarHorizon/Clothing/Shoes/Boots/uasmagboots.rsi, state: icon }
+  discountCategory: usualDiscounts
+  discountDownTo:
+    CitadelCoin: 2
+  cost:
+    CitadelCoin: 5
+  categories:
+  - UASUplinkWearables
+
+- type: listing
+  id: UASStoreUASVests
+  name: Бронежилет
+  description: Бронежилет из Казмия с прослойкой из EFS.
+  productEntity: UASVests
+  icon: { sprite: _StarHorizon/Clothing/OuterClothing/Vests/uasvest.rsi, state: icon }
+  discountCategory: usualDiscounts
+  discountDownTo:
+    CitadelCoin: 2
+  cost:
+    CitadelCoin: 10
+  categories:
+  - UASUplinkWearables
+
+- type: listing
+  id: UASStoreClothingOuterHardsuitSpider
+  name: Скафандр Паука
+  description: Скафандр, созданный из продвинутых композитов и предназначенный для боевых миссий.
+  productEntity: ClothingOuterHardsuitSpider
+  icon: { sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/uasspider.rsi, state: icon }
+  discountCategory: usualDiscounts
+  discountDownTo:
+    CitadelCoin: 2
+  cost:
+    CitadelCoin: 20
+  categories:
+  - UASUplinkWearables
+
+- type: listing
+  id: UASStoreClothingOuterHardsuitKnight
+  name: Скафандр Рыцаря
+  description: Это как доспехи, только герметичные.
+  productEntity: ClothingOuterHardsuitKnight
+  icon: { sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/uasknight.rsi, state: icon }
+  discountCategory: usualDiscounts
+  discountDownTo:
+    CitadelCoin: 2
+  cost:
+    CitadelCoin: 30
+  categories:
+  - UASUplinkWearables

@@ -1,0 +1,107 @@
+# Base prototypes can be found in \Resources\Prototypes\Recipes\Lathes\security.yml
+
+# Recipes
+
+- type: latheRecipe
+  id: ClothingEyesVision
+  result: ClothingEyesVision
+  completetime: 5
+  materials:
+    Steel: 300
+    Glass: 100
+    Plastic: 200
+
+- type: latheRecipe
+  id: ClothingEyesVisionSec
+  result: ClothingEyesVisionSec
+  completetime: 5
+  materials:
+    Steel: 300
+    Glass: 100
+    Plastic: 200
+
+# Ammo Boxes
+#region .35 Ammo Box
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: NFAmmunitionBoxPistol35Piercing
+  result: NFAmmunitionBoxPistol35Piercing
+  materials:
+    Plastic: 600 # box - free, 80 [bullets] * 7.5 [Plastic per bullet]
+    Titan: 600 # box - free, 80 [bullets] * 7.5 [Titanium per bullet]
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: NFAmmunitionBoxPistol35Psycore
+  result: NFAmmunitionBoxPistol35Psycore
+  materials:
+    Plastic: 600 # box - free, 80 [bullets] * 7.5 [Plastic per bullet]
+    Psycore: 600 # box - free, 80 [bullets] * 7.5 [Psycore per bullet]
+
+#region .45 Ammo Box
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: NFAmmunitionBoxPistol45Piercing
+  result: NFAmmunitionBoxPistol45Piercing
+  materials:
+    Plastic: 600 # box - free, 80 [bullets] * 7.5 [Plastic per bullet]
+    Titan: 600 # box - free, 80 [bullets] * 7.5 [Titanium per bullet]
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: NFAmmunitionBoxPistol45Psycore
+  result: NFAmmunitionBoxPistol45Psycore
+  materials:
+    Plastic: 600 # box - free, 80 [bullets] * 7.5 [Plastic per bullet]
+    Psycore: 600 # box - free, 80 [bullets] * 7.5 [Psycore per bullet]
+
+#region .20 Ammo Box
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: NFAmmunitionBoxRifle20Piercing
+  result: NFAmmunitionBoxRifle20Piercing
+  materials:
+    Plastic: 600 # box - free, 80 [bullets] * 7.5 [Plastic per bullet]
+    Titan: 600 # box - free, 80 [bullets] * 7.5 [Titanium per bullet]
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: NFAmmunitionBoxRifle20Psycore
+  result: NFAmmunitionBoxRifle20Psycore
+  materials:
+    Plastic: 600 # box - free, 80 [bullets] * 7.5 [Plastic per bullet]
+    Psycore: 600 # box - free, 80 [bullets] * 7.5 [Psycore per bullet]
+
+#region .30 Ammo Box
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: NFAmmunitionBoxRifle30Piercing
+  result: NFAmmunitionBoxRifle30Piercing
+  materials:
+    Plastic: 600 # box - free, 80 [bullets] * 7.5 [Plastic per bullet]
+    Titan: 600 # box - free, 80 [bullets] * 7.5 [Titanium per bullet]
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: NFAmmunitionBoxRifle30Psycore
+  result: NFAmmunitionBoxRifle30Psycore
+  materials:
+    Plastic: 600 # box - free, 80 [bullets] * 7.5 [Plastic per bullet]
+    Psycore: 600 # box - free, 80 [bullets] * 7.5 [Psycore per bullet]
+
+#region .50 Ammo Box
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: NFAmmunitionBoxShellShotgunPiercing
+  result: NFAmmunitionBoxShellShotgunPiercing
+  materials:
+    Plastic: 300 # box - free, 20 [bullets] * 15 [Plastic per bullet]
+    Titan: 300 # box - free, 20 [bullets] * 15 [Titanium per bullet]
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: NFAmmunitionBoxShellShotgunPsycore
+  result: NFAmmunitionBoxShellShotgunPsycore
+  materials:
+    Plastic: 300 # box - free, 20 [bullets] * 15 [Plastic per bullet]
+    Psycore: 300 # box - free, 20 [bullets] * 15 [Psycore per bullet]

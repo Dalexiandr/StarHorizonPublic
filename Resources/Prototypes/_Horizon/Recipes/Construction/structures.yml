@@ -1,0 +1,36 @@
+- type: construction
+  id: FloorDrainRecipe
+  graph: floordrain
+  startNode: start
+  targetNode: floordrain
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: true
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: AirlockExternal
+  graph: AirlockExternal
+  startNode: start
+  targetNode: airlock
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked
+
+- type: construction
+  id: AirlockExternalGlass
+  graph: AirlockExternal
+  startNode: start
+  targetNode: airlockGlass
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked

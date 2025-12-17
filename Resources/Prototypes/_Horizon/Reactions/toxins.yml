@@ -1,0 +1,41 @@
+- type: reaction
+  id: ExtractW
+  reactants:
+    XenoidAcidW:
+      amount: 10
+    Acetone:
+      amount: 1
+    Water:
+      amount: 1
+    SodiumCarbonate:
+      amount: 1
+  products:
+    ExtractW: 1
+
+- type: reaction
+  id: ExtractH
+  reactants:
+    XenoidAcidH:
+      amount: 10
+    Acetone:
+      amount: 1
+    Water:
+      amount: 1
+    SodiumCarbonate:
+      amount: 1
+  products:
+    ExtractH: 1
+
+- type: reaction
+  id: ExtractK
+  reactants:
+    XenoidAcidK:
+      amount: 10
+    Acetone:
+      amount: 1
+    Water:
+      amount: 1
+    SodiumCarbonate:
+      amount: 1
+  products:
+    ExtractK: 1

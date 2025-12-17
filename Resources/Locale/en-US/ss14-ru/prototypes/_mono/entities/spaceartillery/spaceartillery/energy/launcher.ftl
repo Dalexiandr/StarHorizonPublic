@@ -1,0 +1,15 @@
+ent-WeaponTurretType35 = Type-35 MARAUDER-type plasma cannon
+    .desc = Launches magnetically contained balls of plasma at targets. Can be remotely activated, or linked up to a GCS.
+ent-WeaponTurretType54 = Type-54C plasma autopulser
+    .desc = A rapidly firing energy weapon, dealing a large amount of damage to its targets. Takes a long time to recharge.
+    .suffix = TSF ONLY, ADS ONLY
+ent-WeaponTurretType241 = Type-241 plasma lance
+    .desc = A devastating weapon, usually used for large scale fire support and strategic destruction.
+    .suffix = TSF ONLY, ADS ONLY
+ent-WeaponTurretM25 = M25 mining pulser
+    .desc = Uses mechanisms to launch... something. Destroys rock easily.
+ent-WeaponTurretM220 = M220 RUBICON EMP launcher
+    .desc = Launches EMP projectiles at ships, disabling systems with powerful electromagnetic pulses. Ideal for non-lethal engagements and can be remotely activated or linked to a GCS.
+ent-WeaponTurretDymere = ADEX-9 DYMERE Turbolaser
+    .desc = Aetherion Dynamics' most iconic supercapital battery. Fires enormous ionized gas projectiles that melt through the toughest ship armor. Can be remotely activated or linked to a GCS.
+    .suffix = TSF ONLY, ADS ONLY

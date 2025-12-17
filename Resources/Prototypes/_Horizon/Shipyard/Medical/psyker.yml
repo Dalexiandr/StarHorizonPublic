@@ -1,0 +1,43 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: -Matrix- & ZuckerImKaffee
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: Psyker
+  parent: BaseVessel
+  name: NRZN Psyker
+  description: Шаттл для профессиональных психологов. Имеет простую химическую лобораторию и раздельный изолятор на двух больных.
+  price: 57000 # 43597, наценка верфи 30% = 56676
+  category: Medium
+  group: Medical
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/Medical/psyker.yml  
+  class:
+  - Medical
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: Psyker
+  mapName: 'NRZN Pcyker'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/Medical/psyker.yml
+  minPlayers: 0
+  stations:
+    Psyker:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Psyker {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

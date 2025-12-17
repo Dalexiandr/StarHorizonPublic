@@ -1,0 +1,37 @@
+- type: latheRecipe
+  id: BorgModuleAdvancedParamedic
+  result: BorgModuleAdvancedParamedic
+  parent: BaseGoldBorgModuleRecipe
+  materials:
+    Steel: 500
+    Glass: 500
+    Plastic: 250
+    Gold: 50
+    Bluespace: 100
+
+- type: latheRecipe
+  id: BorgModuleJetpack
+  result: BorgModuleJetpack
+  parent: BaseBorgModuleRecipe
+  materials:
+    Steel: 500
+    Glass: 500
+    Plastic: 250
+    Gold: 50
+
+- type: latheRecipe
+  parent: BaseBorgModuleRecipe
+  id: BorgModuleRCD
+  result: BorgModuleRCD
+  completetime: 8
+  materials:
+    Steel: 1500
+    Plastic: 500
+    Uranium: 400
+    Gold: 300
+    Bluespace: 150
+
+- type: latheRecipe
+  parent: BaseBorgModuleRecipe
+  id: BorgModuleChef
+  result: BorgModuleChef

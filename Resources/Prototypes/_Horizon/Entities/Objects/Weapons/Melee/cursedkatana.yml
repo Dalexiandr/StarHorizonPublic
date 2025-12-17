@@ -1,0 +1,30 @@
+﻿- type: entity
+  parent: Katana
+  id: CursedKatana
+  name: проклятая катана
+  description: Проклятая катана, способная поглощать силу врагов. Используйте её осторожно, или станете её жертвой.
+  suffix: Horizon, катана синдиката.
+  components:
+  - type: CursedKatana
+  - type: Sprite
+    sprite: _Horizon/Objects/Weapons/Melee/cursedkatana.rsi
+  - type: Item
+    size: Normal
+    sprite: _Horizon/Objects/Weapons/Melee/cursedkatana.rsi
+  - type: MeleeWeapon
+    attackRate: 1.2
+    damage:
+      types:
+        Slash: 12
+    soundSwing: /Audio/_Horizon/Weapons/Melee/katanaswipe.ogg
+    soundHit: /Audio/_Horizon/Weapons/Melee/katanahit.ogg
+    wideAnimationRotation: -135
+  - type: Reflect
+    reflectProb: 0.15
+  - type: Tag
+    tags:
+    - CursedKatana
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 15

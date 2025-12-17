@@ -1,0 +1,29 @@
+{
+    "version": 1,
+    "license": "CLA with hosting restrictions",
+    "copyright": "Sprited by Xigovir DS:623559319543349268",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+    {
+      "name": "radio-strike"
+    },
+    {
+      "name": "radio-strike-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "radio-strike-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "radio-strike-off"
+    },
+    {
+      "name": "radio-strike-on"
+    }
+  ]
+}
+

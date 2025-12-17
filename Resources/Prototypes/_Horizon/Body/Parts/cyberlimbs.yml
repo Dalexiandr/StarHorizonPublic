@@ -1,0 +1,1019 @@
+﻿# region Base Cyber Parts
+
+- type: entity
+  id: PartCyber
+  parent: [BaseItem, BasePart]
+  name: "cyber body part"
+  abstract: true
+  components:
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Iron
+        Quantity: 30
+
+# region Standard
+
+- type: entity
+  id: LeftArmCyber
+  name: "left cyber arm"
+  parent: [PartCyber, BaseLeftArm]
+  components:
+    - type: BaseLayerId
+      layer: CyberLArm
+    - type: Sprite
+      sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "l_arm"
+    - type: Icon
+      sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "l_arm"
+
+- type: entity
+  id: RightArmCyber
+  name: "right cyber arm"
+  parent: [PartCyber, BaseRightArm]
+  components:
+    - type: BaseLayerId
+      layer: CyberRArm
+    - type: Sprite
+      sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "r_arm"
+    - type: Icon
+      sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "r_arm"
+
+- type: entity
+  id: LeftHandCyber
+  name: "left cyber hand"
+  parent: [PartCyber, BaseLeftHand]
+  components:
+    - type: BaseLayerId
+      layer: CyberLHand
+    - type: Sprite
+      sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "l_hand"
+    - type: Icon
+      sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "l_hand"
+
+- type: entity
+  id: RightHandCyber
+  name: "right cyber hand"
+  parent: [PartCyber, BaseRightHand]
+  components:
+    - type: BaseLayerId
+      layer: CyberRHand
+    - type: Sprite
+      sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "r_hand"
+    - type: Icon
+      sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "r_hand"
+
+- type: entity
+  id: LeftLegCyber
+  name: "left cyber leg"
+  parent: [PartCyber, BaseLeftLeg]
+  components:
+    - type: BaseLayerId
+      layer: CyberLLeg
+    - type: Sprite
+      sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "l_leg"
+    - type: Icon
+      sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "l_leg"
+
+- type: entity
+  id: RightLegCyber
+  name: "right cyber leg"
+  parent: [PartCyber, BaseRightLeg]
+  components:
+    - type: BaseLayerId
+      layer: CyberRLeg
+    - type: Sprite
+      sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "r_leg"
+    - type: Icon
+      sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "r_leg"
+
+- type: entity
+  id: LeftFootCyber
+  name: "left cyber foot"
+  parent: [PartCyber, BaseLeftFoot]
+  components:
+    - type: BaseLayerId
+      layer: CyberLFoot
+    - type: Sprite
+      sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "l_foot"
+    - type: Icon
+      sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "l_foot"
+
+- type: entity
+  id: RightFootCyber
+  name: "right cyber foot"
+  parent: [PartCyber, BaseRightFoot]
+  components:
+    - type: BaseLayerId
+      layer: "CyberRFoot"
+    - type: Sprite
+      sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "r_foot"
+    - type: Icon
+      sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "r_foot"
+
+# region Medical
+
+- type: entity
+  id: LeftArmCyberReaper
+  name: "left reaper arm"
+  parent: [PartCyber, BaseLeftArm]
+  components:
+    - type: BaseLayerId
+      layer: CyberLArmSilver
+    - type: BaseLayerIdToggled
+      layer: CyberLArmSilverReaper
+    - type: Sprite
+      sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "l_silver_arm"
+    - type: Icon
+      sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "l_silver_arm"
+    - type: LimbWithItems
+      action: ActionToggleCyberHandLeft
+      sound:
+        path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+      items:
+        - ScalpelCyber
+        - RetractorCyber
+        - CauteryCyber
+        - DrillCyber
+        - SawCyber
+        - HemostatCyber
+        - BoneSetterCyber
+
+- type: entity
+  id: RightArmCyberReaper
+  name: "right reaper arm"
+  parent: [PartCyber, BaseRightArm]
+  components:
+    - type: BaseLayerId
+      layer: CyberRArmSilver
+    - type: BaseLayerIdToggled
+      layer: CyberRArmSilverReaper
+    - type: Sprite
+      sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "r_silver_arm"
+    - type: Icon
+      sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "r_silver_arm"
+    - type: LimbWithItems
+      action: ActionToggleCyberHandRight
+      sound:
+        path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+      items:
+        - ScalpelCyber
+        - RetractorCyber
+        - CauteryCyber
+        - DrillCyber
+        - SawCyber
+        - HemostatCyber
+        - BoneSetterCyber
+
+# region Engineering
+
+- type: entity
+  id: LeftArmCyberMechwright
+  name: "left mechwright arm"
+  parent: [PartCyber, BaseLeftArm]
+  components:
+    - type: BaseLayerId
+      layer: CyberLArmSteel
+    - type: BaseLayerIdToggled
+      layer: CyberLArmSteelMechwright
+    - type: Sprite
+      sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "l_steel_arm"
+    - type: Icon
+      sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "l_steel_arm"
+    - type: LimbWithItems
+      action: ActionToggleCyberHandLeft
+      sound:
+        path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+      items:
+        - WrenchCyber
+        - ScrewdriverCyber
+        - CrowbarCyber
+        - WirecutterCyber
+        - WelderCyber
+
+- type: entity
+  id: RightArmCyberMechwright
+  name: "right mechwright arm"
+  parent: [PartCyber, BaseRightArm]
+  components:
+    - type: BaseLayerId
+      layer: CyberRArmSteel
+    - type: BaseLayerIdToggled
+      layer: CyberRArmSteelMechwright
+    - type: Sprite
+      sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "r_steel_arm"
+    - type: Icon
+      sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "r_steel_arm"
+    - type: LimbWithItems
+      action: ActionToggleCyberHandRight
+      sound:
+        path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+      items:
+        - WrenchCyber
+        - ScrewdriverCyber
+        - CrowbarCyber
+        - WirecutterCyber
+        - WelderCyber
+
+# region Advanced Engineering
+
+- type: entity
+  id: LeftArmCyberEngi
+  name: "left techpriest arm"
+  parent: [PartCyber, BaseLeftArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberLArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberLArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandLeft
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - Multitool
+    - WelderIndustrial
+    - MaintenanceJack
+    - JawsOfLife
+    - PowerDrill
+    - MaintenanceJack
+
+- type: entity
+  id: RightArmCyberEngi
+  name: "right techpriest arm"
+  parent: [PartCyber, BaseRightArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberRArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberRArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandRight
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - Multitool
+    - WelderIndustrial
+    - MaintenanceJack
+    - JawsOfLife
+    - PowerDrill
+    - MaintenanceJack
+
+# region Atmospheric
+
+- type: entity
+  id: LeftArmCyberAtmos
+  name: "left plasmascience arm"
+  parent: [PartCyber, BaseLeftArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberLArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberLArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandLeft
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - Multitool
+    - Crowbar
+    - Wrench
+    - Screwdriver
+    - Wirecutter
+    - MaintenanceJack
+    - GasAnalyzer
+    - GeigerCounter
+
+- type: entity
+  id: RightArmCyberAtmos
+  name: "right plasmascience arm"
+  parent: [PartCyber, BaseRightArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberRArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberRArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandRight
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - Multitool
+    - Crowbar
+    - Wrench
+    - Screwdriver
+    - Wirecutter
+    - MaintenanceJack
+    - GasAnalyzer
+    - GeigerCounter
+
+# region Mining
+
+- type: entity
+  id: LeftArmCyberAstro
+  name: "left astro arm"
+  parent: [PartCyber, BaseLeftArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberLArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberLArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandLeft
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - HandheldGPSBasic
+    - HandHeldMassScannerBorg
+    - RadioHandheldNF
+    - MineralScannerUnpowered
+    - Crowbar
+    - MiningDrill
+
+- type: entity
+  id: RightArmCyberAstro
+  name: "right astro arm"
+  parent: [PartCyber, BaseRightArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberRArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberRArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandRight
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - HandheldGPSBasic
+    - HandHeldMassScannerBorg
+    - RadioHandheldNF
+    - MineralScannerUnpowered
+    - Crowbar
+    - MiningDrill
+
+# region Hydroponics
+
+- type: entity
+  id: LeftArmCyberGarden
+  name: "left garden arm"
+  parent: [PartCyber, BaseLeftArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberLArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberLArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandLeft
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - HydroponicsToolMiniHoe
+    - HydroponicsToolClippers
+    - HydroponicsToolScythe
+    - HydroponicsToolSpade
+    - HydroponicsToolHatchet
+
+- type: entity
+  id: RightArmCyberGarden
+  name: "right garden arm"
+  parent: [PartCyber, BaseRightArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberRArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberRArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandRight
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - HydroponicsToolMiniHoe
+    - HydroponicsToolClippers
+    - HydroponicsToolScythe
+    - HydroponicsToolSpade
+    - HydroponicsToolHatchet
+
+# region Basic Combat Limbs
+
+# Sawn Shotgun Arms
+- type: entity
+  id: LeftArmProtoCyberWeaponShotgunSawn
+  name: "left proto sawn shotgun arm"
+  parent: [PartCyber, BaseLeftArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberLArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberLArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandLeft
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - CyberWeaponShotgunSawn
+
+- type: entity
+  id: RightArmProtoCyberWeaponShotgunSawn
+  name: "right proto sawn shotgun arm"
+  parent: [PartCyber, BaseRightArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberRArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberRArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandRight
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - CyberWeaponShotgunSawn
+
+# Energy Pistol Laser Arms
+
+- type: entity
+  id: LeftArmProtoCyberWeaponEnergyPistolLaser
+  name: "left proto energy laser pistol arm"
+  parent: [PartCyber, BaseLeftArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberLArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberLArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandLeft
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - CyberWeaponEnergyPistolLaser
+
+- type: entity
+  id: RightArmProtoCyberWeaponEnergyPistolLaser
+  name: "right proto energy laser pistol arm"
+  parent: [PartCyber, BaseRightArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberRArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberRArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandRight
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - CyberWeaponEnergyPistolLaser
+
+# PKA Sawn Arms
+
+- type: entity
+  id: LeftArmProtoCyberWeaponPkaSawn
+  name: "left proto sawn pka arm"
+  parent: [PartCyber, BaseLeftArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberLArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberLArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandLeft
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - CyberWeaponPkaSawn
+
+- type: entity
+  id: RightArmProtoCyberWeaponPkaSawn
+  name: "right proto sawn pka arm"
+  parent: [PartCyber, BaseRightArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberRArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberRArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandRight
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - CyberWeaponPkaSawn
+
+# Energy Pistol Disabler Arms
+
+- type: entity
+  id: LeftArmProtoCyberWeaponEnergyPistolDisabler
+  name: "left proto energy disabler pistol arm"
+  parent: [PartCyber, BaseLeftArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberLArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberLArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandLeft
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - CyberWeaponEnergyPistolDisabler
+
+- type: entity
+  id: RightArmProtoCyberWeaponEnergyPistolDisabler
+  name: "right proto energy disabler pistol arm"
+  parent: [PartCyber, BaseRightArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberRArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberRArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandRight
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - CyberWeaponEnergyPistolDisabler
+
+# region Advanced Combat Limbs
+
+# Proto Kinetic Accelerator Arms
+
+- type: entity
+  id: LeftArmCyberWeaponProtoKineticAccelerator
+  name: "left proto kinetic accelerator arm"
+  parent: [PartCyber, BaseLeftArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberLArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberLArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandLeft
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - CyberWeaponProtoKineticAccelerator
+
+- type: entity
+  id: RightArmCyberWeaponProtoKineticAccelerator
+  name: "right proto kinetic accelerator arm"
+  parent: [PartCyber, BaseRightArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberRArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberRArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandRight
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - CyberWeaponProtoKineticAccelerator
+
+# Energy SubMachineGun Disabler Arms
+- type: entity
+  id: LeftArmCyberWeaponEnergySubMachineGunDisabler
+  name: "left energy smg disabler arm"
+  parent: [PartCyber, BaseLeftArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberLArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberLArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandLeft
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - CyberWeaponEnergySubMachineGunDisabler
+
+- type: entity
+  id: RightArmCyberWeaponEnergySubMachineGunDisabler
+  name: "right energy smg disabler arm"
+  parent: [PartCyber, BaseRightArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberRArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberRArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandRight
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - CyberWeaponEnergySubMachineGunDisabler
+
+# Energy Pistol Laser Advanced Arms
+- type: entity
+  id: LeftArmCyberWeaponEnergyPistolLaserAdvanced
+  name: "left advanced energy laser pistol arm"
+  parent: [PartCyber, BaseLeftArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberLArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberLArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandLeft
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - CyberWeaponEnergyPistolLaserAdvanced
+
+- type: entity
+  id: RightArmCyberWeaponEnergyPistolLaserAdvanced
+  name: "right advanced energy laser pistol arm"
+  parent: [PartCyber, BaseRightArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberRArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberRArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandRight
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - CyberWeaponEnergyPistolLaserAdvanced
+
+# Shotgun Advanced Arms
+- type: entity
+  id: LeftArmCyberWeaponShotgunAdvanced
+  name: "left advanced shotgun arm"
+  parent: [PartCyber, BaseLeftArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberLArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberLArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandLeft
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - CyberWeaponShotgunAdvanced
+
+- type: entity
+  id: RightArmCyberWeaponShotgunAdvanced
+  name: "right advanced shotgun arm"
+  parent: [PartCyber, BaseRightArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberRArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberRArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandRight
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - CyberWeaponShotgunAdvanced
+
+# region Close Combat Limbs
+
+# Claw Rending Arms
+
+- type: entity
+  id: LeftArmCyberClawRending
+  name: "left rending claw arm"
+  parent: [PartCyber, BaseLeftArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberLArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberLArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandLeft
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - CyberClawRending
+
+- type: entity
+  id: RightArmCyberClawRending
+  name: "right rending claw arm"
+  parent: [PartCyber, BaseRightArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberRArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberRArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandRight
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - CyberClawRending
+
+# Claw Piercing Arms
+
+- type: entity
+  id: LeftArmCyberClawPiersing
+  name: "left piercing claw arm"
+  parent: [PartCyber, BaseLeftArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberLArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberLArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandLeft
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - CyberClawPiersing
+
+- type: entity
+  id: RightArmCyberClawPiersing
+  name: "right piercing claw arm"
+  parent: [PartCyber, BaseRightArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberRArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberRArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandRight
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - CyberClawPiersing
+
+# Claw Poison Arms
+
+- type: entity
+  id: LeftArmCyberClawPoison
+  name: "left poison claw arm"
+  parent: [PartCyber, BaseLeftArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberLArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberLArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandLeft
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - CyberClawPoison
+
+- type: entity
+  id: RightArmCyberClawPoison
+  name: "right poison claw arm"
+  parent: [PartCyber, BaseRightArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberRArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberRArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandRight
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - CyberClawPoison
+
+# Lash Arms
+
+- type: entity
+  id: LeftArmCyberLash
+  name: "left lash arm"
+  parent: [PartCyber, BaseLeftArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberLArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberLArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "l_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandLeft
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - CyberLash
+
+- type: entity
+  id: RightArmCyberLash
+  name: "right lash arm"
+  parent: [PartCyber, BaseRightArm]
+  components:
+  - type: BaseLayerId
+    layer: CyberRArmSteel
+  - type: BaseLayerIdToggled
+    layer: CyberRArmSteelMechwright
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: Icon
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/parts.rsi
+    state: "r_steel_arm"
+  - type: LimbWithItems
+    action: ActionToggleCyberHandRight
+    sound:
+      path: /Audio/_Horizon/Medical/Cyber/deploy.ogg
+    items:
+    - CyberLash

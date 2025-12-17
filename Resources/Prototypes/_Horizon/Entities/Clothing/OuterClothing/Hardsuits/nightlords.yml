@@ -1,0 +1,50 @@
+- type: entity
+  parent: [BaseC3PirateContraband, ClothingOuterHardsuitBaseNF, ContrabandClothing]
+  id: ClothingOuterHardsuitNightlordElite
+  name: элитный скафандр террора
+  description: Тёмно-синий доспех с красными символами летучей мыши.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Hardsuits/nightlords.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/OuterClothing/Hardsuits/nightlords.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitNightlordElite
+  - type: ExplosionResistance
+    damageCoefficient: 0.4
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.5
+        Heat: 0.50
+        Radiation: 0.4
+        Caustic: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.75
+
+- type: entity
+  parent: NFClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitNightlordElite
+  categories: [ HideSpawnMenu ]
+  name: шлем элитного скафандра террора
+  description: Тёмно-синий доспех с красными символами летучей мыши.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Head/Hardsuits/nightlords.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Head/Hardsuits/nightlords.rsi
+  - type: PointLight
+    color: "#ffed7f"
+  - type: PressureProtection
+    highPressureMultiplier: 0.45
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9    

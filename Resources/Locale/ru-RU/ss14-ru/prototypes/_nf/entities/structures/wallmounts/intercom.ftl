@@ -1,0 +1,14 @@
+ent-BaseShuttleIntercom = { "" }
+    .desc = { "" }
+ent-ShuttleIntercomNfsd = { ent-BaseShuttleIntercom }
+    .desc = { ent-BaseShuttleIntercom.desc }
+ent-ShuttleIntercomAntag = { ent-BaseShuttleIntercom }
+    .desc = { ent-BaseShuttleIntercom.desc }
+ent-ShuttleIntercomSyndicate = { ent-BaseShuttleIntercom }
+    .desc = { ent-BaseShuttleIntercom.desc }
+ent-IntercomNfsd = { ent-IntercomSecurity }
+    .suffix = ДШНФ
+    .desc = { ent-IntercomSecurity.desc }
+ent-IntercomGreetingAlwaysOn = { ent-BaseStructureIndestructible }
+    .suffix = Приветствие, Всегда вкл.
+    .desc = { ent-BaseStructureIndestructible.desc }

@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "license": "CLA with hosting restrictions",
+    "copyright": "Sprited by Xigovir DS:623559319543349268",
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+    "states": [
+      {
+        "name": "default"
+      },
+      {
+        "name": "counselor"
+      },
+      {
+        "name": "titan"
+      },
+      {
+        "name": "spider"
+      },
+      {
+        "name": "knight"
+      },
+      {
+        "name": "officer"
+      },
+      {
+        "name": "cadet"
+      },
+      {
+        "name": "ripsoid"
+      }
+    ]
+  }

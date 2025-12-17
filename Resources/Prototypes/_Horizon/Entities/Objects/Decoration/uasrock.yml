@@ -1,0 +1,55 @@
+- type: entity
+  id: UASRock
+  parent: BaseStructure
+  suffix: StarHorizon, UAS, Structure
+  name: глыба казмия
+  description: Монолитный кусок казмия. Кажется очень прочным.
+  components:
+    - type: Sprite
+      sprite: _Horizon/Structures/Decoration/uasrock.rsi
+      state: UASRock
+      noRot: true
+    - type: Reflect
+      reflectProb: 0.5
+      reflects:
+      - Energy
+      soundOnReflect:
+        collection: ImpactReflectedProjectileEnergy
+      spread: 75
+    - type: Anchorable
+      delay: 2
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.45
+          density: 60
+          mask:
+            - MachineMask
+          layer:
+            - MidImpassable
+            - LowImpassable
+            - BulletImpassable
+            - Opaque
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Rock
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 50
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                Sheetkazmie:
+                  min: 1
+                  max: 5
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]

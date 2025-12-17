@@ -1,0 +1,45 @@
+- type: vessel
+  id: Fighter
+  parent: BaseVessel
+  name: NSF Fighter
+  description: Micro attack vessel used for boarding and transport of prisoners.
+  price: 9000 #not sure how much mark up % to add but the appraisal is 7150$ now
+  category: Micro
+  group: Custom
+  access: Security
+  mapchecker_group_override: Security  # Treat this as a security vessel for mapchecker purposes
+  shuttlePath: /Maps/_NF/Shuttles/Nfsd/fighter.yml
+  guidebookPage: Null
+  class:
+  - Fighter
+  engine:
+  - APU
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:FactionCostModifier
+      faction: "FactionNFSD"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: Fighter
+  mapName: 'NSF Fighter'
+  mapPath: /Maps/_NF/Shuttles/Nfsd/fighter.yml
+  minPlayers: 0
+  stations:
+    Fighter:
+      stationProto: StandardFrontierSecurityVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Fighter {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

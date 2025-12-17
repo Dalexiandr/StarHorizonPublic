@@ -1,0 +1,58 @@
+﻿- type: body
+  id: Diona
+  name: diona
+  root: torso
+  slots:
+    head:
+      part: HeadDiona
+      connections:
+      - torso
+      organs:
+        brain: OrganDionaBrainNymph
+        eyes: OrganHumanEyes
+        tongue: OrganHumanTongue
+        eye_implant: null # Horizon
+        cyberdeka_implant: null # Horizon
+    torso:
+      part: TorsoDiona
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      organs:
+        stomach: OrganDionaStomachNymph
+        lungs: OrganDionaLungsNymph
+        vessels_implant: null # Horizon
+        blood_pump_implant: null
+        skin_implant: null # Horizon
+        bone_implant: null # Horizon
+        cavity: null # Horizon
+    right arm:
+      part: RightArmDiona
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmDiona
+      connections:
+      - left hand
+    right hand:
+      part: RightHandDiona
+      organs:
+        hands_implant: null # Horizon
+    left hand:
+      part: LeftHandDiona
+      organs:
+        hands_implant: null # Horizon
+    right leg:
+      part: RightLegDiona
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegDiona
+      connections:
+      - left foot
+    right foot:
+      part: RightFootDiona
+    left foot:
+      part: LeftFootDiona

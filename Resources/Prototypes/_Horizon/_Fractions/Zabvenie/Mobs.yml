@@ -1,0 +1,455 @@
+- type: entity
+  abstract: true
+  id: OblivionMobOre
+  name: Мраконевые монстры
+  parent: [ MobElementalBase, MobCombat ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/Monsters/golems.rsi
+    state: iron_golem
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    damage:
+      types:
+        Blunt: 2.5
+        Cold: 2.5 
+        Bloodloss: 2.5 
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2
+    baseSprintSpeed : 2.5
+  - type: NpcFactionMember
+    factions:
+      - SimpleHostile
+  - type: Damageable
+    damageContainer: StructuralInorganic
+  - type: MovementIgnoreGravity 
+  - type: Appearance 
+  - type: StandingState
+  - type: RotationVisuals
+    defaultRotation: 90
+    horizontalRotation: 90
+
+- type: entity
+  parent: OblivionMobOre
+  id: MobGolemOblivion
+  suffix: Измерение Забвения 
+  description: Мраконий проклятый бродить в бесконечной пустоши. 
+  name: Мраконевый Голем
+  components:
+  - type: Butcherable
+    spawned:
+    - id: RockRysOblivion
+      amount: 1
+    - id: trophiesgolem
+      amount: 1
+      prob: 0.2
+  - type: Sprite
+    state: iron_golem
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      150: Dead
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 175
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: OblivionMobOre
+  id: MobCrabOblivion
+  suffix: Измерение Забвения 
+  description: Жуткий.. И до ужаса острый.. 
+  name: Мраконевый краб
+  components:
+  - type: Butcherable
+    spawned:
+    - id: RockRysOblivion
+      amount: 1
+    - id: trophiescrabs
+      amount: 1
+      prob: 0.5
+  - type: Sprite
+    state: crab
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    damage:
+      types:
+        Slash: 5 
+        Cold: 1.5 
+        Bloodloss: 1.5 
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      75: Dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 5
+    baseSprintSpeed : 4.5
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+# Добри краб 
+- type: entity
+  parent: OblivionMobOre
+  id: MobCrabOblivionNtMini
+  suffix: Измерение Забвения 
+  description: Жуткий.. И до ужаса острый.. Но кажется он ваш союзник? 
+  name: Мраконевый краб
+  components:
+  - type: TimedDespawn
+    lifetime: 180
+  - type: NpcFactionMember
+    factions:
+    - Cat
+    - NanoTrasen
+  - type: Sprite
+    state: crab
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    damage:
+      types:
+        Slash: 2.5 
+        Cold: 1.5 
+        Bloodloss: 1.5 
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      50: Dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 4.5 
+    baseSprintSpeed : 4.5
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: OblivionMobOre
+  id: MobMiniBossOblivion
+  suffix: Мини-Босс | Измерение Забвения
+  description: Каменный танк, абсолютное воплощение власти каменных существ. 
+  name: Мраконевый Колосс
+  components:
+  - type: Butcherable
+    spawned:
+    - id: RockRysOblivion
+      amount: 2
+    - id: trophiescollos
+      amount: 1
+      prob: 0.2
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/Monsters/GolemsBoss.rsi
+    state: golem
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      path: /Audio/Effects/break_stone.ogg
+    damage:
+      types:
+        Blunt: 7.5
+        Cold: 5.5
+        Bloodloss: 2.5 
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3.5
+    baseSprintSpeed : 3.5
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      500: Dead
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 650
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: ActionGun
+    action: ActionCrab
+    gunProto: ActionCrabGun
+  - type: NPCUseActionOnTarget
+    actionId: ActionCrabGun
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: ActionCrabGun
+  name: Бросить часть себя
+  description: Вы бросаете кусочек себя что преобразуется в краба
+  components:
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 10
+    rechargeSound:
+      path: /Audio/Effects/break_stone.ogg
+  - type: BasicEntityAmmoProvider
+    proto: MobCrabOblivion
+    capacity: 1
+    count: 1
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Effects/break_stone.ogg
+    soundEmpty: null
+    projectileSpeed: 10
+- type: entity
+  id: ActionCrab
+  name: Бросить часть себя
+  description: Вы бросаете кусочек себя что преобразуется в краба
+  components:
+  - type: Action
+    icon: { sprite : _NF/Objects/Fun/petrock.rsi, state: rock }
+    priority: 2
+    itemIconStyle: BigAction
+  - type: TargetAction
+    checkCanAccess: false
+    range: 0
+  - type: WorldTargetAction
+    event: !type:ActionGunShootEvent
+
+
+# region БОСС 
+
+
+
+
+
+# region первая фаза 
+- type: entity
+  parent: OblivionMobOre
+  id: MobBossOblivions
+  suffix: Босс | Измерение Забвения
+  description: Абсолютное воплощение доминирования и власти. 
+  name: Мраконевый Титан 
+  components:
+  - type: Butcherable
+    spawned:
+    - id: RockRysOblivion
+      amount: 5
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/Monsters/Titan.rsi
+    state: golem
+# Стрельба крабами \ Фишка первой фазы (ОН НЕ СТРЕЛЯЕТ ХНЫК)
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 1.5
+    baseSprintSpeed : 1.5
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      2500: Dead
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 2500
+        behaviors:
+          - !type:PlaySoundBehavior
+           sound:
+             path: /Audio/Effects/demon_attack1.ogg
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              MobBossSpawnFaza:
+                min: 1
+                max: 1
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+  - type: ActionGun
+    action: ActionCrab
+    gunProto: ActionCrabGun
+  - type: NPCUseActionOnTarget
+    actionId: ActionCrabGun
+  - type: MeleeWeapon
+    attackRate: 1.2
+    hidden: true
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    damage:
+      types:
+        Structural: 100
+        Blunt: 7.5
+        Cold: 5.5
+        Bloodloss: 2.5 
+    range: 2.3
+  - type: PassiveDamage
+    allowedStates:
+    - Alive
+    damageCap: 2500
+    damage:
+      types:
+        Heat: -5
+      groups:
+        Brute: -0.2
+        Toxin: -8
+        Airloss: -8
+        Burn: -0.2
+  - type: ContentEye
+    maxZoom: 2.0,2.0
+  - type: Reflect
+    reflectProb: 0.7
+    reflects:
+      - Energy
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.9
+        density: 300
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobState
+  - type: Tag
+    tags:
+      - CannotSuicide
+      - DoorBumpOpener
+      - FootstepSound
+
+
+- type: entity
+  parent: [ BaseMob, MobCombat ]
+  id: MobBossSpawnFaza
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/Monsters/Titan.rsi
+    state: spawnfaza
+  - type: TimedDespawn
+    lifetime: 4.1
+  - type: SpawnOnDespawn
+    prototype: MobBossOblivionsFaza
+
+
+
+
+
+# region Вторая фаза 
+
+
+
+- type: entity
+  parent: OblivionMobOre
+  id: MobBossOblivionsFaza
+  suffix: Босс | Измерение Забвения
+  description: Абсолютное воплощение доминирования и власти. 
+  name: Мраконевый Титан 
+  components:
+  - type: Butcherable
+    spawned:
+    - id: CrateMrakoniRandom
+      amount: 1
+      prob: 0.9
+    - id: RockRysOblivion
+      amount: 5
+    - id: trophiestitan
+      amount: 1
+      prob: 0.7
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/Monsters/Titan.rsi
+    state: titan
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3.5
+    baseSprintSpeed : 3.5
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      2500: Dead
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 3000
+        behaviors:
+          - !type:PlaySoundBehavior
+           sound:
+             path: /Audio/Effects/demon_attack1.ogg
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              RockRysOblivion:
+                min: 1
+                max: 1
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+  - type: MeleeWeapon
+    attackRate: 0.5 
+    hidden: true
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+    damage:
+      types:
+        Structural: 250
+        Blunt: 15
+        Cold: 2.5
+        Bloodloss: 2.5
+  - type: ActionGun
+    action: ActionCrab
+    gunProto: ActionCrabGun
+  - type: NPCUseActionOnTarget
+    actionId: ActionDragonsBreath
+  - type: PassiveDamage
+    allowedStates:
+    - Alive
+    damageCap: 1000
+    damage:
+      types:
+        Heat: -5
+      groups:
+        Brute: -0.2
+        Toxin: -8
+        Airloss: -8
+        Burn: -0.2
+  - type: ContentEye
+    maxZoom: 2.0,2.0
+  - type: Reflect
+    reflectProb: 0.9
+    reflects:
+      - Energy
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.9
+        density: 300
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobState
+  - type: Tag
+    tags:
+      - CannotSuicide
+      - DoorBumpOpener
+      - FootstepSound

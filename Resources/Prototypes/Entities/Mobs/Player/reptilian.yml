@@ -1,0 +1,38 @@
+- type: entity
+  save: false
+  name: Urist McScales
+  suffix: Urisst' Mzhand
+  parent: BaseMobReptilian
+  id: MobReptilian
+  components:
+  # Horizon
+  - type: SampleSource
+    availableCellSamples:
+    - protoID: CellSampleReptilian
+
+# Cytology
+- type: entity
+  name: Urist Grown Reptilian
+  parent: MobReptilian
+  id: MobReptilianGrown
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StaticPrice
+    price: 2500
+  - type: RandomMetadata
+    nameSegments:
+      - NamesFirst
+      - NamesLast
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: ghost-role-information-grown-reptilian-name
+    description: Вы рептилиец, выращенный в цитологической ванне. Хиссссс... Исследуйте этот новый мир!
+    raffle:
+      settings: short
+  - type: GhostTakeoverAvailable
+
+#Weh

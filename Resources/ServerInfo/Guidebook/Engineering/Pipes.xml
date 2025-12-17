@@ -1,0 +1,18 @@
+﻿<Document>
+  # Трубы
+  Элементы для транспортировки газов различных конфигураций:
+
+  <Box>
+    <GuideEntityEmbed Entity="GasPipeStraight" Caption="прямая"/>
+    <GuideEntityEmbed Entity="GasPipeHalf" Caption="половинная"/>
+    <GuideEntityEmbed Entity="GasPipeBend" Caption="колено"/>
+    <GuideEntityEmbed Entity="GasPipeTJunction" Caption="тройник"/>
+    <GuideEntityEmbed Entity="GasPipeFourway" Caption="крестовина"/>
+  </Box>
+
+  Особенности:
+  - [color=#a4885c]Автоматически соединяются[/color] при закреплении
+  - [color=red]Не соединяются[/color] с уже подключенными трубами
+  - Возможно размещение нескольких труб на одной плитке
+  - Могут быть окрашены для маркировки
+</Document>

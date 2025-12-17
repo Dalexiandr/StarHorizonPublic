@@ -1,0 +1,87 @@
+- type: jukebox
+  id: FlipFlap
+  name: X-CEED - Flip Flap
+  path:
+    path: /Audio/Jukebox/flip-flap.ogg
+
+- type: jukebox
+  id: Tintin
+  name: Jeroen Tel - Tintin on the Moon
+  path:
+    path: /Audio/Jukebox/title3.ogg
+
+- type: jukebox
+  id: Thunderdome
+  name: MashedByMachines - Sector 11
+  path:
+    path: /Audio/Jukebox/sector11.ogg
+
+- type: jukebox
+  id: Constellations
+  name: Qwertyquerty - Constellations
+  path:
+    path: /Audio/Jukebox/constellations.ogg
+
+- type: jukebox
+  id: Drifting
+  name: Qwertyquerty - Drifting
+  path:
+    path: /Audio/Jukebox/drifting.ogg
+
+- type: jukebox
+  id: starlight
+  name: Qwertyquerty - Starlight
+  path:
+    path: /Audio/Jukebox/starlight.ogg
+
+- type: jukebox
+  id: sunset
+  name: PigeonBeans - Sunset
+  path:
+    path: /Audio/Jukebox/sunset.ogg
+
+# Horizon start
+
+- type: jukebox
+  id: marchimp
+  name: March - Imperial
+  path:
+    path: /Audio/_Horizon/Jukebox/marchimp.ogg
+
+- type: jukebox
+  id: marchmar
+  name: March - Marriage
+  path:
+    path: /Audio/_Horizon/Jukebox/marchmar.ogg
+
+- type: jukebox
+  id: marriage1
+  name: Marriage Music 1
+  path:
+    path: /Audio/_Horizon/Jukebox/marriage1.ogg
+
+- type: jukebox
+  id: marriage2
+  name: Marriage Music 2
+  path:
+    path: /Audio/_Horizon/Jukebox/marriage2.ogg
+
+- type: jukebox
+  id: marriage3
+  name: Marriage Music 3
+  path:
+    path: /Audio/_Horizon/Jukebox/marriage3.ogg
+
+- type: jukebox
+  id: marriage4
+  name: Marriage Music 4
+  path:
+    path: /Audio/_Horizon/Jukebox/marriage4.ogg
+
+- type: jukebox
+  id: marriage5
+  name: Marriage Music 5
+  path:
+    path: /Audio/_Horizon/Jukebox/marriage5.ogg
+
+# Horizon end

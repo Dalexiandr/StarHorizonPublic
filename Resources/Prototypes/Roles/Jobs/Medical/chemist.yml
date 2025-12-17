@@ -1,0 +1,45 @@
+- type: job
+  id: Chemist
+  name: job-name-chemist
+  description: job-description-chemist
+  playTimeTracker: JobChemist
+  salary: 50000 # Horizon
+  forceFaction: FactionMed # Horizon
+  setPreference: true # Lua
+  requirements:
+  # Horizon start
+  - !type:OverallPlaytimeRequirement
+    time: 18000 # 5 hrs
+  startingGear: ChemistGear
+  icon: "JobIconChemist"
+  supervisors: job-supervisors-cmo # Horizon
+  weight: 80
+  displayWeight: 0
+  access:
+  - Medical
+  - Chemistry
+  accessGroups:
+  - GeneralAccess
+  # Horizon end
+
+- type: startingGear
+  id: ChemistGear
+  equipment:
+    # id: ChemistryPDA # Horizon
+    # ears: ClothingHeadsetMedical # Horizon
+    belt: ChemBag
+    pocket1: HandLabeler
+    eyes: ClothingEyesGlassesChemical
+  #storage:
+    #back:
+    #- Stuff
+
+- type: chameleonOutfit
+  id: ChemistChameleonOutfit
+  job: Chemist
+  equipment:
+    head: ClothingHeadHatBeretMedic
+    mask: ClothingMaskSterile
+    neck: ClothingNeckStethoscope
+    outerClothing: ClothingOuterCoatLabChem
+    gloves: ClothingHandsGlovesLatex

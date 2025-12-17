@@ -1,0 +1,168 @@
+- type: constructionGraph
+  id: CheapPendantGreen
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: pendantgreen
+      steps:
+      - tag: CrystalGreen
+        name: осколок зелёного кристалла.
+        icon:
+          sprite: Objects/Materials/Shards/crystal.rsi
+          state: shard1
+          color: "#52ff39"
+        doAfter: 1
+      - material: Cable
+        amount: 5
+        doAfter: 1
+  - node: pendantgreen
+    entity: ClothingCheapPendantGreen
+
+- type: constructionGraph
+  id: CheapPendantOrange
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: pendantorange
+      steps:
+      - tag: CrystalOrange
+        name: осколок оранжевого кристалла.
+        icon:
+          sprite: Objects/Materials/Shards/crystal.rsi
+          state: shard1
+          color: "#ff8227"
+        doAfter: 1
+      - material: Cable
+        amount: 5
+        doAfter: 1
+  - node: pendantorange
+    entity: ClothingCheapPendantOrange
+
+- type: constructionGraph
+  id: CheapPendantPink
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: pendantpink
+      steps:
+      - tag: CrystalPink
+        name: осколок розового кристалла.
+        icon:
+          sprite: Objects/Materials/Shards/crystal.rsi
+          state: shard1
+          color: "#ff66cc" 
+        doAfter: 1
+      - material: Cable
+        amount: 5
+        doAfter: 1
+  - node: pendantpink
+    entity: ClothingCheapPendantPink
+
+- type: constructionGraph
+  id: CheapPendantCyan
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: pendantcyan
+      steps:
+      - tag: CrystalCyan
+        name: осколок голубого кристалла.
+        icon:
+          sprite: Objects/Materials/Shards/crystal.rsi
+          state: shard1
+          color: "#47f8ff"
+        doAfter: 1
+      - material: Cable
+        amount: 5
+        doAfter: 1
+  - node: pendantcyan
+    entity: ClothingCheapPendantCyan
+
+- type: constructionGraph
+  id: CheapPendantBlue
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: pendantblue
+      steps:
+      - tag: CrystalBlue
+        name: осколок синего кристалла.
+        icon:
+          sprite: Objects/Materials/Shards/crystal.rsi
+          state: shard1
+          color: "#39a1ff"
+        doAfter: 1
+      - material: Cable
+        amount: 5
+        doAfter: 1
+  - node: pendantblue
+    entity: ClothingCheapPendantBlue
+
+- type: constructionGraph
+  id: CheapPendantRed
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: pendantred
+      steps:
+      - tag: CrystalRed
+        name: осколок красного кристалла.
+        icon:
+          sprite: Objects/Materials/Shards/crystal.rsi
+          state: shard1
+          color: "#fb4747"
+        doAfter: 1
+      - material: Cable
+        amount: 5
+        doAfter: 1
+  - node: pendantred
+    entity: ClothingCheapPendantRed
+
+- type: constructionGraph
+  id: CheapPendantYellow
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: pendantyellow
+      steps:
+      - tag: CrystalYellow
+        name: осколок желтого кристалла.
+        icon:
+          sprite: Objects/Materials/Shards/crystal.rsi
+          state: shard1
+          color: "#ffde46"
+        doAfter: 1
+      - material: Cable
+        amount: 5
+        doAfter: 1
+  - node: pendantyellow
+    entity: ClothingCheapPendantYellow   
+
+- type: constructionGraph
+  id: CheapPendantBlack
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: pendantblack
+      steps:
+      - tag: CrystalBlack
+        name: осколок черного кристалла.
+        icon:
+          sprite: Objects/Materials/Shards/crystal.rsi
+          state: shard1
+          color: "#363636"
+        doAfter: 1
+      - material: Cable
+        amount: 5
+        doAfter: 1
+  - node: pendantblack
+    entity: ClothingCheapPendantBlack
+

@@ -1,0 +1,107 @@
+- type: entity
+  parent: [BaseHardBomb, BaseUASContraband, BaseItem]
+  categories: [ HideSpawnMenu ]
+  id: UAShardBomb
+  name: мобильная бомба UAS
+  suffix: StarHorizon, UAS
+  description: Бомба, напичканная зарядом EFS. От неё лучше бежать.
+  components:
+    - type: Item
+      size: Normal
+    - type: Sprite
+      sprite: _Horizon/Structures/Machines/uasbombs.rsi
+      noRot: true
+      layers:
+        - state: uas-bomb
+        - state: uas-bomb-active
+          visible: false
+          map: [ "primed" ]
+        - state: uas-bomb-wires
+          visible: false
+          map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+    - type: GenericVisualizer
+      visuals:
+        enum.DefusableVisuals.Active:
+          primed:
+            True: { visible: true }
+            False: { visible: false }
+        enum.WiresVisualLayers.MaintenancePanel:
+          enum.WiresVisualLayers.MaintenancePanel:
+            True: { visible: true }
+            False: { visible: false }
+    - type: PointLight
+      color: "#F05A5A"
+      radius: 1.1
+      softness: 1
+    - type: Explosive
+      explosionType: UASExplodes
+      totalIntensity: 4000.0
+      intensitySlope: 3
+      maxIntensity: 400
+
+- type: entity
+  parent: [UAShardBomb, BaseUASContraband, BaseItem]
+  id: UASBombR
+  name: мобильный маяк запроса UAS
+  suffix: StarHorizon, UAS
+  categories: [ HideSpawnMenu ]
+  description: Мобильныц маяк для отправки запросов в далекий космос.
+  components:
+    - type: Item
+      size: Normal
+    - type: Sprite
+      sprite: _Horizon/Structures/Machines/uasbombs.rsi
+      noRot: true
+      layers:
+        - state: uas-bomb-R
+        - state: uas-bomb-active-R
+          visible: false
+          map: [ "primed" ]
+    - type: GenericVisualizer
+      visuals:
+        enum.DefusableVisuals.Active:
+          primed:
+            True: { visible: true }
+            False: { visible: false }
+        enum.WiresVisualLayers.MaintenancePanel:
+          enum.WiresVisualLayers.MaintenancePanel:
+            True: { visible: true }
+            False: { visible: false }
+    - type: Explosive
+      explosionType: UASExplodes
+      totalIntensity: 1
+      intensitySlope: 1
+      maxIntensity: 1
+    - type: OnUseTimerTrigger
+      delay: 5
+      delayOptions: [5, 10, 15, 20]
+
+- type: entity
+  parent: UASBombR
+  id: UASBombOfficer
+  suffix: StarHorizon, UAS
+  name: мобильный маяк запроса снаряжения Офицера
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: SpawnOnTrigger
+      proto: ClosetOfficer
+
+- type: entity
+  parent: UASBombR
+  id: UASBombSpider
+  suffix: StarHorizon, UAS
+  name: мобильный маяк запроса снаряжения Паука
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: SpawnOnTrigger
+      proto: ClosetSpider
+
+- type: entity
+  parent: UASBombR
+  id: UASBombKnight
+  suffix: StarHorizon, UAS
+  name: мобильный маяк запроса снаряжения Рыцаря
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: SpawnOnTrigger
+      proto: ClosetKnight

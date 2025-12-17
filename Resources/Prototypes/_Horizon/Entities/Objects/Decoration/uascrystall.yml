@@ -1,0 +1,59 @@
+- type: entity
+  id: UASEFSCrystal
+  parent: BaseStructure
+  suffix: StarHorizon, UAS, Structure
+  name: кристалл EFS вещества
+  description: Вы ощущаете исходящий от этого кристалла жар.
+  components:
+    - type: Sprite
+      sprite: _Horizon/Structures/Decoration/uascrystall.rsi
+      state: EFS
+      noRot: true
+    - type: Reflect
+      reflectProb: 0.5
+      reflects:
+      - Energy
+      soundOnReflect:
+        collection: ImpactReflectedProjectileEnergy
+      spread: 75
+    - type: Anchorable
+      delay: 2
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.45
+          density: 60
+          mask:
+            - MachineMask
+          layer:
+            - MidImpassable
+            - LowImpassable
+            - BulletImpassable
+            - Opaque
+    - type: PointLight
+      radius: 3
+      energy: 3
+      color: "#cc0000"
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Rock
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 50
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: GlassBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                SheetEFS:
+                  min: 1
+                  max: 3
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]

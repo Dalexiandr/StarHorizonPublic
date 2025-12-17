@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "license": "CLA",
+  "copyright": "sprite by TheGypsyBaron",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "brain-slime"
+    },
+    {
+      "name": "brain-inhand-left",
+      "directions": 4
+    },
+    {
+        "name": "brain-inhand-right",
+        "directions": 4
+    },
+    {
+      "name": "heart-off"
+    },
+    {
+      "name": "heart-on",
+      "delays": [
+        [
+          0.6,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "heart-inhand-left",
+      "directions": 4
+    },
+    {
+        "name": "heart-inhand-right",
+        "directions": 4
+    },
+    {
+        "name": "lungs-inhand-left",
+        "directions": 4
+    },
+    {
+        "name": "lungs-inhand-right",
+        "directions": 4
+    },
+    {
+      "name": "lung-l-slime"
+    },
+    {
+      "name": "lung-r-slime"
+    },
+    {
+      "name": "eyeball-l"
+    },
+    {
+      "name": "eyeball-r"
+    },
+    {
+      "name": "stomach"
+    },
+    {
+      "name": "kidney-l"
+    },
+    {
+      "name": "kidney-r"
+    },
+    {
+      "name": "liver"
+    },
+    {
+      "name": "lungs_world"
+    },
+    {
+      "name": "brain-slime_world"
+    },
+    {
+      "name": "eyeballs_world"
+    },
+    {
+      "name": "heart-off_world"
+    },
+    {
+      "name": "heart-on_world",
+      "delays": [
+        [
+         0.6,
+         0.1,
+         0.1
+        ]
+        ]
+    },
+    {
+      "name": "kidney_world"
+    },
+    {
+      "name": "liver_world"
+    },
+    {
+      "name": "stomach_world"
+    }
+
+  ]
+}

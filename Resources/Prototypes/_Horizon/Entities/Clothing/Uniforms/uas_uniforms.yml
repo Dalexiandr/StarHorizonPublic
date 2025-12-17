@@ -1,0 +1,64 @@
+- type: entity
+  suffix: StarHorizon, UAS
+  description: Стандартный комбинезон UAS без рукавов.
+  name: комбинезон UAS
+  parent: [ClothingUniformBase, BaseUASContraband]
+  categories: [ HideSpawnMenu ]
+  id: SuitUAS
+  components:
+  - type: FactionClothing
+    faction: UASSecurBot
+  - type: Tag
+    tags: [] # Выносим с ВЛа для хамелеонки
+  - type: Sprite
+    sprite:  _StarHorizon/Clothing/Uniforms/Jumpsuit/uasuniform.rsi
+  - type: Clothing
+    sprite:  _StarHorizon/Clothing/Uniforms/Jumpsuit/uasuniform.rsi
+  - type: StaticPrice
+    price: 5000
+
+- type: entity
+  suffix: StarHorizon, UAS
+  description: Защитный комбинезон UAS с укреплёнными рёбрами из казмия.
+  name: защитный комбинезон UAS
+  parent: SuitUAS
+  categories: [ HideSpawnMenu ]
+  id: SuitProtectiveUAS
+  components:
+  - type: FactionClothing
+    faction: UASSecurBot
+  - type: Sprite
+    sprite:  _StarHorizon/Clothing/Uniforms/Jumpsuit/uasjumpsuith.rsi
+  - type: Clothing
+    sprite:  _StarHorizon/Clothing/Uniforms/Jumpsuit/uasjumpsuith.rsi
+
+- type: entity
+  suffix: StarHorizon, UAS
+  description: Стандартная юбка-комбинезон UAS с укреплёнными рёбрами из Казмия.
+  name: защитная юбка-комбинезон UAS
+  parent: SuitUAS
+  categories: [ HideSpawnMenu ]
+  id: SkirtProtectiveUAS
+  components:
+  - type: FactionClothing
+    faction: UASSecurBot
+  - type: Sprite
+    sprite:  _StarHorizon/Clothing/Uniforms/Jumpskirt/uasjumpskirth.rsi
+  - type: Clothing
+    sprite:  _StarHorizon/Clothing/Uniforms/Jumpskirt/uasjumpskirth.rsi
+
+- type: entity
+  suffix: StarHorizon, UAS
+  description: Стандартная юбка-комбинезон UAS без рукавов.
+  name: юбка-комбинезон UAS
+  parent: SuitUAS
+  categories: [ HideSpawnMenu ]
+  id: SkirtUAS
+  components:
+  - type: FactionClothing
+    faction: UASSecurBot
+  - type: Sprite
+    sprite:  _StarHorizon/Clothing/Uniforms/Jumpskirt/uasjumpskirt.rsi
+  - type: Clothing
+    sprite:  _StarHorizon/Clothing/Uniforms/Jumpskirt/uasjumpskirt.rsi
+

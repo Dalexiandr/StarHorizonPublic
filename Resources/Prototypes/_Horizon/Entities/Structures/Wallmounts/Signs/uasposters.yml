@@ -1,0 +1,65 @@
+- type: entity
+  parent: PosterBase
+  id: UASPosterRipsoid
+  suffix: StarHorizon, UAS
+  name: рипсоид
+  description: Флагманский  продукт "Рипсоид". Ни боли, ни страха.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Wallmounts/uasposters.rsi
+    state: ripsoid
+
+- type: entity
+  parent: PosterBase
+  id: UASPosterShips
+  suffix: StarHorizon, UAS
+  name: лучший флот
+  description: Лучшие шаттлы во всей галактике! Всего за-...
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Wallmounts/uasposters.rsi
+    state: ships
+
+- type: entity
+  parent: PosterBase
+  id: UASPosterUASlogo
+  suffix: StarHorizon, UAS
+  name: любовь UAS
+  description: Усердно работайте на лучшую корпорацию в галактике, и она полюбит вас!
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Wallmounts/uasposters.rsi
+    state: uaslogo
+
+- type: entity
+  parent: PosterBase
+  id: UASPosterReactor
+  suffix: StarHorizon, UAS
+  name: лучшие продукты UAS
+  description: Два лучших продукта UAS! Реактор и мини-реактор на EFS. Меньше размер - больше энергии!
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Wallmounts/uasposters.rsi
+    state: reactor
+
+- type: entity
+  parent: PosterBase
+  id: UASPosterTemperature
+  suffix: StarHorizon, UAS
+  name: осторожно горячо
+  description: Плакат предупреждает вас о том, что EFS очень горячее.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Wallmounts/uasposters.rsi
+    state: temperature
+
+- type: entity
+  parent: PosterBase
+  id: UASPosterCore
+  suffix: StarHorizon, UAS
+  name: ядро 53743
+  description: Продукт под номером "53743", что был снят с производства.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Wallmounts/uasposters.rsi
+    state: core

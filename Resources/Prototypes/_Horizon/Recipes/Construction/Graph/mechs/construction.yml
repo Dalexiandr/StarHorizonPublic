@@ -1,0 +1,331 @@
+﻿- type: constructionGraph
+  id: UpgradeMechRipley
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: upgraded
+      completed:
+      - !type:SpawnPrototype
+        prototype: MechRipleyMk2
+        amount: 1
+      - !type:TransferMechComponents {}
+      steps:
+      - tag: MechRipleyMk2Upgrade
+        doAfter: 10
+
+- type: constructionGraph
+  id: UpgradeMechRipleyMk2
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: upgraded
+          completed:
+            - !type:SpawnPrototype
+              prototype: MechRipleyMk2Aluminizer
+              amount: 1
+            - !type:TransferMechComponents {}
+          steps:
+            - tag: MechRipleyAluminizerUpgrade
+              doAfter: 10
+
+        - to: upgraded
+          completed:
+            - !type:SpawnPrototype
+              prototype: MechRipleyMk2Combat
+              amount: 1
+            - !type:TransferMechComponents {}
+          steps:
+            - tag: MechRipleyCombatUpgrade
+              doAfter: 10
+
+        - to: upgraded
+          completed:
+            - !type:SpawnPrototype
+              prototype: MechRipleyMk2Earth
+              amount: 1
+            - !type:TransferMechComponents {}
+          steps:
+            - tag: MechRipleyEarthUpgrade
+              doAfter: 10
+
+        - to: upgraded
+          completed:
+            - !type:SpawnPrototype
+              prototype: MechRipleyMk2Flamesred
+              amount: 1
+            - !type:TransferMechComponents {}
+          steps:
+            - tag: MechRipleyFlamesredUpgrade
+              doAfter: 10
+
+        - to: upgraded
+          completed:
+            - !type:SpawnPrototype
+              prototype: MechRipleyMk2Titan
+              amount: 1
+            - !type:TransferMechComponents {}
+          steps:
+            - tag: MechRipleyTitanUpgrade
+              doAfter: 10
+
+        - to: upgraded
+          completed:
+            - !type:SpawnPrototype
+              prototype: MechRipleyMk2Zairjah
+              amount: 1
+            - !type:TransferMechComponents {}
+          steps:
+            - tag: MechRipleyZairjahUpgrade
+              doAfter: 10
+
+        - to: upgraded
+          completed:
+          - !type:SpawnPrototype
+            prototype: MechRipleyMk2Firefighter
+            amount: 1
+          - !type:TransferMechComponents {}
+          steps:
+          - tag: MechRipleyFirefighterUpgrade
+            doAfter: 10
+
+        - to: upgraded
+          completed:
+          - !type:SpawnPrototype
+            prototype: MechRipleyMk2Hauler
+            amount: 1
+          - !type:TransferMechComponents {}
+          steps:
+          - tag: MechRipleyHaulerUpgrade
+            doAfter: 10
+
+        - to: upgraded
+          completed:
+          - !type:SpawnPrototype
+            prototype: MechRipleyMk2Death
+            amount: 1
+          - !type:TransferMechComponents {}
+          steps:
+          - tag: MechRipleyDeathUpgrade
+            doAfter: 10
+
+- type: constructionGraph
+  id: UpgradeMechClarke
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: upgraded
+          completed:
+            - !type:SpawnPrototype
+              prototype: MechClarkeOrangey
+              amount: 1
+            - !type:TransferMechComponents {}
+          steps:
+            - tag: MechClarkeOrangeyUpgrade
+              doAfter: 10
+
+        - to: upgraded
+          completed:
+            - !type:SpawnPrototype
+              prototype: MechClarkeSpider
+              amount: 1
+            - !type:TransferMechComponents {}
+          steps:
+            - tag: MechClarkeSpiderUpgrade
+              doAfter: 10
+
+        - to: upgraded
+          completed:
+          - !type:SpawnPrototype
+            prototype: MechHarson
+            amount: 1
+          - !type:TransferMechComponents {}
+          steps:
+          - tag: MechHarsonUpgrade
+            doAfter: 10
+
+        - to: upgraded
+          completed:
+          - !type:SpawnPrototype
+            prototype: MechHarsonSpider
+            amount: 1
+          - !type:TransferMechComponents {}
+          steps:
+          - tag: MechHarsonSpiderUpgrade
+            doAfter: 10
+
+- type: constructionGraph
+  id: UpgradeMechDurand
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: upgraded
+          completed:
+            - !type:SpawnPrototype
+              prototype: MechDurDollhouse
+              amount: 1
+            - !type:TransferMechComponents {}
+          steps:
+            - tag: MechDurDollhouseUpgrade
+              doAfter: 10
+
+        - to: upgraded
+          completed:
+            - !type:SpawnPrototype
+              prototype: MechDurExecutor
+              amount: 1
+            - !type:TransferMechComponents {}
+          steps:
+            - tag: MechDurExecutorUpgrade
+              doAfter: 10
+
+        - to: upgraded
+          completed:
+            - !type:SpawnPrototype
+              prototype: MechDurShire
+              amount: 1
+            - !type:TransferMechComponents {}
+          steps:
+            - tag: MechDurShireUpgrade
+              doAfter: 10
+
+        - to: upgraded
+          completed:
+            - !type:SpawnPrototype
+              prototype: MechDurUnathi
+              amount: 1
+            - !type:TransferMechComponents {}
+          steps:
+            - tag: MechDurUnathiUpgrade
+              doAfter: 10
+
+- type: constructionGraph
+  id: UpgradeMechOdysseus
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: upgraded
+          completed:
+            - !type:SpawnPrototype
+              prototype: MechOdysseusHermes
+              amount: 1
+            - !type:TransferMechComponents {}
+          steps:
+            - tag: MechOdysseusHermesUpgrade
+              doAfter: 10
+
+        - to: upgraded
+          completed:
+            - !type:SpawnPrototype
+              prototype: MechOdysseusMurdy
+              amount: 1
+            - !type:TransferMechComponents {}
+          steps:
+            - tag: MechOdysseusMurdyUpgrade
+              doAfter: 10
+
+- type: constructionGraph
+  id: UpgradeMechGygax
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: upgraded
+          completed:
+            - !type:SpawnPrototype
+              prototype: MechGygaxGrey
+              amount: 1
+            - !type:TransferMechComponents {}
+          steps:
+            - tag: MechGygaxGreyUpgrade
+              doAfter: 10
+
+        - to: upgraded
+          completed:
+            - !type:SpawnPrototype
+              prototype: MechGygaxMed
+              amount: 1
+            - !type:TransferMechComponents {}
+          steps:
+            - tag: MechGygaxMedUpgrade
+              doAfter: 10
+
+        - to: upgraded
+          completed:
+            - !type:SpawnPrototype
+              prototype: MechGygaxOrange
+              amount: 1
+            - !type:TransferMechComponents {}
+          steps:
+            - tag: MechGygaxOrangeUpgrade
+              doAfter: 10
+
+        - to: upgraded
+          completed:
+            - !type:SpawnPrototype
+              prototype: MechGygaxPobeda
+              amount: 1
+            - !type:TransferMechComponents {}
+          steps:
+            - tag: MechGygaxPobedaUpgrade
+              doAfter: 10
+
+        - to: upgraded
+          completed:
+            - !type:SpawnPrototype
+              prototype: MechGygaxRecitence
+              amount: 1
+            - !type:TransferMechComponents {}
+          steps:
+            - tag: MechGygaxRecitenceUpgrade
+              doAfter: 10
+
+- type: constructionGraph
+  id: UpgradeMechPhazon
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: upgraded
+      completed:
+      - !type:SpawnPrototype
+        prototype: MechPhazonBlanco
+        amount: 1
+      - !type:TransferMechComponents {}
+      steps:
+      - tag: MechPhazonBlancoUpgrade
+        doAfter: 10
+
+    - to: upgraded
+      completed:
+      - !type:SpawnPrototype
+        prototype: MechPhazonImperion
+        amount: 1
+      - !type:TransferMechComponents {}
+      steps:
+      - tag: MechPhazonImperionUpgrade
+        doAfter: 10
+
+    - to: upgraded
+      completed:
+      - !type:SpawnPrototype
+        prototype: MechPhazonJanus
+        amount: 1
+      - !type:TransferMechComponents {}
+      steps:
+      - tag: MechPhazonJanusUpgrade
+        doAfter: 10
+
+    - to: upgraded
+      completed:
+      - !type:SpawnPrototype
+        prototype: MechPhazonPlazmus
+        amount: 1
+      - !type:TransferMechComponents {}
+      steps:
+      - tag: MechPhazonPlazmusUpgrade
+        doAfter: 10

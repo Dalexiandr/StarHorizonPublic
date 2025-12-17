@@ -1,0 +1,39 @@
+- type: font
+  id: CarloMelowSans
+  path: /Fonts/_Horizon/CarloMelowSans.ttf
+
+- type: font
+  id: Miroslav
+  path: /Fonts/_Horizon/Miroslav.ttf
+
+- type: font
+  id: Pixelizer
+  path: /Fonts/_Horizon/Pixelizer.ttf
+
+- type: font
+  id: Plantype
+  path: /Fonts/_Horizon/Plantype.otf
+
+- type: font
+  id: Specialelite
+  path: /Fonts/_Horizon/Specialelite.ttf
+
+- type: font
+  id: Testo
+  path: /Fonts/_Horizon/Testo.ttf
+
+- type: font
+  id: Blackcraft
+  path: /Fonts/_Horizon/Blackcraft.ttf
+
+- type: font
+  id: Propaniac
+  path: /Fonts/_Horizon/Propaniac.ttf
+
+- type: font
+  id: CaesarDressing
+  path: /Fonts/_Horizon/CaesarDressing.ttf
+
+- type: font
+  id: Futurespore
+  path: /Fonts/_Horizon/Futurespore.ttf

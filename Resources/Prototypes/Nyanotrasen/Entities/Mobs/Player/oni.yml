@@ -1,0 +1,35 @@
+- type: entity
+  save: false
+  name: Urist McOni
+  parent: [MobOniBase, BaseMob]
+  id: MobOni
+  components:
+  # Horizon
+  - type: SampleSource
+    availableCellSamples:
+    - protoID: CellSampleOni
+
+# Cytology
+- type: entity
+  name: Urist Grown Oni
+  parent: MobOni
+  id: MobOniGrown
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StaticPrice
+    price: 2500
+  - type: RandomMetadata
+    nameSegments:
+      - NamesFirst
+      - NamesLast
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: ghost-role-information-grown-oni-name
+    description: Вы они, выращенный в цитологической ванне. Демонические рога и сверхъестественная сила - ваша природа. Исследуйте этот мир!
+    raffle:
+      settings: short
+  - type: GhostTakeoverAvailable

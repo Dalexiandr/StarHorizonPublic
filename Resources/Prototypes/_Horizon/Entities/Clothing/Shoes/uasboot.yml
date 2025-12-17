@@ -1,0 +1,38 @@
+- type: entity
+  parent: [ClothingShoesMilitaryBase, BaseUASContraband]
+  categories: [ HideSpawnMenu ]
+  id: UASBoots
+  suffix: StarHorizon, UAS
+  name: боевые ботинки UAS
+  description: Ботинки с укреплённой подошвой из EFS кристалла.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Shoes/Boots/uasboot.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Shoes/Boots/uasboot.rsi
+  - type: Tag
+    tags: [] # Выносим с ВЛа для хамелеонки
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.4
+  - type: StaticPrice
+    price: 5000
+
+- type: entity
+  parent: [ClothingShoesBootsMagBase, BaseUASContraband]
+  categories: [ HideSpawnMenu ]
+  id: UASClothingShoesBootsMag
+  name: магнитные ботинки UAS
+  suffix: StarHorizon, UAS
+  description: Ботинки облегчённой конструкции. Обладают продвинутой системой магнитов.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Shoes/Boots/uasmagboots.rsi
+    layers:
+    - state: icon
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Shoes/Boots/uasmagboots.rsi
+  - type: Tag
+    tags: [] # Выносим с ВЛа для хамелеонки
+  - type: StaticPrice
+    price: 200

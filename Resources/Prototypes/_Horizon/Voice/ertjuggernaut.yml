@@ -1,0 +1,24 @@
+- type: speechSounds
+  id: JaggernautSpeech
+  saySound:
+    collection: ERTJuggernautSpeech
+  askSound:
+    collection: ERTJuggernautSpeech
+  exclaimSound:
+    collection: ERTJuggernautSpeech
+
+- type: soundCollection
+  id: ERTJuggernautSpeech
+  files:
+  - /Audio/_StarHorizon/SoundCollection/ERTJuggernautSpeech/ExosuitSpech1.ogg
+  - /Audio/_StarHorizon/SoundCollection/ERTJuggernautSpeech/ExosuitSpech2.ogg
+  - /Audio/_StarHorizon/SoundCollection/ERTJuggernautSpeech/ExosuitSpech3.ogg
+  - /Audio/_StarHorizon/SoundCollection/ERTJuggernautSpeech/ExosuitSpech4.ogg
+  - /Audio/_StarHorizon/SoundCollection/ERTJuggernautSpeech/ExosuitSpech5.ogg
+  - /Audio/_StarHorizon/SoundCollection/ERTJuggernautSpeech/ExosuitSpech6.ogg
+
+- type: soundCollection
+  id: ExosuitWalkERT
+  files:
+  - /Audio/_StarHorizon/SoundCollection/ExosuitWalkERT/heavy_exosuit_walk1.ogg
+  - /Audio/_StarHorizon/SoundCollection/ExosuitWalkERT/heavy_exosuit_walk2.ogg

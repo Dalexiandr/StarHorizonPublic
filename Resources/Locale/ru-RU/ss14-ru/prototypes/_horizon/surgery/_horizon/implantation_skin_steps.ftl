@@ -1,0 +1,16 @@
+ent-HorizonOpenSkin = разрежьте кожу
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonWideSkin = расширьте разрез
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonLocalizeVessels = обнаружьте сосуды
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonImplantSkinImplant = имплантируйте подкожный имплант
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonExtractSkinImplant = извлеките подкожный имплант
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonCloseTheSkinIncision = закройте порез на коже
+    .desc = { ent-SurgeryStepBase.desc }
+ent-SurgeryInsertSkinImplant = установка подкожного импланта
+    .desc = Хирургическое прикрепление имплантата.
+ent-SurgeryExstractSkinImplant = извлечение подкожного импланта
+    .desc = Хирургическое прикрепление имплантата.

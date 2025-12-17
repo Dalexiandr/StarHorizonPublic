@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "license": "CLA with hosting restrictions",
+  "copyright": "Sprited by Xigovir DS:623559319543349268",
+  "size": {
+    "x": 32,
+    "y": 32
+   },
+   "states" : [
+      {
+        "name": "banner_UAS",
+        "delays": [
+          [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ]
+        ]
+      },
+      {
+        "name": "banner_UAS_unshaded",
+        "delays": [
+          [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ]
+        ]
+      }
+   ]
+}

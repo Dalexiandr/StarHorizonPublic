@@ -1,0 +1,286 @@
+- type: MediaFile
+  id: IanMarhaba
+  songName: Ian Alex Mac.
+  author: Marhaba
+  soundPath:
+    path: /Audio/_DV/Jukebox/marhaba-MONO.ogg
+
+- type: MediaFile
+  id: melcomAssault
+  songName: Aggravated Assault
+  author: melcom
+  soundPath:
+    path: /Audio/_DV/Jukebox/aggravated.it-MONO.ogg
+
+- type: MediaFile
+  id: PigeonBeansSunset
+  songName: Sunset
+  author: PigeonBeans
+  soundPath:
+    path: /Audio/Jukebox/sunset.ogg
+
+- type: MediaFile
+  id: SilvermanLaterAlligator
+  songName: Later Alligator
+  author: Silverman Studios
+  soundPath:
+    path: /Audio/_NF/Jukebox/lateraligator.ogg
+
+- type: MediaFile
+  id: SunbeamEvery
+  songName: Every Light Is Blinking At Once
+  author: Sunbeamstress
+  soundPath:
+    path: /Audio/_DV/Jukebox/every_light_is_blinking_at_onceMONO.ogg
+
+- type: MediaFile
+  id: SunbeamLaser
+  songName: Lasers Rip Apart The Bulkhead
+  author: Sunbeamstress
+  soundPath:
+    path: /Audio/_DV/Jukebox/lasers_rip_apart_the_bulkheadMONO.ogg
+
+- type: MediaFile
+  id: SunbeamPhoron
+  songName: Phoron Will Make Us Rich
+  author: Sunbeamstress
+  soundPath:
+    path: /Audio/_DV/Jukebox/Phoron_Will_Make_Us_RichMONO2.ogg
+
+- type: MediaFile
+  id: LoneDigger
+  songName: Lone Digger
+  author: Caravan Palace
+  soundPath:
+    path: /Audio/_DV/Jukebox/Caravan_Palace_Lone_Digger-MONO.ogg
+
+#- type: MediaFile
+#  id: Victory
+#  songName: Victory
+#  author: Koruu Chan
+#  soundPath:
+#    path: /Audio/_NF/Jukebox/victory.ogg
+
+- type: MediaFile
+  id: frontierarrivals
+  songName: Frontier Arrivals
+  author: Troglodyte71
+  soundPath:
+    path: /Audio/_NF/Jukebox/frontier-arrivals.ogg
+
+- type: MediaFile
+  id: PTMinute
+  songName: Minute
+  author: Patricia Taxxon
+  soundPath:
+    path: /Audio/_DV/Jukebox/Patricia_Taxxon_-_Minute_-_MONO.ogg
+
+- type: MediaFile
+  id: TihiyOgoniok
+  songName: Тихий огонёк
+  author: Високосный год
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/visokosnyjj-god-tikhijj-ogonek.ogg
+
+- type: MediaFile
+  id: SROTwoStars
+  songName: Two Stars
+  author: NiKiNiT
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/01-NiKiNiT-Two-Stars.ogg
+
+- type: MediaFile
+  id: SROEndofWar
+  songName: End of War
+  author: NiKiNiT
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/05-NiKiNiT-End-of-War.ogg
+
+- type: MediaFile
+  id: SRODepth
+  songName: Depth
+  author: NiKiNiT
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/06-NiKiNiT-Depth.ogg
+
+- type: MediaFile
+  id: SROFlying
+  songName: Flying
+  author: NiKiNiT
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/08-NiKiNiT-Flying.ogg
+
+- type: MediaFile
+  id: SROIllusion
+  songName: Illusion
+  author: NiKiNiT
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/09-NiKiNiT-Illusion.ogg
+
+- type: MediaFile
+  id: SROImperial
+  songName: Imperial
+  author: NiKiNiT
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/14-NiKiNiT-Imperial.ogg
+
+- type: MediaFile
+  id: SROWandering
+  songName: Wandering
+  author: NiKiNiT
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/25-NiKiNiT-Wandering.ogg
+
+- type: MediaFile
+  id: InDaClub
+  songName: In Da Club
+  author: 50 Cent
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/50Cent-InDaClub.ogg
+
+- type: MediaFile
+  id: BadBoys
+  songName: Bad Boys
+  author: Inner Circle
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/InnerCircle-BadBoys.ogg
+
+- type: MediaFile
+  id: DEDiscoElyzium
+  songName: Disco Elyzium
+  author: Pyrokinesis
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/disco_elysium.ogg
+
+- type: MediaFile
+  id: DEHardcoreDance
+  songName: Hardcore Dance
+  author: British Sea Power
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/hardcore_dance.ogg
+
+- type: MediaFile
+  id: DEHeadlock
+  songName: Headlock
+  author: Imoten Heap
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/headlock.ogg
+
+- type: MediaFile
+  id: DEHerEyes
+  songName: Her Eyes
+  author: Narvent
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/her_eyes.ogg
+
+- type: MediaFile
+  id: DEWhirlingCafeteriaMorning
+  songName: Whirling Cafeteria Morning
+  author: British Sea Power
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/whirling_cafeteria_morning.ogg
+
+- type: MediaFile
+  id: DEWhirlingCafeteriaNight
+  songName: Whirling Cafeteria Night
+  author: British Sea Power
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/whirling_cafeteria_night.ogg
+
+- type: MediaFile
+  id: DEMemoryReboot
+  songName: Memory Reboot
+  author: British Sea Power
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/memory_reboot.ogg
+
+- type: MediaFile
+  id: DEStarman
+  songName: Starman
+  author: David Bowie
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/starman.ogg
+
+- type: MediaFile
+  id: Callista
+  songName: Callista
+  author: Saki Kaska
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/Saki-Kaska-Callista.ogg
+
+- type: MediaFile
+  id: TechnoMadness
+  songName: Techno Madness
+  author: Jesse Allen
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/Jesse-Allen-Techno-Madness.ogg
+
+- type: MediaFile
+  id: TheRebelPath
+  songName: The Rebel Path
+  author: Marcin Przybylowicz
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/TheRebelPath.ogg
+
+- type: MediaFile
+  id: SweetGingerGreen
+  songName: Sweet Ginger Green
+  author: Boss Battle Records
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/SweetGingerGreen.ogg
+
+- type: MediaFile
+  id: NFSBrokenPromises
+  songName: Broken Promises
+  author: Element Eighty
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/ElementEighty-BrokenPromises.ogg
+
+- type: MediaFile
+  id: NFSFiredUp
+  songName: Fired Up
+  author: Hush
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/Hush-FiredUp.ogg
+
+- type: MediaFile
+  id: NFSTheOnly
+  songName: The Only
+  author: Static X
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/StaticX-TheOnly.ogg
+
+- type: MediaFile
+  id: NFSNineThou
+  songName: Nine Thou
+  author: Styles Of Beyond
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/StylesOfBeyond-NineThou.ogg
+
+- type: MediaFile
+  id: IStandAlone
+  songName: I Stand Alone
+  author: Godsmack
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/Godsmack-IStandAlone.ogg
+
+- type: MediaFile
+  id: MilIronLotus
+  songName: Iron Lotus
+  author: Mili
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/Mil-IronLotus.ogg
+
+- type: MediaFile
+  id: MilSummoning101
+  songName: Summoning 101
+  author: Mili
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/Mil-Summoning101.ogg
+
+- type: MediaFile
+  id: MilWorldExecuteMe
+  songName: World Execute Me
+  author: Mili
+  soundPath:
+    path: /Audio/_Horizon/Jukebox/Mil-WorldExecuteMe.ogg

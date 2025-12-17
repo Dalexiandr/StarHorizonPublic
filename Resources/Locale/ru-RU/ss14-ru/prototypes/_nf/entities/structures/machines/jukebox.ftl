@@ -1,0 +1,9 @@
+ent-JukeboxPOI = { ent-BaseStructureDisableToolUse }
+    .suffix = POI
+    .desc = { ent-BaseStructureDisableToolUse.desc }
+ent-JukeboxWallmount = { ent-BaseStructureWallmount }
+    .suffix = Настенный
+    .desc = { ent-BaseStructureWallmount.desc }
+ent-JukeboxWallmountShip = { ent-BaseStructureDisableToolUse }
+    .suffix = Настенный, Шаттл
+    .desc = { ent-BaseStructureDisableToolUse.desc }

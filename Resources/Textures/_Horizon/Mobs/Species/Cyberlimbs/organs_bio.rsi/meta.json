@@ -1,0 +1,78 @@
+{
+    "version": 1,
+    "license": "CLA",
+    "copyright": "resprite by TheGypsyBaron",
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+    "states": [
+      {
+        "name": "heart"
+      },
+      {
+        "name": "heart-inhand-left"
+      },
+      {
+        "name": "heart-inhand-right"
+      },
+      {
+        "name": "kidney-l"
+      },
+      {
+        "name": "kidney-r"
+      },
+      {
+        "name": "kidneys-inhand-left"
+      },
+      {
+        "name": "kidneys-inhand-right"
+      },
+      {
+        "name": "liver"
+      },
+      {
+        "name": "liver-inhand-left"
+      },
+      {
+        "name": "liver-inhand-right"
+      },
+      {
+        "name": "lung-l"
+      },
+      {
+        "name": "lung-r"
+      },
+      {
+        "name": "lungs-inhand-left"
+      },
+      {
+        "name": "lungs-inhand-right"
+      },
+      {
+        "name": "stomach"
+      },
+      {
+        "name": "stomach-inhand-left"
+      },
+      {
+        "name": "stomach-inhand-right"
+      },
+      {
+        "name": "heart-off_world"
+      },
+      {
+        "name": "liver_world"
+      },
+      {
+        "name": "lungs_world"
+      },
+      {
+        "name": "kidney_world"
+      },
+      {
+        "name": "stomach_world"
+      }
+
+    ]
+  }

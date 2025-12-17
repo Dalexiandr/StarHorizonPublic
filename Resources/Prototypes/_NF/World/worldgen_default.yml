@@ -1,0 +1,15 @@
+﻿- type: worldgenConfig
+  id: NFDefault
+  components:
+    - type: WorldController
+    - type: BiomeSelection
+      biomes:
+# Horizon start
+#        - NFAsteroidsNear
+#        - NFAsteroidsMid
+#        - NFAsteroidsFar
+        - HRZNYellowZone
+        - HRZNRedZone
+        - HRZNWhite
+        - HRZNVoid
+# Horizon end

@@ -1,0 +1,101 @@
+﻿- type: construction
+  name: Металлическая баррикада
+  id: BarricadeMetal
+  graph: BarricadeMetalGraph
+  startNode: start
+  targetNode: nodeMetal
+  category: construction-category-cm-structures
+  description: Металлическая баррикада, которая не пускает нежелательных. Может быть модернизирована стальными, пластилиновыми или стальными прутьями для придания различных характеристик. Ремонт с помощью сварщика.
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  icon:
+    sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
+    state: metal
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: Баррикада из мешков с песком
+  id: BarricadeSandbag
+  graph: BarricadeSandbagGraph
+  startNode: start
+  targetNode: nodeSandbag
+  category: construction-category-cm-structures
+  description: Импровизированная баррикада, сделанная из песка с земли. Трудно разбить, но легко пробить.
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  icon:
+    sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
+    state: sandbag
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: Турникет
+  id: BarricadeTurnstile
+  graph: BarricadeTurnstileGraph
+  startNode: start
+  targetNode: nodeTurnstile
+  category: construction-category-cm-structures
+  description: Ограждение, чтобы морские пехотинцы не выходили за пределы строя.
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  icon:
+    sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
+    state: turnstile
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: Турникет медицинский
+  id: BarricadeTurnstileMed
+  graph: BarricadeTurnstileMedGraph
+  startNode: start
+  targetNode: nodeTurnstileMed
+  category: construction-category-cm-structures
+  description: Ограждение, предотвращающее выход пехотинцев за пределы строя. Это ограждение разработано специально для медицинских работников.
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  icon:
+    sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
+    state: turnstile_med
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: Складная металлическая баррикада
+  id: BarricadeMetalDoor
+  graph: BarricadeMetalDoorGraph
+  startNode: start
+  targetNode: nodeBarricadeMetalDoor
+  category: construction-category-cm-structures
+  description: Складная металлическая баррикада слабее, чем не складывающаяся аналогия. Может открываться и закрываться в любой момент. Ремонт с помощью сварщика.
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  icon:
+    sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
+    state: folding_metal
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: Складная пластиковая баррикада
+  id: BarricadePlasteelDoor
+  graph: BarricadePlasteelDoorGraph
+  startNode: start
+  targetNode: nodeBarricadePlasteelDoor
+  category: construction-category-cm-structures
+  description: Прочная складная баррикада из пластилина, более прочная, чем ее металлический аналог. Может закрываться и открываться в любой момент. Ремонт с помощью сварщика.
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  icon:
+    sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
+    state: plasteel
+  conditions:
+    - !type:TileNotBlocked

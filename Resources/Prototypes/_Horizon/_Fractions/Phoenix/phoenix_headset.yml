@@ -1,0 +1,15 @@
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetPhoenix
+  name: Гарнитура ИФ
+  description: Гарнитура для связи членов фракции Феникс. Принимает ключи шифрования.
+  suffix: Феникс
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/staff/headset.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Phoenix/staff/headset.rsi
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyCommon

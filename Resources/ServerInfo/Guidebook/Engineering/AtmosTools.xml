@@ -1,0 +1,52 @@
+<Document>
+  # Инструменты Атмоса
+  Атмосферные техники имеют стандартный набор инструментов инженера, а также два специальных прибора - Голопроектор барьеров и Газоанализатор.
+
+  <Box>
+    <GuideEntityEmbed Entity="HolofanProjector"/>
+    <GuideEntityEmbed Entity="GasAnalyzer"/>
+  </Box>
+
+  ## Голопроектор барьеров
+  Голопроектор создаёт барьер из твёрдого света, который блокирует перемещение газов, но пропускает людей.
+
+  <Box>
+    <GuideEntityEmbed Entity="HolofanProjector"/>
+    <GuideEntityEmbed Entity="HoloFan"/>
+  </Box>
+
+  Крайне полезен для перемещения между [textlink="буферными зонами" link="FireAndGasControl"] без утечки газов, а также для обозначения опасных зон.
+  Может использоваться как временная перегородка между разгерметизированными и герметичными участками.
+
+  Имеет встроенный аккумулятор, который разряжается при использовании. Заряжается путём извлечения элемента питания и помещения его в зарядное устройство.
+
+  Голобарьеры, установленные рядом с [textlink="противопожарным шлюзом" link="FireAndGasControl"], отключают его блокировку, позволяя открывать шлюз вручную.
+
+  ## Газоанализатор
+  Прибор для анализа состава газа в атмосфере или любых [textlink="атмосферных устройствах" link="GasManipulation"].
+
+  <Box>
+    <GuideEntityEmbed Entity="GasAnalyzer"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="GasPipeBend" Caption=""/>
+    <GuideEntityEmbed Entity="GasPressurePump" Caption=""/>
+    <GuideEntityEmbed Entity="SignalControlledValve" Caption=""/>
+    <GuideEntityEmbed Entity="GasFilter" Caption=""/>
+    <GuideEntityEmbed Entity="StorageCanister" Caption=""/>
+    <GuideEntityEmbed Entity="GasThermoMachineFreezer" Caption=""/>
+  </Box>
+
+  Используется нажатием на устройство с газом или на воздух в помещении.
+
+  Отображает:
+  - Объём устройства (не газа!)
+  - Общее давление газа (кПа)
+  - Температуру (Кельвины и Цельсии)
+  - Точный состав газа в молях и процентах
+
+  Внизу интерфейса показывает визуальное представление различных [textlink="газов" link="Gasses"] и их концентраций.
+
+  При анализе устройств с несколькими входами/выходами показывает состав для каждого порта отдельно, что полезно для диагностики систем [textlink="смешивания и фильтрации" link="MixingAndFiltering"].
+
+</Document>

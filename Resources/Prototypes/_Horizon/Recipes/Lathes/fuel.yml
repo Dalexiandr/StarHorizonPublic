@@ -1,0 +1,111 @@
+- type: latheRecipe
+  id: FuelPlasma1
+  result: FuelPlasma1
+  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  materials:
+    RawPlasma: 100
+    RawIron: 50
+    RawQuartz: 50
+
+- type: latheRecipe
+  id: FuelUranium1
+  result: FuelUranium1
+  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  materials:
+    RawUranium: 100
+    RawIron: 50
+    RawQuartz: 50
+
+- type: latheRecipe
+  id: FuelBananium1
+  result: FuelBananium1
+  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  materials:
+    RawBananium: 100
+    RawIron: 50
+    RawQuartz: 50
+
+- type: latheRecipe
+  id: FuelPlasmaUnstable1
+  result: FuelPlasmaUnstable1
+  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  materials:
+    RawPlasma: 150
+    RawIron: 50
+    RawQuartz: 50
+
+- type: latheRecipe
+  id: FuelUraniumUnstable1
+  result: FuelUraniumUnstable1
+  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  materials:
+    RawUranium: 150
+    RawIron: 50
+    RawQuartz: 50
+
+- type: latheRecipe
+  id: FuelBananiumUnstable1
+  result: FuelBananiumUnstable1
+  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  materials:
+    RawBananium: 150
+    RawIron: 50
+    RawQuartz: 50
+
+- type: latheRecipe
+  id: FuelPlasmaPure1
+  result: FuelPlasmaPure1
+  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  materials:
+    RawPlasma: 75
+    RawIron: 50
+    RawQuartz: 50
+    RawTorium: 25
+
+- type: latheRecipe
+  id: FuelUraniumPure1
+  result: FuelUraniumPure1
+  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  materials:
+    RawUranium: 75
+    RawIron: 50
+    RawQuartz: 50
+    RawTorium: 25
+
+- type: latheRecipe
+  id: FuelBananiumPure1
+  result: FuelBananiumPure1
+  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  materials:
+    RawBananium: 75
+    RawIron: 50
+    RawQuartz: 50
+    RawTorium: 25
+
+- type: latheRecipe
+  id: FuelPlutonium1
+  result: FuelPlutonium1
+  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  materials:
+    RawPlutonium: 100
+    RawIron: 50
+    RawQuartz: 50
+
+- type: latheRecipe
+  id: FuelPlutoniumUnstable1
+  result: FuelPlutoniumUnstable1
+  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  materials:
+    RawPlutonium: 150
+    RawIron: 50
+    RawQuartz: 50
+
+- type: latheRecipe
+  id: FuelPlutoniumPure1
+  result: FuelPlutoniumPure1
+  completetime: 0.06 # Frontier: 0<0.06 (~2/30)
+  materials:
+    RawPlutonium: 75
+    RawIron: 50
+    RawQuartz: 50
+    RawTorium: 25

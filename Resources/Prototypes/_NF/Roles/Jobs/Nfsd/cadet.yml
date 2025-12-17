@@ -1,0 +1,55 @@
+- type: job
+  id: Cadet
+  name: job-name-cadet-nf
+  description: job-description-cadet-nf
+  playTimeTracker: JobSecurityCadet
+  salary: 35000 # Horizon
+  forceFaction: FactionNFSD # Horizon
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 21600 # 6 hours
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 64800 # 18 hours
+      inverted: true # Leave slots open for newer, less confident players.
+  startingGear: CadetGear
+  icon: JobIconCadetNF
+  supervisors: job-supervisors-cadet
+  weight: 70
+  displayWeight: 10
+  canBeAntag: false
+  accessGroups:
+  - CadetNfsdAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant, TrackingImplant ]
+  - !type:GiveItemOnHolidaySpecial
+    holiday: FrontierBirthday
+    prototype: FrontierBirthdayGift
+
+- type: startingGear
+  id: CadetGear
+  equipment:
+    pocket1: NFWeaponPistolUniversalNfsdLessLethal
+    pocket2: BookSecurity
+  storage:
+    back:
+    - Flash
+    - NFMagazineHighCapacityPistol35
+    - NFMagazineHighCapacityPistol35Rubber
+    - FrontierUplinkCoin10
+
+- type: chameleonOutfit
+  id: CadetChameleonOutfit
+  job: Cadet
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHatNfsdBeretBrown
+    mask: ClothingMaskGasNfsd
+    eyes: ClothingEyesGlassesNfsd
+    outerClothing: ClothingOuterArmorNfsd
+    neck: ClothingNeckNfsdBadgeSecurityCadet
+    belt: ClothingBeltNfsdFilled
+    gloves: ClothingHandsGlovesCombatNfsdBrown
+    shoes: ClothingShoesBootsNfsdBrownFilled
+

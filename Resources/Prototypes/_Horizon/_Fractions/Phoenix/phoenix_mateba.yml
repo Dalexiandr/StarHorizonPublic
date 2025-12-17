@@ -1,0 +1,11 @@
+- type: entity
+  name: револьвер матеба ИФ
+  id: WeaponRevolverMatebaPhoenix
+  parent: WeaponRevolverMateba
+  description: Улучшенная версия револьвера Mateba для службы безопасности ИФ.
+  suffix: Феникс, СБ
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/weapon/Unica-9.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Phoenix/weapon/Unica-9.rsi

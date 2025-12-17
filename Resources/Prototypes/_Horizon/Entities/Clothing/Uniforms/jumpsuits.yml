@@ -1,0 +1,116 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitBlacksm
+  name: черный смокинг
+  description: Красивый черный смокинг для важных мероприятий.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Uniforms/Jumpsuit/black_sm.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Uniforms/Jumpsuit/black_sm.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitWhitesm
+  name: белый смокинг
+  description: Красивый белый смокинг для важных мероприятий.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Uniforms/Jumpsuit/white_sm.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Uniforms/Jumpsuit/white_sm.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitRedsm
+  name: костюм с жилеткой
+  description: Нарядный костюм с ноткой аристократии.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Uniforms/Jumpsuit/red_sm.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Uniforms/Jumpsuit/red_sm.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitGoldCaptain
+  name: золотой комбинезон капитана
+  suffix: StarHorizon
+  description: Выдаётся почётным и опытным членам экипажа.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/gold_captain_jumpsuit.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/gold_captain_jumpsuit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitWhiteCaptain
+  name: белый комбинезон капитана
+  suffix: StarHorizon
+  description: Одним своим видом заставляет остальных повиноваться Вашей воле.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/white_captain_jumpsuit.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/white_captain_jumpsuit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitBlueshield
+  name: комбинезон офицера "Синий щит"
+  description: Классическая чёрная версия из плотной гидрофобной ткани. Чтобы не запачкать кровью.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/blueshield_jumpsuit.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/blueshield_jumpsuit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitBlueshieldBlue
+  name: синий комбинезон офицера "Синий щит"
+  description: Синяя версия из плотной гидрофобной ткани. Чтобы не запачкать кровью.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/blueshield_jumpsuit_blue.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/blueshield_jumpsuit_blue.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitBlueshieldWhite
+  name: белый комбинезон офицера "Синий щит"
+  description: Маркер особо отличившихся сотрудников. Как и прочие версии, устойчив к крови и другим жидкостям.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/blueshield_jumpsuit_white.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/blueshield_jumpsuit_white.rsi
+
+- type: entity
+  parent: ClothingUniformJumpsuitCMO
+  id: ClothingUniformJumpsuitECMO
+  name: комбинезон элитного главного врача
+  description: Это униформа главного врача была перешита, чтобы показать уровень профессионализма своего обладателя. Обеспечивает небольшую биологическую защиту.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/ecmo.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/ecmo.rsi
+
+- type: entity
+  parent: ClothingUniformJumpsuitSec
+  id: ClothingUniformJumpsuitSecPilot
+  name: комбинезон пилота
+  description: Сделанная из прочной ткани униформа, обеспечивающая защиту, герметичность и комфорт в экстремальных условиях космоса.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/pilot.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/pilot.rsi

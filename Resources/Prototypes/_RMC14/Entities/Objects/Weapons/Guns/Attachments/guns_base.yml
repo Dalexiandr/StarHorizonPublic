@@ -1,0 +1,13 @@
+- type: entity
+  parent: BaseAttachableHolder
+  id: BaseMagneticGun
+  categories:
+  - HideSpawnMenu
+  components:
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-rail:
+        whitelist:
+            tags:
+            - AttachmentMagneticHarness
+  - type: Appearance

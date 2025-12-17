@@ -1,0 +1,11 @@
+- type: entity
+  parent: [ClothingUniformBase, ClothingFoldableBase]
+  id: ClothingUniformJumpsuitExpeditorExtra
+  name: специальная униформа экспедитора
+  description: Нестандартная форма экспедитора, специалиста сопровождающего рабочие процессы Карго и РНД отделов.
+  suffix: StarHorizon, Serafim547
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Uniforms/Jumpsuit/expeditor_extra.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Uniforms/Jumpsuit/expeditor_extra.rsi

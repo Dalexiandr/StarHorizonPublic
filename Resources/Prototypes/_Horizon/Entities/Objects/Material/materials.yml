@@ -1,0 +1,156 @@
+# ресурсы
+- type: stack
+  id: EFS
+  name: кристалл EFS
+  icon: { sprite: /Textures/_Horizon/Objects/Materials/uasmaterial.rsi, state: efs }
+  spawn: SheetEFS1
+  maxCount: 30
+
+- type: material
+  id: EFS
+  stackEntity: SheetEFS1
+  name: кристалл EFS
+  icon: { sprite: /Textures/_Horizon/Objects/Materials/uasmaterial.rsi, state: efs }
+  color: "#B30E0E"
+  price: 0.15 # $15 for one unit
+
+- type: entity
+  parent: SheetEFS
+  id: SheetEFS1
+  suffix: Single
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    state: efs
+  - type: Stack
+    stackType: EFS
+    count: 1
+
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: SheetEFSBase
+  name: кристалл EFS
+  description: Осколок кристалла EFS, вы ощущаете слабое тепло от него
+  suffix: StarHorizon, UAS
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Materials/uasmaterial.rsi
+  - type: Item
+    sprite: _Horizon/Objects/Materials/uasmaterial.rsi
+    size: Normal
+  - type: StaticPrice
+    price: 0
+  - type: Tag
+    tags:
+    - UASMaterial
+    - Ore
+  - type: Material
+
+- type: entity
+  parent: SheetEFSBase
+  id: SheetEFS
+  suffix: StarHorizon, UAS
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      EFS: 100
+  - type: Stack
+    stackType: EFS
+    baseLayer: base
+    layerStates:
+    - efs
+    - efs
+    - efs
+  - type: Sprite
+    state: efs
+    layers:
+    - state: efs
+      map: ["base"]
+  - type: Item
+    heldPrefix: efs
+  - type: Appearance
+  - type: Tag
+    tags:
+    - UASMaterial
+    - Ore
+# казмий
+# ресурсы
+- type: stack
+  id: Kazmie
+  name: куб казмия
+  icon: { sprite: /Textures/_Horizon/Objects/Materials/uasmaterial.rsi, state: kazmie }
+  spawn: Sheetkazmie1
+  maxCount: 30
+
+- type: material
+  id: Kazmie
+  stackEntity: Sheetkazmie1
+  name: казмий
+  icon: { sprite: /Textures/_Horizon/Objects/Materials/uasmaterial.rsi, state: kazmie }
+  color: "#2b2f35"
+  price: 0.15 # $15 for one unit
+
+- type: entity
+  parent: Sheetkazmie
+  id: Sheetkazmie1
+  suffix: Single
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    state: kazmie
+  - type: Stack
+    stackType: Kazmie
+    count: 1
+
+
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: SheetkazmieBase
+  name: куб Казмия
+  description: Монолитный куб из казмия, очень увесистый.
+  suffix: StarHorizon, UAS
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Materials/uasmaterial.rsi
+  - type: Item
+    sprite: _Horizon/Objects/Materials/uasmaterial.rsi
+    size: Normal
+  - type: StaticPrice
+    price: 0
+  - type: Tag
+    tags:
+    - UASMaterial
+    - Ore
+  - type: Material
+
+- type: entity
+  parent: SheetkazmieBase
+  id: Sheetkazmie
+  suffix: StarHorizon, UAS
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Kazmie: 100
+  - type: Stack
+    stackType: Kazmie
+    baseLayer: base
+    layerStates:
+    - kazmie
+    - kazmie
+    - kazmie
+  - type: Sprite
+    state: kazmie
+    layers:
+    - state: kazmie
+      map: ["base"]
+  - type: Item
+    heldPrefix: kazmie
+  - type: Appearance
+  - type: Tag
+    tags:
+    - UASMaterial
+    - Ore

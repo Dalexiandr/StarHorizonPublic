@@ -1,0 +1,23 @@
+
+- type: entity
+  parent: [Clothing, BaseUASContraband]
+  categories: [ HideSpawnMenu ]
+  id: ClothingHeadsetUAS
+  suffix: StarHorizon, UAS
+  name: гарнитура UAS
+  description: Вам кажется, что вы слышите белый шум и что-то, похожее на слова.
+  components:
+  - type: Headset
+  - type: EncryptionKeyHolder
+    keySlots: 4
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Headset/uasears.rsi
+    state: icon
+  - type: Tag
+    tags: [] # Выносим с ВЛа для хамелеонки
+  - type: Item
+    size: Small
+  - type: Clothing
+    slots:
+    - ears
+    sprite: _StarHorizon/Clothing/Headset/uasears.rsi

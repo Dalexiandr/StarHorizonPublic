@@ -1,0 +1,71 @@
+- type: entity
+  parent: [ClothingOuterBaseLarge, GeigerCounterClothing, AllowSuitStorageClothing]
+  id: ClothingOuterHardsuitRadCat
+  name: Котячий противорадиационный скафандр
+  suffix: Только коты
+  description: "Былой противорадиационный костюм который переделали под скафандр специально для защиты милых котиков от жестокого вакума."
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Suits/rad.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.90
+        Radiation: 0.10
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Caustic: 0.9
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Suits/rad.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.01
+    coolingCoefficient: 0.01
+  - type: HeldSpeedModifier
+  - type: DamageOnInteractProtection
+    damageProtection:
+      flatReductions:
+        Heat: 10
+  - type: ClothingSpeedModifier
+    walkModifier: 0.90
+    sprintModifier: 0.90
+  - type: GroupExamine
+  - type: Tag
+    tags:
+    - PetOnly
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHardsuitHoodRadCat
+    slot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: ProtectedFromStepTriggers
+    slots: WITHOUT_POCKET
+  - type: CatWearable # Frontier
+
+- type: entity
+  parent: ClothingOuterHardsuitCarp
+  id: ClothingOuterHardsuitCarpCat
+  name: Котовый скафандр карпа
+  description: Специальный скафандр для котов который превщает вас в карпа! Отлично подходит для охоты на карпов. Благодоря технологиям от НЕИЗВЕСТНО позволяет сделать милый костюм скафандром который защитит милого котика от жестокого вакума.
+  suffix: Только коты
+  components:
+  - type: Tag
+    tags:
+    - PetOnly
+
+- type: entity
+  parent: ClothingOuterHardsuitSyndie
+  id: ClothingOuterHardsuitSyndieCat
+  name: Котовый кроваво-красный скафандр
+  description: "Тяжёлая броня для специальныйх операций по захвату рыбки и других котов. Не переживайте взрывать котячью станцию 14 пока никто не собирается. Только.. если там нету рыбки."
+  suffix: Только коты
+  components:
+  - type: Tag
+    tags:
+    - PetOnly

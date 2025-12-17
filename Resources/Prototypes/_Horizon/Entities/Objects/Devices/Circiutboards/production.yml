@@ -1,0 +1,15 @@
+- type: entity
+  parent: BaseMachineCircuitboard
+  id: OreProcessorFuelMachineCircuitboard
+  name: fuel processor machine board
+  components:
+  - type: Sprite
+    state: supply
+  - type: MachineBoard
+    prototype: OreProcessorFuel
+    requirements: # Frontier
+      MatterBin: 1 # Frontier
+      Manipulator: 3 # Frontier
+    stackRequirements:
+      # Manipulator: 4 # Frontier
+      Glass: 1

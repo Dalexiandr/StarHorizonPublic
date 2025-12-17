@@ -1,0 +1,55 @@
+- type: entity
+  id: NFBaseWeaponSubMachineGunChamber45
+  parent: NFBaseWeaponSubMachineGunChamber
+  abstract: true
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: NFMagazineSubMachineGun45
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        priority: 2
+        whitelist: &mag45Whitelist
+          tags:
+            - NFMagazineSubMachineGunPistol45
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber: &chamber45Standard
+        name: Chamber
+        startingItem: NFCartridgePistol45
+        priority: 1
+        whitelist:
+          tags:
+            - NFCartridgePistol45
+
+- type: entity
+  parent: [NFBaseWeaponSubMachineGunChamber45, NFBaseWeaponFrameSubMachineGun] # Frontier: BaseMajorContraband<BaseC3SyndicateContraband
+  id: WeaponSubMachineGunBLANK
+  name: Vector-7S
+  description: Улучшенная и модифицированная версия некогда списанного со счетов Вектора. Оборудован улучшеной системой подачи патронов и умным прицелом. Умные патроны в комплект не идут.
+  suffix: TraumaTeam
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Weapons/Guns/SMGs/vectorseven.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    fireRate: 5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/atreides.ogg
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+    whitelist:
+          tags:
+            - NFCartridgePistol45

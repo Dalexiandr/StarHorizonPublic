@@ -1,0 +1,11 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitPhoenixSecurity
+  name: Комбинезон СБ-ИФ
+  description: Тактический комбинезон сотрудника СБ-ИФ. Тактичен и надёжен.
+  suffix: Феникс, СБ
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/uniform/psecuniform.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Phoenix/uniform/psecuniform.rsi

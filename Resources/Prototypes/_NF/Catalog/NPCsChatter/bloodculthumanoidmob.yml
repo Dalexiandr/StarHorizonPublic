@@ -1,0 +1,5 @@
+- type: localizedDataset
+  id: bloodcultisthumanoidchatter
+  values:
+    prefix: advertisement-bloodcultisthumanoid-
+    count: 20

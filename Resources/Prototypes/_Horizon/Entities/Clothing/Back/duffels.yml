@@ -1,0 +1,50 @@
+﻿- type: entity
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelBlueshield
+  name: вещмешок офицера "Синий щит"
+  description: Подходит для того, чтобы спрятать в нём труп.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Duffels/blueshield.rsi
+
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelRoboticist
+  name: вещмешок робототехника
+  description: Компактный, насколько это возможно, вещмешок с отделениями для хранения основных гаджетов, инструментов и виски.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Duffels/roboticist.rsi
+
+- type: entity
+  parent: ClothingBackpackDuffelMedical
+  id: ClothingBackpackDuffelEliteCMO
+  suffix: StarHorizon
+  name: вещмешок элитного главного врача
+  description: Стерильный вещмешок с золотой окантовкой и предназначенными для медикаментов отделениями и карманами.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Duffels/ecmo.rsi
+
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelCentcom
+  suffix: StarHorizon
+  name: вещмешок Центком
+  description: Сделан из лучшей взрывоустойчивой ткани. Способен вмещать действительно габаритные объекты...
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Duffels/centcom.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.6
+
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelCentcomOld
+  name: вещмешок ЦентКома
+  description: Для транспортировки тысячи бумаг.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Duffels/oldcentcom.rsi

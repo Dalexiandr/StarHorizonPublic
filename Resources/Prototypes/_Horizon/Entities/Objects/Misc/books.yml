@@ -1,0 +1,593 @@
+- type: entity
+  id: BookLanguageGalacticCommonBadSpeak
+  parent: BaseImplantOnlyImplanter
+  name: Galactic Common Language
+  description: Book, containing knowledge about speaking on specific language.
+  components:
+    - type: Sprite
+      sprite: _Horizon/Objects/Misc/books.rsi
+      state: implanter0
+      layers:
+        - state: implanter1
+          map: [ "implantFull" ]
+          visible: true
+        - state: implanter0
+          map: [ "implantOnly" ]
+    - type: Implanter
+      currentMode: Inject
+      implantOnly: true
+      implant: GalacticCommonTranslatorImplantBadSpeak
+      implantTime: 300
+    - type: Tag
+      tags:
+      - Book
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: GalacticCommonTranslatorImplantBadSpeak
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      GalacticCommon: BadSpeak
+
+- type: entity
+  id: BookLanguageArachnidBadSpeak
+  name: Arachnid Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: ArachnidTranslatorImplantBadSpeak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: ArachnidTranslatorImplantBadSpeak
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Arachnid: BadSpeak
+
+- type: entity
+  id: BookLanguageNekomimeticBadSpeak
+  name: Nekomimetic Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: NekomimeticTranslatorImplantBadSpeak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: NekomimeticTranslatorImplantBadSpeak
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Nekomimetic: BadSpeak
+
+- type: entity
+  id: BookLanguageDraconicBadSpeak
+  name: Draconic Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: DraconicTranslatorImplantBadSpeak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: DraconicTranslatorImplantBadSpeak
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Draconic: BadSpeak
+
+- type: entity
+  id: BookLanguageCanilunztBadSpeak
+  name: Canilunzt Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: CanilunztTranslatorImplantBadSpeak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: CanilunztTranslatorImplantBadSpeak
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Canilunzt: BadSpeak
+
+- type: entity
+  id: BookLanguageSikTajBadSpeak
+  name: SikTaj Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: SikTajTranslatorImplantBadSpeak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: SikTajTranslatorImplantBadSpeak
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      SikTaj: BadSpeak
+
+- type: entity
+  id: BookLanguageNianBadSpeak
+  name: Nian Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: NianTranslatorImplantBadSpeak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: NianTranslatorImplantBadSpeak
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Nian: BadSpeak
+
+- type: entity
+  id: BookLanguageSolCommonBadSpeak
+  name: SolCommon Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: SolCommonTranslatorImplantBadSpeak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: SolCommonTranslatorImplantBadSpeak
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      SolCommon: BadSpeak
+
+- type: entity
+  id: BookLanguageDwarfBadSpeak
+  name: Dwarf Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: DwarfTranslatorImplantBadSpeak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: DwarfTranslatorImplantBadSpeak
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Dwarf: BadSpeak
+
+- type: entity
+  id: BookLanguageCintaTajBadSpeak
+  name: Cinta Taj Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: CintaTajTranslatorImplantBadSpeak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: CintaTajTranslatorImplantBadSpeak
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      CintaTaj: BadSpeak
+
+- type: entity
+  id: BookLanguageGutterBadSpeak
+  name: Gutter Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: GutterTranslatorImplantBadSpeak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: GutterTranslatorImplantBadSpeak
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Gutter: BadSpeak
+
+- type: entity
+  id: BookLanguageNeoRusskiyaBadSpeak
+  name: Neo Russkiya Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: NeoRusskiyaTranslatorImplantBadSpeak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: NeoRusskiyaTranslatorImplantBadSpeak
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      NeoRusskiya: BadSpeak
+
+- type: entity
+  id: BookLanguageClownishBadSpeak
+  name: Clownish Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: ClownishTranslatorImplantBadSpeak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: ClownishTranslatorImplantBadSpeak
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Clownish: BadSpeak
+
+# Region Understand
+
+- type: entity
+  id: BookLanguageGalacticCommonUnderstand
+  name: GalacticCommon Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: GalacticCommonTranslatorImplantUnderstand
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: GalacticCommonTranslatorImplantUnderstand
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      GalacticCommon: Understand
+
+- type: entity
+  id: BookLanguageArachnidUnderstand
+  name: Arachnid Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: ArachnidTranslatorImplantUnderstand
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: ArachnidTranslatorImplantUnderstand
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Arachnid: Understand
+
+- type: entity
+  id: BookLanguageNekomimeticUnderstand
+  name: Nekomimetic Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: NekomimeticTranslatorImplantUnderstand
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: NekomimeticTranslatorImplantUnderstand
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Nekomimetic: Understand
+
+- type: entity
+  id: BookLanguageDraconicUnderstand
+  name: Draconic Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: DraconicTranslatorImplantUnderstand
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: DraconicTranslatorImplantUnderstand
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Draconic: Understand
+
+- type: entity
+  id: BookLanguageCanilunztUnderstand
+  name: Canilunzt Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: CanilunztTranslatorImplantUnderstand
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: CanilunztTranslatorImplantUnderstand
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Canilunzt: Understand
+
+- type: entity
+  id: BookLanguageSikTajUnderstand
+  name: SikTaj Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: SikTajTranslatorImplantUnderstand
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: SikTajTranslatorImplantUnderstand
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      SikTaj: Understand
+
+- type: entity
+  id: BookLanguageNianUnderstand
+  name: Nian Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: NianTranslatorImplantUnderstand
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: NianTranslatorImplantUnderstand
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Nian: Understand
+
+- type: entity
+  id: BookLanguageSolCommonUnderstand
+  name: SolCommon Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: SolCommonTranslatorImplantUnderstand
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: SolCommonTranslatorImplantUnderstand
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      SolCommon: Understand
+
+- type: entity
+  id: BookLanguageDwarfUnderstand
+  name: Dwarf Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: DwarfTranslatorImplantUnderstand
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: DwarfTranslatorImplantUnderstand
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Dwarf: Understand
+
+- type: entity
+  id: BookLanguageCintaTajUnderstand
+  name: Cinta Taj Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: CintaTajTranslatorImplantUnderstand
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: CintaTajTranslatorImplantUnderstand
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      CintaTaj: Understand
+
+- type: entity
+  id: BookLanguageGutterUnderstand
+  name: Gutter Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: GutterTranslatorImplantUnderstand
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: GutterTranslatorImplantUnderstand
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Gutter: Understand
+
+- type: entity
+  id: BookLanguageNeoRusskiyaUnderstand
+  name: Neo Russkiya Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: NeoRusskiyaTranslatorImplantUnderstand
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: NeoRusskiyaTranslatorImplantUnderstand
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      NeoRusskiya: Understand
+
+- type: entity
+  id: BookLanguageClownishUnderstand
+  name: Clownish Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: ClownishTranslatorImplantUnderstand
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: ClownishTranslatorImplantUnderstand
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Clownish: Understand
+
+- type: entity
+  id: BookLanguageSignLanguageUnderstand
+  name: Sign Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: SignLanguageTranslatorImplantUnderstand
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: SignLanguageTranslatorImplantUnderstand
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      SignLanguage: Understand
+
+- type: entity
+  id: BookLanguageRootSpeakUnderstand
+  name: RootSpeak Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: RootSpeakTranslatorImplantUnderstand
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: RootSpeakTranslatorImplantUnderstand
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      RootSpeak: Understand
+
+- type: entity
+  id: BookLanguageBubblishUnderstand
+  name: Bubblish Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: BubblishTranslatorImplantUnderstand
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: BubblishTranslatorImplantUnderstand
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Bubblish: Understand
+
+- type: entity
+  id: BookLanguageVoxPidginUnderstand
+  name: Vox Pidgin Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: VoxPidginTranslatorImplantUnderstand
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: VoxPidginTranslatorImplantUnderstand
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      VoxPidgin: Understand
+
+- type: entity
+  id: BookLanguageGoblinUnderstand
+  name: Goblin Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: GoblinTranslatorImplantUnderstand
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: GoblinTranslatorImplantUnderstand
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Goblin: Understand
+
+- type: entity
+  id: BookLanguageHarpyUnderstand
+  name: Harpy Language
+  parent: BookLanguageGalacticCommonBadSpeak
+  components:
+  - type: Implanter
+    implant: HarpyTranslatorImplantUnderstand
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: HarpyTranslatorImplantUnderstand
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Harpy: Understand

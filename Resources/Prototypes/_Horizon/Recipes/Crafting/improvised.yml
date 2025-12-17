@@ -1,0 +1,12 @@
+- type: construction
+  name: скафандр максимальный
+  id: HardsuitMaximize
+  graph: HardsuitMaximize
+  startNode: start
+  targetNode: hardsuitMaximize
+  category: construction-category-clothing
+  objectType: Item
+  description: Пламя. Жар. Эти элементы куют великое оружие, они же куют великих утилизаторов.
+  icon:
+    sprite: Clothing/OuterClothing/Hardsuits/maxim.rsi
+    state: icon

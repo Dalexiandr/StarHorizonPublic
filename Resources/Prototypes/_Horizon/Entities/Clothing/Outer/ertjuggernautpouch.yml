@@ -1,0 +1,39 @@
+- type: entity
+  id: ERTJuggernautClothingPouch
+  parent: ClothingOuterStorageBase
+  name: разгрузка ОБР джаггернаута
+  description: Специальное хранилище для больших магазинов оружия.
+  suffix: StarHorizon, неснимаемый
+  components:
+    - type: Item
+      sprite: _StarHorizon/Clothing/Outer/ertjuggernautsuitstorage.rsi
+      size: Huge
+    - type: Sprite
+      sprite: _StarHorizon/Clothing/Outer/ertjuggernautsuitstorage.rsi
+    - type: Storage
+      grid:
+      - 0,0,7,5
+    - type: StorageFill
+      contents:
+        - id: MagazineMinigunERT15
+        - id: MagazineMinigunERT15Incendiary
+        - id: MagazineMinigunERT15
+        - id: MagazineMinigunERT15Incendiary
+        - id: MagazineMinigunERT15
+        - id: MagazineMinigunERT15Incendiary
+      maxItemSize: Large
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+          ents: []
+    - type: UserInterface
+      interfaces:
+        enum.StorageUiKey.Key:
+          type: StorageBoundUserInterface
+        enum.SharedGasTankUiKey.Key:
+          type: GasTankBoundUserInterface
+    - type: Clothing
+      sprite: _StarHorizon/Clothing/Outer/ertjuggernautsuitstorage.rsi
+      slots:
+        - SuitStorage
+    - type: Unremoveable

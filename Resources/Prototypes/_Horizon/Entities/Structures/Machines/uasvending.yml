@@ -1,0 +1,78 @@
+- type: entity
+  parent: VendingMachine
+  suffix: StarHorizon, UAS, Structure
+  categories: [ HideSpawnMenu ]
+  id: UASVending
+  name: униформат UAS
+  description: Обычный автомат с одеждой... Разве что экран другой.
+  components:
+  - type: VendingMachine
+    pack: VendingMachineUAS
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    denyState: deny-unshaded
+  - type: Advertise
+    pack: ClothesMateAds
+  - type: MarketModifier
+    mod: 1
+  - type: SpeakOnUIClosed
+    pack: GenericVendGoodbyes
+  - type: Speech
+  - type: Sprite
+    sprite: _Horizon/Structures/Machines/VendingMachines/uasclothing.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: PointLight
+    radius: 1.8
+    energy: 1.6
+    color: "#F05A5A"
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+        - !type:SpawnEntitiesBehavior
+            spawn:
+              Sheetkazmie:
+                min: 1
+                max: 5
+              SheetEFS:
+                min: 1
+                max: 3
+
+- type: vendingMachineInventory
+  id: VendingMachineUAS
+  startingInventory:
+   ClothingEyesGlassesUAS: 1
+   SuitProtectiveUAS: 2
+   SuitUAS: 3
+   SkirtProtectiveUAS: 2
+   SkirtUAS: 3
+   UASVests: 3
+   UASsatchel: 1
+   UASGloves: 5
+   UASGlovesIsolate: 5
+   ClothingNeckCloakUAS: 1
+   uasberet: 1
+   uascap: 3
+   UASBoots: 5
+   UASBoxKitUniform: 1
+  contrabandInventory:
+    LumaPlushina: 1
+    RipsiPlushin: 1

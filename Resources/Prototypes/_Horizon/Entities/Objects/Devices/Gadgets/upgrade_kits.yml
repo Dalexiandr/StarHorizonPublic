@@ -1,0 +1,14 @@
+- type: entity
+  name: набор для улучшения гидропонного лотка
+  parent: BaseItem
+  id: HydroponicsTrayUpgradeKit
+  description: Экспериментальный набор для улучшения гидропонного лотка.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: abductor_mod
+  - type: Item
+    size: Small
+  - type: Tag
+    tags:
+    - HydroponicsTrayUpgradeKit

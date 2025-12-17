@@ -1,0 +1,167 @@
+- type: reagent
+  id: GreyExtract
+  name: reagent-name-slime-grey
+  desc: reagent-desc-slime-grey
+  physicalDesc: reagent-physical-desc-acidic
+  flavor: bitter
+  color: "#808080"
+
+- type: reagent
+  id: GreenExtract
+  name: reagent-name-slime-green
+  desc: reagent-desc-slime-green
+  physicalDesc: reagent-physical-desc-acidic
+  flavor: bitter
+  color: "#00FF00"
+
+- type: reagent
+  id: BlueExtract
+  name: reagent-name-slime-blue
+  desc: reagent-desc-slime-blue
+  physicalDesc: reagent-physical-desc-acidic
+  flavor: bitter
+  color: "#00FFFF"
+
+- type: reagent
+  id: YellowExtract
+  name: reagent-name-slime-yellow
+  desc: reagent-desc-slime-yellow
+  physicalDesc: reagent-physical-desc-acidic
+  flavor: bitter
+  color: "#FFFF00"
+
+- type: reagent
+  id: PurpleExtract
+  name: reagent-name-slime-purple
+  desc: reagent-desc-slime-purple
+  physicalDesc: reagent-physical-desc-acidic
+  flavor: bitter
+  color: "#FF00FF"
+
+- type: reagent
+  id: OrangeExtract
+  name: reagent-name-slime-orange
+  desc: reagent-desc-slime-orange
+  physicalDesc: reagent-physical-desc-acidic
+  flavor: bitter
+  color: "#FFA500"
+
+- type: reagent
+  id: DarkBlueExtract
+  name: reagent-name-slime-dark-blue
+  desc: reagent-desc-slime-dark-blue
+  physicalDesc: reagent-physical-desc-acidic
+  flavor: bitter
+  color: "#0000FF"
+
+- type: reagent
+  id: RedExtract
+  name: reagent-name-slime-red
+  desc: reagent-desc-slime-red
+  physicalDesc: reagent-physical-desc-acidic
+  flavor: bitter
+  color: "#FF0000"
+
+- type: reagent
+  id: BlueSpaceExtract
+  name: блюспейс экстракт
+  desc: Вещество, полученное из экстракта блюспейс слайма.
+  physicalDesc: reagent-physical-desc-acidic
+  flavor: bitter
+  color: "#FFFFFF"
+
+- type: reagent
+  id: OilExtract
+  name: нефтяной экстракт
+  desc: Вещество, полученное из экстракта нефтяного слайма.
+  physicalDesc: reagent-physical-desc-acidic
+  flavor: bitter
+  color: "#242234"
+
+- type: reagent
+  id: DarkPurpleExtract
+  name: тёмно-фиолетовый экстракт
+  desc: Вещество, полученное из экстракта тёмно-фиолетового слайма.
+  physicalDesc: reagent-physical-desc-acidic
+  flavor: bitter
+  color: "#793a80"
+
+- type: reagent
+  id: AdamantiteExtract
+  name: адамантитовый экстракт
+  desc: Вещество, полученное из экстракта адамантитового слайма.
+  physicalDesc: reagent-physical-desc-acidic
+  flavor: bitter
+  color: "#92dcba"
+
+- type: reagent
+  id: SepiaExtract
+  name: сепиа экстракт
+  desc: Вещество, полученное из экстракта сепиевого слайма.
+  physicalDesc: reagent-physical-desc-acidic
+  flavor: bitter
+  color: "#c7b08b"
+
+- type: reagent
+  id: GoldExtract
+  name: золотой экстракт
+  desc: Вещество, полученное из экстракта золотого слайма.
+  physicalDesc: reagent-physical-desc-acidic
+  flavor: bitter
+  color: "#bb7547"
+
+- type: reagent
+  id: MetallExtract
+  name: металлический экстракт
+  desc: Вещество, полученное из экстракта металлического слайма.
+  physicalDesc: reagent-physical-desc-acidic
+  flavor: bitter
+  color: "#6d758d"
+
+- type: reagent
+  id: PyritExtract
+  name: пиритовый экстракт
+  desc: Вещество, полученное из экстракта пиритового слайма.
+  physicalDesc: reagent-physical-desc-acidic
+  flavor: bitter
+  color: "#ffd541"
+
+- type: reagent
+  id: SilverExtract
+  name: серебрянный экстракт
+  desc: Вещество, полученное из экстракта серебряного слайма.
+  physicalDesc: reagent-physical-desc-acidic
+  flavor: bitter
+  color: "#8b93af"
+
+- type: reagent
+  id: BlackExtract
+  name: чёрный экстракт
+  desc: Вещество, полученное из экстракта чёрного слайма.
+  physicalDesc: reagent-physical-desc-acidic
+  flavor: bitter
+  color: "#333941"
+
+- type: reagent
+  id: LightPinkExtract
+  name: светло-розовый экстракт
+  desc: Вещество, полученное из экстракта светло-розового слайма.
+  physicalDesc: reagent-physical-desc-acidic
+  flavor: bitter
+  color: "#e9b5a3"
+
+- type: reagent
+  id: PinkExtract
+  name: розовый экстракт
+  desc: Вещество, полученное из экстракта розового слайма.
+  physicalDesc: reagent-physical-desc-acidic
+  flavor: bitter
+  color: "#f5a097"
+
+- type: reagent
+  id: CeruleanExtract
+  name: лазурный экстракт
+  desc: Вещество, полученное из экстракта лазурного слайма.
+  physicalDesc: reagent-physical-desc-acidic
+  flavor: bitter
+  color: "#285cc4"

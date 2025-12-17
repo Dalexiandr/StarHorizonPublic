@@ -1,0 +1,14 @@
+ent-IngotBaseFar = { ent-BaseItem }
+    .desc = A heavy metal ingot stamped with the Nanotrasen logo.
+ent-IngotTitan = titan bar
+    .suffix = Full
+    .desc = { ent-IngotBaseFar.desc }
+ent-IngotTitan1 = titan bar
+    .suffix = Single
+    .desc = { ent-IngotTitan.desc }
+ent-IngotPsycore = psycore bar
+    .suffix = Full
+    .desc = { ent-IngotBaseFar.desc }
+ent-IngotPsycore1 = psycore bar
+    .suffix = Single
+    .desc = { ent-IngotPsycore.desc }

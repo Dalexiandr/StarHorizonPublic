@@ -1,0 +1,75 @@
+﻿- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesWeddingShoes
+  name: свадебные туфельки
+  description: Прекрасная обувь, что прекрасно подчёркивает походку невесты.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Shoes/weddingshoes.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Shoes/weddingshoes.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesWeddingGlaceups
+  name: свадебные туфли
+  description: На самом деле универсальны, но с костюмом смотрятся лучше.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Shoes/weddinglaceups.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Shoes/weddinglaceups.rsi
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: ClothingShoesChameleonStealsBootsJack
+  name: подкованные сапоги
+  description: Обувь службы безопасности Nanotrasen, для боевых операций или боевых действий. Борьба - всё, борьба - всегда.
+  suffix: Стелс
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Boots/jackboots.rsi
+  - type: Clothing
+    sprite: Clothing/Shoes/Boots/jackboots.rsi
+  - type: Tag
+    tags: [] # ignore "WhitelistChameleon" tag
+  - type: ChameleonClothing
+    slot: [FEET]
+    default: ClothingShoesColorBlack
+  - type: UserInterface
+    interfaces:
+      enum.ChameleonUiKey.Key:
+        type: ChameleonBoundUserInterface
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.15
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: null
+  - type: ClothingSpeedModifier
+    walkModifier: 1.02
+    sprintModifier: 1.02
+
+- type: entity
+  parent: ClothingShoesColorBlack
+  id: ClothingShoesColorStorageBlack
+  name: чёрные туфли
+  description: Стильные, большие чёрные туфли.
+  suffix: Тайное хранилище
+  components:
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,1,1
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: ClothingSpeedModifier
+    walkModifier: 0.97
+    sprintModifier: 0.97

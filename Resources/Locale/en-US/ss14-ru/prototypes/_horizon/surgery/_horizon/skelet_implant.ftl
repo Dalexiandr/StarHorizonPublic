@@ -1,0 +1,6 @@
+ent-BaseBoneImplant = { ent-BaseItem }
+    .desc = { ent-BaseItem.desc }
+ent-BoneLightImplant = light weight bones
+    .desc = Oh...how light it is...
+ent-BoneHeavyImplant = armored bones
+    .desc = Oh...how heavy it is...

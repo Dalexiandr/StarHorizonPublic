@@ -1,0 +1,16 @@
+ent-NFBoxMagazineRifle20Rubber = box of .20 rifle (rubber) magazines
+    .desc = A box full of .20 rifle (rubber) magazines.
+ent-NFBoxMagazineRifle20Overpressure = box of .20 rifle (overpressure) magazines
+    .desc = A box full of .20 rifle (overpressure) magazines.
+ent-NFBoxMagazineRifle30Rubber = box of .30 rifle (rubber) magazines
+    .desc = A box full of .30 rifle (rubber) magazines.
+ent-NFBoxMagazineRifle30Overpressure = box of .30 rifle (overpressure) magazines
+    .desc = A box full of .30 rifle (overpressure) magazines.
+ent-NFBoxMagazinePistol35Rubber = box of pistol (.35 pistol, rubber) magazines
+    .desc = A box full of pistol (.35 pistol, rubber) magazines.
+ent-NFBoxMagazinePistol35Practice = box of pistol (.35 pistol, practice) magazines
+    .desc = A box full of pistol (.35 pistol, practice) magazines.
+ent-NFBoxMagazinePistolSubMachineGun35Rubber = box of SMG (.35 pistol, rubber) magazines
+    .desc = A box full of SMG (.35 pistol, rubber) magazines.
+ent-NFBoxMagazineHighCapacityPistol35Overpressure = box of pistol (.35 pistol, overpressure) magazines
+    .desc = A box full of pistol (.35 pistol, overpressure) magazines.

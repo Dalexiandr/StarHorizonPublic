@@ -1,0 +1,15 @@
+ent-LockerQuarterMasterFilledHardsuit = { ent-LockerQuarterMaster }
+    .suffix = Заполненный, Скафандр
+    .desc = { ent-LockerQuarterMaster.desc }
+ent-LockerStationRepresentativeFilled = { ent-LockerStationRepresentative }
+    .suffix = Заполненный
+    .desc = { ent-LockerStationRepresentative.desc }
+ent-LockerNfsdSheriffFilled = { ent-LockerNfsdSheriff }
+    .suffix = Filled
+    .desc = { ent-LockerNfsdSheriff.desc }
+ent-GunSafeSr = оружейный сейф ПФ
+    .suffix = Заполненный
+    .desc = { ent-GunSafe.desc }
+ent-GunSafePlantManager = plant manager's gun safe
+    .suffix = Filled
+    .desc = { ent-GunSafe.desc }

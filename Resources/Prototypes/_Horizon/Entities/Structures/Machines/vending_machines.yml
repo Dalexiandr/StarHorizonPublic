@@ -1,0 +1,30 @@
+- type: entity
+  parent: VendingMachine
+  id: VendingMachineStardrop
+  name: StarDrop Модомат
+  description: Брендовые коллекции прямиком из известного модного дома . 
+  components:
+  - type: VendingMachine
+    pack: StardropInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    denyState: deny-unshaded
+  - type: Advertise
+    pack: ClothesMateAds
+  - type: Speech
+  - type: Tag
+  - type: Sprite
+    sprite: _Horizon/Structures/Machines/VendingMachines/starbardrobe.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: PointLight
+    radius: 1.8
+    energy: 1.6
+    color: "#f7ff99"

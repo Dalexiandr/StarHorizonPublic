@@ -1,0 +1,107 @@
+<Document>
+  # СЕРВИСНЫЙ ШАТТЛ КЛАССА "LANTERN"
+  <Box>
+  <GuideEntityEmbed Entity="VendingMachineChapel"/>
+  <GuideEntityEmbed Entity="Bible"/>
+  <GuideEntityEmbed Entity="ClothingNeckCrucifix"/>
+  <GuideEntityEmbed Entity="Censer"/>
+  <GuideEntityEmbed Entity="UrnMortuary"/>
+  </Box>  
+  <Box>
+  <GuideEntityEmbed Entity="ClothingHeadHatWitchhunter"/>
+  <GuideEntityEmbed Entity="WoodenStake"/>
+  <GuideEntityEmbed Entity="Torch"/>
+  <GuideEntityEmbed Entity="CrossbowImprovised"/>
+  </Box>
+  <Box>
+  <GuideEntityEmbed Entity="ShuttleMapLantern" Caption=""/>
+  </Box>
+    [color=#a4885c]Размер корабля:[/color] Средний
+	
+	[color=#a4885c]Рекомендуемый экипаж:[/color] 2–3
+	
+	[color=#a4885c]Тип генератора энергии:[/color] Солнечный/Плазменный
+	
+	[color=#a4885c]Экспедиции:[/color] Отсутствуют
+	
+	[color=#a4885c]Консоль IFF:[/color] Отсутствует
+	
+  "Среднего размера шаттл, предназначенный для продвижения вашей религии. Производитель: Langstad-Voigt Heavy Industries."
+    
+  # КОНТРОЛЬНЫЙ СПИСОК ПЕРЕД ВЫЛЕТОМ
+  
+  ## 1. Электропитание
+  
+  ## 1.1. Батарейные блоки
+  <Box>
+  <GuideEntityEmbed Entity="SMESBasic"/>
+  <GuideEntityEmbed Entity="SubstationBasic"/>
+  <GuideEntityEmbed Entity="APCBasic"/>
+  </Box>
+  
+  - Убедитесь, что блок СМЭС закреплён на полу.
+  - Убедитесь, что подстанция закреплена на полу.
+  - Убедитесь, что главный выключатель блока ЛКП включён.
+  - Проверьте текущую нагрузку блока ЛКП* (Вт).
+  
+  ## 1.2. Генератор P.A.C.M.A.N.
+  <Box>
+  <GuideEntityEmbed Entity="PortableGeneratorPacmanShuttle"/>
+  <GuideEntityEmbed Entity="SheetPlasma"/>
+  </Box>
+  
+  - Убедитесь, что генератор P.A.C.M.A.N. закреплён на полу.
+  - Убедитесь, что генератор заправлен топливом. Для длительных перелётов обеспечьте достаточный запас.
+  - Убедитесь, что генератор настроен на HV-выход.
+  - Установите целевую мощность на 12–14** [bold]кВт[/bold].
+  - Запустите генератор.
+  
+  ## 1.3. Солнечные панели
+  <Box>
+  <GuideEntityEmbed Entity="ComputerSolarControl"/>
+  <GuideEntityEmbed Entity="SolarTracker"/>
+  <GuideEntityEmbed Entity="SolarPanel"/>
+  </Box>
+  - Проверьте консоль управления солнечными панелями (расположен в кабине шаттла).
+  - Отрегулируйте угловую скорость панелей.
+  - Отрегулируйте угол наклона панелей.
+  
+  ## 2. Атмосфера
+  
+  ## 2.1. Цикл распределения
+  <Box>
+  <GuideEntityEmbed Entity="AirCanister"/>
+  <GuideEntityEmbed Entity="GasPort"/>
+  <GuideEntityEmbed Entity="GasPressurePump"/>
+  </Box>
+  
+  - Убедитесь, что баллон с воздухом закреплён на соединительном порте.
+  - Установите давление насоса распределения на 101 кПа.
+  - Включите насос распределения.
+  
+  ## 2.2. Цикл отходов
+  <Box>
+  <GuideEntityEmbed Entity="GasPressurePump"/>
+  <GuideEntityEmbed Entity="AirAlarm"/>
+  </Box>
+    
+  - Включите насос отходящего цикла.
+  - Отключите автоматический режим на воздушной сигнализации в машинном отделении.
+  - Установите режим фильтрации (Широкий).
+  
+  ## 3. Прочие проверки
+  <Box>
+  <GuideEntityEmbed Entity="Gyroscope"/>
+  <GuideEntityEmbed Entity="GravityGeneratorMini"/>
+  </Box>
+  
+  - Убедитесь, что гироскоп закреплён, запитан и включён.
+  - Убедитесь, что мини-гравитационный генератор закреплён, запитан и включён.
+  
+  ## Примечания
+  
+  * — Шаттлы класса «Lantern» оснащены тремя блоками ЛКП, с помощью которых можно оценить общее энергопотребление корабля. В стандартной конфигурации шаттлу требуется 22,5 кВт для стабильной работы.
+  
+  ** — Потребности в энергии выше, чем способен обеспечить стандартный генератор P.A.C.M.A.N., однако в шаттле установлено 38 солнечных панелей, способных производить до 28,5 кВт при идеальных условиях. С учётом того, что в среднем обслуживаемая солнечная система даёт треть мощности, рекомендуется устанавливать целевую мощность генератора P.A.C.M.A.N. на уровне 14 кВт.
+
+</Document>

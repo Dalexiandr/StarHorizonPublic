@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(for file in crawlerla_*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

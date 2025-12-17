@@ -1,0 +1,58 @@
+#Medical implanters
+- type: entity
+  id: MedicalTrackingImplanter
+  name: medical tracking implanter
+  parent: BaseImplantOnlyImplanter
+  components:
+  - type: Implanter
+    implant: MedicalTrackingImplant
+
+- type: entity
+  id: FreelanceTrackingImplanter
+  name: freelance tracking implanter
+  parent: BaseImplantOnlyImplanterSyndi
+  components:
+  - type: Implanter
+    implant: FreelanceTrackingImplant
+
+- type: entity
+  id: DeathAcidifierImplanterNF
+  name: death acidifier implanter
+  parent: BaseImplantOnlyImplanterSyndi
+  components:
+  - type: Implanter
+    implant: DeathAcidifierImplantNF
+
+- type: entity
+  id: GibAcidifierImplanterNF
+  name: gib acidifier implanter
+  parent: BaseImplantOnlyImplanterSyndi
+  components:
+  - type: Implanter
+    implant: GibAcidifierImplantNF
+
+- type: entity
+  id: BibleUserImplanter
+  name: faith implanter
+  parent: BaseImplantOnlyImplanter
+  components:
+  - type: Implanter
+    implant: BibleUserImplant
+
+- type: entity
+  id: MimePowersImplanter
+  name: mime vow implanter
+  parent: BaseImplantOnlyImplanter
+  components:
+  - type: Implanter
+    implant: MimePowersImplant
+
+# Centcomm implanters
+
+- type: entity
+  id: RadioImplanterFreelance
+  name: freelance radio implanter
+  parent: BaseImplantOnlyImplanter
+  components:
+  - type: Implanter
+    implant: RadioImplantFreelance

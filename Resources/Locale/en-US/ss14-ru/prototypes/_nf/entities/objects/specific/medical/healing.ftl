@@ -1,0 +1,15 @@
+ent-Suture10Lingering = { ent-MedicatedSuture }
+    .suffix = 10, Lingering
+    .desc = { ent-MedicatedSuture.desc }
+ent-Mesh10Lingering = { ent-RegenerativeMesh }
+    .suffix = 10, Lingering
+    .desc = { ent-RegenerativeMesh.desc }
+ent-NFPillCanisterMannitol = { ent-PillCanister }
+    .desc = Take two pills daily.
+    .suffix = Mannitol 10u, 10, Clarpy
+ent-NFPillMannitol = pill
+    .suffix = Mannitol 10u
+    .desc = { ent-Pill.desc }
+ent-NFPillSheleg = pill
+    .desc = A safe way to stabilize Sheleg patients in critical condition for personnel without advanced medical knowledge.
+    .suffix = Sheleg emergency pill

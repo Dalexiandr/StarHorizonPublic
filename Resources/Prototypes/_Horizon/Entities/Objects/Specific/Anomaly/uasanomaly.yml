@@ -1,0 +1,66 @@
+- type: entity
+  id: UASAnomaly
+  parent: BaseAnomaly
+  suffix: StarHorizon, UAS
+  name: аномалия
+  description: От аномалии исходит отчётливый скрежет металла...
+  components:
+  - type: Anomaly
+    corePrototype: UASAnomalyCircuitboard
+    coreInertPrototype: UASAnomalyCircuitboard
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Anomaly/uasanomaly.rsi
+    layers:
+    - state: anom
+      map: ["enum.AnomalyVisualLayers.Base"]
+    - state: pulse
+      map: ["enum.AnomalyVisualLayers.Animated"]
+  - type: DamageOnInteract
+    damage:
+      types:
+        Heat: 10
+    popupText: anomaly-component-contact-damage
+  - type: DamageOnAttacked
+    damage:
+      types:
+        Heat: 10
+  - type: EntitySpawnAnomaly
+    entries:
+    - settings:
+        spawnOnPulse: true
+        minAmount: 5
+        maxAmount: 15
+        minRange: 3
+        maxRange: 5
+      spawns:
+      - UASRock
+      - UASEFSCrystal
+    - settings:
+        spawnOnPulse: true
+        spawnOnStabilityChanged: true
+        minAmount: 1
+        maxAmount: 1
+        minRange: 0
+        maxRange: 3
+      spawns:
+      - UASCrab
+    - settings:
+        spawnOnSuperCritical: true
+        minAmount: 30
+        maxAmount: 40
+        minRange: 10
+        maxRange: 15
+      spawns:
+      - UASRock
+      - UASEFSCrystal
+    - settings:
+        spawnOnSuperCritical: true
+        minAmount: 7
+        maxAmount: 15
+        minRange: 10
+        maxRange: 30
+      spawns:
+      - UASCrab
+
+
+

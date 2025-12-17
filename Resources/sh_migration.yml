@@ -1,0 +1,28 @@
+# 2025-08-08
+CrateVendingMachineRestockPrideFilled: null
+VendingMachinePride: null
+VendingMachineRestockPride: null
+
+#Horizon 2025-12-18 Box Survival rework
+BoxSurvival: BoxSurvivalSlots
+BoxSurvivalNitrogen: BoxSurvivalSlotsNitrogen
+BoxSurvivalEngineering: BoxSurvivalSlotsOxygenExtended
+BoxSurvivalEngineeringNitrogen: BoxSurvivalSlotsNitrogenExtended
+BoxSurvivalMedical: BoxSurvivalSlotsMedical
+BoxSurvivalMedicalNitrogen: BoxSurvivalSlotsMedicalNitrogen
+BoxHug: BoxHugSlots
+BoxHugNitrogen: BoxHugSlotsNitrogen
+BoxSurvivalSecurity: BoxSurvivalSlotsSecurity
+BoxSurvivalSecurityNitrogen: BoxSurvivalSlotsSecurityNitrogen
+BoxSurvivalSyndicate: BoxSurvivalSlotsSyndicate
+BoxSurvivalSyndicateNitrogen: BoxSurvivalSlotsSyndicateNitrogen
+BoxMime: BoxMimeSlots
+BoxMimeNitrogen: BoxMimeSlotsNitrogen
+NFBoxSurvival: BoxSurvivalSlots
+NFBoxSurvivalSheleg: BoxSurvivalSlotsOxygenExtended
+NFBoxSurvivalNitrogen: BoxSurvivalSlotsNitrogen
+NFBoxSurvivalExtended: BoxSurvivalSlotsOxygenExtended
+BoxSurvivalNFNitrogenExtended: BoxSurvivalSlotsNitrogenExtended
+BoxSurvivalNFOxygenExtended: BoxSurvivalSlotsOxygenExtended
+NFBoxSurvivalNitrogenExtended: BoxSurvivalSlotsNitrogenExtended
+NFBoxSurvivalExtendedSheleg: BoxSurvivalSlotsOxygenExtended

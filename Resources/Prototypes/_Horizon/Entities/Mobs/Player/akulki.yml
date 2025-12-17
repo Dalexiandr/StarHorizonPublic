@@ -1,0 +1,35 @@
+- type: entity
+  save: false
+  name: Урист МакЧелюсти
+  parent: BaseMobAkulki
+  id: MobAkulki
+  components:
+  # Horizon
+  - type: SampleSource
+    availableCellSamples:
+    - protoID: CellSampleAkulki
+
+# Cytology
+- type: entity
+  name: Urist Grown Akulki
+  parent: MobAkulki
+  id: MobAkulkiGrown
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StaticPrice
+    price: 2500
+  - type: RandomMetadata
+    nameSegments:
+      - NamesFirst
+      - NamesLast
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: ghost-role-information-grown-akulki-name
+    description: Вы акулки, выращенный в цитологической ванне. Мощные челюсти и острые зубы - ваше оружие. Исследуйте этот новый мир!
+    raffle:
+      settings: short
+  - type: GhostTakeoverAvailable

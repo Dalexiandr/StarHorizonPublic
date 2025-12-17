@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "license": "CLA",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/pull/79665 | Recolored and adjusted sprite size by erhardsteinhauer (discord/github), resprite by TheGypsyBaron",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "base"
+    },
+    {
+      "name": "closed"
+    },
+    {
+      "name": "open"
+    },
+    {
+      "name": "welded"
+    },
+    {
+      "name": "sparking",
+      "delays":
+	  [
+        [ 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 ]
+      ]
+    },
+    {
+      "name": "locked"
+    },
+    {
+      "name": "unlocked"
+    }
+  ]
+}

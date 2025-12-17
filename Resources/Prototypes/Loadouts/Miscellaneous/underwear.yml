@@ -1,0 +1,1014 @@
+- type: loadoutEffectGroup
+  id: UnderwearSpeciesRestrictions
+  effects:
+  - !type:SpeciesLoadoutEffect
+    species:
+    - Human
+    - Harpy
+    - Vulpkanin
+    - Goblin
+    - Sheleg
+    - Oni
+    - Arachnid
+    - Diona
+    - Vox
+    - DemonSpecies
+    - Katunian
+    - Reptilian
+    - SlimePerson
+    - Dwarf
+    - Felinid
+    - Moth
+    - TajaranSpecies
+
+# Трусы...
+
+- type: loadout
+  id: UnderwearBoxersWhite
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersWhite
+
+- type: loadout
+  id: UnderwearBoxersAmerica
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersAmerica
+
+- type: loadout
+  id: UnderwearBoxersBoom
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersBoom
+
+- type: loadout
+  id: UnderwearBriefsWhite
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomBriefsWhite
+
+## главы
+
+- type: loadout
+  id: UnderwearBoxersQM
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersQM
+
+- type: loadout
+  id: UnderwearBoxersRD
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersRD
+
+- type: loadout
+  id: UnderwearBoxersCap
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersCap
+
+- type: loadout
+  id: UnderwearBoxersHOP
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersHOP
+
+- type: loadout
+  id: UnderwearBoxersHOS
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersHOS
+
+- type: loadout
+  id: UnderwearBoxersCMO
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersCMO
+
+- type: loadout
+  id: UnderwearBoxersCE
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersCE
+
+- type: loadout
+  id: UnderwearBoxersBlueshield
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomBoxersBlueshield
+
+# Трусики OwO
+
+- type: loadout
+  id: UnderwearPantiesWhite
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesWhite
+
+- type: loadout
+  id: UnderwearPantiesComfyWhite
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesComfyWhite
+
+- type: loadout
+  id: UnderwearPantiesLace
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesLace
+
+- type: loadout
+  id: UnderwearPantiesLaceBlue
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesLaceBlueAlternative
+
+- type: loadout
+  id: UnderwearPantiesLaceRed
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesLaceRedAlternative
+
+- type: loadout
+  id: UnderwearPantiesLaceBlack
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesLaceBlack
+
+- type: loadout
+  id: UnderwearMonokiniWhite
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomMonokiniWhite
+
+- type: loadout
+  id: UnderwearMonokiniBlack
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomMonokiniBlack
+
+## главы
+
+- type: loadout
+  id: UnderwearPantiesQM
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesQM
+
+- type: loadout
+  id: UnderwearPantiesRD
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesRD
+
+- type: loadout
+  id: UnderwearPantiesCap
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesCap
+
+- type: loadout
+  id: UnderwearPantiesHOP
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesHOP
+
+- type: loadout
+  id: UnderwearPantiesHOS
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesHOS
+
+- type: loadout
+  id: UnderwearPantiesCMO
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesCMO
+
+- type: loadout
+  id: UnderwearPantiesCE
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesCE
+
+- type: loadout
+  id: UnderwearPantiesBlueshield
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underwearb: ClothingUnderwearBottomPantiesBlueshield
+
+# Майка
+
+- type: loadout
+  id: UnderwearTShirt
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underweart: ClothingUnderwearTopTShirt
+
+# Лифчики
+
+- type: loadout
+  id: UnderwearBraWhite
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underweart: ClothingUnderwearTopBraWhite
+
+- type: loadout
+  id: UnderwearBraComfyWhite
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underweart: ClothingUnderwearTopBraComfyWhite
+
+- type: loadout
+  id: UnderwearBraSports
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underweart: ClothingUnderwearTopBraSports
+
+- type: loadout
+  id: UnderwearBraSportsAlternative
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underweart: ClothingUnderwearTopBraSportsAlternative
+
+- type: loadout
+  id: UnderwearBraSportsBlack
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underweart: ClothingUnderwearTopBraSportsBlack
+
+- type: loadout
+  id: UnderwearBraPea
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underweart: ClothingUnderwearTopBraPea
+
+- type: loadout
+  id: UnderwearBraLace
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underweart: ClothingUnderwearTopBraLace
+
+- type: loadout
+  id: UnderwearBraLaceBlue
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underweart: ClothingUnderwearTopBraLaceBlueAlternative
+
+- type: loadout
+  id: UnderwearBraLaceRed
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underweart: ClothingUnderwearTopBraLaceRedAlternative
+
+- type: loadout
+  id: UnderwearBraLaceBlack
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underweart: ClothingUnderwearTopBraLaceBlack
+
+- type: loadout
+  id: UnderwearTopMonokiniWhite
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underweart: ClothingUnderwearTopMonokiniWhite
+
+- type: loadout
+  id: UnderwearTopMonokiniBlack
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underweart: ClothingUnderwearTopMonokiniBlack
+
+## главы
+
+- type: loadout
+  id: UnderwearBraQM
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underweart: ClothingUnderwearTopBraQM
+
+- type: loadout
+  id: UnderwearBraRD
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underweart: ClothingUnderwearTopBraRD
+
+- type: loadout
+  id: UnderwearBraCap
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underweart: ClothingUnderwearTopBraCap
+
+- type: loadout
+  id: UnderwearBraHOP
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underweart: ClothingUnderwearTopBraHOP
+
+- type: loadout
+  id: UnderwearBraHOS
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underweart: ClothingUnderwearTopBraHOS
+
+- type: loadout
+  id: UnderwearBraCMO
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underweart: ClothingUnderwearTopBraCMO
+
+- type: loadout
+  id: UnderwearBraCE
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underweart: ClothingUnderwearTopBraCE
+
+- type: loadout
+  id: UnderwearBraBlueshield
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    underweart: ClothingUnderwearTopBraBlueshield
+
+# Всякие чулки и другая подобная хуэта.
+
+- type: loadout
+  id: UnderwearSocksHigh
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksHigh
+
+- type: loadout
+  id: UnderwearSocksShort
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksShort
+
+- type: loadout
+  id: UnderwearSocksThigh
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksThigh
+
+- type: loadout
+  id: UnderwearSocksNormal
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksNormal
+
+- type: loadout
+  id: UnderwearSocksComfyBlue
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksComfyBlue
+
+- type: loadout
+  id: UnderwearSocksComfyGrey
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksComfyGrey
+
+- type: loadout
+  id: UnderwearSocksComfyRed
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksComfyRed
+
+- type: loadout
+  id: UnderwearSocksComfyViolet
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksComfyViolet
+
+- type: loadout
+  id: UnderwearSocksBee
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderSocksBee
+
+- type: loadout
+  id: UnderwearSocksBeeThigh
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksBee
+
+- type: loadout
+  id: UnderwearSocksCoder
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderSocksCoder
+
+- type: loadout
+  id: UnderwearStockings
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksStockingsWhite
+
+- type: loadout
+  id: UnderwearStockingsLace
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksLaceThigh
+
+- type: loadout
+  id: UnderwearStockingsBlack
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksStockingsBlack
+
+- type: loadout
+  id: UnderwearStockingsComfyBlue
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksKneeComfyBlue
+
+- type: loadout
+  id: UnderwearStockingsComfyGrey
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksKneeComfyGrey
+
+- type: loadout
+  id: UnderwearStockingsComfyRed
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksKneeComfyRed
+
+- type: loadout
+  id: UnderwearStockingsComfyViolet
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksKneeComfyViolet
+
+# главы.. ну пусть будет, пока тут только синяя лепеха
+
+- type: loadout
+  id: UnderwearStockingsBlueshield
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksStockingsBlueshield
+
+- type: loadout
+  id: UnderwearSocksBlueshield
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksBlueshield
+
+# последую запискам Фило... Куча эбанных носков с ТГ. КОТОРЫЕ МЕНЯ ЗАСТВИЛ ПЕРЕНОСИТЬ ИЛЛЮМИ (Знай, что ты злодей)
+
+- type: loadout
+  id: UnderwearSocksAzure
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksAzure
+
+- type: loadout
+  id: UnderwearSocksKneeAzure
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksKneeAzure
+
+- type: loadout
+  id: UnderwearSocksThighAzure
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksThighAzure
+
+- type: loadout
+  id: UnderwearSocksBlack
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksBlack
+
+- type: loadout
+  id: UnderwearSocksKneeBlack
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksKneeBlack
+
+- type: loadout
+  id: UnderwearSocksThighBlack
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksThighBlack
+
+- type: loadout
+  id: UnderwearSocksCyan
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksCyan
+
+- type: loadout
+  id: UnderwearSocksKneeCyan
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksKneeCyan
+
+- type: loadout
+  id: UnderwearSocksThighCyan
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksThighCyan
+
+- type: loadout
+  id: UnderwearSocksFurr
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksFurr
+
+- type: loadout
+  id: UnderwearSocksKneeFurr
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksKneeFurr
+
+- type: loadout
+  id: UnderwearSocksThighFurr
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksThighFurr
+
+- type: loadout
+  id: UnderwearSocksGreen
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksGreen
+
+- type: loadout
+  id: UnderwearSocksKneeGreen
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksKneeGreen
+
+- type: loadout
+  id: UnderwearSocksThighGreen
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksThighGreen
+
+- type: loadout
+  id: UnderwearSocksHomelander
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksHomelander
+
+- type: loadout
+  id: UnderwearSocksKneeHomelander
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksKneeHomelander
+
+- type: loadout
+  id: UnderwearSocksThighHomelander
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksThighHomelander
+
+- type: loadout
+  id: UnderwearSocksHotpink
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksHotpink
+
+- type: loadout
+  id: UnderwearSocksKneeHotpink
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksKneeHotpink
+
+- type: loadout
+  id: UnderwearSocksThighHotpink
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksThighHotpink
+
+- type: loadout
+  id: UnderwearSocksOrange
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksOrange
+
+- type: loadout
+  id: UnderwearSocksKneeOrange
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksKneeOrange
+
+- type: loadout
+  id: UnderwearSocksThighOrange
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksThighOrange
+
+- type: loadout
+  id: UnderwearSocksPink
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksPink
+
+- type: loadout
+  id: UnderwearSocksKneePink
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksKneePink
+
+- type: loadout
+  id: UnderwearSocksThighCreepy
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksThighCreepy
+
+- type: loadout
+  id: UnderwearSocksKneeFishnet
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksKneeFishnet
+
+- type: loadout
+  id: UnderwearSocksFullFishnet
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksFullFishnet
+
+- type: loadout
+  id: UnderwearSocksKneeThin
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksKneeThin
+
+- type: loadout
+  id: UnderwearSocksThighThin
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksThighThin
+
+- type: loadout
+  id: UnderwearSocksThighBlue
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksThighBlue
+
+- type: loadout
+  id: UnderwearSocksThighFishnet
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksThighFishnet
+
+- type: loadout
+  id: UnderwearSocksThighGrey
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksThighGrey
+
+- type: loadout
+  id: UnderwearSocksThighPantyhose
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksThighPantyhose
+
+- type: loadout
+  id: UnderwearSocksThighPurple
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksThighPurple
+
+- type: loadout
+  id: UnderwearSocksThighRed
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksThighRed
+
+- type: loadout
+  id: UnderwearSocksYellow
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksYellow
+
+- type: loadout
+  id: UnderwearSocksKneeYellow
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksKneeYellow
+
+- type: loadout
+  id: UnderwearSocksThighYellow
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksThighYellow
+
+## Носки чисто для клоуна и мима
+
+- type: loadout
+  id: UnderwearSocksKneehRainbow
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksKneeRainbow
+
+- type: loadout
+  id: UnderwearSocksThighRainbow
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksThighRainbow
+
+- type: loadout
+  id: UnderwearSocksThighMonochrome
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksThighMonochrome
+
+## Эбанные носки с ТГ для главв
+
+- type: loadout
+  id: UnderwearSocksHOP
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksHop
+
+- type: loadout
+  id: UnderwearSocksKneeHOP
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksKneeHop
+
+- type: loadout
+  id: UnderwearSocksThighHOP
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksThighHop
+
+- type: loadout
+  id: UnderwearSocksHOS
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksHos
+
+- type: loadout
+  id: UnderwearSocksKneeHOS
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksKneeHos
+
+- type: loadout
+  id: UnderwearSocksThighHOS
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksThighHos
+
+- type: loadout
+  id: UnderwearSocksCaptain
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksCaptain
+
+- type: loadout
+  id: UnderwearSocksKneeCaptain
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksKneeCaptain
+
+- type: loadout
+  id: UnderwearSocksThighCaptain
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: UnderwearSpeciesRestrictions
+  equipment:
+    socks: ClothingUnderwearSocksThighCaptain

@@ -1,0 +1,62 @@
+- type: entity
+  id: BaseMagazinerMinigunERT15
+  name: барабан минигана джаггернаута (.15 мелкокалиберный)
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - MagazineMinigunERT15
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgeMinigunERT15
+    capacity: 200
+  - type: Item
+    size: Large
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Weapons/Guns/Ammunition/Casings/minigun_ert_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 8
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: MagazineMinigunERT15
+  name: барабан минигана джаггернаута (.15 мелкокалиберный)
+  suffix: StarHorizon
+  parent: BaseMagazinerMinigunERT15
+  components:
+  - type: BallisticAmmoProvider
+    proto: BaseMinigunERT15
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: MagazineMinigunERT15Incendiary
+  name: барабан минигана джаггернаута (.15 зажигательный)
+  suffix: StarHorizon
+  parent: BaseMagazinerMinigunERT15
+  components:
+  - type: BallisticAmmoProvider
+    proto: BaseMinigunERT15Incendiary
+  - type: Sprite
+    layers:
+    - state: fire
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]

@@ -1,0 +1,137 @@
+﻿# Asteroid types & loot tables
+# region Chromite Table
+- type: entity
+  id: NFBaseAsteroidChromiteDebrisFar
+  parent: NFBaseDebris
+  abstract: true
+  components:
+    - type: BlobFloorPlanBuilder
+      floorTileset:
+      - FloorChromite
+    - type: SimpleFloorPlanPopulator
+      entries:
+        FloorChromite:
+          - id: NFChromiteMineralSoftFar
+            orGroup: rock
+            prob: 0.8225
+          - id: NFChromiteMineralHardFar
+            orGroup: rock
+            prob: 0.11175
+          # Room
+          - id: NFChromiteRoomMarker
+            orGroup: rock
+            prob: 0.0002
+    - type: IFF
+      color: "#9c91fa"
+
+- type: entity
+  id: NFBaseAsteroidChromiteGasFar
+  abstract: true
+  components:
+  - type: RandomEntityPopulator
+    entries:
+    - params:
+        prob: 0.9
+        min: 3
+        max: 7
+        canBeAirSealed: true
+      entries:
+      - id: GasDepositOxygen
+        orGroup: deposit
+      - id: GasDepositMuddleEven
+        orGroup: deposit
+      - id: GasDepositNitrogen
+        orGroup: deposit
+      - id: GasDepositAir
+        orGroup: deposit
+      - id: GasDepositFrezon
+        orGroup: deposit
+      - id: GasDepositBZ
+        orGroup: deposit
+      - id: GasDepositPluoxium
+        orGroup: deposit
+      - id: GasDepositHydrogen
+        orGroup: deposit
+      - id: GasDepositProtoNitrate
+        orGroup: deposit
+      - id: GasDepositHelium
+        orGroup: deposit
+      - id: OreDepositSteelMetal
+        orGroup: deposit
+      - id: OreDepositQuarzMetal
+        orGroup: deposit
+      - id: OreDepositMixedMetal
+        orGroup: deposit
+      - id: OreDepositPreciousMetal
+        orGroup: deposit
+      - id: OreDepositCommonRadioactive
+        orGroup: deposit
+      - id: OreDepositRareMetal
+        orGroup: deposit
+      - id: OreDepositRareRadioactive
+        orGroup: deposit
+      - id: OreDepositPreciousGem
+        orGroup: deposit
+# endregion Chromite Table
+
+# region Chromite Entities
+- type: entity
+  id: NFAsteroidChromiteDebrisSmallFar
+  parent: [NFBaseAsteroidChromiteDebrisFar, NFBaseAsteroidSmall]
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  id: NFAsteroidChromiteDebrisMediumFar
+  parent: [NFBaseAsteroidChromiteDebrisFar, NFBaseAsteroidMedium]
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  id: NFAsteroidChromiteDebrisLargeFar
+  parent: [NFBaseAsteroidChromiteDebrisFar, NFBaseAsteroidLarge]
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  id: NFAsteroidChromiteDebrisExtraLargeFar
+  parent: [NFBaseAsteroidChromiteDebrisFar, NFBaseAsteroidExtraLarge]
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  id: NFAsteroidChromiteDebrisHugeFar
+  parent: [NFBaseAsteroidChromiteDebrisFar, NFBaseAsteroidHuge]
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  id: NFAsteroidChromiteDebrisExtraHugeFar
+  parent: [NFBaseAsteroidChromiteDebrisFar, NFBaseAsteroidExtraHuge]
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  id: NFAsteroidChromiteDebrisEnormousFar
+  parent: [NFBaseAsteroidChromiteDebrisFar, NFBaseAsteroidChromiteGasFar, NFBaseAsteroidEnormous]
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  id: NFAsteroidChromiteDebrisExtraEnormousFar
+  parent: [NFBaseAsteroidChromiteDebrisFar, NFBaseAsteroidChromiteGasFar, NFBaseAsteroidExtraEnormous]
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  id: NFAsteroidChromiteDebrisMassiveFar
+  parent: [NFBaseAsteroidChromiteDebrisFar, NFBaseAsteroidChromiteGasFar, NFBaseAsteroidMassive]
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  id: NFAsteroidChromiteDebrisExtraMassiveFar
+  parent: [NFBaseAsteroidChromiteDebrisFar, NFBaseAsteroidChromiteGasFar, NFBaseAsteroidExtraMassive]
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  id: NFAsteroidChromiteDebrisGiganticFar
+  parent: [NFBaseAsteroidChromiteDebrisFar, NFBaseAsteroidChromiteGasFar, NFBaseAsteroidGigantic]
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  id: NFAsteroidChromiteDebrisExtraGiganticFar
+  parent: [NFBaseAsteroidChromiteDebrisFar, NFBaseAsteroidChromiteGasFar, NFBaseAsteroidExtraGigantic]
+  categories: [ HideSpawnMenu ]
+# endregion Chromite Entities

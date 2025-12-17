@@ -1,0 +1,12 @@
+ent-ClothingHandsGlovesGoldCaptain = золотые перчатки капитана
+    .desc = Выдаются почётным и опытным членам экипажа.
+    .suffix = StarHorizon
+ent-ClothingHandsGlovesWhiteCaptain = белые перчатки капитана
+    .desc = Чище них только репутация их владельца.
+    .suffix = StarHorizon
+ent-UASGlovesIsolate = продвинутые перчатки UAS
+    .desc = Перчатки из EFS волокна со вшитой защитной пластиной.
+    .suffix = StarHorizon, UAS
+ent-UASGloves = EFS перчатки
+    .desc = Перчатки из EFS волокна. Кажется, они тёплые.
+    .suffix = StarHorizon, UAS

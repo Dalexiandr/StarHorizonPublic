@@ -1,0 +1,68 @@
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesGoldCaptain
+  suffix: StarHorizon
+  name: золотые перчатки капитана
+  description: Выдаются почётным и опытным членам экипажа.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Hands/Gloves/gold_captain_gloves.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Hands/Gloves/gold_captain_gloves.rsi
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-durathread
+    fiberColor: fibers-gold
+  - type: FingerprintMask
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesWhiteCaptain
+  suffix: StarHorizon
+  name: белые перчатки капитана
+  description: Чище них только репутация их владельца.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Hands/Gloves/white_captain_gloves.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Hands/Gloves/white_captain_gloves.rsi
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-durathread
+    fiberColor: fibers-white
+  - type: FingerprintMask
+
+- type: entity
+  parent: [ClothingHandsGlovesSyntheticBase, BaseUASContraband]
+  categories: [ HideSpawnMenu ]
+  id: UASGlovesIsolate
+  suffix: StarHorizon, UAS
+  name: продвинутые перчатки UAS
+  description: Перчатки из EFS волокна со вшитой защитной пластиной.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Hands/Gloves/uasglovesisolate.rsi
+  - type: Tag
+    tags: [] # Выносим с ВЛа для хамелеонки
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Hands/Gloves/uasglovesisolate.rsi
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: красные переливающиеся
+  - type: StaticPrice
+    price: 5000
+
+- type: entity
+  parent: UASGlovesIsolate
+  categories: [ HideSpawnMenu ]
+  id: UASGloves
+  suffix: StarHorizon, UAS
+  name: EFS перчатки
+  description: Перчатки из EFS волокна. Кажется, они тёплые.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Hands/Gloves/uasgloves.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Hands/Gloves/uasgloves.rsi
+  - type: StaticPrice
+    price: 5000

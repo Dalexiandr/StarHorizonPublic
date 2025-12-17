@@ -1,0 +1,13 @@
+- type: stack
+  id: Psycore
+  name: stack-psycore
+  icon: { sprite: "/Textures/_Horizon/Objects/Materials/ingots.rsi", state: psycore }
+  spawn: IngotPsycore1
+  maxCount: 30
+
+- type: stack
+  id: Titan
+  name: stack-titan
+  icon: { sprite: "/Textures/_Horizon/Objects/Materials/ingots.rsi", state: titan }
+  spawn: IngotTitan1
+  maxCount: 30

@@ -1,0 +1,52 @@
+- type: reagent
+  id: CoffeeGrounds
+  name: reagent-name-coffeegrounds
+  group: Foods
+  desc: reagent-desc-coffeegrounds
+  flavor: bitter
+  color: "#4B382A"
+  physicalDesc: reagent-physical-desc-powdery
+  recognizable: true # "Waiter, there seems to be grounds in my coffee."
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateHunger
+        factor: 0.1
+      - !type:SatiateThirst
+        factor: -0.25
+
+- type: reagent
+  id: Honey
+  name: reagent-name-honey
+  group: Foods
+  desc: reagent-desc-honey
+  physicalDesc: reagent-physical-desc-gloopy
+  flavor: honey
+  flavorMinimum: 0.05
+  color: "#E79A3F"
+  viscosity: 0.5
+  recognizable: true
+  metabolisms:
+    Food:
+      effects:
+      - !type:SatiateHunger
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Nutriment
+          min: 0.1
+        factor: 1
+  footstepSound:
+    collection: FootstepSticky
+    params:
+      volume: 6
+
+- type: reagent
+  id: Everyspice
+  name: reagent-name-everyspice
+  group: Foods
+  desc: reagent-desc-everyspice
+  physicalDesc: reagent-physical-desc-powdery
+  flavor: spices
+  flavorMinimum: 0.05
+  color: "#7a481f"
+  recognizable: true

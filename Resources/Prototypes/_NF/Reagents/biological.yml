@@ -1,0 +1,80 @@
+- type: reagent
+  parent: Blood
+  id: GoblinBlood
+  name: reagent-name-goblin-blood
+  group: Biological
+  desc: reagent-desc-goblin-blood
+  flavor: bitter
+  color: "#364500"
+  recognizable: true
+  physicalDesc: reagent-physical-desc-pungent
+  footstepSound:
+    collection: FootstepBlood
+    params:
+      volume: 6
+  metabolisms:
+    Drink:
+      effects:
+      # Effects for non-goblins
+      - !type:SatiateThirst
+        factor: -0.5
+        conditions:
+        - !type:OrganType
+          type: Goblin
+          shouldHave: false
+      - !type:ChemVomit
+        probability: 0.025
+        conditions:
+        - !type:OrganType
+          type: Goblin
+          shouldHave: false
+      - !type:GenericStatusEffect
+        key: Stutter
+        component: GoblinAccent
+        probability: 0.025
+        type: Add
+        time: 30
+        refresh: true
+        conditions:
+        - !type:OrganType
+          type: Goblin
+          shouldHave: false
+      # Effects for goblins
+      - !type:SatiateThirst
+        factor: 1
+        conditions:
+        - !type:OrganType
+          type: Goblin
+          shouldHave: true
+
+- type: reagent
+  id: Primatine
+  name: reagent-name-primatine
+  desc: reagent-desc-primatine
+  flavor: hairy
+  physicalDesc: reagent-physical-desc-thick
+  color: "#7c3d00"
+  metabolisms:
+    Drink:
+      metabolismRate: 0.25
+      effects:
+        - !type:Emote
+          emote: MonkeyScreeches
+          showInChat: true
+          force: true
+          probability: 0.18
+        - !type:Polymorph
+          prototype: ArtifactMonkey
+          conditions:
+            - !type:NFIsHumanoid
+            - !type:ReagentThreshold
+              min: 50
+        - !type:AdjustReagent
+          reagent: Primatine
+          amount: -20
+          conditions:
+            - !type:ReagentThreshold
+              min: 50
+        - !type:GenericStatusEffect
+          key: Stutter
+          component: ScrambledAccent

@@ -1,0 +1,10 @@
+ent-NFBaseMagnetBox = { ent-BaseStructureDynamic }
+    .desc = { ent-BaseStructureDynamic.desc }
+ent-NFMagnetBoxOre = контейнер для руды
+    .desc = Большой контейнер для сбора и хранения необработанных руд и фрагментов.
+ent-NFMagnetBoxConstruction = контейнер для стройматериалов
+    .desc = Большой контейнер для хранения строительных материалов.
+ent-NFMagnetBoxPlant = контейнер для растений
+    .desc = Большой контейнер для хранения растений и семян.
+ent-NFMagnetBoxRubbish = контейнер для мусора
+    .desc = Большой контейнер для хранения мусора. Пахнет как в большом городе.

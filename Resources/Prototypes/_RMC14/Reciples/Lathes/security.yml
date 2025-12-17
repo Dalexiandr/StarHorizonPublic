@@ -1,0 +1,122 @@
+- type: latheRecipe
+  id: AttachmentVerticalGrip
+  result: AttachmentVerticalGrip
+  completetime: 5
+  materials:
+    Steel: 100
+    Plastic: 500
+
+- type: latheRecipe
+  id: AttachmentLaserSight
+  result: AttachmentLaserSight
+  completetime: 8
+  materials:
+    Steel: 500
+    Plastic: 500
+    Gold: 100
+    Glass: 200
+
+- type: latheRecipe
+  id: AttachmentReflexSight
+  result: AttachmentReflexSight
+  completetime: 8
+  materials:
+    Steel: 300
+    Plastic: 300
+    Gold: 100
+    Glass: 500
+
+- type: latheRecipe
+  id: AttachmentT2Miniscope
+  result: AttachmentT2Miniscope
+  completetime: 10
+  materials:
+    Steel: 500
+    Plastic: 300
+    Gold: 200
+    Glass: 500
+
+- type: latheRecipe
+  id: AttachmentM90UnderbarrelShotgun
+  result: AttachmentM90UnderbarrelShotgun
+  completetime: 10
+  materials:
+    Steel: 1000
+    Plastic: 500
+    Plasma: 100
+
+- type: latheRecipe
+  id: AttachmentM90GrenadeLauncher
+  result: AttachmentM90GrenadeLauncher
+  completetime: 10
+  materials:
+    Steel: 1500
+    Plastic: 500
+    Plasma: 500
+
+- type: latheRecipe
+  id: AttachmentMagneticHarness
+  result: AttachmentMagneticHarness
+  completetime: 10
+  materials:
+    Steel: 1500
+    Plastic: 500
+
+- type: latheRecipe
+  id: AttachmentSuppressor
+  result: AttachmentSuppressor
+  completetime: 10
+  materials:
+    Steel: 1500
+    Plastic: 500
+
+- type: latheRecipe
+  id: AttachmentAntiLyingWarrior
+  result: AttachmentAntiLyingWarrior
+  completetime: 10
+  materials:
+    Steel: 1500
+    Plastic: 1000
+    Plasma: 500
+
+- type: latheRecipe
+  id: 40mmGrenadeHEAT
+  result: 40mmGrenadeHEAT
+  completetime: 5
+  materials:
+    Steel: 300
+    Plastic: 100
+    Plasma: 100
+
+- type: latheRecipe
+  id: 40mmGrenadeBaton
+  result: 40mmGrenadeBaton
+  completetime: 5
+  materials:
+    Steel: 300
+    Plastic: 300
+
+- type: latheRecipe
+  id: 40mmGrenadeEMP
+  result: 40mmGrenadeEMP
+  completetime: 5
+  materials:
+    Steel: 300
+    Plastic: 100
+    Gold: 100
+
+- type: latheRecipe
+  id: 40mmGrenadeFlash
+  result: 40mmGrenadeFlash
+  completetime: 5
+  materials:
+    Steel: 300
+    Plastic: 200
+
+- type: latheRecipe
+  id: 40mmGrenadeSmoke
+  result: 40mmGrenadeSmoke
+  completetime: 5
+  materials:
+    Steel: 300
+    Plastic: 200

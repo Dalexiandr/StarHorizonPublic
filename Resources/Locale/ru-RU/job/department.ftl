@@ -1,0 +1,11 @@
+department-Cargo = Отдел снабжения
+department-Civilian = Независимые Компании
+department-CentralCommand = Центральное Командование
+department-Engineering = Инженерный Отдел
+department-Medical = Медицинский Отдел
+department-Science = Научный отдел
+department-Silicon = Синтетики
+department-Specific = На определённых станциях
+department-Unknown = Неизвестно
+department-Syndicate = Синдикат
+department-Freelance = Фриланс

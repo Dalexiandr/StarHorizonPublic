@@ -1,0 +1,21 @@
+## Dynamic
+
+- type: latheRecipePack
+  id: FuelCreationBasic
+  recipes:
+  - FuelPlasma1
+  - FuelUranium1
+  - FuelBananium1
+  - FuelPlutonium1
+
+- type: latheRecipePack
+  id: FuelCreationAdvanced
+  recipes:
+  - FuelPlasmaUnstable1
+  - FuelUraniumUnstable1
+  - FuelBananiumUnstable1
+  - FuelPlutoniumUnstable1
+  - FuelPlasmaPure1
+  - FuelUraniumPure1
+  - FuelBananiumPure1
+  - FuelPlutoniumPure1

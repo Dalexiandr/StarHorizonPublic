@@ -1,0 +1,18 @@
+- type: entity
+  id: WarpPointAdmin
+  parent: WarpPoint
+  suffix: Admin-only
+  categories: [ DoNotMap ]
+  components:
+  - type: WarpPoint
+    adminOnly: true
+
+- type: entity
+  id: WarpPointDungeon
+  parent: WarpPoint
+  suffix: Dungeon
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: WarpPoint
+    queryGridName: true
+    location: grid

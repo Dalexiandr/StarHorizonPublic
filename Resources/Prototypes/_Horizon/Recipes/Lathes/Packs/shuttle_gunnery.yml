@@ -1,0 +1,24 @@
+# From Monolith
+- type: latheRecipePack
+  id: MonoAdvancedShuttleComponents
+  recipes:
+  - GunneryControlComputerCircuitboard
+  - MachineShieldLightCircuitboard
+  - MachineShieldMediumCircuitboard
+  - MachineGCSLowCircuitboard
+  - MachineGCSMediumCircuitboard
+  - MachineGCSHighCircuitboard
+
+- type: latheRecipePack
+  id: ShipgunAmmo
+  recipes:
+  - CharonSlugUniversal
+  - CharonSubnuclearSlugUniversal
+  - ASM220TorpedoHEUniversal
+  - ASM220TorpedoECMUniversal
+  - ASM220TorpedoLOSATUniversal
+  - 150mmApShellUniversal
+  - 150mmEmpShellUniversal
+  - GPOL50BombUniversal
+  - ZenithRocketUniversal
+  - QuasarAcceleratorUniversal

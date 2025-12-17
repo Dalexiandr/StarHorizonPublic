@@ -1,0 +1,106 @@
+<Document>
+  # ШАТТЛ МЕДИЦИНСКОГО РЕАГИРОВАНИЯ КЛАССА STASIS
+  <Box>
+  <GuideEntityEmbed Entity="BannerMedical" Caption="медицина"/>
+  <GuideEntityEmbed Entity="ComputerCrewMonitoring" Caption="мониторинг экипажа"/>
+  <GuideEntityEmbed Entity="RollerBed"/>
+  <GuideEntityEmbed Entity="CryoPod"/>
+  </Box>
+  <Box>
+  <GuideEntityEmbed Entity="ShuttleMapStasis" Caption=""/>
+  </Box>
+  [color=#a4885c]Размер корабля:[/color] Средний
+
+  [color=#a4885c]Рекомендуемый экипаж:[/color] 1–4
+
+  [color=#a4885c]Тип генерации энергии:[/color] Бананиум
+
+  [color=#a4885c]Базовое энергопотребление:[/color] 49 кВт
+
+  [color=#a4885c]Экспедиции:[/color] Отсутствуют
+
+  [color=#a4885c]Консоль IFF:[/color] Отсутствует
+
+  [color=#a4885c]Доступные роли:[/color] авантюрист, пилот, наёмник
+
+  # Управление полётом
+  <Box>
+    <GuideEntityEmbed Entity="ComputerShuttle"/>
+  </Box>
+  После нажатия на консоль шаттла вы увидите радарную карту. Порядок действий для пилотирования следующий:
+
+  - Сначала отсоедините все шлюзы, подсоединённые к доку.
+  - Затем вы можете управлять шаттлом. Управление простое: [color=#028ed9]"W"[/color] и [color=#028ed9]"S"[/color] — движение вперёд/назад, [color=#028ed9]"A"[/color] и [color=#028ed9]"D"[/color] — влево/вправо, [color=#028ed9]"Q"[/color] и [color=#028ed9]"E"[/color] — поворот влево/вправо; [color=#028ed9]"Пробел"[/color] — тормоз и точное позиционирование при удержании с другими клавишами.
+
+  # Найм экипажа
+  <Box>
+    <GuideEntityEmbed Entity="ComputerStationRecords"/>
+    <GuideEntityEmbed Entity="ClothingHeadsetGrey"/>
+    <GuideEntityEmbed Entity="IntercomCommon"/>
+  </Box>
+  Как капитан судна Nanotrasen, вы вправе нанимать, увольнять, понижать или повышать членов экипажа. Для найма вы можете использовать [color=#a4885c]консоль учёта экипажа[/color] на борту для открытия рабочих позиций (доступные роли зависят от типа корабля) или пригласить игроков через внутриигровую радиосвязь.
+
+  # КОНТРОЛЬНЫЙ СПИСОК ПЕРЕД ВЫЛЕТОМ
+
+  ## 1. Электропитание
+
+  ## 1.1. Аккумуляторные модули
+  <Box>
+  <GuideEntityEmbed Entity="SubstationBasic"/>
+  <GuideEntityEmbed Entity="APCBasic"/>
+  </Box>
+
+  - Убедитесь, что главный выключатель ЛКП включён.
+  - Проверьте текущую нагрузку ЛКП (Вт).
+
+  ## 1.2. D-K Jr. generator
+  <Box>
+    <GuideEntityEmbed Entity="PortableGeneratorDKJr"/>
+    <GuideEntityEmbed Entity="FuelBananium"/>
+    <GuideEntityEmbed Entity="SignRadiation"/>
+  </Box>
+
+  - Убедитесь, что D-K Jr. generator закреплён.
+  - Проверьте наличие топлива. Для длительных перелётов запасите достаточно бананиума.
+  - Проверьте, что генератор настроен на выход HV.
+  - Установите целевую мощность на 45 [bold]кВт[/bold].
+  - Запустите генератор.
+  - Закройте радиационный экран.
+
+  ## 2. Атмосфера
+
+  ## 2.1. Контур подачи
+  <Box>
+  <GuideEntityEmbed Entity="AirCanister"/>
+  <GuideEntityEmbed Entity="GasPort"/>
+  <GuideEntityEmbed Entity="GasPressurePump"/>
+  </Box>
+
+  - Убедитесь, что баллон с воздухом подключён к порту.
+  - Убедитесь, что насос подачи установлен на 101 кПа.
+  - Включите насос подачи.
+
+  ## 2.2. Контур откачки
+  <Box>
+  <GuideEntityEmbed Entity="GasPressurePump"/>
+  <GuideEntityEmbed Entity="AirAlarm"/>
+  </Box>
+
+  - Включите насос откачки.
+  - Отключите автоматический режим на воздушной сигнализации в машинном отделении.
+  - Переведите воздушную сигнализацию в режим фильтрации (широкий).
+
+  ## 3. Прочие проверки
+  <Box>
+  <GuideEntityEmbed Entity="Gyroscope"/>
+  <GuideEntityEmbed Entity="GravityGeneratorMini"/>
+  </Box>
+
+  - Убедитесь, что гироскоп закреплён, подключён к питанию и включён.
+  - Убедитесь, что мини-генератор гравитации закреплён, подключён и включён.
+
+  ## Примечания
+
+  * - На шаттле Stasis установлен вспомогательный вентиляционный контур для нужд хирургического отсека. Скрубберы, насосы и вентиляционные отверстия могут быть настроены вручную.
+
+</Document>

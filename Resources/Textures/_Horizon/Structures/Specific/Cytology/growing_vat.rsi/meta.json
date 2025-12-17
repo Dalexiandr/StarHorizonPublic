@@ -1,0 +1,38 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "taken form TG SS13",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "icon"
+        },
+        {
+            "name": "green"
+        },
+        {
+            "name": "red"
+        },
+        {
+            "name": "white"
+        },
+        {
+            "name": "soup"
+        },
+        {
+            "name": "bubbles",
+            "delays": [
+            [
+              0.5,
+              0.7,
+              0.8,
+              0.7,
+              0.5
+            ]
+          ]
+        }
+    ]
+}

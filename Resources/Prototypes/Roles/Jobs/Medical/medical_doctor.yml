@@ -1,0 +1,43 @@
+- type: job
+  id: MedicalDoctor
+  name: job-name-doctor
+  description: job-description-doctor
+  playTimeTracker: JobMedicalDoctor
+  salary: 40000 # Horizon
+  forceFaction: FactionMed # Horizon
+  setPreference: true # Lua
+  requirements:
+  # Horizon start
+  - !type:OverallPlaytimeRequirement
+    time: 18000 # 5 hrs
+  startingGear: DoctorGear
+  icon: "JobIconMedicalDoctor"
+  supervisors: job-supervisors-cmo # Horizon
+  weight: 80
+  displayWeight: 0
+  access:
+  - Medical
+  - Chemistry
+  accessGroups:
+  - GeneralAccess
+  # Horizon end
+
+- type: startingGear
+  id: DoctorGear
+  equipment:
+    # ears: ClothingHeadsetMedical # Horizon
+    belt: ClothingBeltMedicalFilled
+  #storage:
+    #back:
+    #- Stuff
+
+- type: chameleonOutfit
+  id: MedicalDoctorChameleonOutfit
+  job: MedicalDoctor
+  equipment:
+    head: ClothingHeadNurseHat
+    eyes: ClothingEyesHudMedical
+    mask: ClothingMaskSterile
+    neck: ClothingNeckStethoscope
+    outerClothing: ClothingOuterCoatLab
+    gloves: ClothingHandsGlovesLatex

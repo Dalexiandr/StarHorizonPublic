@@ -1,0 +1,15 @@
+ent-ClothingShoesBlackDress = чёрные туфли
+    .desc = Вечерный шик.
+ent-ClothingShoesRedDress = красные туфли
+    .desc = Вечерный шик.
+ent-ClothingShoesRichDress = дорогие туфли
+    .desc = В этом вы чувствуете себя богаче.
+ent-ClothingShoesStarDress = звёздные туфли
+    .desc = Они сияют!
+ent-ClothingShoesBootsSilkDress = шёлковые туфли
+    .desc = Украшенные жемчугом туфли
+ent-ClothingShoesBootsPinkDress = розовые туфли
+    .desc = Украшены милыми бантиками
+ent-ClothingShoesBootsDragon = сапоги из драконьей кожи
+    .desc = Подкованные сапоги из дорогого материала.
+    .suffix = Вещи Маланисы

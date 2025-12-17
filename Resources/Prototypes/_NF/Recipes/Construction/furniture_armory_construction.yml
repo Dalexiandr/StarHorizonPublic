@@ -1,0 +1,73 @@
+#weapon racks
+- type: construction
+  id: GunRackConstruction
+  graph: WeaponRackConstructionGraph
+  startNode: start
+  targetNode: GunRackNode
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: GunRackWallmountedConstruction
+  graph: WeaponRackConstructionGraph
+  startNode: start
+  targetNode: GunRackWallmountedNode
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: true
+  canRotate: true
+  conditions:
+    - !type:WallmountCondition
+
+- type: construction
+  id: MeleeRackConstruction
+  graph: WeaponRackConstructionGraph
+  startNode: start
+  targetNode: MeleeRackNode
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: MeleeRackWallmountedConstruction
+  graph: WeaponRackConstructionGraph
+  startNode: start
+  targetNode: MeleeRackWallmountedNode
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: true
+  canRotate: true
+  conditions:
+    - !type:WallmountCondition
+
+- type: construction
+  id: PistolRackConstruction
+  graph: WeaponRackConstructionGraph
+  startNode: start
+  targetNode: PistolRackNode
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+
+- type: construction
+  id: PistolRackWallmountedConstruction
+  graph: WeaponRackConstructionGraph
+  startNode: start
+  targetNode: PistolRackWallmountedNode
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: true
+  canRotate: true
+  conditions:
+    - !type:WallmountCondition

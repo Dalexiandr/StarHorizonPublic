@@ -1,0 +1,135 @@
+# Mineral tables for asteroids
+
+# region Chromite Spawners
+- type: entityTable
+  id: NFChromiteMineralSoftFar
+  table: !type:GroupSelector
+    children:
+    - id: WallRockChromite
+      weight: 0.5
+    - id: WallRockChromiteQuartz
+      weight: 0.05
+    - id: WallRockChromitePsycore
+      weight: 0.05
+    - id: WallRockChromiteTitan
+      weight: 0.05
+    - id: WallRockChromiteEmerald
+      weight: 0.005
+    - id: WallRockChromiteRuby
+      weight: 0.005
+    - id: WallRockChromiteSapphire
+      weight: 0.005
+    - id: WallRockChromiteTopaz
+      weight: 0.005
+    - id: WallRockChromitePlutonium
+      weight: 0.03
+    - id: WallRockChromiteNeptunium
+      weight: 0.03
+    - id: WallRockChromiteTorium
+      weight: 0.05
+    - id: NFChromiteElementalSpawner
+      weight: 0.05
+
+- type: entity
+  id: NFChromiteMineralSoftFar
+  parent: MarkerBase
+  name: chromite mineral spawner
+  suffix: Soft
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+    - sprite: Structures/Walls/rock.rsi
+      state: rock_chromite
+    - state: green
+    - sprite: Objects/Weapons/Melee/pickaxe.rsi
+      state: pickaxe
+  - type: EntityTableSpawner
+    offset: 0
+    table: !type:NestedSelector
+      tableId: NFChromiteMineralSoftFar
+
+- type: entityTable
+  id: NFChromiteMineralHardFar
+  table: !type:GroupSelector
+    children:
+    - id: NFWallChromiteCobblebrick
+      weight: 0.08
+    - id: NFWallChromiteCobblebrickQuartz
+      weight: 0.003
+    - id: WallChromiteCobblebrickTitan
+      weight: 0.003
+    - id: WallChromiteCobblebrickPsycore
+      weight: 0.003
+    - id: WallChromiteCobblebrickTopaz
+      weight: 0.0005
+    - id: WallChromiteCobblebrickSapphire
+      weight: 0.0005
+    - id: WallChromiteCobblebrickRuby
+      weight: 0.0005
+    - id: WallChromiteCobblebrickEmerald
+      weight: 0.0005
+    - id: WallChromiteCobblebrickPlutonium
+      weight: 0.003
+    - id: WallChromiteCobblebrickNeptunium
+      weight: 0.003
+    - id: WallChromiteCobblebrickTorium
+      weight: 0.007
+    - id: NFChromiteNFCobblebrickElementalSpawner
+      weight: 0.005
+
+- type: entity
+  id: NFChromiteMineralHardFar
+  parent: NFChromiteMineralSoft
+  suffix: Hard
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+    - sprite: Structures/Walls/cobblebrick_chromite.rsi
+      state: full
+    - state: green
+    - sprite: Objects/Tools/handdrilldiamond.rsi
+      state: handdrill
+  - type: EntityTableSpawner
+    offset: 0
+    table: !type:NestedSelector
+      tableId: NFChromiteMineralHardFar
+
+- type: entityTable
+  id: NFChromiteMineralHardRichFar
+  table: !type:GroupSelector
+    children:
+    - id: NFWallBasaltCobblebrick
+      weight: 0.3
+    - id: NFWallBasaltCobblebrickArtifactFragment
+      weight: 0.2
+    - id: WallChromiteCobblebrickEmerald
+      weight: 0.1
+    - id: WallChromiteCobblebrickRuby
+      weight: 0.1
+    - id: WallChromiteCobblebrickSapphire
+      weight: 0.1
+    - id: WallChromiteCobblebrickTopaz
+      weight: 0.1
+
+- type: entity
+  id: NFChromiteMineralHardRichFar
+  parent: NFChromiteMineralSoft
+  suffix: Hard, Rich
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+    - sprite: Structures/Walls/cobblebrick_chromite.rsi
+      state: full
+    - state: green
+    - sprite: Objects/Materials/materials.rsi
+      state: diamond
+    - sprite: Objects/Tools/handdrilldiamond.rsi
+      state: handdrill
+  - type: EntityTableSpawner
+    offset: 0
+    table: !type:NestedSelector
+      tableId: NFChromiteMineralHardRichFar
+# endregion Chromite Spawners

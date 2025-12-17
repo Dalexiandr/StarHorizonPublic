@@ -1,0 +1,14 @@
+ent-SentientSlimeCore = разумное ядро слайма
+    .desc = Источник невероятной, бесконечной липкости.
+ent-OrganSlimeLungs = газовые мешки слайма
+    .desc = Собирают азот, который клетки слайма используют для поддержания жизнедеятельности.
+ent-OrganSlimeHeart = slime circulator
+    .desc = A little circulator what makes the fluid move through the slime body.
+ent-OrganSlimeEyes = глаза
+    .desc = Я тебя вижу!
+ent-OrganSlimeStomach = желудок
+    .desc = Грубый. Тяжело переваривать.
+ent-OrganSlimeLiver = печень
+    .desc = Вариант сочетания: кьянти и конские бобы.
+ent-OrganSlimeKidneys = почки
+    .desc = Фильтрует токсины из кровотока.

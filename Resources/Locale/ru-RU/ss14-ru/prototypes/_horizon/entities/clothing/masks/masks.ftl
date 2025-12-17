@@ -1,0 +1,15 @@
+ent-ClothingMaskBalaclava = балаклава
+    .desc = Головной убор, закрывающий голову, лоб и лицо, оставляя лишь небольшую прорезь для глаз и рта.
+    .suffix = StarHorizon
+ent-ClothingMaskBlueFestival = голубая фестивальная маска
+    .desc = Маска демона с золотыми рогами и острыми клыками.
+    .suffix = StarHorizon
+ent-ClothingMaskRedFestival = красная фестивальная маска
+    .suffix = StarHorizon
+    .desc = { ent-ClothingMaskBlueFestival.desc }
+ent-ClothingMaskGasBlueshield = противогаз офицера "Синий щит"
+    .desc = Укреплённый бронепластинами и оснащённый защитой для глаз противогаз для самых элитных офицеров.
+    .suffix = StarHorizon
+ent-ClothingMaskGasSecurityPilot = противогаз пилота
+    .desc = Полностью закрывающий голову бронированный противогаз с удобным разъёмом для баллона.
+    .suffix = StarHorizon

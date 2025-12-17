@@ -1,0 +1,62 @@
+# Author Info
+# GitHub: Actualcatmoment (https://github.com/Actualcatmoment)
+# Discord: @iNoahGuy
+
+# Maintainer Info
+# GitHub: dustylens
+# Discord: dustylens
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Spirit
+  parent: BaseVessel
+  name: FSB Spirit
+  description: The FSB Spirit is a search and rescue shuttle for experienced Frontier medics.
+  price: 15000
+  category: Small
+  group: Medical
+  shuttlePath: /Maps/_NF/Shuttles/spirit.yml
+  guidebookPage: ShipyardSpirit
+  class:
+  - Medical
+  engine:
+  - Plasma
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:FactionCostModifier
+      faction: "FactionMed"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionFSB"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionCCC"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: Spirit
+  mapName: 'FSB Spirit'
+  mapPath: /Maps/_NF/Shuttles/spirit.yml
+  minPlayers: 0
+  stations:
+    Spirit:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Spirit {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

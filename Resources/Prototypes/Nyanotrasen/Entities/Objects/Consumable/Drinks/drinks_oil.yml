@@ -1,0 +1,72 @@
+# Frontier: redefined to be closer to cartons
+- type: entity
+  parent: 
+  - RecyclableItemPlasticMedium
+  - DrinkCartonVisualsOpenable
+  - DrinkCartonBaseLargeFull
+  id: BaseOilJar
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Nyanotrasen/Objects/Consumable/Drinks/oil_jar.rsi
+  - type: SolutionTransfer
+    canChangeTransferAmount: true
+    maxTransferAmount: 100
+# End Frontier: redefined to be closer to cartons
+
+- type: entity
+  parent: BaseOilJar
+  id: OilJarGhee
+  name: jar of ghee
+  description: A large tinted glass jar with a simple label of butter sticks on it.
+  components:
+  - type: Sprite
+    layers:
+      - state: icon
+        map: ["enum.OpenableVisuals.Layer"]
+      - state: butter
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 100
+        reagents:
+        - ReagentId: OilGhee
+          Quantity: 100
+
+- type: entity
+  parent: BaseOilJar
+  id: OilJarCorn
+  name: jar of vegetable oil # Frontier: corn<vegetable
+  description: A large tinted glass jar with a simple label of a corn stalk on it.
+  components:
+  - type: Sprite
+    layers:
+      - state: icon
+        map: ["enum.OpenableVisuals.Layer"]
+      - state: corn
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 100
+        reagents:
+        - ReagentId: Cornoil
+          Quantity: 100
+
+- type: entity
+  parent: BaseOilJar
+  id: OilJarOlive
+  name: jar of olive oil
+  description: A large tinted glass jar with a simple label of olives on it.
+  components:
+  - type: Sprite
+    layers:
+      - state: icon
+        map: ["enum.OpenableVisuals.Layer"]
+      - state: olives
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 100
+        reagents:
+        - ReagentId: OilOlive
+          Quantity: 100

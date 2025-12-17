@@ -1,0 +1,61 @@
+- type: job
+  id: Brigmedic
+  name: job-name-brigmedic
+  description: job-description-brigmedic-nf
+  playTimeTracker: JobBrigmedic
+  salary: 45000 # Horizon
+  forceFaction: FactionNFSD # Horizon
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 43200 # 12 hours
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 21600 # 6 hours
+  alternateRequirementSets:
+    longerPlaytimeLessSec:
+    - !type:OverallPlaytimeRequirement
+      time: 360000 # 100 hours
+  startingGear: BrigmedicGear
+  icon: JobIconBrigmedicNF
+  supervisors: job-supervisors-bailiff
+  weight: 125
+  displayWeight: 35
+  canBeAntag: false
+  access:
+  - Brigmedic
+  - Medical # Horizon
+  - Chemistry # Horizon
+  accessGroups:
+  - GeneralNfsdAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant, TrackingImplant ]
+  - !type:GiveItemOnHolidaySpecial
+    holiday: FrontierBirthday
+    prototype: FrontierBirthdayGift
+
+- type: startingGear
+  id: BrigmedicGear
+  equipment:
+    pocket1: NFWeaponPistolUniversalNfsdLessLethal
+  storage:
+    back:
+    - EncryptionKeyMedical
+    - Flash
+    - NFMagazineHighCapacityPistol35Overpressure
+    - NFMagazineHighCapacityPistol35Rubber
+    - FrontierUplinkCoin10
+
+- type: chameleonOutfit
+  id: BrigmedicChameleonOutfit
+  job: Brigmedic
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHatNfsdBeretCream
+    mask: ClothingMaskBreathMedicalSecurity
+    eyes: ClothingEyesHudNfsdMed
+    outerClothing: ClothingOuterCoatNfsdBomberBrigmed
+    neck: ClothingNeckNfsdBadgeSecurityBrigmedic
+    belt: ClothingBeltNfsdWebbingFilledBrigmedic
+    gloves: ClothingHandsGlovesNitrile
+    shoes: ClothingShoesBootsNfsdCreamFilled

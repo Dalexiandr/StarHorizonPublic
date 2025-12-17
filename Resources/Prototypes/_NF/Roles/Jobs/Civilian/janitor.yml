@@ -1,0 +1,55 @@
+- type: job
+  id: NFJanitor
+  name: job-name-janitor
+  description: job-description-janitor
+  playTimeTracker: JobJanitor
+  salary: 35000 # Horizon
+  forceFaction: FactionFrontier # Horizon
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 10800
+  startingGear: NFJanitorGear
+  alwaysUseSpawner: true
+  icon: "JobIconJanitor"
+  supervisors: job-supervisors-sr
+  weight: 100
+  displayWeight: 40
+  canBeAntag: false
+  access:
+  - Service
+  - Janitor
+  - Maintenance
+  - External
+  - Frontier
+  special:
+  - !type:GiveItemOnHolidaySpecial
+    holiday: GarbageDay
+    prototype: NFWeaponRevolverInspector
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:GiveItemOnHolidaySpecial
+    holiday: FrontierBirthday
+    prototype: FrontierBirthdayGift
+
+- type: startingGear
+  id: NFJanitorGear
+  equipment:
+    shoes: ClothingShoesGaloshes
+    id: NFJanitorPDA
+    belt: ClothingBeltJanitorFilled
+  storage:
+    back:
+    - EncryptionKeyService
+    - ShipVoucherFrontierJanitor
+
+- type: chameleonOutfit
+  id: NFJanitorChameleonOutfit
+  job: NFJanitor
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHatPurplesoft
+    eyes: ClothingEyesGlassesCheapSunglasses
+    mask: ClothingMaskGas
+    neck: ClothingNeckScarfStripedPurple
+    outerClothing: ClothingOuterWinterJani
+    gloves: ClothingHandsGlovesJanitor

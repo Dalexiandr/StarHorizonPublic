@@ -1,0 +1,425 @@
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: OreBaseFar
+  description: A piece of unrefined ore.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Materials/ore.rsi
+  - type: Item
+    sprite: _Horizon/Objects/Materials/ore.rsi
+    size: Normal
+  - type: Tag
+    tags:
+    - Ore
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.2
+        density: 20
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2
+
+- type: entity
+  parent: OreBaseFar
+  id: PsycoreOre
+  name: psycore ore
+  suffix: Full
+  components:
+  - type: Sprite
+    state: psycore
+  - type: Stack
+    stackType: PsycoreOre
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      RawPsycore: 100
+  - type: Extractable
+    grindableSolutionName: psycoreore
+  - type: SolutionContainerManager
+    solutions:
+      psycoreore:
+        reagents:
+        - ReagentId: Carbon
+          Quantity: 20
+  - type: Item
+    heldPrefix: psycore
+  - type: Tag
+    tags:
+    - Ore
+    - OrePsycore
+
+- type: entity
+  parent: PsycoreOre
+  id: PsycoreOre1
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: PsycoreOre
+  id: PsycoreOre5
+  suffix: 5
+  components:
+  - type: Stack
+    count: 5
+
+- type: entity
+  parent: OreBaseFar
+  id: TitanOre
+  name: titan ore
+  suffix: Full
+  components:
+  - type: Sprite
+    state: titan
+  - type: Stack
+    stackType: TitanOre
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      RawTitan: 100
+  - type: Extractable
+    grindableSolutionName: titanore
+  - type: SolutionContainerManager
+    solutions:
+      titanore:
+        reagents:
+        - ReagentId: Carbon
+          Quantity: 20
+  - type: Item
+    heldPrefix: titan
+  - type: Tag
+    tags:
+    - Ore
+    - OreTitan
+
+- type: entity
+  parent: TitanOre
+  id: TitanOre1
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: TitanOre
+  id: TitanOre5
+  suffix: 5
+  components:
+  - type: Stack
+    count: 5
+
+- type: entity
+  parent: OreBaseFar
+  id: EmeraldOre
+  name: emerald ore
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: EmeraldOre
+  - type: Sprite
+    state: emerald
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      RawEmerald: 100
+  - type: Extractable
+    grindableSolutionName: emeraldore
+  - type: SolutionContainerManager
+    solutions:
+      emeraldore:
+        reagents:
+        - ReagentId: Carbon
+          Quantity: 20
+  - type: Item
+    heldPrefix: emerald
+  - type: Tag
+    tags:
+    - Ore
+    - OreEmerald
+
+- type: entity
+  parent: EmeraldOre
+  id: EmeraldOre1
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: OreBaseFar
+  id: RubyOre
+  name: ruby ore
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: RubyOre
+  - type: Sprite
+    state: ruby
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      RawRuby: 100
+  - type: Extractable
+    grindableSolutionName: rubyore
+  - type: SolutionContainerManager
+    solutions:
+      rubyore:
+        reagents:
+        - ReagentId: Carbon
+          Quantity: 20
+  - type: Item
+    heldPrefix: ruby
+  - type: Tag
+    tags:
+    - Ore
+    - OreRuby
+
+- type: entity
+  parent: RubyOre
+  id: RubyOre1
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: OreBaseFar
+  id: SapphireOre
+  name: sapphire ore
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: SapphireOre
+  - type: Sprite
+    state: sapphire
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      RawSapphire: 100
+  - type: Extractable
+    grindableSolutionName: sapphireore
+  - type: SolutionContainerManager
+    solutionsore:
+      sapphire:
+        reagents:
+        - ReagentId: Carbon
+          Quantity: 20
+  - type: Item
+    heldPrefix: sapphire
+  - type: Tag
+    tags:
+    - Ore
+    - OreSapphire
+
+- type: entity
+  parent: SapphireOre
+  id: SapphireOre1
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: OreBaseFar
+  id: TopazOre
+  name: topaz ore
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: TopazOre
+  - type: Sprite
+    state: topaz
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      RawTopaz: 100
+  - type: Extractable
+    grindableSolutionName: topazore
+  - type: SolutionContainerManager
+    solutions:
+      topazore:
+        reagents:
+        - ReagentId: Carbon
+          Quantity: 20
+  - type: Item
+    heldPrefix: topaz
+  - type: Tag
+    tags:
+    - Ore
+    - OreTopaz
+
+- type: entity
+  parent: TopazOre
+  id: TopazOre1
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: OreBaseFar
+  id: ToriumOre
+  name: torium ore
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: ToriumOre
+  - type: Sprite
+    state: torium
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      RawTorium: 100
+  - type: PointLight
+    radius: 1.2
+    energy: 0.8
+    castShadows: false
+    color: "#92c6e7"
+  - type: Extractable
+    grindableSolutionName: toriumore
+  - type: SolutionContainerManager
+    solutions:
+      toriumore:
+        reagents:
+        - ReagentId: Carbon
+          Quantity: 10
+        canReact: false
+  - type: Item
+    heldPrefix: torium
+  - type: Tag
+    tags:
+    - Ore
+    - OreTorium
+  - type: NFFuel
+  - type: RadiationSource
+    intensity: 0.02
+
+- type: entity
+  parent: ToriumOre
+  id: ToriumOre1
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: ToriumOre
+  id: ToriumOre5
+  suffix: 5
+  components:
+  - type: Stack
+    count: 5
+
+- type: entity
+  parent: OreBaseFar
+  id: PlutoniumOre
+  name: plutonium ore
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: PlutoniumOre
+  - type: Sprite
+    state: plutonium
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      RawPlutonium: 100
+  - type: PointLight
+    radius: 1.2
+    energy: 0.8
+    castShadows: false
+    color: "#b52d12"
+  - type: Extractable
+    grindableSolutionName: plutoniumore
+  - type: SolutionContainerManager
+    solutions:
+      toriumore:
+        reagents:
+        - ReagentId: Carbon
+          Quantity: 10
+        canReact: false
+  - type: Item
+    heldPrefix: plutonium
+  - type: Tag
+    tags:
+    - Ore
+    - OrePlutonium
+  - type: NFFuel
+  - type: RadiationSource
+    intensity: 0.04
+
+- type: entity
+  parent: PlutoniumOre
+  id: PlutoniumOre1
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: PlutoniumOre
+  id: PlutoniumOre5
+  suffix: 5
+  components:
+  - type: Stack
+    count: 5
+
+- type: entity
+  parent: OreBaseFar
+  id: NeptuniumOre
+  name: neptunium ore
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: NeptuniumOre
+  - type: Sprite
+    state: neptunium
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      RawNeptunium: 100
+  - type: PointLight
+    radius: 1.2
+    energy: 0.8
+    castShadows: false
+    color: "#d1d1d1"
+  - type: Extractable
+    grindableSolutionName: neptuniumore
+  - type: SolutionContainerManager
+    solutions:
+      toriumore:
+        reagents:
+        - ReagentId: Carbon
+          Quantity: 10
+        canReact: false
+  - type: Item
+    heldPrefix: neptunium
+  - type: Tag
+    tags:
+    - Ore
+    - OreNeptunium
+  - type: NFFuel
+  - type: RadiationSource
+    intensity: 0.04
+
+- type: entity
+  parent: NeptuniumOre
+  id: NeptuniumOre1
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: NeptuniumOre
+  id: NeptuniumOre5
+  suffix: 5
+  components:
+  - type: Stack
+    count: 5

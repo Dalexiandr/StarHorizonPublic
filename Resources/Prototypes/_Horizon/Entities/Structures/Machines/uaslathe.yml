@@ -1,0 +1,179 @@
+
+- type: entity
+  id: UASFabricator
+  parent: BaseLatheLube
+  name: фабрикатор UAS
+  description: Как вы его собрали?
+  suffix: StarHorizon, UAS, Structure
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Machines/uasprotoplat.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+  - type: Machine
+    board: UASAnomalyCircuitboard
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - UASMaterial
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    staticRecipes:
+    - uascap
+    - uasberet
+    - SuitUAS
+    - SuitProtectiveUAS
+    - SkirtUAS
+    - SkirtProtectiveUAS
+    - UASGloves
+    - UASGlovesIsolate
+    - UASBoots
+    - ClothingNeckCloakUAS
+    - ReliableContainerUASnanits
+    - UASOmegaTool
+    - UASVests
+    - RipsiPlushin
+
+- type: entity
+  id: UASAnomalyCircuitboard
+  parent: [BaseItem, BaseUASContraband]
+  name: микросхема UAS
+  suffix: StarHorizon, UAS
+  description: Красная прозрачная микросхема. Вы ощущаете исходящее от неё тепло.
+  components:
+    - type: Sprite
+      sprite: _Horizon/Objects/Misc/uasciruitboard.rsi
+      state: boardproto
+    - type: Item
+      storedRotation: -90
+    - type: StaticPrice
+      price: 100
+    - type: MachineBoard
+      prototype: UASFabricator
+      stackRequirements:
+        MatterBin: 3
+        Manipulator: 3
+        EFS: 5
+        Kazmie: 20
+# рецепты
+- type: latheRecipe
+  id: UASGloves
+  result: UASGloves
+  completetime: 10
+  materials:
+    EFS: 1000
+    Kazmie: 500
+
+- type: latheRecipe
+  id: UASGlovesIsolate
+  result: UASGlovesIsolate
+  completetime: 15
+  materials:
+    EFS: 1000
+    Kazmie: 1500
+
+- type: latheRecipe
+  id: SuitUAS
+  result: SuitUAS
+  completetime: 20
+  materials:
+    EFS: 500
+    Kazmie: 2000
+
+- type: latheRecipe
+  id: SuitProtectiveUAS
+  result: SuitProtectiveUAS
+  completetime: 20
+  materials:
+    EFS: 1000
+    Kazmie: 2500
+
+- type: latheRecipe
+  id: SkirtUAS
+  result: SkirtUAS
+  completetime: 20
+  materials:
+    EFS: 500
+    Kazmie: 2000
+
+- type: latheRecipe
+  id: SkirtProtectiveUAS
+  result: SkirtProtectiveUAS
+  completetime: 20
+  materials:
+    EFS: 1000
+    Kazmie: 2500
+
+- type: latheRecipe
+  id: UASBoots
+  result: UASBoots
+  completetime: 15
+  materials:
+    EFS: 500
+    Kazmie: 1000
+
+- type: latheRecipe
+  id: ClothingNeckCloakUAS
+  result: ClothingNeckCloakUAS
+  completetime: 15
+  materials:
+    EFS: 1000
+    Kazmie: 1500
+
+- type: latheRecipe
+  id: uasberet
+  result: uasberet
+  completetime: 10
+  materials:
+    EFS: 500
+    Kazmie: 1000
+
+- type: latheRecipe
+  id: uascap
+  result: uascap
+  completetime: 10
+  materials:
+    EFS: 500
+    Kazmie: 1000
+
+- type: latheRecipe
+  id: ReliableContainerUASnanits
+  result: ReliableContainerUASnanits
+  completetime: 30
+  materials:
+    EFS: 3000
+    Kazmie: 3500
+
+- type: latheRecipe
+  id: UASOmegaTool
+  result: UASOmegaTool
+  completetime: 25
+  materials:
+    EFS: 1500
+    Kazmie: 2500
+
+- type: latheRecipe
+  id: UASVests
+  result: UASVests
+  completetime: 20
+  materials:
+    EFS: 1500
+    Kazmie: 4000
+
+- type: latheRecipe
+  id: RipsiPlushin
+  result: RipsiPlushin
+  completetime: 10
+  materials:
+    EFS: 500
+    Kazmie: 1000
+
+

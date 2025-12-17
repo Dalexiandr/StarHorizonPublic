@@ -1,0 +1,29 @@
+- type: construction
+  id: PaintingGhostHangingConstruction
+  graph: PaintingGhostHangingGraph
+  startNode: start
+  targetNode: PaintingGhostHangingNode
+  category: construction-category-misc
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: true
+
+- type: construction
+  id: PaintingBatHangingConstruction
+  graph: PaintingBatHangingGraph
+  startNode: start
+  targetNode: PaintingBatHangingNode
+  category: construction-category-misc
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: true
+
+- type: construction
+  id: PaintingPumpkinHangingConstruction
+  graph: PaintingPumpkinHangingGraph
+  startNode: start
+  targetNode: PaintingPumpkinHangingNode
+  category: construction-category-misc
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: true

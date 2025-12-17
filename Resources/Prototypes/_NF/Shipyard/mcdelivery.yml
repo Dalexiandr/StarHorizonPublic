@@ -1,0 +1,50 @@
+# Maintainer Info
+# GitHub: dvir001
+# Discord: dvir01 (84770870936997888)
+
+# Shuttle Notes:
+#
+
+- type: vessel
+  id: McDelivery
+  parent: BaseVessel
+  name: DC McDelivery
+  description: "Fast food fast ship, bring the McCargo meals to the people"
+  price: 8750 #7861 0.05 8254.05
+  category: Micro
+  group: Custom
+  shuttlePath: /Maps/_NF/Shuttles/mcdelivery.yml
+  guidebookPage: ShipyardMcDelivery
+  class:
+  - Civilian
+  engine:
+  - Welding
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:FactionCostModifier
+      faction: "FactionFrontier"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: McDelivery
+  mapName: 'DC McDelivery'
+  mapPath: /Maps/_NF/Shuttles/mcdelivery.yml
+  minPlayers: 0
+  stations:
+    McDelivery:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'McDelivery {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

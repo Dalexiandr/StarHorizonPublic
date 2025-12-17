@@ -1,0 +1,136 @@
+# Horizon start
+
+- type: weightedRandomFillSolution
+  id: RandomPickBotanyReagent
+  fills:
+  - quantity: 2
+    weight: 0.2
+    reagents:
+    - Omnizine
+    - Nocturine
+    - Lexorin
+    - Honk
+    - BuzzochloricBees
+    - Stimulants
+  - quantity: 3
+    weight: 0.3
+    reagents:
+    - Cognizine
+    - Toxin
+    - Leporazine
+    - Epinephrine
+    - CarpoToxin
+    - SulfuricAcid
+    - Licoxide
+    - Napalm
+    - ChlorineTrifluoride
+    - Radium
+    - Gold
+    - Uranium
+    - Phosphorus
+    - AtomicBomb
+    - Neurotoxin
+    - ChangelingSting
+    - CogChamp
+    - JuiceThatMakesYouWeh
+  - quantity: 5
+    weight: 0.5
+    reagents:
+    - Desoxyephedrine
+    - ChloralHydrate
+    - Ipecac
+    - Hyronalin
+    - Pax
+    - Cryoxadone
+    - Ethylredoxrazine
+    - Dylovene
+    - Histamine
+    - Blood
+    - WeldingFuel
+    - Mercury
+    - Silver
+    - Phenol
+    - Ultravasculine
+    - Carbon
+    - THC
+    - Nicotine
+    - DoctorsDelight
+    - IceCream
+    - Cola
+    - Diphenhydramine
+    - Iron
+  - quantity: 7
+    weight: 1
+    reagents:
+    - Bicaridine
+    - Dermaline
+    - Ephedrine
+    - NorepinephricAcid
+    - Tricordrazine
+    - Saline
+    - PulpedBananaPeel
+    - Cryptobiolin
+    - EZNutrient
+    - Ammonia
+    - RobustHarvest
+    - SpaceLube
+    - Theobromine
+    - Allicin
+    - Acetone
+    - Ash
+    - SodiumCarbonate
+    - SpaceDrugs
+    - MuteToxin
+    - JuiceBerryPoison
+    - Pilk
+    - Posca
+    - FourteenLoko
+    - LemonLime
+    - LemonLimeCranberry
+    - Enzyme
+    - Vinegar
+    - Fluorine
+  - quantity: 10
+    weight: 2
+    reagents:
+    - Vitamin
+    - Kelotane
+    - Inaprovaline
+    - Oil
+    - Slime
+    - Fiber
+    - Water
+    - Cream
+    - SodaWater
+    - Ice
+    - JuiceCarrot
+    - JuicePotato
+    - Protein
+    - Flour
+    - Soysauce
+    - TableSalt
+  - quantity: 10
+    weight: 15
+    reagents:
+    - Aluminium
+    - Carbon
+    - Chlorine
+    - Fluorine
+    - Iodine
+    - Phosphorus
+    - Sulfur
+    - Silicon
+    - Oxygen
+    - Nitrogen
+    - Hydrogen
+    - Lithium
+    - Sodium
+    - Potassium
+    - Radium
+    - Sugar
+    - Ethanol
+    - Iron
+    - Copper
+    - Mercury
+
+# Horizon end

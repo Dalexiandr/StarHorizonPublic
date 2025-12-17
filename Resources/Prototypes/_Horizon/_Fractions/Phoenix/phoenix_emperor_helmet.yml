@@ -1,0 +1,18 @@
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHelmetPhoenixEmperor
+  name: Роскошный Пикельхельм
+  description: Роскошный шлем службы безопасности ИФ.
+  suffix: Феникс, Лидер
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/helmets/emperorhelm.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Phoenix/helmets/emperorhelm.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9

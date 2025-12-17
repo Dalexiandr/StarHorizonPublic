@@ -1,0 +1,86 @@
+# Glasses
+- type: entity
+  id: ClothingEyesPunkGoggles
+  parent: [ ClothingEyesGlassesMeson, RecyclableItemClothDevice ]
+  name: punk goggles
+  description: How can you see anything in this with all the lights?
+  components:
+  - type: VisionCorrection
+  - type: Sprite
+    sprite: _NF/Clothing/Eyes/Glasses/punk_glasses.rsi
+    layers:
+    - state: icon_base_glasses_01
+      map: [ "glasses_main" ]
+    - state: icon_decor_base_glasses_01
+      map: [ "glasses_decor" ]
+      shader: unshaded
+  - type: Clothing
+    sprite: _NF/Clothing/Eyes/Glasses/punk_glasses.rsi
+    clothingVisuals:
+      eyes:
+      - state: base_glasses_01
+        map: [ "clothing_glasses_main" ]
+      - state: decor_base_glasses_01
+        map: [ "clothing_glasses_decor" ]
+        shader: unshaded
+  - type: RandomSprite
+    available:
+      - glasses_main:
+          icon_base_glasses_01: Base
+        clothing_glasses_main:
+          base_glasses_01: Base
+        glasses_decor:
+          icon_decor_base_glasses_01: Decor
+        clothing_glasses_decor:
+          decor_base_glasses_01: Decor
+    mappedColors:
+      Base: CyberpunkDark
+      Decor: CyberpunkDark
+
+# HUDs
+- type: entity
+  id: ClothingEyesPunkInfoShades
+  parent: [ ClothingEyesHudMedical, RecyclableItemClothDevice ]
+  name: punk infoshades
+  description: How can you see anything in this with all the lights?
+  components:
+  - type: VisionCorrection
+  - type: Item
+    shape:
+    - 0,0,1,0
+    storedOffset: -20,-20
+  - type: Sprite
+    sprite: _NF/Clothing/Eyes/Glasses/punk_glasses.rsi
+    layers:
+    - state: icon_base_glasses_02
+      map: [ "infoshades_main" ]
+    - state: icon_decor_base_glasses_02
+      map: [ "infoshades_decor" ]
+      shader: unshaded
+  - type: Clothing
+    sprite: _NF/Clothing/Eyes/Glasses/punk_glasses.rsi
+    clothingVisuals:
+      eyes:
+      - state: base_glasses_02
+        map: [ "clothing_infoshades_main" ]
+      - state: decor_base_glasses_02
+        map: [ "clothing_infoshades_decor" ]
+        shader: unshaded
+  - type: RandomSprite
+    available:
+      - infoshades_main:
+          icon_base_glasses_02: Base
+        clothing_infoshades_main:
+          base_glasses_02: Base
+        infoshades_decor:
+          icon_decor_base_glasses_02: Decor
+        clothing_infoshades_decor:
+          decor_base_glasses_02: Decor
+    mappedColors:
+      Base: CyberpunkNeon
+      Decor: CyberpunkNeon
+  - type: ShowHealthBars
+    damageContainers:
+    - Inorganic
+    - Silicon
+    - Biological

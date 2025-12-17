@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "license": "CLA",
+  "copyright": "sprite by TheGypsyBaron",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "brain"
+    },
+    {
+      "name": "brain-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "brain-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "ears"
+    },
+    {
+      "name": "eyeball-l"
+    },
+    {
+      "name": "eyeball-r"
+    },
+    {
+      "name": "lungs"
+    },
+    {
+      "name": "lungs-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "lungs-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "stomach"
+    },
+    {
+      "name": "stomach-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "stomach-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "kidney-l"
+    },
+    {
+      "name": "kidney-r"
+    },
+    {
+      "name": "brain_world"
+    },
+    {
+      "name": "ears_world"
+    },
+    {
+      "name": "eyeballs_world"
+    },
+    {
+      "name": "kidney_world"
+    },
+    {
+      "name": "lungs_world"
+    },
+    {
+      "name": "stomach_world"
+    }
+  ]
+}

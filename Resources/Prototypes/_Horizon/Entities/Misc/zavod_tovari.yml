@@ -1,0 +1,69 @@
+- type: entity
+  parent: BaseItem
+  id: EngieTovar
+  name: Инженерные товары
+  description: Товары инженерного назначения. Крепко запечатаны, не открыть.
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Tools/bundles.rsi
+    state: engi-base
+  - type: Item
+    size: Normal
+  - type: StaticPrice
+    price: 500
+
+- type: entity
+  parent: BaseItem
+  id: GoldTovar
+  name: Ювелирные товары
+  description: Товары из драгоценных металлов. Крепко запечатаны, не открыть.
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Tools/bundles2.rsi
+    state: engi-base
+  - type: Item
+    size: Normal
+  - type: StaticPrice
+    price: 1500
+
+- type: entity
+  parent: BaseItem
+  id: ArmoryTovar
+  name: Армейские товары
+  description: Товары для снабжения маленькой армии или складов NanoTrasen. Крепко запечатаны, не открыть.
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Tools/bundles3.rsi
+    state: engi-base
+  - type: Item
+    size: Normal
+  - type: StaticPrice
+    price: 2000
+
+- type: entity
+  parent: BaseItem
+  id: SciTovar
+  name: Научные товары
+  description: Передовые разработки в упаковке. Крепко запечатаны, не открыть.
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Tools/bundles4.rsi
+    state: engi-base
+  - type: Item
+    size: Normal
+  - type: StaticPrice
+    price: 2500
+
+- type: entity
+  parent: BaseItem
+  id: EnergoTovar
+  name: Энерготовары
+  description: Топливные стержни в упаковке. Крепко запечатаны, не открыть.
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Tools/bundles5.rsi
+    state: engi-base
+  - type: Item
+    size: Normal
+  - type: StaticPrice
+    price: 1000

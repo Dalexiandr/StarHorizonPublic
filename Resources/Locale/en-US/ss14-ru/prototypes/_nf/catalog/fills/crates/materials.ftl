@@ -1,0 +1,14 @@
+ent-CrateMaterialMetalRods = metal rods crate
+    .desc = 90 metal rods, packed with reckless abandon.
+ent-CrateMaterialBiomass50 = { ent-CrateMaterialBiomass }
+    .suffix = 50 biomass
+    .desc = { ent-CrateMaterialBiomass.desc }
+ent-CrateMaterialBiomass = { ent-CrateFreezer }
+    .suffix = 300 biomass
+    .desc = { ent-CrateFreezer.desc }
+ent-CrateMaterialsBasicFilled = materials crate
+    .suffix = Filled, Basic Materials (full)
+    .desc = { ent-CrateGenericSteel.desc }
+ent-CrateMaterialsBasic10Filled = materials crate
+    .suffix = Filled, Basic Materials (10)
+    .desc = { ent-CrateGenericSteel.desc }

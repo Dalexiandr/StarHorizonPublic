@@ -1,0 +1,14 @@
+ent-ClothingHandsGlovesArcadiaCombat = аркадианские боевые перчатки
+    .desc = Изолированные боевые перчатки производства Arcadia Industries.
+ent-ClothingHandsGlovesPilot = перчатки пилота
+    .desc = Изолированные перчатки для управления шаттлами.
+ent-ClothingHandsGlovesCombatNfsdBrown = боевые перчатки ДШНФ
+    .desc = Изолированные боевые перчатки.
+ent-ClothingHandsGlovesCombatNfsdCream = боевые перчатки ДШНФ
+    .desc = Изолированные боевые перчатки.
+ent-ClothingHandsGlovesSr = { ent-ClothingHandsGlovesHop }
+    .suffix = Изолированные
+    .desc = { ent-ClothingHandsGlovesHop.desc }
+ent-ClothingHandsGlovesForensicNF = { ent-ClothingHandsGlovesForensic }
+    .suffix = Изолированные
+    .desc = { ent-ClothingHandsGlovesForensic.desc }

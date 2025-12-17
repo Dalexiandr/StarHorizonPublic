@@ -1,0 +1,506 @@
+{
+  "version": 1,
+  "license": "CLA",
+  "copyright": "by TheGypsyBaron",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "default"
+    },
+    {
+      "name": "centcom"
+    },
+    {
+      "name": "admin"
+    },
+    {
+      "name": "ert_chaplain"
+    },
+    {
+      "name": "ert_commander"
+    },
+    {
+      "name": "ert_engineer"
+    },
+    {
+      "name": "ert_janitor"
+    },
+    {
+      "name": "ert_medic"
+    },
+    {
+      "name": "ert_security"
+    },
+    {
+      "name": "gold"
+    },
+    {
+      "name": "idpassenger"
+    },
+    {
+      "name": "idatmospherictechnician"
+    },
+    {
+      "name": "idbartender"
+    },
+    {
+      "name": "idbotanist"
+    },
+    {
+      "name": "idboxer"
+    },
+    {
+      "name": "idcaptain"
+    },
+    {
+      "name": "idcargotechnician"
+    },
+    {
+      "name": "idcentcom"
+    },
+    {
+      "name": "idchaplain"
+    },
+    {
+      "name": "idchemist"
+    },
+    {
+      "name": "idchiefengineer"
+    },
+    {
+      "name": "idchiefmedicalofficer"
+    },
+    {
+      "name": "idclown"
+    },
+    {
+      "name": "idcook"
+    },
+    {
+      "name": "idcurator"
+    },
+    {
+      "name": "iddetective"
+    },
+    {
+      "name": "idgeneticist"
+    },
+    {
+      "name": "idheadofpersonnel"
+    },
+    {
+      "name": "idheadofsecurity"
+    },
+    {
+      "name": "idbrigmedic"
+    },
+    {
+      "name": "idjanitor"
+    },
+    {
+      "name": "idlawyer"
+    },
+    {
+      "name": "idmedicaldoctor"
+    },
+    {
+      "name": "idmime"
+    },
+    {
+      "name": "idparamedic"
+    },
+    {
+      "name": "idpsychologist"
+    },
+    {
+      "name": "idreporter"
+    },
+    {
+      "name": "idprisoner"
+    },
+    {
+      "name": "idquartermaster"
+    },
+    {
+      "name": "idresearchdirector"
+    },
+    {
+      "name": "idroboticist"
+    },
+    {
+      "name": "idscientist"
+    },
+    {
+      "name": "idsecurityofficer"
+    },
+    {
+      "name": "idshaftminer"
+    },
+    {
+      "name": "idstationengineer"
+    },
+    {
+      "name": "idunknown"
+    },
+    {
+      "name": "idvirologist"
+    },
+    {
+      "name": "idvisitor"
+    },
+    {
+      "name": "idwarden"
+    },
+    {
+      "name": "idmusician"
+    },
+    {
+      "name": "idzookeeper"
+    },
+    {
+      "name": "idintern-sci"
+    },
+    {
+      "name": "idintern-cadet"
+    },
+    {
+      "name": "idintern-med"
+    },
+    {
+      "name": "idintern-service"
+    },
+    {
+      "name": "idintern-tech"
+    },
+    {
+      "name": "idadmin"
+    },
+    {
+      "name": "orange"
+    },
+    {
+      "name": "pirate"
+    },
+    {
+      "name": "prisoner_001"
+    },
+    {
+      "name": "prisoner_002"
+    },
+    {
+      "name": "prisoner_003"
+    },
+    {
+      "name": "prisoner_004"
+    },
+    {
+      "name": "prisoner_005"
+    },
+    {
+      "name": "prisoner_006"
+    },
+    {
+      "name": "prisoner_007"
+    },
+    {
+      "name": "silver"
+    },
+    {
+      "name": "syndie"
+    },
+    {
+      "name": "idcluwne"
+    },
+    {
+      "name": "idseniorengineer"
+    },
+    {
+      "name": "idseniorresearcher"
+    },
+    {
+      "name": "idseniorphysician"
+    },
+    {
+      "name": "idseniorofficer"
+    },
+    {
+      "name": "idwizard"
+    },
+    {
+      "name": "gold-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "gold-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "default-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "default-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "silver-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "silver-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "orange-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "orange-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "blue-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "blue-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "green-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "green-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "wizard"
+    },
+    {
+      "name": "default_world"
+    },
+    {
+      "name": "centcom_world"
+    },
+    {
+      "name": "admin_world"
+    },
+    {
+      "name": "ert_chaplain_world"
+    },
+    {
+      "name": "ert_commander_world"
+    },
+    {
+      "name": "ert_engineer_world"
+    },
+    {
+      "name": "ert_janitor_world"
+    },
+    {
+      "name": "ert_medic_world"
+    },
+    {
+      "name": "ert_security_world"
+    },
+    {
+      "name": "gold_world"
+    },
+    {
+      "name": "idpassenger_world"
+    },
+    {
+      "name": "idatmospherictechnician_world"
+    },
+    {
+      "name": "idbartender_world"
+    },
+    {
+      "name": "idbotanist_world"
+    },
+    {
+      "name": "idboxer_world"
+    },
+    {
+      "name": "idcaptain_world"
+    },
+    {
+      "name": "idcargotechnician_world"
+    },
+    {
+      "name": "idcentcom_world"
+    },
+    {
+      "name": "idchaplain_world"
+    },
+    {
+      "name": "idchemist_world"
+    },
+    {
+      "name": "idchiefengineer_world"
+    },
+    {
+      "name": "idchiefmedicalofficer_world"
+    },
+    {
+      "name": "idclown_world"
+    },
+    {
+      "name": "idcook_world"
+    },
+    {
+      "name": "idcurator_world"
+    },
+    {
+      "name": "iddetective_world"
+    },
+    {
+      "name": "idgeneticist_world"
+    },
+    {
+      "name": "idheadofpersonnel_world"
+    },
+    {
+      "name": "idheadofsecurity_world"
+    },
+    {
+      "name": "idbrigmedic_world"
+    },
+    {
+      "name": "idjanitor_world"
+    },
+    {
+      "name": "idlawyer_world"
+    },
+    {
+      "name": "idmedicaldoctor_world"
+    },
+    {
+      "name": "idmime_world"
+    },
+    {
+      "name": "idparamedic_world"
+    },
+    {
+      "name": "idpsychologist_world"
+    },
+    {
+      "name": "idreporter_world"
+    },
+    {
+      "name": "idquartermaster_world"
+    },
+    {
+      "name": "idresearchdirector_world"
+    },
+    {
+      "name": "idroboticist_world"
+    },
+    {
+      "name": "idscientist_world"
+    },
+    {
+      "name": "idsecurityofficer_world"
+    },
+    {
+      "name": "idshaftminer_world"
+    },
+    {
+      "name": "idstationengineer_world"
+    },
+    {
+      "name": "idunknown_world"
+    },
+    {
+      "name": "idvirologist_world"
+    },
+    {
+      "name": "idvisitor_world"
+    },
+    {
+      "name": "idwarden_world"
+    },
+    {
+      "name": "idmusician_world"
+    },
+    {
+      "name": "idzookeeper_world"
+    },
+    {
+      "name": "idintern-sci_world"
+    },
+    {
+      "name": "idintern-cadet_world"
+    },
+    {
+      "name": "idintern-med_world"
+    },
+    {
+      "name": "idintern-service_world"
+    },
+    {
+      "name": "idintern-tech_world"
+    },
+    {
+      "name": "idadmin_world"
+    },
+    {
+      "name": "orange_world"
+    },
+    {
+      "name": "pirate_world"
+    },
+    {
+      "name": "prisoner_001_world"
+    },
+    {
+      "name": "prisoner_002_world"
+    },
+    {
+      "name": "prisoner_003_world"
+    },
+    {
+      "name": "prisoner_004_world"
+    },
+    {
+      "name": "prisoner_005_world"
+    },
+    {
+      "name": "prisoner_006_world"
+    },
+    {
+      "name": "prisoner_007_world"
+    },
+    {
+      "name": "silver_world"
+    },
+    {
+      "name": "syndie_world"
+    },
+    {
+      "name": "idseniorengineer_world"
+    },
+    {
+      "name": "idseniorresearcher_world"
+    },
+    {
+      "name": "idseniorphysician_world"
+    },
+    {
+      "name": "idseniorofficer_world"
+    },
+    {
+      "name": "wizard_world"
+    },
+    {
+      "name": "idwizard_world"
+    },
+    {
+      "name": "idcluwne_world"
+    }
+  ]
+}

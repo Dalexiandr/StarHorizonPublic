@@ -1,0 +1,32 @@
+- type: entity
+  name: fuel case
+  parent: ToolboxBase
+  id: FuelCaseLong
+  description: A reinforced casing for storing fuel.
+  suffix: Long
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Storage/Cases/guncaselong.rsi
+    layers:
+    - map: [ base ]
+      state: icon
+    - state: unshaded
+      shader: unshaded
+  - type: GenericVisualizer
+    visuals:
+      enum.StorageVisuals.Open:
+        base:
+          True: { state: icon-open }
+          False: { state: icon }
+  - type: Item
+    sprite: _NF/Objects/Storage/Cases/guncaselong.rsi
+    size: Large
+    shape:
+    - 0,0,5,3
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,4,3
+    - 6,0,7,3
+  - type: RadiationBlockingContainer
+    resistance: 0.9

@@ -1,0 +1,1184 @@
+# Гайгэкс
+- type: latheRecipe
+  id: GygaxHarness
+  result: GygaxHarness
+  category: MechGygax
+  completetime: 4
+  materials:
+    Steel: 2200
+    Glass: 600
+    Plasteel: 100
+
+- type: latheRecipe
+  id: GygaxLArm
+  result: GygaxLArm
+  category: MechGygax
+  completetime: 4
+  materials:
+    Steel: 900
+    Plasteel: 100
+
+- type: latheRecipe
+  id: GygaxLLeg
+  result: GygaxLLeg
+  category: MechGygax
+  completetime: 4
+  materials:
+    Steel: 900
+    Plasteel: 100
+
+- type: latheRecipe
+  id: GygaxRLeg
+  result: GygaxRLeg
+  category: MechGygax
+  completetime: 4
+  materials:
+    Steel: 900
+    Plasteel: 100
+
+- type: latheRecipe
+  id: GygaxRArm
+  result: GygaxRArm
+  category: MechGygax
+  completetime: 4
+  materials:
+    Steel: 900
+    Plasteel: 100
+
+- type: latheRecipe
+  id: GygaxArmorPlates
+  result: GygaxArmorPlates
+  category: MechGygax
+  completetime: 4
+  materials:
+    Steel: 1000
+    Plasteel: 500
+    Titan: 1000
+
+- type: latheRecipe
+  id: GygaxHead
+  result: GygaxHead
+  category: MechGygax
+  completetime: 4
+  materials:
+    Steel: 600
+    Glass: 300
+    Plasteel: 100
+
+- type: latheRecipe
+  id: GygaxCentralElectronics
+  result: GygaxCentralElectronics
+  category: Circuitry
+  completetime: 2
+  materials:
+    Steel: 100
+    Glass: 1000
+    Gold: 300
+
+- type: latheRecipe
+  id: GygaxPeripheralsElectronics
+  result: GygaxPeripheralsElectronics
+  category: Circuitry
+  completetime: 2
+  materials:
+    Steel: 100
+    Glass: 1000
+    Gold: 300
+
+# Одиссей
+- type: latheRecipe
+  id: OdysseusHarness
+  result: OdysseusHarness
+  category: MechOdysseus
+  completetime: 4
+  materials:
+    Steel: 1800
+
+- type: latheRecipe
+  id: OdysseusLArm
+  result: OdysseusLArm
+  category: MechOdysseus
+  completetime: 4
+  materials:
+    Steel: 300
+
+- type: latheRecipe
+  id: OdysseusLLeg
+  result: OdysseusLLeg
+  category: MechOdysseus
+  completetime: 4
+  materials:
+    Steel: 300
+
+- type: latheRecipe
+  id: OdysseusRLeg
+  result: OdysseusRLeg
+  category: MechOdysseus
+  completetime: 4
+  materials:
+    Steel: 400
+
+- type: latheRecipe
+  id: OdysseusRArm
+  result: OdysseusRArm
+  category: MechOdysseus
+  completetime: 4
+  materials:
+    Steel: 400
+
+- type: latheRecipe
+  id: OdysseusHead
+  result: OdysseusHead
+  category: MechOdysseus
+  completetime: 4
+  materials:
+    Steel: 300
+    Glass: 600
+
+- type: latheRecipe
+  id: OdysseusCentralElectronics
+  result: OdysseusCentralElectronics
+  category: Circuitry
+  completetime: 2
+  materials:
+    Steel: 100
+    Glass: 1000
+    Gold: 300
+
+- type: latheRecipe
+  id: OdysseusPeripheralsElectronics
+  result: OdysseusPeripheralsElectronics
+  category: Circuitry
+  completetime: 2
+  materials:
+    Steel: 100
+    Glass: 1000
+    Gold: 300
+
+#Кларк
+
+- type: latheRecipe
+  id: ClarkeHarness
+  result: ClarkeHarness
+  category: MechClarke
+  completetime: 4
+  materials:
+    Steel: 2500
+    Silver: 600
+    Plasma: 300
+
+- type: latheRecipe
+  id: ClarkeLArm
+  result: ClarkeLArm
+  category: MechClarke
+  completetime: 4
+  materials:
+    Steel: 700
+
+- type: latheRecipe
+  id: ClarkeRArm
+  result: ClarkeRArm
+  category: MechClarke
+  completetime: 4
+  materials:
+    Steel: 700
+
+- type: latheRecipe
+  id: ClarkeLTread
+  result: ClarkeLTread
+  category: MechClarke
+  completetime: 4
+  materials:
+    Steel: 800
+    Plasteel: 1100
+
+- type: latheRecipe
+  id: ClarkeRTread
+  result: ClarkeRTread
+  category: MechClarke
+  completetime: 4
+  materials:
+    Steel: 800
+    Plasteel: 1100
+
+- type: latheRecipe
+  id: ClarkeHead
+  result: ClarkeHead
+  category: MechClarke
+  completetime: 4
+  materials:
+    Steel: 600
+    Glass: 600
+
+- type: latheRecipe
+  id: ClarkeCentralElectronics
+  result: ClarkeCentralElectronics
+  category: Circuitry
+  completetime: 2
+  materials:
+    Steel: 100
+    Glass: 1000
+    Gold: 300
+
+- type: latheRecipe
+  id: ClarkePeripheralsElectronics
+  result: ClarkePeripheralsElectronics
+  category: Circuitry
+  completetime: 2
+  materials:
+    Steel: 100
+    Glass: 1000
+    Gold: 300
+
+# Дюранд
+
+- type: latheRecipe
+  id: DurandHarness
+  result: DurandHarness
+  category: MechDurand
+  completetime: 4
+  materials:
+    Steel: 2800
+    Glass: 600
+    Silver: 600
+
+- type: latheRecipe
+  id: DurandLArm
+  result: DurandLArm
+  category: MechDurand
+  completetime: 4
+  materials:
+    Steel: 600
+    Silver: 200
+
+- type: latheRecipe
+  id: DurandLLeg
+  result: DurandLLeg
+  category: MechDurand
+  completetime: 4
+  materials:
+    Steel: 600
+    Silver: 200
+
+- type: latheRecipe
+  id: DurandRLeg
+  result: DurandRLeg
+  category: MechDurand
+  completetime: 4
+  materials:
+    Steel: 600
+    Silver: 200
+
+- type: latheRecipe
+  id: DurandRArm
+  result: DurandRArm
+  category: MechDurand
+  completetime: 4
+  materials:
+    Steel: 600
+    Silver: 200
+
+- type: latheRecipe
+  id: DurandArmorPlates
+  result: DurandArmorPlates
+  category: MechDurand
+  completetime: 4
+  materials:
+    Steel: 2000
+    Uranium: 1000
+    Titan: 2000
+
+- type: latheRecipe
+  id: DurandHead
+  result: DurandHead
+  category: MechDurand
+  completetime: 4
+  materials:
+    Steel: 600
+    Glass: 800
+    Silver: 200
+
+- type: latheRecipe
+  id: DurandCentralElectronics
+  result: DurandCentralElectronics
+  category: Circuitry
+  completetime: 2
+  materials:
+    Steel: 300
+    Glass: 1000
+    Gold: 500
+
+- type: latheRecipe
+  id: DurandPeripheralsElectronics
+  result: DurandPeripheralsElectronics
+  category: Circuitry
+  completetime: 2
+  materials:
+    Steel: 300
+    Glass: 1000
+    Gold: 500
+
+# Фазон
+
+- type: latheRecipe
+  id: PhazonHarness
+  result: PhazonHarness
+  category: MechPhazon
+  completetime: 4
+  materials:
+    Steel: 3000
+    Glass: 600
+    Plasma: 1100
+
+- type: latheRecipe
+  id: PhazonLArm
+  result: PhazonLArm
+  category: MechPhazon
+  completetime: 4
+  materials:
+    Steel: 1100
+    Plasma: 600
+
+- type: latheRecipe
+  id: PhazonLLeg
+  result: PhazonLLeg
+  category: MechPhazon
+  completetime: 4
+  materials:
+    Steel: 1100
+    Plasma: 600
+
+- type: latheRecipe
+  id: PhazonRLeg
+  result: PhazonRLeg
+  category: MechPhazon
+  completetime: 4
+  materials:
+    Steel: 1100
+    Plasma: 600
+
+- type: latheRecipe
+  id: PhazonRArm
+  result: PhazonRArm
+  category: MechPhazon
+  completetime: 4
+  materials:
+    Steel: 1100
+    Plasma: 600
+
+- type: latheRecipe
+  id: PhazonArmorPlates
+  result: PhazonArmorPlates
+  category: MechPhazon
+  completetime: 4
+  materials:
+    Steel: 2000
+    Plasma: 1500
+    Titan: 1000
+
+- type: latheRecipe
+  id: PhazonHead
+  result: PhazonHead
+  category: MechPhazon
+  completetime: 4
+  materials:
+    Steel: 800
+    Glass: 300
+    Plasma: 600
+
+- type: latheRecipe
+  id: PhazonCentralElectronics
+  result: PhazonCentralElectronics
+  category: Circuitry
+  completetime: 2
+  materials:
+    Steel: 300
+    Glass: 1000
+    Gold: 500
+
+- type: latheRecipe
+  id: PhazonPeripheralsElectronics
+  result: PhazonPeripheralsElectronics
+  category: Circuitry
+  completetime: 2
+  materials:
+    Steel: 300
+    Glass: 1000
+    Gold: 500
+
+- type: latheRecipe
+  id: PhazonWeaponControlElectronics
+  result: PhazonWeaponControlElectronics
+  category: Circuitry
+  completetime: 2
+  materials:
+    Steel: 300
+    Glass: 1000
+    Gold: 500
+
+# Комплект модификации
+
+- type: latheRecipe
+  id: RipleyMk2ModificationKit
+  result: RipleyMk2ModificationKit
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 1100
+    Glass: 100
+    Gold: 100
+
+- type: latheRecipe
+  id: MechRipleyAluminizerUpgradeKit
+  result: MechRipleyAluminizerUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 1100
+    Plasma: 100
+    Glass: 100
+
+- type: latheRecipe
+  id: MechRipleyCombatUpgradeKit
+  result: MechRipleyCombatUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 1100
+    Plasma: 100
+    Glass: 100
+
+- type: latheRecipe
+  id: MechRipleyEarthUpgradeKit
+  result: MechRipleyEarthUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 1100
+    Plasma: 100
+    Glass: 100
+
+- type: latheRecipe
+  id: MechRipleyFlamesredUpgradeKit
+  result: MechRipleyFlamesredUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 1100
+    Plasma: 100
+    Glass: 100
+
+- type: latheRecipe
+  id: MechRipleyTitanUpgradeKit
+  result: MechRipleyTitanUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 1100
+    Plasma: 100
+    Glass: 100
+
+- type: latheRecipe
+  id: MechRipleyZairjahUpgradeKit
+  result: MechRipleyZairjahUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 1100
+    Plasma: 100
+    Glass: 100
+
+- type: latheRecipe
+  id: MechRipleyFirefighterUpgradeKit
+  result: MechRipleyFirefighterUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 1100
+    Plasma: 100
+    Glass: 100
+
+- type: latheRecipe
+  id: MechRipleyHaulerUpgradeKit
+  result: MechRipleyHaulerUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 1100
+    Plasma: 100
+    Glass: 100
+
+- type: latheRecipe
+  id: MechRipleyDeathUpgradeKit
+  result: MechRipleyDeathUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 1100
+    Plasma: 100
+    Glass: 100
+
+- type: latheRecipe
+  id: MechClarkeOrangeyUpgradeKit
+  result: MechClarkeOrangeyUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 1100
+    Diamond: 100
+    Uranium: 100
+
+- type: latheRecipe
+  id: MechClarkeSpiderUpgradeKit
+  result: MechClarkeSpiderUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 1100
+    Diamond: 100
+    Uranium: 100
+
+- type: latheRecipe
+  id: MechHarsonUpgradeKit
+  result: MechHarsonUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 1000
+    Plasteel: 1000
+    Uranium: 500
+
+- type: latheRecipe
+  id: MechHarsonSpiderUpgradeKit
+  result: MechHarsonSpiderUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 1000
+    Plasteel: 1000
+    Uranium: 500
+
+- type: latheRecipe
+  id: MechDurDollhouseUpgradeKit
+  result: MechDurDollhouseUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 2200
+    Diamond: 200
+    Uranium: 200
+
+- type: latheRecipe
+  id: MechDurExecutorUpgradeKit
+  result: MechDurExecutorUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 2200
+    Diamond: 200
+    Uranium: 200
+
+- type: latheRecipe
+  id: MechDurShireUpgradeKit
+  result: MechDurShireUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 2200
+    Diamond: 200
+    Uranium: 200
+
+- type: latheRecipe
+  id: MechDurUnathiUpgradeKit
+  result: MechDurUnathiUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 2200
+    Diamond: 200
+    Uranium: 200
+
+- type: latheRecipe
+  id: MechOdysseusHermesUpgradeKit
+  result: MechOdysseusHermesUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 1100
+    Diamond: 100
+    Uranium: 100
+
+- type: latheRecipe
+  id: MechOdysseusMurdyUpgradeKit
+  result: MechOdysseusMurdyUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 1100
+    Diamond: 100
+    Uranium: 100
+
+- type: latheRecipe
+  id: MechGygaxGreyUpgradeKit
+  result: MechGygaxGreyUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 1700
+    Diamond: 200
+    Uranium: 200
+
+- type: latheRecipe
+  id: MechGygaxMedUpgradeKit
+  result: MechGygaxMedUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 1700
+    Diamond: 200
+    Uranium: 200
+
+- type: latheRecipe
+  id: MechGygaxPobedaUpgradeKit
+  result: MechGygaxPobedaUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 1700
+    Diamond: 200
+    Uranium: 200
+
+- type: latheRecipe
+  id: MechGygaxOrangeUpgradeKit
+  result: MechGygaxOrangeUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 1700
+    Diamond: 200
+    Uranium: 200
+
+- type: latheRecipe
+  id: MechGygaxRecitenceUpgradeKit
+  result: MechGygaxRecitenceUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 1700
+    Diamond: 200
+    Uranium: 200
+
+- type: latheRecipe
+  id: MechPhazonBlancoUpgradeKit
+  result: MechPhazonBlancoUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 2800
+    Diamond: 200
+    Plasma: 300
+
+- type: latheRecipe
+  id: MechPhazonImperionUpgradeKit
+  result: MechPhazonImperionUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 2800
+    Diamond: 200
+    Plasma: 300
+
+- type: latheRecipe
+  id: MechPhazonJanusUpgradeKit
+  result: MechPhazonJanusUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 2800
+    Diamond: 200
+    Plasma: 300
+
+- type: latheRecipe
+  id: MechPhazonPlazmusUpgradeKit
+  result: MechPhazonPlazmusUpgradeKit
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 2800
+    Diamond: 200
+    Plasma: 300
+
+# Оборудование
+
+- type: latheRecipe
+  id: MechEquipmentHumanGrabber
+  result: MechEquipmentHumanGrabber
+  category: Mech
+  completetime: 3
+  materials:
+    Steel: 600
+
+- type: latheRecipe
+  id: MechEquipmentHumanSleeper
+  result: MechEquipmentHumanSleeper
+  category: Mech
+  completetime: 3
+  materials:
+    Steel: 300
+    Glass: 600
+
+- type: latheRecipe
+  id: MechWeaponCutter
+  result: MechWeaponCutter
+  category: Mech
+  completetime: 3
+  materials:
+    Steel: 600
+    Glass: 200
+    Plasma: 300
+
+- type: latheRecipe
+  id: MechEquipmentJet
+  result: MechEquipmentJet
+  category: Mech
+  completetime: 3
+  materials:
+    Steel: 600
+    Glass: 200
+    Plasma: 300
+
+- type: latheRecipe
+  id: MechEquipmentRCD
+  result: MechEquipmentRCD
+  category: Mech
+  completetime: 3
+  materials:
+    Steel: 600
+    Glass: 200
+    Plasma: 300
+
+- type: latheRecipe
+  id: MechEquipmentWire
+  result: MechEquipmentWire
+  category: Mech
+  completetime: 3
+  materials:
+    Steel: 600
+    Glass: 200
+    Plasma: 300
+
+- type: latheRecipe
+  id: MechEquipmentArmorRange
+  result: MechEquipmentArmorRange
+  category: Mech
+  completetime: 3
+  materials:
+    Steel: 1100
+    Silver: 300
+
+- type: latheRecipe
+  id: MechEquipmentArmorMelee
+  result: MechEquipmentArmorMelee
+  category: Mech
+  completetime: 3
+  materials:
+    Steel: 1100
+    Silver: 300
+
+- type: latheRecipe
+  id: MechEquipmentDrill
+  result: MechEquipmentDrill
+  category: Mech
+  completetime: 3
+  materials:
+    Steel: 600
+
+- type: latheRecipe
+  id: MechEquipmentDiamondDrill
+  result: MechEquipmentDiamondDrill
+  category: Mech
+  completetime: 3
+  materials:
+    Steel: 600
+    Diamond: 400
+
+- type: latheRecipe
+  id: MechGunMedigunRed
+  result: MechGunMedigunRed
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 1000
+    Glass: 300
+    Silver: 300
+    Plasma: 300
+
+- type: latheRecipe
+  id: MechGunMedigunYellow
+  result: MechGunMedigunYellow
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 1000
+    Glass: 300
+    Silver: 300
+    Plasma: 300
+
+- type: latheRecipe
+  id: MechGunMedigunGreen
+  result: MechGunMedigunGreen
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 1000
+    Glass: 300
+    Silver: 300
+    Plasma: 1000
+
+- type: latheRecipe
+  id: MechGunMedigunBlue
+  result: MechGunMedigunBlue
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 1000
+    Glass: 300
+    Silver: 300
+    Plasma: 1000
+
+- type: latheRecipe
+  id: MechGunSyringeBasic
+  result: MechGunSyringeBasic
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 1000
+    Glass: 300
+    Silver: 300
+    Plasma: 300
+
+- type: latheRecipe
+  id: MechGunSyringeAdvanced
+  result: MechGunSyringeAdvanced
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 1000
+    Glass: 300
+    Silver: 300
+    Plasma: 1000
+
+- type: latheRecipe
+  id: MechGunSyringeCombat
+  result: MechGunSyringeCombat
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 1000
+    Glass: 300
+    Silver: 300
+    Plasma: 1000
+
+#Оружие мехов
+
+- type: latheRecipe
+  id: MechGunLaser
+  result: MechGunLaser
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 600
+
+- type: latheRecipe
+  id: MechGunDisabler
+  result: MechGunDisabler
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 600
+
+- type: latheRecipe
+  id: MechGunHeavyLaser
+  result: MechGunHeavyLaser
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 600
+    Silver: 400
+    Plasma: 400
+
+- type: latheRecipe
+  id: MechGunTeslaCannon
+  result: MechGunTeslaCannon
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 1100
+    Silver: 400
+
+- type: latheRecipe
+  id: MechGunScattershot
+  result: MechGunScattershot
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 600
+
+- type: latheRecipe
+  id: MechGunAutocannonUAC2
+  result: MechGunAutocannonUAC2
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 600
+
+- type: latheRecipe
+  id: MechGunCarbineHades
+  result: MechGunCarbineHades
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 600
+
+- type: latheRecipe
+  id: MechGunAntiMatterRifle
+  result: MechGunAntiMatterRifle
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 600
+    Silver: 400
+    Plasma: 400
+
+- type: latheRecipe
+  id: MechGunGrenade
+  result: MechGunGrenade
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 1100
+    Glass: 400
+
+- type: latheRecipe
+  id: MechGunMissileSRM8Frag
+  result: MechGunMissileSRM8Frag
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 1100
+    Silver: 300
+    Uranium: 100
+
+- type: latheRecipe
+  id: MechGunMissileSRM8Ignite
+  result: MechGunMissileSRM8Ignite
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 1100
+    Silver: 300
+    Uranium: 100
+
+- type: latheRecipe
+  id: MechGunMissileLRM6
+  result: MechGunMissileLRM6
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 1100
+    Silver: 300
+    Uranium: 100
+
+- type: latheRecipe
+  id: MechGunPKA
+  result: MechGunPKA
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 600
+
+- type: latheRecipe
+  id: MechGunPKAHeavy
+  result: MechGunPKAHeavy
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 600
+    Plasteel: 300
+
+- type: latheRecipe
+  id: BoxAmmoAC2Ultra
+  result: BoxAmmoAC2Ultra
+  category: Mech
+  completetime: 1
+  materials:
+    Steel: 300
+
+- type: latheRecipe
+  id: BoxAmmoScattershot
+  result: BoxAmmoScattershot
+  category: Mech
+  completetime: 1
+  materials:
+    Steel: 300
+
+- type: latheRecipe
+  id: BoxAmmoHades
+  result: BoxAmmoHades
+  category: Mech
+  completetime: 1
+  materials:
+    Steel: 300
+
+- type: latheRecipe
+  id: BoxAmmoSniper
+  result: BoxAmmoSniper
+  category: Mech
+  completetime: 1
+  materials:
+    Steel: 300
+
+- type: latheRecipe
+  id: BoxAmmoGranade
+  result: BoxAmmoGranade
+  category: Mech
+  completetime: 1
+  materials:
+    Steel: 300
+
+- type: latheRecipe
+  id: BoxPlasmaBox
+  result: BoxPlasmaBox
+  category: Mech
+  completetime: 1
+  materials:
+    Plasma: 300
+
+- type: latheRecipe
+  id: BoxChemBox
+  result: BoxChemBox
+  category: Mech
+  completetime: 1
+  materials:
+    Steel: 500
+    Plasma: 200
+    Uranium: 200
+
+- type: latheRecipe
+  id: MechGunXRayRifle
+  result: MechGunXRayRifle
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 500
+    Uranium: 400
+    Gold: 500
+    Plasteel: 200
+
+- type: latheRecipe
+  id: MechGunCryo
+  result: MechGunCryo
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 500
+    Uranium: 400
+    Gold: 500
+    Plasteel: 200
+
+- type: latheRecipe
+  id: MechGunPyro
+  result: MechGunPyro
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 500
+    Uranium: 400
+    Gold: 500
+    Plasteel: 200
+
+- type: latheRecipe
+  id: MechGunHeavyPulseRifle
+  result: MechGunHeavyPulseRifle
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 2000
+    Silver: 600
+    Uranium: 200
+
+- type: latheRecipe
+  id: MechWeaponSword
+  result: MechWeaponSword
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 1000
+    Plasteel: 500
+    Plasma: 500
+
+- type: latheRecipe
+  id: MechWeaponSpear
+  result: MechWeaponSpear
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 1000
+    Plasteel: 500
+    Plasma: 500
+
+- type: latheRecipe
+  id: MechWeaponClaws
+  result: MechWeaponClaws
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 1000
+    Plasteel: 500
+    Plasma: 500
+
+- type: latheRecipe
+  id: MechWeaponWarhammer
+  result: MechWeaponWarhammer
+  category: Mech
+  completetime: 4
+  materials:
+    Steel: 1000
+    Plasteel: 500
+    Plasma: 500
+
+- type: latheRecipe
+  id: MechReactorPlasma
+  result: MechReactorPlasma
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 500
+    Glass: 500
+    Silver: 100
+    Gold: 100
+    Plasma: 300
+
+- type: latheRecipe
+  id: MechReactorUranium
+  result: MechReactorUranium
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 1000
+    Glass: 500
+    Silver: 200
+    Gold: 200
+    Plasma: 500
+
+- type: latheRecipe
+  id: MechReactorTesla
+  result: MechReactorTesla
+  category: Mech
+  completetime: 10
+  materials:
+    Steel: 2000
+    Glass: 1000
+    Silver: 300
+    Gold: 300
+    Plasma: 700

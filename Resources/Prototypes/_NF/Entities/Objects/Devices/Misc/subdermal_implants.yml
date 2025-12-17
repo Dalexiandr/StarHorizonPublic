@@ -1,0 +1,203 @@
+# Translators
+- type: entity
+  id: BaseTranslatorImplant
+  abstract: true
+  components:
+  - type: SubdermalImplant
+    blacklist:
+      components:
+      - DeafTrait
+  - type: Tag
+    tags:
+    - SubdermalImplant
+    - HideContextMenu
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: GalacticCommonTranslatorImplant
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      GalacticCommon: Speak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: BubblishTranslatorImplant
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Bubblish: BadSpeak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: ArachnidTranslatorImplant
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Arachnid: BadSpeak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: RootSpeakTranslatorImplant
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      RootSpeak: Understand
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: NekomimeticTranslatorImplant
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Nekomimetic: Speak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: DraconicTranslatorImplant
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Draconic: Speak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: CanilunztTranslatorImplant
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Canilunzt: Speak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: SolCommonTranslatorImplant
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      SolCommon: Speak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: DwarfTranslatorImplant
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Dwarf: Speak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: NianTranslatorImplant
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Nian: BadSpeak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: SikTajTranslatorImplant
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      SikTaj: Speak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: NeoRusskiyaTranslatorImplant
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      NeoRusskiya: Speak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: ClownishTranslatorImplant
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Clownish: Speak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: DevTranslatorImplant
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Dev: Speak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: SyndicateUniversalTranslatorImplant
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Nian: Understand
+      SikTaj: Understand
+      Arachnid: Understand
+      RootSpeak: Understand
+      SolCommon: Understand
+      Canilunzt: Understand
+      Draconic: Understand
+      Bubblish: Understand
+      Nekomimetic: Understand
+      Dwarf: Understand
+      CintaTaj: Understand
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: CodeSpeakTranslatorImplant
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      CodeSpeak: Speak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: GoblinSpeakTranslatorImplant
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Goblin: Speak
+
+- type: entity
+  parent: BaseTranslatorImplant
+  id: HarpySpeakTranslatorImplant
+  name: translator implant
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    languages:
+      Harpy: Speak

@@ -1,0 +1,152 @@
+- type: entity
+  name: ящик UAS
+  parent: BaseItem
+  id: UASBox
+  suffix: StarHorizon, UAS
+  categories: [ HideSpawnMenu ]
+  description: Закрытый ящик с логотипом корпорации.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Storage/uasbox.rsi
+    state: uasbox
+  - type: Item
+    sprite: _Horizon/Objects/Storage/uasbox.rsi
+    state: uasbox
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+    - id: UASopenbox
+
+- type: entity
+  parent: BaseItem
+  id: UASopenbox
+  description: Вскрытый ящик с логотипом корпорации.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Storage/uasbox.rsi
+    state: uasboxopen
+  - type: Item
+    sprite: _Horizon/Objects/Storage/uasbox.rsi
+    state: uasboxopen
+    size: Huge
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: UASBox
+  id: UASBoxStoreUniform
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: PDAUAS
+    - id: UASGloves
+    - id: SuitUAS
+    - id: UASBoots
+    - id: ClothingEyesGlassesUAS
+    - id: UASsatchel
+    - id: UASopenbox
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  name: Ультимативный набор UAS
+  description: Станьте настоящим патриотом UAS. Слава UAS!
+  parent: UASBox
+  id: UASBoxKitUniform
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: PDAUAS
+    - id: UASGloves
+    - id: UASGlovesIsolate
+    - id: SuitUAS
+    - id: SuitProtectiveUAS
+    - id: SkirtProtectiveUAS
+    - id: SkirtUAS
+    - id: UASBoots
+    - id: ClothingEyesGlassesUAS
+    - id: UASsatchel
+    - id: UASVests
+    - id: uasberet
+    - id: uascap
+    - id: RipsiPlushin
+    - id: LumaPlushina
+    - id: UASopenbox
+  - type: StaticPrice
+    price: 200000
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: UASBox
+  id: UASBoxStoreBug
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: SuitProtectiveUAS
+#    - id: UASDroneOff
+#    - id: UASDroneOff
+#    - id: UASDroneOff
+#    - id: UASDroneOff
+    - id: UASopenbox
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: UASBox
+  id: UASBoxStoreAccessory
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: ClothingNeckCloakUAS
+    - id: uasberet
+    - id: uascap
+    - id: RipsiPlushin
+    - id: LumaPlushina
+    - id: UASopenbox
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: UASBox
+  id: UASBoxStoreHack
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: UASOmegaTool
+    - id: ClothingEyesGlassesUAS
+    - id: UASGlovesIsolate
+    - id: UASopenbox
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: UASBox
+  id: UASBoxStoreLasGun
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: PMLaserUASGun
+    - id: UASEnergyCore
+    - id: UASEnergyCore
+    - id: UASopenbox
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: UASBox
+  id: UASBoxStoreLasGunKnight
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: LaserUASGun
+    - id: UASEnergyCore
+    - id: UASEnergyCore
+    - id: UASopenbox
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: UASBox
+  id: UASBoxStoreStun
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: WeaponDisablerSMGUAS
+    - id: WeaponStunprodUAS
+    - id: UASHandcuffs
+    - id: UASHandcuffs
+    - id: UASopenbox

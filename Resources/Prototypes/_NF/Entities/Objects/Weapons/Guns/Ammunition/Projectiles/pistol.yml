@@ -1,0 +1,194 @@
+# WizDen
+#region .35 pistol
+- type: entity
+  id: NFBulletPistol35
+  name: bullet (.35 pistol)
+  parent: NFBaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 10
+        Blunt: 1
+  - type: StaminaDamageOnCollide
+    damage: 4 # 15 hits to slowdown
+
+- type: entity
+  id: NFBulletPistol35Overpressure
+  name: bullet (.35 pistol, overpressure)
+  parent: NFBaseBulletOverpressure
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 10
+        Blunt: 1
+  - type: StaminaDamageOnCollide
+    damage: 5 # 12 hits to slowdown
+
+- type: entity
+  id: NFBulletPistol35Incendiary
+  name: bullet (.35 pistol, incendiary)
+  parent: NFBaseBulletIncendiary
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 1 # 0.6 * base total dmg
+        Heat: 10 # 0.4 * base total dmg
+  - type: StaminaDamageOnCollide
+    damage: 4 # 15 hits to slowdown
+
+- type: entity
+  id: NFBulletPistol35Uranium
+  parent: NFBaseBulletUranium
+  name: bullet (.35 pistol, uranium)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 6.0 # 0.6 * (1.4 * base total dmg)
+        Radiation: 4.0 # 0.4 * (1.4 * base total dmg)
+  - type: StaminaDamageOnCollide
+    damage: 4 # 15 hits to slowdown
+
+- type: entity
+  id: NFBulletPistol35Practice
+  name: bullet (.35 pistol, practice)
+  parent: NFBaseBulletPractice
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 0.5
+
+# Frontier
+# .35 pistol
+- type: entity
+  id: NFBulletPistol35Emp
+  name: bullet (.35 pistol, EMP)
+  parent: NFBaseBulletEmp
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Shock: 10
+        Blunt: 5
+  - type: StaminaDamageOnCollide
+    damage: 4 # 15 hits to slowdown
+
+- type: entity
+  id: NFBulletPistol35Rubber
+  name: bullet (.35 pistol, rubber)
+  parent: NFBaseBulletRubber
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 1
+  - type: StaminaDamageOnCollide
+    damage: 15 # ~8 hits to stun sounds reasonable
+
+#region .45 pistol
+- type: entity
+  id: NFBulletPistol45
+  name: bullet (.45 pistol)
+  parent: NFBaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 10
+        Blunt: 15
+  - type: StaminaDamageOnCollide
+    damage: 6 # 10 hits to slowdown
+
+- type: entity
+  id: NFBulletPistol45Overpressure
+  name: bullet (.45 pistol, overpressure)
+  parent: NFBaseBulletOverpressure
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 10
+        Blunt: 20
+  - type: StaminaDamageOnCollide
+    damage: 7 # ~9 hits to slowdown
+
+- type: entity
+  id: NFBulletPistol45Incendiary
+  name: bullet (.45 pistol, incendiary)
+  parent: NFBaseBulletIncendiary
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 5 # 0.6 * base total dmg
+        Heat: 25 # 0.4 * base total dmg
+  - type: StaminaDamageOnCollide
+    damage: 6 # 10 hits to slowdown
+
+- type: entity
+  id: NFBulletPistol45Uranium
+  parent: NFBaseBulletUranium
+  name: bullet (.45 pistol, uranium)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 10 # 0.6 * (1.4 * base total dmg)
+        Radiation: 15 # 0.6 * (1.4 * base total dmg)
+  - type: StaminaDamageOnCollide
+    damage: 6 # 10 hits to slowdown
+
+- type: entity
+  id: NFBulletPistol45Practice
+  name: bullet (.45 pistol, practice)
+  parent: NFBaseBulletPractice
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 1
+
+# Frontier
+# .45 pistol
+- type: entity
+  id: NFBulletPistol45Emp
+  name: bullet (.45 pistol, EMP)
+  parent: NFBaseBulletEmp
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Shock: 15
+        Blunt: 10
+  - type: StaminaDamageOnCollide
+    damage: 6 # 10 hits to slowdown
+
+- type: entity
+  id: NFBulletPistol45Rubber
+  name: bullet (.45 pistol, rubber)
+  parent: NFBaseBulletRubber
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 2
+  - type: StaminaDamageOnCollide
+    damage: 30 # ~6 hits to stun sounds reasonable

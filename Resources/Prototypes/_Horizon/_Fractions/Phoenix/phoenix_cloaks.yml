@@ -1,0 +1,35 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakPhoenixBrigadier
+  name: Плащ бригадира ИФ
+  description: Элитный плащ для бригадиров ИФ, символизирующий власть и авторитет.
+  suffix: Феникс, Работяги
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/neck/FenixBrigadierNeck.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Phoenix/neck/FenixBrigadierNeck.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakPhoenixSanabi
+  name: Элитный плащ ИФ
+  description: Высококачественный плащ ИФ, для особых моментов!
+  suffix: Феникс
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/neck/sanabiNeck.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Phoenix/neck/sanabiNeck.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakPhoenixSecurity
+  name: Плащ службы безопасности ИФ
+  description: Стандартный плащ для сотрудников СБ ИФ, обеспечивающий заметность, дабы вселять в сердца рабочих УЖАС.
+  suffix: Феникс, СБ
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/neck/SecNeck.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Phoenix/neck/SecNeck.rsi

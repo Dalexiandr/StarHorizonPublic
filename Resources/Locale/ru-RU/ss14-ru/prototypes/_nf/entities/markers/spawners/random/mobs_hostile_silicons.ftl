@@ -1,0 +1,15 @@
+ent-SpawnMobRogueDronesT1 = спавнер дрона
+    .suffix = ИИ, Враждебный, T1
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobRogueScapT1 = спавнер мусорщика
+    .suffix = ИИ, Враждебный, T1
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobRogueSiliconsT2 = спавнер дрона убийцы
+    .suffix = ИИ, Враждебный, T2
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobRogueSiliconsT3 = спавнер дрона убийцы
+    .suffix = ИИ, Враждебный, T3
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobRogueSiliconBossRandom = спавнер босса-искусственного интеллекта
+    .suffix = ИИ, Враждебный, Случайный
+    .desc = { ent-MarkerBase.desc }

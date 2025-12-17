@@ -1,0 +1,922 @@
+
+- type: entity
+  id: MobShadowsBase
+  parent: [ BaseMob, MobCombat ]
+  abstract: true
+  name: Теневые Персоны
+  description: Неизвестно..
+  components:
+  - type: HTN
+    rootTask:
+      task: SimpleRangedHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: Tag
+    tags:
+      - CannotSuicide
+      - DoorBumpOpener
+      - FootstepSound
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3.5
+    baseSprintSpeed: 3.5
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: running
+    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      state: running_un
+      shader: unshaded
+  - type: MobState
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      20: 0.5
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: running
+        BaseUnshaded: running_un
+      Dead:
+        Base: dead
+  - type: StatusEffects
+    allowed:
+    - Stun
+    - Corporeal
+    - Electrocution
+    - StaminaModifier
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 60
+        mask:
+          - MobMask
+        layer:
+          - Opaque
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: LivingLight
+  - type: PassiveDamage
+    allowedStates:
+    - Alive
+    damageCap: 100
+    damage:
+      types:
+        Heat: -1
+      groups:
+        Brute: -0.2
+        Toxin: -1
+        Airloss: 1
+        Burn: -0.2
+  - type: NoSlip
+  - type: Pullable
+  - type: ZombieImmune
+  - type: NameIdentifier
+    group: GenericNumber
+  - type: GhostTakeoverAvailable
+  - type: Speech
+    speechVerb: Ghost
+# Лут пока не сделан Ибо бубубу
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:PlaySoundBehavior
+           sound:
+             path: /Audio/Effects/demon_dies.ogg
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              Ash:
+                min: 1
+                max: 1
+
+- type: entity
+  parent: BaseItem
+  name: Эхо Осколок 
+  description: Небольшой холодный осколок, на ощупь почти что невесомый.. На большое удивление он даже жидкий! Хоть и держит форму. 
+  id: ShadowExoSplinters
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/items/ExoOskolok.rsi
+    state: base01
+
+- type: entity
+  id: MobShadowRavager
+  parent: MobShadowsBase
+  name: Опустошитель
+  description: Воплощение созданий из пустоты, является одним из самых примитивных обитателей впадины. 
+  suffix: Бездна| Измерение Забвения
+  components:
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 4.5
+    baseSprintSpeed: 4.5
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/Monsters/Shadows1.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: running
+    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      state: running_un
+      shader: unshaded
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: running
+        BaseUnshaded: running_un
+      Dead:
+        Base: dead
+  - type: MeleeWeapon
+    damage:
+      types:
+        Cold: 1.5
+        Bloodloss: 1.5 
+        Poison: 0.5
+
+- type: entity
+  id: MobShadowObserver
+  parent: MobShadowsBase
+  name: Наблюдатель 
+  description: Он наблюдает за вами. 
+  suffix: Бездна| Измерение Забвения
+  components:
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 1
+    baseSprintSpeed: 1
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/Monsters/Shadows2.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: running
+    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      state: running_un
+      shader: unshaded
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: running
+        BaseUnshaded: running_un
+      Dead:
+        Base: dead
+  - type: MeleeWeapon
+    damage:
+      types:
+        Cold: 1.5
+        Bloodloss: 1.5 
+        Poison: 0.5
+        Cellular: 0.5
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 1000
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:PlaySoundBehavior
+           sound:
+             path: /Audio/Effects/demon_attack1.ogg
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              Ash:
+                min: 1
+                max: 3
+
+
+- type: entity
+  id: MobShadowdivider
+  parent: MobShadowsBase
+  name: Рассекатель 
+  description: Продвинутая версия обычных пустых, не имеет личности но имеет злой умысел. 
+  suffix: Бездна| Измерение Забвения
+  components:
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 4.5
+    baseSprintSpeed: 4.5
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/Monsters/Shadows3.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: running
+    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      state: running_un
+      shader: unshaded
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: running
+        BaseUnshaded: running_un
+      Dead:
+        Base: dead
+  - type: MeleeWeapon
+    damage:
+      types:
+        Poison: 1.5
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      100: 0.5
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 250
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:PlaySoundBehavior
+           sound:
+             path: /Audio/Effects/demon_attack1.ogg
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              Ash:
+                min: 1
+                max: 3
+
+- type: entity
+  id: MobShadowGuards
+  parent: MobShadowsBase
+  name: Страж 
+  description: Страж впадины, на удивление он гораздо сильнее некоторых.. 
+  suffix: Бездна| Измерение Забвения
+  components:
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      20: 0.9
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 5
+    baseSprintSpeed: 5
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/Monsters/Shadows3.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: running02
+    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      state: running02
+      shader: unshaded
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: running02
+      Dead:
+        Base: dead02
+  - type: MeleeWeapon
+    damage:
+      types:
+        Poison: 1.5
+        Cold: 2.5 
+        Bloodloss: 2.5 
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 250
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:PlaySoundBehavior
+           sound:
+             path: /Audio/Effects/demon_attack1.ogg
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              Ash:
+                min: 1
+                max: 4
+
+
+- type: entity
+  id: MobShadowBlind
+  parent: MobShadowsBase
+  name: Незрячий 
+  description: Его вид заставляет впасть вас в шок.. Кажется или он вас не может заметить.. Может просто уйти? 
+  suffix: Бездна| Измерение Забвения
+  components:
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      20: 0.9
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.5
+    baseSprintSpeed: 2.5 
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/Monsters/Shadows4.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: running
+    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      state: running
+      shader: unshaded
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: running
+      Dead:
+        Base: dead02
+  - type: MeleeWeapon
+    damage:
+      types:
+        Cold: 2.5 
+        Bloodloss: 5
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 450
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:PlaySoundBehavior
+           sound:
+             path: /Audio/Effects/demon_attack1.ogg
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              Ash:
+                min: 1
+                max: 4
+
+
+
+- type: entity
+  id: MobShadowKinhgt
+  parent: MobShadowsBase
+  name: Сверкающий Рыцарь
+  description: Совершенное существо из пустоты, предвестник истиного лика тьмы. 
+  suffix: Бездна| Измерение Забвения
+  components:
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      20: 0.9
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 7.5
+    baseSprintSpeed: 5
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/Monsters/Shadows5.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: running
+    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      state: running
+      shader: unshaded
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: running
+      Dead:
+        Base: dead
+  - type: MeleeWeapon
+    damage:
+      types:
+        Structural: 50
+        Cold: 5
+        Bloodloss: 7.5
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 500
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:PlaySoundBehavior
+           sound:
+             path: /Audio/Effects/demon_attack1.ogg
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              Ash:
+                min: 1
+                max: 1
+
+# MobShadowBlind, MobShadowGuards, MobShadowdivider, MobShadowObserver, MobShadowRavager
+
+- type: entity
+  parent: MarkerBase
+  id: RandomShadowsMobs
+  name: (Легкие мобы) Рандом Спаунер Теневых
+  suffix: Спаунер | Измерение Забвения
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: _Horizon/_Fractions/Zabvenie/Monsters/Shadows3.rsi
+      state: running02
+  - type: EntityTableSpawner
+    table: !type:GroupSelector
+      children:
+      - id: MobShadowRavager
+        weight: 36
+      - id: MobShadowObserver
+        weight: 64
+
+- type: entity
+  parent: MarkerBase
+  id: RandomShadowsMobsB
+  name: (Средние мобы) Рандом Спаунер Теневых
+  suffix: Спаунер | Измерение Забвения
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: _Horizon/_Fractions/Zabvenie/Monsters/Shadows3.rsi
+      state: running02
+  - type: EntityTableSpawner
+    table: !type:GroupSelector
+      children:
+      - id: MobShadowRavager
+        weight: 33
+      - id: MobShadowdivider
+        weight: 33
+      - id: MobShadowGuards
+        weight: 33
+
+- type: entity
+  parent: MarkerBase
+  id: RandomShadowsMobsS
+  name: (Сложные мобы) Рандом Спаунер Теневых
+  suffix: Спаунер | Измерение Забвения
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: _Horizon/_Fractions/Zabvenie/Monsters/Shadows3.rsi
+      state: running02
+  - type: EntityTableSpawner
+    table: !type:GroupSelector
+      children:
+      - id: MobShadowBlind
+        weight: 10
+      - id: MobShadowdivider
+        weight: 50
+      - id: MobShadowGuards
+        weight: 40
+
+
+
+# region - Ниже мобы исключительно бездны. 
+
+
+
+
+
+# region Кошмар Сущность - Антагонист. 
+- type: entity
+  id: MobDarkNightmare
+  parent: MobShadowsBase
+  name: Кошмар
+  description: Совершенное существо из пустоты, предвестник истиного лика тьмы. 
+  suffix: НЕ СПАУНИТЬ |Бездна| Измерение Забвения
+  components:
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      20: 0.9
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 7.5
+    baseSprintSpeed: 5
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/Monsters/Nightmare/Nightmare.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: running
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: running
+      Dead:
+        Base: dead
+  - type: MeleeWeapon
+    altDisarm: false
+    hidden: true
+    damage:
+      types:
+        Structural: 50
+        Cold: 7.5
+        Bloodloss: 7.5
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 1500
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:PlaySoundBehavior
+           sound:
+             path: /Audio/Effects/demon_attack1.ogg
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              Ash:
+                min: 1
+                max: 1
+  - type: UniversalLanguageSpeaker 
+  - type: Puller
+    needsHands: false
+  - type: PassiveDamage
+    allowedStates:
+    - Alive
+    damageCap: 15
+    damage:
+      types:
+        Heat: -1.5
+  - type: ActionGun
+    action: ActionCgystor
+    gunProto: BlackCgystorBreathGun
+  - type: AutoImplant
+    implants:
+    - ImplantDarkTentacle 
+    - ImplantDarkWall
+# region Конец кошмара начала способностей 
+
+- type: entity
+  id: BlackCgystor
+  parent: BaseBullet
+  name: Теневой сгусток
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/Monsters/Nightmare/Attack.rsi
+    state: bullet
+    scale: 0.8,0.8
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 12.5
+        Structural: 150
+  - type: TimedDespawn
+    lifetime: 5
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: BlackCgystorBreathGun
+  name: dragon's lung
+  description: For dragon's breathing.
+  components:
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 1
+    rechargeSound:
+      path: /Audio/Animals/space_dragon_roar.ogg
+  - type: BasicEntityAmmoProvider
+    proto: BlackCgystor
+    capacity: 150
+    count: 1
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Animals/space_dragon_roar.ogg
+    soundEmpty: null
+    projectileSpeed: 10
+
+- type: entity
+  id: ActionCgystor
+  name: Бросок Теневого меча 
+  description: Бросок теневого меча
+  components:
+  - type: Action
+    icon: { sprite : _Horizon/_Fractions/Zabvenie/Monsters/Nightmare/Attack.rsi, state: bullet }
+    priority: 2
+    itemIconStyle: BigAction
+  - type: TargetAction
+    checkCanAccess: false
+    range: 0
+  - type: WorldTargetAction
+    event: !type:ActionGunShootEvent
+
+
+
+- type: entity
+  parent: BaseSubdermalImplant #Сам имплант 
+  id: ImplantDark
+  name: БАЗА 
+  noSpawn: true
+  components:
+    - type: SubdermalImplant
+      implantAction: ActionSpawnTenLox  
+    - type: Tag
+      tags:
+        - SubdermalImplant
+        - HideContextMenu
+        - Flashlight
+    - type: UnpoweredFlashlight  
+
+- type: entity
+  parent: ImplantDark
+  id: ImplantDarkTentacle
+  name: Призвать теневое щупальце
+  noSpawn: true
+  components:
+    - type: SubdermalImplant
+      implantAction: ActionSpawnDarkTentacle
+
+- type: entity
+  id: ActionSpawnDarkTentacle
+  name: Призвать теневое щупальце
+  noSpawn: true
+  components:
+  - type: Action
+    icon:
+      sprite: _Horizon/_Fractions/Zabvenie/Monsters/Nightmare/Attack.rsi
+      state: tentanle
+    itemIconStyle: BigAction
+  - type: TargetAction
+    range: 15
+    useDelay: 1
+  - type: WorldTargetAction
+    event: !type:WorldSpawnSpellEvent
+      prototypes:
+      - id: MobDarkTentacle
+        amount: 1
+      offset: 0, 1
+      speech: 
+
+# ................................................
+
+- type: entity
+  parent: ImplantDark
+  id: ImplantDarkWall
+  name: Призвать теневую стену
+  noSpawn: true
+  components:
+    - type: SubdermalImplant
+      implantAction: ActionSpawnDarkWall
+
+- type: entity
+  id: ActionSpawnDarkWall
+  name: Призвать теневую стену
+  noSpawn: true
+  components:
+  - type: Action
+    icon:
+      sprite: _Horizon/_Fractions/Zabvenie/Monsters/Nightmare/wall.rsi
+      state: full
+    itemIconStyle: BigAction
+  - type: TargetAction
+    range: 15
+    useDelay: 1
+  - type: WorldTargetAction
+    event: !type:WorldSpawnSpellEvent
+      prototypes:
+      - id: WallDark
+        amount: 1
+      offset: 0, 1
+      speech: 
+
+      # ................................................
+
+- type: entity
+  id: MobDarkTentacle
+  parent: MobShadowsBase
+  name: Теневое Щупальце
+  description: Совершенное существо из пустоты, предвестник истиного лика тьмы. 
+  suffix: Бездна| Измерение Забвения
+  components:
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      50: 0.9
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 0.1
+    baseSprintSpeed: 0.1
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/Monsters/Nightmare/NightmareTentacle.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: running
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: running
+      Dead:
+        Base: dead
+  - type: Puller
+    needsHands: false
+  - type: MeleeWeapon
+    hidden: true
+    damage:
+      types:
+        Structural: 150
+        Cold: 5
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 250
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:PlaySoundBehavior
+           sound:
+             path: /Audio/Effects/demon_attack1.ogg
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              Ash:
+                min: 1
+                max: 5
+  - type: UniversalLanguageSpeaker 
+  - type: TimedDespawn
+    lifetime: 180
+
+- type: entity
+  parent: BaseWall
+  id: WallDark
+  name: Теневая Стена
+  suffix: Бездна| Измерение Забвения
+  components:
+  - type: PointLight
+    radius: 2
+    energy: 1.5
+    color: "#000000"
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/Monsters/Nightmare/wall.rsi
+  - type: Icon
+    sprite: _Horizon/_Fractions/Zabvenie/Monsters/Nightmare/wall.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          FloorShadowsEntity:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: IconSmooth
+    key: walls
+    base: ice
+
+- type: entity
+  id: MobDarkCherezmr
+  parent: MobShadowsBase
+  name: Черезмерный 
+  description: Совершенное существо из пустоты, предвестник истиного лика тьмы. 
+  suffix: Бездна| Измерение Забвения
+  components:
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      50: 0.9
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 7.5
+    baseSprintSpeed: 4.5
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/Monsters/Shadows6.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: running03
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: running03
+      Dead:
+        Base: dead
+  - type: Puller
+    needsHands: false
+  - type: MeleeWeapon
+    hidden: true
+    damage:
+      types:
+        Structural: 150
+        Cold: 1.2
+        Bloodloss: 7.5
+  - type: NightVision
+    color: "#353030d3"
+    luminancethreshold: 0.1
+    noiseamount: 0.8
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 750
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:PlaySoundBehavior
+           sound:
+             path: /Audio/Effects/demon_attack1.ogg
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              Ash:
+                min: 1
+                max: 5
+  - type: UniversalLanguageSpeaker 
+
+
+
+- type: entity
+  id: MobDarkCatalis
+  parent: MobShadowsBase
+  name: Каталис 
+  description: Совершенное существо из пустоты, предвестник истиного лика тьмы. 
+  suffix: Бездна| Измерение Забвения
+  components:
+  - type: Puller
+    needsHands: false
+  - type: NightVision
+    color: "#353030d3"
+    luminancethreshold: 0.1
+    noiseamount: 0.8
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      50: 0.9
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 7.5
+    baseSprintSpeed: 3.5
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/Monsters/Shadows6.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: running02
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: running02
+      Dead:
+        Base: dead
+  - type: MeleeWeapon
+    hidden: true
+    damage:
+      types:
+        Structural: 50
+        Cold: 5
+        Bloodloss: 5
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 500
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:PlaySoundBehavior
+           sound:
+             path: /Audio/Effects/demon_attack1.ogg
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              Ash:
+                min: 1
+                max: 5
+  - type: UniversalLanguageSpeaker 
+
+
+
+- type: entity
+  id: MobDarklibero
+  parent: MobShadowsBase
+  name: Либеро 
+  description: Совершенное существо из пустоты, предвестник истиного лика тьмы. 
+  suffix: Бездна| Измерение Забвения
+  components:
+  - type: Puller
+    needsHands: false
+  - type: NightVision
+    color: "#353030d3"
+    luminancethreshold: 0.1
+    noiseamount: 0.8
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      50: 0.9
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 7.5
+    baseSprintSpeed: 4.5
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/Monsters/Shadows6.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: running05
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: running05
+      Dead:
+        Base: dead
+  - type: MeleeWeapon
+    hidden: true
+    damage:
+      types:
+        Structural: 50
+        Cold: 5
+        Bloodloss: 5
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 750
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:PlaySoundBehavior
+           sound:
+             path: /Audio/Effects/demon_attack1.ogg
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              Ash:
+                min: 1
+                max: 5
+  - type: UniversalLanguageSpeaker 

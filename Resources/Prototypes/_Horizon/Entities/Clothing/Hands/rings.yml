@@ -1,0 +1,42 @@
+- type: entity
+  abstract: true
+  parent: Clothing
+  id: VoidRingBase
+  components:
+  - type: Clothing
+    slots: [ gloves, neck ]
+  - type: Sprite
+    state: icon
+  - type: Appearance
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - Ring
+
+- type: entity
+  parent: VoidRingBase
+  id: ClothingHandsRingWedding
+  name: обручальное кольцо
+  description: Пока смерть не разлучит нас.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Hands/Gloves/wedding_ring.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Hands/Gloves/wedding_ring.rsi
+  - type: StaticPrice
+    price: 300
+
+- type: entity
+  parent: VoidRingBase
+  id: ClothingHandsRingWeddingExclusive1
+  suffix: Эксклюзив Александра
+  name: обручальное кольцо
+  description: Это кольцо - половина клятвы, данной не под звёздами, а сквозь вечность. Второе кольцо - у того, чьё имя в сердце. Пока существует время, пока живёт память - это обещание любви останется нерушимым. Ни смерть, ни вселенная не смогут нас разлучить.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Hands/Gloves/wedding_ring_alexandr.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Hands/Gloves/wedding_ring_alexandr.
+  - type: StaticPrice
+    price: 300

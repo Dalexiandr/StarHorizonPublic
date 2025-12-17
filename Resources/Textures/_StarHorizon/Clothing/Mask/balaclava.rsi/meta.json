@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "license": "CLA with hosting restrictions",
+  "copyright": "Made by Lemird",
+  "size": {
+      "x": 32,
+      "y": 32
+  },
+  "states": [
+      {
+        "name": "icon"
+      },
+      {
+        "name": "equipped-MASK",
+        "directions": 4
+      }
+  ]
+}

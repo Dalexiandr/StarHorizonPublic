@@ -1,0 +1,12 @@
+ent-ClothingBackpackDuffelSyndicateFilledChinaLikeGrenadeLauncher = набор China-Lake
+    .desc = Старый гранатомёт China-Lake в комплекте с 11 выстрелами различной разрушительной способности.
+ent-ClothingBackpackDuffelSyndicateFilledRailAttachments = набор модулей для верхней планки
+    .desc = Набор тактических модулей для установки на верхнюю планку оружия. Включает оптический прицел, магнитный ремень и коллиматорный прицел.
+ent-ClothingBackpackDuffelSyndicateFilledBarrelAttachments = набор ствольных модулей
+    .desc = Набор модулей для модификации ствола оружия. Включает глушитель и модуль коррекции огня.
+ent-ClothingBackpackDuffelSyndicateFilledUnderAttachments = набор подствольных модулей
+    .desc = Комплексный набор подствольного оборудования. Включает вертикальную рукоять, лазерный целеуказатель, подствольный дробовик US90 и подствольный гранатомёт GL90.
+ent-ClothingBackpackDuffelSyndicateFilledLethalGrenades = набор летальных гранат для подствольных систем
+    .desc = Набор смертоносных 40-мм гранат для подствольного гранатомёта. Включает 3 кумулятивные и 3 фугасные гранаты.
+ent-ClothingBackpackDuffelSyndicateFilledNonLethalGrenades = набор нелетальных гранат для подствольных систем
+    .desc = Набор специальных 40-мм гранат нелетального действия для подствольного гранатомёта. Включает по 3 штуки травматических, ЭМИ, светошумовых и дымовых гранат.

@@ -1,0 +1,131 @@
+# Фронтир шаттлы
+- type: entity
+  parent: BaseShipVoucher
+  id: ShipVoucherFrontierShipyard
+  suffix: StarHorizon
+  name: Ваучер на шаттл фронтира
+  description: Позволяет бесплатно купить один шаттл на верфи Фронтира. Уничтожается при продаже шаттла.
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ShipyardVoucher
+    destroyOnEmpty: true
+    consoleType: Shipyard
+    access:
+    - CentralCommand
+    - NuclearOperative
+    - SyndicateAgent
+    - Wizard
+    - Xenoborg
+    - Pirate
+    accessGroups:
+    - AllAccess
+    - Silicon
+    - GeneralNfsdAccess
+
+# НФСД шаттлы
+- type: entity
+  parent: ShipVoucherFrontierShipyard
+  id: ShipVoucherFrontierNFSD
+  name: Ваучер на НФСД шаттл
+  description: Позволяет бесплатно купить один шаттл на аванпосте НФСД. Уничтожается при продаже шаттла.
+  components:
+  - type: Sprite
+    layers:
+    - state: nfsd
+  - type: Item
+    heldPrefix: nfsd
+  - type: ShipyardVoucher
+    consoleType: Security
+
+# Пиратские шаттлы
+- type: entity
+  parent: ShipVoucherFrontierShipyard
+  id: ShipVoucherFrontierBlackMarket
+  name: Ваучер на шаттл чёрного рынка
+  description: Позволяет бесплатно купить один шаттл на чёрном рынке. Уничтожается при продаже шаттла. Ваучеры на нелегальные шаттлы? Серьёзно?
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ShipyardVoucher
+    consoleType: BlackMarket
+
+# Синдикатские шаттлы
+- type: entity
+  parent: ShipVoucherFrontierShipyard
+  id: ShipVoucherFrontierSyndicate
+  name: Ваучер на шаттл синдиката
+  description: Позволяет бесплатно купить один шаттл на чёрном рынке. Уничтожается при продаже шаттла. Ваучеры на нелегальные шаттлы? Серьёзно?
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ShipyardVoucher
+    consoleType: Syndicate
+
+# Экспедиционные шаттлы
+- type: entity
+  parent: ShipVoucherFrontierShipyard
+  id: ShipVoucherFrontierExpedition
+  name: Ваучер на экспедиционный шаттл
+  description: Позволяет бесплатно купить один шаттл на экспедиционной ложи. Уничтожается при продаже шаттла.
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ShipyardVoucher
+    consoleType: Expedition
+
+# Мусорные шаттлы
+- type: entity
+  parent: ShipVoucherFrontierShipyard
+  id: ShipVoucherFrontierScrap
+  name: Ваучер на мусорный шаттл
+  description: Позволяет бесплатно купить один шаттл на консоле свалки. Уничтожается при продаже шаттла. Вы серьёзно даже не можете позволить это купить за свои деньги?
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ShipyardVoucher
+    consoleType: Scrap
+
+# Шаттлы предстовителей фронтира
+- type: entity
+  parent: ShipVoucherFrontierShipyard
+  id: ShipVoucherFrontierSr
+  name: Ваучер на шаттл представителя фронтира
+  description: Позволяет бесплатно купить один шаттл на верфи представителя фронтира. Уничтожается при продаже шаттла.
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ShipyardVoucher
+    consoleType: Sr
+
+# Мед шаттлы
+- type: entity
+  parent: ShipVoucherFrontierShipyard
+  id: ShipVoucherFrontierMedical
+  name: Ваучер на медицинский шаттл
+  description: Позволяет бесплатно купить один шаттл на медицинском аванпосте. Уничтожается при продаже шаттла.
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ShipyardVoucher
+    consoleType: Medical
+
+# Кастомные шаттлы или шаттлы фракций
+- type: entity
+  parent: ShipVoucherFrontierShipyard
+  id: ShipVoucherCustom
+  name: Ваучер на необычные шаттлы
+  description: Позволяет бесплатно купить один любой шаттл на специальной консоли. Уничтожается при продаже шаттла.
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ShipyardVoucher
+    consoleType: Custom

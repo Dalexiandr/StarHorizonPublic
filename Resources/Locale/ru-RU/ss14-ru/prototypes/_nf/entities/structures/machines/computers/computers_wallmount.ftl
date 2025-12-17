@@ -1,0 +1,10 @@
+ent-ComputerWallmountRadar = { ent-ComputerRadar }
+    .suffix = Настенный
+    .desc = { ent-ComputerRadar.desc }
+ent-ComputerWallmountAdvancedRadar = { ent-ComputerAdvancedRadar }
+    .suffix = Настенный
+    .desc = { ent-ComputerAdvancedRadar.desc }
+ent-ComputerWallmountStationRecords = { ent-BaseStructureComputerWallmount }
+    .desc = { ent-BaseStructureComputerWallmount.desc }
+ent-ComputerWallmountCrewMonitoring = { ent-BaseStructureComputerWallmount }
+    .desc = { ent-BaseStructureComputerWallmount.desc }

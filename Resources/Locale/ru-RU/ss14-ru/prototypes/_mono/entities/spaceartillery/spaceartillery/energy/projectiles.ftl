@@ -1,0 +1,12 @@
+ent-ShipMediumPlasmaProjectile = плазменный снаряд
+    .desc = { ent-BaseBulletTrigger.desc }
+ent-ShipAutopulserPlasmaProjectile = плазменный снаряд
+    .desc = { ent-BaseBulletTrigger.desc }
+ent-ShipGlassingBeamPlasmaProjectile = плазменный снаряд
+    .desc = { ent-BaseBulletTrigger.desc }
+ent-ShipM25Projectile = снаряд M25
+    .desc = { ent-BaseBulletTrigger.desc }
+ent-ShipRubiconProjectile = ЭМИ-снаряд
+    .desc = { ent-BaseBulletTrigger.desc }
+ent-ShipDymereProjectile = снаряд с ионизированным газом
+    .desc = { ent-BaseBulletTrigger.desc }

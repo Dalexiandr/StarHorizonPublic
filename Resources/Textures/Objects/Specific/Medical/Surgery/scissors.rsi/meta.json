@@ -1,0 +1,71 @@
+{
+	"version": 1,
+	"license": "CLA",
+  "copyright": "by TheGypsyBaron",
+	"size": {
+		"x": 32,
+		"y": 32
+	},
+	"states": [
+		{
+			"name": "retractor"
+		},
+		{
+			"name": "advanced-retractor"
+		},
+		{
+			"name": "hemostat"
+		},
+		{
+			"name": "advanced-hemostat"
+		},
+		{
+			"name": "setter"
+		},
+		{
+			"name": "advanced-setter"
+		},
+		{
+			"name": "inhand-left",
+			"directions": 4
+		},
+		{
+			"name": "inhand-right",
+			"directions": 4
+		},
+		{
+			"name": "hemostat-inhand-left",
+			"directions": 4
+		},
+		{
+			"name": "hemostat-inhand-right",
+			"directions": 4
+		},
+		{
+			"name": "setter-inhand-left",
+			"directions": 4
+		},
+		{
+			"name": "setter-inhand-right",
+			"directions": 4
+		},
+		{
+			"name": "retractor_world"
+		},
+		{
+			"name": "advanced-retractor_world"
+		},
+		{
+			"name": "hemostat_world"
+		},
+		{
+			"name": "advanced-hemostat_world"
+		},
+		{
+			"name": "setter_world"
+		},
+		{
+			"name": "advanced-setter_world"
+		}
+	]
+}

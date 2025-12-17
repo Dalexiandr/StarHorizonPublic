@@ -1,0 +1,83 @@
+# Rank 2
+- type: cargoProduct
+  id: CargoDoubleEmergencyTank
+  icon:
+    sprite: Objects/Tanks/emergency_double.rsi
+    state: icon
+  product: CrateDoubleEmergencyTank
+  cost: 2400
+  category: cargoproduct-category-name-cargo
+  group: market
+
+- type: cargoProduct
+  id: CargoSeismicCharge
+  icon:
+    sprite: Objects/Weapons/Bombs/seismic.rsi
+    state: icon
+  product: CrateSeismicCharge
+  cost: 2900
+  category: cargoproduct-category-name-cargo
+  group: market
+
+- type: cargoProduct
+  id: CargoCrusher
+  icon:
+    sprite: Objects/Weapons/Melee/crusher.rsi
+    state: icon
+  product: CrateCrusher
+  cost: 5000
+  category: cargoproduct-category-name-cargo
+  group: market
+
+- type: cargoProduct
+  id: CargoSalvageHardsuit
+  icon:
+    sprite: Clothing/OuterClothing/Hardsuits/salvage.rsi
+    state: icon
+  product: CrateSalvageHardsuit
+  cost: 7500
+  category: cargoproduct-category-name-cargo
+  group: market
+
+# Rank 3
+- type: cargoProduct
+  id: CargoFulton
+  icon:
+    sprite: /Textures/Objects/Tools/fulton.rsi
+    state: extraction_pack
+  product: CrateFulton
+  cost: 20000
+  category: cargoproduct-category-name-cargo
+  group: market
+
+- type: cargoProduct
+  id: CargoVoidJetpack
+  icon:
+    sprite: Objects/Tanks/Jetpacks/void.rsi
+    state: icon
+  product: CrateVoidJetpack
+  cost: 19000
+  category: cargoproduct-category-name-cargo
+  group: market
+
+- type: cargoProduct
+  id: CargoCrusherGlaive
+  icon:
+    sprite: Objects/Weapons/Melee/crusher_glaive.rsi
+    state: icon
+  product: CrateCrusherGlaive
+  cost: 11000
+  category: cargoproduct-category-name-cargo
+  group: market
+
+# Max Rank
+
+- type: cargoProduct
+  id: CargoSupremeSalvagerCloak
+  icon:
+    sprite: Clothing/Neck/Cloaks/miner.rsi
+    state: icon
+  product: CrateSupremeSalvagerCloak
+  cost: 7500
+  category: cargoproduct-category-name-cargo
+  group: market

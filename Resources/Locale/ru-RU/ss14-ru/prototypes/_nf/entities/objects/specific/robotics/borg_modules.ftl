@@ -1,0 +1,12 @@
+ent-BorgModuleAdvancedParamedic = продвинутый медицинский модуль киборга
+    .desc = Технология, которая дает киборгам новые способности.
+ent-BorgModuleJetpack = модуль киборга "Фронтир"
+    .desc = { ent-BaseBorgModule.desc }
+ent-BorgModuleRCDShipyard = инженерный модуль киборга
+    .desc = { ent-BaseBorgModuleEngineering.desc }
+ent-BorgModuleNFService = модуль киборга отдыха
+    .desc = { ent-BaseBorgModuleService.desc }
+ent-BorgModuleBureaucracy = модуль киборга-бюрократа
+    .desc = { ent-BaseBorgModuleService.desc }
+ent-BorgModuleChef = модуль киборга-повара
+    .desc = { ent-BaseBorgModuleService.desc }

@@ -1,0 +1,16 @@
+ent-BulletWeakRocketFire = weak rocket
+    .desc = { ent-BaseBulletTrigger.desc }
+ent-BulletRocketLRM = weak rocket
+    .desc = { ent-BulletWeakRocket.desc }
+ent-BulletCutter = cutter bolt
+    .desc = Not too bad, but you still don't want to get hit by it.
+ent-BulletKineticRailgun = { ent-BulletKinetic }
+    .desc = Not too bad, but you still don't want to get hit by it.
+ent-BulletKineticPistol = { ent-BulletKinetic }
+    .desc = Not too bad, but you still don't want to get hit by it.
+ent-BulletKineticRepeater = { ent-BulletKinetic }
+    .desc = Not too bad, but you still don't want to get hit by it.
+ent-BulletKineticShotgunSpread = { ent-BulletKinetic }
+    .desc = Not too bad, but you still don't want to get hit by it.
+ent-BulletKineticShotgunPellet = { ent-BulletKinetic }
+    .desc = Not too bad, but you still don't want to get hit by it.

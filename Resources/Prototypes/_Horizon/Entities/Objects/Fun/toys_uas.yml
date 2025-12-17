@@ -1,0 +1,43 @@
+- type: entity
+  parent: BaseItem
+  id: LumaPlushina
+  name: плюшевый советник
+  suffix: StarHorizon, UAS
+  description: Плюшевый Советник UAS, но кто они такие?
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/uaslumaplushene.rsi
+    state: Luma
+  - type: EmitSoundOnActivate
+    sound:
+      collection: ToySqueak
+  - type: EmitSoundOnUse
+    sound:
+      collection: ToySqueak
+  - type: UseDelay
+    delay: 2
+  - type: EmitSoundOnLand
+    sound:
+      collection: ToySqueak
+
+- type: entity
+  parent: BaseItem
+  id: RipsiPlushin
+  name: плюшевый Рипсоид
+  suffix: StarHorizon, UAS
+  description: Плюшевый Рипсоид, машина смерти в виде игрушки
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/uasripsoidplushene.rsi
+    state: ripsi
+  - type: EmitSoundOnActivate
+    sound:
+      collection: ToySqueak
+  - type: EmitSoundOnUse
+    sound:
+      collection: ToySqueak
+  - type: UseDelay
+    delay: 2
+  - type: EmitSoundOnLand
+    sound:
+      collection: ToySqueak

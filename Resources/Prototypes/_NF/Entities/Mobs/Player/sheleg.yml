@@ -1,0 +1,35 @@
+- type: entity
+  save: false
+  name: Urist McIce
+  parent: BaseMobSheleg
+  id: MobSheleg
+  components:
+  # Horizon
+  - type: SampleSource
+    availableCellSamples:
+    - protoID: CellSampleSheleg
+
+# Cytology
+- type: entity
+  name: Urist Grown Sheleg
+  parent: MobSheleg
+  id: MobShelegGrown
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StaticPrice
+    price: 2500
+  - type: RandomMetadata
+    nameSegments:
+      - NamesFirst
+      - NamesLast
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: ghost-role-information-grown-sheleg-name
+    description: Вы шелег, выращенный в цитологической ванне. Ледяная кожа и холодное сердце - ваша суть. Исследуйте это место!
+    raffle:
+      settings: short
+  - type: GhostTakeoverAvailable

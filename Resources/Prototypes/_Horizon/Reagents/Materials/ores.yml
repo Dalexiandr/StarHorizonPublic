@@ -1,0 +1,71 @@
+- type: material
+  id: RawTitan
+  stackEntity: TitanOre1
+  name: materials-raw-titan
+  unit: materials-unit-chunk
+  icon: { sprite: "_Horizon/Objects/Materials/ore.rsi", state: titan }
+  price: 0.15
+
+- type: material
+  id: RawPsycore
+  stackEntity: PsycoreOre1
+  name: materials-raw-psycore
+  unit: materials-unit-chunk
+  icon: { sprite: "_Horizon/Objects/Materials/ore.rsi", state: psycore }
+  price: 0.3
+
+- type: material
+  id: RawEmerald
+  stackEntity: EmeraldOre1
+  name: materials-raw-emerald
+  unit: materials-unit-piece
+  icon: { sprite: "_Horizon/Objects/Materials/ore.rsi", state: emerald }
+  price: 0.25
+
+- type: material
+  id: RawRuby
+  stackEntity: RubyOre1
+  name: materials-raw-ruby
+  unit: materials-unit-piece
+  icon: { sprite: "_Horizon/Objects/Materials/ore.rsi", state: ruby }
+  price: 0.4
+
+- type: material
+  id: RawSapphire
+  stackEntity: SapphireOre1
+  name: materials-raw-sapphire
+  unit: materials-unit-piece
+  icon: { sprite: "_Horizon/Objects/Materials/ore.rsi", state: sapphire }
+  price: 0.25
+
+- type: material
+  id: RawTopaz
+  stackEntity: TopazOre1
+  name: materials-raw-topaz
+  unit: materials-unit-piece
+  icon: { sprite: "_Horizon/Objects/Materials/ore.rsi", state: topaz }
+  price: 0.15
+
+- type: material
+  id: RawPlutonium
+  stackEntity: PlutoniumOre1
+  name: materials-raw-plutonium
+  unit: materials-unit-piece
+  icon: { sprite: "_Horizon/Objects/Materials/ore.rsi", state: plutonium }
+  price: 0.15
+
+- type: material
+  id: RawNeptunium
+  stackEntity: NeptuniumOre1
+  name: materials-raw-neptunium
+  unit: materials-unit-piece
+  icon: { sprite: "_Horizon/Objects/Materials/ore.rsi", state: neptunium }
+  price: 0.15
+
+- type: material
+  id: RawTorium
+  stackEntity: ToriumOre1
+  name: materials-raw-torium
+  unit: materials-unit-piece
+  icon: { sprite: "_Horizon/Objects/Materials/ore.rsi", state: torium }
+  price: 0.15

@@ -1,0 +1,45 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ??? 
+# Discord: orange_fish & nuzurmek_rn
+
+# Информация об сопровождающем 
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип шаттла: 
+#
+- type: vessel
+  id: Aspid
+  parent: BaseVessel
+  name: 'ORS type 2М1 "Aspid"'
+  description: Экспедиционный шахтерский шаттл с небольшой лабораторией для изучения артефактов. Рассчитан на 2-4 членов экипажа.
+  price: 90000 # 67775, наценка верфи 30% = 88107
+  category: Medium
+  group: Expedition
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/Expedition/aspid.yml
+  class:
+  - Expedition
+  - Salvage
+  - Science
+  engine:
+  - AME
+
+- type: gameMap
+  id: Aspid
+  mapName: 'Aspid'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/Expedition/aspid.yml
+  minPlayers: 0
+  stations:
+    Aspid:
+      stationProto: StandardFrontierExpeditionVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Aspid {1}'  
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs 
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

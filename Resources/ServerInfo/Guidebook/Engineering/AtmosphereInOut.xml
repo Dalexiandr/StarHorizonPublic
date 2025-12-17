@@ -1,0 +1,25 @@
+﻿<Document>
+  # Ввод и вывод атмосферы
+  Добавление и удаление газов из имеющейся (или отсутствующей) атмосферы является важной частью работы Атмоса.
+  <Box>
+    <GuideEntityEmbed Entity="GasVentPump"/>
+    <GuideEntityEmbed Entity="GasPassiveVent"/>
+    <GuideEntityEmbed Entity="GasOutletInjector"/>
+    <GuideEntityEmbed Entity="GasVentScrubber"/>
+    <GuideEntityEmbed Entity="PortableScrubber"/>
+  </Box>
+
+  С помощью этих устройств Атмос может добавлять, удалять или очищать нежелательные газы из любой атмосферы.
+  Это позволяет поддерживать безопасную, пригодную для дыхания атмосферу.
+
+  Некоторые из этих устройств требуют [textlink="питания" link="Power"] для работы и могут быть подключены к [textlink="воздушной сигнализации" link="AirAlarms"].
+
+  [textlink="Подключение" link="Networking"] совместимых устройств к воздушной сигнализации открывает дополнительные настройки и функции. В противном случае эти устройства работают в стандартном режиме, как описано в соответствующих руководствах.
+
+  <Box>
+    <GuideEntityEmbed Entity="AirAlarm"/>
+    <GuideEntityEmbed Entity="Multitool"/>
+    <GuideEntityEmbed Entity="NetworkConfigurator"/>
+  </Box>
+
+</Document>

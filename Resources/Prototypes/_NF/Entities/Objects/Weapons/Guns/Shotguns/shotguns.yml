@@ -1,0 +1,430 @@
+#region WizDen
+- type: entity
+  id: NFWeaponShotgunBulldog
+  parent:
+  - BaseC3SyndicateContraband
+  - NFBaseWeaponShotgunChamber50Magazine
+  - NFBaseWeaponFrameShotgunWieldable
+  - BaseAttachableHolder
+  name: Bulldog
+  description: |-
+    An automatic magazine-fed shotgun for close-quarters combat. Kicks like a mule on steroids.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Shotguns/bulldog.rsi
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Shotguns/bulldog.rsi
+  - type: Gun
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+  - type: NFWeaponDetails
+    manufacturer: weapon-details-manufacturer-gorlex-steel-works
+  # Horizon Attachments start
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-underbarrel:
+        whitelist:
+          tags:
+          - AttachmentM90GrenadeLauncher
+          - AttachmentM90UnderbarrelShotgun
+          - AttachmentVerticalGrip
+          - AttachmentLaserSight
+      rmc-aslot-rail:
+        whitelist:
+          tags:
+          - AttachmentMagneticHarness
+          - AttachmentReflexSight
+          - AttachmentT2Miniscope
+  - type: AttachableHolderVisuals
+    offsets:
+      rmc-aslot-underbarrel: 0.365, -0.1075
+      rmc-aslot-rail: -0.02375, -0.0325
+  # Horizon Attachments end
+
+- type: entity
+  id: NFWeaponShotgunDoubleBarreled
+  parent: [ NFBaseWeaponShotgunChamber50, NFBaseWeaponFrameShotgunWieldable ]
+  name: double-barreled shotgun
+  description: |-
+    An immortal classic. A civilian grade shotgun.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Shotguns/db_shotgun.rsi
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Shotguns/db_shotgun.rsi
+  - type: Item
+    sprite: Objects/Weapons/Guns/Shotguns/db_shotgun_inhands_64x.rsi
+  - type: BallisticAmmoProvider
+    capacity: 2
+  - type: Construction
+    graph: NFShotgunSawn
+    node: start
+  - type: NFWeaponDetails
+    manufacturer: weapon-details-manufacturer-frontier-gunsmith-consortium
+
+- type: entity
+  id: NFWeaponShotgunEnforcer
+  parent: [ NFBaseWeaponShotgunChamber50, NFBaseWeaponFrameShotgunWieldable, BaseAttachableHolder ]
+  name: Enforcer
+  description: |-
+    A premium semi-automatic shotgun, featuring an upgraded tube capacity.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Shotguns/enforcer.rsi
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Shotguns/enforcer.rsi
+  - type: Item
+    sprite: Objects/Weapons/Guns/Shotguns/enforcer_inhands_64x.rsi
+  - type: NFWeaponDetails
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions
+    # Horizon Attachments start
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-underbarrel:
+        whitelist:
+          tags:
+          - AttachmentVerticalGrip
+          - AttachmentLaserSight
+      rmc-aslot-rail:
+        whitelist:
+          tags:
+          - AttachmentMagneticHarness
+          - AttachmentReflexSight
+          - AttachmentT2Miniscope
+  - type: AttachableHolderVisuals
+    offsets:
+      rmc-aslot-underbarrel: 0.2875, -0.125
+      rmc-aslot-rail: -0.0375, -0.1575
+    # Horizon Attachments end
+
+- type: entity
+  id: NFWeaponShotgunKammerer
+  parent: [ NFBaseWeaponShotgunChamber50, NFBaseWeaponFrameShotgunWieldable, BaseAttachableHolder ]
+  name: Kammerer
+  description: |-
+    An old yet faithful design, and a favorite among irregular forces on many worlds.
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Weapons/Guns/Shotguns/pump.rsi
+  - type: Clothing
+    sprite: _NF/Objects/Weapons/Guns/Shotguns/pump.rsi
+  - type: Item
+    sprite: _NF/Objects/Weapons/Guns/Shotguns/pump_inhands_64x.rsi
+  - type: BallisticAmmoProvider
+    capacity: 5
+  - type: NFWeaponDetails
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions
+  # Horizon Attachments start
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-underbarrel:
+        whitelist:
+          tags:
+          - AttachmentVerticalGrip
+          - AttachmentLaserSight
+      rmc-aslot-rail:
+        whitelist:
+          tags:
+          - AttachmentMagneticHarness
+          - AttachmentReflexSight
+          - AttachmentT2Miniscope
+  - type: AttachableHolderVisuals
+    offsets:
+      rmc-aslot-underbarrel: 0.2875, -0.125
+      rmc-aslot-rail: -0.0375, -0.1575
+  # Horizon Attachments end
+
+- type: entity
+  id: NFWeaponShotgunSawn
+  parent: [ NFBaseWeaponShotgunChamber50, NFBaseWeaponFrameShotgun ]
+  name: sawn-off shotgun
+  description: |-
+    Groovy!
+  components:
+  - type: Sprite
+    sprite: _DV/Objects/Weapons/Guns/Shotguns/sawn.rsi
+  - type: Clothing
+    sprite: _DV/Objects/Weapons/Guns/Shotguns/sawn.rsi
+  - type: Item
+    size: Normal
+  - type: BallisticAmmoProvider
+    capacity: 2
+  - type: Gun
+    minAngle: 12.1
+    maxAngle: 40.5
+    fireRate: 2
+  - type: NFWeaponDetails
+    manufacturer: weapon-details-manufacturer-custom-made
+
+- type: entity
+  id: NFWeaponShotgunSawnEmpty
+  parent: NFWeaponShotgunSawn
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+  - type: Construction
+    graph: NFShotgunSawn
+    node: shotgunsawn
+
+- type: entity
+  id: NFWeaponShotgunHandmade
+  parent: [ NFBaseWeaponShotgunChamber50, NFBaseWeaponFrameShotgun ]
+  name: handmade pistol
+  description: |-
+    Looks unreliable, but legal.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Shotguns/hm_pistol.rsi
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Shotguns/hm_pistol.rsi
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    capacity: 1
+  - type: NFWeaponDetails
+    manufacturer: weapon-details-manufacturer-custom-made
+
+- type: entity
+  id: NFWeaponShotgunHandmadeEmpty
+  parent: NFWeaponShotgunHandmade
+  suffix: Frontier, Empty
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+  - type: Construction
+    graph: NFShotgunSawn
+    node: handmadepistol
+    deconstructionTarget: null
+
+- type: entity
+  id: NFWeaponShotgunBlunderbuss
+  parent: [ BaseC3PirateContraband, NFBaseWeaponShotgunChamber50, NFBaseWeaponFrameShotgunWieldable ]
+  name: blunderbuss
+  description: |-
+    Deadly at close range, an illegal shotgun often found at the side of a pirate.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Shotguns/blunderbuss.rsi
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Shotguns/blunderbuss.rsi
+  - type: Item
+    sprite: Objects/Weapons/Guns/Shotguns/blunderbuss.rsi
+  - type: BallisticAmmoProvider
+    capacity: 1
+  - type: NFWeaponDetails
+    manufacturer: weapon-details-manufacturer-steelbolt-tool-forge
+
+- type: entity
+  id: NFWeaponShotgunImprovised
+  parent: [ NFBaseWeaponShotgunChamber50, NFBaseWeaponFrameShotgunWieldable ]
+  name: improvised shotgun
+  description: |-
+    A shitty, but legal, hand-made shotgun. It can only hold one round in the chamber.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Shotguns/improvised_shotgun.rsi
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Shotguns/improvised_shotgun.rsi
+  - type: Item
+    sprite: Objects/Weapons/Guns/Shotguns/improvised_shotgun_inhands_64x.rsi
+  - type: BallisticAmmoProvider
+    capacity: 1
+    proto: null
+  - type: NFWeaponDetails
+    manufacturer: weapon-details-manufacturer-frontier-gunsmith-consortium
+  - type: Construction
+    graph: ImprovisedShotgunGraph
+    node: shotgun
+#horizon
+
+- type: entity
+  id: NFWeaponShotgunCustomBuilt
+  parent: [ NFBaseWeaponShotgunChamber50, NFBaseWeaponFrameShotgun ]
+  name: дробовик скрапера
+  description: |-
+    Простой,но отлично работающий
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Weapons/Guns/Shotguns/custombuilt.rsi
+  - type: Clothing
+    sprite: _NF/Objects/Weapons/Guns/Shotguns/custombuilt.rsi
+  - type: Item
+    sprite: _NF/Objects/Weapons/Guns/Shotguns/custombuilt.rsi
+  - type: BallisticAmmoProvider
+    capacity: 2
+    proto: null
+
+- type: entity
+  id: NFWeaponShotgunHG3712
+  parent: [ NFBaseWeaponShotgunChamber50, NFBaseWeaponFrameShotgunWieldable, BaseAttachableHolder ]
+  name: HG-3712
+  description: |-
+    Помповый дробовик,побывавший во множестве колониальных конфликтов
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Weapons/Guns/Shotguns/hg3712.rsi
+  - type: Clothing
+    sprite: _NF/Objects/Weapons/Guns/Shotguns/hg3712.rsi
+  - type: Item
+    sprite: _NF/Objects/Weapons/Guns/Shotguns/hg3712.rsi
+  - type: BallisticAmmoProvider
+    capacity: 6
+  - type: NFWeaponDetails
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions
+  # Horizon Attachments start
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-underbarrel:
+        whitelist:
+          tags:
+          - AttachmentVerticalGrip
+          - AttachmentLaserSight
+      rmc-aslot-rail:
+        whitelist:
+          tags:
+          - AttachmentMagneticHarness
+          - AttachmentReflexSight
+          - AttachmentT2Miniscope
+  - type: AttachableHolderVisuals
+    offsets:
+      rmc-aslot-underbarrel: 0.2875, -0.125
+      rmc-aslot-rail: -0.0375, -0.1575
+
+- type: entity
+  id: NFWeaponShotgunXM38
+  parent: [ NFBaseWeaponShotgunChamber50, NFBaseWeaponFrameShotgunWieldable, BaseAttachableHolder ]
+  name: XM-38
+  description: |-
+    Пару лет назад была проверена в колониальный конфликтах. Теперь же она в ваших руках.
+  components:
+  - type: Gun
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+  - type: Sprite
+    sprite: _NF/Objects/Weapons/Guns/Shotguns/xm38.rsi
+  - type: Clothing
+    sprite: _NF/Objects/Weapons/Guns/Shotguns/xm38.rsi
+  - type: Item
+    sprite: _NF/Objects/Weapons/Guns/Shotguns/xm38.rsi
+  - type: BallisticAmmoProvider
+    capacity: 6
+  - type: NFWeaponDetails
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions
+  # Horizon Attachments start
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-underbarrel:
+        whitelist:
+          tags:
+          - AttachmentVerticalGrip
+          - AttachmentLaserSight
+      rmc-aslot-rail:
+        whitelist:
+          tags:
+          - AttachmentMagneticHarness
+          - AttachmentReflexSight
+          - AttachmentT2Miniscope
+  - type: AttachableHolderVisuals
+    offsets:
+      rmc-aslot-underbarrel: 0.2875, -0.125
+      rmc-aslot-rail: -0.0375, -0.1575
+
+- type: entity
+  id: NFWeaponShotgunM890
+  parent: [ NFBaseWeaponShotgunChamber50, NFBaseWeaponFrameShotgunWieldable, BaseAttachableHolder ]
+  name: M-890
+  description: |-
+    Отличное оружие для подавления беспорядков и уничтожение ксеносов
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Weapons/Guns/Shotguns/m890_riot.rsi
+  - type: Clothing
+    sprite: _NF/Objects/Weapons/Guns/Shotguns/m890_riot.rsi
+  - type: Item
+    sprite: _NF/Objects/Weapons/Guns/Shotguns/m890_riot.rsi
+  - type: BallisticAmmoProvider
+    capacity: 6
+  - type: NFWeaponDetails
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions
+  # Horizon Attachments start
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-underbarrel:
+        whitelist:
+          tags:
+          - AttachmentVerticalGrip
+          - AttachmentLaserSight
+      rmc-aslot-rail:
+        whitelist:
+          tags:
+          - AttachmentMagneticHarness
+          - AttachmentReflexSight
+          - AttachmentT2Miniscope
+  - type: AttachableHolderVisuals
+    offsets:
+      rmc-aslot-underbarrel: 0.2875, -0.125
+      rmc-aslot-rail: -0.0375, -0.1575
+
+- type: entity
+  id: NFWeaponShotgunType23
+  parent: [ NFBaseWeaponShotgunChamber50, NFBaseWeaponFrameShotgunWieldable, BaseAttachableHolder ]
+  name: Type-23
+  description: |-
+    Бессмертная классика. Бьет больно и метко
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Weapons/Guns/Shotguns/type23.rsi
+  - type: Clothing
+    sprite: _NF/Objects/Weapons/Guns/Shotguns/type23.rsi
+  - type: Item
+    sprite: _NF/Objects/Weapons/Guns/Shotguns/type23.rsi
+  - type: BallisticAmmoProvider
+    capacity: 5
+  - type: NFWeaponDetails
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions
+  # Horizon Attachments start
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-underbarrel:
+        whitelist:
+          tags:
+          - AttachmentVerticalGrip
+          - AttachmentLaserSight
+      rmc-aslot-rail:
+        whitelist:
+          tags:
+          - AttachmentMagneticHarness
+          - AttachmentReflexSight
+          - AttachmentT2Miniscope
+  - type: AttachableHolderVisuals
+    offsets:
+      rmc-aslot-underbarrel: 0.2875, -0.125
+      rmc-aslot-rail: -0.0375, -0.1575
+
+
+#region Less-lethal
+- type: entity
+  id: NFWeaponShotgunSawnLessLethal
+  parent: NFWeaponShotgunSawn
+  suffix: Less-lethal
+  components:
+  - type: BallisticAmmoProvider
+    proto: NFShellShotgunBeanbag
+
+- type: entity
+  id: NFWeaponShotgunKammererLessLethal
+  parent: NFWeaponShotgunKammerer
+  suffix: Less-lethal
+  components:
+  - type: BallisticAmmoProvider
+    proto: NFShellShotgunBeanbag
+
+- type: entity
+  id: NFWeaponShotgunEnforcerLessLethal
+  parent: NFWeaponShotgunEnforcer
+  suffix: Less-lethal
+  components:
+  - type: BallisticAmmoProvider
+    proto: NFShellShotgunBeanbag

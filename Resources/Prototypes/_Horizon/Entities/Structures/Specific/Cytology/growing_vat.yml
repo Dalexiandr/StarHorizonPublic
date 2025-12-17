@@ -1,0 +1,81 @@
+- type: entity
+  id: CytologyGrowingVat
+  name: growing vat
+  parent: [ BaseMachinePowered, ConstructibleMachine ]
+  description: growing vat
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/Cytology/growing_vat.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.CytologyGrowingVatVisualLayers.Base"]
+    - state: white
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: red
+      map: ["enum.CytologyGrowingVatVisualLayers.Indicator"]
+      visible: false
+    - state: soup
+      map: ["enum.CytologyGrowingVatVisualLayers.Liquid"]
+      visible: false
+    - state: bubbles
+      map: ["enum.CytologyGrowingVatVisualLayers.Foam"]
+      visible: false
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.4,0.25,0.4"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalGlassBreak
+      - !type:ChangeConstructionNodeBehavior
+        node: machineFrame
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      beakerSlot: !type:ContainerSlot
+      petriDishSlot: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      petriDishSlot:
+        whitelist:
+          components:
+          - CytologyPetriDish
+      beakerSlot:
+        whitelist:
+          components:
+          - FitsInDispenser
+  - type: DumpableSolution
+    solution: buffer
+    unlimited: true
+  - type: GuideHelp # TODO доработать
+    guides:
+    - Chemicals
+    - Chemist
+  - type: Machine
+    board: CytologyGrowingVatMachineCircuitboard
+  - type: CytologyGrowingVat
+    smokePrototype : Smoke
+  - type: ApcPowerReceiver
+    powerLoad: 250
+  - type: Smoke

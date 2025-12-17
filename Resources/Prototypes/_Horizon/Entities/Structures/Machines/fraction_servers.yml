@@ -1,0 +1,82 @@
+- type: entity
+  id: ResearchAndDevelopmentServerNSFD
+  parent: [ BaseMachinePowered, ConstructibleMachine ]
+  name: исследовательский сервер Депортамента Шерифов
+  description: В него загруженны новые ветки исследований,которые помогут отвечать на угрозы Фронтира # Frontier: separate description
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/server.rsi
+    snapCardinals: true # Frontier
+    layers:
+      - state: server
+      - state: variant-research
+      - state: server_o
+        map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: ResearchServer
+  - type: TechnologyDatabase
+    supportedDisciplines:
+     # Start Frontier: Tech Tree
+#    - Industrial
+#    - Arsenal
+#    - Experimental
+#    - CivilianServices
+     - NFMedical
+     - NFArsenalMercenary
+     - NFArsenalNfsd
+     # End Frontier: Tech Tree
+  - type: ApcPowerReceiver
+    powerLoad: 200
+  - type: ExtensionCableReceiver
+  - type: WiresPanel
+  - type: WiresVisuals
+  - type: Machine
+    board: ResearchAndDevelopmentServerMachineCircuitboard
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 1
+            max: 2
+  - type: Appearance
+  - type: AmbientOnPowered
+  - type: AmbientSound
+    volume: -9
+    range: 5
+    sound:
+      path: /Audio/Ambience/Objects/server_fans.ogg
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      storagebase: !type:Container # Horizon
+        ents: [] # Horizon
+  - type: GuideHelp
+    guides:
+    - Science
+  # Horizon Starts
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,7,4
+    clickInsert: false
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  # Horizon ends

@@ -1,0 +1,196 @@
+# species
+- type: emoteSounds
+  id: MaleKatunian
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: MaleScreams
+    Laugh:
+      collection: MaleLaugh
+    Sneeze:
+      collection: MaleSneezes
+    Cough:
+      collection: MaleCoughs
+    CatMeow:
+      collection: CatMeows
+    CatHisses:
+      collection: CatHisses
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    RobotBeep:
+      collection: RobotBeeps
+    Yawn:
+      collection: MaleYawn
+    Snore:
+      collection: Snores
+    Honk:
+      collection: BikeHorn
+    Sigh:
+      collection: MaleSigh
+    Crying:
+      collection: MaleCry
+    Whistle:
+      collection: Whistles
+    Weh:
+      collection: Weh
+    Hew:
+      collection: Hew
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: MaleDeathGasp
+    Belch: # Frontier
+      collection: Belch # Frontier
+    Hiss:
+      collection: KatunianHisses
+    Furr:
+      collection: KatunianFurrs
+    Purr:
+      collection: KatunianPurrs
+    Growl:
+      collection: KatunianGrowls
+
+- type: emoteSounds
+  id: FemaleKatunian
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: FemaleScreams
+    Laugh:
+      collection: FemaleLaugh
+    Sneeze:
+      collection: FemaleSneezes
+    Cough:
+      collection: FemaleCoughs
+    CatMeow:
+      collection: CatMeows
+    CatHisses:
+      collection: CatHisses
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    RobotBeep:
+      collection: RobotBeeps
+    Yawn:
+      collection: FemaleYawn
+    Snore:
+      collection: Snores
+    Honk:
+      collection: CluwneHorn
+    Sigh:
+      collection: FemaleSigh
+    Crying:
+      collection: FemaleCry
+    Whistle:
+      collection: Whistles
+    Weh:
+      collection: Weh
+    Hew:
+      collection: Hew
+    Gasp:
+      collection: FemaleGasp
+    DefaultDeathgasp:
+      collection: FemaleDeathGasp
+    Belch: # Frontier
+      collection: Belch # Frontier
+    KHiss:
+      collection: KatunianHisses
+    KFurr:
+      collection: KatunianFurrs
+    KPurr:
+      collection: KatunianPurrs
+    KGrowl:
+      collection: KatunianGrowls
+
+- type: emote
+  id: KHiss
+  name: шипеть
+  available: false
+  category: Vocal
+  icon: Interface/Emotes/vocal.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [шипит]
+  chatTriggers:
+    - шипеть
+    - шипит
+
+- type: emote
+  id: KGrowl
+  name: рычать
+  available: false
+  category: Vocal
+  icon: Interface/Emotes/vocal.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [рычит]
+  chatTriggers:
+    - рычит
+    - рычать
+
+- type: emote
+  id: KFurr
+  name: фырчать
+  available: false
+  category: Vocal
+  icon: Interface/Emotes/vocal.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [фыркает]
+  chatTriggers:
+    - фырчать
+    - фыркать
+    - фырчит
+    - фыркает
+
+- type: emote
+  id: KPurr
+  name: урчать
+  available: false
+  category: Vocal
+  icon: Interface/Emotes/vocal.png
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [урчит]
+  chatTriggers:
+    - урчит
+    - урчать
+    - мурчит
+    - мурчать
+
+- type: soundCollection
+  id: KatunianHisses
+  files:
+  - /Audio/_Horizon/Voice/Katunian/KatunianHisses.ogg
+
+- type: soundCollection
+  id: KatunianFurrs
+  files:
+  - /Audio/_Horizon/Voice/Katunian/KatunianFurr.ogg
+
+- type: soundCollection
+  id: KatunianPurrs
+  files:
+  - /Audio/_Horizon/Voice/Katunian/KatunianPurr.ogg
+
+- type: soundCollection
+  id: KatunianGrowls
+  files:
+  - /Audio/_Horizon/Voice/Katunian/KatunianGrowl.ogg

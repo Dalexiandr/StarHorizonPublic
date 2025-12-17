@@ -1,0 +1,63 @@
+# region .35 pistol
+
+- type: entity
+  id: NFCartridgePistol35Piercing
+  name: cartridge (.35 pistol, piercing)
+  parent: NFBaseCartridgePistol35
+  components:
+  - type: CartridgeAmmo
+    proto: NFBulletPistol35Piercing
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#ededed"
+
+- type: entity
+  id: NFCartridgePistol35Psycore
+  name: cartridge (.35 pistol, psycore)
+  parent: NFBaseCartridgePistol35
+  components:
+  - type: CartridgeAmmo
+    proto: NFBulletPistol35Psycore
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#8a1a7b"
+
+# region .45 pistol
+
+- type: entity
+  id: NFCartridgePistol45Piercing
+  name: cartridge (.45 pistol, piercing)
+  parent: NFBaseCartridgePistol45
+  components:
+  - type: CartridgeAmmo
+    proto: NFBulletPistol45Piercing
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#ededed"
+
+- type: entity
+  id: NFCartridgePistol45Psycore
+  name: cartridge (.45 pistol, psycore)
+  parent: NFBaseCartridgePistol45
+  components:
+  - type: CartridgeAmmo
+    proto: NFBulletPistol45Psycore
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#8a1a7b"

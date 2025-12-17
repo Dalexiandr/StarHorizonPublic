@@ -1,0 +1,35 @@
+# Author Info
+# GitHub:
+# Discord: ???
+
+# Maintainer Info
+# GitHub: ???
+# Discord: ???
+
+# Notes:
+# Down at your local saloon
+- type: pointOfInterest
+  id: Grifty
+  parent: BasePOI
+  name: "Grifty's Gas n Grub"
+  minimumDistance: 7500 # Horizon
+  maximumDistance: 13500 # Horizon
+  spawnGroup: Required # Horizon
+  gridPath: /Maps/_Horizon/POI/grifty.yml #Horizon-Maps
+  addComponents:
+  - type: SolarPoweredGrid
+    trackOnInit: true
+    doNotCull: true
+
+- type: gameMap
+  id: Grifty
+  mapName: "Grifty's Gas n Grub"
+  mapPath: /Maps/_Horizon/POI/grifty.yml #Horizon-Maps
+  minPlayers: 0
+  stations:
+    Grifty:
+      stationProto: StandardFrontierOutpost
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Grifty's Gas n Grub"
+        - type: BindToStationVariationPassExemption

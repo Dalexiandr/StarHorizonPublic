@@ -1,0 +1,136 @@
+#T0
+- type: loadout
+  id: ContractorClothingMaskBreath
+  storage:
+    back: 
+    - ClothingMaskBreath
+
+- type: loadout
+  id: ContractorClothingMaskBreathMedical
+  price: 200
+  storage:
+    back: 
+    - ClothingMaskBreathMedical
+
+#T1
+- type: loadout
+  id: ContractorClothingMaskSterile
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 200
+  storage:
+    back: 
+    - ClothingMaskSterile
+
+- type: loadout
+  id: ContractorClothingMaskGas
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 300
+  storage:
+    back:
+    - ClothingMaskGas
+
+- type: loadout
+  id: ContractorClothingMaskPunkHalf
+  name: punk halfmask (random)
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  storage:
+    back:
+    - ClothingMaskPunkHalf
+
+#T2
+- type: loadout
+  id: ContractorClothingMaskGasExplorer
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 1000
+  storage:
+    back:
+    - ClothingMaskGasExplorer
+
+- type: loadout
+  id: ContractorClothingMaskGasCaptain
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 1000
+  storage:
+    back:
+    - ClothingMaskGasCaptain
+
+- type: loadout
+  id: ContractorClothingMaskGasAtmos
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 1000
+  storage:
+    back:
+    - ClothingMaskGasAtmos
+
+- type: loadout
+  id: ContractorClothingMaskPlague
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 1500
+  storage:
+    back:
+    - ClothingMaskPlague
+
+- type: loadout
+  id: ContractorClothingMaskMime
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 1500
+  storage:
+    back: 
+    - ClothingMaskMime
+
+- type: loadout
+  id: ContractorClothingMaskScaredMime
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 1500
+  storage:
+    back:
+    - ClothingMaskScaredMime
+
+- type: loadout
+  id: ContractorClothingMaskSadMime
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 1500
+  storage:
+    back:
+    - ClothingMaskSadMime
+
+- type: loadout
+  id: ContractorClothingMaskClown
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 2500
+  storage:
+    back:
+    - ClothingMaskClown
+
+- type: loadout
+  id: ContractorClothingMaskClownBald
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 2500
+  storage:
+    back:
+    - ClothingMaskClownBald

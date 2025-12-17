@@ -1,0 +1,212 @@
+# DO NOT ADD MORE, USE UNIFORM DYING
+- type: vendingMachineInventory
+  id: ClothesMateInventory
+  startingInventory:
+    ClothingBackpack: 5
+    ClothingBackpackDuffel: 5
+    ClothingBackpackSatchel: 3
+    ClothingBackpackMessenger: 5 # Frontier
+    ClothingBackpackSatchelLeather: 2
+    ClothingWalletLeatherBrown: 5 # Frontier
+    ClothingWalletLeatherBlack: 5 # Frontier
+    # ClothingRandomSpawner: 8 # Frontier
+    ClothingUniformRandomArmless: 6 # Frontier
+    ClothingUniformRandomStandard: 6 # Frontier
+    ClothingUniformRandomBra: 6 # Frontier
+    ClothingUniformRandomShorts: 6 # Frontier: 4<6
+    ClothingUniformRandomShirt: 6 # Frontier
+    ClothingSkirtUniformRandomArmless: 6 # Frontier
+    ClothingSkirtUniformRandomStandard: 6 # Frontier
+    ClothingSkirtUniformRandomBra: 6 # Frontier
+    ClothingSkirtUniformRandomShorts: 6 # Frontier
+    ClothingSkirtUniformRandomShirt: 6 # Frontier
+# Horizon start
+    ClothingShoesColorBlack: 8
+    ClothingUniformJumpsuitColorGrey: 8
+    ClothingUniformJumpskirtColorGrey: 8
+    ClothingNeckChokerBlack: 5
+    ClothingNeckChokerCyan: 5
+    ClothingNeckChokerGreen: 5
+    ClothingNeckChokerLatex: 5
+    ClothingNeckChokerOrange: 5
+    ClothingNeckChokerPurple: 5
+    ClothingNeckChokerRed: 5
+    ClothingNeckChokerTealBlack: 5
+    ClothingNeckChokerWhite: 5
+    ClothingNeckChokerSpike: 5
+    ClothingNeckChokerYellow: 5
+    ClothingUnderwearBottomBoxersWhite: 5
+    ClothingUnderwearBottomBoxersAmerica: 5
+    ClothingUnderwearBottomBoxersBoom: 5
+    ClothingUnderwearBottomBriefsWhite: 5
+    ClothingUnderwearBottomPantiesWhite: 5
+    ClothingUnderwearBottomPantiesComfyWhite: 5
+    ClothingUnderwearBottomPantiesLace: 5
+    ClothingUnderwearBottomPantiesLaceBlue: 5
+    ClothingUnderwearBottomPantiesLaceRed: 5
+    ClothingUnderwearBottomPantiesLaceBlack: 5
+    ClothingUnderwearBottomMonokiniWhite: 5
+    ClothingUnderwearBottomMonokiniBlack: 5
+    ClothingUnderwearTopTShirt: 5
+    ClothingUnderwearTopBraWhite: 5
+    ClothingUnderwearTopBraComfyWhite: 5
+    ClothingUnderwearTopBraSports: 5
+    ClothingUnderwearTopBraSportsAlternative: 5
+    ClothingUnderwearTopBraSportsBlack: 5
+    ClothingUnderwearTopBraPea: 5
+    ClothingUnderwearTopBraLace: 5
+    ClothingUnderwearTopBraLaceBlue: 5
+    ClothingUnderwearTopBraLaceRed: 5
+    ClothingUnderwearTopBraLaceBlack: 5
+    ClothingUnderwearTopMonokiniWhite: 5
+    ClothingUnderwearTopMonokiniBlack: 5
+    ClothingUnderwearSocksNormal: 3
+    ClothingUnderwearSocksHigh: 3
+    ClothingUnderwearSocksShort: 3
+    ClothingUnderwearSocksThigh: 3
+    ClothingUnderwearSocksStockingsWhite: 3
+    ClothingUnderwearSocksComfyBlue: 3
+    ClothingUnderwearSocksComfyGrey: 3
+    ClothingUnderwearSocksComfyRed: 3
+    ClothingUnderwearSocksComfyViolet: 3
+    ClothingUnderwearSocksBee: 3
+    ClothingUnderwearSocksBeeThigh: 3
+    ClothingUnderwearSocksCoder: 3
+    ClothingUnderwearSocksLaceThigh: 3
+    ClothingUnderwearSocksStockingsBlack: 3
+    ClothingUnderwearSocksKneeComfyBlue: 3
+    ClothingUnderwearSocksKneeComfyGrey: 3
+    ClothingUnderwearSocksKneeComfyRed: 3
+    ClothingUnderwearSocksKneeComfyViolet: 3
+    ClothingUnderwearSocksAzure: 3
+    ClothingUnderwearSocksKneeAzure: 3
+    ClothingUnderwearSocksThighAzure: 3
+    ClothingUnderwearSocksBlack: 3
+    ClothingUnderwearSocksKneeBlack: 3
+    ClothingUnderwearSocksThighBlack: 3
+    ClothingUnderwearSocksCyan: 3
+    ClothingUnderwearSocksKneeCyan: 3
+    ClothingUnderwearSocksThighCyan: 3
+    ClothingUnderwearSocksFurr: 3
+    ClothingUnderwearSocksKneeFurr: 3
+    ClothingUnderwearSocksThighFurr: 3
+    ClothingUnderwearSocksGreen: 3
+    ClothingUnderwearSocksKneeGreen: 3
+    ClothingUnderwearSocksThighGreen: 3
+    ClothingUnderwearSocksHomelander: 3
+    ClothingUnderwearSocksKneeHomelander: 3
+    ClothingUnderwearSocksThighHomelander: 3
+    ClothingUnderwearSocksHotpink: 3
+    ClothingUnderwearSocksKneeHotpink: 3
+    ClothingUnderwearSocksThighHotpink: 3
+    ClothingUnderwearSocksOrange: 3
+    ClothingUnderwearSocksKneeOrange: 3
+    ClothingUnderwearSocksThighOrange: 3
+    ClothingUnderwearSocksPink: 3
+    ClothingUnderwearSocksKneePink: 3
+    ClothingUnderwearSocksThighCreepy: 3
+    ClothingUnderwearSocksKneeFishnet: 3
+    ClothingUnderwearSocksFullFishnet: 3
+    ClothingUnderwearSocksKneeThin: 3
+    ClothingUnderwearSocksThighThin: 3
+    ClothingUnderwearSocksThighBlue: 3
+    ClothingUnderwearSocksThighFishnet: 3
+    ClothingUnderwearSocksThighGrey: 3
+    ClothingUnderwearSocksThighPantyhose: 3
+    ClothingUnderwearSocksThighPurple: 3
+    ClothingUnderwearSocksThighRed: 3
+    ClothingUnderwearSocksYellow: 3
+    ClothingUnderwearSocksKneeYellow: 3
+    ClothingUnderwearSocksThighYellow: 3
+# Horizon end
+    # ClothingHeadHatBeret: 4
+    # ClothingHeadBandBlack: 2
+    # ClothingHeadBandBlue: 2
+    # ClothingHeadBandGreen: 2
+    # ClothingHeadBandRed: 2
+    # ClothingHeadBandSkull: 2
+    # ClothingHeadHatGreyFlatcap: 3
+    # ClothingHeadHatBrownFlatcap: 3
+    # ClothingUniformJumpsuitColorWhite: 3
+    # ClothingUniformJumpskirtColorWhite: 3
+    # ClothingUniformJumpsuitColorBlack: 3
+    # ClothingUniformJumpskirtColorBlack: 3
+    # ClothingUniformJumpsuitColorBlue: 2
+    # ClothingUniformJumpskirtColorBlue: 2
+    # ClothingUniformJumpsuitColorYellow: 2
+    # ClothingUniformJumpskirtColorYellow: 2
+    # ClothingUniformJumpsuitColorGreen: 2
+   # DO NOT ADD MORE, USE UNIFORM DYING
+    # ClothingUniformJumpskirtColorGreen: 2
+    # ClothingUniformJumpsuitColorOrange: 2
+    # ClothingUniformJumpskirtColorOrange: 2
+    # ClothingUniformJumpsuitColorRed: 2
+    # ClothingUniformJumpskirtColorRed: 2
+    # ClothingUniformJumpsuitColorPurple: 2
+    # ClothingUniformJumpskirtColorPurple: 2
+    # ClothingUniformJumpsuitColorPink: 2
+    # ClothingUniformJumpskirtColorPink: 2
+    # ClothingUniformJumpsuitColorDarkBlue: 2
+    # ClothingUniformJumpskirtColorDarkBlue: 2
+    # ClothingUniformJumpsuitColorDarkGreen:  2
+    # ClothingUniformJumpskirtColorDarkGreen: 2
+    # ClothingUniformJumpsuitColorTeal: 2
+    # ClothingUniformJumpskirtColorTeal: 2
+    # ClothingUniformJumpsuitHawaiBlack: 2
+    # ClothingUniformJumpsuitHawaiBlue: 2
+    # ClothingUniformJumpsuitHawaiRed: 2
+    # ClothingUniformJumpsuitHawaiYellow: 2
+    # ClothingUniformJumpsuitFlannel: 2
+    # ClothingUniformJumpsuitCasualBlue: 2
+    # ClothingUniformJumpskirtCasualBlue: 2
+    # ClothingUniformJumpsuitCasualPurple: 2
+    # ClothingUniformJumpskirtCasualPurple: 2
+    # ClothingUniformJumpsuitCasualRed: 2
+    # ClothingUniformJumpskirtCasualRed: 2
+    # ClothingUniformJumpsuitCasualGreen: 2
+    # ClothingUniformJumpskirtCasualGreen: 2
+   # DO NOT ADD MORE, USE UNIFORM DYING
+    # ClothingShoesColorBrown: 4
+    # ClothingShoesColorWhite: 3
+    # ClothingShoesColorBlue: 2
+    # ClothingShoesColorYellow: 2
+    # ClothingShoesColorGreen: 2
+    # ClothingShoesColorOrange: 2
+    # ClothingShoesColorRed: 2
+    # ClothingShoesColorPurple: 2
+    # ClothingHeadHatGreysoft: 8
+    # ClothingHeadHatMimesoft: 3
+    # ClothingHeadHatBluesoft: 2
+    # ClothingHeadHatYellowsoft: 2
+    # ClothingHeadHatGreensoft: 2
+    # ClothingHeadHatOrangesoft: 2
+    # ClothingHeadHatRedsoft: 2
+    # DO NOT ADD MORE, USE UNIFORM DYING
+    # ClothingHeadHatBlacksoft: 2
+    # ClothingHeadHatPurplesoft: 2
+    # ClothingHeadHatCorpsoft: 2
+    # ClothingHeadFishCap: 2
+    # ClothingHeadRastaHat: 2
+    # ClothingBeltStorageWaistbag: 3
+    # ClothingEyesGlasses: 6
+    # ClothingHandsGlovesColorBlack: 4
+    # ClothingHandsGlovesColorGray: 4
+    # ClothingHandsGlovesColorBrown: 2
+    # ClothingHandsGlovesColorWhite: 2
+    # ClothingHandsGlovesColorRed: 2
+    # ClothingHandsGlovesColorBlue: 2
+    # ClothingHandsGlovesColorTeal: 2
+    # ClothingHandsGlovesColorGreen: 2
+    # ClothingHandsGlovesColorOrange: 2
+    # ClothingHandsGlovesColorPurple: 2
+    # ClothingEyesGlassesCheapSunglasses: 3
+    # DO NOT ADD MORE, USE UNIFORM DYING
+  contrabandInventory:
+    ClothingMaskNeckGaiter: 2
+    ClothingUniformJumpsuitTacticool: 1
+    ClothingUniformJumpskirtTacticool: 1
+    ToyFigurinePassenger: 1
+    ToyFigurineGreytider: 1
+    # ClothingBackpackSatchelSmugglerUnanchored: 1 # Frontier
+    ClothingHeadHatSolidHeadband: 2
+  # DO NOT ADD MORE, USE UNIFORM DYING

@@ -1,0 +1,98 @@
+﻿<Document>
+  # Тесла-двигатель
+  Тесла-двигатель — мощный генератор, использующий сдерживаемый шар молний для выработки энергии.
+  <Box>
+    <GuideEntityEmbed Entity="TeslaGenerator"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="TeslaEnergyBall"/>
+  </Box>
+
+  Энергия вырабатывается за счет улавливания молний через катушки Теслы.
+
+  ## Поле сдерживания
+  Для предотвращения побега шара молний требуется поле сдерживания.
+
+  Рекомендуется использовать минимальный размер поля.
+  Большие поля позволяют шару приближаться к оборудованию, игнорируя заземляющие стержни.
+
+  <Box>
+    <GuideEntityEmbed Entity="ContainmentFieldGenerator" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="ContainmentField" Caption="" Rotation="90" Margin="0"/>
+    <GuideEntityEmbed Entity="ContainmentFieldGenerator" Caption="" Margin="0"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="ContainmentField" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="TeslaGenerator" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="ContainmentField" Caption="" Margin="0"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="ContainmentFieldGenerator" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="ContainmentField" Caption="" Rotation="90" Margin="0"/>
+    <GuideEntityEmbed Entity="ContainmentFieldGenerator" Caption="" Margin="0"/>
+  </Box>
+
+  ## Молнии
+  Активный двигатель периодически испускает молнии в окружающие объекты.
+
+  Приоритетные цели — катушки Теслы и заземляющие стержни.
+
+  При их отсутствии молнии будут поражать любые энергоемкие объекты: подстанции, АПК, оборудование.
+
+  Не поражаются: батареи, светильники, КПК и другие ручные предметы.
+
+  Молнии также бьют по экипажу — используйте диэлектрические перчатки.
+
+  ## Катушки Теслы
+  Молнии можно улавливать катушками Теслы для генерации энергии.
+
+  <Box>
+    <GuideEntityEmbed Entity="TeslaCoil" Caption=""/>
+    <GuideEntityEmbed Entity="TeslaCoil"/>
+    <GuideEntityEmbed Entity="TeslaCoil" Caption=""/>
+  </Box>
+
+  Катушки следует размещать вокруг шара для защиты оборудования.
+
+  Катушки получают урон при ударах молний и требуют ремонта.
+  Они накапливают энергию во внутренней батарее, которая быстро разряжается в сеть.
+  Рекомендуется использовать СМЭС для сглаживания подачи энергии.
+
+  ## Заземляющие стержни
+  Стержни защищают оборудование от молний.
+
+  <Box>
+    <Box>
+      <GuideEntityEmbed Entity="TeslaGroundingRod" Caption=""/>
+    </Box>
+    <Box>
+      <GuideEntityEmbed Entity="TeslaGroundingRod"/>
+    </Box>
+    <Box>
+      <GuideEntityEmbed Entity="TeslaGroundingRod" Caption=""/>
+    </Box>
+  </Box>
+
+  Стержни не получают урон и полезны как резервная защита.
+
+  Особенно важно защитить эмиттеры, питающие генераторы поля.
+
+  ## Вырвавшаяся тесла (Теслуз)
+  Вырвавшийся шар молний называется "теслуз".
+
+  Он хаотично перемещается по станции, поражая энергоемкие объекты и экипаж.
+  Диэлектрические перчатки защитят от удара, но не от притяжения.
+
+  <Box>
+    <GuideEntityEmbed Entity="ClothingHandsGlovesColorYellow"/>
+  </Box>
+
+  Теслу можно уничтожить портативным замедлителем частиц, но для этого потребуется группа людей.
+
+  Замедлители можно разработать в отделе исследований или заказать через карго.
+
+  <Box>
+    <GuideEntityEmbed Entity="WeaponParticleDecelerator"/>
+  </Box>
+
+</Document>

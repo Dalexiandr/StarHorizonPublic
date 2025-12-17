@@ -1,0 +1,55 @@
+- type: material
+  id: Emerald
+  stackEntity: MaterialEmerald1
+  name: materials-emerald
+  unit: materials-unit-piece
+  icon: { sprite: "_Horizon/Objects/Materials/materials.rsi", state: emerald }
+  price: 17
+
+- type: material
+  id: Ruby
+  stackEntity: MaterialRuby1
+  name: materials-ruby
+  unit: materials-unit-piece
+  icon: { sprite: "_Horizon/Objects/Materials/materials.rsi", state: ruby }
+  price: 15
+
+- type: material
+  id: Sapphire
+  stackEntity: MaterialSapphire1
+  name: materials-sapphire
+  unit: materials-unit-piece
+  icon: { sprite: "_Horizon/Objects/Materials/materials.rsi", state: sapphire }
+  price: 10
+
+- type: material
+  id: Topaz
+  stackEntity: MaterialTopaz1
+  name: materials-topaz
+  unit: materials-unit-piece
+  icon: { sprite: "_Horizon/Objects/Materials/materials.rsi", state: topaz }
+  price: 8
+
+- type: material
+  id: Torium
+  stackEntity: SheetTorium1
+  name: materials-torium
+  icon: { sprite: "_Horizon/Objects/Materials/Sheets/other.rsi", state: torium }
+  color: "#325fa8"
+  price: 0.3
+
+- type: material
+  id: Plutonium
+  stackEntity: SheetPlutonium1
+  name: materials-plutonium
+  icon: { sprite: "_Horizon/Objects/Materials/Sheets/other.rsi", state: plutonium }
+  color: "#b50f09"
+  price: 1
+
+- type: material
+  id: Neptunium
+  stackEntity: SheetNeptunium1
+  name: materials-neptunium
+  icon: { sprite: "_Horizon/Objects/Materials/Sheets/other.rsi", state: neptunium }
+  color: "#dedede"
+  price: 1

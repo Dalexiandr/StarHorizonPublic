@@ -1,0 +1,7 @@
+- type: metabolizerType
+  id: OrganCyber
+  name: metabolizer-type-organcyber
+
+- type: metabolizerType
+  id: OrganBio
+  name: metabolizer-type-organbio

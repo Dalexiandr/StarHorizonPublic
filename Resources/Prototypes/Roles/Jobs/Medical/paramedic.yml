@@ -1,0 +1,44 @@
+- type: job
+  id: Paramedic
+  name: job-name-paramedic
+  description: job-description-paramedic
+  playTimeTracker: JobParamedic
+  salary: 40000 # Horizon
+  forceFaction: FactionMed # Horizon
+  setPreference: true # Lua
+  requirements:
+  # Horizon start
+  - !type:OverallPlaytimeRequirement
+    time: 18000 # 5 hrs
+  startingGear: ParamedicGear
+  icon: "JobIconParamedic"
+  supervisors: job-supervisors-cmo # Horizon
+  weight: 80
+  displayWeight: 0
+  access:
+  - Medical
+  - Chemistry
+  accessGroups:
+  - GeneralAccess
+  # Horizon end
+
+- type: startingGear
+  id: ParamedicGear
+  equipment:
+    # id: ParamedicPDA # Horizon
+    # ears: ClothingHeadsetMedical # Horizon
+    belt: ClothingBeltMedicalEMTFilled
+  storage:
+    back:
+    - EmergencyRollerBedSpawnFolded
+
+- type: chameleonOutfit
+  id: ParamedicChameleonOutfit
+  job: Paramedic
+  equipment:
+    head: ClothingHeadHatParamedicsoft
+    eyes: ClothingEyesHudMedical
+    mask: ClothingMaskSterile
+    neck: ClothingNeckStethoscope
+    outerClothing: ClothingOuterCoatParamedicWB
+    gloves: ClothingHandsGlovesLatex

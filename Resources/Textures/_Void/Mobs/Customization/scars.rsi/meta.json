@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "chestscars1",
+      "directions": 4
+    },
+    {
+      "name": "headscars1",
+      "directions": 4
+    },
+    {
+      "name": "headscars2",
+      "directions": 4
+    },
+    {
+      "name": "headscars3",
+      "directions": 4
+    },
+    {
+      "name": "lhandscars1",
+      "directions": 4
+    },
+    {
+      "name": "llegscars1",
+      "directions": 4
+    },
+    {
+      "name": "rhandscars1",
+      "directions": 4
+    },
+    {
+      "name": "rlegscars1",
+      "directions": 4
+    }
+  ]
+}

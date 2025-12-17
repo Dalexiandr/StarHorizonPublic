@@ -1,0 +1,59 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingOuterClothingFlannelBlueNew
+  name: синяя рубашка
+  description: Ходить в клеточку всё еще модно
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Flannel/flannel_blue.rsi
+  - type: Clothing
+    slots: [ outerClothing ]
+    sprite: _Horizon/Clothing/OuterClothing/Flannel/flannel_blue.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingOuterClothingFlannelRedNew
+  name: красная рубашка
+  description: Ходить в клеточку всё еще модно
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Flannel/flannel_red.rsi
+  - type: Clothing
+    slots: [ outerClothing ]
+    sprite: _Horizon/Clothing/OuterClothing/Flannel/flannel_red.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingOuterClothingFlannelOrangeNew
+  name: оранжевая рубашка
+  description: Ходить в клеточку всё еще модно
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Flannel/flannel_orange.rsi
+  - type: Clothing
+    slots: [ outerClothing ]
+    sprite: _Horizon/Clothing/OuterClothing/Flannel/flannel_orange.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingOuterClothingFlannelGreenNew
+  name: зеленая рубашка
+  description: Ходить в клеточку всё еще модно
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Flannel/flannel_green.rsi
+  - type: Clothing
+    slots: [ outerClothing ]
+    sprite: _Horizon/Clothing/OuterClothing/Flannel/flannel_green.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingOuterClothingFlannelPinkNew
+  name: розовая рубашка
+  description: Ходить в клеточку всё еще модно
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Flannel/flannel_pink.rsi
+  - type: Clothing
+    slots: [ outerClothing ]
+    sprite: _Horizon/Clothing/OuterClothing/Flannel/flannel_pink.rsi

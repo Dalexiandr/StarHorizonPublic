@@ -1,0 +1,78 @@
+- type: job
+  id: Sheriff
+  name: job-name-sheriff
+  description: job-description-sheriff
+  playTimeTracker: JobHeadOfSecurity
+  salary: 80000 # Horizon
+  forceFaction: FactionNFSD # Horizon
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 129600 # 36 hours
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 86400 # 24 hours
+    - !type:RoleTimeRequirement
+      role: JobWarden
+      time: 21600 # 6 hours
+    - !type:RoleTimeRequirement
+      role: JobSeniorOfficer
+      time: 43200 # 12 hours
+  alternateRequirementSets:
+    longerPlaytimeLessSec:
+    - !type:OverallPlaytimeRequirement
+      time: 1080000 # 300 hours
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 64800 # 18 hours
+    - !type:RoleTimeRequirement
+      role: JobWarden
+      time: 21600 # 6 hours
+  #  whitelisted: true # Horizon TempTweak
+  startingGear: SheriffGear
+  alwaysUseSpawner: true
+  icon: JobIconSheriff
+  requireAdminNotify: true
+  supervisors: job-supervisors-centcom
+  weight: 180
+  displayWeight: 70
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant, TrackingImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+      - type: PreventShipyardTitleOverwrite
+  - !type:GiveItemOnHolidaySpecial
+    holiday: FrontierBirthday
+    prototype: FrontierBirthdayGift
+
+- type: startingGear
+  id: SheriffGear
+  equipment:
+    pocket1: NFWeaponPistolUniversalNfsdLessLethal
+    pocket2: NFWeaponEnergyPistolLaserX01Multiphase
+  storage:
+    back:
+    - NfsdTechFabFlatpack
+    - Multitool
+    - HoloprojectorNfsd
+    - DoorRemoteNfsd
+    - BaseSecurityUplinkRadioSheriff
+    - RubberStampSheriff
+
+- type: chameleonOutfit
+  id: SheriffChameleonOutfit
+  job: Sheriff
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHatNfsdCampaignFilled
+    mask: ClothingMaskGasSheriff
+    eyes: ClothingEyesGlassesNfsd
+    outerClothing: ClothingOuterCoatNfsdFormalSheriff
+    neck: ClothingNeckNfsdBadgeSheriff
+    belt: ClothingBeltNfsdFilled
+    gloves: ClothingHandsGlovesCombatNfsdCream
+    shoes: ClothingShoesBootsNfsdBrown

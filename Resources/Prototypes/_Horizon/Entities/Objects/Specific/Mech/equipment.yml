@@ -1,0 +1,497 @@
+# region Mining
+
+- type: entity
+  name: плазменный резак
+  parent: BaseItem
+  id: MechWeaponCutter
+  description: Отсекай им конечности.
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: engi_plasmacutter
+  - type: Item
+    size: Large
+  - type: AmmoCounter
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon2.ogg
+    fireRate: 1
+    projectileSpeed: 40
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+  - type: BallisticMechAmmoProvider
+    proto: BulletCutter
+    shots: 40
+    capacity: 40
+    reloadTime: 5
+    ammoType: plasma
+  - type: UIFragment
+    ui: !type:MechGunUi
+  - type: Appearance
+  - type: MechEquipment
+  - type: MechGun
+  - type: Tag
+    tags:
+      - MechEquipmentMining
+
+- type: entity
+  name: бур
+  parent: BaseMechEquipment
+  id: MechEquipmentDrill
+  description: Просверлит всё! Стены, двери, руду, столы ковры, ваших врагов!
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: mining_drill
+  - type: MechDrill
+    damage:
+      types:
+        Structural: 70
+        Slash: 30
+        Piercing: 30
+  - type: Tag
+    tags:
+      - MechEquipmentMining
+
+- type: entity
+  name: алмазный бур
+  parent: BaseMechEquipment
+  id: MechEquipmentDiamondDrill
+  description: Сильно просверлит всё! Стены, двери, руду, столы ковры, ваших врагов!
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: mining_drill_diamond
+  - type: MechDrill
+    damage:
+      types:
+        Structural: 80
+        Slash: 40
+        Piercing: 30
+    drillSpeedMultilire: 80
+  - type: Tag
+    tags:
+      - MechEquipmentMining
+
+# region Armor
+
+- type: entity
+  name: противоударная броня меха
+  parent: BaseMechEquipment
+  id: MechEquipmentArmorMelee
+  description: Стань прочнее!
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: shield_cc
+  - type: MechArmor
+    modifiers:
+      coefficients:
+        Blunt: 0.01
+        Slash: 0.01
+        Piercing: 0.3
+        Heat: 0.3
+  - type: MechEquipment
+    canBeUsed: false
+  - type: MechMagazine
+    magazinetype: lightrifle
+
+- type: entity
+  name: противопульная броня меха
+  parent: BaseMechEquipment
+  id: MechEquipmentArmorRange
+  description: Стань прочнее!
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: shield_proj
+  - type: MechArmor
+    modifiers:
+      coefficients:
+        Blunt: 0.3
+        Slash: 0.3
+        Piercing: 0.01
+        Heat: 0.01
+  - type: MechEquipment
+    canBeUsed: false
+
+# region Medical
+
+- type: entity
+  name: навесной слипер
+  parent: MechEquipmentGrabber
+  id: MechEquipmentHumanSleeper
+  description: Забирает человека, замедляет метаболизм, оставляет его в безопасности.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: medi_sleeper
+  - type: MechGrabber
+    grabMobs: true
+    maxContents: 4
+    slowMetabolism: true
+    blacklist:
+      components:
+        - Anomaly
+        - Mech
+  - type: Tag
+    tags:
+      - MechEquipmentMed
+
+- type: entity
+  name: навесной переносчик
+  parent: MechEquipmentGrabber
+  id: MechEquipmentHumanGrabber
+  description: You are my friend now :3
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: else_humanstealer
+  - type: MechGrabber
+    grabMobs: true
+    maxContents: 4
+  - type: Tag
+    tags:
+      - MechEquipmentMed
+
+- type: entity
+  name: red medigun
+  parent: BaseMechGunBattery
+  id: MechGunMedigunRed
+  description: medigun
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: medi_gun_red
+  - type: Gun
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    fireRate: 4
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
+  - type: HitscanMechAmmoProvider
+    proto: HealMechGunRed
+    fireCost: 15
+  - type: Tag
+    tags:
+      - MechEquipmentMed
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 5
+  - type: MechGun
+
+- type: entity
+  name: yellow medigun
+  parent: BaseMechGunBattery
+  id: MechGunMedigunYellow
+  description: medigun
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: medi_gun_yellow
+  - type: Gun
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    fireRate: 4
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
+  - type: HitscanMechAmmoProvider
+    proto: HealMechGunYellow
+    fireCost: 15
+  - type: Tag
+    tags:
+      - MechEquipmentMed
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 5
+  - type: MechGun
+
+- type: entity
+  name: blue medigun
+  parent: BaseMechGunBattery
+  id: MechGunMedigunBlue
+  description: medigun
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: medi_gun_blue
+  - type: Gun
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    fireRate: 3
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
+  - type: HitscanMechAmmoProvider
+    proto: HealMechGunBlue
+    fireCost: 25
+  - type: Tag
+    tags:
+      - MechEquipmentMed
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 5
+  - type: MechGun
+
+- type: entity
+  name: green medigun
+  parent: BaseMechGunBattery
+  id: MechGunMedigunGreen
+  description: medigun
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: medi_gun_green
+  - type: Gun
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    fireRate: 3
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
+  - type: HitscanMechAmmoProvider
+    proto: HealMechGunGreen
+    fireCost: 25
+  - type: Tag
+    tags:
+      - MechEquipmentMed
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 5
+  - type: MechGun
+
+- type: entity
+  name: mecha syringe
+  parent: BaseMechGun
+  id: MechGunSyringeBasic
+  description: Syringe gun, containing basic chemicals.
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: medi_syringe_gun
+  - type: Item
+    size: Large
+  - type: AmmoCounter
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon2.ogg
+    fireRate: 1
+    projectileSpeed: 40
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+  - type: BallisticMechAmmoProvider
+    proto: SyringeBasic
+    shots: 10
+    capacity: 10
+    reloadTime: 5
+    ammoType: chemical
+  - type: SyringeMechGun
+    currentReagent: Bicaridine
+    solutionName: injector
+    allowedReagents:
+    - Bicaridine
+    - Dermaline
+    - Dylovene
+    - Inaprovaline
+    - Dexalin
+    - Hyronalin
+  - type: UIFragment
+    ui: !type:MechGunUi
+  - type: Appearance
+  - type: MechEquipment
+  - type: MechGun
+  - type: Tag
+    tags:
+      - MechEquipmentMed
+
+- type: entity
+  name: advanced mecha syringe
+  parent: MechGunSyringeBasic
+  id: MechGunSyringeAdvanced
+  description: Syringe gun, containing advanced chemicals.
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: medi_syringe_gun_advanced
+  - type: SyringeMechGun
+    currentReagent: Bicaridine
+    solutionName: injector
+    allowedReagents:
+    - DexalinPlus
+    - Pyrazine
+    - Insuzine
+    - Bruizine
+    - Lacerinol
+    - Puncturase
+
+- type: entity
+  name: combat mecha syringe
+  parent: MechGunSyringeBasic
+  id: MechGunSyringeCombat
+  description: Syringe gun, containing combat chemicals.
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: medi_syringe_gun_toxic
+  - type: SyringeMechGun
+    currentReagent: Bicaridine
+    solutionName: injector
+    allowedReagents:
+    - UnstableMutagen
+    - FluorosulfuricAcid
+    - Tazinide
+    - Phlogiston
+
+# region Engineering
+
+- type: entity
+  name: plasma reactor
+  description: Plasma reactor for mecha.
+  parent: BaseItem
+  id: MechReactorPlasma
+  components:
+  - type: Tag
+    tags:
+    - MechReactor
+  - type: Battery
+    maxCharge: 3000
+    startingCharge: 3000
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: generator_plasma
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 10
+
+- type: entity
+  name: RITEG reactor
+  description: RITEG reactor for mecha.
+  parent: BaseItem
+  id: MechReactorUranium
+  components:
+  - type: Tag
+    tags:
+    - MechReactor
+  - type: Battery
+    maxCharge: 5000
+    startingCharge: 5000
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: generator_uranium
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 15
+
+- type: entity
+  name: tesla reactor
+  description: Tesla reactor for mecha.
+  parent: BaseItem
+  id: MechReactorTesla
+  components:
+  - type: Tag
+    tags:
+    - MechReactor
+  - type: Battery
+    maxCharge: 10000
+    startingCharge: 10000
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: generator_tesla
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 30
+
+- type: entity
+  id: MechEquipmentJet
+  parent: BaseMechEquipment
+  name: mech jetpack
+  description: Gives the mech the ability to grab things and drag them around.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: thrusters
+  - type: MechEquipmentComponents
+    components:
+    - type: MechJetpack
+    - type: Jetpack
+      moleUsage: 0
+    - type: GasTank
+  - type: Tag
+    tags:
+      - MechEquipmentGeneral
+
+- type: entity
+  id: MechEquipmentRCD
+  parent: BaseMechEquipment
+  name: mech rcd
+  description: rcd for meeeech
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: engi_rcd
+  - type: MechEquipmentComponents
+    components:
+    - type: RCD
+      availablePrototypes:
+      - WallSolidMech
+      - FloorSteelMech
+      - PlatingMech
+      - CatwalkMech
+      - GrilleMech
+      - WindowMech
+      - WindowDirectionalMech
+      - WindowReinforcedDirectionalMech
+      - ReinforcedWindowMech
+      - AirlockMech
+      - AirlockGlassMech
+      - FirelockMech
+      - TubeLightMech
+      - BulbLightMech
+      - LVCableMech
+      - MVCableMech
+      - HVCableMech
+      - CableTerminalMech
+      - DeconstructMech
+    - type: MechRCD
+  - type: LimitedCharges
+    maxCharges: 100
+  - type: AutoRecharge
+    rechargeDuration: 1
+  - type: Tag
+    tags:
+      - MechEquipmentGeneral
+
+- type: entity
+  id: MechEquipmentWire
+  parent: BaseMechEquipment
+  name: mech wires
+  description: wire laying for mechs
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: engi_wire
+  - type: MechEquipmentComponents
+    components:
+    - type: RCD
+      availablePrototypes:
+      - LVCableMechFast
+      - MVCableMechFast
+      - HVCableMechFast
+      - CableTerminalMechFast
+      - DeconstructMech
+    - type: MechRCD
+  - type: LimitedCharges
+    maxCharges: 100
+  - type: AutoRecharge
+    rechargeDuration: 1
+  - type: Tag
+    tags:
+      - MechEquipmentGeneral

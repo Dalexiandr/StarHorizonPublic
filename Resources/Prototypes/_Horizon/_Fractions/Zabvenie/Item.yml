@@ -1,0 +1,232 @@
+- type: entity
+  parent: BaseItem
+  id: WitherplantItems
+  name: Увядочник 
+  description: Небольшой гриб, при надрезе вы замечаете как из него выливается черная жидкость. На удивление, вам никак не хочется это попробывать на вкус 
+  suffix: Измерение Забвения
+  components:
+  - type: Item
+    heldPrefix: produce
+  - type: Produce
+    seedId: bloodTomato
+  - type: Tag
+    tags:
+    - Fruit # Fuck you they're a fruit
+    - Vegetable
+  - type: FoodSequenceElement
+    entries:
+      Skewer: TomatoSkewer
+      Burger: BloodTomato
+      Taco: BloodTomato
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/items/WihterPlant.rsi
+    state: base
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Darknes
+          Quantity: 10
+        - ReagentId: Vitamin
+          Quantity: 5
+  - type: Extractable
+    grindableSolutionName: food
+    juiceSolution:
+      reagents:
+      - ReagentId: Darknes
+        Quantity: 10
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: desecration
+      - !type:SpillBehavior
+        solution: food
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+
+- type: entity
+  parent: BaseItem
+  id: ShadowsPlantItems
+  name: Мракоцвет
+  description: Тёмно-фиолетовые цветкообразные растения, при большем рассмотрении напоминают экзотический цветок.
+  suffix: Измерение Забвения
+  components:
+  - type: Item
+    heldPrefix: produce
+  - type: Produce
+    seedId: bloodTomato
+  - type: Tag
+    tags:
+    - Fruit # Fuck you they're a fruit
+    - Vegetable
+  - type: FoodSequenceElement
+    entries:
+      Skewer: TomatoSkewer
+      Burger: BloodTomato
+      Taco: BloodTomato
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/items/WihterPlant.rsi
+    state: base02
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Darknes
+          Quantity: 10
+        - ReagentId: Vitamin
+          Quantity: 10
+  - type: Extractable
+    grindableSolutionName: food
+    juiceSolution:
+      reagents:
+      - ReagentId: Darknes
+        Quantity: 20
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: desecration
+      - !type:SpillBehavior
+        solution: food
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+# region Лут с мобов 
+- type: entity
+  parent: BaseItem
+  id: Basetrophies
+  name: Базовый трофей
+  description: Любопытное. 
+  suffix: Трофеи | Измерение Забвения 
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/items/trophies.rsi
+    state: base01
+  - type: StaticPrice
+    price: 500
+
+- type: entity
+  parent: Basetrophies
+  id: trophiescrabs
+  name: Каменная клешня
+  description: Лёгкая и массивная, эта клешня словно выкована из чёрного, мрачно мерцающего камня, вкраплённого в мертвой тьме. Она испускает слабое отголосье холодных вибраций, ощущающихся при прикосновении. В те времена, когда клешня сжимается, кажется, что из неё выходит холодное дыхание мрака, способное сокрушить любого врага.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/items/trophies.rsi
+    state: base01
+  - type: StaticPrice
+    price: 15000
+
+- type: entity
+  parent: [ Basetrophies, BaseSword ]
+  id: trophiesgolem
+  name: Рука лезвие Голема 
+  description: Созданная из тугого каменного субстрата и покрытая узорами древних рунических рун. При касании рука кажется пропитанной холодом вечной тьмы, способной заморозить сердце любого, кто осмелится к ней прикоснуться.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/items/trophies.rsi
+    state: base02
+  - type: StaticPrice
+    price: 150000
+  - type: MeleeWeapon
+    attackRate: 1.5
+    damage:
+      types:
+        Slash: 15
+    soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+  - type: Reflect
+    reflectProb: .1
+    spread: 90
+
+- type: entity
+  parent: Basetrophies
+  id: trophiescollos
+  name: Голова Колосса 
+  description: Грандиозная и зловещая, эта голова — часть монстра, создавшего из Мракония — с еле различимыми пустыми глазами, усыпаны каменными осколками и ранами, как свидетельство страшных битв. Невесомо нависает над вами, а её взгляд, казалось бы, лишённый жизни, наполняет сердце ужасом и предвещает неизбежную гибель.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/items/trophies.rsi
+    state: base03
+  - type: StaticPrice
+    price: 350000
+
+- type: entity
+  parent: Basetrophies
+  id: trophiestitan
+  name: Коготь Титана 
+  description: Массивный и острый, как у дракона, этот клык вырезан из мрачно мерцающего камня и пропитан силой давних божеств разрушения. Его поверхность изломана и зазубрена, словно пережила эпохи войны. В глаза этому клыку опасно смотреть — кажется, что он хранит древнюю ярость и смерть, готовую разразиться в любой момент.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/items/trophies.rsi
+    state: base04
+  - type: StaticPrice
+    price: 500000
+
+# region Крутой лут
+
+- type: entity
+  name: Рука Титана 
+  id: WeaponProtoTitan
+  parent: WeaponProtoKineticAcceleratorBase
+  description: Необычная вещь которую можно использовать как оружие, на удивление крайне легкая.. Не смотря на то что это каменная глыба. Является удивительно правильной вырезкой центра ладони Титана. 
+  suffix: Трофеи | Измерение Забвения
+  components:
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 5
+    rechargeSound:
+      path: /Audio/Effects/break_stone.ogg
+  - type: BasicEntityAmmoProvider
+    proto: MobCrabOblivionNtMini
+    capacity: 1
+    count: 1
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Zabvenie/items/kinetic_titans.rsi
+    quickEquip: false
+    slots:
+    - suitStorage
+    - Belt
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/items/kinetic_titans.rsi
+    layers:
+    - state: icon
+    - state: animation-icon
+      visible: false
+      map: [ "empty-icon" ]
+  - type: Item
+    sprite: _Horizon/_Fractions/Zabvenie/items/kinetic_titans.rsi
+    size: Normal
+    deconstructionTarget: null 
+  - type: Wieldable 
+  - type: ContainerContainer
+    containers:
+      upgrades: !type:Container
+
+- type: entity
+  parent: BaseItem
+  id: Lucidius
+  name: Люцидий
+  description: Тёмный, мрачно мерцающий материал, созданный из слияния забытых духов и застывших теней. Обладает полупрозрачной структурой, внутри которой просматриваются зыбкие танцующие силуэты и тени, словно в нём запечатаны. Люцидий излучает слабое холодное сияние, вызывающее ощущение застывающего страха.
+  suffix: Трофеи | Измерение Забвения 
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Zabvenie/items/trophies.rsi
+    state: base05
+  - type: StaticPrice
+    price: 100000

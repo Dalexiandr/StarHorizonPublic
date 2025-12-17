@@ -1,0 +1,60 @@
+- type: job
+  id: Deputy
+  name: job-name-deputy
+  description: job-description-deputy
+  playTimeTracker: JobSecurityOfficer
+  salary: 40000 # Horizon
+  forceFaction: FactionNFSD # Horizon
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 43200 # 12 hours
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 21600 # 6 hours
+  alternateRequirementSets:
+    longerPlaytimeLessSec:
+    - !type:OverallPlaytimeRequirement
+      time: 360000 # 100 hours
+  startingGear: DeputyGear
+  icon: JobIconDeputy
+  supervisors: job-supervisors-sergeant
+  weight: 130
+  displayWeight: 40
+  canBeAntag: false
+  access: # Horizon
+  - Brigmedic # Horizon
+  - Medical # Horizon
+  - Chemistry # Horizon
+  accessGroups:
+  - GeneralNfsdAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant, TrackingImplant ]
+  - !type:GiveItemOnHolidaySpecial
+    holiday: FrontierBirthday
+    prototype: FrontierBirthdayGift
+
+- type: startingGear
+  id: DeputyGear
+  equipment:
+    pocket1: NFWeaponPistolUniversalNfsdLessLethal
+  storage:
+    back:
+    - Flash
+    - NFMagazineHighCapacityPistol35Overpressure
+    - NFMagazineHighCapacityPistol35Rubber
+    - FrontierUplinkCoin10
+
+- type: chameleonOutfit
+  id: DeputyChameleonOutfit
+  job: Deputy
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHatNfsdBeretBrown
+    mask: ClothingMaskGasNfsd
+    eyes: ClothingEyesGlassesNfsd
+    outerClothing: ClothingOuterArmorNfsd
+    neck: ClothingNeckNfsdBadgeSecurity
+    belt: ClothingBeltNfsdFilled
+    gloves: ClothingHandsGlovesCombatNfsdBrown
+    shoes: ClothingShoesBootsNfsdBrownFilled

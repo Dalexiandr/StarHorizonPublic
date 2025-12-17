@@ -1,0 +1,89 @@
+################################################################################
+##### General ##################################################################
+
+[net]
+port = 1212
+bindto = "0.0.0.0"
+log_late_msg = false
+
+[database]
+engine = "postgres"
+pg_host = "database"
+pg_port = 5432
+pg_database = "ss14"
+pg_username = "ss14_user"
+pg_password = "secret"
+
+[game]
+hostname = "StarHorizon - Маппинг"
+desc = "Мапперский сервер StarHorizon"
+map = "Empty"
+soft_max_players = 100
+lobbyduration = 180
+defaultpreset = "Sandbox"
+fallbackpreset = "Sandbox"
+
+[hub]
+advertise = false
+
+[server]
+rules_file = "FrontierRuleset"
+lobby_name = "Mapping Server"
+
+[console]
+# Указать CKey игрока, который по-умолчанию и не зависимо ни от чего
+# будет иметь НАИВЫСШИЕ права на сервере (HOST)
+login_host_user = "EvilBug"
+
+[admin]
+see_own_notes = true
+
+[adminlogs]
+enabled = false
+
+[interaction]
+rate_limit_announce_admins_delay = -1 # убирает спам о превышении лимитов игроко                                                                                        м
+
+[physics]
+grid_splitting = false
+
+[procgen]
+preload = false
+
+################################################################################
+##### In Game ##################################################################
+
+[atmos]
+space_wind = false
+
+[shuttle]
+grid_fill = false
+auto_call_time = 0
+emergency = false
+arrivals = false
+preload_grids = false
+
+[rules]
+time = 60.0
+
+[tips]
+enabled = false
+
+[chat]
+max_announcement_length = 2048
+
+[ic]
+flavor_text = true
+
+[ooc]
+enable_during_round = true
+
+[events]
+enabled = false
+
+[ghost]
+role_time = 0.5
+quick_lottery = true
+
+[gateway]
+generator_enabled = false

@@ -1,0 +1,23 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Created fаМИР мЯУ МЯУ",
+    "size": {
+      "x": 64,
+      "y": 64
+    },
+    "states": [
+      {
+        "name": "running03",
+        "directions": 4
+      },
+      {
+        "name": "running05",
+        "directions": 4
+      },
+      {
+        "name": "running02",
+        "directions": 4
+      }
+    ]
+  }

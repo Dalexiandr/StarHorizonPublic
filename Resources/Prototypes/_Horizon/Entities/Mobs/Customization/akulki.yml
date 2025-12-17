@@ -1,0 +1,17 @@
+- type: marking
+  id: AkulkiTailSmooth
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Akulki]
+  sprites:
+  - sprite: _StarHorizon/Mobs/Species/Akulki/parts.rsi
+    state: tail_smooth_primary
+
+- type: marking
+  id: AkulkiTailSmoothAnimated
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Akulki]
+  sprites:
+  - sprite: _StarHorizon/Mobs/Species/Akulki/parts.rsi
+    state: tail_smooth_wagging

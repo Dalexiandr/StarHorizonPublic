@@ -1,0 +1,175 @@
+# 1
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonLocateVessels
+  name: Locate vessels
+  components:
+  - type: SurgeryStep
+    duration: 2
+  - type: Sprite
+    sprite: Objects/Specific/Medical/Surgery/scissors.rsi
+    state: setter
+  - type: SurgeryStepEmoteEffect
+# 2
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonClampVessels
+  name: Clamp vessels
+  components:
+  - type: SurgeryStep
+    duration: 5
+    tools:
+    - type: Hemostat
+  - type: Sprite
+    sprite: Objects/Specific/Medical/Surgery/scissors.rsi
+    state: hemostat
+# 3
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonCutVessels
+  name: Cut the vessels
+  components:
+  - type: SurgeryStep
+    duration: 10
+    tools:
+    - type: Scalpel
+  - type: SurgeryStepBleedEffect
+    damage:
+      types:
+        Brute: 5
+
+  - type: Sprite
+    sprite: Objects/Specific/Medical/Surgery/scalpel.rsi
+    state: scalpel
+
+# 4
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonStopBloodloss
+  name: Stop blood loss
+  components:
+  - type: SurgeryStep
+    duration: 10
+    tools:
+    - type: Hemostat
+  - type: SurgeryStepBleedEffect
+    damage:
+      types:
+        Brute: 5
+
+  - type: Sprite
+    sprite: Objects/Specific/Medical/Surgery/scissors.rsi
+    state: hemostat
+
+
+# 5 Insert the implant!
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonInsertVesselsImplant
+  name: Insert vessels implant
+  components:
+  - type: SurgeryStep
+    duration: 12
+    tools:
+    - type: VesselsImplant
+  - type: SurgeryStepOrganInsert
+    slot: vessels_implant
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/implants.rsi
+    layers:
+      - state: implant
+
+# 5 Also five but extract!
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonExtractVesselsImplant
+  name: Extract a vessels implant
+  components:
+  - type: SurgeryStep
+    duration: 12
+  - type: SurgeryStepOrganExtract
+    organ:
+    - type: VesselsImplant
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/implants.rsi
+    layers:
+    - state: implant
+
+# 6
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonConnectVesselsImplant
+  name: Connect implant to vessels
+  components:
+  - type: SurgeryStep
+    duration: 10
+  - type: SurgeryStepBleedEffect
+    damage:
+      types:
+        Brute: -5 #Heal dealed damage
+  - type: Sprite
+    sprite: Objects/Specific/Medical/Surgery/scissors.rsi
+    state: setter
+
+#Operation Insert
+- type: entity
+  parent: SurgeryBase
+  id: SurgeryInsertVesselsImplant
+  name: Insert a vessels implant
+  description: Surgical attachment of a implant.
+  components:
+  - type: Surgery
+    requirement:
+    - SurgeryOpenAbdomen
+    steps:
+    - HorizonLocateVessels
+    - HorizonClampVessels
+    - HorizonCutVessels
+    - HorizonStopBloodloss
+    - HorizonInsertVesselsImplant
+    - HorizonConnectVesselsImplant
+  - type: SurgerySpeciesCondition
+    speciesBlacklist:
+    - SlimePerson # Не любим слаймолюдов
+  - type: SurgeryPartCondition
+    parts:
+    - Torso
+  - type: SurgeryOrganDontExistCondition # Не даём вживить больше одного импланта в тело.
+    organ:
+    - type: VesselsImplant
+    container: vessels_implant
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/implants.rsi
+    layers:
+    - state: implant
+
+#Operation Extract
+- type: entity
+  parent: SurgeryBase
+  id: SurgeryExtractVesselsImplant
+  name: Extract a vessels implant
+  description: Surgical attachment of a implant.
+  components:
+  - type: Surgery
+    requirement:
+    - SurgeryOpenAbdomen
+    steps:
+    - HorizonUncoverBones
+    - HorizonSecureBones
+    - HorizonCutBones
+    - HorizonStopBloodloss
+    - HorizonExtractVesselsImplant
+  - type: SurgerySpeciesCondition
+    speciesBlacklist:
+    - SlimePerson  # Всё ещё не любим слаймолюдов
+  - type: SurgeryPartCondition
+    parts:
+    - Torso
+  - type: SurgeryOrganExistCondition # Не даём, вытащить, того чего нет
+    organ:
+    - type: VesselsImplant
+    container: vessels_implant
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/implants.rsi
+    layers:
+    - state: implant

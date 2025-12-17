@@ -1,0 +1,26 @@
+- type: job
+  id: TraumaRessurector
+  name: job-name-traumaressurector
+  description: job-description-traumaressurector
+  playTimeTracker: JobTraumaRessurector
+  whitelisted: true
+  startingGear: TraumaRessurectorGear
+  alwaysUseSpawner: true
+  icon: "JobIconDoc"
+  supervisors: job-supervisors-trauma-repr
+  weight: 170
+  canBeAntag: false
+  accessGroups:
+    - AllAccess
+  special:
+    - !type:AddImplantSpecial
+      implants: [MindShieldImplant]
+
+- type: startingGear
+  id: TraumaRessurectorGear
+  equipment:
+    id: TraumaRessurectorIDCard
+    pocket1: EncryptionKeyTrauma
+    pocket2: PinpointerUniversal
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorTeal
+    shoes: ClothingShoesSwat

@@ -1,0 +1,757 @@
+- type: loadout
+  id: ContractorClothingBackpack
+  price: 0
+  equipment:
+    back: NFClothingBackpack
+
+- type: loadout
+  id: ContractorClothingBackpackDuffel
+  price: 0
+  equipment:
+    back: NFClothingDuffel
+
+- type: loadout
+  id: ContractorClothingBackpackSatchel
+  price: 0
+  equipment:
+    back: ClothingBackpackSatchel
+
+- type: loadout
+  id: ContractorClothingBackpackMessenger
+  price: 0
+  equipment:
+    back: ClothingBackpackMessenger
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerContractor
+  price: 0
+  equipment:
+    back: ClothingBackpackMessengerContractor
+
+#T1
+- type: loadout
+  id: ContractorClothingBackpackCaptain
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackCaptain
+
+- type: loadout
+  id: ContractorClothingBackpackDuffelCaptain
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 750
+  equipment:
+    back: ClothingBackpackDuffelCaptain
+
+- type: loadout
+  id: ContractorClothingBackpackSatchelCaptain
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackSatchelCaptain
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerCaptain
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackMessengerCaptain
+
+- type: loadout
+  id: ContractorClothingBackpackSalvage
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackSalvage
+
+- type: loadout
+  id: ContractorClothingBackpackDuffelSalvage
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 750
+  equipment:
+    back: ClothingBackpackDuffelSalvage
+
+- type: loadout
+  id: ContractorClothingBackpackSatchelSalvage
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackSatchelSalvage
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerSalvage
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackMessengerSalvage
+
+- type: loadout
+  id: ContractorClothingBackpackCargo
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackCargo
+
+- type: loadout
+  id: ContractorClothingBackpackDuffelCargo
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 750
+  equipment:
+    back: ClothingBackpackDuffelCargo
+
+- type: loadout
+  id: ContractorClothingBackpackSatchelCargo
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackSatchelCargo
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerCargo
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackMessengerCargo
+
+- type: loadout
+  id: ContractorClothingBackpackHydroponics
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackHydroponics
+
+- type: loadout
+  id: ContractorClothingBackpackDuffelHydroponics
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 750
+  equipment:
+    back: ClothingBackpackDuffelHydroponics
+
+- type: loadout
+  id: ContractorClothingBackpackSatchelHydroponics
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackSatchelHydroponics
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerHydroponics
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackMessengerHydroponics
+
+- type: loadout
+  id: ContractorClothingBackpackScience
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackScience
+
+- type: loadout
+  id: ContractorClothingBackpackDuffelScience
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 750
+  equipment:
+    back: ClothingBackpackDuffelScience
+
+- type: loadout
+  id: ContractorClothingBackpackSatchelScience
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackSatchelScience
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerScience
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackMessengerScience
+
+- type: loadout
+  id: ContractorClothingBackpackMedical
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFNotDoc
+  price: 500
+  equipment:
+    back: ClothingBackpackMedical
+
+- type: loadout
+  id: ContractorClothingBackpackDuffelMedical
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFNotDoc
+  price: 750
+  equipment:
+    back: ClothingBackpackDuffelMedical
+
+- type: loadout
+  id: ContractorClothingBackpackDuffelTrauma
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFNotDoc
+  price: 750
+  equipment:
+    back: ClothingBackpackDuffelTrauma
+
+- type: loadout
+  id: ContractorClothingBackpackSatchelMedical
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFNotDoc
+  price: 500
+  equipment:
+    back: ClothingBackpackSatchelMedical
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerMedical
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFNotDoc
+  price: 500
+  equipment:
+    back: ClothingBackpackMessengerMedical
+
+- type: loadout
+  id: ContractorClothingBackpackChemistry
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackChemistry
+
+- type: loadout
+  id: ContractorClothingBackpackDuffelChemistry
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 750
+  equipment:
+    back: ClothingBackpackDuffelChemistry
+
+- type: loadout
+  id: ContractorClothingBackpackSatchelChemistry
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackSatchelChemistry
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerChemistry
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackMessengerChemistry
+
+- type: loadout
+  id: ContractorClothingBackpackGenetics
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackGenetics
+
+- type: loadout
+  id: ContractorClothingBackpackDuffelGenetics
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 750
+  equipment:
+    back: ClothingBackpackDuffelGenetics
+
+- type: loadout
+  id: ContractorClothingBackpackSatchelGenetics
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackSatchelGenetics
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerGenetics
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackMessengerGenetics
+
+- type: loadout
+  id: ContractorClothingBackpackVirology
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackVirology
+
+- type: loadout
+  id: ContractorClothingBackpackDuffelVirology
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 750
+  equipment:
+    back: ClothingBackpackDuffelVirology
+
+- type: loadout
+  id: ContractorClothingBackpackSatchelVirology
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackSatchelVirology
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerVirology
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackMessengerVirology
+
+- type: loadout
+  id: ContractorClothingBackpackEngineering
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFNotEngineering
+  price: 500
+  equipment:
+    back: ClothingBackpackEngineering
+
+- type: loadout
+  id: ContractorClothingBackpackDuffelEngineering
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFNotEngineering
+  price: 750
+  equipment:
+    back: ClothingBackpackDuffelEngineering
+
+- type: loadout
+  id: ContractorClothingBackpackSatchelEngineering
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFNotEngineering
+  price: 500
+  equipment:
+    back: ClothingBackpackSatchelEngineering
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerEngineering
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFNotEngineering
+  price: 500
+  equipment:
+    back: ClothingBackpackMessengerEngineering
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerChiefEngineer
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFNotEngineering
+  price: 500
+  equipment:
+    back: ClothingBackpackMessengerChiefEngineer
+
+- type: loadout
+  id: ContractorClothingBackpackAtmospherics
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFNotEngineering
+  price: 500
+  equipment:
+    back: ClothingBackpackAtmospherics
+
+- type: loadout
+  id: ContractorClothingBackpackDuffelAtmospherics
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFNotEngineering
+  price: 750
+  equipment:
+    back: ClothingBackpackDuffelAtmospherics
+
+- type: loadout
+  id: ContractorClothingBackpackSatchelAtmospherics
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFNotEngineering
+  price: 500
+  equipment:
+    back: ClothingBackpackSatchelAtmospherics
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerAtmospherics
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFNotEngineering
+  price: 500
+  equipment:
+    back: ClothingBackpackMessengerAtmospherics
+
+- type: loadout
+  id: ContractorNFClothingBackpackDuffelChaplain
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 750
+  equipment:
+    back: NFClothingBackpackDuffelChaplain
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerChaplain
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackMessengerChaplain
+
+- type: loadout
+  id: ContractorNFClothingBackpackDuffelColorBlack
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 750
+  equipment:
+    back: NFClothingBackpackDuffelColorBlack
+
+- type: loadout
+  id: ContractorNFClothingBackpackDuffelColorBlue
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 750
+  equipment:
+    back: NFClothingBackpackDuffelColorBlue
+
+- type: loadout
+  id: ContractorNFClothingBackpackDuffelColorGreen
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 750
+  equipment:
+    back: NFClothingBackpackDuffelColorGreen
+
+- type: loadout
+  id: ContractorNFClothingBackpackDuffelColorOrange
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 750
+  equipment:
+    back: NFClothingBackpackDuffelColorOrange
+
+- type: loadout
+  id: ContractorNFClothingBackpackDuffelColorRed
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 750
+  equipment:
+    back: NFClothingBackpackDuffelColorRed
+
+- type: loadout
+  id: ContractorNFClothingBackpackDuffelColorPurple
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 750
+  equipment:
+    back: NFClothingBackpackDuffelColorPurple
+
+- type: loadout
+  id: ContractorNFClothingBackpackDuffelColorBrownLight
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 750
+  equipment:
+    back: NFClothingBackpackDuffelColorBrownLight
+
+- type: loadout
+  id: ContractorNFClothingBackpackDuffelColorBrown
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 750
+  equipment:
+    back: NFClothingBackpackDuffelColorBrown
+
+- type: loadout
+  id: ContractorNFClothingBackpackDuffelColorWhite
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 750
+  equipment:
+    back: NFClothingBackpackDuffelColorWhite
+
+- type: loadout
+  id: ContractorNFClothingBackpackDuffelColorRandom
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 750
+  equipment:
+    back: NFClothingBackpackDuffelColorRandom
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerColorBlack
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackMessengerColorBlack
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerColorWhite
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackMessengerColorWhite
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerColorBlue
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackMessengerColorBlue
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerColorGreen
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackMessengerColorGreen
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerColorOrange
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackMessengerColorOrange
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerColorRed
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackMessengerColorRed
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerColorPurple
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackMessengerColorPurple
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerColorBrownLight
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackMessengerColorBrownLight
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerColorBrown
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackMessengerColorBrown
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerColorRandom
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  equipment:
+    back: ClothingBackpackMessengerColorRandom
+
+#T2
+- type: loadout
+  id: ContractorClothingBackpackClown
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 1250
+  equipment:
+    back: ClothingBackpackClown
+
+- type: loadout
+  id: ContractorClothingBackpackDuffelClown
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 2000
+  equipment:
+    back: ClothingBackpackDuffelClown
+
+- type: loadout
+  id: ContractorClothingBackpackSatchelClown
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 1250
+  equipment:
+    back: ClothingBackpackSatchelClown
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerClown
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 1250
+  equipment:
+    back: ClothingBackpackMessengerClown
+
+- type: loadout
+  id: ContractorClothingBackpackMime
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 1250
+  equipment:
+    back: ClothingBackpackMime
+
+- type: loadout
+  id: ContractorClothingBackpackDuffelMime
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 2000
+  equipment:
+    back: ClothingBackpackDuffelMime
+
+- type: loadout
+  id: ContractorClothingBackpackSatchelMime
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 1250
+  equipment:
+    back: ClothingBackpackSatchelMime
+
+- type: loadout
+  id: ContractorClothingBackpackMessengerMime
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 1250
+  equipment:
+    back: ClothingBackpackMessengerMime

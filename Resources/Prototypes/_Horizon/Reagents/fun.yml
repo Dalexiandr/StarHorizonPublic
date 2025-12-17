@@ -1,0 +1,93 @@
+﻿- type: reagent
+  id: MilkThatMakesYouMurr
+  name: Foods
+  # group: Drinks
+  group: Special
+  desc: Чистая сущность фелинидов. Заставляет вас Муррчать!
+  suffix: Horizon
+  physicalDesc: муррчащее
+  flavor: magical
+  color: "#dcf0ea"
+  metabolisms:
+    Poison:
+      metabolismRate: 0.5
+      effects:
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:ReagentThreshold
+          reagent: MilkThatMakesYouMurr
+          max: 10
+        visualType: Medium
+        messages: ["Вы ощущаете приятное муррчание", "Вы чувствуете желание муррчать", "Вы чувствуете слабое желание гладить красноволосую фелинидку"]
+        probability: 0.15
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:ReagentThreshold
+          reagent: MilkThatMakesYouMurr
+          min: 11
+          max: 20
+        visualType: Medium
+        messages: ["Ваше желание муррчать усиливается", "Вы отчаянно муррчите", "Вы очень хотите погладить красноволосую фелинидку"]
+        probability: 0.15
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:ReagentThreshold
+          reagent: MilkThatMakesYouMurr
+          min: 21
+          max: 30
+        visualType: Medium
+        messages: ["Вы хотите поиграть с клубком ниток", "Вы жаждете потискать красноволосую фелинидку"]
+        probability: 0.15
+      - !type:Emote
+        emote: CatMeow
+        showInChat: true
+        conditions:
+        - !type:OrganType
+          type: Animal
+          shouldHave: false
+        probability: 0.25
+      - !type:Emote
+        emote: Meow
+        showInChat: true
+        probability: 0.05
+        conditions:
+        - !type:OrganType
+          type: Animal
+      - !type:Emote
+        emote: Mew
+        showInChat: true
+        probability: 0.05
+        conditions:
+        - !type:OrganType
+          type: Animal
+      - !type:Polymorph
+        prototype: CatPoly
+        conditions:
+        - !type:ReagentThreshold
+          min: 30
+      - !type:AdjustReagent
+        reagent: MilkThatMakesYouMurr
+        amount: -20
+        conditions:
+        - !type:ReagentThreshold
+          min: 30
+
+- type: reagent
+  id: JuiceThatMakesYouBuzz
+  name: reagent-name-buzz
+  group: Toxins
+  desc: reagent-desc-buzz
+  physicalDesc: reagent-physical-desc-vibrant
+  flavor: buzz
+  color: "#fbec5d"
+  metabolisms:
+    Poison:
+      metabolismRate: 0.25
+      effects:
+      - !type:Emote
+        emote: Buzzing
+        showInChat: true
+        probability: 0.5

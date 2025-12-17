@@ -1,0 +1,399 @@
+# Scrap: Worthless items that can be recycled into materials
+
+- type: entityTable
+  id: SalvageScrapLowValue
+  table: !type:GroupSelector
+    children:
+    - id: ScrapAirlock2
+    - id: ScrapBucket
+    - id: ScrapCamera
+    - id: ScrapCanister1
+    - id: ScrapCanister2
+    - id: ScrapFaxMachine
+    - id: ScrapFireExtinguisher
+    - id: ScrapFirelock3
+    - id: ScrapIntercom
+    - id: ScrapMedkit
+    - !type:GroupSelector
+      children:
+      - id: ScrapPAI
+      - id: ScrapPAIGold
+        weight: 0.1
+    - id: ScrapTube
+    - id: ShardGlass
+      amount: !type:RangeNumberSelector
+        range: 1, 3
+    - id: SheetSteel1
+      weight: 0.5
+      amount: !type:RangeNumberSelector
+        range: 1, 3
+    - id: SheetPlastic1
+      weight: 0.5
+      amount: !type:RangeNumberSelector
+        range: 1, 3
+    - id: PartRodMetal1
+      weight: 0.5
+      amount: !type:RangeNumberSelector
+        range: 1, 3
+    - id: CrayonBox # Frontier
+      weight: 0.01 # Frontier
+    - id: CrayonMagic # Frontier
+      weight: 0.0001 # Frontier
+
+- type: entityTable
+  id: SalvageScrapHighValue
+  table: !type:GroupSelector
+    children:
+    - id: ScrapSteel
+      weight: 2
+    - id: ScrapGlass
+      weight: 2
+    - id: ScrapPlastic #Frontier
+      weight: 2 #Frontier
+    - id: SheetSteel10
+    - id: SheetGlass10
+    - id: SheetPlastic10
+    - id: ScrapGeneratorFuelTank
+      weight: 0.5
+    - id: PartRodMetal10
+      weight: 0.33
+    - id: MaterialWoodPlank10
+      weight: 0.2
+    - id: SheetPlasma10
+      weight: 0.2
+    - id: ArtifactFragment1
+      weight: 0.05
+    - id: SheetPlasteel10
+      weight: 0.05
+    - id: NFScrapSilver # Frontier
+      weight: 2 # Frontier
+
+- type: entityTable
+  id: SalvageScrapLarge
+  table: !type:GroupSelector
+    children:
+    - !type:NestedSelector
+      tableId: RandomGeneratorTable
+      weight: 2
+    - id: ScrapAirlock1
+    - id: ScrapCloset
+    - id: ScrapFirelock1
+    - id: ScrapFirelock2
+    - id: ScrapJetpack
+      weight: 0.5
+    - id: ScrapMopBucket
+      weight: 0.5
+    - id: NFScrapSolarGlass # Frontier
+    - id: ScrapGenericBrokenMachine # Frontier
+      weight: 0.5 # Frontier
+    - id: ScrapGenericBrokenMachineAncient # Frontier
+      weight: 0.25 # Frontier
+    - id: ScrapGenericMachineAncient # Frontier
+      weight: 0.1 # Frontier
+    - !type:GroupSelector
+      weight: 2
+      children:
+      - !type:NestedSelector
+        weight: 3
+        tableId: RandomChemicalBarrel
+      - !type:NestedSelector
+        weight: 1
+        tableId: RandomChemicalBarrelRadioactive
+
+# Treasure: High-value scatterables that don't do a ton.
+
+- type: entityTable
+  id: SalvageTreasureCommon
+  table: !type:GroupSelector
+    children:
+    - id: SheetPlasma1
+      amount: !type:RangeNumberSelector
+        range: 3, 5
+    - id: ResearchDisk
+    - id: DrinkGoldenCup
+    - id: TreasureSampleTube
+    - !type:NestedSelector
+      tableId: TreasureCoinPile
+      rolls: !type:RangeNumberSelector
+        range: 1, 2
+    - !type:NestedSelector
+      tableId: RandomInstrumentTable
+
+- type: entityTable
+  id: SalvageTreasureUncommon
+  table: !type:GroupSelector
+    children:
+    - id: IngotSilver1
+      amount: !type:RangeNumberSelector
+        range: 1, 5
+    - id: IngotGold1
+      amount: !type:RangeNumberSelector
+        range: 3, 5
+    - id: TreasureDatadiskEncrypted
+    - !type:GroupSelector
+      children:
+      - id: TreasureCDDrive
+      - id: TreasureHardDiskDrive
+      - id: TreasureFlopDiskDrive
+    - !type:NestedSelector
+      tableId: TreasureCoinPile
+      rolls: !type:RangeNumberSelector
+        range: 4, 7
+    - id: SpaceCash1000
+    - id: WristwatchGold
+    - !type:NestedSelector
+      tableId: RingTableCommon
+
+- type: entityTable
+  id: SalvageTreasureRare
+  table: !type:GroupSelector
+    children:
+    - id: MaterialDiamond1
+    - id: TreasureCPUSupercharged
+    # - id: TechnologyDiskRare # Frontier
+    #   weight: 0.5 # Frontier
+    - id: ResearchDisk10000
+      weight: 0.5
+    - id: ArabianLamp
+    - !type:NestedSelector
+      tableId: TreasureCoinPileRare
+      rolls: !type:RangeNumberSelector
+        range: 2, 5
+    - !type:AllSelector
+      children:
+      - id: BriefcaseBrown
+      - !type:GroupSelector
+        rolls: !type:RangeNumberSelector
+          range: 3, 5
+        children:
+        - id: SpaceCash1000
+          weight: 60
+        - id: SpaceCash2500
+          weight: 25
+        - id: SpaceCash5000
+          weight: 14
+        - id: SpaceCash10000
+          weight: 1
+    - !type:NestedSelector
+      tableId: RingTableRare
+    - id: CardBoxNanotrasen # Frontier
+      weight: 0.05 # Frontier
+    - id: CardBoxSyndicate # Frontier
+      weight: 0.005 # Frontier
+    - !type:NestedSelector # Frontier
+      tableId: TableStashVariety # Frontier
+    - id: ScrapGenericBrokenMachine # Frontier
+      weight: 0.5 # Frontier
+    - id: ScrapGenericBrokenMachineAncient # Frontier
+      weight: 0.25 # Frontier
+    - id: ScrapGenericMachineAncient # Frontier
+      weight: 0.1 # Frontier
+    # Horizon start
+    - id: ClothingBeltCursedKatanaSheathFilled
+      weight: 0.005 # Horizon - 5 in 1000
+    - !type:GroupSelector
+      children:
+      - id: WeaponProtoKineticPistol
+      - id: WeaponProtoKineticRepeater
+      - id: WeaponProtoKineticRailgun
+      - id: WeaponProtoKineticShotgun
+      - id: WeaponKineticSpear
+      - id: WeaponKineticHammer
+      - id: WeaponKineticClaws
+      - id: WeaponKineticMachete
+      - id: ClothingBackpackDuffelSyndicateFilledRailAttachments
+      - id: ClothingBackpackDuffelSyndicateFilledBarrelAttachments
+      - id: ClothingBackpackDuffelSyndicateFilledUnderAttachments
+      - id: ClothingBackpackDuffelSyndicateFilledLethalGrenades
+      - id: ClothingBackpackDuffelSyndicateFilledNonLethalGrenades
+  # Horizon end
+
+- type: entityTable
+  id: SalvageTreasureLegendary
+  table: !type:GroupSelector
+    children:
+    - id: ClothingMaskGoldenCursed
+    - id: ClothingHeadHatFancyCrown
+    - id: GoldenBikeHorn
+    - id: ClothingHeadHatCatEars
+      weight: 0.001 # Frontier - 1 in 1000
+    - id: GoldenPersonalAI
+    - id: TreasureCoinDiamond
+      amount: !type:RangeNumberSelector
+        range: 2, 5
+    - !type:NestedSelector
+      tableId: RingTableRare
+      rolls: !type:RangeNumberSelector
+        range: 2, 3
+    - !type:NestedSelector # Frontier
+      tableId: TableStashVariety # Frontier
+    # Horizon start
+    - id: ClothingBeltCursedKatanaSheathFilled
+      weight: 0.01 # Horizon - 1 in 100
+    - !type:GroupSelector
+      children:
+      - id: WeaponProtoKineticPistol
+      - id: WeaponProtoKineticRepeater
+      - id: WeaponProtoKineticRailgun
+      - id: WeaponProtoKineticShotgun
+      - id: WeaponKineticSpear
+      - id: WeaponKineticHammer
+      - id: WeaponKineticClaws
+      - id: WeaponKineticMachete
+      - id: ClothingBackpackDuffelSyndicateFilledRailAttachments
+      - id: ClothingBackpackDuffelSyndicateFilledBarrelAttachments
+      - id: ClothingBackpackDuffelSyndicateFilledUnderAttachments
+      - id: ClothingBackpackDuffelSyndicateFilledLethalGrenades
+      - id: ClothingBackpackDuffelSyndicateFilledNonLethalGrenades
+  # Horizon end
+
+# Equipment: Tools and things used by salvagers. Quote unquote "Gamer Loot"
+
+- type: entityTable
+  id: SalvageEquipmentCommon
+  table: !type:GroupSelector
+    children:
+    - id: Flare
+    - id: Crowbar
+    - id: Pickaxe
+    - id: ClothingMaskGas
+    - !type:GroupSelector
+      children:
+      - id: Wirecutter
+      - id: Screwdriver
+      - id: Wrench
+      - id: Welder
+        weight: 0.5
+    - id: Shovel
+    - id: FlashlightLantern
+    - id: FireExtinguisher
+    - id: SurvivalKnife
+    - !type:GroupSelector # Frontier
+      children: # Frontier
+      - id: BoxInflatable # Frontier
+      - id: BoxLighttube # Frontier
+      - id: BoxLightbulb # Frontier
+      - id: BoxColoredLighttube # Frontier
+      - id: BoxColoredLightbulb # Frontier
+
+- type: entityTable
+  id: SalvageEquipmentUncommon
+  table: !type:GroupSelector
+    children:
+    - id: OreBag
+#    - id: HandheldGPSBasic # Frontier - Useless
+    - id: PowerCellHighPrinted
+    - id: RadioHandheldNF # Frontier RadioHandheld<RadioHandheldNF
+    - id: ClothingBeltUtility
+    - id: Floodlight
+    - id: NFWeaponPka # Frontier: WeaponProtoKineticAccelerator<NFWeaponPka
+      weight: 0.5
+    - id: OxygenTankFilled
+    - id: WelderIndustrial
+    - id: WeaponGrapplingGun
+    - !type:GroupSelector
+      children:
+      - id: ClothingHeadHatWelding
+      - id: ClothingHeadHatWeldingMaskFlame
+        weight: 0.25
+      - id: ClothingHeadHatWeldingMaskFlameBlue
+        weight: 0.25
+      - id: ClothingHeadHatWeldingMaskPainted
+        weight: 0.1
+    - id: ClothingBeltQuiverCrossbowFilledBolt # Frontier
+
+- type: entityTable
+  id: SalvageEquipmentRare
+  table: !type:GroupSelector
+    children:
+    # - id: BlueprintDoubleEmergencyTank # Frontier
+    # - id: FultonBeacon # Frontier
+    # - id: Fulton # Frontier
+    #   amount: !type:RangeNumberSelector # Frontier
+    #     range: 1, 3 # Frontier
+    - id: HandHeldMassScanner
+    - id: WeaponCrusherDagger
+    - id: MiningDrill
+    - id: ClothingEyesGlassesMeson
+    - id: ClothingBeltSalvageWebbing
+    - id: SeismicCharge
+    - id: MineralScanner
+      weight: 0.5
+    - id: WeaponCrusher
+      weight: 0.5
+    - !type:GroupSelector
+      children:
+      - id: JetpackBlue
+      - id: JetpackMini # Frontier JetpackBlack<JetpackMini
+    - id: MysterySpaceBladeBox # Frontier
+    - id: CrossbowModernHand # Frontier
+    - id: NFWeaponHoloflareGun # Frontier
+  # Horizon start
+    - !type:GroupSelector
+      children:
+      - id: WeaponProtoKineticPistol
+      - id: WeaponProtoKineticRepeater
+      - id: WeaponProtoKineticRailgun
+      - id: WeaponProtoKineticShotgun
+      - id: WeaponKineticSpear
+      - id: WeaponKineticHammer
+      - id: WeaponKineticClaws
+      - id: WeaponKineticMachete
+      - id: ClothingBackpackDuffelSyndicateFilledRailAttachments
+      - id: ClothingBackpackDuffelSyndicateFilledBarrelAttachments
+      - id: ClothingBackpackDuffelSyndicateFilledUnderAttachments
+      - id: ClothingBackpackDuffelSyndicateFilledLethalGrenades
+      - id: ClothingBackpackDuffelSyndicateFilledNonLethalGrenades
+  # Horizon end
+
+- type: entityTable
+  id: SalvageEquipmentLegendary
+  table: !type:GroupSelector
+    children:
+#    - id: AdvancedMineralScanner # Horizon
+#    - id: BlueprintFulton # Frontier
+#    - id: BlueprintSeismicCharge # Frontier
+#    - id: WeaponCrusherGlaive # Horizon
+#    - id: ClothingOuterHardsuitSalvage # Horizon
+    - id: ChemistryBottleOmnizine
+    - !type:GroupSelector
+      children:
+      - id: JetpackBlueFilled
+      - id: JetpackMiniFilled # Frontier JetpackBlackFilled<JetpackMiniFilled
+    # - !type:GroupSelector # Frontier
+    #   children: # Frontier
+    #   - id: PKAUpgradeDamage # Frontier
+    #   - id: PKAUpgradeRange # Frontier
+    #   - id: PKAUpgradeFireRate # Frontier
+    - id: PowerCellAntiqueProto # Frontier
+    - id: NFShovel # Frontier
+  # Horizon start
+    - !type:GroupSelector
+      children:
+      - id: WeaponProtoKineticPistol
+      - id: WeaponProtoKineticRepeater
+      - id: WeaponProtoKineticRailgun
+      - id: WeaponProtoKineticShotgun
+      - id: WeaponKineticSpear
+      - id: WeaponKineticHammer
+      - id: WeaponKineticClaws
+      - id: WeaponKineticMachete
+      - id: ClothingBackpackDuffelSyndicateFilledRailAttachments
+      - id: ClothingBackpackDuffelSyndicateFilledBarrelAttachments
+      - id: ClothingBackpackDuffelSyndicateFilledUnderAttachments
+      - id: ClothingBackpackDuffelSyndicateFilledLethalGrenades
+      - id: ClothingBackpackDuffelSyndicateFilledNonLethalGrenades
+  # Horizon end
+
+- type: entityTable
+  id: RandomGeneratorTable
+  table: !type:GroupSelector
+    children:
+    - id: ScrapGeneratorPlasmaLeaking
+    - id: ScrapGeneratorUraniumLeaking
+    - id: ScrapGeneratorPlasma
+      weight: 0.5
+    - id: ScrapGeneratorUranium
+      weight: 0.5
+    - id: ScrapGeneratorFrame
+      weight: 0.25

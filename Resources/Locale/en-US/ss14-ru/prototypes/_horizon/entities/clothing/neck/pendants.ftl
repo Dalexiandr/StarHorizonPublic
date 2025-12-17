@@ -1,0 +1,16 @@
+ent-ClothingCheapPendantGreen = кулон из зелёного кристалла
+    .desc = Кристалл подвешенный на проводе.
+ent-ClothingCheapPendantOrange = кулон из оранжевого кристалла
+    .desc = Кристалл подвешенный на проводе.
+ent-ClothingCheapPendantPink = кулон из розового кристалла
+    .desc = Кристалл подвешенный на проводе.
+ent-ClothingCheapPendantCyan = кулон из голубого кристалла
+    .desc = Кристалл подвешенный на проводе.
+ent-ClothingCheapPendantBlue = кулон из синего кристалла
+    .desc = Кристалл подвешенный на проводе.
+ent-ClothingCheapPendantRed = кулон из красного кристалла
+    .desc = Кристалл подвешенный на проводе.
+ent-ClothingCheapPendantYellow = кулон из жёлтого кристалла
+    .desc = Кристалл подвешенный на проводе.
+ent-ClothingCheapPendantBlack = кулон из черного кристалла
+    .desc = Кристалл подвешенный на проводе.

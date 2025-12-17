@@ -1,0 +1,129 @@
+- type: entity
+  parent: BasePDA
+  id: ERTJuggernautPDA
+  name: КПК Джаггернаута ОБР
+  description: Вы чувствуете его золотистое превосходство. Как же он умён, как же он силён.
+  suffix: StarHorizon, неснимаемый
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Devices/pda-ertjuggernaut.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
+  - type: Pda
+    id: ERTJuggernautIDCard
+    state: pda-ERTJuggernaut
+  - type: PdaBorderColor
+    borderColor: "#4169E1"
+    accentHColor: "#191970"
+    accentVColor: "#191970"
+  - type: Icon
+    sprite: _StarHorizon/Objects/Devices/pda-ertjuggernaut.rsi
+    state: pda-ERTJuggernaut
+  - type: Unremoveable
+  
+- type: entity
+  parent: [BasePDA, BaseUASContraband]
+  categories: [ HideSpawnMenu ]
+  id: PDAUAS
+  suffix: StarHorizon, UAS
+  name: кпк агента UAS
+  description: Ничем не отличимый от других, за исключением ручки, КПК.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Devices/uaspda.rsi
+  - type: Pda
+    penSlot:
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#2b2f35"
+  - type: FactionClothing
+    faction: UASSecurBot
+
+# КПК кадета
+- type: entity
+  parent: PDAUAS
+  id: PDACadetUAS
+  suffix: Aavikko, UAS
+  name: кпк Кадета UAS
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Pda
+    id: UASCadetID
+
+#  КПК Рипсоида
+- type: entity
+  parent: PDAUAS
+  id: PDARipsoidUAS
+  suffix: Aavikko, UAS
+  name: кпк Рипсоида UAS
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Pda
+    id: UASRipsoidID
+
+# КПК офицера
+- type: entity
+  parent: PDAUAS
+  id: PDAOfficerUAS
+  suffix: Aavikko, UAS
+  name: кпк Офицера UAS
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Pda
+    id: UASOfficerID
+
+#  КПК офицера Паука
+- type: entity
+  parent: PDAUAS
+  id: PDASpiderUAS
+  suffix: Aavikko, UAS
+  name: кпк Офицера Паука UAS
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Pda
+    id: UASSpiderID
+
+# КПК Рыцаря
+- type: entity
+  parent: PDAUAS
+  id: PDAKnightUAS
+  suffix: Aavikko, UAS
+  name: кпк Офицера Рыцаря UAS
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Pda
+    id: UASKnightID
+
+# КПК Титана
+- type: entity
+  parent: PDAUAS
+  id: PDATitanUAS
+  suffix: Aavikko, UAS
+  name: кпк Офицера Титана UAS
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Pda
+    id: UASTitanID
+
+# КПК Консула
+- type: entity
+  parent: PDAUAS
+  id: PDACounselorUAS
+  suffix: Aavikko, UAS
+  name: кпк Советника UAS
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Pda
+    id: UASCounselorID

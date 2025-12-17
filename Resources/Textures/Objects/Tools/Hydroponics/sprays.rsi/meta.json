@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "license": "CLA",
+  "copyright": "sprite by TheGypsyBaron",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "deathspray"
+    },
+    {
+      "name": "nolabelspray"
+    },
+    {
+      "name": "pestspray"
+    },
+    {
+      "name": "plantbgone"
+    },
+    {
+      "name": "sprayparts"
+    },
+    {
+      "name": "weedspray"
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "plantbgone-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "plantbgone-inhand-right",
+      "directions": 4
+    },
+        {
+      "name": "deathspray_world"
+    },
+    {
+      "name": "nolabelspray_world"
+    },
+    {
+      "name": "pestspray_world"
+    },
+    {
+      "name": "plantbgone_world"
+    },
+    {
+      "name": "weedspray_world"
+    }
+  ]
+}

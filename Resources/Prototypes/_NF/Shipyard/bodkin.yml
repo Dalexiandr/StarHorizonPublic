@@ -1,0 +1,70 @@
+# Author Info
+# GitHub: Tych0theSynth
+# Discord: tych0
+
+# Maintainer Info
+# GitHub: Tych0theSynth
+# Discord: Tych0
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Bodkin
+  parent: BaseVessel
+  name: BB Bodkin
+  description: The smaller sibling to the Broadhead, the BB Bodkin is designed for rockhopping and salvage recovery.
+  price: 39000 #35506 0.1 39056.6
+  category: Medium
+  group: Shipyard
+  shuttlePath: /Maps/_NF/Shuttles/bodkin.yml
+  guidebookPage: ShipyardBodkin
+  class:
+  - Salvage
+  engine:
+  - Uranium
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:RoleModifier
+      role: "PlantTechnician"
+      costMultiplier: 0.9
+    - !type:RoleModifier
+      role: "PlantManager"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionEdison"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionLVHI"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionUAC"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionNakamura"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: Bodkin
+  mapName: 'BB Bodkin'
+  mapPath: /Maps/_NF/Shuttles/bodkin.yml
+  minPlayers: 0
+  stations:
+    Bodkin:
+      stationProto: StandardFrontierVessel
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: 'Bodkin {1}'
+        nameGenerator: !type:NanotrasenNameGenerator
+          prefixCreator: '14'
+      - type: StationJobs
+        availableJobs:
+          ContractorInterview: [ 0, 0 ]
+          PilotInterview: [ 0, 0 ]
+          MercenaryInterview: [ 0, 0 ]

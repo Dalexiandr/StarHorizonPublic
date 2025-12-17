@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesColorGoldBlack
+  name: золотые ботинки
+  description: Выдаются почётным и опытным членам экипажа.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Shoes/gold_captain_shoes.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Shoes/gold_captain_shoes.rsi

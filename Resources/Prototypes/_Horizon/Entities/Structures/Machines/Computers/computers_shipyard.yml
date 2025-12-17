@@ -1,0 +1,9 @@
+- type: entity
+  id: TraumaShipyardConsole
+  parent: [ BaseStructureDisableToolUse, BaseStructureIndestructible, ComputerShipyardBase ]
+  name: консоль аренды шаттлов траумы
+  suffix: TraumaTeam
+  components:
+  - type: ShipyardListing
+    shuttles:
+    - TraumaAV4C

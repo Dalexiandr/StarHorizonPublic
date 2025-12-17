@@ -1,0 +1,15 @@
+ent-EmagPass = disposable cryptographic sequencer
+    .desc = A disposable card made by the Syndicate to hack devices. Works three times.
+    .suffix = Limited, 3 Uses
+ent-DemagUnlimited = cryptographic resequencer
+    .desc = The all-in-one unhacking solution. The last bastion of order. The iconic DEMAG.
+    .suffix = Unlimited
+ent-Demag = { ent-DemagUnlimited }
+    .suffix = Limited
+    .desc = { ent-DemagUnlimited.desc }
+ent-PmagUnlimited = machine liberator
+    .desc = A portable package for machine DRM removal. Freebooter approved and tested.
+    .suffix = Unlimited
+ent-Pmag = { ent-PmagUnlimited }
+    .suffix = Limited
+    .desc = { ent-PmagUnlimited.desc }

@@ -1,0 +1,51 @@
+- type: entity
+  parent: ClothingOuterHardsuitBaseNF
+  id: PhoenixslaveHardsuit
+  name: Шахтёрский скафандр ИФ
+  description: Крепкий скафандр промышленного класса, специально разработанный для работы в глубоком космосе и противостоянию атак космической фауны
+  suffix: Феникс, работяги
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/hardsuits/slavehardsuit.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Phoenix/hardsuits/slavehardsuit.rsi
+  - type: ToggleableClothing
+    clothingPrototype: Phoenixslavehelmet
+  - type: ExplosionResistance
+    damageCoefficient: 0.4
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.3
+        Heat: 0.50
+        Caustic: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.75
+
+- type: entity
+  parent: ClothingHeadHardsuitBase
+  id: Phoenixslavehelmet
+  categories: [ HideSpawnMenu ]
+  name: Шлем шахтёра ИФ
+  description: Крепкий шлем промышленного класса.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/helmets/helmetslave.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Phoenix/helmets/helmetslave.rsi
+  - type: ToggleableLightVisuals
+  - type: PNV
+    color: "#CC5500"
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Heat: 0.9
+        Radiation: 1

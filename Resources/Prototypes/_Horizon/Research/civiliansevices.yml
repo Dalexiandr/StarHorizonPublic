@@ -1,0 +1,82 @@
+﻿- type: technology
+  id: HydroponicsAdv
+  name: research-technology-adv-hydroponics
+  entityIcon: indhydroponicsTray
+  discipline: NFService
+  tier: 2
+  cost: 5000
+  recipeUnlocks:
+  - HydroponicsTrayUpgradeKit
+  - HydroponicsToolScytheAdv
+  technologyPrerequisites:
+  - NFAdvancedHydroponicsStorge
+  position: 3, 46
+  researchTargets:
+  - TechnologyDiscHydroponicsDNAManip
+
+- type: technology
+  id: HydroponicsDNAManip
+  name: research-technology-hydroponics-dna-manip
+  entityIcon: ComputerBotanicDNAManipulator
+  discipline: NFService
+  tier: 3
+  cost: 7500
+  recipeUnlocks:
+  - BotanicDNADisk
+  - BotanicDNACircuitboard
+  technologyPrerequisites:
+  - HydroponicsAdv
+  position: 4, 46
+
+- type: technology
+  id: UniversalTranslator
+  name: research-technology-universal-translator
+  entityIcon: NekomimeticTranslator
+  discipline: NFService
+  tier: 1
+  cost: 15000
+  recipeUnlocks:
+  - UniversalTranslator
+  technologyPrerequisites:
+  - NFAdvancedEntertainment
+  position: 3, 40
+  researchTargets:
+  - TechnologyDiscUniversalTranslator
+
+- type: technology
+  id: RareTranslator
+  name: research-technology-rare-translator
+  entityIcon: NekomimeticTranslator
+  discipline: NFService
+  tier: 1
+  cost: 15000
+  recipeUnlocks:
+  - RareTranslator
+  technologyPrerequisites:
+  - UniversalTranslator
+  position: 3, 39
+
+- type: technology
+  id: TranslatorImplants
+  name: research-technology-translator-implants
+  entityIcon: MedicalAssembler
+  discipline: NFService
+  tier: 1
+  cost: 15000
+  recipeUnlocks:
+  - GalacticCommonTranslatorImplanter
+  - ArachnidTranslatorImplanter
+  - NekomimeticTranslatorImplanter
+  - DraconicTranslatorImplanter
+  - CanilunztTranslatorImplanter
+  - SikTajTranslatorImplanter
+  - NianTranslatorImplanter
+  - SolCommonTranslatorImplanter
+  - DwarfTranslatorImplanter
+  - NeoRusskiyaTranslatorImplanter
+  - ClownishTranslatorImplanter
+  - GoblinSpeakTranslatorImplanter
+  - HarpySpeakTranslatorImplanter
+  technologyPrerequisites:
+  - UniversalTranslator
+  position: 3, 41

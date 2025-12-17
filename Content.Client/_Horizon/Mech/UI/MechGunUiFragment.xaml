@@ -1,0 +1,51 @@
+﻿<equipment:MechGunUiFragment
+    xmlns="https://spacestation14.io"
+    xmlns:equipment="clr-namespace:Content.Client._Horizon.Mech.UI"
+    xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls"
+    Margin="1,0,2,0"
+    HorizontalExpand="True"
+    VerticalExpand="True">
+    <BoxContainer
+        HorizontalExpand="True"
+        Orientation="Vertical"
+        VerticalExpand="True">
+        <BoxContainer
+            HorizontalExpand="True"
+            Orientation="Horizontal"
+            VerticalExpand="True">
+            <Label
+                Name="ShotsCount"
+                Margin="5"
+                HorizontalAlignment="Left"
+                StyleClasses="LabelSubText" />
+            <Button
+                Name="ReloadButton"
+                Margin="5"
+                MinHeight="34"
+                HorizontalAlignment="Right"
+                HorizontalExpand="True"
+                Text="{Loc 'mech-reload-button'}" />
+            <Label
+                Name="SpaceLabel"
+                HorizontalAlignment="Right"
+                StyleClasses="LabelSubText" />
+        </BoxContainer>
+        <customControls:HSeparator Margin="4 8"/>
+        <BoxContainer
+            Name="ReagentContainer"
+            HorizontalExpand="True"
+            Orientation="Horizontal"
+            VerticalExpand="True">
+            <Label
+                Text="{Loc 'mech-gun-reagent-label'}"
+                Margin="5"
+                StyleClasses="LabelSubText" />
+            <OptionButton
+                Name="ReagentSelect"
+                Margin="5"
+                MinHeight="34"
+                HorizontalAlignment="Right"
+                HorizontalExpand="True" />
+        </BoxContainer>
+    </BoxContainer>
+</equipment:MechGunUiFragment>

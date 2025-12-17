@@ -1,0 +1,29 @@
+- type: entity
+  name: наручники UAS
+  description: Тяжёлые оковы из казмия не позволят преступнику сбежать.
+  id: UASHandcuffs
+  suffix: StarHorizon, UAS
+  parent: [BaseItem, BaseUASContraband]
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Item
+    size: Small
+    storedRotation: 90
+  - type: Handcuff
+    cuffedRSI: _Horizon/Objects/Misc/uashandcuffs.rsi
+    bodyIconState: body-overlay
+  - type: Sprite
+    sprite: _Horizon/Objects/Misc/uashandcuffs.rsi
+    state: handcuff
+  - type: Tag
+    tags:
+    - Handcuffs
+  - type: MeleeWeapon
+    wideAnimationRotation: 90
+    resetOnHandSelected: false
+    animation: WeaponArcDisarm
+    damage:
+      types:
+        Heat: 10
+  - type: UseDelay
+    delay: 10

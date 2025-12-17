@@ -1,0 +1,20 @@
+# Frontier
+
+# region Wreck/Expedition Spawners
+- type: entity
+  name: Technology Disc Spawner
+  id: HRZNTechnologyDiscSpawner
+  parent: SalvageMaterialCrateSpawner
+  components:
+  - type: RandomSpawner
+    prototypes:
+    - TechnologyDiscAdvancedPKAModules
+    - TechnologyDiscDurandTechnology
+    - TechnologyDiscPhazonTechnology
+    - TechnologyDiscArsenalAmmoModules
+    - TechnologyDiscArsenalAmmunition
+    - TechnologyDiscHydroponicsDNAManip
+    - TechnologyDiscUniversalTranslator
+    - TechnologyDiscCombatCybernetics
+    - TechnologyDiscCombatCyborgs
+    offset: 0.0

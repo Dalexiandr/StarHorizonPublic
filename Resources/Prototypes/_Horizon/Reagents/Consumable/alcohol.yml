@@ -1,0 +1,192 @@
+- type: reagent
+  id: FruitWineWeak
+  name: фруктовое вино (слабое)
+  parent: Wine
+  desc: В данном вине безусловно есть истина!
+  physicalDesc: reagent-physical-desc-translucent
+  flavor: bitter
+  color: "#7E4043"
+  recognizable: true
+  metamorphicSprite:
+    sprite: Objects/Consumable/Drinks/wineglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+  metabolisms:
+    Drink:
+      effects:
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.1
+
+- type: reagent
+  id: FruitWineNormal
+  name: фруктовое вино
+  parent: Wine
+  desc: В данном вине безусловно есть истина!
+  physicalDesc: reagent-physical-desc-translucent
+  flavor: bitter
+  color: "#7E4043"
+  recognizable: true
+  metamorphicSprite:
+    sprite: Objects/Consumable/Drinks/wineglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+  metabolisms:
+    Drink:
+      effects:
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.25
+
+- type: reagent
+  id: FruitWineStrong
+  name: фруктовое вино (крепкое)
+  parent: Wine
+  desc: В данном вине безусловно есть истина!
+  physicalDesc: reagent-physical-desc-translucent
+  flavor: bitter
+  color: "#7E4043"
+  recognizable: true
+  metamorphicSprite:
+    sprite: Objects/Consumable/Drinks/wineglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+  metabolisms:
+    Drink:
+      effects:
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.5
+
+- type: reagent
+  id: Sider
+  name: яблочный сидр
+  parent: BaseAlcohol
+  desc: Кислый яблочный сидр
+  physicalDesc: reagent-physical-desc-thick-and-grainy
+  flavor: apple
+  color: "#e3e77b"
+  recognizable: true
+  metamorphicSprite:
+    sprite: Objects/Consumable/Drinks/beerglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 6
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+  fizziness: 0.6
+  metabolisms:
+    Drink:
+      effects:
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.08
+
+- type: reagent
+  id: MushroomBeer
+  name: грыбное пиво
+  parent: Beer
+  desc: Самое настоящее грыбное пыво!
+  physicalDesc: reagent-physical-desc-thick-and-grainy
+  flavor: apple
+  color: "#e3e77b"
+  recognizable: true
+  metamorphicSprite:
+    sprite: Objects/Consumable/Drinks/beerglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 6
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+  fizziness: 0.6
+  metabolisms:
+    Drink:
+      effects:
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.1
+        - !type:PopupMessage
+          type: Local
+          conditions:
+            - !type:ReagentThreshold
+              reagent: MushroomBeer
+              max: 10
+          visualType: Medium
+          messages: ["Вы ощущаете себя большим и сильным"]
+          probability: 0.15
+        - !type:PopupMessage
+          type: Local
+          conditions:
+            - !type:ReagentThreshold
+              reagent: MushroomBeer
+              min: 11
+              max: 30
+          visualType: Medium
+          messages: ["Ваше желание пастукать когото усиливается"]
+          probability: 0.15
+        - !type:PopupMessage
+          type: Local
+          conditions:
+            - !type:ReagentThreshold
+              reagent: MushroomBeer
+              min: 31
+              max: 50
+          visualType: Medium
+          messages: ["Вы ощущаете себя истинным орком"]
+          probability: 0.15
+
+- type: reagent
+  id: WaaaghBeer
+  name: вааааааагх пыво
+  parent: Beer
+  desc: Самое настоящее орочье пыво!
+  physicalDesc: reagent-physical-desc-thick-and-grainy
+  flavor: apple
+  color: "#e3e77b"
+  recognizable: true
+  metamorphicSprite:
+    sprite: Objects/Consumable/Drinks/beerglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 6
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+  fizziness: 0.6
+  metabolisms:
+    Drink:
+      effects:
+        - !type:AdjustReagent
+          reagent: Ethanol
+          amount: 0.2
+        - !type:PopupMessage
+          type: Local
+          conditions:
+            - !type:ReagentThreshold
+              reagent: MushroomBeer
+              max: 10
+          visualType: Medium
+          messages: ["Вы ощущаете себя большим и сильным орком"]
+          probability: 0.15
+        - !type:PopupMessage
+          type: Local
+          conditions:
+            - !type:ReagentThreshold
+              reagent: MushroomBeer
+              min: 11
+              max: 30
+          visualType: Medium
+          messages: ["Вы жаждете организовать Вааааарх!!!"]
+          probability: 0.15
+        - !type:PopupMessage
+          type: Local
+          conditions:
+            - !type:ReagentThreshold
+              reagent: MushroomBeer
+              min: 31
+              max: 50
+          visualType: Medium
+          messages: ["Вы ощущаете в себе силу ГоркаМорки"]
+          probability: 0.15

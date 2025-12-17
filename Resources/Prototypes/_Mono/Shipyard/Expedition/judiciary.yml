@@ -1,0 +1,55 @@
+# Author Info
+# GitHub: OneZerooo0
+# Discord: onezero00
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Judiciary
+  parent: BaseVessel
+  name: SHM Judiciary
+  description: Средних размеров научных шатл,предназначеный для полевых исследований
+  price: 90000 # ~20,000$ markup
+  category: Medium
+  group: Expedition
+  shuttlePath: /Maps/_Mono/Shuttles/Expedition/judiciary.yml
+  guidebookPage: ShipyardJudiciary
+  class:
+  - Expedition
+  engine:
+  - AME
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:FactionCostModifier
+      faction: "FactionSIU"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionArcadia"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: Judiciary
+  mapName: 'Judiciary'
+  mapPath: /Maps/_Mono/Shuttles/Expedition/judiciary.yml
+  minPlayers: 0
+  stations:
+    Judiciary:
+      stationProto: StandardFrontierExpeditionVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Judiciary {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

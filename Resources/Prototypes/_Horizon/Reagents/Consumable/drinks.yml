@@ -1,0 +1,216 @@
+- type: reagent
+  id: CoffeearabicaPowder
+  name: молотый кофе (арабика)
+  parent: BaseJuice
+  desc: Предельно ароматный!
+  physicalDesc: reagent-physical-desc-thick-and-grainy
+  flavor: bitter
+  color: "#7a4d38"
+  metabolisms:
+    Medicine:
+      metabolismRate : 0.25
+      effects:
+      - !type:ResetNarcolepsy
+        conditions:
+        - !type:ReagentThreshold
+          min: 1
+      - !type:ChemVomit
+        conditions:
+        - !type:ReagentThreshold
+          min: 10
+        probability: 0.5
+      - !type:GenericStatusEffect
+        key: Drowsiness
+        time: 2.0
+        type: Remove
+
+- type: reagent
+  id: CoffeelibericaPowder
+  name: молотый кофе (либерика)
+  parent: BaseJuice
+  desc: Предельно ароматный!
+  physicalDesc: reagent-physical-desc-thick-and-grainy
+  flavor: bitter
+  color: "#7a4d38"
+  metabolisms:
+    Medicine:
+      metabolismRate : 0.125
+      effects:
+      - !type:ResetNarcolepsy
+        conditions:
+        - !type:ReagentThreshold
+          min: 1
+      - !type:ChemVomit
+        conditions:
+        - !type:ReagentThreshold
+          min: 15
+        probability: 0.5
+      - !type:GenericStatusEffect
+        key: Drowsiness
+        time: 2.0
+        type: Remove
+
+- type: reagent
+  id: CoffeerobustaPowder
+  name: молотый кофе (робуста)
+  parent: BaseJuice
+  desc: Предельно ароматный!
+  physicalDesc: reagent-physical-desc-thick-and-grainy
+  flavor: bitter
+  color: "#7a4d38"
+  metabolisms:
+    Medicine:
+      metabolismRate : 0.25
+      effects:
+      - !type:ResetNarcolepsy
+        conditions:
+        - !type:ReagentThreshold
+          min: 1
+      - !type:MovespeedModifier
+        walkSpeedModifier: 1.1
+        sprintSpeedModifier: 1.1
+      - !type:ChemVomit
+        conditions:
+        - !type:ReagentThreshold
+          min: 5
+        probability: 0.5
+      - !type:GenericStatusEffect
+        key: Drowsiness
+        time: 2.0
+        type: Remove
+
+- type: reagent
+  id: HotCoffeearabica
+  name: кофе арабика
+  parent: BaseJuice
+  desc: Предельно ароматный!
+  physicalDesc: reagent-physical-desc-thick-and-grainy
+  flavor: bitter
+  color: "#7a4d38"
+  metabolisms:
+    Medicine:
+      metabolismRate : 0.25
+      effects:
+      - !type:ResetNarcolepsy
+        conditions:
+        - !type:ReagentThreshold
+          min: 1
+      - !type:ChemVomit
+        conditions:
+        - !type:ReagentThreshold
+          min: 45
+        probability: 0.5
+      - !type:GenericStatusEffect
+        key: Drowsiness
+        time: 2.0
+        type: Remove
+      - !type:GenericStatusEffect
+        key: StaminaModifier
+        component: StaminaModifier
+        time: 1.25
+        type: Add
+      - !type:MovespeedModifier
+        walkSpeedModifier: 1.05
+        sprintSpeedModifier: 1.1
+      - !type:AdjustTemperature
+        conditions:
+        - !type:Temperature
+        max: 310
+        amount: 2500
+
+- type: reagent
+  id: HotCoffeeliberica
+  name: кофе либерика
+  parent: BaseJuice
+  desc: Предельно ароматный!
+  physicalDesc: reagent-physical-desc-thick-and-grainy
+  flavor: bitter
+  color: "#7a4d38"
+  metabolisms:
+    Medicine:
+      metabolismRate : 0.125
+      effects:
+      - !type:ResetNarcolepsy
+        conditions:
+        - !type:ReagentThreshold
+          min: 1
+      - !type:ChemVomit
+        conditions:
+        - !type:ReagentThreshold
+          min: 60
+        probability: 0.5
+      - !type:GenericStatusEffect
+        key: Drowsiness
+        time: 2.0
+        type: Remove
+      - !type:GenericStatusEffect
+        key: StaminaModifier
+        component: StaminaModifier
+        time: 1.24
+        type: Add
+      - !type:MovespeedModifier
+        walkSpeedModifier: 1.05
+        sprintSpeedModifier: 1.1
+      - !type:AdjustTemperature
+        conditions:
+        - !type:Temperature
+        max: 310
+        amount: 2500
+
+- type: reagent
+  id: HotCoffeerobusta
+  name: кофе робуста
+  parent: BaseJuice
+  desc: Предельно ароматный!
+  physicalDesc: reagent-physical-desc-thick-and-grainy
+  flavor: bitter
+  color: "#7a4d38"
+  metabolisms:
+    Medicine:
+      metabolismRate : 0.25
+      effects:
+      - !type:ResetNarcolepsy
+        conditions:
+        - !type:ReagentThreshold
+          min: 1
+      - !type:MovespeedModifier
+        walkSpeedModifier: 1.05
+        sprintSpeedModifier: 1.1
+      - !type:ChemVomit
+        conditions:
+        - !type:ReagentThreshold
+          min: 30
+        probability: 0.5
+      - !type:GenericStatusEffect
+        key: Drowsiness
+        time: 2.0
+        type: Remove
+      - !type:GenericStatusEffect
+        key: StaminaModifier
+        component: StaminaModifier
+        time: 1.25
+        type: Add
+      - !type:MovespeedModifier
+        walkSpeedModifier: 1.05
+        sprintSpeedModifier: 1.1
+      - !type:AdjustTemperature
+        conditions:
+        - !type:Temperature
+        max: 310
+        amount: 2500
+
+- type: reagent
+  id: VaporisedMilk
+  name: сгущёнка
+  parent: BaseAlcohol
+  desc: Самое настоящее засахареное молоко, которое раньше с удовольствием ели. Почему раньше? И сейчас едят.
+  suffix: Horizon
+  physicalDesc: густое
+  flavor: sweet
+  color: "#f7de99"
+  spritePath: _Horizon/Objects/Consumable/Drinks/beerdark.rsi
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 3

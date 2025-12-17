@@ -1,0 +1,46 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: ???
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: Flatline
+  parent: BaseVessel
+  name: FSB Flatline
+  description: Старинный шаттл, что был отреставрирован For Star Biotech, имеет все необходимое для экстренной помощи и даже больше.
+  price: 45000 # 33357, наценка верфи 30% = 43364
+  category: Medium
+  group: Medical
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/Medical/flatline.yml
+  class:
+  - Medical
+  - Chemistry
+  - Botany
+  engine:
+  - APU
+  - Solar
+
+- type: gameMap
+  id: Flatline
+  mapName: 'FSB Flatline'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/Medical/flatline.yml
+  minPlayers: 0
+  stations:
+    Flatline:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Flatline {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

@@ -1,0 +1,155 @@
+# 1
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonOpenSkin
+  name: Open the skin
+  components:
+  - type: SurgeryStep
+    duration: 10
+    tools:
+    - type: Scalpel
+  #- type: SurgeryStepBleedEffect
+  #  damage:
+  #    types:
+  #      Slash: Need to SET?
+  - type: Sprite
+    sprite: Objects/Specific/Medical/Surgery/scalpel.rsi
+    state: scalpel
+  - type: SurgeryStepEmoteEffect
+
+# 2
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonWideSkin
+  name: Widen the skin incision
+  components:
+  - type: SurgeryStep
+    duration: 3
+    tools:
+    - type: Retractor
+  - type: Sprite
+    sprite: Objects/Specific/Medical/Surgery/scissors.rsi
+    state: retractor
+
+# 3
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonLocalizeVessels
+  name: Localize the vessels
+  components:
+  - type: SurgeryStep
+    duration: 5
+    tools:
+    - type: Hemostat
+  - type: Sprite
+    sprite: Objects/Specific/Medical/Surgery/scissors.rsi
+    state: hemostat
+
+# 4 Insert the implant!
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonImplantSkinImplant
+  name: Place a subcutaneous implant
+  components:
+  - type: SurgeryStep
+    duration: 12
+    tools:
+    - type: SkinImplant
+  - type: SurgeryStepOrganInsert
+    slot: skin_implant
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/implants.rsi
+    layers:
+      - state: skin_implant
+
+# 4 Also four but extract!
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonExtractSkinImplant
+  name: Extract a subcutaneous implant
+  components:
+  - type: SurgeryStep
+    duration: 12
+  - type: SurgeryStepOrganExtract
+    organ:
+    - type: SkinImplant
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/implants.rsi
+    layers:
+    - state: skin_implant
+
+# 5 Done operation
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonCloseTheSkinIncision
+  name: Close skin incision
+  components:
+  - type: SurgeryStep
+    duration: 2
+    tools:
+    - type: Cautery
+  - type: Sprite
+    sprite: Objects/Specific/Medical/Surgery/cautery.rsi
+    state: cautery
+
+#Operation Insert
+- type: entity
+  parent: SurgeryBase
+  id: SurgeryInsertSkinImplant
+  name: Insert a subcutaneous implant
+  description: Surgical attachment of a implant.
+  components:
+  - type: Surgery
+    requirement:
+    - SurgeryOpenAbdomen
+    steps:
+    - HorizonOpenSkin
+    - HorizonWideSkin
+    - HorizonLocalizeVessels
+    - HorizonImplantSkinImplant
+    - HorizonCloseTheSkinIncision
+  - type: SurgerySpeciesCondition
+    speciesBlacklist:
+    - SlimePerson # Не любим слаймолюдов
+  - type: SurgeryPartCondition
+    parts:
+    - Torso
+  - type: SurgeryOrganDontExistCondition # Не даём вживить больше одного импланта в тело.
+    organ:
+    - type: SkinImplant
+    container: skin_implant
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/implants.rsi
+    layers:
+    - state: skin_implant
+
+#Operation Extract
+- type: entity
+  parent: SurgeryBase
+  id: SurgeryExstractSkinImplant
+  name: Extract a subcutaneous implant
+  description: Surgical attachment of a implant.
+  components:
+  - type: Surgery
+    requirement:
+    - SurgeryOpenAbdomen
+    steps:
+    - HorizonOpenSkin
+    - HorizonWideSkin
+    - HorizonLocalizeVessels
+    - HorizonExtractSkinImplant
+    - HorizonCloseTheSkinIncision
+  - type: SurgerySpeciesCondition
+    speciesBlacklist:
+    - SlimePerson  # Всё ещё не любим слаймолюдов
+  - type: SurgeryPartCondition
+    parts:
+    - Torso
+  - type: SurgeryOrganExistCondition # Не даём, вытащить, того чего нет
+    organ:
+    - type: SkinImplant
+    container: skin_implant
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/implants.rsi
+    layers:
+    - state: skin_implant

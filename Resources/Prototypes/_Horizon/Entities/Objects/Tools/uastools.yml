@@ -1,0 +1,66 @@
+- type: entity
+  name: омега-инструмент UAS
+  parent: BaseItem
+  suffix: StarHorizon, UAS
+  categories: [ HideSpawnMenu ]
+  id: UASOmegaTool
+  description: Мульти-инструмент модели "Омега" от корпорации UAS.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Tools/uasomegatool.rsi
+    state: omnitool-screwing
+  - type: Item
+    sprite: _Horizon/Objects/Tools/uasomegatool.rsi
+    size: Normal
+  - type: Tag
+    tags:
+    - Multitool
+  - type: Prying
+    enabled: false
+  - type: Tool
+    qualities:
+      - Screwing
+    speedModifier: 2.5 # Kept for future adjustments. Currently 1.2x for balance
+    useSound: /Audio/Items/drill_use.ogg
+  - type: ToolTileCompatible
+  - type: MultipleTool
+    statusShowBehavior: true
+    entries:
+      - behavior: Screwing
+        sprite:
+          sprite: _Horizon/Objects/Tools/uasomegatool.rsi
+          state: omnitool-screwing
+        useSound:
+          path: /Audio/Items/drill_use.ogg
+        changeSound:
+          path: /Audio/Items/change_drill.ogg
+      - behavior: Prying
+        sprite:
+          sprite: _Horizon/Objects/Tools/uasomegatool.rsi
+          state: omnitool-prying
+        useSound:
+          path: /Audio/Items/jaws_pry.ogg
+        changeSound:
+          path: /Audio/Items/change_drill.ogg
+      - behavior: Anchoring
+        sprite:
+          sprite: _Horizon/Objects/Tools/uasomegatool.rsi
+          state: omnitool-wrenching
+        useSound:
+          path: /Audio/Items/ratchet.ogg
+        changeSound:
+          path: /Audio/Items/change_drill.ogg
+      - behavior: Cutting
+        sprite:
+          sprite: _Horizon/Objects/Tools/uasomegatool.rsi
+          state: omnitool-snipping
+        useSound:
+          path: /Audio/Items/jaws_cut.ogg
+        changeSound:
+          path: /Audio/Items/change_drill.ogg
+      - behavior: Pulsing
+        sprite:
+          sprite: _Horizon/Objects/Tools/uasomegatool.rsi
+          state: omnitool-pulsing
+        changeSound:
+          path: /Audio/Items/change_drill.ogg

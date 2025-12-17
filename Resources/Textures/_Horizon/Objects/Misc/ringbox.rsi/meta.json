@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "close"
+    },
+    {
+      "name": "open"
+    },
+    {
+      "name": "ring1"
+    },
+    {
+      "name": "ring2"
+    }
+  ]
+}

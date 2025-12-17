@@ -1,0 +1,10 @@
+ent-StandartLaserUAS = UAS Bullet
+    .desc = { ent-EmitterBolt.desc }
+ent-StandartDisablerUAS = UAS Bullet Disabler
+    .desc = { ent-EmitterBolt.desc }
+ent-SniperDisablerUAS = UAS Bullet Disabler
+    .desc = { ent-StandartDisablerUAS.desc }
+ent-BulletDisablerSmgUAS = Bullet Disabler Smg UAS
+    .desc = { ent-StandartDisablerUAS.desc }
+ent-StandartExplodesUAS = UAS Bullet Boom
+    .desc = { ent-BaseBulletTrigger.desc }

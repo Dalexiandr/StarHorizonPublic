@@ -1,0 +1,15 @@
+- type: construction
+  id: NFBedrollCrafting
+  graph: GraphNFBedrollFolded
+  startNode: start
+  targetNode: NFBedrollFolded
+  category: construction-category-utilities
+  objectType: Item
+
+- type: construction
+  id: NFBedrollAltFoldedCrafting
+  graph: GraphNFBedrollFolded
+  startNode: start
+  targetNode: NFBedrollAltFolded
+  category: construction-category-utilities
+  objectType: Item

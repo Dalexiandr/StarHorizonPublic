@@ -1,0 +1,78 @@
+- type: entity
+  id: OreMiningDrill
+  parent: [ BaseStructureDynamic, BaseMachinePowered, ConstructibleMachine]
+  name: буровая установка для добычи руды
+  description: Мощная буровая установка для разработки рудных месторождений на астероидах.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: OreExtractor
+    luck: 1
+    efficiency: 1.0
+  - type: Transform
+    noRot: false
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.35,0.35,0.35"
+        density: 60
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mining/extractor.rsi
+    snapCardinals: true
+    granularLayersRendering: true
+    layers:
+      - state: drill-off
+        map: [ "drill" ]
+      - state: base
+      - state: base-powered
+        shader: unshaded
+        visible: false
+        map: [ "enum.PowerDeviceVisualLayers.Powered" ]
+      - state: drill-empty-unlit
+        shader: unshaded
+        map: [ "light" ]
+        visible: false
+  - type: Physics
+    bodyType: Static
+  - type: PowerSwitch
+  - type: ApcPowerReceiver
+    powerLoad: 1000
+  - type: Machine
+    board: OreMiningDrillMachineCircuitboard
+  - type: Appearance
+  - type: MagnetPickup # Притягивание руды, сделано что бы не нагружать сервер в лишний раз
+    magnetEnabled: true
+    magnetCanBeEnabled: true
+    range: 0.5
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+      machine_board: !type:Container
+      machine_parts: !type:Container
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,7,3
+    quickInsert: false
+    areaInsert: false
+    сlickInsert: false
+    openOnActivate: true
+    storageInsertSound: null
+    whitelist:
+      tags:
+        - ArtifactFragment
+        - Ore
+  - type: BindToStation
+    enabled: false # should be draggable between stations

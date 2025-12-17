@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-3.0",
+  "copyright": "The Velocipony",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "smooth_tail",
+      "directions": 4
+    },
+    {
+      "name": "spiked_tail",
+      "directions": 4
+    },
+    {
+      "name": "dorsal",
+      "directions": 4
+    },
+    {
+      "name": "double_dorsal",
+      "directions": 4
+    }
+  ]
+}

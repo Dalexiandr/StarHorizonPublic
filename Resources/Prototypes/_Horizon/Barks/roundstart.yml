@@ -1,0 +1,531 @@
+- type: speechBark
+  id: Human1
+  name: bark-human1-name
+  sound: /Audio/Voice/Talk/speak_1.ogg
+
+- type: speechBark
+  id: Human2
+  name: bark-human2-name
+  sound: /Audio/Voice/Talk/speak_2.ogg
+
+- type: speechBark
+  id: Human3
+  name: bark-human3-name
+  sound: /Audio/Voice/Talk/speak_3.ogg
+
+- type: speechBark
+  id: GuitarMutedLow
+  name: bark-guitar-muted-low-name
+  sound: /Audio/_Horizon/Barks/Guitar-C2.ogg
+
+- type: speechBark
+  id: GuitarMutedMid
+  name: bark-guitar-muted-mid-name
+  sound: /Audio/_Horizon/Barks/Guitar-C3.ogg
+
+- type: speechBark
+  id: MerpSound
+  name: bark-merp-name
+  sound: /Audio/_Horizon/Barks/merp.ogg
+
+- type: speechBark
+  id: GuitarMutedHigh
+  name: bark-guitar-muted-high-name
+  sound: /Audio/_Horizon/Barks/Guitar-C4.ogg
+
+- type: speechBark
+  id: BanjoMedium
+  name: bark-banjo-mid-name
+  sound: /Audio/_Horizon/Barks/Banjo-Cn3.ogg
+
+- type: speechBark
+  id: BanjoHigh
+  name: bark-banjo-high-name
+  sound: /Audio/_Horizon/Barks/Banjo-Cn4.ogg
+
+- type: speechBark
+  id: Synth1
+  name: bark-synth-1-name
+  sound: /Audio/_Horizon/Barks/undertale-synth-1.ogg
+
+- type: speechBark
+  id: Synth2
+  name: bark-synth-2-name
+  sound: /Audio/_Horizon/Barks/synth-2.ogg
+
+- type: speechBark
+  id: Synth3
+  name: bark-synth-3-name
+  sound: /Audio/_Horizon/Barks/bloop.ogg
+
+- type: speechBark
+  id: Synth4
+  name: bark-synth-4-name
+  sound: /Audio/_Horizon/Barks/undertale-synth-2.ogg
+
+- type: speechBark
+  id: Chrip1
+  name: bark-chrip-1-name
+  sound: /Audio/_Horizon/Barks/undertale-chrip-1.ogg
+
+- type: speechBark
+  id: Chrip2
+  name: bark-chrip-2-name
+  sound: /Audio/_Horizon/Barks/undertale-chrip-2.ogg
+
+- type: speechBark
+  id: Flowey
+  name: bark-flowey-name
+  sound: /Audio/_Horizon/Barks/undertale-flowey.ogg
+
+- type: speechBark
+  id: Mettaton
+  name: bark-mettaton-name
+  sound: /Audio/_Horizon/Barks/undertale-metta.ogg
+
+- type: speechBark
+  id: Papyrus
+  name: bark-papyrus-name
+  sound: /Audio/_Horizon/Barks/undertale-papyrus.ogg
+
+- type: speechBark
+  id: Sans
+  name: bark-sans-name
+  sound: /Audio/_Horizon/Barks/undertale-sans.ogg
+
+- type: speechBark
+  id: Toriel
+  name: bark-toriel-name
+  sound: /Audio/_Horizon/Barks/undertale-toriel.ogg
+
+- type: speechBark
+  id: Alphys
+  name: bark-alphys-name
+  sound: /Audio/_Horizon/Barks/undertale-alphy.ogg
+
+- type: speechBark
+  id: Asgore
+  name: bark-asgore-name
+  sound: /Audio/_Horizon/Barks/undertale-asgore.ogg
+
+- type: speechBark
+  id: Undyne
+  name: bark-undyne-name
+  sound: /Audio/_Horizon/Barks/undertale-undyne.ogg
+
+- type: speechBark
+  id: UnderswapSans
+  name: bark-underswap-sans-name
+  sound: /Audio/_Horizon/Barks/underswap-sans.ogg
+
+- type: speechBark
+  id: Ace
+  name: bark-ace-name
+  sound: /Audio/_Horizon/Barks/undertale-yellow-ace.ogg
+
+- type: speechBark
+  id: Axis
+  name: bark-axis-name
+  sound: /Audio/_Horizon/Barks/undertale-yellow-axis.ogg
+
+- type: speechBark
+  id: Chujin
+  name: bark-chujin-name
+  sound: /Audio/_Horizon/Barks/undertale-yellow-chujin.ogg
+
+- type: speechBark
+  id: Ceroba
+  name: bark-ceroba-name
+  sound: /Audio/_Horizon/Barks/undertale-yellow-ceroba.ogg
+
+- type: speechBark
+  id: Dalv
+  name: bark-davl-name
+  sound: /Audio/_Horizon/Barks/undertale-yellow-davl.ogg
+
+- type: speechBark
+  id: Ed
+  name: bark-ed-name
+  sound: /Audio/_Horizon/Barks/undertale-yellow-ed.ogg
+
+- type: speechBark
+  id: Marlet
+  name: bark-marlet-name
+  sound: /Audio/_Horizon/Barks/undertale-yellow-martlet.ogg
+
+- type: speechBark
+  id: Moray
+  name: bark-moray-name
+  sound: /Audio/_Horizon/Barks/undertale-yellow-moray.ogg
+
+- type: speechBark
+  id: Starlo
+  name: bark-starlo-name
+  sound: /Audio/_Horizon/Barks/undertale-yellow-starlo.ogg
+
+- type: speechBark
+  id: Susie
+  name: bark-susie-name
+  sound: /Audio/_Horizon/Barks/deltarune-susie.ogg
+
+- type: speechBark
+  id: Spamton
+  name: bark-spamton-name
+  sound: /Audio/_Horizon/Barks/deltarune-spamton.ogg
+
+- type: speechBark
+  id: Rudolph
+  name: bark-rudolph-name
+  sound: /Audio/_Horizon/Barks/deltarune-rudolph.ogg
+
+- type: speechBark
+  id: RoxlsCaard
+  name: bark-roxlscaard-name
+  sound: /Audio/_Horizon/Barks/deltarune-roxlscaard.ogg
+
+- type: speechBark
+  id: Ralsei
+  name: bark-ralsei-name
+  sound: /Audio/_Horizon/Barks/deltarune-ralsei.ogg
+
+- type: speechBark
+  id: Queen
+  name: bark-queen-name
+  sound: /Audio/_Horizon/Barks/deltarune-queen.ogg
+
+- type: speechBark
+  id: Noelle
+  name: bark-noelle-name
+  sound: /Audio/_Horizon/Barks/deltarune-noelle.ogg
+
+- type: speechBark
+  id: Lancer
+  name: bark-lancer-name
+  sound: /Audio/_Horizon/Barks/deltarune-lancer.ogg
+
+- type: speechBark
+  id: Jevil
+  name: bark-jevil-name
+  sound: /Audio/_Horizon/Barks/deltarune-jevil.ogg
+
+- type: speechBark
+  id: Berdly
+  name: bark-berdly-name
+  sound: /Audio/_Horizon/Barks/deltarune-berdly.ogg
+
+- type: speechBark
+  id: Weh
+  name: bark-weh-name
+  sound: /Audio/_Horizon/Barks/weh.ogg
+
+#### Addon made by QWERTY (prototyper) and Valikzant (Sound Designer)
+
+- type: speechBark
+  id: Human4
+  name: bark-human4-name
+  sound: /Audio/_Horizon/Barks/human-1.ogg
+
+- type: speechBark
+  id: Human5
+  name: bark-human5-name
+  sound: /Audio/_Horizon/Barks/human-2.ogg
+
+- type: speechBark
+  id: Human6
+  name: bark-human6-name
+  sound: /Audio/_Horizon/Barks/human-3.ogg
+
+- type: speechBark
+  id: Human7
+  name: bark-human7-name
+  sound: /Audio/_Horizon/Barks/human-4.ogg
+
+- type: speechBark
+  id: Human8
+  name: bark-human8-name
+  sound: /Audio/_Horizon/Barks/human-5.ogg
+
+- type: speechBark
+  id: Human9
+  name: bark-human9-name
+  sound: /Audio/_Horizon/Barks/human-6.ogg
+
+- type: speechBark
+  id: Human10
+  name: bark-human10-name
+  sound: /Audio/_Horizon/Barks/human-7.ogg
+
+- type: speechBark
+  id: Human11
+  name: bark-human11-name
+  sound: /Audio/_Horizon/Barks/human-8.ogg
+
+- type: speechBark
+  id: Human12
+  name: bark-human12-name
+  sound: /Audio/_Horizon/Barks/human-9.ogg
+
+- type: speechBark
+  id: Human13
+  name: bark-human13-name
+  sound: /Audio/_Horizon/Barks/human-10.ogg
+
+- type: speechBark
+  id: Human14
+  name: bark-human14-name
+  sound: /Audio/_Horizon/Barks/human-11.ogg
+
+- type: speechBark
+  id: Human15
+  name: bark-human15-name
+  sound: /Audio/_Horizon/Barks/human-12.ogg
+
+- type: speechBark
+  id: Human16
+  name: bark-human16-name
+  sound: /Audio/_Horizon/Barks/human-13.ogg
+
+- type: speechBark
+  id: Human17
+  name: bark-human17-name
+  sound: /Audio/_Horizon/Barks/human-14.ogg
+
+- type: speechBark
+  id: Human18
+  name: bark-human18-name
+  sound: /Audio/_Horizon/Barks/human-15.ogg
+
+- type: speechBark
+  id: Human19
+  name: bark-human19-name
+  sound: /Audio/_Horizon/Barks/human-16.ogg
+
+- type: speechBark
+  id: Human20
+  name: bark-human20-name
+  sound: /Audio/_Horizon/Barks/human-17.ogg
+
+- type: speechBark
+  id: Human21
+  name: bark-human21-name
+  sound: /Audio/_Horizon/Barks/human-18.ogg
+
+- type: speechBark
+  id: Human22
+  name: bark-human22-name
+  sound: /Audio/_Horizon/Barks/human-19.ogg
+
+- type: speechBark
+  id: Human23
+  name: bark-human23-name
+  sound: /Audio/_Horizon/Barks/human-20.ogg
+
+- type: speechBark
+  id: Human24
+  name: bark-human24-name
+  sound: /Audio/_Horizon/Barks/human-21.ogg
+
+- type: speechBark
+  id: Human25
+  name: bark-human25-name
+  sound: /Audio/_Horizon/Barks/human-22.ogg
+
+- type: speechBark
+  id: Human26
+  name: bark-human26-name
+  sound: /Audio/_Horizon/Barks/human-23.ogg
+
+- type: speechBark
+  id: Human27
+  name: bark-human27-name
+  sound: /Audio/_Horizon/Barks/human-24.ogg
+
+- type: speechBark
+  id: Human28
+  name: bark-human28-name
+  sound: /Audio/_Horizon/Barks/human-25.ogg
+
+- type: speechBark
+  id: Human29
+  name: bark-human29-name
+  sound: /Audio/_Horizon/Barks/human-26.ogg
+
+- type: speechBark
+  id: Human30
+  name: bark-human30-name
+  sound: /Audio/_Horizon/Barks/human-27.ogg
+
+- type: speechBark
+  id: Human31
+  name: bark-human31-name
+  sound: /Audio/_Horizon/Barks/human-28.ogg
+
+- type: speechBark
+  id: Human32
+  name: bark-human32-name
+  sound: /Audio/_Horizon/Barks/human-29.ogg
+
+- type: speechBark
+  id: Human33
+  name: bark-human33-name
+  sound: /Audio/_Horizon/Barks/human-30.ogg
+
+- type: speechBark
+  id: Animal1
+  name: bark-animal1-name
+  sound: /Audio/_Horizon/Barks/animal-1.ogg
+
+- type: speechBark
+  id: Animal2
+  name: bark-animal2-name
+  sound: /Audio/_Horizon/Barks/animal-2.ogg
+
+- type: speechBark
+  id: Animal3
+  name: bark-animal3-name
+  sound: /Audio/_Horizon/Barks/animal-3.ogg
+
+- type: speechBark
+  id: Animal4
+  name: bark-animal4-name
+  sound: /Audio/_Horizon/Barks/animal-4.ogg
+
+- type: speechBark
+  id: Animal5
+  name: bark-animal5-name
+  sound: /Audio/_Horizon/Barks/animal-5.ogg
+
+- type: speechBark
+  id: Animal6
+  name: bark-animal6-name
+  sound: /Audio/_Horizon/Barks/animal-6.ogg
+
+- type: speechBark
+  id: Animal7
+  name: bark-animal7-name
+  sound: /Audio/_Horizon/Barks/animal-7.ogg
+
+- type: speechBark
+  id: Animal8
+  name: bark-animal8-name
+  sound: /Audio/_Horizon/Barks/animal-8.ogg
+
+- type: speechBark
+  id: Animal9
+  name: bark-animal9-name
+  sound: /Audio/_Horizon/Barks/animal-9.ogg
+
+- type: speechBark
+  id: Animal10
+  name: bark-animal10-name
+  sound: /Audio/_Horizon/Barks/animal-10.ogg
+
+- type: speechBark
+  id: Animal11
+  name: bark-animal11-name
+  sound: /Audio/_Horizon/Barks/animal-11.ogg
+
+- type: speechBark
+  id: Animal12
+  name: bark-animal12-name
+  sound: /Audio/_Horizon/Barks/animal-12.ogg
+
+- type: speechBark
+  id: Animal13
+  name: bark-animal13-name
+  sound: /Audio/_Horizon/Barks/animal-13.ogg
+
+- type: speechBark
+  id: Animal14
+  name: bark-animal14-name
+  sound: /Audio/_Horizon/Barks/animal-14.ogg
+
+- type: speechBark
+  id: Animal15
+  name: bark-animal15-name
+  sound: /Audio/_Horizon/Barks/animal-15.ogg
+
+- type: speechBark
+  id: Animal16
+  name: bark-animal16-name
+  sound: /Audio/_Horizon/Barks/animal-16.ogg
+
+- type: speechBark
+  id: Robot1
+  name: bark-robot1-name
+  sound: /Audio/_Horizon/Barks/robot-1.ogg
+
+- type: speechBark
+  id: Robot2
+  name: bark-robot2-name
+  sound: /Audio/_Horizon/Barks/robot-2.ogg
+
+- type: speechBark
+  id: Robot3
+  name: bark-robot3-name
+  sound: /Audio/_Horizon/Barks/robot-3.ogg
+
+- type: speechBark
+  id: Robot4
+  name: bark-robot4-name
+  sound: /Audio/_Horizon/Barks/robot-4.ogg
+
+- type: speechBark
+  id: Robot5
+  name: bark-robot5-name
+  sound: /Audio/_Horizon/Barks/robot-5.ogg
+
+- type: speechBark
+  id: Robot6
+  name: bark-robot6-name
+  sound: /Audio/_Horizon/Barks/robot-6.ogg
+
+- type: speechBark
+  id: Robot7
+  name: bark-robot7-name
+  sound: /Audio/_Horizon/Barks/robot-7.ogg
+
+- type: speechBark
+  id: Robot8
+  name: bark-robot8-name
+  sound: /Audio/_Horizon/Barks/robot-8.ogg
+
+- type: speechBark
+  id: Robot9
+  name: bark-robot9-name
+  sound: /Audio/_Horizon/Barks/robot-9.ogg
+
+- type: speechBark
+  id: Robot10
+  name: bark-robot10-name
+  sound: /Audio/_Horizon/Barks/robot-10.ogg
+
+- type: speechBark
+  id: WoodieDST
+  name: bark-WoodieDST-name
+  sound: /Audio/_Horizon/Barks/woodie_blooper.ogg
+
+- type: speechBark
+  id: WurtDST
+  name: bark-WurtDST-name
+  sound: /Audio/_Horizon/Barks/wurt_blooper.ogg
+
+- type: speechBark
+  id: Wx78DST
+  name: bark-Wx78DST-name
+  sound: /Audio/_Horizon/Barks/wx78_blooper.ogg
+
+- type: speechBark
+  id: wilsonDST
+  name: bark-wilsonDST-name
+  sound: /Audio/_Horizon/Barks/wilson_blooper.ogg
+
+- type: speechBark
+  id: wolfgangDST
+  name: bark-wolfgangDST-name
+  sound: /Audio/_Horizon/Barks/wolfgang_blooper.ogg
+
+- type: speechBark
+  id: SiliconClassic
+  name: bark-silicon-name
+  sound: /Audio/Voice/Talk/Silicon/borg.ogg

@@ -1,0 +1,167 @@
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtWeddingDress
+  name: платье невесты
+  description: Роскошное платье невесты. Она всегда должна выглядеть прекрасно.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Uniforms/weddingdress.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Uniforms/weddingdress.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformWeddingtuxedo
+  name: свадебный смокинг
+  description: Не верится, что его нужно надеть именно вам, верно?
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Uniforms/weddingtuxedo.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Uniforms/weddingtuxedo.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtFemaleJapaneSchoolBlue
+  name: открытая японская школьная форма
+  description: Классический стиль японской школьной формы.
+  suffix: StarHorizon
+  components:
+    - type: Sprite
+      sprite: _StarHorizon/Clothing/Uniforms/Jumpskirt/femalejapaneschoolblue.rsi
+    - type: Clothing
+      sprite: _StarHorizon/Clothing/Uniforms/Jumpskirt/femalejapaneschoolblue.rsi
+
+- type: entity
+  parent: ClothingUniformJumpskirtFemaleJapaneSchoolBlue
+  id: ClothingUniformJumpskirtFemaleJapaneSchoolWhite
+  name: летняя японская школьная форма
+  description: Классический стиль японской школьной формы.
+  suffix: StarHorizon
+  components:
+    - type: Sprite
+      sprite: _StarHorizon/Clothing/Uniforms/Jumpskirt/femalejapaneschoolwhite.rsi
+    - type: Clothing
+      sprite: _StarHorizon/Clothing/Uniforms/Jumpskirt/femalejapaneschoolwhite.rsi
+
+- type: entity
+  parent: ClothingUniformJumpskirtFemaleJapaneSchoolBlue
+  id: ClothingUniformJumpskirtFemaleJapaneSchoolBrown
+  name: строгая японская школьная форма
+  suffix: StarHorizon
+  components:
+    - type: Sprite
+      sprite: _StarHorizon/Clothing/Uniforms/Jumpskirt/femalejapaneschoolbrown.rsi
+    - type: Clothing
+      sprite: _StarHorizon/Clothing/Uniforms/Jumpskirt/femalejapaneschoolbrown.rsi
+
+- type: entity
+  parent: ClothingUniformJumpskirtFemaleJapaneSchoolBlue
+  id: ClothingUniformJumpskirtFemaleJapaneSchoolPurpish
+  name: строгая японская школьная форма
+  suffix: StarHorizon
+  components:
+    - type: Sprite
+      sprite: _StarHorizon/Clothing/Uniforms/Jumpskirt/femalejapaneschoolpurpish.rsi
+    - type: Clothing
+      sprite: _StarHorizon/Clothing/Uniforms/Jumpskirt/femalejapaneschoolpurpish.rsi
+
+- type: entity
+  parent: ClothingUniformJumpskirtFemaleJapaneSchoolBlue
+  id: ClothingUniformJumpskirtPinkWhiteStripSport
+  name: розовый спортивный костюм с юбкой
+  suffix: StarHorizon
+  description: Розовый спортивный костюм с белыми полосами.
+  components:
+    - type: Sprite
+      sprite: _StarHorizon/Clothing/Uniforms/Jumpskirt/purplewhitestripsportsuit.rsi
+    - type: Clothing
+      sprite: _StarHorizon/Clothing/Uniforms/Jumpskirt/purplewhitestripsportsuit.rsi
+
+- type: entity
+  parent: ClothingUniformJumpskirtFemaleJapaneSchoolBlue
+  id: ClothingUniformJumpskirtRedVeryLooseDress
+  name: свободное красное платье
+  description: Элегантное красное женское платье. Подойдёт, чтобы показать красоту своего тела.
+  suffix: StarHorizon
+  components:
+    - type: Sprite
+      sprite: _StarHorizon/Clothing/Uniforms/Jumpskirt/redveryloosedress.rsi
+    - type: Clothing
+      sprite: _StarHorizon/Clothing/Uniforms/Jumpskirt/redveryloosedress.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitStrangeBunny
+  name: костюм зайчика
+  description: Странный заячий костюм, оставляющий большую часть тела открытой.
+  suffix: StarHorizon
+  components:
+    - type: Sprite
+      sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/strangebunnysuit.rsi
+    - type: Clothing
+      sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/strangebunnysuit.rsi
+
+- type: entity
+  parent: ClothingUniformJumpsuitStrangeBunny
+  id: ClothingUniformJumpsuitRedGalaxy
+  name: костюм расширяющейся вселенной
+  description: Переливающийся красным цветом костюм, что показывает цвета и просторы расширяющейся вселенной.
+  suffix: StarHorizon
+  components:
+    - type: Sprite
+      sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/redgalaxysuit.rsi
+    - type: Clothing
+      sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/redgalaxysuit.rsi
+
+- type: entity
+  parent: ClothingUniformJumpsuitStrangeBunny
+  id: ClothingUniformJumpsuitBlueGalaxy
+  name: костюм сжимающейся вселенной
+  description: Переливающийся синим цветом костюм, что показывает цвета и просторы сжимающейся вселенной.
+  suffix: StarHorizon
+  components:
+    - type: Sprite
+      sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/bluegalaxysuit.rsi
+    - type: Clothing
+      sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/bluegalaxysuit.rsi
+
+- type: entity
+  parent: ClothingUniformJumpsuitStrangeBunny
+  id: ClothingUniformJumpsuitMaleJapaneBlackSchool
+  name: японский школьный костюм
+  description: Классический стиль японской школьной формы.
+  suffix: StarHorizon
+  components:
+    - type: Sprite
+      sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/malejapaneblackschool.rsi
+    - type: Clothing
+      sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/malejapaneblackschool.rsi
+
+- type: entity
+  parent: ClothingUniformJumpsuitStrangeBunny
+  id: ClothingUniformJumpsuitBlueWaterSwim
+  name: женский костюм для плавания
+  description: Голубой костюм для занятий по плаванью. Упругий на ощупь.
+  suffix: StarHorizon
+  components:
+    - type: Sprite
+      sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/bluewaterswimsuit.rsi
+    - type: Clothing
+      sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/bluewaterswimsuit.rsi
+
+- type: entity
+  parent: ClothingUniformJumpsuitStrangeBunny
+  id: ClothingUniformJumpsuitBlackWhiteStripeSport
+  name: спортивный костюм
+  description: Чёрный спортивный костюм с белыми полосами.
+  suffix: StarHorizon
+  components:
+    - type: Sprite
+      sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/blackwhitestripesportsuit.rsi
+    - type: Clothing
+      sprite: _StarHorizon/Clothing/Uniforms/Jumpsuit/blackwhitestripesportsuit.rsi
+
+

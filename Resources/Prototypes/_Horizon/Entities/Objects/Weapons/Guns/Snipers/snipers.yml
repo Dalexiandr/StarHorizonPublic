@@ -1,0 +1,122 @@
+﻿- type: entity
+  name: BaseWeaponSniperBarrettM82
+  parent: BaseItem
+  id: BaseSniperBarrettM82
+  suffix: Horizon
+  abstract: true
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Large
+  - type: Clothing
+    sprite: _Horizon/Objects/Weapons/Guns/Snipers/barrettm82.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 0.4
+    minAngle: 50
+    maxAngle: 60
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/_Horizon/Weapons/Guns/Barrettm82/barrettm82.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Horizon/Weapons/Guns/Barrettm82/barrettm82_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSniperHristov60
+        insertSound: /Audio/_Horizon/Weapons/Guns/Barrettm82/barrettm82_magin.ogg
+        ejectSound: /Audio/_Horizon/Weapons/Guns/Barrettm82/barrettm82_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+           - MagazineBarrettM8270
+      gun_chamber:
+        name: Chamber
+        startingItem: BaseBarrettM8270
+        priority: 1
+        whitelist:
+          tags:
+           - CartridgeBarrettM8270
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: StaticPrice
+    price: 5000
+
+- type: entity
+  name: Barrett M82
+  parent: [BaseSniperBarrettM82, BaseAttachableHolder] # Horizon
+  id: WeaponSniperBarrettM82
+  description: Крупнокалиберная винтовка, использующая современный калибр .70. Широко используется и поставляется для отрядов быстрого реагирования. Данная винтовка не имеет никаких нюансов, может быть взведена и использована в любой момент. Лучше взять её в обе руки перед выстрелом.
+  suffix: Horizon
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSniperBarrettM82
+        insertSound: /Audio/_Horizon/Weapons/Guns/Barrettm82/barrettm82_magin.ogg
+        ejectSound: /Audio/_Horizon/Weapons/Guns/Barrettm82/barrettm82_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+           - MagazineBarrettM8270
+      gun_chamber:
+        name: Cartridge
+        startingItem: BaseBarrettM8270
+        priority: 1
+        whitelist:
+          tags:
+           - CartridgeBarrettM8270
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: Wieldable
+    wieldTime: 2.5
+  - type: GunWieldBonus
+    minAngle: -50
+    maxAngle: -60
+  - type: Sprite
+    sprite: _Horizon/Objects/Weapons/Guns/Snipers/barrettm82.rsi
+  - type: Clothing
+    sprite: _Horizon/Objects/Weapons/Guns/Snipers/barrettm82.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: EmitSoundOnLand
+    sound: /Audio/_Horizon/Weapons/Guns/Barrettm82/barrettm82_onland.ogg
+  # Horizon Attachment start
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-rail:
+        locked: true
+        startingAttachable: AttachmentHristovScope
+        whitelist:
+          tags:
+          - AttachmentMagneticHarness
+          - AttachmentHristovScope
+      rmc-aslot-barrel:
+        whitelist:
+          tags:
+          - AttachmentSuppressor
+          - AttachmentAntiLyingWarrior
+  # Horizon Attachment end

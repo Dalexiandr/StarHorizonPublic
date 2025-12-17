@@ -1,0 +1,10 @@
+- type: trait
+  id: Deaf
+  name: trait-deaf-name
+  description: trait-deaf-desc
+  category: Disabilities
+  whitelist:
+    components:
+      - Blindable
+  components:
+  - type: DeafTrait

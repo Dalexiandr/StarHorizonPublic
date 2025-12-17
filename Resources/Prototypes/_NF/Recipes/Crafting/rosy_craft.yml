@@ -1,0 +1,7 @@
+- type: construction
+  id: ClothingNeckCloakRosyRecipe
+  graph: ClothingNeckCloakRosyGraph
+  startNode: start
+  targetNode: ClothingNeckCloakRosy
+  category: construction-category-clothing
+  objectType: Item

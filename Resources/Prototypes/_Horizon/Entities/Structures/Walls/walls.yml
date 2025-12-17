@@ -1,0 +1,206 @@
+- type: entity
+  id: WallChromiteCobblebrickEmerald
+  parent: NFWallChromiteCobblebrick
+  description: A dense ore vein rich with emeralds. Extremely hard.
+  suffix: Emerald
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: OreEmeraldDense
+  - type: Sprite
+    layers:
+    - map: [ "enum.CornerLayers.SE" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.SW" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.NE" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.NW" ]
+      state: cobblebrick0
+    - state: rock_emerald
+      sprite: Structures/Walls/rock.rsi
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: WallChromiteCobblebrickRuby
+  parent: NFWallChromiteCobblebrick
+  description: An ore vein rich with rubines. Extremely hard.
+  suffix: Ruby
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: OreRubyDense
+  - type: Sprite
+    layers:
+    - map: [ "enum.CornerLayers.SE" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.SW" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.NE" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.NW" ]
+      state: cobblebrick0
+    - state: rock_ruby
+      sprite: Structures/Walls/rock.rsi
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: WallChromiteCobblebrickSapphire
+  parent: NFWallChromiteCobblebrick
+  description: An ore vein rich with sapphires. Extremely hard.
+  suffix: Sapphire
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: OreSapphireDense
+  - type: Sprite
+    layers:
+    - map: [ "enum.CornerLayers.SE" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.SW" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.NE" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.NW" ]
+      state: cobblebrick0
+    - state: rock_saphire
+      sprite: Structures/Walls/rock.rsi
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: WallChromiteCobblebrickTopaz
+  parent: NFWallChromiteCobblebrick
+  description: An ore vein rich with topaz. Extremely hard.
+  suffix: Topaz
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: OreTopazDense
+  - type: Sprite
+    layers:
+    - map: [ "enum.CornerLayers.SE" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.SW" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.NE" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.NW" ]
+      state: cobblebrick0
+    - state: rock_topaz
+      sprite: Structures/Walls/rock.rsi
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: WallChromiteCobblebrickPsycore
+  parent: NFWallChromiteCobblebrick
+  description: An ore vein rich with psycore. Extremely hard.
+  suffix: Psycore
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: OrePsycoreDense
+  - type: Sprite
+    layers:
+    - map: [ "enum.CornerLayers.SE" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.SW" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.NE" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.NW" ]
+      state: cobblebrick0
+    - state: rock_psycore
+      sprite: Structures/Walls/rock.rsi
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: WallChromiteCobblebrickTitan
+  parent: NFWallChromiteCobblebrick
+  description: An ore vein rich with titan. Extremely hard.
+  suffix: Titan
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: OreTitanDense
+  - type: Sprite
+    layers:
+    - map: [ "enum.CornerLayers.SE" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.SW" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.NE" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.NW" ]
+      state: cobblebrick0
+    - state: rock_titan
+      sprite: Structures/Walls/rock.rsi
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: WallChromiteCobblebrickPlutonium
+  parent: NFWallChromiteCobblebrick
+  description: An ore vein rich with plutonium. Extremely hard.
+  suffix: Plutonium
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: OrePlutoniumDense
+  - type: Sprite
+    layers:
+    - map: [ "enum.CornerLayers.SE" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.SW" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.NE" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.NW" ]
+      state: cobblebrick0
+    - state: rock_plutonium
+      sprite: Structures/Walls/rock.rsi
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: WallChromiteCobblebrickNeptunium
+  parent: NFWallChromiteCobblebrick
+  description: An ore vein rich with neptunium. Extremely hard.
+  suffix: Neptunium
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: OreNeptuniumDense
+  - type: Sprite
+    layers:
+    - map: [ "enum.CornerLayers.SE" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.SW" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.NE" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.NW" ]
+      state: cobblebrick0
+    - state: rock_neptunium
+      sprite: Structures/Walls/rock.rsi
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: WallChromiteCobblebrickTorium
+  parent: NFWallChromiteCobblebrick
+  description: An ore vein rich with torium. Extremely hard.
+  suffix: Torium
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: OreToriumDense
+  - type: Sprite
+    layers:
+    - map: [ "enum.CornerLayers.SE" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.SW" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.NE" ]
+      state: cobblebrick0
+    - map: [ "enum.CornerLayers.NW" ]
+      state: cobblebrick0
+    - state: rock_torium
+      sprite: Structures/Walls/rock.rsi
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]

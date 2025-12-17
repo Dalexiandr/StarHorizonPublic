@@ -1,0 +1,712 @@
+# region Civilian
+
+- type: roleLoadout
+  id: JobContractor
+  groups:
+  - ContractorHead
+  - ContractorNeck
+  - ContractorJumpsuit
+  # Horizon start
+  - Top
+  - Bottom
+  - Socks
+  # Horizon end
+  - ContractorGloves
+  - ContractorBackpack
+  - ContractorOuterClothing
+  - ContractorForcedOuterClothing
+  - ContractorShoes
+  - ContractorFace
+  - ContractorGlasses
+  - ContractorBelt
+  - ContractorEars
+  - ContractorEncryptionKey
+  - ContractorBoxSurvival
+  - ContractorPDA
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorBackpackItems
+  - ContractorHandItems
+  - NFSpeciesSpecific
+
+- type: roleLoadout
+  id: JobPilot
+  groups:
+  - PilotHead
+  - PilotNeck
+  - PilotJumpsuit
+  # Horizon start
+  - Top
+  - Bottom
+  - Socks
+  # Horizon end
+  - PilotGloves
+  - PilotBackpack
+  - PilotOuterClothing
+  - PilotForcedOuterClothing
+  - PilotShoes
+  - PilotFace
+  - PilotGlasses
+  - ContractorBelt
+  - PilotEars
+  - ContractorEncryptionKey
+  - ContractorBoxSurvival
+  - PilotPDA
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorBackpackItems
+  - ContractorHandItems
+  - NFSpeciesSpecific
+
+- type: roleLoadout
+  id: JobMercenary
+  groups:
+  - MercenaryHead
+  - ContractorNeck
+  - MercenaryJumpsuit
+  # Horizon start
+  - Top
+  - Bottom
+  - Socks
+  # Horizon end
+  - MercenaryGloves
+  - MercenaryBackpack
+  - MercenaryOuterClothing
+  - MercenaryForcedOuterClothing
+  - MercenaryShoes
+  - MercenaryFace
+  - MercenaryGlasses
+  - MercenaryBelt
+  - MercenaryEars
+  - ContractorEncryptionKey
+  - ContractorBoxSurvival
+  - MercenaryPDA
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorBackpackItems
+  - ContractorHandItems
+  - NFSpeciesSpecific
+
+# region Frontier
+
+- type: roleLoadout
+  id: JobValet
+  groups:
+  - ContractorNeck
+  - ValetJumpsuit
+  # Horizon start
+  - Top
+  - Bottom
+  - Socks
+  # Horizon end
+  - ContractorBackpack
+  - ValetOuterClothing
+  - ValetForcedOuterClothing
+  - ContractorShoes
+  - ContractorFace
+  - ContractorGlasses
+  - ContractorBelt
+  - ContractorEars
+  - ContractorEncryptionKey
+  - ContractorBoxSurvival
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorBackpackItems
+  - ContractorHandItems
+  - NFSpeciesSpecific
+
+- type: roleLoadout
+  id: JobNFJanitor
+  groups:
+  - JanitorNFHead
+  - JanitorNFJumpsuit
+  # Horizon start
+  - Top
+  - Bottom
+  - Socks
+  # Horizon end
+  - JanitorNFGloves
+  - JanitorBackpack
+  - JanitorNFOuterClothing
+  - JanitorNFForcedOuterClothing
+  - ContractorFace
+  - ContractorGlasses
+  - ContractorEars
+  - ContractorEncryptionKey
+  - ContractorBoxSurvival
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorBackpackItems
+  - ContractorHandItems
+  - NFSpeciesSpecific
+
+- type: roleLoadout
+  id: JobMailCarrier
+  groups:
+  - ContractorNeck
+  - MailCarrierJumpsuit
+  # Horizon start
+  - Top
+  - Bottom
+  - Socks
+  # Horizon end
+  - ContractorGloves
+  - MailCarrierBackpack
+  - MailCarrierOuterClothing
+  - MailCarrierForcedOuterClothing
+  - ContractorShoes
+  - ContractorFace
+  - ContractorEars
+  - ContractorEncryptionKey
+  - ContractorBoxSurvival
+  - MailCarrierWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorBackpackItems
+  - ContractorHandItems
+  - NFSpeciesSpecific
+
+- type: roleLoadout
+  id: JobStationTrafficController
+  groups:
+  - StcHead
+  - ContractorNeck
+  - StcJumpsuit
+  # Horizon start
+  - TopHOP
+  - BottomHOP
+  - SocksHOP
+  # Horizon end
+  - ContractorGloves
+  - ContractorBackpack
+  - ContractorOuterClothing
+  - StcForcedOuterClothing
+  - StcShoes
+  - ContractorFace
+  - ContractorGlasses
+  - ContractorBelt
+  - StcEars
+  - ContractorBoxSurvival
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorBackpackItems
+  - ContractorHandItems
+  - NFSpeciesSpecific
+
+- type: roleLoadout
+  id: JobStationRepresentative
+  groups:
+  - StationRepHead
+  - StationRepNeck
+  - StationRepJumpsuit
+  # Horizon start
+  - TopHOP
+  - BottomHOP
+  - SocksHOP
+  # Horizon end
+  - StationRepGloves
+  - StationRepBackpack
+  - StationRepOuterClothing
+  - StationRepForcedOuterClothing
+  - ContractorShoes
+  - ContractorFace
+  - ContractorGlasses
+  - ContractorBelt
+  - StationRepEars
+  - ContractorBoxSurvival
+  - StationRepPDA
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - StationRepBackpackItems
+  - ContractorHandItems
+  - NFSpeciesSpecific
+
+- type: roleLoadout
+  id: JobSecurityGuard
+  groups:
+  - SecurityGuardHead
+  - SecurityGuardJumpsuit
+  # Horizon start
+  - TopHOS
+  - BottomHOS
+  - Socks
+  # Horizon end
+  - SecurityGuardGloves
+  - SecurityGuardBackpack
+  - SecurityGuardOuterClothing
+  - SecurityGuardForcedOuterClothing
+  - SecurityGuardShoes
+  - SecurityGuardFace
+  - SecurityGuardBelt
+  - SecurityGuardEars
+  - NfsdBoxSurvival
+  - SecurityGuardPDA
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorEncryptionKey
+  - ContractorBackpackItems
+  - ContractorHandItems
+  - NFSpeciesSpecific
+
+# region Misc
+- type: roleLoadout
+  id: JobDirectorOfCare
+  groups:
+  - DocHead
+  - DocNeck
+  - DocJumpsuit
+  # Horizon start
+  - TopCMO
+  - BottomCMO
+  - Socks
+  # Horizon end
+  - DocGloves
+  - DocBackpack
+  - ContractorOuterClothing
+  - DocForcedOuterClothing
+  - DocShoes
+  - ContractorFace
+  - ContractorGlasses
+  - ContractorBelt
+  - DocEars
+  - ContractorBoxSurvival
+  - DocPDA
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorEncryptionKey
+  - ContractorBackpackItems
+  - ContractorHandItems
+  - NFSpeciesSpecific
+
+- type: roleLoadout
+  id: JobPlantManager
+  groups:
+  - PlantManagerHead
+  - PlantManagerNeck
+  - PlantManagerJumpsuit
+  # Horizon start
+  - TopCE
+  - BottomCE
+  - Socks
+  # Horizon end
+  - EngineeringGloves
+  - PlantManagerBackpack
+  - PlantManagerOuterClothing
+  - EngineeringForcedOuterClothing
+  - PlantManagerShoes
+  - EngineeringFace
+  - PlantManagerGlasses
+  - PlantManagerBelt
+  - PlantManagerEars
+  - ContractorBoxSurvival
+  - PlantManagerPDA
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorEncryptionKey
+  - ContractorBackpackItems
+  - ContractorHandItems
+  - NFSpeciesSpecific
+
+- type: roleLoadout
+  id: JobPlantTechnician
+  groups:
+  - EngineeringHead
+  - EngineeringJumpsuit
+  # Horizon start
+  - TopCE
+  - BottomCE
+  - Socks
+  # Horizon end
+  - EngineeringGloves
+  - EngineeringBackpack
+  - EngineeringOuterClothing
+  - EngineeringForcedOuterClothing
+  - EngineeringShoes
+  - EngineeringFace
+  - EngineeringGlasses
+  - EngineeringBelt
+  - EngineeringEars
+  - ContractorBoxSurvival
+  - PlantTechnicianPDA
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorEncryptionKey
+  - ContractorBackpackItems
+  - ContractorHandItems
+  - NFSpeciesSpecific
+
+# region NFSD
+- type: roleLoadout
+  id: JobCadet
+  groups:
+  - CadetHead
+  - CadetNeck
+  - CadetJumpsuit
+  # Horizon start
+  - TopHOS
+  - BottomHOS
+  - Socks
+  # Horizon end
+  - NfsdGlovesBrown
+  - NfsdBackpackBrown
+  - CadetOuterClothing
+  - NfsdForcedOuterClothing
+  - NfsdShoesBrown
+  - NfsdFace
+  - NfsdGlasses
+  - NfsdBelt
+  - NfsdEarsBrown
+  - NfsdBoxSurvival
+  - CadetPDA
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorEncryptionKey
+  - ContractorBackpackItems
+  - ContractorHandItems
+  - NfsdSpeciesSpecific
+
+- type: roleLoadout
+  id: JobDeputy
+  groups:
+  - DeputyHead
+  - DeputyNeck
+  - DeputyJumpsuit
+  # Horizon start
+  - TopHOS
+  - BottomHOS
+  - Socks
+  # Horizon end
+  - NfsdGlovesBrown
+  - NfsdBackpackBrown
+  - DeputyOuterClothing
+  - NfsdForcedOuterClothing
+  - NfsdShoesBrown
+  - NfsdFace
+  - NfsdGlasses
+  - NfsdBelt
+  - NfsdEarsBrown
+  - NfsdBoxSurvival
+  - DeputyPDA
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorEncryptionKey
+  - ContractorBackpackItems
+  - ContractorHandItems
+  - NfsdSpeciesSpecific
+
+- type: roleLoadout
+  id: JobBrigmedic
+  groups:
+  - BrigmedicHead
+  - BrigmedicNeck
+  - BrigmedicJumpsuit
+  # Horizon start
+  - TopHOS
+  - BottomHOS
+  - Socks
+  # Horizon end
+  - BrigmedicGloves
+  - NfsdBackpackCream
+  - BrigmedicOuterClothing
+  - NfsdForcedOuterClothing
+  - NfsdShoesCream
+  - BrigmedicFace
+  - BrigmedicGlasses
+  - BrigmedicBelt
+  - NfsdEarsCream
+  - NfsdBoxSurvival
+  - BrigmedicPDA
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorEncryptionKey
+  - ContractorBackpackItems
+  - ContractorHandItems
+  - NfsdSpeciesSpecific
+
+- type: roleLoadout
+  id: JobNFDetective
+  groups:
+  - NFDetectiveHead
+  - NFDetectiveNeck
+  - NFDetectiveJumpsuit
+  # Horizon start
+  - TopHOS
+  - BottomHOS
+  - Socks
+  # Horizon end
+  - NFDetectiveGloves
+  - NfsdBackpackBrown
+  - NFDetectiveOuterClothing
+  - NfsdForcedOuterClothing
+  - NfsdShoesBrown
+  - NfsdFace
+  - NfsdGlasses
+  - NfsdBelt
+  - NfsdEarsCream
+  - NfsdBoxSurvival
+  - NFDetectivePDA
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorEncryptionKey
+  - ContractorBackpackItems
+  - ContractorHandItems
+  - NfsdSpeciesSpecific
+
+- type: roleLoadout
+  id: JobPublicAffairsLiaison
+  groups:
+  - ContractorHead
+  - PalNeck
+  - PalJumpsuit
+  # Horizon start
+  - TopHOS
+  - BottomHOS
+  - Socks
+  # Horizon end
+  - PalGloves
+  - NfsdBackpackBrown
+  - NfsdForcedOuterClothing
+  - NfsdShoesBrown
+  - ContractorFace
+  - NfsdGlasses
+  - ContractorBelt
+  - NfsdEarsBrown
+  - NfsdBoxSurvival
+  - PalPDA
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorEncryptionKey
+  - ContractorBackpackItems
+  - ContractorHandItems
+  - NFSpeciesSpecific # Explicitly civilian variant
+
+# - type: roleLoadout # Fix when this is actully used
+  # id: JobPrisonGuard
+  # groups:
+  # - PrisonGuardHead
+  # - PrisonGuardNeck
+  # - PrisonGuardJumpsuit
+  # - NfsdGlovesBrown
+  # - NfsdBackpackBrown
+  # - PrisonGuardOuterClothing
+  # - NfsdForcedOuterClothing
+  # - NfsdShoesBrown
+  # - NfsdFace
+  # - NfsdGlasses
+  # - NfsdBelt
+  # - NfsdEarsGreen
+  # - NfsdBoxSurvival
+  # - PrisonGuardPDA
+  # - ContractorWallet
+  # - ContractorCartridge
+  # - ContractorImplanter
+  # - ContractorEncryptionKey
+  # - ContractorBackpackItems
+  # - ContractorHandItems
+  # - NfsdSpeciesSpecific
+
+- type: roleLoadout
+  id: JobBailiff
+  groups:
+  - BailiffHead
+  - BailiffNeck
+  - BailiffJumpsuit
+  # Horizon start
+  - TopHOS
+  - BottomHOS
+  - Socks
+  # Horizon end
+  - NfsdGlovesCream
+  - NfsdBackpackBrown
+  - BailiffOuterClothing
+  - NfsdForcedOuterClothing
+  - NfsdShoesCream
+  - NfsdFace
+  - NfsdGlasses
+  - NfsdBelt
+  - NfsdEarsAltGreen
+  - NfsdBoxSurvival
+  - BailiffPDA
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorEncryptionKey
+  - SeniorOfficerBackpackItems
+  - ContractorHandItems
+  - NfsdSpeciesSpecific
+
+- type: roleLoadout
+  id: JobSeniorOfficer
+  groups:
+  - SeniorOfficerHead
+  - SeniorOfficerNeck
+  - SeniorOfficerJumpsuit
+  # Horizon start
+  - TopHOS
+  - BottomHOS
+  - Socks
+  # Horizon end
+  - NfsdGlovesCream
+  - NfsdBackpackBrown
+  - SeniorOfficerOuterClothing
+  - NfsdForcedOuterClothing
+  - NfsdShoesBrown
+  - NfsdFace
+  - NfsdGlasses
+  - NfsdBelt
+  - NfsdEarsAltBrown
+  - NfsdBoxSurvival
+  - SeniorOfficerPDA
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorEncryptionKey
+  - SeniorOfficerBackpackItems
+  - ContractorHandItems
+  - NfsdSpeciesSpecific
+
+- type: roleLoadout
+  id: JobSheriff
+  groups:
+  - SheriffHead
+  - SheriffNeck
+  - SheriffJumpsuit
+  # Horizon start
+  - TopHOS
+  - BottomHOS
+  - Socks
+  # Horizon end
+  - NfsdGlovesCream
+  - NfsdBackpackBrown
+  - SheriffOuterClothing
+  - NfsdForcedOuterClothing
+  - NfsdShoesBrown
+  - SheriffFace
+  - NfsdGlasses
+  - NfsdBelt
+  - SheriffEars
+  - NfsdBoxSurvival
+  - SheriffPDA
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - SeniorOfficerBackpackItems
+  - ContractorHandItems
+  - NfsdSpeciesSpecific
+# region NFPirate
+
+- type: roleLoadout
+  id: JobNFPirate
+  groups:
+  - NFPirateHead
+#  - NFPirateNeck
+  - NFPirateJumpsuit
+  # Horizon start
+  - Top
+  - Bottom
+  - Socks
+  # Horizon end
+#  - NFPirateGloves
+  - ContractorBackpack
+  - NFPirateForcedOuterClothing
+  - NFPirateShoes
+  - NFPirateFace
+  - NFPirateEars
+  - ContractorBoxSurvival
+  - NFPiratePDA
+  - ContractorWallet
+  - PirateBackpackItems
+  - ContractorHandItems
+  - NFSpeciesSpecific
+  canCustomizeName: true # pseudonym?
+
+- type: roleLoadout
+  id: JobNFPirateFirstMate
+  groups:
+  - NFPirateFirstMateHead
+#  - NFPirateNeck
+  - NFPirateJumpsuit
+  # Horizon start
+  - Top
+  - Bottom
+  - Socks
+  # Horizon end
+#  - NFPirateGloves
+  - ContractorBackpack
+  - NFPirateFirstMateOuterClothing
+  - NFPirateForcedOuterClothing
+  - NFPirateShoes
+  - NFPirateFace
+  - NFPirateEars
+  - ContractorBoxSurvival
+  - NFPirateFirstMatePDA
+  - ContractorWallet
+  - PirateBackpackItems
+  - ContractorHandItems
+  - NFSpeciesSpecific
+  canCustomizeName: true # pseudonym?
+
+- type: roleLoadout
+  id: JobNFPirateCaptain
+  groups:
+  - NFPirateCaptainHead
+#  - NFPirateNeck
+  - NFPirateJumpsuit
+  # Horizon start
+  - Top
+  - Bottom
+  - Socks
+  # Horizon end
+#  - NFPirateGloves
+  - ContractorBackpack
+  - NFPirateCaptainOuterClothing
+  - NFPirateForcedOuterClothing
+  - NFPirateShoes
+  - NFPirateFace
+  - NFPirateCaptainEars
+  - ContractorBoxSurvival
+  - NFPirateCaptainPDA
+  - PirateCaptainWallet
+  - PirateCaptainBackpackItems
+  - ContractorHandItems
+  - NFSpeciesSpecific
+  canCustomizeName: true # pseudonym?
+
+# region Prisoner
+
+- type: roleLoadout
+  id: JobPrisoner
+  groups:
+#  - PrisonerHead
+#  - PrisonerNeck
+  - PrisonerJumpsuit
+  # Horizon start
+  - Top
+  - Bottom
+  - Socks
+  # Horizon end
+#  - PrisonerGloves
+#  - PrisonerBackpack
+  - PrisonerForcedOuterClothing
+#  - PrisonerShoes
+  - PrisonerFace
+  - PrisonerSurvival
+  - PrisonerPDA
+  - PrisonerWallet
+  - NFSpeciesSpecific

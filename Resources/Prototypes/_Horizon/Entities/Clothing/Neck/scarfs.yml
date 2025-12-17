@@ -1,0 +1,9 @@
+- type: entity
+  parent: ClothingScarfBase
+  id: ClothingNeckScarfAzuric
+  name: розово-голубой шарф
+  suffix: StarHorizon
+  description: Сшит хвостом и оттого очень тёплый.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/Scarfs/azuric.rsi

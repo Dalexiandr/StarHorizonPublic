@@ -1,0 +1,1740 @@
+- type: marking
+  id: KatunianHairAntenna
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: antenna
+
+- type: marking
+  id: KatunianHairBedhead
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: bedhead
+
+- type: marking
+  id: KatunianHairBedheadv2
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: bedheadv2
+
+- type: marking
+  id: KatunianHairBedheadv3
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: bedheadv3
+
+- type: marking
+  id: KatunianHairLongBedhead
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: long_bedhead
+
+- type: marking
+  id: KatunianHairFloorlengthBedhead
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: floorlength_bedhead
+
+- type: marking
+  id: KatunianHairBeehive
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: beehive
+
+- type: marking
+  id: KatunianHairBeehivev2
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: beehivev2
+
+- type: marking
+  id: KatunianHairBob
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: bob
+
+- type: marking
+  id: KatunianHairBob2
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: bob2
+
+- type: marking
+  id: KatunianHairBobcut
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: bobcut
+
+- type: marking
+  id: KatunianHairBob4
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: bob4
+
+- type: marking
+  id: KatunianHairBobcurl
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: bobcurl
+
+- type: marking
+  id: KatunianHairBoddicker
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: boddicker
+
+- type: marking
+  id: KatunianHairBowlcut
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: bowlcut
+
+- type: marking
+  id: KatunianHairBowlcut2
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: bowlcut2
+
+- type: marking
+  id: KatunianHairBraid
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: braid
+
+- type: marking
+  id: KatunianHairBraided
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: braided
+
+- type: marking
+  id: KatunianHairBraidfront
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: braidfront
+
+- type: marking
+  id: KatunianHairBraid2
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: braid2
+
+- type: marking
+  id: KatunianHairHbraid
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: hbraid
+
+- type: marking
+  id: KatunianHairShortbraid
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: shortbraid
+
+- type: marking
+  id: KatunianHairBraidtail
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: braidtail
+
+- type: marking
+  id: KatunianHairBun
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: bun
+
+- type: marking
+  id: KatunianHairBunhead2
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: bunhead2
+
+- type: marking
+  id: KatunianHairBun3
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: bun3
+
+- type: marking
+  id: KatunianHairLargebun
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: largebun
+
+- type: marking
+  id: KatunianHairManbun
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: manbun
+
+- type: marking
+  id: KatunianHairTightbun
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: tightbun
+
+- type: marking
+  id: KatunianHairBusiness
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: business
+
+- type: marking
+  id: KatunianHairBusiness2
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: business2
+
+- type: marking
+  id: KatunianHairBusiness3
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: business3
+
+- type: marking
+  id: KatunianHairBusiness4
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: business4
+
+- type: marking
+  id: KatunianHairBuzzcut
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: buzzcut
+
+- type: marking
+  id: KatunianHairCia
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: cia
+
+- type: marking
+  id: KatunianHairCoffeehouse
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: coffeehouse
+
+- type: marking
+  id: KatunianHairCombover
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: combover
+
+- type: marking
+  id: KatunianHairCornrows
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: cornrows
+
+- type: marking
+  id: KatunianHairCornrows2
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: cornrows2
+
+- type: marking
+  id: KatunianHairCornrowbun
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: cornrowbraid
+
+- type: marking
+  id: KatunianHairCornrowtail
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: cornrowtail
+
+- type: marking
+  id: KatunianHairCrewcut
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: crewcut
+
+- type: marking
+  id: KatunianHairCurls
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: curls
+
+- type: marking
+  id: KatunianHairC
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: c
+
+- type: marking
+  id: KatunianHairDandypompadour
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: dandypompadour
+
+- type: marking
+  id: KatunianHairDevilock
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: devilock
+
+- type: marking
+  id: KatunianHairDoublebun
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: doublebun
+
+- type: marking
+  id: KatunianHairDreads
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: dreads
+
+- type: marking
+  id: KatunianHairDrillruru
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: drillruru
+
+- type: marking
+  id: KatunianHairDrillhairextended
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: drillhairextended
+
+- type: marking
+  id: KatunianHairEmo
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: emo
+
+- type: marking
+  id: KatunianHairEmofringe
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: emofringe
+
+- type: marking
+  id: KatunianHairNofade
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: nofade
+
+- type: marking
+  id: KatunianHairHighfade
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: highfade
+
+- type: marking
+  id: KatunianHairMedfade
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: medfade
+
+- type: marking
+  id: KatunianHairLowfade
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: lowfade
+
+- type: marking
+  id: KatunianHairFeather
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: feather
+
+- type: marking
+  id: KatunianHairFather
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: father
+
+- type: marking
+  id: KatunianHairSargeant
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: sargeant
+
+- type: marking
+  id: KatunianHairFlair
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: flair
+
+- type: marking
+  id: KatunianHairBigflattop
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: bigflattop
+
+- type: marking
+  id: KatunianHairFlow
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: f
+
+- type: marking
+  id: KatunianHairGelled
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: gelled
+
+- type: marking
+  id: KatunianHairGentle
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: gentle
+
+- type: marking
+  id: KatunianHairHalfbang
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: halfbang
+
+- type: marking
+  id: KatunianHairHalfbang2
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: halfbang2
+
+- type: marking
+  id: KatunianHairHalfshaved
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: halfshaved
+
+- type: marking
+  id: KatunianHairHedgehog
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: hedgehog
+
+- type: marking
+  id: KatunianHairHimecut
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: himecut
+
+- type: marking
+  id: KatunianHairHimecut2
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: himecut2
+
+- type: marking
+  id: KatunianHairShorthime
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: shorthime
+
+- type: marking
+  id: KatunianHairHimeup
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: himeup
+
+- type: marking
+  id: KatunianHairHitop
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: hitop
+
+- type: marking
+  id: KatunianHairJade
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: jade
+
+- type: marking
+  id: KatunianHairJensen
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: jensen
+
+- type: marking
+  id: KatunianHairJoestar
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: joestar
+
+- type: marking
+  id: KatunianHairKeanu
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: keanu
+
+- type: marking
+  id: KatunianHairKusanagi
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: kusanagi
+
+- type: marking
+  id: KatunianHairLong
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: long
+
+- type: marking
+  id: KatunianHairLong2
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: long2
+
+- type: marking
+  id: KatunianHairLong3
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: long3
+
+- type: marking
+  id: KatunianHairLongovereye
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: longovereye
+
+- type: marking
+  id: KatunianHairLbangs
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: lbangs
+
+- type: marking
+  id: KatunianHairLongemo
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: longemo
+
+- type: marking
+  id: KatunianHairLongfringe
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: longfringe
+
+- type: marking
+  id: KatunianHairLongsidepart
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: longsidepart
+
+- type: marking
+  id: KatunianHairMegaeyebrows
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: megaeyebrows
+
+- type: marking
+  id: KatunianHairMessy
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: messy
+
+- type: marking
+  id: KatunianHairModern
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: modern
+
+- type: marking
+  id: KatunianHairMohawk
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: d
+
+- type: marking
+  id: KatunianHairNitori
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: nitori
+
+- type: marking
+  id: KatunianHairReversemohawk
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: reversemohawk
+
+- type: marking
+  id: KatunianHairUnshavenMohawk
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: unshaven_mohawk
+
+- type: marking
+  id: KatunianHairMulder
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: mulder
+
+- type: marking
+  id: KatunianHairOdango
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: odango
+
+- type: marking
+  id: KatunianHairOmbre
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: ombre
+
+- type: marking
+  id: KatunianHairOneshoulder
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: oneshoulder
+
+- type: marking
+  id: KatunianHairShortovereye
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: shortovereye
+
+- type: marking
+  id: KatunianHairOxton
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: oxton
+
+- type: marking
+  id: KatunianHairParted
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: parted
+
+- type: marking
+  id: KatunianHairPart
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: part
+
+- type: marking
+  id: KatunianHairKagami
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: kagami
+
+- type: marking
+  id: KatunianHairPigtails
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: pigtails
+
+- type: marking
+  id: KatunianHairPigtails2
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: pigtails2
+
+- type: marking
+  id: KatunianHairPixie
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: pixie
+
+- type: marking
+  id: KatunianHairPompadour
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: pompadour
+
+- type: marking
+  id: KatunianHairBigpompadour
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: bigpompadour
+
+- type: marking
+  id: KatunianHairPonytail
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: ponytail
+
+- type: marking
+  id: KatunianHairPonytail2
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: ponytail2
+
+- type: marking
+  id: KatunianHairPonytail3
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: ponytail3
+
+- type: marking
+  id: KatunianHairPonytail4
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: ponytail4
+
+- type: marking
+  id: KatunianHairPonytail5
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: ponytail5
+
+- type: marking
+  id: KatunianHairPonytail6
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: ponytail6
+
+- type: marking
+  id: KatunianHairPonytail7
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: ponytail7
+
+- type: marking
+  id: KatunianHairHighponytail
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: highponytail
+
+- type: marking
+  id: KatunianHairStail
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: stail
+
+- type: marking
+  id: KatunianHairLongstraightponytail
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: longstraightponytail
+
+- type: marking
+  id: KatunianHairCountry
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: country
+
+- type: marking
+  id: KatunianHairFringetail
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: fringetail
+
+- type: marking
+  id: KatunianHairSidetail
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: sidetail
+
+- type: marking
+  id: KatunianHairSidetail2
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: sidetail2
+
+- type: marking
+  id: KatunianHairSidetail3
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: sidetail3
+
+- type: marking
+  id: KatunianHairSidetail4
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: sidetail4
+
+- type: marking
+  id: KatunianHairSpikyponytail
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: spikyponytail
+
+- type: marking
+  id: KatunianHairPoofy
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: poofy
+
+- type: marking
+  id: KatunianHairPoofy2
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: poofy2
+
+- type: marking
+  id: KatunianHairQuiff
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: quiff
+
+- type: marking
+  id: KatunianHairRonin
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: ronin
+
+- type: marking
+  id: KatunianHairShaved
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: shaved
+
+- type: marking
+  id: KatunianHairShavedpart
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: shavedpart
+
+- type: marking
+  id: KatunianHairShortbangs
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: shortbangs
+
+- type: marking
+  id: KatunianHairA
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: a
+
+- type: marking
+  id: KatunianHairShorthair2
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: shorthair2
+
+- type: marking
+  id: KatunianHairShorthair3
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: shorthair3
+
+- type: marking
+  id: KatunianHairD
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: d
+
+- type: marking
+  id: KatunianHairF
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: f
+
+- type: marking
+  id: KatunianHairShorthairg
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: shorthairg
+
+- type: marking
+  id: KatunianHair80s
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: 80s
+
+- type: marking
+  id: KatunianHairRosa
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: rosa
+
+- type: marking
+  id: KatunianHairB
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: b
+
+- type: marking
+  id: KatunianHairSidecut
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: sidecut
+
+- type: marking
+  id: KatunianHairProtagonist
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: protagonist
+
+- type: marking
+  id: KatunianHairSpikey
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: spikey
+
+- type: marking
+  id: KatunianHairSpiky
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: spiky
+
+- type: marking
+  id: KatunianHairSpiky2
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: spiky2
+
+- type: marking
+  id: KatunianHairSwept
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: swept
+
+- type: marking
+  id: KatunianHairSwept2
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: swept2
+
+- type: marking
+  id: KatunianHairThinning
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: thinning
+
+- type: marking
+  id: KatunianHairThinningfront
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: thinningfront
+
+- type: marking
+  id: KatunianHairThinningrear
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: thinningrear
+
+- type: marking
+  id: KatunianHairTopknot
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: topknot
+
+- type: marking
+  id: KatunianHairTressshoulder
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: tressshoulder
+
+- type: marking
+  id: KatunianHairTrimmed
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: trimmed
+
+- type: marking
+  id: KatunianHairTrimflat
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: trimflat
+
+- type: marking
+  id: KatunianHairTwintail
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: twintail
+
+- type: marking
+  id: KatunianHairUndercut
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: undercut
+
+- type: marking
+  id: KatunianHairUndercutleft
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: undercutleft
+
+- type: marking
+  id: KatunianHairUndercutright
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: undercutright
+
+- type: marking
+  id: KatunianHairUnkept
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: unkept
+
+- type: marking
+  id: KatunianHairUpdo
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: updo
+
+- type: marking
+  id: KatunianHairVlong
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: vlong
+
+- type: marking
+  id: KatunianHairLongest
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: longest
+
+- type: marking
+  id: KatunianHairLongest2
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: longest2
+
+- type: marking
+  id: KatunianHairVeryshortovereyealternate
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: veryshortovereyealternate
+
+- type: marking
+  id: KatunianHairVlongfringe
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+
+    state: vlongfringe
+
+- type: marking
+  id: KatunianHairVolaju
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [ Katunian ]
+  sprites:
+
+  - sprite: _Void/Mobs/Customization/katunian_hair.rsi
+    state: volaju

@@ -1,0 +1,72 @@
+- type: entity
+  id: BannerUASlogo
+  parent: BannerBase
+  suffix: StarHorizon, UAS, Structure
+  name: баннер UAS
+  description: Баннер с электронным логотипом корпорации UAS.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Decoration/uasbanner.rsi
+    layers:
+    - state: banner_UAS
+    - state: banner_UAS_unshaded
+      shader: unshaded
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            Sheetkazmie:
+              min: 1
+              max: 5
+            SheetEFS:
+              min: 1
+              max: 3
+
+- type: entity
+  id: UASRipsoidstatue
+  parent: BaseStructureDynamic
+  suffix: StarHorizon, UAS, Structure
+  name: статуя Рипсоида
+  description: Статуя неизвестного Рипсоида. Кажется, словно он живой.
+  components:
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Horizon/Structures/Decoration/uasripsoidstatue.rsi
+    layers:
+    - state: ripsi
+    - state: ripsi_unshaded
+      shader: unshaded
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            Sheetkazmie:
+              min: 1
+              max: 5
+            SheetEFS:
+              min: 1
+              max: 2

@@ -1,0 +1,55 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: helloohelloo
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: Ophiophagus
+  parent: BaseVessel
+  name: NRZN Ophiophagus
+  description: Массивный материнский научный шаттл для которого нужно более 5-ти членов экипажа
+  price: 205000 # 146593, наценка верфи 40% = 205230
+  category: Large
+  group: Security
+  access: Security
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/Nfsd/ophiophagus.yml
+  class:
+  - Fighter
+  - Patrol
+  - Science
+  engine:
+  - AME
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:FactionCostModifier
+      faction: "FactionNFSD"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: Ophiophagus
+  mapName: 'NRZN Ophiophagus'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/Nfsd/ophiophagus.yml
+  minPlayers: 0
+  stations:
+    Ophiophagus:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Ophiophagus {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

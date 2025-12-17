@@ -1,0 +1,75 @@
+- type: vendingMachineInventory
+  id: StardropInventory
+  startingInventory:
+    # Смокинги и костюмы
+    ClothingUniformJumpsuitBlacksm: 3
+    ClothingUniformJumpsuitWhitesm: 3
+    ClothingUniformJumpsuitRedsm: 3
+    ClothingUniformJumpskirtRedsm: 3
+    # Шёлковое платье
+    ClothingShoesBootsSilkDress: 3
+    ClothingOuterSilkDress: 3
+    # Розовое платье
+    ClothingShoesBootsPinkDress: 3
+    ClothingOuterPinkDress: 3
+    # Свадебный наряд
+    ClothingHeadHatFata: 3
+    ClothingOuterDress: 3
+    # Дорогое платье
+    ClothingOuterRichDress: 3
+    ClothingShoesRichDress: 3
+    # Красное летнее платье
+    ClothingOuterSummerdressRed: 3
+    # Красное платье
+    ClothingOuterRedDress: 3
+    ClothingShoesRedDress: 3
+    # Звёздное платье
+    ClothingOuterStarDress: 3
+    ClothingShoesStarDress: 3
+    # Космическое платье
+    ClothingHeadHatCosmoCrown: 3
+    ClothingOuterCosmoDress: 3
+    # Чёрное платье
+    ClothingOuterBlackDress: 3
+    ClothingShoesBlackDress: 3
+    # Чёрное летнее платье
+    ClothingOuterSummerdressBlack: 3
+    # Сарафаны
+    ClothingOuterSundressBlue: 3
+    ClothingOuterSundressBrown: 3
+    ClothingOuterSundressPurple: 3
+    ClothingOuterSundressTeal: 3
+    # Белье под платья
+    ClothingUniformJumpskirtUnderDressBlack: 3
+    ClothingUniformJumpskirtUnderDressBrown: 3
+    ClothingUniformJumpskirtUnderDressWhite: 3
+    ClothingUniformJumpskirtUnderDressBlackSocs: 3
+    ClothingUniformJumpskirtUnderDressBrownSocs: 3
+    ClothingUniformJumpskirtUnderDressWhiteSocs: 3
+    # Плащи и куртки
+    ClothingOuterClothingBlackCoatDragon: 3
+    ClothingOuterClothingBlackJacket: 3
+    ClothingOuterClothingBlackJacketSkull: 3
+    ClothingOuterCoatBomberBlack: 3
+    # Свитера
+    ClothingOuterClothingSweaterBlue: 3
+    ClothingOuterClothingSweaterGreen: 3
+    ClothingOuterClothingSweaterGrey: 3
+    ClothingOuterClothingSweaterPink: 3
+    ClothingOuterClothingSweaterPurple: 3
+    ClothingOuterClothingSweaterYellow: 3
+    # Фланнельки
+    ClothingOuterClothingFlannelBlueNew: 3
+    ClothingOuterClothingFlannelRedNew: 3
+    ClothingOuterClothingFlannelOrangeNew: 3
+    ClothingOuterClothingFlannelGreenNew: 3
+    ClothingOuterClothingFlannelPinkNew: 3
+    # Другое
+    WeddingBouquet: 3
+    BoxRing: 3
+    ClothingHeadHatStarpin: 3
+    ClothingHeadHatDressMask: 3
+    ClothingHeadHatBeretDress: 3
+    ClothingHeadHatRedFlowerDress: 3
+    ClothingNeckWingsTail: 3
+    ClothingNecKwingsAngel: 3

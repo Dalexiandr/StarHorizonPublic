@@ -1,0 +1,540 @@
+# Базовая пушка
+
+- type: entity
+  name: BaseMechGun
+  parent: BaseItem
+  id: BaseMechGun
+  description: A rooty tooty point and shooty.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: kinetic_scatter
+  - type: Item
+    size: Ginormous
+  - type: HeldSpeedModifier
+    walkModifier: 0.5
+    sprintModifier: 0.5
+  - type: Gun
+    fireRate: 8
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/lmg.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+  - type: AmmoCounter
+  - type: StaticPrice
+    price: 500
+  - type: UseDelay
+    delay: 1
+  - type: MultiHandedItem
+  - type: MechGun
+  - type: MechEquipment
+  - type: Tag
+    tags:
+      - MechEquipmentSec
+
+# Базовая энергетическая пушка
+
+- type: entity
+  name: BaseMechGunBattery
+  parent: BaseItem
+  id: BaseMechGunBattery
+  description: A rooty tooty point and shooty.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: energy_laser
+  - type: Item
+    size: Ginormous
+  - type: HeldSpeedModifier
+    walkModifier: 0.5
+    sprintModifier: 0.5
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 2
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser.ogg
+  - type: Appearance
+  - type: StaticPrice
+    price: 500
+  - type: MultiHandedItem
+  - type: MechGun
+  - type: MechEquipment
+  - type: Tag
+    tags:
+      - MechEquipmentSec
+
+# Энергетические пушки
+
+- type: entity
+  name: CH-PS "Immolator" Laser
+  parent: BaseMechGunBattery
+  id: MechGunLaser
+  description: CH-PS "Immolator" Laser
+  components:
+  - type: Gun
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    fireRate: 4
+  - type: HitscanMechAmmoProvider
+    proto: NFRedLightLaser # Heat 14
+    fireCost: 15
+  - type: Tag
+    tags:
+    - MechEquipmentSecLLazer
+
+- type: entity
+  name: CH-LC "Solaris" Laser Cannon
+  parent: BaseMechGunBattery
+  id: MechGunHeavyLaser
+  description: CH-LC "Solaris" Laser Cannon
+  components:
+  - type: Gun
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    fireRate: 2.5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: HitscanMechAmmoProvider
+    proto: NFRedMediumLaser # Heat 28
+    fireCost: 30
+  - type: Tag
+    tags:
+    - MechEquipmentSecHLazer
+
+- type: entity
+  name: eZ-13 mk2 Heavy pulse rifle
+  parent: BaseMechGunBattery
+  id: MechGunHeavyPulseRifle
+  description: eZ-13 mk2 Heavy pulse rifle
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: energy_pulse
+  - type: Gun
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    fireRate: 4.5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: HitscanMechAmmoProvider
+    proto: NFPulse # Heat 35
+    fireCost: 50
+  - type: Tag
+    tags:
+    - MechEquipmentSecExperim
+
+- type: entity
+  name: x-ray cannon
+  parent: BaseMechGunBattery
+  id: MechGunXRayRifle
+  description: An experimental weapon that uses concentrated x-ray energy against its target.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: energy_xray
+  - type: Gun
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    fireRate: 5.5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: HitscanMechAmmoProvider
+    proto: NFXrayLaser # Heat: 10 Radiation: 10
+    fireCost: 40
+  - type: Tag
+    tags:
+    - MechEquipmentSecExperim
+
+- type: entity
+  name: cryogun
+  parent: BaseMechGunBattery
+  id: MechGunCryo
+  description: An experimental weapon that uses cold energy against its target.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: energy_cryogun
+  - type: Gun
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    fireRate: 5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: HitscanMechAmmoProvider
+    proto: HRZNCryoLazer # Shock: 10 Cold: 15
+    fireCost: 30
+  - type: Tag
+    tags:
+    - MechEquipmentSecExperim
+
+- type: entity
+  name: pyrogun
+  parent: BaseMechGunBattery
+  id: MechGunPyro
+  description: An experimental weapon that uses concentrated pyrokinetic energy against its target.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: energy_pyrogun
+  - type: Gun
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    fireRate: 5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: HitscanMechAmmoProvider
+    proto: HRZNPyroLazer # Shock: 10 Heat: 15
+    fireCost: 30
+  - type: Tag
+    tags:
+    - MechEquipmentSecExperim
+
+- type: entity
+  name: disabler "Peacemaker"
+  parent: BaseMechGunBattery
+  id: MechGunDisabler
+  description: Disabler "Peacemaker"
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: energy_disabler
+  - type: Gun
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    fireRate: 1
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
+  - type: BatteryMechAmmoProvider
+    proto: NFBulletDisablerSmg # Stamina 30, Heat 5
+    fireCost: 30
+  - type: Tag
+    tags:
+    - MechEquipmentSecLLazer
+
+- type: entity
+  name: MKI Tesla Cannon
+  parent: BaseMechGunBattery
+  id: MechGunTeslaCannon
+  description: MKI Tesla Cannon
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: energy_tesla
+  - type: Gun
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    fireRate: 1
+    projectileSpeed: 10
+    soundGunshot:
+      path: /Audio/Effects/Lightning/lightningshock.ogg
+      params:
+        variation: 0.2
+  - type: BatteryMechAmmoProvider
+    proto: NFTeslaGunBullet
+    fireCost: 100
+  - type: Tag
+    tags:
+    - MechEquipmentSecHLazer
+
+# Огнестрел
+
+- type: entity
+  name: LBX AC 10 "Scattershot"
+  parent: BaseMechGun
+  id: MechGunScattershot
+  description: LBX AC 10 "Scattershot"
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: kinetic_scatter
+  - type: Gun
+    fireRate: 3
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+  - type: BallisticMechAmmoProvider
+    proto: NFPelletShotgunSpread # Piercing: 8.3
+    shots: 12
+    capacity: 12
+    ammoType: shotgun
+  - type: UIFragment
+    ui: !type:MechGunUi
+  - type: StaticPrice
+    price: 500
+  - type: Tag
+    tags:
+    - MechEquipmentSecLKinetic
+
+- type: entity
+  name: Ultra AC 2
+  parent: BaseMechGun
+  id: MechGunAutocannonUAC2
+  description: Ultra AC 2
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: kinetic_minigun
+  - type: Gun
+    fireRate: 9
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/smg.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+  - type: BallisticMechAmmoProvider
+    shots: 30
+    capacity: 30
+    proto: NFBulletPistol35 # Piercing: 16
+    reloadTime: 5
+  - type: UIFragment
+    ui: !type:MechGunUi
+  - type: Tag
+    tags:
+    - MechEquipmentSecLKinetic
+
+- type: entity
+  name: FNX-99 "Hades" Carbine
+  parent: BaseMechGun
+  id: MechGunCarbineHades
+  description: FNX-99 "Hades" Carbine
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: kinetic_carbine
+  - type: Gun
+    fireRate: 7
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/lmg.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+  - type: BallisticMechAmmoProvider
+    proto: NFBulletPistol45Incendiary # Blunt: 2 Heat: 14
+    shots: 45
+    capacity: 45
+    ammoType: lightrifleincendiary
+    reloadTime: 5
+  - type: UIFragment
+    ui: !type:MechGunUi
+  - type: Tag
+    tags:
+    - MechEquipmentSecLKinetic
+
+- type: entity
+  name: mHAR-21 "Ma Deuce" Heavy Antimaterial Rifle
+  parent: BaseMechGun
+  id: MechGunAntiMatterRifle
+  description: mH21 "Ma Deuce" Heavy Antimaterial RifleAR-
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: kinetic_gauss
+  - type: Gun
+    fireRate: 1.5
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+  - type: BallisticMechAmmoProvider
+    proto: NFBulletRifle60 # Piercing 40 Structural 30 Stamina 35
+    shots: 7
+    capacity: 7
+    ammoType: sniper
+  - type: UIFragment
+    ui: !type:MechGunUi
+  - type: Tag
+    tags:
+    - MechEquipmentSecHKinetic
+
+- type: entity
+  name: SGL-6 Grenade Launcher
+  parent: BaseMechGun
+  id: MechGunGrenade
+  description: SGL-6 Grenade Launcher
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: kinetic_grenade
+  - type: Gun
+    fireRate: 1.5
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+  - type: BallisticMechAmmoProvider
+    proto: NFBulletGrenadeFlash
+    shots: 3
+    capacity: 3
+    ammoType: granade
+    reloadTime: 5
+  - type: UIFragment
+    ui: !type:MechGunUi
+  - type: Tag
+    tags:
+    - MechEquipmentSecHKinetic
+
+# Ракетницы
+
+- type: entity
+  name: LRM-6 Missile Rack
+  parent: BaseMechGun
+  id: MechGunMissileLRM6
+  description: Longe range missile pack with increased penetration abilities.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: missile_long
+  - type: Gun
+    fireRate: 1
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+  - type: BallisticMechAmmoProvider
+    proto: NFBulletRocket
+    shots: 1
+    capacity: 6
+    ammoType: granade
+    reloadTime: 5
+  - type: UIFragment
+    ui: !type:MechGunUi
+  - type: Tag
+    tags:
+    - MechEquipmentSecMissile
+
+- type: entity
+  name: SRM-8 Frag Missile Rack
+  parent: BaseMechGun
+  id: MechGunMissileSRM8Frag
+  description: Short range missile rack with frag capacities.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: missile_shortfrag
+  - type: Gun
+    fireRate: 1
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+  - type: BallisticMechAmmoProvider
+    proto: NFBulletWeakRocket
+    shots: 2
+    capacity: 8
+    ammoType: granade
+    reloadTime: 5
+  - type: UIFragment
+    ui: !type:MechGunUi
+  - type: Tag
+    tags:
+    - MechEquipmentSecMissile
+
+- type: entity
+  name: SRM-8 Ignition Missile Rack
+  parent: BaseMechGun
+  id: MechGunMissileSRM8Ignite
+  description: Short range missile rack with ignition capacities.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: missile_shortflame
+  - type: Gun
+    fireRate: 1
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+  - type: BallisticMechAmmoProvider
+    proto: NFBulletGrenadeBlast
+    shots: 2
+    capacity: 8
+    ammoType: granade
+    reloadTime: 5
+  - type: UIFragment
+    ui: !type:MechGunUi
+  - type: Tag
+    tags:
+    - MechEquipmentSecMissile
+
+# Протокинеты
+
+- type: entity
+  name: Mech PKA
+  parent: BaseMechGunBattery
+  id: MechGunPKA
+  description: PKA, mech version.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: mining_kineticgun
+  - type: Gun
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    fireRate: 2
+  - type: BatteryMechAmmoProvider
+    proto: NFBulletKinetic
+    fireCost: 3
+  - type: Tag
+    tags:
+    - MechEquipmentSecProt
+
+- type: entity
+  name: Mech PKA Heavy
+  parent: BaseMechGunBattery
+  id: MechGunPKAHeavy
+  description: PKA, mech version, heavy variant.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: mining_kineticgun_heavy
+  - type: Gun
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    fireRate: 2
+  - type: BatteryMechAmmoProvider
+    proto: NFBulletKineticShuttle
+    fireCost: 5
+  - type: Tag
+    tags:
+    - MechEquipmentSecProt

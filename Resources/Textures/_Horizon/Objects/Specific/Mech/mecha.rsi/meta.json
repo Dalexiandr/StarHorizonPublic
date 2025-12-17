@@ -1,0 +1,637 @@
+{
+  "copyright" : "Sprites by Malanisa (durgreen,durred,gygaxgreen,gygaxred,maraudergreen,marauderred,harson,clarkespider,harsonspider), rest taken from https://github.com/tgstation/",
+  "license" : "CLA with hosting restrictions (durgreen,durred,gygaxgreen,gygaxred,maraudergreen,marauderred,harson,clarkespider,harsonspider), CC-BY-SA-3.0 rest",
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "clarkeorangey",
+      "directions": 4,
+      "delays": [
+        [
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "clarkeorangey-open"
+    },
+    {
+      "name": "clarkeorangey-broken"
+    },
+    {
+      "name": "clarkespider",
+      "directions": 4,
+      "delays": [
+        [
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "clarkespider-open"
+    },
+    {
+      "name": "clarkespider-broken"
+    },
+    {
+      "name": "clarkeveteran",
+      "directions": 4,
+      "delays": [
+        [
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "clarkeveteran-open"
+    },
+    {
+      "name": "clarkeveteran-broken"
+    },
+    {
+      "name": "harson",
+      "directions": 4,
+      "delays": [
+        [
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "harson-open"
+    },
+    {
+      "name": "harson-broken"
+    },
+    {
+      "name": "harsonspider",
+      "directions": 4,
+      "delays": [
+        [
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "harsonspider-open"
+    },
+    {
+      "name": "harsonspider-broken"
+    },
+    {
+      "name": "durares",
+      "directions": 4
+    },
+    {
+      "name": "durares-open"
+    },
+    {
+      "name": "durares-broken"
+    },
+    {
+      "name": "durdollhouse",
+      "directions": 4
+    },
+    {
+      "name": "durdollhouse-open",
+      "delays": [
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "durdollhouse-broken"
+    },
+    {
+      "name": "durexecutor",
+      "directions": 4,
+      "delays": [
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "durexecutor-open"
+    },
+    {
+      "name": "durexecutor-broken",
+      "delays": [
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "durshire",
+      "directions": 4
+    },
+    {
+      "name": "durshire-open"
+    },
+    {
+      "name": "durshire-broken"
+    },
+    {
+      "name": "durunathi",
+      "directions": 4,
+      "delays": [
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "durunathi-open",
+      "delays": [
+        [
+          0.5,
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "durunathi-broken"
+    },
+    {
+      "name": "gygaxgrey",
+      "directions": 4
+    },
+    {
+      "name": "gygaxgrey-open"
+    },
+    {
+      "name": "gygaxgrey-broken"
+    },
+    {
+      "name": "gygaxhermes",
+      "directions": 4
+    },
+    {
+      "name": "gygaxhermes-open",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "gygaxhermes-broken"
+    },
+    {
+      "name": "gygaxmed",
+      "directions": 4
+    },
+    {
+      "name": "gygaxmed-open"
+    },
+    {
+      "name": "gygaxmed-broken"
+    },
+    {
+      "name": "gygaxorange",
+      "directions": 4
+    },
+    {
+      "name": "gygaxorange-open"
+    },
+    {
+      "name": "gygaxorange-broken"
+    },
+    {
+      "name": "gygaxpobeda",
+      "directions": 4
+    },
+    {
+      "name": "gygaxpobeda-open"
+    },
+    {
+      "name": "gygaxpobeda-broken"
+    },
+    {
+      "name": "gygaxrecitence",
+      "directions": 4
+    },
+    {
+      "name": "gygaxrecitence-open"
+    },
+    {
+      "name": "gygaxrecitence-broken"
+    },
+    {
+      "name": "odysseushermes",
+      "directions": 4
+    },
+    {
+      "name": "odysseushermes-open",
+      "delays": [
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "odysseushermes-broken",
+      "delays": [
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "odysseusmurdy",
+      "directions": 4
+    },
+    {
+      "name": "odysseusmurdy-open"
+    },
+    {
+      "name": "odysseusmurdy-broken"
+    },
+    {
+      "name": "ripleyaluminizer",
+      "directions": 4
+    },
+    {
+      "name": "ripleyaluminizer-open"
+    },
+    {
+      "name": "ripleyaluminizer-broken"
+    },
+    {
+      "name": "ripleycombat",
+      "directions": 4
+    },
+    {
+      "name": "ripleycombat-open"
+    },
+    {
+      "name": "ripleycombat-broken"
+    },
+    {
+      "name": "ripleyearth",
+      "directions": 4
+    },
+    {
+      "name": "ripleyearth-open"
+    },
+    {
+      "name": "ripleyearth-broken"
+    },
+    {
+      "name": "ripleyflamesred",
+      "directions": 4
+    },
+    {
+      "name": "ripleyflamesred-open"
+    },
+    {
+      "name": "ripleyflamesred-broken"
+    },
+    {
+      "name": "ripleytitan",
+      "directions": 4
+    },
+    {
+      "name": "ripleytitan-open"
+    },
+    {
+      "name": "ripleytitan-broken"
+    },
+    {
+      "name": "ripleyzairjah",
+      "directions": 4
+    },
+    {
+      "name": "ripleyzairjah-open"
+    },
+    {
+      "name": "ripleyzairjah-broken"
+    },
+    {
+      "name": "durgreen-broken",
+      "delays": [
+        [
+          0.5,
+          1,
+          0.5,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "durgreen-open",
+      "delays": [
+        [
+          1,
+          0.1,
+          0.1,
+          0.5,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+        "name": "durgreen",
+        "directions": 4
+    },
+    {
+        "name": "durred-broken",
+        "delays": [
+          [
+            0.5,
+            1,
+            0.5,
+            1
+          ]
+        ]
+    },
+    {
+        "name": "durred-open",
+        "delays": [
+          [
+            1,
+            0.1,
+            0.1,
+            0.5,
+            0.1,
+            0.1
+          ]
+        ]
+    },
+    {
+        "name": "durred",
+        "directions": 4
+    },
+    {
+        "name": "gygaxgreen-broken",
+        "delays": [
+            [
+              0.3,
+              0.5,
+              0.3,
+              0.5,
+              0.3,
+              0.4,
+              0.5,
+              0.3
+            ]
+          ]
+    },
+    {
+        "name": "gygaxgreen-open",
+        "delays": [
+            [
+              0.1,
+              0.05,
+              0.05,
+              0.05,
+              0.1,
+              0.05,
+              0.05,
+              0.05,
+              0.1
+            ]
+          ]
+    },
+    {
+        "name": "gygaxgreen",
+        "directions": 4
+    },
+    {
+        "name": "gygaxred-broken",
+        "delays": [
+            [
+              0.3,
+              0.5,
+              0.3,
+              0.5,
+              0.3,
+              0.4,
+              0.5,
+              0.3
+            ]
+          ]
+    },
+    {
+        "name": "gygaxred-open",
+        "delays": [
+            [
+              0.1,
+              0.05,
+              0.05,
+              0.05,
+              0.1,
+              0.05,
+              0.05,
+              0.05,
+              0.1
+            ]
+          ]
+    },
+    {
+        "name": "gygaxred",
+        "directions": 4
+    },
+    {
+        "name": "maraudergreen-broken"
+    },
+    {
+        "name": "maraudergreen-open",
+        "delays": [
+          [
+            0.5,
+            0.1,
+            0.2
+          ]
+        ]
+    },
+    {
+        "name": "maraudergreen",
+        "directions": 4
+    },
+    {
+        "name": "marauderred-broken"
+    },
+    {
+        "name": "marauderred-open",
+        "delays": [
+          [
+            0.5,
+            0.1,
+            0.2
+          ]
+        ]
+    },
+    {
+        "name": "marauderred",
+        "directions": 4
+    },
+    {
+        "name": "sexybar",
+        "directions": 4
+    },
+    {
+        "name": "sexybar-broke",
+        "directions": 4
+    }
+  ]
+}

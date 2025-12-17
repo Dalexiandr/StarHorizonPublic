@@ -1,0 +1,30 @@
+- type: entity
+  name: efs меч
+  parent: [BaseItem, BaseUASContraband]
+  categories: [ HideSpawnMenu ]
+  id: UASSword
+  suffix: StarHorizon, UAS
+  description: Сегментированный меч, созданный чтобы нарезать врагов на такие же сегменты.
+  components:
+  - type: Sharp
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Weapons/Melee/uassword.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -60
+    attackRate: 1.5
+    damage:
+      types:
+        Slash: 20
+        Heat: 10 # что вы ожидали от расскаленного клинка ?
+    soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+  - type: Reflect
+    enabled: true
+    reflectProb: .3
+    soundOnReflect:
+      collection: ImpactReflectedBulletEnergy
+    spread: 45
+  - type: Item
+    size: Normal
+    sprite: _StarHorizon/Objects/Weapons/Melee/uassword.rsi

@@ -1,0 +1,230 @@
+#Шрамы
+
+- type: marking
+  id: KatunianHeadScar1
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/scars.rsi
+    state: headscars1
+
+- type: marking
+  id: KatunianHeadScar2
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/scars.rsi
+    state: headscars2
+
+- type: marking
+  id: KatunianHeadScar3
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/scars.rsi
+    state: headscars3
+
+- type: marking
+  id: KatunianBodyScar1
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/scars.rsi
+    state: chestscars1
+
+- type: marking
+  id: KatunianLLegScar1
+  bodyPart: LLeg
+  markingCategory: Legs
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/scars.rsi
+    state: llegscars1
+
+- type: marking
+  id: KatunianRLegScar1
+  bodyPart: RLeg
+  markingCategory: Legs
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/scars.rsi
+    state: rlegscars1
+
+- type: marking
+  id: KatunianLArmScar1
+  bodyPart: LArm
+  markingCategory: Arms
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/scars.rsi
+    state: lhandscars1
+
+- type: marking
+  id: KatunianRArmScar1
+  bodyPart: RArm
+  markingCategory: Arms
+  speciesRestriction: [ Katunian ]
+  sprites:
+  - sprite: _Void/Mobs/Customization/scars.rsi
+    state: rhandscars1
+
+#Ушки
+
+- type: marking
+  id: KatunianEarsBase1
+  bodyPart: Snout
+  markingCategory: Snout
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Katunian]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_ears.rsi
+    state: earsbase
+
+- type: marking
+  id: KatunianEarsBase2
+  bodyPart: Snout
+  markingCategory: Snout
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Katunian]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_ears.rsi
+    state: earsbase2
+
+- type: marking
+  id: KatunianEarsBase3
+  bodyPart: Snout
+  markingCategory: Snout
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Katunian]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_ears.rsi
+    state: earsbase3
+
+- type: marking
+  id: KatunianEarsBase4
+  bodyPart: Snout
+  markingCategory: Snout
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Katunian]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_ears.rsi
+    state: earsbase4
+
+- type: marking
+  id: KatunianEarsBase5
+  bodyPart: Snout
+  markingCategory: Snout
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Katunian]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_ears.rsi
+    state: earsbase5
+
+- type: marking
+  id: KatunianEarsBase6
+  bodyPart: Snout
+  markingCategory: Snout
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Katunian]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_ears.rsi
+    state: earsbase6
+
+- type: marking
+  id: KatunianEarsBase7
+  bodyPart: Snout
+  markingCategory: Snout
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Katunian]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_ears.rsi
+    state: earsbase7
+
+- type: marking
+  id: KatunianEarsBase8
+  bodyPart: Snout
+  markingCategory: Snout
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Katunian]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_ears.rsi
+    state: earsbase8
+
+- type: marking
+  id: KatunianEarsBase9
+  bodyPart: Snout
+  markingCategory: Snout
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Katunian]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_ears.rsi
+    state: earsbase9
+
+- type: marking
+  id: KatunianEarsBase10
+  bodyPart: Snout
+  markingCategory: Snout
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Katunian]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_ears.rsi
+    state: earsbase10
+
+- type: marking
+  id: KatunianEarsBase11
+  bodyPart: Snout
+  markingCategory: Snout
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Katunian]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_ears.rsi
+    state: earsbase11
+
+- type: marking
+  id: KatunianEarsBase12
+  bodyPart: Snout
+  markingCategory: Snout
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Katunian]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_ears.rsi
+    state: earsbase12
+
+- type: marking
+  id: KatunianEarsBase13
+  bodyPart: Snout
+  markingCategory: Snout
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Katunian]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_ears.rsi
+    state: earsbase13
+
+- type: marking
+  id: KatunianEarsBase14
+  bodyPart: Snout
+  markingCategory: Snout
+  forcedColoring: true
+  followSkinColor: true
+  speciesRestriction: [Katunian]
+  sprites:
+  - sprite: _Void/Mobs/Customization/katunian_ears.rsi
+    state: earsbase14
+

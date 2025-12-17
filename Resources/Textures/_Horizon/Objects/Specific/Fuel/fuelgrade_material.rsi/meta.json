@@ -1,0 +1,83 @@
+{
+    "version": 1,
+    "license": "CLA",
+    "copyright": "by Malanisa",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "bananium"
+        },
+        {
+            "name": "bananium_pure"
+        },
+        {
+            "name": "bananium_unstable"
+        },
+        {
+            "name": "empty"
+        },
+        {
+            "name": "empty_pure"
+        },
+        {
+            "name": "empty_unstable"
+        },
+        {
+            "name": "neptunium"
+        },
+        {
+            "name": "neptunium_pure"
+        },
+        {
+            "name": "neptunium_unstable"
+        },
+        {
+            "name": "plasma"
+        },
+        {
+            "name": "plasma_pure"
+        },
+        {
+            "name": "plasma_unstable"
+        },
+        {
+            "name": "plutonium"
+        },
+        {
+            "name": "plutonium_pure"
+        },
+        {
+            "name": "plutonium_unstable"
+        },
+        {
+            "name": "skrungle"
+        },
+        {
+            "name": "skrungle_pure"
+        },
+        {
+            "name": "skrungle_unstable"
+        },
+        {
+            "name": "torium"
+        },
+        {
+            "name": "torium_pure"
+        },
+        {
+            "name": "torium_unstable"
+        },
+        {
+            "name": "uranium"
+        },
+        {
+            "name": "uranium_pure"
+        },
+        {
+            "name": "uranium_unstable"
+        }
+    ]
+}

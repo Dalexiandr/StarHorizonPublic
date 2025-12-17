@@ -1,0 +1,50 @@
+
+#  Советник
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconCounselorUAS
+  icon:
+    sprite: /Textures/_Horizon/Interface/Misc/uasjobicon.rsi
+    state: jobcounselor
+# Титан
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconTitanUAS
+  icon:
+    sprite: /Textures/_Horizon/Interface/Misc/uasjobicon.rsi
+    state: jobtitan
+# Паук
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconSpiderUAS
+  icon:
+    sprite: /Textures/_Horizon/Interface/Misc/uasjobicon.rsi
+    state: jobspider
+# Рыцарь
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconKnightUAS
+  icon:
+    sprite: /Textures/_Horizon/Interface/Misc/uasjobicon.rsi
+    state: jobknight
+# Офицер
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOfficerUAS
+  icon:
+    sprite: /Textures/_Horizon/Interface/Misc/uasjobicon.rsi
+    state: jobofficer
+# Кадет
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconCadetUAS
+  icon:
+    sprite: /Textures/_Horizon/Interface/Misc/uasjobicon.rsi
+    state: jobcadet
+# Рипсоид
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconRipsoidUAS
+  icon:
+    sprite: /Textures/_Horizon/Interface/Misc/uasjobicon.rsi
+    state: jobripsoid

@@ -1,0 +1,37 @@
+<Document>
+  # Расы
+
+  Корпорация NanoTrasen нанимает представителей различных разумных рас.
+
+  <Box>
+    <GuideEntityEmbed Entity="MobArachnid" Caption="Арахнид"/>
+    <GuideEntityEmbed Entity="MobDiona" Caption="Диона"/>
+    <GuideEntityEmbed Entity="MobDwarf" Caption="Дварф"/>
+    <GuideEntityEmbed Entity="MobHuman" Caption="Человек"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="MobMoth" Caption="Мотолюд"/>
+    <GuideEntityEmbed Entity="MobReptilian" Caption="Рептилоид"/>
+    <GuideEntityEmbed Entity="MobSlimePerson" Caption="Слайм"/>
+    <GuideEntityEmbed Entity="MobVox" Caption="Вокс"/>
+  </Box>
+
+  # Расы Фронтира
+  <Box>
+    <GuideEntityEmbed Entity="MobGoblin" Caption="Гоблин"/>
+  </Box>
+  # Расы Delta-V
+  <Box>
+    <GuideEntityEmbed Entity="MobVulpkanin" Caption="Вульпканин"/>
+    <GuideEntityEmbed Entity="MobFelinid" Caption="Фелинид"/>
+    <GuideEntityEmbed Entity="MobHarpy" Caption="Гарпия"/>
+    <GuideEntityEmbed Entity="MobOni" Caption="Они"/>
+  </Box>
+  # Расы Void Sector
+  <Box>
+  <GuideEntityEmbed Entity="MobDemon" Caption="Тифлинг"/>
+  <GuideEntityEmbed Entity="MobKatunian" Caption="Катунианец"/>
+  <GuideEntityEmbed Entity="MobTajaran" Caption="Таяран"/>
+  </Box>
+
+</Document>

@@ -1,0 +1,62 @@
+- type: entity
+  save: false
+  name: Urist McVulp
+  parent: BaseMobVulpkanin
+  id: MobVulpkanin
+  components:
+    - type: CombatMode
+    - type: InteractionPopup
+      successChance: 1
+      interactSuccessString: pat-success-generic # Frontier - pat-success-generic<hugging-success-generic
+      interactSuccessSound: /Audio/Effects/thudswoosh.ogg
+      messagePerceivedByOthers: pat-success-generic-others # Frontier - hugging-success-generic-others<pat-success-generic-others
+    - type: MindContainer
+      showExamineInfo: true
+    - type: Input
+      context: "human"
+    - type: MobMover
+    - type: InputMover
+    - type: Alerts
+    - type: Eye
+    - type: CameraRecoil
+    - type: Examiner
+    - type: CanHostGuardian
+    - type: NpcFactionMember
+      factions:
+        - NanoTrasen
+    - type: Respirator
+      damage:
+       types:
+        Asphyxiation: 1.0
+      damageRecovery:
+        types:
+          Asphyxiation: -1.0
+    # Horizon
+    - type: SampleSource
+      availableCellSamples:
+      - protoID: CellSampleVulpkanin
+
+# Cytology
+- type: entity
+  name: Urist Grown Vulpkanin
+  parent: MobVulpkanin
+  id: MobVulpkaninGrown
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StaticPrice
+    price: 2500
+  - type: RandomMetadata
+    nameSegments:
+      - NamesFirst
+      - NamesLast
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: ghost-role-information-grown-vulpkanin-name
+    description: Вы вулпканин, выращенный в цитологической ванне. Острые чувства и лисья хитрость - ваши подарки. Исследуйте этот мир!
+    raffle:
+      settings: short
+  - type: GhostTakeoverAvailable

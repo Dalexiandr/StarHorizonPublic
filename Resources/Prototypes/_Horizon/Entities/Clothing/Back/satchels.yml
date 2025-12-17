@@ -1,0 +1,304 @@
+- type: entity
+  parent: ClothingBackpackSatchelMedical
+  id: ClothingBackpackSatchelEliteCMO
+  suffix: StarHorizon
+  name: medical satchel
+  description: A sterile satchel used in medical departments.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Satchels/ecmo.rsi
+
+- type: entity
+  parent: ClothingBackpackSatchelEliteCMO
+  id: ClothingBackpackSatchelEliteCMOFilled
+  suffix: StarHorizon, Filled
+  name: сумка элитного главного врача
+  description: Стерильная сумка из белоснежного шёлка с золотой окантовкой. Предназначена для высококлассных специалистов.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingCloakEliteCmo
+      - id: ClothingUniformJumpskirtCMO
+      - id: ECMOPDA
+      - id: ClothingHeadHatBeretEliteCmo
+
+- type: entity
+  parent: ClothingBackpackSatchelSalvage
+  id: ClothingBackpackSatchelSalvageFilled
+  suffix: StarHorizon, Filled
+  name: сумка утилизатора
+  description: Прочная сумка для хранения добычи.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingHandsGlovesFingerless
+      - id: ClothingShoesBootsSalvage
+      - id: ClothingUniformJumpsuitAncient
+      - id: ClothingOuterHoodieBlack
+
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: ClothingBackpackSatchelBlueshield
+  name: сумка офицера "Синий щит"
+  description: В неё удобно сбрасывать магазины.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Satchels/blueshield.rsi
+
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: ClothingBackpackSatchelRoboticist
+  name: сумка робототехника
+  description: Высокотехнологичная сумка для робототехников, оснащённая надёжными отделениями для схем, сенсоров и банок пива.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Satchels/roboticist.rsi
+
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: ClothingBackpackSatchelCentcom
+  suffix: StarHorizon
+  name: сумка Центком
+  description: Сделана из лучшей взрывоустойчивой ткани. Крайне удобна для извлечения стопок увольнительных документов.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Satchels/centcom.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.6
+
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: ClothingBackpackSatchelCentcomOld
+  name: сумка ЦентКома
+  description: На страже бюрократической моды.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Satchels/oldcentcom.rsi
+
+- type: entity
+  parent: [ClothingBackpack, BaseUASContraband]
+  categories: [ HideSpawnMenu ]
+  id: UASsatchel
+  suffix: StarHorizon, UAS
+  name: глубокая сумка UAS
+  description: Сумка с углубленными карманами на удобном магнитном крепеже.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Satchels/uassatchel.rsi
+  - type: Tag
+    tags: [] # Выносим с ВЛа для хамелеонки
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,7,4
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
+  - type: StaticPrice
+    price: 50000
+
+- type: entity
+  parent: [ClothingBackpack, BaseUASContraband]
+  categories: [ HideSpawnMenu ]
+  id: UASsatchelDEBUG
+  suffix: StarHorizon, UAS, DEBUG
+  name: ОЧЕНЬ глубокая сумка UAS
+  description: Сумка с дохуя углубленными карманами на удобном магнитном крепеже.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Satchels/uassatchel.rsi
+  - type: Storage
+    maxItemSize: Ginormous
+    grid:
+    - 0,0,39,24
+  - type: ExplosionResistance
+    damageCoefficient: 0.01
+
+- type: entity
+  parent: UASsatchelDEBUG
+  categories: [ HideSpawnMenu ]
+  id: UASsatchelFillDEBUG
+  suffix: StarHorizon, UAS, DEBUG, fill
+  name: ОЧЕНЬ глубокая сумка с вещами UAS
+  description: Сумка с дохуя углубленными карманами на удобном магнитном крепеже.
+  components:
+  - type: StorageFill # Тут надо перечислить все предметы UAS
+    contents:
+    - id: UASsatchel
+    - id: ClothingEyesGlassesUAS
+    - id: UASGlovesIsolate
+    - id: UASGloves
+    - id: uasberet
+    - id: uascap 
+    - id: ClothingHeadsetUAS
+    - id: ClothingNeckCloakUAS
+    - id: UASGloryMedal
+    - id: ClothingOuterHardsuitTitan
+    - id: ClothingOuterHardsuitKnight
+    - id: UASVests
+    - id: UAScoastconsul
+    - id: UASBoots
+    - id: UASClothingShoesBootsMag
+    - id: SuitProtectiveUAS
+    - id: SuitUAS
+    - id: SkirtUAS
+    - id: LumaPlushina
+    - id: RipsiPlushin
+    - id: UASEnergyCore
+    - id: WeaponDisablerSMGUAS
+    - id: WeaponLaserMinigunUAS
+    - id: WeaponLaserGranadeUAS
+    - id: WeaponDisablerSniperUAS
+    - id: UASRipsoidCannon
+    - id: UASCounselorGun
+    - id: PMLaserUASGun
+    - id: LaserUASGun
+    - id: WeaponStunprodUAS
+    - id: UASSword
+    - id: UASGranade
+    - id: UASBox
+    - id: UASopenbox
+    - id: UASBoxStoreUniform
+    - id: UASBoxStoreBug
+    - id: UASBoxStoreAccessory
+    - id: UASBoxStoreHack
+    - id: UASBoxStoreLasGun
+    - id: PDAUAS
+    - id: PDACadetUAS
+    - id: PDARipsoidUAS
+    - id: PDAOfficerUAS
+    - id: PDAOfficerUAS
+    - id: PDAKnightUAS
+    - id: PDATitanUAS
+    - id: PDACounselorUAS
+    - id: UASHandcuffs
+    - id: UASCadetID
+    - id: UASRipsoidID
+    - id: UASOfficerID
+    - id: UASKnightID
+    - id: UASSpiderID
+    - id: UASTitanID
+    - id: UASCounselorID
+    - id: CitadelCoin1
+    - id: CitadelCoin
+    - id: UASOmegaTool
+    - id: UAShardBomb
+    - id: UASBombR
+    - id: UASBombOfficer
+    - id: UASBombSpider
+    - id: UASBombKnight
+    - id: UASBoxKitUniform
+    - id: SheetEFS1
+    - id: SheetEFS
+    - id: Sheetkazmie1
+    - id: Sheetkazmie
+#    - id: 
+
+# Кадет
+- type: entity
+  parent: UASsatchel
+  id: UASsatchelCadet
+  suffix: StarHorizon, UAS
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: UASHandcuffs
+    - id: UASHandcuffs
+    - id: UASEnergyCore
+    - id: WeaponDisablerSMGUAS
+#    - id: CombatMedipenUAS
+
+# Офицер
+- type: entity
+  parent: UASsatchel
+  id: UASsatchelOfficer
+  suffix: StarHorizon, UAS
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: UASHandcuffs
+    - id: UASHandcuffs
+    - id: UASHandcuffs
+    - id: UASEnergyCore
+    - id: PMLaserUASGun
+#    - id: CombatMedipenUAS
+#    - id: UASDroneOff
+
+# Рыцарь
+- type: entity
+  parent: UASsatchel
+  id: UASsatchelKnight
+  suffix: StarHorizon, UAS
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: UASEnergyCore
+    - id: UASEnergyCore
+    - id: UASOmegaTool
+    - id: LaserUASGun
+#    - id: NanitMedipenUAS
+#    - id: CombatMedipenUAS
+#    - id: UASDroneOff
+    - id: UASGranade
+
+# Паук
+- type: entity
+  parent: UASsatchel
+  id: UASsatchelSpider
+  suffix: StarHorizon, UAS
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: UASSword
+    - id: WeaponDisablerSniperUAS
+    - id: UASEnergyCore
+    - id: UASHandcuffs
+#    - id: CombatMedipenUAS
+#    - id: NanitMedipenUAS
+#    - id: NanitMedipenUAS
+#    - id: UASDroneOff
+    - id: UASGranade
+
+# Титан
+- type: entity
+  parent: UASsatchel
+  id: UASsatchelTitan
+  suffix: StarHorizon, UAS
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: UASRipsoidCannon
+    - id: UASOmegaTool
+    - id: UASEnergyCore
+    - id: NanitMedipenUAS
+    - id: NanitMedipenUAS
+#    - id: CombatMedipenUAS
+#    - id: CombatMedipenUAS
+#    - id: UASDroneOff
+#    - id: UASDroneOff
+    - id: UASGranade
+    - id: UASGranade
+
+# Советник
+- type: entity
+  parent: UASsatchel
+  id: UASsatchelCounselor
+  suffix: StarHorizon, UAS
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: UASCounselorGun
+    - id: UASEnergyCore
+    - id: UASHandcuffs
+#    - id: CombatMedipenUAS
+#    - id: NanitMedipenUAS
+#    - id: NanitMedipenUAS
+#    - id: UASDroneOff
+#    - id: UASDroneOff

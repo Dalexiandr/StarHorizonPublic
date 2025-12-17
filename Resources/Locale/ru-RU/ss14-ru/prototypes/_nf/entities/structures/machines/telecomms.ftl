@@ -1,0 +1,15 @@
+ent-NFTelecomServerFilled = { ent-TelecomServer }
+    .suffix = Заполненный всем
+    .desc = { ent-TelecomServer.desc }
+ent-TelecomServerFilledNfsd = { ent-TelecomServer }
+    .suffix = Шаттл, ДШНФ
+    .desc = { ent-TelecomServer.desc }
+ent-TelecomServerFilledShuttle = { ent-TelecomServer }
+    .suffix = Шаттл
+    .desc = { ent-TelecomServer.desc }
+ent-TelecomServerFilledSyndicate = { ent-TelecomServer }
+    .suffix = Синдикат
+    .desc = { ent-TelecomServer.desc }
+ent-TelecomServerFilledFreelance = { ent-TelecomServer }
+    .suffix = Фриланс
+    .desc = { ent-TelecomServer.desc }

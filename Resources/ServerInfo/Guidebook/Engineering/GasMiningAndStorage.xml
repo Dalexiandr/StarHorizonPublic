@@ -1,0 +1,66 @@
+﻿<Document>
+  # Добыча и хранение газов
+  Газы часто расходуются безвозвратно. Независимо от того, улетучиваются ли они в [textlink="космос" link="Spacing"] или сжигаются в камере сгорания, станция должна иметь возможность восполнять потери газа.
+  Также необходимо хранить газ безопасным и эффективным способом.
+
+  ## Газодобытчики
+  Газодобытчики используются для пополнения запасов газа на станции. Они расположены в газохранилищах в Атмосферном отделе.
+
+  <Box>
+    <GuideEntityEmbed Entity="GasMinerOxygenStation"/>
+    <GuideEntityEmbed Entity="GasMinerNitrogenStation"/>
+  </Box>
+
+  Газодобытчики постоянно производят газ комнатной температуры и выпускают его в окружающую атмосферу. Для работы им не требуется энергия, и они никогда не останавливаются, если не достигнут заданного [bold]предельного давления[/bold].
+
+  Подробную информацию о газодобытчиках можно узнать, осмотрев их с помощью [color=yellow][bold][keybind="ExamineEntity"][/bold][/color].
+  Попробуйте осмотреть представленные выше газодобытчикиы.
+
+  Газодобытчики бывают разных уровней, причем более крупные версии имеют более высокое предельное давление по сравнению с меньшими.
+
+  <Box>
+    <GuideEntityEmbed Entity="GasMinerNitrogen" Caption="300 кПа"/>
+    <GuideEntityEmbed Entity="GasMinerNitrogenStation" Caption="1000 кПа"/>
+    <GuideEntityEmbed Entity="GasMinerNitrogenStationLarge" Caption="4500 кПа"/>
+  </Box>
+
+  Если газодобытчик когда-либо будет откреплен от станции, его можно закрепить обратно с помощью обычного гаечного ключа.
+
+  ## Хранение газов
+  Газохранилища используются для хранения газа, добытого газодобытчиком, и для его распределения в другие системы. Они расположены в Атмосферном отделе.
+
+  <Box>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="ReinforcedPlasmaWindow" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="GasOutletInjector" Rotation="270" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="GasMinerOxygenStation" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="GasPassiveVent" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="WallReinforced" Rotation="0" Caption="" Margin="0"/>
+  </Box>
+
+  <Box>
+    [color=#999999][italic]Пример небольшого газохранилища[italic][/color]
+  </Box>
+
+  Различные атмосферные процессы добавляют и удаляют газы из газохранилищ.
+  Например:
+  - Газовый шахтер подает свежие газы в газохранилища, если там есть место.
+  - Рециклерная сеть впрыскивает восстановленные газы в газохранилища для повторного использования.
+  - Такие системы, как дистро-сеть и камера сгорания, удаляют газы из газохранилищ.
+
+  Газохранилища предназначены для измерения с помощью [textlink="газоанализатора" link="AtmosTools"].
+  Поскольку выпускной клапан является [textlink="пассивным вентилем" link="PassiveVent"], вы можете использовать [textlink="газоанализатор" link="AtmosTools"] для измерения состава газа на [textlink="входе насоса" link="Pumps"], который забирает газ из газохранилища.
+</Document>

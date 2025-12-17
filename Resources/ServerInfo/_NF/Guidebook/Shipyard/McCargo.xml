@@ -1,0 +1,73 @@
+<Document>
+  # СЕРВИСНЫЙ ШАТТЛ McCARGO
+  <Box>
+  <GuideEntityEmbed Entity="ClothingHeadHatMcCrown"/>
+  <GuideEntityEmbed Entity="HappyHonkMcCargo"/>
+  <GuideEntityEmbed Entity="CrateFoodMcCargo"/>
+  <GuideEntityEmbed Entity="KitchenDeepFryer"/>
+  </Box>
+  [color=#a4885c]Размер корабля:[/color] Средний
+
+  [color=#a4885c]Рекомендуемый экипаж:[/color] 1–4
+
+  [color=#a4885c]Тип генератора энергии:[/color] Плазменный
+
+  [color=#a4885c]Экспедиции:[/color] Отсутствуют
+
+  [color=#a4885c]Консоль IFF:[/color] Отсутствует
+
+  "Ваша собственная сервисный McCargo™"
+
+  # КОНТРОЛЬНЫЙ СПИСОК ПЕРЕД ВЫЛЕТОМ
+  
+  ## 1. Электропитание
+  
+  ## 1.1. Батарейные блоки
+  <Box>
+  <GuideEntityEmbed Entity="SubstationWallBasic"/>
+  <GuideEntityEmbed Entity="APCBasic"/>
+  </Box>
+  
+  - Убедитесь, что блок подстанции закреплён на полу.
+  - Убедитесь, что главный выключатель блока ЛКП включён.
+  - Проверьте текущую нагрузку блока ЛКП* (Вт).
+  
+  ## 1.2. Генераторный блок P.A.C.M.A.N.
+  <Box>
+  <GuideEntityEmbed Entity="PortableGeneratorPacmanShuttle"/>
+  <GuideEntityEmbed Entity="SheetPlasma"/>
+  </Box>
+  
+  - Убедитесь, что генераторы P.A.C.M.A.N. закреплены на полу.
+  - Убедитесь, что в генераторах P.A.C.M.A.N. есть топливо. Для длительных перелётов убедитесь, что у вас есть достаточный запас топлива для поддержания генерации энергии.
+  - Убедитесь, что генераторы P.A.C.M.A.N. настроены на HV-выход.
+  - Запустите генераторы P.A.C.M.A.N.
+  
+  ## 2. Атмосфера
+  
+  ## 2.1. Цикл распределения
+  <Box>
+  <GuideEntityEmbed Entity="AirCanister"/>
+  <GuideEntityEmbed Entity="GasPort"/>
+  </Box>
+  
+  - Убедитесь, что баллоны подключены к соединительному порту.
+  
+  ## 2.2. Цикл отходов
+  <Box>
+  <GuideEntityEmbed Entity="GasPressurePump"/>
+  <GuideEntityEmbed Entity="AirAlarm"/>
+  </Box>
+    
+  - Убедитесь, что насос отходящего контура включён.
+  
+  ## 3. Прочие проверки
+  <Box>
+  <GuideEntityEmbed Entity="SmallGyroscope"/>
+  <GuideEntityEmbed Entity="GravityGeneratorMini"/>
+  </Box>
+  
+  - Убедитесь, что гироскоп закреплён, запитан и включён.
+  - Убедитесь, что мини-гравитационный генератор закреплён, запитан и включён.
+
+</Document>

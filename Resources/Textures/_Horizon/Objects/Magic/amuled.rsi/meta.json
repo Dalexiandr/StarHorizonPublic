@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "license": "CLA",
+  "copyright": "by TheGypsyBaron",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "icon_world"
+    }
+  ]
+}

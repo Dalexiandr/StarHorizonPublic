@@ -1,0 +1,24 @@
+- type: entity
+  name: efs граната
+  description: Граната, содержащая в себе EFS кристалл.
+  suffix: StarHorizon, UAS
+  parent: [GrenadeBase, BaseUASContraband]
+  categories: [ HideSpawnMenu ]
+  id: UASGranade
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Weapons/Granades/uasgrenade.rsi
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: UASExplodes
+    maxIntensity: 10
+    intensitySlope: 3
+    totalIntensity: 120
+    canCreateVacuum: false
+  - type: OnUseTimerTrigger
+    beepSound:
+      path: "/Audio/Effects/beep1.ogg"
+      params:
+        volume: 5
+    initialBeepDelay: 0
+    beepInterval: 1

@@ -1,0 +1,12 @@
+ent-RailAttachmentBase = { ent-AttachableBase }
+    .desc = { ent-AttachableBase.desc }
+ent-AttachmentMagneticHarness = magnetic harness
+    .desc = A magnetically attached harness kit that attaches to the rail mount of a weapon. When dropped, the weapon will sling to any set of Marine armor.
+ent-AttachmentScopeBase = { ent-RailAttachmentBase }
+    .desc = { ent-RailAttachmentBase.desc }
+ent-AttachmentHristovScope = Hristov x6 scope
+    .desc = Hristov x6 scope
+ent-AttachmentT2Miniscope = T2 scope
+    .desc = T2 scope
+ent-AttachmentReflexSight = reflex sight
+    .desc = Areflex sight

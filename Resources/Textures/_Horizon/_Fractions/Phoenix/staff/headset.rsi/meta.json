@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "license": "KARAMBA",
+  "copyright": "KARAMBA",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "equipped-EARS",
+      "directions": 4
+    }
+  ]
+}

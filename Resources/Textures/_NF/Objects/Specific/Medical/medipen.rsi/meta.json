@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "license": "CLA",
+  "copyright": "by TheGypsyBaron",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "medipen"
+    },
+    {
+      "name": "hemostasispen"
+    },
+    {
+      "name": "hemostasispen_empty"
+    },
+    {
+      "name": "stimulantpen"
+    },
+    {
+      "name": "stimulantpen_empty"
+    },
+    {
+      "name": "crisispen"
+    },
+    {
+      "name": "crisispen_empty"
+    },
+    {
+      "name": "bruizpen"
+    },
+    {
+      "name": "bruizpen_empty"
+    },
+    {
+      "name": "lacerpen"
+    },
+    {
+      "name": "lacerpen_empty"
+    },
+    {
+      "name": "polypen"
+    },
+    {
+      "name": "polypen_empty"
+    },
+    {
+      "name": "barkeepersfriend"
+    },
+    {
+      "name": "barkeepersfriend_empty"
+    },
+    {
+      "name": "base-needle-inhand-left",
+        "directions": 4
+    },
+    {
+      "name": "base-needle-inhand-right",
+        "directions": 4
+    },
+    {
+      "name": "base-colorA-inhand-left",
+        "directions": 4
+    },
+    {
+      "name": "base-colorA-inhand-right",
+        "directions": 4
+    },
+    {
+      "name": "base-colorB-inhand-left",
+        "directions": 4
+    },
+    {
+      "name": "base-colorB-inhand-right",
+        "directions": 4
+    },
+    {
+      "name": "medipen_world"
+    },
+    {
+      "name": "hemostasispen_world"
+    },
+    {
+      "name": "hemostasispen_empty_world"
+    },
+    {
+      "name": "stimulantpen_world"
+    },
+    {
+      "name": "stimulantpen_empty_world"
+    },
+    {
+      "name": "crisispen_world"
+    },
+    {
+      "name": "crisispen_empty_world"
+    },
+    {
+      "name": "bruizpen_world"
+    },
+    {
+      "name": "bruizpen_empty_world"
+    },
+    {
+      "name": "lacerpen_world"
+    },
+    {
+      "name": "lacerpen_empty_world"
+    },
+    {
+      "name": "polypen_world"
+    },
+    {
+      "name": "polypen_empty_world"
+    },
+    {
+      "name": "barkeepersfriend_world"
+    },
+    {
+      "name": "barkeepersfriend_empty_world"
+    }
+  ]
+}

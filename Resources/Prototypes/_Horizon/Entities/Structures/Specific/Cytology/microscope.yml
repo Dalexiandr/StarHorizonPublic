@@ -1,0 +1,70 @@
+- type: entity
+  id: CytologyMicroscope
+  parent: [ BaseMachinePowered, ConstructibleMachine ]
+  name: Microscope
+  description: Microscope
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/Cytology/microscope.rsi
+    state: icon
+  - type: Icon
+    sprite: Structures/Machines/mixer.rsi
+    state: mixer_empty
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Anchorable
+  - type: Pullable
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.4,0.25,0.4"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalGlassBreak
+      - !type:ChangeConstructionNodeBehavior
+        node: machineFrame
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: ActivatableUI
+    key: enum.MicroscopeUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.MicroscopeUiKey.Key:
+        type: MicroscopeBoundUserInterface
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      petriDishSlot: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      petriDishSlot:
+        whitelist:
+          components:
+          - CytologyPetriDish
+  - type: DumpableSolution
+    solution: buffer
+    unlimited: true
+  - type: GuideHelp # TODO доработать
+    guides:
+    - Chemicals
+    - Chemist
+  - type: Machine
+    board: CytologyMicroscopeMachineCircuitboard
+  - type: CytologyMicroscope

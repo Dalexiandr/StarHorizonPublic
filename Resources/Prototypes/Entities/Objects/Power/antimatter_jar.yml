@@ -1,0 +1,24 @@
+- type: entity
+  parent: BaseItem
+  id: AmeJar
+  name: AME fuel jar
+  description: A hermetically sealed jar containing antimatter for use in an antimatter reactor.
+  components:
+  - type: Item
+    size: Normal
+    sprite: Objects/Power/AME/ame_jar.rsi
+  - type: Sprite
+    sprite: Objects/Power/AME/ame_jar.rsi
+    state: jar
+  - type: AmeFuelContainer
+    fuelAmount: 1000
+    fuelCapacity: 1000 # ~ 600 MJ
+  - type: StaticPrice
+    price: 800 # Horizon
+    vendPrice: 8000 # Frontier: FuelVend price # Horizon
+  - type: GuideHelp
+    guides: [ AME, Power ]
+  - type: Tag # Frontier
+    tags: # Frontier
+    - Recyclable # Frontier
+  - type: NFFuel # Frontier

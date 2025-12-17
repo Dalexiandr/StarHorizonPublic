@@ -1,0 +1,73 @@
+﻿- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackGoldCaptain
+  name: золотой рюкзак капитана
+  suffix: StarHorizon
+  description: Выдаётся почётным и опытным членам экипажа.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Backpacks/gold_captain_backpack.rsi
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackBlueshield
+  name: рюкзак офицера "Синий щит"
+  description: Говорят, что он пуленепробиваем.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Backpacks/blueshield.rsi
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackRoboticist
+  name: рюкзак робототехника
+  description: Прочный рюкзак со множеством отделений для инструментов и запчастей, который сохранит их в порядке даже во время отключения гравитации!
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Backpacks/roboticist.rsi
+
+- type: entity
+  parent: ClothingBackpackMedical
+  id: ClothingBackpackEliteCMO
+  suffix: StarHorizon
+  name: рюкзак элитного главного врача
+  description: Стерильный рюкзак с золотой окантовкой и предназначенными для медикаментов отделениями и карманами.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Backpacks/ecmo.rsi
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackCentcom
+  suffix: StarHorizon
+  name: рюкзак Центком
+  description: Сделан из лучшей взрывоустойчивой ткани. Изнутри, зачем-то, обшит гидрофобной тканью.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Backpacks/centcom.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.6
+
+- type: entity
+  parent: ClothingBackpack
+  id: ClothingBackpackCentcomOld
+  name: рюкзак ЦентКома
+  description: Роскошный рюкзак, пахнет деньгами.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Backpacks/oldcentcom.rsi
+
+- type: entity
+  parent: ClothingBackpack
+  id: TraumaBackPack
+  name: ранец "Траумы"
+  description: Рюкзак повышенной ёмкости, имеет многочисленные боковые и внутренние крепления для разного оборудования и снаряжения. Хорошо изолирован.
+  suffix: TraumaTeam
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Backpacks/trauma.rsi
+  - type: Storage
+    grid:
+    - 0,0,8,5

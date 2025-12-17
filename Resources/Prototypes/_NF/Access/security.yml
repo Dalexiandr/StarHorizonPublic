@@ -1,0 +1,45 @@
+- type: accessLevel
+  id: Sergeant
+  name: id-card-access-level-sergeant
+  
+- type: accessLevel
+  id: Bailiff
+  name: id-card-access-level-bailiff
+
+- type: accessLevel
+  id: Brigmedic
+  name: id-card-access-level-brigmedic
+
+- type: accessGroup
+  id: CadetNfsdAccess
+  tags:
+  - Maintenance
+  - External
+  - Security
+  - Brig
+  
+- type: accessGroup
+  id: GeneralNfsdAccess
+  tags:
+  - Maintenance
+  - External
+  - Command
+  - Brig
+  - Security
+  - Mercenary
+  - Captain
+
+- type: accessGroup
+  id: AllNfsdAccess
+  tags:
+  - HeadOfSecurity
+  - Bailiff
+  - Sergeant
+  - Detective
+  - Brigmedic
+  - Security
+  - Armory
+  - Brig
+  # These two are kind of a meme
+  - Mercenary
+  - Captain

@@ -1,0 +1,71 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingOuterClothingSweaterBlue
+  name: синий свитер
+  description: Этикетка гласит, что свитер очень тёплый, но не спасёт вас от холода прямого контакта с космосом.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Sweaters/blue.rsi
+  - type: Clothing
+    slots: [ outerClothing ]
+    sprite: _Horizon/Clothing/OuterClothing/Sweaters/blue.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingOuterClothingSweaterGreen
+  name: зеленый свитер
+  description: Этикетка гласит, что свитер очень тёплый, но не спасёт вас от холода прямого контакта с космосом.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Sweaters/green.rsi
+  - type: Clothing
+    slots: [ outerClothing ]
+    sprite: _Horizon/Clothing/OuterClothing/Sweaters/green.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingOuterClothingSweaterGrey
+  name: серый свитер
+  description: Этикетка гласит, что свитер очень тёплый, но не спасёт вас от холода прямого контакта с космосом.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Sweaters/grey.rsi
+  - type: Clothing
+    slots: [ outerClothing ]
+    sprite: _Horizon/Clothing/OuterClothing/Sweaters/grey.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingOuterClothingSweaterPink
+  name: розовый свитер
+  description: Этикетка гласит, что свитер очень тёплый, но не спасёт вас от холода прямого контакта с космосом.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Sweaters/pink.rsi
+  - type: Clothing
+    slots: [ outerClothing ]
+    sprite: _Horizon/Clothing/OuterClothing/Sweaters/pink.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingOuterClothingSweaterPurple
+  name: фиолетовый свитер
+  description: Этикетка гласит, что свитер очень тёплый, но не спасёт вас от холода прямого контакта с космосом.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Sweaters/purple.rsi
+  - type: Clothing
+    slots: [ outerClothing ]
+    sprite: _Horizon/Clothing/OuterClothing/Sweaters/purple.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingOuterClothingSweaterYellow
+  name: желтый свитер
+  description: Этикетка гласит, что свитер очень тёплый, но не спасёт вас от холода прямого контакта с космосом.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Sweaters/yellow.rsi
+  - type: Clothing
+    slots: [ outerClothing ]
+    sprite: _Horizon/Clothing/OuterClothing/Sweaters/yellow.rsi

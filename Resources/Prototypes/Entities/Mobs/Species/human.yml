@@ -1,0 +1,86 @@
+# Anything human specific (e.g. UI, input) goes under MobHuman
+- type: entity
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobHuman
+  name: Urist McHands
+  abstract: true
+  components:
+  - type: Hunger
+  - type: Icon # It will not have an icon in the adminspawn menu without this. Body parts seem fine for whatever reason.
+    sprite: Mobs/Species/Human/parts.rsi
+    state: full
+  - type: Thirst
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatHuman
+      amount: 5
+  - type: HumanoidAppearance
+    species: Human
+    hideLayersOnEquip:
+    - Hair
+    - Snout
+  - type: Inventory
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female
+  - type: Carriable # Frontier: Carrying system from nyanotrasen.
+  - type: Speech # Frontier
+    allowedEmotes: ['Belch'] # Frontier
+  - type: PushableBody
+  - type: Pain
+    painThresholds:
+      Nothing: 0
+      MildPain: 50
+      AveragePain: 100
+      SeverePain: 200
+      UnbeatablePain: 250
+      DeadPain: 500
+    screamPrototype: screamHuman
+    converterPrototype: human
+
+- type: painConverter
+  id: human
+  convert:
+    Slash: 1.5
+    Blunt: 1.2
+    Piercing: 2
+    Heat: 4
+    Shock: 0.8
+    Cold: 2.5
+    Caustic: 4
+
+- type: screamOfPain
+  id: screamHuman
+  screamList:
+    50:
+      - "АааааЙ!"
+      - "Ауч!"
+      - "Черт!"
+      - "Мгхххх!!!"
+    100:
+      - "CУКАААА!!!"
+      - "ТВОЮ МАТЬ!!!"
+      - "Черт!"
+      - "Аааагх!"
+    150:
+      - "Ааааа! Хватит!"
+      - "Боооольно!"
+      - "Бляяяяяяяя!"
+      - "Аргх!"
+
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobHumanDummy
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Inventory
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female

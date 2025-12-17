@@ -1,0 +1,11 @@
+- type: entity
+  name: автомат лектер ИФ
+  id: WeaponRifleAssaultLecterPhoenix
+  parent: NFWeaponRifleAssaultLecter
+  description: Улучшенная версия автомата Lecter для службы безопасности ИФ.
+  suffix: Феникс, СБ
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/weapon/FenixLecter.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Phoenix/weapon/FenixLecter.rsi

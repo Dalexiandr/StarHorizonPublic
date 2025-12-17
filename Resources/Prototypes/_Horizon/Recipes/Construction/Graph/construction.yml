@@ -1,0 +1,37 @@
+- type: constructionGraph
+  id: floordrain
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: floordrain
+      steps:
+      - material: Steel
+        amount: 15
+      - material: MetalRod
+        amount: 5
+      - tag: Bucket
+        icon:
+          sprite: Objects/Tools/bucket.rsi
+          state: icon
+        name: ведро
+        doAfter: 10
+
+  - node: floordrain
+    entity: FloorDrain
+    edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 15
+            - !type:SpawnPrototype
+              prototype: PartRodMetal1
+              amount: 5
+            - !type:SpawnPrototype
+              prototype: Bucket
+              amount: 1
+            - !type:DeleteEntity {}
+          steps:
+            - tool: Screwing
+              doAfter: 10

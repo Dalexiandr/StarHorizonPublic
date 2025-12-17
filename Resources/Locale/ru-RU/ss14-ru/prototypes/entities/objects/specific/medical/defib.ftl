@@ -1,0 +1,17 @@
+ent-BaseDefibrillator = дефибриллятор
+    .desc = Чисто! Зззз!
+ent-Defibrillator = { ent-BaseDefibrillator }
+    .desc = { ent-BaseDefibrillator.desc }
+ent-DefibrillatorEmpty = { ent-Defibrillator }
+    .suffix = Пустой
+    .desc = { ent-Defibrillator.desc }
+ent-DefibrillatorOneHandedUnpowered = { ent-BaseDefibrillator }
+    .suffix = Одноручный, Незаряженный
+    .desc = { ent-BaseDefibrillator.desc }
+ent-DefibrillatorCompact = компактный дефибриллятор
+    .desc = Теперь в компактной версии!
+ent-DefibrillatorCompactEmpty = { ent-DefibrillatorCompact }
+    .suffix = Пустой
+    .desc = { ent-DefibrillatorCompact.desc }
+ent-DefibrillatorSyndicate = дефибриллятор Interdyne
+    .desc = Также используется как оружие самообороны против лиц, склонных к военным преступлениям.

@@ -1,0 +1,10 @@
+ent-BaseSlimePotion = slime potion
+    .desc = Slime potion.
+ent-PowerCellSlime = slime power cell
+    .desc = A rechargeable slime cell.
+ent-SlimeLight = slime flash
+    .desc = Slime extract.
+ent-SpeedSlimePotion = speed slime potion
+    .desc = Slime potion.
+ent-PressureSlimePotion = pressure slime potion
+    .desc = Slime potion.

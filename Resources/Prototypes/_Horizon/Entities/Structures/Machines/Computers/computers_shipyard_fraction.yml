@@ -1,0 +1,53 @@
+# Тут должны быть записаны все консоли верфи фракций
+- type: entity
+  name: верфь фракций
+  parent: [BaseStructureDisableToolUse, BaseStructureIndestructible, BaseComputer]
+  id: BaseFractionShipyardComputer
+  description: Используется для покупки/продажи фракционных кораблей
+  suffix: StarHorizon, верфь фракций
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Machines/computers.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: shipyard
+    - map: ["computerLayerKeys"]
+      state: telesci_key
+  - type: ShipyardConsole
+    targetIdSlot:
+      name: id-card-console-target-id
+      ejectSound: /Audio/Machines/id_swipe.ogg
+      insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+      ejectOnBreak: true
+      swap: true
+      whitelist:
+        components:
+        - IdCard
+        - ShipyardVoucher
+    newAccessLevels: [Captain]
+  - type: ActivatableUI
+    singleUser: true
+    key: enum.ShipyardConsoleUiKey.Custom
+  - type: UserInterface
+    interfaces:
+      enum.ShipyardConsoleUiKey.Custom:
+        type: ShipyardConsoleBoundUserInterface
+  - type: ItemSlots
+  - type: ContainerContainer
+    containers:
+      board: !type:Container
+      ShipyardConsole-targetId: !type:ContainerSlot
+  - type: Computer
+    board: Null
+  - type: ShipyardListing
+
+# Пустая верфь фракций
+- type: entity
+  id: SellOnlyFractionShipyardComputer
+  parent: BaseFractionShipyardComputer
+  name: консоль для продажи фракционных шаттлов

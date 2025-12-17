@@ -1,0 +1,39 @@
+- type: vendingMachineInventory
+  id: CuraDrobeInventory
+  startingInventory:
+    BooksBag: 2
+    BriefcaseBrown: 2
+    HandLabeler: 2
+    Cane: 3
+    ClothingEyesGlasses: 2
+    ClothingEyesGlassesJamjar: 2
+    ClothingNeckScarfStripedGreen: 2
+    ClothingUniformJumpsuitCurator: 3
+    ClothingUniformJumpskirtCurator: 3
+    ClothingUniformJumpsuitLibrarian: 3
+    ClothingUniformJumpskirtLibrarian: 3
+    ClothingShoesBootsLaceup: 2
+    # Horizon start
+    ArachnidTranslator: 2
+    NekomimeticTranslator: 2
+    DraconicTranslator: 2
+    CanilunztTranslator: 2
+    SolCommonTranslator: 2
+    DwarfTranslator: 2
+    NianTranslator: 2
+    SikTajTranslator: 2
+    NeoRusskiyaTranslator: 2
+    ClownishTranslator: 2
+    # Horizon end
+#    ClothingHeadsetService: 2 # Frontier
+  contrabandInventory:
+    ToyFigurineLibrarian: 1
+    # Horizon start
+  emaggedInventory:
+    BubblishTranslator: 1
+    RootSpeakTranslator: 1
+    GoblinTranslator: 1
+    HarpyTranslator: 1
+    VoxPidginTranslator: 1
+    # Horizon end
+

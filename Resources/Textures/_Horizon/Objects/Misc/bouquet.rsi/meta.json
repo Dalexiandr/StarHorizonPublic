@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "bush"
+    },
+    {
+      "name": "bush-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "bush-inhand-right",
+      "directions": 4
+    }
+  ]
+}

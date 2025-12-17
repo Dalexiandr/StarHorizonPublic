@@ -1,0 +1,52 @@
+- type: entity
+  id: GuitarCase
+  name: гитарный чехол
+  description: Обычно используется для того, чтобы переносить в нём гитары. Достаточно вместителен.
+  parent: ClothingBackpack
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Backpacks/guitarcase.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Back/Backpacks/guitarcase.rsi
+  - type: Item
+    sprite: _StarHorizon/Clothing/Back/Backpacks/guitarcase.rsi
+    size: Ginormous
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+    - id: AcousticGuitarInstrument
+    - id: BassGuitarInstrument
+    - id: RockGuitarInstrument
+    - id: ElectricGuitarInstrument
+
+- type: entity
+  id: GuitarCaseSyndicate
+  parent: GuitarCase
+  suffix: StarHorizon, Cиндикат
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponSniperBarrettM82
+      - id: MagazineSniperBarrettM82AR
+      - id: MagazineBarrettM82HighVelocity
+      - id: MagazineSniperBarrettM82
+      - id: ClothingEyesGlassesSunglasses
+
+- type: entity
+  parent: BriefcaseBrown
+  id: PokerCase
+  description: черный кейс
+  suffix: StarHorizon, Пустой
+  components:
+  - type: Storage
+    grid:
+    - 0,0,5,3
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Backpack/pokercase.rsi
+    state: icon
+  - type: Item
+    sprite: _StarHorizon/Clothing/Back/Backpack/pokercase.rsi

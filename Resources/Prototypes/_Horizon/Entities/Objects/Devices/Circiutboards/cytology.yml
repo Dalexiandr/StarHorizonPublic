@@ -1,0 +1,33 @@
+- type: entity
+  parent: BaseMachineCircuitboard
+  id: CytologyGrowingVatMachineCircuitboard
+  name: cytology growing vat machine board
+  description: A machine printed circuit board for a cytology growing vat.
+  components:
+  - type: Sprite
+    state: medical
+  - type: MachineBoard
+    prototype: CytologyGrowingVat
+    requirements:
+      MatterBin: 2
+      Manipulator: 2
+    stackRequirements:
+      Cable: 5
+      Glass: 2
+
+- type: entity
+  parent: BaseMachineCircuitboard
+  id: CytologyMicroscopeMachineCircuitboard
+  name: cytology microscope machine board
+  description: A machine printed circuit board for a cytology microscope.
+  components:
+  - type: Sprite
+    state: medical
+  - type: MachineBoard
+    prototype: CytologyMicroscope
+    requirements:
+      MatterBin: 1
+      Capacitor: 1
+    stackRequirements:
+      Cable: 2
+      Glass: 1

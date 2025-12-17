@@ -1,0 +1,22 @@
+﻿- type: constructionGraph
+  id: HardsuitMaximize
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: hardsuitMaximize
+      steps:
+      - tag: HardsuitGoliath
+        icon:
+          sprite: Clothing/OuterClothing/Hardsuits/goliath.rsi
+          state: icon
+        name: скафандр голиафа
+        doAfter: 10
+      - material: Durathread
+        amount: 10
+        doAfter: 10
+      - material: GoliathHide
+        amount: 30
+        doAfter: 10
+  - node: hardsuitMaximize
+    entity: ClothingOuterHardsuitMaxim

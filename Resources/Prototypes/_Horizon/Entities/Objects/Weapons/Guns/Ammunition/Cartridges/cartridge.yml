@@ -1,0 +1,321 @@
+﻿- type: entity
+  id: BaseCartridgeBarrettM8270
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Sprite
+    drawdepth: FloorObjects
+    netsync: false
+  - type: Tag
+    tags:
+    - Cartridge70
+    - CartridgeBarrettM8270
+  - type: Item
+    size: Tiny
+  - type: SpaceGarbage
+
+- type: entity
+  id: CartridgeBarrettM8270
+  name: патрон (.70 крупнокалиберный)
+  suffix: Horizon
+  parent: BaseCartridgeBarrettM8270
+  abstract: true
+  noSpawn: true
+  components:
+  - type: Tag
+    tags:
+    - Cartridge70
+    - CartridgeBarrettM8270
+  - type: CartridgeAmmo
+    proto: BulletSniperBarrettM8270
+  - type: Sprite
+    sprite: _Horizon/Objects/Weapons/Guns/Ammunition/Casings/barrettm82bullet.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 150
+
+- type: entity
+  id: BaseBarrettM8270
+  name: патрон (.70 крупнокалиберный)
+  suffix: Horizon
+  parent: CartridgeBarrettM8270
+  components:
+  - type: CartridgeAmmo
+    proto: BulletSniperBarrettM8270
+
+- type: entity
+  id: BulletSniperBarrettM8270
+  name: патрон (.70 крупнокалиберный)
+  suffix: Horizon
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 40
+        Structural: 30
+
+- type: entity
+  id: CartridgeSniperBarrettM82AR
+  name: патрон (.70 бронированный)
+  suffix: Horizon
+  parent: CartridgeBarrettM8270
+  components:
+  - type: CartridgeAmmo
+    proto: BulletSniperBarrettM82AR
+
+- type: entity
+  id: BulletSniperBarrettM82AR
+  name: патрон (.70 бронированный)
+  suffix: Horizon
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 24
+        Slash: 17
+        Piercing: 24
+        Structural: 50
+  - type: StaminaDamageOnCollide
+    damage: 30
+
+- type: entity
+  id: CartridgeSniperBarrettM82HighVelocity
+  name: патрон (.70 высокоскорострельный)
+  suffix: Horizon
+  parent: CartridgeBarrettM8270
+  components:
+  - type: CartridgeAmmo
+    proto: BulletSniperBarrettM82HighVelocity
+
+- type: entity
+  id: BulletSniperBarrettM82HighVelocity
+  name: патрон (.70 высокоскорострельный)
+  suffix: Horizon
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 48
+        Structural: 40
+
+- type: entity
+  id: BaseCartridge9x18mm
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Sprite
+    drawdepth: FloorObjects
+    netsync: false
+  - type: Tag
+    tags:
+    - 9x18mm
+    - Cartridge9x18mm
+  - type: SpaceGarbage
+
+- type: entity
+  id: Cartridge9x18mm
+  name: патрон (9x18 mm)
+  parent: BaseCartridge9x18mm
+  abstract: true
+  noSpawn: true
+  components:
+  - type: Tag
+    tags:
+      - 9x18mm
+      - Cartridge9x18mm
+  - type: CartridgeAmmo
+    proto: BulletPistol
+  - type: Sprite
+    sprite: _Horizon/Objects/Weapons/Guns/Ammunition/Casings/makarovbullet.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 100
+
+- type: entity
+  id: Base9x18mm
+  name: патрон (9x18 mm)
+  suffix: Horizon
+  parent: Cartridge9x18mm
+  components:
+  - type: CartridgeAmmo
+    proto: BulletPistol9x18mm
+
+- type: entity
+  id: BulletPistol9x18mm
+  name: патрон (9x18 mm)
+  suffix: Horizon
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 19
+
+- type: entity
+  id: CartridgePistol9x18Practick
+  name: патрон (9x18 mm учебный)
+  suffix: Horizon
+  parent: Cartridge9x18mm
+  components:
+  - type: CartridgeAmmo
+    proto: BulletPistol9x18mmPractice
+
+- type: entity
+  id: BulletPistol9x18mmPractice
+  name: патрон (9x18 mm учебный)
+  suffix: Horizon
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 2
+
+- type: entity
+  id: CartridgePistolRubber9x18
+  name: патрон (9x18 mm резиновый)
+  suffix: Horizon
+  parent: Cartridge9x18mm
+  components:
+  - type: CartridgeAmmo
+    proto: BaseBulletRubber9x18mm
+
+- type: entity
+  id: BaseBulletRubber9x18mm
+  name: патрон (9x18 mm резиновый)
+  suffix: Horizon
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 2
+    soundHit:
+      path: /Audio/Weapons/Guns/Hits/snap.ogg
+  - type: StaminaDamageOnCollide
+    damage: 17
+
+- type: entity
+  id: CartridgePistol9x18Incendiary
+  name: патрон (9x18 mm высокоскорострельный)
+  suffix: Horizon
+  parent: Cartridge9x18mm
+  components:
+  - type: CartridgeAmmo
+    proto: BulletPistolHighVelocity9x18
+
+- type: entity
+  id: BulletPistolHighVelocity9x18
+  name: патрон (9x18 mm высокоскорострельный)
+  suffix: Horizon
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 21
+
+- type: entity
+  id: BaseCartridgeMinigunERT15
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Sprite
+    drawdepth: FloorObjects
+    netsync: false
+  - type: Tag
+    tags:
+    - Cartridge15
+    - CartridgeMinigunERT15
+  - type: Item
+    size: Tiny
+  - type: SpaceGarbage
+
+- type: entity
+  id: CartridgeMinigunERT15
+  name: патрон (.15 мелкокалиберный)
+  suffix: StarHorizon
+  parent: BaseCartridgeMinigunERT15
+  abstract: true
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Tag
+    tags:
+    - Cartridge15
+    - CartridgeMinigunERT15
+  - type: CartridgeAmmo
+    proto: BulletMinigunERT15
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Weapons/Guns/Ammunition/Casings/minigunert15bullet.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 10
+
+- type: entity
+  id: BaseMinigunERT15
+  name: патрон (.15 мелкокалиберный)
+  suffix: StarHorizon
+  parent: CartridgeMinigunERT15
+  components:
+  - type: CartridgeAmmo
+    proto: BulletMinigunERT15
+
+- type: entity
+  id: BulletMinigunERT15
+  name: патрон (.15 мелкокалиберный)
+  suffix: StarHorizon
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 7
+
+- type: entity
+  id: BaseMinigunERT15Incendiary
+  name: патрон (.15 зажигательный)
+  suffix: _StarHorizon
+  parent: CartridgeMinigunERT15
+  components:
+  - type: CartridgeAmmo
+    proto: BulletMinigunERT15Incendiary
+
+- type: entity
+  id: BulletMinigunERT15Incendiary
+  name: патрон (.15 зажигательный)
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletIncendiary
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: practice
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 3
+        Heat: 2
+  - type: IgnitionSource
+    ignited: true

@@ -1,0 +1,87 @@
+# Naik21
+# Это пиздец, прописываю только изза того что спонсор + работает на проекте + пока что у нас мало людей!
+# ПОКА что Большое исключение! Потом пересмотреть!!! 12.01.2025
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelNaik21
+  components:
+  - type: StorageFill
+    contents:
+    - id: BluespaceBeakerNaik21
+    - id: BookBase
+    - id: BoxFolderClipboard
+
+- type: entity
+  noSpawn: true
+  name: блюспейс-мензурка
+  parent: BluespaceBeaker
+  description: Создана при помощи экспериментальной блюспейс технологии.
+  id: BluespaceBeakerNaik21
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 300
+
+# por1k
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelPor1k
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingUniformJumpsuitJanitorPor1k
+    - id: ClothingShoesGaloshesPor1k
+    - id: ClothingHeadHatCapPor1k
+
+- type: entity
+  noSpawn: true
+  parent: ClothingUniformJumpsuitJanitor
+  id: ClothingUniformJumpsuitJanitorPor1k
+  name: куртка Dog Nest
+  description: Удобная непромокаемая куртка в комплекте со свободными карго-брюками. На них много ремешков.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Sponsors/Clothing/por1k/jumpsuit.rsi
+  - type: Clothing
+    sprite: _Horizon/Sponsors/Clothing/por1k/jumpsuit.rsi
+
+- type: entity
+  noSpawn: true
+  parent: ClothingShoesGaloshes
+  id: ClothingShoesGaloshesPor1k
+  name: удобные кроксы
+  description: Пара обуви с отличной вентиляцией и необычным дизайном. Удобны в любой ситуации.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Sponsors/Clothing/por1k/feet.rsi
+  - type: Clothing
+    sprite: _Horizon/Sponsors/Clothing/por1k/feet.rsi
+
+- type: entity
+  noSpawn: true
+  parent: ClothingHeadHatCowboyRed
+  id: ClothingHeadHatCapPor1k
+  name: золотистый козырёк
+  description: Козырёк на голову из ярко-жёлтого пластика,призванный защитить ваши глаза от яркого солнца и сильного дождя.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Sponsors/Clothing/por1k/cap.rsi
+  - type: Clothing
+    sprite: _Horizon/Sponsors/Clothing/por1k/cap.rsi
+
+- type: entity
+  noSpawn: true
+  parent: ClothingBeltJanitor
+  id: ClothingBeltJanitorPor1k
+  name: тактический пояс уборщика
+  description: Стильный пояс из прочной ткани с металлическим волокном. Подойдёт для хранения самых важных уборочных приспособлений и никогда не выцветет из-за стирки.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Sponsors/Clothing/por1k/belt.rsi
+  - type: Clothing
+    sprite: _Horizon/Sponsors/Clothing/por1k/belt.rsi

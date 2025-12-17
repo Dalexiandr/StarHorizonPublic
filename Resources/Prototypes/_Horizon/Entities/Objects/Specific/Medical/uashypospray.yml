@@ -1,0 +1,146 @@
+- type: entity
+  name: подкожный распылитель UAS
+  parent: [BaseItem, BaseUASContraband]
+  suffix: StarHorizon, UAS
+  description: Использует технологию подкожного распыления химикатов, подозрительно похожую на "гипоспрей".
+  id: UAShypo
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/uashypospray.rsi
+    state: hypo
+  - type: Item
+    sprite: _Horizon/Objects/Specific/Medical/uashypospray.rsi
+    state: hypo
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 40
+  - type: RefillableSolution
+    solution: hypospray
+  - type: ExaminableSolution
+    solution: hypospray
+  - type: Hypospray
+    onlyAffectsMobs: false
+
+- type: entity
+  name: боевой медипен UAS
+  suffix: StarHorizon, UAS
+  parent: [ChemicalMedipen, BaseUASContraband]
+  id: CombatMedipenUAS
+  description: Предназначен для лечения обширных повреждений. Внимание, может вызвать рвоту!
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/uasmedipen.rsi
+    layers:
+    - state: omega
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: omega_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 75
+        reagents:
+        - ReagentId: Omnizine
+          Quantity: 20
+        - ReagentId: Puncturase
+          Quantity: 10
+        - ReagentId: DexalinPlus
+          Quantity: 20
+        - ReagentId: Pyrazine
+          Quantity: 15
+        - ReagentId: Dermaline
+          Quantity: 10
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 75
+    onlyAffectsMobs: false
+    injectOnly: true
+  - type: StaticPrice
+    price: 500
+  - type: Tag
+    tags: []
+
+- type: entity
+  name: нанитовый медипен UAS
+  suffix: StarHorizon, UAS
+  parent: [ChemicalMedipen, BaseUASContraband]
+  id: NanitMedipenUAS
+  description: Медипен, содержащий наниты. Используйте на свой страх и риск.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/uasmedipen.rsi
+    layers:
+    - state: omega
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: omega_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 20
+        reagents:
+        - ReagentId: uasnanits
+          Quantity: 20
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 20
+    onlyAffectsMobs: false
+    injectOnly: true
+  - type: StaticPrice
+    price: 500
+  - type: Tag
+    tags: []
+
+- type: entity
+  name: нанитовый медипен-дефибриллятор
+  suffix: StarHorizon, UAS
+  parent: [ChemicalMedipen, BaseUASContraband]
+  id: NanitDefibMedipenUAS
+  description: Одноразовый медипен-дефибриллятор. Содержит почти смертельную дозу нанитов.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/uasmedipen.rsi
+    layers:
+    - state: omega
+      map: ["enum.SolutionContainerLayers.Fill"]
+    - state: omega_defib
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: omega_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 29.5
+        reagents:
+        - ReagentId: uasnanits
+          Quantity: 29.5
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 29.5
+    onlyAffectsMobs: false
+    injectOnly: true
+  - type: StaticPrice
+    price: 500
+  - type: Tag
+    tags: []
+  - type: Defibrillator
+    doAfterDuration: 0
+    zapDelay: 600
+    zapHeal:
+      types:
+        Asphyxiation: -40
+  - type: ContainerContainer
+    containers:
+      cell_slot: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellSmall
+        disableEject: true

@@ -1,0 +1,12 @@
+- type: entity
+  id: JuggernautSettings
+  name: Открыть интерфейс
+  description: Открывает интерфейс скафандра ОБР Джаггернаут
+  components:
+  - type: Action
+    icon:
+      sprite: _StarHorizon/Interface/Actions/ertjuggaction.rsi
+      state: jugg_interface
+    itemIconStyle: NoItem
+  - type: InstantAction
+    event: !type:JuggernautSettingsActionEvent

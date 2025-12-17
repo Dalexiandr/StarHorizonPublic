@@ -1,0 +1,18 @@
+- type: species
+  id: Dwarf
+  name: species-name-dwarf
+  description: "/ServerInfo/_Horizon/SpeciesDesc/Dwarf.xml" # Horizon
+  roundStart: true
+  prototype: MobDwarf
+  sprites: MobHumanSprites
+  markingLimits: MobHumanMarkingLimits
+  dollPrototype: MobDwarfDummy
+  skinColoration: HumanToned
+  # Horizon start
+  defaultLanguages:
+  - GalacticCommon
+  - Dwarf
+  prosCount: 2
+  specialCount: 1
+  consCount: 2
+  # Horizon end

@@ -1,0 +1,52 @@
+- type: entity
+  save: false
+  name: Urist McPlants
+  parent: BaseMobDiona
+  id: MobDiona
+  components:
+    - type: Respirator
+      damage:
+        types:
+          Asphyxiation: 0.5
+      damageRecovery:
+        types:
+          Asphyxiation: -1.0
+    # Horizon
+    - type: SampleSource
+      availableCellSamples:
+      - protoID: CellSampleDiona
+
+# Cytology
+- type: entity
+  name: Urist Grown Diona
+  parent: MobDiona
+  id: MobDionaGrown
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StaticPrice
+    price: 2500
+  - type: RandomMetadata
+    nameSegments:
+      - NamesFirst
+      - NamesLast
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: ghost-role-information-grown-diona-name
+    description: Вы диона, растительный организм, выращенный в цитологической ванне. Вы чувствуете связь с природой. Осторожно исследуйте окружающий мир!
+    raffle:
+      settings: short
+  - type: GhostTakeoverAvailable
+
+# Reformed Diona
+- type: entity
+  parent: MobDiona
+  categories: [ HideSpawnMenu ]
+  id: MobDionaReformed
+  name: Reformed Diona
+  components:
+    - type: IsDeadIC
+    - type: RandomHumanoidAppearance

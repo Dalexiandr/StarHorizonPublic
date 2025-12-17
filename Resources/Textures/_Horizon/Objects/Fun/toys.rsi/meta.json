@@ -1,0 +1,277 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/e1142f20f5e4661cb6845cfcf2dd69f864d67432, orb, orb-inhand-left and orb-inhand-right created by Pancake, plushie_diona and plushie_diona1 created by discord user Deos#5630, toy-mouse-equipped-HELMET is a resprited 1-equipped-HELMET in mouse.rsi by PuroSlavKing (Github), plushie_xeno by LinkUyx#6557, plushie_hampter by RenLou#4333, beachball taken from https://github.com/ss220-space/Paradise/commit/662c08272acd7be79531550919f56f846726eabb, beachb-inhand by ;3#1161, bee hat and in-hand sprites drawn by Ubaser, plushie_penguin by netwy, plushie_arachnid by PixelTheKermit (github), plushie human by TheShuEd, NanoTrasen Balloon by MACMAN2003, holoplush and magicplush modified by deltanedas (github), lizard hat sprite made by Cinder, rubber_chicken by xprospero, in-hand lizard plushie sprites by KieueCaprie, plushie_lizard_inversed and inhand sprites modified from plushie_lizard_mirrored and plushielizard-inhand-left, plushielizard-inhand-right by ArtisticRoomba, rainbowcarplush and inhand sprites modified from carpplush and inhand sprites by ArtisticRoomba, spacelizard-equipped-HELMET by miamioni, spacelizard-inhand-(left/right) by SeamLesss (GitHub), plushiesnake inhands+neck by TiniestShark (GitHub)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "baloon1-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "baloon1-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "baloon1"
+    },
+        {
+      "name": "baloon2-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "baloon2-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "baloon2"
+    },
+        {
+      "name": "baloon3-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "baloon3-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "baloon3"
+    },
+        {
+      "name": "baloon4-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "baloon4-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "baloon4"
+    },
+        {
+      "name": "baloon5-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "baloon5-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "baloon5"
+    },
+        {
+      "name": "baloon6-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "baloon6-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "baloon6"
+    },
+        {
+      "name": "baloon7-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "baloon7-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "baloon7"
+    },
+        {
+      "name": "baloon8-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "baloon8-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "baloon8"
+    },
+        {
+      "name": "baloon9-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "baloon9-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "baloon9"
+    },
+        {
+      "name": "baloon10-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "baloon10-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "baloon10"
+    },
+        {
+      "name": "baloon11-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "baloon11-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "baloon11"
+    },
+        {
+      "name": "baloon12-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "baloon12-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "baloon12"
+    },
+        {
+      "name": "baloon13-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "baloon13-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "baloon13"
+    },
+        {
+      "name": "baloon14-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "baloon14-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "baloon14"
+    },
+        {
+      "name": "baloon15-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "baloon15-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "baloon15"
+    },
+        {
+      "name": "baloon16-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "baloon16-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "baloon16"
+    },    
+        {
+      "name": "baloon17-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "baloon17-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "baloon17"
+    },
+        {
+      "name": "baloon18-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "baloon18-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "baloon18"
+    },
+    {
+      "name": "baloon1base"
+    },    
+    {
+      "name": "baloon2base"
+    },
+        {
+      "name": "baloon3base"
+    },
+        {
+      "name": "baloon4base"
+    },
+        {
+      "name": "baloon5base"
+    },
+        {
+      "name": "baloon6base"
+    },
+        {
+      "name": "baloon7base"
+    },
+        {
+      "name": "baloon8base"
+    },
+        {
+      "name": "baloon9base"
+    },
+        {
+      "name": "baloon10base"
+    },
+        {
+      "name": "baloon11base"
+    },
+        {
+      "name": "baloon12base"
+    },
+        {
+      "name": "baloon13base"
+    },
+        {
+      "name": "baloon14base"
+    },
+        {
+      "name": "baloon15base"
+    },
+        {
+      "name": "baloon16base"
+    },
+        {
+      "name": "baloon17base"
+    },
+        {
+      "name": "baloon18base"
+    },
+    {
+      "name": "box-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "box-inhand-right",
+      "directions": 4
+    },    
+    {
+      "name": "box"
+    },
+    {
+      "name": "box-open"
+    }       
+  ]
+}

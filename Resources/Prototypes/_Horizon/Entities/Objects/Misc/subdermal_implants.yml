@@ -1,0 +1,14 @@
+- type: entity
+  parent: BaseSubdermalImplant
+  id: TraumaTrackingImplant
+  name: биометрический имплант траумы
+  description: Клиентский имплант который передает биометрику на сервера Траумы.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: SubdermalImplant
+    - type: TriggerOnMobstateChange
+      mobState:
+      - Critical
+      - Dead
+    - type: Rattle
+      radioChannel: "Trauma"

@@ -1,0 +1,399 @@
+- type: entity
+  id: FloorWaterEntityBasalt
+  parent: FloorWaterEntity
+  name: вода
+  description: Настоящий утолитель жажды.
+  suffix: базальт
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    sprite: _Horizon/Tiles/Planet/Water/Basalt.rsi
+    drawdepth: BelowFloor
+    layers:
+      - state: shoreline_water
+  - type: Icon
+    sprite: _Horizon/Tiles/Planet/Water/Basalt.rsi
+    state: full
+  - type: IconSmooth
+    key: floor
+    additionalKeys:
+    - walls
+    base: water
+
+- type: entity
+  id: FloorWaterEntityDirt1
+  parent: FloorWaterEntity
+  name: вода
+  description: Настоящий утолитель жажды.
+  suffix: грязь
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    sprite: _Horizon/Tiles/Planet/Water/Dirt1.rsi
+    drawdepth: BelowFloor
+    layers:
+      - state: shoreline_water
+  - type: Icon
+    sprite: _Horizon/Tiles/Planet/Water/Dirt1.rsi
+    state: full
+  - type: IconSmooth
+    key: floor
+    additionalKeys:
+    - walls
+    base: water
+
+- type: entity
+  id: FloorWaterEntityDirt2
+  parent: FloorWaterEntity
+  name: вода
+  description: Настоящий утолитель жажды.
+  suffix: грязь
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    sprite: _Horizon/Tiles/Planet/Water/Dirt2.rsi
+    drawdepth: BelowFloor
+    layers:
+      - state: shoreline_water
+  - type: Icon
+    sprite: _Horizon/Tiles/Planet/Water/Dirt2.rsi
+    state: full
+  - type: IconSmooth
+    key: floor
+    additionalKeys:
+    - walls
+    base: water
+
+- type: entity
+  id: FloorWaterEntityCave
+  parent: FloorWaterEntity
+  name: вода
+  description: Настоящий утолитель жажды.
+  suffix: пещера
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    sprite: _Horizon/Tiles/Planet/Water/Cave.rsi
+    drawdepth: BelowFloor
+    layers:
+      - state: shoreline_water
+  - type: Icon
+    sprite: _Horizon/Tiles/Planet/Water/Cave.rsi
+    state: full
+  - type: IconSmooth
+    key: floor
+    additionalKeys:
+    - walls
+    base: water
+
+- type: entity
+  id: FloorWaterEntityCaveDark
+  parent: FloorWaterEntity
+  name: вода
+  description: Настоящий утолитель жажды.
+  suffix: пещера
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    sprite: _Horizon/Tiles/Planet/Water/CaveDark.rsi
+    drawdepth: BelowFloor
+    layers:
+      - state: shoreline_water
+  - type: Icon
+    sprite: _Horizon/Tiles/Planet/Water/CaveDark.rsi
+    state: full
+  - type: IconSmooth
+    key: floor
+    additionalKeys:
+    - walls
+    base: water
+
+- type: entity
+  id: FloorWaterEntityGrassDark
+  parent: FloorWaterEntity
+  name: вода
+  description: Настоящий утолитель жажды.
+  suffix: трава
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    sprite: _Horizon/Tiles/Planet/Water/GrassDark.rsi
+    drawdepth: BelowFloor
+    layers:
+      - state: shoreline_water
+  - type: Icon
+    sprite: _Horizon/Tiles/Planet/Water/GrassDark.rsi
+    state: full
+  - type: IconSmooth
+    key: floor
+    additionalKeys:
+    - walls
+    base: water
+
+- type: entity
+  id: FloorWaterEntityGrassNormal
+  parent: FloorWaterEntity
+  name: вода
+  description: Настоящий утолитель жажды.
+  suffix: трава
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    sprite: _Horizon/Tiles/Planet/Water/GrassNormal.rsi
+    drawdepth: BelowFloor
+    layers:
+      - state: shoreline_water
+  - type: Icon
+    sprite: _Horizon/Tiles/Planet/Water/GrassNormal.rsi
+    state: full
+  - type: IconSmooth
+    key: floor
+    additionalKeys:
+    - walls
+    base: water
+
+- type: entity
+  id: FloorWaterEntityGrassOrange
+  parent: FloorWaterEntity
+  name: вода
+  description: Настоящий утолитель жажды.
+  suffix: трава
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    sprite: _Horizon/Tiles/Planet/Water/GrassOrange.rsi
+    drawdepth: BelowFloor
+    layers:
+      - state: shoreline_water
+  - type: Icon
+    sprite: _Horizon/Tiles/Planet/Water/GrassOrange.rsi
+    state: full
+  - type: IconSmooth
+    key: floor
+    additionalKeys:
+    - walls
+    base: water
+
+- type: entity
+  id: FloorWaterEntityGrassJungle
+  parent: FloorWaterEntity
+  name: вода
+  description: Настоящий утолитель жажды.
+  suffix: трава
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    sprite: _Horizon/Tiles/Planet/Water/GrassJungle.rsi
+    drawdepth: BelowFloor
+    layers:
+      - state: shoreline_water
+  - type: Icon
+    sprite: _Horizon/Tiles/Planet/Water/GrassJungle.rsi
+    state: full
+  - type: IconSmooth
+    key: floor
+    additionalKeys:
+    - walls
+    base: water
+
+- type: entity
+  id: FloorWaterEntityGrassDarkOrig
+  parent: FloorWaterEntity
+  name: вода
+  description: Настоящий утолитель жажды.
+  suffix: трава
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    sprite: _Horizon/Tiles/Planet/Water/GrassDarkOrig.rsi
+    drawdepth: BelowFloor
+    layers:
+      - state: shoreline_water
+  - type: Icon
+    sprite: _Horizon/Tiles/Planet/Water/GrassDarkOrig.rsi
+    state: full
+  - type: IconSmooth
+    key: floor
+    additionalKeys:
+    - walls
+    base: water      
+
+- type: entity
+  id: FloorWaterEntityGrassMegaGreen
+  parent: FloorWaterEntity
+  name: вода
+  description: Настоящий утолитель жажды.
+  suffix: трава
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    sprite: _Horizon/Tiles/Planet/Water/GrassMegaGreen.rsi
+    drawdepth: BelowFloor
+    layers:
+      - state: shoreline_water
+  - type: Icon
+    sprite: _Horizon/Tiles/Planet/Water/GrassMegaGreen.rsi
+    state: full
+  - type: IconSmooth
+    key: floor
+    additionalKeys:
+    - walls
+    base: water          
+
+- type: entity
+  id: FloorWaterEntitySand
+  parent: FloorWaterEntity
+  name: вода
+  description: Настоящий утолитель жажды.
+  suffix: песок
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    sprite: _Horizon/Tiles/Planet/Water/Sand.rsi
+    drawdepth: BelowFloor
+    layers:
+      - state: shoreline_water
+  - type: Icon
+    sprite: _Horizon/Tiles/Planet/Water/Sand.rsi
+    state: full
+  - type: IconSmooth
+    key: floor
+    additionalKeys:
+    - walls
+    base: water
+
+- type: entity
+  id: FloorWaterEntityEdged1
+  parent: FloorWaterEntity
+  name: вода
+  description: Настоящий утолитель жажды.
+  suffix: бортик
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    sprite: _Horizon/Tiles/Planet/Water/Edged1.rsi
+    drawdepth: BelowFloor
+    layers:
+      - state: shoreline_water
+  - type: Icon
+    sprite: _Horizon/Tiles/Planet/Water/Edged1.rsi
+    state: full
+  - type: IconSmooth
+    key: floor
+    additionalKeys:
+    - walls
+    base: water    
+
+- type: entity
+  id: FloorWaterEntityEdged2
+  parent: FloorWaterEntity
+  name: вода
+  description: Настоящий утолитель жажды.
+  suffix: бортик
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    sprite: _Horizon/Tiles/Planet/Water/Edged2.rsi
+    drawdepth: BelowFloor
+    layers:
+      - state: shoreline_water
+  - type: Icon
+    sprite: _Horizon/Tiles/Planet/Water/Edged2.rsi
+    state: full
+  - type: IconSmooth
+    key: floor
+    additionalKeys:
+    - walls
+    base: water        
+
+- type: entity
+  id: FloorWaterEntityEdged3
+  parent: FloorWaterEntity
+  name: вода
+  description: Настоящий утолитель жажды.
+  suffix: бортик
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    sprite: _Horizon/Tiles/Planet/Water/Edged3.rsi
+    drawdepth: BelowFloor
+    layers:
+      - state: shoreline_water
+  - type: Icon
+    sprite: _Horizon/Tiles/Planet/Water/Edged3.rsi
+    state: full
+  - type: IconSmooth
+    key: floor
+    additionalKeys:
+    - walls
+    base: water         
+
+- type: entity
+  id: FloorWaterEntitySnow
+  parent: FloorWaterEntity
+  name: вода
+  description: Настоящий утолитель жажды.
+  suffix: снег
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    sprite: _Horizon/Tiles/Planet/Water/Snow.rsi
+    drawdepth: BelowFloor
+    layers:
+      - state: shoreline_water
+  - type: Icon
+    sprite: _Horizon/Tiles/Planet/Water/Snow.rsi
+    state: full
+  - type: IconSmooth
+    key: floor
+    additionalKeys:
+    - walls
+    base: water             

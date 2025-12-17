@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DefaultWindow xmlns="https://spacestation14.io"
+               xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+               xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+               x:Class="Content.Client._Horizon.ERTJuggernaut.JuggernautWindow"
+               Title="{Loc 'ert-juggernaut-window-title'}"
+               MinSize="700 700"
+               SetSize="700 700">
+    <BoxContainer Orientation="Vertical" 
+                  HorizontalExpand="True" 
+                  VerticalExpand="True"
+                  Margin="10">
+
+        <!-- Navigation Buttons -->
+        <BoxContainer Orientation="Horizontal"
+                      HorizontalAlignment="Center"
+                      Margin="0 5 0 10">
+            <Button Name="ChemMasterPageButton"
+                    Text="{Loc 'ert-juggernaut-chemmaster-page'}"
+                    StyleClasses="OpenLeft"
+                    MinWidth="120"/>
+            <Button Name="HealthPageButton" 
+                    Text="{Loc 'ert-juggernaut-health-page'}"
+                    StyleClasses="OpenRight"
+                    MinWidth="120"/>
+        </BoxContainer>
+
+        <!-- Pages Container -->
+        <PanelContainer Name="PagesContainer" VerticalExpand="True">
+            <!-- ChemMaster Page -->
+            <Control Name="ChemMasterPage" Visible="True">
+                <BoxContainer Orientation="Vertical"
+                            HorizontalExpand="True"
+                            VerticalExpand="True">
+                    
+                    <!-- Reagents Info -->
+                    <BoxContainer Orientation="Vertical"
+                                HorizontalExpand="True"
+                                VerticalExpand="True">
+                        
+                        <!-- Total Reagents Info -->
+                        <BoxContainer Orientation="Horizontal"
+                                    Margin="10 0 10 10"
+                                    HorizontalExpand="True">
+                            <Label Text="{Loc 'ert-juggernaut-total-reagents'}"
+                                   StyleClasses="LabelHeading"/>
+                            <Label Name="TotalReagentsLabel"
+                                   StyleClasses="LabelHeading"
+                                   HorizontalExpand="True"
+                                   HorizontalAlignment="Left"
+                                   Margin="5 0 0 0"/>
+                        </BoxContainer>
+                        
+                        <!-- Reagents Section -->
+                        <BoxContainer Orientation="Vertical" 
+                                    Margin="10 0 10 10" 
+                                    VerticalExpand="True">
+                            <Label Text="{Loc 'ert-juggernaut-chemmaster-subtitle'}"
+                                   StyleClasses="LabelHeading"
+                                   Margin="0 0 0 10"/>
+                            
+                            <ScrollContainer VerticalExpand="True"
+                                          HorizontalExpand="True"
+                                          VerticalAlignment="Stretch"
+                                          Margin="0 0 0 10">
+                                <BoxContainer Name="ReagentsContainer"
+                                            Orientation="Vertical"
+                                            HorizontalExpand="True"
+                                            VerticalExpand="True"/>
+                            </ScrollContainer>
+                        </BoxContainer>
+
+                        <!-- Inject Button -->
+                        <PanelContainer Margin="10 0 10 5">
+                            <PanelContainer.PanelOverride>
+                                <gfx:StyleBoxFlat 
+                                    BorderColor="#40526A"
+                                    BorderThickness="1"
+                                    BackgroundColor="#1a1a1a"/>
+                            </PanelContainer.PanelOverride>
+                            <Button Name="InjectButton"
+                                    Text="{Loc 'ert-juggernaut-chemmaster-inject'}"
+                                    StyleClasses="OpenBoth"
+                                    HorizontalAlignment="Center"
+                                    MinHeight="35"
+                                    MinWidth="200"
+                                    Margin="10"/>
+                        </PanelContainer>
+                    </BoxContainer>
+                </BoxContainer>
+            </Control>
+
+            <!-- Health Page -->
+            <Control Name="HealthPage" Visible="False">
+                <BoxContainer Orientation="Horizontal"
+                            HorizontalExpand="True"
+                            VerticalExpand="True">
+                    
+                    <!-- Health Info -->
+                    <BoxContainer Orientation="Vertical"
+                                HorizontalExpand="True"
+                                VerticalExpand="True"
+                                Margin="10 0">
+                        
+                        <!-- Status -->
+                        <BoxContainer Orientation="Horizontal" 
+                                    Margin="0 0 0 10"
+                                    HorizontalAlignment="Left">
+                            <Label Name="StatusLabel"
+                                  Text="{Loc 'ert-juggernaut-status-label'}"
+                                  StyleClasses="LabelHeading"/>
+                            <RichTextLabel Name="StatusValue"
+                                  StyleClasses="LabelHeading"
+                                  Margin="5 0 0 0"/>
+                        </BoxContainer>
+
+                        <!-- Primary Stats Section -->
+                        <BoxContainer Orientation="Vertical" Margin="0 0 0 10">
+                            <Label Text="{Loc 'ert-juggernaut-primary-stats'}"
+                                   StyleClasses="LabelHeading"
+                                   Margin="0 0 0 10"/>
+                            
+                            <!-- Health Bar -->
+                            <BoxContainer Orientation="Horizontal"
+                                        Margin="0 0 0 5">
+                                <Label Text="{Loc 'ert-juggernaut-health-bar'}"
+                                       StyleClasses="LabelSubText"
+                                       MinWidth="100"/>
+                                <RichTextLabel Name="HealthInfo"
+                                             StyleClasses="LabelSubText"
+                                             Margin="10 0 0 0"/>
+                            </BoxContainer>
+                            <PanelContainer Margin="0 0 0 10">
+                                <PanelContainer.PanelOverride>
+                                    <gfx:StyleBoxFlat 
+                                        BorderColor="#40526A"
+                                        BorderThickness="1"
+                                        BackgroundColor="#1a1a1a"/>
+                                </PanelContainer.PanelOverride>
+                                <ProgressBar Name="HealthBar"
+                                           MinValue="0"
+                                           MaxValue="100"
+                                           Value="100"
+                                           MinHeight="30"
+                                           HorizontalExpand="True"/>
+                            </PanelContainer>
+
+                            <!-- Stamina Bar -->
+                            <BoxContainer Orientation="Horizontal"
+                                        Margin="0 0 0 5">
+                                <Label Text="{Loc 'ert-juggernaut-stamina'}"
+                                       StyleClasses="LabelSubText"
+                                       MinWidth="100"/>
+                                <RichTextLabel Name="StaminaInfo"
+                                             StyleClasses="LabelSubText"
+                                             Margin="10 0 0 0"/>
+                            </BoxContainer>
+                            <PanelContainer Margin="0 0 0 10">
+                                <PanelContainer.PanelOverride>
+                                    <gfx:StyleBoxFlat 
+                                        BorderColor="#40526A"
+                                        BorderThickness="1"
+                                        BackgroundColor="#1a1a1a"/>
+                                </PanelContainer.PanelOverride>
+                                <ProgressBar Name="StaminaBar"
+                                           MinValue="0"
+                                           MaxValue="100"
+                                           Value="100"
+                                           MinHeight="25"
+                                           HorizontalExpand="True"/>
+                            </PanelContainer>
+                        </BoxContainer>
+
+                        <!-- Secondary Stats Section -->
+                        <BoxContainer Orientation="Vertical" Margin="0 0 0 10">
+                            <Label Text="{Loc 'ert-juggernaut-secondary-stats'}"
+                                   StyleClasses="LabelHeading"
+                                   Margin="0 0 0 10"/>
+
+                            <!-- Hunger Bar -->
+                            <BoxContainer Orientation="Horizontal"
+                                        Margin="0 0 0 5">
+                                <Label Text="{Loc 'ert-juggernaut-hunger'}"
+                                       StyleClasses="LabelSubText"
+                                       MinWidth="100"/>
+                                <RichTextLabel Name="HungerInfo"
+                                             StyleClasses="LabelSubText"
+                                             Margin="10 0 0 0"/>
+                            </BoxContainer>
+                            <PanelContainer Margin="0 0 0 10">
+                                <PanelContainer.PanelOverride>
+                                    <gfx:StyleBoxFlat 
+                                        BorderColor="#40526A"
+                                        BorderThickness="1"
+                                        BackgroundColor="#1a1a1a"/>
+                                </PanelContainer.PanelOverride>
+                                <ProgressBar Name="HungerBar"
+                                           MinValue="0"
+                                           MaxValue="100"
+                                           Value="100"
+                                           MinHeight="25"
+                                           HorizontalExpand="True">
+                                    <ProgressBar.ForegroundStyleBoxOverride>
+                                        <gfx:StyleBoxFlat BackgroundColor="#f5a742"/>
+                                    </ProgressBar.ForegroundStyleBoxOverride>
+                                </ProgressBar>
+                            </PanelContainer>
+
+                            <!-- Thirst Bar -->
+                            <BoxContainer Orientation="Horizontal"
+                                        Margin="0 0 0 5">
+                                <Label Text="{Loc 'ert-juggernaut-thirst'}"
+                                       StyleClasses="LabelSubText"
+                                       MinWidth="100"/>
+                                <RichTextLabel Name="ThirstInfo"
+                                             StyleClasses="LabelSubText"
+                                             Margin="10 0 0 0"/>
+                            </BoxContainer>
+                            <PanelContainer Margin="0 0 0 10">
+                                <PanelContainer.PanelOverride>
+                                    <gfx:StyleBoxFlat 
+                                        BorderColor="#40526A"
+                                        BorderThickness="1"
+                                        BackgroundColor="#1a1a1a"/>
+                                </PanelContainer.PanelOverride>
+                                <ProgressBar Name="ThirstBar"
+                                           MinValue="0"
+                                           MaxValue="100"
+                                           Value="100"
+                                           MinHeight="25"
+                                           HorizontalExpand="True">
+                                    <ProgressBar.ForegroundStyleBoxOverride>
+                                        <gfx:StyleBoxFlat BackgroundColor="#4287f5"/>
+                                    </ProgressBar.ForegroundStyleBoxOverride>
+                                </ProgressBar>
+                            </PanelContainer>
+                        </BoxContainer>
+
+                        <!-- Status Effects -->
+                        <BoxContainer Name="StatusEffectsContainer"
+                                    Orientation="Vertical"
+                                    VerticalExpand="True"
+                                    Margin="0 0 0 5">
+                            <Label Text="{Loc 'ert-juggernaut-status-effects'}"
+                                   StyleClasses="LabelHeading"
+                                   Margin="0 0 0 10"/>
+                            <ScrollContainer VerticalExpand="True"
+                                          HorizontalExpand="True"
+                                          VerticalAlignment="Stretch">
+                                <PanelContainer>
+                                    <PanelContainer.PanelOverride>
+                                        <gfx:StyleBoxFlat 
+                                            BorderColor="#40526A"
+                                            BorderThickness="1"/>
+                                    </PanelContainer.PanelOverride>
+                                    <BoxContainer Name="StatusEffectsList"
+                                                Orientation="Vertical"
+                                                VerticalExpand="True"
+                                                Margin="10"/>
+                                </PanelContainer>
+                            </ScrollContainer>
+                        </BoxContainer>
+                    </BoxContainer>
+
+                    <!-- Character Preview -->
+                    <BoxContainer Orientation="Vertical"
+                                MinWidth="150"
+                                VerticalAlignment="Center"
+                                Margin="20 0 0 0">
+                        <SpriteView Name="PlayerSpriteClothed"
+                                   SetSize="150 150"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"
+                                   OverrideDirection="South"
+                                   Scale="2.5 2.5"/>
+                    </BoxContainer>
+                </BoxContainer>
+            </Control>
+        </PanelContainer>
+    </BoxContainer>
+</DefaultWindow>

@@ -1,0 +1,65 @@
+# Mail Carrier
+- type: job
+  id: ERTMailCarrier
+  name: job-name-ertmailcarrier
+  description: job-description-ertmailcarrier
+  playTimeTracker: JobERTMailCarrier
+  whitelisted: true
+  setPreference: false
+  startingGear: ERTMailCarrierGearEVA
+  icon: "JobIconNanotrasen"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  access:
+  - CentralCommand
+
+- type: startingGear
+  id: ERTMailCarrierGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTMailCarrier
+    back: ClothingBackpackERTMailCarrier
+    shoes: ClothingShoesBootsCombatFilled
+    head: ClothingHeadHelmetERTMailCarrier
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorBasicSlim
+    id: ERTMailCarrierPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: NFMailBagCapsulePrimed
+    pocket1: Flare
+    pocket2: DoubleEmergencyTankO2N2EqualFilled
+  storage:
+    back:
+#    - SecBreachingHammer
+#    - NFWeaponLauncherMail
+    - RubberStampCentcom
+    - BoxFolderCentCom
+
+- type: startingGear
+  id: ERTMailCarrierGearEVA
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTMailCarrier
+    back: ClothingBackpackERTMailCarrier
+    shoes: ClothingShoesBootsMagAdv
+    mask: ClothingMaskGasERT
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitERTMailCarrier
+    id: ERTMailCarrierPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: NFMailBagCapsulePrimed
+    pocket1: Flare
+    pocket2: DoubleEmergencyTankO2N2EqualFilled
+  storage:
+    back:
+#    - SecBreachingHammer
+#    - NFWeaponLauncherMail
+    - RubberStampCentcom
+    - BoxFolderCentCom
+
+- type: chameleonOutfit
+  id: ERTMailCarrierChameleonOutfit
+  job: ERTMailCarrier
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHelmetERTMailCarrier

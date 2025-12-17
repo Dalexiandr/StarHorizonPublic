@@ -1,0 +1,25 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckChocker
+  name: чокер
+  description: Очень удобен на шее!
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/chocker.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Neck/chocker.rsi
+  - type: Item
+    size: Small
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckSharfVetra
+  name: шарф ветра
+  description: Прелестный шарф, сделанный из приятной и лёгкой ткани. В общем-то, ткань настолько лёгкая, что шарф способен развиваться на ветру даже без движения. И воздуха.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/sharfvetra.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Neck/sharfvetra.rsi

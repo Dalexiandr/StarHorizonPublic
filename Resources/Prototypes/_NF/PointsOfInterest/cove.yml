@@ -1,0 +1,52 @@
+# Author Info
+# GitHub:
+# Discord: dvir01
+
+# Maintainer Info
+# GitHub: ???
+# Discord: ???
+
+# Notes:
+# Byarr
+- type: pointOfInterest
+  id: Cove
+  parent: BasePOI
+  name: Pirate Cove
+  minimumDistance: 10000
+  maximumDistance: 15000
+  spawnGamePreset: [ NFPirate ]
+  spawnGroup: Required
+  gridPath: /Maps/_Horizon/POI/cove.yml # Horizon-Maps
+  hideWarp: true
+  addComponents:
+  - type: IFF
+    color: "#C83737"
+    flags: [HideLabel, Hide]
+    readOnly: false
+
+- type: gameMap
+  id: Cove
+  mapName: 'Pirate Cove'
+  mapPath: /Maps/_Horizon/POI/cove.yml # Horizon-Maps
+  minPlayers: 0
+  stations:
+    Cove:
+      stationProto: RecordsFrontierOutpost
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Pirate Cove'
+        - type: ExtraStationInformation
+          iconPath: /Textures/_Horizon/Interface/banner_pirate_red.png # Horizon
+          stationSubtext: 'frontier-lobby-pirate-subtext'
+          stationDescription: 'frontier-lobby-pirate-description'
+          lobbySortOrder: 6
+        - type: StationJobs
+          availableJobs:
+            NFPirateCaptain: [ 1, 1 ]
+            NFPirateFirstMate: [ 1, 1 ]
+            NFPirate: [ 3, 3 ] # Horizon
+        - type: StationDeadDropReporting
+          messageSet: Pirate
+        - type: StationDeadDropHintExempt
+        - type: TradeCrateWildcardDestination
+        - type: BindToStationVariationPassExemption

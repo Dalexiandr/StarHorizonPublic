@@ -1,0 +1,41 @@
+﻿<ui:FancyWindow xmlns="https://spacestation14.io"
+                xmlns:ui="clr-namespace:Content.Client.UserInterface.Controls"
+                xmlns:style="clr-namespace:Content.Client.Stylesheets"
+                xmlns:xNamespace="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+                SetSize="400 500" Title="{Loc 'media-player-menu-title'}" Resizable="False">
+    <BoxContainer Margin="10 10" Orientation="Vertical">
+
+        <BoxContainer Orientation="Vertical" HorizontalExpand="True" VerticalExpand="False">
+            <LineEdit Name="Search" PlaceHolder="Search Music" HorizontalExpand="True"/>
+            <Label Margin="0 10 0 0" Name="CurrentPlaying"/>
+        </BoxContainer>
+
+        <PanelContainer Margin="0 10" HorizontalExpand="True" VerticalExpand="True">
+            <!-- Dark background for list of songs !-->
+            <PanelContainer.PanelOverride>
+                <graphics:StyleBoxFlat BackgroundColor="{xNamespace:Static style:StyleNano.PanelDark}" />
+            </PanelContainer.PanelOverride>
+
+            <ScrollContainer ScrollSpeedY="20" HScrollEnabled="false" VerticalExpand="True">
+                <BoxContainer Name="MediaList" Orientation="Vertical" HorizontalExpand="True" VerticalExpand="True"/>
+            </ScrollContainer>
+        </PanelContainer>
+
+
+        <BoxContainer Orientation="Vertical">
+            <Slider Name="PlaybackSlider" HorizontalExpand="True"/>
+            <BoxContainer Orientation="Horizontal" Margin="0 10 0 0">
+                <BoxContainer HorizontalExpand="True" SeparationOverride="6">
+                    <TextureButton SetHeight="32" Name="RepeatButton" TexturePath="/Textures/_Horizon/Interface/repeat.png"/>
+                    <TextureButton SetHeight="32" Name="StopButton" TexturePath="/Textures/_Horizon/Interface/stop.png"/>
+                    <TextureButton SetHeight="32" ToggleMode="True" Name="PlayButton" TexturePath="/Textures/_Horizon/Interface/play.png"/>
+                </BoxContainer>
+
+
+                <Label HorizontalAlignment="Right" Name="DurationLabel" Text="00:00 / 00:00"/>
+                <TextureButton Visible="False" SetHeight="32" HorizontalAlignment="Right" Name="VolumeButton" TexturePath="/Textures/_Horizon/Interface/volume_1.png"/>
+            </BoxContainer>
+        </BoxContainer>
+    </BoxContainer>
+</ui:FancyWindow>

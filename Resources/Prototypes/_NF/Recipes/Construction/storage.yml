@@ -1,0 +1,23 @@
+# Shelfs
+## Wall freezers
+- type: construction
+  id: ShelfWallFreezerWhite
+  graph: WallFreezer
+  startNode: start
+  targetNode: ShelfWallFreezerWhite
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: true
+  conditions:
+    - !type:WallmountCondition
+
+- type: construction
+  id: ShelfWallFreezerDark
+  graph: WallFreezer
+  startNode: start
+  targetNode: ShelfWallFreezerDark
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: true
+  conditions:
+    - !type:WallmountCondition

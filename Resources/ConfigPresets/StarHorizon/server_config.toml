@@ -1,0 +1,148 @@
+################################################################################
+##### General ##################################################################
+
+[net]
+port = 1212
+bindto = "0.0.0.0"
+log_late_msg = false
+
+[database]
+engine = "postgres"
+pg_host = "database"
+pg_port = 5432
+pg_database = "ss14"
+pg_username = "ss14_user"
+pg_password = "%pg_password%"
+
+[game]
+hostname = "StarHorizon - Frontier [💫] [18+]"
+desc = """
+Добро пожаловать на наш сервер! Мы предлагаем полную свободу выбора!
+
+У нас вы встретите:
+🩺 Хирургию, импланты и кибернетику. Наномашины, сынок!
+🤖 Гигантских мехов. Покажи этому Динозавру, кто тут Босс!
+🌱 Продвинутую ботанику! Множество растений и генетика.
+🧨 Улучшаемое вооружение и модули.
+🔬 Уникальные технологии.
+🏯 Создание своего клана и фракции!
+🎶 Полноценный аналог ТТС - Барки!
+
+Заходи, будет весело!
+"""
+soft_max_players = 100
+lobbyduration = 180
+defaultpreset = "nfpirate"
+fallbackpreset = "nfadventure"
+
+[hub]
+advertise = true
+tags = "lang:ru,region:eu_e,rp:med"
+server_url = "ss14://ss14.starhorizon.ru:1212"
+# Wizard's Den hub
+hub_urls = "https://hub.spacestation14.com/"
+
+[server]
+rules_file = "FrontierRuleset"
+lobby_name = "StarHorizon"
+
+[console]
+# Указать CKey игрока, который по-умолчанию и не зависимо ни от чего
+# будет иметь НАИВЫСШИЕ права на сервере (HOST)
+login_host_user = "EvilBug"
+
+[admin]
+see_own_notes = true
+note_fresh_days = 0
+message_wait_time = 1
+new_player_threshold = 180
+afk_time = 180.0
+admins_count_in_playercount = true # отображает админов в счетчике
+chat_discord_channel_id = 1408835997449588746
+
+[interaction]
+rate_limit_announce_admins_delay = -1 # убирает спам о превышении лимитов игроком
+
+[ahelp]
+admin_prefix = true # отображает ранг адмема в АХелп
+admin_prefix_webhook = true
+
+[infolinks]
+discord = "https://discord.starhorizon.ru"
+#wiki = "https://wiki.starhorizon.ru/"
+
+################################################################################
+##### In Game ##################################################################
+
+[atmos]
+space_wind = true
+monstermos_rip_tiles = true
+mmos_spacing_speed = 0.95
+mmos_max_wind = 1000.0
+
+[biomass]
+easy_mode = false
+
+[vote]
+timermap = 30
+map_enabled = true
+restart_not_allowed_when_admin_online = false
+
+[shuttle]
+auto_call_time = 1440
+emergency_authorize_time = 30
+impact.enabled = true
+impact.tile_break_energy = 3000.0
+impact.damage_multiplier = 0.00010
+impact.spark_energy = 2000000.0
+impact.slowdown = 8.0
+impact.min_throw_velocity = 1.0
+impact.inertia_scaling = 0.5
+
+[rules]
+time = 90.0
+
+[tips]
+enabled = false
+
+[chat]
+max_announcement_length = 2048
+
+[ic]
+flavor_text = true
+flavor_text_length = 1024
+
+[ooc]
+enabled_admin = false
+
+################################################################################
+##### Metrics ##################################################################
+
+[metrics]
+enabled = true
+host = "ss14"
+port = 9001
+#runtime = false
+
+[loki]
+enabled = false
+#address = "http://127.0.0.1:3100"
+#name = "aavikko_ss14_main"
+
+################################################################################
+##### Discord ##################################################################
+
+[discord]
+ahelp_webhook = "%webhook_ahelp%"
+ban_webhook = "%webhook_ban%"
+round_update_webhook = "%webhook_round_update%"
+leaderboard_webhook = "%webhook_round_update%"
+guild_id = 1348258341658562560
+token = "%bot_token%"
+
+################################################################################
+##### Relpay ###################################################################
+
+[replay]
+auto_record = true
+directory = "replays/"

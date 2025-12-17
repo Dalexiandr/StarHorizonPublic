@@ -1,0 +1,97 @@
+<Document>
+  # Сингулярность / Тесла-двигатель
+
+  Сингулярность-двигатель / Тесла-двигатель может обеспечивать [color=#a4885c]бесконечную энергию[/color] на всю смену, что делает его ценным активом станции.
+
+  Однако он также может [color=red]уничтожить всю станцию[/color] с той же легкостью, поэтому требует тщательной подготовки и контроля для предотвращения [bold]побега[/bold].
+
+  # Настройка
+  Оба двигателя настраиваются по схожим шагам, но имеют разные подсистемы и требования.
+
+  ## Поле сдерживания
+  Поле сдерживания — это многоплиточное поле, удерживающее сингулярность или теслу от побега.
+
+  Лазеры эмиттеров и поля сдерживания могут наносить урон и/или отбрасывать вас в открытый космос; [color=#a4885c]избегайте контакта[/color] с ними при активации.
+
+  <Box>
+    <GuideEntityEmbed Entity="Emitter"/>
+    <GuideEntityEmbed Entity="ContainmentFieldGenerator"/>
+    <GuideEntityEmbed Entity="ContainmentField"/>
+  </Box>
+
+  Поля создаются между активными генераторами поля, питаемыми эмиттерами.
+
+  Генератор поля может создать поле, если:
+  - Он включен,
+  - другой генератор находится в пределах 8 плиток,
+  - генераторы находятся на одной оси.
+
+  Максимальная длина поля — 7 плиток.
+
+  Генератор включается взаимодействием с помощью [color=yellow][bold][keybind="Use"][/bold][/color].
+  Генераторы не работают без включения, даже при обстреле эмиттером.
+
+  Генератор имеет внутренний запас энергии, пополняемый эмиттером. При достаточном уровне энергии он создает поле.
+
+  Энергия постепенно расходуется, и поле исчезает при ее истощении.
+
+  При активном поле генератор нельзя выключить или открепить. Нужно дождаться исчезновения поля.
+
+  <Box>
+    <GuideEntityEmbed Entity="ContainmentFieldGenerator" Caption=""/>
+    <GuideEntityEmbed Entity="ContainmentField" Caption="" Rotation="90" Margin="0"/>
+    <GuideEntityEmbed Entity="ContainmentField" Caption="" Rotation="90" Margin="0"/>
+    <GuideEntityEmbed Entity="ContainmentField" Caption="" Rotation="90" Margin="0"/>
+    <GuideEntityEmbed Entity="ContainmentFieldGenerator" Caption=""/>
+  </Box>
+
+  ## Эмиттеры
+  Эмиттеры питают генераторы поля.
+
+  <Box>
+    <GuideEntityEmbed Entity="Emitter"/>
+  </Box>
+
+  Они подключаются к MV-кабелям и стреляют лазерами при наличии питания и включении.
+
+  Рекомендуется [color=#a4885c]заблокировать эмиттеры[/color] с помощью [color=yellow][bold][keybind="AltActivateItemInWorld"][/bold][/color], чтобы предотвратить саботаж.
+
+  ## Ускоритель частиц
+  Ускоритель частиц (УЧ) — многоплиточная структура, испускающая ускоренные частицы.
+
+  <Box>
+    <GuideEntityEmbed Entity="ParticleAcceleratorEndCap" Caption="" Margin="0"/>
+  </Box>
+
+  <Box>
+    <GuideEntityEmbed Entity="ParticleAcceleratorControlBox" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="ParticleAcceleratorFuelChamber" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="CableMV" Caption="" Margin="0"/>
+  </Box>
+
+  <Box>
+    <GuideEntityEmbed Entity="ParticleAcceleratorPowerBox" Caption="" Margin="0"/>
+  </Box>
+
+  <Box>
+    <GuideEntityEmbed Entity="ParticleAcceleratorEmitterStarboard" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="ParticleAcceleratorEmitterFore" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="ParticleAcceleratorEmitterPort" Caption="" Margin="0"/>
+  </Box>
+
+  На некоторых станциях УЧ частично собран.
+  Для завершения убедитесь в наличии MV-кабеля под энергоблоком, закрепите все части и подключите LV-кабель к каждой.
+
+  <Box>
+    <GuideEntityEmbed Entity="CableApcStack"/>
+  </Box>
+
+  Затем закрутите панели отверткой.
+  [color=#a4885c]Просканируйте части[/color] через компьютер управления УЧ для проверки готовности (без сканирования УЧ не заработает!).
+  Если что-то отсутствует, компьютер укажет на это.
+
+  <Box>
+    <GuideEntityEmbed Entity="ParticleAcceleratorControlBox"/>
+  </Box>
+
+</Document>

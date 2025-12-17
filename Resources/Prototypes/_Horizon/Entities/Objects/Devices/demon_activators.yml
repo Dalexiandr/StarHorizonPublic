@@ -1,0 +1,47 @@
+- type: entity
+  name: Медальон в форме змеи
+  id: DemonInjector
+  parent: [BaseItem, BaseC3WizardContraband]
+  description: Медальон из неизвестного сплава, изображающий змею. Некоторые части изрядно потерты, как будто кто-то пытался стереть что-то. Когда вы держите его слишком долго, кажется, будто он пульсирует в такт вашего сердца...
+  components:
+  - type: Item
+    size: Small
+  - type: Clothing
+    sprite: _Horizon/Objects/Magic/amuled.rsi
+    quickEquip: true
+    slots:
+    - neck
+  - type: Sprite
+    sprite: _Horizon/Objects/Magic/amuled.rsi
+    state: icon
+  - type: GuardianCreator
+    guardianProto: MobDemonM
+    InjectionDelay: 3
+
+#рация
+- type: entity
+  id: RadioImplanterDemon
+  name: demon radio implanter
+  parent: BaseImplantOnlyImplanterSyndi
+  components:
+  - type: Implanter
+    implant: RadioImplantDemon
+- type: entity
+  parent: BaseSubdermalImplant
+  id: RadioImplantDemon
+  name: radio implant
+  description:
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SubdermalImplant
+  - type: RadioImplant
+    radioChannels:
+    - Demon
+- type: radioChannel
+  id: Demon
+  name: Разум
+  keycode: 'р'
+  frequency: 6666
+  color: "#701198"
+  # long range since I don't wanna make a special xenoborg telecomm server
+  longRange: true

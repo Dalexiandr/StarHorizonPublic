@@ -1,0 +1,93 @@
+- type: characterFaction
+  id: None
+  name: faction-none-name
+  desc: faction-none-desc
+
+# region Frontier
+
+- type: characterFaction
+  id: FactionFrontier
+  name: faction-frontier-name
+  desc: faction-frontier-desc
+  color: "#263B99"
+  roundstart: false
+
+# region NFSD
+
+- type: characterFaction
+  id: FactionNFSD
+  name: faction-nfsd-name
+  desc: faction-nfsd-desc
+  color: "#369926"
+  roundstart: false
+
+# region Experimental
+
+- type: characterFaction
+  id: FactionSIU
+  name: faction-siu-name
+  desc: faction-siu-desc
+  color: "#881DE0"
+
+- type: characterFaction
+  id: FactionArcadia
+  name: faction-arcadia-name
+  desc: faction-arcadia-desc
+  color: "#881DE0"
+
+# region Medical
+
+- type: characterFaction
+  id: FactionMed
+  name: faction-med-name
+  desc: faction-med-desc
+  color: "#27BEF5"
+  roundstart: false
+
+- type: characterFaction
+  id: FactionFSB
+  name: faction-fsb-name
+  desc: faction-fsb-desc
+  color: "#27BEF5"
+
+- type: characterFaction
+  id: FactionCCC
+  name: faction-ccc-name
+  desc: faction-ccc-desc
+  color: "#27BEF5"
+
+# region Edison / Engineering
+
+- type: characterFaction
+  id: FactionEdison
+  name: faction-edison-name
+  desc: faction-edison-desc
+  color: "#E0861D"
+  roundstart: false
+
+- type: characterFaction
+  id: FactionLVHI
+  name: faction-lvhi-name
+  desc: faction-lvhi-desc
+  color: "#E0861D"
+
+- type: characterFaction
+  id: FactionUAC
+  name: faction-uac-name
+  desc: faction-uac-desc
+  color: "#E0861D"
+
+- type: characterFaction
+  id: FactionNakamura
+  name: faction-nakamura-name
+  desc: faction-nakamura-desc
+  color: "#E0861D"
+
+# region Pirate
+
+- type: characterFaction
+  id: FactionPirate
+  name: faction-pirate-name
+  desc: faction-pirate-desc
+  color: "#ff0d00"
+  roundstart: false

@@ -1,0 +1,35 @@
+- type: entity
+  save: false
+  name: Urist McFluff
+  parent: BaseMobMoth
+  id: MobMoth
+  components:
+  # Horizon
+  - type: SampleSource
+    availableCellSamples:
+    - protoID: CellSampleMoth
+
+# Cytology
+- type: entity
+  name: Urist Grown Moth
+  parent: MobMoth
+  id: MobMothGrown
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StaticPrice
+    price: 2500
+  - type: RandomMetadata
+    nameSegments:
+      - NamesFirst
+      - NamesLast
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: ghost-role-information-grown-moth-name
+    description: Вы мотылек, выращенный в цитологической ванне. Крылья трепещут с легкостью, и свет привлекает вас. Исследуйте этот новый мир!
+    raffle:
+      settings: short
+  - type: GhostTakeoverAvailable

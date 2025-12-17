@@ -1,0 +1,13 @@
+- type: contrabandSeverity
+  id: UASItem
+  examineText: uas-contraband-examine-text
+
+- type: entity
+  id: BaseUASContraband
+  parent: BaseC3ExpeditionContraband
+  abstract: true
+  components:
+  - type: Contraband
+    severity: UASItem
+    # no one should be carrying this around visibly!
+    allowedDepartments: [ ]

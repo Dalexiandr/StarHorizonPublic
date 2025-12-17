@@ -1,0 +1,329 @@
+# region Operations
+- type: rcd
+  id: InvalidMech   # Hidden prototype - do not add to RCDs
+  mode: Invalid
+
+- type: rcd
+  id: DeconstructMech
+  name: rcd-component-deconstruct
+  category: Main
+  sprite: /Textures/Interface/Radial/RCD/deconstruct.png
+  mode: Deconstruct
+  prototype: EffectRCDDeconstructPreview
+  rotation: Camera
+
+- type: rcd
+  id: DeconstructLatticeMech   # Hidden prototype - do not add to RCDs
+  name: rcd-component-deconstruct
+  mode: Deconstruct
+  cost: 0
+  delay: 0
+  rotation: Camera
+  fx: EffectRCDConstruct0
+
+- type: rcd
+  id: DeconstructTileMech    # Hidden prototype - do not add to RCDs
+  name: rcd-component-deconstruct
+  mode: Deconstruct
+  cost: 0
+  delay: 30
+  rotation: Camera
+  fx: EffectRCDDeconstruct4
+
+# region Flooring
+- type: rcd
+  id: PlatingMech
+  name: rcd-component-plating
+  category: WallsAndFlooring
+  sprite: /Textures/Interface/Radial/RCD/plating.png
+  mode: ConstructTile
+  prototype: Plating
+  cost: 0
+  delay: 10
+  collisionMask: InteractImpassable
+  rules:
+    - CanBuildOnEmptyTile
+  fx: EffectRCDConstruct1
+
+- type: rcd
+  id: FloorSteelMech
+  name: rcd-component-floor-steel
+  category: WallsAndFlooring
+  sprite: /Textures/Interface/Radial/RCD/metal_tile.png
+  mode: ConstructTile
+  prototype: FloorSteel
+  cost: 0
+  delay: 10
+  collisionMask: InteractImpassable
+  rules:
+    - CanBuildOnEmptyTile
+  fx: EffectRCDConstruct1
+
+- type: rcd
+  id: CatwalkMech
+  category: WallsAndFlooring
+  sprite: /Textures/Interface/Radial/RCD/catwalk.png
+  mode: ConstructObject
+  prototype: Catwalk
+  cost: 0
+  delay: 10
+  collisionMask: InteractImpassable
+  rules:
+    - MustBuildOnSubfloor
+    - IsCatwalk
+  rotation: Fixed
+  fx: EffectRCDConstruct1
+
+# region Walls
+- type: rcd
+  id: WallSolidMech
+  category: WallsAndFlooring
+  sprite: /Textures/Interface/Radial/RCD/solid_wall.png
+  mode: ConstructObject
+  prototype: WallSolid
+  cost: 0
+  delay: 20
+  collisionMask: FullTileMask
+  rotation: Fixed
+  fx: EffectRCDConstruct2
+
+- type: rcd
+  id: GrilleMech
+  category: WindowsAndGrilles
+  sprite: /Textures/Interface/Radial/RCD/grille.png
+  mode: ConstructObject
+  prototype: Grille
+  cost: 0
+  delay: 20
+  collisionMask: Impassable
+  rotation: Fixed
+  fx: EffectRCDConstruct2
+
+# region Windows
+- type: rcd
+  id: WindowMech
+  category: WindowsAndGrilles
+  sprite: /Textures/Interface/Radial/RCD/window.png
+  mode: ConstructObject
+  prototype: Window
+  cost: 0
+  delay: 20
+  collisionMask: Impassable
+  rules:
+    - IsWindow
+  rotation: Fixed
+  fx: EffectRCDConstruct2
+
+- type: rcd
+  id: WindowDirectionalMech
+  category: WindowsAndGrilles
+  sprite: /Textures/Interface/Radial/RCD/directional.png
+  mode: ConstructObject
+  prototype: WindowDirectional
+  cost: 0
+  delay: 10
+  collisionMask: Impassable
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWindow
+  rotation: User
+  fx: EffectRCDConstruct1
+
+- type: rcd
+  id: ReinforcedWindowMech
+  category: WindowsAndGrilles
+  sprite: /Textures/Interface/Radial/RCD/window_reinforced.png
+  mode: ConstructObject
+  prototype: ReinforcedWindow
+  cost: 0
+  delay: 30
+  collisionMask: Impassable
+  rules:
+    - IsWindow
+  rotation: User
+  fx: EffectRCDConstruct3
+
+- type: rcd
+  id: WindowReinforcedDirectionalMech
+  category: WindowsAndGrilles
+  sprite: /Textures/Interface/Radial/RCD/directional_reinforced.png
+  mode: ConstructObject
+  prototype: WindowReinforcedDirectional
+  cost: 0
+  delay: 20
+  collisionMask: Impassable
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWindow
+  rotation: User
+  fx: EffectRCDConstruct2
+
+# region Airlocks
+- type: rcd
+  id: AirlockMech
+  category: Airlocks
+  sprite: /Textures/Interface/Radial/RCD/airlock.png
+  mode: ConstructObject
+  prototype: Airlock
+  cost: 0
+  delay: 40
+  collisionMask: FullTileMask
+  rotation: Camera
+  fx: EffectRCDConstruct4
+
+- type: rcd
+  id: AirlockGlassMech
+  category: Airlocks
+  sprite: /Textures/Interface/Radial/RCD/glass_airlock.png
+  mode: ConstructObject
+  prototype: AirlockGlass
+  cost: 0
+  delay: 40
+  collisionMask: FullTileMask
+  rotation: Camera
+  fx: EffectRCDConstruct4
+
+- type: rcd
+  id: FirelockMech
+  category: Airlocks
+  sprite: /Textures/Interface/Radial/RCD/firelock.png
+  mode: ConstructObject
+  prototype: Firelock
+  cost: 0
+  delay: 30
+  collisionMask: FullTileMask
+  rotation: Camera
+  fx: EffectRCDConstruct3
+
+# region Lighting
+- type: rcd
+  id: TubeLightMech
+  category: Lighting
+  sprite: /Textures/Interface/Radial/RCD/tube_light.png
+  mode: ConstructObject
+  prototype: Poweredlight
+  cost: 0
+  delay: 10
+  collisionMask: TabletopMachineMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct1
+
+- type: rcd
+  id: BulbLightMech
+  category: Lighting
+  sprite: /Textures/Interface/Radial/RCD/bulb_light.png
+  mode: ConstructObject
+  prototype: PoweredSmallLight
+  cost: 0
+  delay: 10
+  collisionMask: TabletopMachineMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct1
+
+# region Electrical
+
+- type: rcd
+  id: LVCableMech
+  category: Electrical
+  sprite: /Textures/Interface/Radial/RCD/lv_coil.png
+  mode: ConstructObject
+  prototype: CableApcExtension
+  cost: 0
+  delay: 5
+  rules:
+  - MustBuildOnSubfloor
+  rotation: Fixed
+  fx: EffectRCDConstruct0
+
+- type: rcd
+  id: MVCableMech
+  category: Electrical
+  sprite: /Textures/Interface/Radial/RCD/mv_coil.png
+  mode: ConstructObject
+  prototype: CableMV
+  cost: 0
+  delay: 5
+  rules:
+  - MustBuildOnSubfloor
+  rotation: Fixed
+  fx: EffectRCDConstruct0
+
+- type: rcd
+  id: HVCableMech
+  category: Electrical
+  sprite: /Textures/Interface/Radial/RCD/hv_coil.png
+  mode: ConstructObject
+  prototype: CableHV
+  cost: 0
+  delay: 5
+  rules:
+  - MustBuildOnSubfloor
+  rotation: Fixed
+  fx: EffectRCDConstruct0
+
+- type: rcd
+  id: CableTerminalMech
+  category: Electrical
+  sprite: /Textures/Interface/Radial/RCD/cable_terminal.png
+  mode: ConstructObject
+  prototype: CableTerminal
+  cost: 0
+  delay: 10
+  collisionMask: Impassable
+  rotation: User
+  fx: EffectRCDConstruct0
+
+# region Electrical Fast
+
+- type: rcd
+  id: LVCableMechFast
+  category: Electrical
+  sprite: /Textures/Interface/Radial/RCD/lv_coil.png
+  mode: ConstructObject
+  prototype: CableApcExtension
+  cost: 0
+  delay: 0.5
+  rules:
+  - MustBuildOnSubfloor
+  rotation: Fixed
+  fx: EffectRCDConstruct0
+
+- type: rcd
+  id: MVCableMechFast
+  category: Electrical
+  sprite: /Textures/Interface/Radial/RCD/mv_coil.png
+  mode: ConstructObject
+  prototype: CableMV
+  cost: 0
+  delay: 0.5
+  rules:
+  - MustBuildOnSubfloor
+  rotation: Fixed
+  fx: EffectRCDConstruct0
+
+- type: rcd
+  id: HVCableMechFast
+  category: Electrical
+  sprite: /Textures/Interface/Radial/RCD/hv_coil.png
+  mode: ConstructObject
+  prototype: CableHV
+  cost: 0
+  delay: 0.5
+  rules:
+  - MustBuildOnSubfloor
+  rotation: Fixed
+  fx: EffectRCDConstruct0
+
+- type: rcd
+  id: CableTerminalMechFast
+  category: Electrical
+  sprite: /Textures/Interface/Radial/RCD/cable_terminal.png
+  mode: ConstructObject
+  prototype: CableTerminal
+  cost: 0
+  delay: 0.5
+  collisionMask: Impassable
+  rotation: User
+  fx: EffectRCDConstruct0

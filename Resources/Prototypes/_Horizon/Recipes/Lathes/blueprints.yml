@@ -1,0 +1,11 @@
+# Recipes
+## Engineering
+## Medical
+## Experimental
+## Service
+## Arsenal
+
+#- type: latheRecipe
+#  parent: NFBaseBlueprintLatheRecipe
+#  id: HorizonBlueprintClothingEyesVision
+#  result: HorizonBlueprintClothingEyesVision

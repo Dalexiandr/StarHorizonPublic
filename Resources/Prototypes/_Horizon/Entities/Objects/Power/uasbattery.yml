@@ -1,0 +1,59 @@
+
+- type: entity
+  id: BasePowerCellUAS
+  abstract: true
+  parent: [BaseItem, BaseUASContraband]
+  components:
+  - type: Item
+    storedRotation: -90
+  - type: Battery
+    pricePerJoule: 0.15
+  - type: PowerCell
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 2000
+    intensitySlope: 1.5
+  - type: SolutionContainerManager
+    solutions:
+      battery:
+        maxVol: 5
+  - type: InjectableSolution
+    solution: battery
+  - type: DrawableSolution
+    solution: battery
+  - type: Tag
+    tags:
+      - PowerCell
+  - type: Appearance
+  - type: PowerCellVisuals
+  - type: Riggable
+  - type: ProjectileBatteryAmmoProvider
+    proto: StandartLaserUAS
+    fireCost: 100
+
+- type: entity
+  name: энергетическая ячейка UAS
+  description: Миниатюрный реактор, основанный на распаде EFS и поглощении выделяющегося тепла.
+  id: UASEnergyCore
+  suffix: StarHorizon, UAS
+  parent: BasePowerCellUAS
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Power/uascore.rsi
+    layers:
+    - map: [ "enum.PowerCellVisualLayers.Base" ]
+      state: core
+    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+      state: o2
+      shader: unshaded
+  - type: Battery
+    maxCharge: 3000
+    startingCharge: 3000
+  - type: Tag
+    tags:
+      - PowerUAS
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 25
+

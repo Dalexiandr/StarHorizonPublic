@@ -1,0 +1,796 @@
+﻿- type: entity
+  parent: BasePlushie
+  id: PlushieRoboMechanic
+  name: плюшевый робототехник
+  description: Потрёпанная игрушка робототехника. На ней столько масла и металической стружки, словно это она собрала оборудование для всей станции.
+  suffix: StarHorizon
+  components:
+  - type: StaticPrice
+    price: 50
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/plushierobomechanic.rsi
+    state: icon
+  - type: Item
+    size: Small
+    sprite: _StarHorizon/Objects/Fun/plushierobomechanic.rsi
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: WeldingFuel
+        Quantity: 10
+      - ReagentId: Iron
+        Quantity: 10
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieParamedic
+  name: плюшевый парамедик
+  description: Милая на вид игрушка парамедика, от вида которой ты точно понимаешь, что сгнить в техах – твоя судьба!
+  suffix: StarHorizon
+  components:
+  - type: StaticPrice
+    price: 50
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/plushieparamedic.rsi
+    state: icon
+  - type: Item
+    size: Small
+    sprite: _StarHorizon/Objects/Fun/plushieparamedic.rsi
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieChemist
+  name: плюшевый химик
+  description: Забавная на вид игрушка химика, от которой исходит лёгкий и сладковатый запах. Внимание! Не давайте ей пробирки с взрывоопасными веществами!
+  suffix: StarHorizon
+  components:
+  - type: StaticPrice
+    price: 50
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/plushiechemist.rsi
+    state: icon
+  - type: Item
+    size: Small
+    sprite: _StarHorizon/Objects/Fun/plushiechemist.rsi
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieAmmaYakiama
+  name: плюшевый комиссар
+  description: Плюшевая игрушка комиссара. Выглядит мило. От неё пахнет розами и дешёвым вином.
+  suffix: StarHorizon
+  components:
+  - type: StaticPrice
+    price: 50
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/plushieammayakiama.rsi
+    state: icon
+  - type: Item
+    size: Small
+    sprite: _StarHorizon/Objects/Fun/plushieammayakiama.rsi
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_StarHorizon/Items/Toys/nya1.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/_StarHorizon/Items/Toys/nya1.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/_StarHorizon/Items/Toys/nya1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_StarHorizon/Items/Toys/nya1.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/_StarHorizon/Items/Toys/nya1.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Voice/Felinid/cat_scream2.ogg
+  - type: PointLight
+    netsync: false
+    radius: 1.5
+    energy: 2.0
+    color: "#8A2BE2"
+
+- type: entity
+  parent: BasePlushie
+  id: PlushiePaintor
+  name: плюшевый грустный художник
+  description: Это маленький плюшевый художник, ваш грустный брат по рисованию. Он вам с радостью поможет.
+  suffix: StarHorizon
+  components:
+  - type: StaticPrice
+    price: 50
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/plushiepaintor.rsi
+    state: icon
+  - type: Item
+    size: Small
+    sprite: _StarHorizon/Objects/Fun/plushiepaintor.rsi
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,1,1
+    whitelist:
+      components:
+      - Paint
+      - Crayon
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: PointLight
+    netsync: false
+    radius: 1.5
+    energy: 1.0
+    color: "#9932CC"
+  - type:  StorageFill
+    contents:
+    - id: CrayonPurple
+    - id: CrayonRainbow
+    - id: CrayonPurple
+  - type: EmitSoundOnLand
+    sound:
+      collection: PaintorUse
+  - type: EmitSoundOnActivate
+    sound:
+      collection: PaintorUse
+  - type: EmitSoundOnUse
+    sound:
+      collection: PaintorUse
+  - type: EmitSoundOnCollide
+    sound:
+      collection: PaintorUse
+  - type: Clothing
+    quickEquip: false
+    sprite: _StarHorizon/Objects/Fun/plushiepaintor.rsi
+    slots:
+    - HEAD
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieSelectionist
+  name: плюшевый селекционер
+  description: Растрёпанный ботаник-исследователь, весь в работе над селекцией растений.
+  suffix: StarHorizon
+  components:
+  - type: StaticPrice
+    price: 50
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/plushieselectionist.rsi
+    state: icon
+  - type: Item
+    size: Small
+    sprite: _StarHorizon/Objects/Fun/plushieselectionist.rsi
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,0,0
+    whitelist:
+      components:
+      - Produce
+      - Seed
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: PointLight
+    netsync: false
+    radius: 1.5
+    energy: 1.0
+    color: "#55eb63"
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieCadet
+  name: плюшевый кадет
+  description: Не обманывайтесь её глупой мордочкой, эта унати стоит на страже закона!.. И, возможно, на вашем лице, если вы этот закон нарушили!
+  suffix: StarHorizon
+  components:
+  - type: StaticPrice
+    price: 50
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/plushiecadet.rsi
+    state: icon
+  - type: Item
+    size: Small
+    sprite: _StarHorizon/Objects/Fun/plushiecadet.rsi
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieFelFos
+  name: плюшевая фелинидка
+  description: Просто милая фелинидка, которой все лень заняться делом.
+  suffix: StarHorizon
+  components:
+  - type: StaticPrice
+    price: 50
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/plushiefelfos.rsi
+    state: icon
+  - type: Item
+    size: Small
+    sprite: _StarHorizon/Objects/Fun/plushiefelfos.rsi
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieAdv
+  name: плюшевый авантюрист
+  description: От него веет жаждой приключений и карпами. Еще на 30% мягче!
+  suffix: StarHorizon
+  components:
+  - type: StaticPrice
+    price: 50
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/plushieadv.rsi
+    state: icon
+  - type: Item
+    size: Small
+    sprite: _StarHorizon/Objects/Fun/plushieadv.rsi
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_StarHorizon/Items/Toys/vulp_exclaim.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_StarHorizon/Items/Toys/vulp_exclaim.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/_StarHorizon/Items/Toys/vulp_exclaim.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/_StarHorizon/Items/Toys/vulp_exclaim.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/_StarHorizon/Items/Toys/vulp_exclaim.ogg
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieFelSci
+  name: плюшевая научная ассистентка
+  description: От неё веет жаждой знаний.
+  suffix: StarHorizon
+  components:
+  - type: StaticPrice
+    price: 50
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/plushiefelsci.rsi
+    state: icon
+  - type: Item
+    size: Small
+    sprite: _StarHorizon/Objects/Fun/plushiefelsci.rsi
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieNukeMar
+  name: плюшевый мародёр
+  description: Смотря на эту плюшку, вы видите тонны робаста. Данная персона может сотворить многое... Как минимум, взорваться от своей же чайна-лейк!
+  suffix: StarHorizon
+  components:
+  - type: StaticPrice
+    price: 50
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/plushienukemar.rsi
+    state: icon
+  - type: Item
+    size: Small
+    sprite: _StarHorizon/Objects/Fun/plushienukemar.rsi
+  - type: PointLight
+    netsync: false
+    radius: 1.5
+    energy: 1.0
+    color: "#f53711"
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieNukeCom
+  name: плюшевый командир нюкеров
+  description: Его плюшевая мания величия сильнее, чем у ГСБ! Так и хочется его затискать.
+  suffix: StarHorizon
+  components:
+  - type: StaticPrice
+    price: 50
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/plushienukecom.rsi
+    state: icon
+  - type: Item
+    size: Small
+    sprite: _StarHorizon/Objects/Fun/plushienukecom.rsi
+  - type: PointLight
+    netsync: false
+    radius: 1.5
+    energy: 1.0
+    color: "#f53711"
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieNukeMed
+  name: плюшевый медик нюкеров
+  description: Пушистый и мягкий, как облачко! Однако, кажется, что игрушка пропитана кислотой?... Её явно не стоит нюхать...
+  suffix: StarHorizon
+  components:
+  - type: StaticPrice
+    price: 50
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/plushienukemed.rsi
+    state: icon
+  - type: Item
+    size: Small
+    sprite: _StarHorizon/Objects/Fun/plushienukemed.rsi
+  - type: PointLight
+    netsync: false
+    radius: 1.5
+    energy: 1.0
+    color: "#f53711"
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieNukeJagg
+  name: плюшевый джаггернаут
+  description: Всматриваясь в эту перекаченную пухом плюшку, вы ощущаете, что она уже готовится взять два пулемёта со словами "Я ГРАЖДАНСКИЙ! Я ГРАЖДАНСКИЙ!"...
+  suffix: StarHorizon
+  components:
+  - type: StaticPrice
+    price: 50
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/plushienukejagg.rsi
+    state: icon
+  - type: Item
+    size: Small
+    sprite: _StarHorizon/Objects/Fun/plushienukejagg.rsi
+  - type: PointLight
+    netsync: false
+    radius: 1.5
+    energy: 1.0
+    color: "#f53711"
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieInquizitor
+  name: плюшевый инквизитор
+  description: Этот мягкий садист-инквизитор против ваших еретических мыслей!!! На этикетке заметна красная надпись "Теперь на 93% из взрывчатки". Кажется, оно тикает...
+  suffix: StarHorizon
+  components:
+  - type: StaticPrice
+    price: 50
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/plushieinquizitor.rsi
+    state: icon
+  - type: Item
+    size: Small
+    sprite: _StarHorizon/Objects/Fun/plushieinquizitor.rsi
+  - type: EmitSoundOnLand
+    sound:
+      collection: InquizitorUse
+  - type: EmitSoundOnActivate
+    sound:
+      collection: InquizitorUse
+  - type: EmitSoundOnUse
+    sound:
+      collection: InquizitorUse
+  - type: EmitSoundOnCollide
+    sound:
+      collection: InquizitorUse
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieDivers
+  name: плюшевый диверсант
+  description: Ему точно можно доверить диск Ядерной Аутентификации...
+  suffix: StarHorizon
+  components:
+  - type: StaticPrice
+    price: 50
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/plushiedivers.rsi
+    state: icon
+  - type: Item
+    size: Small
+    sprite: _StarHorizon/Objects/Fun/plushiedivers.rsi
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieVoomra
+  name: плюшевый Вумра
+  description: Озлобленный. Одинокий. Погладьте его и накормите сыром!
+  components:
+  - type: StaticPrice
+    price: 50
+  - type: Sprite
+    sprite: _Horizon/Objects/Fun/voidtoys.rsi
+    state: plushie_voomra
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Fun/voidtoys.rsi
+    state: plushie_voomra
+  - type: PointLight
+    color: "#8f40ff"
+    radius: 1.5
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieRabbitVoid
+  name: плюшевый кролик
+  description: Очень милое крылатое создание!
+  components:
+  - type: StaticPrice
+    price: 50
+  - type: Sprite
+    sprite: _Horizon/Objects/Fun/voidtoys.rsi
+    state: plushie_rabbit
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Fun/voidtoys.rsi
+    state: plushie_rabbit
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieBunnyx
+  name: плюшевый банникс
+  description: Милый плюшевый кролик.
+  suffix: StarHorizon
+  components:
+    - type: StaticPrice
+      price: 50
+    - type: Sprite
+      sprite: _StarHorizon/Objects/Fun/plushbunnyx.rsi
+      state: icon
+    - type: Item
+      size: Small
+      sprite: _StarHorizon/Objects/Fun/plushbunnyx.rsi
+
+- type: entity
+  parent: BaseItem
+  id: PlushieLemird
+  name: плюшевая Лемирд
+  description: Хотите обнимашек и милоты? Новая серия игрушек "Lemird"! Лучшие вайфу на станций! *На обратной стороне игрушки написано, что она может издавать странные фразы и стоны.*
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/plushielemird.rsi
+    state: icon
+  - type: Item
+    sprite: _StarHorizon/Objects/Fun/plushielemird.rsi
+  - type: EmitSoundOnUse
+    sound:
+      collection: PlushieLemird
+  - type: UseDelay
+    delay: 6.5
+  - type: StaticPrice
+    price: 1500
+  - type: PointLight
+    netsync: false
+    radius: 1.5
+    energy: 1.0
+    color: "#FF69B4"
+  - type: EmitSoundOnLand
+    sound:
+      collection: PlushieLemird
+  - type: EmitSoundOnActivate
+    sound:
+      collection: PlushieLemird
+  - type: Clothing
+    quickEquip: false
+    sprite: _StarHorizon/Objects/Fun/plushielemird.rsi
+    slots:
+    - HEAD
+
+- type: entity
+  parent: PlushieLemird
+  id: PlushieLemirdSchoolGirl
+  name: плюшевая школьница Лемирд
+  description: Вы яростно обучаетесь и хотите познать гранит науки? Тогда... Попросите купить эту школьную милую игрушку! С ней у вас будут лишь положительные эмоции на учёбе!
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/plushielemirdschoolgirl.rsi
+    state: icon
+  - type: Item
+    sprite: _StarHorizon/Objects/Fun/plushielemirdschoolgirl.rsi
+  - type: Clothing
+    quickEquip: false
+    sprite: _StarHorizon/Objects/Fun/plushielemirdschoolgirl.rsi
+    slots:
+    - HEAD
+
+- type: entity
+  parent: PlushieLemird
+  id: PlushieLemird3
+  name: плюшевая Лемирда
+  description: Новая ограниченная серия игрушек Лемирд на отдыхе. Вы буквально чувствуете эту ауру муррчания и хорни!!!
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/plushielemird3.rsi
+    state: icon
+  - type: Item
+    size: Small
+    sprite: _StarHorizon/Objects/Fun/plushielemird3.rsi
+  - type: StaticPrice
+    price: 1500
+  - type: PointLight
+    netsync: false
+    radius: 1.5
+    energy: 1.0
+    color: "#fce8e4"
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieMaleToy
+  name: плюшевая игрушка пацанчика
+  description: Сзади указано "Лор", это его имя, наверное. Похож на героя из какого то комикса... Но его вы явно раньше не видели.
+  suffix: StarHorizon
+  components:
+  - type: StaticPrice
+    price: 50
+  - type: Item
+    sprite: _StarHorizon/Objects/Fun/maletoy.rsi
+    size: Small
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/maletoy.rsi
+    state: icon
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieBear
+  name: плюшевый бобовый мишка
+  description: Верный друг психолога и его наркотрипов, когда пациентов нет, а смена затянулась. На этикетке написано, что может вызывать тошноту, но там же и написано, что игрушка для детей от 3 лет...
+  suffix: StarHorizon
+  components:
+  - type: StaticPrice
+    price: 50
+  - type: Item
+    sprite: _StarHorizon/Objects/Fun/plushiebear.rsi
+    size: Small
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/plushiebear.rsi
+    state: icon
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieMaleAndGun
+  name: плюшевый злобный пацан
+  description: Ну, конечно, тяжело, когда зарплату понизили, и тебе трудно, но иногда можно обо всём забыть и просто взять бензопилу.
+  suffix: StarHorizon
+  components:
+  - type: StaticPrice
+    price: 50
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/plushiemaleandgun.rsi
+    state: icon
+  - type: Item
+    size: Small
+    sprite: _StarHorizon/Objects/Fun/plushiemaleandgun.rsi
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_StarHorizon/Items/Toys/chainsawsound.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/_StarHorizon/Items/Toys/chainsawsound.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/_StarHorizon/Items/Toys/chainsawsound.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_StarHorizon/Items/Toys/chainsawsound.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/_StarHorizon/Items/Toys/chainsawsound.ogg
+  - type: UseDelay
+    delay: 1.0
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/StarHorizon/Items/Toys/chainsawsound.ogg
+    damage:
+      types:
+        Blunt: 0
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieRD
+  name: плюшевый научный руководитель
+  description: Плюшевый научный руководитель, выглядит обкуренным... Или сонным.
+  suffix: StarHorizon
+  components:
+  - type: StaticPrice
+    price: 50
+  - type: Item
+    sprite: _StarHorizon/Objects/Fun/plushierd.rsi
+    size: Small
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/plushierd.rsi
+    state: icon
+  - type: EmitSoundOnUse
+    sound:
+      collection: MaleYawn
+    params:
+      variation: 0.125
+      pitch: 0.75
+  - type: EmitSoundOnLand
+    sound:
+      collection: MaleYawn
+    params:
+      variation: 0.125
+      pitch: 0.75
+  - type: EmitSoundOnActivate
+    sound:
+      collection: MaleYawn
+    params:
+      variation: 0.125
+      pitch: 0.75
+  - type: EmitSoundOnCollide
+    sound:
+      collection: MaleYawn
+    params:
+      variation: 0.125
+      pitch: 0.75
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      collection: MaleYawn
+    params:
+      variation: 0.125
+      pitch: 0.75
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieScientist
+  name: плюшевый учёный
+  description: Милая плюшевая игрушка учёного. На его спине есть кнопка, отвечающая за переключение подсветки правого глаза.
+  suffix: StarHorizon
+  components:
+  - type: StaticPrice
+    price: 50
+  - type: Item
+    sprite: _StarHorizon/Objects/Fun/plushiescientist.rsi
+    size: Small
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/plushiescientist.rsi
+    state: icon
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_StarHorizon/Items/Toys/plushiescientist.ogg
+    params:
+      variation: 0.125
+      pitch: 0.75
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/_StarHorizon/Items/Toys/plushiescientist.ogg
+    params:
+      variation: 0.125
+      pitch: 0.75
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_StarHorizon/Items/Toys/plushiescientist.ogg
+    params:
+      variation: 0.125
+      pitch: 0.75
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/_StarHorizon/Items/Toys/plushiescientist.ogg
+    params:
+      variation: 0.125
+      pitch: 0.75
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieGirl
+  name: плюшевая библиотекарша
+  description: Тихая и скромная игрушка. Идеально подходит для библиотеки.
+  suffix: StarHorizon
+  components:
+  - type: StaticPrice
+    price: 50
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/plushiegirl.rsi
+    state: icon
+  - type: Item
+    size: Small
+    sprite: _StarHorizon/Objects/Fun/plushiegirl.rsi
+
+- type: entity
+  parent: BasePlushie
+  id: DakiLemird
+  name: дакимакура
+  description: Некоторые девушки на станции более плоские, чем данная дакимакура.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/dakka.rsi
+    state: icon
+  - type: StaticPrice
+    price: 500
+  - type: Item
+    size: Small
+    sprite: _StarHorizon/Objects/Fun/dakka.rsi
+    state: icon
+
+- type: entity
+  parent: BasePlushie
+  id: DakiLemird2
+  name: дакимакура
+  description: Некоторые девушки на станции более плоские, чем данная дакимакура.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/dakka.rsi
+    state: icon2
+  - type: StaticPrice
+    price: 500
+  - type: Item
+    size: Small
+    sprite: _StarHorizon/Objects/Fun/dakka.rsi
+    state: icon2
+
+- type: entity
+  parent: BaseItem
+  id: PlasteelHammer
+  name: rubber hammer
+  description: This is a copy of the legendary rubber toy hammer, but made of plasteel. BONK!
+  components:
+    - type: StaticPrice
+      price: 50
+    - type: Sprite
+      sprite: Objects/Fun/rubber_hammer.rsi
+      state: icon
+    - type: WeaponRandom
+      RandomDamageChance: 2E-05
+      damageBonus:
+          types:
+              Blunt: 1000
+    - type: StaminaDamageOnHit
+      damage: 25
+    - type: Item
+      size: Small
+      sprite: Objects/Fun/rubber_hammer.rsi
+    - type: Appearance
+    - type: DisarmMalus
+      malus: 0
+    - type: MeleeWeapon
+      soundHit:
+        collection: MetalThud
+        params:
+            variation: 0.03
+            volume: 3
+      soundNoDamage:
+        collection: MetalThud
+        params:
+            variation: 0.03
+            volume: 3
+      damage:
+        types:
+          Blunt: 12
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieBotanist
+  name: плюшевый ботаник
+  description: Он крепко ухватился за томатик своими цепкими лапами. Знаменит своими выходками и покорением космоса невероятно огромной армией из томатов-убийц.
+  suffix: StarHorizon
+  components:
+  - type: StaticPrice
+    price: 50
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Fun/plushiebotanist.rsi
+    state: icon
+  - type: Item
+    size: Small
+    sprite: _StarHorizon/Objects/Fun/plushiebotanist.rsi
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Effects/Footsteps/slime1.ogg
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Effects/Footsteps/slime1.ogg
+  - type: UseDelay
+    delay: 0.5
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Effects/Footsteps/slime1.ogg

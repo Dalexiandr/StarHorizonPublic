@@ -1,0 +1,15 @@
+- type: construction
+  id: CraftQuiverBolt
+  graph: CraftQuiverBolt
+  startNode: start
+  targetNode: CraftQuiverBolt
+  category: construction-category-clothing
+  objectType: Item
+
+- type: construction
+  id: CraftShoesClothwrap
+  graph: CraftShoesClothwrap
+  startNode: start
+  targetNode: CraftShoesClothwrap
+  category: construction-category-clothing
+  objectType: Item

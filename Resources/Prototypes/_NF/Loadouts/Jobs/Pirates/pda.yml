@@ -1,0 +1,17 @@
+- type: loadout
+  id: NFPirateNFPiratePDA
+  price: 0
+  equipment:
+    id: NFPiratePDA
+
+- type: loadout
+  id: NFPirateCaptainNFPirateCaptainPDA
+  price: 0
+  equipment:
+    id: NFPirateCaptainPDA
+
+- type: loadout
+  id: NFPirateFirstMateNFPirateFirstMatePDA
+  price: 0
+  equipment:
+    id: NFPirateFirstMatePDA

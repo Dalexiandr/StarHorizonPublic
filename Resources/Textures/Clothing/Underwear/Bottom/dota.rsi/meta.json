@@ -1,0 +1,18 @@
+{
+  "license": "CLA",
+  "copyright": "Created by discord:SadBrat",
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "equipped-UNDERWEARB",
+      "directions": 4
+    },
+    {
+      "name": "icon"
+    }
+  ]
+}

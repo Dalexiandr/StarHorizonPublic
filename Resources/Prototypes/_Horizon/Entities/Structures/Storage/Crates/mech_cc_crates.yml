@@ -1,0 +1,43 @@
+- type: entity
+  id: MechWeaponSwordCrate
+  parent: CrateMechWeaponSecure
+  name: Mech Weapon Sword Crate
+  description: Mech Weapon Sword Crate
+  components:
+  - type: StorageFill
+    contents:
+    - id: MechWeaponSword
+      amount: 1
+
+- type: entity
+  id: MechWeaponSpearCrate
+  parent: CrateMechWeaponSecure
+  name: Mech Weapon Spear Crate
+  description: Mech Weapon Spear Crate
+  components:
+  - type: StorageFill
+    contents:
+    - id: MechWeaponSpear
+      amount: 1
+
+- type: entity
+  id: MechWeaponClawsCrate
+  parent: CrateMechWeaponSecure
+  name: Mech Weapon Claws Crate
+  description: Mech Weapon Claws Crate
+  components:
+  - type: StorageFill
+    contents:
+    - id: MechWeaponClaws
+      amount: 1
+
+- type: entity
+  id: MechWeaponWarhammerCrate
+  parent: CrateMechWeaponSecure
+  name: Mech Weapon Warhammer Crate
+  description: Mech Weapon Warhammer Crate
+  components:
+  - type: StorageFill
+    contents:
+    - id: MechWeaponWarhammer
+      amount: 1

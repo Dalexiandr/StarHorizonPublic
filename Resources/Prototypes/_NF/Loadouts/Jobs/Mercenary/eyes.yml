@@ -1,0 +1,11 @@
+- type: loadout
+  id: MercenaryClothingEyesGlassesMercenary
+  price: 0
+  equipment:
+    eyes: ClothingEyesGlassesMercenary
+
+- type: loadout
+  id: MercenaryClothingEyesGlassesSunglasses
+  price: 0
+  equipment:
+    eyes: ClothingEyesGlassesSunglasses

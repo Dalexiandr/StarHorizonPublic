@@ -1,0 +1,33 @@
+- type: loadout
+  id: PilotClothingUniformJumpsuitPilot
+  price: 0
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPilot
+
+# T3 "Military"
+- type: loadout
+  id: PilotClothingUniformJumpsuitMilitaryPilot
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 675
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryPilot
+
+- type: loadout
+  id: PilotClothingUniformJumpsuitMilitaryContractor
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 1250
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryContractor
+
+- type: loadout
+  id: PilotClothingUniformJumpsuitMilitaryContractorTac
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 1250
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryContractorTac

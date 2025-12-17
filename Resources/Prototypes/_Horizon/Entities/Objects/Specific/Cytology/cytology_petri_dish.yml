@@ -1,0 +1,23 @@
+- type: entity
+  id: CytologyPetriDish
+  name: petri dish
+  parent: BaseItem
+  description: A sterile petri dish for holding cell samples for analysis.
+  components:
+  - type: Item
+    size: Small
+  - type: CytologyPetriDish
+  - type: CytologySampleContainer
+    maxSamples: 5
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Cytology/petri_dish.rsi
+    state: icon
+    layers:
+    - state: icon
+    - state: fill
+      map: ["enum.CytologyPetriDishVisualLayers.Fill"]
+      visible: false
+    - state: foam
+      map: ["enum.CytologyPetriDishVisualLayers.Foam"]
+      visible: false
+  - type: Appearance

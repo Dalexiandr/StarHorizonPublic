@@ -1,0 +1,37 @@
+- type: entity
+  name: индустриальный гидропонный лоток
+  parent: hydroponicsTray
+  id: indhydroponicsTray
+  description: Самая последняя версия гидропонного лотка, используемая NanoTrasen — индустриальный гидропонный лоток!
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      soil:
+        maxVol: 500
+  - type: Sprite
+    layers:
+      - sprite: _Horizon/Structures/Hydroponics/containers.rsi
+        state: hydrotray4
+      - sprite: Structures/Hydroponics/overlays.rsi
+        state: lowhealth3
+        map: [ "health_alert" ]
+        visible: false
+      - sprite: Structures/Hydroponics/overlays.rsi
+        state: lowwater3
+        map: [ "water_alert" ]
+        visible: false
+      - sprite: Structures/Hydroponics/overlays.rsi
+        state: lownutri3
+        map: [ "nutri_alert" ]
+        visible: false
+      - sprite: Structures/Hydroponics/overlays.rsi
+        state: alert3
+        map: [ "undefined_alert" ]
+        visible: false
+      - sprite: Structures/Hydroponics/overlays.rsi
+        state: harvest3
+        map: [ "harvest_alert" ]
+        visible: false
+  - type: Tag
+    tags:
+    - AdvHydroTray

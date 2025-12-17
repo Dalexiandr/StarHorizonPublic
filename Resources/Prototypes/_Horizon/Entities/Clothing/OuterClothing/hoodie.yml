@@ -1,0 +1,12 @@
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatHoodie
+  suffix: StarHorizon
+  name: розовое худи
+  description: Просто розовое худи... Кажется, в нём умер ангел.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/OuterClothing/Coats/hoodie.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/OuterClothing/Coats/hoodie.rsi
+  - type: AllowSuitStorage

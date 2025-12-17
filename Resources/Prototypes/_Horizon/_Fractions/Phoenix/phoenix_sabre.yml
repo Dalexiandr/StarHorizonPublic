@@ -1,0 +1,16 @@
+- type: entity
+  name: сабля капитана ИФ
+  id: CaptainSabrePhoenix
+  parent: CaptainSabre
+  description: Церемониальное оружие, принадлежащее капитану станции ИФ.
+  suffix: Феникс, Лидер
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/weapon/FenixSabre/Sabre.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Phoenix/weapon/FenixSabre/Sabre.rsi
+  - type: Tag
+    tags:
+    - CaptainSabre
+
+

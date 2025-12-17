@@ -1,0 +1,25 @@
+- type: damageModifierSet
+  id: Demon
+  coefficients:
+    Cold: 1.1
+    Heat: 0.9
+    Poison: 0.8
+    Radiation: 1.2
+
+- type: damageModifierSet
+  id: Katunian
+  coefficients:
+    Cold: 0.75
+    Poison: 1.25
+    Caustic: 1.1
+    Shock: 1.2
+    Asphyxiation: 0.8
+
+# Horizon start
+- type: damageModifierSet
+  id: Tajaran
+  coefficients:
+    Cold: 0.75
+    Caustic: 1.1
+    Poison: 1.25
+# Horizon end

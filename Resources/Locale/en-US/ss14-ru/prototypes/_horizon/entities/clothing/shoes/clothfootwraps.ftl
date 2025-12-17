@@ -1,0 +1,14 @@
+ent-ClothingShoesClothfootwrapsWhite = white cloth footwraps
+    .desc = White cloth footwraps made of durable and soft fabric, designed to protect your sensitive feet or paws.
+ent-ClothingShoesClothfootwrapsBlack = black cloth footwraps
+    .desc = Black cloth footwraps made of durable and soft fabric, designed to protect your sensitive feet or paws.
+ent-ClothingShoesClothfootwrapsBlue = blue cloth footwraps
+    .desc = Blue cloth footwraps made of durable and soft fabric, designed to protect your sensitive feet or paws.
+ent-ClothingShoesClothfootwrapsBrown = brown cloth footwraps
+    .desc = Brown cloth footwraps made of durable and soft fabric, designed to protect your sensitive feet or paws.
+ent-ClothingShoesClothfootwrapsRed = red cloth footwraps
+    .desc = Red cloth footwraps made of durable and soft fabric, designed to protect your sensitive feet or paws.
+ent-ClothingShoesClothfootwrapsSilver = silver cloth footwraps
+    .desc = Silver cloth footwraps made of durable and soft fabric, designed to protect your sensitive feet or paws.
+ent-ClothingShoesClothfootwrapsYellow = yellow cloth footwraps
+    .desc = Yellow cloth footwraps made of durable and soft fabric, designed to protect your sensitive feet or paws.

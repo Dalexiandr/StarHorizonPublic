@@ -1,0 +1,90 @@
+<Document>
+  # ИНЖЕНЕРНЫЙ ШАТТЛ КЛАССА COMET
+  <Box>
+  <GuideEntityEmbed Entity="PowerDrill"/>
+  <GuideEntityEmbed Entity="JawsOfLife"/>
+  <GuideEntityEmbed Entity="ShipyardRCD"/>
+  <GuideEntityEmbed Entity="HolofanProjector"/>
+  </Box>
+  <Box>
+  <GuideEntityEmbed Entity="ShuttleMapComet" Caption=""/>
+  </Box>
+  [color=#a4885c]Размер шаттла:[/color] Средний
+
+	[color=#a4885c]Рекомендуемый экипаж:[/color] 3-6
+
+	[color=#a4885c]Тип топлива:[/color] Уран
+
+	[color=#a4885c]Экспедиции:[/color] Нет
+
+	[color=#a4885c]Консоль опознавания:[/color] Нету
+
+  "Comet — это инженерно-шахтерский шаттл, предназначенный для помощи в строительных проектах и ремонтных работах."
+
+  # КОНТРОЛЬНЫЙ СПИСОК ПЕРЕД ВЫЛЕТОМ
+
+  ## 1. Электропитание
+
+  ## 1.1. Аккумуляторы
+  <Box>
+  <GuideEntityEmbed Entity="SMESBasic"/>
+  <GuideEntityEmbed Entity="SubstationBasic"/>
+  <GuideEntityEmbed Entity="APCBasic"/>
+  </Box>
+
+  - Удостоверьтесь в том, чтобы СМЭС был прикреплен к полу.
+  - Удостоверьтесь в том, чтобы подстанция была прикреплена к полу.
+  - Удостоверьтесь в том, чтобы все ЛКП были включены.
+  - Проверьте текущую нагрузку всех ЛКП* (W).
+
+  ## 1.2. Генератор С.У.П.Е.Р.П.А.К.М.А.Н
+  <Box>
+    <GuideEntityEmbed Entity="PortableGeneratorSuperPacman"/>
+    <GuideEntityEmbed Entity="SheetUranium"/>
+    <GuideEntityEmbed Entity="SignRadiationMed"/>
+  </Box>
+
+  - Удостоверьтесь в том, чтобы С.У.П.Е.Р.П.А.К.М.А.Н. был закреплен к полу.
+  - Проверьте наличие топлива. Для длительных перелётов запасите достаточно урана.
+  - Проверьте, что генератор настроен на выход HV.
+  - Запустите генератор.
+  - Закройте радиационный экран.
+
+  ## 2. Атмосфера
+
+  ## 2.1. Подача газов в атмосферу (Дистра)
+  <Box>
+  <GuideEntityEmbed Entity="OxygenCanister"/>
+  <GuideEntityEmbed Entity="NitrogenCanister"/>
+  <GuideEntityEmbed Entity="GasMixer"/>
+  <GuideEntityEmbed Entity="GasPressurePump"/>
+  </Box>
+
+  - Удостоверьтесь в том, чтобы канистры О2 и N2 были закреплены к их соединительным портам.
+  - Удостоверьтесь в том, чтобы в газовом смесителе было установлено правильное соотношение смешивания (21% Кислорода, 79% Азота) и давление в 101кПа.
+  - Включите газовый смеситель.
+
+  ## 2.2. Вывод отходов из атмосферы
+  <Box>
+  <GuideEntityEmbed Entity="GasPressurePump"/>
+  <GuideEntityEmbed Entity="AirAlarm"/>
+  </Box>
+
+  - Включите насос вывода отходов.
+
+  ## 3. Другие проверки
+  <Box>
+  <GuideEntityEmbed Entity="Gyroscope"/>
+  <GuideEntityEmbed Entity="GravityGeneratorMini"/>
+  <GuideEntityEmbed Entity="BlastDoor"/>
+  </Box>
+
+  - Удостоверьтесь в том, чтобы гироскоп был закреплен, имел питание и был включен.
+  - Удостоверьтесь в том, чтобы мини генератор гравитации был закреплен, имел питание и был включен.
+  - Удостоверьтесь в том, чтобы гермозатворы были закрыты.
+
+  ## Примечания
+
+  * - Инженерные шаттлы класса Comet оснащены двумя ЛКП, с помощью которых можно оценить общее энергопотребление шаттла. Немодифицированный Comet требует 36,1 кВт для поддержания полной работоспособности.
+
+</Document>

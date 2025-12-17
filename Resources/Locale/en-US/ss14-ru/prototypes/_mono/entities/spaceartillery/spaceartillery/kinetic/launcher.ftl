@@ -1,0 +1,16 @@
+ent-WeaponTurretL85Autocannon = L85 20mm autocannon
+    .desc = A light 20mm ballistic autocannon designed for rapid fire and suppressing smaller targets at close range. Cheap, light, and can be remotely activated or linked up to a GCS.
+ent-WeaponTurretDravon = ADBP-7 DRAVON 57mm Autocannon
+    .desc = A single-barrel autocannon made by Aetherion Dynamics. Medium artillery piece with high fire rate but relatively low impact, firing HEAT shells to damage ship armor and systems. Can be remotely activated or linked up to a GCS.
+ent-WeaponTurretAK570 = AK570 90mm heavy autocannon
+    .desc = A dual-barrel, heavy 90mm autocannon firing general-purpose APHE rounds, effective for sustained fire against medium targets. Can be remotely activated or linked up to a GCS.
+ent-WeaponTurretCyrexa = CYREXA 220mm cannon
+    .desc = A main battery with dual barrels, delivering rapid, punishing salvos at extreme range. Fires 220mm auto shells with slightly reduced brute strength. Can be remotely activated or linked up to a GCS.
+ent-WeaponTurretHades = HADES 305mm cannon
+    .desc = One of the largest chemical-based kinetic weapons in the sector. Its power is only rivaled by mass drivers such as the M381.
+ent-WeaponTurretCharonette = M194 CHARONETTE mass driver
+    .desc = A smaller, more compact railgun that fires a large slug at rapid velocity, capable of big damage to enemy ships. Medium linear accelerator, can be remotely activated or linked up to a GCS.
+ent-WeaponTurretBofors = Bofors 255mm cannon
+    .desc = A single-barrel, heavy artillery cannon designed for cruisers, delivering massive impact with each long-range shot. Can be remotely activated or linked up to a GCS.
+ent-WeaponTurretKargil = Kargil 203mm cannon
+    .desc = A cruiser artillery cannon that launches devastating 203mm shells for long-range ship-to-ship combat. Can be remotely activated or linked up to a GCS.

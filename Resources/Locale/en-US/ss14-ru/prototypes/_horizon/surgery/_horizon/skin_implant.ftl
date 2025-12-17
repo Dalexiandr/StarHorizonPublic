@@ -1,0 +1,12 @@
+ent-BaseSkinImplant = { ent-BaseItem }
+    .desc = { ent-BaseItem.desc }
+ent-SubcutaneousArmor = subcutaneous armor
+    .desc = Has low protection ratings, but better than nothing?
+ent-UpgradedSubcutaneousArmor = upgraded subcutaneous armor
+    .desc = Improved version of the lightweight implant.
+ent-HeatSubcutaneousArmor = heat subcutaneous armor
+    .desc = Has low protection ratings, but better than nothing?
+ent-HeatUpgradeSubcutaneousArmor = heat subcutaneous armor
+    .desc = Improved version of the heat protection implant.
+ent-RadiationSubcutaneousArmor = radiation subcutaneous armor
+    .desc = Radiation coating that can provide some protection from radiation.

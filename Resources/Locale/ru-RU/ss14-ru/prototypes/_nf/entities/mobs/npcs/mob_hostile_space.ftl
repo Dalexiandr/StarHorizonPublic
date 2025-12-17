@@ -1,0 +1,13 @@
+ent-NFMobSpaceBase = { ent-MobMovementSpeedModifierMelee }
+    .suffix = Frontier
+    .desc = { ent-MobMovementSpeedModifierMelee.desc }
+ent-NFMobBearSpace = { ent-NFMobSpaceBase }
+    .desc = { ent-NFMobSpaceBase.desc }
+ent-NFMobKangarooSpace = { ent-NFMobSpaceBase }
+    .desc = { ent-NFMobSpaceBase.desc }
+ent-NFMobSpiderSpace = { ent-NFMobSpaceBase }
+    .desc = { ent-NFMobSpaceBase.desc }
+ent-NFMobCobraSpace = { ent-NFMobSpaceBase }
+    .desc = { ent-NFMobSpaceBase.desc }
+ent-NFMobTick = космический клещ
+    .desc = Это космический клещ, остерегайтесь его мерзкого укуса. ЦентКом сообщает, что 90 процентов ампутаций ног - вызваны последствиями укусов космических клещей.

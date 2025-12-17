@@ -1,0 +1,57 @@
+ent-BorgChassisSelectable = { ent-BaseBorgChassisNT }
+    .desc = { ent-BaseBorgChassisNT.desc }
+ent-BorgChassisGeneric = { ent-BaseBorgChassisNT }
+    .desc = { ent-BaseBorgChassisNT.desc }
+    .suffix = { ent-BaseBorgChassisNT.suffix }
+ent-BorgChassisMining = киборг-шахтёр
+    .desc = { ent-BaseBorgChassisNT.desc }
+    .suffix = { ent-BaseBorgChassisNT.suffix }
+ent-BorgChassisEngineer = киборг-инженер
+    .desc = { ent-BaseBorgChassisNT.desc }
+    .suffix = { ent-BaseBorgChassisNT.suffix }
+ent-BorgChassisJanitor = киборг-уборщик
+    .desc = { ent-BaseBorgChassisNT.desc }
+    .suffix = { ent-BaseBorgChassisNT.suffix }
+ent-BorgChassisMedical = киборг-врач
+    .desc = { ent-BaseBorgChassisNT.desc }
+    .suffix = { ent-BaseBorgChassisNT.suffix }
+ent-BorgChassisService = киборг-официант
+    .desc = { ent-BaseBorgChassisNT.desc }
+    .suffix = { "" }
+ent-BorgChassisSyndicateAssault = штурмовой киборг Синдиката
+    .desc = Машина для убийств с доступом к различным смертоносным модулям.
+    .suffix = { "" }
+ent-BorgChassisSyndicateMedical = медицинский киборг Синдиката
+    .desc = Боевой медицинский киборг. Имеет ограниченный наступательный потенциал, но с лихвой компенсирует его своими вспомогательными возможностями.
+    .suffix = { "" }
+ent-BorgChassisSyndicateSaboteur = саботажный киборг Синдиката
+    .desc = Изящный инженерный киборг, оснащенный модулями скрытности. Проектор-хамелеон позволяет ему маскироваться под киборга Nanotrasen.
+    .suffix = { "" }
+ent-BorgChassisDerelict = заброшенный киборг
+    .desc = Гибрид человека и машины, который помогает в работе станции. Этот находится в состоянии сильной неисправности.
+
+ent-BorgChassisSelectableCombat = боевой киборг
+    .desc = Шасси боевого киборга, готовое к выбору типа и установке специализированных модулей.
+
+# Combat cyborgs
+ent-BorgChassisCombatAssassin = киборг-убийца
+    .desc = Смертоносный скрытный киборг, оснащённый передовыми боевыми модулями. Тихий, быстрый и летальный.
+ent-BorgChassisCombatScout = разведывательный киборг
+    .desc = Лёгкий киборг разведки, предназначен для наблюдения и сбора информации. Быстрый и ловкий.
+ent-BorgChassisCombatCrawler = кравлер
+    .desc = Лёгкий кравлер паукообразной конструкции, предназначен для мобильных боевых операций.
+ent-BorgChassisCombatCrawlerHeavy = тяжёлый кравлер
+    .desc = Тяжелобронированный кравлер с улучшенной огневой мощью и прочностью.
+ent-BorgChassisCombatWalker = шагоход
+    .desc = Двуногий штурмовой шагоход, предназначен для тактического боя со сбалансированной скоростью и огневой мощью.
+ent-BorgChassisCombatWalkerHeavy = тяжёлый шагоход
+    .desc = Тяжелобронированный двуногий шагоход с максимальной огневой мощью для фронтальных штурмовых операций.
+
+ent-BorgChassisEngineerKerfus = керфус-инженер
+    .desc = Миленькая инженерная помощница. Помогает строить, чинить и поддерживать станцию в рабочем состоянии. Обожает болтики и гаечки!
+ent-BorgChassisJanitorKerfus = керфус-уборщик
+    .desc = Миленькая уборочная помощница. Следит за чистотой и порядком на станции. Тайно влюблена в свою швабру!
+ent-BorgChassisMedicalKerfus = керфус-врач
+    .desc = Миленькая медицинская помощница. Оказывает помощь нуждающемуся экипажу. Выписывает рецепты на объятия!
+ent-BorgChassisServiceKerfus = керфус-официант
+    .desc = Миленькая сервисная помощница. Обеспечивает экипаж закусками, напитками и развлечениями. Специалист по вкусняшкам и хорошему настроению!

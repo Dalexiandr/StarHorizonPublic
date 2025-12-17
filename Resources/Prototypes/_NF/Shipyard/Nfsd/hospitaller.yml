@@ -1,0 +1,44 @@
+- type: vessel
+  id: Hospitaller
+  parent: BaseVessel
+  name: NSF Hospitaller
+  description: A small security medical craft designed for emergency response and search and rescue operations.
+  price: 28220
+  category: Small
+  group: Security
+  access: Security
+  shuttlePath: /Maps/_NF/Shuttles/Nfsd/hospitaller.yml
+  guidebookPage: Null
+  class:
+  - Medical
+  engine:
+  - APU
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:FactionCostModifier
+      faction: "FactionNFSD"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: Hospitaller
+  mapName: 'NSF Hospitaller'
+  mapPath: /Maps/_NF/Shuttles/Nfsd/hospitaller.yml
+  minPlayers: 0
+  stations:
+    Hospitaller:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Hospitaller {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

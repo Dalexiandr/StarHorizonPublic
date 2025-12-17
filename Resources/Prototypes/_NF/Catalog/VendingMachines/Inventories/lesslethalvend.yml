@@ -1,0 +1,45 @@
+- type: vendingMachineInventory
+  id: LessLethalVendInventory
+  startingInventory:
+  # Weapons
+    NFWeaponEnergyPistolDisabler: 10
+    NFWeaponRevolverArgentiLessLethal: 10
+    Stunbaton: 10
+  # Magazines
+    NFSpeedLoaderPistol35Rubber: 5
+    NFSpeedLoaderPistol45Rubber: 5
+  # Ammo boxes
+    NFAmmunitionBoxPistol35Rubber: 10
+    NFAmmunitionBoxPistol45Rubber: 10
+    NFAmmunitionBoxShellShotgunBeanbag: 8
+    NFAmmunitionBoxRifle20Rubber: 8
+    NFAmmunitionBoxRifle30Rubber: 5
+  contrabandInventory:
+    WeaponRifleBBEmpty: 2
+    BoxCartridgeBB: 10
+  emaggedInventory:
+    ThrowingKnife: 1
+    BoxCartridgeRGBB: 1
+
+- type: vendingMachineInventory
+  id: LessLethalVendPOIInventory
+  startingInventory:
+  # Weapons
+    NFWeaponEnergyPistolDisabler: 4294967295
+    NFWeaponRevolverArgentiLessLethal: 4294967295
+    Stunbaton: 4294967295
+  # Magazines
+    NFSpeedLoaderPistol35Rubber: 4294967295
+    NFSpeedLoaderPistol45Rubber: 4294967295
+  # Ammo boxes
+    NFAmmunitionBoxPistol35Rubber: 4294967295
+    NFAmmunitionBoxPistol45Rubber: 4294967295
+    NFAmmunitionBoxRifle20Rubber: 4294967295
+    NFAmmunitionBoxRifle30Rubber: 4294967295
+    NFAmmunitionBoxShellShotgunBeanbag: 4294967295
+  contrabandInventory:
+    WeaponRifleBBEmpty: 2
+    BoxCartridgeBB: 10
+  emaggedInventory:
+    ThrowingKnife: 1
+    BoxCartridgeRGBB: 1

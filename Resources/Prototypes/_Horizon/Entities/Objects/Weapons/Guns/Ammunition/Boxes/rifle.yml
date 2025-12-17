@@ -1,0 +1,74 @@
+#region .20 rifle
+- type: entity
+  id: NFAmmunitionBoxRifle20Piercing
+  parent: NFBaseAmmunitionBoxRifle20
+  name: ammunition box (.20 rifle, piercing)
+  components:
+  - type: BallisticAmmoProvider
+    proto: NFCartridgeRifle20Piercing
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+      color: "#cbca8f"
+    - state: decal-01
+      color: "#ededed"
+    - state: decal-calibre-20
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: NFAmmunitionBoxRifle20Psycore
+  parent: NFBaseAmmunitionBoxRifle20
+  name: ammunition box (.20 rifle, psycore)
+  components:
+  - type: BallisticAmmoProvider
+    proto: NFCartridgeRifle20Psycore
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+      color: "#cbca8f"
+    - state: decal-01
+      color: "#8a1a7b"
+    - state: decal-calibre-20
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+#region .30 rifle
+
+- type: entity
+  id: NFAmmunitionBoxRifle30Piercing
+  parent: NFBaseAmmunitionBoxRifle30
+  name: ammunition box (.30 rifle, piercing)
+  components:
+  - type: BallisticAmmoProvider
+    proto: NFCartridgeRifle30Piercing
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+      color: "#b55f59"
+    - state: decal-01
+      color: "#ededed"
+    - state: decal-calibre-30
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: NFAmmunitionBoxRifle30Psycore
+  parent: NFBaseAmmunitionBoxRifle30
+  name: ammunition box (.30 rifle, psycore)
+  components:
+  - type: BallisticAmmoProvider
+    proto: NFCartridgeRifle30Psycore
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+      color: "#b55f59"
+    - state: decal-01
+      color: "#8a1a7b"
+    - state: decal-calibre-30
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]

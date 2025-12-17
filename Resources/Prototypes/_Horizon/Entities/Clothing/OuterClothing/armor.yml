@@ -1,0 +1,97 @@
+- type: entity
+  parent: ClothingOuterBaseLarge
+  id: ClothingOuterArmorGoldCaptainCarapace
+  suffix: StarHorizon
+  name: золотой панцирь капитана
+  description: Выдаётся почётным и опытным членам экипажа.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/OuterClothing/Armor/captain_carapace_gold.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/OuterClothing/Armor/captain_carapace_gold.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.6
+        Heat: 0.5
+        Caustic: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+  - type: GroupExamine
+
+- type: entity
+  parent: [ ClothingOuterBaseLarge, AllowSuitStorageClothing ]
+  id: ClothingOuterArmorBlueshield
+  name: панцирь офицера "Синий щит"
+  description: Бронированный нагрудник, который обеспечивает защиту, сохраняя при этом максимальную мобильность и гибкость. Выдаётся только лучшим специалистам.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/OuterClothing/Armor/blueshield_armor.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/OuterClothing/Armor/blueshield_armor.rsi
+  - type: Item
+    size: Huge
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.6
+        Heat: 0.5
+        Caustic: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+  - type: GroupExamine
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+
+- type: entity
+  abstract: true
+  id: BadgeOnClothing
+  components:
+  - type: Badgeable
+  - type: ContainerContainer
+    containers:
+      badge: !type:ContainerSlot
+        showEnts: False
+        occludes: True
+        ent: null
+  - type: ItemSlots
+    slots:
+      badge:
+        name: Badge
+        insertVerbText: attach-to-armor
+        ejectVerbText: unattach-to-armor
+        whitelist:
+          tags:
+          - Badge
+
+- type: entity
+  abstract: true
+  id: BadgeOnClothingWithContainer
+  components:
+  - type: Badgeable
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        showEnts: False
+        occludes: True
+        ents: []
+      badge: !type:ContainerSlot
+        showEnts: False
+        occludes: True
+        ent: null
+  - type: ItemSlots
+    slots:
+      badge:
+        name: Badge
+        insertVerbText: attach-to-armor
+        ejectVerbText: unattach-to-armor
+        whitelist:
+          tags:
+          - Badge
+

@@ -1,0 +1,14 @@
+ent-HorizonLocateImplantPlace = найдите место под имплантацию
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonPreparePlace = подготовьте место для имплантации
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonInsertIzolationImplant = имплантируйте заземляющее покрытие
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonExtractIzolationImplant = извлеките заземляющее покрытие
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonConnectImplantToNerves = соедините имплант с нервами
+    .desc = { ent-SurgeryStepBase.desc }
+ent-SurgeryInsertIzolationImplant = установка заземляющего покрытия
+    .desc = Хирургическое прикрепление имплантата.
+ent-SurgeryExstractIzolationImplant = извлечение заземляющего покрытия
+    .desc = Хирургическое прикрепление имплантата.

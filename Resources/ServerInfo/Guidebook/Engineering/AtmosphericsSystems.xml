@@ -1,0 +1,57 @@
+﻿<Document>
+  # Атмосферные системы
+  Атмосферный отдел располагает широким ассортиментом устройств для перемещения, управления и манипуляции газами.
+  Эти устройства часто работают совместно для поддержания безопасной, пригодной для дыхания атмосферы или выполнения общих задач.
+
+  В этом разделе рассматриваются различные системы, доступные Атмосу, их взаимосвязи и оптимальные способы использования.
+
+  <Box>
+    <GuideEntityEmbed Entity="GasPipeStraight" Caption=""/>
+    <GuideEntityEmbed Entity="GasPipeHalf" Caption=""/>
+    <GuideEntityEmbed Entity="GasPipeBend" Caption=""/>
+    <GuideEntityEmbed Entity="GasPipeTJunction" Caption=""/>
+    <GuideEntityEmbed Entity="GasPipeFourway" Caption=""/>
+    <GuideEntityEmbed Entity="GasPressurePump" Caption=""/>
+    <GuideEntityEmbed Entity="GasVolumePump" Caption=""/>
+  </Box>
+  <Box>
+    ## Трубопроводные сети
+  </Box>
+  <Box>
+    [color=#999999][italic]Соединённые трубы, выполняющие общую задачу - обычно называются трубопроводами[italic][/color]
+  </Box>
+
+  <Box>
+    <GuideEntityEmbed Entity="ComputerAlert" Caption=""/>
+    <GuideEntityEmbed Entity="AirAlarm" Caption=""/>
+  </Box>
+  <Box>
+    ## Мониторинг и управление устройствами
+  </Box>
+  <Box>
+    [color=#999999][italic]Контроль и управление устройствами, регулирующими локальную атмосферу[italic][/color]
+  </Box>
+
+  <Box>
+    <GuideEntityEmbed Entity="Firelock" Caption=""/>
+    <GuideEntityEmbed Entity="FireAlarm" Caption=""/>
+  </Box>
+  <Box>
+    ## Контроль возгораний и утечек
+  </Box>
+  <Box>
+    [color=#999999][italic]Устройства для предотвращения и контроля утечек газов и пожаров[italic][/color]
+  </Box>
+
+  <Box>
+    <GuideEntityEmbed Entity="GasMinerOxygenStation" Caption=""/>
+    <GuideEntityEmbed Entity="AirCanister" Caption=""/>
+  </Box>
+  <Box>
+    ## Добыча и хранение газов
+  </Box>
+  <Box>
+    [color=#999999][italic]Устройства для добычи новых газов и их хранения для последующего использования[italic][/color]
+  </Box>
+
+</Document>

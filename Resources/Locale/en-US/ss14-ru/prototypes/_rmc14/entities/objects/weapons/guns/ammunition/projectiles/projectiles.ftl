@@ -1,0 +1,16 @@
+ent-Bullet40mmGrenadeBaton = baton grenade
+    .desc = { ent-BaseBullet.desc }
+ent-Bullet40mmGrenadeBlast = blast grenade
+    .desc = { ent-BaseBulletTrigger.desc }
+ent-Bullet40mmGrenadeFlash = flash grenade
+    .desc = { ent-BaseBulletTrigger.desc }
+ent-Bullet40mmGrenadeHEAT = heat grenade
+    .desc = { ent-BaseBulletTrigger.desc }
+ent-Bullet40mmGrenadeEMP = EMP grenade
+    .desc = { ent-BaseBulletTrigger.desc }
+ent-Bullet40mmGrenadeSmoke = smoke grenade
+    .desc = { ent-BaseBulletTrigger.desc }
+ent-BulletFragRocket = frag rocket
+    .desc = { ent-BaseBulletTrigger.desc }
+ent-BulletBlastRocket = blast rocket
+    .desc = { ent-BaseBulletTrigger.desc }

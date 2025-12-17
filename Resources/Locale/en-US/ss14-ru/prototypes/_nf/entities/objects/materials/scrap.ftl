@@ -1,0 +1,14 @@
+ent-NFBaseScrap = { ent-BaseScrap }
+    .desc = { ent-BaseScrap.desc }
+ent-NFScrapSilver = fried control panel
+    .desc = A control panel of sorts with fried circuitry. You could likely extract some materials out of this.
+ent-NFScrapSolarGlass = ruined solar panel
+    .desc = An utterly ruined solar panel. You could likely extract some materials out of this.
+ent-ScrapPlastic = blasted plastic pile
+    .desc = An pile of plastic welded together in extreme heat. It's of a decent size overall; you could probably get a fair amount of sheets out of it.
+ent-ScrapGenericBrokenMachine = ruined machine
+    .desc = This machine is beyond repair, but you could likely extract some materials out of it.
+ent-ScrapGenericBrokenMachineAncient = ruined ancient machine
+    .desc = The machine is ancient and in very poor condition; you can't possibly restore it. You could likely extract some materials out of this, though.
+ent-ScrapGenericMachineAncient = ancient machine
+    .desc = It belongs in a museum. Or material reclaimer.

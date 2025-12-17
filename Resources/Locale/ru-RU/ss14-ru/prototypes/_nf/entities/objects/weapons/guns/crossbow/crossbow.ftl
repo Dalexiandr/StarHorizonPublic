@@ -1,0 +1,16 @@
+ent-BaseCrossbow = арбалет
+    .desc = Оригинальный "пиф-паф" — навёл и стрельнул!
+ent-BaseCrossbowWieldable = { ent-BaseCrossbow }
+    .desc = { ent-BaseCrossbow.desc }
+ent-CrossbowBloodCult = арбалет кровавого культа
+    .desc = { ent-BaseCrossbow.desc }
+ent-CrossbowImprovised = импровизированный арбалет
+    .desc = { ent-BaseCrossbowWieldable.desc }
+ent-CrossbowBloodCultHand = ручной арбалет культа крови
+    .desc = { ent-BaseCrossbow.desc }
+ent-CrossbowModern = модернизированный арбалет
+    .desc = { ent-BaseCrossbow.desc }
+ent-CrossbowModernHand = модернизированный ручной арбалет
+    .desc = { ent-BaseCrossbow.desc }
+ent-CrossbowImprovisedHand = самодельный ручной арбалет
+    .desc = { ent-BaseCrossbow.desc }

@@ -1,0 +1,6 @@
+- type: radioChannel
+  id: Trauma
+  name: ТТИ
+  keycode: 'я' # Horizon
+  frequency: 9027
+  color: "#b30202"

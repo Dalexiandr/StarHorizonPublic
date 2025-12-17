@@ -1,0 +1,15 @@
+﻿- type: entity
+  parent: ClothingMaskBase
+  id: DemonMask
+  name: дьявольская маска
+  description: Маска выглядит как обычнакя маска, только выглядит немного... Странно...
+  suffix: Horizon, катана синдиката
+  components:
+    - type: DemonMask
+    - type: BreathMask
+    - type: EyeProtection
+      protectionTime: 5
+    - type: Sprite
+      sprite: _Horizon/Clothing/Mask/demonmask.rsi
+    - type: Clothing
+      sprite: _Horizon/Clothing/Mask/demonmask.rsi

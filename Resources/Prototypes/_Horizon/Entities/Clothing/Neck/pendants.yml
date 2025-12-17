@@ -1,0 +1,179 @@
+# Resources/Prototypes/_Horizon/Entities/Clothing/Neck
+
+- type: entity
+  parent: ClothingNeckTieRed
+  id: ClothingCheapPendantGreen
+  name: кулон из зелёного кристалла
+  description: Кристалл подвешенный на проводе.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Neck/Pendants/green.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Neck/Pendants/green.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: Construction
+    graph: CheapPendantGreen
+    node: pendantgreen
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#5ea34e"
+
+- type: entity
+  parent: ClothingNeckTieRed
+  id: ClothingCheapPendantOrange
+  name: кулон из оранжевого кристалла
+  description: Кристалл подвешенный на проводе.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Neck/Pendants/orange.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Neck/Pendants/orange.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: Construction
+    graph: CheapPendantOrange
+    node: pendantorange
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#96863b"
+
+- type: entity
+  parent: ClothingNeckTieRed
+  id: ClothingCheapPendantPink
+  name: кулон из розового кристалла
+  description: Кристалл подвешенный на проводе.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Neck/Pendants/pink.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Neck/Pendants/pink.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: Construction
+    graph: CheapPendantPink
+    node: pendantpink
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#a84dab"
+
+- type: entity
+  parent: ClothingNeckTieRed
+  id: ClothingCheapPendantCyan
+  name: кулон из голубого кристалла
+  description: Кристалл подвешенный на проводе.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Neck/Pendants/cyan.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Neck/Pendants/cyan.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: Construction
+    graph: CheapPendantCyan
+    node: pendantcyan
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#47a8a5"
+
+- type: entity
+  parent: ClothingNeckTieRed
+  id: ClothingCheapPendantBlue
+  name: кулон из синего кристалла
+  description: Кристалл подвешенный на проводе.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Neck/Pendants/blue.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Neck/Pendants/blue.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: Construction
+    graph: CheapPendantBlue
+    node: pendantblue
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#3d5cb3"
+
+- type: entity
+  parent: ClothingNeckTieRed
+  id: ClothingCheapPendantRed
+  name: кулон из красного кристалла
+  description: Кристалл подвешенный на проводе.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Neck/Pendants/red.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Neck/Pendants/red.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: Construction
+    graph: CheapPendantRed
+    node: pendantred
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#fb4747"
+
+- type: entity
+  parent: ClothingNeckTieRed
+  id: ClothingCheapPendantYellow
+  name: кулон из жёлтого кристалла
+  description: Кристалл подвешенный на проводе.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Neck/Pendants/yellow.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Neck/Pendants/yellow.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: Construction
+    graph: CheapPendantYellow
+    node: pendantyellow
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#ffde46"    
+
+- type: entity
+  parent: ClothingNeckTieRed
+  id: ClothingCheapPendantBlack
+  name: кулон из черного кристалла
+  description: Кристалл подвешенный на проводе.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Neck/Pendants/black.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Neck/Pendants/black.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: Construction
+    graph: CheapPendantBlack
+    node: pendantblack
+  - type: PointLight
+    radius: 1.5
+    energy: 3
+    color: "#363636"    
+
+

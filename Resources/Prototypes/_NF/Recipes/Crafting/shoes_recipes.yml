@@ -1,0 +1,31 @@
+- type: construction
+  id: RecipeClothingShoesClownModWhoopie
+  graph: GraphClothingShoesClownModWhoopie
+  startNode: start
+  targetNode: whoopiemod
+  category: construction-category-misc
+  objectType: Item
+
+- type: construction
+  id: RecipeClothingShoesClownModKetchup
+  graph: GraphClothingShoesClownModKetchup
+  startNode: start
+  targetNode: ketchupmod
+  category: construction-category-misc
+  objectType: Item
+
+- type: construction
+  id: RecipeClothingShoesClownModMustarchup
+  graph: GraphClothingShoesClownModMustarchup
+  startNode: start
+  targetNode: mustarchupmod
+  category: construction-category-misc
+  objectType: Item
+
+- type: construction
+  id: RecipeClothingShoesClownModUltimate
+  graph: GraphClothingShoesClownModUltimate
+  startNode: start
+  targetNode: ultimatemod
+  category: construction-category-misc
+  objectType: Item

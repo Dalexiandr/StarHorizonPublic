@@ -1,0 +1,12 @@
+job-supervisors-sr = представителю фронтира
+job-supervisors-sheriff = шерифу
+job-supervisors-bailiff = помощнику шерифа
+job-supervisors-sergeant = сержанту
+job-supervisors-cadet = всему вышестоящему персоналу ДШНФ
+job-supervisors-prisoner = всему персоналу ДШНФ
+job-supervisors-nfsd = шерифу, помощнику шерифа и капралам
+job-supervisors-plant-manager = управляющему электростанцией
+job-supervisors-nf-pirate = боцману и капитану
+job-supervisors-nf-pirate-captain = капитану
+job-supervisors-freebooters-union = Союзу вольных стрелков
+job-supervisors-nobody = никому

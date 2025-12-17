@@ -1,0 +1,30 @@
+<Document>
+  # Газовые баллоны
+  <Box>
+    <GuideEntityEmbed Entity="AirCanister"/>
+    <GuideEntityEmbed Entity="OxygenCanister"/>
+    <GuideEntityEmbed Entity="NitrogenCanister"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="CarbonDioxideCanister"/>
+    <GuideEntityEmbed Entity="StorageCanister"/>
+    <GuideEntityEmbed Entity="GasPort"/>
+  </Box>
+
+  Газовые баллоны позволяют хранить и переносить газы в компактных ёмкостях.
+  Вместимость: [color=orange][protodata="StorageCanister" comp="GasCanister" member="Volume"/] литров[/color].
+
+  Для заправки переносных баллонов используйте выпускной клапан на основном баллоне.
+  Клапан оснащён регулятором давления для контроля уровня заполнения.
+
+  Если открыть клапан без подключённого переносного баллона, газ будет выходить в атмосферу с установленным давлением.
+
+  [bold]Обязательно закрывайте клапан перед отсоединением переносного баллона![/bold]
+
+  ## Подключение к системе
+  Газовые баллоны и [textlink="переносные скрубберы" link="PortableScrubber"] можно подключить к [textlink="трубопроводной сети" link="PipeNetworks"], закрепив их гаечным ключом на соединительном порте.
+  После подключения газ будет свободно циркулировать между баллоном и сетью, выравнивая давление, температуру и состав.
+
+  Для полного заполнения или опустошения баллона используйте насос.
+
+</Document>

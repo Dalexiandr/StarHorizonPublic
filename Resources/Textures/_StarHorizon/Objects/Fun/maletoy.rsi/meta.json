@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "license": "CLA with hosting restrictions",
+  "copyright": "By Lemird",
+ "size": {
+     "x": 32,
+     "y": 32
+  },
+    "states": [
+      {
+      "name": "icon"
+      }
+  ]
+}

@@ -1,0 +1,11 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitPhoenixSalvager
+  name: Комбинезон рабочего ИФ
+  description: Стандартный рабочий комбинезон сотрудника ИФ, дешёв, но суров и надёжен
+  suffix: Феникс, работяги
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/uniform/slaveuniform.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Phoenix/uniform/slaveuniform.rsi

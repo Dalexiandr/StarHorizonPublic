@@ -1,0 +1,29 @@
+# region Slugs
+
+- type: entity
+  id: NFShellShotgunPiercing
+  name: shell (.50 piercing)
+  parent: NFBaseShellShotgun
+  components:
+  - type: Sprite
+    layers:
+      - state: slug
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: NFPelletShotgunPiercingSpread
+  - type: SpentAmmoVisuals
+    state: "slug"
+
+- type: entity
+  id: NFShellShotgunPsycore
+  name: shell (.50 psycore)
+  parent: NFBaseShellShotgun
+  components:
+  - type: Sprite
+    layers:
+    - state: slug
+      map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: NFPelletShotgunPsycoreSpread
+  - type: SpentAmmoVisuals
+    state: "slug"

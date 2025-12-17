@@ -1,0 +1,80 @@
+# кадет
+- type: startingGear
+  id: UASCadetGear
+  suffix: Aavikko, UAS
+  equipment:
+    jumpsuit: SuitUAS
+    back: UASsatchelCadet
+    eyes: ClothingEyesGlassesUAS
+    gloves: UASGloves
+    outerClothing: UASVests
+    shoes: UASBoots
+    id: PDACadetUAS
+    ears: ClothingHeadsetUAS
+    belt: WeaponStunprodUAS
+# офицер
+- type: startingGear
+  id: UASOfficerGear
+  suffix: Aavikko, UAS
+  equipment:
+    jumpsuit: SuitProtectiveUAS
+    back: UASsatchelOfficer
+    eyes: ClothingEyesGlassesUAS
+    gloves: UASGloves
+    outerClothing: UASVests
+    shoes: UASBoots
+    id: PDAOfficerUAS
+    ears: ClothingHeadsetUAS
+    belt: WeaponStunprodUAS
+# рыцарь
+- type: startingGear
+  id: UASKnightGear
+  suffix: Aavikko, UAS
+  equipment:
+    jumpsuit: SuitProtectiveUAS
+    back: UASsatchelKnight
+    eyes: ClothingEyesGlassesUAS
+    gloves: UASGlovesIsolate
+    outerClothing: ClothingOuterHardsuitKnight
+    shoes: UASBoots
+    id: PDAKnightUAS
+    ears: ClothingHeadsetUAS
+# паук
+- type: startingGear
+  id: UASSpiderGear
+  suffix: Aavikko, UAS
+  equipment:
+    jumpsuit: SuitProtectiveUAS
+    back: UASsatchelSpider
+    eyes: ClothingEyesGlassesUAS
+    gloves: UASGlovesIsolate
+    outerClothing: ClothingOuterHardsuitSpider
+    shoes: UASClothingShoesBootsMag
+    id: PDASpiderUAS
+    ears: ClothingHeadsetUAS
+# титан
+- type: startingGear
+  id: UASTitanGear
+  suffix: Aavikko, UAS
+  equipment:
+    jumpsuit: SuitProtectiveUAS
+    back: UASsatchelTitan
+    eyes: ClothingEyesGlassesUAS
+    gloves: UASGlovesIsolate
+    outerClothing: ClothingOuterHardsuitTitan
+    shoes: UASClothingShoesBootsMag
+    id: PDATitanUAS
+    ears: ClothingHeadsetUAS
+# совет
+- type: startingGear
+  id: UASCounselorGear
+  suffix: Aavikko, UAS
+  equipment:
+    jumpsuit: SuitProtectiveUAS
+    back: UASsatchelCounselor
+    eyes: ClothingEyesGlassesUAS
+    gloves: UASGlovesIsolate
+    outerClothing: UAScoastconsul
+    shoes: UASBoots
+    id: PDACounselorUAS
+    ears: ClothingHeadsetUAS

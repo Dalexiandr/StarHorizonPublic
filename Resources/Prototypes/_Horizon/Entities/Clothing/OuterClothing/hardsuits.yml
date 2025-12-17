@@ -1,0 +1,502 @@
+- type: entity
+  parent: [ClothingOuterHardsuitBase, BaseCentcommContraband]
+  id: ClothingOuterHardsuitCenctom
+  name: бронированный скафандр Центком
+  description: Специализированный укреплённый скафандр для выходящих в поле членов Центрального Командования.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/centspace.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/centspace.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.70
+        Slash: 0.70
+        Piercing: 0.75
+        Heat: 0.20
+        Radiation: 0.25
+        Caustic: 0.20
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitCentcom
+
+- type: entity
+  parent: ClothingOuterHardsuitSyndieElite
+  id: ClothingOuterHardsuitShadowDark
+  name: экзоскелет теневой мглы
+  description: Переливающиеся фиолетовым цветом Экзоскелет, кажется... или он пропитан темной энергией?
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/shadowdark.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/shadowdark.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitShadowDark
+
+- type: entity
+  parent: ClothingOuterHardsuitERTLeader
+  id: ClothingOuterHardsuitBlueshield
+  name: скафандр офицера "Синий щит"
+  description: Стильный скафандр, созданный специально для спасения глав из открытого космоса.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/blueshield.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/blueshield.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitBlueshield
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+
+- type: entity
+  parent: [ClothingOuterHardsuitBase]
+  id: ClothingOuterOldSpacer
+  name: древний скафандр
+  description: Скафандр времен древних колонизаций
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/old.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/old.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.80
+        Slash: 0.80
+        Piercing: 0.85
+        Heat: 0.80
+        Radiation: 0.85
+        Caustic: 0.80
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitSpacerOld
+
+- type: entity
+  parent: [ClothingOuterHardsuitBase]
+  id: ClothingOuterIndeep1
+  name: глубинный скафандр Cybersun
+  description: Специальный скафандр киберсан для экспедиций туда,где просто прибывание грозит летальным исходом
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/indeep.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/indeep.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: Armor
+    modifiers:
+     coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.5
+        Heat: 0.3
+        Radiation: 0.3
+        Caustic: 0.3
+  - type: HeldSpeedModifier
+  - type: ClothingSpeedModifier
+    walkModifier: 0.90
+    sprintModifier: 0.90
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitIndeep1
+
+- type: entity
+  parent: [ClothingOuterHardsuitBase]
+  id: ClothingOuterIndeep2
+  name: глубинный медицинский скафандр Cybersun
+  description: Специальный скафандр киберсан для экспедиций туда,где просто прибывание грозит летальным исходом. Этот вариант предназначается медикам
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/indeep2.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/indeep2.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: Armor
+    modifiers:
+     coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.5
+        Heat: 0.3
+        Radiation: 0.3
+        Caustic: 0.3
+  - type: HeldSpeedModifier
+  - type: ClothingSpeedModifier
+    walkModifier: 0.90
+    sprintModifier: 0.90
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitIndeep2
+
+- type: entity
+  parent: [ClothingOuterHardsuitBase]
+  id: ClothingOuterFight
+  name: боевой скафандр
+  description: Боевой скафандр. Старая версия скафандров СБ.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/fight.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/fight.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: Armor
+    modifiers:
+     coefficients:
+        Blunt: 0.65
+        Slash: 0.65
+        Piercing: 0.65
+        Heat: 0.7
+        Radiation: 0.55
+        Caustic: 0.75
+  - type: ClothingSpeedModifier
+    walkModifier: 0.90
+    sprintModifier: 0.90
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitFight
+
+
+- type: entity
+  parent: [ClothingOuterHardsuitBase]
+  id: ClothingOuterExperementalSyndy
+  name: "Рамзи"
+  description: Эксперементальный скафандр синдиката,так и не попавший на рынки.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/syndicateramzi.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/syndicateramzi.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: Armor
+    modifiers:
+     coefficients:
+        Blunt: 0.50
+        Slash: 0.55
+        Piercing: 0.55
+        Heat: 0.5
+        Radiation: 0.55
+        Caustic: 0.75
+  - type: ClothingSpeedModifier
+    walkModifier: 0.90
+    sprintModifier: 0.90
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitExperementalSyndy
+
+
+- type: entity
+  parent: [ClothingOuterHardsuitBase]
+  id: ClothingOuterCybersunResearch
+  name: скафандр ученого Cybersun
+  description: Редкий и очень дорогой скафандр который обеспечивает почти полную защиту от всех внешних угроз.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/syndicatecybersun.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/syndicatecybersun.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: Armor
+    modifiers:
+     coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.1
+        Radiation: 0.1
+        Caustic: 0.1
+  - type: ClothingSpeedModifier
+    walkModifier: 0.90
+    sprintModifier: 0.90
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitCybersunResearch
+
+- type: entity
+  parent: [ClothingOuterHardsuitBase]
+  id: ClothingOuterNukeDark
+  name: скафандр отступника
+  description: Темный,так как те кто ушел из Горлакса замазывают любые опозначение
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/corpsec.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/corpsec.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: Armor
+    modifiers:
+     coefficients:
+        Blunt: 0.50
+        Slash: 0.55
+        Piercing: 0.55
+        Heat: 0.5
+        Radiation: 0.55
+        Caustic: 0.75
+  - type: ClothingSpeedModifier
+    walkModifier: 0.90
+    sprintModifier: 0.90
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitNukeDark
+
+- type: entity
+  parent: [ClothingOuterHardsuitBase]
+  id: ClothingOuterHunter
+  name: скафандр охотника
+  description: Скафандр группы охотников за головами,ищущие по Фронтирам в поисках наживы
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/hardsuit.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/hardsuit.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: Armor
+    modifiers:
+     coefficients:
+        Blunt: 0.60
+        Slash: 0.65
+        Piercing: 0.65
+        Heat: 0.65
+        Radiation: 0.65
+        Caustic: 0.75
+  - type: ClothingSpeedModifier
+    walkModifier: 0.90
+    sprintModifier: 0.90
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitHunter
+
+- type: entity
+  parent: [ClothingOuterHardsuitBase]
+  id: ClothingOuterHunterElite
+  name: элитный скафандр охотника
+  description: Дорогой скафандр стилизованный под самурайский костюм.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/hardsuitelite.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/hardsuitelite.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: Armor
+    modifiers:
+     coefficients:
+        Blunt: 0.60
+        Slash: 0.60
+        Piercing: 0.60
+        Heat: 0.60
+        Radiation: 0.60
+        Caustic: 0.75
+  - type: ClothingSpeedModifier
+    walkModifier: 0.90
+    sprintModifier: 0.90
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitHunterElite
+
+
+- type: entity
+  parent: [ClothingOuterHardsuitBase]
+  id: ClothingOuterNano
+  name: продвинутый скафандр Nanotrasen
+  description: Крайне прочный скафандр,покрытый толстым слоем нанопленки
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/zhanshi.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/zhanshi.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: Armor
+    modifiers:
+     coefficients:
+        Blunt: 0.30
+        Slash: 0.30
+        Piercing: 0.30
+        Heat: 0.30
+        Radiation: 0.30
+        Caustic: 0.35
+  - type: ClothingSpeedModifier
+    walkModifier: 0.90
+    sprintModifier: 0.90
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitNano
+
+#region Trauma
+#Trauma team EVA
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ClothingOuterHardsuitTraumaTeam
+  suffix: TraumaTeam
+  name: EVA парамедика траумы
+  description: Стандартный образец герметичного комплекта брони Trauma Team Interstellar, усилен более крепким материалом для работы в безвоздушном пространстве.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/traumateam.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/traumateam.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.7
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: TraumaTeamHelmet
+
+#Trauma team EVAR
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ClothingOuterHardsuitTraumaTeamRed
+  name: EVA техника траумы
+  description: Стандартный образец герметичного комплекта брони Trauma Team Interstellar, усилен более крепким материалом для работы в безвоздушном пространстве.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/traumateamred.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/traumateamred.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.4
+        Slash: 0.8
+        Piercing: 0.4
+        Blast: 0.5
+        Heat: 0.5
+        Cold: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: TraumaTeamHelmetRed
+
+#Trauma team EVAS
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ClothingOuterHardsuitTraumaTeamSur
+  name: EVA реаниматора траумы
+  description: Стандартный образец герметичного комплекта брони Trauma Team Interstellar, усилен более крепким материалом для работы в безвоздушном пространстве.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/traumateamsur.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/traumateamsur.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.8
+        Piercing: 0.9
+        Heat: 0.5
+        Cold: 0.5
+        Shock: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: TraumaTeamHelmetSur
+
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ClothingOuterHardsuitTraumaTeamPilot
+  name: EVA пилота траумы
+  description: Стандартный образец герметичного комплекта брони Trauma Team Interstellar, усилен более крепким материалом для работы в безвоздушном пространстве.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/traumateampilot.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/traumateampilot.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.8
+        Piercing: 0.9
+        Heat: 0.5
+        Cold: 0.5
+        Shock: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: TraumaTeamHelmetPilot

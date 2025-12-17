@@ -1,0 +1,10 @@
+ent-BaseCrateStorageRack = каркас стеллажа для хранения ящиков
+.desc = Как наполовину собранная полка, но больше!
+ent-CrateStorageRack = стеллаж для хранения ящиков
+.desc = Способен хранить до 4 ящиков одновременно. Для погрузки или разгрузки ящиков требуется автопогрузчик.
+ent-CrateStorageRackBase = основание стеллажа для хранения ящиков
+.desc = Скромное начало стеллажа для ящиков. Продолжайте строительство!
+ent-CrateStorageRackFrameEmpty = { ent-BaseCrateStorageRack }
+.desc = { ent-BaseCrateStorageRack.desc }
+ent-CrateStorageRackFrame = { ent-BaseCrateStorageRack }
+.desc = { ent-BaseCrateStorageRack.desc }

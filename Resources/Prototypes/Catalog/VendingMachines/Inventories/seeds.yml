@@ -1,0 +1,76 @@
+- type: vendingMachineInventory
+  id: MegaSeedServitorInventory
+  startingInventory:
+    AloeSeeds: 3
+    AmbrosiaVulgarisSeeds: 3
+    AppleSeeds: 5
+    AvocadoSeeds: 5 # Frontier
+    BananaSeeds: 5
+    BeeSeeds: 5 # Frontier
+    BerrySeeds: 5
+    BungoSeeds: 5 # Frontier
+    CarrotSeeds: 5
+    CabbageSeeds: 5
+    ChanterelleSeeds: 5
+    CherrySeeds: 5
+    ChiliSeeds: 5
+    CocoaSeeds: 3
+    # CoffeeSeeds: 5 # Frontier # Horizon Bothany
+    CornSeeds: 5
+    CottonSeeds: 5
+    CucumberSeeds: 5 # Frontier
+    EggplantSeeds: 5
+    EveryspiceSeeds: 5 # Frontier
+    GalaxythistleSeeds: 3
+    GarlicSeeds: 3
+    GrapeSeeds: 5
+    LemonSeeds: 5
+    LimeSeeds: 5
+    PineappleSeeds: 5
+    LingzhiSeeds: 3
+    OatSeeds: 5
+    OnionSeeds: 5
+    OnionRedSeeds: 5
+    OrangeSeeds: 5
+    PearSeeds: 3 # Frontier
+    PeaSeeds: 5
+    PoppySeeds: 3
+    PotatoSeeds: 5
+    PumpkinSeeds: 5
+    RiceSeeds: 5
+    SoybeanSeeds: 5
+    SugarcaneSeeds: 5
+    TeaPlantSeeds: 5
+    TomatoSeeds: 5
+    TowercapSeeds: 5
+    WheatSeeds: 5
+    WatermelonSeeds: 5
+    # Horizon Bothany start
+    MintPlantSeeds: 5
+    CoffeearabicaSeeds: 5
+    SunflowerSeeds: 5
+    CloveySeeds: 3
+    ClovewSeeds: 3
+    CloverSeeds: 3
+    ClovepSeeds: 3
+    LilypSeeds: 3
+    LilyoSeeds: 3
+    LilybSeeds: 3
+    RosewSeeds: 3
+    RoserSeeds: 3
+    RosepSeeds: 3
+    RoselpSeeds: 3
+    ChamomilerSeeds: 3
+    ChamomilevSeeds: 3
+    TuliplpSeeds: 3
+    TulippSeeds: 3
+    TuliprSeeds: 3
+    TulipySeeds: 3
+    GrapegSeeds: 3
+    GrapebSeeds: 3
+    # Horizon Bothany end
+  contrabandInventory:
+    TobaccoSeeds: 2
+    # FoodSnackSemki: 2 # Frontier
+  emaggedInventory:
+    FlyAmanitaSeeds: 1

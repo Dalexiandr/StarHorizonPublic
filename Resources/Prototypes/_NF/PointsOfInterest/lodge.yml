@@ -1,0 +1,47 @@
+# Author Info
+# GitHub:
+# Discord: Checkraze
+
+# Maintainer Info
+# GitHub: ???
+# Discord: ???
+
+# Notes:
+# Provides higher end expeditionary ships and a space for vets to spawn in away from potential frontier shenanigans
+- type: pointOfInterest
+  id: Lodge
+  parent: BasePOI
+  name: 'Expeditionary Lodge'
+  minimumDistance: 1650
+  maximumDistance: 3400
+  spawnGroup: Required
+  gridPath: /Maps/_Horizon/POI/lodge.yml # Horizon-Maps
+  addComponents:
+  - type: IFF
+    color: "#3737F8"
+  - type: StationTransit
+    routes:
+      SpawnPoints: 20
+
+- type: gameMap
+  id: Lodge
+  mapName: 'Expeditionary Lodge'
+  mapPath: /Maps/_Horizon/POI/lodge.yml # Horizon-Maps
+  minPlayers: 0
+  stations:
+    Lodge:
+      stationProto: RecordsFrontierOutpost
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Expeditionary Lodge'
+        - type: ExtraStationInformation
+          iconPath: /Textures/_Horizon/Interface/banner_merc_two.png # Horizon
+          stationSubtext: 'frontier-lobby-exped-subtext'
+          stationDescription: 'frontier-lobby-exped-description'
+          lobbySortOrder: 3
+        - type: StationJobs
+          availableJobs:
+            Pilot: [ -1, -1 ]
+            Mercenary: [ -1, -1 ]
+        - type: StationDeadDrop
+          maxDeadDrops: 1 # Fewer here, players start here.

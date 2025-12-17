@@ -1,0 +1,14 @@
+ent-NFWeaponEnergyRifleCarbine = laser carbine
+    .desc = A simple civilian grade laser carbine, the workhorse of many private security organizations.
+    .suffix = Frontier
+ent-NFWeaponEnergyRifleCarbinePractice = practice laser carbine
+    .desc = This modified laser rifle fires nearly harmless beams in the 40-watt range, for target practice.
+    .suffix = Frontier
+ent-NFWeaponEnergyRiflePulse = pulse rifle
+    .desc = A weapon that is almost as infamous as its users. On the handle is a label that says 'for authorized use only.'
+ent-WeaponEmpEmitter = ЭМИ излучатель
+    .desc = Испускает электромагнитные импульсы, которые выводят из строя или повреждают электронные устройства и разряжают элементы питания. Способен самостоятельно заряжаться.
+ent-NFWeaponParticleDecelerator = portable particle decelerator
+    .desc = A portable particle decelerator capable of decomposing a tesla or singularity.
+ent-NFWeaponEnergyRifleTemperature = temperature gun
+    .desc = An advanced gun that shoots beams capable of heating or cooling their target.

@@ -1,0 +1,61 @@
+- type: entity
+  parent: [BaseStructure, UASStore, BaseUASContraband]
+  categories: [ HideSpawnMenu ]
+  id: BaseUASUplink
+  name: консоль запроса UAS
+  description: Подозрительная консоль без монитора.
+  suffix: StarHorizon, UAS, Structure
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: InteractionOutline
+  - type: Sprite
+    sprite: _Horizon/Structures/Machines/uasuplink.rsi
+    layers:
+    - state: uasuplink
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Store
+    balance:
+      CitadelCoin: 0
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: Pullable
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.40,-0.30,0.40,0.45"
+        density: 80
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            Sheetkazmie:
+              min: 1
+              max: 5
+            SheetEFS:
+              min: 3
+              max: 5

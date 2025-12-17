@@ -1,0 +1,153 @@
+# 1
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonLocateHeartPumps
+  name: Locate heart pumps
+  components:
+  - type: SurgeryStep
+    duration: 10
+  - type: Sprite
+# 2
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonClampGeneralValves
+  name: Clamp general vavles
+  components:
+  - type: SurgeryStep
+    duration: 3
+    tools:
+    - type: Hemostat
+  - type: Sprite
+    sprite: Objects/Specific/Medical/Surgery/scissors.rsi
+    state: hemostat
+# 3
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonDisconnectVavles
+  name: Disconnect the heart valves
+  components:
+  - type: SurgeryStep
+    duration: 5
+    tools:
+    - type: Scalpel
+  - type: Sprite
+    sprite: Objects/Specific/Medical/Surgery/scalpel.rsi
+    state: scalpel
+  - type: SurgeryStepEmoteEffect
+
+# 4 HorizonStopBloodloss
+
+# 5 Insert the implant!
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonInsertPumpImplant
+  name: Insert pump implant
+  components:
+  - type: SurgeryStep
+    duration: 12
+    tools:
+    - type: BloodPumpImplant
+  - type: SurgeryStepOrganInsert
+    slot: blood_pump_implant
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/implants.rsi
+    layers:
+      - state: implant
+
+# 5 Also five but extract!
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonExtractPumpImplant
+  name: Extract a subcutaneous implant
+  components:
+  - type: SurgeryStep
+    duration: 12
+  - type: SurgeryStepOrganExtract
+    organ:
+    - type: BloodPumpImplant
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/implants.rsi
+    layers:
+    - state: implant
+
+# 6 Done operation
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonConnectValvesToHeart
+  name: Connect valves to heart
+  components:
+  - type: SurgeryStep
+    duration: 2
+    tools:
+    - type: Hemostat
+  - type: Sprite
+    sprite: Objects/Specific/Medical/Surgery/scissors.rsi
+    state: hemostat
+
+#Operation Insert
+- type: entity
+  parent: SurgeryBase
+  id: SurgeryInsertHeartPumpImplant
+  name: Insert a heart pump implant
+  description: Surgical attachment of a implant.
+  components:
+  - type: Surgery
+    requirement:
+    - SurgeryOpenAbdomen
+    steps:
+    - HorizonLocateHeartPumps
+    - HorizonClampGeneralValves
+    - HorizonDisconnectVavles
+    - HorizonStopBloodloss
+    - HorizonInsertPumpImplant
+    - HorizonConnectValvesToHeart
+  - type: SurgerySpeciesCondition
+    speciesBlacklist:
+    - SlimePerson # Не любим слаймолюдов
+  - type: SurgeryPartCondition
+    parts:
+    - Torso
+  - type: SurgeryOrganDontExistCondition # Не даём вживить больше одного импланта в тело.
+    organ:
+    - type: BloodPumpImplant
+    container: blood_pump_implant
+  - type: SurgeryOrganExistCondition # Не даём, вытащить, того чего нет
+    organ:
+    - type: OrganHeart
+    container: heart
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/implants.rsi
+    layers:
+    - state: implant
+
+#Operation Extract
+- type: entity
+  parent: SurgeryBase
+  id: SurgeryExstractHeartPumpImplant
+  name: Extract a heart pump implant
+  description: Surgical attachment of a implant.
+  components:
+  - type: Surgery
+    requirement:
+    - SurgeryOpenAbdomen
+    steps:
+    - HorizonLocateHeartPumps
+    - HorizonClampGeneralValves
+    - HorizonDisconnectVavles
+    - HorizonStopBloodloss
+    - HorizonExtractPumpImplant
+    - HorizonStopBloodloss
+  - type: SurgerySpeciesCondition
+    speciesBlacklist:
+    - SlimePerson  # Всё ещё не любим слаймолюдов
+  - type: SurgeryPartCondition
+    parts:
+    - Torso
+  - type: SurgeryOrganExistCondition # Не даём, вытащить, того чего нет
+    organ:
+    - type: BloodPumpImplant
+    container: blood_pump_implant
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/implants.rsi
+    layers:
+    - state: implant

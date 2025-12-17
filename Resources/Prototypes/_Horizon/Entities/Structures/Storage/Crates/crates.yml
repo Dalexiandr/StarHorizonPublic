@@ -1,0 +1,78 @@
+- type: entity
+  parent: CrateGenericSteel
+  id: CrateBuhanka
+  name: Гусеничный Наземный Интегрируемый Десантный Аппарат
+  suffix: TraumaTeam
+  description: |
+    Вмещает в себя до 8 человек, а так же до 20 единиц почти любой твёрдой материи.
+    Конкретно этот имеет модуль имеет опознавательные знаки Траумы.
+  components:
+  - type: Icon
+    sprite: _StarHorizon/Structures/Storage/buhanka.rsi
+  - type: Sprite
+    sprite: _StarHorizon/Structures/Storage/buhanka.rsi
+
+- type: entity
+  parent: CrateBaseSecure
+  id: CrateIndustrialSecure
+  name: bluespace industrial crate
+  components:
+  - type: CargoSellBlacklist
+  - type: Icon
+    sprite: _Horizon/Bluespace/Crates/industrial_secure.rsi
+  - type: Sprite
+    sprite: _Horizon/Bluespace/Crates/industrial_secure.rsi
+  - type: AccessReader
+    access: [["Engineering"]]
+
+- type: entity
+  parent: CrateBaseSecure
+  id: CrateTechnologicalSecure
+  name: bluespace technological crate
+  components:
+  - type: CargoSellBlacklist
+  - type: Icon
+    sprite: _Horizon/Bluespace/Crates/technological_secure.rsi
+  - type: Sprite
+    sprite: _Horizon/Bluespace/Crates/technological_secure.rsi
+  - type: AccessReader
+    access: [["Research"]]
+
+- type: entity
+  parent: CrateBaseSecure
+  id: CrateBiologicalSecure
+  name: bluespace biological crate
+  components:
+  - type: CargoSellBlacklist
+  - type: Icon
+    sprite: _Horizon/Bluespace/Crates/biological_secure.rsi
+  - type: Sprite
+    sprite: _Horizon/Bluespace/Crates/biological_secure.rsi
+  - type: AccessReader
+    access: [["Research"], ["Chemistry"]]
+
+- type: entity
+  parent: CrateBaseSecure
+  id: CrateDestructionSecure
+  name: bluespace destruction crate
+  components:
+  - type: CargoSellBlacklist
+  - type: Icon
+    sprite: _Horizon/Bluespace/Crates/destruction_secure.rsi
+  - type: Sprite
+    sprite: _Horizon/Bluespace/Crates/destruction_secure.rsi
+  - type: AccessReader
+    access: [["Armory"]]
+
+- type: entity
+  parent: CrateBaseSecure
+  id: CrateLimitedSecure
+  name: bluespace limited crate
+  components:
+  - type: CargoSellBlacklist
+  - type: Icon
+    sprite: _Horizon/Bluespace/Crates/limited_secure.rsi
+  - type: Sprite
+    sprite: _Horizon/Bluespace/Crates/limited_secure.rsi
+  - type: AccessReader
+    access: [["Command"]]

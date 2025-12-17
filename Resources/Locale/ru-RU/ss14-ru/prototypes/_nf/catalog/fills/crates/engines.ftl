@@ -1,0 +1,14 @@
+ent-CrateEngineeringSmallThruster = ящик с малым двигателем
+    .desc = { ent-CrateEngineering.desc }
+ent-CrateEngineeringSmallGyroscope = ящик с малым гироскопом
+    .desc = { ent-CrateEngineering.desc }
+ent-CrateEngineeringEmitterBulk = bulk emitter crate
+    .desc = A collection of eight emitters for singularity or tesla containment.
+ent-CrateEngineeringTeslaCoilBulk = bulk tesla coil crate
+    .desc = A collection of six tesla coils. Attracts lightning and generates energy from it.
+ent-CrateEngineeringSingularityCollectorBulk = bulk radiation collector crate
+    .desc = A collection of six radiation collectors, best used for singularity engines. Plasma is included.
+ent-CrateEngineeringSingularityContainmentBulk = bulk containment field generator crate
+    .desc = A collection of eight containment field generators, helps keep a singulo or tesla in submission.
+ent-CrateEngineeringTeslaGroundingRodBulk = bulk tesla grounding rod crate
+    .desc = A collection of four grounding rods, best for lightning protection.

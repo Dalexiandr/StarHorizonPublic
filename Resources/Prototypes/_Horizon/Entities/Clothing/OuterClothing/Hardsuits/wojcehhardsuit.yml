@@ -1,0 +1,28 @@
+- type: entity
+  parent: ClothingOuterEVASuitBase
+  id: ClothingOuterHardsuitWoyceh
+  name: Сверхтяжёлый бронескафандр
+  description: Сверхтяжёлый бронескафандр, созданный неизвестными умельцами по заказу некого Войцеха.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/wojciech_hardsuit.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/OuterClothing/Hardsuits/wojciech_hardsuit.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.1
+        Slash: 0.1
+        Piercing: 0.1
+        Heat: 0.1
+        Radiation: 0.1
+        Caustic: 0.1
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.5
+  - type: HeldSpeedModifier

@@ -1,0 +1,16 @@
+ent-HorizonOpenSkin = Open the skin
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonWideSkin = Widen the skin incision
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonLocalizeVessels = Localize the vessels
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonImplantSkinImplant = Place a subcutaneous implant
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonExtractSkinImplant = Extract a subcutaneous implant
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonCloseTheSkinIncision = Close skin incision
+    .desc = { ent-SurgeryStepBase.desc }
+ent-SurgeryInsertSkinImplant = Insert a subcutaneous implant
+    .desc = Surgical attachment of a implant.
+ent-SurgeryExstractSkinImplant = Extract a subcutaneous implant
+    .desc = Surgical attachment of a implant.

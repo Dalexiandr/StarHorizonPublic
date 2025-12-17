@@ -1,0 +1,1094 @@
+# Clarke construction
+
+- type: entity
+  id: BaseClarkePart
+  parent: BaseMechPart
+  abstract: true
+  components:
+  - type: Sprite
+    drawdepth: Items
+    noRot: false
+    sprite: _Horizon/Objects/Specific/Mech/clarke_construction.rsi
+
+- type: entity
+  id: BaseClarkePartItem
+  parent: BaseClarkePart
+  abstract: true
+  components:
+  - type: Item
+    size: Ginormous
+
+- type: entity
+  parent: BaseClarkePart
+  id: ClarkeHarness
+  name: clarke harness
+  description: The core of the Clarke mech.
+  components:
+  - type: Appearance
+  - type: ItemMapper
+    mapLayers:
+      clarke_l_arm+o:
+        whitelist:
+          tags:
+          - ClarkeLArm
+      clarke_r_arm+o:
+        whitelist:
+          tags:
+          - ClarkeRArm
+      clarke_l_tread+o:
+        whitelist:
+          tags:
+          - ClarkeLTread
+      clarke_r_tread+o:
+        whitelist:
+          tags:
+          - ClarkeRTread
+      clarke_head+o:
+        whitelist:
+          tags:
+          - ClarkeHead
+    sprite: _Horizon/Objects/Specific/Mech/clarke_construction.rsi
+  - type: ContainerContainer
+    containers:
+      mech-assembly-container: !type:Container
+  - type: MechAssembly
+    finishedPrototype: ClarkeChassis
+    requiredParts:
+      ClarkeLArm: false
+      ClarkeRArm: false
+      ClarkeLTread: false
+      ClarkeRTread: false
+      ClarkeHead: false
+  - type: Sprite
+    state: clarke_harness+o
+    noRot: true
+
+- type: entity
+  parent: BaseClarkePartItem
+  id: ClarkeLArm
+  name: clarke left arm
+  description: The left arm of the clarke. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: clarke_l_arm
+  - type: Tag
+    tags:
+    - ClarkeLArm
+
+- type: entity
+  parent: BaseClarkePartItem
+  id: ClarkeLTread
+  name: clarke left tread
+  description: The left tread of the clarke. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: clarke_l_tread
+  - type: Tag
+    tags:
+    - ClarkeLTread
+
+- type: entity
+  parent: BaseClarkePartItem
+  id: ClarkeRTread
+  name: clarke right tread
+  description: The right tread of the clarke. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: clarke_r_tread
+  - type: Tag
+    tags:
+    - ClarkeRTread
+
+- type: entity
+  parent: BaseClarkePartItem
+  id: ClarkeRArm
+  name: clarke right arm
+  description: The right arm of the clarke. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: clarke_r_arm
+  - type: Tag
+    tags:
+    - ClarkeRArm
+
+- type: entity
+  parent: BaseClarkePartItem
+  id: ClarkeHead
+  name: clarke head
+  description: clarke head
+  components:
+  - type: Sprite
+    state: clarke_head
+  - type: Tag
+    tags:
+    - ClarkeHead
+
+- type: entity
+  id: ClarkeChassis
+  parent: BaseClarkePart
+  name: clarke chassis
+  description: An in-progress construction of the clarke mech.
+  components:
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      battery-container: !type:Container
+  - type: MechAssemblyVisuals
+    statePrefix: clarke
+  - type: Sprite
+    noRot: true
+    state: clarke_chassis
+  - type: Construction
+    graph: Clarke
+    node: start
+    defaultTarget: clarke
+
+# Odysseus construction
+
+- type: entity
+  id: BaseOdysseusPart
+  parent: BaseMechPart
+  abstract: true
+  components:
+  - type: Sprite
+    drawdepth: Items
+    noRot: false
+    sprite: _Horizon/Objects/Specific/Mech/odysseus_construction.rsi
+
+- type: entity
+  id: BaseOdysseusPartItem
+  parent: BaseOdysseusPart
+  abstract: true
+  components:
+  - type: Item
+    size: Ginormous
+
+- type: entity
+  parent: BaseOdysseusPart
+  id: OdysseusHarness
+  name: odysseus harness
+  description: The core of the Odysseus mech.
+  components:
+  - type: Appearance
+  - type: ItemMapper
+    mapLayers:
+      odysseus_l_arm+o:
+        whitelist:
+          tags:
+          - OdysseusLArm
+      odysseus_r_arm+o:
+        whitelist:
+          tags:
+          - OdysseusRArm
+      odysseus_l_leg+o:
+        whitelist:
+          tags:
+          - OdysseusLLeg
+      odysseus_r_leg+o:
+        whitelist:
+          tags:
+          - OdysseusRLeg
+      odysseus_head+o:
+        whitelist:
+          tags:
+          - OdysseusHead
+    sprite: _Horizon/Objects/Specific/Mech/odysseus_construction.rsi
+  - type: ContainerContainer
+    containers:
+      mech-assembly-container: !type:Container
+  - type: MechAssembly
+    finishedPrototype: OdysseusChassis
+    requiredParts:
+      OdysseusLArm: false
+      OdysseusRArm: false
+      OdysseusLLeg: false
+      OdysseusRLeg: false
+      OdysseusHead: false
+  - type: Sprite
+    state: odysseus_torso+o
+    noRot: true
+
+- type: entity
+  parent: BaseOdysseusPartItem
+  id: OdysseusLArm
+  name: odysseus left arm
+  description: The left arm of the odysseus. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: odysseus_l_arm
+  - type: Tag
+    tags:
+    - OdysseusLArm
+
+- type: entity
+  parent: BaseOdysseusPartItem
+  id: OdysseusLLeg
+  name: odysseus left leg
+  description: The left leg of the odysseus. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: odysseus_l_leg
+  - type: Tag
+    tags:
+    - OdysseusLLeg
+
+- type: entity
+  parent: BaseOdysseusPartItem
+  id: OdysseusRLeg
+  name: odysseus right leg
+  description: The right leg of the odysseus. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: odysseus_r_leg
+  - type: Tag
+    tags:
+    - OdysseusRLeg
+
+- type: entity
+  parent: BaseOdysseusPartItem
+  id: OdysseusRArm
+  name: odysseus right arm
+  description: The right arm of the odysseus. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: odysseus_r_arm
+  - type: Tag
+    tags:
+    - OdysseusRArm
+
+- type: entity
+  parent: BaseOdysseusPartItem
+  id: OdysseusArmorPlates
+  name: odysseus armor plates
+  description: odysseus armor plates
+  components:
+  - type: Sprite
+    state: odysseus_armor
+  - type: Tag
+    tags:
+    - OdysseusArmor
+
+- type: entity
+  parent: BaseOdysseusPartItem
+  id: OdysseusHead
+  name: odysseus head
+  description: odysseus head
+  components:
+  - type: Sprite
+    state: odysseus_head
+  - type: Tag
+    tags:
+    - OdysseusHead
+
+- type: entity
+  id: OdysseusChassis
+  parent: BaseOdysseusPart
+  name: odysseus chassis
+  description: An in-progress construction of the odysseus mech.
+  components:
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      battery-container: !type:Container
+  - type: MechAssemblyVisuals
+    statePrefix: odysseus
+  - type: Sprite
+    noRot: true
+    state: odysseus0
+  - type: Construction
+    graph: Odysseus
+    node: start
+    defaultTarget: odysseus
+
+# Gygax construction
+
+- type: entity
+  id: BaseGygaxPart
+  parent: BaseMechPart
+  abstract: true
+  components:
+  - type: Sprite
+    drawdepth: Items
+    noRot: false
+    sprite: _Horizon/Objects/Specific/Mech/gygax_construction.rsi
+
+- type: entity
+  id: BaseGygaxPartItem
+  parent: BaseGygaxPart
+  abstract: true
+  components:
+  - type: Item
+    size: Ginormous
+
+- type: entity
+  parent: BaseGygaxPart
+  id: GygaxHarness
+  name: gygax harness
+  description: The core of the Gygax mech.
+  components:
+  - type: Appearance
+  - type: ItemMapper
+    mapLayers:
+      gygax_l_arm+o:
+        whitelist:
+          tags:
+          - GygaxLArm
+      gygax_r_arm+o:
+        whitelist:
+          tags:
+          - GygaxRArm
+      gygax_l_leg+o:
+        whitelist:
+          tags:
+          - GygaxLLeg
+      gygax_r_leg+o:
+        whitelist:
+          tags:
+          - GygaxRLeg
+      gygax_head+o:
+        whitelist:
+          tags:
+          - GygaxHead
+    sprite: _Horizon/Objects/Specific/Mech/gygax_construction.rsi
+  - type: ContainerContainer
+    containers:
+      mech-assembly-container: !type:Container
+  - type: MechAssembly
+    finishedPrototype: GygaxChassis
+    requiredParts:
+      GygaxLArm: false
+      GygaxRArm: false
+      GygaxLLeg: false
+      GygaxRLeg: false
+      GygaxHead: false
+  - type: Sprite
+    state: gygax_harness+o
+    noRot: true
+
+- type: entity
+  parent: BaseGygaxPartItem
+  id: GygaxLArm
+  name: gygax left arm
+  description: The left arm of the gygax. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: gygax_l_arm
+  - type: Tag
+    tags:
+    - GygaxLArm
+
+- type: entity
+  parent: BaseGygaxPartItem
+  id: GygaxLLeg
+  name: gygax left leg
+  description: The left leg of the gygax. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: gygax_l_leg
+  - type: Tag
+    tags:
+    - GygaxLLeg
+
+- type: entity
+  parent: BaseGygaxPartItem
+  id: GygaxRLeg
+  name: gygax right leg
+  description: The right leg of the gygax. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: gygax_r_leg
+  - type: Tag
+    tags:
+    - GygaxRLeg
+
+- type: entity
+  parent: BaseGygaxPartItem
+  id: GygaxRArm
+  name: gygax right arm
+  description: The right arm of the gygax. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: gygax_r_arm
+  - type: Tag
+    tags:
+    - GygaxRArm
+
+- type: entity
+  parent: BaseGygaxPartItem
+  id: GygaxArmorPlates
+  name: gygax armor plates
+  description: gygax armor plates
+  components:
+  - type: Sprite
+    state: gygax_armor
+  - type: Tag
+    tags:
+    - GygaxArmor
+
+- type: entity
+  parent: BaseGygaxPartItem
+  id: GygaxHead
+  name: gygax head
+  description: gygax head
+  components:
+  - type: Sprite
+    state: gygax_head
+  - type: Tag
+    tags:
+    - GygaxHead
+
+- type: entity
+  id: GygaxChassis
+  parent: BaseGygaxPart
+  name: gygax chassis
+  description: An in-progress construction of the gygax mech.
+  components:
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      battery-container: !type:Container
+  - type: MechAssemblyVisuals
+    statePrefix: gygax
+  - type: Sprite
+    noRot: true
+    state: gygax0
+  - type: Construction
+    graph: Gygax
+    node: start
+    defaultTarget: gygax
+
+# Durand construction
+
+- type: entity
+  id: BaseDurandPart
+  parent: BaseMechPart
+  abstract: true
+  components:
+  - type: Sprite
+    drawdepth: Items
+    noRot: false
+    sprite: _Horizon/Objects/Specific/Mech/durand_construction.rsi
+
+- type: entity
+  id: BaseDurandPartItem
+  parent: BaseDurandPart
+  abstract: true
+  components:
+  - type: Item
+    size: Ginormous
+
+- type: entity
+  parent: BaseDurandPart
+  id: DurandHarness
+  name: durand harness
+  description: The core of the Durand mech.
+  components:
+  - type: Appearance
+  - type: ItemMapper
+    mapLayers:
+      durand_l_arm+o:
+        whitelist:
+          tags:
+          - DurandLArm
+      durand_r_arm+o:
+        whitelist:
+          tags:
+          - DurandRArm
+      durand_l_leg+o:
+        whitelist:
+          tags:
+          - DurandLLeg
+      durand_r_leg+o:
+        whitelist:
+          tags:
+          - DurandRLeg
+      durand_head+o:
+        whitelist:
+          tags:
+          - DurandHead
+    sprite: _Horizon/Objects/Specific/Mech/durand_construction.rsi
+  - type: ContainerContainer
+    containers:
+      mech-assembly-container: !type:Container
+  - type: MechAssembly
+    finishedPrototype: DurandChassis
+    requiredParts:
+      DurandLArm: false
+      DurandRArm: false
+      DurandLLeg: false
+      DurandRLeg: false
+      DurandHead: false
+  - type: Sprite
+    state: durand_harness+o
+    noRot: true
+
+- type: entity
+  parent: BaseDurandPartItem
+  id: DurandLArm
+  name: durand left arm
+  description: The left arm of the durand. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: durand_l_arm
+  - type: Tag
+    tags:
+    - DurandLArm
+
+- type: entity
+  parent: BaseDurandPartItem
+  id: DurandLLeg
+  name: durand left leg
+  description: The left leg of the durand. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: durand_l_leg
+  - type: Tag
+    tags:
+    - DurandLLeg
+
+- type: entity
+  parent: BaseDurandPartItem
+  id: DurandRLeg
+  name: durand right leg
+  description: The right leg of the durand. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: durand_r_leg
+  - type: Tag
+    tags:
+    - DurandRLeg
+
+- type: entity
+  parent: BaseDurandPartItem
+  id: DurandRArm
+  name: durand right arm
+  description: The right arm of the durand. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: durand_r_arm
+  - type: Tag
+    tags:
+    - DurandRArm
+
+- type: entity
+  parent: BaseDurandPartItem
+  id: DurandArmorPlates
+  name: durand armor plates
+  description: durand armor plates
+  components:
+  - type: Sprite
+    state: durand_armor
+  - type: Tag
+    tags:
+    - DurandArmor
+
+- type: entity
+  parent: BaseDurandPartItem
+  id: DurandHead
+  name: durand head
+  description: durand head
+  components:
+  - type: Sprite
+    state: durand_head
+  - type: Tag
+    tags:
+    - DurandHead
+
+- type: entity
+  id: DurandChassis
+  parent: BaseDurandPart
+  name: durand chassis
+  description: An in-progress construction of the durand mech.
+  components:
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      battery-container: !type:Container
+  - type: MechAssemblyVisuals
+    statePrefix: durand
+  - type: Sprite
+    noRot: true
+    state: durand0
+  - type: Construction
+    graph: Durand
+    node: start
+    defaultTarget: durand
+
+# Phazon construction
+
+- type: entity
+  id: BasePhazonPart
+  parent: BaseMechPart
+  abstract: true
+  components:
+  - type: Sprite
+    drawdepth: Items
+    noRot: false
+    sprite: _Horizon/Objects/Specific/Mech/phazon_construction.rsi
+
+- type: entity
+  id: BasePhazonPartItem
+  parent: BasePhazonPart
+  abstract: true
+  components:
+  - type: Item
+    size: Ginormous
+
+- type: entity
+  parent: BasePhazonPart
+  id: PhazonHarness
+  name: phazon harness
+  description: The core of the Phazon mech.
+  components:
+  - type: Appearance
+  - type: ItemMapper
+    mapLayers:
+      phazon_l_arm+o:
+        whitelist:
+          tags:
+          - PhazonLArm
+      phazon_r_arm+o:
+        whitelist:
+          tags:
+          - PhazonRArm
+      phazon_l_leg+o:
+        whitelist:
+          tags:
+          - PhazonLLeg
+      phazon_r_leg+o:
+        whitelist:
+          tags:
+          - PhazonRLeg
+      phazon_head+o:
+        whitelist:
+          tags:
+          - PhazonHead
+    sprite: _Horizon/Objects/Specific/Mech/phazon_construction.rsi
+  - type: ContainerContainer
+    containers:
+      mech-assembly-container: !type:Container
+  - type: MechAssembly
+    finishedPrototype: PhazonChassis
+    requiredParts:
+      PhazonLArm: false
+      PhazonRArm: false
+      PhazonLLeg: false
+      PhazonRLeg: false
+      PhazonHead: false
+  - type: Sprite
+    state: phazon_harness+o
+    noRot: true
+
+- type: entity
+  parent: BasePhazonPartItem
+  id: PhazonLArm
+  name: phazon left arm
+  description: The left arm of the phazon. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: phazon_l_arm
+  - type: Tag
+    tags:
+    - PhazonLArm
+
+- type: entity
+  parent: BasePhazonPartItem
+  id: PhazonLLeg
+  name: phazon left leg
+  description: The left leg of the phazon. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: phazon_l_leg
+  - type: Tag
+    tags:
+    - PhazonLLeg
+
+- type: entity
+  parent: BasePhazonPartItem
+  id: PhazonRLeg
+  name: phazon right leg
+  description: The right leg of the phazon. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: phazon_r_leg
+  - type: Tag
+    tags:
+    - PhazonRLeg
+
+- type: entity
+  parent: BasePhazonPartItem
+  id: PhazonRArm
+  name: phazon right arm
+  description: The right arm of the phazon. It belongs on the chassis of the mech.
+  components:
+  - type: Sprite
+    state: phazon_r_arm
+  - type: Tag
+    tags:
+    - PhazonRArm
+
+- type: entity
+  parent: BasePhazonPartItem
+  id: PhazonArmorPlates
+  name: phazon armor plates
+  description: phazon armor plates
+  components:
+  - type: Sprite
+    state: phazon_armor
+  - type: Tag
+    tags:
+    - PhazonArmor
+
+- type: entity
+  parent: BasePhazonPartItem
+  id: PhazonHead
+  name: phazon head
+  description: phazon head
+  components:
+  - type: Sprite
+    state: phazon_head
+  - type: Tag
+    tags:
+    - PhazonHead
+
+- type: entity
+  id: PhazonChassis
+  parent: BasePhazonPart
+  name: phazon chassis
+  description: An in-progress construction of the phazon mech.
+  components:
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      battery-container: !type:Container
+  - type: MechAssemblyVisuals
+    statePrefix: phazon
+  - type: Sprite
+    noRot: true
+    state: phazon0
+  - type: Construction
+    graph: Phazon
+    node: start
+    defaultTarget: phazon
+
+# Ripley upgrades
+
+- type: entity
+  name: набор для улучшения Рипли (Мк2)
+  parent: BaseItem
+  id: RipleyMk2ModificationKit
+  description: Набор инструментов и модулей для улучшения Рипли (Мк2).
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/modification_kits.rsi
+    state: ripley_mkii
+  - type: Tag
+    tags:
+    - MechRipleyMk2Upgrade
+
+- type: entity
+  name: набор для улучшения Рипли (Белый)
+  parent: BaseItem
+  id: MechRipleyAluminizerUpgradeKit
+  description: Набор инструментов и модулей для улучшения Рипли (Белого).
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/module.rsi
+    state: engiupmod
+  - type: Item
+    size: Small
+  - type: Tag
+    tags:
+    - MechRipleyAluminizerUpgrade
+
+- type: entity
+  name: набор для улучшения Рипли (Боевой)
+  id: MechRipleyCombatUpgradeKit
+  parent: MechRipleyAluminizerUpgradeKit
+  description: Набор инструментов и модулей для улучшения Рипли (Боевого).
+  components:
+  - type: Tag
+    tags:
+    - MechRipleyCombatUpgrade
+
+- type: entity
+  name: набор для улучшения Рипли (Ударный)
+  id: MechRipleyEarthUpgradeKit
+  parent: MechRipleyAluminizerUpgradeKit
+  description: Набор инструментов и модулей для улучшения Рипли (Боевого).
+  components:
+  - type: Tag
+    tags:
+    - MechRipleyEarthUpgrade
+
+- type: entity
+  name: набор для улучшения Рипли (Поджигатель)
+  id: MechRipleyFlamesredUpgradeKit
+  parent: MechRipleyAluminizerUpgradeKit
+  description: Набор инструментов и модулей для улучшения Рипли (Боевого).
+  components:
+  - type: Tag
+    tags:
+    - MechRipleyFlamesredUpgrade
+
+- type: entity
+  name: набор для улучшения Рипли (Кулак Титана)
+  id: MechRipleyTitanUpgradeKit
+  parent: MechRipleyAluminizerUpgradeKit
+  description: Набор инструментов и модулей для улучшения Рипли (Боевого).
+  components:
+  - type: Tag
+    tags:
+    - MechRipleyTitanUpgrade
+
+- type: entity
+  name: набор для улучшения Рипли (Огнеборец)
+  id: MechRipleyFirefighterUpgradeKit
+  parent: MechRipleyAluminizerUpgradeKit
+  description: Набор инструментов и модулей для улучшения Рипли (Огнеборец).
+  components:
+  - type: Tag
+    tags:
+    - MechRipleyFirefighterUpgrade
+
+- type: entity
+  name: набор для улучшения Рипли (Грузовой)
+  id: MechRipleyHaulerUpgradeKit
+  parent: MechRipleyAluminizerUpgradeKit
+  description: Набор инструментов и модулей для улучшения Рипли (Грузовой).
+  components:
+  - type: Tag
+    tags:
+    - MechRipleyHaulerUpgrade
+
+- type: entity
+  name: набор для улучшения Рипли (Зловещий)
+  id: MechRipleyDeathUpgradeKit
+  parent: MechRipleyAluminizerUpgradeKit
+  description: Набор инструментов и модулей для улучшения Рипли (Зловещий).
+  components:
+  - type: Tag
+    tags:
+    - MechRipleyDeathUpgrade
+
+- type: entity
+  name: набор для улучшения Рипли (Заря)
+  id: MechRipleyZairjahUpgradeKit
+  parent: MechRipleyAluminizerUpgradeKit
+  description: Набор инструментов и модулей для улучшения Рипли (Боевого).
+  components:
+  - type: Tag
+    tags:
+    - MechRipleyZairjahUpgrade
+
+# Clarke upgrades
+
+- type: entity
+  name: набор для улучшения Кларка (Оранжевый)
+  id: MechClarkeOrangeyUpgradeKit
+  parent: MechRipleyAluminizerUpgradeKit
+  description: Набор инструментов и модулей для улучшения Кларка (Оранжевого).
+  components:
+  - type: Tag
+    tags:
+    - MechClarkeOrangeyUpgrade
+
+- type: entity
+  name: набор для улучшения Кларка (Паук)
+  id: MechClarkeSpiderUpgradeKit
+  parent: MechRipleyAluminizerUpgradeKit
+  description: Набор инструментов и модулей для улучшения Кларка (Паук).
+  components:
+  - type: Tag
+    tags:
+    - MechClarkeSpiderUpgrade
+
+# Gygax upgrades
+
+- type: entity
+  name: набор для улучшения Гигакса (Серый)
+  id: MechGygaxGreyUpgradeKit
+  parent: MechDurDollhouseUpgradeKit
+  description: Набор инструментов и модулей для улучшения Гигакса (Серый).
+  components:
+  - type: Tag
+    tags:
+    - MechGygaxGreyUpgrade
+
+- type: entity
+  name: набор для улучшения Гигакса (Медицинский)
+  id: MechGygaxMedUpgradeKit
+  parent: MechDurDollhouseUpgradeKit
+  description: Набор инструментов и модулей для улучшения Гигакса (Медицинский).
+  components:
+  - type: Tag
+    tags:
+    - MechGygaxMedUpgrade
+
+- type: entity
+  name: набор для улучшения Гигакса (Старый)
+  id: MechGygaxOrangeUpgradeKit
+  parent: MechDurDollhouseUpgradeKit
+  description: Набор инструментов и модулей для улучшения Гигакса (Старый).
+  components:
+  - type: Tag
+    tags:
+    - MechGygaxOrangeUpgrade
+
+- type: entity
+  name: набор для улучшения Гигакса (Победа)
+  id: MechGygaxPobedaUpgradeKit
+  parent: MechDurDollhouseUpgradeKit
+  description: Набор инструментов и модулей для улучшения Гигакса (Победа).
+  components:
+  - type: Tag
+    tags:
+    - MechGygaxPobedaUpgrade
+
+- type: entity
+  name: набор для улучшения Гигакса (Скрытый)
+  id: MechGygaxRecitenceUpgradeKit
+  parent: MechDurDollhouseUpgradeKit
+  description: Набор инструментов и модулей для улучшения Гигакса (Скрытый).
+  components:
+  - type: Tag
+    tags:
+    - MechGygaxRecitenceUpgrade
+
+# Gygax upgrades
+
+- type: entity
+  name: набор для улучшения Дюранда (Кукольный домик)
+  parent: BaseItem
+  id: MechDurDollhouseUpgradeKit
+  description: Набор инструментов и модулей для улучшения Дюранда (Кукольный домик).
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/module.rsi
+    state: combatupmod
+  - type: Tag
+    tags:
+    - MechDurDollhouseUpgrade
+
+- type: entity
+  name: набор для улучшения Дюранда (Палач)
+  id: MechDurExecutorUpgradeKit
+  parent: MechDurDollhouseUpgradeKit
+  description: Набор инструментов и модулей для улучшения Дюранда (Палач).
+  components:
+  - type: Tag
+    tags:
+    - MechDurExecutorUpgrade
+
+- type: entity
+  name: набор для улучшения Дюранда (Граф)
+  id: MechDurShireUpgradeKit
+  parent: MechDurDollhouseUpgradeKit
+  description: Набор инструментов и модулей для улучшения Дюранда (Граф).
+  components:
+  - type: Tag
+    tags:
+    - MechDurShireUpgrade
+
+- type: entity
+  name: набор для улучшения Дюранда (Кхарн)
+  id: MechDurUnathiUpgradeKit
+  parent: MechDurDollhouseUpgradeKit
+  description: Набор инструментов и модулей для улучшения Дюранда (Кхарн).
+  components:
+  - type: Tag
+    tags:
+    - MechDurUnathiUpgrade
+
+# Odysseus upgrades
+
+- type: entity
+  name: набор для улучшения Одиссея (Гермес)
+  parent: BaseItem
+  id: MechOdysseusHermesUpgradeKit
+  description: Набор инструментов и модулей для улучшения Одиссея (Гермес).
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/module.rsi
+    state: medupmod
+  - type: Tag
+    tags:
+    - MechOdysseusHermesUpgrade
+
+- type: entity
+  name: набор для улучшения Одиссея (Рипер)
+  id: MechOdysseusMurdyUpgradeKit
+  parent: MechOdysseusHermesUpgradeKit
+  description: Набор инструментов и модулей для улучшения Одиссея (Рипер).
+  components:
+  - type: Tag
+    tags:
+    - MechOdysseusMurdyUpgrade
+
+# Phazon upgrades
+
+- type: entity
+  name: набор для улучшения Фазона (Бланко)
+  parent: BaseItem
+  id: MechPhazonBlancoUpgradeKit
+  description: Набор инструментов и модулей для улучшения Фазона (Бланко).
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/module.rsi
+    state: sciupmod
+  - type: Tag
+    tags:
+    - MechPhazonBlancoUpgrade
+
+- type: entity
+  name: набор для улучшения Фазона (Империон)
+  id: MechPhazonImperionUpgradeKit
+  parent: MechPhazonBlancoUpgradeKit
+  description: Набор инструментов и модулей для улучшения Фазона (Империон).
+  components:
+  - type: Tag
+    tags:
+    - MechPhazonImperionUpgrade
+
+- type: entity
+  name: набор для улучшения Фазона (Янус)
+  id: MechPhazonJanusUpgradeKit
+  parent: MechPhazonBlancoUpgradeKit
+  description: Набор инструментов и модулей для улучшения Фазона (Янус).
+  components:
+  - type: Tag
+    tags:
+    - MechPhazonJanusUpgrade
+
+- type: entity
+  name: набор для улучшения Фазона (Плазмус)
+  id: MechPhazonPlazmusUpgradeKit
+  parent: MechPhazonBlancoUpgradeKit
+  description: Набор инструментов и модулей для улучшения Фазона (Плазмус).
+  components:
+  - type: Tag
+    tags:
+    - MechPhazonPlazmusUpgrade
+
+- type: entity
+  name: набор для улучшения Харсона (Классика)
+  parent: BaseItem
+  id: MechHarsonUpgradeKit
+  description: Набор инструментов и модулей для улучшения Харсона (Классика).
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/module.rsi
+    state: engiupmod
+  - type: Tag
+    tags:
+    - MechHarsonUpgrade
+
+- type: entity
+  name: набор для улучшения Харсона (Паук)
+  id: MechHarsonSpiderUpgradeKit
+  parent: MechHarsonUpgradeKit
+  description: Набор инструментов и модулей для улучшения Харсона (Паук).
+  components:
+  - type: Tag
+    tags:
+    - MechHarsonSpiderUpgrade

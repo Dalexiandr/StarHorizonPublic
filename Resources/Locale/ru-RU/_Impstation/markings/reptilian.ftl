@@ -1,0 +1,9 @@
+marking-LizardSnoutpiercings-piercings1 = Пирсинг
+marking-LizardSnoutpiercings = Пирсинг
+marking-LizardHornsNubby-horns_nubby = Рога ящера (короткие)
+marking-LizardHornsNubby = Рога ящера (короткие)
+marking-LizardHornsKoboldEarspiercings = Уши ящера (Кобольд, Пирсинг)
+marking-LizardHornsKoboldEarspiercings-horns_kobold_ears = Уши
+marking-LizardHornsKoboldEarspiercings-horns_kobold_ears_piercings = Пирсинг
+marking-Fangs = Клыки ящерицы
+marking-Fangs-Fangs = Клыки

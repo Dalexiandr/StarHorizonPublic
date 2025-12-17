@@ -1,0 +1,361 @@
+# бейс вейпон сас
+- type: entity
+  id: BaseWeaponUAS
+  suffix: StarHorizon, UAS
+  parent: [BaseItem, BaseUASContraband]
+  abstract: true
+  components:
+  - type: Sprite
+  - type: Item
+    size: large
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 2
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    projectileSpeed: 25
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser.ogg
+  - type: Battery
+    maxCharge: 1000
+    startingCharge: 1000
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: false
+  - type: Appearance
+  - type: StaticPrice
+    price: 500
+
+- type: entity
+  id: BaseWeaponPowerCellUAS
+  suffix: StarHorizon, UAS
+  parent: [BaseItem, BaseUASContraband]
+  categories: [ HideSpawnMenu ]
+  abstract: true
+  components:
+  - type: Sprite
+  - type: Item
+    size: Large
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 3
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    projectileSpeed: 25
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser.ogg
+  - type: MagazineAmmoProvider
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: UASEnergyCore
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        whitelist:
+          tags:
+            - PowerUAS
+  - type: Appearance
+  - type: StaticPrice
+    price: 500
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+
+# ноу харм (нет) вейпон
+
+- type: entity
+  name: пп-дизейблер UAS
+  parent: BaseWeaponUAS
+  categories: [ HideSpawnMenu ]
+  id: WeaponDisablerSMGUAS
+  suffix: StarHorizon, UAS
+  description: Улучшенная модель дизейблера с уменьшенной в угоду повышенной скорострельности мощностью.
+  components:
+  - type: Item
+    size: Large
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Weapons/Guns/Battery/uasmachinedisabler.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-unshaded-0
+        map: ["enum.GunVisualLayers.MagUnshaded"]
+        shader: unshaded
+  - type: Gun
+    selectedMode: FullAuto
+    fireRate: 4
+    availableModes:
+      - SemiAuto
+      - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletDisablerSmgUAS
+    fireCost: 100
+  - type: Battery
+    maxCharge: 2000
+    startingCharge: 2000
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 25
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: true
+  - type: StaticPrice
+    price: 260
+
+- type: entity
+  name: efs пулемет UAS
+  parent: BaseWeaponUAS
+  categories: [ HideSpawnMenu ]
+  suffix: StarHorizon, UAS
+  id: WeaponLaserMinigunUAS
+  description: Первая попытка UAS создать машину смерти, хоть и в форме пулемёта.
+  components:
+  - type: Item
+    size: Ginormous
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Weapons/Guns/Battery/uasminigun.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-1
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Gun
+    selectedMode: FullAuto
+    fireRate: 5
+    shotsPerBurst: 5
+    availableModes:
+      - Burst
+      - FullAuto
+    projectileSpeed: 25
+  - type: ProjectileBatteryAmmoProvider
+    proto: StandartLaserUAS
+    fireCost: 100
+  - type: Battery
+    maxCharge: 10000
+    startingCharge: 10000
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: true
+  - type: Appearance
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 100
+  - type: MultiHandedItem
+
+- type: entity
+  name: efs гранатомет UAS
+  parent: BaseWeaponUAS
+  categories: [ HideSpawnMenu ]
+  suffix: StarHorizon, UAS
+  id: WeaponLaserGranadeUAS
+  description: Первая попытка UAS создать машину смерти, хоть и в форме гранатомёта.
+  components:
+  - type: Item
+    size: Ginormous
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Weapons/Guns/Battery/uasgranadegun.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-1
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Gun
+    selectedMode: SemiAuto
+    fireRate: 0.3
+    availableModes:
+      - SemiAuto
+    projectileSpeed: 25
+  - type: ProjectileBatteryAmmoProvider
+    proto: StandartExplodesUAS
+    fireCost: 1000
+  - type: BatteryWeaponFireModes
+    fireModes:
+    - proto: StandartLaserUAS
+      fireCost: 100
+    - proto: StandartExplodesUAS
+      fireCost: 1000
+  - type: Battery
+    maxCharge: 10000
+    startingCharge: 10000
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: true
+  - type: Appearance
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 50
+  - type: MultiHandedItem
+
+- type: entity
+  name: винтовка-дизейблер UAS
+  parent: BaseWeaponUAS
+  categories: [ HideSpawnMenu ]
+  id: WeaponDisablerSniperUAS
+  suffix: StarHorizon, UAS
+  description: Энергоёмкое EFS-устройство, используемое только в крайних случаях.
+  components:
+    - type: AmmoCounter
+    - type: Item
+      size: Large
+    - type: Sprite
+      sprite: _StarHorizon/Objects/Weapons/Guns/Battery/uassniperdisabler.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-unshaded-0
+          map: ["enum.GunVisualLayers.MagUnshaded"]
+          shader: unshaded
+    - type: Gun
+      fireRate: 0.5
+      minAngle: 25
+      maxAngle: 25
+    - type: Wieldable
+    - type: GunWieldBonus
+      minAngle: -25
+      maxAngle: -25
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
+    - type: ProjectileBatteryAmmoProvider
+      proto: SniperDisablerUAS
+      fireCost: 60
+    - type: MagazineVisuals
+      magState: mag
+      steps: 6
+      zeroVisible: true
+    - type: Appearance
+    - type: Battery
+      maxCharge: 300
+      startingCharge: 300
+    - type: BatterySelfRecharger
+      autoRecharge: true
+      autoRechargeRate: 1
+
+# оружие боевое
+
+- type: entity
+  name: рипсоидная винтовка UAS
+  parent: BaseWeaponUAS
+  categories: [ HideSpawnMenu ]
+  id: UASRipsoidCannon
+  suffix: StarHorizon, UAS
+  description: Рипсоидная винтовка с расширенной батареей.
+  components:
+  - type: Item
+    size: Huge
+  - type: Wieldable
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Weapons/Guns/Battery/uasripsoidcannon.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-0
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Gun
+    fireRate: 3
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: HitscanBatteryAmmoProvider
+    proto: UASRedHeavyLaser
+    fireCost: 100
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: true
+  - type: Battery
+    maxCharge: 3000
+    startingCharge: 3000
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 10
+
+- type: entity
+  name: пистолет совета UAS
+  parent: BaseWeaponUAS
+  categories: [ HideSpawnMenu ]
+  id: UASCounselorGun
+  suffix: StarHorizon, UAS
+  description: Особая модификация рипсоидной винтовки, созданная для защиты совета.
+  components:
+  - type: Item
+    size: Normal
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Weapons/Guns/Battery/uasconsulgun.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-0
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Gun
+    fireRate: 4
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: HitscanBatteryAmmoProvider
+    proto: UASRedHeavyLaser
+    fireCost: 100
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: true
+  - type: Battery
+    maxCharge: 1000
+    startingCharge: 1000
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 5
+
+- type: entity
+  name: модифицированный ПП UAS
+  parent: BaseWeaponPowerCellUAS
+  categories: [ HideSpawnMenu ]
+  id: PMLaserUASGun
+  description: Лазерный ПП, модернизированный в сторону мощности, хоть и в ущерб автономному электроснабжению.
+  components:
+  - type: Gun
+    fireRate: 2
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Weapons/Guns/Battery/uasmachinegun.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+
+- type: entity
+  name: лазерная винтовка UAS
+  parent: BaseWeaponPowerCellUAS
+  categories: [ HideSpawnMenu ]
+  id: LaserUASGun
+  description: Специально созданная под EFS ячейки винтовка с высокой скорострельностью.
+  components:
+  - type: Gun
+    fireRate: 3
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Weapons/Guns/Battery/uasriflegun.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+
+

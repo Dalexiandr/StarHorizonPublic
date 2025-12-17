@@ -1,0 +1,319 @@
+# Translators
+- type: entity
+  id: TranslatorBase
+  abstract: true
+  parent: [ BaseItem ]
+  name: Translator
+  description: "Translates speech."
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Devices/translator.rsi
+    state: icon
+    layers:
+      - state: icon
+      - state: translator
+        shader: unshaded
+        visible: false
+        map: [ "enum.ToggleableVisuals.Layer", "enum.PowerDeviceVisualLayers.Powered" ]
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          True: { visible: true }
+          False: { visible: false }
+  - type: HandheldTranslator
+    enabled: false
+  - type: ItemToggle
+  - type: StaticPrice
+    price: 200
+
+- type: entity
+  id: Translator
+  abstract: true
+  parent: [ TranslatorBase, PowerCellSlotMediumItem ]
+  suffix: Powered
+  components:
+  - type: PowerCellDraw
+    drawRate: 0.5
+
+- type: entity
+  id: TranslatorEmpty
+  abstract: true
+  parent: [ Translator ]
+  suffix: Empty
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+
+- type: entity
+  id: BubblishTranslator
+  parent: [ Translator ]
+  name: Bubblish translator
+  description: "Translates speech."
+  components:
+  - type: HandheldTranslator
+    languages:
+      GalacticCommon: Speak
+      Bubblish: Understand
+
+- type: entity
+  id: ArachnidTranslator
+  parent: [ Translator ]
+  name: Arachnid translator
+  description: "Translates speech."
+  components:
+  - type: HandheldTranslator
+    languages:
+      GalacticCommon: Speak
+      Arachnid: Understand
+
+- type: entity
+  id: RootSpeakTranslator
+  parent: [ Translator ]
+  name: RootSpeak translator
+  description: "Translates speech."
+  components:
+  - type: HandheldTranslator
+    languages:
+      GalacticCommon: BadSpeak
+      RootSpeak: Understand
+
+- type: entity
+  id: NekomimeticTranslator
+  parent: [ Translator ]
+  name: Nekomimetic translator
+  description: "Translates speech."
+  components:
+  - type: HandheldTranslator
+    languages:
+      GalacticCommon: Speak
+      Nekomimetic: Understand
+
+- type: entity
+  id: DraconicTranslator
+  parent: [ Translator ]
+  name: Draconic translator
+  description: "Translates speech."
+  components:
+  - type: HandheldTranslator
+    languages:
+      GalacticCommon: Speak
+      Draconic: Understand
+
+- type: entity
+  id: CanilunztTranslator
+  parent: [ Translator ]
+  name: Canilunzt translator
+  description: "Translates speech."
+  components:
+  - type: HandheldTranslator
+    languages:
+      GalacticCommon: Speak
+      Canilunzt: Understand
+
+- type: entity
+  id: SolCommonTranslator
+  parent: [ Translator ]
+  name: SolCommon translator
+  description: "Translates speech."
+  components:
+  - type: HandheldTranslator
+    languages:
+      GalacticCommon: Speak
+      SolCommon: Understand
+
+- type: entity
+  id: DwarfTranslator
+  parent: [ Translator ]
+  name: Dwarf translator
+  description: "Translates speech."
+  components:
+  - type: HandheldTranslator
+    languages:
+      GalacticCommon: Speak
+      Dwarf: Understand
+
+- type: entity
+  id: NianTranslator
+  parent: [ Translator ]
+  name: Nian translator
+  description: "Translates speech."
+  components:
+  - type: HandheldTranslator
+    languages:
+      GalacticCommon: Speak
+      Nian: Understand
+
+- type: entity
+  id: SikTajTranslator
+  parent: [ Translator ]
+  name: SikTaj translator
+  description: "Translates speech."
+  components:
+  - type: HandheldTranslator
+    languages:
+      GalacticCommon: Speak
+      SikTaj: Understand
+
+- type: entity
+  id: NeoRusskiyaTranslator
+  parent: [ Translator ]
+  name: Neo-Russkiya translator
+  description: "Translates speech."
+  components:
+  - type: HandheldTranslator
+    languages:
+      GalacticCommon: Speak
+      NeoRusskiya: Understand
+
+- type: entity
+  id: ClownishTranslator
+  parent: [ Translator ]
+  name: Clownish translator
+  description: "Translates speech."
+  components:
+  - type: HandheldTranslator
+    languages:
+      GalacticCommon: Speak
+      Clownish: Understand
+
+- type: entity
+  id: GoblinTranslator
+  parent: [ Translator ]
+  name: Goblin translator
+  description: "Translates speech."
+  components:
+  - type: HandheldTranslator
+    languages:
+      GalacticCommon: Speak
+      Goblin: Understand
+
+- type: entity
+  id: HarpyTranslator
+  parent: [ Translator ]
+  name: Harpy translator
+  description: "Translates speech."
+  components:
+  - type: HandheldTranslator
+    languages:
+      GalacticCommon: Speak
+      Harpy: Understand
+
+- type: entity
+  id: VoxPidginTranslator
+  parent: [ Translator ]
+  name: Vox Pidgin translator
+  description: "Translates speech."
+  components:
+  - type: HandheldTranslator
+    languages:
+      GalacticCommon: Speak
+      VoxPidgin: Understand
+
+- type: entity
+  id: AnimalTranslator
+  parent: [ Translator ]
+  name: Animals translator
+  description: "Translates speech."
+  components:
+  - type: HandheldTranslator
+    languages:
+      GalacticCommon: BadSpeak
+      Cat: BadSpeak
+      Dog: BadSpeak
+      Mothroach: BadSpeak
+      Monkey: BadSpeak
+      Bee: BadSpeak
+      Mouse: BadSpeak
+      Chicken: BadSpeak
+      Duck: BadSpeak
+      Cow: BadSpeak
+      Sheep: BadSpeak
+      Kangaroo: BadSpeak
+      Pig: BadSpeak
+  - type: StaticPrice
+    price: 3500
+
+- type: entity
+  id: UniversalTranslator
+  parent: [ Translator ]
+  name: universal translator
+  description: "Translates speech."
+  components:
+  - type: HandheldTranslator
+    languages:
+      GalacticCommon: Speak
+      Arachnid: Understand
+      Nekomimetic: Understand
+      Draconic: Understand
+      Canilunzt: Understand
+      SikTaj: Understand
+      Nian: Understand
+      SolCommon: Understand
+      Dwarf: Understand
+      CintaTaj: Understand
+      Gutter: Understand
+      NeoRusskiya: Understand
+      Clownish: Understand
+
+- type: entity
+  id: RareTranslator
+  parent: [ Translator ]
+  name: rare translator
+  description: "Translates speech."
+  components:
+  - type: HandheldTranslator
+    languages:
+      GalacticCommon: Speak
+      Arachnid: Understand
+      Nekomimetic: Understand
+      Draconic: Understand
+      Canilunzt: Understand
+      SikTaj: Understand
+      Nian: Understand
+      SolCommon: Understand
+      Dwarf: Understand
+      CintaTaj: Understand
+      Gutter: Understand
+      NeoRusskiya: Understand
+      Clownish: Understand
+      Harpy: Understand
+      Goblin: Understand
+      VoxPidgin: Understand
+      Bubblish: Understand
+      RootSpeak: Understand
+
+- type: entity
+  id: BorgTranslator
+  parent: [ Translator ]
+  name: borg translator
+  description: "Translates speech."
+  components:
+  - type: HandheldTranslator
+    languages:
+      GalacticCommon: Speak
+      Arachnid: Understand
+      Nekomimetic: Understand
+      Draconic: Understand
+      Canilunzt: Understand
+      SikTaj: Understand
+      Nian: Understand
+      SolCommon: Understand
+      Dwarf: Understand
+      CintaTaj: Understand
+      Gutter: Understand
+      NeoRusskiya: Understand
+      Clownish: Understand
+      Harpy: Understand
+      Goblin: Understand
+      VoxPidgin: Understand
+      Bubblish: Understand
+      RootSpeak: Understand
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMicroreactor

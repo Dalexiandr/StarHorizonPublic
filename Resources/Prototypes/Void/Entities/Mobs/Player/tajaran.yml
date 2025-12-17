@@ -1,0 +1,65 @@
+- type: entity
+  save: false
+  name: "Таяр"
+  parent: BaseMobTajaran
+  id: MobTajaran
+  components:
+    - type: CombatMode
+    - type: InteractionPopup
+      successChance: 1
+      interactSuccessString: hugging-success-generic
+      interactSuccessSound: /Audio/Effects/thudswoosh.ogg
+      messagePerceivedByOthers: hugging-success-generic-others
+    - type: MindContainer
+      showExamineInfo: true
+    - type: Input
+      context: "human"
+    - type: MobMover
+    - type: InputMover
+    - type: Vocal
+      maleScream: /Audio/Voice/Human/malescream_1.ogg
+      femaleScream: /Audio/Voice/Human/femalescream_2.ogg
+    - type: Alerts
+    - type: Eye
+    - type: CameraRecoil
+    - type: Examiner
+    - type: CanHostGuardian
+    - type: NpcFactionMember
+      factions:
+        - NanoTrasen
+    - type: Respirator
+      damage:
+        types:
+          Asphyxiation: 1.0
+      damageRecovery:
+        types:
+          Asphyxiation: -1.0
+    # Horizon
+    - type: SampleSource
+      availableCellSamples:
+      - protoID: CellSampleTajaran
+
+# Cytology
+- type: entity
+  name: Urist Grown Tajaran
+  parent: MobTajaran
+  id: MobTajaranGrown
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StaticPrice
+    price: 2500
+  - type: RandomMetadata
+    nameSegments:
+      - NamesFirst
+      - NamesLast
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: ghost-role-information-grown-tajaran-name
+    description: Вы таяр, выращенный в цитологической ванне. Ушастый кошко-человек со своей культурой. Исследуйте этот новый мир вокруг вас!
+    raffle:
+      settings: short
+  - type: GhostTakeoverAvailable

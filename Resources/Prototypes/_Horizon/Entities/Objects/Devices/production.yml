@@ -1,0 +1,38 @@
+- type: entity
+  id: PortableGeneratorStarPacmanMachineCircuitboard
+  parent: [ BaseMachineCircuitboard, BaseC2ContrabandUnredeemable ]
+  name: star pacman portable generator machine board
+  description: A machine printed circuit board for a star pacman type portable generator.
+  components:
+    - type: Sprite
+      state: engineering
+    - type: MachineBoard
+      prototype: PortableGeneratorStarPacman
+      requirements:
+        Capacitor: 2
+      stackRequirements:
+        CableHV: 10
+    - type: PhysicalComposition
+      materialComposition:
+        Glass: 200
+      chemicalComposition:
+        Silicon: 20
+    - type: StaticPrice
+      price: 40
+
+- type: entity
+  id: OreMiningDrillMachineCircuitboard
+  parent: BaseMachineCircuitboard
+  name: буровая установка для добычи руды (машинная плата)
+  description: Печатная плата буровой установки для добычи руды.
+  components:
+    - type: Sprite
+      state: engineering
+    - type: MachineBoard
+      prototype: OreMiningDrill
+      stackRequirements:
+        Steel: 10
+        Silver: 20
+        CableHV: 10
+    - type: BindToStation
+      enabled: false # should be draggable between stations

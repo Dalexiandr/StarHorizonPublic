@@ -1,0 +1,66 @@
+- type: entity
+  id: DeathRattleImplanterTrauma
+  name: клиентский имплант траумы
+  parent: BaseImplantOnlyImplanter
+  components:
+  - type: Implanter
+    implant: TraumaTrackingImplant
+
+- type: entity
+  id: BaseImplantOnlyImplanterUAS
+  parent: [BaseImplantOnlyImplanter, BaseUASContraband]
+  suffix: StarHorizon, UAS
+  name: ручной имплантер UAS
+  description: Имплантер для вживления нанитов в организм пользователя или их перепрограммирования.
+  abstract: true
+  components:
+    - type: Item
+      sprite: _Horizon/Objects/Specific/Medical/uasimplanter.rsi
+    - type: Sprite
+      sprite: _Horizon/Objects/Specific/Medical/uasimplanter.rsi
+      state: implanter1
+      layers:
+        - state: implanter0
+          map: [ "implantFull" ]
+          visible: true
+        - state: implanter1
+          map: [ "implantOnly" ]
+    - type: GenericVisualizer
+      visuals:
+        enum.ImplanterVisuals.Full:
+          implantFull:
+            True: {visible: true}
+            False: {visible: false}
+        enum.ImplanterImplantOnlyVisuals.ImplantOnly:
+          implantOnly:
+            True: {state: broken}
+            False: {state: implanter1}
+    - type: Tag
+      tags: []
+
+- type: entity
+  id: UASDeathAcidifierImplanter
+  suffix: StarHorizon, UAS
+  name: имплантер с растворяющимися нанитами UAS
+  parent: BaseImplantOnlyImplanterUAS
+  components:
+  - type: Implanter
+    implant: UASAcidifierImplant
+
+- type: entity
+  id: UASImplanterTreker
+  suffix: StarHorizon, UAS
+  name: имплантер с трекером UAS
+  parent: BaseImplantOnlyImplanterUAS
+  components:
+  - type: Implanter
+    implant: UASTrakerImplant
+
+- type: entity
+  id: UASImplanterDrone
+  suffix: StarHorizon, UAS
+  name: имплантер с дронами UAS
+  parent: BaseImplantOnlyImplanterUAS
+  components:
+  - type: Implanter
+    implant: UASDroneImplant

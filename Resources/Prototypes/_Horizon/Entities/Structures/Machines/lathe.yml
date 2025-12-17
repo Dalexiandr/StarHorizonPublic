@@ -1,0 +1,17 @@
+- type: entity
+  parent: OreProcessor
+  id: OreProcessorFuel
+  name: fuel processor
+  description: An ore processor specifically designed for mass-producing metals in industrial applications.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Machines/fuel_processor_industrial.rsi
+  - type: Machine
+    board: OreProcessorFuelMachineCircuitboard
+  - type: Lathe
+    staticPacks:
+    - FuelCreationBasic
+    dynamicPacks:
+    - FuelCreationAdvanced
+  - type: RadiationSource
+    intensity: 2

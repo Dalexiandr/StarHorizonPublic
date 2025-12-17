@@ -1,0 +1,67 @@
+- type: construction
+  id: SolidReinforcedSecretDoorConstruction
+  name: recipes-reinforced-secret-door-name
+  description: recipes-secret-door-desc # reuse base
+  graph: ReinforcedSecretDoorGraph
+  startNode: start
+  targetNode: ReinforcedSecretDoorNode
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: WoodSecretDoorConstruction
+  name: recipes-wood-secret-door-name
+  description: recipes-secret-door-desc # reuse base
+  graph: WoodSecretDoorGraph
+  startNode: start
+  targetNode: WoodSecretDoorNode
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: UraniumSecretDoorConstruction
+  name: recipes-uranium-secret-door-name
+  description: recipes-secret-door-desc # reuse base
+  graph: UraniumSecretDoorGraph
+  startNode: start
+  targetNode: UraniumSecretDoorNode
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: ShuttleSecretDoorConstruction
+  name: recipes-shuttle-secret-door-name
+  description: recipes-secret-door-desc # reuse base
+  graph: ShuttleSecretDoorGraph
+  startNode: start
+  targetNode: ShuttleSecretDoorNode
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: CrateStorageRackConstruction
+  graph: CrateStorageRack
+  startNode: start
+  targetNode: rack
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked

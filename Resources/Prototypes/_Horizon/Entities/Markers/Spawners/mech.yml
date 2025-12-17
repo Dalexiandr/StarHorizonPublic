@@ -1,0 +1,55 @@
+- type: entity
+  name: Gygax Spawner
+  id: SpawnMechGygax
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Objects/Specific/Mech/mecha.rsi
+        state: gygax
+  - type: ConditionalSpawner
+    prototypes:
+      - MechGygaxBattery
+
+- type: entity
+  name: Dark Gygax Spawner
+  id: SpawnMechDarkGygax
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Objects/Specific/Mech/mecha.rsi
+        state: darkgygax
+  - type: ConditionalSpawner
+    prototypes:
+      - MechDarkGygaxBattery
+
+- type: entity
+  name: Marauder Spawner
+  id: SpawnMechMarauder
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Objects/Specific/Mech/mecha.rsi
+        state: marauder
+  - type: ConditionalSpawner
+    prototypes:
+      - MechMarauderBattery
+
+- type: entity
+  name: Mauler Spawner
+  id: SpawnMechMauler
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Objects/Specific/Mech/mecha.rsi
+        state: mauler
+  - type: ConditionalSpawner
+    prototypes:
+      - MechMaulerBattery

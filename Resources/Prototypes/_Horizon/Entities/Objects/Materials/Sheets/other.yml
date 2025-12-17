@@ -1,0 +1,205 @@
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: SheetOtherBaseFar
+  description: A sheet of material, used often on the station in various applications.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Materials/Sheets/other.rsi
+  - type: Item
+    sprite: _Horizon/Objects/Materials/Sheets/other.rsi
+    size: Normal
+  - type: Tag
+    tags:
+    - Sheet
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: SolutionContainerManager
+    solutions:
+      paper:
+        canReact: false
+
+- type: entity
+  parent: SheetOtherBaseFar
+  id: SheetTorium
+  name: torium
+  suffix: Full
+  components:
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Torium: 100
+  - type: Stack
+    stackType: Torium
+    baseLayer: base
+    layerStates:
+    - torium
+    - torium_2
+    - torium_3
+  - type: Sprite
+    state: torium_3
+    layers:
+    - state: torium_3
+      map: ["base"]
+  - type: Item
+    heldPrefix: torium
+  - type: Appearance
+  - type: Extractable
+    grindableSolutionName: torium
+  - type: SolutionContainerManager
+    solutions:
+      torium:
+        reagents:
+        - ReagentId: Carbon
+          Quantity: 10
+        canReact: false
+  - type: Tag
+    tags:
+    - Sheet
+  - type: NFFuel # Frontier
+
+- type: entity
+  parent: SheetTorium
+  id: SheetTorium1
+  suffix: Single
+  components:
+  - type: Sprite
+    state: torium
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: SheetTorium
+  id: SheetTorium10
+  suffix: 10
+  components:
+  - type: Sprite
+    state: torium
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: SheetOtherBaseFar
+  id: SheetPlutonium
+  name: plutonium
+  suffix: Full
+  components:
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Plutonium: 100
+  - type: Stack
+    stackType: Plutonium
+    baseLayer: base
+    layerStates:
+    - plutonium
+    - plutonium_2
+    - plutonium_3
+  - type: Sprite
+    state: plutonium_3
+    layers:
+    - state: plutonium_3
+      map: ["base"]
+  - type: Item
+    heldPrefix: plutonium
+  - type: Appearance
+  - type: Extractable
+    grindableSolutionName: plutonium
+  - type: SolutionContainerManager
+    solutions:
+      plutonium:
+        reagents:
+        - ReagentId: Carbon
+          Quantity: 10
+        canReact: false
+  - type: Tag
+    tags:
+    - Sheet
+  - type: NFFuel # Frontier
+
+- type: entity
+  parent: SheetPlutonium
+  id: SheetPlutonium1
+  suffix: Single
+  components:
+  - type: Sprite
+    state: plutonium
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: SheetPlutonium
+  id: SheetPlutonium10
+  suffix: 10
+  components:
+  - type: Sprite
+    state: plutonium
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: SheetOtherBaseFar
+  id: SheetNeptunium
+  name: neptunium
+  suffix: Full
+  components:
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Neptunium: 100
+  - type: Stack
+    stackType: Neptunium
+    baseLayer: base
+    layerStates:
+    - neptunium
+    - neptunium_2
+    - neptunium_3
+  - type: Sprite
+    state: neptunium_3
+    layers:
+    - state: neptunium_3
+      map: ["base"]
+  - type: Item
+    heldPrefix: neptunium
+  - type: Appearance
+  - type: Extractable
+    grindableSolutionName: neptunium
+  - type: SolutionContainerManager
+    solutions:
+      neptunium:
+        reagents:
+        - ReagentId: Carbon
+          Quantity: 10
+        canReact: false
+  - type: Tag
+    tags:
+    - Sheet
+  - type: NFFuel # Frontier
+
+- type: entity
+  parent: SheetNeptunium
+  id: SheetNeptunium1
+  suffix: Single
+  components:
+  - type: Sprite
+    state: neptunium
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: SheetNeptunium
+  id: SheetNeptunium10
+  suffix: 10
+  components:
+  - type: Sprite
+    state: neptunium
+  - type: Stack
+    count: 10

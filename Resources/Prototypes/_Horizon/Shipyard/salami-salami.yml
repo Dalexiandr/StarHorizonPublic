@@ -1,0 +1,45 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: ???
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: Salami-Salami
+  parent: BaseVessel
+  name: NRZN Salami-Salami
+  description: Маленький кухонный шаттл для готовки еды.
+  price: 30000 # 26671, наценка верфи 10% = 29338
+  category: Small
+  group: Shipyard
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/salami-salami.yml
+  class:
+  - Kitchen
+  - Civilian
+  engine:
+  - Uranium
+
+
+- type: gameMap
+  id: Salami-Salami
+  mapName: 'NRZN Salami-Salami'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/salami-salami.yml
+  minPlayers: 0
+  stations:
+    Salami-Salami:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Salami-Salami {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

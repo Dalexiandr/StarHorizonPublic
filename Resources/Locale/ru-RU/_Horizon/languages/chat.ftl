@@ -1,0 +1,14 @@
+chat-manager-entity-say-wrap-message = [BubbleHeader][bold][Name]{ $entityName }[/Name][/bold][/BubbleHeader] { $verb }, "[BubbleContent][tfont="{ $fontType }" size={ $fontSize } defaultFont={ $defaultFont } defaultSize={ $defaultSize }]{ $message }[/tfont][/BubbleContent]"
+chat-manager-entity-say-bold-wrap-message = [BubbleHeader][bold][Name]{ $entityName }[/Name][/bold][/BubbleHeader] { $verb }, "[BubbleContent][tfont="{ $fontType }" size={ $fontSize } defaultFont={ $defaultFont } defaultSize={ $defaultSize } ][bold]{ $message }[/bold][/tfont][/BubbleContent]"
+
+chat-manager-entity-whisper-wrap-message = [font size=11][italic][BubbleHeader][Name]{ $entityName }[/Name][/BubbleHeader] шепчет,"[BubbleContent][tfont="{ $fontType }" size={ $fontSize } defaultFont={ $defaultFont } defaultSize={ $defaultSize } ]{ $message }[/tfont][/BubbleContent]"[/italic][/font]
+chat-manager-entity-whisper-unknown-wrap-message = [font size=11][italic][BubbleHeader]Кто-то[/BubbleHeader] шепчет, "[BubbleContent][tfont="{ $fontType }" size={ $fontSize } defaultFont={ $defaultFont } defaultSize={ $defaultSize } ]{ $message }[/tfont][/BubbleContent]"[/italic][/font]
+
+chat-manager-send-collective-mind-chat-wrap-message = [tfont="{ $fontType }" size={ $fontSize } defaultFont={ $defaultFont } defaultSize={ $defaultSize } ]{$channel}: {$message}[/tfont]
+chat-manager-send-collective-mind-chat-wrap-message-rank = [tfont="{ $fontType }" size={ $fontSize } defaultFont={ $defaultFont } defaultSize={ $defaultSize } ]{$channel}: {$rank}: {$message}[/tfont]
+chat-manager-send-collective-mind-chat-wrap-message-name = [tfont="{ $fontType }" size={ $fontSize } defaultFont={ $defaultFont } defaultSize={ $defaultSize } ]{$channel}: {$source}: {$message}[/tfont]
+chat-manager-send-collective-mind-chat-wrap-message-rank-name = [tfont="{ $fontType }" size={ $fontSize } defaultFont={ $defaultFont } defaultSize={ $defaultSize } ]{$channel}: {$source} {$rank}: {$message}[/tfont]
+chat-manager-send-collective-mind-chat-wrap-message-admin = [tfont="{ $fontType }" size={ $fontSize } defaultFont={ $defaultFont } defaultSize={ $defaultSize } ]{$channel}: {$source} {$rank}: {$message}[/tfont]
+
+
+chat-radio-message-wrap = [color={ $color }]{ $channel } [bold]{ $name }[/bold] { $verb }, "[tfont="{ $fontType }" size={ $fontSize } defaultFont={ $defaultFont } defaultSize={ $defaultSize }]{ $message }[/tfont]"[/color]

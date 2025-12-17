@@ -1,0 +1,15 @@
+ent-NFBlueprintEngineeringRandom = { ent-NFBlueprintEngineering }
+    .desc = { ent-NFBlueprintEngineering.desc }
+ent-NFBlueprintSalvageRandom = { ent-NFBlueprintSalvage }
+    .desc = { ent-NFBlueprintSalvage.desc }
+ent-NFBlueprintScienceRandom = { ent-NFBlueprintScience }
+    .desc = { ent-NFBlueprintScience.desc }
+ent-NFBlueprintServiceRandom = { ent-NFBlueprintService }
+    .desc = { ent-NFBlueprintService.desc }
+ent-NFBlueprintMedicalRandom = { ent-NFBlueprintMedical }
+    .desc = { ent-NFBlueprintMedical.desc }
+ent-NFBlueprintArsenalMercenaryRandom = { ent-NFBlueprintArsenalMercenary }
+    .desc = { ent-NFBlueprintArsenalMercenary.desc }
+ent-SpawnRandomBlueprint = random blueprint
+    .suffix = 1-2/3 Recipes, Random Dept
+    .desc = { ent-MarkerBasePlaceFree.desc }

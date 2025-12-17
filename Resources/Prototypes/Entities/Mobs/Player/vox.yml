@@ -1,0 +1,35 @@
+﻿- type: entity
+  save: false
+  name: Uristititi McVox
+  parent: BaseMobVox
+  id: MobVox
+  components:
+  # Horizon
+  - type: SampleSource
+    availableCellSamples:
+    - protoID: CellSampleVox
+
+# Cytology
+- type: entity
+  name: Urist Grown Vox
+  parent: MobVox
+  id: MobVoxGrown
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StaticPrice
+    price: 2500
+  - type: RandomMetadata
+    nameSegments:
+      - NamesFirst
+      - NamesLast
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: ghost-role-information-grown-vox-name
+    description: Вы вокс, выращенный в цитологической ванне. Ядовитые железы и острый ум - ваша сила. Исследуйте это странное место!
+    raffle:
+      settings: short
+  - type: GhostTakeoverAvailable

@@ -1,0 +1,23 @@
+- type: loadout
+  id: NFPirateJumpsuit
+  price: 0
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPirate
+
+- type: loadout
+  id: NFPirateJumpskirt
+  price: 0
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtColorLightBrown
+
+- type: loadout
+  id: NFPirateClothingUniformJumpsuitPirateSlops
+  price: 0
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPirateSlops
+
+- type: loadout
+  id: NFPirateClothingUniformJumpsuitPirateLuffy
+  price: 0
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPirateLuffy

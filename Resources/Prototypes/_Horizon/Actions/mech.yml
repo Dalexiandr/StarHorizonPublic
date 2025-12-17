@@ -1,0 +1,104 @@
+- type: entity
+  id: ActionMechInhale
+  name: Открыть кабину
+  description: "*задыхается*"
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    itemIconStyle: NoItem
+    icon:
+      sprite: Interface/Actions/actions_mecha.rsi
+      state: mech_internals_on
+    useDelay: 2
+  - type: InstantAction
+    event: !type:MechInhaleEvent
+
+- type: entity
+  id: ActionMechTurnLights
+  name: Включить фары
+  description: Мои глазаааа!!!
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    itemIconStyle: NoItem
+    icon:
+      sprite: Interface/Actions/actions_mecha.rsi
+      state: mech_lights_on
+    useDelay: 2
+  - type: InstantAction
+    event: !type:MechTurnLightsEvent
+
+- type: entity
+  id: ActionMechOverload
+  name: Включить ускорение
+  description: Deja vu I've just been in this place before Higher on the street And I know it's my time to go!
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    itemIconStyle: NoItem
+    icon:
+      sprite: Interface/Actions/actions_mecha.rsi
+      state: mech_overload_on
+    useDelay: 2
+  - type: InstantAction
+    event: !type:MechOverloadEvent
+
+- type: entity
+  id: ActionMechPhaze
+  name: Перейти в фазирование
+  description: Это не ноуклип! Это фазирование!
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    itemIconStyle: NoItem
+    icon:
+      sprite: Interface/Actions/actions_mecha.rsi
+      state: mech_phasing_on
+    useDelay: 2
+  - type: InstantAction
+    event: !type:MechPhazeEvent
+
+- type: entity
+  id: MechRCDToggleAction
+  name: Активировать РСУ
+  description: Активировать РСУ для строительства.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    itemIconStyle: NoItem
+    icon:
+      sprite: Interface/Actions/actions_mecha.rsi
+      state: mech_zoom_on
+    useDelay: 1
+  - type: InstantAction
+    event: !type:MechRCDToggleEvent
+
+- type: entity
+  id: MechRCDMenuAction
+  name: Перейти в меню РСУ
+  description: Перейти в меню РСУ для выбора того, что вы будете строить.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    itemIconStyle: NoItem
+    icon:
+      sprite: Interface/Actions/actions_mecha.rsi
+      state: mech_seat_swap
+    useDelay: 1
+  - type: InstantAction
+    event: !type:MechRCDMenuEvent
+
+- type: entity
+  id: MechJetpackToggleAction
+  name: Активировать двигатели меха.
+  description: Уввввввиииииииииииииииииииии!
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    itemIconStyle: NoItem
+    icon:
+      sprite: Interface/Actions/actions_mecha.rsi
+      state: mech_thrusters_on
+    useDelay: 1
+  - type: InstantAction
+    event: !type:MechJetpackToggleEvent

@@ -1,0 +1,16 @@
+ent-CrateMaterials = ящик с материалами
+    .desc = 1 полный набор стекла, пластика, стали, плазмы и пластали.
+ent-CrateMaterialBiomass50 = { ent-CrateMaterialBiomass }
+    .desc = 50 единиц биомассы. Вкуснятина.
+    .suffix = 50 биомассы
+ent-CrateMaterialMetalRods = ящик стержней
+    .desc = Содержит 90 металлических стержней для любых ваших экспериментов.
+ent-CrateMaterialBiomass = ящик биомассы
+    .desc = Содержит 300 единиц биомассы. Вкусняшка.
+    .suffix = 300 биомассы
+ent-CrateMaterialsBasic10Filled = { ent-CrateGenericSteel }
+    .desc = { ent-CrateGenericSteel.desc }
+    .suffix = Filled, Basic Materials (10)
+ent-CrateMaterialsBasicFilled = { ent-CrateGenericSteel }
+    .desc = { ent-CrateGenericSteel.desc }
+    .suffix = Filled, Basic Materials (full)

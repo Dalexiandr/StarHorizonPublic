@@ -1,0 +1,16 @@
+ent-HorizonLocateHeartPumps = обнаружьте кровяные сосуды
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonClampGeneralValves = зажмите кровяные сосуды
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonDisconnectVavles = отсоедините кровяные сосуды
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonInsertPumpImplant = вставьте кровяной насос
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonExtractPumpImplant = удалите кровяной насос
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonConnectValvesToHeart = подсоедините сосуды к сердцу
+    .desc = { ent-SurgeryStepBase.desc }
+ent-SurgeryInsertHeartPumpImplant = установка кровяного насоса
+    .desc = Хирургическое прикрепление имплантата.
+ent-SurgeryExstractHeartPumpImplant = извлечение кровяного насоса
+    .desc = Хирургическое прикрепление имплантата.

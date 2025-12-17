@@ -1,0 +1,112 @@
+<Document>
+  # СЕРВИСНЫЙ ШАТТЛ КЛАССА Nightlight
+  <Box>
+    <GuideEntityEmbed Entity="NFPosterContrabandFsbLogo" Caption="Исследования"/>
+    <GuideEntityEmbed Entity="Biogenerator" Caption="Переработка"/>
+    <GuideEntityEmbed Entity="NFPosterContrabandFsbNightlight" Caption="Развлечения"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="ShuttleMapNightlight" Caption=""/>
+  </Box>
+  [color=#a4885c]Размер корабля:[/color] Средний
+
+  [color=#a4885c]Рекомендуемый экипаж:[/color] 1-4
+
+  [color=#a4885c]Тип генератора энергии:[/color] Уран
+
+  [color=#a4885c]Базовое потребление энергии:[/color] 25 кВт
+
+  [color=#a4885c]Экспедиции:[/color] Нет
+
+  [color=#a4885c]Консоль IFF:[/color] Отсутствует
+
+  "Nightlight — это флагманский корабль Far Star Biotech для исследований биорекомбинации биомассы. Обеспечивая высший класс гостеприимства и подготовку питания для разных рас по стандартам Nanotrasen, Nightlight должен стать идеальной базой для исследовательских команд, работающих с новыми штаммами рекомбинантного питания, обеспечивая полное отсутствие отвлекающих факторов."
+
+  # Функции корабля
+
+  <Box>
+    <GuideEntityEmbed Entity="ButtonFrameCautionSecurity" Caption="Запереть внешние шлюзы"/>
+    <GuideEntityEmbed Entity="ButtonFrameCaution" Caption="Выключить двигатели"/>
+    <GuideEntityEmbed Entity="ButtonFrameGrey" Caption="Переключить шторы"/>
+    <GuideEntityEmbed Entity="ButtonFrameJanitor" Caption="Управлять освещением в баре"/>
+  </Box>
+
+  # Управление
+
+  <Box>
+    <GuideEntityEmbed Entity="ComputerShuttle"/>
+  </Box>
+  После нажатия на консоль шаттла вы должны увидеть радарное отображение шаттла. Вот шаги для управления шаттлом:
+
+  - Сначала отключите все шлюзы, подключенные к доку.
+  - Затем вы можете управлять шаттлом. Управление достаточно простое, где [color=#028ed9]"W"[/color] и [color=#028ed9]"S"[/color] — движение вперед и назад, [color=#028ed9]"A"[/color] и [color=#028ed9]"D"[/color] — влево и вправо, а [color=#028ed9]"Q"[/color] и [color=#028ed9]"E"[/color] — вращение влево и вправо; и [color=#028ed9]"пробел"[/color] — тормоз и точное движение при удержании [color=#028ed9]"пробела"[/color] во время других команд.
+
+  # Набор экипажа
+
+  <Box>
+    <GuideEntityEmbed Entity="ComputerStationRecords"/>
+    <GuideEntityEmbed Entity="ClothingHeadsetGrey"/>
+    <GuideEntityEmbed Entity="IntercomCommon"/>
+  </Box>
+  Как капитан корабля Nanotrasen, вы имеете полномочия нанимать, увольнять, понижать или повышать членов экипажа по своему усмотрению. Существует два способа нанять экипаж: вы можете использовать [color=#a4885c]консоль учёта экипажа[/color] на своем корабле, чтобы открыть вакансии (доступные должности могут различаться от корабля к кораблю), либо приглашать других игроков через внутриигровую связь.
+
+  # КОНТРОЛЬНЫЙ СПИСОК ПЕРЕД ВЫЛЕТОМ
+
+  ## 1. Источник питания
+
+  ### 1.1. Аккумуляторные модули
+  <Box>
+    <GuideEntityEmbed Entity="SubstationBasic"/>
+    <GuideEntityEmbed Entity="APCBasic"/>
+  </Box>
+
+  - Проверьте, включен ли главный автоматический выключатель блока ЛКП.
+  - Проверьте текущее потребление нагрузки* блока ЛКП (Вт).
+
+  ### 1.2. Генератор S.U.P.E.R.P.A.C.M.A.N.
+  <Box>
+    <GuideEntityEmbed Entity="PortableGeneratorSuperPacman"/>
+    <GuideEntityEmbed Entity="SheetUranium"/>
+    <GuideEntityEmbed Entity="SignRadiationMed"/>
+  </Box>
+
+  - Убедитесь, что генератор S.U.P.E.R.P.A.C.M.A.N. закреплен на полу.
+  - Убедитесь, что у генератора S.U.P.E.R.P.A.C.M.A.N. есть топливо. Для длительных полетов убедитесь, что у вас достаточно топлива для поддержания работы генератора в течение всего полета.
+  - Убедитесь, что генератор S.U.P.E.R.P.A.C.M.A.N. настроен на HV-выход.
+  - Установите целевую мощность на 30 [bold]к[/bold]Вт.
+  - Запустите генератор S.U.P.E.R.P.A.C.M.A.N.
+  - Закройте защиту от радиации.
+
+  ## 2. Атмосферные системы
+
+  ### 2.1. Цикл распределения
+  <Box>
+    <GuideEntityEmbed Entity="AirCanister"/>
+    <GuideEntityEmbed Entity="GasPort"/>
+    <GuideEntityEmbed Entity="GasPressurePump"/>
+  </Box>
+
+  - Убедитесь, что баллон с воздухом закреплен на порт подключения.
+  - Убедитесь, что насос распределения настроен на нормальное давление (101 кПа).
+  - Включите насос распределения.
+
+  ### 2.2. Цикл отходов
+  <Box>
+    <GuideEntityEmbed Entity="GasPressurePump"/>
+    <GuideEntityEmbed Entity="AirAlarm"/>
+  </Box>
+
+  - Включите насос цикла отходов.
+  - Отключите автоматический режим на воздушной сигнализации в машинном отделении.
+  - Установите воздушную сигнализацию в машинном отделении на фильтрацию (широкая).
+
+  ## 3. Другие проверки
+  <Box>
+    <GuideEntityEmbed Entity="Gyroscope"/>
+    <GuideEntityEmbed Entity="GravityGeneratorMini"/>
+  </Box>
+
+  - Убедитесь, что гироскоп закреплен, работает и включен.
+  - Убедитесь, что мини-гравитационный генератор закреплен, работает и включен.
+
+</Document>

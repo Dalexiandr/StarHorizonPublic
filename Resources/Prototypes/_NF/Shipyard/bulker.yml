@@ -1,0 +1,72 @@
+# Author Info
+# GitHub: CharcoalShipyard (https://github.com/CharcoalShipyard)
+# Discord: ???
+
+# Maintainer Info
+# GitHub: ???
+# Discord: ???
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Bulker
+  parent: BaseVessel
+  name: KL Bulker
+  description: A medium mining vessel designed for deep space missions
+  price: 47500 #39710 0.2 47652
+  category: Medium
+  group: Shipyard
+  shuttlePath: /Maps/_NF/Shuttles/bulker.yml
+  guidebookPage: ShipyardBulker
+  class:
+  - Salvage
+  engine:
+  - Uranium
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:RoleModifier
+      role: "PlantTechnician"
+      costMultiplier: 0.9
+    - !type:RoleModifier
+      role: "PlantManager"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionEdison"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionLVHI"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionUAC"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionNakamura"
+      costMultiplier: 0.9
+  # Horizon end
+
+
+- type: gameMap
+  id: Bulker
+  mapName: 'KL Bulker'
+  mapPath: /Maps/_NF/Shuttles/bulker.yml
+  minPlayers: 0
+  stations:
+    Bulker:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Bulker {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

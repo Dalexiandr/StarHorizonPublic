@@ -1,0 +1,16 @@
+ent-ActionJumpToCore = Переместиться в ядро
+    .desc = Возвращает ваш взгляд к сути.
+ent-ActionShowJobIcons = Показать исконки должностей
+    .desc = Показывает значки должностей для членов станции.
+ent-ActionSurvCameraLights = Переключить подсветку камеры
+    .desc = Включите подсветку камеры наблюдения рядом с тем местом, куда вы смотрите.
+ent-ActionAIViewLaws = Посмотреть законы
+    .desc = Ознакомьтесь с законами, которые вы обязаны соблюдать.
+ent-ActionAIShowCommunications = Модуль связи
+    .desc = Отправка оповещений и смена кодов.
+ent-ActionAIShowCrewMonitoring = Мониторинг экипажа.
+    .desc = Здоровье и местоположение экипажа.
+ent-ActionAIShowStationRecords = Станционный учёт
+    .desc = Просмотр экипажа станции.
+ent-ActionAIShowRadar = Cканер массы
+    .desc = Просмотр сканера массы.

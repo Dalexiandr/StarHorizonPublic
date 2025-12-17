@@ -1,0 +1,292 @@
+- type: entity
+  name: chemical medipen
+  parent: BaseItem
+  description: A sterile injector for rapid administration of drugs to patients. This one can't be refilled.
+  id: ChemicalMedipenERTJugg
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: firstaid
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: Item
+    sprite: Objects/Specific/Medical/medipen.rsi
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+  - type: ExaminableSolution
+    solution: pen
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 15
+    onlyAffectsMobs: false
+    injectOnly: true
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: firstaid_empty
+  - type: Tag
+    tags:
+    - Trash
+  - type: PhysicalComposition
+    materialComposition:
+      Plastic: 50
+  - type: SpaceGarbage
+  - type: StaticPrice
+    price: 75 # These are limited supply items.
+  - type: TrashOnSolutionEmpty
+    solution: pen
+
+- type: entity
+  name: медипен "Израненный Страж"
+  parent: ChemicalMedipenERTJugg
+  id: ERTRedMedipen
+  description: Устройство медицинского назначения для поддержания жизни в боевых условиях и лечения большинства видов повреждений.
+  suffix: StarHorizon
+  components:
+  - type: Item
+    sprite: _StarHorizon/Objects/Specific/Medical/ertjuggernautmedipen.rsi
+    size: Normal
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Specific/Medical/ertjuggernautmedipen.rsi
+    layers:
+    - state: red
+      map: [ "enum.SolutionContainerLayers.Fill" ]
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: empty
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 250
+    injectSound:
+      path: "/Audio/_StarHorizon/SoundCollection/ertmedipen/redmedipen.ogg"
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 230
+        reagents:
+          - ReagentId: PolypyryliumOligomers
+            Quantity: 30
+          - ReagentId: Puncturase
+            Quantity: 11
+          - ReagentId: DexalinPlus
+            Quantity: 25
+          - ReagentId: Omnizine
+            Quantity: 50
+          - ReagentId: Epinephrine
+            Quantity: 20
+          - ReagentId: TranexamicAcid
+            Quantity: 15
+          - ReagentId: Ephedrine
+            Quantity: 20
+          - ReagentId: Stimulants
+            Quantity: 15
+          - ReagentId: Tricordrazine
+            Quantity: 14
+          - ReagentId: Inaprovaline
+            Quantity: 10
+          - ReagentId: Dexalin
+            Quantity: 20
+  - type: Tag
+    tags: []
+
+- type: entity
+  name: медипен "Пламенный Ангел-Хранитель"
+  parent: ChemicalMedipenERTJugg
+  id: ERTOrangeMedipen
+  description: Устройство медицинского назначения для лечения ожогов и легких повреждений полученных в бою.
+  suffix: StarHorizon
+  components:
+  - type: Item
+    sprite: _StarHorizon/Objects/Specific/Medical/ertjuggernautmedipen.rsi
+    size: Normal
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Specific/Medical/ertjuggernautmedipen.rsi
+    layers:
+    - state: orange
+      map: [ "enum.SolutionContainerLayers.Fill" ]
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: empty
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 250
+    injectSound:
+      path: "/Audio/_StarHorizon/SoundCollection/ertmedipen/orangemedipen.ogg"
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 250
+        reagents:
+          - ReagentId: DexalinPlus
+            Quantity: 25
+          - ReagentId: Pyrazine
+            Quantity: 15
+          - ReagentId: Omnizine
+            Quantity: 45
+          - ReagentId: Dexalin
+            Quantity: 10
+          - ReagentId: Dermaline
+            Quantity: 10
+          - ReagentId: Kelotane
+            Quantity: 25
+          - ReagentId: Siderlac
+            Quantity: 15
+          - ReagentId: TranexamicAcid
+            Quantity: 10
+          - ReagentId: Inaprovaline
+            Quantity: 5
+          - ReagentId: Ephedrine
+            Quantity: 20
+          - ReagentId: Leporazine
+            Quantity: 5
+          - ReagentId: Sigynate
+            Quantity: 15
+          - ReagentId: Epinephrine
+            Quantity: 20
+          - ReagentId: Tricordrazine
+            Quantity: 30
+  - type: Tag
+    tags: []
+
+- type: entity
+  name: медипен "Антиядный Комплекс"
+  parent: ChemicalMedipenERTJugg
+  id: ERTDarkMedipen
+  description: Устройство медицинского назначения для лечеия ядов в организме.
+  suffix: StarHorizon
+  components:
+  - type: Item
+    sprite: _StarHorizon/Objects/Specific/Medical/ertjuggernautmedipen.rsi
+    size: Small
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Specific/Medical/ertjuggernautmedipen.rsi
+    layers:
+    - state: dark_green
+      map: [ "enum.SolutionContainerLayers.Fill" ]
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: empty
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 100
+    injectSound:
+      path: "/Audio/_StarHorizon/SoundCollection/ertmedipen/darkgreenmedipen.ogg"
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 100
+        reagents:
+          - ReagentId: Dylovene
+            Quantity: 20
+          - ReagentId: Stellibinin
+            Quantity: 20
+          - ReagentId: Omnizine
+            Quantity: 20
+          - ReagentId: Epinephrine
+            Quantity: 10
+          - ReagentId: Tricordrazine
+            Quantity: 10
+          - ReagentId: Diphenhydramine
+            Quantity: 10
+          - ReagentId: Stimulants
+            Quantity: 10
+  - type: Tag
+    tags: []
+
+- type: entity
+  name: медипен "Атомный Детокс"
+  parent: ChemicalMedipenERTJugg
+  id: ERTLightMedipen
+  description: Устройство медицинского назначения для лечения повреждённых клеток из за радиационного облочения.
+  suffix: StarHorizon
+  components:
+  - type: Item
+    sprite: _StarHorizon/Objects/Specific/Medical/ertjuggernautmedipen.rsi
+    size: Small
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Specific/Medical/ertjuggernautmedipen.rsi
+    layers:
+    - state: light_green
+      map: [ "enum.SolutionContainerLayers.Fill" ]
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: empty
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 100
+    injectSound:
+      path: "/Audio/_StarHorizon/SoundCollection/ertmedipen/lightgreenmedipen.ogg"
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 100
+        reagents:
+          - ReagentId: Arithrazine
+            Quantity: 20
+          - ReagentId: Hyronalin
+            Quantity: 20
+          - ReagentId: Omnizine
+            Quantity: 20
+          - ReagentId: PotassiumIodide
+            Quantity: 20
+          - ReagentId: Stimulants
+            Quantity: 10
+          - ReagentId: Tricordrazine
+            Quantity: 10
+  - type: Tag
+    tags: []
+
+- type: entity
+  name: медипен "Тактический Корм"
+  parent: ChemicalMedipenERTJugg
+  id: ERTBrownMedipen
+  description: Устройство для быстрого внутривенного питания.
+  suffix: StarHorizon
+  components:
+  - type: Item
+    sprite: _StarHorizon/Objects/Specific/Medical/ertjuggernautmedipen.rsi
+    size: Small
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Specific/Medical/ertjuggernautmedipen.rsi
+    layers:
+    - state: brown
+      map: [ "enum.SolutionContainerLayers.Fill" ]
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: empty
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 100
+    injectSound:
+      path: "/Audio/_StarHorizon/SoundCollection/ertmedipen/brownmedipen.ogg"
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 100
+        reagents:
+          - ReagentId: Saline
+            Quantity: 40
+          - ReagentId: Nutriment
+            Quantity: 15
+          - ReagentId: Protein
+            Quantity: 10
+          - ReagentId: Vitamin
+            Quantity: 15
+          - ReagentId: Syrup
+            Quantity: 20
+  - type: Tag
+    tags: []

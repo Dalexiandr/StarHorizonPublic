@@ -1,0 +1,694 @@
+- type: entity
+  parent: BaseItem
+  name: свадебный букет
+  id: WeddingBouquet
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Misc/bouquet.rsi
+    state: bush
+  - type: Item
+    heldPrefix: bush  
+  - type: EmitSoundOnCollide
+    sound: /Audio/Effects/plant_rustle.ogg
+  - type: EmitSoundOnLand
+    sound: /Audio/Effects/plant_rustle.ogg
+  - type: StaticPrice
+    price: 5
+
+- type: entity
+  parent: BaseItem
+  id: BalloonColor1
+  name: воздушный шарик
+  description: Придает нотку праздника.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    state: baloon1
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    heldPrefix: baloon1
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Tag
+    tags:
+    - Balloon
+
+- type: entity
+  parent: BaseItem
+  id: BalloonColor2
+  name: воздушный шарик
+  description: Придает нотку праздника.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    state: baloon2
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    heldPrefix: baloon2
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Tag
+    tags:
+    - Balloon
+
+- type: entity
+  parent: BaseItem
+  id: BalloonColor3
+  name: воздушный шарик
+  description: Придает нотку праздника.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    state: baloon3
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    heldPrefix: baloon3
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Tag
+    tags:
+    - Balloon
+
+- type: entity
+  parent: BaseItem
+  id: BalloonColor4
+  name: воздушный шарик
+  description: Придает нотку праздника.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    state: baloon4
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    heldPrefix: baloon4
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Tag
+    tags:
+    - Balloon  
+
+- type: entity
+  parent: BaseItem
+  id: BalloonColor5
+  name: воздушный шарик
+  description: Придает нотку праздника.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    state: baloon5
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    heldPrefix: baloon5
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Tag
+    tags:
+    - Balloon 
+
+- type: entity
+  parent: BaseItem
+  id: BalloonColor6
+  name: воздушный шарик
+  description: Придает нотку праздника.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    state: baloon6
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    heldPrefix: baloon6
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Tag
+    tags:
+    - Balloon  
+
+- type: entity
+  parent: BaseItem
+  id: BalloonColor7
+  name: воздушный шарик
+  description: Придает нотку праздника.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    state: baloon7
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    heldPrefix: baloon7
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Tag
+    tags:
+    - Balloon               
+
+- type: entity
+  parent: BaseItem
+  id: BalloonColor8
+  name: воздушный шарик
+  description: Придает нотку праздника.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    state: baloon8
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    heldPrefix: baloon8
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Tag
+    tags:
+    - Balloon  
+
+- type: entity
+  parent: BaseItem
+  id: BalloonColor9
+  name: воздушный шарик
+  description: Придает нотку праздника.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    state: baloon9
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    heldPrefix: baloon9
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Tag
+    tags:
+    - Balloon   
+
+- type: entity
+  parent: BaseItem
+  id: BalloonColor10
+  name: воздушный шарик
+  description: Придает нотку праздника.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    state: baloon10
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    heldPrefix: baloon10
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Tag
+    tags:
+    - Balloon     
+
+- type: entity
+  parent: BaseItem
+  id: BalloonColor11
+  name: воздушный шарик
+  description: Придает нотку праздника.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    state: baloon11
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    heldPrefix: baloon11
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Tag
+    tags:
+    - Balloon   
+
+- type: entity
+  parent: BaseItem
+  id: BalloonColor12
+  name: воздушный шарик
+  description: Придает нотку праздника.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    state: baloon12
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    heldPrefix: baloon12
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Tag
+    tags:
+    - Balloon    
+
+- type: entity
+  parent: BaseItem
+  id: BalloonColor13
+  name: воздушный шарик
+  description: Придает нотку праздника.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    state: baloon13
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    heldPrefix: baloon13
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Tag
+    tags:
+    - Balloon    
+
+- type: entity
+  parent: BaseItem
+  id: BalloonColor14
+  name: воздушный шарик
+  description: Придает нотку праздника.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    state: baloon14
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    heldPrefix: baloon14
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Tag
+    tags:
+    - Balloon   
+
+- type: entity
+  parent: BaseItem
+  id: BalloonColor15
+  name: воздушный шарик
+  description: Придает нотку праздника.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    state: baloon15
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    heldPrefix: baloon15
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Tag
+    tags:
+    - Balloon   
+
+- type: entity
+  parent: BaseItem
+  id: BalloonColor16
+  name: воздушный шарик
+  description: Придает нотку праздника.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    state: baloon16
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    heldPrefix: baloon16
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Tag
+    tags:
+    - Balloon      
+
+- type: entity
+  parent: BaseItem
+  id: BalloonColor17
+  name: воздушный шарик
+  description: Придает нотку праздника.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    state: baloon17
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    heldPrefix: baloon17
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Tag
+    tags:
+    - Balloon      
+
+- type: entity
+  parent: BaseItem
+  id: BalloonColor18
+  name: воздушный шарик
+  description: Придает нотку праздника.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    state: baloon18
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    heldPrefix: baloon18
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Tag
+    tags:
+    - Balloon     
+
+#Ненадутые шарики
+
+- type: entity
+  name: воздушный шарик
+  suffix: ненадутый
+  parent: BaseItem
+  id: BaseBalloonColor1
+  description: Ты чего такой ненадутый?
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    state: baloon1base
+  - type: Item
+    size: Tiny
+  - type: SpawnItemsOnUse
+    items:
+      - id: BalloonColor1
+    sound:
+      path: /Audio/_Horizon/Effects/balloon.ogg 
+  - type: StaticPrice
+    price: 5   
+  - type: Tag
+    tags:
+    - BalloonBase
+
+
+- type: entity
+  name: воздушный шарик
+  suffix: ненадутый
+  parent: BaseBalloonColor1
+  id: BaseBalloonColor2
+  description: Ты чего такой ненадутый?
+  components:
+  - type: Sprite
+    state: baloon2base
+  - type: SpawnItemsOnUse
+    items:
+      - id: BalloonColor2
+    sound:
+      path: /Audio/_Horizon/Effects/balloon.ogg 
+
+- type: entity
+  name: воздушный шарик
+  suffix: ненадутый
+  parent: BaseBalloonColor1
+  id: BaseBalloonColor3
+  description: Ты чего такой ненадутый?
+  components:
+  - type: Sprite
+    state: baloon3base
+  - type: SpawnItemsOnUse
+    items:
+      - id: BalloonColor3
+    sound:
+      path: /Audio/_Horizon/Effects/balloon.ogg 
+
+- type: entity
+  name: воздушный шарик
+  suffix: ненадутый
+  parent: BaseBalloonColor1
+  id: BaseBalloonColor4
+  description: Ты чего такой ненадутый?
+  components:
+  - type: Sprite
+    state: baloon4base
+  - type: SpawnItemsOnUse
+    items:
+      - id: BalloonColor4
+    sound:
+      path: /Audio/_Horizon/Effects/balloon.ogg 
+
+- type: entity
+  name: воздушный шарик
+  suffix: ненадутый
+  parent: BaseBalloonColor1
+  id: BaseBalloonColor5
+  description: Ты чего такой ненадутый?
+  components:
+  - type: Sprite
+    state: baloon5base
+  - type: SpawnItemsOnUse
+    items:
+      - id: BalloonColor5
+    sound:
+      path: /Audio/_Horizon/Effects/balloon.ogg 
+
+- type: entity
+  name: воздушный шарик
+  suffix: ненадутый
+  parent: BaseBalloonColor1
+  id: BaseBalloonColor6
+  description: Ты чего такой ненадутый?
+  components:
+  - type: Sprite
+    state: baloon6base
+  - type: SpawnItemsOnUse
+    items:
+      - id: BalloonColor6
+    sound:
+      path: /Audio/_Horizon/Effects/balloon.ogg 
+
+- type: entity
+  name: воздушный шарик
+  suffix: ненадутый
+  parent: BaseBalloonColor1
+  id: BaseBalloonColor7
+  description: Ты чего такой ненадутый?
+  components:
+  - type: Sprite
+    state: baloon7base
+  - type: SpawnItemsOnUse
+    items:
+      - id: BalloonColor7
+    sound:
+      path: /Audio/_Horizon/Effects/balloon.ogg 
+
+- type: entity
+  name: воздушный шарик
+  suffix: ненадутый
+  parent: BaseBalloonColor1
+  id: BaseBalloonColor8
+  description: Ты чего такой ненадутый?
+  components:
+  - type: Sprite
+    state: baloon8base
+  - type: SpawnItemsOnUse
+    items:
+      - id: BalloonColor8
+    sound:
+      path: /Audio/_Horizon/Effects/balloon.ogg 
+
+- type: entity
+  name: воздушный шарик
+  suffix: ненадутый
+  parent: BaseBalloonColor1
+  id: BaseBalloonColor9
+  description: Ты чего такой ненадутый?
+  components:
+  - type: Sprite
+    state: baloon9base
+  - type: SpawnItemsOnUse
+    items:
+      - id: BalloonColor9
+    sound:
+      path: /Audio/_Horizon/Effects/balloon.ogg 
+
+- type: entity
+  name: воздушный шарик
+  suffix: ненадутый
+  parent: BaseBalloonColor1
+  id: BaseBalloonColor10
+  description: Ты чего такой ненадутый?
+  components:
+  - type: Sprite
+    state: baloon10base
+  - type: SpawnItemsOnUse
+    items:
+      - id: BalloonColor10
+    sound:
+      path: /Audio/_Horizon/Effects/balloon.ogg 
+
+- type: entity
+  name: воздушный шарик
+  suffix: ненадутый
+  parent: BaseBalloonColor1
+  id: BaseBalloonColor11
+  description: Ты чего такой ненадутый?
+  components:
+  - type: Sprite
+    state: baloon11base
+  - type: SpawnItemsOnUse
+    items:
+      - id: BalloonColor11
+    sound:
+      path: /Audio/_Horizon/Effects/balloon.ogg 
+
+- type: entity
+  name: воздушный шарик
+  suffix: ненадутый
+  parent: BaseBalloonColor1
+  id: BaseBalloonColor12
+  description: Ты чего такой ненадутый?
+  components:
+  - type: Sprite
+    state: baloon12base
+  - type: SpawnItemsOnUse
+    items:
+      - id: BalloonColor12
+    sound:
+      path: /Audio/_Horizon/Effects/balloon.ogg 
+
+- type: entity
+  name: воздушный шарик
+  suffix: ненадутый
+  parent: BaseBalloonColor1
+  id: BaseBalloonColor13
+  description: Ты чего такой ненадутый?
+  components:
+  - type: Sprite
+    state: baloon13base
+  - type: SpawnItemsOnUse
+    items:
+      - id: BalloonColor13
+    sound:
+      path: /Audio/_Horizon/Effects/balloon.ogg 
+
+- type: entity
+  name: воздушный шарик
+  suffix: ненадутый
+  parent: BaseBalloonColor1
+  id: BaseBalloonColor14
+  description: Ты чего такой ненадутый?
+  components:
+  - type: Sprite
+    state: baloon14base
+  - type: SpawnItemsOnUse
+    items:
+      - id: BalloonColor14
+    sound:
+      path: /Audio/_Horizon/Effects/balloon.ogg 
+
+- type: entity
+  name: воздушный шарик
+  suffix: ненадутый
+  parent: BaseBalloonColor1
+  id: BaseBalloonColor15
+  description: Ты чего такой ненадутый?
+  components:
+  - type: Sprite
+    state: baloon15base
+  - type: SpawnItemsOnUse
+    items:
+      - id: BalloonColor15
+    sound:
+      path: /Audio/_Horizon/Effects/balloon.ogg 
+
+- type: entity
+  name: воздушный шарик
+  suffix: ненадутый
+  parent: BaseBalloonColor1
+  id: BaseBalloonColor16
+  description: Ты чего такой ненадутый?
+  components:
+  - type: Sprite
+    state: baloon16base
+  - type: SpawnItemsOnUse
+    items:
+      - id: BalloonColor16
+    sound:
+      path: /Audio/_Horizon/Effects/balloon.ogg 
+
+- type: entity
+  name: воздушный шарик
+  suffix: ненадутый
+  parent: BaseBalloonColor1
+  id: BaseBalloonColor17
+  description: Ты чего такой ненадутый?
+  components:
+  - type: Sprite
+    state: baloon17base
+  - type: SpawnItemsOnUse
+    items:
+      - id: BalloonColor17
+    sound:
+      path: /Audio/_Horizon/Effects/balloon.ogg 
+
+- type: entity
+  name: воздушный шарик
+  suffix: ненадутый
+  parent: BaseBalloonColor1
+  id: BaseBalloonColor18
+  description: Ты чего такой ненадутый?
+  components:
+  - type: Sprite
+    state: baloon18base
+  - type: SpawnItemsOnUse
+    items:
+      - id: BalloonColor18
+    sound:
+      path: /Audio/_Horizon/Effects/balloon.ogg 
+
+- type: entity
+  parent: [ BoxCardboard, BaseBagOpenClose ]
+  id: BoxBaloon
+  name: коробка цветных воздушных шариков
+  description: О да, праздник!
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Fun/toys.rsi
+    state: box
+  - type: Storage
+    grid:
+    - 0,0,5,3 
+    whitelist:
+      tags:
+      - BalloonBase
+  - type: StorageFill
+    contents:
+    - id: BaseBalloonColor1
+      amount: 1
+    - id: BaseBalloonColor2
+      amount: 1
+    - id: BaseBalloonColor3
+      amount: 1
+    - id: BaseBalloonColor4
+      amount: 1
+    - id: BaseBalloonColor5
+      amount: 1
+    - id: BaseBalloonColor6
+      amount: 1
+    - id: BaseBalloonColor7
+      amount: 1
+    - id: BaseBalloonColor8
+      amount: 1
+    - id: BaseBalloonColor9
+      amount: 1
+    - id: BaseBalloonColor10
+      amount: 1
+    - id: BaseBalloonColor11
+      amount: 1
+    - id: BaseBalloonColor12
+      amount: 1
+    - id: BaseBalloonColor13
+      amount: 1
+    - id: BaseBalloonColor14
+      amount: 1
+    - id: BaseBalloonColor15
+      amount: 1
+    - id: BaseBalloonColor16
+      amount: 1
+    - id: BaseBalloonColor17
+      amount: 1
+    - id: BaseBalloonColor18
+      amount: 1
+

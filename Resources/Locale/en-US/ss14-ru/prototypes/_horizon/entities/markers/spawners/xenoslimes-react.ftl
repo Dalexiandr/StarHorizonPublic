@@ -1,0 +1,12 @@
+ent-RandomCrayon = slime spawn
+    .desc = { ent-MarkerBase.desc }
+ent-RandomFood = slime spawn
+    .desc = { ent-MarkerBase.desc }
+ent-RandomWater = slime spawn
+    .desc = { ent-MarkerBase.desc }
+ent-RandomAnimalAgress = slime spawn
+    .desc = { ent-MarkerBase.desc }
+ent-RandomAnimalNeut = slime spawn
+    .desc = { ent-MarkerBase.desc }
+ent-RandomAnimalFriend = slime spawn
+    .desc = { ent-MarkerBase.desc }

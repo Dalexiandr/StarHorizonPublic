@@ -1,0 +1,37 @@
+# Author Info
+# GitHub: Checkraze (https://github.com/cheakraze)
+# Discord: Checkraze
+
+# Maintainer Info
+# GitHub: ???
+# Discord: ???
+
+# Notes:
+# Down at your local saloon
+- type: pointOfInterest
+  id: ThePit
+  parent: BasePOI
+  name: "The Pit"
+  minimumDistance: 2200
+  maximumDistance: 4200
+  spawnGroup: Arena
+  gridPath: /Maps/_NF/POI/arena.yml
+  addComponents:
+  - type: StationTransit
+    routes:
+      MinorPointsOfInterest: 50
+  - type: SolarPoweredGrid
+    trackOnInit: true
+    doNotCull: true
+
+- type: gameMap
+  id: ThePit
+  mapName: "The Pit"
+  mapPath: /Maps/_NF/POI/arena.yml
+  minPlayers: 0
+  stations:
+    ThePit:
+      stationProto: DeadDropFrontierOutpost
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "The Pit"

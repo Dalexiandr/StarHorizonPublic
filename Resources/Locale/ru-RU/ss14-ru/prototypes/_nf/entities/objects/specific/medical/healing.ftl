@@ -1,0 +1,15 @@
+ent-Mesh10Lingering = { ent-RegenerativeMesh }
+    .desc = { ent-RegenerativeMesh.desc }
+    .suffix = 10, Затяжной
+ent-Suture10Lingering = { ent-MedicatedSuture }
+    .desc = { ent-MedicatedSuture.desc }
+    .suffix = 10, Затяжной
+ent-NFPillCanisterMannitol = { ent-PillCanister }
+    .desc = Принимайте по две таблетки в день.
+    .suffix = Маннитол 10u, 10, Клярпи
+ent-NFPillMannitol = таблетка
+    .suffix = Маннитол 10u
+    .desc = { ent-Pill.desc }
+ent-NFPillSheleg = таблетка
+    .desc = Безопасный способ стабилизации состояния Шелега, находящегося в критическом состоянии, для персонала без дополнительных медицинских знаний.
+    .suffix = Экстренная таблетка Шелега

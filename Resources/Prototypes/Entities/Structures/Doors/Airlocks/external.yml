@@ -1,0 +1,80 @@
+- type: entity
+  parent: AirlockRCDResistant
+  id: AirlockExternal
+  suffix: External
+  description: It opens, it closes, it might crush you, and there might be only space behind it.
+  components:
+  - type: Door
+    crushDamage:
+      types:
+        Blunt: 15
+    openSound:
+      path: /Audio/Machines/airlock_ext_open.ogg
+    closeSound:
+      path: /Audio/Machines/airlock_ext_close.ogg
+    denySound:
+      path: /Audio/Machines/airlock_deny.ogg
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/external.rsi
+  - type: Construction
+    graph: AirlockExternal
+    node: airlock
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.49,0.49,0.49" # don't want this colliding with walls or they won't close
+        density: 100
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+  - type: Wires
+    layoutId: AirlockExternal
+  - type: Paintable
+    group: null
+
+- type: entity
+  parent: AirlockExternal
+  id: AirlockExternalGlass
+  suffix: Glass, External
+  components:
+  - type: Door
+    occludes: false
+  - type: Occluder
+    enabled: false
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Glass/external.rsi
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.49,0.49,0.49" # don't want this colliding with walls or they won't close
+        density: 100
+        mask:
+        - FullTileMask
+        layer:     #removed opaque from the layer, allowing lasers to pass through glass airlocks
+        - GlassLayer
+  - type: Construction
+    graph: AirlockExternal
+    node: airlockGlass
+
+- type: entity
+  id: AirlockExternalAssembly
+  parent: AirlockAssembly
+  name: каркас внешнего шлюза
+  suffix: External
+  description: Он пока не открывается, он пока не закрывается, и он пока не может вас раздавить.
+  components:
+  - type: Transform
+    anchored: true
+    noRot: false
+  - type: Rotatable
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/external.rsi
+    state: closed
+  - type: Construction
+    graph: AirlockExternal
+    node: assembly

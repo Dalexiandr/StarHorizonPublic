@@ -1,0 +1,19 @@
+{
+    "version": 1,
+    "copyright": [
+      "Malanisa (discord: ✦\uD835\uDD78\uD835\uDD86\uD835\uDD91\uD835\uDD86\uD835\uDD93\uD835\uDD8E\uD835\uDD98\uD835\uDD86✦#5800)",
+      "Keiila (discord: keiila)"
+    ],
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+    "states": [
+      {
+        "name": "plushie_rabbit"
+      },
+      {
+        "name": "plushie_voomra"
+      }
+    ]
+  }

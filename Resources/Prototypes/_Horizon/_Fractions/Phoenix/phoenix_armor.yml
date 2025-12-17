@@ -1,0 +1,21 @@
+- type: entity
+  parent: ClothingOuterArmorBasic
+  id: ClothingOuterArmorPhoenixBattle
+  name: Бронежилет ИФ
+  description: Стандартный бронежилет службы безопасности ИФ.
+  suffix: Феникс, СБ
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/hardsuits/armorif.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Phoenix/hardsuits/armorif.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.70
+        Slash: 0.70
+        Piercing: 0.70
+        Heat: 0.80
+        Caustic: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.90

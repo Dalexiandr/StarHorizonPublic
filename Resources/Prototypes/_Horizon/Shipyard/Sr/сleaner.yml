@@ -1,0 +1,53 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: lnqz1tor
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: Cleaner
+  parent: BaseVessel
+  name: NRZN Cleaner
+  description: Маленький шаттл для глобальной уборки.
+  price: 16000 # 14331, наценка верфи 10% = 15764
+  category: Small
+  access: Janitor
+  group: Sr
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/Sr/cleaner.yml
+  class:
+  - Civilian
+  engine:
+  - Plasma
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:FactionCostModifier
+      faction: "FactionFrontier"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: Cleaner
+  mapName: 'NRZN Cleaner'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/Sr/cleaner.yml
+  minPlayers: 0
+  stations:
+    Cleaner:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: ' Cleaner {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

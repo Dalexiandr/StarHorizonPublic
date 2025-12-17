@@ -1,0 +1,19 @@
+# Caves
+- type: tile
+  id: FloorCaveShadow
+  name: tiles-cave-shadow
+  sprite: /Textures/_Horizon/Tiles/caveshadow.png
+  variants: 7
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Space
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000

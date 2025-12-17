@@ -1,0 +1,55 @@
+# region .20 rifle
+
+- type: entity
+  id: NFBulletRifle20Piercing
+  name: bullet (.20 rifle, piercing)
+  parent: NFBaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 10
+    ignoreResistances: true
+
+- type: entity
+  id: NFBulletRifle20Psycore
+  name: bullet (.20 rifle, psycore)
+  parent: NFBaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 7
+        Caustic: 8
+  - type: StaminaDamageOnCollide
+    damage: 5
+
+#region .30 rifle
+
+- type: entity
+  id: NFBulletRifle30Piercing
+  name: bullet (.30 rifle, piercing)
+  parent: NFBaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 12
+    ignoreResistances: true
+
+- type: entity
+  id: NFBulletRifle30Psycore
+  name: bullet (.30 rifle, psycore)
+  parent: NFBaseBulletIncendiary
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 10
+        Caustic: 8
+  - type: StaminaDamageOnCollide
+    damage: 5

@@ -1,0 +1,37 @@
+# Author Info
+# GitHub:
+# Discord: Checkraze
+
+# Maintainer Info
+# GitHub: ???
+# Discord: ???
+
+# Notes:
+# The local Science lab
+- type: pointOfInterest
+  id: AnomalousGeode
+  parent: BasePOI
+  name: 'Anomalous Geode'
+  minimumDistance: 2100
+  maximumDistance: 3800
+  spawnGroup: ScienceLab
+  gridPath: /Maps/_Horizon/POI/anomalousgeode.yml #Horizon-Maps
+  addComponents:
+  - type: SolarPoweredGrid
+    trackOnInit: true
+    doNotCull: true
+
+- type: gameMap
+  id: AnomalousGeode
+  mapName: 'Anomalous Geode'
+  mapPath: /Maps/_Horizon/POI/anomalousgeode.yml #Horizon-Maps
+  minPlayers: 0
+  stations:
+    AnomalousGeode:
+      stationProto: StandardFrontierOutpost
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Anomalous Geode'
+        - type: StationJobs
+          availableJobs: {}
+        - type: StationDeadDropHintExempt

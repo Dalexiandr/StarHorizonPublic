@@ -1,0 +1,73 @@
+﻿<Document>
+  # Электросети
+  В Space Station 14 энергосистема разделена на три сети:
+  [color=green]Низкого напряжения (LV)[/color], [color=Yellow]Среднего напряжения (MV)[/color] и [color=orange]Высокого напряжения (HV)[/color].
+
+  <Box>
+    <GuideEntityEmbed Entity="CableHVStack"/>
+    <GuideEntityEmbed Entity="CableMVStack"/>
+    <GuideEntityEmbed Entity="CableApcStack"/>
+  </Box>
+
+  ## Сеть LV
+  Питает большинство малых устройств: свет, компьютеры и т.д.
+
+  <Box>
+    <GuideEntityEmbed Entity="PoweredSmallLight" Caption=""/>
+    <GuideEntityEmbed Entity="ComputerShuttleCargo" Caption=""/>
+    <GuideEntityEmbed Entity="ComputerComms" Caption=""/>
+    <GuideEntityEmbed Entity="Autolathe" Caption=""/>
+    <GuideEntityEmbed Entity="VendingMachineEngivend" Caption=""/>
+    <GuideEntityEmbed Entity="VendingMachineMedical" Caption=""/>
+    <GuideEntityEmbed Entity="AlwaysPoweredWallLight" Caption=""/>
+  </Box>
+
+  Преобразуется из MV через АПК.
+
+  <Box>
+    <GuideEntityEmbed Entity="APCBasic"/>
+  </Box>
+
+  Питает устройства в радиусе 2 плиток.
+
+  ## Сеть MV
+  Питает АПК и энергоемкое оборудование, например ускоритель частиц.
+
+  <Box>
+    <GuideEntityEmbed Entity="ParticleAcceleratorEndCap" Caption="" Margin="0"/>
+  </Box>
+
+  <Box>
+    <GuideEntityEmbed Entity="ParticleAcceleratorControlBox" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="ParticleAcceleratorFuelChamber" Caption="" Margin="0"/>
+    <GuideEntityEmbed Entity="CableMV" Caption="" Margin="0"/>
+  </Box>
+
+  Преобразуется из HV через подстанции.
+
+  <Box HorizontalAlignment="Stretch">
+    <Box>
+      <GuideEntityEmbed Entity="SubstationBasic"/>
+    </Box>
+    <Box>
+      <GuideEntityEmbed Entity="SubstationWallBasic"/>
+    </Box>
+  </Box>
+
+  ## Сеть HV
+  Используется для передачи больших мощностей. Питает СМЭС, подстанции и генераторы.
+
+  <Box>
+    <GuideEntityEmbed Entity="SMESBasic"/>
+    <GuideEntityEmbed Entity="RadiationCollector"/>
+    <GuideEntityEmbed Entity="TeslaCoil"/>
+    <GuideEntityEmbed Entity="SubstationBasic"/>
+  </Box>
+
+  ## Повреждения от тока
+  Урон зависит от напряжения:
+  [color=green]LV[/color] [color=Yellow]MV[/color] [color=orange]HV[/color].
+
+  При работе с MV и HV используйте диэлектрические перчатки.
+
+</Document>

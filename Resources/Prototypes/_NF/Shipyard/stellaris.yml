@@ -1,0 +1,46 @@
+- type: vessel
+  id: Stellaris
+  parent: BaseVessel
+  name: NT Stellaris
+  description: A mobile theatre perfect for putting on any show.
+  price: 45500 # 42652 0.05 44784.6
+  category: Medium
+  group: Shipyard
+  shuttlePath: /Maps/_NF/Shuttles/stellaris.yml
+  guidebookPage: Null
+  class:
+  - Civilian
+  engine:
+  - Plasma
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:FactionCostModifier
+      faction: "FactionFrontier"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: Stellaris
+  mapName: 'NT Stellaris'
+  mapPath: /Maps/_NF/Shuttles/stellaris.yml
+  minPlayers: 0
+  stations:
+    Stellaris:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Stellaris {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

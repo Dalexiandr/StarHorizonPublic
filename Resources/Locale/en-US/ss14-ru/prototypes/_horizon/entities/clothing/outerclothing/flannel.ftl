@@ -1,0 +1,10 @@
+ent-ClothingOuterClothingFlannelBlueNew = синяя рубашка
+    .desc = Ходить в клеточку всё еще модно
+ent-ClothingOuterClothingFlannelRedNew = красная рубашка
+    .desc = Ходить в клеточку всё еще модно
+ent-ClothingOuterClothingFlannelOrangeNew = оранжевая рубашка
+    .desc = Ходить в клеточку всё еще модно
+ent-ClothingOuterClothingFlannelGreenNew = зеленая рубашка
+    .desc = Ходить в клеточку всё еще модно
+ent-ClothingOuterClothingFlannelPinkNew = розовая рубашка
+    .desc = Ходить в клеточку всё еще модно

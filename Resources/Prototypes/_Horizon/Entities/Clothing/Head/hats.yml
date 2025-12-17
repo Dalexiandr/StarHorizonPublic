@@ -1,0 +1,118 @@
+- type: entity
+  parent: ClothingHeadHatBeretCmo
+  id: ClothingHeadHatBeretEliteCmo
+  name: chief medical officer's beret
+  description: Turquoise beret with a cross on the front. The sight of it calms you down and makes it clear that you will be cured.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hats/beret_ecmo.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hats/beret_ecmo.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatGoldCaptain
+  suffix: StarHorizon
+  name: золотая капитанская каска
+  description: Выдаётся почётным и опытным членам экипажа.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hats/gold_cap_hat.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hats/gold_cap_hat.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatWhiteCapcap
+  suffix: StarHorizon
+  name: белая фуражка капитана
+  description: Излучает белый свет профессионализма.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hats/white_cap_hat.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hats/white_cap_hat.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretBlueshield
+  suffix: StarHorizon
+  name: берет офицера "Синий щит"
+  description: Идеальный головной убор для идеального телохранителя.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hats/blueshield_beret.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hats/blueshield_beret.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCapBlueshield
+  suffix: StarHorizon
+  name: фуражка офицера "Синий щит"
+  description: Для тех, кто гордится своей военной выправкой.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hats/blueshieldcap.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hats/blueshieldcap.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCapSecurity
+  suffix: StarHorizon
+  name: фуражка службы безопасности
+  description: Если хотите выглядеть значимее, чем обычно. Великолепно смотрится вместе с тренчем.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hats/seccap.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hats/seccap.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCapInspector
+  suffix: StarHorizon
+  name: фуражка инспектора
+  description: Одним только внешним видом способна заставить пошатнуться.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hats/inspectorcap.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hats/inspectorcap.rsi
+
+- type: entity
+  parent: [ClothingHeadBase, BaseUASContraband]
+  categories: [ HideSpawnMenu ]
+  id: uasberet
+  name: берет UAS
+  suffix: StarHorizon, UAS
+  description: Берет только для настоящих патриотов. Слава UAS!
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hats/uasberet.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hats/uasberet.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+  - type: StaticPrice
+    price: 5000
+
+- type: entity
+  parent: [ClothingHeadBase, BaseUASContraband]
+  categories: [ HideSpawnMenu ]
+  id: uascap
+  name: фуражка UAS
+  suffix: StarHorizon, UAS
+  description: Фуражка для настоящих патриотов. Слава UAS!
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hats/uascap.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hats/uascap.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+  - type: StaticPrice
+    price: 5000

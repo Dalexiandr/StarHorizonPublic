@@ -1,0 +1,61 @@
+﻿- type: body
+  id: Arachnid
+  name: "arachnid"
+  root: torso
+  slots:
+    head:
+      part: HeadArachnid
+      connections:
+      - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganArachnidEyes
+        tongue: OrganHumanTongue
+        eye_implant: null # Horizon
+        cyberdeka_implant: null # Horizon
+    torso:
+      part: TorsoArachnid
+      organs:
+        heart: OrganArachnidHeart
+        lungs: OrganAnimalLungs
+        stomach: OrganArachnidStomach
+        liver: OrganArachnidLiver
+        kidneys: OrganArachnidKidneys
+        vessels_implant: null # Horizon
+        blood_pump_implant: null
+        skin_implant: null # Horizon
+        bone_implant: null # Horizon
+        cavity: null # Horizon
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+    right arm:
+      part: RightArmArachnid
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmArachnid
+      connections:
+      - left hand
+    right hand:
+      part: RightHandArachnid
+      organs:
+        hands_implant: null # Horizon
+    left hand:
+      part: LeftHandArachnid
+      organs:
+        hands_implant: null # Horizon
+    right leg:
+      part: RightLegArachnid
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegArachnid
+      connections:
+      - left foot
+    right foot:
+      part: RightFootArachnid
+    left foot:
+      part: LeftFootArachnid

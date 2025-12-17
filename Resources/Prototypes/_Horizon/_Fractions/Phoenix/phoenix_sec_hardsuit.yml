@@ -1,0 +1,52 @@
+- type: entity
+  parent: ClothingOuterHardsuitBaseNF
+  id: PhoenisecHardsuit
+  name: Боевой скафандр ИФ
+  description: Боевой скафандр армейского класса
+  suffix: Феникс, СБ
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/hardsuits/sechardsuit.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Phoenix/hardsuits/sechardsuit.rsi
+  - type: ToggleableClothing
+    clothingPrototype: Phoenixsechelmet
+  - type: ExplosionResistance
+    damageCoefficient: 0.4
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.5
+        Heat: 0.50
+        Radiation: 0.4
+        Caustic: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.75
+
+- type: entity
+  parent: ClothingHeadHardsuitBase
+  id: Phoenixsechelmet
+  categories: [ HideSpawnMenu ]
+  name: Шлем шахтёра ИФ
+  description: Крепкий шлем промышленного класса.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/helmets/sechelmethard.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Phoenix/helmets/sechelmethard.rsi
+  - type: ToggleableLightVisuals
+  - type: PNV
+    color: "#CC5500"
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9

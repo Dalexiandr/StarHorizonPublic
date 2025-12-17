@@ -1,0 +1,52 @@
+- type: entity
+  parent: ClothingOuterHardsuitBaseNF
+  id: PhoenixbrigadirHardsuit
+  name: Скафандр бригадира ИФ
+  description: Крепкий скафандр промышленного класса, доработанный для противостояния недовольным плебеям.
+  suffix: Феникс, работяги, СБ
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/hardsuits/brigadir.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Phoenix/hardsuits/brigadir.rsi
+  - type: ToggleableClothing
+    clothingPrototype: Phoenixbrighelmet
+  - type: ExplosionResistance
+    damageCoefficient: 0.4
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.5
+        Heat: 0.70
+        Caustic: 0.8
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.75
+
+- type: entity
+  parent: ClothingHeadHardsuitBase
+  id: Phoenixbrighelmet
+  categories: [ HideSpawnMenu ]
+  name: Шлем скафандра бригадира ИФ
+  description: Крепкий шлем промышленного класса, доработан дополнительным бронированием.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/helmets/HellmetHardsuitBrig.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Phoenix/helmets/HellmetHardsuitBrig.rsi
+  - type: ToggleableLightVisuals
+  - type: PNV
+    color: "#CC5500"
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+        Radiation: 1

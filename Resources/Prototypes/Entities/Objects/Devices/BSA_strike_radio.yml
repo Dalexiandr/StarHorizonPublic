@@ -1,0 +1,86 @@
+- type: entity
+  name: рация вызова блюспэйс артелерии
+  description: кажется она слишком похожа на рацию UAS. Перед тем как что нибудь в ней говорить подумайте об детях...
+  parent: BaseItem
+  id: RadioBSA
+  components:
+  - type: UseDelay
+    delay: 10
+  - type: Speech
+    speechVerb: Robotic
+  - type: SpeakOnTrigger
+    pack: BSAStrikeRadio
+  - type: Sprite
+    sprite: _Horizon/Objects/Devices/communication.rsi
+    layers:
+    - state: radio-strike
+    - state: radio-strike-on
+  - type: Item
+    sprite: _Horizon/Objects/Devices/communication.rsi
+    heldPrefix: radio-strike
+  - type: SoundOnTrigger
+    sound: /Audio/_StarHorizon/SoundCollection/ERTJuggernautSpeech/ExosuitSpech4.ogg
+  - type: SpawnAfterInteract
+    prototype: BSAStrike
+    doAfter: 40
+    removeOnInteract: true
+    triggerOnUse: true
+
+- type: entity
+  name: голопроекция БСА удара
+  description: Голопроекция БСА удара. Думаю тут лучше не задерживатся..
+  suffix: StarHorizon, UAS
+  id: BSAStrike
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Weapons/bluespace-strike.rsi
+    state: icon
+    layers:
+    - state: icon
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: HardBomb
+    totalIntensity: 20000 # ~15 тайловый бабах.
+    intensitySlope: 7.5
+    maxIntensity: 150
+    canCreateVacuum: true
+  - type: ActiveTimerTrigger
+    timeRemaining: 69
+  - type: ConditionalSpawner
+    prototypes:
+      - BSAStrikeSound # Спавним отдельный энтити что бы звук не прирывался после взрыва
+  - type: TimedDespawn
+    lifetime: 73.5
+  - type: AmbientSound
+    range: 6
+    volume: -5
+    sound:
+      path: /Audio/Ambience/anomaly_drone.ogg
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/Effects/teleport_arrival.ogg
+
+- type: entity
+  name: BAS sound
+  categories: [ HideSpawnMenu ]
+  id: BSAStrikeSound
+  components:
+  - type: TimedDespawn
+    lifetime: 73.5
+  - type: EmitSoundOnSpawn
+    sound:
+      path: "/Audio/_Horizon/Misc/A_Grave_Soul._Now_Run.ogg"
+      params:
+        volume: 1
+        range: 15
+        maxDistance: 15
+        pitchscale: 0.5
+
+- type: localizedDataset
+  id: BSAStrikeRadio
+  values:
+    prefix: BSA-strike-radio-
+    count: 5
+

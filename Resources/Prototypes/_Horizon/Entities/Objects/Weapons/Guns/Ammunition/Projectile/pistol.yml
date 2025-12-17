@@ -1,0 +1,57 @@
+# WizDen
+# region .35 pistol
+
+- type: entity
+  id: NFBulletPistol35Piercing
+  name: bullet (.35 pistol, piercing)
+  parent: NFBaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 7
+    ignoreResistances: true
+
+- type: entity
+  id: NFBulletPistol35Psycore
+  name: bullet (.35 pistol, psycore)
+  parent: NFBaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 5
+        Caustic: 5
+  - type: StaminaDamageOnCollide
+    damage: 5
+
+# region .45 pistol
+
+- type: entity
+  id: NFBulletPistol45Piercing
+  name: bullet (.45 pistol, piercing)
+  parent: NFBaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 10
+        Blunt: 5
+    ignoreResistances: true
+
+- type: entity
+  id: NFBulletPistol45Psycore
+  parent: NFBaseBullet
+  name: bullet (.45 pistol, psycore)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 10
+        Caustic: 10
+  - type: StaminaDamageOnCollide
+    damage: 6 # 10 hits to slowdown

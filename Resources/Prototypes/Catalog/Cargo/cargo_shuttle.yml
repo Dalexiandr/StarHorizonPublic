@@ -1,0 +1,30 @@
+- type: cargoProduct
+  id: ShuttleThruster
+  icon:
+    sprite: _NF/Structures/Shuttles/thruster.rsi # Frontier: use _NF prefix
+    state: base
+  product: CrateEngineeringThruster
+  cost: 1500
+  category: cargoproduct-category-name-shuttle
+  group: market
+
+- type: cargoProduct
+  id: ShuttleGyroscope
+  icon:
+    sprite: _NF/Structures/Shuttles/gyroscope.rsi # Frontier: use _NF prefix
+    state: base
+  product: CrateEngineeringGyroscope
+  cost: 4000
+  category: cargoproduct-category-name-shuttle
+  group: market
+
+# - type: cargoProduct
+  # id: ShuttlePowerKit
+  # icon:
+    # sprite: Structures/Machines/computers.rsi
+    # state: avionics-systems
+  # product: CrateEngineeringShuttle
+  # cost: 3000
+  # category: cargoproduct-category-name-shuttle
+  # group: market
+#  locked: true   # only the QM has permission to order by default

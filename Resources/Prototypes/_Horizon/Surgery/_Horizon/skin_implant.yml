@@ -1,0 +1,94 @@
+- type: entity
+  id: BaseSkinImplant
+  abstract: true
+  parent: [ BaseItem, BaseImplant ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/implants.rsi
+  - type: Organ
+  - type: SkinImplant
+  - type: Gibbable
+
+# Armor for tier 1 to 3
+- type: entity
+  id: SubcutaneousArmor
+  name: Подкожная броня
+  description: Удивительно удобная подкожная броня, слегка выпирает из под кожи. Но всё же лучше чем ходить без брони?
+  parent: BaseSkinImplant
+  components:
+  - type: Sprite
+    state: skin_implant
+  - type: FunctionalOrgan
+    armor:
+      modifiers:
+      coefficients:
+        Slash: 0.75
+        Piercing: 0.75
+        Blunt: 0.9
+
+- type: entity
+  id: UpgradedSubcutaneousArmor
+  name: Улучшенная Подкожная Броня
+  description: Усиленная версия подкожной брони, при легком нажатии становится жидкой. При резком ударе твёрдой.
+  parent: BaseSkinImplant
+  components:
+  - type: Sprite
+    state: skin_implant
+  - type: FunctionalOrgan
+    speed: -0.1
+    armor:
+      modifiers:
+      coefficients:
+        Slash: 0.65
+        Piercing: 0.65
+        Blunt: 0.8
+# But only 2 tiers
+
+# Heat Armor for tier 1 to 3
+- type: entity
+  id: HeatSubcutaneousArmor
+  name: Подкожная огнеупорная броня.
+  description: Подкожная огнеупорная броня. На вид похожа на тефлон. Слегка чешется.
+  parent: BaseSkinImplant
+  components:
+  - type: Sprite
+    state: skin_implant
+  - type: FunctionalOrgan
+    armor:
+      modifiers:
+      coefficients:
+        Cold: 0.85
+        Heat: 0.85
+        Shock: 0.9
+
+- type: entity
+  id: HeatUpgradeSubcutaneousArmor
+  name: Улучшенная огнеупорная подкожная броня.
+  description: Улучшенная версия огнеупорной прослойки. При нагреве кристаллизуется и распределяет тепло по всей поверхности.
+  parent: BaseSkinImplant
+  components:
+  - type: Sprite
+    state: skin_implant
+  - type: FunctionalOrgan
+    armor:
+      modifiers:
+      coefficients:
+        Cold: 0.75
+        Heat: 0.75
+        Shock: 0.8
+# But only 2 tiers
+
+# Radiation armor ONLY ONEEEE
+- type: entity
+  id: RadiationSubcutaneousArmor
+  name: Подкожная противорадиационная обшивка.
+  description: Противорадиационная обшивка, на ощуп как свинец и железо. Надеюсь оно не отравит организм в будущем?
+  parent: BaseSkinImplant
+  components:
+  - type: Sprite
+    state: skin_implant
+  - type: FunctionalOrgan
+    armor:
+      modifiers:
+      coefficients:
+        Radiation: 0.2

@@ -1,0 +1,23 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitTeamNovember
+  name: комбинезон "Новембер"
+  suffix: Horizon, Mechs
+  description: Прочный комбинезон, использующий новейшие технологии адаптации своего размера под носителя. На нем имеется нашивка в виде буквы "N".
+  components:
+  - type: Sprite
+    sprite: _Horizon/Events/Mechs/clothing_november.rsi
+  - type: Clothing
+    sprite: _Horizon/Events/Mechs/clothing_november.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitTeamSierra
+  name: комбинезон "Сьерра"
+  suffix: Horizon, Mechs
+  description: Прочный комбинезон, использующий новейшие технологии адаптации своего размера под носителя. На нем имеется нашивка в виде буквы "S".
+  components:
+  - type: Sprite
+    sprite: _Horizon/Events/Mechs/clothing_sierra.rsi
+  - type: Clothing
+    sprite: _Horizon/Events/Mechs/clothing_sierra.rsi

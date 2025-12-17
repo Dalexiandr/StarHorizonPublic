@@ -1,0 +1,149 @@
+- type: entity
+  id: ClosetBaseUAS
+  parent: BaseStructureDynamic
+  name: шкаф UAS
+  description: Стандартное хранилище корпорации UAS
+  suffix: StarHorizon, UAS, Structure
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ResistLocker
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: Sprite
+    noRot: true
+    sprite: _Horizon/Structures/Storage/Closets/uascloset.rsi
+    layers:
+    - state: uascloset
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: uascloset_door
+      map: ["enum.StorageVisualLayers.Door"]
+    - state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+  - type: MovedByPressure
+  - type: DamageOnHighSpeedImpact
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: InteractionOutline
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.48,0.25,0.48"
+        density: 75
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: EntityStorage
+  - type: ContainerContainer
+    containers:
+      entity_storage: !type:Container
+  - type: Weldable
+  - type: PlaceableSurface
+    placeCentered: true
+    isPlaceable: false
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+        - !type:SpawnEntitiesBehavior
+            spawn:
+              Sheetkazmie:
+                min: 1
+                max: 5
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: uascloset
+    stateDoorOpen: uascloset_open
+    stateDoorClosed: uascloset_door
+  - type: StaticPrice
+    price: 75
+
+- type: entity
+  id: ClosetUASDebug
+  name: шкаф со структурами UAS
+  parent: ClosetBaseUAS
+  categories: [ HideSpawnMenu ]
+  suffix: StarHorizon, UAS, DEBUG
+  description: Блюспейс хранилище со всеми вещами структурами UAS
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClosetBaseUAS
+    - id: ClosetOfficer
+    - id: ClosetSpider
+    - id: ClosetKnight
+    - id: UASVending
+    - id: BaseUASUplink
+
+- type: entity
+  id: ClosetOfficer
+  name: шкаф с снаряжением Офицера
+  parent: ClosetBaseUAS
+  suffix: StarHorizon, UAS
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingEyesGlassesUAS
+    - id: ClothingHeadsetUAS
+    - id: UASVests
+    - id: SuitProtectiveUAS
+    - id: UASBoots
+    - id: UASsatchelOfficer
+    - id: PDAOfficerUAS
+    - id: WeaponStunprodUAS
+    - id: UASGloves
+
+- type: entity
+  id: ClosetSpider
+  name: шкаф с снаряжением Паука
+  parent: ClosetBaseUAS
+  suffix: StarHorizon, UAS
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingEyesGlassesUAS
+    - id: ClothingHeadsetUAS
+    - id: ClothingOuterHardsuitSpider
+    - id: SuitProtectiveUAS
+    - id: UASClothingShoesBootsMag
+    - id: UASsatchelSpider
+    - id: PDASpiderUAS
+    - id: UASGlovesIsolate
+
+- type: entity
+  id: ClosetKnight
+  name: шкаф с снаряжением Рыцаря
+  parent: ClosetBaseUAS
+  suffix: StarHorizon, UAS
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingEyesGlassesUAS
+    - id: ClothingHeadsetUAS
+    - id: ClothingOuterHardsuitKnight
+    - id: SuitProtectiveUAS
+    - id: UASBoots
+    - id: UASsatchelKnight
+    - id: PDAKnightUAS
+    - id: UASGlovesIsolate

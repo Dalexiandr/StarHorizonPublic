@@ -1,0 +1,43 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: ???
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: reclaimer
+  parent: BaseVessel
+  name: NRZN Reclaimer
+  description: Списанный и восстановленный легендарный шаттл Утилизаторов.
+  price: 35000 # 28174, наценка верфи 20% = 33808
+  category: Small
+  group: Shipyard
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/reclaimer.yml
+  class:
+  - Salvage
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: reclaimer
+  mapName: 'NRZN Reclaimer'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/reclaimer.yml
+  minPlayers: 0
+  stations:
+    reclaimer:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Reclaimer {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

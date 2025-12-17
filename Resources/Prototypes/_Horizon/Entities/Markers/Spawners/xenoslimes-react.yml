@@ -1,0 +1,129 @@
+- type: entity
+  id: RandomCrayon
+  name: slime spawn
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - CrayonWhite
+      - CrayonMime
+      - CrayonRainbow
+      - CrayonBlack
+      - CrayonRed
+      - CrayonOrange
+      - CrayonYellow
+      - CrayonGreen
+      - CrayonBlue
+      - CrayonPurple
+    chance: 1
+
+- type: entity
+  id: RandomFood
+  name: slime spawn
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - FoodBurgerCheese
+      - FoodBurgerChicken
+      - FoodBurgerCrab
+      - FoodBurgerDuck
+      - FoodPizzaArnoldSlice
+      - FoodPizzaCottonSlice
+      - FoodPizzaMushroomSlice
+      - FoodPizzaPineappleSlice
+      - FoodPizzaMargheritaSlice
+    chance: 1
+
+- type: entity
+  id: RandomWater
+  name: slime spawn
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - DrinkDrGibbCan
+      - DrinkPwrGameCan
+      - DrinkEnergyDrinkCan
+      - DrinkGrapeCan
+      - DrinkRootBeerCan
+      - DrinkIcedTeaCan
+      - DrinkSolDryCan
+      - DrinkLemonLimeCan
+      - DrinkFourteenLokoCan
+    chance: 1
+
+- type: entity
+  id: RandomAnimalAgress
+  name: slime spawn
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - MobCarp
+      - MobCarpMagic
+      - MobCarpRainbow
+      - MobSpawnCrabQuartz
+      - MobSpawnCrabIron
+      - MobSpawnCrabSilver
+      - MobSpawnCrabUranium
+    chance: 1
+
+- type: entity
+  id: RandomAnimalNeut
+  name: slime spawn
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - MobMouse
+      - MobParrot
+      - MobPenguin
+      - MobCow
+      - MobGoose
+      - MobBee
+      - MobChicken1
+    chance: 1
+
+- type: entity
+  id: RandomAnimalFriend
+  name: slime spawn
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - MobParrot
+      - MobCat
+      - MobCatCaracal
+      - MobHamster
+    chance: 1

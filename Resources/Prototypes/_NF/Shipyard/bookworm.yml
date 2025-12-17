@@ -1,0 +1,57 @@
+# Author Info
+# GitHub: arimah
+# Discord: arimah
+
+# Maintainer Info
+# GitHub: arimah
+# Discord: arimah
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Bookworm
+  parent: BaseVessel
+  name: BB Bookworm
+  description: A cozy medium-size library for travellers who wish to relax with a book or perhaps a board game.
+  price: 29000 # ~26482 0.05 27806.1
+  category: Medium
+  group: Shipyard
+  shuttlePath: /Maps/_NF/Shuttles/bookworm.yml
+  guidebookPage: ShipyardBookworm
+  class:
+  - Civilian
+  engine:
+  - Plasma
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:FactionCostModifier
+      faction: "FactionFrontier"
+      costMultiplier: 0.9
+  # Horizon end
+
+
+- type: gameMap
+  id: Bookworm
+  mapName: 'BB Bookworm'
+  mapPath: /Maps/_NF/Shuttles/bookworm.yml
+  minPlayers: 0
+  stations:
+    Bookworm:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Bookworm {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

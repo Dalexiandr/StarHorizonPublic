@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CLA with hosting restrictions",
+    "copyright": "RavenAzala",
+    "states": [
+        {
+            "name": "base"
+        },
+        {
+            "name": "base-spent"
+        }
+    ]
+}

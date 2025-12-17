@@ -1,0 +1,11 @@
+- type: department
+  id: TraumaTeam
+  name: department-Trauma
+  description: department-Trauma-description
+  color: "#00ab86"
+  weight: -100
+  roles:
+  - TraumaMedTech
+  - TraumaParamedic
+  - TraumaRessurector
+  - TraumaRepresentative

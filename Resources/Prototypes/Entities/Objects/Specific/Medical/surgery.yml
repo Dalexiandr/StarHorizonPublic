@@ -1,0 +1,492 @@
+# Base
+
+- type: entity
+  parent: BaseItem
+  id: BaseToolSurgery
+  abstract: true
+  components:
+  - type: WorldItem
+  - type: Sprite
+  - type: StaticPrice
+    price: 20
+  - type: Tag
+    tags:
+    - SurgeryTool
+  - type: SurgeryTool
+
+# Cautery
+
+- type: entity
+  name: прижигатель
+  id: Cautery
+  parent: BaseToolSurgery
+  description: Хирургический инструмент, используемый для прижигания открытых ран.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/Surgery/cautery.rsi
+    state: cautery
+  - type: Item
+    sprite: Objects/Specific/Medical/Surgery/cautery.rsi
+    storedRotation: 90
+  - type: MeleeWeapon
+    damage:
+      types:
+        Heat: 5
+    soundHit:
+      path: /Audio/Effects/lightburn.ogg
+  - type: SurgeryTool
+    startSound:
+      path: /Audio/_Horizon/Medical/Surgery/cautery1.ogg
+    endSound:
+      path: /Audio/_Horizon/Medical/Surgery/cautery2.ogg
+  - type: Cautery
+
+- type: entity
+  name: кибернетический прижигатель
+  id: CauteryCyber
+  parent: Cautery
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/surgery.rsi
+    state: cautery
+  - type: SurgeryTool
+    speed: 0.5
+    startSound:
+      path: /Audio/_Horizon/Medical/Surgery/cautery1.ogg
+    endSound:
+      path: /Audio/_Horizon/Medical/Surgery/cautery2.ogg
+
+# Drill
+
+- type: entity
+  name: дрель
+  id: Drill
+  parent: BaseToolSurgery
+  description: Хирургическая дрель, используемая для проделывания отверстий в твёрдом материале.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/Surgery/drill.rsi
+    state: drill
+  - type: Item
+    sprite: Objects/Specific/Medical/Surgery/drill.rsi
+    shape:
+    - 0,0,1,0
+    - 1,1,1,1
+  - type: MeleeWeapon
+    damage:
+      types:
+        Piercing: 10
+    soundHit:
+      path: /Audio/Items/drill_hit.ogg
+  - type: StaticPrice
+    price: 40
+  - type: SurgeryTool
+    startSound:
+      path: /Audio/_Horizon/Medical/Surgery/saw.ogg
+  - type: SurgicalDrill
+
+- type: entity
+  name: кибернетическая дрель
+  id: DrillCyber
+  parent: Drill
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/surgery.rsi
+    state: drill
+  - type: SurgeryTool
+    speed: 0.5
+    startSound:
+      path: /Audio/_Horizon/Medical/Surgery/saw.ogg
+
+# Scalpel
+
+- type: entity
+  name: скальпель
+  id: Scalpel
+  parent: BaseToolSurgery
+  description: Хирургический инструмент, используемый для создания надрезов на плоти.
+  components:
+  - type: Sharp
+    butcherDelayModifier: 1.5 # Butchering with a scalpel, regardless of the type, will take 50% longer
+  - type: Tool
+    qualities:
+    - Slicing
+    speedModifier: 0.66 # pretend the sixes go on forever :)
+  - type: Utensil
+    types:
+    - Knife
+  - type: Sprite
+    sprite: Objects/Specific/Medical/Surgery/scalpel.rsi
+    state: scalpel
+  - type: Item
+    sprite: Objects/Specific/Medical/Surgery/scalpel.rsi
+    storedRotation: 90
+  - type: MeleeWeapon
+    wideAnimationRotation: 90
+    swingLeft: true
+    attackRate: 1.5
+    damage:
+      types:
+        Slash: 8
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Scalpel
+  - type: SurgeryTool
+    startSound:
+      path: /Audio/_Horizon/Medical/Surgery/scalpel1.ogg
+    endSound:
+      path: /Audio/_Horizon/Medical/Surgery/scalpel2.ogg
+
+- type: entity
+  name: кибернетический скальпель
+  id: ScalpelCyber
+  parent: Scalpel
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/surgery.rsi
+    state: scalpel
+  - type: SurgeryTool
+    speed: 0.2
+    startSound:
+      path: /Audio/_Horizon/Medical/Surgery/scalpel1.ogg
+    endSound:
+      path: /Audio/_Horizon/Medical/Surgery/scalpel2.ogg
+
+- type: entity
+  name: заточка
+  id: ScalpelShiv
+  parent: Scalpel
+  description: Заострённый кусочек стекла, отшлифованный по краю и обмотанный скотчем для создания ручки. # Could become a decent tool or weapon with right tool mods.
+  components:
+  - type: Sprite
+    state: shiv
+  - type: Item
+    heldPrefix: shiv
+  - type: SurgeryTool
+    speed: 1.4
+    startSound:
+      path: /Audio/_Horizon/Medical/Surgery/scalpel1.ogg
+    endSound:
+      path: /Audio/_Horizon/Medical/Surgery/scalpel2.ogg
+
+- type: entity
+  name: продвинутый скальпель
+  id: ScalpelAdvanced
+  parent: Scalpel
+  description: Изготовлен из более дорогих материалов, более острый и в целом более надежный.
+  components:
+  - type: Sprite
+    state: advanced
+  - type: Item
+    heldPrefix: advanced
+  - type: MeleeWeapon
+    damage:
+      types:
+        Slash: 12
+  - type: SurgeryTool
+    speed: 0.6
+    startSound:
+      path: /Audio/_Horizon/Medical/Surgery/scalpel1.ogg
+    endSound:
+      path: /Audio/_Horizon/Medical/Surgery/scalpel2.ogg
+
+- type: entity
+  name: лазерный скальпель
+  id: ScalpelLaser
+  parent: Scalpel
+  description: Скальпель, который использует для разрезания направленный лазер вместо лезвия, что делает операцию более точной и позволяет одновременно прижигать место разреза.
+  components:
+  - type: Sprite
+    state: laser
+  - type: Item
+    heldPrefix: laser
+  - type: Hemostat
+  - type: Cautery
+  - type: SurgeryTool
+    speed: 0.3
+    startSound:
+      path: /Audio/_Horizon/Medical/Surgery/scalpel1.ogg
+    endSound:
+      path: /Audio/_Horizon/Medical/Surgery/scalpel2.ogg
+
+# Scissors
+- type: entity
+  id: BaseScissors
+  parent: BaseToolSurgery
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/Surgery/scissors.rsi
+    state: retractor
+  - type: Item
+    sprite: Objects/Specific/Medical/Surgery/scissors.rsi
+    storedRotation: 90
+
+- type: entity
+  name: ретрактор
+  id: Retractor
+  parent: BaseScissors
+  description: Хирургический инструмент, используемый для удержания разрезов открытыми.
+  components:
+  - type: Retractor
+  - type: SurgeryTool
+    startSound:
+      path: /Audio/_Horizon/Medical/Surgery/retractor1.ogg
+    endSound:
+      path: /Audio/_Horizon/Medical/Surgery/retractor2.ogg
+
+- type: entity
+  name: продвинутый ретрактор
+  id: RetractorAdvanced
+  parent: Retractor
+  description: Хирургический инструмент, используемый для удержания разрезов открытыми.
+  components:
+  - type: Sprite
+    state: advanced-retractor
+  - type: Item
+    sprite: Objects/Specific/Medical/Surgery/scissors.rsi
+    storedRotation: 45
+  - type: SurgeryTool
+    speed: 0.6
+    startSound:
+      path: /Audio/_Horizon/Medical/Surgery/retractor1.ogg
+    endSound:
+      path: /Audio/_Horizon/Medical/Surgery/retractor2.ogg
+
+- type: entity
+  name: кибернетический ретрактор
+  id: RetractorCyber
+  parent: Retractor
+  description: A surgical tool used to hold open incisions.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/surgery.rsi
+    state: retractor
+  - type: SurgeryTool
+    speed: 0.4
+    startSound:
+      path: /Audio/_Horizon/Medical/Surgery/retractor1.ogg
+    endSound:
+      path: /Audio/_Horizon/Medical/Surgery/retractor2.ogg
+
+- type: entity
+  name: гемостат
+  id: Hemostat
+  parent: BaseScissors
+  description: Хирургический инструмент, используемый для сжатия кровеносных сосудов с целью предотвращения кровотечения.
+  components:
+  - type: Sprite
+    state: hemostat
+  - type: Item
+    heldPrefix: hemostat
+    storedRotation: 90
+  - type: SurgeryTool
+    endSound:
+      path: /Audio/_Horizon/Medical/Surgery/hemostat1.ogg
+  - type: Hemostat
+
+- type: entity
+  name: продвинутый гемостат
+  id: HemostatAdvanced
+  parent: Hemostat
+  description: Хирургический инструмент, используемый для сжатия кровеносных сосудов с целью предотвращения кровотечения.
+  components:
+  - type: Sprite
+    state: advanced-hemostat
+  - type: SurgeryTool
+    speed: 0.6
+    startSound:
+      path: /Audio/_Horizon/Medical/Surgery/hemostat1.ogg
+
+- type: entity
+  name: кибернетический гемостат
+  id: HemostatCyber
+  parent: Hemostat
+  description: A surgical tool used to compress blood vessels to prevent bleeding.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/surgery.rsi
+    state: hemostat
+  - type: SurgeryTool
+    speed: 0.4
+    startSound:
+      path: /Audio/_Horizon/Medical/Surgery/hemostat1.ogg
+
+- type: entity
+  name: костоправ
+  id: BoneSetter
+  parent: BaseScissors
+  description: Хирургический инструмент, используемый для манипулирования костями.
+  components:
+  - type: Sprite
+    state: setter
+  - type: Item
+    heldPrefix: setter
+    storedRotation: 90
+  - type: BoneSetter
+  - type: SurgeryTool
+    startSound:
+      path: /Audio/_Horizon/Medical/Surgery/bone_setter.ogg
+
+- type: entity
+  name: продвинутый костоправ
+  id: BoneSetterAdvanced
+  parent: BoneSetter
+  description: Хирургический инструмент, используемый для манипулирования костями. Также хорошо их ломает.
+  components:
+  - type: MeleeWeapon
+    damage:
+      groups:
+        Brute: 15
+  - type: Sprite
+    state: advanced-setter
+  - type: Item
+    heldPrefix: setter
+    storedRotation: 45
+  - type: SurgeryTool
+    speed: 0.6
+    startSound:
+      path: /Audio/_Horizon/Medical/Surgery/bone_setter.ogg
+
+- type: entity
+  name: кибернетический костоправ
+  id: BoneSetterCyber
+  parent: BoneSetter
+  description: A surgical tool used for setting bones. It also breaks them quite well.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/surgery.rsi
+    state: bonesetter
+  - type: SurgeryTool
+    speed: 0.4
+    startSound:
+      path: /Audio/_Horizon/Medical/Surgery/bone_setter.ogg
+# Saws
+
+- type: entity
+  name: металлическая пила
+  id: Saw
+  parent: BaseToolSurgery
+  description: Ей пилят дерево и другие предметы на куски. Ещё пилят кости, но только в случае крайней необходимости.
+  components:
+  - type: Sharp
+  - type: Utensil
+    types:
+    - Knife
+  - type: Sprite
+    sprite: Objects/Specific/Medical/Surgery/saw.rsi
+    state: saw
+  - type: Item
+    size: Normal
+    sprite: Objects/Specific/Medical/Surgery/saw.rsi
+    storedRotation: 90
+  - type: Tool
+    qualities:
+    - Sawing
+  - type: SurgeryTool
+    startSound:
+      path: /Audio/_Horizon/Medical/Surgery/bone_saw.ogg
+  - type: BoneSaw
+
+# No melee for regular saw because have you ever seen someone use a band saw as a weapon? It's dumb.
+
+- type: entity
+  name: резака
+  id: SawImprov
+  parent: Saw
+  description: Ужасный зазубренный клинок, сделанный из самых отвратительных острых предметов, какие только можно было найти. # It would make a pretty decent weapon, given there are more space for some tool mods too.
+  components:
+  - type: Sprite
+    state: improv
+  - type: Item
+    size: Small
+    heldPrefix: improv
+  - type: MeleeWeapon
+    damage:
+      groups:
+        Brute: 10
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Tool
+    speedModifier: 0.5
+  - type: SurgeryTool
+    speed: 0.8
+    startSound:
+      path: /Audio/_Horizon/Medical/Surgery/bone_saw.ogg
+  - type: BoneSaw
+
+- type: entity
+  name: циркулярная пила
+  id: SawElectric
+  parent: Saw
+  description: Для действительно тяжёлой резки.
+  components:
+  - type: Sprite
+    state: electric
+  - type: Item
+    heldPrefix: electric
+  - type: MeleeWeapon
+    damage:
+      groups:
+        Brute: 15
+    soundHit:
+      path: /Audio/Items/drill_hit.ogg
+  - type: Tool
+    speedModifier: 1.5
+  - type: SurgeryTool
+    speed: 0.5
+    startSound:
+      path: /Audio/_Horizon/Medical/Surgery/saw.ogg
+    endSound:
+      path: /Audio/Items/drill_hit.ogg
+
+- type: entity
+  name: продвинутая циркулярная пила
+  id: SawAdvanced
+  parent: [ BaseC3SyndicateContraband, SawElectric ] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband
+  description: Interdyne's state-of-the-art surgical saw. Guaranteed to stay spotless and sterile, no matter how messy the job.
+  components:
+  - type: Sprite
+    state: advanced
+  - type: Item
+    heldPrefix: advanced
+  - type: MeleeWeapon
+    attackRate: 1.5
+  - type: Tool
+    speedModifier: 2.0
+  - type: SurgeryTool
+    speed: 0.2
+    startSound:
+      path: /Audio/_Horizon/Medical/Surgery/saw.ogg
+    endSound:
+      path: /Audio/Items/drill_hit.ogg
+
+- type: entity
+  name: кибернетическая циркулярная пила
+  id: SawCyber
+  parent: SawElectric
+  description: You think you can cut anything with it.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/surgery.rsi
+    state: saw
+  - type: Tool
+    speedModifier: 0.4
+  - type: SurgeryTool
+    speed: 0.1
+    startSound:
+      path: /Audio/_Horizon/Medical/Surgery/saw.ogg
+    endSound:
+      path: /Audio/Items/drill_hit.ogg
+
+# BoneGel
+
+- type: entity
+  name: бутылка костного геля
+  id: BoneGel
+  parent: BaseToolSurgery
+  description: Контейнер для костного геля, который часто приходится заправлять в специализированном устройстве.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/Surgery/bone_gel.rsi
+    state: bone-gel
+  - type: BoneGel

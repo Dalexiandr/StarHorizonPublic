@@ -1,0 +1,287 @@
+- type: entity
+  parent: CentcomIDCard
+  id: ERTJuggernautIDCard
+  name: ID карта джаггернаута ОБР
+  description: Карта, необходимая для доступа в различные области станции.
+  suffix: StarHorizon
+  components:
+    - type: Sprite
+      sprite: _StarHorizon/Objects/Devices/ertjuggernautidcard.rsi
+      layers:
+        - state: ID_ERT_Juggernaut
+    - type: Item
+      heldPrefix: ID_ERT_Juggernaut
+
+- type: entity
+  parent: IDCardStandard
+  id: TraumaParamedicIDCard
+  name: ID карта парамедика Траумы
+  suffix: TraumaTeam
+  components:
+    - type: PresetIdCard
+      job: TraumaParamedic
+    - type: Sprite
+      sprite: _StarHorizon/Objects/Devices/traumaparamedic.rsi
+      layers:
+        - state: default
+        - state: idpilot
+    - type: Clothing
+      sprite: _StarHorizon/Objects/Devices/traumaparamedic.rsi
+
+- type: entity
+  parent: IDCardStandard
+  id: TraumaMedTechIDCard
+  name: ID карта медицинского техника Траумы
+  suffix: TraumaTeam
+  components:
+    - type: PresetIdCard
+      job: TraumaMedTech
+    - type: Sprite
+      sprite: _StarHorizon/Objects/Devices/traumamedtech.rsi
+      layers:
+        - state: default
+        - state: idpilot
+    - type: Clothing
+      sprite: _StarHorizon/Objects/Devices/traumamedtech.rsi
+
+- type: entity
+  parent: IDCardStandard
+  id: TraumaRessurectorIDCard
+  name: ID карта реаниматора Траумы
+  suffix: TraumaTeam
+  components:
+    - type: PresetIdCard
+      job: TraumaRessurector
+    - type: Sprite
+      sprite: _StarHorizon/Objects/Devices/traumaressurector.rsi
+      layers:
+        - state: default
+        - state: idpilot
+    - type: Clothing
+      sprite: _StarHorizon/Objects/Devices/traumaressurector.rsi
+
+- type: entity
+  parent: IDCardStandard
+  id: TraumaRepresentativeIDCard
+  name: ID карта представителя Траумы
+  suffix: TraumaTeam
+  components:
+    - type: PresetIdCard
+      job: TraumaRepresentative
+    - type: Sprite
+      sprite: _StarHorizon/Objects/Devices/traumarepresentative.rsi
+      layers:
+        - state: default
+        - state: idpilot
+    - type: Clothing
+      sprite: _StarHorizon/Objects/Devices/traumarepresentative.rsi
+
+- type: entity
+  parent: IDCardStandard
+  id: TraumaClientCardStandart
+  name: ID карта клиента Траумы
+  suffix: TraumaTeam
+  components:
+    - type: PresetIdCard
+      job: Contractor
+    - type: Sprite
+      sprite: _StarHorizon/Objects/Devices/traumastandart.rsi
+      layers:
+        - state: default
+        - state: idpilot
+    - type: Clothing
+      sprite: _StarHorizon/Objects/Devices/traumastandart.rsi
+
+- type: entity
+  parent: IDCardStandard
+  id: TraumaTraumaClientCardGold
+  name: ID карта клиента Траумы
+  suffix: TraumaTeam
+  components:
+    - type: PresetIdCard
+      job: Contractor
+    - type: Sprite
+      sprite: _StarHorizon/Objects/Devices/traumagold.rsi
+      layers:
+        - state: default
+        - state: idpilot
+    - type: Clothing
+      sprite: _StarHorizon/Objects/Devices/traumagold.rsi
+
+- type: entity
+  parent: IDCardStandard
+  id: TraumaTraumaClientCardPlatinum
+  name: ID карта клиента Траумы
+  suffix: TraumaTeam
+  components:
+    - type: PresetIdCard
+      job: Contractor
+    - type: Sprite
+      sprite: _StarHorizon/Objects/Devices/traumaplatinum.rsi
+      layers:
+        - state: default
+        - state: idpilot
+    - type: Clothing
+      sprite: _StarHorizon/Objects/Devices/traumaplatinum.rsi
+      
+- type: entity
+  parent: [IDCardStandard, BaseUASContraband]
+  id: UASStandartID
+  name: UASID
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Misc/uasidcard.rsi
+  - type: Clothing
+    slots:
+    - idcard
+    sprite: _Horizon/Objects/Misc/uasidcard.rsi
+  - type: Item
+    size: Small
+
+# Советник
+- type: entity
+  parent: UASStandartID
+  id: UASCounselorID
+  suffix: StarHorizon, UAS
+  categories: [ HideSpawnMenu ]
+  name: карта Совета UAS
+  description: Карта с необходимыми для членов UAS доступами.
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: counselor
+  - type: Item
+  - type: IdCard
+    jobTitle: Советник UAS
+    jobIcon: JobIconCounselorUAS
+  - type: Access
+    tags:
+    - Maintenance
+
+# Титан
+- type: entity
+  parent: UASStandartID
+  id: UASTitanID
+  suffix: StarHorizon, UAS
+  categories: [ HideSpawnMenu ]
+  name: карта офицера Титана UAS
+  description: Карта с необходимыми доступами для членов UAS
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: titan
+  - type: Item
+  - type: IdCard
+    jobTitle: Офицер Титан UAS
+    jobIcon: JobIconTitanUAS
+  - type: Access
+    tags:
+    - Maintenance
+
+# Паук
+- type: entity
+  parent: UASStandartID
+  id: UASSpiderID
+  suffix: StarHorizon, UAS
+  categories: [ HideSpawnMenu ]
+  name: карта офицера Паука UAS
+  description: Карта с необходимыми доступами для членов UAS
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: spider
+  - type: Item
+  - type: IdCard
+    jobTitle: Офицер Паук UAS
+    jobIcon: JobIconSpiderUAS
+  - type: Access
+    tags:
+    - Maintenance
+
+# Рыцарь
+- type: entity
+  parent: UASStandartID
+  id: UASKnightID
+  suffix: StarHorizon, UAS
+  categories: [ HideSpawnMenu ]
+  name: карта офицера Рыцаря UAS
+  description: Карта с необходимыми доступами для членов UAS
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: knight
+  - type: Item
+  - type: IdCard
+    jobTitle: Офицер Рыцарь UAS
+    jobIcon: JobIconKnightUAS
+  - type: Access
+    tags:
+    - Maintenance
+
+# Офицер
+- type: entity
+  parent: UASStandartID
+  id: UASOfficerID
+  suffix: StarHorizon, UAS
+  categories: [ HideSpawnMenu ]
+  name: карта Офицера UAS
+  description: Карта с необходимыми доступами для членов UAS
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: officer
+  - type: Item
+  - type: IdCard
+    jobTitle: Офицер UAS
+    jobIcon: JobIconOfficerUAS
+  - type: Access
+    tags:
+    - Maintenance
+
+# Кадет
+- type: entity
+  parent: UASStandartID
+  id: UASCadetID
+  suffix: StarHorizon, UAS
+  categories: [ HideSpawnMenu ]
+  name: карта кадета UAS
+  description: Карта с необходимыми доступами для членов UAS
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: cadet
+  - type: Item
+  - type: IdCard
+    jobTitle: Кадет UAS
+    jobIcon: JobIconCadetUAS
+  - type: Access
+    tags:
+    - Maintenance
+
+# Рипсоид, не спрашивайте кто это такой, это трансбот
+- type: entity
+  parent: UASStandartID
+  id: UASRipsoidID
+  suffix: StarHorizon, UAS
+  categories: [ HideSpawnMenu ]
+  name: карта Рипсоида UAS
+  description: Карта с необходимыми доступами для членов UAS
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: ripsoid
+  - type: Item
+  - type: IdCard
+    jobTitle: Рипсоид UAS
+    jobIcon: JobIconRipsoidUAS
+  - type: Access
+    tags:
+    - Maintenance

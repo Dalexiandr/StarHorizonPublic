@@ -1,0 +1,420 @@
+
+# Темень
+- type: reagent
+  id: Darknes
+  name: Темень
+  desc: Вещество похожее на смолу, является крайне нестабильным 
+  physicalDesc: мерзкое
+  flavor: bitter
+  color: "#292629"
+  boilingPoint: 55.5
+  meltingPoint: -50.0
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Asphyxiation: -2.5 
+            Bloodloss: 2.5
+            Poison: -5
+
+- type: reaction
+  id: EmptinessCentrifuge
+  source: true
+  requiredMixerCategories:
+  - Centrifuge
+  reactants:
+    Darknes:
+      amount: 10
+  products:
+    Iron: 4 # Железо
+    Emptiness: 4 # Пустота 
+    Silicon: 2 # Кремний 
+
+- type: reaction
+  id: EmptinessOmniCentrifuge
+  source: true
+  requiredMixerCategories:
+  - Centrifuge
+  reactants:
+    EmptinessOmni:
+      amount: 10
+  products:
+    Hydroxide: 3
+    ProtoDark: 1
+
+    # ... 
+ 
+
+- type: reaction
+  id: EmptinessOmni
+  impact: Medium
+  minTemp: 335
+  reactants: 
+    Emptiness: # Пустота
+      amount: 3
+    Omnizine: # Омнизин 
+      amount: 1
+    Hydroxide: # Гидроксид
+      amount: 1
+  products:
+    EmptinessOmni: 3
+
+- type: reaction
+  id: EmptinessPlasma
+  reactants:
+    Emptiness:
+      amount: 1
+    Plasma:
+      amount: 1
+  effects:
+  - !type:CreateGas
+    gas: Plasma
+  - !type:PopupMessage
+    visualType: LargeCaution
+    messages: [ "phlogiston-plasma-created" ]
+    type: Pvs
+  products:
+    EmptinessPlasma: 2
+
+- type: reaction
+  id: EmptinessOmega
+  impact: Medium
+  minTemp: 335
+  reactants:
+    EmptinessPlasma:
+      amount: 1
+    ProtoDark:
+      amount: 1
+    Plasma:
+      amount: 5
+  effects:
+  - !type:CreateGas
+    gas: Plasma
+  - !type:PopupMessage
+    visualType: LargeCaution
+    messages: [ "phlogiston-plasma-created" ]
+    type: Pvs
+  products:
+    EmptinessOmega: 0.5
+
+
+# region Чистая пустота 
+- type: reagent
+  id: EmptinessOmega
+  name: Текучая Бездна
+  desc: Светопоглощающая жидкость словно живущая свою жизнь.. Она постоянно изменяется и кажется властна над гравитацией, абсолютно черное вещество крайне липкое на ощупь.. На вкус наверное лучше не пробывать 
+  physicalDesc: завораживающее
+  flavor: bitter
+  color: "#000000"
+  boilingPoint: 55.5
+  meltingPoint: -50.0
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: -15
+            Poison: 5
+            Cellular: 8.5
+      - !type:FlammableReaction
+        multiplier: 0.1
+      - !type:AdjustTemperature
+        amount: 6000
+      - !type:Ignite
+      - !type:Emote
+        emote: Scream
+        probability: 0.9
+      - !type:MovespeedModifier
+        conditions:
+        - !type:ReagentThreshold
+          min: 0.1
+          max: 35
+        walkSpeedModifier: 0.80
+        sprintSpeedModifier: 0.80
+      - !type:AdjustReagent            
+        conditions:                
+        - !type:ReagentThreshold     
+          reagent: EmptinessOmega
+          min: 0.1
+          max: 35
+        reagent: Cryptobiolin
+        amount: 5
+
+  reactiveEffects:
+    Flammable:
+      methods: [ Touch ]
+      effects:
+      - !type:FlammableReaction
+        multiplier: 0.5
+      - !type:Ignite
+
+# region Нестабильная пустота
+- type: reagent
+  id: EmptinessPlasma
+  name: Нестабильная пустота 
+  desc: Смесь пустоты и плазмы. Крайне нестабильное вещество способное на многое.. 
+  physicalDesc: омерзительное
+  flavor: bitter
+  color: "#31082a"
+  boilingPoint: 55.5
+  meltingPoint: -50.0
+  metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: 3
+            Poison: 1
+            Cellular: 3 
+      - !type:FlammableReaction
+        multiplier: 0.1
+      - !type:AdjustTemperature
+        amount: 6000
+      - !type:Ignite
+      - !type:Emote
+        emote: Scream
+        probability: 0.9
+  reactiveEffects:
+    Flammable:
+      methods: [ Touch ]
+      effects:
+      - !type:FlammableReaction
+        multiplier: 0.5
+      - !type:Ignite
+# region Прото-Нулевая Жидкость 
+- type: reagent
+  id: ProtoDark
+  name: Прото-Нулевая жидкость 
+  desc: Неизвестного состава вещество добытое явно большими усилиями. 
+  physicalDesc: любопытное.. 
+  flavor: bitter
+  color: "#271414"
+  boilingPoint: 55.5
+  meltingPoint: -50.0
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: 2.5 
+            Cellular: -2.5
+      - !type:HealthChange
+          conditions:
+          - !type:Temperature
+            max: 180.0
+          damage:
+            types:
+             Cellular: -5
+  reactiveEffects:
+    Flammable:
+      methods: [ Touch ]
+      effects:
+      - !type:FlammableReaction
+        multiplier: 0.2
+      - !type:Ignite
+
+# region Прото Пустота 
+
+- type: reagent
+  id: EmptinessOmni
+  name: Облачная жидкость 
+  desc: Смесь пустоты и омнизина.. Любопытная байда 
+  physicalDesc: омерзительное
+  flavor: bitter
+  color: "#777777"
+  boilingPoint: 55.5
+  meltingPoint: -50.0
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: -2.5 
+            Shock: -2.5 
+            Asphyxiation: -1.5 
+            Bloodloss: -1.5
+            Poison: -1.5 
+
+# region Омнивений 
+
+- type: reaction
+  id: Omnioblivion
+  impact: Medium
+  minTemp: 335
+  reactants: 
+    EmptinessOmni: # Облачная жидкость
+      amount: 1
+    Ichor: # Ихор
+      amount: 5
+    EmptinessOmega: # Чистая пустота 
+      amount: 1
+    Blood: # Кровь
+      amount: 1 
+  products:
+    Omnioblivion: 1
+    Blood: 1
+
+- type: reagent
+  id: Omnioblivion
+  name: Омнивений 
+  desc: Сильнейшее средство против Забвения, концентрированная пустота вместе с омнизином - рецепт этого вещества. Является крайне мощным лекарством стимулирующее быстрый рост клеток и ликвидацию мутаций на уровне вашего ДНК. 
+  physicalDesc: кисло-молочный
+  flavor: bitter
+  color: "#e9eb6d"
+  boilingPoint: 55.5
+  meltingPoint: -50.0
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:ModifyBloodLevel
+        amount: 3
+      - !type:HealthChange
+        damage:
+          groups:
+            Burn: -5.5
+            Brute: -5.5
+            Toxin: -5.5
+          types:
+            Bloodloss: -5
+            Cellular: -2
+      - !type:ModifyBleedAmount
+        amount: -1.5
+      - !type:MovespeedModifier
+        conditions:
+        - !type:ReagentThreshold
+          min: 0.1
+          max: 35
+        walkSpeedModifier: 1.25
+        sprintSpeedModifier: 1.25
+      - !type:AdjustReagent            
+        conditions:                
+        - !type:ReagentThreshold     
+          reagent: Omnioblivion
+          min: 0.1
+          max: 35
+        reagent: Omnioblivion
+        amount: 0.4
+
+# region Пустота 
+
+- type: reagent
+  id: Emptiness
+  name: Пустота
+  desc: Абсолютно черная полупрозрачная жидкость.. На вкус и запах лучше видимо не пробывать
+  physicalDesc: омерзительное
+  flavor: bitter
+  color: "#000000"
+  boilingPoint: 55.5
+  meltingPoint: -50.0
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Asphyxiation: 2.5 
+            Bloodloss: 2.5
+            Poison: 2.5
+            Caustic: 2.5 
+            Cellular: 2.5 
+      - !type:PopupMessage
+        type: Local
+        visualType: LargeCaution
+        messages: [ "generic-reagent-effect-slicing-insides"]
+        probability: 0.33
+      - !type:Emote
+        emote: Scream
+        probability: 0.3
+
+
+- type: reaction
+  id: Emptiness
+  reactants: 
+    Darknes: # Темень
+      amount: 5
+    Blood: # Кровь
+      amount: 1
+  products:
+    Emptiness: 1
+
+- type: reaction
+  id: Emptinessp
+  impact: Medium
+  minTemp: 335
+  reactants: 
+    Darknes: # Темень
+      amount: 5
+    Plasma: # плазма
+      amount: 1
+  effects:
+  - !type:CreateGas
+    gas: Plasma
+  - !type:PopupMessage
+    visualType: LargeCaution
+    messages: [ "phlogiston-plasma-created" ]
+    type: Pvs
+  products:
+    Emptiness: 1
+
+- type: reaction
+  id: EmptinesU
+  impact: High
+  priority: 20
+  reactants: 
+    Darknes: # Темень
+      amount: 5
+    UnstableMutagen: # Нестабильный мутаген
+      amount: 1
+  effects:
+    - !type:ExplosionReactionEffect
+      explosionType: Default
+      maxIntensity: 100
+      intensityPerUnit: 0.5 # 50+50 reagent for maximum explosion
+      intensitySlope: 4
+      maxTotalIntensity: 100
+  products:
+    Emptiness: 3
+
+- type: reaction
+  id: EmptinessPP
+  priority: 10
+  impact: High
+  reactants: 
+    Phosphorus:
+      amount: 1
+    Darknes: # Темень
+      amount: 5
+    Blood: # Кровь
+      amount: 1
+  effects:
+    - !type:AreaReactionEffect
+      duration: 10
+      prototypeId: Smoke
+      sound:
+        path: /Audio/Effects/smoke.ogg
+  products:
+    Emptiness: 1
+
+- type: reaction
+  id: EmptinessFoam
+  priority: 10
+  impact: High
+  reactants:
+    Fluorosurfactant: # Хуйня которая пену делает 
+      amount: 1
+    Darknes: # Темень
+      amount: 5
+  effects:
+    - !type:AreaReactionEffect
+      duration: 10
+      prototypeId: Foam
+      sound:
+        path: /Audio/Effects/extinguish.ogg
+  products:
+    Emptiness: 1

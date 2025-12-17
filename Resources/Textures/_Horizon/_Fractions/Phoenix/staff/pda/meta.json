@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Phoenix Initiative",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "pda",
+      "directions": 1,
+      "frames": 1
+    },
+    {
+      "name": "light_overlay",
+      "directions": 1,
+      "frames": 1
+    },
+    {
+      "name": "id_overlay",
+      "directions": 1,
+      "frames": 1
+    }
+  ]
+}

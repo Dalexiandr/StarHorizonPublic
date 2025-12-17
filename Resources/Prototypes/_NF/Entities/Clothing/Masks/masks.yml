@@ -1,0 +1,131 @@
+- type: entity
+  id: ClothingMaskArcadia
+  name: arcadia battle mask
+  parent: [ ClothingMaskGasExplorer, BaseC3ContrabandNoValue, ContrabandClothing ]
+  description: A close-fitting high tech mask designed by Arcadia Industries for spacefaring operators.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Mask/arcadia.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Mask/arcadia.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: [PlushieXeno, ClothingMaskBase]
+  id: FaceHuggerPlushie
+  name: facehugger plushie
+  description: The perfect plushie to scare your friends with aliens!
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Mask/facehuggerplushie.rsi
+    state: icon
+  - type: Clothing
+    sprite: _NF/Clothing/Mask/facehuggerplushie.rsi
+  - type: IdentityBlocker
+  - type: IngestionBlocker
+  - type: AddAccentClothing
+    accent: ReplacementAccent
+    replacement: mumble
+
+- type: entity
+  parent: ClothingMaskGas
+  id: ClothingMaskPilot
+  name: pilot breath mask
+  description: A close-fitting breath mask designed for, it would seem, minimal comfort for the wearer.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Mask/pilot.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Mask/pilot.rsi
+  - type: IdentityBlocker
+    coverage: MOUTH
+
+- type: entity
+  parent: [ BaseC2ContrabandUnredeemable, ClothingMaskGasSecurity ]
+  id: ClothingMaskGasNfsd
+  name: NFSD gas mask
+  description: A standard issue NFSD gas mask.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Mask/nfsd.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Mask/nfsd.rsi
+  - type: CatWearable
+
+- type: entity
+  parent: [ BaseC2ContrabandUnredeemable, ClothingMaskGasSwat ]
+  id: ClothingMaskGasSheriff
+  name: NFSD sheriff gas mask
+  description: A gas mask worthy of a sheriff.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Mask/nfsd_sheriff.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Mask/nfsd_sheriff.rsi
+
+- type: entity
+  parent: [ BaseC3CultContrabandUnredeemable, ContrabandClothing, ClothingMaskGasExplorer ]
+  id: ClothingMaskCultJanitor
+  name: cult janitor mask
+  description: A close-fitting, imposing breath mask designed for accursed custodians who value style.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Mask/cult_janitor_mask.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Mask/cult_janitor_mask.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  id: ClothingMaskPunkHalf
+  parent: [ ClothingMaskGasExplorer, RecyclableItemClothDevice ]
+  name: punk halfmask
+  description: A close-fitting breath mask with gamer lights!
+  suffix: Random visuals
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Mask/punkhalfmask.rsi
+    layers:
+    - state: icon-base-mask
+      map: [ "mask_main" ]
+    - state: icon-decor-mask
+      map: [ "mask_decor" ]
+      shader: unshaded
+  - type: Clothing
+    sprite: _NF/Clothing/Mask/punkhalfmask.rsi
+    clothingVisuals:
+      mask:
+      - state: equipped-MASK
+        map: [ "clothing_mask_main" ]
+      - state: decor-equipped-MASK
+        map: [ "clothing_mask_decor" ]
+        shader: unshaded
+  - type: RandomSprite
+    available:
+    - mask_main:
+        icon-base-mask: Base
+      clothing_mask_main:
+        equipped-MASK: Base
+      mask_decor:
+        icon-decor-mask: Decor
+      clothing_mask_decor:
+        decor-equipped-MASK: Decor
+    mappedColors:
+      Base: CyberpunkDark
+      Decor: CyberpunkNeon
+  - type: IdentityBlocker
+    coverage: MOUTH
+
+- type: entity
+  parent: ClothingMaskClown
+  id: ClothingMaskClownBald
+  name: clown mask
+  description: If clowning doesn't work out, maybe you can rob a bank.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Mask/clown_bald.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Mask/clown_bald.rsi

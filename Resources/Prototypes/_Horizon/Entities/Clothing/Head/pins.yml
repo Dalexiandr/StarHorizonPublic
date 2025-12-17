@@ -1,0 +1,74 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCosmoCrown
+  name: корона звёзд
+  description: Корона усыпанная звёздами
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Head/Misc/cosmocrown.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Head/Misc/cosmocrown.rsi
+    clothingVisuals:
+      head:
+      - state: equipped-HELMET
+      - state: equipped-HELMET-unshed
+        shader: unshaded
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatStarpin
+  name: заколка звёздочка
+  description: Звезда светится в ваших волосах
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Head/Misc/starpin.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Head/Misc/starpin.rsi
+    clothingVisuals:
+      head:
+      - state: equipped-HELMET
+        shader: unshaded
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatFata
+  name: фата
+  description: Свадебное украшение.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Head/Misc/fata.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Head/Misc/fata.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatDressMask
+  name: украшенная маска
+  description: То, что нужно для маскарада.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Head/Misc/dressmask.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Head/Misc/dressmask.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretDress
+  name: черный берет
+  description: Красивый берет для красивых дам.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Head/Misc/beret.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Head/Misc/beret.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatRedFlowerDress
+  name: красный бальный цветок
+  description: Красивая красная лилия для волос.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Head/Misc/redflowerdress.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Head/Misc/redflowerdress.rsi

@@ -1,0 +1,38 @@
+# Remap
+
+# Author Info
+# GitHub: cheackraze
+
+# Shuttle Notes:
+- type: vessel
+  id: Barnacle
+  parent: BaseVesselAntag
+  name: Barnacle
+  description: 'Nobody expects the lowly barnacle'
+  price: 35000 # 26643, наценка верфи 25% = 33303,75
+  category: Small
+  group: BlackMarket
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/BlackMarket/barnacle.yml
+  guidebookPage: Null
+  class:
+  - Pirate
+  engine:
+  - Plasma
+
+- type: gameMap
+  id: Barnacle
+  mapName: 'Barnacle'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/BlackMarket/barnacle.yml
+  minPlayers: 0
+  stations:
+    Barnacle:
+      stationProto: StandardFrontierAntagVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Prospector {1}' # Fake name eh?
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: 
+            NFPirate: [ 0, 0 ]

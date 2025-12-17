@@ -1,0 +1,77 @@
+# Author Info
+# GitHub: ThatOneGoblin25 (https://github.com/ThatOneGoblin25)
+# Discord: ???
+
+# Shuttle Notes:
+# Engineering & Medical ship.
+- type: vessel
+  id: Eagle
+  parent: BaseVessel
+  name: NM Eagle
+  description: "A modern, medium-sized engineering & medical vessel. Focused on responding to shuttle distress, the Eagle comes equipped to restore most crew and shuttles to good health."
+  price: 62500 # 52038 0.2 62445.6
+  category: Medium
+  group: Medical
+  shuttlePath: /Maps/_NF/Shuttles/eagle.yml
+  guidebookPage: ShipyardEagle
+  class:
+  - Medical
+  - Engineering
+  engine:
+  - Uranium
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:RoleModifier
+      role: "PlantTechnician"
+      costMultiplier: 0.9
+    - !type:RoleModifier
+      role: "PlantManager"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionEdison"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionLVHI"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionUAC"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionNakamura"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionMed"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionFSB"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionCCC"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: Eagle
+  mapName: 'NM Eagle'
+  mapPath: /Maps/_NF/Shuttles/eagle.yml
+  minPlayers: 0
+  stations:
+    Eagle:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Eagle {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

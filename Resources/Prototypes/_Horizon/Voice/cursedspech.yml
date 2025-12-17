@@ -1,0 +1,37 @@
+﻿- type: speechSounds
+  id: CursedSpech
+  saySound:
+    collection: CursedSaySpeech
+  askSound:
+    collection: CursedAskSpeech
+  exclaimSound:
+    collection: CursedExclaimSpeech
+
+- type: soundCollection
+  id: CursedSaySpeech
+  files:
+  - /Audio/_Horizon/SoundCollection/Cursed/say1.ogg
+  - /Audio/_Horizon/SoundCollection/Cursed/say2.ogg
+  - /Audio/_Horizon/SoundCollection/Cursed/say3.ogg
+  - /Audio/_Horizon/SoundCollection/Cursed/say4.ogg
+  - /Audio/_Horizon/SoundCollection/Cursed/say5.ogg
+  - /Audio/_Horizon/SoundCollection/Cursed/say6.ogg
+  - /Audio/_Horizon/SoundCollection/Cursed/say7.ogg
+
+- type: soundCollection
+  id: CursedExclaimSpeech
+  files:
+  - /Audio/_Horizon/SoundCollection/Cursed/exclaim1.ogg
+  - /Audio/_Horizon/SoundCollection/Cursed/exclaim2.ogg
+  - /Audio/_Horizon/SoundCollection/Cursed/exclaim3.ogg
+  - /Audio/_Horizon/SoundCollection/Cursed/exclaim4.ogg
+  - /Audio/_Horizon/SoundCollection/Cursed/exclaim5.ogg
+  - /Audio/_Horizon/SoundCollection/Cursed/exclaim6.ogg
+  - /Audio/_Horizon/SoundCollection/Cursed/exclaim7.ogg
+
+- type: soundCollection
+  id: CursedAskSpeech
+  files:
+  - /Audio/_Horizon/SoundCollection/Cursed/ask1.ogg
+  - /Audio/_Horizon/SoundCollection/Cursed/ask2.ogg
+  - /Audio/_Horizon/SoundCollection/Cursed/ask3.ogg

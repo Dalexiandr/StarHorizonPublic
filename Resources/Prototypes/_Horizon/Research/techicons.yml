@@ -1,0 +1,89 @@
+- type: entity
+  parent: BaseItem
+  id: TechCyberBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Tools/cyberling.rsi
+    state: bonesetter
+
+- type: entity
+  parent: BaseItem
+  id: TechCyberArmImplants
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Tools/cyberling.rsi
+    state: saw
+
+- type: entity
+  parent: BaseItem
+  id: TechCyberArmAdvanced
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Tools/cyberling.rsi
+    state: screwdriver
+
+- type: entity
+  parent: BaseItem
+  id: TechCyberArmCombat
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Tools/cyberling.rsi
+    state: indwelder
+
+- type: entity
+  parent: BaseItem
+  id: TechRail
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Attachments/under.rsi
+    state: tech_rail
+
+- type: entity
+  parent: BaseItem
+  id: TechUnder
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Attachments/under.rsi
+    state: tech_under
+
+- type: entity
+  parent: BaseItem
+  id: TechUpper
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Attachments/under.rsi
+    state: tech_upper
+
+- type: entity
+  parent: BaseItem
+  id: TechCombatLimbsBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Tools/cyberling.rsi
+    state: taser
+
+- type: entity
+  parent: BaseItem
+  id: TechCombatLimbsAdvanced
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Tools/cyberling.rsi
+    state: laser_cyborg
+
+- type: entity
+  parent: BaseItem
+  id: TechCombatLimbsClose
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Tools/cyberling.rsi
+    state: fingerblades

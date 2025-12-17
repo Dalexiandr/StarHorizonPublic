@@ -1,0 +1,57 @@
+# Remap
+
+# Author Info
+# GitHub: OneZerooo0
+# Discord: onezero00
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Magus
+  parent: BaseVessel
+  name: SHM Magus
+  description: Бронированный медицинский шатл,способный к планетарным экспедициям
+  price: 60000 # ~20,000$ markup
+  category: Medium
+  group: Expedition
+  shuttlePath: /Maps/_Mono/Shuttles/Expedition/magus.yml
+  guidebookPage: null
+  class:
+  - Expedition
+  engine:
+  - AME
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:FactionCostModifier
+      faction: "FactionSIU"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionArcadia"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: Magus
+  mapName: 'Magus'
+  mapPath: /Maps/_Mono/Shuttles/Expedition/magus.yml
+  minPlayers: 0
+  stations:
+    Magus:
+      stationProto: StandardFrontierExpeditionVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Magus EXP{1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

@@ -1,0 +1,142 @@
+# Base prototypes
+
+- type: latheRecipe
+  abstract: true
+  id: BaseMechPartRecipe
+  category: Mech
+  completetime: 10
+
+# Recipes
+
+# Horizon Mech start
+
+# Ripley
+- type: latheRecipe
+  parent: BaseMechPartRecipe
+  id: RipleyHarness
+  result: RipleyHarness
+  materials:
+    Steel: 2200
+    Glass: 400
+
+- type: latheRecipe
+  parent: BaseMechPartRecipe
+  id: RipleyLArm
+  result: RipleyLArm
+  materials:
+    Steel: 800
+
+- type: latheRecipe
+  parent: RipleyLArm
+  id: RipleyLLeg
+  result: RipleyLLeg
+
+- type: latheRecipe
+  parent: RipleyLLeg
+  id: RipleyRLeg
+  result: RipleyRLeg
+
+- type: latheRecipe
+  parent: RipleyLArm
+  id: RipleyRArm
+  result: RipleyRArm
+
+- type: latheRecipe
+  parent: BaseMechPartRecipe
+  id: MechEquipmentGrabber
+  result: MechEquipmentGrabber
+  materials:
+    Steel: 600
+
+# H.O.N.K.
+- type: latheRecipe
+  parent: BaseMechPartRecipe
+  id: HonkerHarness
+  result: HonkerHarness
+  materials:
+    Steel: 2200
+    Glass: 600
+    Bananium: 600
+
+- type: latheRecipe
+  parent: BaseMechPartRecipe
+  id: HonkerLArm
+  result: HonkerLArm
+  materials:
+    Steel: 600
+    Bananium: 300
+
+- type: latheRecipe
+  parent: HonkerLArm
+  id: HonkerLLeg
+  result: HonkerLLeg
+
+- type: latheRecipe
+  parent: HonkerLLeg
+  id: HonkerRLeg
+  result: HonkerRLeg
+
+- type: latheRecipe
+  parent: HonkerLArm
+  id: HonkerRArm
+  result: HonkerRArm
+
+- type: latheRecipe
+  parent: BaseMechPartRecipe
+  id: MechEquipmentHorn
+  result: MechEquipmentHorn
+  materials:
+    Steel: 1100
+    Bananium: 600
+
+# HAMTR
+- type: latheRecipe
+  parent: BaseMechPartRecipe
+  id: HamtrHarness
+  result: HamtrHarness
+  materials:
+    Steel: 600
+    Glass: 500
+
+- type: latheRecipe
+  parent: BaseMechPartRecipe
+  id: HamtrLArm
+  result: HamtrLArm
+  materials:
+    Steel: 400
+    Glass: 300
+
+- type: latheRecipe
+  parent: HamtrLArm
+  id: HamtrLLeg
+  result: HamtrLLeg
+
+- type: latheRecipe
+  parent: HamtrLLeg
+  id: HamtrRLeg
+  result: HamtrRLeg
+
+- type: latheRecipe
+  parent: HamtrLArm
+  id: HamtrRArm
+  result: HamtrRArm
+
+- type: latheRecipe
+  parent: BaseMechPartRecipe
+  id: MechEquipmentGrabberSmall
+  result: MechEquipmentGrabberSmall
+  materials:
+    Steel: 400
+    Plastic: 100
+
+# Vim
+- type: latheRecipe
+  parent: BaseMechPartRecipe
+  id: VimHarness
+  result: VimHarness
+  completetime: 5
+  materials:
+    Steel: 500
+    Glass: 200
+
+# Horizon Mech end

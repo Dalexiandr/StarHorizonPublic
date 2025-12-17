@@ -1,0 +1,412 @@
+- type: entity
+  parent: [ClothingHeadHardsuitBase, BaseUASContraband, BaseToggleClothing]
+  id: ClothingHeadHardsuitSpider
+  categories: [ HideSpawnMenu ]
+  name: шлем офицера Паука UAS
+  description: Прочный, похожий на леденец шлем.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/uasspiderh.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/uasspiderh.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
+  - type: ToggleClothing
+    action: UASToggleInvisibilitySpider
+  - type: ComponentToggler
+    parent: true
+    components:
+    - type: Stealth
+      hadOutline: true
+    - type: StealthOnMove
+      minVisibility: -1
+      passiveVisibilityRate: -0.37
+      movementVisibilityRate: 1
+
+- type: entity
+  parent: [NFClothingHeadHardsuitWithLightBase, BaseUASContraband]
+  id: ClothingHeadHardsuitTitan
+  categories: [ HideSpawnMenu ]
+  name: шлем офицера Титана UAS
+  description: Шлем, сделанный из пластин чрезвычайно прочного материала. В нём Вы чувствуете себя, как в танке.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/uastitanh.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/uastitanh.rsi
+  - type: PointLight
+    color: "#B30E0E"
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
+
+- type: entity
+  parent: [NFClothingHeadHardsuitWithLightBase, BaseUASContraband]
+  id: ClothingHeadHardsuitKnight
+  categories: [ HideSpawnMenu ]
+  name: шлем офицера Рыцаря UAS
+  description: Шлем скафандра Паука с дополнительной бронёй.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/uasknighth.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/uasknighth.rsi
+  - type: PointLight
+    color: "#F05A5A"
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.90
+        Radiation: 0.85
+        Caustic: 0.90
+
+- type: entity
+  parent: ClothingHeadHardsuitBase
+  id: ClothingHeadHelmetHardsuitCentcom
+  name: шлем скафандра Центком
+  description: Специализированный шлем для скафандра Центком.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/centspace.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/centspace.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.8
+        Radiation: 0.90
+        Caustic: 0.90
+
+- type: entity
+  parent: ClothingHeadHelmetHardsuitSyndieElite
+  id: ClothingHeadHelmetHardsuitShadowDark
+  categories: [ HideSpawnMenu ]
+  name: шлем теневой мглы
+  description: Переливающиеся фиолетовым цветом шлем, кажется... или он пропитан темной энергией?
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/shadowdark.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/shadowdark.rsi
+  - type: PointLight
+    color: violet
+    radius: 7
+    energy: 3
+
+- type: entity
+  parent: ClothingHeadHelmetHardsuitERTLeader
+  id: ClothingHeadHelmetHardsuitBlueshield
+  name: шлем скафандра офицера "Синий щит"
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/blueshield.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/blueshield.rsi
+  - type: PointLight
+    color: blue
+
+- type: entity
+  parent: [ NFClothingHeadHardsuitWithLightBase ]
+  id: ClothingHeadHelmetHardsuitSpacerOld
+  name: древний шлем
+  description: древний шлем
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/old.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/old.rsi
+  - type: PointLight
+    color: "#ffdbad"
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+
+- type: entity
+  parent: [ ClothingHeadHardsuitBase ]
+  id: ClothingHeadHelmetHardsuitIndeep1
+  name: глубинный шлем
+  description: защищает от всего
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/indeep.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/indeep.rsi
+  - type: PNV
+    color: "#CC5500"
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+
+- type: entity
+  parent: [ NFClothingHeadHardsuitWithLightBase ]
+  id: ClothingHeadHelmetHardsuitIndeep2
+  name: глубинный шлем медика
+  description: защищает от всего
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/indeep2.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/indeep2.rsi
+  - type: PointLight
+    color: "#CC5500"
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+
+- type: entity
+  parent: [ NFClothingHeadHardsuitWithLightBase ]
+  id: ClothingHeadHelmetHardsuitFight
+  name: боевой шлем
+  description: старая модель
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/fight.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/fight.rsi
+  - type: PointLight
+    color: "#F4C430"
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+
+
+- type: entity
+  parent: [ NFClothingHeadHardsuitWithLightBase ]
+  id: ClothingHeadHelmetHardsuitExperementalSyndy
+  name: эксперементальный шлем
+  description: прочный,удобный,красивый
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/syndicateramzi.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/syndicateramzi.rsi
+  - type: PointLight
+    color: "#F4C430"
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+
+- type: entity
+  parent: [ NFClothingHeadHardsuitWithLightBase ]
+  id: ClothingHeadHelmetHardsuitCybersunResearch
+  name: шлем скафандра ученого киберсан
+  description: красный шлем,выглядит опасно
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/cybersunhelmet.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/cybersunhelmet.rsi
+  - type: PointLight
+    color: "#FFF5EE"
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+
+- type: entity
+  parent: [ NFClothingHeadHardsuitWithLightBase ]
+  id: ClothingHeadHelmetHardsuitNukeDark
+  name: шлем отступника
+  description: черный как и душа
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/corpsec.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/corpsec.rsi
+  - type: PointLight
+    color: "#FFA812"
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+
+- type: entity
+  parent: [ ClothingHeadHardsuitBase ]
+  id: ClothingHeadHelmetHardsuitHunter
+  name: шлем охотника
+  description: снабжен ПНВ
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/hardsuit.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/hardsuit.rsi
+  - type: PNV
+    color: "#CC5500"
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+
+- type: entity
+  parent: [ ClothingHeadHardsuitBase ]
+  id: ClothingHeadHelmetHardsuitHunterElite
+  name: элитный шлем охотника
+  description: снабжен ПНВ
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/hardsuitelite.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/hardsuitelite.rsi
+  - type: PNV
+    color: "#CC5500"
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+
+- type: entity
+  parent: [ ClothingHeadHardsuitBase ]
+  id: ClothingHeadHelmetHardsuitNano
+  name: продвинутый шлем
+  description: снабжен ПНВ
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/zhanshi.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/zhanshi.rsi
+  - type: PNV
+    color: "#CC5500"
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+
+#region Trauma
+#Trauma EVA
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: TraumaTeamHelmet
+  name: EVA шлем парамедика траумы
+  description: Лёгкий шлем парамедиков TTI, адаптированный для действий в безвоздушном пространстве.
+  suffix: TraumaTeam
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/trauma.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/trauma.rsi
+  - type: PointLight
+    color: "#00FFFF"
+    radius: 10
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+        Radiation: 0.90
+        Caustic: 0.90
+  - type: PressureProtection
+    highPressureMultiplier: 0.6
+    lowPressureMultiplier: 1000
+
+#Trauma EVAR
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: TraumaTeamHelmetRed
+  name: EVA шлем техника траумы
+  description: Укреплённый шлем техника TTI, адаптированный для действий в безвоздушном пространстве. Это кровь?..
+  suffix: TraumaTeam
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/traumared.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/traumared.rsi
+  - type: PointLight
+    color: "#00FFFF"
+    radius: 10
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
+        Radiation: 0.9
+        Caustic: 0.9
+  - type: PressureProtection
+    highPressureMultiplier: 0.6
+    lowPressureMultiplier: 1000
+
+# Trauma EVAS
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: TraumaTeamHelmetSur
+  name: EVA шлем реаниматора траумы
+  description: Высокотехнологичный шлем техника TTI показывающий всю необходимую информацию о физическом состоянии, адаптированый для действий в безвоздушном пространстве. Как платина...
+  suffix: TraumaTeam
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/traumasur.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/traumasur.rsi
+  - type: PointLight
+    color: "#00FFFF"
+    radius: 10
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
+        Radiation: 0.9
+        Caustic: 0.9
+  - type: PressureProtection
+    highPressureMultiplier: 0.6
+    lowPressureMultiplier: 1000
+
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: TraumaTeamHelmetPilot
+  name: EVA шлем реаниматора траумы
+  description: Лёгкий шлем пилота TTI, оборудованный встроенным интерфейсом для управления кораблём и продвинутой системой подачи кислорода.
+  suffix: TraumaTeam
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/traumapilot.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/traumapilot.rsi
+  - type: PointLight
+    color: "#00FFFF"
+    radius: 10
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
+        Radiation: 0.9
+        Caustic: 0.9
+  - type: PressureProtection
+    highPressureMultiplier: 0.6
+    lowPressureMultiplier: 1000

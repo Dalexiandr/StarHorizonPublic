@@ -1,0 +1,32 @@
+- type: entity
+  parent: ClothingNeckBase
+  categories: [ HideSpawnMenu ]
+  id: ClothingNeckCloakUAS
+  suffix: StarHorizon, UAS
+  name: плащ UAS
+  description: Плащ с логотипом корпорации на спине. Слава UAS!
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/Cloaks/uascloak.rsi
+  - type: Tag
+    tags: [] # Выносим с ВЛа для хамелеонки
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Neck/Cloaks/uascloak.rsi
+  - type: StaticPrice
+    price: 100000
+
+- type: entity
+  parent: ClothingNeckCloakUAS
+  categories: [ HideSpawnMenu ]
+  id: UASGloryMedal
+  name: медаль UAS
+  suffix: StarHorizon, UAS
+  description: Медаль, выдаваемая только за крупные заслуги перед корпорацией UAS
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/uasmedal.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Neck/uasmedal.rsi
+  - type: Tag
+    tags:
+      - Medal
