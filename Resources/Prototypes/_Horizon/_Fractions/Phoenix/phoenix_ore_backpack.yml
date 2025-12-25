@@ -1,0 +1,54 @@
+- type: entity
+  name: Х9 "Мешок"
+  id: PhoenixOreBackpack
+  parent: OreBagOfHolding
+  description: Специально разработанный Инициативой рюкзак для сбора руды, имеет высокие показатели вмещения ресурсов
+  suffix: Феникс
+  components:
+  - type: MagnetPickup
+    magnetEnabled: false
+    magnetCanBeEnabled: true
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/uniform/backpack.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Phoenix/uniform/backpack.rsi
+    quickEquip: false
+    slots:
+    - back
+  - type: Item
+    size: Ginormous
+    shape:
+    - 0,0,3,2
+  - type: Storage
+    maxItemSize: Normal
+    defaultStorageOrientation: Vertical
+    grid:
+    - 0,0,7,7
+    quickInsert: true
+    areaInsert: true
+    whitelist:
+      tags:
+        - ArtifactFragment
+        - Ore
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StorageUiKey.Key
+  - type: Dumpable
+  - type: NFOreBag
+  - type: ItemToggle
+    soundActivate: &soundActivate
+      collection: sparks
+      params:
+        variation: 0.25
+    soundDeactivate: *soundActivate
+    onUse: false
+    onAltUse: true
+    onActivate: false
+  - type: ItemToggleExamine
+    on: item-toggle-examine-magnet-on
+    off: item-toggle-examine-magnet-off
+  - type: Appearance

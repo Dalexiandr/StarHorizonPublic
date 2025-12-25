@@ -1,0 +1,23 @@
+- type: entity
+  parent: IDCardStandard
+  id: PhoenixKaiserIDCard
+  name: ID карта Кайзера
+  components:
+  - type: PresetIdCard
+    job: PhoenixKaiser
+
+- type: entity
+  parent: IDCardStandard
+  id: PhoenixSecurityOfficerIDCard
+  name: ID карта офицера СБ-ИФ
+  components:
+  - type: PresetIdCard
+    job: PhoenixSecurityOfficer
+
+- type: entity
+  parent: IDCardStandard
+  id: PhoenixSalvagerIDCard
+  name: ID карта старателя ИФ
+  components:
+  - type: PresetIdCard
+    job: PhoenixSalvager

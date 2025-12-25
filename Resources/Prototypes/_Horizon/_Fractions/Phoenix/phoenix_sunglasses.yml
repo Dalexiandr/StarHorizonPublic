@@ -1,0 +1,13 @@
+- type: entity
+  parent: ClothingEyesGlassesCheapSunglasses
+  id: ClothingEyesGlassesPhoenixSunglasses
+  name: Очки Инициативы
+  description: Очки со специальным напылением, защищающие от ярких вспышек и позволяющие вести сварочные работы
+  suffix: Феникс
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/uniform/glasses.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Phoenix/uniform/glasses.rsi
+  - type: FlashImmunity
+  - type: EyeProtection

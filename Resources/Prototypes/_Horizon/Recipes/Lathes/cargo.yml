@@ -64,7 +64,7 @@
   completetime: 3
   materials:
     Silver: 3000
-    Gold: 3000
+    Gold: 1500
 
 - type: latheRecipe
   id: ArmoryTovar
@@ -72,15 +72,15 @@
   completetime: 3
   materials:
     Titan: 3000
-    Plasteel: 3000
+    Plasteel: 1500
 
 - type: latheRecipe
   id: SciTovar
   result: SciTovar
   completetime: 3
   materials:
-    Glass: 3000
-    Plasma: 3000
+    Glass: 1500
+    Plasma: 1500
     Psycore: 3000
 
 - type: latheRecipe
@@ -89,4 +89,4 @@
   completetime: 3
   materials:
     Uranium: 3000
-    Steel: 3000
+    Steel: 1500

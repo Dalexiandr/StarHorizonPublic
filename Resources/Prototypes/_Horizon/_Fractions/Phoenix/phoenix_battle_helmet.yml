@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingHeadHelmetBasic
   id: ClothingHeadHelmetPhoenixBattle
-  name: Боевой шлем ИФ
-  description: Стандартный боевой шлем службы безопасности ИФ.
+  name: Каска М7
+  description: Стандартная боевая каска из арсеналов NanoTransen, перекрашенная в цвета инициативы
   suffix: Феникс, СБ
   components:
   - type: Sprite

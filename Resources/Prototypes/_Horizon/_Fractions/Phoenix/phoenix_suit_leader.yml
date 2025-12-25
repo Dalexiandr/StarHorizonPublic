@@ -2,7 +2,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitPhoenixLeader
   name: Костюм Кайзера
-  description: Элитный комбинезон для лидера СБ-ИФ - Лаина Варбурга
+  description: Высококачественный костюм, принадлежащий Лаину Варбургу - Лидеру Инициативы Феникс
   suffix: Феникс, Лидер
   components:
   - type: Sprite

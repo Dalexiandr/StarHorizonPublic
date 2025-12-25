@@ -47,6 +47,9 @@ job-name-ertmedic = ERT Medic
 job-name-ertjanitor = ERT Janitor
 job-name-boxer = Boxer
 job-name-zookeeper = Zookeeper
+job-name-phoenix-kaiser = Phoenix Kaiser
+job-name-phoenix-security-officer = Phoenix Security Officer
+job-name-phoenix-salvager = Phoenix Salvager
 job-name-visitor = Visitor
 
 # unused jobs

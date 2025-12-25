@@ -9,3 +9,16 @@
   - TraumaParamedic
   - TraumaRessurector
   - TraumaRepresentative
+
+- type: department
+  id: Phoenix
+  name: department-Phoenix
+  description: department-Phoenix-description
+  color: "#FF4500"
+  weight: 90
+  roles:
+  - PhoenixKaiser
+  - PhoenixSecurityOfficer
+  - PhoenixSalvager
+  primary: false
+  editorHidden: false

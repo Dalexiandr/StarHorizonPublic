@@ -12,3 +12,12 @@
 
 - type: playTimeTracker
   id: JobTraumaRepresentative
+
+- type: playTimeTracker
+  id: JobPhoenixKaiser
+
+- type: playTimeTracker
+  id: JobPhoenixSecurityOfficer
+
+- type: playTimeTracker
+  id: JobPhoenixSalvager

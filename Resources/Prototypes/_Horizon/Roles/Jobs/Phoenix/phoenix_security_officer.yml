@@ -1,0 +1,30 @@
+- type: job
+  id: PhoenixSecurityOfficer
+  name: job-name-phoenix-security-officer
+  description: job-description-phoenix-security-officer
+  playTimeTracker: JobPhoenixSecurityOfficer
+  whitelisted: true
+  startingGear: PhoenixSecurityOfficerGear
+  icon: "JobIconNanotrasen"
+  supervisors: job-supervisors-centcom
+  weight: 170
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [MindShieldImplant]
+
+- type: startingGear
+  id: PhoenixSecurityOfficerGear
+  equipment:
+    ears: ClothingHeadsetPhoenix
+    jumpsuit: ClothingUniformJumpsuitPhoenixSecurity
+    shoes: ClothingShoesBootsCowboyBlackFilled
+    outerClothing: ClothingOuterArmorPhoenixBattle
+    head: ClothingHeadHelmetPhoenixBattle
+    gloves: ClothingHandsGlovesPhoenixCombat
+    eyes: ClothingEyesGlassesPhoenixSunglasses
+    back: PhoenixOreBackpack
+    belt: ClothingBeltSecurity
+    id: MercenaryPDA

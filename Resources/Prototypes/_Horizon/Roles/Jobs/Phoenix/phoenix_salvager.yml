@@ -1,0 +1,30 @@
+- type: job
+  id: PhoenixSalvager
+  name: job-name-phoenix-salvager
+  description: job-description-phoenix-salvager
+  playTimeTracker: JobPhoenixSalvager
+  whitelisted: true
+  setPreference: true
+  startingGear: PhoenixSalvagerGear
+  icon: "JobIconNanotrasen"
+  supervisors: job-supervisors-phoenix-salvager
+  weight: 170
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [MindShieldImplant]
+
+- type: startingGear
+  id: PhoenixSalvagerGear
+  equipment:
+    ears: ClothingHeadsetPhoenix
+    jumpsuit: ClothingUniformJumpsuitPhoenixSalvager
+    shoes: ClothingShoesBootsMagPhoenix
+    outerClothing: PhoenixslaveHardsuit
+    gloves: ClothingHandsGlovesPhoenixCombat
+    eyes: ClothingEyesGlassesPhoenixSunglasses
+    back: PhoenixOreBackpack
+    belt: ClothingBeltSalvageWebbing
+    id: MercenaryPDA

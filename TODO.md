@@ -1,0 +1,5 @@
+- [x] Обновить phoenix_headset.yml: добавить EncryptionKeyPhoenix в key_slots гарнитуры.
+- [x] Обновить uplink.yml: добавить листинг ключа шифрования в категории UplinkPhoenixCustomization за 1 MaterialBluespace.
+- [x] Добавить NFMagazineRifle30Empty за 1 кристалл в UplinkPhoenixConsumables.
+- [x] Добавить NFWeaponRifleAssaultAK4047 за 5 кристаллов в UplinkPhoenixArmament.
+- [x] Проверить изменения в файлах.

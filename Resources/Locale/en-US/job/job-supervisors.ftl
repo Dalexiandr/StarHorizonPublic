@@ -13,3 +13,6 @@ job-supervisors-security = Security Officers, the Warden, and the Head of Securi
 job-supervisors-science = Scientists and the Research Director
 job-supervisors-hire = whoever hires you
 job-supervisors-everyone = absolutely everyone
+job-supervisors-phoenix-kaiser = themselves
+job-supervisors-phoenix-security = the Phoenix Kaiser
+job-supervisors-phoenix-salvager = Phoenix Security Officers and the Phoenix Kaiser

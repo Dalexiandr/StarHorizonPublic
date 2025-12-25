@@ -15,3 +15,21 @@
     sprite: _StarHorizon/Objects/Devices/traumaencryptionkey.rsi
     layers:
     - state: crypto-base
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyPhoenix
+  name: ключ шифрования Феникса
+  categories: [ DoNotMap ]
+  description: Ключ шифрования для канала экипажей Феникса.
+  components:
+  - type: EncryptionKey
+    channels:
+    - Phoenix
+    defaultChannel: Phoenix
+  - type: Item
+    sprite: _StarHorizon/Objects/Devices/traumaencryptionkey.rsi
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Devices/traumaencryptionkey.rsi
+    layers:
+    - state: crypto-base

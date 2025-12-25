@@ -32,6 +32,9 @@
             Valet: [ 1, 1 ]
             NFJanitor: [ 1, 1 ]
             MailCarrier: [ 1, 1 ]
+            PhoenixKaiser: [ -1, -1 ]
+            PhoenixSecurityOfficer: [ -1, -1 ]
+            PhoenixSalvager: [ -1, -1 ]
           tags:
           - HeadOfPersonnel
           - HeadOfSecurity

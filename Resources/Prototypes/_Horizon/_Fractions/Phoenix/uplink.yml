@@ -1,9 +1,13 @@
-﻿- type: storeCategory
-  id: UplinkPhoenixWeapons
-  name: Вооружение
+- type: storeCategory
+  id: UplinkPhoenixCustomization
+  name: Кастомизация
 
 - type: storeCategory
-  id: UplinkPhoenixClothing
+  id: UplinkPhoenixConsumables
+  name: Расходники
+
+- type: storeCategory
+  id: UplinkPhoenixGear
   name: Обмундирование
 
 - type: storeCategory
@@ -11,36 +15,32 @@
   name: Оборудование
 
 - type: storeCategory
-  id: UplinkPhoenixMisc
-  name: Разное
-
-- type: storeCategory
-  id: UplinkPhoenixCustomization
-  name: Кастомизация
+  id: UplinkPhoenixArmament
+  name: Вооружение
 
 - type: entity
-  id: StorePresetPhoenixUplink
+  id: StorePresetASUplink
   abstract: true
   components:
   - type: Store
-    name: Аплинк фракции Феникс
+    name: Аплинк Инициативы Феникс
     categories:
-    - UplinkPhoenixWeapons
-    - UplinkPhoenixClothing
-    - UplinkPhoenixEquipment
-    - UplinkPhoenixMisc
     - UplinkPhoenixCustomization
+    - UplinkPhoenixConsumables
+    - UplinkPhoenixGear
+    - UplinkPhoenixEquipment
+    - UplinkPhoenixArmament
     currencyWhitelist:
-    - Speso
+    - MaterialBluespace
     balance:
-      Speso: 0
+      MaterialBluespace: 30
 
 - type: entity
-  parent: [ BaseItem, StorePresetPhoenixUplink ]
-  id: BasePhoenixUplinkRadio
-  name: Аплинк фракции Феникс
-  description: Retro looking old radio...
-  suffix: Пустой
+  parent: [ BaseItem, StorePresetASUplink ]
+  id: BaseASUplinkRadio
+  name: Аплинк Инициативы Феникс
+  description: Радиостанция для вызова снаряжения
+  suffix: Феникс
   components:
   - type: Sprite
     sprite: Objects/Devices/communication.rsi
@@ -56,237 +56,359 @@
   - type: ActivatableUI
     key: enum.StoreUiKey.Key
 
-- type: entity
-  parent: BasePhoenixUplinkRadio
-  id: BasePhoenixUplinkRadioDebug
-  suffix: Феникс, ДЕБАГ
-  components:
-  - type: Store
-    balance:
-      Speso: 999999999
-
-- type: entity
-  parent: BasePhoenixUplinkRadio
-  id: BasePhoenixUplinkRadio5000Speso
-  suffix: Феникс, 5000 спесо
-  components:
-  - type: Store
-    balance:
-      Speso: 5000
-
 - type: listing
-  id: UplinkPhoenixBattleHelmet
-  name: Боевой шлем СБ ИФ
-  description: Стандартный боевой шлем службы безопасности ИФ.
-  productEntity: ClothingHeadHelmetPhoenixBattle
+  id: UplinkPhoenixBandana
+  name: Бандана
+  description: Тряпичная бандана, используемая наёмниками ИФ.
+  productEntity: ClothingMaskBandanaPhoenix
   cost:
-    Speso: 2000
-  categories:
-  - UplinkPhoenixClothing
-
-- type: listing
-  id: UplinkPhoenixMagboots
-  name: Магбутсы ИФ
-  description: Магнитные ботинки для работы в условиях низкой гравитации.
-  productEntity: ClothingShoesBootsMagPhoenix
-  cost:
-    Speso: 3000
-  categories:
-  - UplinkPhoenixEquipment
-
-- type: listing
-  id: UplinkPhoenixMiningDrill
-  name: Буровая установка ИФ
-  description: Инструмент для добычи руды.
-  productEntity: MiningDrill
-  cost:
-    Speso: 5000
-  categories:
-  - UplinkPhoenixEquipment
-
-- type: listing
-  id: UplinkPhoenixMagnetBoxOre
-  name: Магнитная коробка для руды ИФ
-  description: Устройство для сбора руды.
-  productEntity: NFMagnetBoxOre
-  cost:
-    Speso: 3000
-  categories:
-  - UplinkPhoenixEquipment
-
-- type: listing
-  id: UplinkPhoenixPKA
-  name: ПКА ИФ
-  description: Протокинетический ускоритель ИФ.
-  productEntity: WeaponProtoKineticRailgunPhoenix
-  cost:
-    Speso: 15000
-  categories:
-  - UplinkPhoenixWeapons
-
-- type: listing
-  id: UplinkPhoenixLecter
-  name: Лектер ИФ
-  description: Штурмовая винтовка Лектер ИФ.
-  productEntity: WeaponRifleAssaultLecterPhoenix
-  cost:
-    Speso: 12000
-  categories:
-  - UplinkPhoenixWeapons
-
-- type: listing
-  id: UplinkPhoenixMateba
-  name: Матеба ИФ
-  description: Револьвер Матеба ИФ.
-  productEntity: WeaponRevolverMatebaPhoenix
-  cost:
-    Speso: 8000
-  categories:
-  - UplinkPhoenixWeapons
-
-- type: listing
-  id: UplinkPhoenixSabre
-  name: Сабля капитана ИФ
-  description: Церемониальное оружие капитана ИФ.
-  productEntity: CaptainSabrePhoenix
-  cost:
-    Speso: 5000
-  categories:
-  - UplinkPhoenixWeapons
-
-- type: listing
-  id: UplinkPhoenixSabreHilt
-  name: Ножны сабли ИФ
-  description: Ножны для сабли капитана ИФ.
-  productEntity: CaptainSabreHiltPhoenix
-  cost:
-    Speso: 1000
+    MaterialBluespace: 1
   categories:
   - UplinkPhoenixCustomization
 
 - type: listing
-  id: UplinkPhoenixCloakBrigadier
-  name: Плащ бригадира ИФ
-  description: Элитный плащ для бригадиров ИФ, символизирующий власть и авторитет.
-  productEntity: ClothingNeckCloakPhoenixBrigadier
+  id: UplinkPhoenixGloves
+  name: Боевые перчатки ИФ
+  description: Тактические перчатки службы безопасности ИФ, устойчивые к огню и электричеству.
+  productEntity: ClothingHandsGlovesPhoenixCombat
   cost:
-    Speso: 1000
+    MaterialBluespace: 1
   categories:
   - UplinkPhoenixCustomization
 
 - type: listing
-  id: UplinkPhoenixCloakSanabi
-  name: Элитный плащ ИФ
-  description: Высококачественный плащ ИФ, для особых моментов!
-  productEntity: ClothingNeckCloakPhoenixSanabi
+  id: UplinkPhoenixSunglassesPhoenix
+  name: Очки Инициативы
+  description: Очки со специальным напылением, защищающие от ярких вспышек и позволяющие вести сварочные работы.
+  productEntity: ClothingEyesGlassesPhoenixSunglasses
   cost:
-    Speso: 1000
-  categories:
-  - UplinkPhoenixCustomization
-
-- type: listing
-  id: UplinkPhoenixCloakSecurity
-  name: Плащ службы безопасности ИФ
-  description: Стандартный плащ для сотрудников СБ ИФ, обеспечивающий заметность, дабы вселять в сердца рабочих УЖАС.
-  productEntity: ClothingNeckCloakPhoenixSecurity
-  cost:
-    Speso: 1000
+    MaterialBluespace: 1
   categories:
   - UplinkPhoenixCustomization
 
 - type: listing
   id: UplinkPhoenixKaiserMask
   name: Маска Кайзера
-  description: Особая маска Лидера ИФ.
+  description: Противогаз службы безопасности ИФ.
   productEntity: ClothingMaskGasPhoenixKaiser
   cost:
-    Speso: 3000
+    MaterialBluespace: 1
   categories:
-  - UplinkPhoenixClothing
+  - UplinkPhoenixCustomization
+
+- type: listing
+  id: UplinkPhoenixHeadset
+  name: Гарнитура ИФ
+  description: Гарнитура для связи членов фракции Феникс. Принимает ключи шифрования.
+  productEntity: ClothingHeadsetPhoenix
+  cost:
+    MaterialBluespace: 1
+  categories:
+  - UplinkPhoenixCustomization
+
+- type: listing
+  id: UplinkPhoenixSuitLeader
+  name: Костюм лидера ИФ
+  description: Костюм лидера Инициативы Феникс.
+  productEntity: ClothingUniformJumpsuitPhoenixLeader
+  cost:
+    MaterialBluespace: 1
+  categories:
+  - UplinkPhoenixCustomization
+
+- type: listing
+  id: UplinkPhoenixSuitSalvager
+  name: Костюм старателя ИФ
+  description: Костюм старателя Инициативы Феникс.
+  productEntity: ClothingUniformJumpsuitPhoenixSalvager
+  cost:
+    MaterialBluespace: 1
+  categories:
+  - UplinkPhoenixCustomization
+
+- type: listing
+  id: UplinkPhoenixSuitSecurity
+  name: Костюм службы безопасности ИФ
+  description: Костюм службы безопасности Инициативы Феникс.
+  productEntity: ClothingUniformJumpsuitPhoenixSecurity
+  cost:
+    MaterialBluespace: 1
+  categories:
+  - UplinkPhoenixCustomization
+
+- type: listing
+  id: UplinkPhoenixBattleHelmet
+  name: Боевой шлем ИФ
+  description: Боевой шлем Инициативы Феникс.
+  productEntity: ClothingHeadHelmetPhoenixBattle
+  cost:
+    MaterialBluespace: 1
+  categories:
+  - UplinkPhoenixGear
 
 - type: listing
   id: UplinkPhoenixArmor
   name: Бронежилет ИФ
-  description: Стандартный бронежилет службы безопасности ИФ.
+  description: Укреплённый бронежилет карательных отрядов Инициативы Феникс, подавляющих бунты среди рабочих в "безопасной среде".
   productEntity: ClothingOuterArmorPhoenixBattle
   cost:
-    Speso: 2500
+    MaterialBluespace: 3
   categories:
-  - UplinkPhoenixClothing
-
-- type: listing
-  id: UplinkPhoenixSecuritySuit
-  name: Комбинезон СБ-ИФ
-  description: Тактический комбинезон сотрудника СБ-ИФ.
-  productEntity: ClothingUniformJumpsuitPhoenixSecurity
-  cost:
-    Speso: 1200
-  categories:
-  - UplinkPhoenixCustomization
-
-- type: listing
-  id: UplinkPhoenixSalvagerSuit
-  name: Комбинезон рабочего ИФ
-  description: Стандартный рабочий комбинезон сотрудника ИФ.
-  productEntity: ClothingUniformJumpsuitPhoenixSalvager
-  cost:
-    Speso: 1200
-  categories:
-  - UplinkPhoenixCustomization
-
-- type: listing
-  id: UplinkPhoenixLeaderSuit
-  name: Костюм Кайзера
-  description: Элитный комбинезон для лидера СБ-ИФ.
-  productEntity: ClothingUniformJumpsuitPhoenixLeader
-  cost:
-    Speso: 1200
-  categories:
-  - UplinkPhoenixCustomization
-
-- type: listing
-  id: UplinkPhoenixEmperorHelmet
-  name: Роскошный Пикельхельм
-  description: Роскошный шлем Лидера ИФ.
-  productEntity: ClothingHeadHelmetPhoenixEmperor
-  cost:
-    Speso: 3500
-  categories:
-  - UplinkPhoenixClothing
-
-- type: listing
-  id: UplinkPhoenixSecHardsuit
-  name: Боевой скафандр ИФ
-  description: Боевой скафандр армейского класса.
-  productEntity: PhoenisecHardsuit
-  cost:
-    Speso: 12000
-  categories:
-  - UplinkPhoenixClothing
+  - UplinkPhoenixGear
 
 - type: listing
   id: UplinkPhoenixSlaveHardsuit
   name: Шахтёрский скафандр ИФ
-  description: Крепкий скафандр промышленного класса для работы в космосе.
+  description: Шахтёрский скафандр Инициативы Феникс, особо укреплён от атак космической фауны, имеет специально разработанную подкладку для защиты от радиоактивного излучения при работе с рудой.
   productEntity: PhoenixslaveHardsuit
   cost:
-    Speso: 8000
+    MaterialBluespace: 5
+  categories:
+  - UplinkPhoenixGear
+
+- type: listing
+  id: UplinkPhoenixBrigadirHardsuit
+  name: Скафандр бригадира
+  description: Крепкий скафандр промышленного класса, доработанный для противостояния недовольным плебеям.
+  productEntity: PhoenixbrigadirHardsuit
+  cost:
+    MaterialBluespace: 7
+  categories:
+  - UplinkPhoenixGear
+
+- type: listing
+  id: UplinkPhoenixSecHardsuit
+  name: Скафандр СБ-ИФ
+  description: Скафандр службы безопасности Инициативы Феникс.
+  productEntity: PhoenisecHardsuit
+  cost:
+    MaterialBluespace: 10
+  categories:
+  - UplinkPhoenixGear
+
+- type: listing
+  id: UplinkPhoenixEmperorHelmet
+  name: Роскошный Пикельхельм
+  description: Личный шлем Лаина Варбурга
+  productEntity: ClothingHeadHelmetPhoenixEmperor
+  cost:
+    MaterialBluespace: 1
+  categories:
+  - UplinkPhoenixCustomization
+
+- type: listing
+  id: UplinkPhoenixBrigadierCloak
+  name: Плащ бригадира ИФ
+  description: Элитный плащ для бригадиров ИФ, символизирующий власть и авторитет.
+  productEntity: ClothingNeckCloakPhoenixBrigadier
+  cost:
+    MaterialBluespace: 1
+  categories:
+  - UplinkPhoenixCustomization
+
+- type: listing
+  id: UplinkPhoenixSanabiCloak
+  name: Элитный плащ ИФ
+  description: Высококачественный плащ ИФ, для особых моментов!
+  productEntity: ClothingNeckCloakPhoenixSanabi
+  cost:
+    MaterialBluespace: 1
+  categories:
+  - UplinkPhoenixCustomization
+
+- type: listing
+  id: UplinkPhoenixSecurityCloak
+  name: Плащ службы безопасности ИФ
+  description: Стандартный плащ для сотрудников СБ ИФ, обеспечивающий заметность, дабы вселять в сердца рабочих УЖАС.
+  productEntity: ClothingNeckCloakPhoenixSecurity
+  cost:
+    MaterialBluespace: 1
+  categories:
+  - UplinkPhoenixCustomization
+
+- type: listing
+  id: UplinkPhoenixMagBoots
+  name: Магбутсы ИФ
+  description: Магбутсы промышленного класса, заказываемые Инициативой у NanoTransen
+  productEntity: ClothingShoesBootsMagPhoenix
+  cost:
+    MaterialBluespace: 1
   categories:
   - UplinkPhoenixEquipment
 
 - type: listing
-  id: UplinkPhoenixBrigadirHardsuit
-  name: Скафандр бригадира ИФ
-  description: Крепкий скафандр промышленного класса для бригадиров.
-  productEntity: PhoenixbrigadirHardsuit
+  id: UplinkPhoenixSeismicCharge
+  name: Сейсмический заряд Феникса
+  description: Контузионный взрывчатый заряд, предназначенный для разрушения больших объемов породы. Фракция Феникс.
+  productEntity: SeismicChargePhoenix
   cost:
-    Speso: 10000
+    MaterialBluespace: 2
+  categories:
+  - UplinkPhoenixArmament
+
+- type: listing
+  id: UplinkPhoenixProtoKineticShotgun
+  name: Стенобой 9000
+  description: Улучшенный протокинетический дробовик, уникальная разработка Инициативы Феникс для вооружения своих групп космических старателей.
+  productEntity: WeaponProtoKineticShotgunPhoenix
+  cost:
+    MaterialBluespace: 5
+  categories:
+  - UplinkPhoenixArmament
+
+- type: listing
+  id: UplinkPhoenixWeaponRevolverMatebaPhoenix
+  name: Револьвер Mateba ИФ
+  description: Мощный револьвер, используемый элитными силами Инициативы Феникс.
+  productEntity: WeaponRevolverMatebaPhoenix
+  cost:
+    MaterialBluespace: 7
+  categories:
+  - UplinkPhoenixArmament
+
+- type: listing
+  id: UplinkPhoenixCaptainSabrePhoenix
+  name: Сабля капитана ИФ
+  description: Элитная сабля, символ власти капитанов Инициативы Феникс.
+  productEntity: CaptainSabrePhoenix
+  cost:
+    MaterialBluespace: 2
+  categories:
+  - UplinkPhoenixArmament
+
+- type: listing
+  id: UplinkPhoenixNFWeaponRifleAssaultAK4047
+  name: AK-4047
+  description: Иконическое оружие всех войн,дешевое и легкодоступное
+  productEntity: NFWeaponRifleAssaultAK4047
+  cost:
+    MaterialBluespace: 8
+  categories:
+  - UplinkPhoenixArmament
+
+- type: listing
+  id: UplinkPhoenixFultonCrate
+  name: Ящик с фултоном
+  description: Содержит маяк Фултона и 8 устройств Фултона.
+  productEntity: CrateFulton
+  cost:
+    MaterialBluespace: 7
   categories:
   - UplinkPhoenixEquipment
 
+- type: listing
+  id: UplinkPhoenixGunneryControlComputerCircuitboard
+  name: Консоль контроля орудий (машинная плата)
+  description: Машинная плата для консоли контроля орудий.
+  productEntity: GunneryControlComputerCircuitboard
+  cost:
+    MaterialBluespace: 10
+  categories:
+  - UplinkPhoenixEquipment
+
+- type: listing
+  id: UplinkPhoenixMachineGCSLowCircuitboard
+  name: Машинная плата для СКО
+  description: Базовый сервер для управления корабельными орудиями с ограниченной производительностью.
+  productEntity: MachineGCSLowCircuitboard
+  cost:
+    MaterialBluespace: 15
+  categories:
+  - UplinkPhoenixEquipment
+
+- type: listing
+  id: UplinkPhoenixWeaponTurretM25
+  name: Горный пульсер M25
+  description: Использует механизмы для запуска… чего-то. Легко разрушает породу.
+  productEntity: WeaponTurretM25
+  cost:
+    MaterialBluespace: 25
+  categories:
+  - UplinkPhoenixEquipment
+
+- type: listing
+  id: UplinkPhoenixMedkitAdvancedFilled
+  name: Продвинутая аптечка первой помощи
+  description: Аптечка первой помощи с продвинутыми медицинскими припасами.
+  productEntity: MedkitAdvancedFilled
+  cost:
+    MaterialBluespace: 2
+  categories:
+  - UplinkPhoenixConsumables
+
+- type: listing
+  id: UplinkPhoenixMedkitOxygenFilled
+  name: Аптечка первой помощи с кислородом
+  description: Аптечка первой помощи с кислородными припасами.
+  productEntity: MedkitOxygenFilled
+  cost:
+    MaterialBluespace: 1
+  categories:
+  - UplinkPhoenixConsumables
+
+- type: listing
+  id: MedkitRadiationFilledPHOENIX
+  name: Набор вывода радиации
+  description: Ы)
+  productEntity: MedkitRadiationFilled
+  cost:
+    MaterialBluespace: 3
+  categories:
+  - UplinkPhoenixConsumables
+
+- type: listing
+  id: UplinkPhoenixNFAmmunitionBoxPistol45
+  name: Коробка патронов (.45 пистолетные)
+  description: Коробка патронов калибра .45 для пистолетов.
+  productEntity: NFAmmunitionBoxPistol45
+  cost:
+    MaterialBluespace: 2
+  categories:
+  - UplinkPhoenixConsumables
+
+- type: listing
+  id: UplinkPhoenixNFAmmunitionBoxBigRifle30
+  name: Коробка патронов (.30 винтовочные)
+  description: Коробка патронов калибра .30 для винтовок.
+  productEntity: NFAmmunitionBoxBigRifle30
+  cost:
+    MaterialBluespace: 5
+  categories:
+  - UplinkPhoenixConsumables
+
+- type: listing
+  id: UplinkPhoenixCigarPhoenix
+  name: Сигара Феникса
+  description: Сигара с омнизином для агентов Инициативы Феникс.
+  productEntity: CigarPhoenix
+  cost:
+    MaterialBluespace: 2
+  categories:
+  - UplinkPhoenixConsumables
+
+- type: listing
+  id: UplinkPhoenixNFMagazineRifle30Empty
+  name: Магазин (.30 винтовочный, пустой)
+  description: Пустой магазин для винтовок калибра .30.
+  productEntity: NFMagazineRifle30Empty
+  cost:
+    MaterialBluespace: 1
+  categories:
+  - UplinkPhoenixConsumables
+
+- type: listing
+  id: UplinkPhoenixBoxT4ComponentsAssorted
+  name: Коробка с компонентами T4
+  description: Коробка с различными блюспейс компонентами.
+  productEntity: BoxT4ComponentsAssorted
+  cost:
+    MaterialBluespace: 5
+  categories:
+  - UplinkPhoenixConsumables
+
 - type: currency
-  id: SpesoPhoenix
-  displayName: Ваша казна Феникс
+  id: MaterialBluespace
+  displayName: Блюспейс кристаллы
   cash:
-    1: SpaceCash
+    1: MaterialBluespace
   canWithdraw: true

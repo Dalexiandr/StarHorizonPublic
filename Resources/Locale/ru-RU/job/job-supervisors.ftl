@@ -19,3 +19,6 @@ job-supervisors-ai = станционнному ИИ
 job-supervisors-self = самому себе
 job-supervisors-syndicate-high-command = Триглаву Синдиката
 job-supervisors-syndicate-captain = капитану Синдиката
+job-supervisors-phoenix-kaiser = самому себе
+job-supervisors-phoenix-security = Кайзеру Феникса
+job-supervisors-phoenix-salvager = Офицерам безопасности Феникса и Кайзеру Феникса

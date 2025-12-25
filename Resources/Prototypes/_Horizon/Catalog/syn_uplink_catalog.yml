@@ -12,6 +12,17 @@
   - UplinkWearables
 
 - type: listing
+  id: UplinkPhoenixSunglasses
+  name: Солнцезащитные очки Феникса
+  description: Чёрные солнцезащитные очки, используемые наёмниками ИФ.
+  icon: { sprite: /Textures/_Horizon/_Fractions/Phoenix/uniform/glasses.rsi, state: icon }
+  productEntity: ClothingEyesGlassesPhoenixSunglasses
+  cost:
+    Telecrystal: 5
+  categories:
+  - UplinkWearables
+
+- type: listing
   id: UplinkPlushieLemirdSchoolGirl
   name: Плюшевая школьница Лемирд
   description: При одном взгляде на неё готова задушить ляжками и убить милотой.

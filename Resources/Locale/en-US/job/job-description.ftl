@@ -47,3 +47,6 @@ job-description-station-ai = Follow your laws, serve the crew.
 job-description-visitor = Enjoy your visit to the station.
 job-description-warden = Patrol the security department, ensure that no one is stealing from the armory, and make sure that all prisoners are processed and let out when their time is up.
 job-description-zookeeper = Put on a joyful display of cute animals and space carps for all the crew to see. Currently available on Oasis.
+job-description-phoenix-kaiser = Lead the Phoenix Initiative in frontier exploration and planetary reclamation.
+job-description-phoenix-security-officer = Protect the Phoenix Initiative's operations and personnel in hostile environments.
+job-description-phoenix-salvager = Extract valuable resources from planets and asteroids for the Phoenix Initiative.

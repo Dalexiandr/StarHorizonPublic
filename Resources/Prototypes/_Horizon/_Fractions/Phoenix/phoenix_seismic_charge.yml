@@ -1,0 +1,34 @@
+- type: entity
+  name: Сейсмический заряд Феникса
+  description: Контузионный взрывчатый заряд, предназначенный для разрушения больших объемов породы. Фракция Феникс.
+  parent: [BasePlasticExplosive, BaseC2ContrabandUnredeemable]
+  id: SeismicChargePhoenix
+  suffix: Феникс, работяги
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/weapon/seismicphoenix.rsi
+    state: icon
+    layers:
+    - state: icon
+      map: ["base"]
+  - type: OnUseTimerTrigger
+    delay: 5
+    delayOptions: [5, 10, 15, 20]
+    initialBeepDelay: 0
+    beepSound:
+      path: /Audio/Effects/Cargo/buzz_two.ogg
+      params:
+        volume: -6
+    startOnStick: false
+    canToggleStartOnStick: true
+  - type: TimerStartOnSignal
+  - type: DeviceLinkSink
+    ports:
+    - Timer
+  - type: Explosive
+    explosionType: Cryo
+    totalIntensity: 60
+    intensitySlope: 1
+    maxIntensity: 15
+    canCreateVacuum: false
+  - type: ExplodeOnTrigger

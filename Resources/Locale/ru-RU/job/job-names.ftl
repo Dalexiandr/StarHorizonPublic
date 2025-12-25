@@ -142,3 +142,7 @@ JobSyndicateFirstMate = { job-name-syndicate-first-mate }
 JobSyndicateEngineer = { job-name-syndicate-engineer }
 JobSyndicateDoctor = { job-name-syndicate-doctor }
 JobSyndicatePilot = { job-name-syndicate-pilot }
+# Феникс
+job-name-phoenix-kaiser = Кайзер Феникса
+job-name-phoenix-security-officer = Офицер безопасности Феникса
+job-name-phoenix-salvager = Старатель Феникса

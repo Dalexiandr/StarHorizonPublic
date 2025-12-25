@@ -24,7 +24,7 @@
   - type: Item
     size: Normal
   - type: StaticPrice
-    price: 1500
+    price: 1750
 
 - type: entity
   parent: BaseItem
@@ -38,7 +38,7 @@
   - type: Item
     size: Normal
   - type: StaticPrice
-    price: 2000
+    price: 5000
 
 - type: entity
   parent: BaseItem
@@ -52,7 +52,7 @@
   - type: Item
     size: Normal
   - type: StaticPrice
-    price: 2500
+    price: 3500
 
 - type: entity
   parent: BaseItem

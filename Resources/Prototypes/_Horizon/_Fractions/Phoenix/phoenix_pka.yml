@@ -18,3 +18,46 @@
     slots:
     - suitStorage
     - Belt
+
+- type: entity
+  name: Стенобой 9000
+  id: WeaponProtoKineticShotgunPhoenix
+  parent: WeaponProtoKineticShotgun
+  description: Улучшенный протокинетический дробовик, уникальная разработка Инициативы Феникс для вооружения своих групп космических старателей.
+  suffix: Феникс, работяги
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/weapon/protoshot.rsi
+    layers:
+    - state: icon
+    - state: animation-icon
+      visible: false
+      map: [ "empty-icon" ]
+  - type: Item
+    sprite: _Horizon/_Fractions/Phoenix/weapon/protoshot.rsi
+    size: Normal
+  - type: BasicEntityAmmoProvider
+    proto: BulletKineticShotgunSpread
+    capacity: 9
+    count: 9
+  - type: Gun
+    resetOnHandSelected: false
+    fireRate: 2
+    selectedMode: FullAuto
+    angleDecay: 45
+    minAngle: 44
+    maxAngle: 45
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 2
+    rechargeSound:
+      path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Phoenix/weapon/protoshot.rsi
+    quickEquip: false
+    slots:
+    - suitStorage
+    - Belt

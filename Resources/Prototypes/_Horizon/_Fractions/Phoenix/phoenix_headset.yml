@@ -13,3 +13,4 @@
     containers:
       key_slots:
       - EncryptionKeyCommon
+      - EncryptionKeyPhoenix

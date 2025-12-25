@@ -1,0 +1,33 @@
+- type: job
+  id: PhoenixKaiser
+  name: job-name-phoenix-kaiser
+  description: job-description-phoenix-kaiser
+  playTimeTracker: JobPhoenixKaiser
+  whitelisted: true
+  setPreference: true
+  startingGear: PhoenixKaiserGear
+  icon: "JobIconNanotrasen"
+  supervisors: job-supervisors-phoenix-kaiser
+  weight: 170
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [MindShieldImplant]
+
+- type: startingGear
+  id: PhoenixKaiserGear
+  equipment:
+    ears: ClothingHeadsetPhoenix
+    jumpsuit: ClothingUniformJumpsuitPhoenixLeader
+    shoes: ClothingShoesBootsCowboyBlackFilled
+    outerClothing: ClothingOuterArmorPhoenixBattle
+    head: ClothingHeadHelmetPhoenixEmperor
+    gloves: ClothingHandsGlovesPhoenixCombat
+    eyes: ClothingEyesGlassesPhoenixSunglasses
+    back: ClothingBackpackSatchelPilot
+    belt: ClothingBeltSecurity
+    id: MercenaryPDA
+    pocket1: BaseASUplinkRadio
+    neck: ClothingNeckCloakPhoenixBrigadier

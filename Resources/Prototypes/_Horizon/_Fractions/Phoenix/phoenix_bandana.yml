@@ -1,0 +1,11 @@
+- type: entity
+  parent: ClothingMaskGasSecurity
+  id: ClothingMaskBandanaPhoenix
+  name: Бандана
+  description: Тряпичная бандана, используемая наёмниками ИФ.
+  suffix: Феникс, СБ
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/helmets/jambo.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Phoenix/helmets/jambo.rsi

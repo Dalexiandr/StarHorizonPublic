@@ -79,3 +79,66 @@
     - Bottom
     - Socks
     # Horizon end
+
+- type: roleLoadout
+  id: JobPhoenixKaiser
+  groups:
+    - NFSpeciesSpecific
+    - ContractorFace
+    - ContractorGlasses
+    - ContractorBelt
+    - ContractorEars
+    - ContractorEncryptionKey
+    - ContractorBoxSurvival
+    - ContractorWallet
+    - ContractorCartridge
+    - ContractorImplanter
+    - ContractorBackpackItems
+    - ContractorHandItems
+    # Horizon start
+    - Top
+    - Bottom
+    - Socks
+    # Horizon end
+
+- type: roleLoadout
+  id: JobPhoenixSecurityOfficer
+  groups:
+    - NFSpeciesSpecific
+    - ContractorFace
+    - ContractorGlasses
+    - ContractorBelt
+    - ContractorEars
+    - ContractorEncryptionKey
+    - ContractorBoxSurvival
+    - ContractorWallet
+    - ContractorCartridge
+    - ContractorImplanter
+    - ContractorBackpackItems
+    - ContractorHandItems
+    # Horizon start
+    - Top
+    - Bottom
+    - Socks
+    # Horizon end
+
+- type: roleLoadout
+  id: JobPhoenixSalvager
+  groups:
+    - NFSpeciesSpecific
+    - ContractorFace
+    - ContractorGlasses
+    - ContractorBelt
+    - ContractorEars
+    - ContractorEncryptionKey
+    - ContractorBoxSurvival
+    - ContractorWallet
+    - ContractorCartridge
+    - ContractorImplanter
+    - ContractorBackpackItems
+    - ContractorHandItems
+    # Horizon start
+    - Top
+    - Bottom
+    - Socks
+    # Horizon end

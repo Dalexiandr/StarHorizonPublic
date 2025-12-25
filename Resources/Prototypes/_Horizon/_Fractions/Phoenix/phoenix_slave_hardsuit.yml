@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingOuterHardsuitBaseNF
   id: PhoenixslaveHardsuit
-  name: Шахтёрский скафандр ИФ
-  description: Крепкий скафандр промышленного класса, специально разработанный для работы в глубоком космосе и противостоянию атак космической фауны
+  name: М12 "Крот"
+  description: Шахтёрский скафандр Инициативы Феникс, особо укреплён от атак космической фауны, имеет специально разработанную подкладку для защиты от радиоактивного излучения при работе с рудой.
   suffix: Феникс, работяги
   components:
   - type: Sprite
@@ -16,14 +16,14 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.6
-        Slash: 0.6
-        Piercing: 0.3
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.7
         Heat: 0.50
         Caustic: 0.6
   - type: ClothingSpeedModifier
     walkModifier: 0.85
-    sprintModifier: 0.75
+    sprintModifier: 0.85
 
 - type: entity
   parent: ClothingHeadHardsuitBase
@@ -48,4 +48,4 @@
         Blunt: 0.9
         Slash: 0.9
         Heat: 0.9
-        Radiation: 1
+        Radiation: 0

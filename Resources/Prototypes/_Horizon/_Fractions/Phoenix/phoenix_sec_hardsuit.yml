@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingOuterHardsuitBaseNF
   id: PhoenisecHardsuit
-  name: Боевой скафандр ИФ
-  description: Боевой скафандр армейского класса
+  name: СУБ-8 "Ганслингер"
+  description: Скафандр Укреплённый Боевой - Специально жоработанный армейский скафандр для "Инициативы", имеет особую прокладку для защиты от радиации в шахтах корпорации. Крепок и надёжен.
   suffix: Феникс, СБ
   components:
   - type: Sprite
@@ -20,18 +20,17 @@
         Slash: 0.5
         Piercing: 0.5
         Heat: 0.50
-        Radiation: 0.4
         Caustic: 0.6
   - type: ClothingSpeedModifier
-    walkModifier: 0.85
-    sprintModifier: 0.75
+    walkModifier: 0.95
+    sprintModifier: 0.90
 
 - type: entity
   parent: ClothingHeadHardsuitBase
   id: Phoenixsechelmet
   categories: [ HideSpawnMenu ]
-  name: Шлем шахтёра ИФ
-  description: Крепкий шлем промышленного класса.
+  name: СУБ-8 "Ганслингер"
+  description: Шлем из комплекта "Ганслингер", улучшен по параметрам защиты от радиации, имеет встроенный ПНВ.
   components:
   - type: Sprite
     sprite: _Horizon/_Fractions/Phoenix/helmets/sechelmethard.rsi
@@ -50,3 +49,4 @@
         Slash: 0.9
         Piercing: 0.9
         Heat: 0.9
+        Radiation: 0.2

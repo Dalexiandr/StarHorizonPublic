@@ -160,6 +160,8 @@
   editorHidden: true # Frontier
   primary: false # Frontier
 
+
+
 - type: department
   id: Specific
   name: department-Specific

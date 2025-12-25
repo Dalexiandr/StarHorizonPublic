@@ -1,0 +1,14 @@
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: ClothingHandsGlovesPhoenixCombat
+  name: Боевые перчатки ИФ
+  description: Тактические перчатки службы безопасности ИФ, устойчивые к огню и электричеству.
+  suffix: Феникс, СБ
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/Phoenix/uniform/glove.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/Phoenix/uniform/glove.rsi
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-insulative
