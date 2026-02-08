@@ -1,0 +1,69 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: funplay650
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/SpidernAteing
+# Discord: helloohelloo
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: LightWork
+  parent: BaseVessel
+  name: NE LightWork
+  description: Малый грузовой шаттл для транспортировки товаров, использует С.У.П.Е.Р.П.А.К.М.А.Н
+  price: 29000 # 25718 1.1 28289,8
+  category: Small
+  group: Shipyard
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/lightwork.yml
+  class:
+  - Cargo
+  engine:
+  - Uranium
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:RoleModifier
+      role: "PlantTechnician"
+      costMultiplier: 0.9
+    - !type:RoleModifier
+      role: "PlantManager"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionEdison"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionLVHI"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionUAC"
+      costMultiplier: 1.0
+    - !type:FactionCostModifier
+      faction: "FactionNakamura"
+      costMultiplier: 0.9
+
+
+- type: gameMap
+  id: LightWork
+  mapName: 'NE LightWork'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/lightwork.yml
+  minPlayers: 0
+  stations:
+    LightWork:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'LightWork {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]
