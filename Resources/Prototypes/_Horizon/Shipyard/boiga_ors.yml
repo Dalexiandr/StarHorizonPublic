@@ -1,0 +1,49 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: orange_fish
+
+# Информация об сопровождающем
+# GitHub/Gitea: ???
+# Discord: helloohelloo
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: Boiga
+  parent: BaseVessel
+  name: ORS type 1U "Boiga"
+  description:  Небольшой шаттл с уютной комнатой для двоих и небольшой сауной.
+  price: 35000 # 31800, наценка верфи 10% = 34980
+  category: Small
+  group: Shipyard
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/boiga.yml
+  class:
+  - Civilian
+  engine:
+  - Uranium
+
+
+
+- type: gameMap
+  id: Boiga
+  mapName: '[Имя корпорации] [Имя шаттла]'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/[папка шаттла]/[имя шаттла с маленькой буквы].yml
+  minPlayers: 0
+  stations:
+    Boiga:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'type 1U "Boiga" {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]
+
+
+
+
