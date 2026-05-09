@@ -1,0 +1,79 @@
+- type: entity
+  name: star pacman portable generator
+  description: |-
+    A prototype of experimental generator. Use with caution.
+    Runs off plutonium and is rated for up to 240 kW.
+    Extremely radioactive without protection.
+  parent:
+  - PortableGeneratorSuperPacman
+  - BaseC2ContrabandUnredeemable # Need a doctor's note to run this.
+  id: PortableGeneratorStarPacman
+  suffix: Plutonium, Rad+, 120 kW
+  components:
+    - type: Sprite
+      sprite: _Horizon/Structures/Power/Generation/portable_generator.rsi
+      layers:
+        - state: portgen1
+          map: [ "enum.GeneratorVisualLayers.Body" ]
+        - state: portgen_on_unlit
+          map: [ "enum.GeneratorVisualLayers.Unlit" ]
+          shader: unshaded
+          visible: false
+    - type: GenericVisualizer
+      visuals:
+        enum.GeneratorVisuals.Running:
+          enum.GeneratorVisualLayers.Body:
+            True: { state: portgen1on }
+            False: { state: portgen1 }
+          enum.GeneratorVisualLayers.Unlit:
+            True: { visible: true }
+            False: { visible: false }
+    - type: Machine
+      board: PortableGeneratorStarPacmanMachineCircuitboard
+    - type: FuelGenerator
+      minTargetPower: 10000
+      maxTargetPower: 240000 # 24 rad/s at full output, _just_ safe directly behind a reinforced wall
+      targetPower: 120000
+      optimalPower: 120000
+      # ~44 minutes per stack at full power - 80 kJ per stack, 240 kJ per 30 units
+      optimalBurnRate: 0.0037
+      # leaky, worse power curve
+      fuelEfficiencyConstant: 0.5
+      radiationColor: "#d42319"
+    - type: SolidFuelGeneratorAdapter
+      fuelMaterial: FuelGradeUnstablePlutonium
+    - type: MaterialStorage
+      materialWhiteList: [RawPlutonium, Skrungle, Plutonium, FuelGradePlutonium, FuelGradeUnstablePlutonium, FuelGradePurePlutonium]
+    - type: PowerMonitoringDevice
+      sprite: _NF/Structures/Power/Generation/portable_generator.rsi
+      state: portgen1
+    - type: RadiationSource
+      enabled: false
+    - type: PowerSupplier
+      supplyRampRate: 10000
+      supplyRampTolerance: 3000
+    # Horizon # Frontier: magnet pickup, fuel adapter
+    - type: FuelGradeAdapter
+      conversions:
+      - input: RawPlutonium
+        output: FuelGradeUnstablePlutonium
+        rate: 0.125
+      - input: Skrungle
+        output: FuelGradeUnstablePlutonium
+        rate: 0.01
+      - input: Plutonium
+        output: FuelGradeUnstablePlutonium
+        rate: 0.25
+      - input: FuelGradePlutonium
+        output: FuelGradeUnstablePlutonium
+        rate: 0.5
+      - input: FuelGradePurePlutonium
+        output: FuelGradeUnstablePlutonium
+        rate: 1
+    # Horizon # End Frontier: magnet pickup, fuel adapter
+    - type: Geiger
+      showExamine: true
+      broadcastAudio: true
+      isEnabled: true
+      attachedToSuit: true # Prevents the counter from being disabled.
+    - type: RadiationReceiver # For the geiger counter.

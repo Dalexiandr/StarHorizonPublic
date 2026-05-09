@@ -1,0 +1,247 @@
+- type: entity
+  id: PaperPirateBountyManifest
+  parent: PaperCargoInvoice
+  name: pirate bounty reminder
+  description: A little scroll reminding you of the bounty you agreed to pilfer. How is it stained?
+  components:
+  - type: Sprite
+    layers:
+    - state: paper
+      color: "#f7e574"
+    - state: paper_words
+      map: ["enum.PaperVisualLayers.Writing"]
+      color: "#f7e574"
+    - state: paper_stamp-nf-pirate
+      map: ["enum.PaperVisualLayers.Stamp"]
+  - type: PaperVisuals # TODO: fix this up
+    backgroundImagePath: "/Textures/Interface/Paper/paper_background_default.svg.96dpi.png"
+    contentImagePath: "/Textures/Interface/Paper/paper_content_lined.svg.96dpi.png"
+    backgroundModulate: "#f7e574"
+    contentImageModulate: "#f7e574"
+    backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
+    contentMargin: 16.0, 16.0, 16.0, 16.0
+    headerImagePath: "/Textures/Interface/Paper/paper_heading_cargo_invoice.svg.96dpi.png"
+    headerMargin: 0.0, 12.0, 0.0, 0.0
+  - type: StaticPrice
+    price: 0
+  # - type: GuideHelp # Frontier: removed guidebook entries
+  #   guides: # Frontier: removed guidebook entries
+  #   - Pirate # Frontier: add this eventually
+
+- type: entity
+  id: BoxFolderClipboardPal
+  parent: BoxFolderClipboard
+  name: PAL clipboard
+  description: The tool of choice for the master of bureaucracy.
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Misc/pal_clipboard.rsi
+  - type: Item
+    sprite: _NF/Objects/Misc/pal_clipboard.rsi
+  - type: Clothing
+    sprite: _NF/Objects/Misc/pal_clipboard.rsi
+
+- type: entity
+  id: BoxFolderPalGreen
+  parent: BoxFolderBase
+  name: PAL folder
+  suffix: Green
+  description: A folder to contain important NFSD forms.
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Misc/bureaucracy.rsi
+    layers:
+    - state: folder-pal-green
+    - state: folder-base
+  - type: StorageFill
+    contents:
+      - id: Paper
+        prob: 0.5
+      - id: PaperOffice
+        prob: 0.4
+      - id: Paper
+        prob: 0.3
+      - id: PaperOffice
+        prob: 0.2
+      - id: Paper
+        prob: 0.2
+
+- type: entity
+  id: BoxFolderPalBrown
+  parent: BoxFolderBase
+  name: PAL folder
+  suffix: Brown
+  description: A folder to contain important NFSD forms.
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Misc/bureaucracy.rsi
+    layers:
+    - state: folder-pal-brown
+    - state: folder-base
+  - type: StorageFill
+    contents:
+      - id: Paper
+        prob: 0.5
+      - id: PaperOffice
+        prob: 0.4
+      - id: Paper
+        prob: 0.3
+      - id: PaperOffice
+        prob: 0.2
+      - id: Paper
+        prob: 0.2
+
+- type: entity
+  id: PaperDeadDropHint
+  parent: Paper
+  name: suspicious note
+  description: A crinkled sheet with scribbles on it. Seems to have been written in a hurry.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: DeadDropHint
+  - type: Paper
+    content: deaddrop-faxed-hint-content # Default contents, will be edited.
+    stampedBy:
+    - stampedName: deaddrop-faxed-hint-signature
+      stampedColor: "#850000"
+    stampState: null
+
+- type: entity
+  id: PaperDeadDropFax
+  parent: PaperDeadDropHint
+  name: suspicious fax
+  description: A sheet with blurry, crooked text on it. Seems to have been copied in a hurry.
+  components:
+  - type: Paper
+    stampState: paper_stamp-syndicate
+
+- type: entity
+  parent: Paper
+  id: PaperColoredRed
+  suffix: Red
+  description: 'A piece of red paper.'
+  components:
+    - type: Tag
+      tags:
+      - Document
+      - Paper
+      - Trash
+    - type: Sprite
+      sprite: Objects/Misc/bureaucracy.rsi
+      layers:
+        - state: paper
+          color: "#F4B5B5"
+        - state: paper_words
+          map: ["enum.PaperVisualLayers.Writing"]
+          visible: false
+          color: "#F4B5B5"
+        - state: paper_stamp-generic
+          map: ["enum.PaperVisualLayers.Stamp"]
+          visible: false
+    - type: PaperVisuals
+      backgroundModulate: "#F4B5B5"
+
+- type: entity
+  parent: Paper
+  id: PaperColoredOrange
+  suffix: Orange
+  description: 'A piece of orange paper.'
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/bureaucracy.rsi
+      layers:
+        - state: paper
+          color: "#F9C7A1"
+        - state: paper_words
+          map: ["enum.PaperVisualLayers.Writing"]
+          visible: false
+          color: "#F9C7A1"
+        - state: paper_stamp-generic
+          map: ["enum.PaperVisualLayers.Stamp"]
+          visible: false
+    - type: PaperVisuals
+      backgroundModulate: "#F9C7A1"
+
+- type: entity
+  parent: Paper
+  id: PaperColoredYellow
+  suffix: Yellow
+  description: 'A piece of yellow paper.'
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/bureaucracy.rsi
+      layers:
+        - state: paper
+          color: "#FFF4B5"
+        - state: paper_words
+          map: ["enum.PaperVisualLayers.Writing"]
+          visible: false
+          color: "#FFF4B5"
+        - state: paper_stamp-generic
+          map: ["enum.PaperVisualLayers.Stamp"]
+          visible: false
+    - type: PaperVisuals
+      backgroundModulate: "#FFF4B5"
+
+- type: entity
+  parent: Paper
+  id: PaperColoredGreen
+  suffix: Green
+  description: 'A piece of green paper.'
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/bureaucracy.rsi
+      layers:
+        - state: paper
+          color: "#BAE6BA"
+        - state: paper_words
+          map: ["enum.PaperVisualLayers.Writing"]
+          visible: false
+          color: "#BAE6BA"
+        - state: paper_stamp-generic
+          map: ["enum.PaperVisualLayers.Stamp"]
+          visible: false
+    - type: PaperVisuals
+      backgroundModulate: "#BAE6BA"
+
+- type: entity
+  parent: Paper
+  id: PaperColoredBlue
+  suffix: Blue
+  description: 'A piece of blue paper.'
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/bureaucracy.rsi
+      layers:
+        - state: paper
+          color: "#B7DCFA"
+        - state: paper_words
+          map: ["enum.PaperVisualLayers.Writing"]
+          visible: false
+          color: "#B7DCFA"
+        - state: paper_stamp-generic
+          map: ["enum.PaperVisualLayers.Stamp"]
+          visible: false
+    - type: PaperVisuals
+      backgroundModulate: "#B7DCFA"
+
+- type: entity
+  parent: Paper
+  id: PaperColoredPurple
+  suffix: Purple
+  description: 'A piece of purple paper.'
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/bureaucracy.rsi
+      layers:
+        - state: paper
+          color: "#DFB7FA"
+        - state: paper_words
+          map: ["enum.PaperVisualLayers.Writing"]
+          visible: false
+          color: "#DFB7FA"
+        - state: paper_stamp-generic
+          map: ["enum.PaperVisualLayers.Stamp"]
+          visible: false
+    - type: PaperVisuals
+      backgroundModulate: "#DFB7FA"

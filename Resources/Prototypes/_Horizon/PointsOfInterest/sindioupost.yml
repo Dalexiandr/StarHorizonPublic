@@ -1,0 +1,77 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: amir7036
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип аванпоста:
+#
+- type: pointOfInterest
+  id: SindiOutpost
+  parent: BasePOI
+  name: poi-sindi-outpost-name
+  mapName: poi-sindi-outpost-map
+  minimumDistance: 12000
+  maximumDistance: 15000
+  spawnGroup: Required
+  anotherMap: true
+  gridPath: /Maps/_Horizon/POI/sindioupost.yml
+  hideWarp: true
+  addMapComponents:
+  - type: FTLDestination
+    requireCoordinateDisk: true
+  - type: Parallax
+    parallax: Sky
+  - type: MapAtmosphere
+    space: False
+    mixture:
+      volume: 2500
+      immutable: True
+      temperature: 248.15
+      moles:
+      - 21.824879
+      - 82.10312
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+  addComponents:
+  - type: IFF
+    color: "#C83737"
+    flags: [HideLabel]
+    readOnly: false
+  - type: FTLBeacon
+
+- type: gameMap
+  id: SindiOutpost
+  mapName: "Аванпост Синдиката"
+  mapPath: /Maps/_Horizon/POI/sindioupost.yml
+  minPlayers: 0
+  stations:
+    SindiOutpost:
+      stationProto: StandardFrontierOutpost
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Аванпост Синдиката"
+        - type: ExtraStationInformation
+          iconPath: /Textures/_Horizon/Interface/banner_syndicate_red.png
+          stationSubtext: 'frontier-lobby-syndicate-subtext'
+          stationDescription: 'frontier-lobby-syndicate-description'
+          lobbySortOrder: 7
+        - type: StationJobs
+          availableJobs:
+            SyndicateOfficerTeleCommunication: [ 1, 1 ]
+            SyndicateOperative: [ 3, 3 ]
+            SyndicateMedic: [ 2, 2 ]
+            SyndicateCargo: [ 4, 4 ]
+        - type: StationDeadDropHintExempt
+        - type: BindToStationVariationPassExemption
+        - type: NoMailStation # Horizon: Disable mail for Syndicate

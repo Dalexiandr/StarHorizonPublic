@@ -1,0 +1,48 @@
+- type: entity
+  parent: [ ClothingMaskGas, BaseAnCoContraband ]
+  id: AnCoClothingMaskBio
+  name: купольный противогаз АнКо
+  suffix: StarHorizon, AnCo
+  description: Боитесь задохнуться? Не проблема! Теперь найдите баллон.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Mask/biomask.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Mask/biomask.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+    hideOnToggle: true
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+
+- type: entity
+  parent: [ ClothingMaskGas, BaseAnCoContraband ]
+  id: AnCoClothingMaskCombat
+  name: боевой противогаз АнКо
+  description: От пули в голову не спасет, но вот от газа да.
+  suffix: StarHorizon, AnCo
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Mask/combatmask.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Mask/combatmask.rsi
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    hideOnToggle: true
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.90
+        Heat: 0.90

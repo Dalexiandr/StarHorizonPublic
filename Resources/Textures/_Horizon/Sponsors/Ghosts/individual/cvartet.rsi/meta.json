@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "license": "CLA with hosting restrictions",
+  "copyright": "by Malanisa DS:696020445945921627",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "animated",
+      "directions": 4
+    }
+  ]
+}

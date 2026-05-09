@@ -1,0 +1,79 @@
+<controls:FancyWindow xmlns="https://spacestation14.io"
+                       xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                       Title="{Loc 'currency-exchange-window-title'}"
+                       MinSize="450 380"
+                       SetSize="450 380">
+    <BoxContainer Orientation="Vertical" Margin="10">
+        <!-- Rate Display Header -->
+        <PanelContainer StyleClasses="AngleRect" HorizontalExpand="True">
+            <BoxContainer Orientation="Horizontal" Margin="10 5">
+                <BoxContainer Orientation="Vertical">
+                    <Label Text="{Loc 'currency-exchange-current-rate'}" StyleClasses="LabelSubText" />
+                    <BoxContainer Orientation="Horizontal">
+                        <Label Name="RateLabel" StyleClasses="LabelBig" />
+                        <Label Name="TrendLabel" Margin="10 0 0 0" StyleClasses="LabelBig" />
+                    </BoxContainer>
+                </BoxContainer>
+                <Control HorizontalExpand="True" />
+                <BoxContainer Orientation="Vertical" HorizontalAlignment="Right">
+                    <Label Text="{Loc 'currency-exchange-commission'}" StyleClasses="LabelSubText" />
+                    <Label Name="CommissionLabel" StyleClasses="LabelKeyText" HorizontalAlignment="Right" />
+                </BoxContainer>
+            </BoxContainer>
+        </PanelContainer>
+
+        <Control MinHeight="10" />
+
+        <!-- Disk Info -->
+        <PanelContainer StyleClasses="AngleRect" HorizontalExpand="True">
+            <BoxContainer Orientation="Vertical" Margin="10">
+                <Label Text="{Loc 'currency-exchange-disk-info'}" StyleClasses="LabelHeading" />
+                <Control MinHeight="5" />
+
+                <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
+                    <Label Text="{Loc 'currency-exchange-disk-credits'}" />
+                    <Control HorizontalExpand="True" />
+                    <Label Name="DiskCreditsLabel" StyleClasses="LabelKeyText" />
+                </BoxContainer>
+
+                <Control MinHeight="3" />
+
+                <ProgressBar Name="DiskFillBar" MinHeight="12" HorizontalExpand="True" />
+
+                <Control MinHeight="5" />
+
+                <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
+                    <Label Text="{Loc 'currency-exchange-will-receive'}" />
+                    <Control HorizontalExpand="True" />
+                    <Label Name="WillReceiveLabel" StyleClasses="LabelKeyText" />
+                </BoxContainer>
+            </BoxContainer>
+        </PanelContainer>
+
+        <Control MinHeight="10" />
+
+        <!-- Exchange Controls -->
+        <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
+            <Label Text="{Loc 'currency-exchange-amount'}" VerticalAlignment="Center" />
+            <Control MinWidth="10" />
+            <LineEdit Name="AmountEdit" HorizontalExpand="True" PlaceHolder="0" />
+        </BoxContainer>
+
+        <Control MinHeight="10" />
+
+        <!-- Buttons -->
+        <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
+            <Button Name="ExchangeButton" Text="{Loc 'currency-exchange-button-exchange'}" HorizontalExpand="True" MinHeight="35" />
+            <Control MinWidth="10" />
+            <Button Name="ExchangeAllButton" Text="{Loc 'currency-exchange-button-exchange-all'}" HorizontalExpand="True" MinHeight="35" />
+        </BoxContainer>
+
+        <Control MinHeight="5" />
+
+        <!-- No Disk Warning -->
+        <Label Name="NoDiskLabel" Text="{Loc 'currency-exchange-no-disk'}"
+               StyleClasses="LabelSubText"
+               HorizontalAlignment="Center"
+               Visible="False" />
+    </BoxContainer>
+</controls:FancyWindow>

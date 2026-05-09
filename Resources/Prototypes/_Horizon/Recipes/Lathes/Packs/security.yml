@@ -1,0 +1,54 @@
+## Static recipes
+## Dynamic recipes
+
+- type: latheRecipePack
+  id: NightVisionPack
+  recipes:
+  - ClothingEyesVision
+
+- type: latheRecipePack
+  id: NightVisionSecPack
+  recipes:
+  - ClothingEyesVisionSec
+
+- type: latheRecipePack
+  id: WeaponModulesPack
+  recipes:
+  - AttachmentVerticalGrip
+  - AttachmentLaserSight
+  - AttachmentReflexSight
+  - AttachmentT2Miniscope
+  - AttachmentM90UnderbarrelShotgun
+  - AttachmentM90GrenadeLauncher
+  - AttachmentMagneticHarness
+  - AttachmentSuppressor
+  - AttachmentAntiLyingWarrior
+  - 40mmGrenadeHEAT
+  - 40mmGrenadeBaton
+  - 40mmGrenadeEMP
+  - 40mmGrenadeFlash
+  - 40mmGrenadeSmoke
+
+- type: latheRecipePack
+  id: HRZNAmmo
+  recipes:
+  - NFAmmunitionBoxRifle20Psycore
+  - NFAmmunitionBoxRifle30Psycore
+  - NFAmmunitionBoxPistol35Psycore
+  - NFAmmunitionBoxPistol45Psycore
+  - NFAmmunitionBoxShellShotgunPsycore
+  - NFAmmunitionBoxRifle20Piercing
+  - NFAmmunitionBoxRifle30Piercing
+  - NFAmmunitionBoxPistol35Piercing
+  - NFAmmunitionBoxPistol45Piercing
+  - NFAmmunitionBoxShellShotgunPiercing
+  - NFAmmunitionBoxRifle20Incendiary
+  - NFAmmunitionBoxRifle30Incendiary
+  - NFAmmunitionBoxPistol35Incendiary
+  - NFAmmunitionBoxPistol45Incendiary
+  - NFAmmunitionBoxShellShotgunIncendiary
+  - NFAmmunitionBoxRifle20Uranium
+  - NFAmmunitionBoxRifle30Uranium
+  - NFAmmunitionBoxPistol35Uranium
+  - NFAmmunitionBoxPistol45Uranium
+  - NFAmmunitionBoxShellShotgunUranium

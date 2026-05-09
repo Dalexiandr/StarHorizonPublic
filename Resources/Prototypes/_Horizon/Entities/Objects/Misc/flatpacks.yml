@@ -1,0 +1,9 @@
+- type: entity
+  parent: BaseFlatpack
+  id: ComputerBotanicDNAManipulatorFlatpack
+  name: упакованная консоль манипулятора ДНК семян
+  description: Упаковка, применяемая для строительства консоли манипулятора ДНК семян.
+  suffix: Horizon
+  components:
+  - type: Flatpack
+    entity: ComputerBotanicDNAManipulator

@@ -1,0 +1,58 @@
+- type: job
+  id: SecurityCadet
+  name: job-name-cadet
+  description: job-description-cadet
+  playTimeTracker: JobSecurityCadetOld
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 36000 #10 hrs
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 18000 #5 hrs
+      inverted: true # stop playing intern if you're good at security!
+  startingGear: SecurityCadetGear
+  icon: "JobIconSecurityCadet"
+  supervisors: job-supervisors-security
+  canBeAntag: false
+  ## Frontier: commented out stuff below
+  # access:
+  # - Security
+  # - Brig
+  # - Maintenance
+  # - Service
+  # - External
+  # - Cryogenics
+  # special:
+  # - !type:AddImplantSpecial
+  #   implants: [ MindShieldImplant ]
+  ## End Frontier: commented out stuff above
+  setPreference: false # Frontier
+  accessGroups: # Frontier
+  - GeneralAccess # Frontier
+
+- type: startingGear
+  id: SecurityCadetGear
+  equipment:
+    shoes: ClothingShoesBootsJackFilled
+    outerClothing: ClothingOuterArmorBasic
+    id: SecurityCadetPDA
+    ears: ClothingHeadsetSecurity
+    belt: ClothingBeltSecurityFilled
+    pocket1: NFWeaponPistolMk58 # Frontier: use NF variant
+    pocket2: BookSecurity
+  storage:
+    back:
+    - Flash
+    - NFMagazinePistol35 # Frontier: MagazinePistol<NFMagazinePistol35
+
+- type: chameleonOutfit
+  id: SecurityCadetChameleonOutfit
+  job: SecurityCadet
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHelmetBasic
+    eyes: ClothingEyesHudSecurity
+    mask: ClothingMaskGasSecurity
+    neck: ClothingNeckScarfStripedRed
+    belt: ClothingBeltSecurity
+    gloves: ClothingHandsGlovesColorBlack

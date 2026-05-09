@@ -1,0 +1,33 @@
+- type: hitscan
+  id: HRZNCryoLazer
+  damage:
+    types:
+      Shock: 10
+      Cold: 15
+  muzzleFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: muzzle_xray
+  travelFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: xray
+  impactFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: impact_xray
+  maxLength: 15
+
+- type: hitscan
+  id: HRZNPyroLazer
+  damage:
+    types:
+      Shock: 10
+      Heat: 15
+  muzzleFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: muzzle_xray
+  travelFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: xray
+  impactFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: impact_xray
+  maxLength: 15

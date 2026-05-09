@@ -1,0 +1,32 @@
+- type: entity
+  id: ShipyardPriceMarkerShuttleConsole20000
+  name: shuttle console price marker
+  parent: MarkerBase
+  suffix: 4m, +20000
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Structures/Machines/computers.rsi
+        state: computer
+      - sprite: Structures/Machines/computers.rsi
+        state: generic_keyboard
+      - sprite: Structures/Machines/computers.rsi
+        state: shuttle
+  - type: ShipyardEntityPriceMarker
+    tag: ShuttleConsole
+    priceAdded: 20000
+
+- type: entity
+  id: ShipyardPriceMarkerAtmos15000
+  name: atmos price marker
+  parent: MarkerBase
+  suffix: 15000
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Objects/Tanks/oxygen.rsi
+        state: icon
+  - type: ShipyardTileAtmosPriceMarker
+    priceAdded: 15000

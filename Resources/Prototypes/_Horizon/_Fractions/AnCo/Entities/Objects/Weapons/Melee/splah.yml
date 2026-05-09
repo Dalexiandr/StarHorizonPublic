@@ -1,0 +1,33 @@
+- type: entity
+  name: тесак АнКо
+  parent: BaseAnCoSharpWeapon
+  id: AnCoSplah
+  description: Что то на уровне тесака НТ но в АнКо стиле
+  suffix: StarHorizon, AnCo, Weapon
+  components:
+  - type: Execution
+    doAfterDuration: 2.0
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Melee/plash.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    attackRate: 1
+    damage:
+      types:
+        Slash: 20
+    autoAttack: false
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Item
+    size: Normal
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Melee/plash.rsi
+  - type: DisarmMalus
+  - type: Utensil
+    types:
+    - Knife
+  - type: Tool
+    qualities:
+    - Slicing
+  - type: StaticPrice
+    price: 5000

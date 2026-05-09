@@ -1,0 +1,62 @@
+- type: entity
+  parent: Windoor
+  id: WindoorDFILocked
+  suffix: DFI, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDFI ]
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecureDFILocked
+  suffix: DFI, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDFI ]
+
+- type: entity
+  parent: WindoorClockwork
+  id: WindoorClockworkDFILocked
+  suffix: DFI, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDFI ]
+
+- type: entity
+  parent: WindoorPlasma
+  id: PlasmaWindoorDFILocked
+  suffix: DFI, Locked, Plasma
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDFI ]
+
+- type: entity
+  parent: WindoorSecurePlasma
+  id: PlasmaWindoorSecureDFILocked
+  suffix: DFI, Locked, Plasma
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDFI ]
+
+- type: entity
+  parent: WindoorUranium
+  id: UraniumWindoorDFILocked
+  suffix: DFI, Locked, Uranium
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDFI ]
+
+- type: entity
+  parent: WindoorSecureUranium
+  id: UraniumWindoorSecureDFILocked
+  suffix: DFI, Locked, Uranium
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDFI ]

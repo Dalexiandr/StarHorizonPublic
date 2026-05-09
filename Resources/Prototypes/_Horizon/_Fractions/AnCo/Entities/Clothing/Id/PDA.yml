@@ -1,0 +1,91 @@
+- type: entity
+  parent: [BasePDA, BaseAnCoContraband]
+  id: PDAAnCo
+  suffix: StarHorizon, AnCo
+  name: кпк агента АнКо
+  description: Ничем не отличимый от других, за исключением ручки, КПК.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Devices/pda.rsi
+  - type: Pda
+    penSlot:
+      startingItem: PenAnCo
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#2b2f35"
+  - type: FactionClothing
+    faction: AnCoSecurBot
+
+# КПК кадета
+- type: entity
+  parent: PDAAnCo
+  id: PDACadetAnCo
+  suffix: StarHorizon, AnCo
+  name: кпк Кадета АнКо
+  components:
+  - type: Pda
+    id: AnCoCadetID
+
+#  КПК Рипсоида
+- type: entity
+  parent: PDAAnCo
+  id: PDARipsoidAnCo
+  suffix: StarHorizon, AnCo
+  name: кпк Рипсоида АнКо
+  components:
+  - type: Pda
+    id: AnCoRipsoidID
+
+# КПК офицера
+- type: entity
+  parent: PDAAnCo
+  id: PDAOfficerAnCo
+  suffix: StarHorizon, AnCo
+  name: кпк Офицера АнКо
+  components:
+  - type: Pda
+    id: AnCoOfficerID
+
+#  КПК офицера Паука
+- type: entity
+  parent: PDAAnCo
+  id: PDASpiderAnCo
+  suffix: StarHorizon, AnCo
+  name: кпк Офицера Паука АнКо
+  components:
+  - type: Pda
+    id: AnCoSpiderID
+
+# КПК Рыцаря
+- type: entity
+  parent: PDAAnCo
+  id: PDAKnightAnCo
+  suffix: StarHorizon, AnCo
+  name: кпк Офицера Рыцаря АнКо
+  components:
+  - type: Pda
+    id: AnCoKnightID
+
+# КПК Титана
+- type: entity
+  parent: PDAAnCo
+  id: PDATitanAnCo
+  suffix: StarHorizon, AnCo
+  name: кпк Офицера Титана АнКо
+  components:
+  - type: Pda
+    id: AnCoTitanID
+
+# КПК Консула
+- type: entity
+  parent: PDAAnCo
+  id: PDACounselorAnCo
+  suffix: StarHorizon, AnCo
+  name: кпк Советника АнКо
+  components:
+  - type: Pda
+    id: AnCoCounselorID

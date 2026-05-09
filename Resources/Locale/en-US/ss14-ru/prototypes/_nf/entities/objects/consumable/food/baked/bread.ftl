@@ -1,0 +1,10 @@
+ent-FoodBreadChallah = honey challah
+    .desc = Twisted bread sprinkled with poppy seeds.
+ent-FoodBreadChallahSlice = challah slice
+    .desc = A slice of poppy and honey, oh my!
+ent-FoodBreadGarlicBaguette = french garlic bread
+    .desc = Garlic? Melted cheese on a baguette!? The only thing missing here is more even garlic.
+ent-FoodBreadGarlicBaguetteSlice = french garlic bread slice
+    .desc = A slice of french garlic bread, loaded with toasted cheese and not nearly enough garlic.
+ent-FoodBreadTexasToast = texas toast
+    .desc = A thick slab of toast covered in garlic and butter. And if that don't work - use more garlic.

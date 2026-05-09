@@ -1,0 +1,211 @@
+- type: entity
+  name: ящик АнКо
+  parent: BaseItem
+  id: AnCoBox
+  suffix: StarHorizon, AnCo
+  categories: [ HideSpawnMenu ]
+  description: Закрытый ящик с логотипом корпорации.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Storage/box.rsi
+    state: ancobox
+  - type: Item
+    sprite: _Horizon/_Fractions/AnCo/Objects/Storage/box.rsi
+    state: ancobox
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+    - id: AnCoopenbox
+
+- type: entity
+  parent: BaseItem
+  id: AnCoopenbox
+  name: вскрытый ящик АнКо
+  description: Вскрытый ящик с логотипом корпорации.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Storage/box.rsi
+    state: ancoboxopen
+  - type: Item
+    sprite: _Horizon/_Fractions/AnCo/Objects/Storage/box.rsi
+    state: ancoboxopen
+    size: Huge
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: AnCoBox
+  id: AnCoBoxStoreUniform
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: PDAAnCo
+    - id: AnCoGloves
+    - id: SuitAnCo
+    - id: AnCoBoots
+    - id: ClothingEyesGlassesAnCo
+    - id: AnCosatchel
+    - id: AnCoopenbox
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  name: Ультимативный набор АнКо
+  description: Станьте настоящим патриотом АнКо. Слава АнКо!
+  parent: AnCoBox
+  id: AnCoBoxKitUniform
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: PDAAnCo
+    - id: AnCoGloves
+    - id: AnCoGlovesIsolate
+    - id: SuitAnCo
+    - id: SuitProtectiveAnCo
+    - id: SkirtProtectiveAnCo
+    - id: SkirtAnCo
+    - id: AnCoBoots
+    - id: ClothingEyesGlassesAnCo
+    - id: AnCosatchel
+    - id: AnCoVests
+    - id: AnCoberet
+    - id: AnCocap
+    - id: RipsiPlushin
+    - id: LumaPlushina
+    - id: AnCoopenbox
+  - type: StaticPrice
+    price: 200000
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: AnCoBox
+  id: AnCoBoxStoreBug
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: SuitProtectiveAnCo
+    - id: AnCoDroneOff
+    - id: AnCoDroneOff
+    - id: AnCoDroneOff
+    - id: AnCoDroneOff
+# Xigovir: а что тут не так? это же буквально ящик с жучками
+    - id: AnCoopenbox
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: AnCoBox
+  id: AnCoBoxStoreAccessory
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: ClothingNeckCloakAnCo
+    - id: AnCoberet
+    - id: AnCocap
+    - id: RipsiPlushin
+    - id: LumaPlushina
+    - id: AnCoopenbox
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: AnCoBox
+  id: AnCoBoxStoreHack
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: AnCoOmegaTool
+    - id: ClothingEyesGlassesAnCo
+    - id: AnCoGlovesIsolate
+    - id: AnCoopenbox
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: AnCoBox
+  id: AnCoBoxStoreLasGun
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: PMLaserAnCoGun
+    - id: AnCoEnergyCore
+    - id: AnCoEnergyCore
+    - id: AnCoopenbox
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: AnCoBox
+  id: AnCoBoxStoreLasGunKnight
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: LaserAnCoGun
+    - id: AnCoEnergyCore
+    - id: AnCoEnergyCore
+    - id: AnCoopenbox
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: AnCoBox
+  id: AnCoBoxStoreStun
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: WeaponDisablerSMGAnCo
+    - id: WeaponStunprodAnCo
+    - id: AnCoHandcuffs
+    - id: AnCoHandcuffs
+    - id: AnCoopenbox
+
+# это тоже коробочка, не ебите мозги
+
+- type: entity
+  id: BoxRationAnCo
+  parent: [BaseItem, BaseAnCoContraband]
+  name: Суточное питание сотрудника
+  description: Ничто не может передать так хорошо философию чего либо, кроме как еда.
+  suffix: StarHorizon, AnCo, Food
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Misc/ration.rsi
+    state: icon
+  - type: Appearance
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,1
+  - type: PhysicalComposition
+    materialComposition:
+      Ardon: 100
+      Kazmie: 300
+  - type: StaticPrice
+    price: 10
+  - type: Tag
+    tags:
+    - BoxCardboard
+  - type: ContainerContainer
+    containers:
+      water: !type:ContainerSlot
+      nutriblock1: !type:ContainerSlot
+      nutriblock2: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      water:
+        ejectOnInteract: false
+        whitelist:
+          tags:
+          - AnCoWater
+      nutriblock1:
+        ejectOnInteract: false
+        whitelist:
+          tags:
+          - AnCoTin
+      nutriblock2:
+        ejectOnInteract: false
+        whitelist:
+          tags:
+          - AnCoTin
+  - type: ContainerFill
+    containers:
+      water:
+      - DrinkWaterAnCoBottleFull
+      nutriblock1:
+      - FoodAnCoTin
+      nutriblock2:
+      - FoodAnCoTin

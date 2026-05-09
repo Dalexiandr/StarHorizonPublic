@@ -1,0 +1,10 @@
+ent-NFBaseGatherableFlora = { ent-BaseStructure }
+    .desc = { ent-BaseStructure.desc }
+ent-NFGlowshroom = glowshroom
+    .desc = A highly-resilient species of mushroom that glows in the dark.
+    .suffix = Structure
+ent-NFGlowshroomWall = { ent-NFGlowshroom }
+    .suffix = Structure, Wallmount
+    .desc = { ent-NFGlowshroom.desc }
+ent-NFFoodGlowshroom = glowshroom
+    .desc = A highly-resilient species of mushroom that glows in the dark.

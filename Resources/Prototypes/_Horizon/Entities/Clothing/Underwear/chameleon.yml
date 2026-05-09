@@ -1,0 +1,56 @@
+- type: entity
+  parent: ClothingUnderwearBottomBase
+  id: ClothingUnderwearBottomChameleon
+  name: трусы
+  description: Нижнее бельё из голографических волокон. Может принимать вид любой другой модели.
+  suffix: Хамелеон
+  components:
+    - type: Tag
+      tags: [ClothMade, UnderwearB]
+    - type: Sprite
+      sprite: Clothing/Underwear/Bottom/boxers.rsi
+    - type: ChameleonClothing
+      slot: [UNDERWEARB]
+      default: ClothingUnderwearBottomBoxersWhite
+    - type: UserInterface
+      interfaces:
+        enum.ChameleonUiKey.Key:
+          type: ChameleonBoundUserInterface
+
+- type: entity
+  parent: ClothingUnderwearTopBase
+  id: ClothingUnderwearTopChameleon
+  name: бюстгальтер
+  description: Верхнее бельё из голографических волокон. Может принимать вид любой другой модели.
+  suffix: Хамелеон
+  components:
+    - type: Tag
+      tags: [ClothMade, UnderwearT]
+    - type: Sprite
+      sprite: Clothing/Underwear/Top/bra.rsi
+    - type: ChameleonClothing
+      slot: [UNDERWEART]
+      default: ClothingUnderwearTopBraWhite
+    - type: UserInterface
+      interfaces:
+        enum.ChameleonUiKey.Key:
+          type: ChameleonBoundUserInterface
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ClothingUnderwearSocksChameleon
+  name: носки
+  description: Носки из голографических волокон. Могут принимать вид любой другой модели.
+  suffix: Хамелеон
+  components:
+    - type: Tag
+      tags: [ClothMade, Socks]
+    - type: Sprite
+      sprite: Clothing/Underwear/Socks/socksnorm.rsi
+    - type: ChameleonClothing
+      slot: [SOCKS]
+      default: ClothingUnderwearSocksNormal
+    - type: UserInterface
+      interfaces:
+        enum.ChameleonUiKey.Key:
+          type: ChameleonBoundUserInterface

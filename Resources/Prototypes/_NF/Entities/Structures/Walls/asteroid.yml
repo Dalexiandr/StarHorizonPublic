@@ -1,0 +1,1302 @@
+- type: entity
+  abstract: true
+  id: NFBaseSoftOreVein
+  components:
+  - type: OreVein
+    gatherDestructionWhitelist:
+      components:
+      - MiningGatheringHard
+
+- type: entity
+  parent: [NFBaseSoftOreVein, AsteroidRock]
+  id: NFAsteroidRockOre
+  abstract: true
+
+- type: entity
+  parent: [NFBaseSoftOreVein, IronRock]
+  id: NFIronRockOre
+  abstract: true
+
+- type: entity
+  parent: [NFBaseSoftOreVein, WallRock]
+  id: NFWallRockOre
+  abstract: true
+
+- type: entity
+  parent: [NFBaseSoftOreVein, WallRockBasalt]
+  id: NFWallRockBasaltOre
+  abstract: true
+
+- type: entity
+  parent: [NFBaseSoftOreVein, WallRockSnow]
+  id: NFWallRockSnowOre
+  abstract: true
+
+- type: entity
+  parent: [NFBaseSoftOreVein, WallRockSand]
+  id: NFWallRockSandOre
+  abstract: true
+
+- type: entity
+  parent: [NFBaseSoftOreVein, WallRockChromite]
+  id: NFWallRockChromiteOre
+  abstract: true
+
+- type: entity
+  parent: [NFBaseSoftOreVein, WallRockAndesite]
+  id: NFWallRockAndesiteOre
+  abstract: true
+
+# region Ore
+- type: entity
+  id: NFAsteroidRockBluespace
+  parent: NFAsteroidRockOre
+  description: An ore vein with bluespace.
+  suffix: Bluespace
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: NFOreBluespace
+  - type: Sprite
+    layers:
+    - state: rock_asteroid
+    - map: [ "enum.EdgeLayer.South" ]
+      state: rock_asteroid_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: rock_asteroid_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: rock_asteroid_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: rock_asteroid_west
+    - sprite: _NF/Structures/Walls/rock.rsi
+      state: rock_bluespace
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: NFIronRockBluespace
+  parent: NFIronRockOre
+  description: An ore vein with bluespace.
+  suffix: Bluespace
+  components:
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: NFOreBluespace
+    - type: Sprite
+      layers:
+      - state: ironrock
+      - map: [ "enum.EdgeLayer.South" ]
+        state: ironrock_south
+      - map: [ "enum.EdgeLayer.East" ]
+        state: ironrock_east
+      - map: [ "enum.EdgeLayer.North" ]
+        state: ironrock_north
+      - map: [ "enum.EdgeLayer.West" ]
+        state: ironrock_west
+      - sprite: _NF/Structures/Walls/rock.rsi
+        state: rock_bluespace
+        map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: NFWallRockBluespace
+  parent: NFWallRockOre
+  description: An ore vein with bluespace.
+  suffix: Bluespace
+  components:
+  - type: EntityRemap
+    mask:
+      AsteroidRock: NFAsteroidRockBluespace
+      WallRockBasalt: NFWallRockBasaltBluespace
+      WallRockChromite: NFWallRockChromiteBluespace
+      WallRockSand: NFWallRockSandBluespace
+      WallRockSnow: NFWallRockSnowBluespace
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: NFOreBluespace
+  - type: Sprite
+    layers:
+      - state: rock
+      - map: [ "enum.EdgeLayer.South" ]
+        state: rock_south
+      - map: [ "enum.EdgeLayer.East" ]
+        state: rock_east
+      - map: [ "enum.EdgeLayer.North" ]
+        state: rock_north
+      - map: [ "enum.EdgeLayer.West" ]
+        state: rock_west
+      - sprite: _NF/Structures/Walls/rock.rsi
+        state: rock_bluespace
+        map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: NFWallRockBasaltBluespace
+  parent: NFWallRockBasaltOre
+  description: An ore vein with bluespace.
+  suffix: Bluespace
+  components:
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: NFOreBluespace
+    - type: Sprite
+      layers:
+      - state: rock_wall
+      - map: [ "enum.EdgeLayer.South" ]
+        state: rock_wall_south
+      - map: [ "enum.EdgeLayer.East" ]
+        state: rock_wall_east
+      - map: [ "enum.EdgeLayer.North" ]
+        state: rock_wall_north
+      - map: [ "enum.EdgeLayer.West" ]
+        state: rock_wall_west
+      - sprite: _NF/Structures/Walls/rock.rsi
+        state: rock_bluespace
+        map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: NFWallRockSnowBluespace
+  parent: NFWallRockSnowOre
+  description: An ore vein with bluespace.
+  suffix: Bluespace
+  components:
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: NFOreBluespace
+    - type: Sprite
+      layers:
+      - state: rock_snow
+      - map: [ "enum.EdgeLayer.South" ]
+        state: rock_snow_south
+      - map: [ "enum.EdgeLayer.East" ]
+        state: rock_snow_east
+      - map: [ "enum.EdgeLayer.North" ]
+        state: rock_snow_north
+      - map: [ "enum.EdgeLayer.West" ]
+        state: rock_snow_west
+      - sprite: _NF/Structures/Walls/rock.rsi
+        state: rock_bluespace
+        map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: NFWallRockSandBluespace
+  parent: NFWallRockSandOre
+  description: An ore vein with bluespace.
+  suffix: Bluespace
+  components:
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: NFOreBluespace
+    - type: Sprite
+      layers:
+      - state: rock_sand
+      - map: [ "enum.EdgeLayer.South" ]
+        state: rock_sand_south
+      - map: [ "enum.EdgeLayer.East" ]
+        state: rock_sand_east
+      - map: [ "enum.EdgeLayer.North" ]
+        state: rock_sand_north
+      - map: [ "enum.EdgeLayer.West" ]
+        state: rock_sand_west
+      - sprite: _NF/Structures/Walls/rock.rsi
+        state: rock_bluespace
+        map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: NFWallRockChromiteBluespace
+  parent: NFWallRockChromiteOre
+  description: An ore vein with bluespace.
+  suffix: Bluespace
+  components:
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: NFOreBluespace
+    - type: Sprite
+      layers:
+      - state: rock_chromite
+      - map: [ "enum.EdgeLayer.South" ]
+        state: rock_chromite_south
+      - map: [ "enum.EdgeLayer.East" ]
+        state: rock_chromite_east
+      - map: [ "enum.EdgeLayer.North" ]
+        state: rock_chromite_north
+      - map: [ "enum.EdgeLayer.West" ]
+        state: rock_chromite_west
+      - sprite: _NF/Structures/Walls/rock.rsi
+        state: rock_bluespace
+        map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: NFWallRockAndesiteBluespace
+  parent: NFWallRockAndesiteOre
+  description: An ore vein with bluespace.
+  suffix: Bluespace
+  components:
+    - type: OreVein
+      oreChance: 1.0
+      currentOre: NFOreBluespace
+    - type: Sprite
+      layers:
+      - state: rock_andesite
+      - map: [ "enum.EdgeLayer.South" ]
+        state: rock_andesite_south
+      - map: [ "enum.EdgeLayer.East" ]
+        state: rock_andesite_east
+      - map: [ "enum.EdgeLayer.North" ]
+        state: rock_andesite_north
+      - map: [ "enum.EdgeLayer.West" ]
+        state: rock_andesite_west
+      - sprite: _NF/Structures/Walls/rock.rsi
+        state: rock_bluespace
+        map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+# endregion Ore
+
+# region Scrap with Ore
+- type: entity
+  id: NFWallRockScrapPile
+  parent: NFWallRockAndesiteOre
+  name: scrap pile
+  description: A pile of scrap.
+  suffix: Scrap
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: NFOreScrap
+  - type: Icon
+    sprite: _NF/Structures/Walls/rock.rsi
+    state: scraprock01
+  - type: Sprite
+    sprite: _NF/Structures/Walls/rock.rsi
+    layers:
+    - state: scraprock01
+      map: [ "scraprock_variant" ]
+    - map: [ "enum.EdgeLayer.South" ]
+      state: scraprock_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: scraprock_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: scraprock_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: scraprock_west
+    - state: rock_scrap
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+  - type: RandomSprite
+    available:
+      - scraprock_variant:
+          scraprock01: ""
+          scraprock02: ""
+          scraprock03: ""
+          scraprock04: ""
+          scraprock05: ""
+          scraprock06: ""
+          scraprock07: ""
+
+- type: entity
+  id: NFWallRockScrapPileBot
+  parent: [NFBaseScrapBotVein, NFWallRockScrapPile]
+
+- type: entity
+  id: NFWallRockScrapPileCoal
+  parent: NFWallRockScrapPile
+  description: An ore vein with coal.
+  suffix: Coal
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: NFOreCoal
+  - type: Sprite
+    layers:
+    - state: scraprock01
+      map: [ "scraprock_variant" ]
+    - map: [ "enum.EdgeLayer.South" ]
+      state: scraprock_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: scraprock_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: scraprock_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: scraprock_west
+    - sprite: Structures/Walls/rock.rsi
+      state: rock_coal
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: NFWallRockScrapPileCoalBot
+  parent: [NFBaseScrapBotVein, NFWallRockScrapPileCoal]
+
+- type: entity
+  id: NFWallRockScrapPileGold
+  parent: NFWallRockScrapPile
+  description: An ore vein with gold.
+  suffix: Gold
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: NFOreGold
+  - type: Sprite
+    layers:
+    - state: scraprock01
+      map: [ "scraprock_variant" ]
+    - map: [ "enum.EdgeLayer.South" ]
+      state: scraprock_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: scraprock_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: scraprock_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: scraprock_west
+    - sprite: Structures/Walls/rock.rsi
+      state: rock_gold
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: NFWallRockScrapPileGoldBot
+  parent: [NFBaseScrapBotVein, NFWallRockScrapPileGold]
+
+- type: entity
+  id: NFWallRockScrapPileDiamond
+  parent: NFWallRockScrapPile
+  description: An ore vein with diamond.
+  suffix: Diamond
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: OreDiamond
+  - type: Sprite
+    layers:
+    - state: scraprock01
+      map: [ "scraprock_variant" ]
+    - map: [ "enum.EdgeLayer.South" ]
+      state: scraprock_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: scraprock_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: scraprock_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: scraprock_west
+    - sprite: Structures/Walls/rock.rsi
+      state: rock_diamond
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: NFWallRockScrapPileDiamondBot
+  parent: [NFBaseScrapBotVein, NFWallRockScrapPileDiamond]
+
+- type: entity
+  id: NFWallRockScrapPilePlasma
+  parent: NFWallRockScrapPile
+  description: An ore vein with plasma.
+  suffix: Plasma
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: NFOrePlasma
+  - type: Sprite
+    layers:
+    - state: scraprock01
+      map: [ "scraprock_variant" ]
+    - map: [ "enum.EdgeLayer.South" ]
+      state: scraprock_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: scraprock_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: scraprock_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: scraprock_west
+    - sprite: Structures/Walls/rock.rsi
+      state: rock_phoron
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: NFWallRockScrapPilePlasmaBot
+  parent: [NFBaseScrapBotVein, NFWallRockScrapPilePlasma]
+
+- type: entity
+  id: NFWallRockScrapPileQuartz
+  parent: NFWallRockScrapPile
+  description: An ore vein with quartz.
+  suffix: Quartz
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: NFOreSpaceQuartz
+  - type: Sprite
+    layers:
+    - state: scraprock01
+      map: [ "scraprock_variant" ]
+    - map: [ "enum.EdgeLayer.South" ]
+      state: scraprock_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: scraprock_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: scraprock_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: scraprock_west
+    - sprite: Structures/Walls/rock.rsi
+      state: rock_quartz
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: NFWallRockScrapPileQuartzBot
+  parent: [NFBaseScrapBotVein, NFWallRockScrapPileQuartz]
+
+- type: entity
+  id: NFWallRockScrapPileSilver
+  parent: NFWallRockScrapPile
+  description: An ore vein with silver.
+  suffix: Silver
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: NFOreSilver
+  - type: Sprite
+    layers:
+    - state: scraprock01
+      map: [ "scraprock_variant" ]
+    - map: [ "enum.EdgeLayer.South" ]
+      state: scraprock_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: scraprock_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: scraprock_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: scraprock_west
+    - sprite: Structures/Walls/rock.rsi
+      state: rock_silver
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: NFWallRockScrapPileSilverBot
+  parent: [NFBaseScrapBotVein, NFWallRockScrapPileSilver]
+
+- type: entity
+  id: NFWallRockScrapPileIron
+  parent: NFWallRockScrapPile
+  description: An ore vein with iron.
+  suffix: Iron
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: NFOreSteel
+  - type: Sprite
+    layers:
+    - state: scraprock01
+      map: [ "scraprock_variant" ]
+    - map: [ "enum.EdgeLayer.South" ]
+      state: scraprock_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: scraprock_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: scraprock_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: scraprock_west
+    - sprite: Structures/Walls/rock.rsi
+      state: rock_tin
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: NFWallRockScrapPileIronBot
+  parent: [NFBaseScrapBotVein, NFWallRockScrapPileIron]
+
+- type: entity
+  id: NFWallRockScrapPileUranium
+  parent: NFWallRockScrapPile
+  description: An ore vein with uranium.
+  suffix: Uranium
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: NFOreUranium
+  - type: Sprite
+    layers:
+    - state: scraprock01
+      map: [ "scraprock_variant" ]
+    - map: [ "enum.EdgeLayer.South" ]
+      state: scraprock_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: scraprock_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: scraprock_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: scraprock_west
+    - sprite: Structures/Walls/rock.rsi
+      state: rock_uranium
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: NFWallRockScrapPileUraniumBot
+  parent: [NFBaseScrapBotVein, NFWallRockScrapPileUranium]
+
+- type: entity
+  id: NFWallRockScrapPileBananium
+  parent: NFWallRockScrapPile
+  description: An ore vein with bananium.
+  suffix: Bananium
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: NFOreBananium
+  - type: Sprite
+    layers:
+    - state: scraprock01
+      map: [ "scraprock_variant" ]
+    - map: [ "enum.EdgeLayer.South" ]
+      state: scraprock_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: scraprock_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: scraprock_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: scraprock_west
+    - sprite: Structures/Walls/rock.rsi
+      state: rock_bananium
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: NFWallRockScrapPileBananiumBot
+  parent: [NFBaseScrapBotVein, NFWallRockScrapPileBananium]
+
+- type: entity
+  id: NFWallRockScrapPileSalt
+  parent: NFWallRockScrapPile
+  description: An ore vein with salt.
+  suffix: Salt
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: NFOreSalt
+  - type: Sprite
+    layers:
+    - state: scraprock01
+      map: [ "scraprock_variant" ]
+    - map: [ "enum.EdgeLayer.South" ]
+      state: scraprock_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: scraprock_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: scraprock_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: scraprock_west
+    - sprite: Structures/Walls/rock.rsi
+      state: rock_salt
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: NFWallRockScrapPileSaltBot
+  parent: [NFBaseScrapBotVein, NFWallRockScrapPileSalt]
+
+- type: entity
+  id: NFWallRockScrapPileArtifactFragment
+  parent: NFWallRockScrapPile
+  description: A scrap pile. What's that sticking out of it?
+  suffix: Artifact Fragment
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: OreArtifactFragment
+  - type: Sprite
+    layers:
+    - state: scraprock01
+      map: [ "scraprock_variant" ]
+    - map: [ "enum.EdgeLayer.South" ]
+      state: scraprock_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: scraprock_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: scraprock_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: scraprock_west
+    - sprite: Structures/Walls/rock.rsi
+      state: rock_artifact_fragment
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: NFWallRockScrapPileArtifactFragmentBot
+  parent: [NFBaseScrapBotVein, NFWallRockScrapPileArtifactFragment]
+
+- type: entity
+  id: NFWallRockScrapPileBluespace
+  parent: NFWallRockScrapPile
+  description: An ore vein with bluespace.
+  suffix: Bluespace
+  components:
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: NFOreBluespace
+  - type: Sprite
+    layers:
+    - state: scraprock01
+      map: [ "scraprock_variant" ]
+    - map: [ "enum.EdgeLayer.South" ]
+      state: scraprock_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: scraprock_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: scraprock_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: scraprock_west
+    - state: rock_bluespace
+      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+
+- type: entity
+  id: NFWallRockScrapPileBluespaceBot
+  parent: [NFBaseScrapBotVein, NFWallRockScrapPileBluespace]
+# endregion Scrap with Ore
+
+# region Bananium Crabs
+- type: entity
+  id: NFWallRockAndesiteBananiumCrab
+  parent: [NFBaseBananiumCrabVein, WallRockAndesiteBananium]
+  suffix: Bananium Crab
+
+- type: entity
+  id: NFWallRockBasaltBananiumCrab
+  parent: [NFBaseBananiumCrabVein, WallRockBasaltBananium]
+  suffix: Bananium Crab
+
+- type: entity
+  id: NFAsteroidRockBananiumCrab
+  parent: [NFBaseBananiumCrabVein, AsteroidRockBananium]
+  suffix: Bananium Crab
+
+- type: entity
+  id: NFWallRockBananiumCrab
+  parent: [NFBaseBananiumCrabVein, WallRockBananium]
+  suffix: Bananium Crab
+
+- type: entity
+  id: NFWallRockSandBananiumCrab
+  parent: [NFBaseBananiumCrabVein, WallRockSandBananium]
+  suffix: Bananium Crab
+
+- type: entity
+  id: NFWallRockSnowBananiumCrab
+  parent: [NFBaseBananiumCrabVein, WallRockSnowBananium]
+  suffix: Bananium Crab
+
+- type: entity
+  id: NFWallRockChromiteBananiumCrab
+  parent: [NFBaseBananiumCrabVein, WallRockChromiteBananium]
+  suffix: Bananium Crab
+# endregion Bananium Crabs
+
+# region Bananium Golems
+- type: entity
+  id: NFWallRockAndesiteBananiumGolem
+  parent: [NFBaseBananiumGolemVein, WallRockAndesiteBananium]
+  suffix: Bananium Golem
+
+- type: entity
+  id: NFWallRockBasaltBananiumGolem
+  parent: [NFBaseBananiumGolemVein, WallRockBasaltBananium]
+  suffix: Bananium Golem
+
+- type: entity
+  id: NFAsteroidRockBananiumGolem
+  parent: [NFBaseBananiumGolemVein, AsteroidRockBananium]
+  suffix: Bananium Golem
+
+- type: entity
+  id: NFWallRockBananiumGolem
+  parent: [NFBaseBananiumGolemVein, WallRockBananium]
+  suffix: Bananium Golem
+
+- type: entity
+  id: NFWallRockSandBananiumGolem
+  parent: [NFBaseBananiumGolemVein, WallRockSandBananium]
+  suffix: Bananium Golem
+
+- type: entity
+  id: NFWallRockSnowBananiumGolem
+  parent: [NFBaseBananiumGolemVein, WallRockSnowBananium]
+  suffix: Bananium Golem
+
+- type: entity
+  id: NFWallRockChromiteBananiumGolem
+  parent: [NFBaseBananiumGolemVein, WallRockChromiteBananium]
+  suffix: Bananium Golem
+# endregion Bananium Golems
+
+# region Coal Crabs
+- type: entity
+  id: NFWallRockAndesiteCoalCrab
+  parent: [NFBaseCoalCrabVein, WallRockAndesiteCoal]
+  suffix: Coal Crab
+
+- type: entity
+  id: NFWallRockBasaltCoalCrab
+  parent: [NFBaseCoalCrabVein, WallRockBasaltCoal]
+  suffix: Coal Crab
+
+- type: entity
+  id: NFAsteroidRockCoalCrab
+  parent: [NFBaseCoalCrabVein, AsteroidRockCoal]
+  suffix: Coal Crab
+
+- type: entity
+  id: NFWallRockCoalCrab
+  parent: [NFBaseCoalCrabVein, WallRockCoal]
+  suffix: Coal Crab
+
+- type: entity
+  id: NFWallRockSandCoalCrab
+  parent: [NFBaseCoalCrabVein, WallRockSandCoal]
+  suffix: Coal Crab
+
+- type: entity
+  id: NFWallRockSnowCoalCrab
+  parent: [NFBaseCoalCrabVein, WallRockSnowCoal]
+  suffix: Coal Crab
+
+- type: entity
+  id: NFWallRockChromiteCoalCrab
+  parent: [NFBaseCoalCrabVein, WallRockChromiteCoal]
+  suffix: Coal Crab
+# endregion Coal Crabs
+
+# region Coal Golems
+- type: entity
+  id: NFWallRockAndesiteCoalGolem
+  parent: [NFBaseCoalGolemVein, WallRockAndesiteCoal]
+  suffix: Coal Golem
+
+- type: entity
+  id: NFWallRockBasaltCoalGolem
+  parent: [NFBaseCoalGolemVein, WallRockBasaltCoal]
+  suffix: Coal Golem
+
+- type: entity
+  id: NFAsteroidRockCoalGolem
+  parent: [NFBaseCoalGolemVein, AsteroidRockCoal]
+  suffix: Coal Golem
+
+- type: entity
+  id: NFWallRockCoalGolem
+  parent: [NFBaseCoalGolemVein, WallRockCoal]
+  suffix: Coal Golem
+
+- type: entity
+  id: NFWallRockSandCoalGolem
+  parent: [NFBaseCoalGolemVein, WallRockSandCoal]
+  suffix: Coal Golem
+
+- type: entity
+  id: NFWallRockSnowCoalGolem
+  parent: [NFBaseCoalGolemVein, WallRockSnowCoal]
+  suffix: Coal Golem
+
+- type: entity
+  id: NFWallRockChromiteCoalGolem
+  parent: [NFBaseCoalGolemVein, WallRockChromiteCoal]
+  suffix: Coal Golem
+# endregion Coal Golems
+
+# region Gold Crabs
+- type: entity
+  id: NFWallRockAndesiteGoldCrab
+  parent: [NFBaseGoldCrabVein, WallRockAndesiteGold]
+  suffix: Gold Crab
+
+- type: entity
+  id: NFWallRockBasaltGoldCrab
+  parent: [NFBaseGoldCrabVein, WallRockBasaltGold]
+  suffix: Gold Crab
+
+- type: entity
+  id: NFAsteroidRockGoldCrab
+  parent: [NFBaseGoldCrabVein, AsteroidRockGold]
+  suffix: Gold Crab
+
+- type: entity
+  id: NFWallRockGoldCrab
+  parent: [NFBaseGoldCrabVein, WallRockGold]
+  suffix: Gold Crab
+
+- type: entity
+  id: NFWallRockSandGoldCrab
+  parent: [NFBaseGoldCrabVein, WallRockSandGold]
+  suffix: Gold Crab
+
+- type: entity
+  id: NFWallRockSnowGoldCrab
+  parent: [NFBaseGoldCrabVein, WallRockSnowGold]
+  suffix: Gold Crab
+
+- type: entity
+  id: NFWallRockChromiteGoldCrab
+  parent: [NFBaseGoldCrabVein, WallRockChromiteGold]
+  suffix: Gold Crab
+# endregion Gold Crabs
+
+# region Gold Golems
+- type: entity
+  id: NFWallRockAndesiteGoldGolem
+  parent: [NFBaseGoldGolemVein, WallRockAndesiteGold]
+  suffix: Gold Golem
+
+- type: entity
+  id: NFWallRockBasaltGoldGolem
+  parent: [NFBaseGoldGolemVein, WallRockBasaltGold]
+  suffix: Gold Golem
+
+- type: entity
+  id: NFAsteroidRockGoldGolem
+  parent: [NFBaseGoldGolemVein, AsteroidRockGold]
+  suffix: Gold Golem
+
+- type: entity
+  id: NFWallRockGoldGolem
+  parent: [NFBaseGoldGolemVein, WallRockGold]
+  suffix: Gold Golem
+
+- type: entity
+  id: NFWallRockSandGoldGolem
+  parent: [NFBaseGoldGolemVein, WallRockSandGold]
+  suffix: Gold Golem
+
+- type: entity
+  id: NFWallRockSnowGoldGolem
+  parent: [NFBaseGoldGolemVein, WallRockSnowGold]
+  suffix: Gold Golem
+
+- type: entity
+  id: NFWallRockChromiteGoldGolem
+  parent: [NFBaseGoldGolemVein, WallRockChromiteGold]
+  suffix: Gold Golem
+# endregion Gold Golems
+
+# region Iron Crabs
+- type: entity
+  id: NFAsteroidRockIronCrab
+  parent: [NFBaseIronCrabVein, AsteroidRockTinCrab]
+
+- type: entity
+  id: NFWallRockAndesiteIronCrab
+  parent: [NFBaseIronCrabVein, WallRockAndesiteTin]
+  suffix: Iron Crab
+
+- type: entity
+  id: NFWallRockBasaltIronCrab
+  parent: [NFBaseIronCrabVein, WallRockBasaltTin]
+  suffix: Iron Crab
+
+- type: entity
+  id: NFWallRockIronCrab
+  parent: [NFBaseIronCrabVein, WallRockTin]
+  suffix: Iron Crab
+
+- type: entity
+  id: NFWallRockSandIronCrab
+  parent: [NFBaseIronCrabVein, WallRockSandTin]
+  suffix: Iron Crab
+
+- type: entity
+  id: NFWallRockSnowIronCrab
+  parent: [NFBaseIronCrabVein, WallRockSnowTin]
+  suffix: Iron Crab
+
+- type: entity
+  id: NFWallRockChromiteIronCrab
+  parent: [NFBaseIronCrabVein, WallRockChromiteTin]
+  suffix: Iron Crab
+# endregion Iron Crabs
+
+# region Iron Golems
+- type: entity
+  id: NFWallRockAndesiteIronGolem
+  parent: [NFBaseIronGolemVein, WallRockAndesiteTin]
+  suffix: Iron Golem
+
+- type: entity
+  id: NFWallRockBasaltIronGolem
+  parent: [NFBaseIronGolemVein, WallRockBasaltTin]
+  suffix: Iron Golem
+
+- type: entity
+  id: NFAsteroidRockIronGolem
+  parent: [NFBaseIronGolemVein, AsteroidRockTin]
+  suffix: Iron Golem
+
+- type: entity
+  id: NFWallRockIronGolem
+  parent: [NFBaseIronGolemVein, WallRockTin]
+  suffix: Iron Golem
+
+- type: entity
+  id: NFWallRockSandIronGolem
+  parent: [NFBaseIronGolemVein, WallRockSandTin]
+  suffix: Iron Golem
+
+- type: entity
+  id: NFWallRockSnowIronGolem
+  parent: [NFBaseIronGolemVein, WallRockSnowTin]
+  suffix: Iron Golem
+
+- type: entity
+  id: NFWallRockChromiteIronGolem
+  parent: [NFBaseIronGolemVein, WallRockChromiteTin]
+  suffix: Iron Golem
+# endregion Iron Golems
+
+# region Plasma Crabs
+- type: entity
+  id: NFWallRockAndesitePlasmaCrab
+  parent: [NFBasePlasmaCrabVein, WallRockAndesitePlasma]
+  suffix: Plasma Crab
+
+- type: entity
+  id: NFWallRockBasaltPlasmaCrab
+  parent: [NFBasePlasmaCrabVein, WallRockBasaltPlasma]
+  suffix: Plasma Crab
+
+- type: entity
+  id: NFAsteroidRockPlasmaCrab
+  parent: [NFBasePlasmaCrabVein, AsteroidRockPlasma]
+  suffix: Plasma Crab
+
+- type: entity
+  id: NFWallRockPlasmaCrab
+  parent: [NFBasePlasmaCrabVein, WallRockPlasma]
+  suffix: Plasma Crab
+
+- type: entity
+  id: NFWallRockSandPlasmaCrab
+  parent: [NFBasePlasmaCrabVein, WallRockSandPlasma]
+  suffix: Plasma Crab
+
+- type: entity
+  id: NFWallRockSnowPlasmaCrab
+  parent: [NFBasePlasmaCrabVein, WallRockSnowPlasma]
+  suffix: Plasma Crab
+
+- type: entity
+  id: NFWallRockChromitePlasmaCrab
+  parent: [NFBasePlasmaCrabVein, WallRockChromitePlasma]
+  suffix: Plasma Crab
+# endregion Plasma Crabs
+
+# region Plasma Golems
+- type: entity
+  id: NFWallRockAndesitePlasmaGolem
+  parent: [NFBasePlasmaGolemVein, WallRockAndesitePlasma]
+  suffix: Plasma Golem
+
+- type: entity
+  id: NFWallRockBasaltPlasmaGolem
+  parent: [NFBasePlasmaGolemVein, WallRockBasaltPlasma]
+  suffix: Plasma Golem
+
+- type: entity
+  id: NFAsteroidRockPlasmaGolem
+  parent: [NFBasePlasmaGolemVein, AsteroidRockPlasma]
+  suffix: Plasma Golem
+
+- type: entity
+  id: NFWallRockPlasmaGolem
+  parent: [NFBasePlasmaGolemVein, WallRockPlasma]
+  suffix: Plasma Golem
+
+- type: entity
+  id: NFWallRockSandPlasmaGolem
+  parent: [NFBasePlasmaGolemVein, WallRockSandPlasma]
+  suffix: Plasma Golem
+
+- type: entity
+  id: NFWallRockSnowPlasmaGolem
+  parent: [NFBasePlasmaGolemVein, WallRockSnowPlasma]
+  suffix: Plasma Golem
+
+- type: entity
+  id: NFWallRockChromitePlasmaGolem
+  parent: [NFBasePlasmaGolemVein, WallRockChromitePlasma]
+  suffix: Plasma Golem
+# endregion Plasma Golems
+
+# region Quartz Crabs
+- type: entity
+  id: NFAsteroidRockQuartzCrab
+  parent: [NFBaseQuartzCrabVein, AsteroidRockQuartzCrab]
+
+- type: entity
+  id: NFWallRockAndesiteQuartzCrab
+  parent: [NFBaseQuartzCrabVein, WallRockAndesiteQuartz]
+  suffix: Quartz Crab
+
+- type: entity
+  id: NFWallRockBasaltQuartzCrab
+  parent: [NFBaseQuartzCrabVein, WallRockBasaltQuartz]
+  suffix: Quartz Crab
+
+- type: entity
+  id: NFWallRockQuartzCrab
+  parent: [NFBaseQuartzCrabVein, WallRockQuartz]
+  suffix: Quartz Crab
+
+- type: entity
+  id: NFWallRockSandQuartzCrab
+  parent: [NFBaseQuartzCrabVein, WallRockSandQuartz]
+  suffix: Quartz Crab
+
+- type: entity
+  id: NFWallRockSnowQuartzCrab
+  parent: [NFBaseQuartzCrabVein, WallRockSnowQuartz]
+  suffix: Quartz Crab
+
+- type: entity
+  id: NFWallRockChromiteQuartzCrab
+  parent: [NFBaseQuartzCrabVein, WallRockChromiteQuartz]
+  suffix: Quartz Crab
+# endregion Quartz Crabs
+
+# region Quartz Golems
+- type: entity
+  id: NFWallRockAndesiteQuartzGolem
+  parent: [NFBaseQuartzGolemVein, WallRockAndesiteQuartz]
+  suffix: Quartz Golem
+
+- type: entity
+  id: NFWallRockBasaltQuartzGolem
+  parent: [NFBaseQuartzGolemVein, WallRockBasaltQuartz]
+  suffix: Quartz Golem
+
+- type: entity
+  id: NFAsteroidRockQuartzGolem
+  parent: [NFBaseQuartzGolemVein, AsteroidRockQuartz]
+  suffix: Quartz Golem
+
+- type: entity
+  id: NFWallRockQuartzGolem
+  parent: [NFBaseQuartzGolemVein, WallRockQuartz]
+  suffix: Quartz Golem
+
+- type: entity
+  id: NFWallRockSandQuartzGolem
+  parent: [NFBaseQuartzGolemVein, WallRockSandQuartz]
+  suffix: Quartz Golem
+
+- type: entity
+  id: NFWallRockSnowQuartzGolem
+  parent: [NFBaseQuartzGolemVein, WallRockSnowQuartz]
+  suffix: Quartz Golem
+
+- type: entity
+  id: NFWallRockChromiteQuartzGolem
+  parent: [NFBaseQuartzGolemVein, WallRockChromiteQuartz]
+  suffix: Quartz Golem
+# endregion Quartz Golems
+
+# region Salt Crabs
+- type: entity
+  id: NFWallRockAndesiteSaltCrab
+  parent: [NFBaseSaltCrabVein, WallRockAndesiteSalt]
+  suffix: Salt Crab
+
+- type: entity
+  id: NFWallRockBasaltSaltCrab
+  parent: [NFBaseSaltCrabVein, WallRockBasaltSalt]
+  suffix: Salt Crab
+
+- type: entity
+  id: NFAsteroidRockSaltCrab
+  parent: [NFBaseSaltCrabVein, AsteroidRockSalt]
+  suffix: Salt Crab
+
+- type: entity
+  id: NFWallRockSaltCrab
+  parent: [NFBaseSaltCrabVein, WallRockSalt]
+  suffix: Salt Crab
+
+- type: entity
+  id: NFWallRockSandSaltCrab
+  parent: [NFBaseSaltCrabVein, WallRockSandSalt]
+  suffix: Salt Crab
+
+- type: entity
+  id: NFWallRockSnowSaltCrab
+  parent: [NFBaseSaltCrabVein, WallRockSnowSalt]
+  suffix: Salt Crab
+
+- type: entity
+  id: NFWallRockChromiteSaltCrab
+  parent: [NFBaseSaltCrabVein, WallRockChromiteSalt]
+  suffix: Salt Crab
+# endregion Salt Crabs
+
+# region Salt Golems
+- type: entity
+  id: NFWallRockAndesiteSaltGolem
+  parent: [NFBaseSaltGolemVein, WallRockAndesiteSalt]
+  suffix: Salt Golem
+
+- type: entity
+  id: NFWallRockBasaltSaltGolem
+  parent: [NFBaseSaltGolemVein, WallRockBasaltSalt]
+  suffix: Salt Golem
+
+- type: entity
+  id: NFAsteroidRockSaltGolem
+  parent: [NFBaseSaltGolemVein, AsteroidRockSalt]
+  suffix: Salt Golem
+
+- type: entity
+  id: NFWallRockSaltGolem
+  parent: [NFBaseSaltGolemVein, WallRockSalt]
+  suffix: Salt Golem
+
+- type: entity
+  id: NFWallRockSandSaltGolem
+  parent: [NFBaseSaltGolemVein, WallRockSandSalt]
+  suffix: Salt Golem
+
+- type: entity
+  id: NFWallRockSnowSaltGolem
+  parent: [NFBaseSaltGolemVein, WallRockSnowSalt]
+  suffix: Salt Golem
+
+- type: entity
+  id: NFWallRockChromiteSaltGolem
+  parent: [NFBaseSaltGolemVein, WallRockChromiteSalt]
+  suffix: Salt Golem
+# endregion Salt Golems
+
+# region Silver Crabs
+- type: entity
+  id: NFAsteroidRockSilverCrab
+  parent: [NFBaseSilverCrabVein, AsteroidRockSilverCrab]
+
+- type: entity
+  id: NFWallRockAndesiteSilverCrab
+  parent: [NFBaseSilverCrabVein, WallRockAndesiteSilver]
+  suffix: Silver Crab
+
+- type: entity
+  id: NFWallRockBasaltSilverCrab
+  parent: [NFBaseSilverCrabVein, WallRockBasaltSilver]
+  suffix: Silver Crab
+
+- type: entity
+  id: NFWallRockSilverCrab
+  parent: [NFBaseSilverCrabVein, WallRockSilver]
+  suffix: Silver Crab
+
+- type: entity
+  id: NFWallRockSandSilverCrab
+  parent: [NFBaseSilverCrabVein, WallRockSandSilver]
+  suffix: Silver Crab
+
+- type: entity
+  id: NFWallRockSnowSilverCrab
+  parent: [NFBaseSilverCrabVein, WallRockSnowSilver]
+  suffix: Silver Crab
+
+- type: entity
+  id: NFWallRockChromiteSilverCrab
+  parent: [NFBaseSilverCrabVein, WallRockChromiteSilver]
+# endregion Silver Crabs
+
+# region Silver Golems
+- type: entity
+  id: NFWallRockAndesiteSilverGolem
+  parent: [NFBaseSilverGolemVein, WallRockAndesiteSilver]
+  suffix: Silver Golem
+
+- type: entity
+  id: NFWallRockBasaltSilverGolem
+  parent: [NFBaseSilverGolemVein, WallRockBasaltSilver]
+  suffix: Silver Golem
+
+- type: entity
+  id: NFAsteroidRockSilverGolem
+  parent: [NFBaseSilverGolemVein, AsteroidRockSilver]
+  suffix: Silver Golem
+
+- type: entity
+  id: NFWallRockSilverGolem
+  parent: [NFBaseSilverGolemVein, WallRockSilver]
+  suffix: Silver Golem
+
+- type: entity
+  id: NFWallRockSandSilverGolem
+  parent: [NFBaseSilverGolemVein, WallRockSandSilver]
+  suffix: Silver Golem
+
+- type: entity
+  id: NFWallRockSnowSilverGolem
+  parent: [NFBaseSilverGolemVein, WallRockSnowSilver]
+  suffix: Silver Golem
+
+- type: entity
+  id: NFWallRockChromiteSilverGolem
+  parent: [NFBaseSilverGolemVein, WallRockChromiteSilver]
+  suffix: Silver Golem
+# endregion Silver Golems
+
+# region Uranium Crabs
+- type: entity
+  id: NFAsteroidRockUraniumCrab
+  parent: [NFBaseUraniumCrabVein, AsteroidRockUraniumCrab]
+
+- type: entity
+  id: NFWallRockAndesiteUraniumCrab
+  parent: [NFBaseUraniumCrabVein, WallRockAndesiteUranium]
+  suffix: Uranium Crab
+
+- type: entity
+  id: NFWallRockBasaltUraniumCrab
+  parent: [NFBaseUraniumCrabVein, WallRockBasaltUranium]
+  suffix: Uranium Crab
+
+- type: entity
+  id: NFWallRockUraniumCrab
+  parent: [NFBaseUraniumCrabVein, WallRockUranium]
+  suffix: Uranium Crab
+
+- type: entity
+  id: NFWallRockSandUraniumCrab
+  parent: [NFBaseUraniumCrabVein, WallRockSandUranium]
+  suffix: Uranium Crab
+
+- type: entity
+  id: NFWallRockSnowUraniumCrab
+  parent: [NFBaseUraniumCrabVein, WallRockSnowUranium]
+  suffix: Uranium Crab
+
+- type: entity
+  id: NFWallRockChromiteUraniumCrab
+  parent: [NFBaseUraniumCrabVein, WallRockChromiteUranium]
+  suffix: Uranium Crab
+# endregion Uranium Crabs
+
+# region Uranium Golems
+- type: entity
+  id: NFWallRockAndesiteUraniumGolem
+  parent: [NFBaseUraniumGolemVein, WallRockAndesiteUranium]
+  suffix: Uranium Golem
+
+- type: entity
+  id: NFWallRockBasaltUraniumGolem
+  parent: [NFBaseUraniumGolemVein, WallRockBasaltUranium]
+  suffix: Uranium Golem
+
+- type: entity
+  id: NFAsteroidRockUraniumGolem
+  parent: [NFBaseUraniumGolemVein, AsteroidRockUranium]
+  suffix: Uranium Golem
+
+- type: entity
+  id: NFWallRockUraniumGolem
+  parent: [NFBaseUraniumGolemVein, WallRockUranium]
+  suffix: Uranium Golem
+
+- type: entity
+  id: NFWallRockSandUraniumGolem
+  parent: [NFBaseUraniumGolemVein, WallRockSandUranium]
+  suffix: Uranium Golem
+
+- type: entity
+  id: NFWallRockSnowUraniumGolem
+  parent: [NFBaseUraniumGolemVein, WallRockSnowUranium]
+  suffix: Uranium Golem
+
+- type: entity
+  id: NFWallRockChromiteUraniumGolem
+  parent: [NFBaseUraniumGolemVein, WallRockChromiteUranium]
+  suffix: Uranium Golem
+#endregion Uranium Golems

@@ -1,0 +1,100 @@
+- type: entity
+  id: AnCoTableArdon
+  parent: TablePlasmaGlass
+  name: стол из ардония
+  suffix: StarHorizon, AnCo, Structure
+  description: Мы и правда используем нашу монополию ради столов?
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Decoration/ardon-table.rsi
+  - type: Icon
+    sprite: _Horizon/_Fractions/AnCo/Structures/Decoration/ardon-table.rsi
+  - type: GlassTable
+    climberDamage:
+      types:
+        Slash: 30
+    tableDamage:
+      types:
+        Blunt: 100
+    tableMassLimit: 420
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+    - trigger:
+        !type:DamageTrigger
+        damage: 75
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ArdonSheet1:
+            min: 0
+            max: 1
+          KazmieSheet1:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: IconSmooth
+    key: plasmaglasstable
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepTile
+  - type: Construction
+    graph: TableAnCo
+    node: tableardon
+
+- type: entity
+  id: AnCoTableKazmie
+  parent: Table
+  name: стол из казмия
+  suffix: StarHorizon, AnCo, Structure
+  description: Запомните как выглядят тысячи лет развития, только ради того что бы постоял ваш кофе.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Decoration/kazmie-table.rsi
+  - type: Icon
+    sprite: _Horizon/_Fractions/AnCo/Structures/Decoration/kazmie-table.rsi
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+          params:
+            volume: -6
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          KazmieSheet1:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: IconSmooth
+    key: metaltable
+    base: state_
+  - type: Construction
+    graph: TableAnCo
+    node: tablekazmie

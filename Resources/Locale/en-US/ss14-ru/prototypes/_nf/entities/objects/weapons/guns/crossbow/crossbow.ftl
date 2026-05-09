@@ -1,0 +1,16 @@
+ent-BaseCrossbow = crossbow
+    .desc = A medieval ranged weapon that shoots projectiles called bolts. Now in space!
+ent-BaseCrossbowWieldable = { ent-NFBaseGunMeleeAttackMedium }
+    .desc = { ent-NFBaseGunMeleeAttackMedium.desc }
+ent-CrossbowModern = { ent-BaseCrossbowWieldable }
+    .desc = { ent-BaseCrossbowWieldable.desc }
+ent-CrossbowImprovised = impovised crossbow
+    .desc = { ent-BaseCrossbowWieldable.desc }
+ent-CrossbowBloodCult = blood cult crossbow
+    .desc = { ent-BaseCrossbowWieldable.desc }
+ent-CrossbowModernHand = hand crossbow
+    .desc = { ent-NFBaseWeaponEncumbranceCrossbowHand.desc }
+ent-CrossbowImprovisedHand = impovised hand crossbow
+    .desc = { ent-NFBaseWeaponEncumbranceCrossbowHand.desc }
+ent-CrossbowBloodCultHand = blood cult hand crossbow
+    .desc = { ent-NFBaseWeaponEncumbranceCrossbowHand.desc }

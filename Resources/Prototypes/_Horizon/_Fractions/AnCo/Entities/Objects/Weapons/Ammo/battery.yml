@@ -1,0 +1,60 @@
+
+- type: entity
+  id: BasePowerCellAnCo
+  abstract: true
+  parent: [BaseItem, BaseAnCoContraband]
+  components:
+  - type: Item
+    storedRotation: -90
+  - type: Battery
+    pricePerJoule: 0.15
+  - type: PowerCell
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 2000
+    intensitySlope: 1.5
+  - type: SolutionContainerManager
+    solutions:
+      battery:
+        maxVol: 5
+  - type: InjectableSolution
+    solution: battery
+  - type: DrawableSolution
+    solution: battery
+  - type: Tag
+    tags:
+      - PowerCell
+  - type: Appearance
+  - type: PowerCellVisuals
+  - type: Riggable
+  - type: ProjectileBatteryAmmoProvider
+    proto: StandartLaserAnCo
+    fireCost: 100
+
+- type: entity
+  name: энергетическая ячейка АнКо
+  description: Миниатюрный реактор, основанный на распаде Ардония и поглощении выделяющегося тепла.
+  id: AnCoEnergyCore
+  suffix: StarHorizon, AnCo
+  parent: BasePowerCellAnCo
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Power/core.rsi
+    layers:
+    - map: [ "enum.PowerCellVisualLayers.Base" ]
+      state: core
+    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+      state: o2
+      shader: unshaded
+  - type: Battery
+    maxCharge: 3000
+    startingCharge: 3000
+  - type: Tag
+    tags:
+      - PowerAnCo
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 25
+  - type: StaticPrice
+    price: 10000
+

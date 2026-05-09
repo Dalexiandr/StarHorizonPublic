@@ -1,0 +1,12 @@
+ent-BusSchedule = расписание автобуса
+    .desc = Расписание, которое сообщает вам, когда автобус здесь. Не пропустите!
+    .suffix = Авто
+ent-BusScheduleRoute1 = { ent-BusSchedule }
+    .suffix = Маршрут 1, Точки появления
+    .desc = { ent-BusSchedule.desc }
+ent-BusScheduleRoute2 = { ent-BusSchedule }
+    .suffix = Маршрут 2, Торговый экспресс
+    .desc = { ent-BusSchedule.desc }
+ent-BusScheduleRoute3 = { ent-BusSchedule }
+    .suffix = Маршрут 3, Малые точки интереса
+    .desc = { ent-BusSchedule.desc }

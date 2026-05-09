@@ -1,0 +1,19 @@
+- type: entity
+  parent: NFBasePDACartridge
+  id: CompanionCartridge
+  name: Картридж Компаньонов
+  description: Управляйте и правьте империей роботов убийц!
+  prefix: [ "Develop", "НЕ МАППИТЬ" ]
+  components:
+    - type: Sprite
+      sprite: Objects/Devices/cartridge.rsi
+      state: cart-s
+    - type: Icon
+      sprite: Objects/Devices/cartridge.rsi
+      state: cart-s
+    - type: UIFragment
+      ui: !type:CompanionUi
+    - type: Cartridge
+      programName: Компаньоны
+      icon: Interface/Actions/shop.png
+    - type: BountyContractsCartridge

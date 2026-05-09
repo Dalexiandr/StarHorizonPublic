@@ -1,0 +1,10 @@
+ent-NFBasicDeadDropHintVariationPass = { ent-BaseVariationPass }
+    .desc = { ent-BaseVariationPass.desc }
+ent-NFBasicBindToStationVariationPass = { ent-BaseVariationPass }
+    .desc = { ent-BaseVariationPass.desc }
+ent-NFBasicPoweredLightVariationPass = { ent-BaseVariationPass }
+    .desc = { ent-BaseVariationPass.desc }
+ent-NFBasicTrashVariationPass = { ent-BaseVariationPass }
+    .desc = { ent-BaseVariationPass.desc }
+ent-NFBasicPuddleMessVariationPass = { ent-BaseVariationPass }
+    .desc = { ent-BaseVariationPass.desc }

@@ -1,0 +1,11 @@
+- type: entity
+  id: ReturnToBodyAction
+  name: Return to body
+  description: Return to body
+  components:
+  - type: Action
+    icon:
+      sprite: _Horizon/Actions/return_to_body.rsi
+      state: icon
+  - type: InstantAction
+    event: !type:ReturnToBodyActionEvent

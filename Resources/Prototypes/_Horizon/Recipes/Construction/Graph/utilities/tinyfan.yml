@@ -1,0 +1,37 @@
+- type: constructionGraph
+  id: FanTiny
+  start: start
+  graph:
+    - node: start
+      edges:
+      - to: fantiny
+        steps:
+        - material: Steel
+          amount: 15
+        - material: MetalRod
+          amount: 5
+        - tag: FanTinyElectronics
+          name: "микросхема вентилятора"
+          icon:
+            sprite: "Objects/Misc/module.rsi"
+            state: "cell_con_micro"
+          doAfter: 10
+
+    - node: fantiny
+      entity: AtmosDeviceFanTiny
+      edges:
+          - to: start
+            completed:
+              - !type:SpawnPrototype
+                prototype: SheetSteel1
+                amount: 15
+              - !type:SpawnPrototype
+                prototype: PartRodMetal1
+                amount: 5
+              - !type:SpawnPrototype
+                prototype: FanTinyElectronics
+                amount: 1
+              - !type:DeleteEntity {}
+            steps:
+              - tool: Screwing
+                doAfter: 10

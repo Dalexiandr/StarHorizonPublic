@@ -1,0 +1,51 @@
+- type: entity
+  id: LockerJanitorFilled
+  suffix: Filled
+  parent: LockerJanitor
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingBeltJanitorFilled
+      - id: MopItem
+      - id: BoxMousetrap
+      - id: BoxTrashbag
+      - id: BoxLightMixed
+      - id: Plunger
+
+- type: entity
+  id: LockerClownFilled
+  suffix: Filled
+  parent: LockerClown
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClownRecorder
+      - id: BikeHorn
+      - id: CrayonRainbow
+      - id: RubberStampClown
+      - id: SoapDeluxe
+      - id: Plunger # Yes
+
+- type: entity
+  id: NFClosetChefFilled
+  name: Chef Freezer
+  suffix: Filled
+  parent: LockerFreezer
+  components:
+  - type: StorageFill
+    contents:
+      - id: CrowbarPocket
+      - id: RuminantCubeBox
+      - id: SprayBottleWater
+      - id: ReagentContainerFlour
+        amount: 3
+      - id: ReagentContainerRice
+        amount: 3
+      - id: ReagentContainerSugar
+      - id: ReagentContainerSalt
+      - id: ReagentContainerPepper
+      - id: FoodCondimentBottleEnzyme
+      - id: DrinkMilkCarton
+        amount: 2
+      - id: DrinkSoyMilkCarton
+      - id: FoodContainerEgg

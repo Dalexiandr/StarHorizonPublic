@@ -1,0 +1,46 @@
+- type: entity
+  name: листья жизнетрава
+  suffix: Horizon
+  parent: ProduceBase
+  id: LifeweedLeaves
+  description: Листья мистического растения, которые могут излечить от большинства болезней.
+  components:
+    - type: Sprite
+      sprite: _Horizon/Objects/Specific/Hydroponics/lifeweed.rsi
+    - type: Produce
+      seedId: lifeweed
+    - type: Food
+    - type: StaticPrice
+      price: 150
+    - type: SolutionContainerManager
+      solutions:
+        food:
+          reagents:
+            - ReagentId: Omnizine
+              Quantity: 2
+
+- type: entity
+  name: листья смертетрава
+  suffix: Horizon
+  parent: ProduceBase
+  id: DeathweedLeaves
+  description: Листья мистического растения, несущего смерть.
+  components:
+    - type: Sprite
+      sprite: _Horizon/Objects/Specific/Hydroponics/deathweed.rsi
+    - type: Produce
+      seedId: deathweed
+    - type: Food
+    - type: StaticPrice
+      price: 130
+    - type: RadiationSource
+      slope: 0.5
+      intensity: 1
+    - type: SolutionContainerManager
+      solutions:
+        food:
+          reagents:
+            - ReagentId: Toxin
+              Quantity: 10
+            - ReagentId: ChloralHydrate
+              Quantity: 5

@@ -1,0 +1,57 @@
+
+#  Советник
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconCounselorAnCo
+  icon:
+    sprite: /Textures/_Horizon/_Fractions/AnCo/Interface/Misc/jobicon.rsi
+    state: counselor
+# Титан
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconTitanAnCo
+  icon:
+    sprite: /Textures/_Horizon/_Fractions/AnCo/Interface/Misc/jobicon.rsi
+    state: titan
+# Паук
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconSpiderAnCo
+  icon:
+    sprite: /Textures/_Horizon/_Fractions/AnCo/Interface/Misc/jobicon.rsi
+    state: spider
+# Рыцарь
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconKnightAnCo
+  icon:
+    sprite: /Textures/_Horizon/_Fractions/AnCo/Interface/Misc/jobicon.rsi
+    state: knight
+# Офицер
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOfficerAnCo
+  icon:
+    sprite: /Textures/_Horizon/_Fractions/AnCo/Interface/Misc/jobicon.rsi
+    state: officer
+# Кадет
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconCadetAnCo
+  icon:
+    sprite: /Textures/_Horizon/_Fractions/AnCo/Interface/Misc/jobicon.rsi
+    state: cadet
+# Рипсоид
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconRipsoidAnCo
+  icon:
+    sprite: /Textures/_Horizon/_Fractions/AnCo/Interface/Misc/jobicon.rsi
+    state: ripsoid
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconWelcomeAnCo
+  icon:
+    sprite: /Textures/_Horizon/_Fractions/AnCo/Interface/Misc/jobicon.rsi
+    state: welcome

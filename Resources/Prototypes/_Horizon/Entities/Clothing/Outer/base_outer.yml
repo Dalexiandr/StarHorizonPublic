@@ -1,0 +1,12 @@
+- type: entity
+  parent: ClothingOuterBase
+  id: ClothingOuterBlackHoodie
+  name: черная плотная толстовка
+  description: Классическая чёрная толстовка с широким карманом.
+  suffix: StarHorizon
+  components:
+    - type: Sprite
+      sprite: _StarHorizon/Clothing/Outer/blackhoodie.rsi
+    - type: Clothing
+      sprite: _StarHorizon/Clothing/Outer/blackhoodie.rsi
+      

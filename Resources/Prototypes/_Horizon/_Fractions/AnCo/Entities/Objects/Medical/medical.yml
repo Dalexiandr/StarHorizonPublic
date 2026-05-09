@@ -1,0 +1,57 @@
+- type: entity
+  name: бронированный контейнер с нанитами
+  parent: [BaseItem, BaseAnCoContraband]
+  description: Сверхпрочный контейнер для хранения опасных веществ.
+  id: ReliableContainerAnConanits
+  suffix: StarHorizon, AnCo
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Specific/Chemistry/container.rsi
+    layers:
+      - state: container
+      - state: fill1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+  - type: Item
+    size: Normal
+  - type: MeleeWeapon
+    soundNoDamage:
+      path: "/Audio/Effects/Fluids/splat.ogg"
+    damage:
+      types:
+        Blunt: 0
+  - type: MixableSolution
+    solution: beaker
+  - type: FitsInDispenser
+    solution: beaker
+  - type: RefillableSolution
+    solution: beaker
+  - type: DrainableSolution
+    solution: beaker
+  - type: ExaminableSolution
+    solution: beaker
+  - type: DrawableSolution
+    solution: beaker
+  - type: InjectableSolution
+    solution: beaker
+  - type: SolutionTransfer
+    canChangeTransferAmount: true
+  - type: SolutionItemStatus
+    solution: beaker
+  - type: UserInterface
+    interfaces:
+      enum.TransferAmountUiKey.Key:
+        type: TransferAmountBoundUserInterface
+  - type: Drink
+    solution: beaker
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 3
+    fillBaseName: fill
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 100
+        reagents:
+        - ReagentId: AnConanits
+          Quantity: 100

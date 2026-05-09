@@ -1,0 +1,26 @@
+{
+    "version": 1,
+    "license": "CLA with hosting restrictions",
+    "copyright": "Sprited by Xigovir DS:623559319543349268",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "rock_wall"
+        },
+        {
+            "name": "rock_wall_south"
+        },
+        {
+            "name": "rock_wall_east"
+        },
+        {
+            "name": "rock_wall_north"
+        },
+        {
+            "name": "rock_wall_west"
+        }
+    ]
+}

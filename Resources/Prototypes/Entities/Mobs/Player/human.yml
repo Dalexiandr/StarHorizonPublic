@@ -1,0 +1,147 @@
+- type: entity
+  save: false
+  name: Urist McHands
+  parent: BaseMobHuman
+  id: MobHuman
+  components:
+  # Horizon
+  - type: SampleSource
+    availableCellSamples:
+    - protoID: CellSampleHuman
+
+#Syndie
+- type: entity
+  parent: MobHuman
+  id: MobHumanSyndicateAgentBase
+  name: syndicate agent
+  suffix: Human, Base
+  components:
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+    hair: HairBald
+  - type: Loadout
+    prototypes: [SyndicateOperativeGearExtremelyBasic]
+    roleLoadout: [ RoleSurvivalSyndicate ]
+  - type: RandomMetadata
+    nameSegments: [NamesDeathCommando]
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+
+- type: entity
+  parent: MobHumanSyndicateAgentBase
+  id: MobHumanSyndicateAgent
+  name: syndicate agent
+  suffix: Human, Traitor
+  components:
+  # make the player a traitor once its taken
+  - type: AutoTraitor
+    profile: TraitorReinforcement
+
+- type: entity
+  parent: MobHumanSyndicateAgent
+  id: MobHumanSyndicateAgentMedic
+  name: syndicate medic
+  components:
+  - type: Loadout
+    prototypes: [SyndicateReinforcementMedic]
+    roleLoadout: [ RoleSurvivalSyndicate ]
+
+- type: entity
+  parent: MobHumanSyndicateAgent
+  id: MobHumanSyndicateAgentSpy
+  name: syndicate spy
+  components:
+  - type: Loadout
+    prototypes: [SyndicateReinforcementSpy]
+    roleLoadout: [ RoleSurvivalSyndicate ]
+
+- type: entity
+  parent: MobHumanSyndicateAgent
+  id: MobHumanSyndicateAgentThief
+  name: syndicate thief
+  components:
+  - type: Loadout
+    prototypes: [SyndicateReinforcementThief]
+    roleLoadout: [ RoleSurvivalSyndicate ]
+
+- type: entity
+  parent: MobHumanSyndicateAgentBase
+  id: MobHumanSyndicateAgentNukeops # Reinforcement exclusive to nukeops uplink
+  suffix: Human, NukeOps
+  components:
+  - type: NukeOperative
+  - type: RandomMetadata
+    nameSegments:
+    - NamesSyndicateNormal
+    nameFormat: name-format-nukie-operator
+  - type: Loadout
+    prototypes: [SyndicateOperativeGearFullNoUplink]
+
+# Nuclear Operative
+- type: entity
+  categories: [ HideSpawnMenu ]
+  name: Nuclear Operative
+  parent: MobHuman
+  id: MobHumanNukeOp
+  components:
+  - type: NukeOperative
+  - type: RandomHumanoidAppearance
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: MobHuman
+  id: MobHumanLoneNuclearOperative
+  name: Lone Operative
+  components:
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: NukeOperative
+  - type: Loadout
+    prototypes: [SyndicateLoneOperativeGearFull]
+    roleLoadout: [ RoleSurvivalSyndicate ]
+  - type: RandomMetadata
+    nameSegments:
+    - NamesSyndicatePrefix
+    - NamesSyndicateNormal
+    nameFormat: name-format-nukie-generic
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+
+# Wizard
+- type: entity
+  categories: [ HideSpawnMenu ]
+  name: Wizard
+  parent: MobHuman
+  id: MobHumanWizard
+  components:
+  - type: RandomHumanoidAppearance
+  - type: NpcFactionMember
+    factions:
+    - Wizard
+
+# Cytology
+- type: entity
+  name: Urist Grown Human
+  parent: MobHuman
+  id: MobHumanGrown
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StaticPrice
+    price: 2500
+  - type: RandomMetadata
+    nameSegments:
+      - NamesFirst
+      - NamesLast
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: ghost-role-information-grown-human-name
+    description: Вы человек, выращенный в цитологической ванне. Вы молоды и не знаете окружающий мир. Будьте осторожны и изучайте мир вокруг вас.
+    raffle:
+      settings: short
+  - type: GhostTakeoverAvailable

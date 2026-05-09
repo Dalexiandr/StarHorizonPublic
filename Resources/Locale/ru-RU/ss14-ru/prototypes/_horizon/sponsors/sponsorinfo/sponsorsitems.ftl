@@ -1,0 +1,14 @@
+ent-ClothingBackpackDuffelNaik21 = { ent-ClothingBackpackDuffel }
+    .desc = { ent-ClothingBackpackDuffel.desc }
+ent-BluespaceBeakerNaik21 = блюспейс-мензурка
+    .desc = Создана при помощи экспериментальной блюспейс технологии.
+ent-ClothingBackpackDuffelPor1k = { ent-ClothingBackpackDuffel }
+    .desc = { ent-ClothingBackpackDuffel.desc }
+ent-ClothingUniformJumpsuitJanitorPor1k = куртка Dog Nest
+    .desc = Удобная непромокаемая куртка в комплекте со свободными карго-брюками. На них много ремешков.
+ent-ClothingShoesGaloshesPor1k = удобные кроксы
+    .desc = Пара обуви с отличной вентиляцией и необычным дизайном. Удобны в любой ситуации.
+ent-ClothingHeadHatCapPor1k = золотистый козырёк
+    .desc = Козырёк на голову из ярко-жёлтого пластика,призванный защитить ваши глаза от яркого солнца и сильного дождя.
+ent-ClothingBeltJanitorPor1k = тактический пояс уборщика
+    .desc = Стильный пояс из прочной ткани с металлическим волокном. Подойдёт для хранения самых важных уборочных приспособлений и никогда не выцветет из-за стирки.

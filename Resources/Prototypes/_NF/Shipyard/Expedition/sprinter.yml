@@ -1,0 +1,59 @@
+# Author Info
+# GitHub: Kesiath (https://github.com/Kesiath)
+# Discord: @kesiath
+
+# Maintainer Info
+# GitHub: ???
+# Discord: ???
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Sprinter
+  parent: BaseVessel
+  name: KC Sprinter
+  description: A light freighter often picked by bounty hunters due to its quick acceleration, expedition capable.
+  price: 60000 # 49452 0.2 59342.4
+  category: Medium
+  group: Expedition
+  shuttlePath: /Maps/_NF/Shuttles/Expedition/sprinter.yml
+  guidebookPage: Null
+  class:
+  - Expedition
+  engine:
+  - AME
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:FactionCostModifier
+      faction: "FactionSIU"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionArcadia"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: Sprinter
+  mapName: 'KC Sprinter'
+  mapPath: /Maps/_NF/Shuttles/Expedition/sprinter.yml
+  minPlayers: 0
+  stations:
+    Sprinter:
+      stationProto: StandardFrontierExpeditionVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Sprinter {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

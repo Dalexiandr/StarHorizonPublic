@@ -1,0 +1,105 @@
+- type: biomeTemplate
+  id: ArdoniumWastes
+  layers:
+    - !type:BiomeEntityLayer
+      threshold: 0.9
+      noise:
+        frequency: 1
+        seed: 2
+      allowedTiles:
+        - FloorKazmie
+      entities:
+        - ArdonBasaltOne
+        - ArdonBasaltTwo
+        - ArdonBasaltThree
+        - ArdonBasaltFour
+        - ArdonBasaltFive
+
+    - !type:BiomeDecalLayer
+      allowedTiles:
+        - FloorKazmie
+      threshold: 0.9
+      divisions: 1
+      noise:
+        seed: 1
+        frequency: 1
+      decals:
+        - Kazmie1
+        - Kazmie2
+        - Kazmie3
+        - Kazmie4
+        - Kazmie5
+        - Kazmie6
+        - Kazmie7
+        - Kazmie8
+        - Kazmie9
+
+    - !type:BiomeEntityLayer
+      threshold: 0.90
+      noise:
+        seed: 0
+        noiseType: OpenSimplex2
+        frequency: 1
+      allowedTiles:
+        - FloorKazmie
+      entities:
+        - AnCoRock
+        - AnCoEFSCrystal
+        - CrystalBlackMedium
+
+    - !type:BiomeEntityLayer
+      threshold: 0.95
+      noise:
+        seed: 0
+        noiseType: OpenSimplex2
+        frequency: 1
+      allowedTiles:
+        - FloorKazmie
+      entities:
+        - OreDepositKazieOre
+
+    - !type:BiomeEntityLayer # Astrolaris: Сюда редкое
+      threshold: 0.99
+      noise:
+        seed: 0
+        noiseType: OpenSimplex2
+        frequency: 1
+      allowedTiles:
+        - FloorKazmie
+      entities:
+        - OreDepositKazieOreBig
+
+    - !type:BiomeEntityLayer
+      threshold: 0.2
+      noise:
+        seed: 0
+        frequency: 0.02
+        fractalType: FBm
+        octaves: 5
+        lacunarity: 2
+        gain: 0.4
+      allowedTiles:
+        - FloorKazmie
+      entities:
+        - AnCoFloorLavaEntityArdon
+
+    - !type:BiomeEntityLayer
+      allowedTiles:
+        - FloorKazmie
+      threshold: -0.20 # Astrolaris: Меньше камня, пустоши лол
+      noise:
+        seed: 0
+        noiseType: Cellular
+        frequency: 0.05
+        lacunarity: 2
+        fractalType: FBm
+        octaves: 5
+        cellularDistanceFunction: Euclidean
+        cellularReturnType: Distance2
+      entities:
+        - AnCoWallRockBasalt
+    - !type:BiomeDummyLayer
+      id: Loot
+    - !type:BiomeTileLayer
+      threshold: -1
+      tile: FloorKazmie

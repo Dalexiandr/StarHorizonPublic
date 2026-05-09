@@ -1,0 +1,85 @@
+- type: entity
+  id: DecoreLeft
+  name: праздничная декорация
+  suffix: левая часть
+  placement:
+    mode: SnapgridCenter 
+  description: Придайте празднику эффекта.
+  components:
+  - type: SpriteFade
+  - type: Clickable
+  - type: Sprite
+    sprite: _Horizon/Structures/Decoration/decore.rsi
+    state: decoration
+    drawdepth: Overdoors
+    offset: 0,0.9
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.4,0.35,0.4"
+        density: 1000
+        layer:
+        - WallLayer
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/Effects/chop.ogg
+        params:
+          variation: 0.05
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/tree_fell.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  id: DecoreRight
+  parent: DecoreLeft
+  name: праздничная декорация
+  suffix: правая часть
+  description: Придайте празднику эффекта.
+  components:
+  - type: Sprite
+    state: decoration2
+
+- type: entity
+  id: DecoreRightAlt
+  parent: DecoreLeft
+  name: малая праздничная декорация
+  suffix: правая часть
+  description: Придайте празднику эффекта.
+  components:
+  - type: Sprite
+    state: decorationalt2
+
+- type: entity
+  id: DecoreLeftAlt
+  parent: DecoreLeft
+  name: малая праздничная декорация
+  suffix: левая часть
+  description: Придайте празднику эффекта.
+  components:
+  - type: Sprite
+    state: decorationalt       

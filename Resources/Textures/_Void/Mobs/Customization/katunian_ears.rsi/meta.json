@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+
+    {
+      "name": "earsbase_wagging",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.4
+        ],
+        [
+          0.1,
+          0.4
+        ],
+        [
+          0.1,
+          0.4
+        ],
+        [
+          0.1,
+          0.4
+        ]
+      ]
+    },
+        {
+      "name": "earsbase",
+      "directions": 4
+    },
+        {
+      "name": "earsbase2",
+      "directions": 4
+    },
+        {
+      "name": "earsbase3",
+      "directions": 4
+    },
+        {
+      "name": "earsbase4",
+      "directions": 4
+    },
+        {
+      "name": "earsbase5",
+      "directions": 4
+    },
+        {
+      "name": "earsbase6",
+      "directions": 4
+    },
+        {
+      "name": "earsbase7",
+      "directions": 4
+    },
+        {
+      "name": "earsbase8",
+      "directions": 4
+    },
+    {
+      "name": "earsbase9",
+      "directions": 4
+    },
+    {
+      "name": "earsbase10",
+      "directions": 4
+    },
+    {
+      "name": "earsbase11",
+      "directions": 4
+    },
+    {
+      "name": "earsbase12",
+      "directions": 4
+    },
+    {
+      "name": "earsbase13",
+      "directions": 4
+    },
+    {
+      "name": "earsbase14",
+      "directions": 4
+    }
+  ]
+}

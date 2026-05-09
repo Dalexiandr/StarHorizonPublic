@@ -1,0 +1,123 @@
+- type: entity
+  name: спавнер Матроса пиратов
+  id: SpawnMobPirateMatros
+  parent: MarkerBase
+  suffix: AI, Hostile
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - state: ai
+      - sprite: _NF/Mobs/Species/Templates/human.rsi
+        state: human
+      - sprite: Objects/Weapons/Guns/Revolvers/pirate_revolver.rsi
+        state: inhand-right
+  - type: RandomSpawner
+    prototypes:
+    - MobPirateMatrosA
+    - MobPirateMatrosB
+    - MobPirateMatrosC
+    - MobPirateMatrosD
+    chance: 1
+    offset: 0.0
+
+- type: entity
+  name: спавнер Абордажника пиратов
+  id: SpawnMobPirateAbordaj
+  parent: MarkerBase
+  suffix: AI, Hostile
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - state: ai
+      - sprite: _NF/Mobs/Species/Templates/human.rsi
+        state: human
+      - sprite: Objects/Weapons/Guns/Revolvers/pirate_revolver.rsi
+        state: inhand-right
+  - type: RandomSpawner
+    prototypes:
+        - MobPirateAbordajA
+        - MobPirateAbordajB
+    chance: 1
+    offset: 0.0
+
+- type: entity
+  name: спавнер EVA-Абордажника пиратов
+  id: SpawnMobPirateAbordajEva
+  parent: MarkerBase
+  suffix: AI, Hostile
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - state: ai
+      - sprite: _NF/Mobs/Species/Templates/human.rsi
+        state: human
+      - sprite: Objects/Weapons/Guns/Revolvers/pirate_revolver.rsi
+        state: inhand-right
+  - type: RandomSpawner
+    prototypes:
+        - MobPirateAbordajC
+    chance: 1
+    offset: 0.0
+
+- type: entity
+  name: спавнер Квартирмейстера пиратов
+  id: SpawnMobPirateQuartermaster
+  parent: MarkerBase
+  suffix: AI, Hostile
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - state: ai
+      - sprite: _NF/Mobs/Species/Templates/human.rsi
+        state: human
+      - sprite: Objects/Weapons/Guns/Revolvers/pirate_revolver.rsi
+        state: inhand-right
+  - type: RandomSpawner
+    prototypes:
+        - MobPirateQuartermaster
+    chance: 1
+    offset: 0.0
+
+- type: entity
+  name: спавнер Боцмана пиратов
+  id: SpawnMobPirateBotsman
+  parent: MarkerBase
+  suffix: AI, Hostile
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - state: ai
+      - sprite: _NF/Mobs/Species/Templates/human.rsi
+        state: human
+      - sprite: Objects/Weapons/Guns/Revolvers/pirate_revolver.rsi
+        state: inhand-right
+  - type: RandomSpawner
+    prototypes:
+        - MobPirateBotsman
+    chance: 1
+    offset: 0.0
+
+- type: entity
+  name: спавнер Капитана пиратов
+  id: SpawnMobPirateCaptain
+  parent: MarkerBase
+  suffix: AI, Hostile
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - state: ai
+      - sprite: _NF/Mobs/Species/Templates/human.rsi
+        state: human
+      - sprite: Objects/Weapons/Guns/Revolvers/pirate_revolver.rsi
+        state: inhand-right
+  - type: RandomSpawner
+    prototypes:
+        - MobPirateCaptain
+    chance: 1
+    offset: 0.0

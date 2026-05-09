@@ -1,0 +1,232 @@
+
+# Униформа
+
+- type: loadout
+  id: LoadoutSyndicateClothingUniformJumpsuitOperative
+  price: 0
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitOperative
+
+- type: loadout
+  id: LoadoutSyndicateClothingUniformJumpskirtOperative
+  price: 0
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtOperative
+
+- type: loadout
+  id: LoadoutSyndicateClothingUniformJumpsuitSyndieFormal
+  price: 0
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSyndieFormal
+
+- type: loadout
+  id: LoadoutSyndicateClothingUniformJumpskirtSyndieFormalDress
+  price: 0
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSyndieFormalDress
+
+- type: loadout
+  id: LoadoutSyndicateClothingUniformJumpsuitPyjamaSyndicateRed
+  price: 0
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPyjamaSyndicateRed
+
+- type: loadout
+  id: LoadoutSyndicateClothingUniformJumpsuitPyjamaSyndicatePink
+  price: 0
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPyjamaSyndicatePink
+
+- type: loadout
+  id: LoadoutSyndicateClothingUniformJumpsuitPyjamaSyndicateBlack
+  price: 0
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPyjamaSyndicateBlack
+
+- type: loadout
+  id: LoadoutSyndicateClothingUniformJumpsuitRecruitSyndieNF
+  price: 0
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitRecruitSyndieNF
+
+- type: loadout
+  id: LoadoutSyndicateClothingUniformJumpsuitParamedicSyndieNF
+  price: 0
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitParamedicSyndieNF
+
+- type: loadout
+  id: LoadoutSyndicateClothingUniformJumpsuitRepairmanSyndieNF
+  price: 0
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitRepairmanSyndieNF
+
+- type: loadout
+  id: LoadoutSyndicateClothingUniformJumpsuitChiefEngineerSyndieNF
+  price: 0
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitChiefEngineerSyndieNF
+
+# рюкзаки (хранилища)
+
+- type: loadout
+  id: LoadoutSyndicateClothingBackpackSyndicate
+  price: 0
+  equipment:
+    back: ClothingBackpackSyndicate
+
+- type: loadout
+  id: LoadoutSyndicateClothingBackpackDuffelSyndicate
+  price: 0
+  equipment:
+    back: ClothingBackpackDuffelSyndicate
+
+- type: loadout
+  id: LoadoutSyndicateClothingBackpackMessengerSyndicate
+  price: 0
+  equipment:
+    back: ClothingBackpackMessengerSyndicate
+
+# КПК
+
+- type: loadout
+  id: LoadoutSyndicateSyndiPDA
+  price: 0
+  equipment:
+    id: SyndiPDA
+
+- type: loadout
+  id: LoadoutSyndicateSyndiPDAOfficer
+  price: 0
+  equipment:
+    id: SyndiPDAOfficer
+
+- type: loadout
+  id: LoadoutSyndicateSyndiPDAOperative
+  price: 0
+  equipment:
+    id: SyndiPDAOperative
+
+- type: loadout
+  id: LoadoutSyndicateSyndiPDAMedic
+  price: 0
+  equipment:
+    id: SyndiPDAMedic
+
+- type: loadout
+  id: LoadoutSyndicateSyndiPDADelivery
+  price: 0
+  equipment:
+    id: SyndiPDACargo
+
+# Шапки
+
+- type: loadout
+  id: LoadoutSyndicateClothingHeadHatSyndie
+  price: 0
+  equipment:
+    head: ClothingHeadHatSyndie
+
+- type: loadout
+  id: LoadoutSyndicateClothingHeadHatOutlawHat
+  price: 0
+  equipment:
+    head: ClothingHeadHatOutlawHat
+
+- type: loadout
+  id: LoadoutSyndicateClothingHeadHatSyndieMAA
+  price: 0
+  equipment:
+    head: ClothingHeadHatSyndieMAA
+
+- type: loadout
+  id: LoadoutSyndicateClothingHeadPyjamaSyndicateRed
+  price: 0
+  equipment:
+    head: ClothingHeadPyjamaSyndicateRed
+
+- type: loadout
+  id: LoadoutSyndicateClothingHeadPyjamaSyndicatePink
+  price: 0
+  equipment:
+    head: ClothingHeadPyjamaSyndicatePink
+
+- type: loadout
+  id: LoadoutSyndicateClothingHeadPyjamaSyndicateBlack
+  price: 0
+  equipment:
+    head: ClothingHeadPyjamaSyndicateBlack
+
+# верхняя одежда
+
+- type: loadout
+  id: LoadoutSyndicateClothingOuterArmorBasic
+  price: 0
+  equipment:
+    outerClothing: ClothingOuterArmorBasic
+
+- type: loadout
+  id: LoadoutSyndicateClothingOuterVestWeb
+  price: 0
+  equipment:
+    outerClothing: ClothingOuterVestWeb
+
+- type: loadout
+  id: LoadoutSyndicateClothingOuterCoatSyndieCapArmored
+  price: 0
+  equipment:
+    outerClothing: ClothingOuterCoatSyndieCapArmored
+
+- type: loadout
+  id: LoadoutSyndicateClothingOuterWinterSyndieCap
+  price: 0
+  equipment:
+    outerClothing: ClothingOuterWinterSyndieCap
+
+- type: loadout
+  id: LoadoutSyndicateClothingOuterCoatSyndieCap
+  price: 0
+  equipment:
+    outerClothing: ClothingOuterCoatSyndieCap
+
+- type: loadout
+  id: LoadoutSyndicateClothingOuterWinterSyndie
+  price: 0
+  equipment:
+    outerClothing: ClothingOuterWinterSyndie
+
+# ботинки
+
+- type: loadout
+  id: LoadoutSyndicateClothingShoesBootsJack
+  price: 0
+  equipment:
+    shoes: ClothingShoesBootsJack
+
+- type: loadout
+  id: LoadoutSyndicateClothingShoesBootsWinterSyndicate
+  price: 0
+  equipment:
+    shoes: ClothingShoesBootsWinterSyndicate
+
+# гарнитура синдиката
+
+- type: loadout
+  id: LoadoutSyndicateClothingHeadsetAltSyndicate
+  price: 0
+  equipment:
+    ears: ClothingHeadsetAltSyndicate
+
+# маски
+
+- type: loadout
+  id: LoadoutSyndicateClothingMaskGasSyndicate
+  price: 0
+  equipment:
+    mask: ClothingMaskGasSyndicate
+
+- type: loadout
+  id: LoadoutSyndicateClothingMaskClownSecurity
+  price: 0
+  equipment:
+    mask: ClothingMaskClownSecurity

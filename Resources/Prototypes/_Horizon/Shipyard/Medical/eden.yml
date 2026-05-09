@@ -1,0 +1,62 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/EvilBug
+# Discord: evilbug
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: Eden
+  parent: BaseVessel
+  name: HRZN Eden
+  description: Старый исследовательский шаттл из другого сектора, переоборудованный ботаниками в летающую лабораторию для выращивания редких растений.
+  price: 500000 # 85299, наценка верфи 30% = 110798 # После внутрених решений шаттл стоит 500к вместо 120к
+  category: Medium
+  group: Medical
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/Medical/eden.yml
+  class:
+  - Botany
+  - Chemistry
+  engine:
+  - Uranium
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:FactionCostModifier
+      faction: "FactionMed"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionFSB"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionCCC"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: Eden
+  mapName: 'Eden'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/Medical/eden.yml
+  minPlayers: 0
+  stations:
+    Eden:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Eden {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

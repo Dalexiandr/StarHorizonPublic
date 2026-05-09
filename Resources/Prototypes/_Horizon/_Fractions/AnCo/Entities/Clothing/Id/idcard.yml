@@ -1,0 +1,217 @@
+- type: entity
+  parent: [IDCardStandard, BaseAnCoContraband]
+  id: AnCoStandartID
+  name: AnCoID
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Misc/idcard.rsi
+  - type: Clothing
+    slots:
+    - idcard
+    sprite: _Horizon/_Fractions/AnCo/Objects/Misc/idcard.rsi
+  - type: Item
+    size: Small
+
+# Советник
+- type: entity
+  parent: AnCoStandartID
+  id: AnCoCounselorID
+  suffix: StarHorizon, AnCo
+  name: карта Совета АнКо
+  description: Карта с необходимыми для членов АнКо доступами.
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: counselor
+  - type: Item
+  - type: IdCard
+    jobTitle: Советник АнКо
+    jobIcon: JobIconCounselorAnCo
+  - type: Access
+    tags:
+    - AccessAnCoCounselor
+    - AccessAnCoTitan
+    - AccessAnCoKnight
+    - AccessAnCoSpider
+    - AccessAnCoOfficer
+    - AccessAnCoCadet
+    - AccessAnCoRipsoid
+    - AccessAnCoWelcome
+    - Maintenance
+    - AnCo
+
+# Титан
+- type: entity
+  parent: AnCoStandartID
+  id: AnCoTitanID
+  suffix: StarHorizon, AnCo
+  name: карта офицера Титана АнКо
+  description: Карта с необходимыми для членов АнКо доступами.
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: titan
+  - type: Item
+  - type: IdCard
+    jobTitle: Офицер Титан АнКо
+    jobIcon: JobIconTitanAnCo
+  - type: Access
+    tags:
+    - AccessAnCoTitan
+    - AccessAnCoKnight
+    - AccessAnCoSpider
+    - AccessAnCoOfficer
+    - AccessAnCoCadet
+    - AccessAnCoRipsoid
+    - AccessAnCoWelcome
+    - Maintenance
+    - AnCo
+
+# Паук
+- type: entity
+  parent: AnCoStandartID
+  id: AnCoSpiderID
+  suffix: StarHorizon, AnCo
+  name: карта офицера Паука АнКо
+  description: Карта с необходимыми для членов АнКо доступами.
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: spider
+  - type: Item
+  - type: IdCard
+    jobTitle: Офицер Паук АнКо
+    jobIcon: JobIconSpiderAnCo
+  - type: Access
+    tags:
+    - AccessAnCoSpider
+    - AccessAnCoOfficer
+    - AccessAnCoCadet
+    - AccessAnCoRipsoid
+    - AccessAnCoWelcome
+    - Maintenance
+    - AnCo
+
+# Рыцарь
+- type: entity
+  parent: AnCoStandartID
+  id: AnCoKnightID
+  suffix: StarHorizon, AnCo
+  name: карта офицера Рыцаря АнКо
+  description: Карта с необходимыми для членов АнКо доступами.
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: knight
+  - type: Item
+  - type: IdCard
+    jobTitle: Офицер Рыцарь АнКо
+    jobIcon: JobIconKnightAnCo
+  - type: Access
+    tags:
+    - AccessAnCoKnight
+    - AccessAnCoOfficer
+    - AccessAnCoCadet
+    - AccessAnCoRipsoid
+    - AccessAnCoWelcome
+    - Maintenance
+    - AnCo
+
+# Офицер
+- type: entity
+  parent: AnCoStandartID
+  id: AnCoOfficerID
+  suffix: StarHorizon, AnCo
+  name: карта Офицера АнКо
+  description: Карта с необходимыми для членов АнКо доступами.
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: officer
+  - type: Item
+  - type: IdCard
+    jobTitle: Офицер АнКо
+    jobIcon: JobIconOfficerAnCo
+  - type: Access
+    tags:
+    - AccessAnCoOfficer
+    - AccessAnCoCadet
+    - AccessAnCoRipsoid
+    - AccessAnCoWelcome
+    - Maintenance
+    - AnCo
+
+# Кадет
+- type: entity
+  parent: AnCoStandartID
+  id: AnCoCadetID
+  suffix: StarHorizon, AnCo
+  name: карта кадета АнКо
+  description: Карта с необходимыми для членов АнКо доступами.
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: cadet
+  - type: Item
+  - type: IdCard
+    jobTitle: Кадет АнКо
+    jobIcon: JobIconCadetAnCo
+  - type: Access
+    tags:
+    - AccessAnCoCadet
+    - AccessAnCoRipsoid
+    - AccessAnCoWelcome
+    - Maintenance
+    - AnCo
+
+# Рипсоид, не спрашивайте кто это такой, это трансбот. Xigovir очень крутой и.. боже он черный!! В шахту его!!!
+- type: entity
+  parent: AnCoStandartID
+  id: AnCoRipsoidID
+  suffix: StarHorizon, AnCo
+  name: карта Рипсоида АнКо
+  description: Карта с необходимыми для членов АнКо доступами.
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: ripsoid
+  - type: Item
+  - type: IdCard
+    jobTitle: Рипсоид АнКо
+    jobIcon: JobIconRipsoidAnCo
+  - type: Access
+    tags:
+    - AccessAnCoRipsoid
+    - AccessAnCoWelcome
+    - Maintenance
+    - AnCo
+
+# остальные карточки
+
+- type: entity
+  parent: AnCoStandartID
+  id: AnCoWelcomeID
+  suffix: StarHorizon, AnCo
+  name: карта Гостя АнКо
+  description: Карта с необходимыми для членов АнКо доступами.
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: welcome
+  - type: Item
+  - type: IdCard
+    jobTitle: Гость АнКо
+    jobIcon: JobIconWelcomeAnCo
+  - type: Access
+    tags:
+    - AccessAnCoWelcome
+    - Maintenance

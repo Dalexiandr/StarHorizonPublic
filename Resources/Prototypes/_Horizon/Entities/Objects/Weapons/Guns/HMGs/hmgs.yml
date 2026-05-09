@@ -1,0 +1,69 @@
+- type: entity
+  name: миниган джаггернаута
+  id: WeaponMinigunERT
+  parent: BaseWeaponHeavyMachineGun
+  description: Миниган калибра .15, разработанный специально для джаггернута ОБР. Этот миниган предназначен для уничтожения бронированных целей и может пробить даже самую прочную защиту. Его высокая скорострельность и точность делают его идеальным оружием для расчистки пути для команды.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Weapons/Guns/HMGs/minigunert.rsi
+    layers:
+    - state: icon
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _StarHorizon/Objects/Weapons/Guns/HMGs/minigunert.rsi
+  - type: Gun
+    fireRate: 20
+    minAngle: 6
+    maxAngle: 24
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/minigun.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_StarHorizon/Weapons/Guns/Barrettm82/barrettm82_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineMinigunERT15
+        insertSound: /Audio/_StarHorizon/Weapons/Guns/Barrettm82/barrettm82_magin.ogg #CHANGE
+        ejectSound: /Audio/_StarHorizon/Weapons/Guns/Barrettm82/barrettm82_magout.ogg #CHANGE
+        priority: 2
+        whitelist:
+          tags:
+           - MagazineMinigunERT15
+      gun_chamber:
+        name: Cartridge
+        startingItem: BaseMinigunERT15
+        priority: 1
+        whitelist:
+          tags:
+           - CartridgeMinigunERT15
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: true
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: Clothing
+    sprite: _StarHorizon/Objects/Weapons/Guns/HMGs/minigunert.rsi
+    quickEquip: false
+    slots:
+    - Back
+  - type: Wieldable
+    wieldTime: 4.5
+    unwieldOnUse: false
+  - type: GunWieldBonus
+    minAngle: -10
+    maxAngle: -20
+  - type: StaticPrice
+    price: 10000
+  - type: AmmoCounter

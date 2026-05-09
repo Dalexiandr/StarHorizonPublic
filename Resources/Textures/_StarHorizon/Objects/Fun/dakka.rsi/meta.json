@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "license": "CLA with hosting restrictions",
+  "copyright": "Sprites by experriencee-1212769658474598441 and s6766-712697131512889465",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "icon2"
+    }
+  ]
+}

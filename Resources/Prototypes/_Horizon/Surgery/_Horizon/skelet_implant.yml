@@ -1,0 +1,45 @@
+- type: entity
+  id: BaseBoneImplant
+  abstract: true
+  parent: [ BaseItem, BaseImplant ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/implants.rsi
+  - type: Organ
+  - type: BoneImplant
+  - type: Gibbable
+
+# Bone for tier 1 to 3
+- type: entity
+  id: BoneLightImplant
+  name: Лёгкий экзоскелет
+  description: Ого... Достаточно лёгкие... Как у птицы. Надеюсь не сломаются от удара.
+  parent: BaseBoneImplant
+  components:
+  - type: Sprite
+    state: bone_implant
+  - type: FunctionalOrgan
+    speed: 0.35
+    armor:
+      modifiers:
+      coefficients:
+        Blunt: 1.40
+        Piercing: 1.20
+        Slash: 0.8
+
+- type: entity
+  id: BoneHeavyImplant
+  name: Усиленный экзоскелет
+  description: Вот это тяжесть... Как будто вместо костей титан...
+  parent: BaseBoneImplant
+  components:
+  - type: Sprite
+    state: bone_implant
+  - type: FunctionalOrgan
+    speed: -0.25
+    armor:
+      modifiers:
+      coefficients:
+        Blunt: 0.70
+        Piercing: 0.80
+        Slash: 1.3

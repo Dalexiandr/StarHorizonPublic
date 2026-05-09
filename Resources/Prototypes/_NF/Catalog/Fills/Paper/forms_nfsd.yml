@@ -1,0 +1,351 @@
+# Station Representative Forms
+# Sources: https://discord.com/channels/1123826877245694004/1182366744266932224/1182366744266932224
+#          https://docs.google.com/document/d/1jDX9numj-VHKBJ2FiiEo1GIlHESffOUIHIIXaqhEnls/edit?pli=1#heading=h.ru93r8n0fb7m
+# These forms should be kept up-to-date with changes to Space Law.
+
+# Filled Folder
+- type: entity
+  id: FillNfsdForms
+  abstract: true
+  components:
+  - type: StorageFill
+    contents:
+    - id: PaperWrittenNfsdWarrant
+    - id: PaperWrittenNfsdReport
+    - id: PaperWrittenNfsdArrestWarrant
+    - id: PaperWrittenNfsdArrestReport
+    - id: PaperWrittenNfsdDutyLog
+    - id: PaperWrittenNfsdAuthorization
+    - id: PaperWrittenNfsdContrabandAmnesty
+    - id: PaperWrittenNfsdContrabandTurnover
+    - id: PaperWrittenNfsdContrabandPermit
+    - id: Paper
+      prob: 0.5
+    - id: Paper
+      prob: 0.5
+
+- type: entity
+  id: BoxFolderNfsdForms
+  parent: [FillNfsdForms, BoxFolderPalGreen]
+  name: NFSD form folder
+  description: A folder filled with NFSD paperwork templates.
+  suffix: Forms, Green
+
+- type: entity
+  id: BoxFolderNfsdFormsBrown
+  parent: [FillNfsdForms, BoxFolderPalBrown]
+  name: NFSD form folder
+  description: A folder filled with NFSD paperwork templates.
+  suffix: Forms, Brown
+
+# Forms
+- type: entity # Creator: Kwentov (Vica)
+  id: PaperWrittenNfsdWarrant
+  name: search warrant
+  parent: Paper
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Paper
+    content: |2
+      [color=#4f6e40]◥[bold]N[/bold]◣ [bold]Департамент Шерифа Нового Фронтира[/bold][/color]
+      [color=#4f6e40]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+      [head=2]Ордер на Обыск[/head]
+
+      [head=3]Информация об Ордере[/head]
+      [bold]Объект (Лицо/IFF судна):[/bold]
+      [bold]Причина запроса:[/bold]
+      [bold]Время смены выдачи:[/bold]
+
+      [head=3]Информация о Запрашивающем[/head]
+      [bold]Номер дела:[/bold]
+      [bold]Время запроса:[/bold]
+      [bold]Запрашивающий офицер:[/bold]
+      [bold]Звание офицера:[/bold]
+
+
+
+      [color=#AAAAAA]Этот Ордер действителен только при запросе лицом ДШНФ и утверждении, подписании и простановке печати [italic]отдельным[/italic] (если это возможно) офицером в звании Бейлифа или выше, либо Представителем Фронтира.[/color]
+
+- type: entity # Creator: Starly (Shaw Clifflower)
+  id: PaperWrittenNfsdReport
+  name: after action report
+  parent: Paper
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Paper
+    content: |2
+      [color=#4f6e40]◥[bold]N[/bold]◣ [bold]Департамент Шерифа Нового Фронтира[/bold][/color]
+      [color=#4f6e40]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+      [head=2]Отчет по Завершении Операции[/head]
+
+      [bold]Номер дела:[/bold]
+      [bold]Нарушившее судно:[/bold]
+
+      [bold]Подозреваемый:[/bold]
+      [bold]Обвинения (указать все обострения):[/bold]
+
+      [bold]Подозреваемый:[/bold]
+      [bold]Обвинения (указать все обострения):[/bold]
+
+      [bold]Судно ДШНФ:[/bold]
+      [bold]Время инцидента:[/bold]
+      [bold]Офицеры на борту:[/bold]
+
+      [head=3]Собранные Доказательства[/head]
+      Перечислите все собранные доказательства ниже и офицера, у которого они находятся.
+
+
+
+      [head=3]Сводка Инцидента[/head]
+
+
+
+      [head=3]Поощрения[/head]
+
+
+
+      [head=3]Рекомендации[/head]
+
+
+
+      [color=#AAAAAA]Я, [italic]Бейлиф или Шериф[/italic] ДШНФ, или ВРИО, действующий от их имени, подтверждаю, что все написанное в этом отчете правильно и правдиво. Мне известны последствия, если что-либо в этом отчете окажется неверным, сфальсифицированным или преувеличенным.[/color]
+
+- type: entity
+  id: PaperWrittenNfsdArrestWarrant
+  name: arrest warrant
+  parent: Paper
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Paper
+    content: |2
+      [color=#4f6e40]◥[bold]N[/bold]◣ [bold]Департамент Шерифа Нового Фронтира[/bold][/color]
+      [color=#4f6e40]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+      [head=2]Ордер на Арест[/head]
+
+      [head=2]Обвиняемый(ые)[/head]
+      [bold]Имя:[/bold]
+      [bold]Описание:[/bold]
+
+      [bold]Имя:[/bold]
+      [bold]Описание:[/bold]
+
+      [bold]Имя:[/bold]
+      [bold]Описание:[/bold]
+
+      [head=2]Детали Преступления[/head]
+      [bold]Номер дела:[/bold]
+      [bold]Примерное время преступления:[/bold]
+      [bold]Место преступления:[/bold]
+      [bold]Обвинения:[/bold]
+
+      [head=2]Информация о Запрашивающем[/head]
+      [bold]Запрашивающий офицер:[/bold]
+      [bold]Уполномочивающий офицер:[/bold]
+      [bold]Время авторизации:[/bold]
+
+
+
+      [color=#AAAAAA]Этот ордер действителен только при запросе лицом ДШНФ и утверждении, подписании и простановке печати отдельным (если это возможно) офицером в звании Бейлиф или выше, либо Представителем Фронтира.[/color]
+
+- type: entity # Creator: Kwentov (Vica)
+  id: PaperWrittenNfsdArrestReport
+  name: arrest report
+  parent: Paper
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Paper
+    content: |2
+      [color=#4f6e40]◥[bold]N[/bold]◣ [bold]Департамент Шерифа Нового Фронтира[/bold][/color]
+      [color=#4f6e40]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+      [head=2]Отчет об Аресте[/head]
+
+      [head=2]Детали Инцидента[/head]
+      [bold]Номер дела:[/bold]
+      [bold]Время ареста:[/bold]
+      [bold]Место ареста:[/bold]
+      [bold]Обвинения:[/bold]
+
+      [head=2]Арестованный(ые)[/head]
+      [bold]Имя:[/bold]
+      [bold]Описание:[/bold]
+      [bold]Штраф или наказание:[/bold]
+
+      [bold]Имя:[/bold]
+      [bold]Описание:[/bold]
+      [bold]Штраф или наказание:[/bold]
+
+      [head=2]Арестовавший[/head]
+      [bold]Арестующий офицер:[/bold]
+      [bold]Начальник:[/bold]
+
+
+
+      [color=#AAAAAA]Я, нижеподписавшийся, настоящим клянусь под присягой, что вся информация в этом отчете точна и верна в силу моих знаний на момент подписания.[/color]
+
+
+
+- type: entity
+  id: PaperWrittenNfsdDutyLog
+  name: duty log
+  categories: [ HideSpawnMenu ]
+  parent: Paper
+  components:
+  - type: Paper
+    content: |2 # If editing this, edit PaperWrittenFrontierEmployeePayHistory
+      [color=#4f6e40]◥[bold]N[/bold]◣ [bold]Департамент Шерифа Нового Фронтира[/bold][/color]
+      [color=#4f6e40]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+      [head=2]Журнал Дежурств[/head]
+
+      [head=2]Шериф[/head]
+      [bold]Имя:[/bold]
+      [bold]Время начала дежурства:[/bold]
+      [bold]Время окончания дежурства:[/bold]
+
+      [head=2]Офицеры[/head]
+      [bold]Имя:[/bold]
+      [bold]Должность:[/bold]
+      [bold]Время начала дежурства:[/bold]
+      [bold]Время окончания дежурства:[/bold]
+
+      [bold]Имя:[/bold]
+      [bold]Должность:[/bold]
+      [bold]Время начала дежурства:[/bold]
+      [bold]Время окончания дежурства:[/bold]
+
+      [bold]Имя:[/bold]
+      [bold]Должность:[/bold]
+      [bold]Время начала дежурства:[/bold]
+      [bold]Время окончания дежурства:[/bold]
+
+
+      [color=#AAAAAA]Эта форма считается конфиденциальными данными НТ, Класс 2, и предназначена только для внутреннего использования ДШНФ.[/color]
+
+
+- type: entity # Based on form made by Blumbee (Aki Suboshi)
+  id: PaperWrittenNfsdContrabandTurnover
+  name: contraband turnover receipt
+  categories: [ HideSpawnMenu ]
+  parent: Paper
+  components:
+  - type: Paper
+    content: |2 # If updating this, update PaperWrittenFrontierContrabandTurnover
+      [color=#4f6e40]◥[bold]N[/bold]◣ [bold]Департамент Шерифа Нового Фронтира[/bold][/color]
+      [color=#4f6e40]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+      [head=2]Квитанция о Сдаче Контрабанды[/head]
+
+      [bold]Владелец Контрабанды:[/bold]
+      [bold]Общая стоимость контрабанды (ТК):[/bold]
+      [bold]Выплата за один ТК:[/bold] [color=#ff0000]$2,000[/color]
+      [bold]Итоговая выплата:[/bold]
+
+      [bold]Контрабанда К2:[/bold]
+          [bullet/]
+          [bullet/]
+          [bullet/]
+
+      [bold]Контрабанда К3:[/bold]
+          [bullet/]
+          [bullet/]
+          [bullet/]
+
+      [bold]Время смены:[/bold]
+
+
+
+      [color=#AAAAAA]Форма недействительна без подписей обеих сторон и печати Командования Фронтира (Шерифа или Представителя Фронтира).[/color]
+
+- type: entity # Based on form made by Blumbee (Aki Suboshi)
+  id: PaperWrittenNfsdContrabandAmnesty
+  name: contraband amnesty agreement
+  categories: [ HideSpawnMenu ]
+  parent: Paper
+  components:
+  - type: Paper
+    content: |2 # If updating this, update PaperWrittenFrontierContrabandAmnesty
+      [color=#4f6e40]◥[bold]N[/bold]◣ [bold]Департамент Шерифа Нового Фронтира[/bold][/color]
+      [color=#4f6e40]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+      [head=2]Соглашение об Амнистии Контрабанды[/head]
+
+      [head=3]Владелец Контрабанды[/head]
+          [bold]Имя:[/bold]
+          [bold]Вид:[/bold]
+          [bold]IFF судна:[/bold]
+
+      [bold]Выплата за ЕКС:[/bold] [color=#ff0000]$2,000[/color]
+      [bold]Время смены:[/bold]
+
+      Этот документ является контрактом между вышеуказанным Владельцем Контрабанды и Командованием Фронтира.
+
+      Любые преступления, связанные с хранением контрабанды для Владельца Контрабанды, будут аннулированы при условии, что все предметы контрабанды класса 3 и любые предметы контрабанды класса 2, не подпадающие под Разрешение на Контрабанду Класса 2, будут сданы в разумные сроки (согласно условию ниже) и не будут использованы в злонамеренных целях. Несоблюдение данного документа приводит к аннулированию любых действующих Разрешений на Контрабанду Класса 2.
+
+      Если Владелец Контрабанды не получит полную оплату по указанной выше ставке за сданную контрабанду, он может по своему усмотрению оставить контрабанду у себя без штрафных санкций.
+
+
+
+      [color=#AAAAAA]Форма недействительна без подписей обеих сторон и печати Командования Фронтира (Шерифа или Представителя Фронтира).[/color]
+
+- type: entity # Based on form made by Blumbee (Aki Suboshi)
+  id: PaperWrittenNfsdContrabandPermit
+  name: class 2 contraband permit
+  categories: [ HideSpawnMenu ]
+  parent: Paper
+  components:
+  - type: Paper
+    content: |2 # If updating this, update PaperWrittenFrontierContrabandPermit
+      [color=#4f6e40]◥[bold]N[/bold]◣ [bold]Департамент Шерифа Нового Фронтира[/bold][/color]
+      [color=#4f6e40]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+      [head=2]Разрешение на Контрабанду Класса 2[/head]
+
+      [bold]Владелец Разрешения:[/bold]
+      [bold]Экипаж Владельца:[/bold]
+          [bullet/]
+          [bullet/]
+          [bullet/]
+
+      [bold]Время смены:[/bold]
+
+      Это Разрешение позволяет Владельцу и экипажу, указанным выше, владеть и использовать контрабанду класса 2.
+      Несоблюдение Соглашения об Амнистии за Контрабанду аннулирует это Разрешение.
+      Обратитесь к ... Космического Закона для полного определения контрабанды класса 2.
+
+
+
+      [color=#AAAAAA]Это Разрешение недействительно без подписи Владельца и подписи и печати Шерифа[/color]
+
+- type: entity # Based on form made by Starly (Shaw Clifflower)
+  id: PaperWrittenNfsdAuthorization
+  name: authorization for bluespace threats
+  parent: Paper
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Paper
+    content: |2 # When updating this, update PaperWrittenFrontierAuthorization
+      [color=#4f6e40]◥[bold]N[/bold]◣ [bold]Департамент Шерифа Нового Фронтира[/bold][/color]
+      [color=#4f6e40]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+      [head=2]Разрешение на работу с Блюспейс Угрозами[/head]
+
+      [bold]Капитан судна:[/bold]
+      [bold]IFF судна:[/bold]
+      [bold]Время смены:[/bold]
+
+      [bold]Выдавшее Командование Фронтира:[/bold]
+          [bullet]XXXXXXXX, Представитель Фронтира
+          [bullet]XXXXXXXX, Шериф
+
+      Настоящим документом уполномочивается вышеуказанное судно и его капитан оказывать содействие и сотрудничать с ДШНФ и властями Фронтира в нейтрализации враждебных угроз из блюспейса для Фронтира. К ним относятся, но не ограничиваются:
+          [bullet] Судна культистов
+          [bullet] Судна Синдиката
+          [bullet] Судна Федерации Волшебников
+          [bullet] Судна Arcadia Industries
+
+      Этот документ НЕ делает уполномоченную сторону заместителем. Уполномоченной стороне не предоставляется особых прав на арест, задержание и судебное преследование лиц, связанных с Нанотрейзен.
+
+      [bold]Любой контрабандный товар, захваченный во время операций на борту враждебных судов, должен быть сдан либо ДШНФ, либо Представителю Фронтира, за денежное вознаграждение. Несдача контрабанды приведет к расторжению данного соглашения, и уполномоченная сторона может быть привлечена к уголовной ответственности.[/bold]
+
+      Уполномоченная сторона должна хранить копию этого документа для проверки. Ожидается, что уполномоченная сторона будет поддерживать связь с командованием ДШНФ и/или Представителем Фронтира, чтобы минимизировать жертвы.
+
+      Перед столкновением с враждебными судами уполномоченная сторона должна следовать любым инструкциям, данным ДШНФ для подготовки или иных действий перед высадкой на борт.
+
+
+
+      [color=#AAAAAA]Форма недействительна без подписей обеих сторон и печати Командования Фронтира (Шерифа или Представителя Фронтира).[/color]

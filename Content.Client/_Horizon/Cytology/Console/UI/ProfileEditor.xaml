@@ -1,0 +1,61 @@
+<Control xmlns="https://spacestation14.io"
+         xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+         xmlns:humanoid="clr-namespace:Content.Client.Humanoid">
+    <ScrollContainer VerticalExpand="True" HorizontalExpand="True">
+        <BoxContainer Orientation="Vertical">
+            <Button Name="MarkingSwitchButton" Text="{Loc 'cytology-console-editor-switch-marking-label'}" />
+
+            <BoxContainer Orientation="Vertical" Margin="8" SeparationOverride="16" HorizontalExpand="True" Visible="True" Name="ProfileBox">
+                <Label Text="No profile stored" Name="NoProfileLabel" />
+
+                <BoxContainer Orientation="Vertical" Name="ProfileContainer" Visible="True" SeparationOverride="8">
+                    <BoxContainer Orientation="Vertical" SeparationOverride="4">
+                        <Label Text="{Loc 'humanoid-profile-editor-name-label'}" />
+                        <LineEdit Name="NameEdit" HorizontalExpand="True" />
+                    </BoxContainer>
+
+                    <BoxContainer Orientation="Vertical" SeparationOverride="4">
+                        <Label Text="{Loc 'humanoid-profile-editor-sex-label'}" />
+                        <OptionButton Name="SexButton" HorizontalExpand="True" />
+                    </BoxContainer>
+
+                    <BoxContainer Orientation="Vertical" SeparationOverride="4">
+                        <Label Text="{Loc 'humanoid-profile-editor-skin-color-label'}" />
+                        <Control Name="SkinColorContainer" HorizontalExpand="True" Visible="True"/>
+                        <Slider HorizontalExpand="True" Name="SkinSlider" MinValue="0" MaxValue="100" Visible="False"/>
+                    </BoxContainer>
+
+                    <BoxContainer Margin="10" Orientation="Vertical">
+                        <Label Text="{Loc 'humanoid-profile-editor-eyes-label'}" />
+                        <Control Name="EyeColorContainer" />
+                    </BoxContainer>
+
+                    <BoxContainer Orientation="Vertical">
+
+                        <BoxContainer MinHeight="30"/>
+                        <!--There should be grid-->
+                        <BoxContainer Orientation="Horizontal" SeparationOverride="5">
+                            <Button Name="HairButton" Text="{Loc 'cytology-console-hair'}" HorizontalExpand="True" />
+                            <Button Name="FacialHairButton" Text="{Loc 'cytology-console-facial-hair'}" HorizontalExpand="True" />
+                        </BoxContainer>
+
+                        <BoxContainer Orientation="Vertical">
+                            <humanoid:SingleMarkingPicker Name="HairPicker" Category="Hair" MarkingScrollerMinHeight="200"/>
+                        </BoxContainer>
+                        <BoxContainer Orientation="Vertical">
+                            <humanoid:SingleMarkingPicker Name="FacialHairPicker" Category="FacialHair" MarkingScrollerMinHeight="200" Visible="False"/>
+                        </BoxContainer>
+                    </BoxContainer>
+                </BoxContainer>
+            </BoxContainer>
+            <!-- Markings -->
+            <BoxContainer Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True" Name="MarkingBox" Visible="False">
+                <Label Text="marking" />
+                <ScrollContainer VerticalExpand="True">
+                    <humanoid:MarkingPicker Name="Markings" IgnoreCategories="Hair,FacialHair" />
+                </ScrollContainer>
+            </BoxContainer>
+        </BoxContainer>
+    </ScrollContainer>
+</Control>
+

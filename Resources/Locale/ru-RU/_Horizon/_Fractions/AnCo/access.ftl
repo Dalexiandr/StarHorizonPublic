@@ -1,0 +1,9 @@
+id-card-access-level-anco = АнКо
+id-card-access-level-welcome = Гость
+id-card-access-level-ripsoid = Рипсоид
+id-card-access-level-cadet = Кадет
+id-card-access-level-officer = Офицер
+id-card-access-level-spider = Паук
+id-card-access-level-knight = Рыцарь
+id-card-access-level-titan = Титан
+id-card-access-level-counselor = Советник

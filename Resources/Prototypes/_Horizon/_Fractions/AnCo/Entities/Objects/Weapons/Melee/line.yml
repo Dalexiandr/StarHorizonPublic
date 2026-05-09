@@ -1,0 +1,34 @@
+- type: entity
+  name: леска АнКо
+  parent: BaseAnCoSharpWeapon
+  id: AnCoLine
+  description: Сверх-легкий клинок, момент когда наука подеждает силу.
+  suffix: StarHorizon, AnCo, Weapon
+  components:
+  - type: Execution
+    doAfterDuration: 2.0
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Melee/line.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    attackRate: 10
+    damage:
+      types:
+        Slash: 5
+    autoAttack: false
+    resistanceBypass: true
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Item
+    size: Normal
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Melee/line.rsi
+  - type: DisarmMalus
+  - type: Utensil
+    types:
+    - Knife
+  - type: Tool
+    qualities:
+    - Slicing
+  - type: StaticPrice
+    price: 2500

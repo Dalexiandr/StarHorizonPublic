@@ -1,0 +1,25 @@
+- type: explosion
+  id: AnCoExplodes
+  damagePerIntensity:
+    types:
+      Heat: 20
+      Piercing: 10
+  tileBreakChance: [0, 0, 0.5]
+  tileBreakIntensity: [0, 10, 30]
+  tileBreakRerollReduction: 20
+  lightColor: "#F05A5A"
+  texturePath: /Textures/_Horizon/_Fractions/AnCo/Effects/explodes.rsi
+  fireStates: 10
+
+- type: explosion
+  id: Termobar
+  damagePerIntensity:
+    types:
+      Heat: 12
+  tileBreakChance: [0]
+  tileBreakIntensity: [0]
+  lightColor: Orange
+  texturePath: /Textures/Effects/fire.rsi
+  fireStates: 3
+
+# Люме, я насрал сюда, прости

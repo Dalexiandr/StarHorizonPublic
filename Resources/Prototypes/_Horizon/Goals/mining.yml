@@ -1,0 +1,25 @@
+# - type: expeditionGoal
+#   id: GoldOreMinor
+#   specification: Mining
+#   randomAmount:
+#     min: 3
+#     max: 5
+#   amountMultiplier: 10
+#   goal: !type:EntityExpeditionGoal
+#     description: exp-goal-gold
+#     iconEntity: GoldOre
+#     reward: 7500
+#     requiredTag: OreGold
+
+# - type: expeditionGoal
+#   id: GoldOreMid
+#   specification: Mining
+#   randomAmount:
+#     min: 3
+#     max: 5
+#   amountMultiplier: 20
+#   goal: !type:EntityExpeditionGoal
+#     description: exp-goal-gold
+#     iconEntity: GoldOre
+#     reward: 12000
+#     requiredTag: OreGold

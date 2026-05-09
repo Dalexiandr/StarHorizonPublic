@@ -1,0 +1,132 @@
+<Document>
+  # ГОСПИТАЛЬНЫЙ ШАТТЛ КЛАССА CALADRIUS
+  <Box>
+    <GuideEntityEmbed Entity="BannerMedical" Caption="Восстановить"/>
+    <GuideEntityEmbed Entity="NFPosterContrabandFsbLogo" Caption="Исследования"/>
+    <GuideEntityEmbed Entity="BannerEngineering" Caption="Восстановить"/>
+  </Box>
+  <Box>
+  <GuideEntityEmbed Entity="ShuttleMapCaladrius" Caption=""/>
+  </Box>
+  [color=#a4885c]Размер корабля:[/color] Большой
+
+  [color=#a4885c]Рекомендуемый экипаж:[/color] 5-10
+
+  [color=#a4885c]Тип генератора питания:[/color] ДАМ
+
+  [color=#a4885c]Экспедиции:[/color] Нет
+
+  [color=#a4885c]Консоль IFF:[/color] Нет
+
+  "Caladrius — это флагманский экспедиционный медицинский авианосец корпорации Far Star Biotech. Разработан для поддержки крупномасштабной колонизации, гуманитарной помощи, расследований после катастроф и восстановительных операций."
+
+  # Функции корабля
+
+  <Box>
+    <GuideEntityEmbed Entity="ButtonFrameCautionSecurity" Caption="Запереть внешние шлюзы"/>
+    <GuideEntityEmbed Entity="ButtonFrameCaution" Caption="Привести в действие взрывозащитные двери"/>
+    <GuideEntityEmbed Entity="ButtonFrameGrey" Caption="Привести в действие ставни"/>
+  </Box>
+
+  # ШТАТ CALADRIUS
+
+  <Box>
+  <GuideEntityEmbed Entity="RandomHumanoidVisitorCMO" Caption=""/>
+</Box>
+<Box>
+  <GuideEntityEmbed Entity="RandomHumanoidVisitorParamedic" Caption=""/>
+  <GuideEntityEmbed Entity="RandomHumanoidVisitorMedicalDoctor" Caption=""/>
+  <GuideEntityEmbed Entity="NFSignEms2" Caption=""/>
+  <GuideEntityEmbed Entity="SignChem" Caption=""/>
+  <GuideEntityEmbed Entity="RandomHumanoidVisitorChemist" Caption=""/>
+  <GuideEntityEmbed Entity="RandomHumanoidVisitorBotanist" Caption=""/>
+</Box>
+<Box>
+  <GuideEntityEmbed Entity="RandomHumanoidVisitorSalvageSpecialist" Caption=""/>
+  <GuideEntityEmbed Entity="SignSalvage" Caption=""/>
+  <GuideEntityEmbed Entity="RandomHumanoidVisitorCargoTechnician" Caption=""/>
+</Box>
+<Box>
+  <GuideEntityEmbed Entity="RandomHumanoidVisitorLawyer" Caption=""/>
+  <GuideEntityEmbed Entity="SignPsychology" Caption=""/>
+  <GuideEntityEmbed Entity="RandomHumanoidVisitorChaplain" Caption=""/>
+</Box>
+
+  # КОНТРОЛЬНЫЙ СПИСОК ПЕРЕД ВЫЛЕТОМ
+
+  ## 1. Электропитание
+
+  ## 1.1 Силовые системы двигателей
+<Box>
+  <GuideEntityEmbed Entity="ButtonFrameCaution" Caption="Включить/Выключить питание двигателей"/>
+</Box>
+
+  - Рядом со станцией мониторинга питания в основной силовой гондоле находятся органы управления для включения/выключения питания двигателей.
+  - Инженерам рекомендуется отключать питание двигателей для технического обслуживания или по указанию командира.
+
+  ## 1.2. Аккумуляторные модули
+<Box>
+  <GuideEntityEmbed Entity="SMESBasic"/>
+  <GuideEntityEmbed Entity="SubstationBasic"/>
+  <GuideEntityEmbed Entity="APCBasic"/>
+  </Box>
+
+  - Проверьте, что блоки СМЭС закреплены на полу.
+  - Проверьте, что блок подстанции закреплен на полу.
+  - Проверьте, что главный автомат блока ЛКП включен.
+  - Проверьте текущую нагрузку блока ЛКП* (Вт).
+
+  ## 1.3. Генераторный блок D-K Jr.
+  <Box>
+    <GuideEntityEmbed Entity="PortableGeneratorDKJr"/>
+    <GuideEntityEmbed Entity="FuelBananium"/>
+    <GuideEntityEmbed Entity="SignRadiation"/>
+  </Box>
+
+  - Проверьте, закреплен ли генераторный блок D-K Jr. на полу.
+  - Проверьте, есть ли у генераторного блока D-K Jr. топливо. Для длительных полетов убедитесь, что у вас достаточно запасов топлива для поддержания выработки электроэнергии во время полета.
+  - Проверьте, настроен ли генераторный блок D-K Jr. на выход HV.
+  - Установите целевую мощность на 45 [bold]кВт[/bold].
+  - Запустите генераторный блок D-K Jr.
+  - Закройте радиационную защиту.
+
+  ## 2. Атмосферные системы
+
+  ## 2.1. Распределительная петля
+  <Box>
+  <GuideEntityEmbed Entity="OxygenCanister"/>
+  <GuideEntityEmbed Entity="NitrogenCanister"/>
+  <GuideEntityEmbed Entity="GasPort"/>
+  <GuideEntityEmbed Entity="GasMixer"/>
+  <GuideEntityEmbed Entity="GasPressurePump"/>
+  </Box>
+
+  - Проверьте, что баллон с O2 закреплен на соединительном порту.
+  - Проверьте, что баллон с N2 закреплен на соединительном порту.
+  - Проверьте, что газовый смеситель настроен на правильное соотношение смешивания (21% Кислорода, 79% Азота).
+  - Проверьте, что газовый смеситель установлен на 101 кПа.
+  - Включите газовый смеситель.
+
+  ## 2.2. Петля отходов
+  <Box>
+  <GuideEntityEmbed Entity="GasPressurePump"/>
+  </Box>
+
+  - Включите насос петли отходов (расположен в атмосферном отсеке).
+  - Обратите внимание, что Caladrius оснащен системой сбора отходящих газов. Доступ к ней осуществляется через порт в спасательном отсеке.
+  - Для использования системы сбора отходящих газов Caladrius внешний насос должен быть деактивирован, а газы направлены в соответствующие системы сбора.
+  - Эту систему лучше всего обслуживает обученный атмосферный техник.
+
+  ## 3. Прочие проверки
+  <Box>
+  <GuideEntityEmbed Entity="Gyroscope"/>
+  <GuideEntityEmbed Entity="GravityGeneratorMini"/>
+  <GuideEntityEmbed Entity="BlastDoor"/>
+  </Box>
+
+  - Проверьте, что гироскоп закреплен, подключен к питанию и включен.
+  - Проверьте, что мини-гравитационный генератор закреплен, подключен к питанию и включен.
+  - Проверьте, что взрывозащитные двери закрыты и закреплены.
+  - Убедитесь, что все соответствующие точки доступа к судну отмечены и должным образом защищены.
+  - Убедитесь, что ваш полет будет приятным и продуктивным. Все инструменты для обеспечения этого результата предоставлены, если использовать их надлежащим образом.
+</Document>

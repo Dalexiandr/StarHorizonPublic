@@ -1,0 +1,16 @@
+{
+    "version": 1,
+    "copyright": [
+      "Malanisa (discord: ✦\uD835\uDD78\uD835\uDD86\uD835\uDD91\uD835\uDD86\uD835\uDD93\uD835\uDD8E\uD835\uDD98\uD835\uDD86✦#5800)"
+    ],
+    "size": {
+      "x": 64,
+      "y": 32
+    },
+    "states": [
+    {
+        "name": "drumset",
+        "directions": 4
+    }
+    ]
+  }

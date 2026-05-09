@@ -1,0 +1,196 @@
+- type: entity
+  parent: AnCosatchelDEBUG
+  categories: [ HideSpawnMenu ]
+  id: AnCosatchelFillDEBUG
+  suffix: StarHorizon, AnCo, DEBUG, fill
+  name: ОЧЕНЬ глубокая сумка с вещами АнКо
+  description: Сумка с дохуя углубленными карманами на удобном магнитном крепеже.
+  components:
+  - type: StorageFill # Тут надо перечислить все предметы UAS. Xigovir: пусть займется кто-то другой, я ебал это. К тому же уже AnCo
+    contents:
+    - id: AnCosatchel
+    - id: ClothingEyesGlassesAnCo
+    - id: AnCoGlovesIsolate
+    - id: AnCoGloves
+    - id: AnCoberet
+    - id: AnCocap
+    - id: ClothingHeadsetAnCo
+    - id: ClothingNeckCloakAnCo
+    - id: AnCoGloryMedal
+    - id: ClothingOuterHardsuitTitan
+    - id: ClothingOuterHardsuitKnight
+    - id: AnCoVests
+    - id: AnCocoastconsul
+    - id: AnCoBoots
+    - id: AnCoClothingShoesBootsMag
+    - id: SuitProtectiveAnCo
+    - id: SuitAnCo
+    - id: SkirtAnCo
+    - id: LumaPlushina
+    - id: RipsiPlushin
+    - id: AnCoEnergyCore
+    - id: WeaponDisablerSMGAnCo
+    - id: WeaponLaserMinigunAnCo
+    - id: WeaponLaserGranadeAnCo
+    - id: WeaponDisablerSniperAnCo
+    - id: AnCoRipsoidCannon
+    - id: AnCoCounselorGun
+    - id: PMLaserAnCoGun
+    - id: LaserAnCoGun
+    - id: WeaponStunprodAnCo
+    - id: AnCoSword
+    - id: AnCoGranade
+    - id: AnCoBox
+    - id: AnCoopenbox
+    - id: AnCoBoxStoreUniform
+    - id: AnCoBoxStoreBug
+    - id: AnCoBoxStoreAccessory
+    - id: AnCoBoxStoreHack
+    - id: AnCoBoxStoreLasGun
+    - id: PDAAnCo
+    - id: PDACadetAnCo
+    - id: PDARipsoidAnCo
+    - id: PDAOfficerAnCo
+    - id: PDAOfficerAnCo
+    - id: PDAKnightAnCo
+    - id: PDATitanAnCo
+    - id: PDACounselorAnCo
+    - id: AnCoHandcuffs
+    - id: AnCoCadetID
+    - id: AnCoRipsoidID
+    - id: AnCoOfficerID
+    - id: AnCoKnightID
+    - id: AnCoSpiderID
+    - id: AnCoTitanID
+    - id: AnCoCounselorID
+    - id: CitadelCoin1
+    - id: CitadelCoin
+    - id: AnCoOmegaTool
+    - id: AnCohardBomb
+    - id: AnCoBombR
+    - id: AnCoBombOfficer
+    - id: AnCoBombSpider
+    - id: AnCoBombKnight
+    - id: AnCoBoxKitUniform
+    - id: ArdonSheet1
+    - id: KazmieSheet1
+    - id: AnCoCrab
+    - id: AnCoDrone
+    - id: AnCoDroneOff
+    - id: AnCoDeathAcidifierImplanter
+    - id: AnCoImplanterTreker
+    - id: AnCoImplanterDrone
+    - id: AnCohypo
+    - id: CombatMedipenAnCo
+    - id: NanitMedipenAnCo
+    # - id: NanitDefibMedipenAnCo
+    - id: ReliableContainerAnConanits
+    - id: AnCoAnomalyCircuitboard
+
+# Кадет
+- type: entity
+  parent: AnCosatchel
+  id: AnCosatchelCadet
+  suffix: StarHorizon, AnCo
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: AnCoHandcuffs
+    - id: AnCoHandcuffs
+    - id: AnCoEnergyCore
+    - id: WeaponDisablerSMGAnCo
+    - id: CombatMedipenAnCo
+
+# Офицер
+- type: entity
+  parent: AnCosatchel
+  id: AnCosatchelOfficer
+  suffix: StarHorizon, AnCo
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: AnCoHandcuffs
+    - id: AnCoHandcuffs
+    - id: AnCoHandcuffs
+    - id: AnCoEnergyCore
+    - id: PMLaserAnCoGun
+    - id: CombatMedipenAnCo
+    - id: AnCoDroneOff
+
+# Рыцарь
+- type: entity
+  parent: AnCosatchel
+  id: AnCosatchelKnight
+  suffix: StarHorizon, AnCo
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: AnCoEnergyCore
+    - id: AnCoEnergyCore
+    - id: AnCoOmegaTool
+    - id: LaserAnCoGun
+    - id: NanitMedipenAnCo
+    - id: CombatMedipenAnCo
+    - id: AnCoDroneOff
+    - id: AnCoGranade
+
+# Паук
+- type: entity
+  parent: AnCosatchel
+  id: AnCosatchelSpider
+  suffix: StarHorizon, AnCo
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: AnCoSword
+    - id: WeaponDisablerSniperAnCo
+    - id: AnCoEnergyCore
+    - id: AnCoHandcuffs
+    - id: CombatMedipenAnCo
+    - id: NanitMedipenAnCo
+    - id: NanitMedipenAnCo
+    - id: AnCoDroneOff
+    - id: AnCoGranade
+
+# Титан
+- type: entity
+  parent: AnCosatchel
+  id: AnCosatchelTitan
+  suffix: StarHorizon, AnCo
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: AnCoRipsoidCannon
+    - id: AnCoOmegaTool
+    - id: AnCoEnergyCore
+    - id: NanitMedipenAnCo
+    - id: NanitMedipenAnCo
+    - id: CombatMedipenAnCo
+    - id: CombatMedipenAnCo
+    - id: AnCoDroneOff
+    - id: AnCoDroneOff
+    - id: AnCoGranade
+    - id: AnCoGranade
+
+# Советник
+- type: entity
+  parent: AnCosatchel
+  id: AnCosatchelCounselor
+  suffix: StarHorizon, AnCo
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: AnCoCounselorGun
+    - id: AnCoEnergyCore
+    - id: AnCoHandcuffs
+    - id: CombatMedipenAnCo
+    - id: NanitMedipenAnCo
+    - id: NanitMedipenAnCo
+    - id: AnCoDroneOff
+    - id: AnCoDroneOff

@@ -1,0 +1,11 @@
+- type: entity
+  parent: ClothingShoesBootsCowboyBrown
+  id: ClothingShoesBootsMiner
+  name: ботинки шахтера
+  description: Очень старые шахтёрские ботинки. Вот-вот и подошва отлетит.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Shoes/Boots/minerboots.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Shoes/Boots/minerboots.rsi

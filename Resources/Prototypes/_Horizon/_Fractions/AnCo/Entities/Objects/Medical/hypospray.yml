@@ -1,0 +1,242 @@
+- type: entity
+  name: подкожный распылитель АнКо
+  parent: [BaseItem, BaseAnCoContraband]
+  suffix: StarHorizon, AnCo
+  description: Использует технологию подкожного распыления химикатов, подозрительно похожую на "гипоспрей".
+  id: AnCohypo
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Specific/Medical/hypospray.rsi
+    state: hypo
+  - type: Item
+    sprite: _Horizon/_Fractions/AnCo/Objects/Specific/Medical/hypospray.rsi
+    state: hypo
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 40
+  - type: RefillableSolution
+    solution: hypospray
+  - type: ExaminableSolution
+    solution: hypospray
+  - type: Hypospray
+    onlyAffectsMobs: false
+
+- type: entity
+  name: подкожный распылитель АнКо
+  parent: AnCohypo
+  suffix: StarHorizon, AnCo, Nerf
+  description: Использует технологию подкожного распыления химикатов, подозрительно похожую на "гипоспрей".
+  id: AnCohypoNerf
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 20
+  - type: UseDelay
+    delay: 2.5
+  - type: Hypospray
+    onlyAffectsMobs: false
+    transferAmount: 10
+
+- type: entity
+  name: капсульный инжектор АнКо
+  parent: [BaseItem, BaseAnCoContraband]
+  suffix: StarHorizon, AnCo
+  description: Использует технологию множественного инжектирования.
+  id: AnCohypocapsule
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Specific/Medical/capsulemedipen.rsi
+    layers:
+      - state: hypo
+      - state: hypo-anim
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    fillBaseName: cartridge
+  - type: Appearance
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 50
+  - type: ExaminableSolution
+    solution: hypospray
+  - type: Hypospray
+    solutionName: hypospray
+    transferAmount: 50
+    onlyAffectsMobs: false
+    injectOnly: true
+  - type: ContainerContainer
+    containers:
+      item: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      item:
+        name: Cartridge
+        whitelist:
+          tags:
+          - AnCoCapsule
+
+- type: entity
+  name: инжект-капсула
+  categories: [ HideSpawnMenu ]
+  parent: BaseItem
+  suffix: StarHorizon, AnCo
+  description: Капсула для инжектирования веществ в кровь
+  id: AnCoCapsule
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Specific/Medical/capsulemedipen.rsi
+    layers:
+      - state: cartridge
+  - type: SolutionCartridge
+    targetSolution: hypospray
+    solution:
+      maxVol: 50
+  - type: Tag
+    tags:
+      - AnCoCapsule
+  - type: InjectableSolution
+    solution: hypospray
+
+- type: entity
+  name: инжект-капсула нанитов
+  parent: AnCoCapsule
+  suffix: StarHorizon, AnCo
+  description: Капсула с около критической массой нанитов
+  id: AnCoNanitsCapsule
+  components:
+  - type: SolutionCartridge
+    targetSolution: hypospray
+    solution:
+      maxVol: 29
+      reagents:
+      - ReagentId: AnConanits
+        Quantity: 29
+
+- type: entity
+  name: боевой медипен АнКо
+  suffix: StarHorizon, AnCo
+  parent: [ChemicalMedipen, BaseAnCoContraband]
+  id: CombatMedipenAnCo
+  description: Предназначен для лечения обширных повреждений. Внимание, может вызвать рвоту!
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: omega
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: omega_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 75
+        reagents:
+        - ReagentId: Omnizine
+          Quantity: 20
+        - ReagentId: Puncturase
+          Quantity: 10
+        - ReagentId: DexalinPlus
+          Quantity: 20
+        - ReagentId: Pyrazine
+          Quantity: 15
+        - ReagentId: Dermaline
+          Quantity: 10
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 75
+    onlyAffectsMobs: false
+    injectOnly: true
+  - type: StaticPrice
+    price: 500
+  - type: Tag
+    tags: []
+
+- type: entity
+  name: нанитовый медипен АнКо
+  suffix: StarHorizon, AnCo
+  parent: [ChemicalMedipen, BaseAnCoContraband]
+  id: NanitMedipenAnCo
+  description: Медипен, содержащий наниты. Используйте на свой страх и риск.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: omega
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: omega_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 20
+        reagents:
+        - ReagentId: AnConanits
+          Quantity: 20
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 20
+    onlyAffectsMobs: false
+    injectOnly: true
+  - type: StaticPrice
+    price: 500
+  - type: Tag
+    tags: []
+
+# - type: entity
+#   name: нанитовый медипен-дефибриллятор
+#   suffix: StarHorizon, AnCo
+#   parent: [ChemicalMedipen, BaseAnCoContraband]
+#   id: NanitDefibMedipenAnCo
+#   description: Одноразовый медипен-дефибриллятор. Содержит почти смертельную дозу нанитов.
+#   components:
+#   - type: Sprite
+#     sprite: _Horizon/_Fractions/AnCo/Objects/Specific/Medical/medipen.rsi
+#     layers:
+#     - state: omega
+#       map: ["enum.SolutionContainerLayers.Fill"]
+#     - state: omega_defib
+#   - type: SolutionContainerVisuals
+#     maxFillLevels: 1
+#     changeColor: false
+#     emptySpriteName: omega_empty
+#   - type: SolutionContainerManager
+#     solutions:
+#       pen:
+#         maxVol: 29.5
+#         reagents:
+#         - ReagentId: AnConanits
+#           Quantity: 29.5
+#   - type: Hypospray
+#     solutionName: pen
+#     transferAmount: 29.5
+#     onlyAffectsMobs: false
+#     injectOnly: true
+#   - type: StaticPrice
+#     price: 500
+#   - type: Tag
+#     tags: []
+#   - type: Defibrillator
+#     doAfterDuration: 0
+#     zapDelay: 600
+#     zapHeal:
+#       types:
+#         Asphyxiation: -40
+#   - type: ContainerContainer
+#     containers:
+#       cell_slot: !type:ContainerSlot
+#   - type: ItemSlots
+#     slots:
+#       cell_slot:
+#         name: power-cell-slot-component-slot-name-default
+#         startingItem: PowerCellSmall
+#         disableEject: true
+
+# сломали пидоры

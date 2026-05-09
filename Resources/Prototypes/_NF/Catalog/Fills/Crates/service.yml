@@ -1,0 +1,21 @@
+- type: entity
+  id: CrateVehicleJanicart
+  parent: CrateLivestock
+  name: janicart crate
+  description: The janitor's trusty steed.
+  components:
+  - type: StorageFill
+    contents:
+      - id: NFVehicleJanicart
+      - id: VehicleKeyJanicart
+
+- type: entity
+  id: CrateServiceReplacementColoredLights
+  name: colored lights crate
+  parent: CrateGenericSteel
+  description: Contains an assortment of colored light tubes and bulbs.
+  components:
+  - type: StorageFill
+    contents:
+      - id: BoxColoredLighttube
+      - id: BoxColoredLightbulb

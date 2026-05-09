@@ -1,0 +1,196 @@
+- type: entity
+  parent: [BaseItem, BaseC1Contraband]
+  id: WeaponKineticBase
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - Pickaxe
+  - type: Sprite
+    sprite: _Horizon/Objects/Weapons/Melee/crusher_spear.rsi
+    state: icon
+  - type: AmmoCounter
+  - type: UseDelayOnShoot
+  - type: UseDelay
+    delay: 0.9
+  - type: Gun
+    soundGunshot: /Audio/Weapons/plasma_cutter.ogg
+    fireRate: 1
+    useKey: false
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 0.5
+    rechargeSound:
+      path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
+  - type: BasicEntityAmmoProvider
+    proto: BulletCharge
+    capacity: 1
+    count: 1
+  - type: DisarmMalus
+
+- type: entity
+  parent: [WeaponKineticBase, BaseC1Contraband]
+  id: WeaponKineticSpear
+  name: kinetic spear
+  description: A long-ranged melee weapon which trades damage for a two-tile reach, similar to reagent/bone spears.
+  components:
+  - type: Tag
+    tags:
+    - Pickaxe
+  - type: Sprite
+    sprite: _Horizon/Objects/Weapons/Melee/crusher_spear.rsi
+    state: icon
+  - type: AmmoCounter
+  - type: UseDelayOnShoot
+  - type: UseDelay
+    delay: 0.9
+  - type: Gun
+    soundGunshot: /Audio/Weapons/plasma_cutter.ogg
+    fireRate: 1
+    useKey: false
+  - type: RechargeBasicEntityAmmo
+    rechargeSound:
+      path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
+    rechargeCooldown: 0.5
+  - type: BasicEntityAmmoProvider
+    proto: BulletCharge
+    capacity: 1
+    count: 1
+  - type: MeleeWeapon
+    attackRate: 1
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Slash: 5
+        Piercing: 10
+    soundHit:
+      collection: MetalThud
+    angle: 0
+    animation: WeaponArcThrust
+    range: 2.6
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Piercing: 10
+        Structural: 15
+  - type: GunRequiresWield
+  - type: Item
+    size: Ginormous
+    sprite: _Horizon/Objects/Weapons/Melee/crusher_spear-inhands.rsi
+  - type: DisarmMalus
+  - type: Wieldable
+  - type: PressureDamageModify
+    additionalDamage:
+      types:
+        Slash: 10
+        Piercing: 10
+
+- type: entity
+  parent: WeaponKineticBase
+  id: WeaponKineticHammer
+  name: kinetic hammer
+  description: A beefy, two-handed weapon that inflicts knockback and heavier damage than a crusher, but cannot backstab.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Weapons/Melee/crusher_hammer.rsi
+    state: icon
+  - type: UseDelay
+    delay: 1
+  - type: MeleeWeapon
+    attackRate: 1
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 25
+    soundHit:
+      collection: MetalThud
+    angle: 0
+    animation: WeaponArcThrust
+    range: 1.6
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Blunt: 10
+        Structural: 45
+  - type: Item
+    size: Ginormous
+    sprite: _Horizon/Objects/Weapons/Melee/crusher_hammer-inhands.rsi
+  - type: GunRequiresWield
+  - type: Wieldable
+  - type: PressureDamageModify
+    additionalDamage:
+      types:
+        Blunt: 20
+
+- type: entity
+  parent: WeaponKineticBase
+  id: WeaponKineticClaws
+  name: kinetic claws
+  description: Unleash your inner edgelord with this two-handed claw small enough to fit in your backpack. Deals a paltry 45 damage on mark detonation, but sports a massive 120 damage backstab bonus.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Weapons/Melee/crusher_claws.rsi
+    state: icon
+  - type: UseDelay
+    delay: 1
+  - type: MeleeWeapon
+    attackRate: 1.5
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Slash: 10
+    soundHit:
+      collection: MetalThud
+    angle: 0
+    animation: WeaponArcThrust
+    range: 1.6
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 5
+        Piercing: 5
+        Structural: 15
+  - type: GunRequiresWield
+  - type: Wieldable
+  - type: Item
+    size: Normal
+    sprite: _Horizon/Objects/Weapons/Melee/crusher_claws-inhands.rsi
+  - type: PressureDamageModify
+    additionalDamage:
+      types:
+        Slash: 10
+        Piercing: 10
+
+- type: entity
+  parent: WeaponKineticBase
+  id: WeaponKineticMachete
+  name: kinetic machete
+  description: A smaller, one-handed variant of the crusher. Deals about 40 less damage than the PKC, but has a 15% melee block chance.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Weapons/Melee/crusher_machete.rsi
+    state: icon
+  - type: UseDelay
+    delay: 1
+  - type: MeleeWeapon
+    attackRate: 1.5
+    damage:
+      types:
+        Slash: 10
+    soundHit:
+      collection: MetalThud
+    angle: 0
+    animation: WeaponArcThrust
+    range: 1.6
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 10
+        Structural: 20
+  - type: Wieldable
+  - type: Item
+    size: Ginormous
+    sprite: _Horizon/Objects/Weapons/Melee/crusher_machete-inhands.rsi
+  - type: PressureDamageModify
+    additionalDamage:
+      types:
+        Slash: 15

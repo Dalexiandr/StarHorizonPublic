@@ -1,0 +1,48 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: ???
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: Hatchery
+  parent: BaseVessel
+  name: ORS type 8R2 "Hatchery"
+  description: Средний медицинский шаттл с цитологической и ксеноархеологической лабораториями.
+  price: 140000 # 105461, наценка верфи 30% = 137099
+  category: Medium
+  group: Medical
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/Medical/hatcheryors.yml
+  class:
+  - Medical
+  - Science
+  engine:
+  - Bananium
+  - Uranium
+
+
+- type: gameMap
+  id: Hatchery
+  mapName: 'ORS type 8R2 "Hatchery"'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/Medical/hatcheryors.yml
+  minPlayers: 0
+  stations:
+    Hatchery:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'type 8R2 "Hatchery" {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]
+
+

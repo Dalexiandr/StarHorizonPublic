@@ -1,0 +1,18 @@
+# UI Labels
+gas-pressure-regulator-ui-set-threshold = Установить
+gas-pressure-regulator-ui-zero-threshold = Сброс
+gas-pressure-regulator-ui-set-to-current-pressure = Установить на давление входа
+gas-pressure-regulator-ui-add-10 = +10
+gas-pressure-regulator-ui-add-100 = +100
+gas-pressure-regulator-ui-add-1000 = +1000
+gas-pressure-regulator-ui-subtract-10 = -10
+gas-pressure-regulator-ui-subtract-100 = -100
+gas-pressure-regulator-ui-subtract-1000 = -1000
+gas-pressure-regulator-ui-title = Регулятор давления входа
+gas-pressure-regulator-ui-target = Установка давления
+gas-pressure-regulator-ui-flow = Расход
+gas-pressure-regulator-ui-outlet = Выход
+gas-pressure-regulator-ui-inlet = Вход
+# Units
+gas-pressure-regulator-ui-flow-rate-unit = л/с
+gas-pressure-regulator-ui-pressure-unit = кПа

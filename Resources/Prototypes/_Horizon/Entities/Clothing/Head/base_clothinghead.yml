@@ -1,0 +1,35 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatCatEarsRobot
+  name: роботические кошачьи ушки
+  description: Вы видели всё в своей жизни, если видели это... Однако, они такие милые!~
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/stellnya.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/stellnya.rsi
+  - type: AddAccentClothing
+    accent: OwOAccent
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatWeddingVeill
+  name: cвадебный венок
+  description: Красивый венок, созданный для роскошных свадеб.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/weddingveil.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/weddingveil.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatVeill
+  name: цветочный венок
+  description: Цветочный венок.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/veil.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/veil.rsi

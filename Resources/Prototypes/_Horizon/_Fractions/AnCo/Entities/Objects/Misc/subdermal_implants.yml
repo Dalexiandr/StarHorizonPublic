@@ -1,0 +1,25 @@
+- type: entity
+  parent: Acidifier
+  id: BluespaceAnCoTeleport
+  name: Блюспейс телепортация
+  suffix: StarHorizon, AnCo
+  description: Телепортирует твоё тело что бы спасти твою жизнь!
+  components:
+  - type: Transform
+    anchored: True
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Effects/effect.rsi
+    noRot: true
+    layers:
+    - state: teleport
+      shader: unshaded
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/_Goobstation/Weapons/ChronoLegionnaire/stasisgun_reload.ogg
+  - type: PointLight
+    color: "#cc0000"
+    radius: 3
+    energy: 1
+    netsync: false
+  - type: TimedDespawn
+    lifetime: 1.55

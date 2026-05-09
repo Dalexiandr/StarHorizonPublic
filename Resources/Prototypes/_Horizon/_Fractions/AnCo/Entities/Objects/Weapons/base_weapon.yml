@@ -1,0 +1,15 @@
+- type: entity
+  id: BaseAnCoWeapon
+  parent: [BaseItem, BaseAnCoContraband]
+  abstract: true
+
+- type: entity
+  id: BaseAnCoSharpWeapon
+  parent: BaseAnCoWeapon
+  abstract: true
+  components:
+  - type: Sharp
+  - type: Reflect
+    enabled: true
+    reflectProb: .3
+    spread: 45

@@ -1,0 +1,12 @@
+ent-MobParrotNF = parrot
+    .desc = { ent-MobParrot.desc }
+ent-CageParrot = parrot carrying cage
+    .desc = A home away from home for your squawking feathered friend.
+    .suffix = null
+ent-MobRosyMothroach = rosy mothroach
+    .desc = This is the adorable by-product of mult- wait, why's this one pink?
+ent-MobAngryBeeTimed = bee
+    .suffix = Angry, Timed
+    .desc = { ent-MobAngryBee.desc }
+ent-MobMonkeyNoInventory = { ent-MobMonkey }
+    .desc = { ent-MobMonkey.desc }

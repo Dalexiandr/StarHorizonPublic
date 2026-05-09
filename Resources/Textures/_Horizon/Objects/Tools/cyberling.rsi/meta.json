@@ -1,0 +1,161 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "scalpel",
+      "delays": [
+        [
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "retractor",
+      "delays": [
+        [
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "crowbar",
+      "delays": [
+        [
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "cutters",
+      "delays": [
+        [
+          0.4,
+          0.4,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "drill",
+      "delays": [
+        [
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "saw",
+      "delays": [
+        [
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "hemostat",
+      "delays": [
+        [
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "bonesetter",
+      "delays": [
+        [
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "cautery",
+      "delays": [
+        [
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "indwelder",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "indwelder-on",
+      "delays": [
+        [
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "screwdriver",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "wrench",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "eyes",
+      "delays": [
+        [
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "fingerblades",
+      "delays": [
+        [
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "laser_cyborg",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "taser",
+      "delays": [
+        [
+          0.1
+        ]
+      ]
+    }
+  ]
+}

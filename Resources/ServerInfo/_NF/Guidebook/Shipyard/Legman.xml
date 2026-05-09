@@ -1,0 +1,89 @@
+<Document>
+  # СЕРВИСНЫЙ ШАТТЛ КЛАССА "LEGMAN"
+  <Box>
+  <GuideEntityEmbed Entity="ComputerTabletopMassMedia"/>
+  <GuideEntityEmbed Entity="SurveillanceWirelessCameraMovableEntertainment"/>
+  <GuideEntityEmbed Entity="ClothingHeadHatFedoraBrown"/>
+  </Box>
+  <Box>
+  <GuideEntityEmbed Entity="ShuttleMapLegman" Caption=""/>
+  </Box>
+    [color=#a4885c]Размер корабля:[/color] Малый (Микро)
+
+	[color=#a4885c]Рекомендуемый экипаж:[/color] 1
+
+	[color=#a4885c]Тип генератора энергии:[/color] Плазменный
+
+	[color=#a4885c]Экспедиции:[/color] Отсутствуют
+
+	[color=#a4885c]Консоль IFF:[/color] Отсутствует
+
+  "Небольшой маневренный шаттл с низкой стоимостью эксплуатации, идеально подходящий для репортёров, стремящихся первыми оказаться на месте событий. Производитель: Langstad-Voigt Heavy Industries."
+
+  # КОНТРОЛЬНЫЙ СПИСОК ПЕРЕД ВЫЛЕТОМ
+
+  ## 1. Электропитание
+
+  ## 1.1. Батарейные блоки
+  <Box>
+  <GuideEntityEmbed Entity="SubstationWallBasic"/>
+  <GuideEntityEmbed Entity="APCBasic"/>
+  </Box>
+
+  - Проверьте подстанцию.
+  - Убедитесь, что главный выключатель блока ЛКП включён.
+  - Проверьте текущую нагрузку блока ЛКП* (Вт).
+
+  ## 1.2. Генератор P.A.C.M.A.N.
+  <Box>
+  <GuideEntityEmbed Entity="PortableGeneratorPacmanShuttle"/>
+  <GuideEntityEmbed Entity="SheetPlasma"/>
+  </Box>
+
+  - Убедитесь, что генератор P.A.C.M.A.N. закреплён на полу.
+  - Убедитесь, что в генераторе есть топливо. Для длительных полётов обеспечьте достаточный запас.
+  - Убедитесь, что генератор настроен на HV-выход.
+  - Установите целевую мощность на 5–6** [bold]кВт[/bold].
+  - Запустите генератор.
+
+  ## 2. Атмосфера
+
+  ## 2.1. Цикл распределения
+  <Box>
+  <GuideEntityEmbed Entity="AirCanister"/>
+  <GuideEntityEmbed Entity="GasPort"/>
+  <GuideEntityEmbed Entity="GasPressurePump"/>
+  </Box>
+
+  - Убедитесь, что баллон с воздухом закреплён на соединительном порте.
+  - Установите насос распределения на 101 кПа.
+  - Включите насос.
+
+  ## 2.2. Цикл отходов
+  <Box>
+  <GuideEntityEmbed Entity="GasPressurePump"/>
+  <GuideEntityEmbed Entity="AirAlarm"/>
+  </Box>
+
+  - Включите насос отходящего цикла.
+  - Отключите автоматический режим на воздушной сигнализации в машинном отделении.
+  - Установите режим фильтрации (Широкий).
+
+  ## 3. Прочие проверки
+  <Box>
+  <GuideEntityEmbed Entity="SmallGyroscope"/>
+  <GuideEntityEmbed Entity="GravityGeneratorMini"/>
+  <GuideEntityEmbed Entity="ShuttersWindow"/>
+  </Box>
+
+  - Убедитесь, что гироскоп закреплён, запитан и включён.
+  - Убедитесь, что мини-гравитационный генератор закреплён, запитан и включён.
+  - Убедитесь, что передние оконные ставни закрыты.
+
+  ## Примечания
+
+  * — Шаттлы класса «Легман» оснащены одним блоком ЛКП, позволяющим отслеживать общее энергопотребление корабля. В базовой конфигурации потребление составляет 4,7 кВт.
+
+  ** — Низкое энергопотребление позволяет снизить целевую мощность генератора P.A.C.M.A.N. до 5 кВт. Однако для предотвращения отключений при зарядке гравитационного генератора рекомендуется устанавливать 6 кВт.
+
+</Document>

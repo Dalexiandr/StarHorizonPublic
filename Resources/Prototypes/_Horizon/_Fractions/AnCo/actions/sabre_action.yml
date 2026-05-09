@@ -1,0 +1,14 @@
+- type: entity
+  id: ActionAnCoSabreRecall
+  parent: BaseAction
+  name: Призвать саблю
+  description: Призывает связанную саблю AnCo обратно в вашу руку.
+  components:
+  - type: Action
+    useDelay: 30
+    icon:
+      sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Melee/sabre.rsi
+      state: icon
+    itemIconStyle: NoItem
+  - type: InstantAction
+    event: !type:AnCoSabreRecallEvent

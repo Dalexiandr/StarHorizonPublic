@@ -1,0 +1,12 @@
+ent-MedicalPouchFilledLow = { ent-MedicalPouch }
+    .suffix = Подрядчик, низкое качество
+    .desc = { ent-MedicalPouch.desc }
+ent-MedicalPouchFilledMedium = { ent-MedicalPouch }
+    .suffix = Подрядчик, среднее качество
+    .desc = { ent-MedicalPouch.desc }
+ent-MedicalPouchFilledHigh = { ent-MedicalPouch }
+    .suffix = Подрядчик, высокое качество
+    .desc = { ent-MedicalPouch.desc }
+ent-MedicalPouchFilledERT = { ent-MedicalPouch }
+    .suffix = ОБР, высокое качество
+    .desc = { ent-MedicalPouch.desc }

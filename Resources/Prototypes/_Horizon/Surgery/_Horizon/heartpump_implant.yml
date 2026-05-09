@@ -1,0 +1,21 @@
+- type: entity
+  id: BaseBloodPumpImplant
+  abstract: true
+  parent: [ BaseItem, BaseImplant ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/implants.rsi
+  - type: Organ
+  - type: BloodPumpImplant
+  - type: Gibbable
+
+- type: entity
+  id: BloodPumpImplant
+  name: Бионическая Помпа Крови
+  description: Усиливает поток крови между всем телом позволяя очень эффективно использовать кислород.
+  parent: BaseBloodPumpImplant
+  components:
+  - type: Sprite
+    state: implant
+  - type: FunctionalOrgan
+    speed: 0.2

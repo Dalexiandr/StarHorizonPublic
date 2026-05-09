@@ -1,0 +1,50 @@
+- type: entity
+  id: BaseDungeonMarker
+  name: dungeon spawner
+  parent: MarkerBase
+  abstract: true
+  components:
+  - type: DungeonSpawn
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Mobs/Aliens/elemental.rsi
+        state: alive
+
+- type: entity
+  id: GenericDungeonMarker
+  parent: BaseDungeonMarker
+  suffix: Generic
+  components:
+  - type: DungeonSpawn
+    dungeons:
+    - NFExperiment
+    - NFHaunted
+    - NFMineshaft
+    - NFCaveFactory
+    - NFFactoryDorms
+    - NFVirologyLab
+    mobFactions:
+    - NFXenos
+    - NFCarps
+    - NFFlesh
+    mobBudget: 30
+
+- type: entity
+  id: SnowDungeonMarker
+  parent: BaseDungeonMarker
+  suffix: Snowy
+  components:
+  - type: DungeonSpawn
+    dungeons:
+    - NFExperiment
+    - NFSnowyLabs
+    - NFMineshaft
+    - NFMedSci
+    - NFVirologyLab
+    - NFSalvageOutpost
+    mobFactions:
+    - NFArgocytes
+    - NFDinosaurs
+    - NFSilicons
+    mobBudget: 34

@@ -1,0 +1,113 @@
+- type: entity
+  name: Метеор
+  parent: [BaseWeaponPistol, BaseAnCoContraband]
+  id: WeaponShotgunAnCo
+  description: Полу-автоматический дробовик, ничего особенного.
+  suffix: StarHorizon, AnCo, Weapon
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Guns/Ballistic/shotgun.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,3,1
+  - type: Gun
+    fireRate: 3
+    projectileSpeed: 6
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
+  - type: ChamberMagazineAmmoProvider
+    autoEject: true
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: true
+  - type: Appearance
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineAnCoShotgun50
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - AnCoMagazineShotgun50
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BaseCartridgeShotgunAnCo
+        priority: 1
+        whitelist:
+          tags:
+            - AnCoBulletShotgun50
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunRequiresWield
+  - type: StaticPrice
+    price: 15000
+
+- type: entity
+  name: Звездочет
+  parent: [BaseWeaponPistol, BaseAnCoContraband]
+  id: WeaponShotgunSpeedAnCo
+  description: Полу-автоматический дробовик, ничего особенного.
+  suffix: StarHorizon, AnCo, Weapon
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Guns/Ballistic/shotgun-plus.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,3,1
+  - type: Gun
+    fireRate: 2
+    projectileSpeed: 20
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
+  - type: ChamberMagazineAmmoProvider
+    autoEject: true
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: true
+  - type: Appearance
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineAnCoShotgun50
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - AnCoMagazineShotgun50
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BaseCartridgeShotgunAnCo
+        priority: 1
+        whitelist:
+          tags:
+            - AnCoBulletShotgun50
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunRequiresWield
+  - type: StaticPrice
+    price: 15000

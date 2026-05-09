@@ -1,0 +1,64 @@
+- type: entity
+  parent: ComputerId
+  id: ComputerIdDFI
+  name: DFI ID card computer
+  suffix: DFI
+  description: Terminal for programming DFI agent ID cards.
+  components:
+  - type: IdCardConsole
+    accessLevels:
+    - DFI
+    - DFI-Cadet
+    - DFI-Officer
+    - DFI-IU
+    - DFI-CAU
+    - DFI-ShiftManager
+    - DFI-Evidence
+    - DFI-Observation
+    - DFI-Special
+    - DFI-CIC
+    - DFI-Armory
+    - DFI-APS
+    - DFI-TRC
+    - Security
+    - Service
+    - Medical
+    - Maintenance
+    - Janitor
+    - Captain
+    - Engineering
+    - External
+    privilegedIdSlot:
+      name: id-card-console-privileged-id
+      ejectSound: /Audio/Machines/id_swipe.ogg
+      insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+      ejectOnBreak: true
+      swap: false
+      whitelist:
+        components:
+        - IdCard
+    targetIdSlot:
+      name: id-card-console-target-id
+      ejectSound: /Audio/Machines/id_swipe.ogg
+      insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+      ejectOnBreak: true
+      swap: false
+      whitelist:
+        components:
+        - IdCard
+  - type: Sprite
+    sprite: _Horizon/_Fractions/DFI/dfi_id_computers.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+      sprite: Structures/Machines/computers.rsi
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+      sprite: Structures/Machines/computers.rsi
+    - map: ["computerLayerScreen"]
+      state: dfi_id
+    - map: ["computerLayerKeys"]
+      state: dfi_id_key
+    - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      state: generic_panel_open
+      sprite: Structures/Machines/computers.rsi

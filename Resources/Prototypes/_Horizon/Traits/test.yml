@@ -1,0 +1,36 @@
+# - type: trait
+#   id: SampleAmputee
+#   name: trait-name
+#   description: trait-desc
+#   category: HorizonQuirks
+#   cost: 0
+#   effects:
+#   - !type:ModifyBodyParts
+#     partType: Arm
+#     symmetry: Left
+#     protoId: null
+#     slotId: null
+
+# - type: trait
+#   id: SampleAugment
+#   name: trait-name
+#   description: trait-desc
+#   category: HorizonQuirks
+#   cost: 0
+#   effects:
+#   - !type:ModifyBodyParts
+#     partType: Arm
+#     symmetry: Left
+#     protoId: LeftArmCyber
+#     slotId: left arm
+
+# - type: trait
+#   id: SampleOrgan
+#   name: trait-name
+#   description: trait-desc
+#   category: HorizonQuirks
+#   cost: 0
+#   effects:
+#   - !type:ModifyOrgans
+#     protoId: OrganHumanLiver
+#     slotId: liver

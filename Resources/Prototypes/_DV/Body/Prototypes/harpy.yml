@@ -1,0 +1,60 @@
+- type: body
+  id: Harpy
+  name: "harpy"
+  root: torso
+  slots:
+    head:
+      part: HeadHarpy
+      connections:
+      - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganHumanEyes
+        eye_implant: null # Horizon
+        cyberdeka_implant: null # Horizon
+    torso:
+      part: TorsoHarpy
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      organs:
+        heart: OrganAnimalHeart
+        lungs: OrganHarpyLungs
+        stomach: OrganAnimalStomach
+        liver:  OrganAnimalLiver
+        kidneys: OrganAnimalKidneys
+        vessels_implant: null # Horizon
+        blood_pump_implant: null
+        skin_implant: null # Horizon
+        bone_implant: null # Horizon
+        cavity: null # Horizon
+    right arm:
+      part: RightArmHarpy
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmHarpy
+      connections:
+      - left hand
+    right hand:
+      part: RightHandHarpy
+      organs:
+        hands_implant: null # Horizon
+    left hand:
+      part: LeftHandHarpy
+      organs:
+        hands_implant: null # Horizon
+    right leg:
+      part: RightLegHarpy
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegHarpy
+      connections:
+      - left foot
+    right foot:
+      part: RightFootHarpy
+    left foot:
+      part: LeftFootHarpy

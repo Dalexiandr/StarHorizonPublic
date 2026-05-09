@@ -1,0 +1,21 @@
+﻿- type: entity
+  parent: PosterBase
+  id: PosterLegitRelaxWithLemird
+  name: "Отдохни с Лемирдой"
+  description: "На постере изображена плюшевая лемирда, самый лучших собеседник и ваша лучшая подруга. Постер призывает не перерабатывать и отдыхать в меру, чтобы повысить продуктивность."
+  suffix: Horizon
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Wallmounts/posterlemird.rsi
+    state: poster_plushlemird
+
+- type: entity
+  parent: PosterBase
+  id: PosterLegitRelaxWithLemird2
+  name: "Отдохни с Лемирдой"
+  description: "На постере изображена новая лемирда, самый лучших собеседник и ваша лучшая подруга. Постер призывает не перерабатывать и отдыхать в меру, чтобы повысить продуктивность."
+  suffix: Horizon
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Wallmounts/posterlemird.rsi
+    state: poster_plushlemird2

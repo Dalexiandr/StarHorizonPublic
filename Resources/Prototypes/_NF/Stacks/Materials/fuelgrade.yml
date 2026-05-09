@@ -1,0 +1,27 @@
+- type: stack
+  id: FuelPlasma
+  name: stack-fuel-grade-plasma
+  icon: { sprite: _Horizon/Objects/Specific/Fuel/fuelgrade_material.rsi, state: plasma } # Horizon
+  spawn: FuelPlasma1
+  maxCount: 30
+
+- type: stack
+  id: FuelUranium
+  name: stack-fuel-grade-uranium
+  icon: { sprite: _Horizon/Objects/Specific/Fuel/fuelgrade_material.rsi, state: uranium } # Horizon
+  spawn: FuelUranium1
+  maxCount: 30
+
+- type: stack
+  id: FuelBananium
+  name: stack-fuel-grade-bananium
+  icon: { sprite: _Horizon/Objects/Specific/Fuel/fuelgrade_material.rsi, state: bananium } # Horizon
+  spawn: FuelBananium1
+  maxCount: 30
+
+- type: stack
+  id: FuelSkrungle
+  name: stack-skrungle
+  icon: { sprite: _Horizon/Objects/Specific/Fuel/fuelgrade_material.rsi, state: skrungle } # Horizon
+  spawn: FuelSkrungle1
+  maxCount: 30

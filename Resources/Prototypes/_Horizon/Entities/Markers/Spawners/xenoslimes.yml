@@ -1,0 +1,372 @@
+- type: entity
+  id: GreySlimeSpawn
+  name: slime spawn
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - MobAdultSlimesGrey
+    chance: 1
+
+- type: entity
+  id: RandomGreySlimeMutation
+  name: random grey slime mutatuion
+  parent: MarkerBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - MobAdultSlimesPurple
+      - MobAdultSlimesOrange
+      - MobAdultSlimesBlue
+      - MobAdultSlimesMetall
+    chance: 1
+
+- type: entity
+  id: RandomOrangeSlimeMutation
+  name: random orange slime mutatuion
+  parent: MarkerBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - MobAdultSlimesYellow
+      - MobAdultSlimesRed
+      - MobAdultSlimesDarkPurple
+    chance: 1
+
+- type: entity
+  id: RandomPurpleSlimeMutation
+  name: random purple slime mutatuion
+  parent: MarkerBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - MobAdultSlimesDarkBlue
+      - MobAdultSlimesGreen
+      - MobAdultSlimesDarkPurple
+    chance: 1
+
+- type: entity
+  id: RandomYellowSlimeMutation
+  name: random yellow slime mutatuion
+  parent: MarkerBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - MobAdultSlimesBlueSpace
+      - MobAdultSlimesMetall
+    chance: 1
+
+- type: entity
+  id: RandomMetallSlimeMutation
+  name: random metall slime mutatuion
+  parent: MarkerBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - MobAdultSlimesYellow
+      - MobAdultSlimesSilver
+      - MobAdultSlimesGold
+    chance: 1
+
+- type: entity
+  id: RandomBlueSpaceSlimeMutation
+  name: random metall slime mutatuion
+  parent: MarkerBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - MobAdultSlimesBlueSpace
+    chance: 1
+
+- type: entity
+  id: RandomRedSlimeMutation
+  name: random metall slime mutatuion
+  parent: MarkerBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - MobAdultSlimesOil
+      - MobAdultSlimesRed
+    chance: 1
+
+- type: entity
+  id: RandomOilSlimeMutation
+  name: random metall slime mutatuion
+  parent: MarkerBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - MobAdultSlimesOil
+    chance: 1
+
+- type: entity
+  id: RandomAdamantiteSlimeMutation
+  name: random metall slime mutatuion
+  parent: MarkerBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - MobAdultSlimesAdamantite
+    chance: 1
+
+- type: entity
+  id: RandomDarkPurpleSlimeMutation
+  name: random metall slime mutatuion
+  parent: MarkerBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - MobAdultSlimesSepia
+      - MobAdultSlimesPurple
+      - MobAdultSlimesOrange
+    chance: 1
+
+- type: entity
+  id: RandomSepiaSlimeMutation
+  name: random metall slime mutatuion
+  parent: MarkerBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - MobAdultSlimesSepia
+    chance: 1
+
+- type: entity
+  id: RandomGoldSlimeMutation
+  name: random metall slime mutatuion
+  parent: MarkerBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - MobAdultSlimesGold
+      - MobAdultSlimesAdamantite
+    chance: 1
+
+- type: entity
+  id: RandomGreenSlimeMutation
+  name: random metall slime mutatuion
+  parent: MarkerBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - MobAdultSlimesGreen
+      - MobAdultSlimesBlack
+    chance: 1
+
+- type: entity
+  id: RandomPyriteSlimeMutation
+  name: random metall slime mutatuion
+  parent: MarkerBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - MobAdultSlimesPyrite
+    chance: 1
+
+- type: entity
+  id: RandomSilverSlimeMutation
+  name: random metall slime mutatuion
+  parent: MarkerBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - MobAdultSlimesBlue
+      - MobAdultSlimesMetall
+      - MobAdultSlimesPyrite
+    chance: 1
+
+- type: entity
+  id: RandomBlueSlimeMutation
+  name: random metall slime mutatuion
+  parent: MarkerBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - MobAdultSlimesSilver
+      - MobAdultSlimesDarkBlue
+      - MobAdultSlimesPink
+    chance: 1
+
+- type: entity
+  id: RandomDarkBlueSlimeMutation
+  name: random metall slime mutatuion
+  parent: MarkerBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - MobAdultSlimesPurple
+      - MobAdultSlimesBlue
+      - MobAdultSlimesCerulean
+    chance: 1
+
+- type: entity
+  id: RandomBlackSlimeMutation
+  name: random metall slime mutatuion
+  parent: MarkerBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - MobAdultSlimesBlack
+    chance: 1
+
+- type: entity
+  id: RandomLightPinkSlimeMutation
+  name: random metall slime mutatuion
+  parent: MarkerBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - MobAdultSlimesLightPink
+    chance: 1
+
+- type: entity
+  id: RandomPinkSlimeMutation
+  name: random metall slime mutatuion
+  parent: MarkerBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - MobAdultSlimesLightPink
+      - MobAdultSlimesPink
+    chance: 1
+
+- type: entity
+  id: RandomCeruleanSlimeMutation
+  name: random metall slime mutatuion
+  parent: MarkerBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Mobs/Aliens/slimes.rsi
+        state: grey_adult_slime
+  - type: RandomSpawner
+    prototypes:
+      - MobAdultSlimesCerulean
+    chance: 1

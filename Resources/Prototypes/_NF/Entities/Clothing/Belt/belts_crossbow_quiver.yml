@@ -1,0 +1,75 @@
+﻿- type: entity
+  parent: NFClothingBeltStorageBase
+  id: ClothingBeltQuiverCrossbow
+  name: quiver (bolts, any)
+  description: Can hold up to 25 bolts, and fits snug around your waist.
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Clothing/Belt/crossbow_quiver.rsi
+    layers:
+    - state: icon
+    - map: [ "enum.StorageContainerVisualLayers.Fill" ]
+      visible: false
+  - type: Clothing
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,4,4
+    whitelist:
+      tags:
+      - CrossbowBolt
+      - CrossbowBoltBroadhead
+      - CrossbowBoltGlassShard
+      - CrossbowBoltPlasmaGlassShard
+      - CrossbowBoltUraniumGlassShard
+      - CrossbowBoltSyringe
+      - CrossbowBoltPlasteel
+      - CrossbowBoltExplosive
+      - CrossbowBoltEMP
+      - CrossbowBoltIncendiary
+      - Plunger
+      - Bread
+      - MailCapsule
+      - WeaponMeleeStake
+      - CrossbowBoltShrapnel
+  - type: Appearance
+  - type: StorageContainerVisuals
+    maxFillLevels: 5
+    fillBaseName: fill-
+  - type: Construction
+    graph: CraftQuiverBolt
+    node: CraftQuiverBolt
+
+# Filled versions
+- type: entity
+  parent: ClothingBeltQuiverCrossbow
+  id: ClothingBeltQuiverCrossbowFilledBolt
+  name: quiver (bolts)
+  suffix: Filled, Bolts
+  components:
+  - type: StorageFill
+    contents:
+    - id: CrossbowBolt
+      amount: 15
+
+- type: entity
+  parent: ClothingBeltQuiverCrossbow
+  id: ClothingBeltQuiverCrossbowFilledUranium
+  name: quiver (bolts, uranium)
+  suffix: Filled, Uranium Tip
+  components:
+  - type: StorageFill
+    contents:
+    - id: CrossbowBoltUraniumGlassShard
+      amount: 15
+
+- type: entity
+  parent: ClothingBeltQuiverCrossbow
+  id: ClothingBeltQuiverCrossbowFilledPlasma
+  name: quiver (bolts, plasma)
+  suffix: Filled, Plasma Tip
+  components:
+  - type: StorageFill
+    contents:
+    - id: CrossbowBoltPlasmaGlassShard
+      amount: 15

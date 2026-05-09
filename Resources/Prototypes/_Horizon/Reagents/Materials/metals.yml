@@ -1,0 +1,15 @@
+- type: material
+  id: Titan
+  stackEntity: IngotTitan1
+  name: materials-titan
+  unit: materials-unit-bar
+  icon: { sprite: "_Horizon/Objects/Materials/ingots.rsi", state: titan }
+  price: 0.25
+
+- type: material
+  id: Psycore
+  stackEntity: IngotPsycore1
+  name: materials-psycore
+  unit: materials-unit-bar
+  icon: { sprite: "_Horizon/Objects/Materials/ingots.rsi", state: psycore }
+  price: 0.4

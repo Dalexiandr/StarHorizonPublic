@@ -1,0 +1,11 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformMiner
+  name: форма шахтёра
+  suffix: StarHorizon
+  description: Старая и грязная форма шахтёра.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Uniforms/minersuit.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Uniforms/minersuit.rsi

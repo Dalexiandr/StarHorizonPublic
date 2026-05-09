@@ -1,0 +1,108 @@
+<Document>
+  # Панки
+
+  Нежелательные сквоттеры на заброшенной собственности NT, эти панки устраивают хаос, мусорят, злоупотребляют веществами и повреждают имущество ради "хорошего времяпрепровождения".
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  # Известные разновидности
+  # "Панки"
+
+  "Лица с криминальными наклонностями", как их называют документы безопасности NT, вооружены разнообразным оружием - от самодельных заточек и дубинок до ржавых пистолетов и дробовиков. Некоторые могут носить броню, планируйте соответственно.
+
+  <Box>
+    <GuideEntityEmbed Entity="MobPunkGangerMeleeT1" Caption=""/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 140 (смерть)
+  - [bold][color=#a4885c]Скорость бега:[/color][/bold] 4.5 м/с[bold][color=#a4885c]*[/color][/bold]
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] 12 [color=red]Ударный[/color]
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] нет
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] нет
+
+  [bold][color=#a4885c]*[/color][/bold] - [italic]средний человек бегает со скоростью 4.5 м/с и ходит со скоростью 2.5 м/с.[/italic]
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  <Box>
+    <GuideEntityEmbed Entity="MobPunkGangerMeleeT2" Caption=""/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 140 (смерть)
+  - [bold][color=#a4885c]Скорость бега:[/color][/bold] 4.5 м/с
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] 16 [color=red]Ударный[/color]
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] [color=red]Ударный[/color], [color=red]Режущий[/color] и [color=yellow]Колющий[/color] 25%; [color=orange]Термальный[/color] 20%; [color=orange]Коррозийный[/color] 10%; [color=orange]Взрывной[/color] 10% (броня панков)
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] нет
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  <Box>
+    <GuideEntityEmbed Entity="MobPunkGangerMeleeT3" Caption=""/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 140 (смерть)
+  - [bold][color=#a4885c]Скорость бега:[/color][/bold] 4.5 м/с
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] 18 [color=red]Ударный[/color]
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] [color=red]Ударный[/color], [color=red]Режущий[/color] 10%; [color=yellow]Колющий[/color] 60%; [color=orange]Термальный[/color] 10%; [color=orange]Взрывной[/color] 20% (тяжелая броня панков)
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] нет
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  <Box>
+    <GuideEntityEmbed Entity="MobPunkGangerPistol" Caption=""/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 140 (смерть)
+  - [bold][color=#a4885c]Скорость бега:[/color][/bold] 4 м/с
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] 16 [color=yellow]Колющий[/color] (патрон .35)
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] нет
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] Стрелок (mk 58)
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  <Box>
+    <GuideEntityEmbed Entity="MobPunkGangerShotgun" Caption=""/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 140 (смерть)
+  - [bold][color=#a4885c]Скорость бега:[/color][/bold] 4 м/с
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] 10-60 [color=yellow]Колющий[/color] (10 за дробинку)
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] нет
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] Стрелок (дробовик)
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  <Box>
+    <GuideEntityEmbed Entity="MobPunkGangerSmg" Caption=""/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 140 (смерть)
+  - [bold][color=#a4885c]Скорость бега:[/color][/bold] 4 м/с
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] 16 [color=yellow]Колющий[/color] (патрон .35)
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] [color=red]Ударный[/color], [color=red]Режущий[/color] и [color=yellow]Колющий[/color] 25%; [color=orange]Термальный[/color] 20%; [color=orange]Коррозийный[/color] 10%; [color=orange]Взрывной[/color] 10% (броня панков)
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] Стрелок (Дрозд)
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  # "Лидер банды панков"
+
+  Чтобы возглавить эту шайку уличного отребья, нужна сильная личность. Эти лидеры обычно вооружены подобранными ПП и носят броню, снятую с неудачливых охранников. Обычно под метом и алкоголем.
+
+  <Box>
+    <GuideEntityEmbed Entity="MobPunkGangerLeader" Caption=""/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 140 (смерть)
+  - [bold][color=#a4885c]Скорость бега:[/color][/bold] 4 м/с
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] 17 [color=orange]Термальный[/color]
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] [color=red]Ударный[/color], [color=red]Режущий[/color] 10%; [color=yellow]Колющий[/color] 60%; [color=orange]Термальный[/color] 10%; [color=orange]Взрывной[/color] 20% (тяжелая броня панков)
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] Стрелок (лазерная винтовка)
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  # Цели миссий
+  ## Уничтожение
+  <Box>
+    <GuideEntityEmbed Entity="MobPunkGangerLeader"/>
+  </Box>
+  Ликвидируйте крупное и опасное существо - [color=#a4885c]лидера банды панков[/color] в установленные сроки, чтобы получить денежное вознаграждение.
+
+  ## Разрушение
+  <Box>
+    <GuideEntityEmbed Entity="PunkPartySupplies"/>
+  </Box>
+  Уничтожьте указанное количество [color=#a4885c]вечеринок панков[/color] в установленные сроки, чтобы получить денежное вознаграждение.
+</Document>

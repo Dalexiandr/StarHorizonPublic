@@ -1,0 +1,14 @@
+ent-MailCarrierIDCard = ID карта почтальона
+    .desc = { ent-IDCardStandard.desc }
+ent-NFPrisonerIDCard = ID карта заключённого
+    .desc = { ent-IDCardStandard.desc }
+ent-PrisonGuardIDCard = ID карта тюремщика
+    .desc = { ent-IDCardStandard.desc }
+ent-GladiatorIDCard = ID карта гладиатора
+    .desc = { ent-IDCardStandard.desc }
+ent-ValetIDCard = ID карта камердинера
+    .desc = { ent-IDCardStandard.desc }
+ent-GuardIDCard = ID карта охранника
+    .desc = { ent-IDCardStandard.desc }
+ent-MartialArtistIDCard = ID карта мастера боевых искусств
+    .desc = { ent-IDCardStandard.desc }

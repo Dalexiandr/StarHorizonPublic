@@ -1,0 +1,224 @@
+﻿- type: entity
+  id: NFBaseWreckDebrisFar
+  parent: NFBaseDebris
+  abstract: true
+  components:
+  - type: BlobFloorPlanBuilder
+    floorTileset:
+      - Plating
+      - Plating
+      - Plating
+      - FloorSteel
+      - Lattice
+    blobDrawProb: 0.5
+  - type: SimpleFloorPlanPopulator
+    entries:
+      FloorSteel: &floor
+        - prob: 1 # Intentional blank.
+        # Walls
+        - id: Girder
+          prob: 0.3
+        - id: WallSolid
+          prob: 0.3
+        - id: WallReinforced
+          prob: 0.2
+        - id: AirlockMaint
+          prob: 0.01
+        - id: Barricade
+          prob: 0.01
+        # Floor loot
+        - id: SalvageSpawnerScrapCommon
+          prob: 3.4
+        - id: HRZNTechnologyDiscSpawner
+          prob: 0.05
+        - id: SalvageSpawnerTreasure
+          prob: 0.3
+        - id: SpawnDungeonLootSeed
+          prob: 0.1
+        - id: SalvageSpawnerTreasureValuable
+          prob: 0.05
+        - id: SalvageSpawnerEquipment
+          prob: 0.05
+        - id: SalvageSpawnerEquipmentValuable
+          prob: 0.03
+        - id: SpawnDungeonClutterMedsSingle
+          prob: 0.03
+        - id: SpawnDungeonLootBureaucracy
+          prob: 0.03
+        - id: SpawnDungeonLootToolsHydroponics
+          prob: 0.03
+        # Machine upgrades
+        - id: SalvagePartsT2Spawner
+          prob: 0.01
+        - id: SalvagePartsT3Spawner
+          prob: 0.005
+        - id: SalvagePartsT4Spawner
+          prob: 0.002
+        # Big loot
+        - id: NFSalvageMaterialCrateSpawner
+          prob: 0.9
+        - id: NFSalvageChemicalBarrelSpawner
+          prob: 0.08
+        - id: NFSalvageServiceBarrelSpawner
+          prob: 0.02
+        - id: NFSalvageDrinkableBarrelSpawner
+          prob: 0.02
+        - id: NFSalvageEmptyBarrelSpawner
+          prob: 0.03
+        - id: SalvageCanisterSpawner
+          prob: 0.2
+        - id: NFSalvageLockerSpawner
+          prob: 0.2
+        - id: NFSalvageGeneratorSpawner
+          prob: 0.1
+        - id: NFSalvageFurnitureSpawner
+          prob: 0.1
+        - id: NFSalvageSuitStorageSpawner
+          prob: 0.1
+        - id: RandomArtifactSpawner
+          prob: 0.05
+        - id: NFSalvageTankSpawnerHighCapacity
+          prob: 0.0005
+        # Medical
+        - id: MedicalPodFilled # Medical bounties
+          prob: 0.03
+        # Mobs
+        - id: NFSalvageMobSpawner
+          prob: 0.1
+        # Room
+        - id: NFWreckRoomMarker
+          prob: 0.01
+      Plating: *floor
+      Lattice:
+        - prob: 1 # Intentional blank.
+        # Walls
+        - id: Grille
+          prob: 0.75
+        - id: GrilleBroken
+          prob: 0.25
+  - type: IFF
+    color: "#f50206"
+
+- type: entity
+  id: NFBaseWreckDebrisBrassFar
+  parent: NFBaseDebris
+  abstract: true
+  components:
+  - type: BlobFloorPlanBuilder
+    floorTileset:
+      - PlatingBrass
+      - PlatingBrass
+      - PlatingBrass
+      - FloorBrassFilled
+      - FloorBrassReebe
+    blobDrawProb: 0.5
+  - type: SimpleFloorPlanPopulator
+    entries:
+      FloorBrassFilled: &floorBrass
+        - prob: 3 # Intentional blank.
+        # Walls
+        - id: ClockworkGirder
+          prob: 0.3
+        - id: WallClock
+          prob: 0.3
+        - id: ClockworkWindow
+          prob: 0.2
+        - id: PinionAirlock
+          prob: 0.01
+        - id: WindoorClockwork
+          prob: 0.005
+        # Floor loot
+        - id: SalvageSpawnerScrapBrass75
+          prob: 0.95
+        - id: MaterialAnomalite1
+          prob: 0.05
+        # Machine upgrades
+        - id: SalvagePartsT2Spawner
+          prob: 0.1
+        - id: SalvagePartsT3Spawner
+          prob: 0.05
+        - id: SalvagePartsT4Spawner
+          prob: 0.01
+        # Big loot
+        - id: NFSalvageBrassFurnitureSpawner
+          prob: 0.03
+        - id: AltarTechnology
+          prob: 0.03
+        # "Medical"
+        - id: RipleyChassis # Build it yourself
+          prob: 0.03
+        # "Mobs"
+        - id: PlayerBorgDerelictGhostRole
+          prob: 0.005
+        - id: PlushieRatvar # Yes
+          prob: 0.005
+      PlatingBrass: *floorBrass
+      FloorBrassReebe:
+        - prob: 1 # Intentional blank.
+        # Walls
+        - id: ClockworkGrille
+          prob: 0.75
+        - id: ClockworkGrilleBroken
+          prob: 0.25
+  - type: IFF
+    color: "#610708"
+
+# region Wrecks Far
+- type: entity
+  id: NFWreckDebrisSmallFar
+  parent: [NFBaseWreckDebrisFar, NFBaseWreckSmall]
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  id: NFWreckDebrisMediumFar
+  parent: [NFBaseWreckDebrisFar, NFBaseWreckMedium]
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  id: NFWreckDebrisLargeFar
+  parent: [NFBaseWreckDebrisFar, NFBaseWreckLarge]
+  name: scrap debris large
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  id: NFWreckDebrisExtraLargeFar
+  parent: [NFBaseWreckDebrisFar, NFBaseWreckExtraLarge]
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  id: NFWreckDebrisHugeFar
+  parent: [NFBaseWreckDebrisFar, NFBaseWreckHuge]
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  id: NFWreckDebrisExtraHugeFar
+  parent: [NFBaseWreckDebrisFar, NFBaseWreckExtraHuge]
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  id: NFWreckDebrisEnormousFar
+  parent: [NFBaseWreckDebrisFar, NFBaseWreckEnormous]
+  categories: [ HideSpawnMenu ]
+# endregion Wrecks
+
+# region Brass Wrecks Far
+- type: entity
+  id: NFWreckDebrisBrassSmallFar
+  parent: [NFBaseWreckDebrisBrassFar, NFBaseWreckSmall]
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  id: NFWreckDebrisBrassMediumFar
+  parent: [NFBaseWreckDebrisBrassFar, NFBaseWreckMedium]
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  id: NFWreckDebrisBrassLargeFar
+  parent: [NFBaseWreckDebrisBrassFar, NFBaseWreckLarge]
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  id: NFWreckDebrisBrassExtraLargeFar
+  parent: [NFBaseWreckDebrisBrassFar, NFBaseWreckExtraLarge]
+  categories: [ HideSpawnMenu ]
+# endregion Brass Wrecks

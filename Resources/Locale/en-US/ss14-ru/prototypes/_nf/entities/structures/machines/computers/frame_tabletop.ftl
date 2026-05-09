@@ -1,0 +1,10 @@
+ent-BaseStructureComputerTabletop = { ent-BaseStructure }
+    .suffix = Tabletop
+    .desc = { ent-BaseStructure.desc }
+ent-ComputerTabletopFrame = computer frame
+    .desc = A computer under construction.
+ent-ComputerTabletopBroken = { ent-ComputerBroken }
+    .suffix = Tabletop
+    .desc = { ent-ComputerBroken.desc }
+ent-ComputerTabletop = tabletop computer
+    .desc = This is a computer that could go on a table. It's a tabletop computer. Not for use on other surfaces.

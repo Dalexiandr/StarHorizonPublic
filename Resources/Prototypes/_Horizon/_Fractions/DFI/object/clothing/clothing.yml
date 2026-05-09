@@ -1,0 +1,35 @@
+- type: entity
+  parent: ClothingEyesGlassesBlueShield
+  id: ClothingEyesGlassesDFI
+  suffix: DFI
+  name: очки офицера DFI
+
+- type: entity
+  parent: ClothingUniformJumpsuitBlueshield
+  id: ClothingUniformJumpsuitDFI
+  suffix: DFI
+  name: комбинезон DFI
+
+- type: entity
+  parent: ClothingOuterArmorBlueshield
+  id: ClothingOuterArmorDFI
+  suffix: DFI
+  name: панцирь офицера DFI
+
+- type: entity
+  parent: ClothingBackpackDuffelBlueshield
+  id: ClothingBackpackDuffelDFI
+  suffix: DFI
+  name: вещмешок DFI
+
+- type: entity
+  parent: ClothingBackpackBlueshield
+  id: ClothingBackpackDFI
+  suffix: DFI
+  name: рюкзак DFI
+
+- type: entity
+  parent: ClothingBackpackSatchelBlueshield
+  id: ClothingBackpackSatchelDFI
+  suffix: DFI
+  name: сумка DFI

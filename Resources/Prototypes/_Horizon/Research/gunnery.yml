@@ -1,0 +1,15 @@
+- type: technology
+  id: SpaceBattles
+  name: research-technology-space-battles
+  entityIcon: GunneryServerBase
+  discipline: NFArsenalNfsd
+  tier: 1
+  cost: 7500
+  recipeUnlocks:
+  - GunneryControlComputerCircuitboard
+  - MachineGCSLowCircuitboard
+  - MachineGCSMediumCircuitboard
+  - MachineGCSHighCircuitboard
+  - MachineShieldLightCircuitboard
+  - MachineShieldMediumCircuitboard
+  position: 0, 68

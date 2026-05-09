@@ -1,0 +1,9 @@
+ent-PoweredlightUltraviolet = { ent-Poweredlight }
+    .suffix = UV
+    .desc = { ent-Poweredlight.desc }
+ent-NFPoweredlightShieldedEmpty = shielded light
+    .desc = A light fixture. Draws power and produces light when equipped with a light tube. Reinforced with plasteel to shield it from solar flares.
+    .suffix = Empty
+ent-NFPoweredSmallLightShieldedEmpty = shielded small light
+    .desc = A light fixture. Draws power and produces light when equipped with a light tube. Reinforced with plasteel to shield it from solar flares.
+    .suffix = Empty

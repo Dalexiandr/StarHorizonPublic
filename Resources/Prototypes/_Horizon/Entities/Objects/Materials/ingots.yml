@@ -1,0 +1,117 @@
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: IngotBaseFar
+  description: A heavy metal ingot stamped with the Nanotrasen logo.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Materials/ingots.rsi
+  - type: Item
+    sprite: _Horizon/Objects/Materials/ingots.rsi
+    size: Normal
+  - type: StaticPrice
+    price: 0
+  - type: Tag
+    tags:
+    - Ingot
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: IngotBaseFar
+  id: IngotTitan
+  name: titan bar
+  suffix: Full
+  components:
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Titan: 100
+  - type: Stack
+    stackType: Titan
+    baseLayer: base
+    layerStates:
+    - titan
+    - titan_2
+    - titan_3
+  - type: Sprite
+    state: titan_3
+    layers:
+    - state: titan_3
+      map: ["base"]
+  - type: Item
+    heldPrefix: titan
+  - type: Appearance
+  - type: Extractable
+    grindableSolutionName: titan
+  - type: SolutionContainerManager
+    solutions:
+      titan:
+        reagents:
+        - ReagentId: Carbon
+          Quantity: 20
+
+- type: entity
+  parent: IngotTitan
+  id: IngotTitan1
+  name: titan bar
+  suffix: Single
+  components:
+  - type: Sprite
+    state: titan
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: IngotBaseFar
+  id: IngotPsycore
+  name: psycore bar
+  suffix: Full
+  components:
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Psycore: 100
+  - type: Stack
+    stackType: Psycore
+    baseLayer: base
+    layerStates:
+    - psycore
+    - psycore_2
+    - psycore_3
+  - type: Sprite
+    state: psycore_3
+    layers:
+    - state: psycore_3
+      map: ["base"]
+  - type: Item
+    heldPrefix: psycore
+  - type: Appearance
+  - type: Extractable
+    grindableSolutionName: psycore
+  - type: SolutionContainerManager
+    solutions:
+      psycore:
+        reagents:
+        - ReagentId: Carbon
+          Quantity: 20
+
+- type: entity
+  parent: IngotPsycore
+  id: IngotPsycore1
+  name: psycore bar
+  suffix: Single
+  components:
+  - type: Sprite
+    state: psycore
+  - type: Stack
+    count: 1

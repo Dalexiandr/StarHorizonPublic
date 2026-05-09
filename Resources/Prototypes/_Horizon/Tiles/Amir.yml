@@ -1,0 +1,38 @@
+# Caves
+- type: tile
+  id: FloorCaveClover
+  name: Клеверный камень
+  sprite: /Textures/_Horizon/Tiles/caveclover.png
+  variants: 7
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Space
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorCaveTopi
+  name: Увядший камень
+  sprite: /Textures/_Horizon/Tiles/cavetopi.png
+  variants: 7
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Space
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000

@@ -1,0 +1,14 @@
+ent-ClothingBackpackDuffelBlueshield = вещмешок офицера "Синий щит"
+    .desc = Подходит для того, чтобы спрятать в нём труп.
+    .suffix = StarHorizon
+ent-ClothingBackpackDuffelRoboticist = вещмешок робототехника
+    .desc = Компактный, насколько это возможно, вещмешок с отделениями для хранения основных гаджетов, инструментов и виски.
+    .suffix = StarHorizon
+ent-ClothingBackpackDuffelEliteCMO = вещмешок элитного главного врача
+    .desc = Стерильный вещмешок с золотой окантовкой и предназначенными для медикаментов отделениями и карманами.
+    .suffix = StarHorizon
+ent-ClothingBackpackDuffelCentcom = вещмешок Центком
+    .desc = Сделан из лучшей взрывоустойчивой ткани. Способен вмещать действительно габаритные объекты...
+    .suffix = StarHorizon
+ent-ClothingBackpackDuffelCentcomOld = вещмешок ЦентКома
+    .desc = Для транспортировки тысячи бумаг.

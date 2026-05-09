@@ -1,0 +1,90 @@
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesSGreen
+  name: очки-визоры (зелёные)
+  suffix: StarHorizon, Спонсор
+  description: Плотно прилегающие к глазам очки зелёного цвета, сделанные из прочных полимеров.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Eyes/glassesgreen.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Eyes/glassesgreen.rsi
+  - type: EyeProtection
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesSPurple
+  name: очки-визоры (фиолетовые)
+  suffix: StarHorizon, Спонсор
+  description: Плотно прилегающие к глазам очки фиолетового цвета, сделанные из прочных полимеров.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Eyes/glassespurple.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Eyes/glassespurple.rsi
+  - type: EyeProtection
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesSRed
+  name: очки-визоры (красные)
+  suffix: StarHorizon, Спонсор
+  description: Плотно прилегающие к глазам очки красного цвета, сделанные из прочных полимеров.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Eyes/glassesred.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Eyes/glassesred.rsi
+  - type: EyeProtection
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesS
+  name: очки-визоры
+  suffix: StarHorizon, Спонсор
+  description: Плотно прилегающие к глазам очки, сделанные из прочных полимеров.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Eyes/glassestransparent.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Eyes/glassestransparent.rsi
+  - type: EyeProtection
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesSA
+  name: очки-визоры
+  suffix: StarHorizon, Спонсор
+  description: Плотно прилегающие к глазам очки, сделанные из прочных полимеров.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Eyes/glassestransparenta.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Eyes/glassestransparenta.rsi
+  - type: EyeProtection
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesSB
+  name: очки-визоры
+  suffix: StarHorizon, Спонсор
+  description: Плотно прилегающие к глазам очки, сделанные из прочных полимеров.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Eyes/glassestransparentb.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Eyes/glassestransparentb.rsi
+  - type: EyeProtection
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesSC
+  name: очки-визоры
+  suffix: StarHorizon, Спонсор
+  description: Плотно прилегающие к глазам очки, сделанные из прочных полимеров.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Eyes/glassestransparentc.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Eyes/glassestransparentc.rsi
+  - type: EyeProtection

@@ -1,0 +1,198 @@
+# начало Base
+# конец Base
+# начало отключенные версии
+
+# конец отключенные версии
+
+# начало включенные версии
+
+- type: entity
+  id: AnCoFlyDroneSmallDungeon
+  parent: BaseAnCoMob
+  suffix: StarHorizon, AnCo, Dungeon
+  name: дрон компаньен АнКо
+  description: Теперь у вас есть друг по лучше этих наземных жуков. Бе!
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Mobs/flybot.rsi
+    state: flysmall
+  - type: Item
+    sprite: _Horizon/_Fractions/AnCo/Mobs/flybot.rsi
+    state: flymedium
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      path: /Audio/Effects/sparks4.ogg
+    damage:
+      types:
+        Blunt: 5
+        Heat: 10
+  - type: StaminaDamageOnHit
+    damage: 20
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 50
+        mask:
+        - FlyingMobMask
+        layer:
+        - FlyingMobLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 20
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          KazmieSheet1:
+            min: 1
+            max: 1
+          ArdonSheet1:
+            min: 0
+            max: 1
+      - !type:TriggerBehavior
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  id: AnCoFlyDroneMediumDungeon
+  parent: BaseAnCoMob
+  suffix: StarHorizon, AnCo, Dungeon
+  name: грузовой дрон АнКо
+  description: Как он вмещает в себя столько мусора?
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Mobs/flybot.rsi
+    state: flymedium
+  - type: Item
+    sprite: _Horizon/_Fractions/AnCo/Mobs/flybot.rsi
+    state: flymedium
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      path: /Audio/Effects/sparks4.ogg
+    damage:
+      types:
+        Blunt: 5
+        Heat: 10
+  - type: StaminaDamageOnHit
+    damage: 0
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 50
+        mask:
+        - FlyingMobMask
+        layer:
+        - FlyingMobLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 20
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          KazmieSheet1:
+            min: 1
+            max: 1
+          ArdonSheet1:
+            min: 0
+            max: 1
+      - !type:TriggerBehavior
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  id: AnCoFlyDroneHugeDungeon
+  parent: [BaseAnCoMob, MobHumanoidHostileAISimpleRanged]
+  suffix: StarHorizon, AnCo, Dungeon
+  name: боевой дрон АнКо
+  description: Зачем давать дрону зубы если можно дать пушки?
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Mobs/flybot.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: flyhuge
+  - type: Gun
+    fireRate: 1.5
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+  - type: BallisticAmmoProvider
+    proto: StandartBallisticAnCoPistol
+    capacity: 100
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: HTN
+    rootTask:
+      task: SimpleRangedHostileCompound
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          KazmieSheet1:
+            min: 1
+            max: 3
+          ArdonSheet1:
+            min: 0
+            max: 5
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: MobState
+    allowedStates:
+      - Alive
+      - Critical
+      - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      50: Critical
+      100: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: flyhuge
+      Critical:
+        Base: flyhuge-death
+      Dead:
+        Base: flyhuge-death
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 50
+        mask:
+        - FlyingMobMask
+        layer:
+        - FlyingMobLayer

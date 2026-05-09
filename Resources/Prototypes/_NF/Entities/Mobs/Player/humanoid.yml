@@ -1,0 +1,50 @@
+# Random humanoids
+
+## ERT Mail Carrier
+
+- type: entity
+  id: RandomHumanoidSpawnerERTMailCarrier
+  parent: RandomHumanoidSpawnerERTLeader
+  name: ERT mail carrier
+  suffix: ERTRole, Basic
+  components:
+    - type: Sprite
+      sprite: _NF/Markers/jobs.rsi
+      state: ertmailcarrier
+    - type: RandomHumanoidSpawner
+      settings: ERTMailCarrier
+
+- type: randomHumanoidSettings
+  id: ERTMailCarrier
+  parent: ERTLeader
+  components:
+    - type: GhostRole
+      name: ghost-role-information-ert-mailcarrier-name
+      description: ghost-role-information-ert-mailcarrier-description
+      rules: ghost-role-information-nonantagonist-rules
+      raffle:
+        settings: short
+      job: ERTMailCarrier
+    - type: Loadout
+      prototypes: [ ERTMailCarrierGear ]
+      roleLoadout: [ RoleSurvivalExtended ]
+
+- type: entity
+  id: RandomHumanoidSpawnerERTMailCarrierEVA
+  parent: RandomHumanoidSpawnerERTMailCarrier
+  name: ERT mail carrier
+  suffix: ERTRole, Enviro EVA
+  components:
+    - type: Sprite
+      sprite: _NF/Markers/jobs.rsi
+      state: ertmailcarriereva
+    - type: RandomHumanoidSpawner
+      settings: ERTMailCarrierEVA
+
+- type: randomHumanoidSettings
+  id: ERTMailCarrierEVA
+  parent: ERTMailCarrier
+  components:
+    - type: Loadout
+      prototypes: [ ERTMailCarrierGearEVA ]
+      roleLoadout: [ RoleSurvivalEVA ]

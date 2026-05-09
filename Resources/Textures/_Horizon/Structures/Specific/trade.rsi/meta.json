@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "license": "CLA",
+  "copyright": "Sprites by TheGypsyBaron DS:701266770429739008 and modify by Xigovir DS:623559319543349268",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "engi_base"
+    },
+    {
+      "name": "engi_elec"
+    },
+    {
+      "name": "engi_electcontr"
+    },
+    {
+      "name": "engi_fuel"
+    },
+    {
+      "name": "engi_fuelcontr"
+    },
+    {
+      "name": "med_base"
+    },
+    {
+      "name": "med_chem"
+    },
+    {
+      "name": "med_implants"
+    },
+    {
+      "name": "med_narc"
+    },
+    {
+      "name": "med_organs"
+    },
+    {
+      "name": "sci_base"
+    },
+    {
+      "name": "smuggling_base"
+    },
+    {
+      "name": "contraband_base"
+    },
+    {
+      "name": "pirate_base"
+    },
+    {
+      "name": "synd_base"
+    },
+    {
+      "name": "engi_tool"
+    },
+    {
+      "name": "med_medical"
+    },
+    {
+      "name": "sci_equipment"
+    },
+    {
+      "name": "sci_artefact"
+    },
+    {
+      "name": "sci_prototype"
+    },
+    {
+      "name": "serv_base"
+    },
+    {
+      "name": "serv_eat"
+    },
+    {
+      "name": "serv_water"
+    },
+    {
+      "name": "serv_seed"
+    },
+    {
+      "name": "serv_soap"
+    },
+    {
+      "name": "serv_supplay"
+    },
+    {
+      "name": "serv_suit"
+    },
+    {
+      "name": "nfsd_base"
+    },
+    {
+      "name": "nfsd_ammo"
+    },
+    {
+      "name": "nfsd_gun_detail"
+    },
+    {
+      "name": "steel_base"
+    },
+    {
+      "name": "steel_alloys"
+    },
+    {
+      "name": "steel_scrap"
+    },
+    {
+      "name": "steel_textile"
+    },
+    {
+      "name": "nt_base"
+    },
+    {
+      "name": "nt_nt"
+    },
+    {
+      "name": "nt_cyber"
+    },
+    {
+      "name": "nt_detal"
+    },
+    {
+      "name": "anco_base"
+    },
+    {
+      "name": "anco_smuggling"
+    },
+    {
+      "name": "anco_gun_detail"
+    },
+    {
+      "name": "anco_shield"
+    },
+    {
+      "name": "anco_ballistic"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+﻿- type: palette
+  id: AnCoPallete
+  name: Материалы АнКо
+  colors:
+    ardon-6-energy: "#ffffff"
+    ardon-5-energy: "#f05a5a"
+    ardon-4-energy: "#d21e1e"
+    ardon-3-energy: "#b30e0e"
+    ardon-2-energy: "#9e0000"
+    ardon-1-energy: "#620505"
+    kazmie-6-light: "#42464b"
+    kazmie-5-light: "#2b2f35"
+    kazmie-4-light: "#1e2124"
+    kazmie-3-light: "#161718"
+    kazmie-2-light: "#0d0d0d"
+    kazmie-1-light: "#000000"
+

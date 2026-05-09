@@ -1,0 +1,6 @@
+- type: loadout
+  id: NFGreenhornLoadout
+  equipment:
+    ears: ClothingHeadsetGrey
+  encryptionKeys:
+  - EncryptionKeyGreeting

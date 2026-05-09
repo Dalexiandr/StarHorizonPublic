@@ -1,0 +1,24 @@
+tiles-bedrock-floor = коренная порода
+tiles-gold-floor-mono = золотая моноплитка
+tiles-silver-floor-mono = серебряная моноплитка
+tiles-green-floor-mono = зелёная моноплитка
+tiles-light-blue-floor-mono = светло-синяя моноплитка
+tiles-light-green-floor-mono = светло-зелёная моноплитка
+tiles-light-pink-floor-mono = светло-розовая моноплитка
+tiles-light-yellow-floor-mono = светло-жёлтая моноплитка
+tiles-orange-floor-mono = оранжевая моноплитка
+tiles-light-red-floor-mono = светло-красная моноплитка
+tiles-red-floor-mono = красная моноплитка
+tiles-sus-floor = подозрительный пол
+tiles-wood-checkerboard-floor = шахматный деревянный пол
+tiles-wood-light-mosaic-floor = светлый мозаичный деревянный пол
+tiles-wood-fancy-floor = изысканный деревянный пол
+tiles-wood-versailles-floor = версальский деревянный пол
+tiles-cheese-floor = сырный пол
+tiles-plasma-glass-floor = плазменный стеклянный пол
+tiles-reinforced-plasma-glass-floor = укреплённый плазменный стеклянный пол
+tiles-uranium-glass-floor = урановый пол
+tiles-reinforced-uranium-glass-floor = укреплённый урановый пол
+tiles-inflatable-plating = надувной пол
+# Upstream renames
+tiles-dirt-floor-undiggable = земляной пол (невыкапываемый)

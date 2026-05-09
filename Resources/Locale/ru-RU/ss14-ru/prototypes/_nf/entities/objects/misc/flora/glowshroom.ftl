@@ -1,0 +1,10 @@
+ent-NFBaseGatherableFlora = { ent-BaseStructure }
+    .desc = { ent-BaseStructure.desc }
+ent-NFGlowshroom = светогриб
+    .desc = Высокоустойчивый вид гриба, светящегося в темноте.
+    .suffix = Structure
+ent-NFGlowshroomWall = { ent-NFGlowshroom }
+    .suffix = Structure, Wallmount
+    .desc = { ent-NFGlowshroom.desc }
+ent-NFFoodGlowshroom = светогриб
+    .desc = Высокоустойчивый вид гриба, светящегося в темноте.

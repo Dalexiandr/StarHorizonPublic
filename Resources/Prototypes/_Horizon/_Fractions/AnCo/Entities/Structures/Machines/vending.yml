@@ -1,0 +1,165 @@
+- type: entity
+  parent: [VendingMachine, BaseAnCoContraband]
+  suffix: StarHorizon, AnCo, Structure
+  id: AnCoVending
+  name: униформат АнКо
+  description: Обычный автомат с одеждой... Разве что экран другой.
+  components:
+  - type: VendingMachine
+    pack: VendingMachineAnCo
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    denyState: deny-unshaded
+  - type: DatasetVocalizer
+    dataset: AnCoClothesMateAds
+  - type: MarketModifier
+    mod: 1
+  - type: SpeakOnUIClosed
+    pack: GenericVendGoodbyes
+  - type: Speech
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Machines/VendingMachines/clothing.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: PointLight
+    radius: 1.8
+    energy: 1.6
+    color: "#F05A5A"
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+        - !type:SpawnEntitiesBehavior
+            spawn:
+              KazmieSheet1:
+                min: 1
+                max: 5
+              ArdonSheet1:
+                min: 1
+                max: 3
+
+- type: vendingMachineInventory
+  id: VendingMachineAnCo
+  startingInventory:
+   PenAnCo: 1
+   ClothingEyesGlassesAnCo: 1
+   SuitProtectiveAnCo: 2
+   SuitAnCo: 3
+   SkirtProtectiveAnCo: 2
+   SkirtAnCo: 3
+   TurtleneckLessPocketAnCo: 3
+   TurtleneckPocketAnCo: 3
+   TurtleneckLessAnCo: 3
+   TurtleneckAnCo: 3
+   HydrosuitLessAnCo: 3
+   HydrosuitAnCo: 3
+   AnCoVests: 3
+   AnCosatchel: 1
+   AnCoGloves: 5
+   AnCoGlovesIsolate: 5
+   ClothingNeckCloakAnCo: 1
+   AnCoberet: 1
+   AnCocap: 3
+   AnCoBoots: 5
+   AnCoBoxKitUniform: 1
+   TitanPlushin: 3
+   KnightPlushin: 3
+   CyclopPlushin: 3
+   RipsiPlushin: 3
+  contrabandInventory:
+    LumaPlushina: 1
+    EngiPlushin: 1
+
+- type: entity
+  parent: [VendingMachine, BaseAnCoContraband]
+  suffix: StarHorizon, AnCo, Structure
+  id: AnCoVendingWeapon
+  name: боемат АнКо
+  description: Обычный автомат с оружием... Разве что экран другой.
+  components:
+  - type: VendingMachine
+    pack: VendingMachineAnCoWeapon
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    denyState: deny-unshaded
+  - type: DatasetVocalizer
+    dataset: AnCoWeaponMateAds
+  - type: MarketModifier
+    mod: 15
+  - type: SpeakOnUIClosed
+    pack: GenericVendGoodbyes
+  - type: Speech
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Machines/VendingMachines/weapon.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: PointLight
+    radius: 1.8
+    energy: 1.6
+    color: "#F05A5A"
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+        - !type:SpawnEntitiesBehavior
+            spawn:
+              KazmieSheet1:
+                min: 1
+                max: 5
+              ArdonSheet1:
+                min: 1
+                max: 3
+
+- type: vendingMachineInventory
+  id: VendingMachineAnCoWeapon
+  startingInventory:
+   AnCoEnergyCore: 6
+   MagazineRifle20: 12
+   MagazinePistol35: 12
+   AnCoWeaponHeater: 3
+   PMLaserAnCoGun: 3
+   WeaponPistolAnCo: 3
+   WeaponAutoPistolAnCo: 3
+   WeaponRiflesAnCo: 3
+   AnCoKnife: 3
+   AnCoLine: 1
+   AnCoSabre: 2
+   AnCoSplah: 2
+   AnCoSpearPlasma: 1
+   AnCoAxe: 2
+   AnCoShovel: 1
+   AnCoHammer: 2

@@ -1,0 +1,29 @@
+
+#
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconSyndicateDelivery
+  icon:
+    sprite: /Textures/_Horizon/_Fractions/Syndicate/Interface/Misc/jobicon.rsi
+    state: synd-delivery
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconSyndicateMedic
+  icon:
+    sprite: /Textures/_Horizon/_Fractions/Syndicate/Interface/Misc/jobicon.rsi
+    state: synd-medic
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconSyndicateOperative
+  icon:
+    sprite: /Textures/_Horizon/_Fractions/Syndicate/Interface/Misc/jobicon.rsi
+    state: synd-operative
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconSyndicateOfficer
+  icon:
+    sprite: /Textures/_Horizon/_Fractions/Syndicate/Interface/Misc/jobicon.rsi
+    state: synd-communication

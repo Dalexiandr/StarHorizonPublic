@@ -1,0 +1,43 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: lnqz1tor
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: Incorporation
+  parent: BaseVessel
+  name: NT Incorporation
+  description: Один из самых лучших научных шаттлов NanoTrasen!
+  price: 80000 # 67556, наценка верфи 15% = 77689
+  category: Medium
+  group: Shipyard
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/incorporation.yml
+  class:
+  - Science
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: Incorporation
+  mapName: 'NT Incorporation'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/incorporation.yml
+  minPlayers: 0
+  stations:
+    Incorporation:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Incorporation {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

@@ -1,0 +1,9 @@
+- type: reaction
+  id: MilkThatMakesYouMurr
+  reactants:
+    CatNipExtract:
+      amount: 1
+    Milk:
+      amount: 1
+  products:
+    MilkThatMakesYouMurr: 2

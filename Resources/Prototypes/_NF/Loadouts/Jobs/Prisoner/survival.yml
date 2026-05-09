@@ -1,0 +1,25 @@
+# If any other jobs need a minimal survival loadout (tank only), this should be made common
+
+- type: loadout
+  id: PrisonerEmergencyOxygenTankFilled
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFOxygenBreather
+  equipment:
+    pocket2: EmergencyOxygenTankFilled
+
+- type: loadout
+  id: PrisonerEmergencyNitrogenTankFilled
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFNitrogenBreather
+  equipment:
+    pocket2: EmergencyNitrogenTankFilled
+
+- type: loadout
+  id: PrisonerEmergencyOxygenTankFilledSheleg
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFSheleg
+  equipment:
+    pocket2: EmergencyOxygenTankFilled

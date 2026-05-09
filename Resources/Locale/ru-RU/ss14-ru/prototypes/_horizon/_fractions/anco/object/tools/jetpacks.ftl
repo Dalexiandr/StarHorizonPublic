@@ -1,0 +1,11 @@
+ent-JetpackAnCo = джетпак АнКо
+    .suffix = StarHorizon, AnCo, Empty
+    .desc = { ent-BaseJetpack.desc }
+ent-JetpackAnCoFilled = { ent-JetpackAnCo }
+    .desc = укрепленный джетпак, внимание! Не нагревайте.
+    .suffix = StarHorizon, AnCo, Filled
+ent-JetpackAnCoFilledNoSpawn = продвинутый джетпак АнКо
+    .suffix = StarHorizon, AnCo, NOSPAWN
+    .desc = { ent-JetpackAnCoFilled.desc }
+ent-JetpackAnCoFilledUpgrade = продвинутый джетпак АнКо
+    .desc = { ent-JetpackAnCoFilled.desc }

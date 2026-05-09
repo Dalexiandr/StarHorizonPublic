@@ -1,0 +1,172 @@
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtUnderDressBlack
+  name: белье под платье
+  description: Этот набор существует исключительно для того, чтобы носить его под платьями, а не для кое чего другого!
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Uniforms/Jumpskirt/blackssc.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Uniforms/Jumpskirt/blackssc.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtUnderDressBrown
+  name: белье под платье
+  description: Этот набор существует исключительно для того, чтобы носить его под платьями, а не для кое чего другого!
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Uniforms/Jumpskirt/brownssc.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Uniforms/Jumpskirt/brownssc.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtUnderDressWhite
+  name: белье под платье
+  description: Этот набор существует исключительно для того, чтобы носить его под платьями, а не для кое чего другого!
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Uniforms/Jumpskirt/whitessc.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Uniforms/Jumpskirt/whitessc.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtUnderDressBlackSocs
+  name: белье под платье
+  description: Этот набор существует исключительно для того, чтобы носить его под платьями, а не для кое чего другого!
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Uniforms/Jumpskirt/blacksc.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Uniforms/Jumpskirt/blacksc.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtUnderDressBrownSocs
+  name: белье под платье
+  description: Этот набор существует исключительно для того, чтобы носить его под платьями, а не для кое чего другого!
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Uniforms/Jumpskirt/brownsc.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Uniforms/Jumpskirt/brownsc.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtUnderDressWhiteSocs
+  name: белье под платье
+  description: Этот набор существует исключительно для того, чтобы носить его под платьями, а не для кое чего другого!
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Uniforms/Jumpskirt/whitesc.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Uniforms/Jumpskirt/whitesc.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtRedsm
+  name: женский костюм с жилеткой
+  description: Нарядный костюм с ноткой аристократии.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Uniforms/Jumpskirt/redsm.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Uniforms/Jumpskirt/redsm.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtMalanisa
+  name: одежда с украшениями
+  suffix: Вещи Маланисы
+  description: Даже из простой майки можно сделать стильный набор со вкусом.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Uniforms/Jumpskirt/dusksuit.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Uniforms/Jumpskirt/dusksuit.rsi
+
+- type: entity
+  parent: ClothingUniformJumpskirtCMO
+  id: ClothingUniformJumpskirtECMO
+  name: chief medical officer's jumpskirt
+  description: Это униформа главного врача была перешита, чтобы показать уровень профессионализма своего обладателя. Обеспечивает небольшую биологическую защиту.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Uniforms/Jumpskirt/ecmo.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Uniforms/Jumpskirt/ecmo.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtGoldCaptain
+  name: золотая юбка-комбинезон капитана
+  suffix: StarHorizon
+  description: Выдаётся почётным и опытным членам экипажа.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Uniforms/Jumpskirt/gold_captain_jumpskirt.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Uniforms/Jumpskirt/gold_captain_jumpskirt.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtBlueshield
+  name: юбка-комбинезон офицера "Синий щит"
+  suffix: StarHorizon
+  description: Классическая чёрная версия из плотной гидрофобной ткани. Чтобы не запачкать кровью.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Uniforms/Jumpskirt/blueshield_jumpskirt.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Uniforms/Jumpskirt/blueshield_jumpskirt.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtBlueshieldBlue
+  name: синяя юбка-комбинезон офицера "Синий щит"
+  suffix: StarHorizon
+  description: Синяя версия из плотной гидрофобной ткани. Чтобы не запачкать кровью.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Uniforms/Jumpskirt/blueshield_jumpskirt_blue.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Uniforms/Jumpskirt/blueshield_jumpskirt_blue.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtBlueshieldWhite
+  name: белая юбка-комбинезон офицера "Синий щит"
+  suffix: StarHorizon
+  description: Маркер особо отличившихся сотрудников. Как и прочие версии, устойчива к крови и другим жидкостям.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Uniforms/Jumpskirt/blueshield_jumpskirt_white.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Uniforms/Jumpskirt/blueshield_jumpskirt_white.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtCarrot
+  name: юбка-комбинезон морковной леди
+  suffix: Вещи Бони
+  description: Чудесное платье чёрной раскраски с фиолетовыми вставками. На спине красуется липучка с изображением моркови. Подходит любителям моркови, витамина А, ботаникам. Смотрите не переешьте морковь.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Uniforms/Jumpskirt/carrotsc.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Uniforms/Jumpskirt/carrotsc.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtBun
+  name: юбка-комбинезон зайки
+  suffix: Вещи Бони
+  description: Чудесное платье чёрной раскраски с фиолетовыми вставками. На спине красуется липучка с изображением зайчика. Подходит для кроле-девочек.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Uniforms/Jumpskirt/bunsc.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Uniforms/Jumpskirt/bunsc.rsi

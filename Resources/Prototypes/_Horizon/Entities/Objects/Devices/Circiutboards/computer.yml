@@ -1,0 +1,23 @@
+- type: entity
+  parent: BaseComputerCircuitboard
+  id: BotanicDNACircuitboard
+  name: печатная плата консоли манипулятора ДНК семян
+  description: Печатная плата для производства консоли манипулятора ДНК семян.
+  suffix: Horizon
+  components:
+    - type: Sprite
+      state: cpu_service
+    - type: ComputerBoard
+      prototype: ComputerBotanicDNAManipulator
+
+- type: entity
+  parent: BaseComputerCircuitboard
+  id: RemoteControllerCircuitboard
+  name: remote controller computer board
+  description: remote controller computer board
+  suffix: Horizon
+  components:
+    - type: Sprite
+      state: cpu_service
+    - type: ComputerBoard
+      prototype: RemoteControllerComputer

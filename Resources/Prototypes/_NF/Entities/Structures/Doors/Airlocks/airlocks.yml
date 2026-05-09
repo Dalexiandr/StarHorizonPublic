@@ -1,0 +1,116 @@
+# region Standard
+- type: entity
+  parent: Airlock
+  id: AirlockMercenary
+  suffix: Mercenary
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Doors/Airlocks/Standard/mercenary.rsi
+  - type: Wires
+    layoutId: AirlockSecurity
+
+- type: entity
+  parent: Airlock
+  id: AirlockNfsd
+  suffix: NFSD
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Doors/Airlocks/Standard/nfsd.rsi
+# endregion
+
+# region Glass
+- type: entity
+  parent: AirlockGlass
+  id: AirlockMercenaryGlass
+  suffix: Mercenary
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Doors/Airlocks/Glass/mercenary.rsi
+  - type: Wires
+    layoutId: AirlockSecurity
+
+- type: entity
+  parent: AirlockGlass
+  id: AirlockNfsdGlass
+  suffix: NFSD
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Doors/Airlocks/Glass/nfsd.rsi
+  - type: Wires
+    layoutId: AirlockSecurity
+
+- type: entity
+  parent: AirlockMedicalGlass
+  id: AirlockMedicalGlassLockedSecurity
+  suffix: Locked, Security
+  components:
+  - type: Wires
+    layoutId: AirlockSecurity
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSecurity ]
+
+- type: entity
+  parent: AirlockMedicalGlassLockedSecurity
+  id: AirlockBrigmedicGlassLocked
+  suffix: Locked, Brigmedic
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsBrigmedic ]
+# endregion
+
+# region External
+- type: entity
+  parent: AirlockGlassShuttle
+  id: AirlockExternalGlassShuttleTransit
+  suffix: Ext, Bus (R1), Glass, Docking
+  components:
+  - type: PriorityDock
+    tag: DockTransit
+  - type: Docking
+    dockType: Airlock,Transit
+
+- type: entity
+  parent: AirlockGlassShuttle
+  id: AirlockExternalGlassStationTransitTradeExpress
+  suffix: Ext, Bus (R2), Exclusive, Glass, Docking
+  components:
+  - type: PriorityDock
+    tag: DockTransitTradeExpress
+  - type: Docking
+    dockType: Transit
+
+- type: entity
+  parent: AirlockExternalGlassShuttleTransit
+  id: AirlockExternalGlassShuttleTransitTradeExpress
+  suffix: Ext, Bus (R2), Glass, Docking
+  components:
+  - type: PriorityDock
+    tag: DockTransitTradeExpress
+
+- type: entity
+  parent: AirlockExternalGlassShuttleTransit
+  id: AirlockExternalGlassShuttleTransitMinorPOI
+  suffix: Ext, Route (R3), Glass, Docking
+  components:
+  - type: PriorityDock
+    tag: DockTransitMinorPOIs
+
+- type: entity
+  parent: [AirlockGlassShuttleNfsd, AirlockExternalGlassShuttleTransit]
+  id: AirlockExternalGlassShuttleNfsdTransitMinorPOI
+  suffix: Ext, Route (R3), NFSD, Glass, Docking
+  components:
+  - type: PriorityDock
+    tag: DockTransitMinorPOIs
+
+- type: entity
+  parent: AirlockGlassShuttle
+  id: AirlockExternalGlassShuttleMcCargo
+  suffix: Ext, McCargo, Glass, Docking
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Docking
+    name: dock-label-drive-thru
+# endregion

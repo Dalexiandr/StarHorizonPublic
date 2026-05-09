@@ -1,0 +1,35 @@
+- type: entity
+  parent: SyndicateIDCard
+  id: SyndicateIDCardOfficer
+  suffix: Syndicate
+  components:
+  - type: IdCard
+    jobTitle: Офицер теле-коммуникаций Синдиката
+    jobIcon: JobIconSyndicateOfficer
+
+- type: entity
+  parent: SyndicateIDCard
+  id: SyndicateIDCardOperative
+  suffix: Syndicate
+  components:
+  - type: IdCard
+    jobTitle: Оперативник Синдиката
+    jobIcon: JobIconSyndicateOperative
+
+- type: entity
+  parent: SyndicateIDCard
+  id: SyndicateIDCardMedic
+  suffix: Syndicate
+  components:
+  - type: IdCard
+    jobTitle: Медик Синдиката
+    jobIcon: JobIconSyndicateMedic
+
+- type: entity
+  parent: SyndicateIDCard
+  id: SyndicateIDCardDelivery
+  suffix: Syndicate
+  components:
+  - type: IdCard
+    jobTitle: Курьер Синдиката
+    jobIcon: JobIconSyndicateDelivery

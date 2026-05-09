@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "license": "CLA",
+  "copyright": "resprite by TheGypsybaron",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "eyeball-l"
+    },
+    {
+      "name": "eyeball-r"
+    },
+    {
+      "name": "sec-eyeball-l"
+    },
+    {
+      "name": "sec-eyeball-r"
+    },
+    {
+      "name": "omni-eyeball-l"
+    },
+    {
+      "name": "omni-eyeball-r"
+    },
+    {
+      "name": "eyeball_world"
+    },
+    {
+      "name": "omni-eyeball_world"
+    },
+    {
+      "name": "sec-eyeball_world"
+    }
+  ]
+}

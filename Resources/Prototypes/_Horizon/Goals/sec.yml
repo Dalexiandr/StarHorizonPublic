@@ -1,0 +1,36 @@
+# Служба безопасности
+- type: expeditionGoal
+  id: BountyHandcuffs
+  specification: Security
+  randomAmount:
+    min: 3
+    max: 6
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-handcuffs
+    iconEntity: Handcuffs
+    reward: 1000
+    requiredTag: Handcuffs
+
+- type: expeditionGoal
+  id: BountyPrisonUniform
+  specification: Security
+  randomAmount:
+    min: 4
+    max: 8
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-prison-uniform
+    iconEntity: ClothingUniformJumpsuitPrisoner
+    reward: 8000
+    requiredTag: PrisonUniform
+
+- type: expeditionGoal
+  id: BountyFlashes
+  specification: Security
+  randomAmount:
+    min: 5
+    max: 7
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-flashes
+    iconEntity: Flash
+    reward: 5500
+    requiredTag: Flash

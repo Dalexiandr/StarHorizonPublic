@@ -1,0 +1,132 @@
+- type: decal
+  id: stencil
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Horizon/Decals/stencil.rsi
+    state: stencilЙ
+
+- type: decal
+  id: stencilЦ
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Horizon/Decals/stencil.rsi
+    state: stencilЦ
+
+- type: decal
+  id: stencilГ
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Horizon/Decals/stencil.rsi
+    state: stencilГ
+
+- type: decal
+  id: stencilШ
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Horizon/Decals/stencil.rsi
+    state: stencilШ
+
+- type: decal
+  id: stencilЩ
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Horizon/Decals/stencil.rsi
+    state: stencilЩ
+
+- type: decal
+  id: stencilЪ
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Horizon/Decals/stencil.rsi
+    state: stencilЪ
+
+- type: decal
+  id: stencilФ
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Horizon/Decals/stencil.rsi
+    state: stencilФ
+
+- type: decal
+  id: stencilЫ
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Horizon/Decals/stencil.rsi
+    state: stencilЫ
+
+- type: decal
+  id: stencilП
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Horizon/Decals/stencil.rsi
+    state: stencilП
+
+- type: decal
+  id: stencilД
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Horizon/Decals/stencil.rsi
+    state: stencilД
+
+- type: decal
+  id: stencilЖ
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Horizon/Decals/stencil.rsi
+    state: stencilЖ
+
+- type: decal
+  id: stencilЭ
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Horizon/Decals/stencil.rsi
+    state: stencilЭ
+
+- type: decal
+  id: stencilЯ
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Horizon/Decals/stencil.rsi
+    state: stencilЯ
+
+- type: decal
+  id: stencilЧ
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Horizon/Decals/stencil.rsi
+    state: stencilЧ
+
+- type: decal
+  id: stencilИ
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Horizon/Decals/stencil.rsi
+    state: stencilИ
+
+- type: decal
+  id: stencilЬ
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Horizon/Decals/stencil.rsi
+    state: stencilЬ
+
+- type: decal
+  id: stencilБ
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Horizon/Decals/stencil.rsi
+    state: stencilБ
+
+- type: decal
+  id: stencilЮ
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Horizon/Decals/stencil.rsi
+    state: stencilЮ
+
+- type: decal
+  id: stencil_Аза
+  tags: ["station", "markings"]
+  sprite:
+    sprite: _Horizon/Decals/stencil.rsi
+    state: stencil_aza

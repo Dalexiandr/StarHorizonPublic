@@ -1,0 +1,14 @@
+accent-russian-words-1 = yes
+accent-russian-words-replace-1 = da
+accent-russian-words-2 = офицер
+accent-russian-words-replace-2 = лейтенант
+accent-russian-words-3 = сб
+accent-russian-words-3-2 = служба безопасности
+accent-russian-words-3-3 = СБ
+accent-russian-words-replace-3 = милиция
+accent-russian-words-4 = друг
+accent-russian-words-replace-4 = комрад
+accent-russian-words-5 = друзья
+accent-russian-words-replace-5 = комрады
+accent-russian-words-6 = капитан
+accent-russian-words-replace-6 = генсек

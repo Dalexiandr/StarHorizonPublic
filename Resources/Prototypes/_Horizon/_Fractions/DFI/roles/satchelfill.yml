@@ -1,0 +1,26 @@
+- type: entity
+  parent: ClothingBackpackDFI
+  id:  ClothingBackpackCadetFillDFI
+  suffix: DFI
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: BoxSurvivalSlotsSecurity
+    - id: Flash
+    - id: RadioHandheldNF
+    - id: NFWeaponPistolUniversalNfsd
+    - id: NFMagazineHighCapacityPistol35Rubber
+    - id: NFMagazineHighCapacityPistol35Overpressure
+
+- type: entity
+  parent: ClothingBeltMilitaryWebbing
+  id:  ClothingBeltMilitaryWebbingCadetFill
+  suffix: DFI
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: Stunbaton
+    - id: Handcuffs
+    - id: Handcuffs

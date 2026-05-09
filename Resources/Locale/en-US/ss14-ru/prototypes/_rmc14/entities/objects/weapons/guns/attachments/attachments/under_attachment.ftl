@@ -1,0 +1,10 @@
+ent-UnderAttachmentBase = { ent-AttachableBase }
+    .desc = { ent-AttachableBase.desc }
+ent-AttachmentM90GrenadeLauncher = M90 Grenade Launcher
+    .desc = A weapon-mounted, reloadable grenade launcher.
+ent-AttachmentM90UnderbarrelShotgun = M90 underbarrel shotgun
+    .desc = MEOW
+ent-AttachmentVerticalGrip = vertical grip
+    .desc = A vertical foregrip that offers better accuracy, less recoil, and less scatter, especially during burst fire. However, it also increases weapon size.
+ent-AttachmentLaserSight = laser sight
+    .desc = A laser sight that attaches to the underside of most weapons. Increases accuracy and decreases scatter, especially while one-handed.

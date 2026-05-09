@@ -1,0 +1,22 @@
+- type: entity
+  id: AirlockGlassShuttlePlanet
+  parent: AirlockShuttle
+  name: external airlock
+  suffix: Glass, Docking, Planet
+  description: Necessary for connecting two space craft together.
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Glass/shuttle.rsi
+  - type: Occluder
+    enabled: false
+  - type: Door
+    occludes: false
+  - type: Fixtures
+    fixtures:
+      fix1:
+        layer:     #removed opaque from the layer, allowing lasers to pass through glass airlocks
+        - GlassAirlockLayer
+  - type: Tag
+    tags:
+    - ForceNoFixRotations
+    - PlanetTaxiAirlock

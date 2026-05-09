@@ -1,0 +1,9 @@
+ent-NFClothingOuterEVASuitBase = { ent-ClothingOuterStorageBase }
+    .suffix = Frontier
+    .desc = { ent-ClothingOuterStorageBase.desc }
+ent-ClothingOuterEVASuitFsa = FSA EVA suit
+    .desc = The standard issue EVA suit for Far Star Arms vessels. It comes pre-loaded with standard issue space camo green.
+ent-ClothingOuterEVASuitFsb = FSB EVA suit
+    .desc = The standard issue EVA suit for Far Star Biotech vessels. It comes with two cupholders.
+ent-ClothingOuterEVASuitFsc = FSC EVA suit
+    .desc = The standard issue EVA suit for Far Star Commerce vessels. It comes pre-loaded with elbow grease.

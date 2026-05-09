@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Created for StarHorizon DFI faction",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "dfi_id",
+      "directions": 4,
+      "delays":
+      [
+        [
+            0.5,
+            0.5
+        ],
+        [
+            0.5,
+            0.5
+        ],
+        [
+            0.5,
+            0.5
+        ],
+        [
+            0.5,
+            0.5
+        ]
+      ]
+    },
+    {
+      "name": "dfi_id_key",
+      "directions": 4
+    },
+    {
+      "name": "dfi_id_key_off",
+      "directions": 4
+    }
+  ]
+}

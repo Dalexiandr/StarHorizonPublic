@@ -1,0 +1,10 @@
+ent-ClothingOuterArmorGoldCaptainCarapace = золотой панцирь капитана
+    .desc = Выдаётся почётным и опытным членам экипажа.
+    .suffix = StarHorizon
+ent-ClothingOuterArmorBlueshield = панцирь офицера DFI
+    .desc = Бронированный нагрудник, который закрывает все ваши самые ценные места, обеспечивая защиту. Его синяя метка так же позволяет сохранять максимальную мобильность и гибкость. Не спрашивайте как.
+    .suffix = StarHorizon
+ent-BadgeOnClothing = { "" }
+    .desc = { "" }
+ent-BadgeOnClothingWithContainer = { "" }
+    .desc = { "" }

@@ -1,0 +1,395 @@
+# Departmental EVA suits
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitContractor
+  description: Contains a standard issue contractor EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitContractor
+    - id: JetpackMiniFilled
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitPilot
+  description: Contains a standard issue pilot EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitPilot
+    - id: JetpackMiniFilled
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitSr
+  description: Contains a standard issue station representative EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitSr
+    - id: JetpackMiniFilled
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitCaptain
+  description: Contains a standard issue captain EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitCaptain
+    - id: JetpackMiniFilled
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitEngineer
+  description: Contains a standard issue engineer EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitEngineer
+    - id: JetpackMiniFilled
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitAtmosTech
+  description: Contains a standard issue atmospheric technician EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitAtmosTech
+    - id: JetpackMiniFilled
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitCargo
+  description: Contains a standard issue cargo technician EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitCargo
+    - id: JetpackMiniFilled
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitSalvage
+  description: Contains a standard issue salvage specialist EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitSalvage
+    - id: JetpackMiniFilled
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitMedic
+  description: Contains a standard issue medical specialist EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitMedic
+    - id: JetpackMiniFilled
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitParamedic
+  description: Contains a standard issue paramedic voidsuit kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterHardsuitVoidParamed
+    - id: JetpackMiniFilled
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitParamedicAlt
+  description: Contains a standard issue paramedic EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitParamedic
+    - id: JetpackMiniFilled
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitScientist
+  description: Contains a standard issue scientist EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitScientist
+    - id: JetpackMiniFilled
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitJanitor
+  description: Contains a standard issue janitor EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitJanitor
+    - id: JetpackMiniFilled
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitServiceWorker
+  description: Contains a standard issue service worker EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitServiceWorker
+    - id: JetpackMiniFilled
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitChaplain
+  description: Contains a standard issue chaplain EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitChaplain
+    - id: JetpackMiniFilled
+    - id: Lantern
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitBoxerRed
+  description: Contains a red boxer EVA suit and standard issue EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitBoxerRed
+    - id: JetpackMiniFilled
+    - id: ClothingHandsGlovesBoxingRed
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitBoxerGreen
+  description: Contains a green boxer EVA suit and standard issue EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitBoxerGreen
+    - id: JetpackMiniFilled
+    - id: ClothingHandsGlovesBoxingGreen
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitBoxerBlue
+  description: Contains a blue boxer EVA suit and standard issue EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitBoxerBlue
+    - id: JetpackMiniFilled
+    - id: ClothingHandsGlovesBoxingBlue
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitBoxerYellow
+  description: Contains a yellow boxer EVA suit and standard issue EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitBoxerYellow
+    - id: JetpackMiniFilled
+    - id: ClothingHandsGlovesBoxingYellow
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitBoxerRandom
+  description: Contains a boxer EVA suit and standard issue EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitBoxerRandom
+    - id: JetpackMiniFilled
+    - id: ClothingHandsGlovesBoxingBlue
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitHydro
+  description: Contains a standard issue botanist EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitHydro
+    - id: JetpackMiniFilled
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitMail
+  description: Contains a standard issue mail carrier EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitMailman
+    - id: JetpackMiniFilled
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitMercenary
+  description: Contains a standard issue mercenary EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitMercenary
+    - id: JetpackMiniFilled
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitPrivateSec
+  description: Contains a standard issue private security EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitPrivateSec
+    - id: JetpackMiniFilled
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitNfsd
+  description: Contains a standard issue NFSD EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitNfsd
+    - id: JetpackNfsdFilled
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+# Other EVA Suits
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitGoblin
+  description: Contains a traditional goblin EVA suit and standard EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitGoblin
+    - id: JetpackMiniFilled
+    - id: Lantern
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+# Emergency
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitEmergency
+  description: Contains a standard issue emergency EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterSuitEmergency
+    - id: JetpackMiniFilled
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+# Player factions
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitLvhi
+  description: Contains a standard issue Langstad-Voigt Heavy Industries (LVHI) EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitLvhi
+    - id: JetpackMiniFilled
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitFsa
+  description: Contains a standard issue Far Star Arms (FSA) EVA suit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitFsa
+    - id: JetpackMiniFilled
+    - id: ClothingShoesBootsMagSecurity
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitFsb
+  description: Contains a standard issue Far Star Biotech (FSB) EVA suit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitFsb
+    - id: JetpackMiniFilled
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitFsc
+  description: Contains a standard issue Far Star Commerce (FSC) EVA suit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitFsc
+    - id: JetpackMiniFilled
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled
+
+# Stc
+- type: entity
+  abstract: true
+  id: StorageFillEVASuitStc
+  description: Contains a standard issue station traffic controller EVA kit.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterEVASuitStc
+    - id: JetpackMiniFilled
+    - id: ClothingShoesBootsMag
+    - id: DoubleEmergencyTankO2N2EqualFilled

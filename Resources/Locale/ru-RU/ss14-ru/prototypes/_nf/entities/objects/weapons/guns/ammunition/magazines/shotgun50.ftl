@@ -1,0 +1,12 @@
+ent-NFBaseMagazineShotgunDrum = барабанный магазин (.50 патрон)
+    .desc = { ent-BaseItem.desc }
+ent-NFMagazineShotgunDrumEmpty = барабанный магазин (.50 патрон, любые)
+    .desc = { ent-NFBaseMagazineShotgunDrum.desc }
+ent-NFMagazineShotgunDrum = барабанный магазин (.50 патрон, дробь)
+    .desc = { ent-NFBaseMagazineShotgunDrum.desc }
+ent-NFMagazineShotgunDrumBeanbag = барабанный магазин (.50 патрон, травматические)
+    .desc = { ent-NFBaseMagazineShotgunDrum.desc }
+ent-NFMagazineShotgunDrumSlug = барабанный магазин (.50 патрон, пули)
+    .desc = { ent-NFBaseMagazineShotgunDrum.desc }
+ent-NFMagazineShotgunDrumIncendiary = барабанный магазин (.50 патрон, зажигательные)
+    .desc = { ent-NFBaseMagazineShotgunDrum.desc }

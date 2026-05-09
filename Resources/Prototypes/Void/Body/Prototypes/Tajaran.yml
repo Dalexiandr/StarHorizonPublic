@@ -1,0 +1,65 @@
+﻿- type: body
+  id: Tajaran
+  name: "tajaran"
+  root: torso
+  slots:
+    head:
+      part: HeadTajaran
+      connections:
+        - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganHumanEyes
+        tongue: OrganHumanTongue # Horizon
+        eye_implant: null # _Horizon
+        cyberdeka_implant: null # _Horizon
+    torso:
+      part: TorsoTajaran
+      organs:
+        heart: OrganAnimalHeart
+        lungs: OrganHumanLungs
+        stomach: OrganTajaranStomach
+        liver: OrganAnimalLiver
+        kidneys: OrganHumanKidneys
+        vessels_implant: null # _Horizon
+        blood_pump_implant: null
+        skin_implant: null # _Horizon
+        bone_implant: null # _Horizon
+        cavity: null # _Starlight
+      connections:
+        - right arm
+        - left arm
+        - right leg
+        - left leg
+        - tail
+    right arm:
+      part: RightArmTajaran
+      connections:
+        - right hand
+    left arm:
+      part: LeftArmTajaran
+      connections:
+        - left hand
+    right hand:
+      part: RightHandTajaran
+      organs:
+        hands_implant: null # _Horizon
+    left hand:
+      part: LeftHandTajaran
+      organs:
+        hands_implant: null # _Horizon
+    right leg:
+      part: RightLegTajaran
+      connections:
+        - right foot
+    left leg:
+      part: LeftLegTajaran
+      connections:
+        - left foot
+    right foot:
+      part: RightFootTajaran
+    left foot:
+      part: LeftFootTajaran
+    tail:
+      part: TailTajaran
+

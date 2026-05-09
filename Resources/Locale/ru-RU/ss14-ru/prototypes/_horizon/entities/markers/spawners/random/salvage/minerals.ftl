@@ -1,0 +1,9 @@
+ent-NFChromiteMineralSoftFar = спавнер минерального хромита
+    .suffix = Мягкий
+    .desc = { ent-MarkerBase.desc }
+ent-NFChromiteMineralHardFar = { ent-NFChromiteMineralSoft }
+    .suffix = Твердый
+    .desc = { ent-NFChromiteMineralSoft.desc }
+ent-NFChromiteMineralHardRichFar = { ent-NFChromiteMineralSoft }
+    .suffix = Твердый, Богатое
+    .desc = { ent-NFChromiteMineralSoft.desc }

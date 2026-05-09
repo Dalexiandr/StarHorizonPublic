@@ -1,0 +1,67 @@
+
+#region skeleton bike
+- type: entity
+  parent: BaseKey
+  id: VehicleKeySkeletonMotorcycle
+  name: skeleton motorcycle keys
+  description: A beautiful set of keys adorned with a skull.
+  components:
+    - type: Tag
+      tags:
+        - VehicleKey
+        - SkeletonMotorcycleKeys
+    - type: Sprite
+      sprite: Objects/Vehicles/motorbike.rsi
+      state: keys
+
+#region hoverbike
+- type: entity
+  parent: BaseKey
+  id: VehicleKeyHoverbikeNF
+  name: hoverbike keys
+  description: Cute bibelot.
+  components:
+  - type: Tag
+    tags:
+    - VehicleKey
+    - HoverbikeKeys
+  - type: Sprite
+    sprite: _NF/Objects/Vehicles/hoverbike.rsi
+    state: keys
+  - type: StaticPrice
+    price: 50
+
+#region broom
+- type: entity
+  parent: VehicleKeyHoverbikeNF
+  id: NFVehicleKeyBroom
+  name: flying broom keys
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Vehicles/broom.rsi
+    state: keys
+  - type: Tag
+    tags:
+    - VehicleKey
+    - FlyingBroomKeys
+
+#region tag
+- type: Tag
+  id: FlyingBroomKeys
+
+#region Upstream definitions
+- type: entity
+  parent: VehicleKeyATV
+  id: VehicleKeySkeleton
+  name: vehicle skeleton keys
+  description: Unlock any vehicle.
+  components:
+  - type: Tag
+    tags:
+    - VehicleKey
+    - JanicartKeys
+    - SecwayKeys
+    - ATVKeys
+    - SyndicateSegwayKeys
+    - SkeletonMotorcycleKeys
+    - HoverbikeKeys

@@ -1,0 +1,442 @@
+# бейс вейпон сас. Xigovir: скоро эта сборка набухнет от САС пушек
+- type: entity
+  id: BaseWeaponAnCo
+  parent: [BaseItem, BaseAnCoContraband]
+  categories: [ HideSpawnMenu ]
+  suffix: StarHorizon, AnCo, Weapon
+  components:
+  - type: Sprite
+  - type: Item
+    size: large
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 2
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    projectileSpeed: 25
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser.ogg
+  - type: Battery
+    maxCharge: 1000
+    startingCharge: 1000
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: false
+  - type: Appearance
+  - type: StaticPrice
+    price: 500
+
+- type: entity
+  id: BaseWeaponPowerCellAnCo
+  parent: [BaseItem, BaseAnCoContraband]
+  categories: [ HideSpawnMenu ]
+  suffix: StarHorizon, AnCo, Weapon
+  components:
+  - type: Sprite
+  - type: Item
+    size: Large
+  - type: AmmoCounter
+  - type: Gun
+    fireRate: 3
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    projectileSpeed: 25
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser.ogg
+  - type: MagazineAmmoProvider
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: AnCoEnergyCore
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        whitelist:
+          tags:
+            - PowerAnCo
+  - type: Appearance
+  - type: StaticPrice
+    price: 500
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+
+# ноу харм (нет) вейпон
+
+- type: entity
+  name: пп-дизейблер АнКо
+  parent: BaseWeaponAnCo
+  id: WeaponDisablerSMGAnCo
+  description: Улучшенная модель дизейблера с уменьшенной в угоду повышенной скорострельности мощностью.
+  suffix: StarHorizon, AnCo, Weapon
+  components:
+  - type: Item
+    size: Large
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Guns/Battery/machinedisabler.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-unshaded-0
+        map: ["enum.GunVisualLayers.MagUnshaded"]
+        shader: unshaded
+  - type: Gun
+    selectedMode: FullAuto
+    fireRate: 4
+    availableModes:
+      - SemiAuto
+      - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletDisablerSmgAnCo
+    fireCost: 100
+  - type: Battery
+    maxCharge: 2000
+    startingCharge: 2000
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 25
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: true
+  - type: StaticPrice
+    price: 260
+
+- type: entity
+  name: Ардониевый пулемет АнКо
+  parent: BaseWeaponAnCo
+  id: WeaponLaserMinigunAnCo
+  description: Первая попытка АнКо создать машину смерти, хоть и в форме пулемёта.
+  suffix: StarHorizon, AnCo, Weapon
+  components:
+  - type: Item
+    size: Ginormous
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Guns/Battery/minigun.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-1
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Gun
+    selectedMode: FullAuto
+    fireRate: 5
+    shotsPerBurst: 5
+    availableModes:
+      - Burst
+      - FullAuto
+    projectileSpeed: 25
+  - type: ProjectileBatteryAmmoProvider
+    proto: StandartLaserAnCo
+    fireCost: 100
+  - type: Battery
+    maxCharge: 10000
+    startingCharge: 10000
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: true
+  - type: Appearance
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 100
+  - type: MultiHandedItem
+  - type: AnCoFactionAccess
+    allowedFactions:
+    - FactionAnCo
+    blacklistedFactions:
+    - FactionDFI
+    - FactionTTI
+    - FactionSIU
+
+- type: entity
+  name: Ардониевый гранатомет АнКо
+  parent: BaseWeaponAnCo
+  id: WeaponLaserGranadeAnCo
+  description: Первая попытка АнКо создать машину смерти, хоть и в форме гранатомёта.
+  suffix: StarHorizon, AnCo, Weapon
+  components:
+  - type: Item
+    size: Ginormous
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Guns/Battery/granadegun.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-1
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Gun
+    selectedMode: SemiAuto
+    fireRate: 0.3
+    availableModes:
+      - SemiAuto
+    projectileSpeed: 25
+  - type: ProjectileBatteryAmmoProvider
+    proto: StandartExplodesAnCo
+    fireCost: 1000
+  - type: BatteryWeaponFireModes
+    fireModes:
+    - proto: StandartLaserAnCo
+      fireCost: 100
+    - proto: StandartExplodesAnCo
+      fireCost: 1000
+  - type: Battery
+    maxCharge: 10000
+    startingCharge: 10000
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: true
+  - type: Appearance
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 50
+  - type: MultiHandedItem
+  - type: AnCoFactionAccess
+    allowedFactions:
+    - FactionAnCo
+    blacklistedFactions:
+    - FactionDFI
+    - FactionTTI
+    - FactionSIU
+
+- type: entity
+  name: винтовка-дизейблер АнКо
+  parent: BaseWeaponAnCo
+  id: WeaponDisablerSniperAnCo
+  description: Энергоёмкое EFS-устройство, используемое только в крайних случаях.
+  suffix: StarHorizon, AnCo, Weapon
+  components:
+    - type: AmmoCounter
+    - type: Item
+      size: Large
+    - type: Sprite
+      sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Guns/Battery/sniperdisabler.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-unshaded-0
+          map: ["enum.GunVisualLayers.MagUnshaded"]
+          shader: unshaded
+    - type: Gun
+      fireRate: 0.5
+      minAngle: 25
+      maxAngle: 25
+    - type: Wieldable
+    - type: GunWieldBonus
+      minAngle: -25
+      maxAngle: -25
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
+    - type: ProjectileBatteryAmmoProvider
+      proto: SniperDisablerAnCo
+      fireCost: 60
+    - type: MagazineVisuals
+      magState: mag
+      steps: 6
+      zeroVisible: true
+    - type: Appearance
+    - type: Battery
+      maxCharge: 300
+      startingCharge: 300
+    - type: BatterySelfRecharger
+      autoRecharge: true
+      autoRechargeRate: 1
+
+# оружие боевое
+
+- type: entity
+  name: рипсоидная винтовка АнКо
+  parent: BaseWeaponAnCo
+  id: AnCoRipsoidCannon
+  description: Рипсоидная винтовка с расширенной батареей.
+  suffix: StarHorizon, AnCo, Weapon
+  components:
+  - type: Item
+    size: Huge
+  - type: Wieldable
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Guns/Battery/ripsoidcannon.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-0
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Gun
+    fireRate: 3
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: HitscanBatteryAmmoProvider
+    proto: AnCoRedHeavyLaser
+    fireCost: 100
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: true
+  - type: Battery
+    maxCharge: 3000
+    startingCharge: 3000
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 10
+  - type: AnCoFactionAccess
+    allowedFactions:
+    - FactionAnCo
+    blacklistedFactions:
+    - FactionDFI
+    - FactionTTI
+    - FactionSIU
+
+- type: entity
+  name: пистолет совета АнКо
+  parent: BaseWeaponAnCo
+  id: AnCoCounselorGun
+  description: Особая модификация рипсоидной винтовки, созданная для защиты совета.
+  suffix: StarHorizon, AnCo, Weapon
+  components:
+  - type: Item
+    size: Normal
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Guns/Battery/consulgun.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-0
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Gun
+    fireRate: 4
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: HitscanBatteryAmmoProvider
+    proto: AnCoRedHeavyLaser
+    fireCost: 100
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: true
+  - type: Battery
+    maxCharge: 1000
+    startingCharge: 1000
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 5
+  - type: AnCoFactionAccess
+    allowedFactions:
+    - FactionAnCo
+    blacklistedFactions:
+    - FactionDFI
+    - FactionTTI
+    - FactionSIU
+
+- type: entity
+  name: модифицированный ПП АнКо
+  parent: BaseWeaponPowerCellAnCo
+  id: PMLaserAnCoGun
+  description: Лазерный ПП, модернизированный в сторону мощности, хоть и в ущерб автономному электроснабжению.
+  suffix: StarHorizon, AnCo, Weapon
+  components:
+  - type: Gun
+    fireRate: 2
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Guns/Battery/machinegun.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: StaticPrice
+    price: 15000
+
+- type: entity
+  name: лазерная винтовка АнКо
+  parent: BaseWeaponPowerCellAnCo
+  id: LaserAnCoGun
+  description: Специально созданная под Ардониевые ячейки, винтовка с высокой скорострельностью.
+  suffix: StarHorizon, AnCo, Weapon
+  components:
+  - type: Gun
+    fireRate: 3
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Guns/Battery/riflegun.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: AnCoFactionAccess
+    allowedFactions:
+    - FactionAnCo
+    blacklistedFactions:
+    - FactionDFI
+    - FactionTTI
+    - FactionSIU
+
+# оверхеат ганс
+
+- type: entity
+  parent: [BaseWeaponAnCo, BaseAnCoContraband]
+  id: AnCoWeaponHeater
+  name: энергетическая винтовка
+  description: Экспериментальная энергетическая винтовка, системы безопасности ослаблены.
+  suffix: StarHorizon, AnCo, Weapon
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Guns/Battery/heatgun.rsi
+    layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-unshaded-0
+          map: ["enum.GunVisualLayers.MagUnshaded"]
+          shader: unshaded
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,3,1
+  - type: Gun
+    fireRate: 2
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    projectileSpeed: 25
+  - type: Battery
+    maxCharge: 500
+    startingCharge: 500
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 50
+  - type: StaticPrice
+    price: 10000
+  - type: ProjectileBatteryAmmoProvider
+    proto: StandartLaserAnCo
+    fireCost: 50
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+  - type: AnCoGunOverheat
+    heatPerShot: 0.2
+    cooldownRate: 0.05
+    visualOverheat: false
+    unlockThreshold: 0
+    overheatThreshold: 1
+    touchDamage:
+      types:
+        Heat: 20
+  - type: Wieldable
+    unwieldOnUse: true

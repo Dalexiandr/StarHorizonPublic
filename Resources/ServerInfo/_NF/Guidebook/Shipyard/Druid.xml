@@ -1,0 +1,108 @@
+<Document>
+  # БОТАНИЧЕСКИЙ ШАТТЛ КЛАССА DRUID
+  <Box>
+    <GuideEntityEmbed Entity="hydroponicsTray" Caption="Продукция"/>
+    <GuideEntityEmbed Entity="BannerFsb" Caption="Исследования"/>
+    <GuideEntityEmbed Entity="ChemMaster" Caption="Переработка"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="ShuttleMapDruid" Caption=""/>
+  </Box>
+  [color=#a4885c]Размер корабля:[/color] Средний
+
+  [color=#a4885c]Рекомендуемый экипаж:[/color] 1-2
+
+  [color=#a4885c]Тип генератора питания:[/color] Солнечный/Урановый
+
+  [color=#a4885c]Базовое потребление энергии:[/color] 25 кВт
+
+  [color=#a4885c]Экспедиции:[/color] Нет
+
+  [color=#a4885c]Консоль IFF:[/color] Нет
+
+  "Druid служит исследовательским ботаническим судном дальнего космоса корпорации Far Star Biotech. Разработан для экспериментов, производства и переработки обычных и экзотических ботанических образцов в обстановке, предназначенной для отвлечения подозрений или беспокойства."
+
+  # Функции корабля
+
+  <Box>
+    <GuideEntityEmbed Entity="ButtonFrameCautionSecurity" Caption="Запереть внешние шлюзы"/>
+    <GuideEntityEmbed Entity="ButtonFrameCaution" Caption="Включить/Выключить двигатели"/>
+    <GuideEntityEmbed Entity="ButtonFrameGrey" Caption="Привести в действие ставни"/>
+  </Box>
+
+  # Пилотирование
+  <Box>
+    <GuideEntityEmbed Entity="ComputerShuttle"/>
+  </Box>
+  После нажатия на консоль шаттла вы должны увидеть радарное отображение шаттла. Вот шаги для управления шаттлом:
+
+  - Сначала отключите все шлюзы, подключенные к док-станции.
+  - Затем вы можете управлять шаттлом. Управление довольно простое: [color=#028ed9]"W"[/color] и [color=#028ed9]"S"[/color] — вперед и назад, [color=#028ed9]"A"[/color] и [color=#028ed9]"D"[/color] — влево и вправо, а [color=#028ed9]"Q"[/color] и [color=#028ed9]"E"[/color] — вращение влево и вправо; и [color=#028ed9]"пробел"[/color] — тормоз и точное движение при удержании [color=#028ed9]"пробела"[/color] во время других вводов.
+
+  # Наем экипажа
+  <Box>
+    <GuideEntityEmbed Entity="ComputerStationRecords"/>
+    <GuideEntityEmbed Entity="ClothingHeadsetGrey"/>
+    <GuideEntityEmbed Entity="IntercomCommon"/>
+  </Box>
+  Как капитан судна Nanotrasen, вы имеете право нанимать, увольнять, понижать в должности или повышать членов экипажа по своему усмотрению. Существует два способа, которыми вы, как капитан, можете нанять экипаж: вы можете использовать [color=#a4885c]компьютер учета станции[/color] на своем корабле, чтобы открыть слоты для экипажа (доступные должности варьируются от корабля к кораблю), или приглашать других игроков через внутриигровую связь.
+
+  # КОНТРОЛЬНЫЙ СПИСОК ПЕРЕД ВЫЛЕТОМ
+
+  ## 1. Электропитание
+
+  ## 1.1. Аккумуляторные модули
+  <Box>
+    <GuideEntityEmbed Entity="SubstationBasic"/>
+    <GuideEntityEmbed Entity="APCBasic"/>
+  </Box>
+
+  - Проверьте, включен ли главный автомат блока ЛКП.
+  - Проверьте текущую нагрузку блока ЛКП* (Вт).
+
+  ## 1.2. Генераторный блок S.U.P.E.R.P.A.C.M.A.N.
+  <Box>
+    <GuideEntityEmbed Entity="PortableGeneratorSuperPacman"/>
+    <GuideEntityEmbed Entity="SheetUranium"/>
+    <GuideEntityEmbed Entity="SignRadiationMed"/>
+  </Box>
+
+  - Проверьте, закреплен ли генераторный блок S.U.P.E.R.P.A.C.M.A.N. на полу.
+  - Проверьте, есть ли у генераторного блока S.U.P.E.R.P.A.C.M.A.N. топливо. Для длительных полетов убедитесь, что у вас достаточно запасов топлива для поддержания выработки электроэнергии во время полета.
+  - Проверьте, настроен ли генераторный блок S.U.P.E.R.P.A.C.M.A.N. на выход HV.
+  - Установите целевую мощность на 30 [bold]кВт[/bold].
+  - Запустите генераторный блок S.U.P.E.R.P.A.C.M.A.N.
+
+  ## 1.3. Солнечные панели
+  <Box>
+    <GuideEntityEmbed Entity="ComputerSolarControl"/>
+    <GuideEntityEmbed Entity="SolarTracker"/>
+    <GuideEntityEmbed Entity="SolarPanel"/>
+  </Box>
+  - Проверьте компьютер управления солнечными панелями (расположен в кабине шаттла).
+  - Отрегулируйте угловую скорость панелей.
+  - Отрегулируйте угол наклона панелей.
+
+  ## 2. Атмосферные системы
+
+  ## 2.1. Распределительная петля
+  <Box>
+  <GuideEntityEmbed Entity="OxygenCanister"/>
+  <GuideEntityEmbed Entity="NitrogenCanister"/>
+  <GuideEntityEmbed Entity="GasPort"/>
+  <GuideEntityEmbed Entity="GasMixer"/>
+  </Box>
+
+  - Проверьте, что кислородные и азотные баллоны закреплены на соединительном порту.
+  - Проверьте, что распределительный смеситель установлен на 101 кПа.
+  - Включите распределительный смеситель.
+
+  ## 3. Прочие проверки
+  <Box>
+  <GuideEntityEmbed Entity="Gyroscope"/>
+  <GuideEntityEmbed Entity="GravityGeneratorMini"/>
+  </Box>
+
+  - Проверьте, что гироскоп закреплен, подключен к питанию и включен.
+  - Проверьте, что мини-гравитационный генератор закреплен, подключен к питанию и включен.
+</Document>

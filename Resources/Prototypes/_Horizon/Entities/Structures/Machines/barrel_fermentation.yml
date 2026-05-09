@@ -1,0 +1,71 @@
+- type: entity
+  parent: [ BaseMachinePowered, ConstructibleMachine ]
+  id: FermentationBarrel
+  name: бочка для ферментации
+  description: Используется для производства алкоголя из растений.
+  suffix: Horizon
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Hydroponics/barrel.rsi
+    layers:
+      - state: barrel-1
+      - state: barrel-1-1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 6
+    fillBaseName: barrel-1-
+  - type: WiresVisuals
+  - type: PowerSwitch
+  - type: Construction
+    graph: FermentationBarrel
+    node: fermentationBarrel
+#TODO нужна замена
+#  - type: Machine
+#    board: MaterialReclaimerMachineCircuitboard
+  - type: WiresPanel
+  - type: HorizonMaterialReclaimer
+    whitelist:
+      tags:
+      - Vegetable
+      - Fruit
+      - Herb
+      - Wheat
+      - Ambrosia
+      - Flower
+    blacklist:
+      components:
+      - Material
+      - Pda
+      - IdCard
+      - Brain
+      tags:
+      - HighRiskItem
+    soundCooldown: 0
+    sound:
+      path: /Audio/Ambience/Objects/crushing.ogg
+      params:
+        volume: 5
+        maxDistance: 5
+        loop: true
+  - type: MaterialStorage
+    insertOnInteract: false
+  - type: ContainerContainer
+    containers:
+      active-material-reclaimer-container: !type:Container
+      machine_board: !type:Container
+      machine_parts: !type:Container
+  - type: SolutionContainerManager
+    solutions:
+      output:
+        maxVol: 200
+  - type: DrainableSolution
+    solution: output
+  - type: ExaminableSolution
+    solution: output
+  - type: StaticPrice
+    price: 100
+  - type: Tag
+    tags:
+    - Barrel

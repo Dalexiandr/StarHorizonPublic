@@ -1,0 +1,91 @@
+- type: entityTable
+  id: BasicFishingLootTable
+  table: !type:GroupSelector
+    children:
+    - !type:GroupSelector
+      weight: 75
+      children:
+      - !type:NestedSelector
+        tableId: SalvageScrapLowValue
+        weight: 65
+      - !type:NestedSelector
+        tableId: SalvageScrapHighValue
+        weight: 35
+    - !type:NestedSelector
+      tableId: GenericTrashItems
+      weight: 15
+    - !type:GroupSelector
+      weight: 10
+      children:
+      - !type:NestedSelector
+        tableId: SalvageTreasureCommon
+      - !type:NestedSelector
+        tableId: MaintToolsTable
+
+- type: entityTable
+  id: RareFishTable
+  table: !type:GroupSelector
+    children:
+    - id: FishAlien
+    - id: FishBingle
+    - id: FishBoyFisher
+    - id: FishNukeDisk
+    - id: FishGib
+    - id: FishMutant
+    - id: FishNuker
+    - id: FishToxic
+    - id: FishIan
+
+
+- type: entityTable
+  id: WaterFishTable
+  table: !type:GroupSelector
+    children:
+    - id: FishAngler
+    - id: FishBass
+    - id: FishBlob
+    - id: FishBlueFintuna
+    - id: FishCat
+    - id: FishTropicalClown
+    - id: FishPuffer
+    - id: FishSilver
+    - id: FishTropicalSun
+    - id: FishTropical
+
+- type: entityTable
+  id: WaterFishingLootTable
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        tableId: BasicFishingLootTable
+        weight: 70
+      - !type:NestedSelector
+        tableId: WaterFishTable
+        weight: 20
+      - !type:NestedSelector
+        tableId: RareFishTable
+        weight: 10
+
+- type: entityTable
+  id: LavaFishingLootTable
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        tableId: BasicFishingLootTable
+        weight: 80
+      - !type:NestedSelector
+        tableId: RareFishTable
+        weight: 20
+
+
+- type: entityTable
+  id: PlasmaFishingLootTable
+  table: !type:GroupSelector
+    children:
+      - !type:NestedSelector
+        tableId: BasicFishingLootTable
+        weight: 80
+      - !type:NestedSelector
+        tableId: RareFishTable
+        weight: 20
+

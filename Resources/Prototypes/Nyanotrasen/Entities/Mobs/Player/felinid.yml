@@ -1,0 +1,37 @@
+- type: entity
+  save: false
+  name: Urist McFelinid
+  parent: [MobFelinidBase, BaseMob]
+  id: MobFelinid
+  components:
+  - type: Speech
+    speechVerb: Felinid
+  # Horizon
+  - type: SampleSource
+    availableCellSamples:
+    - protoID: CellSampleFelinid
+
+# Cytology
+- type: entity
+  name: Urist Grown Felinid
+  parent: MobFelinid
+  id: MobFelinidGrown
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StaticPrice
+    price: 2500
+  - type: RandomMetadata
+    nameSegments:
+      - NamesFirst
+      - NamesLast
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: ghost-role-information-grown-felinid-name
+    description: Вы фелинид, выращенный в цитологической ванне. Кошачья грация и охотничий инстинкт - ваше оружие. Исследуйте этот новый мир!
+    raffle:
+      settings: short
+  - type: GhostTakeoverAvailable

@@ -1,0 +1,467 @@
+- type: entity
+  name: оружейный кейс АнКо
+  parent: [WeaponCaseLong, BaseAnCoContraband]
+  id: AnCoWeaponCaseLong
+  description: Прочный ящик для безопасности вашего оружия, а не вас.
+  suffix: StarHorizon, AnCo, Long
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Storage/Cases/guncaselong.rsi
+  - type: Item
+    sprite: _Horizon/_Fractions/AnCo/Objects/Storage/Cases/guncaselong.rsi
+  - type: AnCoWeaponCaseHack
+    explosionIntensity: 16
+    explosionSlope: 2
+    explosionMaxTileIntensity: 2
+    explosionPrototype: AnCoExplodes
+  - type: Lock
+    locked: true
+  - type: AccessReader
+    access: [[ "AccessAnCoOfficer" ]]
+  - type: WiresPanel
+  - type: Wires
+    boardName: wires-board-name-weapon-case
+    layoutId: AnCoWeaponCaseHack
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
+
+- type: entity
+  name: оружейный кейс АнКо
+  parent: [WeaponCaseShort, BaseAnCoContraband]
+  id: AnCoWeaponCaseShort
+  description: Прочный кейс для пистолетов и аксессуаров.
+  suffix: StarHorizon, AnCo, Short
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Storage/Cases/guncaseshort.rsi
+  - type: Item
+    sprite: _Horizon/_Fractions/AnCo/Objects/Storage/Cases/guncaseshort.rsi
+  - type: AnCoWeaponCaseHack
+    explosionIntensity: 16
+    explosionSlope: 2
+    explosionMaxTileIntensity: 2
+    explosionPrototype: AnCoExplodes
+  - type: Lock
+    locked: true
+  - type: AccessReader
+    access: [[ "AccessAnCoCadet" ]]
+  - type: WiresPanel
+  - type: Wires
+    boardName: wires-board-name-weapon-case
+    layoutId: AnCoWeaponCaseHack
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
+
+- type: entity
+  name: кейс для патронов АнКо
+  parent: [WeaponCaseShortAmmo, BaseAnCoContraband]
+  id: AnCoWeaponCaseAmmo
+  description: Прочный кейс для хранения боеприпасов.
+  suffix: StarHorizon, AnCo, Ammo
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Storage/Cases/ammocaseshort.rsi
+  - type: Item
+    sprite: _Horizon/_Fractions/AnCo/Objects/Storage/Cases/ammocaseshort.rsi
+  - type: AnCoWeaponCaseHack
+    explosionIntensity: 16
+    explosionSlope: 2
+    explosionMaxTileIntensity: 2
+    explosionPrototype: AnCoExplodes
+  - type: Lock
+    locked: true
+  - type: AccessReader
+    access: [[ "AccessAnCoCadet" ]]
+  - type: WiresPanel
+  - type: Wires
+    boardName: wires-board-name-weapon-case
+    layoutId: AnCoWeaponCaseHack
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
+
+- type: entity
+  name: кейс для взрывчатки АнКо
+  parent: [WeaponCaseShortExplosives, BaseAnCoContraband]
+  id: AnCoWeaponCaseExplosives
+  description: Усиленный кейс для хранения взрывчатки.
+  suffix: StarHorizon, AnCo, Explosives
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Storage/Cases/explosivescaseshort.rsi
+  - type: Item
+    sprite: _Horizon/_Fractions/AnCo/Objects/Storage/Cases/explosivescaseshort.rsi
+  - type: AnCoWeaponCaseHack
+    explosionIntensity: 16
+    explosionSlope: 2
+    explosionMaxTileIntensity: 2
+    explosionPrototype: AnCoExplodes
+  - type: Lock
+    locked: true
+  - type: AccessReader
+    access: [[ "AccessAnCoOfficer" ]]
+  - type: WiresPanel
+  - type: Wires
+    boardName: wires-board-name-weapon-case
+    layoutId: AnCoWeaponCaseHack
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
+
+- type: entity
+  name: тяжёлый кейс АнКо
+  parent: [WeaponCaseHeavy, BaseAnCoContraband]
+  id: AnCoWeaponCaseHeavy
+  description: Массивный кейс АнКо.
+  suffix: StarHorizon, AnCo, Big
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Storage/Cases/guncaseheavy.rsi
+  - type: Item
+    sprite: _Horizon/_Fractions/AnCo/Objects/Storage/Cases/guncaseheavy.rsi
+  - type: AnCoWeaponCaseHack
+    explosionIntensity: 16
+    explosionSlope: 2
+    explosionMaxTileIntensity: 2
+    explosionPrototype: AnCoExplodes
+  - type: Lock
+    locked: true
+  - type: AccessReader
+    access: [[ "AccessAnCoKnight" ]]
+  - type: WiresPanel
+  - type: Wires
+    boardName: wires-board-name-weapon-case
+    layoutId: AnCoWeaponCaseHack
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
+  - type: Storage
+    maxItemSize: Ginormous
+    grid:
+    - 0,0,7,5
+    whitelist:
+      components:
+      - Item
+
+- type: entity
+  name: оружейный кейс холодного оружия АнКо
+  parent: [WeaponCaseLong, BaseAnCoContraband]
+  id: AnCoWeaponCaselongmelee
+  description: Массивный кейс для тяжёлого вооружения.
+  suffix: StarHorizon, AnCo, Long
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Storage/Cases/guncaselongmelee.rsi
+  - type: Item
+    sprite: _Horizon/_Fractions/AnCo/Objects/Storage/Cases/guncaselongmelee.rsi
+  - type: AnCoWeaponCaseHack
+    explosionIntensity: 16
+    explosionSlope: 2
+    explosionMaxTileIntensity: 2
+    explosionPrototype: AnCoExplodes
+  - type: Lock
+    locked: true
+  - type: AccessReader
+    access: [[ "AccessAnCoOfficer" ]]
+  - type: WiresPanel
+  - type: Wires
+    boardName: wires-board-name-weapon-case
+    layoutId: AnCoWeaponCaseHack
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
+
+# Заполненные кейсы с оружием
+
+- type: entity
+  id: AnCoWeaponCasePistol
+  parent: AnCoWeaponCaseShort
+  suffix: StarHorizon, AnCo, Pistol
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponPistolAnCo
+        amount: 1
+      - id: MagazinePistol35
+        amount: 2
+
+- type: entity
+  id: AnCoWeaponCaseAutoPistol
+  parent: AnCoWeaponCaseShort
+  suffix: StarHorizon, AnCo, AutoPistol
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponAutoPistolAnCo
+        amount: 1
+      - id: MagazinePistol35
+        amount: 2
+
+- type: entity
+  id: AnCoWeaponCaseRifle
+  parent: AnCoWeaponCaseLong
+  suffix: StarHorizon, AnCo, Rifle
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponRiflesAnCo
+        amount: 1
+      - id: MagazineRifle20
+        amount: 2
+
+- type: entity
+  id: AnCoWeaponCaseAutoRifle
+  parent: AnCoWeaponCaseLong
+  suffix: StarHorizon, AnCo, AutoRifle
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponAutoRiflesAnCo
+        amount: 1
+      - id: MagazineRifle20
+        amount: 2
+
+- type: entity
+  id: AnCoWeaponCaseLaserGun
+  parent: AnCoWeaponCaseLong
+  suffix: StarHorizon, AnCo, LaserGun
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: LaserAnCoGun
+        amount: 1
+      - id: AnCoEnergyCore
+        amount: 2
+
+- type: entity
+  id: AnCoWeaponCasePMLaserGun
+  parent: AnCoWeaponCaseLong
+  suffix: StarHorizon, AnCo, PMLaserGun
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: PMLaserAnCoGun
+        amount: 1
+      - id: AnCoEnergyCore
+        amount: 2
+
+- type: entity
+  id: AnCoWeaponCaseDisablerSMG
+  parent: AnCoWeaponCaseLong
+  suffix: StarHorizon, AnCo, DisablerSMG
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponDisablerSMGAnCo
+        amount: 1
+
+- type: entity
+  id: AnCoWeaponCaseDisablerSniper
+  parent: AnCoWeaponCaseLong
+  suffix: StarHorizon, AnCo, DisablerSniper
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponDisablerSniperAnCo
+        amount: 1
+
+- type: entity
+  id: AnCoWeaponCaseCounselorGun
+  parent: AnCoWeaponCaseShort
+  suffix: StarHorizon, AnCo, CounselorGun
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: AnCoCounselorGun
+        amount: 1
+
+- type: entity
+  id: AnCoWeaponCaseRipsoidCannon
+  parent: AnCoWeaponCaseShort
+  suffix: StarHorizon, AnCo, RipsoidCannon
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: AnCoRipsoidCannon
+        amount: 1
+
+#- type: entity
+#  id: AnCoWeaponCaseLaserMinigun
+#  parent: AnCoWeaponCaseHeavy
+#  suffix: StarHorizon, AnCo, LaserMinigun
+#  category: [ HideSpawnMenu ]
+#  components:
+#  - type: StorageFill
+#    contents:
+#      - id: WeaponLaserMinigunAnCo
+#        amount: 1
+
+#- type: entity
+#  id: AnCoWeaponCaseLaserGranade
+#  parent: AnCoWeaponCaseHeavy
+#  suffix: StarHorizon, AnCo, LaserGranade
+#  category: [ HideSpawnMenu ]
+#  components:
+#  - type: StorageFill
+#    contents:
+#      - id: WeaponLaserGranadeAnCo
+#        amount: 1
+
+- type: entity
+  id: AnCoWeaponCaseHeater
+  parent: AnCoWeaponCaseLong
+  suffix: StarHorizon, AnCo, Heater
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: AnCoWeaponHeater
+        amount: 1
+
+- type: entity
+  id: AnCoWeaponCaseSabre
+  parent: AnCoWeaponCaseShort
+  suffix: StarHorizon, AnCo, Sabre
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: AnCoSabre
+        amount: 1
+
+- type: entity
+  id: AnCoWeaponCaseMeleeLine
+  parent: AnCoWeaponCaseShort
+  suffix: StarHorizon, AnCo, Line
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: AnCoLine
+        amount: 1
+
+- type: entity
+  id: AnCoWeaponCaseMeleeSword
+  parent: AnCoWeaponCaseShort
+  suffix: StarHorizon, AnCo, Sword
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: AnCoSword
+        amount: 1
+
+- type: entity
+  id: AnCoWeaponCaseMeleeSplah
+  parent: AnCoWeaponCaseShort
+  suffix: StarHorizon, AnCo, Splah
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: AnCoSplah
+        amount: 1
+
+- type: entity
+  id: AnCoWeaponCaseMeleeKnife
+  parent: AnCoWeaponCaseShort
+  suffix: StarHorizon, AnCo, Knife
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: AnCoKnife
+        amount: 1
+
+- type: entity
+  id: AnCoWeaponCaseGrenade
+  parent: AnCoWeaponCaseExplosives
+  suffix: StarHorizon, AnCo, Grenade
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: AnCoGranade
+        amount: 4
+
+- type: entity
+  id: AnCoWeaponCaseMachineGun
+  parent: AnCoWeaponCaseLong
+  suffix: StarHorizon, AnCo, MachineGun
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponMachineGun30AnCo
+        amount: 1
+      - id: MagazineRifle30
+        amount: 2
+
+- type: entity
+  id: AnCoWeaponCaseCarabine
+  parent: AnCoWeaponCaseLong
+  suffix: StarHorizon, AnCo, MachineGun
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponRifles30AnCo
+        amount: 1
+      - id: MagazineRifle30
+        amount: 2
+
+- type: entity
+  id: AnCoWeaponCaseShotGun
+  parent: AnCoWeaponCaseLong
+  suffix: StarHorizon, AnCo, MachineGun
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponShotgunAnCo
+        amount: 1
+      - id: MagazineAnCoShotgun50
+        amount: 2
+
+- type: entity
+  id: AnCoWeaponCaseAutoShotGun
+  parent: AnCoWeaponCaseLong
+  suffix: StarHorizon, AnCo, MachineGun
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponShotgunSpeedAnCo
+        amount: 1
+      - id: MagazineAnCoShotgun50
+        amount: 2

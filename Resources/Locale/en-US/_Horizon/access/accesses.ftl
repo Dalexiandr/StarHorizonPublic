@@ -1,0 +1,13 @@
+id-card-access-level-dfi = DFI
+id-card-access-level-dfi-Cadet = DFI Cadet
+id-card-access-level-dfi-Officer = DFI Officer
+id-card-access-level-dfi-IU = Investigations
+id-card-access-level-dfi-CAU = Counter-Intelligence
+id-card-access-level-dfi-ShiftManager = Shift Supervisor
+id-card-access-level-dfi-Evidence = Evidence
+id-card-access-level-dfi-Observation = Observation
+id-card-access-level-dfi-Special = Special
+id-card-access-level-dfi-CIC = CIC
+id-card-access-level-dfi-Armory = Armory
+id-card-access-level-dfi-TRC = TRC
+id-card-access-level-dfi-APS = APS

@@ -1,0 +1,12 @@
+ent-ClothingBackpackDuffelSyndicateFilledChinaLikeGrenadeLauncher = China-Lake bundle
+    .desc = An old China-Lake grenade launcher bundled with 11 rounds of various destruction capability.
+ent-ClothingBackpackDuffelSyndicateFilledRailAttachments = rail attachments bundle
+    .desc = { ent-ClothingBackpackDuffelSyndicateBundle.desc }
+ent-ClothingBackpackDuffelSyndicateFilledBarrelAttachments = barrel attachments bundle
+    .desc = { ent-ClothingBackpackDuffelSyndicateBundle.desc }
+ent-ClothingBackpackDuffelSyndicateFilledUnderAttachments = underbarrel attachments bundle
+    .desc = { ent-ClothingBackpackDuffelSyndicateBundle.desc }
+ent-ClothingBackpackDuffelSyndicateFilledLethalGrenades = lethal grenades bundle
+    .desc = { ent-ClothingBackpackDuffelSyndicateBundle.desc }
+ent-ClothingBackpackDuffelSyndicateFilledNonLethalGrenades = non-lethal grenades bundle
+    .desc = { ent-ClothingBackpackDuffelSyndicateBundle.desc }

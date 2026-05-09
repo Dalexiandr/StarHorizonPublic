@@ -1,0 +1,9 @@
+ent-ComputerTabletopStationAdminBankATMTrauma = { ent-BaseComputerTabletopStationAdminBankATM }
+    .desc = Используется для доступа к банковскому счету Trauma Team.
+    .suffix = TraumaTeam, Настольный
+ent-ComputerTabletopShuttleAntagSyndicate = { ent-ComputerTabletopShuttleAntag }
+    .desc = Используется для пилотирования шаттла.
+    .suffix = Syndicate, Disk
+ent-ComputerTabletopShuttleAntagPirate = { ent-ComputerTabletopShuttleAntag }
+    .desc = Используется для пилотирования шаттла.
+    .suffix = Pirate, Disk

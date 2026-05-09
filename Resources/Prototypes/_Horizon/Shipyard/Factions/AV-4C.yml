@@ -1,0 +1,31 @@
+# GitHub: TwiceNoRise
+# Discord: twicenorise
+
+- type: vessel
+  id: TraumaAV4C
+  parent: BaseVessel
+  name: TTI AV-4C
+  description: Стандартный АВИ переработанный под службу в условиях безвоздушного пространства. # Описание шаттла
+  price: 10000
+  category: Small
+  group: Custom
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/Factions/TTI.yml
+  class:
+  - Medical
+  engine:
+  - Uranium
+
+- type: gameMap
+  id: TraumaAV4C
+  mapName: 'TTI AV-4C'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/Factions/TTI.yml
+  minPlayers: 0
+  stations:
+    TraumaAV4C:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'TTI AV-4C {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'

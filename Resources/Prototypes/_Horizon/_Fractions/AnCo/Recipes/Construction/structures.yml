@@ -1,0 +1,298 @@
+- type: construction
+  id: AnCoWindowArdon
+  name: Ардониевое окно
+  graph: WindowArdon
+  startNode: start
+  targetNode: ardonwindow
+  category: construction-category-structures
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+
+- type: construction
+  id: AnCoWindowArdonDiagonal
+  name: Ардониевое окно (диагональное)
+  graph: WindowArdon
+  startNode: start
+  targetNode: ardonwindowdiagonaly
+  category: construction-category-structures
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  objectType: Structure
+  placementMode: SnapgridCenter
+
+- type: construction
+  id: AnCoWindowArdonDirectional
+  name: Направленное ардониевое окно
+  graph: WindowArdon
+  startNode: start
+  targetNode: ardonwindowdirectional
+  category: construction-category-structures
+  canBuildInImpassable: true
+  conditions:
+    - !type:EmptyOrWindowValidInTile
+    - !type:NoWindowsInTile
+  objectType: Structure
+  placementMode: SnapgridCenter
+
+- type: constructionGraph
+  id: WindowArdon
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: ardonwindow
+          steps:
+            - material: ArdonSheetStack
+              amount: 2
+              doAfter: 2
+        - to: ardonwindowdiagonaly
+          steps:
+            - material: ArdonSheetStack
+              amount: 2
+              doAfter: 2
+        - to: ardonwindowdirectional
+          steps:
+            - material: ArdonSheetStack
+              amount: 2
+              doAfter: 2
+    - node: ardonwindow
+      entity: AnCoWindowArdon
+      edges:
+        - to: start
+          completed:
+            - !type:GivePrototype
+              prototype: ArdonSheet1
+              amount: 2
+            - !type:DeleteEntity {}
+          steps:
+            - tool: Welding
+              doAfter: 5
+            - tool: Screwing
+              doAfter: 1
+            - tool: Prying
+              doAfter: 2
+            - tool: Welding
+              doAfter: 5
+            - tool: Screwing
+              doAfter: 1
+            - tool: Anchoring
+              doAfter: 2
+    - node: ardonwindowdiagonaly
+      entity: AnCoWindowArdonDiagonal
+      edges:
+        - to: start
+          completed:
+            - !type:GivePrototype
+              prototype: ArdonSheet1
+              amount: 2
+            - !type:DeleteEntity {}
+          steps:
+            - tool: Welding
+              doAfter: 5
+            - tool: Screwing
+              doAfter: 1
+            - tool: Prying
+              doAfter: 2
+            - tool: Welding
+              doAfter: 5
+            - tool: Screwing
+              doAfter: 1
+            - tool: Anchoring
+              doAfter: 2
+    - node: ardonwindowdirectional
+      entity: AnCoArdonWindowDirectional
+      edges:
+        - to: start
+          completed:
+            - !type:GivePrototype
+              prototype: ArdonSheet1
+              amount: 2
+            - !type:DeleteEntity {}
+          steps:
+            - tool: Welding
+              doAfter: 5
+            - tool: Screwing
+              doAfter: 1
+            - tool: Prying
+              doAfter: 2
+            - tool: Welding
+              doAfter: 5
+            - tool: Screwing
+              doAfter: 1
+            - tool: Anchoring
+              doAfter: 2
+
+- type: construction
+  id: AnCoWallKazmie
+  name: Казмиевая стена
+  graph: WallKazmie
+  startNode: start
+  targetNode: wallkazmie
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: AnCoKazmieWallDiagonal
+  name: Казмиевая стена (диагональное)
+  graph: WallKazmie
+  startNode: start
+  targetNode: wallkazmiediagonaly
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: constructionGraph
+  id: WallKazmie
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: wallkazmie
+          steps:
+            - material: KazmieSheetStack
+              amount: 3
+              doAfter: 2
+        - to: wallkazmiediagonaly
+          steps:
+            - material: KazmieSheetStack
+              amount: 3
+              doAfter: 2
+    - node: wallkazmie
+      entity: AnCoWallKazmie
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: KazmieSheet1
+              amount: 3
+            - !type:DeleteEntity {}
+          steps:
+            - tool: Welding
+              doAfter: 5
+            - tool: Screwing
+              doAfter: 1
+            - tool: Prying
+              doAfter: 1
+            - tool: Anchoring
+              doAfter: 1
+            - tool: Welding
+              doAfter: 5
+            - tool: Prying
+              doAfter: 1
+    - node: wallkazmiediagonaly
+      entity: AnCoKazmieWallDiagonal
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: KazmieSheet1
+              amount: 3
+            - !type:DeleteEntity {}
+          steps:
+            - tool: Welding
+              doAfter: 5
+            - tool: Screwing
+              doAfter: 1
+            - tool: Prying
+              doAfter: 1
+            - tool: Anchoring
+              doAfter: 1
+            - tool: Welding
+              doAfter: 5
+            - tool: Prying
+              doAfter: 1
+
+- type: construction
+  id: AnCoTableKazmie
+  name: Казмиевый стол
+  graph: TableAnCo
+  startNode: start
+  targetNode: tablekazmie
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: AnCoTableArdon
+  name: Ардониевый стол
+  graph: TableAnCo
+  startNode: start
+  targetNode: tableardon
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: constructionGraph
+  id: TableAnCo
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: tablekazmie
+          steps:
+            - material: KazmieSheetStack
+              amount: 3
+              doAfter: 2
+        - to: tableardon
+          steps:
+            - material: KazmieSheetStack
+              amount: 2
+            - material: ArdonSheetStack
+              amount: 1
+              doAfter: 2
+    - node: tablekazmie
+      entity: AnCoTableKazmie
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: KazmieSheet1
+              amount: 3
+            - !type:DeleteEntity {}
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Prying
+              doAfter: 1
+            - tool: Anchoring
+              doAfter: 1
+    - node: tableardon
+      entity: AnCoTableArdon
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: KazmieSheet1
+              amount: 2
+            - !type:SpawnPrototype
+              prototype: ArdonSheet1
+              amount: 1
+            - !type:DeleteEntity {}
+          steps:
+            - tool: Screwing
+              doAfter: 1
+            - tool: Prying
+              doAfter: 1
+            - tool: Anchoring
+              doAfter: 1

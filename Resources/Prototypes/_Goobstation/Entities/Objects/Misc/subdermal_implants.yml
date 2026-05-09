@@ -1,0 +1,49 @@
+- type: entity
+  parent: Acidifier
+  id: BluespaceLifelineSpawnCore
+  name: Блюспейс телепортация
+  description: Телепортирует твоё тело что бы спасти твою жизнь!
+  components:
+  - type: Transform
+    anchored: True
+  - type: Sprite
+    sprite: /Textures/_Goobstation/Effects/bluespace_lifeline.rsi
+    noRot: true
+    layers:
+    - state: bluespace_lifeline
+      shader: unshaded
+  - type: SpawnOnDespawn
+    prototype: AnomalyCoreBluespace
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/_Goobstation/Weapons/ChronoLegionnaire/stasisgun_reload.ogg
+  - type: PointLight
+    color: SkyBlue
+    radius: 3
+    energy: 1
+    netsync: false
+
+- type: entity
+  parent: Acidifier
+  id: RedspaceLifelineSpawnCore
+  name: Редспейс телепортация
+  description: Телепортирует твоё тело что бы спасти твою жизнь!
+  components:
+  - type: Transform
+    anchored: True
+  - type: Sprite
+    sprite: /Textures/_Goobstation/Effects/redspace_lifeline.rsi
+    noRot: true
+    layers:
+    - state: redspace_lifeline
+      shader: unshaded
+  - type: SpawnOnDespawn
+    prototype: Telecrystal1
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/_Goobstation/Weapons/ChronoLegionnaire/stasisgun_reload.ogg
+  - type: PointLight
+    color: Red
+    radius: 3
+    energy: 1
+    netsync: false

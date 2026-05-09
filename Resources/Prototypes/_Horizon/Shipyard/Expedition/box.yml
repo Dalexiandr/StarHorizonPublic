@@ -1,0 +1,59 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: https://github.com/OHoro4ek1
+# Discord: ohoro4ek
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: BoxShuttle
+  parent: BaseVessel
+  name: NRZN Box
+  description: Компактный утилизаторский шаттл для экспедиций и утилизации астероидов.
+  price: 75000 # 58765, наценка верфи 25% = 73456
+  category: Medium
+  group: Expedition
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/Expedition/box.yml
+  class:
+  - Expedition
+  - Salvage
+  engine:
+  - AME
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:FactionCostModifier
+      faction: "FactionSIU"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionArcadia"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: BoxShuttle
+  mapName: 'NRZN Box'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/Expedition/box.yml
+  minPlayers: 0
+  stations:
+    BoxShuttle:
+      stationProto: StandardFrontierExpeditionVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Box {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

@@ -1,0 +1,61 @@
+- type: entity
+  parent: AccessConfigurator
+  id: AccessConfiguratorAnCo
+  name: конфигуратор доступов АнКо
+  suffix: StarHorizon, AnCo
+  description: Используется для настройки уровней доступа шлюзов и других устройств АнКо.
+  components:
+    - type: Sprite
+      sprite: _Horizon/_Fractions/AnCo/Objects/Devices/configuration.rsi
+    - type: AccessOverrider
+      accessLevels:
+      - AccessAnCoKnight
+      - AccessAnCoSpider
+      - AccessAnCoOfficer
+      - AccessAnCoCadet
+      - AccessAnCoRipsoid
+      - AnCo
+      - AccessAnCoWelcome
+      - Maintenance
+      - External
+      - Service
+      - Medical
+      - Engineering
+      - Janitor
+      - Captain
+      privilegedIdSlot:
+        name: id-card-console-privileged-id
+        ejectSound: /Audio/Machines/id_swipe.ogg
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectOnBreak: true
+        swap: false
+        whitelist:
+          components:
+          - IdCard
+      denialSound:
+        path: /Audio/Machines/custom_deny.ogg
+      doAfter: 0.5
+
+- type: entity
+  parent: AccessConfiguratorAnCo
+  id: AccessConfiguratorAnCoDEBUG
+  suffix: StarHorizon, AnCo, DEBUG
+  components:
+    - type: AccessOverrider
+      accessLevels:
+      - AnCo
+      - AccessAnCoCounselor
+      - AccessAnCoTitan
+      - AccessAnCoKnight
+      - AccessAnCoSpider
+      - AccessAnCoOfficer
+      - AccessAnCoCadet
+      - AccessAnCoRipsoid
+      - AccessAnCoWelcome
+      - Maintenance
+      - External
+      - Service
+      - Medical
+      - Engineering
+      - Janitor
+      - Captain

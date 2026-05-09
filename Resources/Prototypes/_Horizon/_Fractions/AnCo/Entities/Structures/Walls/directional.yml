@@ -1,0 +1,58 @@
+- type: entity
+  id: AnCoArdonWindowDirectional
+  parent: WindowDirectionalRCDResistant
+  name: ардониевое направленное окно
+  description: Окно для любителей подглядывать секреты. Теперь еще тоньше.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Window
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structure/Walls/directional.rsi
+    state: ardon_window
+  - type: Icon
+    sprite: _Horizon/_Fractions/AnCo/Structure/Walls/directional.rsi
+    state: ardon_window
+  - type: Appearance
+  - type: DamageVisuals
+    thresholds: [5, 10, 20]
+    damageDivisor: 3
+    trackAllDamage: true
+    damageOverlay:
+      sprite: Structures/Windows/cracks_directional.rsi
+  - type: Damageable
+    damageModifierSet: RGlass
+  - type: RadiationBlocker
+    resistance: 2
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors: #excess damage, don't spawn entities.
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 75
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ArdonSheet1:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: DeltaPressure
+    minPressure: 37500
+    minPressureDelta: 25000
+    scalingType: Threshold
+  - type: StaticPrice
+    price: 30
+  - type: Construction
+    graph: WindowArdon
+    node: ardonwindowdirectional

@@ -1,0 +1,53 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHardsuitHoodRadCat
+  name: шлем радиозащитного скафандра
+  suffix: Только коты
+  description: шлем радиозащитного скафандра
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Hoods/rad.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Hoods/rad.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.95
+        Radiation: 0.45
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.95
+  - type: PressureProtection
+    highPressureMultiplier: 0.3
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.1
+    coolingCoefficient: 0.1
+  - type: Tag
+    tags:
+    - PetOnly
+  - type: IdentityBlocker
+  - type: BreathMask
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+    - HeadTop
+    - HeadSide
+  - type: CatWearable
+
+- type: entity
+  parent: ClothingHeadHatHoodWinterBase
+  id: ClothingHeadHatHoodWinterBlueshield
+  categories: [ HideSpawnMenu ]
+  name: капюшон зимней куртки офицера "Синий щит"
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hoods/Coat/hood_blueshield.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hoods/Coat/hood_blueshield.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.95
+        Caustic: 0.90

@@ -1,0 +1,61 @@
+- type: body
+  name: катунианец
+  id: Katunian
+  root: torso
+  slots:
+    head:
+      part: HeadKatunian
+      connections:
+      - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganHumanEyes
+        tongue: OrganHumanTongue # Horizon
+        eye_implant: null # _Horizon
+        cyberdeka_implant: null # _Horizon
+    torso:
+      part: TorsoKatunian
+      organs:
+        heart: OrganKatunianHeart
+        lungs: OrganHumanLungs
+        stomach: OrganKatunianStomach
+        liver: OrganHumanLiver
+        kidneys: OrganHumanKidneys
+        vessels_implant: null # _Horizon
+        blood_pump_implant: null
+        skin_implant: null # _Horizon
+        bone_implant: null # _Horizon
+        cavity: null # _Starlight
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+    right arm:
+      part: RightArmKatunian
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmKatunian
+      connections:
+      - left hand
+    right hand:
+      part: RightHandKatunian
+      organs:
+        hands_implant: null # _Horizon
+    left hand:
+      part: LeftHandKatunian
+      organs:
+        hands_implant: null # _Horizon
+    right leg:
+      part: RightLegKatunian
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegKatunian
+      connections:
+      - left foot
+    right foot:
+      part: RightFootKatunian
+    left foot:
+      part: LeftFootKatunian

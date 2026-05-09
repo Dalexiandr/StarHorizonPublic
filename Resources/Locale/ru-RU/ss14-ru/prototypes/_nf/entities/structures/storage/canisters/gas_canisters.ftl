@@ -1,0 +1,10 @@
+ent-LiquidOxygenCanisterBroken = { ent-GasCanisterBrokenBase }
+    .desc = { ent-GasCanisterBrokenBase.desc }
+ent-LiquidNitrogenCanisterBroken = { ent-GasCanisterBrokenBase }
+    .desc = { ent-GasCanisterBrokenBase.desc }
+ent-LiquidCarbonDioxideCanisterBroken = { ent-GasCanisterBrokenBase }
+    .desc = { ent-GasCanisterBrokenBase.desc }
+ent-RespironCanister = баллон с респироном
+    .desc = Баллон, способный содержать любой тип газа. Этот, предположительно, содержит респирон. Может быть подключён к газовым портам с помощью гаечного ключа.
+ent-RespironCanisterBroken = { ent-GasCanisterBrokenBase }
+    .desc = { ent-GasCanisterBrokenBase.desc }

@@ -1,0 +1,50 @@
+- type: loadoutGroup
+  id: StcJumpsuit
+  name: loadout-group-contractor-jumpsuit
+  loadouts:
+  - StcClothingUniformJumpsuitDetectiveGrey
+  - StcClothingUniformJumpskirtDetectiveGrey
+  fallbacks:
+  - StcClothingUniformJumpsuitDetectiveGrey
+  - StcClothingUniformJumpskirtDetectiveGrey
+
+- type: loadoutGroup
+  id: StcHead
+  name: loadout-group-contractor-head
+  minLimit: 0
+  loadouts:
+  - StcClothingHeadHatStcCap
+  subgroups:
+  - ContractorHead
+  fallbacks:
+  - StcClothingHeadHatStcCap
+
+- type: loadoutGroup
+  id: StcEars
+  name: loadout-group-contractor-ears
+  loadouts: []
+  subgroups:
+  - MercenaryEars
+  - PilotEars
+  - ContractorEars
+  fallbacks:
+  - ContractorClothingHeadsetGreyCommon
+
+- type: loadoutGroup
+  id: StcShoes
+  name: loadout-group-contractor-shoes
+  loadouts:
+  - StcClothingShoesBootsLaceup
+  subgroups:
+  - ContractorShoes
+  fallbacks:
+  - StcClothingShoesBootsLaceup
+
+- type: loadoutGroup
+  id: StcGlasses
+  name: loadout-group-contractor-glasses
+  minLimit: 0
+  loadouts:
+  - StcClothingEyesHudCommand
+  subgroups:
+  - ContractorGlasses

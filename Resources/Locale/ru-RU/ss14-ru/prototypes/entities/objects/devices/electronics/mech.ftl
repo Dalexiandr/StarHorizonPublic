@@ -1,0 +1,14 @@
+ent-RipleyCentralElectronics = центральный модуль управления рипли
+    .desc = Центр контроля мехи Рипли.
+ent-RipleyPeripheralsElectronics = периферийный модуль управления рипли
+    .desc = Периферийный контроллер меха Рипли.
+ent-HonkerCentralElectronics = центральный модуль управления Х.О.Н.К.
+    .desc = Центр контроля мехи Х.О.Н.К.
+ent-HonkerPeripheralsElectronics = периферийный модуль управления Х.О.Н.К.
+    .desc = Периферийный контроллер мехи Х.О.Н.К.
+ent-HonkerTargetingElectronics = модуль управления оружием и наведения Х.О.Н.К.
+    .desc = Модуль системы наведения мехи Х.О.Н.К.
+ent-HamtrCentralElectronics = центральный модуль управления ХМЯК
+    .desc = Центр контроля мехи ХМЯК.
+ent-HamtrPeripheralsElectronics = периферийный модуль управления ХМЯК
+    .desc = Периферийный контроллер мехи ХМЯК.

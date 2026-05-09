@@ -1,0 +1,22 @@
+# Доступы
+czbase-Service = Сервисный
+czbase-Locked = Закрыт
+czbase-Theatre = Театр
+czbase-Chapel = Церковь
+czbase-Janitor = Уборщик
+czbase-Kitchen = Кухня
+czbase-Medical = Медицинский
+czbase-Chemistry = Химия
+czbase-Science = Научный
+czbase-Security = Служба Безопасности
+czbase-Detective = Детектив
+czbase-HeadOfPersonnel = Глава Персонала
+czbase-Bar = Бар
+czbase-Hydroponics = Ботаника
+czbase-Captain = Капитан
+czbase-External = Внешний
+czbase-Syndicate = Синдикат
+czbase-Cargo = Карго
+czbase-Engineering = Инженерный
+czbase-Atmospherics = Атмосферный
+czbase-Nukeop = Ядерные Оперативники

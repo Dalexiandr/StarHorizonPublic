@@ -1,0 +1,103 @@
+- type: entity
+  parent: [BaseHardBomb, BaseAnCoContraband, BaseItem]
+  id: AnCohardBomb
+  name: мобильная бомба АнКо
+  suffix: StarHorizon, AnCo
+  description: Бомба, напичканная зарядом Ардония. От неё лучше бежать.
+  components:
+    - type: Item
+      size: Normal
+    - type: Sprite
+      sprite: _Horizon/_Fractions/AnCo/Structures/Machines/bombs.rsi
+      noRot: true
+      layers:
+        - state: anco-bomb
+        - state: anco-bomb-active
+          visible: false
+          map: [ "primed" ]
+        - state: anco-bomb-wires
+          visible: false
+          map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+    - type: GenericVisualizer
+      visuals:
+        enum.DefusableVisuals.Active:
+          primed:
+            True: { visible: true }
+            False: { visible: false }
+        enum.WiresVisualLayers.MaintenancePanel:
+          enum.WiresVisualLayers.MaintenancePanel:
+            True: { visible: true }
+            False: { visible: false }
+    - type: PointLight
+      color: "#F05A5A"
+      radius: 1.1
+      softness: 1
+    - type: Explosive
+      explosionType: AnCoExplodes
+      totalIntensity: 4000.0
+      intensitySlope: 3
+      maxIntensity: 400
+
+- type: entity
+  parent: [AnCohardBomb, BaseAnCoContraband, BaseItem]
+  id: AnCoBombR
+  name: мобильный маяк запроса АнКо
+  suffix: StarHorizon, AnCo
+  categories: [ HideSpawnMenu ]
+  description: Мобильный маяк для отправки запросов в далекий космос.
+  components:
+    - type: Item
+      size: Normal
+    - type: Sprite
+      sprite: _Horizon/_Fractions/AnCo/Structures/Machines/bombs.rsi
+      noRot: true
+      layers:
+        - state: anco-bomb-R
+        - state: anco-bomb-active-R
+          visible: false
+          map: [ "primed" ]
+    - type: GenericVisualizer
+      visuals:
+        enum.DefusableVisuals.Active:
+          primed:
+            True: { visible: true }
+            False: { visible: false }
+        enum.WiresVisualLayers.MaintenancePanel:
+          enum.WiresVisualLayers.MaintenancePanel:
+            True: { visible: true }
+            False: { visible: false }
+    - type: Explosive
+      explosionType: AnCoExplodes
+      totalIntensity: 1
+      intensitySlope: 1
+      maxIntensity: 1
+    - type: OnUseTimerTrigger
+      delay: 5
+      delayOptions: [5, 10, 15, 20]
+
+- type: entity
+  parent: AnCoBombR
+  id: AnCoBombOfficer
+  suffix: StarHorizon, AnCo
+  name: мобильный маяк запроса снаряжения Офицера
+  components:
+    - type: SpawnOnTrigger
+      proto: ClosetOfficer
+
+- type: entity
+  parent: AnCoBombR
+  id: AnCoBombSpider
+  suffix: StarHorizon, AnCo
+  name: мобильный маяк запроса снаряжения Паука
+  components:
+    - type: SpawnOnTrigger
+      proto: ClosetSpider
+
+- type: entity
+  parent: AnCoBombR
+  id: AnCoBombKnight
+  suffix: StarHorizon, AnCo
+  name: мобильный маяк запроса снаряжения Рыцаря
+  components:
+    - type: SpawnOnTrigger
+      proto: ClosetKnight

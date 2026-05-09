@@ -1,0 +1,28 @@
+- type: construction
+  id: ClothingNeckClassicPonchoWebRecipe
+  graph: ClothingNeckClassicPonchoWebGraph
+  startNode: start
+  targetNode: ClothingNeckClassicPonchoWebNode
+  category: construction-category-clothing
+  entityWhitelist: &spidercraftWhitelist
+    tags:
+    - SpiderCraft
+  objectType: Item
+
+- type: construction
+  id: ClothingNeckPonchoWebRecipe
+  graph: ClothingNeckPonchoWebGraph
+  startNode: start
+  targetNode: ClothingNeckPonchoWebNode
+  category: construction-category-clothing
+  entityWhitelist: *spidercraftWhitelist
+  objectType: Item
+
+- type: construction
+  id: ClothingNeckCloakWebRecipe
+  graph: ClothingNeckCloakWebGraph
+  startNode: start
+  targetNode: ClothingNeckCloakWebNode
+  category: construction-category-clothing
+  entityWhitelist: *spidercraftWhitelist
+  objectType: Item

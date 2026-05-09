@@ -1,0 +1,54 @@
+- type: vendingMachineInventory
+  id: NonLethalVendInventory
+  startingInventory:
+    TargetDartsFlatpack: 2
+    BoxDarts: 4
+  # Weapons
+    NFRevolverCapGun: 2
+    NFWeaponRifleFoam: 2
+    FoamCrossbow: 2
+    NFWeaponEnergyPistolDisablerPractice: 4
+    NFWeaponEnergyRifleCarbinePractice: 4
+  # Magazines
+  # Ammo boxes
+    NFBoxCartridgeCap: 4
+    NFBoxDonkSoftBox: 4
+    NFAmmunitionBoxPistol35Practice: 10
+    NFAmmunitionBoxPistol45Practice: 10
+    NFAmmunitionBoxRifle20Practice: 8
+    NFAmmunitionBoxRifle25Practice: 10
+    NFAmmunitionBoxRifle30Practice: 5
+    NFAmmunitionBoxShellShotgunPractice: 8
+  contrabandInventory:
+    NFSpeedLoaderPistol35Practice: 3
+    NFSpeedLoaderPistol45Practice: 3
+  emaggedInventory:
+    ThrowingKnife: 1
+
+# Horizon start - POI version with infinite stock
+- type: vendingMachineInventory
+  id: NonLethalVendPOIInventory
+  startingInventory:
+    TargetDartsFlatpack: 4294967295 # Infinite
+    BoxDarts: 4294967295 # Infinite
+  # Weapons
+    NFRevolverCapGun: 4294967295 # Infinite
+    NFWeaponRifleFoam: 4294967295 # Infinite
+    FoamCrossbow: 4294967295 # Infinite
+    NFWeaponEnergyPistolDisablerPractice: 4294967295 # Infinite
+    NFWeaponEnergyRifleCarbinePractice: 4294967295 # Infinite
+  # Ammo boxes
+    NFBoxCartridgeCap: 4294967295 # Infinite
+    NFBoxDonkSoftBox: 4294967295 # Infinite
+    NFAmmunitionBoxPistol35Practice: 4294967295 # Infinite
+    NFAmmunitionBoxPistol45Practice: 4294967295 # Infinite
+    NFAmmunitionBoxRifle20Practice: 4294967295 # Infinite
+    NFAmmunitionBoxRifle25Practice: 4294967295 # Infinite
+    NFAmmunitionBoxRifle30Practice: 4294967295 # Infinite
+    NFAmmunitionBoxShellShotgunPractice: 4294967295 # Infinite
+  contrabandInventory:
+    NFSpeedLoaderPistol35Practice: 4294967295 # Infinite
+    NFSpeedLoaderPistol45Practice: 4294967295 # Infinite
+  emaggedInventory:
+    ThrowingKnife: 1
+# Horizon end

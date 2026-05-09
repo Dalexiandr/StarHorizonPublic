@@ -1,0 +1,137 @@
+- type: entity
+  save: false
+  name: Urist McKatunian
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobKatunian
+  abstract: true
+  components:
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+      enum.HumanoidMarkingModifierKey.Key:
+        type: HumanoidMarkingModifierBoundUserInterface
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+      enum.SurgeryUIKey.Key:
+        type: SurgeryBui
+  - type: HumanoidAppearance
+    species: Katunian
+  - type: Hunger
+  - type: Thirst
+  - type: Icon
+    sprite: _Void/Mobs/Species/Katunian/parts.rsi
+    state: full
+  - type: Body
+    prototype: Katunian
+    requiredLegs: 2
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Katunian # Horizon
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      path: /Audio/Weapons/pierce.ogg
+    angle: 30
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Piercing: 5
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      110: Critical
+      220: Dead
+  - type: Inventory
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female
+  - type: TallWhitelist
+    scale: 1.1
+  - type: ShortWhitelist
+    scale: 0.9
+    density: 140
+    pseudoItem: true
+    cosmeticOnly: false
+  - type: Temperature
+    heatDamageThreshold: 320 # 5 lower than base # Frontier: 315<320
+    coldDamageThreshold: 220 # 40 lower than base,
+  - type: Carriable # Carrying system from nyanotrasen.
+  #- type: Inventory # Allows vulps to wear properly shaped helmets
+  #  speciesId: vulpkanin
+  - type: Speech
+    allowedEmotes: ['KHiss', 'KFurr', 'KPurr', 'KGrowl']
+  - type: Vocal
+    sounds:
+      Male: MaleKatunian
+      Female: FemaleKatunian
+      Unsexed: MaleKatunian
+  - type: Sprite
+    netsync: false
+    noRot: true
+    drawdepth: Mobs
+    layers:
+      - map: [ "enum.HumanoidVisualLayers.Chest" ]
+      - map: [ "enum.HumanoidVisualLayers.Head" ]
+      - map: [ "enum.HumanoidVisualLayers.Snout" ]
+      - map: [ "enum.HumanoidVisualLayers.Eyes" ]
+      - map: [ "enum.HumanoidVisualLayers.RArm" ]
+      - map: [ "enum.HumanoidVisualLayers.LArm" ]
+      - map: [ "enum.HumanoidVisualLayers.RLeg" ]
+      - map: [ "enum.HumanoidVisualLayers.LLeg" ]
+      - shader: StencilClear
+        sprite: Mobs/Species/Human/parts.rsi
+        state: l_leg
+      - map: [ "underwearb" ]
+      - map: [ "underweart" ]
+      - map: [ "jumpsuit" ]
+      - map: [ "enum.HumanoidVisualLayers.LHand" ]
+      - map: [ "enum.HumanoidVisualLayers.RHand" ]
+      - map: [ "enum.HumanoidVisualLayers.LFoot" ]
+      - map: [ "enum.HumanoidVisualLayers.RFoot" ]
+      - map: [ "enum.HumanoidVisualLayers.Handcuffs" ]
+        color: "#ffffff"
+        sprite: Objects/Misc/handcuffs.rsi
+        state: body-overlay-2
+        visible: false
+      - map: [ "id" ]
+      - map: [ "gloves" ]
+      - map: [ "shoes" ]
+      - map: [ "ears" ]
+      - map: [ "outerClothing" ]
+      - map: [ "eyes" ]
+      - map: [ "belt" ]
+      - map: [ "back" ]
+      - map: [ "neck" ]
+      - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
+      - map: [ "enum.HumanoidVisualLayers.Hair" ]
+      - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
+      - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
+      - map: [ "enum.HumanoidVisualLayers.Tail" ]
+      - map: [ "mask" ]
+      - map: [ "head" ]
+      - map: [ "pocket1" ]
+      - map: [ "pocket2" ]
+      - map: [ "clownedon" ]
+
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobKatunianDummy
+  categories: [ HideSpawnMenu ]
+  name: Urist McKatunian
+  description: A dummy katuniann meant to be used in character setup.
+  components:
+  - type: HumanoidAppearance
+    species: Katunian
+  - type: Inventory
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female

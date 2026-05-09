@@ -1,0 +1,27 @@
+
+- type: entity
+  parent: [Clothing, BaseAnCoContraband]
+  id: ClothingHeadsetAnCo
+  suffix: StarHorizon, AnCo
+  name: гарнитура АнКо
+  description: Вам кажется, что вы слышите белый шум и что-то, похожее на слова.
+  components:
+  - type: Headset
+  - type: EncryptionKeyHolder
+    keySlots: 4
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Headset/ears.rsi
+    state: icon
+  - type: Tag
+    tags: [] # Выносим с ВЛа для хамелеонки
+  - type: Item
+    size: Small
+  - type: Clothing
+    slots:
+    - ears
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Headset/ears.rsi
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyAnCo
+

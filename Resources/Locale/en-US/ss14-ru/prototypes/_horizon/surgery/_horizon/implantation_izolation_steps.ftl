@@ -1,0 +1,14 @@
+ent-HorizonLocateImplantPlace = Locate implant place
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonPreparePlace = Prepare a place for the implant
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonInsertIzolationImplant = Insert implant
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonExtractIzolationImplant = Extract implant
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonConnectImplantToNerves = Connect implant to nerves
+    .desc = { ent-SurgeryStepBase.desc }
+ent-SurgeryInsertIzolationImplant = Insert a izolation implant
+    .desc = Surgical attachment of a implant.
+ent-SurgeryExstractIzolationImplant = Extract a izolation implant
+    .desc = Surgical attachment of a implant.

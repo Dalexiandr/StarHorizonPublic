@@ -1,0 +1,73 @@
+- type: entity
+  parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband, ContrabandClothing] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband, added ContrabandClothing as parent
+  id: ClothingOuterHardsuitInterdyne
+  name: экзоскафандр CBURN Inderdyne
+  description: Скрещенная версия элитного скафандра Cybersun и технологий био-защиты Interdyne
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Hardsuits/InterdyneCBURN.rsi
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: _Horizon/Clothing/OuterClothing/Hardsuits/InterdyneCBURN.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: FireProtection
+    reduction: 0.8
+  - type: StaminaResistance
+    damageCoefficient: 0.8
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.7
+        Heat: 0.2
+        Cold: 0.5
+        Radiation: 0.01
+        Caustic: 0.2
+        Cellular: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 0.9
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.01 # Зомби вирус разработан Интердайн, так что они знают методы противодействия
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitInterdyne
+
+- type: entity
+  parent: ClothingHeadHardsuitBase
+  id: ClothingHeadHelmetHardsuitInterdyne
+  name: шлем экзоскафандра CBURN Inderdyne
+  description: Скрещенная версия элитного скафандра Cybersun и технологий био-защиты Interdyne
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Head/Hardsuits/InterdyneCBURNhelm.rsi
+  - type: Clickable
+  - type: Clothing
+    sprite: _Horizon/Clothing/Head/Hardsuits/InterdyneCBURNhelm.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.005
+    coolingCoefficient: 0.005
+  - type: FireProtection
+    reduction: 0.2
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.95
+        Heat: 0.8
+        Radiation: 0.25
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: UseDelay
+    delay: 4
+  - type: PNV

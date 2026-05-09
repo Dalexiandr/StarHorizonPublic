@@ -1,0 +1,15 @@
+ent-AirSensorVoxBase = { ent-AirSensorBase }
+    .suffix = Vox Atmosphere
+    .desc = { ent-AirSensorBase.desc }
+ent-AirSensorVox = { ent-AirSensor }
+    .desc = { ent-AirSensor.desc }
+    .suffix = Атмосфера Воксов
+ent-GasVentPumpVox = { ent-GasVentPump }
+    .desc = { ent-GasVentPump.desc }
+    .suffix = Атмосфера Воксов
+ent-GasVentScrubberVox = { ent-GasVentScrubber }
+    .desc = { ent-GasVentScrubber }
+    .suffix = Атмосфера Воксов
+ent-AirAlarmVox = { ent-AirAlarm }
+    .suffix = Атмосфера Воксов, автомод выкл
+    .desc = { ent-AirAlarm.desc }

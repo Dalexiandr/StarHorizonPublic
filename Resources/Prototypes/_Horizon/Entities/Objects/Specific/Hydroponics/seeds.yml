@@ -1,0 +1,591 @@
+- type: entity
+  parent: SeedBase
+  name: пакет семян (мята)
+  suffix: Horizon
+  id: MintPlantSeeds
+  components:
+  - type: Seed
+    seedId: mintplant
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/mint.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (котовик)
+  suffix: Horizon
+  id: CatNipSeeds
+  components:
+  - type: Seed
+    seedId: catnip
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/catnip.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет спор (стеклошляпник)
+  suffix: Horizon
+  id: GlasscapSeeds
+  components:
+  - type: Seed
+    seedId: glasscap
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/glasscap.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет спор (пластошляпник)
+  suffix: Horizon
+  id: PlastSteelcapSeeds
+  components:
+  - type: Seed
+    seedId: plaststeelcap
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/plaststeelcap.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (блюспейсинка)
+  suffix: Horizon
+  id: BerriesbluespaceSeeds
+  components:
+  - type: Seed
+    seedId: berriesbluespace
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/berriesbluespace.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (смертовица)
+  suffix: Horizon
+  id: BerriesdeathSeeds
+  components:
+  - type: Seed
+    seedId: berriesdeath
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/berriesdeath.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (ледовица)
+  suffix: Horizon
+  id: BerriesiceSeeds
+  components:
+  - type: Seed
+    seedId: berriesice
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/berriesice.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (тепловица)
+  suffix: Horizon
+  id: BerriesflameSeeds
+  components:
+  - type: Seed
+    seedId: berriesflame
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/berriesflame.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет спор (светогриб)
+  suffix: Horizon
+  id: LightmushroomSeeds
+  components:
+  - type: Seed
+    seedId: lightmushroom
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/lightmushroom.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет спор (белый гриб)
+  suffix: Horizon
+  id: WhitemushroomSeeds
+  components:
+  - type: Seed
+    seedId: whitemushroom
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/whitemushroom.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (хмель)
+  suffix: Horizon
+  id: WineshopSeeds
+  components:
+  - type: Seed
+    seedId: wineshop
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/wineshop.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (кофе арабика)
+  suffix: Horizon
+  id: CoffeearabicaSeeds
+  components:
+  - type: Seed
+    seedId: coffeearabica
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/coffeearabica.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (кофе либерика)
+  suffix: Horizon
+  id: CoffeelibericaSeeds
+  components:
+  - type: Seed
+    seedId: coffeeliberica
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/coffeeliberica.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (кофе робуста)
+  suffix: Horizon
+  id: CoffeerobustaSeeds
+  components:
+  - type: Seed
+    seedId: coffeerobusta
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/coffeerobusta.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (дюрахлопок)
+  suffix: Horizon
+  id: DurottonSeeds
+  components:
+  - type: Seed
+    seedId: durotton
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/durotton.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (жизнетрав)
+  suffix: Horizon
+  id: LifeweedSeeds
+  components:
+  - type: Seed
+    seedId: lifeweed
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/lifeweed.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (смертетрав)
+  suffix: Horizon
+  id: DeathweedSeeds
+  components:
+  - type: Seed
+    seedId: deathweed
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/deathweed.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (амброзия гаййя)
+  suffix: Horizon
+  id: AmbrosiaGaiaSeeds
+  components:
+  - type: Seed
+    seedId: ambrosiaGaia
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/ambrosia_gaia.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (подозрительная капуста)
+  suffix: Horizon
+  id: MoneyCabbageSeeds
+  components:
+  - type: Seed
+    seedId: moneycabbage
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/moneycabbage.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (плазменная капуста)
+  suffix: Horizon
+  id: PlasmaCabbageSeeds
+  components:
+  - type: Seed
+    seedId: plasmacabbage
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/plasmacabbage.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (алкобуз)
+  suffix: Horizon
+  id: BarrelmelonSeeds
+  components:
+  - type: Seed
+    seedId: barrelmelon
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/barrelmelon.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (желтая гвоздика)
+  suffix: Horizon
+  id: CloveySeeds
+  components:
+  - type: Seed
+    seedId: clovey
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/clovey.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (белая гвоздика)
+  suffix: Horizon
+  id: ClovewSeeds
+  components:
+  - type: Seed
+    seedId: clovew
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/clovew.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (красная гвоздика)
+  suffix: Horizon
+  id: CloverSeeds
+  components:
+  - type: Seed
+    seedId: clover
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/clover.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (фиолетовая гвоздика)
+  suffix: Horizon
+  id: ClovepSeeds
+  components:
+  - type: Seed
+    seedId: clovep
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/clovep.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (фиолетовая лилия)
+  suffix: Horizon
+  id: LilypSeeds
+  components:
+  - type: Seed
+    seedId: lilyp
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/lilyp.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (оранжевая лилия)
+  suffix: Horizon
+  id: LilyoSeeds
+  components:
+  - type: Seed
+    seedId: lilyo
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/lilyo.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (голубая лилия)
+  suffix: Horizon
+  id: LilybSeeds
+  components:
+  - type: Seed
+    seedId: lilyb
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/lilyb.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (белая роза)
+  suffix: Horizon
+  id: RosewSeeds
+  components:
+  - type: Seed
+    seedId: rosew
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/rosew.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (красная роза)
+  suffix: Horizon
+  id: RoserSeeds
+  components:
+  - type: Seed
+    seedId: roser
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/roser.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (розовая роза)
+  suffix: Horizon
+  id: RosepSeeds
+  components:
+  - type: Seed
+    seedId: rosep
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/rosep.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (светло-розовая роза)
+  suffix: Horizon
+  id: RoselpSeeds
+  components:
+  - type: Seed
+    seedId: roselp
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/roselp.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (ромашка)
+  suffix: Horizon
+  id: ChamomilerSeeds
+  components:
+  - type: Seed
+    seedId: chamomiler
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/chamomiler.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (василек)
+  suffix: Horizon
+  id: ChamomilevSeeds
+  components:
+  - type: Seed
+    seedId: chamomilev
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/chamomilev.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (светло-розовый тюльпан)
+  suffix: Horizon
+  id: TuliplpSeeds
+  components:
+  - type: Seed
+    seedId: tuliplp
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/tuliplp.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (розовый тюльпан)
+  suffix: Horizon
+  id: TulippSeeds
+  components:
+  - type: Seed
+    seedId: tulipp
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/tulipp.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (красный тюльпан)
+  suffix: Horizon
+  id: TuliprSeeds
+  components:
+  - type: Seed
+    seedId: tulipr
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/tulipr.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (желтый тюльпан)
+  suffix: Horizon
+  id: TulipySeeds
+  components:
+  - type: Seed
+    seedId: tulipy
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/tulipy.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (адский перец)
+  suffix: Horizon
+  id: ChillFireSeeds
+  components:
+  - type: Seed
+    seedId: chillfire
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/chillfire.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (зеленый виноград)
+  suffix: Horizon
+  id: GrapegSeeds
+  components:
+  - type: Seed
+    seedId: grapeg
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/grapeg.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (черный виноград)
+  suffix: Horizon
+  id: GrapebSeeds
+  components:
+  - type: Seed
+    seedId: grapeb
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/grapeb.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (кислотный томат)
+  suffix: Horizon
+  id: AcidTomatoSeeds
+  components:
+  - type: Seed
+    seedId: acidTomato
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/acid_tomato.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет спор (гриб полимор)
+  suffix: Horizon
+  id: MushroompolymoreSeeds
+  components:
+  - type: Seed
+    seedId: mushroompolymore
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/mushroompolymore.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет спор (гриб иноциб)
+  suffix: Horizon
+  id: MushroominocybeSeeds
+  components:
+  - type: Seed
+    seedId: mushroominocybe
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/mushroominocybe.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет спор (гриб порцини)
+  suffix: Horizon
+  id: MushroomporciniSeeds
+  components:
+  - type: Seed
+    seedId: mushroomporcini
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/mushroomporcini.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (подсолнух)
+  suffix: Horizon
+  id: SunflowerSeeds
+  components:
+  - type: Seed
+    seedId: sunflower
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/sunflower.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (новасвет)
+  suffix: Horizon
+  id: NovaflowerSeeds
+  components:
+  - type: Seed
+    seedId: novaflower
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/novaflower.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (луносвет)
+  suffix: Horizon
+  id: MoonflowerSeeds
+  components:
+  - type: Seed
+    seedId: moonflower
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/moonflower.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (сладкая вишня)
+  suffix: Horizon
+  id: CherrybulbSeeds
+  components:
+  - type: Seed
+    seedId: cherrybulb
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/cherrybulb.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (вишнебомба)
+  suffix: Horizon
+  id: CherrybombSeeds
+  components:
+  - type: Seed
+    seedId: cherrybomb
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/cherrybomb.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (голубая вишня)
+  suffix: Horizon
+  id: CherryblueSeeds
+  components:
+  - type: Seed
+    seedId: cherryblue
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/cherryblue.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет семян (алмазная морковь)
+  suffix: Horizon
+  id: DiamondcarrotSeeds
+  components:
+  - type: Seed
+    seedId: diamondcarrot
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/diamondcarrot.rsi
+
+- type: entity
+  parent: SeedBase
+  name: packet of blue tomato seeds
+  id: BluespaceTomatoSeeds
+  components:
+  - type: Seed
+    seedId: bluespaceTomato
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/bluespace_tomato.rsi
+
+- type: entity
+  parent: SeedBase
+  name: пакет косточек персика
+  id: PeachSeeds
+  components:
+  - type: Seed
+    seedId: peach
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/peach.rsi

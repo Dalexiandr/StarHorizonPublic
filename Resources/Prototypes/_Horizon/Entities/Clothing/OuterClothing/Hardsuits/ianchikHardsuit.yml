@@ -1,0 +1,59 @@
+# Horizon: Ianchik "Strazha" Hardsuit
+# Лёгкий скафандр "Стража" — многослойный антрацитово-серый бронекомбинезон
+
+# Скафандр
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ClothingOuterHardsuitIanchik
+  name: ianchik hardsuit
+  description: A multi-layered anthracite-gray armored jumpsuit with ceramo-metallic plates, weld marks and patches of radiation protection. Worn white bomber jacket with embedded plates for additional protection.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Hardsuits/IanchikHardsuit.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/OuterClothing/Hardsuits/IanchikHardsuit.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: FireProtection
+    reduction: 0.25
+  - type: ExplosionResistance
+    damageCoefficient: 0.4
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.75
+        Slash: 0.75
+        Piercing: 0.8
+        Heat: 0.5
+        Radiation: 0.3
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.85
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitIanchik
+
+# Шлем
+- type: entity
+  parent: ClothingHeadHardsuitBase
+  id: ClothingHeadHelmetHardsuitIanchik
+  name: ianchik hardsuit helmet
+  description: A void helmet with Y-shaped tinted visor, armored cheek pads and subtle tactical network glow.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Head/Hardsuits/IanchikHelmet.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Head/Hardsuits/IanchikHelmet.rsi
+    clothingVisuals:
+      head:
+      - state: on-equipped-HELMET
+      head-vox:
+      - state: on-equipped-HELMET
+  - type: PointLight
+    color: "#6600ff"
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: FireProtection
+    reduction: 0.5

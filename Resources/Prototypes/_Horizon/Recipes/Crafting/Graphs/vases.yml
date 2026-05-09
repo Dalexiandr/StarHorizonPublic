@@ -1,0 +1,27 @@
+- type: constructionGraph
+  id: craftvaseone
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: CraftVaseOne
+          steps:
+          - material: Glass
+            amount: 2
+            doAfter: 3
+    - node: CraftVaseOne
+      entity: DrinkGlassVaseOne
+
+- type: constructionGraph
+  id: craftvasetwo
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: CraftVaseTwo
+          steps:
+          - material: Glass
+            amount: 3
+            doAfter: 3
+    - node: CraftVaseTwo
+      entity: DrinkGlassVaseTwo

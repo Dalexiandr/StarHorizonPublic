@@ -1,0 +1,41 @@
+# Tier 3
+
+- type: technology
+  id: PhazonTechnology
+  name: research-technology-mech-phazon
+  entityIcon: MechPhazon
+  discipline: NFScience
+  tier: 3
+  cost: 20000
+  recipeUnlocks:
+  - PhazonHarness
+  - PhazonLArm
+  - PhazonRArm
+  - PhazonLLeg
+  - PhazonRLeg
+  - PhazonHead
+  - PhazonArmorPlates
+  - PhazonCentralElectronics
+  - PhazonPeripheralsElectronics
+  - PhazonWeaponControlElectronics
+  technologyPrerequisites:
+  - RipleyMKIITechnology
+  position: 3, 34
+  researchTargets:
+  - TechnologyDiscPhazonTechnology
+
+- type: technology
+  id: PhazonMechPaint
+  name: research-technology-mech-phazon-paint
+  entityIcon: MechPhazonBlanco
+  discipline: NFScience
+  tier: 3
+  cost: 20000
+  recipeUnlocks:
+  - MechPhazonBlancoUpgradeKit
+  - MechPhazonImperionUpgradeKit
+  - MechPhazonJanusUpgradeKit
+  - MechPhazonPlazmusUpgradeKit
+  technologyPrerequisites:
+  - PhazonTechnology
+  position: 4, 34

@@ -1,0 +1,30 @@
+<BoxContainer
+    xmlns="https://spacestation14.io"
+    xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+    Orientation="Vertical"
+    HorizontalExpand="True"
+    VerticalExpand="True"
+    Margin="8">
+
+    <!-- Header -->
+    <BoxContainer Orientation="Vertical" SeparationOverride="2" Margin="4 0 4 4">
+        <Label Name="HeaderLabel" StyleClasses="LabelHeading"
+               Text="{Loc 'event-item-tab-header'}" />
+        <Label Name="SubHeaderLabel" StyleClasses="LabelSubText"
+               Text="{Loc 'event-item-tab-subheader'}" />
+    </BoxContainer>
+
+    <PanelContainer StyleClasses="LowDivider" Margin="0 4" />
+
+    <!-- No items message -->
+    <Label Name="NoItemsLabel" StyleClasses="LabelSubText"
+           Text="{Loc 'event-item-tab-no-items'}"
+           Visible="True"
+           HorizontalAlignment="Center"
+           Margin="0 16" />
+
+    <!-- Items list -->
+    <ScrollContainer VerticalExpand="True" HScrollEnabled="False" Margin="0 2">
+        <BoxContainer Name="ItemsContainer" Orientation="Vertical" SeparationOverride="4" HorizontalExpand="True" />
+    </ScrollContainer>
+</BoxContainer>

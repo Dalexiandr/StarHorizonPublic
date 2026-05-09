@@ -1,0 +1,18 @@
+- type: entity
+  name: Ручка АнКо
+  suffix: StarHorizon, AnCo
+  description: Наглядный пример овер-инжиниринга.
+  parent: [Pen, BaseAnCoContraband]
+  id: PenAnCo
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Misc/pen.rsi
+    state: anco-pen
+  - type: MeleeWeapon
+    wideAnimationRotation: 0
+    attackRate: 1
+    damage:
+      types:
+        Piercing: 15
+  - type: StaticPrice
+    price: 15000

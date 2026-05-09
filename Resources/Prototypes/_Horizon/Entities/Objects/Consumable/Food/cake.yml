@@ -1,0 +1,91 @@
+- type: entity
+  name: свадебный торт
+  parent: FoodCakeBase
+  id: FoodCakeWedding
+  description: Накорми свою вторую половинку сладеньким.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Consumable/Food/Baked/cake.rsi
+    state: wedding
+  - type: SliceableFood
+    count: 10
+    slice: FoodCakeWeddingSlice
+  - type: Tag
+    tags:
+    - Cake
+    - Fruit
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 60
+        reagents:
+        - ReagentId: JuiceBerry
+          Quantity: 20
+        - ReagentId: Sugar
+          Quantity: 20
+        - ReagentId: Vitamin
+          Quantity: 10
+        - ReagentId: Flavorol
+          Quantity: 10
+  - type: CreamPie
+  - type: ThrowingAngle
+    angle: 180
+  - type: LandAtCursor
+  - type: ContainerContainer
+    containers:
+      payloadSlot: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      payloadSlot:
+        whitelist:
+          components:
+          - OnUseTimerTrigger
+        insertSound:
+          path: /Audio/Weapons/Guns/Empty/empty.ogg
+        ejectSound:
+          path: /Audio/Weapons/Guns/Empty/empty.ogg
+        swap: false
+        disableEject: true
+  - type: Food
+    trash:
+    - FoodPlate
+
+- type: entity
+  name: кусок свадебного торта
+  parent: FoodCakeSliceBase
+  id: FoodCakeWeddingSlice
+  description: Накорми свою вторую половинку сладеньким.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Consumable/Food/Baked/cake.rsi
+    state: wedding_slice
+  - type: SliceableFood
+    slice: FoodCakeWeddingSlice
+  - type: Tag
+    tags:
+    - Cake
+    - Fruit
+    - Slice
+  - type: CreamPie
+  - type: ThrowingAngle
+    angle: 180
+  - type: LandAtCursor
+  - type: ContainerContainer
+    containers:
+      payloadSlot: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      payloadSlot:
+        whitelist:
+          components:
+          - OnUseTimerTrigger
+        insertSound:
+          path: /Audio/Weapons/Guns/Empty/empty.ogg
+        ejectSound:
+          path: /Audio/Weapons/Guns/Empty/empty.ogg
+        swap: false
+        disableEject: true
+  - type: Food
+    trash:
+    - FoodPlateSmall       
+

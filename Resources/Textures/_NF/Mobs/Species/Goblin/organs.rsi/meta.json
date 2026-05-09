@@ -1,0 +1,129 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation and cev-eris at https://github.com/tgstation/tgstation/commit/c4b7f3c41b6742aca260fe60cc358a778ba9b8c8 and https://github.com/discordia-space/CEV-Eris/commit/476e374cea95ff5e8b1603c48342bf700e2cd7af | modified by erhardsteinhauer (discord)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "appendix"
+    },
+    {
+      "name": "appendix_world"
+    },
+    {
+      "name": "appendix-inflamed"
+    },
+    {
+      "name": "brain"
+    },
+    {
+      "name": "brain_world"
+    },
+    {
+      "name": "brain-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "brain-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "ears"
+    },
+    {
+      "name": "ears_world"
+    },
+    {
+      "name": "eyeball-l"
+    },
+    {
+      "name": "eyeball-r"
+    },
+    {
+      "name": "eyeballs_world"
+    },
+    {
+      "name": "heart-off"
+    },
+    {
+      "name": "heart-off_world"
+    },
+    {
+      "name": "heart-on",
+      "delays": [
+        [
+          0.6,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "heart-on_world",
+      "delays": [
+          [
+            0.6,
+            0.1,
+            0.1
+          ]
+      ]
+    },
+    {
+      "name": "kidney_world"
+    },
+    {
+      "name": "kidney-l"
+    },
+    {
+      "name": "kidney-r"
+    },
+    {
+      "name": "liver_world"
+    },
+    {
+      "name": "liver"
+    },
+    {
+      "name": "lungs_world"
+    },
+    {
+      "name": "lung-l"
+    },
+    {
+      "name": "lung-r"
+    },
+    {
+      "name": "stomach"
+    },
+    {
+      "name": "stomach_world"
+    },
+    {
+      "name": "tongue"
+    },
+    {
+      "name": "tongue_world"
+    },
+    {
+      "name": "muscle"
+    },
+    {
+      "name": "muscle_world"
+    },
+    {
+      "name": "nerve"
+    },
+    {
+      "name": "nerve_world"
+    },
+    {
+      "name": "vessel"
+    },
+    {
+      "name": "vessel_world"
+    }
+  ]
+}

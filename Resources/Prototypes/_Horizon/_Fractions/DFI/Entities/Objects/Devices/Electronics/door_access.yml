@@ -1,0 +1,7 @@
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsDFI
+  suffix: StarHorizon, DFI, Locked
+  components:
+  - type: AccessReader
+    access: [["DFI"]]

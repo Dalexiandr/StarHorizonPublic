@@ -1,0 +1,19 @@
+- type: cargoProduct
+  id: ShuttleSmallThruster
+  icon:
+    sprite: _NF/Structures/Shuttles/thruster.rsi
+    state: base_small
+  product: CrateEngineeringSmallThruster
+  cost: 500
+  category: cargoproduct-category-name-shuttle
+  group: market
+
+- type: cargoProduct
+  id: ShuttleSmallGyroscope
+  icon:
+    sprite: _NF/Structures/Shuttles/gyroscope.rsi
+    state: base_small
+  product: CrateEngineeringSmallGyroscope
+  cost: 500
+  category: cargoproduct-category-name-shuttle
+  group: market

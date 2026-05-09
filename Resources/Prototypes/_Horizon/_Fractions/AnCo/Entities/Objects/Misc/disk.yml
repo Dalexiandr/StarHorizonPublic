@@ -1,0 +1,18 @@
+- type: entity
+  id: AnCoDiskCryptonimer
+  name: ардониевый диск
+  parent: [ BaseItem, BaseAnCoContraband]
+  suffix: StarHorizon, AnCo
+  description: Диск с системой записи информации на ардониеваую микроструктурную матрицу
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Misc/disk.rsi
+    state: disk
+  - type: Item
+  - type: StaticPrice
+    price: 275
+  - type: Tag
+    tags:
+      - CryptominerDisk
+  - type: CryptominerDisk
+    maxCredits: 10000

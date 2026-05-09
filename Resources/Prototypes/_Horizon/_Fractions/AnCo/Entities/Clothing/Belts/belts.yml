@@ -1,0 +1,17 @@
+- type: entity
+  id: ClothingBeltAnCo
+  parent: [ NFClothingBeltStorageBase, BaseAnCoContraband ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Belt/belt.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Belt/belt.rsi
+
+- type: entity
+  id: ClothingBeltWebbingAnCo
+  parent: [ NFClothingBeltStorageBase, BaseAnCoContraband ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Belt/belt_webbing.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Belt/belt_webbing.rsi

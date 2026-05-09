@@ -1,0 +1,42 @@
+- type: entity
+  parent: AccessConfigurator
+  id: AccessConfiguratorDFI
+  name: DFI access configurator
+  suffix: StarHorizon, DFI
+  description: Used to modify the access level requirements for DFI airlocks and other lockable devices.
+  components:
+    - type: AccessOverrider
+      accessLevels:
+      - DFI
+      - DFI-Cadet
+      - DFI-Officer
+      - DFI-IU
+      - DFI-CAU
+      - DFI-ShiftManager
+      - DFI-Evidence
+      - DFI-Observation
+      - DFI-Special
+      - DFI-CIC
+      - DFI-Armory
+      - DFI-APS
+      - DFI-TRC
+      - Security
+      - Service
+      - Medical
+      - Maintenance
+      - Janitor
+      - Captain
+      - Engineering
+      - External
+      privilegedIdSlot:
+        name: id-card-console-privileged-id
+        ejectSound: /Audio/Machines/id_swipe.ogg
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectOnBreak: true
+        swap: false
+        whitelist:
+          components:
+          - IdCard
+      denialSound:
+        path: /Audio/Machines/custom_deny.ogg
+      doAfter: 0.5

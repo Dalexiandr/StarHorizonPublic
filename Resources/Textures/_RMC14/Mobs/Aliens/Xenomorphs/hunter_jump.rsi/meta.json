@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from RMC-14: https://github.com/RMC-14/RMC-14/blob/master/Resources/Textures/_RMC14/Mobs/Xenonids",
+  "size": {
+    "x": 64,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "xenomorph_jump",
+      "directions": 4
+    }
+  ]
+}

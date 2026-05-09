@@ -1,0 +1,61 @@
+﻿- type: body
+  id: Vox
+  name: "vox"
+  root: torso
+  slots:
+    head:
+      part: HeadVox
+      connections:
+      - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganHumanEyes
+        tongue: OrganHumanTongue
+        eye_implant: null # Horizon
+        cyberdeka_implant: null # Horizon
+    torso:
+      part: TorsoVox
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      organs:
+        heart: OrganVoxHeart
+        lungs: OrganVoxLungs
+        stomach: OrganVoxStomach
+        liver: OrganVoxLiver
+        kidneys: OrganHumanKidneys
+        vessels_implant: null # Horizon
+        blood_pump_implant: null
+        skin_implant: null # Horizon
+        bone_implant: null # Horizon
+        cavity: null # Horizon
+    right arm:
+      part: RightArmVox
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmVox
+      connections:
+      - left hand
+    right hand:
+      part: RightHandVox
+      organs:
+        hands_implant: null # Horizon
+    left hand:
+      part: LeftHandVox
+      organs:
+        hands_implant: null # Horizon
+    right leg:
+      part: RightLegVox
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegVox
+      connections:
+      - left foot
+    right foot:
+      part: RightFootVox
+    left foot:
+      part: LeftFootVox

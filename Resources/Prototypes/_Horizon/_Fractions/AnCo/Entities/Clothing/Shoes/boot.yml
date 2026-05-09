@@ -1,0 +1,39 @@
+- type: entity
+  parent: [ClothingShoesMilitaryBase, BaseAnCoContraband]
+  id: AnCoBoots
+  suffix: StarHorizon, AnCo
+  name: боевые ботинки АнКо
+  description: Ботинки с укреплённой подошвой из кристалла Ардония.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Shoes/Boots/boot.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Shoes/Boots/boot.rsi
+  - type: Tag
+    tags: [] # Выносим с ВЛа для хамелеонки
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.4
+  - type: StaticPrice
+    price: 5000
+
+- type: entity
+  parent: [ClothingShoesBootsMagBase, BaseAnCoContraband]
+  id: AnCoClothingShoesBootsMag
+  name: магнитные ботинки АнКо
+  suffix: StarHorizon, AnCo
+  description: Ботинки облегчённой конструкции. Обладают продвинутой системой магнитов.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Shoes/Boots/magboots.rsi
+    layers:
+    - state: icon
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: Clothing
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Shoes/Boots/magboots.rsi
+  - type: Tag
+    tags: [] # Выносим с ВЛа для хамелеонки
+  - type: StaticPrice
+    price: 200
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1

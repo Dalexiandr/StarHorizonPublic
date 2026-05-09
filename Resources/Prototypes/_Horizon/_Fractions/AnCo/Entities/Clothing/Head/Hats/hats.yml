@@ -1,0 +1,33 @@
+- type: entity
+  parent: [ClothingHeadBase, BaseAnCoContraband]
+  id: AnCoberet
+  name: берет АнКо
+  suffix: StarHorizon, AnCo
+  description: Берет только для настоящих патриотов. Слава АнКо!
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Head/Hats/beret.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Head/Hats/beret.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+  - type: StaticPrice
+    price: 5000
+
+- type: entity
+  parent: [ClothingHeadBase, BaseAnCoContraband]
+  id: AnCocap
+  name: фуражка AnCo
+  suffix: StarHorizon, AnCo
+  description: Фуражка для настоящих патриотов. Слава АнКо!
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Head/Hats/cap.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Head/Hats/cap.rsi
+  - type: Tag
+    tags:
+    - HamsterWearable
+  - type: StaticPrice
+    price: 5000

@@ -1,0 +1,16 @@
+ent-MachineShieldLightCircuitboard = генератор щита CIR-C1A (машинная плата)
+    .desc = Машинная плата для генератора щита CIR-C1A.
+ent-MachineShieldMediumCircuitboard = генератор щита CIR-C2B (машинная плата)
+    .desc = Машинная плата для генератора щита CIR-C2B.
+ent-MachineShieldLargeCircuitboard = генератор щита CIR-C3C (машинная плата)
+    .desc = Машинная плата для генератора щита CIR-C3C.
+ent-MachineGCSLowCircuitboard = маломощный сервер контроля орудий (машинная плата)
+    .desc = Машинная плата для СКО.
+ent-MachineGCSMediumCircuitboard = среднемощный сервер контроля орудий (машинная плата)
+    .desc = Машинная плата для СКО.
+ent-MachineGCSHighCircuitboard = высокомощный сервер контроля орудий (машинная плата)
+    .desc = Машинная плата для СКО.
+ent-MachineGCSUltraCircuitboard = ультрамощный сервер контроля орудий (машинная плата)
+    .desc = Машинная плата для СКО.
+ent-MachineGCSStationCircuitboard = станционный сервер контроля орудий (машинная плата)
+    .desc = Машинная плата для СКО.

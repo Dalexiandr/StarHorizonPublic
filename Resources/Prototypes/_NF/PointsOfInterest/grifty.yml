@@ -1,0 +1,35 @@
+# Author Info
+# GitHub:
+# Discord: ???
+
+# Maintainer Info
+# GitHub: ???
+# Discord: ???
+
+# Notes:
+# Down at your local saloon
+- type: pointOfInterest
+  id: Grifty
+  parent: BasePOI
+  name: "Газ и Хавка Грифти"
+  minimumDistance: 5000 # Horizon
+  maximumDistance: 7500 # Horizon
+  spawnGroup: Required # Horizon
+  gridPath: /Maps/_Horizon/POI/grifty.yml #Horizon-Maps
+  addComponents:
+  - type: SolarPoweredGrid
+    trackOnInit: true
+    doNotCull: true
+
+- type: gameMap
+  id: Grifty
+  mapName: "Газ и Хавка Грифти"
+  mapPath: /Maps/_Horizon/POI/grifty.yml #Horizon-Maps
+  minPlayers: 0
+  stations:
+    Grifty:
+      stationProto: StandardFrontierOutpost
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Газ и Хавка Грифти"
+        - type: BindToStationVariationPassExemption

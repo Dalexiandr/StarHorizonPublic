@@ -1,0 +1,26 @@
+- type: job
+  id: TraumaMedTech
+  name: job-name-traumamedtech
+  description: job-description-traumamedtech
+  playTimeTracker: JobTraumaMedTech
+  whitelisted: true
+  startingGear: ParamedicGear
+  alwaysUseSpawner: true
+  icon: "JobIconDoc"
+  supervisors: job-supervisors-trauma-repr
+  weight: 170
+  canBeAntag: false
+  accessGroups:
+    - AllAccess
+  special:
+    - !type:AddImplantSpecial
+      implants: [MindShieldImplant]
+
+- type: startingGear
+  id: TraumaMedTechGear
+  equipment:
+    id: TraumaMedTechIDCard
+    pocket1: EncryptionKeyTrauma
+    pocket2: PinpointerUniversal
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorRed
+    shoes: ClothingShoesSwat

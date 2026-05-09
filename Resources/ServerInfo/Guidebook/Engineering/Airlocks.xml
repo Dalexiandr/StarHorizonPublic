@@ -1,0 +1,58 @@
+﻿<Document>
+  # Шлюзы
+  Контролируют доступ в различные зоны станции.
+
+  <Box>
+    <GuideEntityEmbed Entity="Airlock" Caption=""/>
+    <GuideEntityEmbed Entity="AirlockGlass" Caption=""/>
+  </Box>
+
+  Открываются:
+  - [color=yellow][bold][keybind="Use"][/bold][/color] - пустой рукой
+  - [color=yellow][bold][keybind="ActivateItemInWorld"][/bold][/color] - если руки заняты
+  - При столкновении
+
+  Требуется ID-карта с соответствующим доступом (в руке или слоте). PDA с картой также работает.
+
+  <Box>
+    <GuideEntityEmbed Entity="AccessConfigurator" Caption=""/>
+    <GuideEntityEmbed Entity="Multitool" Caption=""/>
+    <GuideEntityEmbed Entity="DoorElectronics" Caption=""/>
+  </Box>
+
+  Герметизируют помещения при [textlink="разгерметизации" link="Spacing"] или [textlink="пожарах" link="Fires"].
+
+  ## Блокировка и аварийный доступ
+  - Красный индикатор: шлюз заблокирован
+  - Жёлтый мигающий: аварийный доступ (открыт для всех)
+
+  ## Дистанционное управление
+  Доступно ИИ станции или через пульты ДУ:
+
+  <Box>
+    <GuideEntityEmbed Entity="PlayerStationAiEmpty" Caption=""/>
+  </Box>
+  <Box>
+    [color=#999999][italic]Станционный ИИ имеет полный контроль над шлюзами[italic][/color]
+  </Box>
+
+  <Box>
+    <GuideEntityEmbed Entity="DoorRemoteEngineering" Caption=""/>
+    <GuideEntityEmbed Entity="DoorRemoteCommand" Caption=""/>
+    <!-- Остальные пульты -->
+  </Box>
+
+  ## Стилизация
+  Доступны различные стили под отделы станции. Можно перекрашивать распылителем.
+
+  <Box>
+    <GuideEntityEmbed Entity="SprayPainter" Caption=""/>
+  </Box>
+
+  ## Электропроводка
+  Каждый провод отвечает за определённую функцию:
+  - [color=#a4885c]Блокировка (BOLT)[/color]
+  - [color=#a4885c]Питание (POWR)[/color]
+  - [color=#a4885c]Логи (LOG)[/color]
+  <!-- Остальные провода -->
+</Document>

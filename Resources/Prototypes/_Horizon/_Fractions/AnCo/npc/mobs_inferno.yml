@@ -1,0 +1,233 @@
+- type: entity
+  id: BaseAnCoIfterno
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Tag
+    tags:
+      - DoorBumpOpener
+  - type: NpcFactionMember
+    factions:
+      - SimpleHostile
+  - type: HTN
+    rootTask:
+       task: InfernoSimpleMeleeHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      VisionRadius: !type:Single
+        20
+      AggroVisionRadius: !type:Single
+        20
+  - type: Tool
+    speedModifier: 5.0
+    qualities:
+      - Prying
+    hideQualities: true
+  - type: Prying
+    pryPowered: true
+    force: true
+    speedModifier: 5.0
+
+- type: entity
+  parent: [AnCoDroneDungeon, BaseAnCoIfterno]
+  id: AnCoCrabInferno
+  name: защитный бот АнКо
+  suffix: Inferno
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HTN
+    rootTask:
+       task: InfernoSimpleMeleeHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      VisionRadius: !type:Single
+        20
+      AggroVisionRadius: !type:Single
+        20
+
+- type: entity
+  parent: [AnCoDroneCombatDungeon, BaseAnCoIfterno]
+  id: AnCoDroneCombatInferno
+  name: боевой бот АнКо
+  suffix: Inferno
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HTN
+    rootTask:
+       task: InfernoSimpleMeleeHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      VisionRadius: !type:Single
+        20
+      AggroVisionRadius: !type:Single
+        20
+
+- type: entity
+  parent: [AnCoDroneMineDungeon, BaseAnCoIfterno]
+  id: AnCoDroneMineInferno
+  name: бот бомба АнКо
+  suffix: Inferno
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HTN
+    rootTask:
+       task: InfernoSimpleMeleeHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      VisionRadius: !type:Single
+        20
+      AggroVisionRadius: !type:Single
+        20
+
+- type: entity
+  parent: [AnCoFlyDroneSmallDungeon, BaseAnCoIfterno]
+  id: AnCoFlyDroneSmallInferno
+  name: дрон компаньен АнКо
+  suffix: Inferno
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HTN
+    rootTask:
+       task: InfernoSimpleMeleeHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      VisionRadius: !type:Single
+        20
+      AggroVisionRadius: !type:Single
+        20
+
+- type: entity
+  parent: [AnCoFlyDroneHugeDungeon, BaseAnCoIfterno]
+  id: AnCoFlyDroneHugeInferno
+  name: боевой дрон АнКо
+  suffix: Inferno
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HTN
+    rootTask:
+       task: InfernoSimpleRangedHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      VisionRadius: !type:Single
+        20
+      AggroVisionRadius: !type:Single
+        20
+  - type: CombatMode
+  - type: Gun
+    fireRate: 4
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+
+- type: entity
+  parent: [AnCoMechTitanDungeon, BaseAnCoIfterno]
+  id: AnCoMechTitanInferno
+  suffix: Inferno
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HTN
+    rootTask:
+       task: InfernoSimpleRangedHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      VisionRadius: !type:Single
+        20
+      AggroVisionRadius: !type:Single
+        20
+
+- type: entity
+  parent: [AnCoMechCyclopDungeon, BaseAnCoIfterno]
+  id: AnCoMechCyclopInferno
+  suffix: Inferno
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HTN
+    rootTask:
+       task: InfernoSimpleRangedHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      VisionRadius: !type:Single
+        20
+      AggroVisionRadius: !type:Single
+        20
+
+- type: entity
+  parent: [AnCoMechBegemothDungeon, BaseAnCoIfterno]
+  id: AnCoMechBegemothInferno
+  suffix: Inferno
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HTN
+    rootTask:
+       task: InfernoSimpleRangedHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      VisionRadius: !type:Single
+        20
+      AggroVisionRadius: !type:Single
+        20
+
+- type: entity
+  parent: [AnCoMechMushDungeon, BaseAnCoIfterno]
+  id: AnCoMechMushInferno
+  suffix: Inferno
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HTN
+    rootTask:
+       task: InfernoSimpleRangedHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      VisionRadius: !type:Single
+        20
+      AggroVisionRadius: !type:Single
+        20

@@ -1,0 +1,16 @@
+ent-Bullet40mmGrenadeBaton = травматическая граната
+    .desc = { ent-BaseBullet.desc }
+ent-Bullet40mmGrenadeBlast = фугасная граната
+    .desc = { ent-BaseBullet.desc }
+ent-Bullet40mmGrenadeHEAT = кумулятивная граната
+    .desc = { ent-BaseBullet.desc }
+ent-Bullet40mmGrenadeEMP = ЭМИ граната
+    .desc = { ent-BaseBullet.desc }
+ent-Bullet40mmGrenadeFlash = светошумовая граната
+    .desc = { ent-BaseBullet.desc }
+ent-Bullet40mmGrenadeSmoke = дымовая граната
+    .desc = { ent-BaseBullet.desc }
+ent-BulletFragRocket = frag rocket
+    .desc = { ent-BaseBulletTrigger.desc }
+ent-BulletBlastRocket = blast rocket
+    .desc = { ent-BaseBulletTrigger.desc }

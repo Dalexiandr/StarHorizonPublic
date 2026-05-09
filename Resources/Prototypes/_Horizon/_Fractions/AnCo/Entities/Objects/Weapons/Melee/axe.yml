@@ -1,0 +1,96 @@
+- type: entity
+  id: AnCoAxe
+  name: Ардонивый топор АнКо
+  parent: BaseAnCoSharpWeapon
+  description: Устали от обычных топоров? Покройте его ардонием и сделайте смертоноснее в 10 раз!
+  suffix: StarHorizon, AnCo, Weapon
+  components:
+  - type: Execution
+    doAfterDuration: 4.0
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Melee/axe.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    swingLeft: false
+    attackRate: 0.75
+    damage:
+      types:
+        Blunt: 5
+        Slash: 10
+        Structural: 10
+    soundHit:
+      collection: MetalThud
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 10
+        Structural: 40
+  - type: Item
+    size: Ginormous
+  - type: Clothing
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Melee/axe.rsi
+    quickEquip: false
+    slots:
+    - back
+    - suitStorage
+  - type: Tool
+    qualities:
+    - Prying
+    useSound:
+      path: /Audio/Items/jaws_pry.ogg
+  - type: ToolTileCompatible
+  - type: Prying
+    pryPowered: true
+    force: true
+    useSound: /Audio/Items/jaws_pry.ogg
+    enabled: false
+  - type: MultipleTool
+    statusShowBehavior: true
+    entries:
+    - behavior: Prying
+      useSound:
+        path: /Audio/Items/jaws_pry.ogg
+      changeSound:
+        path: /Audio/Items/change_drill.ogg
+    - behavior: Welding
+      useSound:
+        collection: Welder
+      changeSound:
+        path: /Audio/Items/change_drill.ogg
+    - behavior: Cutting
+      useSound:
+        path: /Audio/Items/jaws_cut.ogg
+      changeSound:
+        path: /Audio/Items/change_drill.ogg
+  - type: UseDelay
+    delay: 1
+  - type: IgniteOnMeleeHit
+    fireStacks: 2
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 20
+  - type: Welder
+  - type: SolutionContainerManager
+    solutions:
+      Welder:
+        reagents:
+        - ReagentId: WeldingFuel
+          Quantity: 50
+        maxVol: 50
+  - type: RefillableSolution
+    solution: Welder
+#  - type: MeleeStaminaCost # Балансим сильный топор затратом по стамине
+#    swing: 10
+#    wieldCoefficient: 0.5
+  - type: PointLight
+    enabled: false
+    radius: 1.5
+    color: red
+    netsync: false
+  - type: IgnitionSource
+    temperature: 700
+  - type: StaticPrice
+    price: 10000

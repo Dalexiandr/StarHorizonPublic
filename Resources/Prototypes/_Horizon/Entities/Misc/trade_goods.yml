@@ -1,0 +1,695 @@
+# Base
+
+- type: entity
+  abstract: true
+  parent: BaseStructureDynamic
+  id: BaseHorizonTradeItem
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    noRot: true
+  - type: Sprite
+    noRot: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.35,0.35,0.35"
+        density: 80
+        mask:
+        - CrateMask
+        layer:
+        - MachineLayer
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: RequireProjectileTarget
+  - type: InteractionOutline
+# Engineer
+
+- type: entity
+  parent: BaseHorizonTradeItem
+  id: TradeGoodsEngineerTools
+  name: запечатанный ящик инструментов
+  description: "Запечатанный ящик с всеми необходимыми инструментами для инженерных работ."
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: engi_base
+    - state: smuggling_base
+    - state: engi_tool
+  - type: HorizonFactionPrice
+    priceMarket: 4000
+    priceAnCo: 0.5
+    priceNanoTrasen: 1.1
+    pricePirate: 1.5
+    priceSyndicate: 1.1
+    priceFrontier: 0.5
+
+- type: entity
+  parent: BaseHorizonTradeItem
+  id: TradeGoodsEngineerFuel
+  name: запечатанный ящик топлива
+  description: "Запечатанный ящик космического топлива."
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: engi_base
+    - state: smuggling_base
+    - state: engi_fuel
+  - type: HorizonFactionPrice
+    priceMarket: 6000
+    priceAnCo: 0.8
+    priceNanoTrasen: 1.2
+    pricePirate: 1.2
+    priceSyndicate: 1.2
+    priceFrontier: 0.5
+
+- type: entity
+  parent: BaseHorizonTradeItem
+  id: TradeGoodsEngineerElec
+  name: запечатанный ящик электроники
+  description: "Запечатанный ящик разнообразной электроники и продвинутого электроинструмента."
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: engi_base
+    - state: smuggling_base
+    - state: engi_elec
+  - type: HorizonFactionPrice
+    priceMarket: 6000
+    priceAnCo: 0.8
+    priceNanoTrasen: 1.1
+    pricePirate: 0.8
+    priceSyndicate: 1.1
+    priceFrontier: 0.5
+
+# Med
+
+- type: entity
+  parent: BaseHorizonTradeItem
+  id: TradeGoodsMedBase
+  name: запечатанный ящик медикаментов
+  description: "Запечатанный ящик с базовыми медикаментами для оказания первой медицинской помощи."
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: med_base
+    - state: smuggling_base
+    - state: med_medical
+  - type: HorizonFactionPrice
+    priceMarket: 5000
+    priceAnCo: 0.8
+    priceNanoTrasen: 1.1
+    pricePirate: 1.1
+    priceSyndicate: 1.1
+    priceFrontier: 0.5
+
+- type: entity
+  parent: BaseHorizonTradeItem
+  id: TradeGoodsMedChem
+  name: запечатанный ящик химикатов
+  description: "Запечатанный ящик с медицинскими химикатами и реагентами."
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: med_base
+    - state: smuggling_base
+    - state: med_chem
+  - type: HorizonFactionPrice
+    priceMarket: 5000
+    priceAnCo: 0.8
+    priceNanoTrasen: 1.1
+    pricePirate: 0.5
+    priceSyndicate: 1.1
+    priceFrontier: 0.5
+
+- type: entity
+  parent: BaseHorizonTradeItem
+  id: TradeGoodsMedImplants
+  name: запечатанный ящик имплантов
+  description: "Запечатанный ящик с медицинскими имплантами и протезами."
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: med_base
+    - state: smuggling_base
+    - state: med_implants
+  - type: HorizonFactionPrice
+    priceMarket: 5000
+    priceAnCo: 1.3
+    priceNanoTrasen: 1.2
+    pricePirate: 0.5
+    priceSyndicate: 1.1
+    priceFrontier: 0.5
+
+# Sci
+
+- type: entity
+  parent: BaseHorizonTradeItem
+  id: TradeGoodsSciBase
+  name: запечатанный ящик научного оборудования
+  description: "Запечатанный ящик с базовым научным оборудованием и расходными материалами."
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: sci_base
+    - state: smuggling_base
+    - state: sci_equipment
+  - type: HorizonFactionPrice
+    priceMarket: 7000
+    priceAnCo: 1.1
+    priceNanoTrasen: 1.2
+    pricePirate: 0.5
+    priceSyndicate: 0.8
+    priceFrontier: 0.5
+
+- type: entity
+  parent: BaseHorizonTradeItem
+  id: TradeGoodsSciArtifacts
+  name: запечатанный ящик артефактов
+  description: "Защищённый ящик с неисследованными артефактами для научного анализа."
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: sci_base
+    - state: smuggling_base
+    - state: sci_artefact
+  - type: HorizonFactionPrice
+    priceMarket: 5000
+    priceAnCo: 1.0
+    priceNanoTrasen: 1.2
+    pricePirate: 0.5
+    priceSyndicate: 0.8
+    priceFrontier: 0.5
+
+- type: entity
+  parent: BaseHorizonTradeItem
+  id: TradeGoodsSciProto
+  name: запечатанный ящик прототипов
+  description: "Защищённый ящик с экспериментальными прототипами технологий."
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: sci_base
+    - state: smuggling_base
+    - state: sci_prototype
+  - type: HorizonFactionPrice
+    priceMarket: 7000
+    priceAnCo: 1.5
+    priceNanoTrasen: 1.2
+    pricePirate: 1.2
+    priceSyndicate: 1.3
+    priceFrontier: 0.5
+
+# Service + General
+
+- type: entity
+  parent: BaseHorizonTradeItem
+  id: TradeGoodsServiceFood
+  name: запечатанный ящик провизии
+  description: "Запечатанный ящик с готовой едой и продовольственными припасами."
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: serv_base
+    - state: smuggling_base
+    - state: serv_eat
+  - type: HorizonFactionPrice
+    priceMarket: 3000
+    priceAnCo: 0.5
+    priceNanoTrasen: 1.0
+    pricePirate: 1.2
+    priceSyndicate: 0.8
+    priceFrontier: 0.5
+
+- type: entity
+  parent: BaseHorizonTradeItem
+  id: TradeGoodsServiceBeverage
+  name: запечатанный ящик напитков
+  description: "Запечатанный ящик с разнообразными напитками и алкоголем."
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: serv_base
+    - state: smuggling_base
+    - state: serv_water
+  - type: HorizonFactionPrice
+    priceMarket: 3000
+    priceAnCo: 0.5
+    priceNanoTrasen: 1.0
+    pricePirate: 1.2
+    priceSyndicate: 0.8
+    priceFrontier: 0.5
+
+- type: entity
+  parent: BaseHorizonTradeItem
+  id: TradeGoodsServiceBotany
+  name: запечатанный ящик семян
+  description: "Запечатанный ящик с семенами и ботаническими материалами."
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: serv_base
+    - state: smuggling_base
+    - state: serv_seed
+  - type: HorizonFactionPrice
+    priceMarket: 3000
+    priceAnCo: 0.5
+    priceNanoTrasen: 1.0
+    pricePirate: 0.8
+    priceSyndicate: 0.8
+    priceFrontier: 0.5
+
+- type: entity
+  parent: BaseHorizonTradeItem
+  id: TradeGoodsServiceCleaning
+  name: запечатанный ящик чистящих средств
+  description: "Запечатанный ящик с чистящими средствами и уборочным инвентарём."
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: serv_base
+    - state: smuggling_base
+    - state: serv_soap
+  - type: HorizonFactionPrice
+    priceMarket: 3000
+    priceAnCo: 0.5
+    priceNanoTrasen: 1.0
+    pricePirate: 0.8
+    priceSyndicate: 0.8
+    priceFrontier: 0.5
+
+- type: entity
+  parent: BaseHorizonTradeItem
+  id: TradeGoodsGeneralSupplies
+  name: запечатанный ящик припасов
+  description: "Запечатанный ящик с универсальными припасами и расходными материалами."
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: serv_base
+    - state: smuggling_base
+    - state: serv_supplay
+  - type: HorizonFactionPrice
+    priceMarket: 5000
+    priceAnCo: 0.5
+    priceNanoTrasen: 1.2
+    pricePirate: 1.2
+    priceSyndicate: 1.0
+    priceFrontier: 0.5
+
+- type: entity
+  parent: BaseHorizonTradeItem
+  id: TradeGoodsGeneralClothing
+  name: запечатанный ящик одежды
+  description: "Запечатанный ящик с униформой и рабочей одеждой."
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: serv_base
+    - state: smuggling_base
+    - state: serv_suit
+  - type: HorizonFactionPrice
+    priceMarket: 5000
+    priceAnCo: 0.5
+    priceNanoTrasen: 1.1
+    pricePirate: 1.1
+    priceSyndicate: 0.8
+    priceFrontier: 0.5
+
+# NFSD
+
+- type: entity
+  parent: BaseHorizonTradeItem
+  id: TradeGoodAmmo
+  name: Запечатанный ящик боеприпасов
+  description: Герметично запечатанный ящик с довоенными боеприпасами. Наклейка на боку указывает на консоль экспорта.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: nfsd_base
+    - state: smuggling_base
+    - state: nfsd_ammo
+  - type: HorizonFactionPrice
+    priceMarket: 7000
+    priceAnCo: 0.5
+    priceNanoTrasen: 1.2
+    pricePirate: 1.2
+    priceSyndicate: 1.2
+    priceFrontier: 0.5
+
+- type: entity
+  parent: BaseHorizonTradeItem
+  id: TradeGoodGunparts
+  name: Запечатанный ящик оружейных деталей
+  description: Герметично запечатанный ящик с разнообразными оружейными деталями. Наклейка на боку указывает на консоль экспорта.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: nfsd_base
+    - state: smuggling_base
+    - state: nfsd_gun_detail
+  - type: HorizonFactionPrice
+    priceMarket: 7000
+    priceAnCo: 1.2
+    priceNanoTrasen: 1.1
+    pricePirate: 1.2
+    priceSyndicate: 1.2
+    priceFrontier: 0.5
+
+#
+
+- type: entity
+  parent: BaseHorizonTradeItem
+  id: TradeGoodAlloys
+  name: Поставка высокосортных сплавов
+  description: Запечатанный ящик со специализированными пластальными сплавами. Чаще всего используются в военных судах.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: steel_base
+    - state: smuggling_base
+    - state: steel_alloys
+  - type: HorizonFactionPrice
+    priceMarket: 7000
+    priceAnCo: 1.3
+    priceNanoTrasen: 1.5
+    pricePirate: 1.2
+    priceSyndicate: 1.2
+    priceFrontier: 0.5
+
+- type: entity
+  parent: BaseHorizonTradeItem
+  id: TradeGoodScrap
+  name: Запечатанный ящик лома
+  description: Герметично запечатанный ящик с разнообразным ломом. Наклейка на боку указывает на консоль экспорта.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: steel_base
+    - state: smuggling_base
+    - state: steel_scrap
+  - type: HorizonFactionPrice
+    priceMarket: 4000
+    priceAnCo: 0.5
+    priceNanoTrasen: 1.2
+    pricePirate: 1.1
+    priceSyndicate: 0.5
+    priceFrontier: 0.5
+
+# === Текстиль ===
+
+- type: entity
+  parent: BaseHorizonTradeItem
+  id: TradeGoodFabrics
+  name: Запечатанная поставка тканей
+  description: Запечатанная поставка качественных имперских тканей.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: steel_base
+    - state: smuggling_base
+    - state: steel_textile
+  - type: HorizonFactionPrice
+    priceMarket: 3000
+    priceAnCo: 0.5
+    priceNanoTrasen: 1.2
+    pricePirate: 1.2
+    priceSyndicate: 0.8
+    priceFrontier: 0.5
+
+# === Антиквариат ===
+# Антиквариат дороже на Market (коллекционеры)
+
+- type: entity
+  parent: BaseHorizonTradeItem
+  id: TradeGoodNanoTrasen
+  name: Корпоративный ящик NanoTrasen
+  description: Антикварный грузовой ящик, полный потребительских товаров NanoTrasen, которые так и не были доставлены. Сам по себе не стоит много, но коллекционеры могут заплатить приличную сумму.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: nt_base
+    - state: smuggling_base
+    - state: nt_nt
+  - type: HorizonFactionPrice
+    priceMarket: 15000
+    priceAnCo: 1.5
+    priceNanoTrasen: 1.5
+    pricePirate: 1.5
+    priceFrontier: 2
+
+- type: entity
+  parent: BaseHorizonTradeItem
+  id: TradeGoodOldCyber
+  name: Антикварный ящик кибернетики
+  description: Антикварный грузовой ящик, полный кибернетики NanoTrasen и запчастей, которые так и не были доставлены. Большая часть сломана, но запечатанные ящики перепродаются мусорщикам по приличной цене.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: nt_base
+    - state: smuggling_base
+    - state: nt_cyber
+  - type: HorizonFactionPrice
+    priceMarket: 15000
+    priceAnCo: 1.5
+    priceNanoTrasen: 1.5
+    pricePirate: 1.5
+    priceSyndicate: 1.5
+    priceFrontier: 2
+
+- type: entity
+  parent: BaseHorizonTradeItem
+  id: TradeGoodOldParts
+  name: Антикварный ящик запчастей
+  description: Антикварный грузовой ящик, полный механических изделий NanoTrasen и запчастей, которые так и не были доставлены. Большая часть сломана, но запечатанные ящики перепродаются мусорщикам по приличной цене.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: nt_base
+    - state: smuggling_base
+    - state: nt_detal
+  - type: HorizonFactionPrice
+    priceMarket: 15000
+    priceAnCo: 1.5
+    priceNanoTrasen: 1.5
+    pricePirate: 1.5
+    priceSyndicate: 1.5
+    priceFrontier: 2
+
+# === Товары Союза ===
+# Товары АнКо дороже на ANCO
+
+- type: entity
+  parent: [BaseHorizonTradeItem, BaseAnCoContraband]
+  id: TradeGoodUnionWeapon
+  name: Ящик оружейных деталей АнКо
+  description: Ящик с массово производимыми оружейными деталями, изготовленными AnroxComputer`s.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: anco_base
+    - state: anco_smuggling
+    - state: anco_gun_detail
+  - type: HorizonFactionPrice
+    priceMarket: 15000
+    priceAnCo: 1.5
+    priceNanoTrasen: 1.0
+    pricePirate: 1.2
+    priceSyndicate: 1.3
+    priceFrontier: 1.0
+
+- type: entity
+  parent: [BaseHorizonTradeItem, BaseAnCoContraband]
+  id: TradeGoodUnionArmor
+  name: Ящик бронедеталей АнКо
+  description: Ящик с массово производимыми бронедеталями, изготовленными AnroxComputer`s.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: anco_base
+    - state: anco_smuggling
+    - state: anco_shield
+  - type: HorizonFactionPrice
+    priceMarket: 15000
+    priceAnCo: 1.5
+    priceNanoTrasen: 1.0
+    pricePirate: 1.2
+    priceSyndicate: 1.3
+    priceFrontier: 1.0
+
+- type: entity
+  parent: [BaseHorizonTradeItem, BaseAnCoContraband]
+  id: TradeGoodUnionBallistic
+  name: Запечатанный ящик баллистики АнКо
+  description: Ящик с деталями баллистического вооружения производства AnroxComputer`s.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: anco_base
+    - state: anco_smuggling
+    - state: anco_ballistic
+  - type: HorizonFactionPrice
+    priceMarket: 15000
+    priceAnCo: 1.5
+    priceNanoTrasen: 1.0
+    pricePirate: 1.2
+    priceSyndicate: 1.3
+    priceFrontier: 1.0
+
+- type: entity
+  parent: [BaseHorizonTradeItem]
+  id: TradeGoodSyndicateFuel
+  name: Ящик контрабандного топлива
+  description: Ящик с контрабандным топливом
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: synd_base
+    - state: contraband_base
+    - state: engi_fuelcontr
+  - type: HorizonFactionPrice
+    priceMarket: 10000
+    priceAnCo: 0.8
+    priceNanoTrasen: 1.3
+    pricePirate: 1.2
+    priceSyndicate: 0.5
+    priceFrontier: 2
+
+- type: entity
+  parent: [BaseHorizonTradeItem]
+  id: TradeGoodSyndicateDetal
+  name: Ящик контрабандных деталей
+  description: Ящик с контрабандными деталями для оружия
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: synd_base
+    - state: contraband_base
+    - state: nfsd_gun_detail
+  - type: HorizonFactionPrice
+    priceMarket: 10000
+    priceAnCo: 1.5
+    priceNanoTrasen: 1.3
+    pricePirate: 0.8
+    priceSyndicate: 0.5
+    priceFrontier: 2
+
+- type: entity
+  parent: [BaseHorizonTradeItem]
+  id: TradeGoodSyndicateSubs
+  name: Ящик контрабандных веществ
+  description: Ящик с контрабандными химическими веществами
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: synd_base
+    - state: contraband_base
+    - state: med_chem
+  - type: HorizonFactionPrice
+    priceMarket: 10000
+    priceAnCo: 1.5
+    priceNanoTrasen: 1.3
+    pricePirate: 0.8
+    priceSyndicate: 0.5
+    priceFrontier: 2
+
+- type: entity
+  parent: [BaseHorizonTradeItem]
+  id: TradeGoodPirateNarc
+  name: Ящик контрабандных наркотиков
+  description: Ящик с контрабандными припаса наркотических веществ
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: pirate_base
+    - state: contraband_base
+    - state: med_narc
+  - type: HorizonFactionPrice
+    priceMarket: 10000
+    priceAnCo: 1.1
+    priceNanoTrasen: 1.3
+    pricePirate: 0.5
+    priceSyndicate: 0.8
+    priceFrontier: 2
+
+- type: entity
+  parent: [BaseHorizonTradeItem]
+  id: TradeGoodPirateWater
+  name: Ящик контрабандных алкогольных напитков
+  description: Ящик с контрабандной выпивкой
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: pirate_base
+    - state: contraband_base
+    - state: serv_water
+  - type: HorizonFactionPrice
+    priceMarket: 10000
+    priceAnCo: 1.1
+    priceNanoTrasen: 1.3
+    pricePirate: 0.5
+    priceSyndicate: 0.8
+    priceFrontier: 2
+
+- type: entity
+  parent: [BaseHorizonTradeItem]
+  id: TradeGoodPirateGold
+  name: Ящик контрабандных украшений
+  description: Ящик с контрабандными украшениями.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Structures/Specific/trade.rsi
+    layers:
+    - state: pirate_base
+    - state: contraband_base
+    - state: steel_alloys
+  - type: HorizonFactionPrice
+    priceMarket: 10000
+    priceAnCo: 1.1
+    priceNanoTrasen: 1.3
+    pricePirate: 0.5
+    priceSyndicate: 0.8
+    priceFrontier: 2

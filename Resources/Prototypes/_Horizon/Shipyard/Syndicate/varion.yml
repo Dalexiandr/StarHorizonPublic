@@ -1,0 +1,41 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: amir7036
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: Varion
+  parent: BaseVesselAntag
+  name: Varion
+  description: Компактный синдикатовский перехватчик. Разработан для быстрых маневров и точных ударов.
+  price: 55000
+  category: Small
+  group: Syndicate
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/Syndicate/varion.yml
+  class:
+  - Syndicate
+  - Civilian
+  engine:
+  - RTG
+
+- type: gameMap
+  id: Varion
+  mapName: 'Varion'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/Syndicate/varion.yml
+  minPlayers: 0
+  stations:
+    Varion:
+      stationProto: StandardFrontierAntagVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Varion {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

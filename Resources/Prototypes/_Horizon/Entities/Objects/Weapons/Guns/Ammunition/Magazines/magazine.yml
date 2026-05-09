@@ -1,0 +1,168 @@
+﻿- type: entity
+  id: BaseMagazinerBarrettM82
+  name: магазин Barrett M82 (.70 крупнокалиберный)
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - MagazineBarrettM8270
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgeBarrettM8270
+    capacity: 5
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Horizon/Objects/Weapons/Guns/Ammunition/Casings/sniper_barrettm82_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: MagazineSniperBarrettM82
+  name: магазин Barrett M82 (.70 крупнокалиберные)
+  suffix: Horizon
+  parent: BaseMagazinerBarrettM82
+  components:
+  - type: BallisticAmmoProvider
+    proto: BaseBarrettM8270
+  - type: Sprite
+    layers:
+    - state: red
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: MagazineBarrettM82HighVelocity
+  name: магазин Barrett M82 (.70 высокоскорострельные)
+  suffix: Horizon
+  parent: BaseMagazinerBarrettM82
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeSniperBarrettM82HighVelocity
+  - type: Sprite
+    layers:
+    - state: high_velocity
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: MagazineSniperBarrettM82AR
+  name: магазин Barrett M82 (.70 бронированные)
+  suffix: Horizon
+  parent: BaseMagazinerBarrettM82
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeSniperBarrettM82AR
+  - type: Sprite
+    layers:
+    - state: armor_piercing
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: BaseMagazinePistol9x18
+  name: магазин Макарова (9x18 mm)
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - MagazinePistol9x18mm
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge9x18mm
+    capacity: 8
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Horizon/Objects/Weapons/Guns/Ammunition/Casings/pistol_makarov_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: MagazinePistols9x18
+  name: магазин Макарова (9x18 mm)
+  suffix: Horizon
+  parent: BaseMagazinePistol9x18
+  components:
+  - type: BallisticAmmoProvider
+    proto: Base9x18mm
+  - type: Sprite
+    layers:
+    - state: red
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: MagazinePistol9x18Practice
+  name: магазин Макарова (9x18 mm учебные)
+  suffix: Horizon
+  parent: BaseMagazinePistol9x18
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePistol9x18Practick
+  - type: Sprite
+    layers:
+    - state: practice
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: MagazinePistol9x18Rubbers
+  name: магазин Макарова (9x18 mm резиновые)
+  suffix: Horizon
+  parent: BaseMagazinePistol9x18
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePistolRubber9x18
+  - type: Sprite
+    layers:
+    - state: rubber
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: MagazinePistolHighCapacity9x18
+  name: магазин Макарова (9x18 mm высокоскорострельные)
+  suffix: Horizon
+  parent: BaseMagazinePistol9x18
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePistol9x18Incendiary
+  - type: Sprite
+    layers:
+    - state: high_velocity
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]

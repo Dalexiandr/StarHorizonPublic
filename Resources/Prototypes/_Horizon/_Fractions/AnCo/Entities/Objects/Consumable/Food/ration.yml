@@ -1,0 +1,41 @@
+- type: entity
+  name: консерва с мясом
+  parent: [FoodTinBase, BaseAnCoContraband]
+  id: FoodAnCoTin
+  description: Сколько ее хранили 10, нет 100, 1000 лет?!
+  suffix: StarHorizon, AnCo, Food
+  components:
+  - type: Tag
+    tags:
+    - AnCoTin
+  - type: FlavorProfile
+    flavors:
+      - meaty
+      - horrible
+      - alkaline
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Food/snacks.rsi
+    state: icon
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 30
+  - type: Food
+    trash:
+    - FoodAnCoTinTrash
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: FoodAnCoTinTrash
+  name: Пустая консерва
+  categories: [HideSpawnMenu]
+  description: Повезло что она пустая.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Food/snacks.rsi
+  - type: PhysicalComposition
+    materialComposition:
+      Kazmie: 100

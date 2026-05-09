@@ -1,0 +1,156 @@
+# Random Spawners
+#region Tier 1 (rnd)
+- type: entity
+  parent: MarkerBase
+  id: SpawnNFMobWizardApprentice
+  name: random apprentice wizard spawner
+  suffix: AI, Hostile, T1
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _NF/Objects/Weapons/Guns/Basic/staves.rsi
+      state: crystal-staff
+    - state: ai
+  - type: RandomSpawner
+    prototypes:
+    - NFMobWizardBlueApprentice
+    - NFMobWizardPurpleApprentice
+    rarePrototypes:
+    - NFMobWizardApprenticeSoap
+    rareChance: 0.1
+
+#region Tier 2 (rnd)
+- type: entity
+  parent: SpawnNFMobWizardApprentice
+  id: SpawnNFMobWizardAdept
+  name: random adept wizard spawner
+  suffix: AI, Hostile, T2
+  components:
+  - type: RandomSpawner
+    prototypes:
+    - NFMobWizardAdeptBlue
+    - NFMobWizardAdeptRed
+    - NFMobWizardAdeptPurple
+    rarePrototypes:
+    - NFMobWizardAdeptBrick
+    rareChance: 0.1
+
+#region Tier 3 (rnd)
+- type: entity
+  parent: SpawnNFMobWizardApprentice
+  id: SpawnNFMobWizardMaster
+  name: random master wizard spawner
+  suffix: AI, Hostile, T3
+  components:
+  - type: RandomSpawner
+    prototypes:
+    - NFMobWizardMasterBlue
+    - NFMobWizardMasterRed
+    - NFMobWizardMasterPurple
+    rarePrototypes:
+    - NFMobWizardMasterBrick
+    rareChance: 0.1
+
+# Fixed Spawners
+#region Tier 1 (fixed)
+- type: entity
+  parent: SpawnNFMobWizardApprentice
+  id: SpawnNFMobWizardBlueApprentice
+  name: blue wizard apprentice spawner
+  components:
+  - type: ConditionalSpawner
+    prototypes:
+    - NFMobWizardBlueApprentice
+
+- type: entity
+  parent: SpawnNFMobWizardApprentice
+  id: SpawnNFMobWizardSoapApprentice
+  name: soap wizard apprentice spawner
+  components:
+  - type: ConditionalSpawner
+    prototypes:
+    - NFMobWizardApprenticeSoap
+
+- type: entity
+  parent: SpawnNFMobWizardApprentice
+  id: SpawnNFMobWizardPurpleApprentice
+  name: purple wizard apprentice spawner
+  components:
+  - type: ConditionalSpawner
+    prototypes:
+    - NFMobWizardPurpleApprentice
+
+#region Tier 2 (fixed)
+- type: entity
+  parent: SpawnNFMobWizardApprentice
+  id: SpawnNFMobWizardBlueAdept
+  name: blue wizard adept spawner
+  components:
+  - type: ConditionalSpawner
+    prototypes:
+    - NFMobWizardAdeptBlue
+
+- type: entity
+  parent: SpawnNFMobWizardApprentice
+  id: SpawnNFMobWizardRedAdept
+  name: red wizard adept spawner
+  components:
+  - type: ConditionalSpawner
+    prototypes:
+    - NFMobWizardAdeptRed
+
+- type: entity
+  parent: SpawnNFMobWizardApprentice
+  id: SpawnNFMobWizardPurpleAdept
+  name: purple wizard adept spawner
+  components:
+  - type: ConditionalSpawner
+    prototypes:
+    - NFMobWizardAdeptPurple
+
+- type: entity
+  parent: SpawnNFMobWizardApprentice
+  id: SpawnNFMobWizardBrickAdept
+  name: brick wizard adept spawner
+  components:
+  - type: ConditionalSpawner
+    prototypes:
+    - NFMobWizardAdeptBrick
+
+#region Tier 3 (fixed)
+- type: entity
+  parent: SpawnNFMobWizardApprentice
+  id: SpawnNFMobWizardBlueMaster
+  name: blue wizard master spawner
+  components:
+  - type: ConditionalSpawner
+    prototypes:
+    - NFMobWizardMasterBlue
+
+- type: entity
+  parent: SpawnNFMobWizardApprentice
+  id: SpawnNFMobWizardRedMaster
+  name: red wizard master spawner
+  components:
+  - type: ConditionalSpawner
+    prototypes:
+    - NFMobWizardMasterRed
+
+- type: entity
+  parent: SpawnNFMobWizardApprentice
+  id: SpawnNFMobWizardPurpleMaster
+  name: purple wizard master spawner
+  components:
+  - type: ConditionalSpawner
+    prototypes:
+    - NFMobWizardAdeptPurple
+
+- type: entity
+  parent: SpawnNFMobWizardApprentice
+  id: SpawnNFMobWizardBrickMaster
+  name: brick wizard master spawner
+  components:
+  - type: ConditionalSpawner
+    prototypes:
+    - NFMobWizardMasterBrick

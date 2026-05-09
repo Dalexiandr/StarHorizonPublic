@@ -1,0 +1,20 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CLA with hosting restrictions",
+    "copyright": "Sprited by Xigovir DS:623559319543349268",
+    "states": [
+        {
+            "name": "core"
+        },
+        {
+            "name": "o1"
+        },
+        {
+            "name": "o2"
+        }
+    ]
+}

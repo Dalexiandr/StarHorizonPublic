@@ -1,0 +1,57 @@
+<controls:FancyWindow xmlns="https://spacestation14.io"
+                xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+                xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+                MinSize="800 600"
+                Title="Cytology Console">
+    
+    <BoxContainer Orientation="Horizontal" HorizontalExpand="True" VerticalExpand="True" SeparationOverride="10">
+        <BoxContainer Orientation="Vertical" HorizontalExpand="True" SizeFlagsStretchRatio="1" MinSize="250 500">
+            <Label Text="{Loc 'cytology-console-cell-samples'}" />
+            <PanelContainer VerticalExpand="True" HorizontalExpand="True">
+                <PanelContainer.PanelOverride>
+                    <graphics:StyleBoxFlat BorderThickness="7" BorderColor="#252525" BackgroundColor="#181818"/>
+                </PanelContainer.PanelOverride>
+                <ScrollContainer
+                    HScrollEnabled="False"
+                    HorizontalExpand="True"
+                    VerticalExpand="True">
+                    <BoxContainer Name="CellSamplesList" Orientation="Vertical" Margin="4" HorizontalExpand="True" SeparationOverride="6">
+                    </BoxContainer>
+                </ScrollContainer>
+            </PanelContainer>
+        </BoxContainer>
+        
+        <BoxContainer Orientation="Vertical" HorizontalExpand="True" SizeFlagsStretchRatio="2" SeparationOverride="5"  MinSize="630 500">
+            <Label Text="{Loc 'cytology-console-profile-editor'}" />
+            <BoxContainer Orientation="Horizontal">
+                <Button Name="ProfileButton" Text="{Loc 'cytology-console-button-profile-edit'}" HorizontalExpand="True"/>
+                <Button Name="ParametersButton" Text="{Loc 'cytology-console-button-parameters-edit'}" HorizontalExpand="True" />
+            </BoxContainer>
+            <Control Name="ProfileEditorContainer" HorizontalExpand="True" VerticalExpand="True" Visible="True">
+            </Control>
+            <Control Name="ParametersEditorContainer" HorizontalExpand="True" VerticalExpand="True" Visible="False">
+            </Control>
+        </BoxContainer>
+
+        <BoxContainer Orientation="Vertical" HorizontalExpand="True" SizeFlagsStretchRatio="2" SeparationOverride="5" MinSize="250 500">
+            <Label Text="{Loc 'cytology-console-creature-image'}" />
+            <PanelContainer VerticalExpand="True" HorizontalExpand="True">
+                <PanelContainer.PanelOverride>
+                    <graphics:StyleBoxFlat BorderThickness="7" BorderColor="#252525" BackgroundColor="#181818"/>
+                </PanelContainer.PanelOverride>
+                <BoxContainer Orientation="Vertical" HorizontalExpand="True" SizeFlagsStretchRatio="2" SeparationOverride="5">
+                    <Control Name="CreatureImageContainer" HorizontalExpand="True" VerticalExpand="True">
+                    </Control>
+                    <Label Text="{Loc 'cytology-console-creature-parameters'}" />
+                    <Control Name="DiskParametersContainer" HorizontalExpand="True" VerticalExpand="True">
+                    </Control>
+                    <Button Name="SaveButton" Text="Save Profile" HorizontalExpand="True" />
+                </BoxContainer>
+            </PanelContainer>
+        </BoxContainer>
+    </BoxContainer>
+
+</controls:FancyWindow>
+

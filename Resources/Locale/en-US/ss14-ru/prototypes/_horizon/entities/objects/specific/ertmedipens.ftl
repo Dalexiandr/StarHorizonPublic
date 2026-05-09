@@ -1,0 +1,17 @@
+ent-ChemicalMedipenERTJugg = chemical medipen
+    .desc = A sterile injector for rapid administration of drugs to patients. This one can't be refilled.
+ent-ERTRedMedipen = медипен "Израненный Страж"
+    .desc = Устройство медицинского назначения для поддержания жизни в боевых условиях и лечения большинства видов повреждений.
+    .suffix = StarHorizon
+ent-ERTOrangeMedipen = медипен "Пламенный Ангел-Хранитель"
+    .desc = Устройство медицинского назначения для лечения ожогов и легких повреждений полученных в бою.
+    .suffix = StarHorizon
+ent-ERTDarkMedipen = медипен "Антиядный Комплекс"
+    .desc = Устройство медицинского назначения для лечеия ядов в организме.
+    .suffix = StarHorizon
+ent-ERTLightMedipen = медипен "Атомный Детокс"
+    .desc = Устройство медицинского назначения для лечения повреждённых клеток из за радиационного облочения.
+    .suffix = StarHorizon
+ent-ERTBrownMedipen = медипен "Тактический Корм"
+    .desc = Устройство для быстрого внутривенного питания.
+    .suffix = StarHorizon

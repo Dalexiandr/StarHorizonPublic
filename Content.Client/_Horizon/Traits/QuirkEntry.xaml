@@ -1,0 +1,14 @@
+<Control xmlns="https://spacestation14.io"
+         xmlns:cc="clr-namespace:Content.Client.Administration.UI.CustomControls">
+    <PanelContainer Name="Wrapper"
+        StyleClasses="PdaBorderRect">
+        <BoxContainer Orientation="Horizontal">
+            <Button Name="ToggleQuirkButton" Text="{Loc 'humanoid-profile-editor-quirk-toggle'}" VerticalAlignment="Center" ToggleMode="True" Margin="4 0"/>
+            <cc:VSeparator Margin="2"/>
+            <BoxContainer Orientation="Vertical" HorizontalExpand="True" Margin="4 0">
+                <RichTextLabel Name="QuirkNameLabel" Text="Quirk Name" />
+                <RichTextLabel Name="QuirkDescLabel" Text="Bla bla" />
+            </BoxContainer>
+        </BoxContainer>
+    </PanelContainer>
+</Control>

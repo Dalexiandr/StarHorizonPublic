@@ -1,0 +1,10 @@
+# - type: entity
+#   id: BorgChassisSelectableCombatCompanion
+#   parent: BorgChassisSelectableCombat
+#   description: Очень верный спутник, который будет следовать за вами и выполнять каждый ваш приказ.
+#   components:
+#   Новые компоненты для питомцев
+#   - type: Companion
+#   - type: HTN
+#     rootTask:
+#       task: CompanionCompound

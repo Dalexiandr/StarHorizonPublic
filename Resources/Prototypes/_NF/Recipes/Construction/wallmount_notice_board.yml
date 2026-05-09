@@ -1,0 +1,11 @@
+- type: construction
+  id: NoticeBoardNFWallmountedConstruction
+  graph: NoticeBoardNFGraph
+  startNode: start
+  targetNode: NoticeBoardNFNode
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: true
+  conditions:
+    - !type:WallmountCondition

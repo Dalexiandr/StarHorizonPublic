@@ -1,0 +1,109 @@
+- type: entity
+  id: AnCoCrystallExtractBox
+  parent: AnCoEFSCrystal
+  suffix: StarHorizon, AnCo, Structure
+  name: капсула спасения
+  description: Вы ощущаете исходящий от этого кристалла жар.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Storage/Closets/boximplant.rsi
+    layers:
+    - state: base
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: closed
+      map: ["enum.StorageVisualLayers.Door"]
+  - type: EntityStorage
+    capacity: 1
+    isCollidableWhenOpen: true
+    whitelist: # Use a tag whitelist rather than filtering for PerishableComponent to avoid chefs using body bags for food preservation
+      tags:
+        - VimPilot # Pets
+        - CanPilot # People
+  - type: Appearance
+  - type: Pullable
+  - type: AntiRottingContainer
+  - type: ContainerContainer
+    containers:
+      entity_storage: !type:Container
+  - type: StaticPrice
+    price: 35
+  - type: AccessReader
+    access: [["AnCo"]]
+  - type: InteractionOutline
+  - type: Lock
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+          - !type:PlaySoundBehavior
+            sound:
+              collection: GlassBreak
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              ArdonSheet1:
+                min: 1
+                max: 3
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+  - type: EntityStorageVisuals
+    stateBaseClosed: base
+    stateDoorOpen: open
+    stateDoorClosed: closed
+  - type: PointLight
+    radius: 0
+    energy: 0
+
+- type: entity
+  id: AnCoCrystallExtract
+  parent: AnCoEFSCrystal
+  suffix: StarHorizon, AnCo, Structure
+  name: кристалл Ардония
+  description: Вы ощущаете себя кристаллом ардония.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Specific/crystallardon.rsi
+    state: crystall
+  - type: EntityStorage
+    capacity: 1
+    isCollidableWhenOpen: true
+    whitelist: # Use a tag whitelist rather than filtering for PerishableComponent to avoid chefs using body bags for food preservation
+      tags:
+        - VimPilot # Pets
+        - CanPilot # People
+  - type: Appearance
+  - type: Pullable
+  - type: AntiRottingContainer
+  - type: ContainerContainer
+    containers:
+      entity_storage: !type:Container
+  - type: StaticPrice
+    price: 35
+  - type: AccessReader
+    access: [["AnCo"]]
+  - type: InteractionOutline
+  - type: Lock
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+          - !type:PlaySoundBehavior
+            sound:
+              collection: GlassBreak
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              ArdonOre1:
+                min: 1
+                max: 3
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+  - type: Weldable
+    fuel: 1000
+    time: 600
+    isWelded: true
+  - type: PointLight
+    radius: 0
+    energy: 0

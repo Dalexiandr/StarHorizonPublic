@@ -1,0 +1,44 @@
+﻿- type: job
+  id: MedicalIntern
+  name: job-name-intern
+  description: job-description-intern
+  playTimeTracker: JobMedicalIntern
+  forceFaction: FactionMed # Horizon
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 18000 # 5 hrs
+      inverted: true # stop playing intern if you're good at med!
+  startingGear: MedicalInternGear
+  icon: "JobIconMedicalIntern"
+  supervisors: job-supervisors-medicine
+  canBeAntag: false
+  # access: # Frontier
+  # - Medical # Frontier
+  # - Maintenance # Frontier
+  setPreference: false # Frontier
+  accessGroups: # Frontier
+  - GeneralAccess # Frontier
+
+- type: startingGear
+  id: MedicalInternGear
+  equipment:
+    shoes: ClothingShoesColorWhite
+    id: MedicalInternPDA
+    ears: ClothingHeadsetMedical
+    belt: ClothingBeltMedicalFilled
+    pocket2: BookMedicalReferenceBook
+  #storage:
+    #back:
+    #- Stuff
+
+- type: chameleonOutfit
+  id: MedicalInternChameleonOutfit
+  job: MedicalIntern
+  equipment:
+    head: ClothingHeadHatBeretMedic
+    eyes: ClothingEyesHudMedical
+    mask: ClothingMaskSterile
+    neck: ClothingNeckStethoscope
+    outerClothing: ClothingOuterCoatLabOpened
+    gloves: ClothingHandsGlovesLatex

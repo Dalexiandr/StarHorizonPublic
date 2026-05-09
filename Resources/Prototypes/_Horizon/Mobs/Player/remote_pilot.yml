@@ -1,0 +1,80 @@
+- type: entity
+  save: false
+  parent:
+  - BaseMob
+  # - MobDamageable
+  - MobPolymorphable
+  - MobCombat
+  - StripableInventoryBase
+  id: BaseRemotePilot
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: MindContainer
+    showExamineInfo: true
+  - type: StatusIcon
+    bounds: -0.5,-0.5,0.5,0.5
+  - type: Hands
+  - type: Identity
+  - type: IdExaminable
+  - type: Climbing
+  - type: AnimationPlayer
+  - type: CombatMode
+    canDisarm: true
+  - type: MeleeWeapon
+    soundHit:
+      collection: Punch
+    angle: 30
+    animation: WeaponArcFist
+    attackRate: 1
+    damage:
+      types:
+        Blunt: 5
+  - type: InteractionPopup
+    successChance: 1
+    interactSuccessString: hugging-success-generic
+    interactSuccessSound: /Audio/Effects/thudswoosh.ogg
+    messagePerceivedByOthers: hugging-success-generic-others
+  - type: NpcFactionMember
+    factions:
+    - NanoTrasen
+  - type: UserInterface
+    interfaces:
+      enum.HumanoidMarkingModifierKey.Key:
+        type: HumanoidMarkingModifierBoundUserInterface
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
+      enum.SurgeryUIKey.Key:
+        type: SurgeryBui
+  - type: Puller
+  - type: Speech
+    speechSounds: Alto
+  - type: DamageForceSay
+  - type: Vocal
+    sounds:
+      Male: MaleHuman
+      Female: FemaleHuman
+      Unsexed: MaleHuman
+  - type: Emoting
+  - type: BodyEmotes
+    soundsId: GeneralBodyEmotes
+  - type: SpeechBarks
+  - type: CanEscapeInventory
+  - type: Tag
+    tags:
+    - CanPilot
+    - FootstepSound
+    - DoorBumpOpener
+    - AnomalyHost
+  - type: NightVision
+  - type: FTLKnockdownImmune
+  - type: HumanoidAppearance
+    species: Human
+  #- type: Visibility  space-station-14/issues/37934 причина почему это не используется
+  #  Layer: 5
+  - type: RemotePilot
+            
+- type: entity
+  save: false
+  name: Remote Pilot
+  parent: BaseRemotePilot
+  id: MobRemotePilot

@@ -1,0 +1,103 @@
+- type: entity
+  id: BaseCartridgePistolAnCo
+  name: мелко-кабилерный патрон .35
+  parent: [ BaseCartridge, BaseAnCoContraband ]
+  suffix: StarHorizon, AnCo, Ammo
+  components:
+  - type: Tag
+    tags:
+      - NFCartridgePistol35
+      - Cartridge
+      - AnCoBulletPistol35
+  - type: CartridgeAmmo
+    proto: StandartBallisticAnCoPistol
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Ammo/Bullet/35_pistol.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: BaseCartridgeRifleAnCo
+  name: средне-кабилерный патрон .20
+  parent: [ BaseCartridge, BaseAnCoContraband ]
+  suffix: StarHorizon, AnCo, Ammo
+  components:
+  - type: Tag
+    tags:
+      - NFCartridgeRifle20
+      - Cartridge
+      - AnCoBulletRifle20
+  - type: CartridgeAmmo
+    proto: StandartBallisticAnCoRifle
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Ammo/Bullet/20_rifle.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: BaseCartridgeRifleAnCoBuff
+  name: средне-кабилерный патрон .30
+  parent: [ BaseCartridge, BaseAnCoContraband ]
+  suffix: StarHorizon, AnCo, Ammo
+  components:
+  - type: Tag
+    tags:
+      - NFCartridgeRifle30
+      - Cartridge
+      - AnCoBulletRifle30
+  - type: CartridgeAmmo
+    proto: StandartBallisticAnCoRifle30
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Ammo/Bullet/30_rifle.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: BaseCartridgeSniperAnCo
+  name: высоко-кабилерный патрон .70
+  parent: [ BaseCartridge, BaseAnCoContraband ]
+  suffix: StarHorizon, AnCo, Ammo
+  components:
+  - type: Tag
+    tags:
+      - Cartridge
+      - AnCoBulletSniper70
+  - type: CartridgeAmmo
+    proto: BulletPistol
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Ammo/Bullet/70_sniper.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: BaseCartridgeShotgunAnCo
+  name: патрон для дробовика .50
+  parent: [ BaseCartridge, BaseAnCoContraband ]
+  suffix: StarHorizon, AnCo, Ammo
+  components:
+  - type: Tag
+    tags:
+      - Cartridge
+      - AnCoBulletShotgun50
+      - ShellShotgun
+  - type: CartridgeAmmo
+    proto: StandartBallisticAnCoShotgunSpread
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Ammo/Bullet/50_shotgun.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: Appearance
+  - type: SpentAmmoVisuals

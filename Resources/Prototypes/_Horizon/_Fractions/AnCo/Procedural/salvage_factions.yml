@@ -1,0 +1,31 @@
+- type: salvageFaction
+  id: InfernoSilicons
+  desc: salvage-faction-anco-anomaly
+  entries:
+    - proto: AnCoCrabInferno
+      cost: 2
+    - proto: AnCoDroneCombatInferno
+      cost: 2
+    - proto: AnCoDroneMineInferno
+      cost: 2
+    - proto: AnCoFlyDroneSmallInferno
+      cost: 2
+    - proto: AnCoFlyDroneHugeInferno
+      cost: 5
+      prob: 0.5
+    - proto: AnCoMechTitanInferno
+      cost: 10
+      prob: 0.2
+    - proto: AnCoMechCyclopInferno
+      cost: 10
+      prob: 0.2
+    - proto: AnCoMechBegemothInferno
+      cost: 10
+      prob: 0.2
+    - proto: AnCoMechMushInferno
+      cost: 10
+      prob: 0.3
+  configs:
+    DefenseStructure: AnCoMines
+    Megafauna: AnCoMechCyclopInferno
+    Difficulties: Inferno

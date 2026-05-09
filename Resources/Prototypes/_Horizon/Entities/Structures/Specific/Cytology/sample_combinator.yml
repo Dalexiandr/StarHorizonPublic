@@ -1,0 +1,86 @@
+- type: entity
+  id: CytologySampleCombinator
+  parent: BaseComputer
+  name: Cytology sample combinator
+  description: A device that allows you to change cells
+  components:
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: alert-0
+    - map: ["computerLayerKeys"]
+      state: atmos_key
+    - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      state: generic_panel_open
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Anchorable
+  - type: Pullable
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.4,0.25,0.4"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalGlassBreak
+      - !type:ChangeConstructionNodeBehavior
+        node: machineFrame
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: ActivatableUI
+    key: enum.CytologySampleCombinatorUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.CytologySampleCombinatorUiKey.Key:
+        type: CytologySampleCombinatorBoundUserInterface
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      petriDishSlot: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      petriDishSlot:
+        whitelist:
+          components:
+          - CytologyPetriDish
+      diskSlot1:
+        whitelist:
+          components:
+          - CytologyDisk
+      diskSlot2:
+        whitelist:
+          components:
+          - CytologyDisk
+      diskSlot3:
+        whitelist:
+          components:
+          - CytologyDisk
+  - type: GuideHelp
+    guides:
+    - Chemicals
+    - Chemist
+  - type: Computer
+    board: CytologySampleCombinatorComputerCircuitboard
+  - type: CytologySampleCombinator
+  - type: ApcPowerReceiver
+    powerLoad: 250
+

@@ -1,0 +1,27 @@
+#region WizDen
+- type: entity
+  id: NFWeaponRifleSniperHristov
+  parent: [ NFBaseWeaponRifleChamber60, NFBaseWeaponFrameRifleSniperCybersun, BaseAttachableHolder ]
+  name: Hristov
+  description: A portable anti-materiel rifle.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Snipers/heavy_sniper.rsi
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Snipers/heavy_sniper.rsi
+  # Horizon Attachment start
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-rail:
+        locked: true
+        startingAttachable: AttachmentHristovScope
+        whitelist:
+          tags:
+          - AttachmentMagneticHarness
+          - AttachmentHristovScope
+      rmc-aslot-barrel:
+        whitelist:
+          tags:
+          - AttachmentSuppressor
+          - AttachmentAntiLyingWarrior
+  # Horizon Attachment end

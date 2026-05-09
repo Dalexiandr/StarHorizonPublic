@@ -1,0 +1,14 @@
+ent-ClothingWebbingArcadia = аркадианский РПС
+    .desc = РПС, созданный Arcadia Industries. Кажется, что в него поместится много всего.
+ent-ClothingBeltArcadia = аркадианский пояс
+    .desc = Пояс созданный Arcadia Industries. Кажется, что в него поместится много всего.
+ent-ClothingBeltChaplainSash = пояс священника
+    .desc = Кто бы мог подумать, что шарфы можно еще и повязать вокруг талии?
+ent-ClothingBeltPilot = РПС пилота
+    .desc = Пояс специально разработанный для тех, кто много сидит в кресле.
+ent-ClothingBeltNfsd = пояс ДШНФ
+    .desc = Пояс для тактических операций.
+ent-ClothingBeltNfsdWebbing = РПС ДШНФ
+    .desc = Тактический боевой разгрузочный жилет.
+ent-ClothingBeltMartialBlack = черный пояс
+    .desc = Это самый боевой из всех поясов.

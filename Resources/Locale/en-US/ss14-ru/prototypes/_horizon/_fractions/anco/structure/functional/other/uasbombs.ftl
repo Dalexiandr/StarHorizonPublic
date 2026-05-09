@@ -1,0 +1,15 @@
+ent-AnCohardBomb = мобильная бомба АнКо
+    .desc = Бомба, напичканная зарядом Ардония. От неё лучше бежать.
+    .suffix = StarHorizon, AnCo
+ent-AnCoBombR = мобильный маяк запроса АнКо
+    .desc = Мобильный маяк для отправки запросов в далекий космос.
+    .suffix = StarHorizon, AnCo
+ent-AnCoBombOfficer = мобильный маяк запроса снаряжения Офицера
+    .suffix = StarHorizon, AnCo
+    .desc = { ent-AnCoBombR.desc }
+ent-AnCoBombSpider = мобильный маяк запроса снаряжения Паука
+    .suffix = StarHorizon, AnCo
+    .desc = { ent-AnCoBombR.desc }
+ent-AnCoBombKnight = мобильный маяк запроса снаряжения Рыцаря
+    .suffix = StarHorizon, AnCo
+    .desc = { ent-AnCoBombR.desc }

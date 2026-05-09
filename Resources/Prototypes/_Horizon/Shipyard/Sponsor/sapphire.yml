@@ -1,0 +1,55 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: helloohelloo
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: Sapphire
+  parent: BaseVessel
+  name: NECG Sapphire
+  description: Сапфир получил такое название, благодаря богатейшему интерьеру и экипировке внутри. Предназначен для больших вечеринок в дальнем космосе.
+  price: 500000
+  category: Large
+  group: Shipyard
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/Sponsor/sapphire.yml
+  class:
+  - Chemistry
+  - Civilian
+  - Kitchen
+  - Botany
+  engine:
+  - Uranium
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+  # Horizon end
+
+- type: gameMap
+  id: Sapphire
+  mapName: 'NECG Sapphire'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/Sponsor/sapphire.yml
+  minPlayers: 0
+  stations:
+    Sapphire:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'NECG Sapphire {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

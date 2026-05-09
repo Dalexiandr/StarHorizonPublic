@@ -1,0 +1,7 @@
+- type: polymorph
+  id: AnCoNanitAcidPoly
+  configuration:
+    entity: AnCoNanitAcid
+    forced: true
+    inventory: Drop
+

@@ -1,0 +1,305 @@
+# MD Forms
+# Sources: https://discord.com/channels/1123826877245694004/1182366744266932224/1182366744266932224
+#          https://docs.google.com/document/d/1jDX9numj-VHKBJ2FiiEo1GIlHESffOUIHIIXaqhEnls/edit?pli=1#heading=h.ru93r8n0fb7m
+
+# Filled Folder
+- type: entity
+  id: BoxFolderMedicalDoctor
+  parent: BoxFolderBase
+  name: medical doctor folder
+  description: A folder filled with medical paperwork templates.
+  suffix: Forms
+  components:
+  - type: Sprite
+    layers:
+    - state: folder-white
+    - state: folder-base
+  - type: StorageFill
+    contents:
+    - id: PaperWrittenMedicalFormPatientInfo
+    - id: PaperWrittenMedicalFormPrescription
+    - id: PaperWrittenMedicalFormHealthInsurance
+    - id: PaperWrittenMedicalFormServiceInvoice
+    - id: PaperWrittenMedicalFormReceiptInvoice
+    - id: PaperWrittenMedicalFormRelease
+    - id: Paper
+      prob: 0.5
+    - id: Paper
+      prob: 0.5
+  - type: StaticPrice
+    price: 100
+    vendPrice: 500
+
+# Forms
+- type: entity # Loosely based on form made by Scratchie (Nova Howe) for Formal Complaint
+  id: PaperWrittenMedicalFormPatientInfo
+  name: medical patient record
+  categories: [ HideSpawnMenu ]
+  parent: Paper
+  components:
+  - type: Paper
+    content: |2
+      [color=#2EA5E6]◥[bold]N[/bold]◣ [bold]Медицинский Диспансер[/bold][/color]
+      [color=#2EA5E6]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+      [head=2]Медицинская Карта Пациента[/head]
+
+      [head=3]Информация о Пациенте[/head]
+          [bold]Имя:[/bold]
+          [bold]Вид:[/bold]
+          [bold]Род занятий:[/bold]
+
+      [head=3]Информация об Ответчике[/head]
+          [bold]Имя:[/bold]
+          [bold]IFF судна:[/bold]
+          [bold]Время смены (при прибытии):[/bold]
+
+      [head=3]Полученные Травмы[/head]
+          [bold]Механические травмы:[/bold]
+          Ушибы: 0
+          Порезы: 0
+          Уколы: 0
+
+          [bold]Ожоговые травмы:[/bold]
+          Термические: 0
+          Электрические: 0
+          Обморожение: 0
+          Кислотные: 0
+
+          [bold]Токсикологические травмы:[/bold]
+          Яды: 0
+          Радиация: 0
+
+          [bold]Генетические травмы:[/bold]
+          Клеточные: 0
+
+          [bold]Асфиксические травмы:[/bold]
+          Кровопотеря: 0
+          Кислородное голодание: 0
+
+      [head=3]Проведенное Лечение[/head]
+          [bold]Примененные средства:[/bold]
+          Набор для ушибов: 0
+          Мазь: 0
+          Марлевый бинт: 0
+          Пакет крови: 0
+          Медицинская нить: 0
+          Регенеративная сетка: 0
+
+          [bold]Введенные препараты:[/bold]
+          [bullet/] Препарат, дозировка: XX ед.
+          [bullet/] Препарат, дозировка: XX ед.
+
+
+
+      [color=#AAAAAA]Форма недействительна без подписи и печати медицинского специалиста.[/color]
+
+- type: entity
+  id: PaperWrittenMedicalFormPrescription
+  name: medical prescription
+  categories: [ HideSpawnMenu ]
+  parent: Paper
+  components:
+  - type: Paper
+    content: |2
+      [color=#52B4E9]◥[bold]N[/bold]◣ [bold]Медицинский Диспансер[/bold][/color]
+      [color=#52B4E9]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+      [head=2]Медицинский Рецепт[/head]
+
+      [head=3]Информация о Пациенте[/head]
+          [bold]Имя:[/bold]
+          [bold]Вид:[/bold]
+          [bold]Род занятий:[/bold]
+          [bold]IFF судна:[/bold]
+
+      [head=3]Рецепт[/head]
+          [bullet/] ПРЕПАРАТ, дозировка: XX ед.
+          [bullet/] ПРЕПАРАТ, дозировка: XX ед.
+
+          [bold]УКАЖИТЕ ЛЮБЫЕ ИНСТРУКЦИИ ЗДЕСЬ.[/bold]
+
+
+
+      [color=#AAAAAA]Форма недействительна без подписи и печати медицинского специалиста.[/color]
+
+- type: entity # Based on form made by Radiantflash (Lykaon Rahmer)
+  id: PaperWrittenMedicalFormHealthInsurance
+  name: health insurance contract
+  categories: [ HideSpawnMenu ]
+  parent: Paper
+  components:
+  - type: Paper
+    content: |2
+      [color=#2EA5E6]◥[bold]N[/bold]◣ [bold]Медицинский Диспансер[/bold][/color]
+      [color=#2EA5E6]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+      [head=2]Договор Медицинского Страхования[/head]
+
+      [head=3]Информация о Страхователе[/head]
+          [bold]Имя:[/bold]
+          [bold]Вид:[/bold]
+          [bold]Род занятий:[/bold]
+          [bold]IFF судна:[/bold]
+
+      [head=3]Покрытие Полиса[/head]
+          [bold]Медицинское покрытие:[/bold]
+          \[  ] Лечение: Покрытие до $5,000. ($2,000 страховой взнос)
+          \[  ] Реанимация: Покрытие до $10,000. ($2,000 страховой взнос)
+          \[  ] Клонирование: Покрытие до $25,000. ($5,000 страховой взнос)
+
+          [bold]Дополнительное покрытие:[/bold]
+          \[  ] Буксировка: Покрытие до $10,000. Только малые шаттлы. ($2,000 страховой взнос)
+          \[  ] Буксировка: Покрытие до $20,000. Только малые и средние шаттлы. ($4,000 страховой взнос)
+
+      [head=3]Общий Страховой Взнос[/head]
+          [bold]$XX,XXX[/bold]
+
+
+      [color=#AAAAAA]Форма недействительна без подписей обеих сторон и печати медицинского специалиста.[/color]
+
+- type: entity
+  id: PaperWrittenMedicalFormServiceInvoice
+  name: medical service invoice
+  categories: [ HideSpawnMenu ]
+  parent: Paper
+  components:
+  - type: Paper
+    content: |2
+      [color=#2EA5E6]◥[bold]N[/bold]◣ [bold]Медицинский Диспансер[/bold][/color]
+      [color=#2EA5E6]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+      [head=2]Счет за Медицинские Услуги[/head]
+
+      [head=3]Информация о Пациенте[/head]
+            [bold]Имя:[/bold]
+            [bold]Вид:[/bold]
+            [bold]Род занятий:[/bold]
+
+      [head=3]Информация об Ответчике[/head]
+            [bold]Имя:[/bold]
+            [bold]IFF судна:[/bold]
+            [bold]Время смены:[/bold]
+
+      [head=3]Счет[/head]
+        $XX,XXX - Лечение
+        $XX,XXX - Реанимация
+        $XX,XXX - Клонирование
+        $XX,XXX - Буксировка
+      - $XX,XXX - Покрытие по полису лечения
+      - $XX,XXX - Покрытие по полису реанимации
+      - $XX,XXX - Покрытие по полису клонирования
+      - $XX,XXX - Покрытие по полису буксировки
+      ____________
+      $XXX,XXX - Итоговая сумма
+
+
+
+      [color=#AAAAAA]Форма недействительна без подписи и печати медицинского специалиста.[/color]
+
+- type: entity
+  id: PaperWrittenMedicalFormReceiptInvoice
+  name: medical dispatch payment
+  categories: [ HideSpawnMenu ]
+  parent: Paper
+  components:
+  - type: Paper
+    content: |2
+      [color=#33ccff]◥[bold]N[/bold]◣ [bold]Бухгалтерия Менеджера медицинских операции[/bold][/color]
+      [color=#33ccff]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+      [head=2]Оплата Медицинского Вызова[/head]
+
+      [head=3]Информация о Подрядчике[/head]
+            [bold]Имя:[/bold]
+            [bold]Вид:[/bold]
+            [bold]Род занятий:[/bold]
+
+      [head=3]Описание Оказанных Услуг[/head]
+
+      [head=3]Стоимость Услуг[/head]
+          Доставка медицинской награды: $0
+          Доставка материалов: $0
+          Медицинские услуги: $0
+          Другое: $0
+
+      [bold]Общая стоимость: $XXX,XXX[/bold]
+
+      [color=#AAAAAA]Форма недействительна без подписи и печати Менеджера медицинских операции. Эта форма не является договором. Компенсация за оказанные услуги остается на усмотрение Менеджера медицинских операции.[/color]
+
+- type: entity
+  id: PaperWrittenMedicalFormRelease
+  name: medical release form
+  categories: [ HideSpawnMenu ]
+  parent: Paper
+  components:
+  - type: Paper
+    content: |2
+      [color=#33ccff]◥[bold]N[/bold]◣ [bold]Бухгалтерия Менеджера медицинских операции[/bold][/color]
+      [color=#33ccff]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
+      [head=2]Форма Медицинского Выписки[/head]
+
+      [head=3]Информация о Пациенте[/head]
+            [bold]Имя:[/bold]
+            [bold]Вид:[/bold]
+            [bold]Род занятий:[/bold]
+
+      [head=3]Информация об Ответчике[/head]
+            [bold]Имя:[/bold]
+            [bold]IFF судна:[/bold]
+            [bold]Время смены:[/bold]
+
+      [head=3]Оказанные Услуги[/head]
+
+
+
+      [head=3]Примечания[/head]
+
+
+      [head=3]Я, нижеподписавшийся, подтверждаю, что перечисленные выше услуги указаны верно, и даю согласие на выписку.[/head]
+
+
+
+      [color=#AAAAAA]Эта форма признается только с подписью и печатью Менеджера медицинских операции. Эта форма не является договором. Компенсация за оказанные услуги остается на усмотрение Менеджера медицинских операции.[/color]
+
+
+- type: entity
+  id: PaperWrittenMedicalMedtekPatientRecord
+  parent: Paper
+  name: Patient Record
+  categories: [ HideSpawnMenu ]
+  description: A printed medical patient record.
+  components:
+  - type: Tag
+    tags:
+    - Document
+    - Trash
+    - Paper
+  - type: StaticPrice
+    price: 0
+  - type: Sprite
+    sprite: Objects/Misc/bureaucracy.rsi
+    layers:
+    - state: paper_receipt
+    - state: paper_receipt_words
+      map: ["enum.PaperVisualLayers.Writing"]
+      visible: false
+    - state: paper_stamp-generic
+      map: ["enum.PaperVisualLayers.Stamp"]
+      visible: false
+  - type: PaperVisuals
+    backgroundImagePath: "/Textures/Interface/Paper/paper_background_perforated.svg.96dpi.png"
+    headerImagePath: "/Textures/_NF/Interface/Paper/paper_heading_medtek_report.svg.96dpi.png"
+    headerMargin: 0.0, 0.0, 0.0, 6.0
+    backgroundImageTile: true
+    backgroundPatchMargin: 0.0, 6.0, 0.0, 6.0
+    contentMargin: 12.0, 0.0, 12.0, 0.0
+    # This is a narrow piece of paper
+    maxWritableArea: 256.0, 0.0
+  - type: Paper
+    content: |
+      [head=3]Patient[/head]
+      [bold]Name:[/bold] {patient.name}
+      [bold]Species:[/bold] {patient.species}
+
+      [head=3]Responder[/head]
+      [bold]Name:[/bold] {responder.name}
+      [bold]Shift Time:[/bold] {roundTime}
+
+      [head=3]Injuries[/head]
+      {damageList}

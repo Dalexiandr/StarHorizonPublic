@@ -1,0 +1,435 @@
+- type: entity
+  parent: [BaseStructure, AnCoStore, BaseAnCoContraband]
+  id: BaseAnCoUplink
+  name: консоль запроса АнКо
+  description: Подозрительная консоль без монитора.
+  suffix: StarHorizon, AnCo, Structure
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: InteractionOutline
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Machines/uplink.rsi
+    layers:
+    - state: ancoUplink
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Store
+    balance:
+      CitadelCoin: 0
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: Pullable
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.40,-0.30,0.40,0.45"
+        density: 80
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            KazmieSheet1:
+              min: 1
+              max: 5
+            ArdonSheet1:
+              min: 3
+              max: 5
+
+- type: entity
+  parent: ComputerId
+  id: ComputerIdAnCo
+  name: ID консоль АнКо
+  suffix: StarHorizon, AnCo, Structure
+  description: Терминал для программирования ID-карт сотрудников корпорации АнКо.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Machines/Computers/computer.rsi
+    layers:
+    - state: monitor
+    - state: base
+    - map: ["computerLayerKeyboard"]
+      state: key
+    - map: ["computerLayerScreen"]
+      state: id_screen
+    - map: ["computerLayerKeys"]
+      state: key
+  - type: IdCardConsole
+    accessLevels:
+    - AccessAnCoCounselor
+    - AccessAnCoTitan
+    - AccessAnCoKnight
+    - AccessAnCoSpider
+    - AccessAnCoOfficer
+    - AccessAnCoCadet
+    - AccessAnCoRipsoid
+    - AccessAnCoWelcome
+    - AnCo
+    - Maintenance
+    - External
+    - Service
+    - Medical
+    - Engineering
+    - Janitor
+    - Captain
+    privilegedIdSlot:
+      name: id-card-console-privileged-id
+      ejectSound: /Audio/Machines/id_swipe.ogg
+      insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+      ejectOnBreak: true
+      swap: false
+      whitelist:
+        components:
+        - IdCard
+    targetIdSlot:
+      name: id-card-console-target-id
+      ejectSound: /Audio/Machines/id_swipe.ogg
+      insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+      ejectOnBreak: true
+      swap: false
+      whitelist:
+        components:
+        - IdCard
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            KazmieSheet1:
+              min: 1
+              max: 5
+            ArdonSheet1:
+              min: 3
+              max: 5
+
+- type: entity
+  parent: ComputerIFF
+  id: ComputerIFFAnCo
+  name: консоль опознания АнКо
+  suffix: StarHorizon, AnCo, Structure
+  description: Терминал для смены общего реестра шаттлов.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Machines/Computers/computer.rsi
+    layers:
+    - state: monitor
+    - state: base
+    - map: ["computerLayerKeyboard"]
+      state: key
+    - map: ["computerLayerScreen"]
+      state: iff_screen
+    - map: ["computerLayerKeys"]
+      state: key
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            KazmieSheet1:
+              min: 1
+              max: 5
+            ArdonSheet1:
+              min: 3
+              max: 5
+
+- type: entity
+  parent: ComputerIFFAnCo
+  id: ComputerIFFFullAnCo
+  name: консоль маскировки АнКо
+  suffix: StarHorizon, AnCo, Structure
+  description: Терминал для маскировки шаттлов.
+  components:
+  - type: IFFConsole
+    allowedFlags:
+      - Hide
+      - HideLabel
+  - type: ActivatableUI
+    key: enum.IFFConsoleUiKey.Key
+  - type: UserInterface
+    interfaces:
+        enum.IFFConsoleUiKey.Key:
+          type: IFFConsoleBoundUserInterface
+        enum.WiresUiKey.Key:
+          type: WiresBoundUserInterface
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            KazmieSheet1:
+              min: 1
+              max: 5
+            ArdonSheet1:
+              min: 3
+              max: 5
+
+- type: entity
+  id: AnCoComputerShuttle
+  parent: ComputerShuttle
+  name: консоль управления шаттлов АнКо
+  suffix: StarHorizon, AnCo, Structure
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Machines/Computers/computer.rsi
+    layers:
+    - state: monitor
+    - state: base
+    - map: ["computerLayerKeyboard"]
+      state: key
+    - map: ["computerLayerScreen"]
+      state: pilot_screen
+    - map: ["computerLayerKeys"]
+      state: key
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            KazmieSheet1:
+              min: 1
+              max: 5
+            ArdonSheet1:
+              min: 3
+              max: 5
+
+# - type: entity
+#   parent: [ BaseStructureDisableToolUse, BaseStructureIndestructible, ComputerShipyardBase ]
+#   id: AnCoShipyardConsole
+#   name: консоль покушки шаттлов АнКо
+#   suffix: StarHorizon, AnCo, Structure
+#   components:
+#   - type: Sprite
+#     sprite: _Horizon/_Fractions/AnCo/Structures/Machines/Computers/computer.rsi
+#     layers:
+#     - state: monitor
+#     - state: base_table
+#     - map: ["computerLayerKeyboard"]
+#       state: key
+#     - map: ["computerLayerScreen"]
+#       state: endi_screen
+#     - map: ["computerLayerKeys"]
+#       state: key
+#   - type: Destructible
+#     thresholds:
+#     - trigger:
+#         !type:DamageTrigger
+#         damage: 100
+#       behaviors:
+#         - !type:DoActsBehavior
+#           acts: [ "Destruction" ]
+#         - !type:PlaySoundBehavior
+#           sound:
+#             collection: MetalBreak
+#         - !type:SpawnEntitiesBehavior
+#           spawn:
+#             KazmieSheet1:
+#               min: 1
+#               max: 5
+#             ArdonSheet1:
+#               min: 3
+#               max: 5
+  # - type: ShipyardListing
+  #   shuttles:
+  # когда будут шаттл АнКо
+
+# TODO: настольные версии компудахтеров
+
+- type: entity
+  parent: ComputerIdAnCo
+  id: ComputerIdTableAnCo
+  suffix: StarHorizon, AnCo, Structure
+  components:
+  - type: Sprite
+    drawdepth: SmallObjects
+    sprite: _Horizon/_Fractions/AnCo/Structures/Machines/Computers/computer.rsi
+    layers:
+    - state: monitor
+    - state: base_table
+    - map: ["computerLayerKeyboard"]
+      state: key
+    - map: ["computerLayerScreen"]
+      state: id_screen
+    - map: ["computerLayerKeys"]
+      state: key
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.25,-0.35,0.25,0.35"
+          density: 190
+          mask:
+            - TabletopMachineMask
+          layer:
+            - TabletopMachineLayer
+
+- type: entity
+  parent: ComputerIFFAnCo
+  id: ComputerIFFTableAnCo
+  suffix: StarHorizon, AnCo, Structure
+  components:
+  - type: Sprite
+    drawdepth: SmallObjects
+    sprite: _Horizon/_Fractions/AnCo/Structures/Machines/Computers/computer.rsi
+    layers:
+    - state: monitor
+    - state: base_table
+    - map: ["computerLayerKeyboard"]
+      state: key
+    - map: ["computerLayerScreen"]
+      state: iff_screen
+    - map: ["computerLayerKeys"]
+      state: key
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.25,-0.35,0.25,0.35"
+          density: 190
+          mask:
+            - TabletopMachineMask
+          layer:
+            - TabletopMachineLayer
+
+- type: entity
+  parent: ComputerIFFFullAnCo
+  id: ComputerIFFFullTableAnCo
+  suffix: StarHorizon, AnCo, Structure
+  components:
+  - type: Sprite
+    drawdepth: SmallObjects
+    sprite: _Horizon/_Fractions/AnCo/Structures/Machines/Computers/computer.rsi
+    layers:
+    - state: monitor
+    - state: base_table
+    - map: ["computerLayerKeyboard"]
+      state: key
+    - map: ["computerLayerScreen"]
+      state: iff_screen
+    - map: ["computerLayerKeys"]
+      state: key
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.25,-0.35,0.25,0.35"
+          density: 190
+          mask:
+            - TabletopMachineMask
+          layer:
+            - TabletopMachineLayer
+
+- type: entity
+  id: AnCoComputerShuttleTable
+  parent: AnCoComputerShuttle
+  suffix: StarHorizon, AnCo, Structure
+  components:
+  - type: Sprite
+    drawdepth: SmallObjects
+    sprite: _Horizon/_Fractions/AnCo/Structures/Machines/Computers/computer.rsi
+    layers:
+    - state: monitor
+    - state: base_table
+    - map: ["computerLayerKeyboard"]
+      state: key
+    - map: ["computerLayerScreen"]
+      state: pilot_screen
+    - map: ["computerLayerKeys"]
+      state: key
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.25,-0.35,0.25,0.35"
+          density: 190
+          mask:
+            - TabletopMachineMask
+          layer:
+            - TabletopMachineLayer
+
+# - type: entity
+#   id: AnCoShipyardConsoleTable
+#   parent: AnCoShipyardConsole
+#   suffix: StarHorizon, AnCo, Structure
+#   components:
+#   - type: Sprite
+#     drawdepth: SmallObjects
+#     sprite: _Horizon/_Fractions/AnCo/Structures/Machines/Computers/computer.rsi
+#     layers:
+#     - state: monitor
+#     - state: base_table
+#     - map: ["computerLayerKeyboard"]
+#       state: key
+#     - map: ["computerLayerScreen"]
+#       state: endi_screen
+#     - map: ["computerLayerKeys"]
+#       state: key
+#     - type: Fixtures
+#       fixtures:
+#         fix1:
+#           shape:
+#             !type:PhysShapeAabb
+#             bounds: "-0.25,-0.35,0.25,0.35"
+#           density: 190
+#           mask:
+#             - TabletopMachineMask
+#           layer:
+#             - TabletopMachineLayer

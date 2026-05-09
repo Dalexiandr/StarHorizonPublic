@@ -1,0 +1,38 @@
+- type: radioChannel
+  id: DFI
+  name: DFI
+  keycode: 'в'
+  frequency: 1488
+  color: "#9999FF"
+  longRange: true
+
+- type: entity
+  id: EncryptionKeyDFI
+  parent: [EncryptionKey, BaseC2ContrabandUnredeemable]
+  name: DFI encryption key
+  description: An encryption key used by DFI agents.
+  components:
+  - type: EncryptionKey
+    channels:
+    - DFI
+    defaultChannel: DFI
+  - type: Sprite
+    sprite: _Horizon/_Fractions/DFI/dfiencryptionkey.rsi
+    state: crypto-base
+
+- type: entity
+  parent: [ClothingHeadset, BaseC2ContrabandUnredeemable]
+  id: ClothingHeadsetDFI
+  name: DFI headset
+  description: A headset used by DFI agents.
+  components:
+
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyDFI
+      - EncryptionKeyCommon
+  - type: Sprite
+    sprite: Clothing/Ears/Headsets/command.rsi
+  - type: Clothing
+    sprite: Clothing/Ears/Headsets/command.rsi

@@ -1,0 +1,32 @@
+- type: soundCollection
+  id: PaintorUse
+  files:
+  - /Audio/_StarHorizon/Items/Toys/karandash.ogg
+
+- type: soundCollection
+  id: InquizitorUse
+  files:
+  - /Audio/_StarHorizon/Items/Toys/halt_1.ogg
+
+- type: soundCollection
+  id: PlushieLemird
+  files:
+  - /Audio/_StarHorizon/SoundCollection/PlushieLemird/animesample20.ogg
+  - /Audio/_StarHorizon/SoundCollection/PlushieLemird/animesample18.ogg
+  - /Audio/_StarHorizon/SoundCollection/PlushieLemird/animesample17.ogg
+  - /Audio/_StarHorizon/SoundCollection/PlushieLemird/animesample9.ogg
+  - /Audio/_StarHorizon/SoundCollection/PlushieLemird/moan2.ogg
+  - /Audio/_StarHorizon/SoundCollection/PlushieLemird/moan10.ogg
+  - /Audio/_StarHorizon/SoundCollection/PlushieLemird/moan11.ogg
+  - /Audio/_StarHorizon/SoundCollection/PlushieLemird/moan3.ogg
+  - /Audio/_StarHorizon/SoundCollection/PlushieLemird/moan4.ogg
+  - /Audio/_StarHorizon/SoundCollection/PlushieLemird/moan6.ogg
+  - /Audio/_StarHorizon/SoundCollection/PlushieLemird/moan12.ogg
+  - /Audio/_StarHorizon/SoundCollection/PlushieLemird/moan13.ogg
+  - /Audio/_StarHorizon/SoundCollection/PlushieLemird/moan14.ogg
+  - /Audio/_StarHorizon/SoundCollection/PlushieLemird/moan15.ogg
+  - /Audio/_StarHorizon/SoundCollection/PlushieLemird/moan16.ogg
+  - /Audio/_StarHorizon/SoundCollection/PlushieLemird/moan17.ogg
+  - /Audio/_StarHorizon/SoundCollection/PlushieLemird/moan19.ogg
+  - /Audio/_StarHorizon/SoundCollection/PlushieLemird/moan20.ogg
+  - /Audio/_StarHorizon/SoundCollection/PlushieLemird/moan21.ogg

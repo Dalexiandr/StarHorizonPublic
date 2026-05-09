@@ -1,0 +1,39 @@
+- type: entity
+  id: ExtractTelepad
+  parent: BaseMachinePowered
+  name: Приёмник для аварийного телепорта
+  description: Аварийный телепортер на который телепортируется владелец аварийного пенного импланта
+  components:
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Static
+    canCollide: false
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.00"
+        density: 190
+        mask:
+          - MachineMask
+  - type: Sprite
+    sprite: Structures/cargo_telepad.rsi
+    drawdepth: HighFloorObjects
+    layers:
+    - state: offline
+      map: [ "base" ]
+    - state: idle
+      map: [ "beam" ]
+      shader: unshaded
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallicStrong
+  - type: ApcPowerReceiver
+    powerLoad: 500
+  - type: AnCoExtractTelepad
+  - type: Appearance
+  - type: CollideOnAnchor

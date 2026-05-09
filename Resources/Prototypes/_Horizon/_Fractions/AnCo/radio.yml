@@ -1,0 +1,25 @@
+- type: radioChannel
+  id: AnCoRadio
+  name: AnCo
+  keycode: 'а'
+  frequency: 5371
+  color: "#F05A5A"
+  longRange: true
+
+- type: entity
+  id: EncryptionKeyAnCo
+  parent: [BaseItem, BaseAnCoContraband]
+  suffix: StarHorizon, AnCo
+  name: ключ шифрования AnCo
+  description: Имея при себе эту штуку, вы либо везунчик либо самоубийца
+  components:
+  - type: Item
+    size: Tiny
+    sprite: _Horizon/_Fractions/AnCo/Objects/Devices/encryptionkeys.rsi
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Devices/encryptionkeys.rsi
+    state: crypto-base
+  - type: EncryptionKey
+    channels:
+    - AnCoRadio
+    defaultChannel: AnCoRadio

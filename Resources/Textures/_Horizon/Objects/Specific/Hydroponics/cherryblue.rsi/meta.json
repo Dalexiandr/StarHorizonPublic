@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "license": "CLA with hosting restrictions",
+  "copyright": "Made by Malanisa",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "seed"
+    },
+    {
+      "name": "stage-1"
+    },
+    {
+      "name": "stage-2"
+    },
+    {
+      "name": "stage-3"
+    },
+    {
+      "name": "stage-4"
+    },
+    {
+      "name": "stage-5"
+    },
+    {
+      "name": "stage-6"
+    },
+    {
+      "name": "harvest"
+    },
+    {
+      "name": "dead"
+    },
+    {
+      "name": "produce"
+    }
+  ]
+}

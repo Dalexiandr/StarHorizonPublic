@@ -1,0 +1,20 @@
+- type: entity
+  id: AnCoFloorLavaEntityArdon
+  name: расплавленный ардоний
+  description: Это расскаленный ардоний, теперь еще опаснее.
+  suffix: StarHorizon, AnCo, Structure
+  parent: FloorLavaEntity
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Tiles/ardonlava.rsi
+    drawdepth: BelowFloor
+    layers:
+      - state: lava
+        shader: unshaded
+  - type: Icon
+    sprite: _Horizon/_Fractions/AnCo/Tiles/ardonlava.rsi
+    state: full

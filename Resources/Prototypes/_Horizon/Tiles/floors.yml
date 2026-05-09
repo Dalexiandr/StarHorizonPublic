@@ -1,0 +1,61 @@
+# Caves
+- type: tile
+  id: FloorCaveShadow
+  name: tiles-cave-shadow
+  sprite: /Textures/_Horizon/Tiles/caveshadow.png
+  variants: 7
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Space
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorTurretPlace
+  name: tiles-turret-place
+  sprite: /Textures/_Horizon/Tiles/turret.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHeavy
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorSteelDarkGray
+  name: tiles-steel-floor-darkgray
+  sprite: /Textures/_Horizon/Tiles/steel_darkgray.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHeavy
+  itemDrop: FloorTileItemSteelDarkGray
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorSteelPlateDarkGray
+  name: tiles-steelplate-floor-darkgray
+  sprite: /Textures/_Horizon/Tiles/steelplate_darkgray.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepHeavy
+  itemDrop: FloorTileItemSteelPlateDarkGray
+  heatCapacity: 10000

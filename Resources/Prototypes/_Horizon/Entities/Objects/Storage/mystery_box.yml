@@ -1,0 +1,15 @@
+- type: entity
+  parent: BoxCardboard
+  id: BoxMysterySyndicate
+  name: загадочная коробка
+  description: Небольшая коробка. Внутри что-то лежит...
+  components:
+    - type: Storage
+      maxItemSize: Small
+      grid:
+        - 0,0,1,1
+    - type: StorageFill
+      contents:
+        - id: ClothingUnderwearBottomChameleon
+        - id: ClothingUnderwearTopChameleon
+        - id: ClothingUnderwearSocksChameleon

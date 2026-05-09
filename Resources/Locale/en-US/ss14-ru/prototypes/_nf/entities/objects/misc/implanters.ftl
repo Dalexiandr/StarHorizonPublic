@@ -1,0 +1,14 @@
+ent-MedicalTrackingImplanter = medical tracking implanter
+    .desc = { ent-BaseImplantOnlyImplanter.desc }
+ent-FreelanceTrackingImplanter = freelance tracking implanter
+    .desc = { ent-BaseImplantOnlyImplanterSyndi.desc }
+ent-DeathAcidifierImplanterNF = death acidifier implanter
+    .desc = { ent-BaseImplantOnlyImplanterSyndi.desc }
+ent-GibAcidifierImplanterNF = gib acidifier implanter
+    .desc = { ent-BaseImplantOnlyImplanterSyndi.desc }
+ent-BibleUserImplanter = faith implanter
+    .desc = { ent-BaseImplantOnlyImplanter.desc }
+ent-MimePowersImplanter = mime vow implanter
+    .desc = { ent-BaseImplantOnlyImplanter.desc }
+ent-RadioImplanterFreelance = freelance radio implanter
+    .desc = { ent-BaseImplantOnlyImplanter.desc }

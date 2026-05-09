@@ -1,0 +1,5 @@
+- type: localizedDataset
+  id: spacepiratehumanoidchatter
+  values:
+    prefix: advertisement-spacepiratehumanoid-
+    count: 21

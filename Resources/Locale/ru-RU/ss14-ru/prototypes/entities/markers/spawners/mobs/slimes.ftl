@@ -1,0 +1,15 @@
+ent-SpawnMobAdultSlimesBlue = спавнер синего слайма
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobAdultSlimesBlueAngry = спавнер синего слайма
+    .desc = { ent-MarkerBase.desc }
+    .suffix = Враждебный
+ent-SpawnMobAdultSlimesGreen = спавнер зелёного слайма
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobAdultSlimesGreenAngry = спавнер зелёного слайма
+    .desc = { ent-MarkerBase.desc }
+    .suffix = Враждебный
+ent-SpawnMobAdultSlimesYellow = спавнер жёлтого слайма
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobAdultSlimesYellowAngry = спавнер жёлтого слайма
+    .desc = { ent-MarkerBase.desc }
+    .suffix = Враждебный

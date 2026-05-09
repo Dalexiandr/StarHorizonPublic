@@ -1,0 +1,35 @@
+﻿<Document>
+  # Трубопроводные сети
+  Системы соединенных [textlink="труб" link="Pipes"] для транспортировки газов.
+
+  <Box>
+    <GuideEntityEmbed Entity="GasPipeStraight" Caption=""/>
+    <GuideEntityEmbed Entity="GasPipeHalf" Caption=""/>
+    <GuideEntityEmbed Entity="GasPipeBend" Caption=""/>
+    <GuideEntityEmbed Entity="GasPipeTJunction" Caption=""/>
+    <GuideEntityEmbed Entity="GasPipeFourway" Caption=""/>
+    <GuideEntityEmbed Entity="GasPressurePump" Caption=""/>
+    <GuideEntityEmbed Entity="GasVolumePump" Caption=""/>
+  </Box>
+
+  Примеры сетей:
+  - Распределительная (дистро)
+  - Отводная (вэйстнет)
+
+  ## Принцип работы
+  Трубопроводы работают как единый объем с точками ввода/вывода.
+  Разделяются устройствами:
+  - [textlink="Насосы" link="Pumps"]
+  - [textlink="Смесители/фильтры" link="MixingAndFiltering"]
+  - [textlink="Клапаны" link="Valves"]
+  - [textlink="Радиаторы" link="Radiators"]
+
+  Пример разделения сети насосом:
+  <Box>
+    <GuideEntityEmbed Entity="GasPipeStraight" Caption="Сеть 1" Rotation="90"/>
+    <GuideEntityEmbed Entity="GasPipeStraight" Caption="" Rotation="90"/>
+    <GuideEntityEmbed Entity="GasPressurePump" Caption="Разделитель" Rotation="90"/>
+    <GuideEntityEmbed Entity="GasPipeStraight" Caption="" Rotation="90"/>
+    <GuideEntityEmbed Entity="GasPipeStraight" Caption="Сеть 2" Rotation="90"/>
+  </Box>
+</Document>

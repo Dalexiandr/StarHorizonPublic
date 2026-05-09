@@ -1,0 +1,87 @@
+- type: dungeonConfig
+  id: Complex
+  layers:
+  - !type:PrefabDunGen
+    roomWhitelist:
+      tags:
+      - AnCoComplex
+    presets:
+    - AnCoLarge
+
+  - !type:CorridorDunGen
+    width: 3
+    tile: FloorMiningDark
+
+  - !type:DungeonEntranceDunGen
+    count: 2
+    tile: FloorMiningDark
+    contents: AnCoAirlockGlass
+
+  - !type:RoomEntranceDunGen
+    tile: FloorMiningDark
+    contents: AnCoAirlockGlass
+
+  - !type:EntranceFlankDunGen
+    tile: FloorMiningDark
+    contents: AnCoWindowArdon
+
+  - !type:ExternalWindowDunGen
+    tile: FloorMiningDark
+    contents: AnCoWindowArdon
+
+  - !type:WallMountDunGen
+    contents: NFBaseWallMounts
+    tile: FloorMiningDark
+
+  - !type:BoundaryWallDunGen
+    wall: AnCoWallKazmie
+    cornerWall: AnCoWallKazmie
+    tile: FloorMiningDark
+
+  - !type:JunctionDunGen
+    width: 1
+    tile: FloorMiningDark
+    contents: AnCoAirlockGlass
+
+  - !type:JunctionDunGen
+    width: 3
+    tile: FloorMiningDark
+    contents: AnCoAirlockGlass
+
+  - !type:AutoCablingDunGen
+    entity: CableApcExtension
+
+  - !type:CornerClutterDunGen
+    contents: NFBaseClutter
+
+  - !type:CorridorDecalSkirtingDunGen
+    cardinalDecals:
+      South: BrickTileWhiteLineS
+      East: BrickTileWhiteLineE
+      North: BrickTileWhiteLineN
+      West: BrickTileWhiteLineW
+    cornerDecals:
+      SouthEast: BrickTileWhiteCornerSe
+      SouthWest: BrickTileWhiteCornerSw
+      NorthEast: BrickTileWhiteCornerNe
+      NorthWest: BrickTileWhiteCornerNw
+    pocketDecals:
+      SouthWest: BrickTileWhiteInnerSw
+      SouthEast: BrickTileWhiteInnerSe
+      NorthWest: BrickTileWhiteInnerNw
+      NorthEast: BrickTileWhiteInnerNe
+    color: "#b3282896" # TechniRed
+
+- type: entityTable
+  id: AnCoWindowArdon
+  table: !type:AllSelector
+    children:
+    - id: GrilleDungeon
+    - id: AnCoWindowArdonDungeon
+
+- type: entityTable
+  id: AnCoAirlockGlass
+  table: !type:AllSelector
+    children:
+    - id: CableApcExtension
+    - id: AnCoAirlock

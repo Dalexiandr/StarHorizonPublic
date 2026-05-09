@@ -1,0 +1,45 @@
+- type: microwaveMealRecipe
+  id: RecipeFoodCoffeearabicaRaw3
+  name: Рецепт жарки кофейных зерен (арабика)
+  result: FoodCoffeearabicaRaw3
+  time: 5
+  group: Savory
+  solids:
+    FoodCoffeearabicaRaw2: 1
+  recipeType:
+  - Oven
+
+- type: microwaveMealRecipe
+  id: RecipeFoodCoffeelibericaRaw3
+  name: Рецепт жарки кофейных зерен (либерика)
+  result: FoodCoffeelibericaRaw3
+  time: 5
+  group: Savory
+  solids:
+    FoodCoffeelibericaRaw2: 1
+  recipeType:
+  - Oven
+
+- type: microwaveMealRecipe
+  id: RecipeFoodCoffeerobustaRaw3
+  name: Рецепт жарки кофейных зерен (робуста)
+  result: FoodCoffeerobustaRaw3
+  time: 5
+  group: Savory
+  solids:
+    FoodCoffeerobustaRaw2: 1
+  recipeType:
+  - Oven
+
+- type: microwaveMealRecipe
+  id: RecipeWeddingCake
+  name: рецепт свадебного торта
+  result: FoodCakeWedding
+  time: 15
+  group: Cake
+  reagents:
+    Cream: 20
+    JuiceBerry: 20
+  solids:
+    FoodCakePlain: 3
+  recipeType: Assembler   

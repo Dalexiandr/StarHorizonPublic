@@ -1,0 +1,134 @@
+
+- type: entity
+  id: AnCoSuitFabricator
+  parent: [BaseLatheLube, BaseAnCoContraband]
+  name: фабрикатор обмундирования АнКо
+  description: Как вы его собрали?
+  suffix: StarHorizon, AnCo, Structure
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Machines/fabricatorsuit.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+  - type: Machine
+    board: AnCoSuitCircuitboard
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - AnCoMaterial
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    unlitIdleState: unlit
+    staticPacks:
+    - AnCoSuitCraft
+
+- type: latheRecipePack
+  id: AnCoSuitCraft
+  recipes:
+  - ClothingOuterHardsuitPetal
+  - ClothingOuterHardsuitDusk
+  - ClothingOuterHardsuitGranite
+  - AnCoVests
+  - AnCoClothingShoesBootsMag
+  - JetpackAnCo
+  - GasTankAnCo
+  - AnCosatchel
+
+ # интересно что еще сломалось пушо используем (Frontier)
+
+# рецепты
+- type: latheRecipe
+  id: ClothingOuterHardsuitPetal
+  result: ClothingOuterHardsuitPetal
+  completetime: 10
+  materials:
+    Ardon: 2000
+    Kazmie: 2000
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitDusk
+  result: ClothingOuterHardsuitDusk
+  completetime: 10
+  materials:
+    Ardon: 1000
+    Kazmie: 4000
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitGranite
+  result: ClothingOuterHardsuitGranite
+  completetime: 10
+  materials:
+    Ardon: 2000
+    Kazmie: 5000
+
+- type: latheRecipe
+  id: AnCoClothingShoesBootsMag
+  result: AnCoClothingShoesBootsMag
+  completetime: 10
+  materials:
+    Ardon: 3000
+    Kazmie: 3000
+
+- type: latheRecipe
+  id: JetpackAnCo
+  result: JetpackAnCo
+  completetime: 10
+  materials:
+    Ardon: 1500
+    Kazmie: 1500
+
+- type: latheRecipe
+  id: GasTankAnCo
+  result: GasTankAnCo
+  completetime: 10
+  materials:
+    Ardon: 1500
+    Kazmie: 1000
+
+- type: latheRecipe
+  id: AnCosatchel
+  result: AnCosatchel
+  completetime: 10
+  materials:
+    Ardon: 1500
+    Kazmie: 1500
+
+- type: latheRecipe
+  id: AnCoDroneOff
+  result: AnCoDroneOff
+  completetime: 10
+  materials:
+    Ardon: 1500
+    Kazmie: 1000
+
+- type: latheRecipe
+  id: AnCoDroneCombatOff
+  result: AnCoDroneCombatOff
+  completetime: 10
+  materials:
+    Ardon: 2500
+    Kazmie: 2000
+
+- type: latheRecipe
+  id: AnCoDroneMineOff
+  result: AnCoDroneMineOff
+  completetime: 10
+  materials:
+    Ardon: 3500
+    Kazmie: 2000
+
+- type: latheRecipe
+  id: BaseRipsoidAnCo
+  result: BaseRipsoidAnCo
+  completetime: 10
+  materials:
+    Ardon: 10000
+    Kazmie: 10000

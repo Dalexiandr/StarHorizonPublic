@@ -1,0 +1,31 @@
+<Document>
+# Технологии
+
+Все технологии имеют определенную стоимость и требования к уровню для их изучения. Их открытие расширяет ассортимент рецептов, доступных для печати на фабрикаторах и станках.
+
+Ниже перечислены различные технологии и соответствующие им дисциплины.
+
+<!-- Frontier: all disciplines below swapped to NF variants -->
+
+## Промышленность
+<GuideTechDisciplineEmbed Discipline="NFEngineering"/>
+
+## Медицина
+<GuideTechDisciplineEmbed Discipline="NFMedical"/>
+
+## Наемники
+<GuideTechDisciplineEmbed Discipline="NFArsenalMercenary"/>
+
+## Шерифы
+<GuideTechDisciplineEmbed Discipline="NFArsenalNfsd"/>
+
+## Утилизация
+<GuideTechDisciplineEmbed Discipline="NFSalvage"/>
+
+## Наука
+<GuideTechDisciplineEmbed Discipline="NFScience"/>
+
+## Обслуживание персонала
+<GuideTechDisciplineEmbed Discipline="NFService"/>
+
+</Document>

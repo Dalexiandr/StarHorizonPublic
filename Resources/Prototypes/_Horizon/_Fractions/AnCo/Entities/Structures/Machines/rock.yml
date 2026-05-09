@@ -1,0 +1,48 @@
+- type: entity
+  id: AnCoRock
+  parent: BaseStructure
+  suffix: StarHorizon, AnCo, Structure
+  name: глыба казмия
+  description: Монолитный кусок казмия. Кажется очень прочным.
+  components:
+    - type: Sprite
+      sprite: _Horizon/_Fractions/AnCo/Structures/Decoration/rock.rsi
+      state: AnCoRock
+      noRot: true
+    - type: Anchorable
+      delay: 2
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.45
+          density: 60
+          mask:
+            - MachineMask
+          layer:
+            - MidImpassable
+            - LowImpassable
+            - BulletImpassable
+            - Opaque
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Rock
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 50
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                KazmieOre1:
+                  min: 1
+                  max: 5
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]

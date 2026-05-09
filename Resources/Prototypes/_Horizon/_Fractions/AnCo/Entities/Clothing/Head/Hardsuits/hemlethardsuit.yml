@@ -1,0 +1,145 @@
+- type: entity
+  parent: [ClothingHeadHardsuitBase, BaseAnCoContraband]
+  id: ClothingHeadHardsuitSpider
+  categories: [ HideSpawnMenu ]
+  name: шлем офицера Паука АнКо
+  description: Прочный, похожий на леденец шлем.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Head/Hardsuits/spiderh.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Head/Hardsuits/spiderh.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
+#  - type: ToggleClothing
+#    action: AnCoToggleInvisibilitySpider можете поплакаться об этом
+#  - type: ComponentToggler
+#    parent: true
+#    components:
+#    - type: Stealth
+#      hadOutline: true
+#    - type: StealthOnMove
+#      minVisibility: -1
+#      passiveVisibilityRate: -0.37
+#      movementVisibilityRate: 1
+
+- type: entity
+  parent: [NFClothingHeadHardsuitWithLightBase, BaseAnCoContraband]
+  id: ClothingHeadHardsuitTitan
+  categories: [ HideSpawnMenu ]
+  name: шлем офицера Титана АнКо
+  description: Шлем, сделанный из пластин чрезвычайно прочного материала. В нём Вы чувствуете себя, как в танке.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Head/Hardsuits/titanh.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Head/Hardsuits/titanh.rsi
+  - type: PointLight
+    color: "#B30E0E"
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
+
+- type: entity
+  parent: [NFClothingHeadHardsuitWithLightBase, BaseAnCoContraband]
+  id: ClothingHeadHardsuitKnight
+  categories: [ HideSpawnMenu ]
+  name: шлем офицера Рыцаря АнКо
+  description: Шлем скафандра Паука с дополнительной бронёй.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Head/Hardsuits/knighth.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Head/Hardsuits/knighth.rsi
+  - type: PointLight
+    color: "#F05A5A"
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.90
+        Radiation: 0.85
+        Caustic: 0.90
+  - type: CatWearable
+
+# 99% добавьте защиты от удушься
+
+- type: entity
+  parent: [ClothingHeadEVAHelmetBase, BaseAnCoContraband]
+  id: ClothingHeadHardsuitPetal
+  categories: [ HideSpawnMenu ]
+  name: шлем скафандра Лепесток
+  description: шлем обладающий просторным куполом, идеальный выбор для работы.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Head/Hardsuits/petal.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Head/Hardsuits/petal.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+
+- type: entity
+  parent: [ClothingHeadEVAHelmetBase, BaseAnCoContraband]
+  id: ClothingHeadHardsuitGranite
+  categories: [ HideSpawnMenu ]
+  name: шлем скафандра Гранит
+  description: шлем обладающий просторным куполом, идеальный выбор для работы.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Head/Hardsuits/granite.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Head/Hardsuits/granite.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+
+- type: entity
+  parent: [ClothingHeadEVAHelmetBase, BaseAnCoContraband]
+  id: ClothingHeadHardsuitDusk
+  categories: [ HideSpawnMenu ]
+  name: шлем скафандра Сумрак
+  description: шлем обладающий просторным куполом, идеальный выбор для работы.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Head/Hardsuits/dusk.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Head/Hardsuits/dusk.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1

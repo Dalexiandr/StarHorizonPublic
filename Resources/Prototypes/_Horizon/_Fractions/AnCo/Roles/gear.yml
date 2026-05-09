@@ -1,0 +1,80 @@
+# кадет
+- type: startingGear
+  id: AnCoCadetGear
+  suffix: StarHorizon, AnCo
+  equipment:
+    jumpsuit: SuitAnCo
+    back: AnCosatchelCadet
+    eyes: ClothingEyesGlassesAnCo
+    gloves: AnCoGloves
+    outerClothing: AnCoVests
+    shoes: AnCoBoots
+    id: PDACadetAnCo
+    ears: ClothingHeadsetAnCo
+    belt: WeaponStunprodAnCo
+# офицер
+- type: startingGear
+  id: AnCoOfficerGear
+  suffix: StarHorizon, AnCo
+  equipment:
+    jumpsuit: SuitProtectiveAnCo
+    back: AnCosatchelOfficer
+    eyes: ClothingEyesGlassesAnCo
+    gloves: AnCoGloves
+    outerClothing: AnCoVests
+    shoes: AnCoBoots
+    id: PDAOfficerAnCo
+    ears: ClothingHeadsetAnCo
+    belt: WeaponStunprodAnCo
+# рыцарь
+- type: startingGear
+  id: AnCoKnightGear
+  suffix: StarHorizon, AnCo
+  equipment:
+    jumpsuit: SuitProtectiveAnCo
+    back: AnCosatchelKnight
+    eyes: ClothingEyesGlassesAnCo
+    gloves: AnCoGlovesIsolate
+    outerClothing: ClothingOuterHardsuitKnight
+    shoes: AnCoBoots
+    id: PDAKnightAnCo
+    ears: ClothingHeadsetAnCo
+# паук
+- type: startingGear
+  id: AnCoSpiderGear
+  suffix: StarHorizon, AnCo
+  equipment:
+    jumpsuit: SuitProtectiveAnCo
+    back: AnCosatchelSpider
+    eyes: ClothingEyesGlassesAnCo
+    gloves: AnCoGlovesIsolate
+    outerClothing: ClothingOuterHardsuitSpider
+    shoes: AnCoClothingShoesBootsMag
+    id: PDASpiderAnCo
+    ears: ClothingHeadsetAnCo
+# титан
+- type: startingGear
+  id: AnCoTitanGear
+  suffix: StarHorizon, AnCo
+  equipment:
+    jumpsuit: SuitProtectiveAnCo
+    back: AnCosatchelTitan
+    eyes: ClothingEyesGlassesAnCo
+    gloves: AnCoGlovesIsolate
+    outerClothing: ClothingOuterHardsuitTitan
+    shoes: AnCoClothingShoesBootsMag
+    id: PDATitanAnCo
+    ears: ClothingHeadsetAnCo
+# совет
+- type: startingGear
+  id: AnCoCounselorGear
+  suffix: StarHorizon, AnCo
+  equipment:
+    jumpsuit: SuitProtectiveAnCo
+    back: AnCosatchelCounselor
+    eyes: ClothingEyesGlassesAnCo
+    gloves: AnCoGlovesIsolate
+    outerClothing: AnCocoastconsul
+    shoes: AnCoBoots
+    id: PDACounselorAnCo
+    ears: ClothingHeadsetAnCo

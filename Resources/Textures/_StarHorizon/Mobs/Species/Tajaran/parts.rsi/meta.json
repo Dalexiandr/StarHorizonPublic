@@ -1,0 +1,171 @@
+{
+    "version": 1,
+    "license": "CC BY-SA 3.0",
+    "copyright": "https://github.com/TauCetiStation/TauCetiClassic/pull/9727",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "head_m",
+            "directions": 4
+        },
+        {
+            "name": "head_f",
+            "directions": 4
+        },
+        {
+            "name": "head_m_fat",
+            "directions": 4
+        },
+        {
+            "name": "head_f_fat",
+            "directions": 4
+        },
+        {
+            "name": "chest_m_pumped",
+            "directions": 4
+        },
+        {
+            "name": "chest_f_pumped",
+            "directions": 4
+        },
+        {
+            "name": "chest_m_fat",
+            "directions": 4
+        },
+        {
+            "name": "chest_f_fat",
+            "directions": 4
+        },
+        {
+            "name": "chest_m",
+            "directions": 4
+        },
+        {
+            "name": "chest_f",
+            "directions": 4
+        },
+        {
+            "name": "groin_m_pumped",
+            "directions": 4
+        },
+        {
+            "name": "groin_f_pumped",
+            "directions": 4
+        },
+        {
+            "name": "groin_m_fat",
+            "directions": 4
+        },
+        {
+            "name": "groin_f_fat",
+            "directions": 4
+        },
+        {
+            "name": "groin_m",
+            "directions": 4
+        },
+        {
+            "name": "groin_f",
+            "directions": 4
+        },
+        {
+            "name": "r_arm_m_pumped",
+            "directions": 4
+        },
+        {
+            "name": "r_arm_f_pumped",
+            "directions": 4
+        },
+        {
+            "name": "r_arm_m_fat",
+            "directions": 4
+        },
+        {
+            "name": "r_arm_f_fat",
+            "directions": 4
+        },
+        {
+            "name": "r_arm_m",
+            "directions": 4
+        },
+        {
+            "name": "r_arm_f",
+            "directions": 4
+        },
+        {
+            "name": "l_arm_m_pumped",
+            "directions": 4
+        },
+        {
+            "name": "l_arm_f_pumped",
+            "directions": 4
+        },
+        {
+            "name": "l_arm_m_fat",
+            "directions": 4
+        },
+        {
+            "name": "l_arm_f_fat",
+            "directions": 4
+        },
+        {
+            "name": "l_arm_m",
+            "directions": 4
+        },
+        {
+            "name": "l_arm_f",
+            "directions": 4
+        },
+        {
+            "name": "r_leg_f_pumped",
+            "directions": 4
+        },
+        {
+            "name": "r_leg_f_fat",
+            "directions": 4
+        },
+        {
+            "name": "r_leg_f",
+            "directions": 4
+        },
+        {
+            "name": "r_leg_m_pumped",
+            "directions": 4
+        },
+        {
+            "name": "r_leg_m_fat",
+            "directions": 4
+        },
+        {
+            "name": "r_leg_m",
+            "directions": 4
+        },
+        {
+            "name": "l_leg_m_pumped",
+            "directions": 4
+        },
+        {
+            "name": "l_leg_f_pumped",
+            "directions": 4
+        },
+        {
+            "name": "l_leg_m_fat",
+            "directions": 4
+        },
+        {
+            "name": "l_leg_f_fat",
+            "directions": 4
+        },
+        {
+            "name": "l_leg_m",
+            "directions": 4
+        },
+        {
+            "name": "l_leg_f",
+            "directions": 4
+        }
+    ]
+}

@@ -1,0 +1,104 @@
+# Gloves with fake weapon visuals for NPCs
+- type: entity
+  parent: ClothingHandsGlovesFingerless
+  id: ClothingHandsGlovesColorBlackPirateRevolver
+  name: fingerless gloves
+  suffix: piraterevolver
+  description: Regular black gloves that do not keep you from frying.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Unremoveable
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/fingerless.rsi
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - sprite: Clothing/Hands/Gloves/fingerless.rsi
+        state: equipped-HAND
+      - sprite: Objects/Weapons/Guns/Revolvers/pirate_revolver.rsi
+        state: inhand-right
+
+- type: entity
+  parent: ClothingHandsGlovesColorBlackPirateRevolver
+  id: ClothingHandsGlovesColorBlackFlintstock
+  name: fingerless gloves
+  suffix: flintstock
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - sprite: Clothing/Hands/Gloves/fingerless.rsi
+        state: equipped-HAND
+      - sprite: _NF/Objects/Weapons/Guns/Revolvers/flintlock.rsi
+        state: inhand-right
+
+- type: entity
+  parent: ClothingHandsGlovesColorBlackPirateRevolver
+  id: ClothingHandsGlovesColorBlackCombatKnife
+  name: fingerless gloves
+  suffix: combatknife
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - sprite: Clothing/Hands/Gloves/fingerless.rsi
+        state: equipped-HAND
+
+- type: entity
+  parent: ClothingHandsGlovesColorBlackPirateRevolver
+  id: ClothingHandsGlovesColorBlackCutlass
+  name: fingerless gloves
+  suffix: cutlass
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - sprite: Clothing/Hands/Gloves/fingerless.rsi
+        state: equipped-HAND
+
+- type: entity
+  parent: ClothingHandsGlovesColorBlackPirateRevolver
+  id: ClothingHandsGlovesColorBlackPirateCannon
+  name: fingerless gloves
+  suffix: piratecannon
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - sprite: Clothing/Hands/Gloves/fingerless.rsi
+        state: equipped-HAND
+      - sprite: Objects/Weapons/Guns/Launchers/pirate_cannon.rsi
+        state: inhand-right
+
+
+- type: entity
+  parent: ClothingHandsGlovesColorBlackPirateRevolver
+  id: ClothingHandsGlovesColorBlackPirateSabre
+  name: fingerless gloves
+  suffix: piratesabre
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - sprite: Clothing/Hands/Gloves/fingerless.rsi
+        state: equipped-HAND
+
+- type: entity
+  parent: ClothingHandsGlovesColorBlackPirateRevolver
+  id: ClothingHandsGlovesColorBlackPirateCutlassEnergy
+  name: fingerless gloves
+  suffix: cutlassenergy
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - sprite: Clothing/Hands/Gloves/fingerless.rsi
+        state: equipped-HAND
+      - sprite: _DV/Objects/Weapons/Guns/Battery/multiphase_energygun.rsi
+        state: lethal-inhand-right

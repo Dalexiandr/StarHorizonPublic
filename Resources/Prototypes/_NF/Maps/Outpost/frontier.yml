@@ -1,0 +1,39 @@
+- type: gameMap
+  id: Frontier
+  mapName: 'Аванпост Фронтира'
+  mapPath: /Maps/_Horizon/Outpost/frontier.yml #Horizon-Maps
+  minPlayers: 0
+  maxPlayers: 100
+  randomRotation: false
+  maxRandomOffset: 0
+  stations:
+    Frontier:
+      stationProto: StandardFrontierStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Аванпост Фронтира'
+#          nameGenerator:
+#            !type:NanotrasenNameGenerator
+#            prefixCreator: '14'
+        - type: ExtraStationInformation
+          iconPath: /Textures/_Horizon/Interface/banner_frontier.png # Horizon
+          stationSubtext: 'frontier-lobby-frontier-subtext'
+          stationDescription: 'frontier-lobby-frontier-description'
+          lobbySortOrder: 1
+        - type: HorizonStationFaction
+          faction: Frontier
+        - type: StationJobs
+          availableJobs:
+            Contractor: [ -1, -1 ]
+            Pilot: [ -1, -1 ]
+            Mercenary: [ -1, -1 ]
+            Borg: [ -1, -1 ]
+            StationRepresentative: [ 1, 1 ]
+            StationTrafficController: [ 1, 1 ]
+            SecurityGuard: [ 3, 3 ]
+            Valet: [ 2, 2 ]
+            NFJanitor: [ 2, 2 ]
+            MailCarrier: [ 3, 3 ]
+          tags:
+          - HeadOfPersonnel
+          - HeadOfSecurity

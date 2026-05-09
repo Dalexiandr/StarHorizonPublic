@@ -1,0 +1,60 @@
+- type: body
+  id: Goblin
+  name: "goblin"
+  root: torso
+  slots:
+    head:
+      part: HeadGoblin
+      connections:
+      - torso
+      organs:
+        brain: OrganGoblinBrain
+        eyes: OrganGoblinEyes
+        eye_implant: null # Horizon
+        cyberdeka_implant: null # Horizon
+    torso:
+      part: TorsoGoblin
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      organs:
+        heart: OrganGoblinHeart
+        lungs: OrganGoblinLungs
+        stomach: OrganGoblinStomach
+        liver: OrganGoblinLiver
+        kidneys: OrganGoblinKidneys
+        vessels_implant: null # Horizon
+        blood_pump_implant: null
+        skin_implant: null # Horizon
+        bone_implant: null # Horizon
+        cavity: null # Horizon
+    right arm:
+      part: RightArmGoblin
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmGoblin
+      connections:
+      - left hand
+    right hand:
+      part: RightHandGoblin
+      organs:
+        hands_implant: null # Horizon
+    left hand:
+      part: LeftHandGoblin
+      organs:
+        hands_implant: null # Horizon
+    right leg:
+      part: RightLegGoblin
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegGoblin
+      connections:
+      - left foot
+    right foot:
+      part: RightFootGoblin
+    left foot:
+      part: LeftFootGoblin

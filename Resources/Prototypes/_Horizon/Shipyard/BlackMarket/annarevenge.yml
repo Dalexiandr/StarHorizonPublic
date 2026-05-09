@@ -1,0 +1,43 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: lnqz1tor
+
+# Информация об сопровождающем
+# GitHub/Gitea: ???
+# Discord: helloohello
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: annarevenge
+  parent: BaseVessel
+  name: BM Anna-Revenge
+  description: Легендарный Пиратский корабль прошедший не один десяток боёв, очень быстрый и хорошо вооруженный.
+  price: 72000 # 65000, наценка верфи 20% = 71000
+  category: Large
+  group: BlackMarket
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/BlackMarket/annarevenge.yml
+  class:
+  - Pirate
+  engine:
+  - AME
+
+
+- type: gameMap
+  id: annarevenge
+  mapName: 'BM Anna-Revenge'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/BlackMarket/annarevenge.yml
+  minPlayers: 0
+  stations:
+    annarevenge:
+      stationProto: StandardFrontierAntagVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Anna-Revenge {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}
+
+

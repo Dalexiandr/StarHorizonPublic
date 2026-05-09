@@ -1,0 +1,14 @@
+- type: loadout
+  id: CombatGloves
+  equipment:
+    gloves: ClothingHandsGlovesCombat
+
+- type: loadout
+  id: ColorBlackGloves
+  equipment:
+    gloves: ClothingHandsGlovesColorBlack
+
+- type: loadout
+  id: FingerlessGloves
+  equipment:
+    gloves: ClothingHandsGlovesFingerless

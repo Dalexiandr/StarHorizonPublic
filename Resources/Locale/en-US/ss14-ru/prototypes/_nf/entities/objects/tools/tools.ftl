@@ -1,0 +1,13 @@
+ent-ShipyardRCD = shipyard RCD
+    .desc = An advanced construction device which can place/remove walls, floors, and airlocks quickly. It has a slot to swipe ID cards.
+ent-ShipyardRCDEmpty = { ent-ShipyardRCD }
+    .suffix = Empty
+    .desc = { ent-ShipyardRCD.desc }
+ent-ShipyardRCDAmmo = shipyard compressed matter
+    .desc = Ammo cartridge for a shipyard RCD.
+ent-MaintenanceJack = maintenance jack
+    .desc = A maintenance jack for removing up floor plating.
+ent-PirateRepairKit = pirate repair kit
+    .desc = A collection of equipment needed to repair a pirate console.
+ent-NFShovel = the people's shovel
+    .desc = An old relic from the Glorious Leader. Capable of 18 functions, including digging, chopping, cutting, picking, prying, wire cutting, shoveling.

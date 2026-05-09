@@ -1,0 +1,37 @@
+<DefaultWindow
+    xmlns="https://spacestation14.io"
+    Title="{Loc 'event-item-grant-window-title'}">
+    <BoxContainer Orientation="Vertical" MinWidth="400" MinHeight="350" SeparationOverride="8">
+        <!-- Item preview info -->
+        <BoxContainer Orientation="Vertical" SeparationOverride="4">
+            <Label Name="ItemNameLabel" StyleClasses="LabelHeading" />
+            <Label Name="ItemDescLabel" StyleClasses="LabelSubText" />
+            <Label Name="ItemProtoLabel" StyleClasses="LabelSubText" />
+        </BoxContainer>
+
+        <PanelContainer StyleClasses="LowDivider" />
+
+        <!-- Player selection -->
+        <Label Text="{Loc 'event-item-grant-select-player'}" StyleClasses="LabelSubText" />
+        <LineEdit Name="PlayerSearchBar" PlaceHolder="{Loc 'event-item-grant-search-placeholder'}" HorizontalExpand="True" />
+        <ItemList Name="PlayerList" SelectMode="Single" VerticalExpand="True" MinHeight="150" />
+
+        <!-- Credit cost -->
+        <BoxContainer Orientation="Horizontal" SeparationOverride="8">
+            <Label Text="{Loc 'event-item-grant-credit-cost'}" />
+            <SpinBox Name="CreditCostSpinBox" HorizontalExpand="True" />
+        </BoxContainer>
+
+        <!-- Uses limit -->
+        <BoxContainer Orientation="Horizontal" SeparationOverride="8">
+            <CheckBox Name="PermanentCheckBox" Text="{Loc 'event-item-grant-permanent'}" />
+        </BoxContainer>
+        <BoxContainer Name="UsesContainer" Orientation="Horizontal" SeparationOverride="8">
+            <Label Text="{Loc 'event-item-grant-uses-count'}" />
+            <SpinBox Name="UsesSpinBox" HorizontalExpand="True" />
+        </BoxContainer>
+
+        <!-- Confirm button -->
+        <Button Name="ConfirmButton" Text="{Loc 'event-item-grant-confirm'}" HorizontalExpand="True" />
+    </BoxContainer>
+</DefaultWindow>

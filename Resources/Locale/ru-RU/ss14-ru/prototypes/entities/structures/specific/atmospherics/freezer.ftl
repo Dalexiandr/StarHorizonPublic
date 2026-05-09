@@ -1,0 +1,15 @@
+ent-AirSensorFreezerBase = датчик воздуха
+    .suffix = Холодильник
+    .desc = Датчик, отслеживающий параметры атмосферы в холодильных камерах.
+ent-AirSensorFreezer = датчик воздуха
+    .suffix = Холодильник
+    .desc = { ent-AirSensorFreezerBase.desc }
+ent-GasVentPumpFreezer = вентиляция
+    .suffix = Холодильник
+    .desc = { ent-GasVentPump.desc }
+ent-GasVentScrubberFreezer = скруббер
+    .suffix = Холодильник
+    .desc = { ent-GasVentScrubber }
+ent-AirAlarmFreezer = воздушная сигнализация
+    .suffix = Холодильник, автоматический режим отключен
+    .desc = Панель управления атмосферными системами холодильной камеры. Автоматическое регулирование отключено, требуется ручное управление.

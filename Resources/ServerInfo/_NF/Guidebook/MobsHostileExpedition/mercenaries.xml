@@ -1,0 +1,140 @@
+<Document>
+  # Наёмники
+
+  Наёмник, солдат удачи, пёс войны. [italic]В некотором роде[/italic] профессиональный боец, чью верность можно купить: они выполнят любую задачу, если плата будет достойной. Корпорации часто используют наёмников как скрытые активы для тайных операций, поскольку их причастность легко отрицать.
+
+  Наёмники, с которыми вы столкнётесь, наняты неизвестными внешними корпорациями и подлежат ликвидации.
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  # Известные разновидности
+  # "Рядовые наёмники"
+
+  Низкоквалифицированные бойцы, вооружённые разнообразным устаревшим оружием.
+
+  <Box>
+    <GuideEntityEmbed Entity="MobMercenarySoldierKnife" Caption=""/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 130 (смерть)
+  - [bold][color=#a4885c]Скорость:[/color][/bold] 4.5 м/с (бег), 2.5 м/с (ходьба)[bold][color=#a4885c]*[/color][/bold]
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] 8 [color=red]Режущий[/color], 2 [color=yellow]Колющий[/color] (топорик)
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] [color=red]Ударный[/color], [color=red]Режущий[/color] и [color=yellow]Колющий[/color] 25%; [color=orange]Термальный[/color] 20%; [color=orange]Коррозийный[/color] 10%
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] отсутствуют
+
+  [bold][color=#a4885c]*[/color][/bold] - [italic]средний человек бегает со скоростью 4.5 м/с и ходит со скоростью 2.5 м/с.[/italic]
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  <Box>
+    <GuideEntityEmbed Entity="MobMercenarySoldierPistol" Caption=""/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 130 (смерть)
+  - [bold][color=#a4885c]Скорость:[/color][/bold] 4.5 м/с (бег), 2.5 м/с (ходьба)
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] 16 [color=yellow]Колющий[/color] (патрон .35)
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] [color=red]Ударный[/color], [color=red]Режущий[/color] и [color=yellow]Колющий[/color] 25%; [color=orange]Термальный[/color] 20%; [color=orange]Коррозийный[/color] 10%
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] Стрелок (mk58)
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  <Box>
+    <GuideEntityEmbed Entity="MobMercenarySoldierNovalite" Caption=""/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 130 (смерть)
+  - [bold][color=#a4885c]Скорость:[/color][/bold] 4.5 м/с (бег), 2.5 м/с (ходьба)
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] 17 [color=yellow]Колющий[/color] (патрон .20)
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] [color=red]Ударный[/color], [color=red]Режущий[/color] и [color=yellow]Колющий[/color] 25%; [color=orange]Термальный[/color] 20%; [color=orange]Коррозийный[/color] 10%
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] Стрелок (Novalite C1)
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  # "Штурмовики-наёмники"
+
+  Ударные отряды, специализирующиеся на внезапных и агрессивных действиях для достижения целей.
+
+  <Box>
+    <GuideEntityEmbed Entity="MobMercenaryBreacherMachete" Caption=""/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 130 (смерть)
+  - [bold][color=#a4885c]Скорость:[/color][/bold] 4.5 м/с (бег), 2.5 м/с (ходьба)[bold]
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] 15 [color=red]Режущий[/color] (мачете)
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] [color=red]Ударный[/color], [color=red]Режущий[/color] и [color=yellow]Колющий[/color] 25%; [color=orange]Термальный[/color] 20%; [color=orange]Коррозийный[/color] 10%
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] отсутствуют
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  <Box>
+    <GuideEntityEmbed Entity="MobMercenarySoldierRevolver" Caption=""/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 130 (смерть)
+  - [bold][color=#a4885c]Скорость:[/color][/bold] 4.5 м/с (бег), 2.5 м/с (ходьба)
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] 17 [color=yellow]Колющий[/color] (патрон .20)
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] [color=red]Ударный[/color], [color=red]Режущий[/color] и [color=yellow]Колющий[/color] 25%; [color=orange]Термальный[/color] 20%; [color=orange]Коррозийный[/color] 10%
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] Стрелок (два револьвера Argenti)
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  <Box>
+    <GuideEntityEmbed Entity="MobMercenaryBreacherShotgun" Caption=""/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 130 (смерть)
+  - [bold][color=#a4885c]Скорость:[/color][/bold] 4.5 м/с (бег), 2.5 м/с (ходьба)
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] 10 [color=yellow]Колющий[/color] (дробь)
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] [color=red]Ударный[/color], [color=red]Режущий[/color] и [color=yellow]Колющий[/color] 25%; [color=orange]Термальный[/color] 20%; [color=orange]Коррозийный[/color] 10%
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] Стрелок (дробовик)
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  # "Специалисты-наёмники"
+
+  Опытные наёмники, отточившие свои навыки в бою или вспомогательных ролях, а иногда и в том, и в другом.
+
+  <Box>
+    <GuideEntityEmbed Entity="MobMercenarySpecialistMedic"/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 130 (смерть)
+  - [bold][color=#a4885c]Скорость:[/color][/bold] 4.5 м/с (бег), 2.5 м/с (ходьба)
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] 14 [color=orange]Термальный[/color] (ретро-лазерный пистолет); 5 [color=red]Ударный[/color], 5 [color=red]Режущий[/color], 5 [color=yellow]Колющий[/color] (циркулярная пила)
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] [color=red]Ударный[/color], [color=red]Режущий[/color] и [color=yellow]Колющий[/color] 25%; [color=orange]Термальный[/color] 20%; [color=orange]Коррозийный[/color] 10%
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] Стрелок (ретро-лазерный пистолет)
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  <Box>
+    <GuideEntityEmbed Entity="MobMercenarySpecialistAssault"/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 130 (смерть)
+  - [bold][color=#a4885c]Скорость:[/color][/bold] 4.5 м/с (бег), 2.5 м/с (ходьба)
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] 14 [color=orange]Термальный[/color] (ретро-лазерный пистолет); 5 [color=red]Ударный[/color], 5 [color=red]Режущий[/color], 5 [color=yellow]Колющий[/color] (циркулярная пила)
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] [color=red]Ударный[/color], [color=red]Режущий[/color] и [color=yellow]Колющий[/color] 25%; [color=orange]Термальный[/color] 20%; [color=orange]Коррозийный[/color] 10%
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] Стрелок (ретро-лазерный пистолет)
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  # "Капитан наёмников"
+
+  Лидер этих банд головорезов - капитан наёмников, одновременно жестокий и смертельно эффективный. Рекомендуется осторожность.
+
+  <Box>
+    <GuideEntityEmbed Entity="MobMercenaryCaptain"/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 130 (смерть)
+  - [bold][color=#a4885c]Скорость:[/color][/bold] 4.5 м/с (бег), 2.5 м/с (ходьба)
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] 35 [color=yellow]Колющий[/color] (патрон .45)
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] [color=red]Ударный[/color], [color=red]Режущий[/color] и [color=yellow]Колющий[/color] 25%; [color=orange]Термальный[/color] 20%; [color=orange]Коррозийный[/color] 10%
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] Стрелок (повторятель N2524)
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  # Цели миссий
+  ## Уничтожение
+  <Box>
+    <GuideEntityEmbed Entity="MobMercenaryCaptain"/>
+  </Box>
+  Ликвидируйте крупное и опасное существо - [color=#a4885c]капитана наёмников[/color] в установленные сроки, чтобы получить денежное вознаграждение.
+
+  ## Разрушение
+  <Box>
+    <GuideEntityEmbed Entity="MercenaryCounterfeitCache"/>
+  </Box>
+  Уничтожьте указанное количество [color=#a4885c]фальшивых тайников[/color] в установленные сроки, чтобы получить денежное вознаграждение.
+</Document>

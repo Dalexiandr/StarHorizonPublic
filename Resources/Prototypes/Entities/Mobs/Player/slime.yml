@@ -1,0 +1,34 @@
+- type: entity
+  save: false
+  parent: BaseMobSlimePerson
+  id: MobSlimePerson
+  components:
+  # Horizon
+  - type: SampleSource
+    availableCellSamples:
+    - protoID: CellSampleSlimePerson
+
+# Cytology
+- type: entity
+  name: Urist Grown Slime Person
+  parent: MobSlimePerson
+  id: MobSlimePersonGrown
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StaticPrice
+    price: 2500
+  - type: RandomMetadata
+    nameSegments:
+      - NamesFirst
+      - NamesLast
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: ghost-role-information-grown-slime-person-name
+    description: Вы слайм-персона, выращенная в цитологической ванне. Студенистое тело и странный ум - ваша сущность. Исследуйте этот новый мир!
+    raffle:
+      settings: short
+  - type: GhostTakeoverAvailable

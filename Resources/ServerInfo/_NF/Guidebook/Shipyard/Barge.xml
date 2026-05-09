@@ -1,0 +1,92 @@
+<Document>
+  # ГРУЗОВОЙ ШАТТЛ КЛАССА BARGE
+  <Box>
+  <GuideEntityEmbed Entity="OreProcessor"/>
+  <GuideEntityEmbed Entity="VendingMachineSalvage"/>
+  <GuideEntityEmbed Entity="VendingMachineBooze"/>
+  <GuideEntityEmbed Entity="CrateTradeSecureNormal" Caption="trading crate"/>
+  <GuideEntityEmbed Entity="CrateTradeSecureHigh" Caption="trading crate"/>
+  </Box>
+  <Box>
+   <GuideEntityEmbed Entity="ShuttleMapBarge" Caption=""/>
+  </Box>
+  [color=#a4885c]Размер шаттла:[/color] Средний
+
+  [color=#a4885c]Рекомендуемый экипаж:[/color] 2-4
+
+  [color=#a4885c]Power Gen Type:[/color] Solar/Uranium
+
+  [color=#a4885c]Экспедиции:[/color] Нет
+
+  [color=#a4885c]Консоль опознавания:[/color] Нету
+
+  "Шаттл среднего размера, реконструированный под бар."
+
+  # КОНТРОЛЬНЫЙ СПИСОК ПЕРЕД ВЫЛЕТОМ
+
+  ## 1. Электропитание
+
+  ## 1.1. Аккумуляторы
+  <Box>
+  <GuideEntityEmbed Entity="SMESBasic"/>
+  <GuideEntityEmbed Entity="SubstationBasic"/>
+  <GuideEntityEmbed Entity="APCBasic"/>
+  </Box>
+
+  - Удостоверьтесь в том, чтобы СМЭС был прикреплен к полу.
+  - Удостоверьтесь в том, чтобы подстанция была прикреплена к полу.
+  - Удостоверьтесь в том, чтобы все ЛКП были включены.
+  - Проверьте текущую нагрузку всех ЛКП* (W).
+
+  ## 1.2. Генератор СУПЕР П.A.К.М.A.Н.
+  <Box>
+    <GuideEntityEmbed Entity="PortableGeneratorSuperPacman"/>
+    <GuideEntityEmbed Entity="SheetUranium"/>
+    <GuideEntityEmbed Entity="SignRadiationMed"/>
+  </Box>
+
+  - Удостоверьтесь в том, что генератор П.А.К.М.А.Н. прикреплен к полу.
+  - Удостоверьтесь в том, что у генератора П.А.К.М.A.Н. достаточно топлива. Для длительных полетов удостоверьтесь в том, что у вас достаточно запасов топлива чтобы поддерживать электропитание во время полета.
+  - Удостоверьтесь в том, чтобы генератор П.А.К.М.А.Н. был переключен в режим генерации ВВ энергии.
+  - Установите мощность в 30 [bold]kW[/bold].
+  - Запустите генератор П.А.К.М.А.Н.
+
+  ## 1.3. Солнечные панели
+  <Box>
+  <GuideEntityEmbed Entity="ComputerSolarControl"/>
+  <GuideEntityEmbed Entity="SolarTracker"/>
+  <GuideEntityEmbed Entity="SolarPanel"/>
+  </Box>
+  - Осмотрите консоль управления солнечными панелями (находится на обшивке шаттла).
+  - Отрегулируйте скорость изменения угла панелей.
+  - Отрегулируйте угол панелей.
+
+  ## 2. Атмосфера
+
+  ## 2.1. Подача газов в атмосферу (Дистра)
+  <Box>
+  <GuideEntityEmbed Entity="OxygenCanister"/>
+  <GuideEntityEmbed Entity="NitrogenCanister"/>
+  <GuideEntityEmbed Entity="GasPort"/>
+  <GuideEntityEmbed Entity="GasMixer"/>
+  </Box>
+
+  - Удостоверьтесь в том, чтобы канистры О2 и N2 были закреплены к их соединительным портам.
+  - Удостоверьтесь в том, чтобы в газовом смесителе было установлено правильное соотношение смешивания (21% Кислорода, 79% Азота) и давление в 101кПа.
+  - Включите газовый смеситель.
+
+  ## 3. Другие проверки
+  <Box>
+  <GuideEntityEmbed Entity="Gyroscope"/>
+  <GuideEntityEmbed Entity="GravityGeneratorMini"/>
+  </Box>
+
+    - Удостоверьтесь в том, чтобы гироскоп был закреплен, имел питание и был включен.
+    - Удостоверьтесь в том, чтобы мини генератор гравитации был закреплен, имел питание и был включен.
+
+  ## Примечания
+
+  * - Грузовые шаттлы класса Barge оснащены двумя ЛКП, которые могут быть использованы для повышения общего энергопотребления шаттла. Немодифицированные шаттлы класса Barge требуют 23.7 kW энергии для стабильной работы.
+
+  ** - Грузовые шаттлы класса Barge оснащены 28 солнечными панелями, которые могут обеспечить до 25 kW энерговыработки в идеальных условиях: предполагая, что средняя энерговыработка солнечных панелей обеспечит одну треть максимальной генерации энергии, рекомендуемая выработка энергии для генератора П.A.К.М.A.Н. - 14 kW.
+</Document>

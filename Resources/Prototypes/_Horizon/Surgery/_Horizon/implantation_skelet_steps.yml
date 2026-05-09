@@ -1,0 +1,179 @@
+# 1
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonUncoverBones
+  name: Uncover the bones
+  components:
+  - type: SurgeryStep
+    duration: 15
+    tools:
+    - type: BoneSetter
+  - type: Sprite
+    sprite: Objects/Specific/Medical/Surgery/scissors.rsi
+    state: setter
+  - type: SurgeryStepEmoteEffect
+
+# 2
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonSecureBones
+  name: Secure the bones
+  components:
+  - type: SurgeryStep
+    duration: 3
+    tools:
+    - type: BoneGel
+  - type: Sprite
+    sprite: Objects/Specific/Medical/Surgery/bone_gel.rsi
+    state: bone-gel
+
+# 3
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonCutBones
+  name: Cut the bones
+  components:
+  - type: SurgeryStep
+    duration: 10
+    tools:
+    - type: BoneSaw
+  - type: SurgeryStepBleedEffect
+    damage:
+      types:
+        Brute: 5
+  - type: Sprite
+    sprite: Objects/Specific/Medical/Surgery/saw.rsi
+    state: saw
+
+# 4 Insert the implant!
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonSetupBonesImplant
+  name: Insert Skelet implant
+  components:
+  - type: SurgeryStep
+    duration: 12
+    tools:
+    - type: BoneImplant
+  - type: SurgeryStepOrganInsert
+    slot: bone_implant
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/implants.rsi
+    layers:
+      - state: bone_implant
+
+# 4 Also four but extract!
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonExtractBoneImplant
+  name: Extract a subcutaneous implant
+  components:
+  - type: SurgeryStep
+    duration: 12
+  - type: SurgeryStepOrganExtract
+    organ:
+    - type: BoneImplant
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/implants.rsi
+    layers:
+    - state: bone_implant
+
+# 5
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonRestoreBones
+  name: Restore bones
+  components:
+  - type: SurgeryStep
+    duration: 10
+    tools:
+    - type: BoneGel
+  - type: SurgeryStepBleedEffect
+    damage:
+      types:
+        Brute: -5 #Heal dealed damage
+  - type: Sprite
+    sprite: Objects/Specific/Medical/Surgery/bone_gel.rsi
+    state: bone-gel
+
+# 6 Ends The operation
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonCloseBoneCage
+  name: Close bones cage
+  components:
+  - type: SurgeryStep
+    duration: 10
+    tools:
+    - type: BoneSetter
+  - type: SurgeryStepBleedEffect
+    damage:
+      types:
+        Brute: -5 #Heal dealed damage
+  - type: Sprite
+    sprite: Objects/Specific/Medical/Surgery/scissors.rsi
+    state: setter
+
+#Operation Insert
+- type: entity
+  parent: SurgeryBase
+  id: SurgeryInsertBoneImplant
+  name: Insert a bones implant
+  description: Surgical attachment of a implant.
+  components:
+  - type: Surgery
+    requirement:
+    - SurgeryOpenAbdomen
+    steps:
+    - HorizonUncoverBones
+    - HorizonSecureBones
+    - HorizonCutBones
+    - HorizonSetupBonesImplant
+    - HorizonRestoreBones
+    - HorizonCloseBoneCage
+  - type: SurgerySpeciesCondition
+    speciesBlacklist:
+    - SlimePerson # Не любим слаймолюдов
+  - type: SurgeryPartCondition
+    parts:
+    - Torso
+  - type: SurgeryOrganDontExistCondition # Не даём вживить больше одного импланта в тело.
+    organ:
+    - type: BoneImplant
+    container: bone_implant
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/implants.rsi
+    layers:
+    - state: bone_implant
+
+#Operation Extract
+- type: entity
+  parent: SurgeryBase
+  id: SurgeryExstractBoneImplant
+  name: Extract a bones implant
+  description: Surgical attachment of a implant.
+  components:
+  - type: Surgery
+    requirement:
+    - SurgeryOpenAbdomen
+    steps:
+    - HorizonUncoverBones
+    - HorizonSecureBones
+    - HorizonCutBones
+    - HorizonExtractBoneImplant
+    - HorizonRestoreBones
+    - HorizonCloseBoneCage
+  - type: SurgerySpeciesCondition
+    speciesBlacklist:
+    - SlimePerson  # Всё ещё не любим слаймолюдов
+  - type: SurgeryPartCondition
+    parts:
+    - Torso
+  - type: SurgeryOrganExistCondition # Не даём, вытащить, того чего нет
+    organ:
+    - type: BoneImplant
+    container: bone_implant
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/implants.rsi
+    layers:
+    - state: bone_implant

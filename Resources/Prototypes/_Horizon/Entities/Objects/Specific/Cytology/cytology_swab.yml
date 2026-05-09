@@ -1,0 +1,20 @@
+- type: entity
+  id: CytologySwab
+  name: sterile swab
+  parent: BaseItem
+  description: A sterile swab for collecting cell samples from dirt and other sources.
+  components:
+  - type: Item
+    size: Tiny
+  - type: CytologySwab
+    swabDelay: 2.0
+  - type: CytologySampleContainer
+    maxSamples: 5
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Cytology/swab.rsi
+    layers:
+    - state: icon
+    - state: black
+      map: ["enum.CytologySwabVisualLayers.Sample"]
+      visible: false
+  - type: Appearance

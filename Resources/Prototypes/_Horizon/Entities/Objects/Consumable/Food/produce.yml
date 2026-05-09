@@ -1,0 +1,1638 @@
+- type: entity
+  name: листья мяты
+  description: Приятно пахнущие мятные листы.
+  suffix: Horizon
+  id: MintPlantLeaves
+  parent: FoodProduceBase
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/mint.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: MintExtract
+          Quantity: 10
+  - type: Fermentation
+    fermentate: MintExtract
+  - type: Produce
+    seedId: mintplant
+  - type: Tag
+    tags:
+    - Herb
+
+- type: entity
+  name: листья котовика
+  description: Подозрительно муррчащие листы котовика.
+  suffix: Horizon
+  id: CatNipLeaves
+  parent: FoodProduceBase
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/catnip.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: CatNipExtract
+          Quantity: 10
+  - type: Fermentation
+    fermentate: CatNipExtract
+  - type: Produce
+    seedId: catnip
+  - type: Tag
+    tags:
+    - Herb
+
+- type: entity
+  name: бревно стеклошляпника
+  description: Стекло не растёт на деревьях! Конечно, оно растёт, как грибы.
+  suffix: Horizon
+  id: GlassLog
+  parent: ProduceBase
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/glasscap.rsi
+  - type: SolutionContainerManager
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 10
+  - type: Produce
+    seedId: glasscap
+  - type: Log
+    spawnedPrototype: SheetGlass1
+    spawnCount: 1
+
+- type: entity
+  name: бревно пластошляпника
+  description: Пласталь ТОЧНО не растёт на деревьях! Она произрастает в форме грибов.
+  suffix: Horizon
+  id: PlastSteelLog
+  parent: ProduceBase
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/plaststeelcap.rsi
+  - type: SolutionContainerManager
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 12
+  - type: Produce
+    seedId: plaststeelcap
+  - type: Log
+    spawnedPrototype: SheetPlasteel1
+    spawnCount: 1
+
+- type: entity
+  name: ягоды блюспейсинки
+  parent: FoodProduceBase
+  id: FoodBerriesbluespace
+  description: Холодные, как пустота космоса!
+  suffix: Horizon
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 12
+        reagents:
+        - ReagentId: Barozine
+          Quantity: 2
+        - ReagentId: Leporazine
+          Quantity: 10
+  - type: Fermentation
+    fermentate: Singulo
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/berriesbluespace.rsi
+  - type: Produce
+    seedId: berriesbluespace
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: JuiceBerriesbluespace
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity
+  name: ягоды смертовицы
+  parent: FoodProduceBase
+  id: FoodBerriesdeath
+  description: Пахнут смертью!
+  suffix: Horizon
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Lead
+          Quantity: 10
+  - type: Fermentation
+    fermentate: FruitWineStrong
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/berriesdeath.rsi
+  - type: Produce
+    seedId: berriesdeath
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: JuiceBerriesdeath
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity
+  name: ягоды ледовицы
+  parent: FoodProduceBase
+  id: FoodBerriesice
+  description: Ледяные, как морозное утро при разгерметизации!
+  suffix: Horizon
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Fresium
+          Quantity: 5
+        - ReagentId: FrostOil
+          Quantity: 10
+  - type: Fermentation
+    fermentate: FruitWineStrong
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/berriesice.rsi
+  - type: Produce
+    seedId: berriesice
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: JuiceBerriesice
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity
+  name: ягоды тепловицы
+  parent: FoodProduceBase
+  id: FoodBerriesflame
+  description: Горячая, как печь с тритием!
+  suffix: Horizon
+  components:
+  - type: FlavorProfile
+    flavors:
+      - berry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 11
+        reagents:
+        - ReagentId: Pyrazine
+          Quantity: 3
+        - ReagentId: Insuzine
+          Quantity: 3
+        - ReagentId: Leporazine
+          Quantity: 5
+  - type: Fermentation
+    fermentate: FruitWineStrong
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/berriesflame.rsi
+  - type: Produce
+    seedId: berriesflame
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: JuiceBerriesflame
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity
+  name: гроздь светящихся грибов
+  parent: FoodProduceBase
+  id: FoodLightmushroom
+  description: "Они усыпят вас своим свечением!"
+  suffix: Horizon
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Nocturine
+          Quantity: 1
+  - type: Fermentation
+    fermentate: WaaaghBeer
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/lightmushroom.rsi
+  - type: Produce
+    seedId: lightmushroom
+  - type: PointLight
+    radius: 2.0
+    energy: 0.5
+    color: "#03cb13"
+    castShadows: false
+  - type: Tag
+    tags:
+    - Vegetable
+
+- type: entity
+  name: белый гриб
+  parent: FoodProduceBase
+  id: FoodWhitemushroom
+  description: "Большой, белый и вкусный!"
+  suffix: Horizon
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 20
+  - type: Fermentation
+    fermentate: WaaaghBeer
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/whitemushroom.rsi
+  - type: Produce
+    seedId: whitemushroom
+  - type: Tag
+    tags:
+    - Vegetable
+
+- type: entity
+  name: шишки хмеля
+  parent: FoodProduceBase
+  id: FoodWineshopCones
+  description: "Ароматные шишки хмеля!"
+  suffix: Horizon
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sake
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Ethanol
+          Quantity: 10
+  - type: Fermentation
+    fermentate: Moonshine
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/wineshop.rsi
+  - type: Produce
+    seedId: wineshop
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity
+  name: кофейные ягоды (арабика)
+  parent: FoodProduceBase
+  id: FoodCoffeearabicaRaw
+  description: Ароматные кофейные ягоды арабики!
+  suffix: Horizon
+  components:
+  - type: FlavorProfile
+    flavors:
+      - chocolate
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 14
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: Vitamin
+          Quantity: 1
+        - ReagentId: CoffeearabicaPowder
+          Quantity: 1
+  - type: Fermentation
+    fermentate: FruitWineWeak
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/coffeearabica.rsi
+  - type: Produce
+    seedId: сoffeearabica
+  - type: SpawnItemsOnUse
+    items:
+      - id: FoodCoffeearabicaRaw2
+    sound:
+      path: /Audio/Effects/packetrip.ogg
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity
+  name: кофейные ягоды (либерика)
+  parent: FoodProduceBase
+  id: FoodCoffeelibericaRaw
+  description: Ароматные кофейные ягоды свободного кофе!
+  suffix: Horizon
+  components:
+  - type: FlavorProfile
+    flavors:
+      - chocolate
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 14
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: Vitamin
+          Quantity: 1
+        - ReagentId: CoffeelibericaPowder
+          Quantity: 1
+  - type: Fermentation
+    fermentate: FruitWineWeak
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/coffeeliberica.rsi
+  - type: Produce
+    seedId: сoffeeliberica
+  - type: SpawnItemsOnUse
+    items:
+      - id: FoodCoffeelibericaRaw2
+    sound:
+      path: /Audio/Effects/packetrip.ogg
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity
+  name: кофейные ягоды (робуста)
+  parent: FoodProduceBase
+  id: FoodCoffeerobustaRaw
+  description: Ароматные кофейные ягоды самого робастного кофе!
+  suffix: Horizon
+  components:
+  - type: FlavorProfile
+    flavors:
+      - chocolate
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 14
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: Vitamin
+          Quantity: 1
+        - ReagentId: CoffeerobustaPowder
+          Quantity: 1
+  - type: Fermentation
+    fermentate: FruitWineWeak
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/coffeerobusta.rsi
+  - type: Produce
+    seedId: сoffeerobusta
+  - type: SpawnItemsOnUse
+    items:
+      - id: FoodCoffeerobustaRaw2
+    sound:
+      path: /Audio/Effects/packetrip.ogg
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity
+  name: дюрахлопковый шарик
+  description: Подозрительно жесткий шарик.
+  suffix: Horizon
+  id: DurottonBol
+  parent: FoodProduceBase
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/durotton.rsi
+  - type: FlavorProfile
+    flavors:
+      - pyrotton
+  - type: Food
+    requiresSpecialDigestion: true
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Oil
+          Quantity: 5
+        - ReagentId: Phosphorus
+          Quantity: 5
+  - type: Log
+    spawnedPrototype: MaterialDurathreadraw1
+    spawnCount: 2
+  - type: Produce
+    seedId: durotton
+  - type: Tag
+    tags:
+    - ClothMade
+    - CottonBoll
+  - type: Extractable
+    grindableSolutionName: food
+
+- type: entity
+  name: сырые кофейные зерна (арабика)
+  parent: FoodProduceBase
+  id: FoodCoffeearabicaRaw2
+  description: "Ароматные кофейные зерна арабики!"
+  suffix: Horizon
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/coffeearabica.rsi
+    state: produceraw
+  - type: Produce
+    seedId: coffeearabica
+  - type: Food
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 14
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: Vitamin
+          Quantity: 1
+        - ReagentId: CoffeearabicaPowder
+          Quantity: 1
+
+- type: entity
+  name: сырые кофейные зерна (либерика)
+  parent: FoodProduceBase
+  id: FoodCoffeelibericaRaw2
+  description: "Ароматные и свободные кофейные зерна либерики!"
+  suffix: Horizon
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/coffeeliberica.rsi
+    state: produceraw
+  - type: Produce
+    seedId: coffeeliberica
+  - type: Food
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 14
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: Vitamin
+          Quantity: 1
+        - ReagentId: CoffeelibericaPowder
+          Quantity: 1
+
+- type: entity
+  name: сырые кофейные зерна (робуста)
+  parent: FoodProduceBase
+  id: FoodCoffeerobustaRaw2
+  description: "По настоящему робастные кофейные зерна!"
+  suffix: Horizon
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/coffeerobusta.rsi
+    state: produceraw
+  - type: Produce
+    seedId: coffeerobusta
+  - type: Food
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 14
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: Vitamin
+          Quantity: 1
+        - ReagentId: CoffeerobustaPowder
+          Quantity: 1
+
+- type: entity
+  name: прожаренные кофейные зерна (арабика)
+  parent: FoodProduceBase
+  id: FoodCoffeearabicaRaw3
+  description: "Ароматные кофейные зерна арабики!"
+  suffix: Horizon
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: CoffeearabicaPowder
+          Quantity: 10
+  - type: Food
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/coffeearabica.rsi
+    state: produceroasted
+
+- type: entity
+  name: прожаренные кофейные зерна (либерика)
+  parent: FoodProduceBase
+  id: FoodCoffeelibericaRaw3
+  description: "Ароматные и свободные кофейные зерна либерики!"
+  suffix: Horizon
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: CoffeelibericaPowder
+          Quantity: 10
+  - type: Food
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/coffeeliberica.rsi
+    state: produceroasted
+
+- type: entity
+  name: прожаренные кофейные зерна (робуста)
+  parent: FoodProduceBase
+  id: FoodCoffeerobustaRaw3
+  description: "По настоящему робастные кофейные зерна!"
+  suffix: Horizon
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: CoffeerobustaPowder
+          Quantity: 10
+  - type: Food
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/coffeerobusta.rsi
+    state: produceroasted
+
+- type: entity
+  name: амброзия гайя
+  parent: FoodProduceBase
+  id: FoodAmbrosiaGaia
+  description: Легенда среди лекарственных растений!
+  components:
+  - type: FlavorProfile
+    flavors:
+      - leafy
+      - medicine
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: EarthBlood
+          Quantity: 3
+        - ReagentId: Vitamin
+          Quantity: 5
+        - ReagentId: Nutriment
+          Quantity: 2
+  - type: Fermentation
+    fermentate: FruitWineStrong
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/ambrosia_gaia.rsi
+  - type: Produce
+    seedId: ambrosiaGaia
+  - type: Extractable
+    grindableSolutionName: food
+  - type: Clothing
+    sprite: _Horizon/Objects/Specific/Hydroponics/ambrosia_gaia.rsi
+    slots:
+    - HEAD
+  - type: Tag
+    tags:
+    - Ambrosia
+
+- type: entity
+  name: подозрительный кочан
+  description: Данный кочан капусты СЛИШКОМ подозрителен!
+  suffix: Horizon
+  id: MoneyCabbageLog
+  parent: ProduceBase
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/moneycabbage.rsi
+  - type: SolutionContainerManager
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 10
+  - type: Produce
+    seedId: moneycabbage
+  - type: Log
+    spawnedPrototype: SpaceCash10
+    spawnCount: 1
+  - type: Fermentation
+    fermentate: FruitWineStrong
+
+- type: entity
+  name: плазменный кочан
+  parent: FoodProduceBase
+  id: FoodPlasmaCabbage
+  description: Кочан, излучающий плазменное свечение!
+  suffix: Horizon
+  components:
+  - type: FlavorProfile
+    flavors:
+      - cabbage
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 14
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Plasma
+          Quantity: 4
+  - type: Fermentation
+    fermentate: FruitWineStrong
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/plasmacabbage.rsi
+  - type: Produce
+    seedId: plasmacabbage
+  - type: Tag
+    tags:
+    - Vegetable
+
+- type: entity
+  name: алкобуз
+  parent: [FoodProduceBase, ItemHeftyBase]
+  id: FoodBarrelmelon
+  description: "Питательные вещества внутри данного арбуза были переработаны в богатый на вкус алкоголь!"
+  suffix: Horizon
+  components:
+  - type: Item
+    size: Small
+  - type: FlavorProfile
+    flavors:
+      - watermelon
+      - ale
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 25
+        reagents:
+        - ReagentId: Moonshine
+          Quantity: 10
+        - ReagentId: Vitamin
+          Quantity: 5
+  - type: Fermentation
+    fermentate: FruitWineStrong
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/barrelmelon.rsi
+  - type: Produce
+    seedId: barrelmelon
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Moonshine
+        Quantity: 20
+  - type: Damageable
+    damageContainer: Biological
+  - type: DamageOnHighSpeedImpact
+    minimumSpeed: 0.1
+    damage:
+      types:
+        Blunt: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: desecration
+      - !type:SpillBehavior
+        solution: food
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: SliceableFood
+    count: 5
+    slice: FoodBarrelmelonSlice
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity
+  name: ломтик алкобуза
+  parent: ProduceSliceBase
+  id: FoodBarrelmelonSlice
+  description: Алкогольно и питательно!
+  suffix: Horizon
+  components:
+  - type: Item
+    size: Tiny
+  - type: FlavorProfile
+    flavors:
+      - watermelon
+      - ale
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/barrelmelon.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: Moonshine
+          Quantity: 2
+        - ReagentId: Vitamin
+          Quantity: 1
+  - type: Fermentation
+    fermentate: FruitWineStrong
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Moonshine
+        Quantity: 4
+  - type: Tag
+    tags:
+    - Fruit
+    - Slice
+
+- type: entity
+  name: yellow clove
+  description: Just a beautiful flower.
+  suffix: Horizon
+  id: FloverClovey
+  parent: ProduceBase
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/clovey.rsi
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Specific/Hydroponics/clovey.rsi
+    heldPrefix: produce
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 2
+  - type: Fermentation
+    fermentate: FruitWineWeak
+  - type: Produce
+    seedId: clovey
+  - type: Extractable
+    grindableSolutionName: food
+  - type: Tag
+    tags:
+    - Flower
+    - clovey
+
+- type: entity
+  name: white clove
+  description: Just a beautiful flower.
+  parent: FloverClovey
+  id: FloverClovew
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/clovew.rsi
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Specific/Hydroponics/clovew.rsi
+    heldPrefix: produce
+  - type: Tag
+    tags:
+    - Flower
+    - clovew
+
+- type: entity
+  name: red clove
+  description: Just a beautiful flower.
+  parent: FloverClovey
+  id: FloverClover
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/clover.rsi
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Specific/Hydroponics/clover.rsi
+    heldPrefix: produce
+  - type: Tag
+    tags:
+    - Flower
+    - clover
+
+- type: entity
+  name: purple clove
+  description: Just a beautiful flower.
+  parent: FloverClovey
+  id: FloverClovep
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/clovep.rsi
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Specific/Hydroponics/clovep.rsi
+    heldPrefix: produce
+  - type: Tag
+    tags:
+    - Flower
+    - clovep
+
+- type: entity
+  name: purple lily
+  description: Just a beautiful flower.
+  parent: FloverClovey
+  id: FloverLilyp
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/lilyp.rsi
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Specific/Hydroponics/lilyp.rsi
+    heldPrefix: produce
+  - type: Clothing
+    slots:
+    - HEAD
+  - type: Tag
+    tags:
+    - Flower
+
+- type: entity
+  name: orange lily
+  description: Just a beautiful flower.
+  parent: FloverClovey
+  id: FloverLilyo
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/lilyo.rsi
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Specific/Hydroponics/lilyo.rsi
+    heldPrefix: produce
+  - type: Clothing
+    slots:
+    - HEAD
+  - type: Tag
+    tags:
+    - Flower
+
+- type: entity
+  name: blue lily
+  description: Just a beautiful flower.
+  parent: FloverClovey
+  id: FloverLilyb
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/lilyb.rsi
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Specific/Hydroponics/lilyb.rsi
+    heldPrefix: produce
+  - type: Clothing
+    slots:
+    - HEAD
+  - type: Tag
+    tags:
+    - Flower
+
+- type: entity
+  name: white rose
+  description: Just a beautiful flower.
+  parent: FloverClovey
+  id: FloverRosew
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/rosew.rsi
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Specific/Hydroponics/rosew.rsi
+    heldPrefix: produce
+  - type: Tag
+    tags:
+    - Flower
+    - rosew
+
+- type: entity
+  name: red rose
+  description: Just a beautiful flower.
+  parent: FloverClovey
+  id: FloverRoser
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/roser.rsi
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Specific/Hydroponics/roser.rsi
+    heldPrefix: produce
+  - type: Tag
+    tags:
+    - Flower
+    - roser
+
+- type: entity
+  name: pink rose
+  description: Just a beautiful flower.
+  parent: FloverClovey
+  id: FloverRosep
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/rosep.rsi
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Specific/Hydroponics/rosep.rsi
+    heldPrefix: produce
+  - type: Tag
+    tags:
+    - Flower
+    - rosep
+
+- type: entity
+  name: light pink rose
+  description: Just a beautiful flower.
+  parent: FloverClovey
+  id: FloverRoselp
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/roselp.rsi
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Specific/Hydroponics/roselp.rsi
+    heldPrefix: produce
+  - type: Tag
+    tags:
+    - Flower
+    - roselp
+
+- type: entity
+  name: white chamomiler
+  description: Just a beautiful flower.
+  parent: FloverClovey
+  id: FloverChamomiler
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/chamomiler.rsi
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Specific/Hydroponics/chamomiler.rsi
+    heldPrefix: produce
+  - type: Tag
+    tags:
+    - Flower
+    - chamomiler
+
+- type: entity
+  name: violet chamomiler
+  description: Just a beautiful flower.
+  parent: FloverClovey
+  id: FloverChamomilev
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/chamomilev.rsi
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Specific/Hydroponics/chamomilev.rsi
+    heldPrefix: produce
+  - type: Tag
+    tags:
+    - Flower
+    - chamomilev
+
+- type: entity
+  name: light pink tulip
+  description: Just a beautiful flower.
+  parent: FloverClovey
+  id: FloverTuliplp
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/tuliplp.rsi
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Specific/Hydroponics/tuliplp.rsi
+    heldPrefix: produce
+  - type: Tag
+    tags:
+    - Flower
+    - tuliplp
+
+- type: entity
+  name: pink tulip
+  description: Just a beautiful flower.
+  parent: FloverClovey
+  id: FloverTulipp
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/tulipp.rsi
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Specific/Hydroponics/tulipp.rsi
+    heldPrefix: produce
+  - type: Tag
+    tags:
+    - Flower
+    - tulipp
+
+- type: entity
+  name: red tulip
+  description: Just a beautiful flower.
+  parent: FloverClovey
+  id: FloverTulipr
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/tulipr.rsi
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Specific/Hydroponics/tulipr.rsi
+    heldPrefix: produce
+  - type: Tag
+    tags:
+    - Flower
+    - tulipr
+
+- type: entity
+  name: yellow tulip
+  description: Just a beautiful flower.
+  parent: FloverClovey
+  id: FloverTulipy
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/tulipy.rsi
+  - type: Item
+    size: Small
+    sprite: _Horizon/Objects/Specific/Hydroponics/tulipy.rsi
+    heldPrefix: produce
+  - type: Tag
+    tags:
+    - Flower
+    - tulipy
+
+- type: entity
+  name: chillfire pepper
+  parent: FoodProduceBase
+  id: FoodChillFirePepper
+  description: Hellish hot.
+  components:
+    - type: FlavorProfile
+      flavors:
+        - spicy
+        - savory
+    - type: SolutionContainerManager
+      solutions:
+        food:
+          maxVol: 18
+          reagents:
+            - ReagentId: Nutriment
+              Quantity: 4
+            - ReagentId: HorseradishSauce
+              Quantity: 10
+            - ReagentId: Vitamin
+              Quantity: 4
+    - type: Fermentation
+      fermentate: FruitWineNormal
+    - type: Sprite
+      sprite: _Horizon/Objects/Specific/Hydroponics/chillfire.rsi
+    - type: Produce
+      seedId: chillfire
+    - type: Tag
+      tags:
+      - Vegetable
+
+- type: entity
+  name: grapes
+  parent: FoodProduceBase
+  id: FoodGrapeg
+  description: The food of emperors, Space France inhabitants (usually as wine) and soccer moms. One day it could be used in wine production for the bartender if he ever runs out.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - grape
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 14
+        reagents:
+        - ReagentId: JuiceGrape
+          Quantity: 5
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Fermentation
+    fermentate: Wine
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/grapeg.rsi
+  - type: Produce
+    seedId: grapeg
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: JuiceGrape
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity
+  name: grapes
+  parent: FoodProduceBase
+  id: FoodGrapeb
+  description: The food of emperors, Space France inhabitants (usually as wine) and soccer moms. One day it could be used in wine production for the bartender if he ever runs out.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - grape
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 14
+        reagents:
+        - ReagentId: JuiceGrape
+          Quantity: 5
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Fermentation
+    fermentate: Wine
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/grapeb.rsi
+  - type: Produce
+    seedId: grapeb
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: JuiceGrape
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity
+  name: acid tomato
+  parent: FoodTomato
+  id: FoodAcidTomato
+  description: Wait, that's not ketchup...
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: FerrochromicAcid
+          Quantity: 10
+  - type: Fermentation
+    fermentate: FerrochromicAcid
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/acid_tomato.rsi
+  - type: Produce
+    seedId: acidTomato
+  - type: Extractable
+    grindableSolutionName: food
+    juiceSolution:
+      reagents:
+      - ReagentId: FerrochromicAcid
+        Quantity: 10
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: desecration
+      - !type:SpillBehavior
+        solution: food
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Tag
+    tags:
+    - Fruit # Fuck you they're a fruit
+    - Vegetable
+
+- type: entity
+  name: rotten tomato
+  parent: FoodTomato
+  id: FoodRottenTomato
+  description: Rotten...
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/tomato.rsi
+    state: rotten
+
+- type: entity
+  name: rotten blood tomato
+  parent: FoodBloodTomato
+  id: FoodRottenBloodTomato
+  description: Rotten...
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/blood_tomato.rsi
+    state: rotten
+
+- type: entity
+  name: rotten blue tomato
+  parent: FoodBlueTomato
+  id: FoodRottenBlueTomato
+  description: Rotten...
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/blue_tomato.rsi
+    state: rotten
+
+- type: entity
+  name: rotten acid tomato
+  parent: FoodAcidTomato
+  id: FoodRottenAcidTomato
+  description: Rotten...
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/acid_tomato.rsi
+    state: rotten
+
+- type: entity
+  name: pack of polypore mycelium
+  parent: FoodWhitemushroom
+  id: FoodMushroompolymore
+  description: This mycelium grows into bracket mushrooms, also known as polypores. Woody and firm, shaft miners often use them for makeshift crafts.
+  suffix: Horizon
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Toxin
+          Quantity: 5
+        - ReagentId: Sugar
+          Quantity: 5
+        - ReagentId: Ethanol
+          Quantity: 5
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/mushroompolymore.rsi
+  - type: Produce
+    seedId: mushroompolymore
+  - type: Fermentation
+    fermentate: WaaaghBeer
+
+- type: entity
+  name: pack of inocybe mycelium
+  parent: FoodWhitemushroom
+  id: FoodMushroominocybe
+  description: This mycelium grows into an inocybe mushroom, a species of Lavaland origin with hallucinatory and toxic effects.
+  suffix: Horizon
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 6
+        reagents:
+        - ReagentId: MindbreakerToxin
+          Quantity: 4
+        - ReagentId: Mechanotoxin
+          Quantity: 2
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/mushroominocybe.rsi
+  - type: Produce
+    seedId: mushroominocybe
+  - type: Fermentation
+    fermentate: WaaaghBeer
+
+- type: entity
+  name: pack of porcini mycelium
+  parent: FoodWhitemushroom
+  id: FoodMushroomporcini
+  description: This mycelium grows into Boletus edulus, also known as porcini. Native to the late Earth, but discovered on Lavaland. Has culinary, medicinal and relaxant effects.
+  suffix: Horizon
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 12
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Omnizine
+          Quantity: 3
+        - ReagentId: Nicotine
+          Quantity: 4
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/mushroomporcini.rsi
+  - type: Produce
+    seedId: mushroomporcini
+  - type: Fermentation
+    fermentate: WaaaghBeer
+
+- type: entity
+  name: sunflower
+  parent: FoodProduceBase
+  id: FoodSunflower
+  description: It's beautiful! A certain person might beat you to death if you trample these.
+  suffix: Horizon
+  components:
+  - type: FlavorProfile
+    flavors:
+      - oily
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Oil
+          Quantity: 10
+  - type: Fermentation
+    fermentate: Oil
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/sunflower.rsi
+  - type: Produce
+    seedId: sunflower
+  - type: Extractable
+    grindableSolutionName: food
+  - type: Tag
+    tags:
+    - Flower
+
+- type: entity
+  name: novaflower
+  parent: FoodSunflower
+  id: FoodNovaflower
+  description: These beautiful flowers have a crisp smokey scent, like a summer bonfire.
+  suffix: Horizon
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: CapsaicinOil
+          Quantity: 5
+  - type: Fermentation
+    fermentate: CapsaicinOil
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/novaflower.rsi
+  - type: Produce
+    seedId: novaflower
+
+- type: entity
+  name: moonflower
+  parent: FoodSunflower
+  id: FoodMoonflower
+  description: Store in a location at least 50 yards away from werewolves.
+  suffix: Horizon
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 12
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 2
+        - ReagentId: Moonshine
+          Quantity: 5
+  - type: Fermentation
+    fermentate: Moonshine
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/moonflower.rsi
+  - type: Produce
+    seedId: moonflower
+
+- type: entity
+  name: cherrybulb
+  parent: FoodCherry
+  id: FoodCherryBulb
+  description: Juicy sugarly red cherry with a pit inside.
+  suffix: Horizon
+  components:
+  - type: Food
+    trash:
+    - TrashCherryBulbPit
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 14
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 3
+        - ReagentId: Sugar
+          Quantity: 3
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/cherrybulb.rsi
+  - type: Produce
+    seedId: cherrybulb
+  - type: Fermentation
+    fermentate: Wine
+
+- type: entity
+  name: cherrybulb pit
+  parent: TrashCherryPit
+  id: TrashCherryBulbPit
+  suffix: Horizon
+  components:
+  - type: Seed
+    seedId: cherrybulb
+
+- type: entity
+  name: cherrybomb
+  parent: FoodCherry
+  id: FoodCherryBomb
+  description: Juicy bombardic cherry with a pit inside.
+  suffix: Horizon
+  components:
+  - type: Food
+    trash:
+    - TrashCherryBombPit
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Potassium
+          Quantity: 5
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/cherrybomb.rsi
+  - type: Produce
+    seedId: cherrybomb
+  - type: Damageable
+    damageContainer: Biological
+  - type: DamageOnHighSpeedImpact
+    minimumSpeed: 0.1
+    damage:
+      types:
+        Blunt: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: desecration
+      - !type:SpillBehavior
+        solution: food
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Fermentation
+    fermentate: FruitWineStrong
+
+- type: entity
+  name: cherrybomb pit
+  parent: TrashCherryPit
+  id: TrashCherryBombPit
+  suffix: Horizon
+  components:
+  - type: Seed
+    seedId: cherrybomb
+
+- type: entity
+  name: cherryblue
+  parent: FoodCherry
+  id: FoodCherryBlue
+  description: Juicy sugarly blue cherry with a pit inside.
+  suffix: Horizon
+  components:
+  - type: Food
+    trash:
+    - TrashCherryBluePit
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 14
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 3
+        - ReagentId: Sugar
+          Quantity: 3
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/cherryblue.rsi
+  - type: Produce
+    seedId: cherryblue
+  - type: Fermentation
+    fermentate: FruitWineStrong
+
+- type: entity
+  name: cherryblue pit
+  parent: TrashCherryPit
+  id: TrashCherryBluePit
+  suffix: Horizon
+  components:
+  - type: Seed
+    seedId: cherryblue
+
+- type: entity
+  name: diamondcarrot
+  parent: FoodCarrot
+  id: FoodDiamondCarrot
+  description: It's good for the eyes!
+  suffix: Horizon
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 12
+        reagents:
+        - ReagentId: JuiceCarrot
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+        - ReagentId: Omnizine
+          Quantity: 2
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/diamondcarrot.rsi
+  - type: Produce
+    seedId: diamondcarrot
+  - type: Fermentation
+    fermentate: FruitWineStrong
+
+- type: entity
+  name: bluespace tomato
+  parent: FoodBlueTomato
+  id: FoodBluespaceTomato
+  description: Be careful with it.
+  components:
+  - type: SwapTeleportOnThrow
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 3
+        - ReagentId: Singulo
+          Quantity: 5
+        canReact: false
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/bluespace_tomato.rsi
+  - type: Item
+    heldPrefix: produce
+  - type: Produce
+    seedId: bluespaceTomato
+  - type: Extractable
+    grindableSolutionName: food
+    juiceSolution:
+      reagents:
+      - ReagentId: Singulo
+        Quantity: 5
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: desecration
+      - !type:SpillBehavior
+        solution: food
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Tag
+    tags:
+    - Fruit
+    - Vegetable
+
+- type: entity
+  name: peach
+  parent: FoodProduceBase
+  id: FoodPeach
+  description: Perfect with cream.
+  components:
+  - type: FlavorProfile
+    flavors:
+    - sweet
+    - funny
+  - type: Food
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 14
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Hydroponics/peach.rsi
+  - type: Item
+    heldPrefix: produce
+  - type: Produce
+    seedId: peach
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: AzJuice
+        Quantity: 10
+  # Horizon Bothany start
+  - type: Fermentation
+    fermentate: FruitWineNormal
+  # Horizon Bothany end
+  - type: Tag
+    tags:
+    - Fruit

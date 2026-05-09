@@ -1,0 +1,117 @@
+# Ore definitions
+
+# Standard rocks
+
+# Medium yields
+- type: ore
+  id: OrePsycore
+  oreEntity: PsycoreOre5
+  minOreYield: 1
+  maxOreYield: 3
+
+- type: ore
+  id: OreTitan
+  oreEntity: TitanOre5
+  minOreYield: 1
+  maxOreYield: 3
+
+# Low yields
+- type: ore
+  id: OreEmerald
+  oreEntity: EmeraldOre1
+  minOreYield: 1
+  maxOreYield: 1
+
+- type: ore
+  id: OreRuby
+  oreEntity: RubyOre1
+  minOreYield: 1
+  maxOreYield: 1
+
+- type: ore
+  id: OreSapphire
+  oreEntity: SapphireOre1
+  minOreYield: 1
+  maxOreYield: 1
+
+- type: ore
+  id: OreTopaz
+  oreEntity: TopazOre1
+  minOreYield: 1
+  maxOreYield: 1
+
+- type: ore
+  id: OrePlutonium
+  oreEntity: PlutoniumOre1
+  minOreYield: 1
+  maxOreYield: 2
+
+- type: ore
+  id: OreNeptunium
+  oreEntity: NeptuniumOre1
+  minOreYield: 1
+  maxOreYield: 2
+
+- type: ore
+  id: OreTorium
+  oreEntity: ToriumOre1
+  minOreYield: 1
+  maxOreYield: 2
+
+# Dense rocks
+
+# Medium yields
+- type: ore
+  id: OrePsycoreDense
+  oreEntity: PsycoreOre5
+  minOreYield: 3
+  maxOreYield: 5
+
+- type: ore
+  id: OreTitanDense
+  oreEntity: TitanOre5
+  minOreYield: 3
+  maxOreYield: 5
+
+# Low yields
+- type: ore
+  id: OreEmeraldDense
+  oreEntity: EmeraldOre1
+  minOreYield: 2
+  maxOreYield: 3
+
+- type: ore
+  id: OreRubyDense
+  oreEntity: RubyOre1
+  minOreYield: 2
+  maxOreYield: 3
+
+- type: ore
+  id: OreSapphireDense
+  oreEntity: SapphireOre1
+  minOreYield: 2
+  maxOreYield: 3
+
+- type: ore
+  id: OreTopazDense
+  oreEntity: TopazOre1
+  minOreYield: 2
+  maxOreYield: 3
+
+- type: ore
+  id: OrePlutoniumDense
+  oreEntity: PlutoniumOre1
+  minOreYield: 2
+  maxOreYield: 4
+
+- type: ore
+  id: OreNeptuniumDense
+  oreEntity: NeptuniumOre1
+  minOreYield: 2
+  maxOreYield: 4
+
+- type: ore
+  id: OreToriumDense
+  oreEntity: ToriumOre1
+  minOreYield: 2
+  maxOreYield: 4

@@ -1,0 +1,334 @@
+# region Mob base
+- type: entity
+  abstract: true
+  parent:
+  - NFMobNoEquipmentOnGib
+  - MobMovementSpeedModifierRanged
+  - MobStaminaSpecial
+  - MobHumanoidHostileBase
+  - MobPassiveRegenWeak
+  - MobHumanoidHostileAISimpleRanged
+  #- MobLaserReflect # Added to prevent laser abuse from players
+  id: NFMobWizardlBase
+  name: wizard
+  components:
+  - type: Damageable
+    damageModifierSet: MobHereticDamageModifierSet
+  - type: Inventory
+    templateId: hostilewizard # Supports loadouts, more lootable slots
+  - type: InventorySlots
+  - type: NpcFactionMember
+    factions:
+    - WizFedFaction
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 3
+    rechargeSound:
+      path: /Audio/_NF/Effects/silence.ogg
+  - type: Flammable
+    fireSpread: true
+    canResistFire: true
+    damage:
+      types:
+        Heat: 0
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      80: Critical
+      140: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      40: 0.7
+      60: 0.5
+  - type: Vocalizer
+    hideChat: true
+    minVocalizeInterval: 30
+    maxVocalizeInterval: 120
+  - type: DatasetVocalizer
+    dataset: wizardhumanoidchatter
+  - type: AutoWakeUp
+
+# region Tier 1
+- type: entity
+  parent: NFMobWizardlBase
+  id: NFMobWizardBlueApprentice
+  categories: [ HideSpawnMenu ]
+  name: blue wizard apprentice
+  components:
+  - type: Loadout
+    prototypes:
+    - NpcGearWizardBlueApprentice
+  - type: BasicEntityAmmoProvider
+    proto: WaterElementalConjured
+    capacity: 2
+    count: 2
+  - type: Gun
+    showExamineText: false
+    fireRate: 1
+    soundGunshot:
+      path: /Audio/Effects/teleport_arrival.ogg
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 40
+    rechargeSound:
+      path: /Audio/_NF/Effects/silence.ogg
+
+- type: entity
+  parent: NFMobWizardlBase
+  id: NFMobWizardApprenticeSoap
+  name: soap wizard apprentice
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes:
+    - NpcGearWizardSoapApprentice
+  - type: BasicEntityAmmoProvider
+    proto: SoapConjured
+    capacity: 1
+    count: 1
+  - type: Gun
+    showExamineText: false
+    fireRate: 1
+    soundGunshot:
+      path: /Audio/Effects/teleport_arrival.ogg
+
+- type: entity
+  parent: NFMobWizardlBase
+  id: NFMobWizardPurpleApprentice
+  categories: [ HideSpawnMenu ]
+  name: purple wizard apprentice
+  components:
+  - type: Loadout
+    prototypes:
+    - NpcGearWizardPurpleApprentice
+  - type: BasicEntityAmmoProvider
+    proto: BulletMagicBolt
+    capacity: 2
+    count: 2
+  - type: Gun
+    showExamineText: false
+    fireRate: 1
+    soundGunshot:
+      path: /Audio/Magic/fireball.ogg
+
+# region Tier 2
+- type: entity
+  parent: NFMobWizardlBase
+  id: NFMobWizardAdeptBlue
+  categories: [ HideSpawnMenu ]
+  name: blue wizard adept
+  components:
+  - type: Loadout
+    prototypes:
+    - NpcGearWizardAdeptBlue
+  - type: BasicEntityAmmoProvider
+    proto: BulletIceGlobe
+    capacity: 1
+    count: 1
+  - type: Gun
+    showExamineText: false
+    fireRate: 1
+    soundGunshot:
+      path: /Audio/Magic/fireball.ogg
+
+- type: entity
+  parent: NFMobWizardlBase
+  id: NFMobWizardAdeptRed
+  categories: [ HideSpawnMenu ]
+  name: red wizard adept
+  components:
+  - type: Loadout
+    prototypes:
+    - NpcGearWizardAdeptRed
+  - type: BasicEntityAmmoProvider
+    proto: BulletFireBolt
+    capacity: 2
+    count: 2
+  - type: Gun
+    showExamineText: false
+    fireRate: 1
+    soundGunshot:
+      path: /Audio/Magic/fireball.ogg
+
+- type: entity
+  parent: NFMobWizardlBase
+  id: NFMobWizardAdeptPurple
+  categories: [ HideSpawnMenu ]
+  name: purple wizard adept
+  components:
+  - type: Loadout
+    prototypes:
+    - NpcGearWizardAdeptPurple
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 50
+  - type: Battery
+    maxCharge: 800
+    startingCharge: 800
+  - type: HitscanBatteryAmmoProvider
+    proto: CausticBeam
+    fireCost: 100
+  - type: Gun
+    showExamineText: false
+    fireRate: 3
+    soundGunshot:
+      path: /Audio/Magic/fireball.ogg
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 0.5
+    rechargeSound:
+      path: /Audio/_NF/Effects/silence.ogg
+
+- type: entity
+  parent: NFMobWizardlBase
+  id: NFMobWizardAdeptBrick
+  categories: [ HideSpawnMenu ]
+  name: brick wizard adept
+  components:
+  - type: Loadout
+    prototypes:
+    - NpcGearWizardAdeptBrick
+  - type: BasicEntityAmmoProvider
+    proto: BrickConjured
+    capacity: 20
+    count: 20
+  - type: Gun
+    showExamineText: false
+    fireRate: 2
+    soundGunshot:
+        collection: Woosh
+
+# region Tier 3
+- type: entity
+  parent: NFMobWizardAdeptBlue
+  id: NFMobWizardMasterBlue
+  categories: [ HideSpawnMenu ]
+  name: blue wizard master
+  components:
+  - type: Loadout
+    prototypes:
+    - NpcGearWizardMasterBlue
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 50
+  - type: Battery
+    maxCharge: 800
+    startingCharge: 800
+  - type: HitscanBatteryAmmoProvider
+    proto: WizardHitscanLightning
+    fireCost: 100
+
+- type: entity
+  parent: NFMobWizardAdeptRed
+  id: NFMobWizardMasterRed
+  categories: [ HideSpawnMenu ]
+  name: red wizard master
+  components:
+  - type: Loadout
+    prototypes:
+    - NpcGearWizardMasterRed
+
+- type: entity
+  parent: NFMobWizardAdeptPurple
+  id: NFMobWizardMasterPurple
+  categories: [ HideSpawnMenu ]
+  name: purple wizard master
+  components:
+  - type: Loadout
+    prototypes:
+    - NpcGearWizardMasterPurple
+
+- type: entity
+  parent: NFMobWizardAdeptBrick
+  id: NFMobWizardMasterBrick
+  categories: [ HideSpawnMenu ]
+  name: brick wizard master
+  suffix: AI, Hardsuit
+  components:
+  - type: Loadout
+    prototypes:
+    - NpcGearWizardMasterBrick
+
+# region Conjured Creatures
+- type: entity
+  name: Blue Curacao Elemental
+  categories: [ HideSpawnMenu ]
+  parent:
+  - MobNonHumanHostileBase
+  - MobHumanoidHostileAISimpleMelee
+  - NFMobTimedDespawn30
+  id: WaterElementalConjured
+  components:
+  - type: HTN
+    rootTask:
+       task: SimpleHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: MovementAlwaysTouching
+  - type: NoSlip
+  - type: NpcFactionMember
+    factions:
+    - WizFedFaction
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/elemental.rsi
+    layers:
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
+        state: alive
+        color: "#75b1f0"
+  - type: PointLight
+    radius: 2.0
+    energy: 3.5
+    color: "#75b1f0"
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      150: Dead
+  - type: Bloodstream
+    bloodReagent: BlueCuracao
+    chemicalMaxVolume: 100
+  - type: MeleeWeapon
+    soundHit:
+      collection: AlienClaw
+    animation: WeaponArcBite
+    damage:
+      types:
+        Slash: 15
+        Structural: 20
+  - type: MeleeChemicalInjector
+    solution: bloodstream
+    transferAmount: 10
+  - type: Ammo
+    muzzleFlash: null
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 4.5
+    baseSprintSpeed : 4.5
+
+- type: entity # Used for player spawns
+  categories: [ HideSpawnMenu ]
+  parent: WaterElementalConjured
+  id: WaterElementalConjuredStaff
+  components:
+  - type: NPCImprintingOnSpawnBehaviour
+    whitelist:
+      components:
+      - HumanoidAppearance
+  - type: HTN
+    rootTask:
+       task: MeleeFollowerCompound
+    blackboard:
+      NavClimb: !type:Bool
+        false
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+  - type: NpcFactionMember
+    factions:
+    - NanoTrasen
+  - type: TimedDespawn
+    lifetime: 180

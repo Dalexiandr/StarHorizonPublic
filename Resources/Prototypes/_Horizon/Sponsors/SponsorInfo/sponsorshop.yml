@@ -1,0 +1,7009 @@
+# region Разделитель 1
+- type: sponsorShopCategory
+  id: SponsorShopCategOne
+  name: "КОСМЕТИКА"
+  priority: 0
+
+# region Очки
+- type: sponsorShopCategory
+  id: SponsorShopEyes
+  name: очки
+  parent: SponsorShopCategOne
+  priority: 1
+  items:
+    - SponsorShopEyes1
+    - SponsorShopEyes2
+    - SponsorShopEyes3
+    - SponsorShopEyes4
+    - SponsorShopEyes5
+    - SponsorShopEyes6
+    - SponsorShopEyes7
+    - SponsorShopEyes8
+    - SponsorShopEyes9
+    - SponsorShopEyes10
+    - SponsorShopEyes11
+    - SponsorShopEyes12
+    - SponsorShopEyes13
+
+# region Шарфы и украшения
+- type: sponsorShopCategory
+  id: SponsorShopNeck
+  name: шарфы и украшения
+  parent: SponsorShopCategOne
+  priority: 2
+  items:
+    - SponsorShopScarf1
+    - SponsorShopScarf2
+    - SponsorShopScarf3
+    - SponsorShopScarf4
+    - SponsorShopScarf5
+    - SponsorShopScarf6
+    - SponsorShopScarf7
+    - SponsorShopScarf8
+    - SponsorShopScarf9
+    - SponsorShopScarf10
+    - SponsorShopScarf11
+    - SponsorShopScarf12
+    - SponsorShopScarf13
+    - SponsorShopScarf14
+    - SponsorShopScarf15
+    - SponsorShopScarf16
+    - SponsorShopScarf17
+    - SponsorShopScarf18
+    - SponsorShopScarf19
+    - SponsorShopScarf20
+    - SponsorShopScarf21
+    - SponsorShopScarf22
+    - SponsorShopScarf23
+    - SponsorShopScarf24
+    - SponsorShopScarf25
+    - SponsorShopTie1
+    - SponsorShopTie2
+    - SponsorShopTie3
+    - SponsorShopChoker1
+    - SponsorShopChoker2
+    - SponsorShopChoker3
+    - SponsorShopChoker4
+    - SponsorShopChoker5
+    - SponsorShopChoker6
+    - SponsorShopChoker7
+    - SponsorShopChoker8
+    - SponsorShopChoker9
+    - SponsorShopChoker10
+    - SponsorShopChoker11
+    - SponsorShopPendant1
+    - SponsorShopPendant2
+    - SponsorShopPendant3
+    - SponsorShopPendant4
+    - SponsorShopPendant5
+    - SponsorShopPendant6
+    - SponsorShopPendant7
+    - SponsorShopPendant8
+    - SponsorShopWings1
+    - SponsorShopWings2
+
+# region Маски
+- type: sponsorShopCategory
+  id: SponsorShopMask
+  name: маски
+  parent: SponsorShopCategOne
+  priority: 3
+  items:
+    - SponsorShopMask1
+    - SponsorShopMask2
+    - SponsorShopMask3
+    - SponsorShopMask4
+    - SponsorShopMask5
+    - SponsorShopMask6
+    - SponsorShopMask7
+    - SponsorShopMask8
+    - SponsorShopMask9
+    - SponsorShopMask10
+    - SponsorShopMask11
+    - SponsorShopMask12
+    - SponsorShopMask13
+    - SponsorShopMask14
+    - SponsorShopMask15
+    - SponsorShopMask16
+    - SponsorShopMask19
+    - SponsorShopMask20
+    - SponsorShopMask21
+    - SponsorShopMask22
+    - SponsorShopMask23
+    - SponsorShopMask24
+
+# region Разделитель 2
+- type: sponsorShopCategory
+  id: SponsorShopCategTwo
+  name: "ВЕРХНЯЯ ОДЕЖДА"
+  priority: 4
+
+# region Головные уборы
+- type: sponsorShopCategory
+  id: SponsorShopHead
+  name: головные уборы
+  parent: SponsorShopCategTwo
+  priority: 5
+  items:
+    - SponsorShopBand1
+    - SponsorShopBand2
+    - SponsorShopBand3
+    - SponsorShopBand4
+    - SponsorShopBand5
+    - SponsorShopBand6
+    - SponsorShopBand7
+    - SponsorShopBand8
+    - SponsorShopBand9
+    - SponsorShopHat1
+    - SponsorShopHat2
+    - SponsorShopHat3
+    - SponsorShopHat4
+    - SponsorShopHat5
+    - SponsorShopHat6
+    - SponsorShopHat7
+    - SponsorShopHat8
+    - SponsorShopHat9
+    - SponsorShopHat10
+    - SponsorShopHat11
+    - SponsorShopHat12
+    - SponsorShopHat13
+    - SponsorShopHat14
+    - SponsorShopHat15
+    - SponsorShopHat16
+    - SponsorShopHat17
+    - SponsorShopHat18
+    - SponsorShopHat19
+    - SponsorShopHat20
+    - SponsorShopHat21
+    - SponsorShopHat22
+    - SponsorShopHat23
+    - SponsorShopHat24
+    - SponsorShopHat25
+    - SponsorShopHat26
+    - SponsorShopHat27
+    - SponsorShopHat28
+    - SponsorShopHat29
+    - SponsorShopHat30
+    - SponsorShopHat31
+    - SponsorShopHat32
+    - SponsorShopHat33
+    - SponsorShopHat34
+    - SponsorShopHat35
+    - SponsorShopHat36
+    - SponsorShopHat37
+    - SponsorShopHat38
+    - SponsorShopHat39
+    - SponsorShopHat40
+    - SponsorShopHat41
+    - SponsorShopHat42
+    - SponsorShopHat43
+    - SponsorShopHat44
+    - SponsorShopHat45
+    - SponsorShopHat46
+    - SponsorShopHat47
+    - SponsorShopHat48
+    - SponsorShopHat49
+    - SponsorShopHat50
+    - SponsorShopHat51
+    - SponsorShopHat52
+    - SponsorShopHat53
+
+# region Плащи
+- type: sponsorShopCategory
+  id: SponsorShopCloaks
+  name: плащи
+  parent: SponsorShopCategTwo
+  priority: 6
+  items:
+    - SponsorShopCloak1
+    - SponsorShopCloak2
+    - SponsorShopCloak3
+    - SponsorShopCloak4
+    - SponsorShopCloak5
+    - SponsorShopCloak6
+    - SponsorShopCloak7
+    - SponsorShopCloak8
+    - SponsorShopCloak9
+    - SponsorShopCloak10
+    - SponsorShopCloak11
+    - SponsorShopCloak12
+    - SponsorShopCloak13
+    - SponsorShopCloak14
+    - SponsorShopCloak15
+    - SponsorShopCloak16
+    - SponsorShopCloak17
+    - SponsorShopCloak18
+    - SponsorShopCloak19
+    - SponsorShopCloak20
+    - SponsorShopCloak21
+    - SponsorShopCloak22
+    - SponsorShopCloak23
+    - SponsorShopCloak24
+    - SponsorShopCloak25
+    - SponsorShopCloak26
+    - SponsorShopCloak27
+    - SponsorShopCloak28
+    - SponsorShopCloak29
+    - SponsorShopCloak30
+    - SponsorShopCloak31
+    - SponsorShopCloak32
+    - SponsorShopCloak33
+
+# region Обувь
+- type: sponsorShopCategory
+  id: SponsorShopShoes
+  name: обувь
+  parent: SponsorShopCategTwo
+  priority: 7
+  items:
+    - SponsorShopShoes1
+    - SponsorShopShoes2
+    - SponsorShopShoes3
+    - SponsorShopShoes4
+    - SponsorShopShoes5
+    - SponsorShopShoes6
+    - SponsorShopShoes7
+    - SponsorShopShoes8
+    - SponsorShopShoes9
+    - SponsorShopShoes10
+    - SponsorShopShoes11
+    - SponsorShopShoes12
+    - SponsorShopShoes13
+    - SponsorShopShoes14
+    - SponsorShopShoes15
+    - SponsorShopShoes16
+    - SponsorShopShoes17
+    - SponsorShopShoes18
+    - SponsorShopShoes19
+
+# region Перчатки
+- type: sponsorShopCategory
+  id: SponsorShopHands
+  name: перчатки
+  parent: SponsorShopCategTwo
+  priority: 8
+  items:
+    - SponsorShopHands1
+    - SponsorShopHands2
+    - SponsorShopHands3
+    - SponsorShopHands4
+    - SponsorShopHands5
+    - SponsorShopHands6
+    - SponsorShopHands7
+    - SponsorShopHands8
+    - SponsorShopHands9
+    - SponsorShopHands10
+    - SponsorShopHands11
+    - SponsorShopHands12
+    - SponsorShopHands13
+    - SponsorShopHands14
+    - SponsorShopHands15
+    - SponsorShopHands16
+    - SponsorShopHands17
+    - SponsorShopHands18
+    - SponsorShopHands19
+    - SponsorShopHands20
+
+# region Комбинезоны
+- type: sponsorShopCategory
+  id: SponsorShopUniforms
+  name: юниформа
+  parent: SponsorShopCategTwo
+  priority: 9
+  items:
+    - SponsorShopUniforms1
+    - SponsorShopUniforms2
+    - SponsorShopUniforms3
+    - SponsorShopUniforms4
+    - SponsorShopUniforms5
+    - SponsorShopUniforms6
+    - SponsorShopUniforms7
+    - SponsorShopUniforms8
+    - SponsorShopUniforms9
+    - SponsorShopUniforms10
+    - SponsorShopUniforms11
+    - SponsorShopUniforms12
+    - SponsorShopUniforms13
+    - SponsorShopUniforms14
+    - SponsorShopUniforms15
+    - SponsorShopUniforms16
+    - SponsorShopUniforms17
+    - SponsorShopUniforms18
+    - SponsorShopUniforms19
+    - SponsorShopUniforms20
+    - SponsorShopUniforms21
+    - SponsorShopUniforms22
+    - SponsorShopUniforms23
+    - SponsorShopUniforms24
+    - SponsorShopUniforms25
+    - SponsorShopUniforms26
+    - SponsorShopUniforms27
+    - SponsorShopUniforms28
+    - SponsorShopUniforms29
+    - SponsorShopUniforms30
+    - SponsorShopUniforms31
+    - SponsorShopUniforms32
+    - SponsorShopUniforms33
+    - SponsorShopUniforms34
+    - SponsorShopUniforms35
+    - SponsorShopUniforms36
+    - SponsorShopUniforms37
+    - SponsorShopUniforms38
+    - SponsorShopUniforms39
+    - SponsorShopUniforms40
+    - SponsorShopUniforms41
+    - SponsorShopUniforms42
+    - SponsorShopUniforms43
+    - SponsorShopUniforms44
+    - SponsorShopUniforms45
+    - SponsorShopUniforms46
+    - SponsorShopUniforms47
+    - SponsorShopUniforms48
+    - SponsorShopUniforms49
+    - SponsorShopUniforms50
+    - SponsorShopUniforms51
+    - SponsorShopUniforms52
+    - SponsorShopUniforms53
+    - SponsorShopUniforms54
+    - SponsorShopUniforms55
+    - SponsorShopUniforms56
+    - SponsorShopUniforms57
+    - SponsorShopUniforms58
+    - SponsorShopUniforms59
+    - SponsorShopUniforms60
+    - SponsorShopUniforms61
+    - SponsorShopUniforms62
+    - SponsorShopUniformsF1
+    - SponsorShopUniformsF2
+    - SponsorShopUniformsF3
+    - SponsorShopUniformsF4
+    - SponsorShopUniformsF5
+    - SponsorShopUniformsF6
+    - SponsorShopUniformsF7
+    - SponsorShopUniformsF8
+    - SponsorShopUniformsF9
+    - SponsorShopUniformsF10
+    - SponsorShopUniformsF11
+    - SponsorShopUniformsF12
+    - SponsorShopUniformsF13
+    - SponsorShopUniformsF14
+    - SponsorShopUniformsF15
+    - SponsorShopUniformsF16
+    - SponsorShopUniformsF17
+    - SponsorShopUniformsF18
+    - SponsorShopUniformsF19
+    - SponsorShopUniformsF20
+    - SponsorShopUniformsF21
+    - SponsorShopUniformsF22
+    - SponsorShopUniformsF23
+    - SponsorShopUniformsF24
+    - SponsorShopUniformsF25
+    - SponsorShopUniformsF26
+    - SponsorShopUniformsF27
+    - SponsorShopUniformsF28
+    - SponsorShopUniformsF29
+    - SponsorShopUniformsF30
+    - SponsorShopUniformsF31
+    - SponsorShopUniformsF32
+    - SponsorShopUniformsF33
+    - SponsorShopUniformsF34
+    - SponsorShopUniformsF35
+    - SponsorShopUniformsF36
+    - SponsorShopUniformsF37
+    - SponsorShopUniformsF38
+    - SponsorShopUniformsF39
+    - SponsorShopUniformsF40
+    - SponsorShopUniformsF41
+    - SponsorShopUniformsF42
+    - SponsorShopUniformsF43
+    - SponsorShopUniformsF44
+    - SponsorShopUniformsF45
+    - SponsorShopUniformsF46
+    - SponsorShopUniformsF47
+    - SponsorShopUniformsF48
+    - SponsorShopUniformsF49
+    - SponsorShopUniformsF50
+    - SponsorShopUniformsF51
+    - SponsorShopUniformsF52
+    - SponsorShopUniformsF53
+    - SponsorShopUniformsF54
+    - SponsorShopUniformsF55
+    - SponsorShopUniformsF56
+    - SponsorShopUniformsF57
+    - SponsorShopUniformsF58
+    - SponsorShopUniformsF59
+    - SponsorShopUniformsF60
+    - SponsorShopUniformsF61
+    - SponsorShopUniformsF62
+    - SponsorShopUniformsF63
+    - SponsorShopUniformsF64
+
+# region Зимняя одежда
+- type: sponsorShopCategory
+  id: SponsorShopOuter
+  name: зимняя одежда
+  parent: SponsorShopCategTwo
+  priority: 10
+  items:
+    - SponsorShopOuter1
+    - SponsorShopOuter2
+    - SponsorShopOuter3
+    - SponsorShopOuter4
+    - SponsorShopOuter5
+    - SponsorShopOuter6
+    - SponsorShopOuter7
+    - SponsorShopOuter8
+    - SponsorShopOuter9
+    - SponsorShopOuter10
+    - SponsorShopOuter11
+    - SponsorShopOuter12
+    - SponsorShopOuter13
+    - SponsorShopOuter14
+    - SponsorShopOuter15
+    - SponsorShopOuter16
+    - SponsorShopOuter17
+    - SponsorShopOuter18
+    - SponsorShopOuter19
+    - SponsorShopOuter20
+    - SponsorShopOuter21
+    - SponsorShopOuter22
+    - SponsorShopOuter23
+    - SponsorShopOuter24
+    - SponsorShopOuter25
+    - SponsorShopOuter26
+
+# region Разделитель 3
+- type: sponsorShopCategory
+  id: SponsorShopCategThree
+  name: "НИЖНЯЯ ОДЕЖДА"
+  priority: 11
+
+# region Бра
+- type: sponsorShopCategory
+  id: SponsorShopBra
+  name: бра
+  parent: SponsorShopCategThree
+  priority: 12
+  items:
+    - SponsorShopBra1
+    - SponsorShopBra2
+    - SponsorShopBra3
+    - SponsorShopBra4
+    - SponsorShopBra5
+    - SponsorShopBra6
+    - SponsorShopBra7
+    - SponsorShopBra8
+    - SponsorShopBra9
+    - SponsorShopBra10
+    - SponsorShopBra11
+    - SponsorShopBra12
+    - SponsorShopBra13
+    - SponsorShopBra14
+    - SponsorShopBra15
+    - SponsorShopBra16
+    - SponsorShopBra17
+    - SponsorShopBra18
+    - SponsorShopBra19
+    - SponsorShopBra20
+    - SponsorShopBra21
+    - SponsorShopBra22
+    - SponsorShopBra23
+
+# region Трусики
+- type: sponsorShopCategory
+  id: SponsorShopPanties
+  name: трусики
+  parent: SponsorShopCategThree
+  priority: 13
+  items:
+    - SponsorShopPanties1
+    - SponsorShopPanties2
+    - SponsorShopPanties3
+    - SponsorShopPanties4
+    - SponsorShopPanties5
+    - SponsorShopPanties6
+    - SponsorShopPanties7
+    - SponsorShopPanties8
+    - SponsorShopPanties9
+    - SponsorShopPanties10
+    - SponsorShopPanties11
+    - SponsorShopPanties12
+    - SponsorShopPanties13
+    - SponsorShopPanties14
+    - SponsorShopPanties15
+    - SponsorShopPanties16
+    - SponsorShopPanties17
+    - SponsorShopPanties18
+    - SponsorShopPanties19
+    - SponsorShopPanties20
+    - SponsorShopPanties21
+    - SponsorShopPanties22
+    - SponsorShopPanties23
+    - SponsorShopPanties24
+    - SponsorShopPanties25
+    - SponsorShopPanties26
+    - SponsorShopPanties27
+    - SponsorShopPanties28
+    - SponsorShopPanties29
+    - SponsorShopPanties30
+    - SponsorShopPanties31
+    - SponsorShopPanties32
+
+# region Чулки
+- type: sponsorShopCategory
+  id: SponsorShopSocks
+  name: чулки и носки
+  parent: SponsorShopCategThree
+  priority: 14
+  items:
+    - SponsorShopSocks1
+    - SponsorShopSocks2
+    - SponsorShopSocks3
+    - SponsorShopSocks4
+    - SponsorShopSocks5
+    - SponsorShopSocks6
+    - SponsorShopSocks7
+    - SponsorShopSocks8
+    - SponsorShopSocks9
+    - SponsorShopSocks10
+    - SponsorShopSocks11
+    - SponsorShopSocks12
+    - SponsorShopSocks13
+    - SponsorShopSocks14
+    - SponsorShopSocks15
+    - SponsorShopSocks16
+    - SponsorShopSocks17
+    - SponsorShopSocks18
+    - SponsorShopSocks19
+    - SponsorShopSocks20
+    - SponsorShopSocks21
+    - SponsorShopSocks22
+    - SponsorShopSocks23
+    - SponsorShopSocks24
+    - SponsorShopSocks25
+    - SponsorShopSocks26
+    - SponsorShopSocks27
+    - SponsorShopSocks28
+    - SponsorShopSocks29
+    - SponsorShopSocks30
+    - SponsorShopSocks31
+    - SponsorShopSocks32
+    - SponsorShopSocks33
+    - SponsorShopSocks34
+    - SponsorShopSocks35
+    - SponsorShopSocks36
+    - SponsorShopSocks37
+    - SponsorShopSocks38
+    - SponsorShopSocks39
+    - SponsorShopSocks40
+    - SponsorShopSocks41
+    - SponsorShopSocks42
+    - SponsorShopSocks43
+    - SponsorShopSocks44
+    - SponsorShopSocks45
+    - SponsorShopSocks46
+    - SponsorShopSocks47
+    - SponsorShopSocks48
+    - SponsorShopSocks49
+    - SponsorShopSocks50
+    - SponsorShopSocks51
+    - SponsorShopSocks52
+    - SponsorShopSocks53
+    - SponsorShopSocks54
+    - SponsorShopSocks55
+    - SponsorShopSocks56
+    - SponsorShopSocks57
+    - SponsorShopSocks58
+    - SponsorShopSocks59
+    - SponsorShopSocks60
+    - SponsorShopSocks61
+    - SponsorShopSocks62
+    - SponsorShopSocks63
+    - SponsorShopSocks64
+    - SponsorShopSocks65
+    - SponsorShopSocks66
+    - SponsorShopSocks67
+    - SponsorShopSocks68
+    - SponsorShopSocks69
+    - SponsorShopSocks70
+    - SponsorShopSocks71
+    - SponsorShopSocks72
+    - SponsorShopSocks73
+    - SponsorShopSocks74
+    - SponsorShopSocks75
+    - SponsorShopSocks76
+    - SponsorShopSocks77
+    - SponsorShopSocks78
+    - SponsorShopSocks79
+    - SponsorShopSocks80
+
+# region Разделитель 4
+- type: sponsorShopCategory
+  id: SponsorShopCategFour
+  name: "БЕЗДЕЛУШКИ"
+  priority: 15
+
+# region Плюшки
+- type: sponsorShopCategory
+  id: SponsorShopPlush
+  name: плюшки
+  parent: SponsorShopCategFour
+  priority: 16
+  items:
+    - SponsorShopPlush1
+    - SponsorShopPlush2
+    - SponsorShopPlush3
+    - SponsorShopPlush4
+    - SponsorShopPlush5
+    - SponsorShopPlush6
+    - SponsorShopPlush7
+    - SponsorShopPlush8
+    - SponsorShopPlush9
+    - SponsorShopPlush10
+    - SponsorShopPlush11
+    - SponsorShopPlush12
+    - SponsorShopPlush13
+    - SponsorShopPlush14
+    - SponsorShopPlush15
+    - SponsorShopPlush16
+    - SponsorShopPlush17
+    - SponsorShopPlush18
+    - SponsorShopPlush19
+    - SponsorShopPlush20
+    - SponsorShopPlush21
+    - SponsorShopPlush22
+    - SponsorShopPlush23
+    - SponsorShopPlush24
+    - SponsorShopPlush25
+    - SponsorShopPlush26
+    - SponsorShopPlush27
+    - SponsorShopPlush28
+    - SponsorShopPlush29
+    - SponsorShopPlush30
+    - SponsorShopPlush31
+    - SponsorShopPlush32
+    - SponsorShopPlush33
+    - SponsorShopPlush34
+    - SponsorShopPlush35
+    - SponsorShopPlush36
+    - SponsorShopPlush37
+    - SponsorShopPlush38
+    - SponsorShopPlush39
+    - SponsorShopPlush40
+    - SponsorShopPlush41
+    - SponsorShopPlush42
+    - SponsorShopPlush43
+    - SponsorShopPlush44
+    - SponsorShopPlush45
+    - SponsorShopPlush46
+    - SponsorShopPlush47
+    - SponsorShopPlush48
+    - SponsorShopPlush49
+    - SponsorShopPlush50
+    - SponsorShopPlush51
+    - SponsorShopPlush52
+    - SponsorShopPlush53
+    - SponsorShopPlush54
+    - SponsorShopPlush55
+    - SponsorShopPlush56
+    - SponsorShopPlush57
+    - SponsorShopPlush58
+    - SponsorShopPlush59
+    - SponsorShopPlush60
+    - SponsorShopPlush61
+    - SponsorShopPlush62
+    - SponsorShopPlush63
+    - SponsorShopPlush64
+    - SponsorShopPlush65
+    - SponsorShopPlush66
+    - SponsorShopPlush67
+    - SponsorShopPlush68
+    - SponsorShopPlush69
+    - SponsorShopPlush70
+
+# region Игры и инструменты
+- type: sponsorShopCategory
+  id: SponsorShopGames
+  name: подарки
+  parent: SponsorShopCategFour
+  priority: 17
+  items:
+    - SponsorShopGame1
+    - SponsorShopGame2
+    - SponsorShopGame3
+    - SponsorShopInstrument1
+    - SponsorShopInstrument2
+    - SponsorShopInstrument3
+    - SponsorShopInstrument4
+    - SponsorShopInstrument5
+    - SponsorShopInstrument6
+
+# region Цветы
+- type: sponsorShopCategory
+  id: SponsorShopFlowers
+  name: цветы
+  parent: SponsorShopCategFour
+  priority: 18
+  items:
+    - SponsorShopVase1
+    - SponsorShopVase2
+    - SponsorShopFlower1
+    - SponsorShopFlower2
+    - SponsorShopFlower3
+    - SponsorShopFlower4
+    - SponsorShopFlower5
+    - SponsorShopFlower6
+    - SponsorShopFlower7
+    - SponsorShopFlower8
+    - SponsorShopFlower9
+    - SponsorShopFlower10
+    - SponsorShopFlower11
+    - SponsorShopFlower12
+    - SponsorShopFlower13
+    - SponsorShopFlower14
+    - SponsorShopFlower15
+    - SponsorShopFlower16
+    - SponsorShopFlower17
+
+# region Разделитель 5
+- type: sponsorShopCategory
+  id: SponsorShopCategFive
+  name: "ПРОПИТАНИЕ"
+  priority: 19
+
+- type: sponsorShopCategory
+  id: SponsorShopFood
+  name: еда
+  parent: SponsorShopCategFive
+  priority: 20
+  items:
+    - SponsorShopFood1
+    - SponsorShopFood2
+    - SponsorShopFood3
+    - SponsorShopFood4
+    - SponsorShopFood5
+    - SponsorShopFood6
+    - SponsorShopFood7
+    - SponsorShopFood8
+    - SponsorShopFood9
+    - SponsorShopFood10
+    - SponsorShopFood11
+    - SponsorShopFood12
+    - SponsorShopFood13
+    - SponsorShopFood14
+    - SponsorShopFood15
+    - SponsorShopFood16
+    - SponsorShopFood17
+    - SponsorShopFood18
+    - SponsorShopFood19
+    - SponsorShopFood20
+    - SponsorShopFood21
+    - SponsorShopFood22
+    - SponsorShopFood23
+
+- type: sponsorShopCategory
+  id: SponsorShopDrink
+  name: напитки
+  parent: SponsorShopCategFive
+  priority: 21
+  items:
+    - SponsorShopDrink1
+    - SponsorShopDrink2
+    - SponsorShopDrink3
+    - SponsorShopDrink4
+    - SponsorShopDrink5
+    - SponsorShopDrink6
+    - SponsorShopDrink7
+    - SponsorShopDrink8
+    - SponsorShopDrink9
+    - SponsorShopDrink10
+    - SponsorShopDrink11
+    - SponsorShopDrink12
+    - SponsorShopDrink13
+    - SponsorShopDrink14
+    - SponsorShopDrink15
+    - SponsorShopDrink16
+    - SponsorShopDrink17
+    - SponsorShopDrink18
+    - SponsorShopDrink19
+    - SponsorShopDrink20
+    - SponsorShopDrink21
+    - SponsorShopDrink22
+    - SponsorShopDrink23
+    - SponsorShopDrink24
+    - SponsorShopDrink25
+    - SponsorShopDrink26
+    - SponsorShopDrink27
+    - SponsorShopDrink28
+    - SponsorShopDrink29
+    - SponsorShopDrink30
+    - SponsorShopDrink31
+    - SponsorShopDrink32
+    - SponsorShopDrink33
+    - SponsorShopDrink34
+    - SponsorShopDrink35
+    - SponsorShopDrink36
+    - SponsorShopDrink37
+    - SponsorShopDrink38
+    - SponsorShopDrink39
+    - SponsorShopDrink40
+    - SponsorShopDrink41
+    - SponsorShopDrink42
+    - SponsorShopDrink43
+    - SponsorShopDrink44
+
+# region Сигареты
+- type: sponsorShopCategory
+  id: SponsorShopSmokes
+  name: сигареты
+  parent: SponsorShopCategFive
+  priority: 22
+  items:
+    - SponsorShopSmoke1
+    - SponsorShopSmoke2
+    - SponsorShopSmoke3
+    - SponsorShopSmoke4
+    - SponsorShopSmoke5
+    - SponsorShopCigar1
+    - SponsorShopCigar2
+    - SponsorShopCigar3
+
+# region Разделитель 6
+- type: sponsorShopCategory
+  id: SponsorShopCategSix
+  name: "ТЕХНОЛОГИИ"
+  priority: 23
+
+# region Плоскоблоки
+- type: sponsorShopCategory
+  id: SponsorShopFlatpacks
+  name: плоскоблоки
+  parent: SponsorShopCategSix
+  priority: 24
+  items:
+    - SponsorShopFlatpack1
+    - SponsorShopFlatpack2
+    - SponsorShopFlatpack3
+    - SponsorShopFlatpack4
+    - SponsorShopFlatpack5
+    - SponsorShopFlatpack6
+    - SponsorShopFlatpack7
+    - SponsorShopFlatpack8
+    - SponsorShopFlatpack9
+    - SponsorShopFlatpack10
+    - SponsorShopFlatpack11
+    - SponsorShopFlatpack12
+    - SponsorShopFlatpack13
+    - SponsorShopFlatpack14
+    - SponsorShopFlatpack15
+    - SponsorShopFlatpack16
+    - SponsorShopFlatpack17
+    - SponsorShopFlatpack18
+    - SponsorShopFlatpack19
+    - SponsorShopFlatpack20
+    - SponsorShopFlatpack21
+    - SponsorShopFlatpack22
+    - SponsorShopFlatpack23
+    - SponsorShopFlatpack24
+    - SponsorShopFlatpack25
+    - SponsorShopFlatpack26
+    - SponsorShopFlatpack27
+    - SponsorShopFlatpack28
+    - SponsorShopFlatpack29
+    - SponsorShopFlatpack30
+    - SponsorShopFlatpack31
+    - SponsorShopFlatpack32
+    - SponsorShopFlatpack33
+    - SponsorShopFlatpack34
+    - SponsorShopFlatpack35
+    - SponsorShopFlatpack36
+    - SponsorShopFlatpack37
+    - SponsorShopFlatpack38
+    - SponsorShopFlatpack39
+    - SponsorShopFlatpack40
+
+# region Диски
+- type: sponsorShopCategory
+  id: SponsorShopDisks
+  name: диски
+  parent: SponsorShopCategSix
+  priority: 25
+  items:
+    - SponsorShopDisk1
+    - SponsorShopDisk2
+    - SponsorShopDisk3
+    - SponsorShopDisk4
+    - SponsorShopDisk5
+    - SponsorShopDisk6
+    - SponsorShopDisk7
+    - SponsorShopDisk8
+    - SponsorShopDisk9
+    - SponsorShopDisk10
+    - SponsorShopDisk11
+    - SponsorShopDisk12
+    - SponsorShopDisk13
+    - SponsorShopDisk14
+
+# region Очки
+- type: sponsorShopListing
+  id: SponsorShopEyes1
+  name: очки
+  description: Пара неприглядных очков с линзами по рецепту.
+  cost: 1
+  priority: 1
+  prototypeId: ClothingEyesGlasses
+
+- type: sponsorShopListing
+  id: SponsorShopEyes2
+  name: очки негодяя
+  description: Обязательны для каждого уважающего себя агента под прикрытием.
+  cost: 1
+  priority: 1
+  prototypeId: ClothingEyesGlassesOutlawGlasses
+
+- type: sponsorShopListing
+  id: SponsorShopEyes3
+  name: дешёвые солнцезащитные очки
+  description: Пара чёрных солнцезащитных очков. Не очень хорошо блокируют свет, скорее аксессуар, чем что-то полезное.
+  cost: 1
+  priority: 1
+  prototypeId: ClothingEyesGlassesCheapSunglasses
+
+- type: sponsorShopListing
+  id: SponsorShopEyes4
+  name: мужицкие очки
+  description: Совершать невозможное и раздавать пинки здравому смыслу!
+  cost: 1
+  priority: 1
+  prototypeId: ClothingEyesGlassesGar
+
+- type: sponsorShopListing
+  id: SponsorShopEyes5
+  name: оранжевые мужицкие очки
+  description: Ты за кого меня держишь?!
+  cost: 1
+  priority: 0
+  state: icon-alt
+  prototypeId: ClothingEyesGlassesGarOrange
+
+- type: sponsorShopListing
+  id: SponsorShopEyes6
+  name: гигамужицкие очки
+  description: Мы эволюционируем из тех людей, какими были минуту назад, шаг за шагом мы продвигаемся, чуть дальше с каждым разом, вот как работает дрель!
+  cost: 1
+  priority: 0
+  state: icon-super
+  prototypeId: ClothingEyesGlassesGarGiga
+
+- type: sponsorShopListing
+  id: SponsorShopEyes7
+  name: визоры (зеленые)
+  description: Плотно прилегающие к глазам очки, зеленого цвета и прочных полимеров.
+  cost: 1
+  priority: 1
+  prototypeId: ClothingEyesGlassesSGreen
+
+- type: sponsorShopListing
+  id: SponsorShopEyes8
+  name: визоры (филетовые)
+  description: Плотно прилегающие к глазам очки, фиолетового цвета и прочных полимеров.
+  cost: 1
+  priority: 1
+  prototypeId: ClothingEyesGlassesSPurple
+
+- type: sponsorShopListing
+  id: SponsorShopEyes9
+  name: визоры (красные)
+  description: Плотно прилегающие к глазам очки, красного цвета и прочных полимеров.
+  cost: 1
+  priority: 1
+  prototypeId: ClothingEyesGlassesSRed
+
+- type: sponsorShopListing
+  id: SponsorShopEyes10
+  name: визоры
+  description: Плотно прилегающие к глазам очки из прочных полимеров.
+  cost: 1
+  priority: 1
+  prototypeId: ClothingEyesGlassesS
+
+- type: sponsorShopListing
+  id: SponsorShopEyes11
+  name: визоры
+  description: Плотно прилегающие к глазам очки из прочных полимеров.
+  cost: 1
+  priority: 1
+  prototypeId: ClothingEyesGlassesSA
+
+- type: sponsorShopListing
+  id: SponsorShopEyes12
+  name: визоры
+  description: Плотно прилегающие к глазам очки из прочных полимеров.
+  cost: 1
+  priority: 1
+  prototypeId: ClothingEyesGlassesSB
+
+- type: sponsorShopListing
+  id: SponsorShopEyes13
+  name: визоры
+  description: Плотно прилегающие к глазам очки из прочных полимеров.
+  cost: 1
+  priority: 1
+  prototypeId: ClothingEyesGlassesSC
+
+# region Шарфы
+
+- type: sponsorShopListing
+  id: SponsorShopScarf1
+  name: полосатый красный шарф
+  description: Стильный полосатый красный шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды, и тех, кто просто не выносит холодного ветра на своей шее.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckScarfStripedRed
+
+- type: sponsorShopListing
+  id: SponsorShopScarf2
+  name: полосатый синий шарф
+  description: Стильный полосатый синий шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды, и тех, кто просто не выносит холодного ветра на своей шее.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckScarfStripedBlue
+
+- type: sponsorShopListing
+  id: SponsorShopScarf3
+  name: полосатый зелёный шарф
+  description: Стильный полосатый зеленый шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды, и тех, кто просто не выносит холодного ветра на своей шее.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckScarfStripedGreen
+
+- type: sponsorShopListing
+  id: SponsorShopScarf4
+  name: полосатый черный шарф
+  description: Стильный полосатый черный шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды, и тех, кто просто не выносит холодного ветра на своей шее.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckScarfStripedBlack
+
+- type: sponsorShopListing
+  id: SponsorShopScarf5
+  name: полосатый коричневый шарф
+  description: Стильный полосатый коричневый шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды, и тех, кто просто не выносит холодного ветра на своей шее.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckScarfStripedBrown
+
+- type: sponsorShopListing
+  id: SponsorShopScarf6
+  name: полосатый светло-синий шарф
+  description: Стильный полосатый светло-синий шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды, и тех, кто просто не выносит холодного ветра на своей шее.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckScarfStripedLightBlue
+
+- type: sponsorShopListing
+  id: SponsorShopScarf7
+  name: полосатый оранжевый шарф
+  description: Стильный полосатый оранжевый шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды, и тех, кто просто не выносит холодного ветра на своей шее.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckScarfStripedOrange
+
+- type: sponsorShopListing
+  id: SponsorShopScarf8
+  name: полосатый пурпурный шарф
+  description: Стильный полосатый пурпурный шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды, и тех, кто просто не выносит холодного ветра на своей шее.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckScarfStripedPurple
+
+- type: sponsorShopListing
+  id: SponsorShopScarf9
+  name: полосатый зелёный шарф синдиката
+  description: Стильный полосатый зелёный шарф Синдиката. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды, и тех, кто просто не выносит холодного ветра на своей шее.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckScarfStripedSyndieGreen
+
+- type: sponsorShopListing
+  id: SponsorShopScarf10
+  name: полосатый красный шарф синдиката
+  description: Стильный полосатый красный шарф Синдиката. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды, и тех, кто просто не выносит холодного ветра на своей шее.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckScarfStripedSyndieRed
+
+- type: sponsorShopListing
+  id: SponsorShopScarf11
+  name: шарф-зебра
+  description: Полосатый шарф, обязательный аксессуар артистов.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckScarfStripedZebra
+
+- type: sponsorShopListing
+  id: SponsorShopScarf12
+  name: шарф ветра
+  description: Прелестный шарф, сделанный из приятной и лёгкой ткани. Ткань на столько лёгкая, что даже без движения, шарф развивается на ветру.
+  cost: 2
+  priority: 1
+  prototypeId: ClothingNeckSharfVetra
+
+- type: sponsorShopListing
+  id: SponsorShopScarf13
+  name: полосатый шарф центком
+  description: Стильный полосатый шарф в цветах ЦентКома. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды, и тех, кто просто не выносит холодного ветра на своей шее.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckScarfStripedCentcom
+
+- type: sponsorShopListing
+  id: SponsorShopScarf14
+  name: шарф
+  description: Стильный полосатый шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды, и тех, кто просто не выносит холодного ветра на своей шее.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckScarfStripedRainbow
+
+- type: sponsorShopListing
+  id: SponsorShopScarf15
+  name: шарф
+  description: Стильный полосатый шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды, и тех, кто просто не выносит холодного ветра на своей шее.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckScarfStripedTrans
+
+- type: sponsorShopListing
+  id: SponsorShopScarf16
+  name: шарф
+  description: Стильный полосатый шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды, и тех, кто просто не выносит холодного ветра на своей шее.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckScarfStripedLesbian
+
+- type: sponsorShopListing
+  id: SponsorShopScarf17
+  name: шарф
+  description: Стильный полосатый шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды, и тех, кто просто не выносит холодного ветра на своей шее.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckScarfStripedGay
+
+- type: sponsorShopListing
+  id: SponsorShopScarf18
+  name: шарф
+  description: Стильный полосатый шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды, и тех, кто просто не выносит холодного ветра на своей шее.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckScarfStripedAce
+
+- type: sponsorShopListing
+  id: SponsorShopScarf19
+  name: шарф
+  description: Стильный полосатый шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды, и тех, кто просто не выносит холодного ветра на своей шее.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckScarfStripedAro
+
+- type: sponsorShopListing
+  id: SponsorShopScarf20
+  name: шарф
+  description: Стильный полосатый шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды, и тех, кто просто не выносит холодного ветра на своей шее.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckScarfStripedAroace
+
+- type: sponsorShopListing
+  id: SponsorShopScarf21
+  name: шарф
+  description: Стильный полосатый шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды, и тех, кто просто не выносит холодного ветра на своей шее.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckScarfStripedBiSexual
+
+- type: sponsorShopListing
+  id: SponsorShopScarf22
+  name: шарф
+  description: Стильный полосатый шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды, и тех, кто просто не выносит холодного ветра на своей шее.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckScarfStripedInter
+
+- type: sponsorShopListing
+  id: SponsorShopScarf23
+  name: шарф
+  description: Стильный полосатый шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды, и тех, кто просто не выносит холодного ветра на своей шее.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckScarfStripedPan
+
+- type: sponsorShopListing
+  id: SponsorShopScarf24
+  name: шарф
+  description: Стильный полосатый шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды, и тех, кто просто не выносит холодного ветра на своей шее.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckScarfStripedNonBinary
+
+- type: sponsorShopListing
+  id: SponsorShopScarf25
+  name: шарф
+  description: Стильный полосатый шарф. Идеальный зимний аксессуар для тех, у кого обострённое чувство моды, и тех, кто просто не выносит холодного ветра на своей шее.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckScarfStripedLesbianLong
+
+- type: sponsorShopListing
+  id: SponsorShopTie1
+  name: красный галстук
+  description: Красный галстук из нео-шёлка с зажимом.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckTieRed
+
+- type: sponsorShopListing
+  id: SponsorShopTie2
+  name: галстук детектива
+  description: Свободно завязанный галстук - идеальный аксессуар для усталого детектива.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckTieDet
+
+- type: sponsorShopListing
+  id: SponsorShopTie3
+  name: галстук учёного
+  description: Почему мы все должны носить эти нелепые галстуки?
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckTieSci
+
+# region Чокеры
+
+- type: sponsorShopListing
+  id: SponsorShopChoker1
+  name: черный чокер
+  description: Стильный и элегантный чокер черного цвета, идеально подходящий для смелого образа.
+  cost: 1
+  priority: 2
+  state: black
+  prototypeId: ClothingNeckChokerBlack
+
+- type: sponsorShopListing
+  id: SponsorShopChoker2
+  name: бирюзовый чокер
+  description: Яркий чокер бирюзового, который добавит яркости вашему образу.
+  cost: 1
+  priority: 2
+  state: cyan
+  prototypeId: ClothingNeckChokerCyan
+
+- type: sponsorShopListing
+  id: SponsorShopChoker3
+  name: зеленый чокер
+  description: Свежий чокер зеленого цвета, придающий образу элегантность и природный шарм.
+  cost: 1
+  priority: 2
+  state: green
+  prototypeId: ClothingNeckChokerGreen
+
+- type: sponsorShopListing
+  id: SponsorShopChoker4
+  name: латексный чокер
+  description: Смелый чокер из латекса, идеально подходящий для дерзкого, современного стиля.
+  cost: 1
+  priority: 2
+  state: latex
+  prototypeId: ClothingNeckChokerLatex
+
+- type: sponsorShopListing
+  id: SponsorShopChoker5
+  name: оранжевый чокер
+  description: Яркий оранжевый чокер, который придаст вашему стилю игривость и энергию.
+  cost: 1
+  priority: 2
+  state: orange
+  prototypeId: ClothingNeckChokerOrange
+
+- type: sponsorShopListing
+  id: SponsorShopChoker6
+  name: фиолетовый чокер
+  description: Роскошный чокер фиолетового цвета, придающий образу загадочность и шик.
+  cost: 1
+  priority: 2
+  state: purple
+  prototypeId: ClothingNeckChokerPurple
+
+- type: sponsorShopListing
+  id: SponsorShopChoker7
+  name: красный чокер
+  description: Страстный красный чокер, который идеально подчеркнет вашу индивидуальность.
+  cost: 1
+  priority: 2
+  state: red
+  prototypeId: ClothingNeckChokerRed
+
+- type: sponsorShopListing
+  id: SponsorShopChoker8
+  name: шипастый чокер
+  description: Чокер с шипами, созданный для смелого и дерзкого стиля.
+  cost: 1
+  priority: 2
+  state: spike
+  prototypeId: ClothingNeckChokerSpike
+
+- type: sponsorShopListing
+  id: SponsorShopChoker9
+  name: темно-бирюзовый чокер
+  description: Уникальный чокер в цветах бирюзового и черного, сочетающий элегантность с загадочностью.
+  cost: 1
+  priority: 2
+  state: tealblack
+  prototypeId: ClothingNeckChokerTealBlack
+
+- type: sponsorShopListing
+  id: SponsorShopChoker10
+  name: белый чокер
+  description: Нежный белый чокер, который придаст вашему образу свежесть и чистоту.
+  cost: 1
+  priority: 2
+  state: white
+  prototypeId: ClothingNeckChokerWhite
+
+- type: sponsorShopListing
+  id: SponsorShopChoker11
+  name: желтый чокер
+  description: Солнечный желтый чокер, идеально подходящий для яркого и жизнерадостного образа.
+  cost: 1
+  priority: 2
+  state: yellow
+  prototypeId: ClothingNeckChokerYellow
+
+# Крылья
+
+- type: sponsorShopListing
+  id: SponsorShopWings1
+  name: демонические крылья
+  description: О нет!
+  cost: 1
+  priority: 2
+  prototypeId: ClothingNeckWingsTail
+
+- type: sponsorShopListing
+  id: SponsorShopWings2
+  name: ангельские крылья
+  description: Вы чувствуете себя близко к божественному.
+  cost: 1
+  priority: 1
+  prototypeId: ClothingNecKwingsAngel
+
+# region Кулоны из кристалла
+
+- type: sponsorShopListing
+  id: SponsorShopPendant1
+  name: кулон из зелёного кристалла
+  description: Кулон, излучающий мягкое зелёное сияние, словно кусочек замороженного леса, висит на тонком серебристом проводе.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingCheapPendantGreen
+
+- type: sponsorShopListing
+  id: SponsorShopPendant2
+  name: кулон из оранжевого кристалла
+  description: Теплый оранжевый кристалл, вибрирующий энергией как маленькое солнышко, элегантно украшает вашу грудь.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingCheapPendantOrange
+
+- type: sponsorShopListing
+  id: SponsorShopPendant3
+  name: кулон из розового кристалла
+  description: Нежный розовый кристалл переливается деликатным светом, добавляя вашему образу романтичности и элегантности.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingCheapPendantPink
+
+- type: sponsorShopListing
+  id: SponsorShopPendant4
+  name: кулон из голубого кристалла
+  description: Ярко-голубой кристалл сверкает как осколок ясного неба, отражая свет с ледяной прозрачностью.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingCheapPendantCyan
+
+- type: sponsorShopListing
+  id: SponsorShopPendant5
+  name: кулон из синего кристалла
+  description: Глубокий синий кристалл, как морская волна, застывшая в драгоценном камне, излучает спокойствие и величие.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingCheapPendantBlue
+
+- type: sponsorShopListing
+  id: SponsorShopPendant6
+  name: кулон из красного кристалла
+  description: Страстный красный кристалл горит интенсивным огнем, притягивая внимание своей глубокой и величественной красотой.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingCheapPendantRed
+
+- type: sponsorShopListing
+  id: SponsorShopPendant7
+  name: кулон из жёлтого кристалла
+  description: Солнечный жёлтый кристалл излучает радость и позитивную энергию, добавляя света и тепла в ваш день.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingCheapPendantYellow
+
+- type: sponsorShopListing
+  id: SponsorShopPendant8
+  name: кулон из чёрного кристалла
+  description: Таинственный чёрный кристалл, как ночное небо, сверкает неуловимым блеском, придавая образу мистическое очарование.
+  cost: 1
+  priority: 2
+  prototypeId: ClothingCheapPendantBlack
+
+# region Маскииииии!
+
+- type: sponsorShopListing
+  id: SponsorShopMask1
+  name: банановые маска и парик клоуна
+  description: Лицевой атрибут настоящего приколиста. Клоун неполноценен без своих парика и маски.
+  cost: 1
+  priority: 3
+  prototypeId: ClothingMaskClownBanana
+
+- type: sponsorShopListing
+  id: SponsorShopMask2
+  name: маска и парик клоуна безопасности
+  description: Спорно оксюморонные защитная маска и парик.
+  cost: 1
+  priority: 3
+  prototypeId: ClothingMaskClownSecurity
+
+- type: sponsorShopListing
+  id: SponsorShopMask3
+  name: маска радости
+  description: Выразите свою радость или спрячьте свою печаль с помощью этой хохочущей до слёз маски.
+  cost: 1
+  priority: 3
+  prototypeId: ClothingMaskJoy
+
+- type: sponsorShopListing
+  id: SponsorShopMask4
+  name: маска мима
+  description: Традиционная маска мима. Она имеет жутковатое выражение лица.
+  cost: 1
+  priority: 3
+  prototypeId: ClothingMaskMime
+
+- type: sponsorShopListing
+  id: SponsorShopMask5
+  name: стерильная маска
+  description: Стерильная маска, помогающая предотвратить распространение инфекций.
+  cost: 1
+  priority: 3
+  prototypeId: ClothingMaskSterile
+
+- type: sponsorShopListing
+  id: SponsorShopMask6
+  name: маска чумного доктора
+  description: Плохой знак.
+  cost: 1
+  priority: 3
+  prototypeId: ClothingMaskPlague
+
+- type: sponsorShopListing
+  id: SponsorShopMask7
+  name: лицо и волосы клувеня
+  description: Проклятые лицо и волосы клувеня.
+  cost: 1
+  priority: 3
+  prototypeId: ClothingMaskCluwne
+
+- type: sponsorShopListing
+  id: SponsorShopMask8
+  name: маска крысы
+  description: Маска крысы, похожая на крысу. Возможно, они примут вас за обычную крысу.
+  cost: 1
+  priority: 3
+  prototypeId: ClothingMaskRat
+
+- type: sponsorShopListing
+  id: SponsorShopMask9
+  name: маска лисы
+  description: What does the fox say?
+  cost: 1
+  priority: 3
+  prototypeId: ClothingMaskFox
+
+- type: sponsorShopListing
+  id: SponsorShopMask10
+  name: маска пчелы
+  description: За королеву!
+  cost: 1
+  priority: 3
+  prototypeId: ClothingMaskBee
+
+- type: sponsorShopListing
+  id: SponsorShopMask11
+  name: маска медведя
+  description: Я тучка, тучка, тучка, я вовсе не медведь.
+  cost: 1
+  priority: 3
+  prototypeId: ClothingMaskBear
+
+- type: sponsorShopListing
+  id: SponsorShopMask12
+  name: маска ворона
+  description: Где я, там смерть... или блестяшки.
+  cost: 1
+  priority: 3
+  prototypeId: ClothingMaskRaven
+
+- type: sponsorShopListing
+  id: SponsorShopMask13
+  name: маска шакала
+  description: Лучше не поворачиваться спиной к владельцу маски, он и укусить может.
+  cost: 1
+  priority: 3
+  prototypeId: ClothingMaskJackal
+
+- type: sponsorShopListing
+  id: SponsorShopMask14
+  name: маска летучей мыши
+  description: Кровопийца ночью, и милый, слепой зверёк днём...
+  cost: 1
+  priority: 3
+  prototypeId: ClothingMaskBat
+
+- type: sponsorShopListing
+  id: SponsorShopMask15
+  name: шейный гетр
+  description: Стильный гетр, способный защитить от космического ветра?...
+  cost: 1
+  priority: 3
+  prototypeId: ClothingMaskNeckGaiter
+
+- type: sponsorShopListing
+  id: SponsorShopMask16
+  name: красный шейный гетр
+  description: Стильный гетр, способный защитить от космического ветра?...
+  cost: 1
+  priority: 3
+  prototypeId: ClothingMaskNeckGaiterRed
+
+- type: sponsorShopListing
+  id: SponsorShopMask19
+  name: грустная маска мима
+  description: Многие считают, что именно так выглядит настоящая маска мима.
+  cost: 1
+  priority: 3
+  prototypeId: ClothingMaskSadMime
+
+- type: sponsorShopListing
+  id: SponsorShopMask20
+  name: испуганная маска мима
+  description: Кажется, он бы закричал, если бы не маска.
+  cost: 1
+  priority: 3
+  prototypeId: ClothingMaskScaredMime
+
+- type: sponsorShopListing
+  id: SponsorShopMask21
+  name: итальянские усы
+  description: Изготовлены из волосков настоящих итальянских усов. Придаёт владельцу непреодолимое желание бурно жестикулировать.
+  cost: 1
+  priority: 3
+  prototypeId: ClothingMaskItalianMoustache
+
+- type: sponsorShopListing
+  id: SponsorShopMask22
+  name: балаклава
+  description: Головной убор закрывающий голову, лоб и лицо, оставляя небольшую прорезь для глаз и рта.
+  cost: 1
+  priority: 3
+  prototypeId: ClothingMaskBalaclava
+
+- type: sponsorShopListing
+  id: SponsorShopMask23
+  name: голубая фестивальная маска
+  description: Маска демона с золотыми рогами и острыми клыками.
+  cost: 1
+  priority: 3
+  prototypeId: ClothingMaskBlueFestival
+
+- type: sponsorShopListing
+  id: SponsorShopMask24
+  name: красная фестивальная маска
+  description: Маска демона с золотыми рогами и острыми клыками.
+  cost: 1
+  priority: 3
+  prototypeId: ClothingMaskRedFestival
+
+# region Банданы
+
+- type: sponsorShopListing
+  id: SponsorShopBand1
+  name: чёрная бандана
+  description: Чёрная бандана, чтобы выглядеть круто.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingMaskBandBlack
+
+- type: sponsorShopListing
+  id: SponsorShopBand2
+  name: синяя бандана
+  description: Синяя бандана, чтобы выглядеть круто.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingMaskBandBlue
+
+- type: sponsorShopListing
+  id: SponsorShopBand3
+  name: золотая бандана
+  description: Золотая бандана, чтобы выглядеть круто.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingMaskBandGold
+
+- type: sponsorShopListing
+  id: SponsorShopBand4
+  name: зелёная бандана
+  description: Зелёная бандана, чтобы выглядеть круто.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingMaskBandGreen
+
+- type: sponsorShopListing
+  id: SponsorShopBand5
+  name: серая бандана
+  description: Серая бандана, чтобы выглядеть круто.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingMaskBandGrey
+
+- type: sponsorShopListing
+  id: SponsorShopBand6
+  name: красная бандана
+  description: Красная бандана, чтобы выглядеть круто.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingMaskBandRed
+
+- type: sponsorShopListing
+  id: SponsorShopBand7
+  name: бандана с черепом
+  description: Бандана с черепом, чтобы выглядеть ещё круче.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingMaskBandSkull
+
+- type: sponsorShopListing
+  id: SponsorShopBand8
+  name: бандана наёмника
+  description: Для защиты головы от солнца, насекомых и других угроз сверху.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingMaskBandMerc
+
+- type: sponsorShopListing
+  id: SponsorShopBand9
+  name: коричневая бандана
+  description: Коричневая бандана, чтобы выглядеть круто.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingMaskBandBrown
+
+# region Головные уборы
+
+- type: sponsorShopListing
+  id: SponsorShopHat1
+  name: бобровая шапка
+  description: Джентльмены?
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatBeaverHat
+
+- type: sponsorShopListing
+  id: SponsorShopHat2
+  name: берет
+  description: Берет, любимый головной убор творцов.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatBeret
+
+- type: sponsorShopListing
+  id: SponsorShopHat3
+  name: французский берет
+  description: Французский берет, "Vive la France".
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatBeretFrench
+
+- type: sponsorShopListing
+  id: SponsorShopHat4
+  name: каса
+  description: Конусообразная шляпа.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatCasa
+
+- type: sponsorShopListing
+  id: SponsorShopHat5
+  name: каса
+  description: Конусообразная шляпа.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatCasa
+
+- type: sponsorShopListing
+  id: SponsorShopHat6
+  name: шлем картонного борга
+  description: Шляпа, сделанная из коробки.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatCardborg
+
+- type: sponsorShopListing
+  id: SponsorShopHat7
+  name: коричневая федора
+  description: Это коричневая фетровая шляпа.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatFedoraBrown
+
+- type: sponsorShopListing
+  id: SponsorShopHat8
+  name: серая федора
+  description: Это серая фетровая шляпа.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatFedoraGrey
+
+- type: sponsorShopListing
+  id: SponsorShopHat9
+  name: феска
+  description: Красная феска.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatFez
+
+- type: sponsorShopListing
+  id: SponsorShopHat10
+  name: шляпа негодяя
+  description: Шляпа, в которой вы выглядите словно носите пистолет с одной и ещё девятнадцатью зарубками.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatOutlawHat
+
+- type: sponsorShopListing
+  id: SponsorShopHat11
+  name: ведьмина шляпа
+  description: Колдовская шляпа.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatWitch1
+
+- type: sponsorShopListing
+  id: SponsorShopHat12
+  name: ведьмина шляпа
+  description: Колдовская шляпа.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatWitch
+
+- type: sponsorShopListing
+  id: SponsorShopHat13
+  name: бумажная шляпа
+  description: Шляпа, сделанная из бумаги.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatPaper
+
+- type: sponsorShopListing
+  id: SponsorShopHat14
+  name: пиратская шляпа
+  description: Йо-хо-хо и бутылка рома!
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatPirate
+
+- type: sponsorShopListing
+  id: SponsorShopHat15
+  name: шляпа чумного доктора
+  description: Когда-то их использовали врачи, лечившие чуму.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatPlaguedoctor
+
+- type: sponsorShopListing
+  id: SponsorShopHat16
+  name: поддельная волшебная шляпа
+  description: На ней блёстками написано ВАЛШЕБНАЯ. Комплектуется классной бородой.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatWizardFake
+
+- type: sponsorShopListing
+  id: SponsorShopHat17
+  name: волшебная шляпа
+  description: Странного вида синяя шляпа, которая, несомненно, принадлежала сильному магу.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatWizard
+
+- type: sponsorShopListing
+  id: SponsorShopHat18
+  name: красная волшебная шляпа
+  description: Странного вида красная шляпа, которая, несомненно, принадлежала настоящему магу.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatRedwizard
+
+- type: sponsorShopListing
+  id: SponsorShopHat19
+  name: фиолетовая волшебная шляпа
+  description: Странного вида фиолетовая шляпа, которая, несомненно, принадлежала настоящему магу.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatVioletwizard
+
+- type: sponsorShopListing
+  id: SponsorShopHat20
+  name: колпак Санты
+  description: Праздничный колпак, который носит Санта-Клаус.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatSantahat
+
+- type: sponsorShopListing
+  id: SponsorShopHat21
+  name: сомбреро
+  description: Идеально подходит для космической Мексики, si?
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatSombrero
+
+- type: sponsorShopListing
+  id: SponsorShopHat22
+  name: цилиндр
+  description: Стильный чёрный цилиндр.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatTophat
+
+- type: sponsorShopListing
+  id: SponsorShopHat23
+  name: ушанка
+  description: Идеально подходит для зимы в Сибири, da?
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatUshanka
+
+- type: sponsorShopListing
+  id: SponsorShopHat24
+  name: рождественский венец
+  description: Счастливого Рождества!
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatXmasCrown
+
+- type: sponsorShopListing
+  id: SponsorShopHat25
+  name: кепка дальнобойщика
+  description: В прошлом Чака, эта шляпа теперь ваша.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatTrucker
+
+- type: sponsorShopListing
+  id: SponsorShopHat26
+  name: синдикатно-чёрная пижамная шапочка
+  description: Чтобы держать твою предательскую голову в тепле.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadPyjamaSyndicateBlack
+
+- type: sponsorShopListing
+  id: SponsorShopHat27
+  name: синдикатно-розовая пижамная шапочка
+  description: Чтобы держать твою предательскую голову в тепле.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadPyjamaSyndicatePink
+
+- type: sponsorShopListing
+  id: SponsorShopHat28
+  name: синдикатно-красная пижамная шапочка
+  description: Чтобы держать твою предательскую голову в тепле.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadPyjamaSyndicateRed
+
+- type: sponsorShopListing
+  id: SponsorShopHat29
+  name: шапка из бумажного пакета
+  description: Бумажный пакет с грубо вырезанными отверстиями для глаз. Применяется для сокрытия личности или уродства.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadPaperSack
+
+- type: sponsorShopListing
+  id: SponsorShopHat30
+  name: улыбающаяся шапка из бумажного пакета
+  description: Бумажный пакет с грубо вырезанными отверстиями для глаз и нарисованной улыбкой на лицевой стороне. Совсем не жуткая.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadPaperSackSmile
+
+- type: sponsorShopListing
+  id: SponsorShopHat31
+  name: кепка рыбака
+  description: Женщины боятся меня. Рыбы боятся меня. Мужчины отворачиваются от меня. Когда я иду, ни один зверь не осмеливается издать ни звука в моём присутствии. Я один на этой бесплодной Земле.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadFishCap
+
+- type: sponsorShopListing
+  id: SponsorShopHat32
+  name: шапка-растаманка
+  description: Пятнашка баксов косячок, гони в лапу пятачок.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadRastaHat
+
+- type: sponsorShopListing
+  id: SponsorShopHat33
+  name: шляпа для сафари
+  description: Защищает глаза от солнца. Делает вас мишенью для аборигенов.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadSafari
+
+- type: sponsorShopListing
+  id: SponsorShopHat34
+  name: шутовской колпак
+  description: Колпак с бубенцами, чтобы придать костюму веселья.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatJester
+
+- type: sponsorShopListing
+  id: SponsorShopHat35
+  name: шутовской колпак
+  description: Колпак с бубенцами, чтобы придать костюму веселья.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatJesterAlt
+
+- type: sponsorShopListing
+  id: SponsorShopHat36
+  name: пиратская треуголка
+  description: Йо хо хо и бутылка рома!
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatPirateTricord
+
+- type: sponsorShopListing
+  id: SponsorShopHat37
+  name: шапка Синдиката
+  description: Сувенирная шапка из Синдиленда, производство которой уже закрыто.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatSyndie
+
+- type: sponsorShopListing
+  id: SponsorShopHat38
+  name: тактическая головная повязка горничной
+  description: Красная повязка на голове - не воображайте себя Рэмбо и не берите в руки несколько пулемётов.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatTacticalMaidHeadband
+
+- type: sponsorShopListing
+  id: SponsorShopHat39
+  name: гетманская шапка
+  description: Из Запорожской Сечи с любовью.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatHetmanHat
+
+- type: sponsorShopListing
+  id: SponsorShopHat40
+  name: цилиндр фокусника
+  description: Цилиндр фокусника.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatMagician
+
+- type: sponsorShopListing
+  id: SponsorShopHat41
+  name: гладиаторский шлем
+  description: Защищает голову от суровых пепельных ветров и игрушечных копий.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatGladiator
+
+- type: sponsorShopListing
+  id: SponsorShopHat42
+  name: красный праздничный колпак
+  description: Радость, распространите!
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatPartyRed
+
+- type: sponsorShopListing
+  id: SponsorShopHat43
+  name: жёлтый праздничный колпак
+  description: Радость, распространите!
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatPartyYellow
+
+- type: sponsorShopListing
+  id: SponsorShopHat44
+  name: зелёный праздничный колпак
+  description: Радость, распространите!
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatPartyGreen
+
+- type: sponsorShopListing
+  id: SponsorShopHat45
+  name: синий праздничный колпак
+  description: Радость, распространите!
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatPartyBlue
+
+- type: sponsorShopListing
+  id: SponsorShopHat46
+  name: праздничный стаканчик для воды
+  description: Не такой полный, как хотелось бы...
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatPartyWaterCup
+
+- type: sponsorShopListing
+  id: SponsorShopHat47
+  name: серая плоская кепка
+  description: В моде как у рабочего класса, так и у стариков навроде Дженкинса.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatGreyFlatcap
+
+- type: sponsorShopListing
+  id: SponsorShopHat48
+  name: коричневая плоская кепка
+  description: Тупой клоун! Ты выставил меня в плохом свете!
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatBrownFlatcap
+
+- type: sponsorShopListing
+  id: SponsorShopHat49
+  name: коричневая ковбойская шляпа
+  description: Эта шляпа слишком тесна для нас двоих.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatCowboyBrown
+
+- type: sponsorShopListing
+  id: SponsorShopHat50
+  name: чёрная ковбойская шляпа
+  description: Эта шляпа слишком тесна для нас двоих.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatCowboyBlack
+
+- type: sponsorShopListing
+  id: SponsorShopHat51
+  name: серая ковбойская шляпа
+  description: Эта шляпа слишком тесна для нас двоих.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatCowboyGrey
+
+- type: sponsorShopListing
+  id: SponsorShopHat52
+  name: красная ковбойская шляпа
+  description: Эта шляпа слишком тесна для нас двоих.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatCowboyRed
+
+- type: sponsorShopListing
+  id: SponsorShopHat53
+  name: белая ковбойская шляпа
+  description: Эта шляпа слишком тесна для нас двоих.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatCowboyWhite
+
+- type: sponsorShopListing
+  id: SponsorShopHat54
+  name: ковбойская шляпа охотника за головами
+  description: Эта шляпа слишком тесна для нас двоих.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatCowboyBountyHunter
+
+- type: sponsorShopListing
+  id: SponsorShopHat55
+  name: соломенная шляпа
+  description: Модная шляпа для жарких деньков! Не рекомендуется носить около источников огня.
+  cost: 1
+  priority: 5
+  prototypeId: ClothingHeadHatStrawHat
+
+# region Плащи
+
+- type: sponsorShopListing
+  id: SponsorShopCloak1
+  name: плащ моли
+  description: Плащ в виде крыльев моли - необычный и оригинальный элемент гардероба, способный привлечь внимание окружающих. Он изготовлен из тонкой ткани, имитирующей крылья моли, с мягкими и пушистыми краями. Плащ застёгивается на шее с помощью липучки и имеет капюшон в виде головы моли.
+  cost: 1
+  priority: 6
+  prototypeId: ClothingNeckCloakMoth
+
+- type: sponsorShopListing
+  id: SponsorShopCloak2
+  name: плащ герольда
+  description: Зловещий красный плащ с шипами на плечах.
+  cost: 1
+  priority: 6
+  prototypeId: ClothingNeckCloakHerald
+
+- type: sponsorShopListing
+  id: SponsorShopCloak3
+  name: плащ голиафа
+  description: Плащ голиафа, сделанный из шкуры выносливой фауны с далёкой планеты. Однако с течением времени его защитные свойства ослабли.
+  cost: 1
+  priority: 6
+  prototypeId: ClothingNeckCloakGoliathCloak
+
+- type: sponsorShopListing
+  id: SponsorShopCloak4
+  name: плащ Nanotrasen
+  description: Величественный синий плащ, представляющий Nanotrasen.
+  cost: 1
+  priority: 6
+  prototypeId: ClothingNeckCloakNanotrasen
+
+- type: sponsorShopListing
+  id: SponsorShopCloak5
+  name: вех!-плащ
+  description: Вех!
+  cost: 1
+  priority: 6
+  prototypeId: ClothingNeckCloakAdmin
+
+- type: sponsorShopListing
+  id: SponsorShopCloak6
+  name: плащ шахтёра
+  description: Его носят самые опытные шахтёры, способные сдвинуть горы и засыпать долины.
+  cost: 1
+  priority: 6
+  prototypeId: ClothingNeckCloakMiner
+
+- type: sponsorShopListing
+  id: SponsorShopCloak7
+  name: вампирский плащ
+  description: Его носят высокопоставленные вампиры из трансильванского общества вампиров.
+  cost: 1
+  priority: 6
+  prototypeId: ClothingNeckCloakTrans
+
+- type: sponsorShopListing
+  id: SponsorShopCloak8
+  name: плащ капитана пиратов
+  description: Довольно эффектный чёрный пиратский плащ с изображением черепа.
+  cost: 1
+  priority: 6
+  prototypeId: ClothingNeckCloakPirateCap
+
+- type: sponsorShopListing
+  id: SponsorShopCloak9
+  name: плащ пустоты
+  description: Плащ тьмы. Для тех, кто перешёл на тёмную сторону силы.
+  cost: 1
+  priority: 6
+  prototypeId: ClothingNeckCloakVoid
+
+- type: sponsorShopListing
+  id: SponsorShopCloak10
+  name: плащ пилота
+  description: Плащ, вручаемый лучшим космическим асам Nanotrasen.
+  cost: 1
+  priority: 6
+  prototypeId: ClothingNeckCloakAce
+
+- type: sponsorShopListing
+  id: SponsorShopCloak11
+  name: плащ вервольфа
+  description: Этот плащ позволяет окружающим понять, что вы - одинокий волк.
+  cost: 1
+  priority: 6
+  prototypeId: ClothingNeckCloakAro
+
+- type: sponsorShopListing
+  id: SponsorShopCloak12
+  name: ядовитый плащ
+  description: Пурпурный цвет - явный признак того, что вы ядовиты.
+  cost: 1
+  priority: 6
+  prototypeId: ClothingNeckCloakBi
+
+- type: sponsorShopListing
+  id: SponsorShopCloak13
+  name: плащ циклопа
+  description: Круг на этом плаще представляет собой глаз циклопа.
+  cost: 1
+  priority: 6
+  prototypeId: ClothingNeckCloakIntersex
+
+- type: sponsorShopListing
+  id: SponsorShopCloak14
+  name: плащ поэта
+  description: Этот плащ принадлежал древнему поэту, вы забыли, какому именно.
+  cost: 1
+  priority: 6
+  prototypeId: ClothingNeckCloakLesbian
+
+- type: sponsorShopListing
+  id: SponsorShopCloak15
+  name: плащ сетевого маркетинга
+  description: Этот плащ пользуется большим спросом в маркетинговых офисах Nanotrasen.
+  cost: 1
+  priority: 6
+  prototypeId: ClothingNeckCloakGay
+
+- type: sponsorShopListing
+  id: SponsorShopCloak16
+  name: плащ кладоискателя
+  description: Этот плащ принадлежал жадному искателю сокровищ.
+  cost: 1
+  priority: 6
+  prototypeId: ClothingNeckCloakEnby
+
+- type: sponsorShopListing
+  id: SponsorShopCloak17
+  name: поварской плащ
+  description: Предназначен для ношения вместе со сковородой.
+  cost: 1
+  priority: 6
+  prototypeId: ClothingNeckCloakPan
+
+- type: sponsorShopListing
+  id: SponsorShopCloak18
+  name: плащ ботаника
+  description: Красивый зелены плащ, сотканный из самых прочных тканей.
+  cost: 2
+  priority: 6
+  prototypeId: ClothingCloakEliteBotanist
+
+- type: sponsorShopListing
+  id: SponsorShopCloak19
+  name: плащ епископа
+  description: Станьте космическим папой.
+  cost: 2
+  priority: 6
+  prototypeId: ClothingCloakBishop
+
+- type: sponsorShopListing
+  id: SponsorShopCloak20
+  name: плащ епископа
+  description: Станьте космическим папой.
+  cost: 2
+  priority: 6
+  prototypeId: ClothingCloakBishopBlack
+
+- type: sponsorShopListing
+  id: SponsorShopCloak21
+  name: плащ представителя НТ
+  description: Носит представитель NanoTrasen. Из-под плаща доносится слабый обличительный шепот.
+  cost: 2
+  priority: 6
+  prototypeId: ClothingCloakNTRCloak
+
+- type: sponsorShopListing
+  id: SponsorShopCloak22
+  name: плащ знати
+  description: Изысканная шаль для знати, изготовленная из высококачественных материалов.
+  cost: 2
+  priority: 6
+  prototypeId: ClothingCloakRoyalBlue
+
+- type: sponsorShopListing
+  id: SponsorShopCloak23
+  name: плащ знати
+  description: Изысканная шаль для знати, изготовленная из высококачественных материалов.
+  cost: 2
+  priority: 6
+  prototypeId: ClothingCloakRoyalRed
+
+- type: sponsorShopListing
+  id: SponsorShopCloak24
+  name: плащ знати
+  description: Изысканная шаль для знати, изготовленная из высококачественных материалов.
+  cost: 2
+  priority: 6
+  prototypeId: ClothingCloakRoyalViolet
+
+- type: sponsorShopListing
+  id: SponsorShopCloak25
+  name: плащ офицера
+  description: Носимый сотрудниками службы безопасности.
+  cost: 2
+  priority: 6
+  prototypeId: ClothingCloakSec
+
+- type: sponsorShopListing
+  id: SponsorShopCloak26
+  name: плащ офицера
+  description: Носимый сотрудниками службы безопасности.
+  cost: 2
+  priority: 6
+  prototypeId: ClothingCloakSen
+
+- type: sponsorShopListing
+  id: SponsorShopCloak27
+  name: плащ адмирала
+  description: Темный плащ, сделанный на заказ для старших офицеров. Состоит из очень прочной кожи и бронеткани. На внутренней стороне воротника есть бирка с надписью «V».
+  cost: 2
+  priority: 6
+  prototypeId: ClothingCloakSyndAdmiral
+
+- type: sponsorShopListing
+  id: SponsorShopCloak28
+  name: плащ офицера
+  description: Плащ, внушающий страх сотрудникам NanoTrasen, который носил величайший офицер Синдиката.
+  cost: 2
+  priority: 6
+  prototypeId: ClothingCloakSyndCapt
+
+- type: sponsorShopListing
+  id: SponsorShopCloak29
+  name: стильный плащ
+  description: Утонченный плащ подчеркивает невероятно качественно вышитая буква "S", идеально мимикрирующая под очертания кобры.
+  cost: 2
+  priority: 4
+  prototypeId: ClothingNeckCobraCloak
+
+- type: sponsorShopListing
+  id: SponsorShopCloak30
+  name: плащ Иана
+  description: При создании плаща не пострадал не один Ианчик! Вуф!
+  cost: 2
+  priority: 6
+  prototypeId: ClothingNeckCloakIanCloak
+
+- type: sponsorShopListing
+  id: SponsorShopCloak31
+  name: плащ гуррен дана
+  description: Магма течёт в наших венах, раскаляя сердца!
+  cost: 2
+  priority: 6
+  prototypeId: ClothingNeckCloakFire
+
+- type: sponsorShopListing
+  id: SponsorShopCloak32
+  name: плащ белой дыры
+  description: Иногда, бесконечность всматривается в вас!
+  cost: 2
+  priority: 6
+  prototypeId: ClothingNeckCloakWhitehole
+
+- type: sponsorShopListing
+  id: SponsorShopCloak33
+  name: плащ - синица
+  description: Какая интересная синичка...
+  cost: 2
+  priority: 6
+  prototypeId: ClothingNeckCloakSinitsa
+
+# region Обувь
+
+- type: sponsorShopListing
+  id: SponsorShopShoes1
+  name: рабочие ботинки
+  description: Инженерные рабочие ботинки на шнуровке, для настоящих работяг.
+  cost: 1
+  priority: 7
+  prototypeId: ClothingShoesBootsJack
+
+- type: sponsorShopListing
+  id: SponsorShopShoes2
+  name: ботинки артиста
+  description: Эти ботинки обеспечивают отличное сцепление с поверхностью, когда вы выходите на сцену.
+  cost: 1
+  priority: 7
+  prototypeId: ClothingShoesBootsPerformer
+
+- type: sponsorShopListing
+  id: SponsorShopShoes3
+  name: шнурованные туфли
+  description: Последний писк моды, и поставляются сразу отполированными!
+  cost: 1
+  priority: 7
+  prototypeId: ClothingShoesBootsLaceup
+
+- type: sponsorShopListing
+  id: SponsorShopShoes4
+  name: зимние ботинки
+  description: Меховые ботинки, которые помогут пережить даже самую холодную зиму.
+  cost: 1
+  priority: 7
+  prototypeId: ClothingShoesBootsWinter
+
+- type: sponsorShopListing
+  id: SponsorShopShoes5
+  name: зимние ботинки из паутины
+  description: Ботинки из плотной паутины, которые помогут пережить даже самую холодную зиму.
+  cost: 1
+  priority: 7
+  prototypeId: ClothingShoesBootsWinterWeb
+
+- type: sponsorShopListing
+  id: SponsorShopShoes6
+  name: коричневые ковбойские ботинки
+  description: На них шпоры, которые звенят и/или бренчат.
+  cost: 1
+  priority: 7
+  prototypeId: ClothingShoesBootsCowboyBrown
+
+- type: sponsorShopListing
+  id: SponsorShopShoes7
+  name: чёрные ковбойские ботинки
+  description: На них шпоры, которые звенят и/или бренчат.
+  cost: 1
+  priority: 7
+  prototypeId: ClothingShoesBootsCowboyBlack
+
+- type: sponsorShopListing
+  id: SponsorShopShoes8
+  name: белые ковбойские ботинки
+  description: На них шпоры, которые звенят и/или бренчат.
+  cost: 1
+  priority: 7
+  prototypeId: ClothingShoesBootsCowboyWhite
+
+- type: sponsorShopListing
+  id: SponsorShopShoes9
+  name: модные ковбойские ботинки
+  description: На них шпоры, которые звенят и/или бренчат.
+  cost: 1
+  priority: 7
+  prototypeId: ClothingShoesBootsCowboyFancy
+
+- type: sponsorShopListing
+  id: SponsorShopShoes10
+  name: чёрные туфли
+  description: Стильные чёрные туфли.
+  cost: 1
+  priority: 7
+  prototypeId: ClothingShoesColorBlack
+
+- type: sponsorShopListing
+  id: SponsorShopShoes11
+  name: синие туфли
+  description: Стильные синие туфли.
+  cost: 1
+  priority: 7
+  prototypeId: ClothingShoesColorBlue
+
+- type: sponsorShopListing
+  id: SponsorShopShoes12
+  name: коричневые туфли
+  description: Стильные коричневые туфли.
+  cost: 1
+  priority: 7
+  prototypeId: ClothingShoesColorBrown
+
+- type: sponsorShopListing
+  id: SponsorShopShoes13
+  name: зелёные туфли
+  description: Стильные зелёные туфли.
+  cost: 1
+  priority: 7
+  prototypeId: ClothingShoesColorGreen
+
+- type: sponsorShopListing
+  id: SponsorShopShoes14
+  name: оранжевые туфли
+  description: Стильные оранжевые туфли.
+  cost: 1
+  priority: 7
+  prototypeId: ClothingShoesColorOrange
+
+- type: sponsorShopListing
+  id: SponsorShopShoes15
+  name: фиолетовые туфли
+  description: Стильные фиолетовые туфли.
+  cost: 1
+  priority: 7
+  prototypeId: ClothingShoesColorPurple
+
+- type: sponsorShopListing
+  id: SponsorShopShoes16
+  name: красные туфли
+  description: Стильные красные туфли.
+  cost: 1
+  priority: 7
+  prototypeId: ClothingShoesColorRed
+
+- type: sponsorShopListing
+  id: SponsorShopShoes17
+  name: белые туфли
+  description: Не снимайте их на рождественской вечеринке в офисе.
+  cost: 1
+  priority: 7
+  prototypeId: ClothingShoesColorWhite
+
+- type: sponsorShopListing
+  id: SponsorShopShoes18
+  name: жёлтые туфли
+  description: Стильные жёлтые туфли.
+  cost: 1
+  priority: 7
+  prototypeId: ClothingShoesColorYellow
+
+- type: sponsorShopListing
+  id: SponsorShopShoes19
+  name: сапоги чародея
+  description: Парочка магических сапог.
+  cost: 1
+  priority: 7
+  prototypeId: ClothingShoesWizard
+
+# region Перчатки
+
+- type: sponsorShopListing
+  id: SponsorShopHands1
+  name: красные боксёрские перчатки
+  description: Красные перчатки для соревновательного бокса.
+  cost: 1
+  priority: 8
+  prototypeId: ClothingHandsGlovesBoxingRed
+
+- type: sponsorShopListing
+  id: SponsorShopHands2
+  name: синие боксёрские перчатки
+  description: Синие перчатки для соревновательного бокса.
+  cost: 1
+  priority: 8
+  prototypeId: ClothingHandsGlovesBoxingBlue
+
+- type: sponsorShopListing
+  id: SponsorShopHands3
+  name: зелёные боксёрские перчатки
+  description: Зелёные перчатки для соревновательного бокса.
+  cost: 1
+  priority: 8
+  prototypeId: ClothingHandsGlovesBoxingGreen
+
+- type: sponsorShopListing
+  id: SponsorShopHands4
+  name: жёлтые боксёрские перчатки
+  description: Жёлтые перчатки для соревновательного бокса.
+  cost: 1
+  priority: 8
+  prototypeId: ClothingHandsGlovesBoxingYellow
+
+- type: sponsorShopListing
+  id: SponsorShopHands5
+  name: латексные перчатки
+  description: Тонкие стерильные латексные перчатки.
+  cost: 1
+  priority: 8
+  prototypeId: ClothingHandsGlovesLatex
+
+- type: sponsorShopListing
+  id: SponsorShopHands6
+  name: нитриловые перчатки
+  description: Высококачественные нитриловые перчатки. Дорогое медицинское средство индивидуальной защиты.
+  cost: 1
+  priority: 8
+  prototypeId: ClothingHandsGlovesNitrile
+
+- type: sponsorShopListing
+  id: SponsorShopHands7
+  name: силовые перчатки
+  description: Поиграем в полную силу! Погодите, они выключены.
+  cost: 1
+  priority: 8
+  prototypeId: ClothingHandsGlovesPowerglove
+
+- type: sponsorShopListing
+  id: SponsorShopHands8
+  name: роборукие перчатки
+  description: Бип буп борп!
+  cost: 1
+  priority: 8
+  prototypeId: ClothingHandsGlovesRobohands
+
+- type: sponsorShopListing
+  id: SponsorShopHands9
+  name: тактические перчатки горничной
+  description: Тактические перчатки для горничных - каждая уважающая себя горничная должна уметь незаметно устранять свои цели.
+  cost: 1
+  priority: 8
+  prototypeId: ClothingHandsTacticalMaidGloves
+
+- type: sponsorShopListing
+  id: SponsorShopHands10
+  name: беспалые перчатки
+  description: Простые чёрные перчатки с обрезанными пальцами для тяжёлой работы.
+  cost: 1
+  priority: 8
+  prototypeId: ClothingHandsGlovesFingerless
+
+- type: sponsorShopListing
+  id: SponsorShopHands11
+  name: фиолетовые перчатки
+  description: Обычные фиолетовые перчатки, которые не спасут вас от поджаривания.
+  cost: 1
+  priority: 8
+  prototypeId: ClothingHandsGlovesColorPurple
+
+- type: sponsorShopListing
+  id: SponsorShopHands12
+  name: красные перчатки
+  description: Обычные красные перчатки, которые не спасут вас от поджаривания.
+  cost: 1
+  priority: 8
+  prototypeId: ClothingHandsGlovesColorRed
+
+- type: sponsorShopListing
+  id: SponsorShopHands13
+  name: чёрные перчатки
+  description: Обычные чёрные перчатки, которые не спасут вас от поджаривания.
+  cost: 1
+  priority: 8
+  prototypeId: ClothingHandsGlovesColorBlack
+
+- type: sponsorShopListing
+  id: SponsorShopHands14
+  name: синие перчатки
+  description: Обычные синие перчатки, которые не спасут вас от поджаривания.
+  cost: 1
+  priority: 8
+  prototypeId: ClothingHandsGlovesColorBlue
+
+- type: sponsorShopListing
+  id: SponsorShopHands15
+  name: коричневые перчатки
+  description: Обычные коричневые перчатки, которые не спасут вас от поджаривания.
+  cost: 1
+  priority: 8
+  prototypeId: ClothingHandsGlovesColorBrown
+
+- type: sponsorShopListing
+  id: SponsorShopHands16
+  name: серые перчатки
+  description: Обычные серые перчатки, которые не спасут вас от поджаривания.
+  cost: 1
+  priority: 8
+  prototypeId: ClothingHandsGlovesColorGray
+
+- type: sponsorShopListing
+  id: SponsorShopHands17
+  name: зелёные перчатки
+  description: Обычные зелёные перчатки, которые не спасут вас от поджаривания.
+  cost: 1
+  priority: 8
+  prototypeId: ClothingHandsGlovesColorGreen
+
+- type: sponsorShopListing
+  id: SponsorShopHands18
+  name: светло-коричневые перчатки
+  description: Обычные светло-коричневые перчатки, которые не спасут вас от поджаривания.
+  cost: 1
+  priority: 8
+  prototypeId: ClothingHandsGlovesColorLightBrown
+
+- type: sponsorShopListing
+  id: SponsorShopHands19
+  name: оранжевые перчатки
+  description: Обычные оранжевые перчатки, которые не спасут вас от поджаривания.
+  cost: 1
+  priority: 8
+  prototypeId: ClothingHandsGlovesColorOrange
+
+- type: sponsorShopListing
+  id: SponsorShopHands20
+  name: белые перчатки
+  description: Эти перчатки выглядят роскошно.
+  cost: 1
+  priority: 8
+  prototypeId: ClothingHandsGlovesColorWhite
+
+# region Комбинезоны
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms1
+  name: старинный комбинезон
+  description: Ужасно поношенный и потрёпанный серый комбинезон. Он выглядит так, будто его не стирали более десяти лет.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitAncient
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms2
+  name: костюм клоуна
+  description: ХОНК!
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitClown
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms3
+  name: банановый костюм клоуна
+  description: ХОНК!
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitClownBanana
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms4
+  name: костюм шута
+  description: Весёлый наряд, отлично подходящий для развлечения вашего господина.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitJester
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms5
+  name: поношенный костюм
+  description: Тот, кто носит это, олицетворяет занятость.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitDetective
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms6
+  name: нуарный костюм
+  description: Крутой серый костюм частного сыщика с зажимом для галстука.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitDetectiveGrey
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms7
+  name: кимоно
+  description: Традиционное китайское одеяние.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitKimono
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms8
+  name: костюм мима
+  description: "..."
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitMime
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms9
+  name: голубая рубашка и галстук
+  description: Я сейчас немного занят, Калхаун.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitSecBlue
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms10
+  name: комбинезон на лямках
+  description: Отлично подходит для работы на открытом воздухе.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformOveralls
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms11
+  name: костюм библиотекаря
+  description: Он очень... практичный.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitLibrarian
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms12
+  name: практичный костюм
+  description: Практично. Слишком практично...
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitCurator
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms13
+  name: красный адвокатский костюм
+  description: Яркий красный костюм, который носят адвокаты и хвастуны.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitLawyerRed
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms14
+  name: синий адвокатский костюм
+  description: Яркий синий костюм, который носят адвокаты и хвастуны.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitLawyerBlue
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms15
+  name: чёрный адвокатский костюм
+  description: Изысканный чёрный костюм, который носят адвокаты и гангстеры.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitLawyerBlack
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms16
+  name: фиолетовый адвокатский костюм
+  description: Стильный фиолетовый костюм, который носят адвокаты и шоумены.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitLawyerPurple
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms17
+  name: хороший адвокатский костюм
+  description: Кричащий костюм, идеально подходящий УГОЛОВНОМУ адвокату!
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitLawyerGood
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms18
+  name: чёрная пижама синдиката
+  description: Для долгих ночей в перме.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitPyjamaSyndicateBlack
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms19
+  name: розовая пижама синдиката
+  description: Для долгих ночей в перме.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitPyjamaSyndicatePink
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms20
+  name: красная пижама синдиката
+  description: Для долгих ночей в перме.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitPyjamaSyndicateRed
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms21
+  name: костюм психолога
+  description: Я не теряю вещи. Я кладу вещи в места, которые потом ускользают от меня.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitPsychologist
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms22
+  name: костюм репортёра
+  description: Хороший репортёр остаётся скептиком всю свою жизнь.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitReporter
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms23
+  name: костюм для сафари
+  description: Идеально для экскурсии по джунглям.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitSafari
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms24
+  name: костюм журналиста
+  description: Если журналистская работа хороша, она противоречива по своей природе.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitJournalist
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms25
+  name: костюм якудзы
+  description: Какой же я дурак...
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitDameDane
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms26
+  name: пиратская форма
+  description: Пиратская вариация комбинезона космического моряка.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitPirate
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms27
+  name: казачий костюм
+  description: Старые добрые штаны да бригантина.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitCossack
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms28
+  name: чёрная гавайская рубашка
+  description: Чёрная, как звёздная ночь.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitHawaiBlack
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms29
+  name: синяя гавайская рубашка
+  description: Синяя, как бескрайний океан.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitHawaiBlue
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms30
+  name: красная гавайская рубашка
+  description: Красная, как сочные арбузы.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitHawaiRed
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms31
+  name: жёлтая гавайская рубашка
+  description: Жёлтая, как яркое солнце.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitHawaiYellow
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms32
+  name: торжественный костюм Синдиката
+  description: Форма Синдиката выполнена в элегантном стиле, в ней даже жалко проделывать грязные трюки.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitSyndieFormal
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms33
+  name: фланелевый комбинезон
+  description: Пахнет так, будто кто-то жарил на гриле.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitFlannel
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms34
+  name: домашняя одежда
+  description: Длинный кусок ткани, который облегает тело, обеспечивая комфорт.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitLoungewear
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms35
+  name: форма гладиатора
+  description: Создана для настоящих гладиаторов (или пеплоходцев).
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitGladiator
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms36
+  name: повседневный синий комбинезон
+  description: Свободная потёртая синяя рубашка с серыми штанами - идеальный вариант для тех, кто хочет расслабиться.
+  cost: 1
+  priority: 7
+  state: icon-jumpsuit
+  prototypeId: ClothingUniformJumpsuitCasualBlue
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms37
+  name: повседневный фиолетовый комбинезон
+  description: Свободная потёртая фиолетовая рубашка с серыми штанами - идеальный вариант для тех, кто хочет расслабиться.
+  cost: 1
+  priority: 7
+  state: icon-jumpsuit
+  prototypeId: ClothingUniformJumpsuitCasualPurple
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms38
+  name: повседневный красный комбинезон
+  description: Свободная потёртая красная рубашка с серыми штанами - идеальный вариант для тех, кто хочет расслабиться.
+  cost: 1
+  priority: 7
+  state: icon-jumpsuit
+  prototypeId: ClothingUniformJumpsuitCasualRed
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms39
+  name: семейный наряд
+  description: Напоминает о времени, когда вы сделали что-то смешное.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitFamilyGuy
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms40
+  name: белый комбинезон
+  description: Обычный белый комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitColorWhite
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms41
+  name: серый комбинезон
+  description: Серый комбинезон, напоминающая вам о старых добрых временах.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitColorGrey
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms42
+  name: чёрный комбинезон
+  description: Обычный чёрный комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitColorBlack
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms43
+  name: синий комбинезон
+  description: Обычный синий комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitColorBlue
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms44
+  name: тёмно-синий комбинезон
+  description: Обычный тёмно-синий комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitColorDarkBlue
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms45
+  name: тёмно-синий комбинезон
+  description: Обычный тёмно-синий комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitColorDarkBlue
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms46
+  name: аквамариновый комбинезон
+  description: Обычный аквамариновый комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitColorTeal
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms47
+  name: зелёный комбинезон
+  description: Обычный зелёный комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitColorGreen
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms48
+  name: тёмно-зелёный комбинезон
+  description: Обычный тёмно-зелёный комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitColorDarkGreen
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms49
+  name: оранжевый комбинезон
+  description: Не носите его рядом с параноидальными сотрудниками службы безопасности.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitColorOrange
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms50
+  name: розовый комбинезон
+  description: Просто глядя на это, вы чувствуете себя потрясающе.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitColorPink
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms51
+  name: красный комбинезон
+  description: Обычный красный комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitColorRed
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms52
+  name: жёлтый комбинезон
+  description: Обычный жёлтый комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitColorYellow
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms53
+  name: фиолетовый комбинезон
+  description: Обычный фиолетовый комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitColorPurple
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms54
+  name: светло-коричневый комбинезон
+  description: Обычный светло-коричневый комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitColorLightBrown
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms55
+  name: коричневый комбинезон
+  description: Обычный коричневый комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitColorBrown
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms56
+  name: бордовый комбинезон
+  description: Обычный бордовый комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitColorMaroon
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms57
+  name: радужный комбинезон
+  description: Разноцветный комбинезон!
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformColorRainbow
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms58
+  name: спортивный костюм
+  description: Черный, с белыми полосами, спортивный костюм.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitBlackWhiteStripeSport
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms59
+  name: японский школьный костюм
+  description: Классический стиль японской школьной формы.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitMaleJapaneBlackSchool
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms60
+  name: костюм сжимающейся вселенной
+  description: Переливающийся синим цветом костюм показывает цвета и просторы сжимающейся вселенной.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitBlueGalaxy
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms61
+  name: костюм расширяющейся вселенной
+  description: Переливающийся красным цветом костюм показывает цвета и просторы расширяющейся вселенной.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitRedGalaxy
+
+- type: sponsorShopListing
+  id: SponsorShopUniforms62
+  name: костюм зайчика
+  description: Странный заячий костюм, который оставляет большую часть тела открытой.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitStrangeBunny
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF1
+  name: поношенный костюм
+  description: Тот, кто носит это, олицетворяет занятость.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtDetective
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF2
+  name: нуарный костюм
+  description: Крутой серый костюм частного сыщика с зажимом для галстука.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtDetectiveGrey
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF3
+  name: юбка-комбинезон мима
+  description: "..."
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtMime
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF4
+  name: юбка-комбинезон библиотекаря
+  description: Уютный красный джемпер, подходящий для хранителя книг.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtLibrarian
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF5
+  name: практичная юбка
+  description: Она практична. Слишком практична...
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtCurator
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF6
+  name: юбка-комбинезон артиста
+  description: Привет, я Скотт, президент Donk Pizza. Вы слышали про [ИЗВЕСТНЫЙ ВИРТУАЛЬНЫЙ ИСПОЛНИТЕЛЬ]?
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtPerformer
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF7
+  name: практичная юбка
+  description: Она практична. Слишком практична...
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtCurator
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF8
+  name: тактическая юбка-комбинезон
+  description: Униформа для оперативных LARPеров, выполняющих тактические кражи изолированных перчаток в глубоком космосе.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtTacticool
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF9
+  name: форма горничной
+  description: Для профессионалов, а не позёров.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtJanimaid
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF10
+  name: форма горничной с миниюбкой
+  description: Элитный сервис, а не просто яркая обёртка.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtJanimaidmini
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF11
+  name: красная адвокатская юбка-костюм
+  description: Яркий красный костюм с юбкой, который носят адвокаты и хвастуны.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtLawyerRed
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF12
+  name: синяя адвокатская юбка-костюм
+  description: Яркий синий костюм с юбкой, который носят адвокаты и хвастуны.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtLawyerBlue
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF13
+  name: чёрная адвокатская юбка-костюм
+  description: Изысканный чёрный костюм с юбкой, который носят адвокаты и гангстеры.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtLawyerBlack
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF14
+  name: фиолетовая адвокатская юбка-костюм
+  description: Стильный фиолетовый костюм с юбкой, который носят адвокаты и шоумены.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtLawyerPurple
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF15
+  name: хорошая адвокатская юбка-костюм
+  description: Кричащий костюм с юбкой, идеально подходящий УГОЛОВНОМУ адвокату!
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtLawyerGood
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF16
+  name: торжественное платье Синдиката
+  description: Форма Синдиката выполнена в элегантном стиле, в ней даже жалко проделывать грязные трюки.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtSyndieFormalDress
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF17
+  name: тактическая юбка-костюм горничной
+  description: Предполагается, что у лучших горничных должны быть дизайнерские костюмы.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtTacticalMaid
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF18
+  name: юбка жизни
+  description: Юбка, символизирующая позитив и радость нашей жизни.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtOfLife
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF19
+  name: повседневная синяя юбка-комбинезон
+  description: Свободная потёртая синяя рубашка с серой юбкой - идеальный вариант для тех, кто хочет расслабиться.
+  cost: 1
+  priority: 7
+  state: icon-jumpskirt
+  prototypeId: ClothingUniformJumpskirtCasualBlue
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF20
+  name: повседневная фиолетовая юбка-комбинезон
+  description: Свободная потёртая фиолетовая рубашка с серой юбкой - идеальный вариант для тех, кто хочет расслабиться.
+  cost: 1
+  priority: 7
+  state: icon-jumpskirt
+  prototypeId: ClothingUniformJumpskirtCasualPurple
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF21
+  name: повседневная красная юбка-комбинезон
+  description: Свободная потёртая красная рубашка с серой юбкой - идеальный вариант для тех, кто хочет расслабиться.
+  cost: 1
+  priority: 7
+  state: icon-jumpskirt
+  prototypeId: ClothingUniformJumpskirtCasualRed
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF22
+  name: старое платье
+  description: Очень старое поношенное платье.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtOldDress
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF23
+  name: юбка музыканта
+  description: Модная юбка для музыкально настроенных людей. Идеально подойдёт для любого выступления в стиле лаунж!
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtMusician
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF24
+  name: юбка-комбинезон психолога
+  description: Я не теряю вещи. Я кладу вещи в места, которые потом ускользают от меня.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtPsychologist
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF25
+  name: юбка-комбинезон клоуна
+  description: HONK!
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtClown
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF26
+  name: белая юбка-комбинезон
+  description: Обычная белая юбка-комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtColorWhite
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF27
+  name: серая юбка-комбинезон
+  description: Серая юбка-комбинезон, напоминающая вам о старых добрых временах.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtColorGrey
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF28
+  name: чёрная юбка-комбинезон
+  description: Обычная чёрная юбка-комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtColorBlack
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF29
+  name: синяя юбка-комбинезон
+  description: Обычная синяя юбка-комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtColorBlue
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF30
+  name: тёмно-синяя юбка-комбинезон
+  description: Обычная тёмно-синяя юбка-комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtColorDarkBlue
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF31
+  name: аквамариновая юбка-комбинезон
+  description: Обычная аквамариновая юбка-комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtColorTeal
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF32
+  name: зелёная юбка-комбинезон
+  description: Обычная зелёная юбка-комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtColorGreen
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF33
+  name: тёмно-зелёная юбка-комбинезон
+  description: Обычная тёмно-зелёная юбка-комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtColorDarkGreen
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF34
+  name: оранжевая юбка-комбинезон
+  description: Не носите её рядом с параноидальными сотрудниками службы безопасности.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtColorOrange
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF35
+  name: розовая юбка-комбинезон
+  description: Просто глядя на это, вы чувствуете себя потрясающе.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtColorPink
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF36
+  name: красная юбка-комбинезон
+  description: Обычная красная юбка-комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtColorRed
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF37
+  name: жёлтая юбка-комбинезон
+  description: Обычная жёлтая юбка-комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtColorYellow
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF38
+  name: фиолетовая юбка-комбинезон
+  description: Обычная фиолетовая юбка-комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtColorPurple
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF39
+  name: светло-коричневая юбка-комбинезон
+  description: Обычная светло-коричневая юбка-комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtColorLightBrown
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF40
+  name: коричневая юбка-комбинезон
+  description: Обычная коричневая юбка-комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtColorBrown
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF41
+  name: бордовая юбка-комбинезон
+  description: Обычная бордовая юбка-комбинезон без знаков различия.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtColorMaroon
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF42
+  name: элегантное чёрное платье
+  description: Элегантное платье с красивым бантом.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtBlackElegantDress
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF43
+  name: элегантное красное платье
+  description: Элегантное платье с красивым бантом.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtRedElegantDress
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF44
+  name: элегантное зелёное платье
+  description: Элегантное платье с красивым бантом.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtGreenElegantDress
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF45
+  name: элегантное синее платье
+  description: Элегантное платье с красивым бантом.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtBlueElegantDress
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF46
+  name: элегантное фиолетовое платье
+  description: Элегантное платье с красивым бантом.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtPurpleElegantDress
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF47
+  name: полосатое голубое платье
+  description: Милое полосатое платье.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtCyanStripedDress
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF48
+  name: полосатое красное платье
+  description: Милое полосатое платье.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtRedStripedDress
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF49
+  name: полосатое зелёное платье
+  description: Милое полосатое платье.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtGreenStripedDress
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF50
+  name: полосатое розовое платье
+  description: Милое полосатое платье.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtPinkStripedDress
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF51
+  name: полосатое оранжевое платье
+  description: Милое полосатое платье.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtOrangeStripedDress
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF52
+  name: фиолетовое платье-водолазка
+  description: Платье-водолазка с уникальным дизайном.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtPurpleTurtleneckDress
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF53
+  name: красное платье-водолазка
+  description: Платье-водолазка с уникальным дизайном.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtRedTurtleneckDress
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF54
+  name: зелёное платье-водолазка
+  description: Платье-водолазка с уникальным дизайном.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtGreenTurtleneckDress
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF55
+  name: синее платье-водолазка
+  description: Платье-водолазка с уникальным дизайном.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtBlueTurtleneckDress
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF56
+  name: жёлтое платье-водолазка
+  description: Платье-водолазка с уникальным дизайном.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtYellowTurtleneckDress
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF57
+  name: старое жёлтое платье
+  description: Классическое платье в стиле вестерн.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtYellowOldDress
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF58
+  name: женский костюм для плавания
+  description: Голубой костюм для занятий по плаванью. Упругий на ощупь.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpsuitBlueWaterSwim
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF59
+  name: свободное красное платье
+  description: Элегантное, красное женское платье. Подойдёт, чтобы показать красоту своего тела.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtRedVeryLooseDress
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF60
+  name: розовый спортивный костюм с юбкой
+  description: Розовый, с белыми полосами, спортивный костюм.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtPinkWhiteStripSport
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF61
+  name: строгая школьная форма
+  description: Классический стиль японской школьной формы.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtFemaleJapaneSchoolPurpish
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF62
+  name: строгая японская школьная форма
+  description: Классический стиль японской школьной формы.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtFemaleJapaneSchoolBrown
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF63
+  name: летняя японская школьная форма
+  description: Классический стиль японской школьной формы.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtFemaleJapaneSchoolWhite
+
+- type: sponsorShopListing
+  id: SponsorShopUniformsF64
+  name: летняя японская школьная форма
+  description: Классический стиль японской школьной формы.
+  cost: 1
+  priority: 9
+  prototypeId: ClothingUniformJumpskirtFemaleJapaneSchoolBlue
+
+# region Зимняя одежда
+
+- type: sponsorShopListing
+  id: SponsorShopOuter1
+  name: куртка-бомбер
+  description: Толстая, поношенная кожаная куртка-бомбер периода Второй мировой войны.
+  cost: 1
+  priority: 10
+  prototypeId: ClothingOuterCoatBomber
+
+- type: sponsorShopListing
+  id: SponsorShopOuter2
+  name: тренч детектива
+  description: Мультифункциональный тренчкот XVIII века. Носящий его - серьёзный тип.
+  cost: 1
+  priority: 10
+  prototypeId: ClothingOuterCoatDetective
+
+- type: sponsorShopListing
+  id: SponsorShopOuter3
+  name: нуарный тренчкот
+  description: Ах, ваш верный тренчкот. Пара прорех тут и там придают ему более соответствующий детективу вид. По крайней мере, так вы сказали себе, когда узнали, что починка обойдется вам в 200 кредитов.
+  cost: 1
+  priority: 10
+  prototypeId: ClothingOuterCoatDetectiveLoadoutGrey
+
+- type: sponsorShopListing
+  id: SponsorShopOuter4
+  name: аккуратное пальто
+  description: Пальто для леди или джентльменов.
+  cost: 1
+  priority: 10
+  prototypeId: ClothingOuterCoatGentle
+
+- type: sponsorShopListing
+  id: SponsorShopOuter5
+  name: пальто Дженсена
+  description: Пальто Дженсена.
+  cost: 1
+  priority: 10
+  prototypeId: ClothingOuterCoatJensen
+
+- type: sponsorShopListing
+  id: SponsorShopOuter6
+  name: одежда пирата
+  description: Яррр.
+  cost: 1
+  priority: 10
+  prototypeId: ClothingOuterCoatPirate
+
+- type: sponsorShopListing
+  id: SponsorShopOuter7
+  name: пальто якудзы
+  description: Пятница...
+  cost: 1
+  priority: 10
+  prototypeId: ClothingOuterDameDane
+
+- type: sponsorShopListing
+  id: SponsorShopOuter8
+  name: роба Хонкоматери
+  description: Предназначена для клоунов-культистов.
+  cost: 1
+  priority: 10
+  prototypeId: ClothingOuterClownPriest
+
+- type: sponsorShopListing
+  id: SponsorShopOuter9
+  name: доги самурая
+  description: Доги - это вид традиционной японской одежды. Доги изготавливается из тяжёлой, плотной ткани, практичен в бою и стилен на вид. Спина украшена замысловатыми узорами и вышивкой.
+  cost: 1
+  priority: 10
+  prototypeId: ClothingOuterDogi
+
+- type: sponsorShopListing
+  id: SponsorShopOuter10
+  name: дорогая шуба
+  description: Очень пушистая розовая шуба, сделанная из очень дорогого меха (очевидно).
+  cost: 1
+  priority: 10
+  prototypeId: ClothingOuterCoatExpensive
+
+- type: sponsorShopListing
+  id: SponsorShopOuter11
+  name: зимняя куртка
+  description: Тяжёлая куртка из 'синтетического' меха животных.
+  cost: 1
+  priority: 10
+  prototypeId: ClothingOuterWinterCoat
+
+- type: sponsorShopListing
+  id: SponsorShopOuter12
+  name: зимняя куртка с капюшоном
+  description: Тяжёлая куртка из 'синтетического' меха животных.
+  cost: 1
+  priority: 10
+  prototypeId: ClothingOuterWinterCoatToggleable
+
+- type: sponsorShopListing
+  id: SponsorShopOuter13
+  name: зимняя куртка клоуна
+  description: Тяжёлая куртка из 'синтетического' меха животных.
+  cost: 1
+  priority: 10
+  prototypeId: ClothingOuterWinterClown
+
+- type: sponsorShopListing
+  id: SponsorShopOuter14
+  name: зимняя куртка клоуна
+  description: Тяжёлая куртка из 'синтетического' меха животных.
+  cost: 1
+  priority: 10
+  prototypeId: ClothingOuterWinterClown
+
+- type: sponsorShopListing
+  id: SponsorShopOuter15
+  name: чёрная зимняя куртка
+  description: Тяжёлая куртка из 'синтетического' меха животных.
+  cost: 1
+  priority: 8
+  state: coatybits-icon
+  prototypeId: ClothingOuterWinterColorBlack
+
+- type: sponsorShopListing
+  id: SponsorShopOuter16
+  name: фиолетовая зимняя куртка
+  description: Тяжёлая куртка из 'синтетического' меха животных.
+  cost: 1
+  priority: 8
+  state: coatybits-icon
+  prototypeId: ClothingOuterWinterColorPurple
+
+- type: sponsorShopListing
+  id: SponsorShopOuter17
+  name: красная зимняя куртка
+  description: Тяжёлая куртка из 'синтетического' меха животных.
+  cost: 1
+  priority: 8
+  state: coatybits-icon
+  prototypeId: ClothingOuterWinterColorRed
+
+- type: sponsorShopListing
+  id: SponsorShopOuter18
+  name: синяя зимняя куртка
+  description: Тяжёлая куртка из 'синтетического' меха животных.
+  cost: 1
+  priority: 8
+  state: coatybits-icon
+  prototypeId: ClothingOuterWinterColorBlue
+
+- type: sponsorShopListing
+  id: SponsorShopOuter19
+  name: коричневая зимняя куртка
+  description: Тяжёлая куртка из 'синтетического' меха животных.
+  cost: 1
+  priority: 8
+  state: coatybits-icon
+  prototypeId: ClothingOuterWinterColorBrown
+
+- type: sponsorShopListing
+  id: SponsorShopOuter20
+  name: серая зимняя куртка
+  description: Тяжёлая куртка из 'синтетического' меха животных.
+  cost: 1
+  priority: 8
+  state: coatybits-icon
+  prototypeId: ClothingOuterWinterColorGray
+
+- type: sponsorShopListing
+  id: SponsorShopOuter21
+  name: зелёная зимняя куртка
+  description: Тяжёлая куртка из 'синтетического' меха животных.
+  cost: 1
+  priority: 8
+  state: coatybits-icon
+  prototypeId: ClothingOuterWinterColorGreen
+
+- type: sponsorShopListing
+  id: SponsorShopOuter22
+  name: светло-коричневая зимняя куртка
+  description: Тяжёлая куртка из 'синтетического' меха животных.
+  cost: 1
+  priority: 8
+  state: coatybits-icon
+  prototypeId: ClothingOuterWinterColorLightBrown
+
+- type: sponsorShopListing
+  id: SponsorShopOuter23
+  name: оранжевая зимняя куртка
+  description: Тяжёлая куртка из 'синтетического' меха животных.
+  cost: 1
+  priority: 8
+  state: coatybits-icon
+  prototypeId: ClothingOuterWinterColorOrange
+
+- type: sponsorShopListing
+  id: SponsorShopOuter24
+  name: белая зимняя куртка
+  description: Тяжёлая куртка из 'синтетического' меха животных.
+  cost: 1
+  priority: 8
+  state: coatybits-icon
+  prototypeId: ClothingOuterWinterColorWhite
+
+- type: sponsorShopListing
+  id: SponsorShopOuter25
+  name: жёлтая зимняя куртка
+  description: Тяжёлая куртка из 'синтетического' меха животных.
+  cost: 1
+  priority: 8
+  state: coatybits-icon
+  prototypeId: ClothingOuterWinterColorYellow
+
+- type: sponsorShopListing
+  id: SponsorShopOuter26
+  name: черная плотная толстовка
+  description: Классическая чёрная толстовка с широким карманом.
+  cost: 1
+  priority: 10
+  prototypeId: ClothingOuterBlackHoodie
+
+# region Цветы
+
+- type: sponsorShopListing
+  id: SponsorShopPlush1
+  name: плюшевый Нагибатор
+  description: Мягкая игрушка, напоминающая грузчикам о том, чего они больше не могут иметь.
+  cost: 1
+  priority: 16
+  prototypeId: PlushieThrongler
+
+- type: sponsorShopListing
+  id: SponsorShopPlush2
+  name: плюшевый призрак
+  description: Начало вашей собственной БАНДЫ ПРИЗРАКОВ!
+  cost: 1
+  priority: 16
+  prototypeId: PlushieGhost
+
+- type: sponsorShopListing
+  id: SponsorShopPlush3
+  name: плюшевая пчела
+  description: Милая игрушка, напоминающая ещё более милого программиста. Нужно быть монстром, чтобы порвать её.
+  cost: 1
+  priority: 9
+  state: plushie_h
+  prototypeId: PlushieBee
+
+- type: sponsorShopListing
+  id: SponsorShopPlush4
+  name: плюшевый хома
+  description: Милая игрушка, напоминающая хомяка. Его мордочка выглядит приплюснутой.
+  cost: 1
+  priority: 9
+  state: plushie_hampter
+  prototypeId: PlushieHampter
+
+- type: sponsorShopListing
+  id: SponsorShopPlush5
+  name: плюшевая RGB-пчела
+  description: Милая игрушка, напоминающая плюшевую пчелу после того как вы закинулись ЛСД.
+  cost: 1
+  priority: 9
+  state: plushie_h
+  prototypeId: PlushieRGBee
+
+- type: sponsorShopListing
+  id: SponsorShopPlush6
+  name: плюшевый нюкер
+  description: Мягкая игрушка, напоминающая ядерного оперативника Синдиката. На бирке указано, что оперативники это полнейшая выдумка.
+  cost: 1
+  priority: 9
+  state: plushie_nuke
+  prototypeId: PlushieNuke
+
+- type: sponsorShopListing
+  id: SponsorShopPlush7
+  name: плюшевый руни
+  description: Руни.
+  cost: 1
+  priority: 9
+  state: plushie_rouny
+  prototypeId: PlushieRouny
+
+- type: sponsorShopListing
+  id: SponsorShopPlush8
+  name: плюшевая лампа
+  description: Светящийся друг!
+  cost: 1
+  priority: 9
+  state: plushie_lamp
+  prototypeId: PlushieLamp
+
+- type: sponsorShopListing
+  id: SponsorShopPlush9
+  name: плюшевый арахнид
+  description: Очаровательная мягкая игрушка, напоминающая арахнида. На ощупь она шелковистая.
+  cost: 1
+  priority: 9
+  state: plushie_arachnid
+  prototypeId: PlushieArachind
+
+- type: sponsorShopListing
+  id: SponsorShopPlush10
+  name: плюшевый унатх
+  description: Очаровательная мягкая игрушка, напоминающая унатха. Изготовлена Центком в рамках показательной инициативы по борьбе с дискриминацией по видовому признаку в рабочей среде. "Приветствуйте своих новых коллег как вы приветствуете эту игрушку, с распростёртыми объятиями!".
+  cost: 1
+  priority: 9
+  state: plushie_lizard
+  prototypeId: PlushieLizard
+
+- type: sponsorShopListing
+  id: SponsorShopPlush11
+  name: плюшевый космический унатх
+  description: Очаровательная мягкая игрушка, напоминающая унатха в EVA костюме. Изготовлена Центком в рамках показательной инициативы по борьбе с дискриминацией по видовому признаку в рабочей среде. "Приветствуйте своих новых коллег как вы приветствуете эту игрушку, с распростёртыми объятиями!".
+  cost: 1
+  priority: 9
+  state: plushie_spacelizard
+  prototypeId: PlushieSpaceLizard
+
+- type: sponsorShopListing
+  id: SponsorShopPlush12
+  name: плюшевая диона
+  description: Очаровательная мягкая игрушка, напоминающая диону. Любит воду и обнимашки. Не мочить!
+  cost: 1
+  priority: 9
+  state: plushie_diona
+  prototypeId: PlushieDiona
+
+- type: sponsorShopListing
+  id: SponsorShopPlush13
+  name: синяя плюшевая акула
+  description: Большая и надёжная, чтобы всегда быть рядом с вами, если вы захотите исследовать подводный мир.
+  cost: 1
+  priority: 9
+  state: blue
+  prototypeId: PlushieSharkBlue
+
+- type: sponsorShopListing
+  id: SponsorShopPlush14
+  name: розовая плюшевая акула
+  description: Хонкула
+  cost: 1
+  priority: 9
+  state: pink
+  prototypeId: PlushieSharkPink
+
+- type: sponsorShopListing
+  id: SponsorShopPlush15
+  name: серая плюшевая акула
+  description: Спокойная, сдержанная акула. Любит плавать по серым волнам.
+  cost: 1
+  priority: 9
+  state: grey
+  prototypeId: PlushieSharkGrey
+
+- type: sponsorShopListing
+  id: SponsorShopPlush16
+  name: плюшевый Ратвар
+  description: Маленькая плюшевая игрушка древнего бога Ратвара.
+  cost: 1
+  priority: 9
+  state: plushie_ratvar
+  prototypeId: PlushieRatvar
+
+- type: sponsorShopListing
+  id: SponsorShopPlush17
+  name: плюшевая Нар'Cи
+  description: Маленькая плюшевая игрушка древней богини Нар'Си.
+  cost: 1
+  priority: 9
+  state: narplush
+  prototypeId: PlushieNar
+
+- type: sponsorShopListing
+  id: SponsorShopPlush18
+  name: плюшевый карп
+  description: Очаровательная мягкая игрушка, напоминающая ужасающего космического карпа.
+  cost: 1
+  priority: 9
+  state: carpplush
+  prototypeId: PlushieCarp
+
+- type: sponsorShopListing
+  id: SponsorShopPlush19
+  name: плюшевый мэджикарп
+  description: Очаровательная мягкая игрушка, напоминающая чрезвычайно редкого мэджикарпа.
+  cost: 1
+  priority: 9
+  state: magicplush
+  prototypeId: PlushieMagicarp
+
+- type: sponsorShopListing
+  id: SponsorShopPlush20
+  name: плюшевый радужный карп
+  description: Очаровательная мягкая игрушка, напоминающая чрезвычайно редкого радужного карпа.
+  cost: 1
+  priority: 9
+  state: rainbowcarpplush
+  prototypeId: PlushieRainbowCarp
+
+- type: sponsorShopListing
+  id: SponsorShopPlush21
+  name: плюшевый голокарп
+  description: Голографическая мягкая игрушка, напоминающая заклятого врага учёных - голокарпа.
+  cost: 1
+  priority: 9
+  state: holoplush
+  prototypeId: PlushieHolocarp
+
+- type: sponsorShopListing
+  id: SponsorShopPlush22
+  name: плюшевый слайм
+  description: Очаровательная мягкая игрушка, напоминающая слайма. По сути, это мяч для футбэга.
+  cost: 1
+  priority: 9
+  state: plushie_slime
+  prototypeId: PlushieSlime
+
+- type: sponsorShopListing
+  id: SponsorShopPlush23
+  name: плюшевая змея
+  description: Очаровательная мягкая игрушка, напоминающая змею.
+  cost: 1
+  priority: 9
+  state: plushie_snake
+  prototypeId: PlushieSnake
+
+- type: sponsorShopListing
+  id: SponsorShopPlush24
+  name: игрушечная мышь
+  description: Яркая игрушечная мышка!
+  cost: 1
+  priority: 9
+  state: toy_mouse
+  prototypeId: ToyMouse
+
+- type: sponsorShopListing
+  id: SponsorShopPlush25
+  name: плюшевый вокс
+  description: СКРИИИИИИИИИИИИ!
+  cost: 1
+  priority: 9
+  state: plushie_vox
+  prototypeId: PlushieVox
+
+- type: sponsorShopListing
+  id: SponsorShopPlush26
+  name: плюшевый атмосианин
+  description: Очаровательная мягкая игрушка, напоминающая храброго атмосианина. К сожалению, он не устранит разгерметизацию за вас.
+  cost: 1
+  priority: 9
+  state: plushie_atmosian
+  prototypeId: PlushieAtmosian
+
+- type: sponsorShopListing
+  id: SponsorShopPlush27
+  name: плюшевый ксено
+  description: Очаровательная мягкая игрушка, напоминающая страшного ксеноморфа. Вам повезло, что это всего лишь игрушка.
+  cost: 1
+  priority: 9
+  state: plushie_xeno
+  prototypeId: PlushieXeno
+
+- type: sponsorShopListing
+  id: SponsorShopPlush28
+  name: игрушечная ядерка
+  description: Пластиковая модель взрывного ядерного устройства. Без урана внутри... скорее всего.
+  cost: 1
+  priority: 9
+  state: nuketoy
+  prototypeId: ToyNuke
+
+- type: sponsorShopListing
+  id: SponsorShopPlush29
+  name: игрушечный иан
+  description: Не может кушать, но такой же пушистый, как настоящий!
+  cost: 1
+  priority: 9
+  state: ian
+  prototypeId: ToyIan
+
+- type: sponsorShopListing
+  id: SponsorShopPlush30
+  name: поролоновый арбалет
+  description: Целясь этим в офицеров, будьте готовы словить свинца.
+  cost: 1
+  priority: 9
+  state: foamcrossbow
+  prototypeId: FoamCrossbow
+
+- type: sponsorShopListing
+  id: SponsorShopPlush31
+  name: игрушечный пистолет
+  description: Выглядит почти как настоящий! От 8 лет и старше.
+  cost: 1
+  priority: 9
+  state: base
+  prototypeId: RevolverCapGunFake
+
+- type: sponsorShopListing
+  id: SponsorShopPlush32
+  name: пеноклинок
+  description: Полустёртая надпись на нём выглядит непонятной игрой слов с использованием местных идиоматических выражений.
+  cost: 1
+  priority: 9
+  state: foamblade
+  prototypeId: FoamBlade
+
+- type: sponsorShopListing
+  id: SponsorShopPlush33
+  name: баскетбольный мяч
+  description: Где спортивная площадка?
+  cost: 1
+  priority: 9
+  state: basketball
+  prototypeId: Basketball
+
+- type: sponsorShopListing
+  id: SponsorShopPlush34
+  name: мяч для регби
+  description: Рукояйцо, не для игры в ногомяч.
+  cost: 1
+  priority: 9
+  state: football
+  prototypeId: Football
+
+- type: sponsorShopListing
+  id: SponsorShopPlush35
+  name: пляжный мяч
+  description: Простой пляжный мяч - один из самых популярных продуктов компании Nanotrasen. 'Почему мы делаем пляжные мячи? Потому что мы можем! (TM)' - Nanotrasen.
+  cost: 1
+  priority: 9
+  state: beachball
+  prototypeId: BeachBall
+
+- type: sponsorShopListing
+  id: SponsorShopPlush36
+  name: воздушный шарик синдиката
+  description: Вручается смелейшим из смелейших, пережившим аттракцион "Атомный смерч" в Синдиленде.
+  cost: 1
+  priority: 9
+  state: synb
+  prototypeId: BalloonSyn
+
+- type: sponsorShopListing
+  id: SponsorShopPlush37
+  name: воздушный шарик корги
+  description: То же, что и владеть настоящей собакой - только гораздо более летучей.
+  cost: 1
+  priority: 9
+  state: corgib
+  prototypeId: BalloonCorgi
+
+- type: sponsorShopListing
+  id: SponsorShopPlush38
+  name: игрушечная сингулярность
+  description: Массово производится корпоративным конгломератом садистов!
+  cost: 1
+  priority: 9
+  state: singularitytoy
+  prototypeId: SingularityToy
+
+- type: sponsorShopListing
+  id: SponsorShopPlush39
+  name: тедди Теслы
+  description: Любимая игрушка великого инженера Николы Теслы.
+  cost: 1
+  priority: 9
+  state: tesla_projectile
+  prototypeId: TeslaToy
+
+- type: sponsorShopListing
+  id: SponsorShopPlush40
+  name: воздушный шарик Nanotrasen
+  description: Разработан специально для причинения максимального психологического вреда оперативникам Синдиката.
+  cost: 1
+  priority: 9
+  state: ntb
+  prototypeId: BalloonNT
+
+- type: sponsorShopListing
+  id: SponsorShopPlush41
+  name: шар размышлений
+  description: Это тяжело, мужик... Очень тяжело.
+  cost: 1
+  priority: 9
+  state: orb
+  prototypeId: PonderingOrb
+
+- type: sponsorShopListing
+  id: SponsorShopPlush42
+  name: игрушечный меч
+  description: Новый пластиковый меч от Sandy-Cat! Имеет реалистичный звук и насыщенный цвет! Почти как настоящий!
+  cost: 1
+  priority: 9
+  prototypeId: ToySword
+
+- type: sponsorShopListing
+  id: SponsorShopPlush43
+  name: игрушечная абордажная сабля
+  description: Переоденьтесь в пирата и заставьте своих друзей пройти по доске.
+  cost: 1
+  priority: 9
+  prototypeId: FoamCutlass
+
+- type: sponsorShopListing
+  id: SponsorShopPlush44
+  name: клоунский диктофон
+  description: Когда не удаётся рассмешить окружающих естественным способом!
+  cost: 1
+  priority: 9
+  prototypeId: ClownRecorder
+
+- type: sponsorShopListing
+  id: SponsorShopPlush45
+  name: резиновый молоток
+  description: Ярко раскрашенный молоток из резины.
+  cost: 1
+  priority: 9
+  prototypeId: ToyHammer
+
+- type: sponsorShopListing
+  id: SponsorShopPlush46
+  name: плюшевый ниан
+  description: Милый и пушистый плюшевый ниан. Развлекайтесь, бз!
+  cost: 1
+  priority: 9
+  state: plushie_moth
+  prototypeId: PlushieMoth
+
+- type: sponsorShopListing
+  id: SponsorShopPlush47
+  name: плюшевый пингвин
+  description: Кстати, я использую Arch!
+  cost: 1
+  priority: 9
+  state: plushie_penguin
+  prototypeId: PlushiePenguin
+
+- type: sponsorShopListing
+  id: SponsorShopPlush48
+  name: плюшевый робототехник
+  description: Потрепанная игрушка робототехника, на ней столько масла и металической стружки, словно это она собрала оборудование для всей станции.
+  cost: 1
+  priority: 16
+  prototypeId: PlushieRoboMechanic
+
+- type: sponsorShopListing
+  id: SponsorShopPlush49
+  name: плюшевый парамедик
+  description: Милая на вид игрушка парамедика, от вида которой ты точно понимаешь, что сгнить в техах – твоя судьба!
+  cost: 1
+  priority: 16
+  prototypeId: PlushieParamedic
+
+- type: sponsorShopListing
+  id: SponsorShopPlush50
+  name: плюшевый химик
+  description: Забавная на вид игрушка химика, от которой исходит легкий и сладковатый запах. Внимание! Не давайте ей пробирки с взрывоопасными веществами!
+  cost: 1
+  priority: 16
+  prototypeId: PlushieChemist
+
+- type: sponsorShopListing
+  id: SponsorShopPlush51
+  name: плюшевый комиссар
+  description: Плюшевая игрушка комиссара. Выглядит мило. От неё пахнет розами и дешёвым вином.
+  cost: 1
+  priority: 16
+  prototypeId: PlushieAmmaYakiama
+
+- type: sponsorShopListing
+  id: SponsorShopPlush52
+  name: плюшевый грустный художник
+  description: Это маленький плюшевый художник, ваш грустный брат по рисованию. Он вам с радостью поможет.
+  cost: 1
+  priority: 16
+  prototypeId: PlushiePaintor
+
+- type: sponsorShopListing
+  id: SponsorShopPlush53
+  name: плюшевый селекционер
+  description: Растрепанный исследователь-ботаник, весь в работе над селекцией растений.
+  cost: 1
+  priority: 16
+  prototypeId: PlushieSelectionist
+
+- type: sponsorShopListing
+  id: SponsorShopPlush54
+  name: плюшевый кадет
+  description: Не обманывайтесь её глупой мордочкой, эта унати стоит на страже закона! ... И ... возможно на вашем лице, если вы этот закон нарушили!
+  cost: 1
+  priority: 16
+  prototypeId: PlushieCadet
+
+- type: sponsorShopListing
+  id: SponsorShopPlush55
+  name: плюшевый авантюрист
+  description: От него веет жаждой приключений и карпами. Еще на 30% мягче!
+  cost: 1
+  priority: 16
+  prototypeId: PlushieAdv
+
+- type: sponsorShopListing
+  id: SponsorShopPlush56
+  name: плюшевая научная ассистентка
+  description: От неё веет жаждой знаний.
+  cost: 1
+  priority: 16
+  prototypeId: PlushieFelSci
+
+- type: sponsorShopListing
+  id: SponsorShopPlush57
+  name: плюшевый мародер
+  description: Смотря на эту плюшку, видно тонны робаста. Данная персона сотворить многое... как минимум взорваться от своей же чайна-лейк!
+  cost: 1
+  priority: 16
+  prototypeId: PlushieNukeMar
+
+- type: sponsorShopListing
+  id: SponsorShopPlush58
+  name: плюшевый командир нюкеров
+  description: Его плюшевая мания величия сильнее, чем у ГСБ! Так и хочется его зотискать.
+  cost: 1
+  priority: 16
+  prototypeId: PlushieNukeCom
+
+- type: sponsorShopListing
+  id: SponsorShopPlush59
+  name: плюшевый медик нюкеров
+  description: Пушистый и мягкий как облачко! Однако, кажется, что эта плюшка пропитана кислотой?... Её явно не стоит нюхать...
+  cost: 1
+  priority: 16
+  prototypeId: PlushieNukeMed
+
+- type: sponsorShopListing
+  id: SponsorShopPlush60
+  name: плюшевый джаггернаут
+  description: Всматриваясь в эту перекаченную пухом плюшку, вы ощущаете, что она уже готовится взять два пулемёта со словами "Я ГРАЖДАНСКИЙ! Я ГРАЖДАНСКИЙ!"...
+  cost: 1
+  priority: 16
+  prototypeId: PlushieNukeJagg
+
+- type: sponsorShopListing
+  id: SponsorShopPlush61
+  name: плюшевый инквизитор
+  description: Этот мягкий садист-инквизитор против ваших еретических мыслей!!! На этикетке заметна красная надпись "Теперь на 93% из взрывчатки". Кажется оно тикает...
+  cost: 1
+  priority: 16
+  prototypeId: PlushieInquizitor
+
+- type: sponsorShopListing
+  id: SponsorShopPlush62
+  name: плюшевый диверсант
+  description: Ему точно можно доверить диск Ядерной Аутентификации...
+  cost: 1
+  priority: 16
+  prototypeId: PlushieDivers
+
+- type: sponsorShopListing
+  id: SponsorShopPlush63
+  name: плюшевый научный руководитель
+  description: Плюшевый научный руководитель, постоянно ходит как обкуренный, выглядит сонным.
+  cost: 1
+  priority: 16
+  prototypeId: PlushieRD
+
+- type: sponsorShopListing
+  id: SponsorShopPlush64
+  name: плюшевый учёный
+  description: Плюшевая игрушка учёного, выглядит мило, но кажется он не менее уставший чем научный руководитель.
+  cost: 1
+  priority: 16
+  prototypeId: PlushieScientist
+
+- type: sponsorShopListing
+  id: SponsorShopPlush65
+  name: плюшевая библиотекарша
+  description: Тихая и скромная игрушка. Идеально подходит для библиотеки.
+  cost: 1
+  priority: 16
+  prototypeId: PlushieGirl
+
+- type: sponsorShopListing
+  id: SponsorShopPlush66
+  name: Владыка Теней
+  description: Плюшевая игрушка сшитая из дорогих материалов и частицы тьмы. Идеален для объятий и подрывов государств.
+  cost: 1
+  priority: 16
+  prototypeId: PlushieShadowLord
+
+- type: sponsorShopListing
+  id: SponsorShopPlush67
+  name: Плюшевый агент
+  description: Плюшевая игрушка, агент синдиката.
+  cost: 1
+  priority: 16
+  prototypeId: PlushieWisdom
+
+- type: sponsorShopListing
+  id: SponsorShopPlush68
+  name: Плюшевая катунианка
+  description: Плюшевая игрушка, катунианка.
+  cost: 1
+  priority: 16
+  prototypeId: PlushieMalanisa
+
+- type: sponsorShopListing
+  id: SponsorShopPlush69
+  name: Плюшевая вульпа
+  description: Плюшевая игрушка, вульпа.
+  cost: 1
+  priority: 16
+  prototypeId: PlushieVulpa
+
+- type: sponsorShopListing
+  id: SponsorShopPlush70
+  name: Плюшевый человек
+  description: Плюшевая игрушка, человек.
+  cost: 1
+  priority: 16
+  prototypeId: PlushieChel
+
+# region Игры и инструменты
+
+- type: sponsorShopListing
+  id: SponsorShopGame1
+  name: коробка минифигурок Загадочные космонавты
+  description: Коробка, содержащая загадочную минифигурку. На боковой стороне коробки изображены несколько затемнённых "редких" фигурок, в том числе одна с большим негуманоидным силуэтом.
+  cost: 1
+  priority: 17
+  state: fig_box
+  prototypeId: MysteryFigureBox
+
+- type: sponsorShopListing
+  id: SponsorShopGame2
+  name: коробка для мелков
+  description: Это коробка с мелками.
+  cost: 1
+  priority: 17
+  state: box
+  prototypeId: CrayonBox
+
+- type: sponsorShopListing
+  id: SponsorShopGame3
+  name: подарок
+  description: Маленькая коробка с невероятными сюпризами внутри.
+  cost: 1
+  priority: 17
+  state: present
+  prototypeId: PresentRandom
+
+- type: sponsorShopListing
+  id: SponsorShopInstrument1
+  name: коллекция музыкальных инструментов
+  description: Развеселите и расшевелите станцию с этим универсальным набором инструментов! Содержит семь музыкальных инструментов.
+  cost: 2
+  priority: 17
+  prototypeId: CrateFunInstrumentsVariety
+
+- type: sponsorShopListing
+  id: SponsorShopInstrument2
+  name: ящик духовых музыкальных инструментов
+  description: Поддайте джаза в жизнь станции с набором духовых инструментов. Содержит разнообразные духовые инструменты, на которых может играть вся станция.
+  cost: 2
+  priority: 17
+  prototypeId: CrateFunInstrumentsBrass
+
+- type: sponsorShopListing
+  id: SponsorShopInstrument3
+  name: ящик струнных музыкальных инструментов
+  description: Щипать или перебирать, шлепать или рвать! Играйте плавную мелодию или растопите сердца людей этим набором струнных инструментов.
+  cost: 2
+  priority: 17
+  prototypeId: CrateFunInstrumentsString
+
+- type: sponsorShopListing
+  id: SponsorShopInstrument4
+  name: ящик деревянных духовых музыкальных инструментов
+  description: Если атмос хорошо справляется со своей работой, используйте воздух для воспроизведения музыки с помощью этих деревянных духовых инструментов! Для каждого инструмента не гарантируется настоящее дерево.
+  cost: 2
+  priority: 17
+  prototypeId: CrateFunInstrumentsWoodwind
+
+- type: sponsorShopListing
+  id: SponsorShopInstrument5
+  name: ящик клавишных/ударных музыкальных инструментов
+  description: Бейте по инструментам палочками или руками с помощью этого ящика клавишных и ударных инструментов.
+  cost: 2
+  priority: 17
+  prototypeId: CrateFunInstrumentsKeyedPercussion
+
+- type: sponsorShopListing
+  id: SponsorShopInstrument6
+  name: ящик коллекции специальных музыкальных инструментов
+  description: Создайте немного шума с помощью этой специальной коллекции сомнительных инструментов! ЦентКом не несет ответственности за любые травмы, вызванные содержимым.
+  cost: 2
+  priority: 17
+  prototypeId: CrateFunInstrumentsSpecial
+
+# region Цветы
+
+- type: sponsorShopListing
+  id: SponsorShopVase1
+  name: стеклянная ваза
+  description: Красивая стеклянная ваза, предназначенная для цветов.
+  cost: 1
+  priority: 18
+  prototypeId: DrinkGlassVaseOne
+
+- type: sponsorShopListing
+  id: SponsorShopVase2
+  name: стеклянная ваза
+  description: Красивая стеклянная ваза, предназначенная для цветов.
+  cost: 1
+  priority: 18
+  prototypeId: DrinkGlassVaseTwo
+
+- type: sponsorShopListing
+  id: SponsorShopFlower1
+  name: желтая гвоздика
+  description: Просто красивый цветок. Идеален для подарка вашей пассии на свидании.
+  cost: 1
+  priority: 18
+  state: produce
+  prototypeId: FloverClovey
+
+- type: sponsorShopListing
+  id: SponsorShopFlower2
+  name: белая гвоздика
+  description: Просто красивый цветок. Идеален для подарка вашей пассии на свидании.
+  cost: 1
+  priority: 18
+  state: produce
+  prototypeId: FloverClovew
+
+- type: sponsorShopListing
+  id: SponsorShopFlower3
+  name: красная гвоздика
+  description: Просто красивый цветок. Идеален для подарка вашей пассии на свидании.
+  cost: 1
+  priority: 18
+  state: produce
+  prototypeId: FloverClover
+
+- type: sponsorShopListing
+  id: SponsorShopFlower4
+  name: розовая гвоздика
+  description: Просто красивый цветок. Идеален для подарка вашей пассии на свидании.
+  cost: 1
+  priority: 18
+  state: produce
+  prototypeId: FloverClovep
+
+- type: sponsorShopListing
+  id: SponsorShopFlower5
+  name: фиолетовая лилия
+  description: Просто красивый цветок. Идеален для подарка вашей пассии на свидании.
+  cost: 1
+  priority: 18
+  state: produce
+  prototypeId: FloverLilyp
+
+- type: sponsorShopListing
+  id: SponsorShopFlower6
+  name: оранжевая лилия
+  description: Просто красивый цветок. Идеален для подарка вашей пассии на свидании.
+  cost: 1
+  priority: 18
+  state: produce
+  prototypeId: FloverLilyo
+
+- type: sponsorShopListing
+  id: SponsorShopFlower7
+  name: голубая лилия
+  description: Просто красивый цветок. Идеален для подарка вашей пассии на свидании.
+  cost: 1
+  priority: 18
+  state: produce
+  prototypeId: FloverLilyb
+
+- type: sponsorShopListing
+  id: SponsorShopFlower8
+  name: белая роза
+  description: Просто красивый цветок. Идеален для подарка вашей пассии на свидании.
+  cost: 1
+  priority: 18
+  state: produce
+  prototypeId: FloverRosew
+
+- type: sponsorShopListing
+  id: SponsorShopFlower9
+  name: красная роза
+  description: Просто красивый цветок. Идеален для подарка вашей пассии на свидании.
+  cost: 1
+  priority: 18
+  state: produce
+  prototypeId: FloverRoser
+
+- type: sponsorShopListing
+  id: SponsorShopFlower10
+  name: розовая роза
+  description: Просто красивый цветок. Идеален для подарка вашей пассии на свидании.
+  cost: 1
+  priority: 18
+  state: produce
+  prototypeId: FloverRosep
+
+- type: sponsorShopListing
+  id: SponsorShopFlower11
+  name: светло-розовая роза
+  description: Просто красивый цветок. Идеален для подарка вашей пассии на свидании.
+  cost: 1
+  priority: 18
+  state: produce
+  prototypeId: FloverRoselp
+
+- type: sponsorShopListing
+  id: SponsorShopFlower12
+  name: ромашка
+  description: Просто красивый цветок. Идеален для подарка вашей пассии на свидании.
+  cost: 1
+  priority: 18
+  state: produce
+  prototypeId: FloverChamomiler
+
+- type: sponsorShopListing
+  id: SponsorShopFlower13
+  name: василек
+  description: Просто красивый цветок. Идеален для подарка вашей пассии на свидании.
+  cost: 1
+  priority: 18
+  state: produce
+  prototypeId: FloverChamomilev
+
+- type: sponsorShopListing
+  id: SponsorShopFlower14
+  name: светло-розовый тюльпан
+  description: Просто красивый цветок. Идеален для подарка вашей пассии на свидании.
+  cost: 1
+  priority: 18
+  state: produce
+  prototypeId: FloverTuliplp
+
+- type: sponsorShopListing
+  id: SponsorShopFlower15
+  name: розовый тюльпан
+  description: Просто красивый цветок. Идеален для подарка вашей пассии на свидании.
+  cost: 1
+  priority: 18
+  state: produce
+  prototypeId: FloverTulipp
+
+- type: sponsorShopListing
+  id: SponsorShopFlower16
+  name: красный тюльпан
+  description: Просто красивый цветок. Идеален для подарка вашей пассии на свидании.
+  cost: 1
+  priority: 18
+  state: produce
+  prototypeId: FloverTulipr
+
+- type: sponsorShopListing
+  id: SponsorShopFlower17
+  name: красный тюльпан
+  description: Просто красивый цветок. Идеален для подарка вашей пассии на свидании.
+  cost: 1
+  priority: 18
+  state: produce
+  prototypeId: FloverTulipy
+
+# region БРА
+- type: sponsorShopListing
+  id: SponsorShopBra1
+  name: лифчик
+  description: Стандартный лифчик для NanoTrasen для работниц станции. Окрашен в белый цвет.
+  cost: 1
+  priority: 12
+  prototypeId: ClothingUnderwearTopBraWhite
+
+- type: sponsorShopListing
+  id: SponsorShopBra2
+  name: майка
+  description: Обычная белая майка.
+  cost: 1
+  priority: 12
+  prototypeId: ClothingUnderwearTopTShirt
+
+- type: sponsorShopListing
+  id: SponsorShopBra3
+  name: красный кружевной лифчик
+  description: Красное, кружевное и, скорее всего, очень дорогое.
+  cost: 1
+  priority: 12
+  prototypeId: ClothingUnderwearTopBraLaceRed
+
+- type: sponsorShopListing
+  id: SponsorShopBra4
+  name: черный кружевной лифчик
+  description: Черное, кружевное и, скорее всего, очень дорогое.
+  cost: 1
+  priority: 12
+  prototypeId: ClothingUnderwearTopBraLaceBlack
+
+- type: sponsorShopListing
+  id: SponsorShopBra5
+  name: белый комфортный лифчик
+  description: Белое, очень удобное и с розовым бантиком.
+  cost: 1
+  priority: 12
+  prototypeId: ClothingUnderwearTopBraComfyWhite
+
+- type: sponsorShopListing
+  id: SponsorShopBra6
+  name: спортивный лифчик
+  description: Спортивный лифчик белого цвета.
+  cost: 1
+  priority: 12
+  prototypeId: ClothingUnderwearTopBraSports
+
+- type: sponsorShopListing
+  id: SponsorShopBra7
+  name: альтернативный спортивный лифчик
+  description: Спортивный лифчик белого цвета. Альтернативный вариант.
+  cost: 1
+  priority: 12
+  prototypeId: ClothingUnderwearTopBraSportsAlternative
+
+- type: sponsorShopListing
+  id: SponsorShopBra8
+  name: капитанский лифчик
+  description: Стандартный лифчик для капитана станции.
+  cost: 1
+  priority: 12
+  prototypeId: ClothingUnderwearTopBraCap
+
+- type: sponsorShopListing
+  id: SponsorShopBra9
+  name: лифчик инженера
+  description: Стандартный лифчик для инженера.
+  cost: 1
+  priority: 12
+  prototypeId: ClothingUnderwearTopBraCE
+
+- type: sponsorShopListing
+  id: SponsorShopBra10
+  name: лифчик врача
+  description: Стандартный лифчик для врача.
+  cost: 1
+  priority: 12
+  prototypeId: ClothingUnderwearTopBraCMO
+
+- type: sponsorShopListing
+  id: SponsorShopBra11
+  name: лифчик главы персонала
+  description: Стандартный лифчик для главы персонала.
+  cost: 1
+  priority: 12
+  prototypeId: ClothingUnderwearTopBraHOP
+
+- type: sponsorShopListing
+  id: SponsorShopBra12
+  name: лифчик службы безопасности
+  description: Стандартный лифчик для службы безопасности.
+  cost: 1
+  priority: 12
+  prototypeId: ClothingUnderwearTopBraHOS
+
+- type: sponsorShopListing
+  id: SponsorShopBra13
+  name: лифчик квартирмейстера
+  description: Стандартный лифчик для квартирмейстера.
+  cost: 1
+  priority: 12
+  prototypeId: ClothingUnderwearTopBraQM
+
+- type: sponsorShopListing
+  id: SponsorShopBra14
+  name: лифчик ученого
+  description: Стандартный лифчик для ученого.
+  cost: 1
+  priority: 12
+  prototypeId: ClothingUnderwearTopBraRD
+
+- type: sponsorShopListing
+  id: SponsorShopBra15
+  name: кружевной лифчик
+  description: Красивое кружевное нижнее бельё
+  cost: 1
+  priority: 12
+  prototypeId: ClothingUnderwearTopBraLace
+
+- type: sponsorShopListing
+  id: SponsorShopBra16
+  name: спортивный черный топик
+  description: Для любителей спорта и стиля. Производство компании "Modeling Agency Dar-Vaxed".
+  cost: 1
+  priority: 12
+  prototypeId: ClothingUnderwearTopBraSportsBlack
+
+- type: sponsorShopListing
+  id: SponsorShopBra17
+  name: топик в горошек
+  description: Легкая и короткая женская блузка без рукавов. Производство компании "Modeling Agency Dar-Vaxed".
+  cost: 1
+  priority: 12
+  prototypeId: ClothingUnderwearTopBraPea
+
+- type: sponsorShopListing
+  id: SponsorShopBra18
+  name: шелковый лифчик
+  description: Синий, приятный на ощупь лифчик, сделанный из чистого шелка по эскизам семьи Ноло.
+  cost: 1
+  priority: 12
+  prototypeId: ClothingUnderwearTopBraLaceBlueAlternative
+
+- type: sponsorShopListing
+  id: SponsorShopBra19
+  name: шелковый лифчик
+  description: Красный, приятный на ощупь лифчик, сделанный из чистого шелка по эскизам семьи Ноло.
+  cost: 1
+  priority: 12
+  prototypeId: ClothingUnderwearTopBraLaceRedAlternative
+
+- type: sponsorShopListing
+  id: SponsorShopBra20
+  name: лифчик офицера "Синего Щита"
+  description: Стандартное белье NanoTrasen для офицеров "Синего Щита" женского пола
+  cost: 1
+  priority: 12
+  prototypeId: ClothingUnderwearTopBraBlueshield
+
+- type: sponsorShopListing
+  id: SponsorShopBra21
+  name: верх белого монокини
+  description: верх монокини, белого цвета
+  cost: 1
+  priority: 12
+  prototypeId: ClothingUnderwearTopMonokiniWhite
+
+- type: sponsorShopListing
+  id: SponsorShopBra22
+  name: верх черного монокини
+  description: верх монокини, черного цвета
+  cost: 1
+  priority: 12
+  prototypeId: ClothingUnderwearTopMonokiniBlack
+
+- type: sponsorShopListing
+  id: SponsorShopBra23
+  name: коровий лифчик
+  description: Милый коровий лифчик. Му-у-у!
+  cost: 1
+  priority: 12
+  prototypeId: ClothingUnderwearTopBraCow
+
+# region ТРУСИКИ
+- type: sponsorShopListing
+  id: SponsorShopPanties1
+  name: трусики
+  description: Стандартное белье NanoTrasen для работниц станции. Окрашены в белый цвет.
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomPantiesWhite
+
+- type: sponsorShopListing
+  id: SponsorShopPanties2
+  name: трусы
+  description: Стандартное белье NanoTrasen для работников станции. Окрашены в белый цвет.
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomBoxersWhite
+
+- type: sponsorShopListing
+  id: SponsorShopPanties3
+  name: трусы капитана
+  description: Стандартное белье для капитана станции.
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomBoxersCap
+
+- type: sponsorShopListing
+  id: SponsorShopPanties4
+  name: трусики капитана
+  description: Стандартное белье для капитана станции.
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomPantiesCap
+
+- type: sponsorShopListing
+  id: SponsorShopPanties5
+  name: трусы инженера
+  description: Стандартное белье для инженера.
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomBoxersCE
+
+- type: sponsorShopListing
+  id: SponsorShopPanties6
+  name: трусики инженера
+  description: Стандартное белье для инженера.
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomPantiesCE
+
+- type: sponsorShopListing
+  id: SponsorShopPanties7
+  name: трусы врача
+  description: Стандартное белье для врача.
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomBoxersCMO
+
+- type: sponsorShopListing
+  id: SponsorShopPanties8
+  name: трусики врача
+  description: Стандартное белье для врача.
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomPantiesCMO
+
+- type: sponsorShopListing
+  id: SponsorShopPanties9
+  name: трусы главы персонала
+  description: Стандартное белье для главы персонала.
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomBoxersHOP
+
+- type: sponsorShopListing
+  id: SponsorShopPanties10
+  name: трусики главы персонала
+  description: Стандартное белье для главы персонала.
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomPantiesHOP
+
+- type: sponsorShopListing
+  id: SponsorShopPanties11
+  name: трусы службы безопасности
+  description: Стандартное белье для службы безопасности.
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomBoxersHOS
+
+- type: sponsorShopListing
+  id: SponsorShopPanties12
+  name: трусики службы безопасности
+  description: Стандартное белье для службы безопасности.
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomPantiesHOS
+
+- type: sponsorShopListing
+  id: SponsorShopPanties13
+  name: трусы квартирмейстера
+  description: Стандартное белье для квартирмейстера.
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomBoxersQM
+
+- type: sponsorShopListing
+  id: SponsorShopPanties14
+  name: трусики квартирмейстера
+  description: Стандартное белье для квартирмейстера.
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomPantiesQM
+
+- type: sponsorShopListing
+  id: SponsorShopPanties15
+  name: трусы ученого
+  description: Стандартное белье для ученого.
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomBoxersRD
+
+- type: sponsorShopListing
+  id: SponsorShopPanties16
+  name: трусики ученого
+  description: Стандартное белье для ученого.
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomPantiesRD
+
+- type: sponsorShopListing
+  id: SponsorShopPanties17
+  name: трусы "Америка"
+  description: От них веет свободой..
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomBoxersAmerica
+
+- type: sponsorShopListing
+  id: SponsorShopPanties18
+  name: трусы с монстром
+  description: От них веет свободой..
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomBoxersBoom
+
+- type: sponsorShopListing
+  id: SponsorShopPanties19
+  name: брифы
+  description: От них веет свободой..
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomBriefsWhite
+
+- type: sponsorShopListing
+  id: SponsorShopPanties20
+  name: брифы "Моль"
+  description: От них веет свободой..
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomBriefsMoth
+
+- type: sponsorShopListing
+  id: SponsorShopPanties21
+  name: кружевные трусики
+  description: Красивое кружевное нижнее бельё.
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomPantiesLace
+
+- type: sponsorShopListing
+  id: SponsorShopPanties22
+  name: рождественские трусики
+  description: Достаточно своеобразное рождественское бельё...
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomPantiesChristmas
+
+- type: sponsorShopListing
+  id: SponsorShopPanties23
+  name: красные кружевные трусики
+  description: Красные, кружевные и, скорее всего, очень дорогие.
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomPantiesLaceRed
+
+- type: sponsorShopListing
+  id: SponsorShopPanties24
+  name: черные кружевные трусики
+  description: Черные, кружевные и, скорее всего, очень дорогие.
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomPantiesLaceBlack
+
+- type: sponsorShopListing
+  id: SponsorShopPanties25
+  name: белые комфортные трусики
+  description: Белые, очень удобные и с розовым бантиком.
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomPantiesComfyWhite
+
+- type: sponsorShopListing
+  id: SponsorShopPanties26
+  name: шелковые трусики
+  description: Синие, приятные на ощупь трусы, сделанные из чистого шелка по эскизам семьи Ноло.
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomPantiesLaceBlueAlternative
+
+- type: sponsorShopListing
+  id: SponsorShopPanties27
+  name: шелковые трусики
+  description: Красные, приятные на ощупь трусы, сделанные из чистого шелка по эскизам семьи Ноло.
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomPantiesLaceRedAlternative
+
+- type: sponsorShopListing
+  id: SponsorShopPanties28
+  name: трусы офицера "Синего Щита"
+  description: Стандартное белье NanoTrasen для офицеров "Синего Щита"
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomBoxersBlueshield
+
+- type: sponsorShopListing
+  id: SponsorShopPanties29
+  name: трусики офицера "Синего Щита"
+  description: Стандартное белье NanoTrasen для офицеров "Синего Щита" женского пола
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomPantiesBlueshield
+
+- type: sponsorShopListing
+  id: SponsorShopPanties30
+  name: низ черного монокини
+  description: низ монокини, черного цвета
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomMonokiniBlack
+
+- type: sponsorShopListing
+  id: SponsorShopPanties31
+  name: низ белого монокини
+  description: низ монокини, белого цвета
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomMonokiniWhite
+
+- type: sponsorShopListing
+  id: SponsorShopPanties32
+  name: коровьи трусики
+  description: Милые коровьи трусики. Му-у-у!
+  cost: 1
+  priority: 13
+  prototypeId: ClothingUnderwearBottomPantiesCow
+
+# region ЧУЛКИ И НОСКИ
+- type: sponsorShopListing
+  id: SponsorShopSocks1
+  name: носки
+  description: Стандартные белые носки NanoTrasen для рабочих станции.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksNormal
+
+- type: sponsorShopListing
+  id: SponsorShopSocks2
+  name: красные чулки
+  description: Красные кружевные чулки. Не для обычной смены.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksStockingsRed
+
+- type: sponsorShopListing
+  id: SponsorShopSocks3
+  name: темные чулки
+  description: Черные кружевные чулки. Не для обычной смены.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksStockingsBlack
+
+- type: sponsorShopListing
+  id: SponsorShopSocks4
+  name: белые чулки
+  description: Белые кружевные чулки. С розовым бантиком.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksStockingsWhite
+
+- type: sponsorShopListing
+  id: SponsorShopSocks5
+  name: высокие носки
+  description: Высокие белые носки NanoTrasen для рабочих станции.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksHigh
+
+- type: sponsorShopListing
+  id: SponsorShopSocks6
+  name: короткие носки
+  description: Короткие белые носки NanoTrasen для рабочих станции.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksShort
+
+- type: sponsorShopListing
+  id: SponsorShopSocks7
+  name: высокие чулки
+  description: Стандартные белые чулки NanoTrasen для рабочих станции.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksThigh
+
+- type: sponsorShopListing
+  id: SponsorShopSocks8
+  name: кружевные чулки
+  description: Красивые кружевные чулки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksLaceThigh
+
+- type: sponsorShopListing
+  id: SponsorShopSocks9
+  name: носки с кроликами
+  description: Теплый и необычные носочки в виде кроликов.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksRabbit
+
+- type: sponsorShopListing
+  id: SponsorShopSocks10
+  name: носочки с пчёлами
+  description: Заставь их загудеть от волнения.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksBee
+
+- type: sponsorShopListing
+  id: SponsorShopSocks11
+  name: носки офицера "Синего Щита"
+  description: Тёплые носочки Для самого лучшего защитника.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksBlueshield
+
+- type: sponsorShopListing
+  id: SponsorShopSocks12
+  name: чулки офицера "Синего Щита"
+  description: Тёплые чулочки Для самой лучшей защитницы.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksStockingsBlueshield
+
+- type: sponsorShopListing
+  id: SponsorShopSocks13
+  name: синие носки
+  description: Комфортные синие носочки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksComfyBlue
+
+- type: sponsorShopListing
+  id: SponsorShopSocks14
+  name: серые носки
+  description: Комфортные серые носочки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksComfyGrey
+
+- type: sponsorShopListing
+  id: SponsorShopSocks15
+  name: красные носки
+  description: Комфортные красные носочки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksComfyRed
+
+- type: sponsorShopListing
+  id: SponsorShopSocks16
+  name: фиолетовые носки
+  description: Комфортные фиолетовые носочки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksComfyViolet
+
+- type: sponsorShopListing
+  id: SponsorShopSocks17
+  name: синие чулки
+  description: Комфортные синие чулочки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksKneeComfyBlue
+
+- type: sponsorShopListing
+  id: SponsorShopSocks18
+  name: серые чулки
+  description: Комфортные серые чулочки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksKneeComfyGrey
+
+- type: sponsorShopListing
+  id: SponsorShopSocks19
+  name: красные чулки
+  description: Комфортные красные чулочки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksKneeComfyRed
+
+- type: sponsorShopListing
+  id: SponsorShopSocks20
+  name: фиолетовые чулки
+  description: Комфортные фиолетовые чулочки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksKneeComfyViolet
+
+- type: sponsorShopListing
+  id: SponsorShopSocks21
+  name: лазурные носки
+  description: Обычные лазурные носки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksAzure
+
+- type: sponsorShopListing
+  id: SponsorShopSocks22
+  name: лазурные гольфы
+  description: Обычные лазурные гольфы.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksKneeAzure
+
+- type: sponsorShopListing
+  id: SponsorShopSocks23
+  name: лазурные чулки
+  description: Обычные лазурные чулки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksThighAzure
+
+- type: sponsorShopListing
+  id: SponsorShopSocks24
+  name: чёрные носки
+  description: Обычные чёрные носки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksBlack
+
+- type: sponsorShopListing
+  id: SponsorShopSocks25
+  name: чёрные гольфы
+  description: Обычные чёрные гольфы.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksKneeBlack
+
+- type: sponsorShopListing
+  id: SponsorShopSocks26
+  name: чёрные чулки
+  description: Обычные чёрные чулки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksThighBlack
+
+- type: sponsorShopListing
+  id: SponsorShopSocks27
+  name: капитанские носки
+  description: Носки для капитанов станций НТ.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksCaptain
+
+- type: sponsorShopListing
+  id: SponsorShopSocks28
+  name: капитанские гольфы
+  description: Гольфы для капитанов станций НТ.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksKneeCaptain
+
+- type: sponsorShopListing
+  id: SponsorShopSocks29
+  name: капитанские чулки
+  description: Чулки для капитанов станций НТ.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksThighCaptain
+
+- type: sponsorShopListing
+  id: SponsorShopSocks30
+  name: носки представителей ЦентКом
+  description: Носки для представителей ЦК.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksCentcom
+
+- type: sponsorShopListing
+  id: SponsorShopSocks31
+  name: гольфы представителей ЦентКом
+  description: Гольфы для представителей ЦК.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksKneeCentcom
+
+- type: sponsorShopListing
+  id: SponsorShopSocks32
+  name: чулки представителей ЦентКом
+  description: Чулки для представителей ЦК. Да... Даже некоторые из них носят чулки...
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksThighCentcom
+
+- type: sponsorShopListing
+  id: SponsorShopSocks33
+  name: голубые носки
+  description: Обычные голубые носки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksCyan
+
+- type: sponsorShopListing
+  id: SponsorShopSocks34
+  name: голубые гольфы
+  description: Обычные голубые гольфы.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksKneeCyan
+
+- type: sponsorShopListing
+  id: SponsorShopSocks35
+  name: голубые чулки
+  description: Обычные голубые чулки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksThighCyan
+
+- type: sponsorShopListing
+  id: SponsorShopSocks36
+  name: пушистые носки
+  description: Обычные пушистые носки. Очень тёплые.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksFurr
+
+- type: sponsorShopListing
+  id: SponsorShopSocks37
+  name: пушистые гольфы
+  description: Обычные пушистые гольфы. Очень тёплые.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksKneeFurr
+
+- type: sponsorShopListing
+  id: SponsorShopSocks38
+  name: пушистые чулки
+  description: Обычные пушистые чулки. Очень тёплые.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksThighFurr
+
+- type: sponsorShopListing
+  id: SponsorShopSocks39
+  name: сетчатые гольфы
+  description: Обычные сетчатые гольфы. Вы точно хотите надеть их?..
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksKneeFishnet
+
+- type: sponsorShopListing
+  id: SponsorShopSocks40
+  name: сетчатые чулки
+  description: Обычные сетчатые чулки. Вы точно хотите надеть их?..
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksThighFishnet
+
+- type: sponsorShopListing
+  id: SponsorShopSocks41
+  name: сетчатые колготки
+  description: Обычные сетчатые колготки. Вы точно хотите надеть их?..
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksFullFishnet
+
+- type: sponsorShopListing
+  id: SponsorShopSocks42
+  name: зелёные носки
+  description: Обычные зелёные носки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksGreen
+
+- type: sponsorShopListing
+  id: SponsorShopSocks43
+  name: зелёные гольфы
+  description: Обычные зелёные гольфы.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksKneeGreen
+
+- type: sponsorShopListing
+  id: SponsorShopSocks44
+  name: зелёные чулки
+  description: Обычные зелёные чулки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksThighGreen
+
+- type: sponsorShopListing
+  id: SponsorShopSocks45
+  name: новогодние гольфы
+  description: Обычные гольфы, что точно подойдут для празднования нового года.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksKneeHolyday
+
+- type: sponsorShopListing
+  id: SponsorShopSocks46
+  name: зелённые чулки
+  description: Обычные чулки, что точно подойдут для празднования нового года.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksThighHolyday
+
+- type: sponsorShopListing
+  id: SponsorShopSocks47
+  name: серые чулки
+  description: Обычные серые чулки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksThighGrey
+
+- type: sponsorShopListing
+  id: SponsorShopSocks48
+  name: носки патриота
+  description: Обычные... Патриотичные?.. носки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksHomelander
+
+- type: sponsorShopListing
+  id: SponsorShopSocks49
+  name: гольфы патриота
+  description: Обычные... Патриотичные?.. Гольфы.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksKneeHomelander
+
+- type: sponsorShopListing
+  id: SponsorShopSocks50
+  name: чулки патриота
+  description: Обычные... Патриотичные?.. Чулки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksThighHomelander
+
+- type: sponsorShopListing
+  id: SponsorShopSocks51
+  name: носки Главы Персонала
+  description: Обычные носки для Глав Персонала станций НТ.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksHop
+
+- type: sponsorShopListing
+  id: SponsorShopSocks52
+  name: гольфы Главы Персонала
+  description: Обычные гольфы для Глав Персонала станций НТ.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksKneeHop
+
+- type: sponsorShopListing
+  id: SponsorShopSocks53
+  name: чулки Главы Персонала
+  description: Обычные чулки для Глав Персонала станций НТ.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksThighHop
+
+- type: sponsorShopListing
+  id: SponsorShopSocks54
+  name: носки Главы Службы Безопасности
+  description: Обычные носки для Глав Службы Безопасности станций НТ.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksHos
+
+- type: sponsorShopListing
+  id: SponsorShopSocks55
+  name: гольфы Главы Службы Безопасности
+  description: Обычные гольфы для Глав Службы Безопасности станций НТ.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksKneeHos
+
+- type: sponsorShopListing
+  id: SponsorShopSocks56
+  name: чулки Главы Службы Безопасности
+  description: Обычные чулки для Глав Службы Безопасности станций НТ.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksThighHos
+
+- type: sponsorShopListing
+  id: SponsorShopSocks57
+  name: ярко-розовые носки
+  description: Обычные ярко-розовые носки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksHotpink
+
+- type: sponsorShopListing
+  id: SponsorShopSocks58
+  name: ярко-розовые гольфы
+  description: Обычные ярко-розовые гольфы.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksKneeHotpink
+
+- type: sponsorShopListing
+  id: SponsorShopSocks59
+  name: ярко-розовые чулки
+  description: Обычные ярко-розовые чулки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksThighHotpink
+
+- type: sponsorShopListing
+  id: SponsorShopSocks60
+  name: оранжевые носки
+  description: Обычные оранжевые носки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksOrange
+
+- type: sponsorShopListing
+  id: SponsorShopSocks61
+  name: оранжевые гольфы
+  description: Обычные оранжевые гольфы.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksKneeOrange
+
+- type: sponsorShopListing
+  id: SponsorShopSocks62
+  name: оранжевые чулки
+  description: Обычные оранжевые чулки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksThighOrange
+
+- type: sponsorShopListing
+  id: SponsorShopSocks63
+  name: монохромные чулки
+  description: Обычные монохромные чулки. Для самых молчаливых.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksThighMonochrome
+
+- type: sponsorShopListing
+  id: SponsorShopSocks64
+  name: зелёные носки синдиката
+  description: Чёрная полоса... И зеленая... Прочные и надёжные носки синдиката.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksSyndieGreen
+
+- type: sponsorShopListing
+  id: SponsorShopSocks65
+  name: зелёные гольфы синдиката
+  description: Чёрная полоса... И зеленая... Прочные и надёжные гольфы синдиката.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksKneeSyndieGreen
+
+- type: sponsorShopListing
+  id: SponsorShopSocks66
+  name: зелёные чулки синдиката
+  description: Чёрная полоса... И зеленая... Прочные и надёжные чулки синдиката.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksThighSyndieGreen
+
+- type: sponsorShopListing
+  id: SponsorShopSocks67
+  name: красные носки синдиката
+  description: Чёрная полоса... И красная... Прочные и надёжные носки синдиката.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksSyndieRed
+
+- type: sponsorShopListing
+  id: SponsorShopSocks68
+  name: красные гольфы синдиката
+  description: Чёрная полоса... И красная... Прочные и надёжные гольфы синдиката.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksKneeSyndieRed
+
+- type: sponsorShopListing
+  id: SponsorShopSocks69
+  name: красные чулки синдиката
+  description: Чёрная полоса... И красная... Прочные и надёжные чулки синдиката.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksThighSyndieRed
+
+- type: sponsorShopListing
+  id: SponsorShopSocks70
+  name: жёлтые носки
+  description: Обычные жёлтые носки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksYellow
+
+- type: sponsorShopListing
+  id: SponsorShopSocks71
+  name: жёлтые гольфы
+  description: Обычные жёлтые гольфы.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksKneeYellow
+
+- type: sponsorShopListing
+  id: SponsorShopSocks72
+  name: жёлтые чулки
+  description: Обычные жёлтые чулки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksThighYellow
+
+- type: sponsorShopListing
+  id: SponsorShopSocks73
+  name: розовые носки
+  description: Обычные розовые носки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksPink
+
+- type: sponsorShopListing
+  id: SponsorShopSocks74
+  name: розовые гольфы
+  description: Обычные розовые гольфы.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksKneePink
+
+- type: sponsorShopListing
+  id: SponsorShopSocks75
+  name: радужные гольфы
+  description: Обычные радужные носки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksKneeRainbow
+
+- type: sponsorShopListing
+  id: SponsorShopSocks76
+  name: радужные чулки
+  description: Обычные радужные чулки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksThighRainbow
+
+- type: sponsorShopListing
+  id: SponsorShopSocks77
+  name: синие чулки
+  description: Обычные синие чулки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksThighBlue
+
+- type: sponsorShopListing
+  id: SponsorShopSocks78
+  name: прозрачные носки
+  description: Обычные прозрачные носки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksKneeThin
+
+- type: sponsorShopListing
+  id: SponsorShopSocks79
+  name: прозрачные гольфы
+  description: Обычные прозрачные гольфы.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksThighThin
+
+- type: sponsorShopListing
+  id: SponsorShopSocks80
+  name: прозрачные колготки
+  description: Обычные прозрачные колготки.
+  cost: 1
+  priority: 14
+  prototypeId: ClothingUnderwearSocksThighPantyhose
+
+# region Еда (пропитание)
+- type: sponsorShopListing
+  id: SponsorShopFood1
+  name: коробка пончиков
+  description: Ммм, пончики.
+  cost: 1
+  priority: 1
+  state: box
+  prototypeId: FoodBoxDonut
+
+- type: sponsorShopListing
+  id: SponsorShopFood2
+  name: картонная упаковка яиц
+  description: Не урони!
+  cost: 1
+  priority: 1
+  state: box-closed
+  prototypeId: FoodContainerEgg
+
+- type: sponsorShopListing
+  id: SponsorShopFood3
+  name: куриные наггетсы
+  description: У вас внезапно возникло желание торговать на межгалактическом фондовом рынке.
+  cost: 1
+  priority: 2
+  state: box
+  prototypeId: FoodBoxNugget
+
+- type: sponsorShopListing
+  id: SponsorShopFood4
+  name: коробка донк-покетов
+  description: Разогреть в микроволновой печи. Продукт остынет, если не будет употреблён в течение семи минут.
+  cost: 1
+  priority: 3
+  state: box
+  prototypeId: FoodBoxDonkpocket
+
+- type: sponsorShopListing
+  id: SponsorShopFood5
+  name: коробка острых донк-покетов
+  description: Разогреть в микроволновой печи. Продукт остынет, если не будет употреблён в течение семи минут.
+  cost: 1
+  priority: 3
+  state: spicy-box
+  prototypeId: FoodBoxDonkpocketSpicy
+
+- type: sponsorShopListing
+  id: SponsorShopFood6
+  name: коробка донк-покетов со вкусом терияки
+  description: Разогреть в микроволновой печи. Продукт остынет, если не будет употреблён в течение семи минут.
+  cost: 1
+  priority: 3
+  state: teriyaki-box
+  prototypeId: FoodBoxDonkpocketTeriyaki
+
+- type: sponsorShopListing
+  id: SponsorShopFood7
+  name: коробка донк-покетов со вкусом пиццы
+  description: Разогреть в микроволновой печи. Продукт остынет, если не будет употреблён в течение семи минут.
+  cost: 1
+  priority: 3
+  state: pizza-box
+  prototypeId: FoodBoxDonkpocketPizza
+
+- type: sponsorShopListing
+  id: SponsorShopFood8
+  name: коробка с ограниченным тиражом стонк-покетов
+  description: Разогреть в микроволновой печи. Продукт остынет, если не будет употреблён в течение семи минут.
+  cost: 2
+  priority: 2
+  state: stonk-box
+  prototypeId: FoodBoxDonkpocketStonk
+
+- type: sponsorShopListing
+  id: SponsorShopFood9
+  name: коробка карп-покетов
+  description: Разогреть в микроволновой печи. Продукт остынет, если не будет употреблён в течение семи минут.
+  cost: 1
+  priority: 3
+  state: carp-box
+  prototypeId: FoodBoxDonkpocketCarp
+
+- type: sponsorShopListing
+  id: SponsorShopFood10
+  name: коробка донк-покетов со вкусом ягод
+  description: Разогреть в микроволновой печи. Продукт остынет, если не будет употреблён в течение семи минут.
+  cost: 1
+  priority: 3
+  state: berry-box
+  prototypeId: FoodBoxDonkpocketBerry
+
+- type: sponsorShopListing
+  id: SponsorShopFood11
+  name: коробка донк-покетов со вкусом банана
+  description: Разогреть в микроволновой печи. Продукт остынет, если не будет употреблён в течение семи минут.
+  cost: 1
+  priority: 3
+  state: banana-box
+  prototypeId: FoodBoxDonkpocketHonk
+
+- type: sponsorShopListing
+  id: SponsorShopFood12
+  name: коробка динк-покетов
+  description: Ноль углеводов! Нет необходимости в разогреве!
+  cost: 1
+  priority: 2
+  state: dink-box
+  prototypeId: FoodBoxDonkpocketDink
+
+- type: sponsorShopListing
+  id: SponsorShopFood13
+  name: коробка ниан-покетов
+  description: Разогреть в микроволновой печи. Продукт остынет, если не будет употреблён в течение семи минут.
+  cost: 1
+  priority: 3
+  state: moth-box
+  prototypeId: FoodBoxDonkpocketMoth
+
+- type: sponsorShopListing
+  id: SponsorShopFood14
+  name: счастливый хонк
+  description: Игрушка более съедобна, чем еда.
+  cost: 1
+  priority: 1
+  state: box
+  prototypeId: FoodMealHappyHonkClown
+
+- type: sponsorShopListing
+  id: SponsorShopFood15
+  name: счастливый хонк (мимишное издание)
+  description: Ограниченное Мимишное издание еды "Счастливый Хонк".
+  cost: 2
+  priority: 0
+  state: box
+  prototypeId: HappyHonkMime
+
+- type: sponsorShopListing
+  id: SponsorShopFood16
+  name: ядерная еда
+  description: Еда с потенциально взрывоопасным сюрпризом.
+  cost: 2
+  priority: 1
+  state: box
+  prototypeId: HappyHonkNukie
+
+- type: sponsorShopListing
+  id: SponsorShopFood17
+  name: коробка для закусок синдиката
+  description: Еда с потенциально взрывоопасным сюрпризом.
+  cost: 2
+  priority: 1
+  state: box
+  prototypeId: HappyHonkNukieSnacks
+
+- type: sponsorShopListing
+  id: SponsorShopFood18
+  name: убогое блюдо из клаунов
+  description: Ничего хорошего из этого не выйдет.
+  cost: 2
+  priority: 1
+  state: box
+  prototypeId: HappyHonkCluwne
+
+- type: sponsorShopListing
+  id: SponsorShopFood19
+  name: Большой обед "Счастливый Хонк"
+  description: Кто-то заплатил хорошие деньги, чтобы эта еда быстрого приготовления была доставлена таким образом. Как-то она пахнет свежей.
+  cost: 2
+  priority: 1
+  state: box
+  prototypeId: FoodMealHappyHonkBigBite
+
+- type: sponsorShopListing
+  id: SponsorShopFood20
+  name: коробка ткани ФлаттерСофт
+  description: Ткань — самая важная еда ниан за день! Не пропускайте ее и не используйте мусор со дна шкафчика, вместо этого купите высококачественную ткань марки ФлаттерСофт.
+  cost: 1
+  priority: 1
+  state: cloth-box
+  prototypeId: FoodBoxCloth
+
+- type: sponsorShopListing
+  id: SponsorShopFood21
+  name: консервированные персики
+  description: Банка отличных спелых персиков, плавающих в собственном соку.
+  cost: 1
+  priority: 1
+  prototypeId: FoodTinPeaches
+
+- type: sponsorShopListing
+  id: SponsorShopFood22
+  name: консервированная фасоль
+  description: Музыкальный фрукт в не слишком музыкальном контейнере.
+  cost: 1
+  priority: 1
+  prototypeId: FoodTinBeans
+
+- type: sponsorShopListing
+  id: SponsorShopFood23
+  name: мясная консерва
+  description: Стандартное консервированное мясо с удобным кольцом.
+  cost: 1
+  priority: 1
+  prototypeId: FoodTinMRE
+
+# region НАПИТКИ (1 кредит)
+
+- type: sponsorShopListing
+  id: SponsorShopDrink1
+  name: Джейлбрейк Верте
+  description: Всего один глоток этого напитка, и вы сразу понимаете, что хорошо проведете время.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkAbsintheBottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink2
+  name: Кюрасао Мисс Синева
+  description: Фруктовый, удивительно лазурный напиток. Не позволяет выпившему использовать пятую магию.
+  cost: 1
+  priority: 21
+  state: icon_blue
+  prototypeId: DrinkBlueCuracaoBottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink3
+  name: бутылка ничего
+  description: Бутылка, наполненная ничем.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkBottleOfNothingFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink4
+  name: бутылка шампанского
+  description: Только люди, лишённые воображения, не могут найти повод для шампанского.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkChampagneBottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink5
+  name: бутылка коньяка
+  description: Сладкий и крепкий алкогольный напиток, изготовленный путем многократной дистилляции и многолетней выдержки. На этот раз вы можете не кричать "ЩИТКЬЮРИТИ".
+  cost: 1
+  priority: 21
+  prototypeId: DrinkCognacBottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink6
+  name: бутылка космической колы
+  description: Кола в космосе.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkColaBottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink7
+  name: бутылка сиропа гренадин Спящая Красавица
+  description: Сладкий и терпкий, барный сироп, используемый для придания цвета или вкуса напиткам.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkGrenadineBottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink8
+  name: джин Гриффитер
+  description: Бутылка высококачественного джина, производимого на космической станции Нью-Лондон.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkGinBottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink9
+  name: бутылка гилдшлягера
+  description: 50-градусный коричный шнапс, созданный для девочек-подростков на весенних каникулах.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkGildlagerBottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink10
+  name: бутылка кофейного ликёра
+  description: Великолепный вкус кофе без какой-либо пользы.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkCoffeeLiqueurBottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink11
+  name: дынный ликёр Эмеральдин
+  description: Бутылка 23-градусного Дынного ликёра Эмеральдин. Сладкий и легкий.
+  cost: 1
+  priority: 21
+  state: icon_green
+  prototypeId: DrinkMelonLiquorBottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink12
+  name: бутылка покровителя в художественной обёртке
+  description: Текилла с привкусом серебра, которую подают в ночных клубах по всей галактике.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkPatronBottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink13
+  name: бутылка колдовского бархата
+  description: Какая восхитительная упаковка для несомненно высококачественного вина! Урожай, должно быть, потрясающий!
+  cost: 1
+  priority: 21
+  prototypeId: DrinkPoisonWinebottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink14
+  name: Кубинский пряный ром капитана Пита
+  description: Это не просто ром, о нет. Это практически ГРИФФ в бутылке.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkRumBottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink15
+  name: бутылка космического маунтин винда
+  description: Проходит сквозь, словно космический ветер.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkSpaceMountainWindBottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink16
+  name: бутылка спейс-ап
+  description: На вкус как пробоина в корпусе у вас во рту.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkSpaceUpBottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink17
+  name: бутылка текилы Каккаво гарантированного качества
+  description: Изготовлен из премиальных остатков переработки нефти, чистого талидомида и других высококачественных ингредиентов!
+  cost: 1
+  priority: 21
+  prototypeId: DrinkTequilaBottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink18
+  name: бутылка вермута Золотой глаз
+  description: Сладкая, сладкая сухость!
+  cost: 1
+  priority: 21
+  prototypeId: DrinkVermouthBottleFull
+
+# region НАПИТКИ (2 кредита)
+
+- type: sponsorShopListing
+  id: SponsorShopDrink19
+  name: бутылка водки "Момент Ясности"
+  description: Когда мир вокруг рушится, всё, что вам нужно, это "Момент Ясности".
+  cost: 2
+  priority: 21
+  prototypeId: DrinkPremiumVodkaBottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink20
+  name: бутылка джина "Гарри"
+  description: Определенно интересный набор ботанических ингредиентов. Это тыква?
+  cost: 2
+  priority: 21
+  prototypeId: DrinkPremiumGinBottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink21
+  name: бутылка текилы "Casa del Eorg"
+  description: Оставьте лучшее на десерт. "Casa del Eorg" - 100% агавы.
+  cost: 2
+  priority: 21
+  prototypeId: DrinkPremiumTequilaBottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink22
+  name: бутылка виски "Ol' Prowler 18"
+  description: На удивление сладкий вкус, который подкрадывается незаметно.
+  cost: 2
+  priority: 21
+  prototypeId: DrinkPremiumWhiskeyBottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink23
+  name: бутылка рома "Redeemer's Bounty"
+  description: Ну что ж, вы сами попросили. Морская крепость в бутылке.
+  cost: 2
+  priority: 21
+  prototypeId: DrinkPremiumRumBottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink24
+  name: бутылка абсента "Поцелуй Бюрократии"
+  description: Изысканный вкус, который оставляет длительное послевкусие.
+  cost: 2
+  priority: 21
+  prototypeId: DrinkPremiumAbsintheBottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink25
+  name: бутылка воды
+  description: Просто чистая вода неизвестного происхождения. Вы думаете, что и не хотите знать этого.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkWaterBottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink26
+  name: бутылка газированной воды
+  description: Как вода, только злая!
+  cost: 1
+  priority: 21
+  prototypeId: DrinkSodaWaterBottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink27
+  name: бутылка тоника
+  description: Как газированная вода, но, возможно, злее? Зачастую слаще.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkTonicWaterBottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink28
+  name: бутылка саке
+  description: Сожаление о следующем утре, похоже, тоже накладывает свой отпечаток на бутылку.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkSakeBottleFull
+
+- type: sponsorShopListing
+  id: SponsorShopDrink29
+  name: лаймовый сок XL
+  description: Кисло-сладкая вкуснятина.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkJuiceLimeCartonXL
+
+- type: sponsorShopListing
+  id: SponsorShopDrink30
+  name: апельсиновый сок XL
+  description: Полон витаминов и вкусностей!
+  cost: 1
+  priority: 21
+  prototypeId: DrinkJuiceOrangeCartonXL
+
+- type: sponsorShopListing
+  id: SponsorShopDrink31
+  name: молочные сливки XL
+  description: Это сливки. Сделаны из молока. Что еще, по-твоему, ты там найдешь?
+  cost: 1
+  priority: 21
+  prototypeId: DrinkCreamCartonXL
+
+- type: sponsorShopListing
+  id: SponsorShopDrink32
+  name: кувшин сахара
+  description: Некоторые добавляют его в кофе...
+  cost: 1
+  priority: 21
+  prototypeId: DrinkSugarJug
+
+- type: sponsorShopListing
+  id: SponsorShopDrink33
+  name: кувшин лимон-лайма
+  description: Двойное цитрусовое ощущение.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkLemonLimeJug
+
+- type: sponsorShopListing
+  id: SponsorShopDrink34
+  name: кувшин медовухи
+  description: Хранение медовухи в пластиковом кувшине должно быть преступлением.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkMeadJug
+
+- type: sponsorShopListing
+  id: SponsorShopDrink35
+  name: кувшин льда
+  description: Плотная вода. Очень холодная.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkIceJug
+
+- type: sponsorShopListing
+  id: SponsorShopDrink36
+  name: кувшин кокосовой воды
+  description: Любимый напиток попаданцев на необитаемый остров.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkCoconutWaterJug
+
+- type: sponsorShopListing
+  id: SponsorShopDrink37
+  name: кувшин кофе
+  description: Пробуждающий сок, подогретый.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkCoffeeJug
+
+- type: sponsorShopListing
+  id: SponsorShopDrink38
+  name: кувшин чая
+  description: Напиток, предпочитаемый британцами и хипстерами.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkTeaJug
+
+- type: sponsorShopListing
+  id: SponsorShopDrink39
+  name: кувшин зелёного чая
+  description: Это как чай... только зелёный! Отлично успокаивает желудок.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkGreenTeaJug
+
+- type: sponsorShopListing
+  id: SponsorShopDrink40
+  name: кувшин чая со льдом
+  description: Для тех случаев, когда обычный чай слишком горячий для вас.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkIcedTeaJug
+
+- type: sponsorShopListing
+  id: SponsorShopDrink41
+  name: кувшин доктора Гибб
+  description: Ага, я тоже не знаю...
+  cost: 1
+  priority: 21
+  prototypeId: DrinkDrGibbJug
+
+- type: sponsorShopListing
+  id: SponsorShopDrink42
+  name: кувшин рутбира
+  description: Этот напиток заставляет австралийцев хихикать.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkRootBeerJug
+
+- type: sponsorShopListing
+  id: SponsorShopDrink43
+  name: кувшин арбузного сока
+  description: Может содержать остатки семян.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkWaterMelonJuiceJug
+
+- type: sponsorShopListing
+  id: SponsorShopDrink44
+  name: кувшин ред булеана
+  description: Кувшин Ред Булеана, в котором достаточно кофеина, чтобы убить целую станцию.
+  cost: 1
+  priority: 21
+  prototypeId: DrinkEnergyDrinkJug
+
+# region Сигареты (листинги)
+
+- type: sponsorShopListing
+  id: SponsorShopSmoke1
+  name: блок сигарет Spessman's Smokes
+  description: Картонная коробка, содержащая 6 пачек сигарет Spessman's Smokes.
+  cost: 1
+  priority: 22
+  prototypeId: CigCartonGreen
+
+- type: sponsorShopListing
+  id: SponsorShopSmoke2
+  name: блок сигарет DromedaryCo
+  description: Картонная коробка, содержащая 6 пачек сигарет Dromedarycos.
+  cost: 1
+  priority: 22
+  prototypeId: CigCartonRed
+
+- type: sponsorShopListing
+  id: SponsorShopSmoke3
+  name: блок сигарет AcmeCo
+  description: Картонная коробка, содержащая 6 пачек сигарет AcmeCo.
+  cost: 1
+  priority: 22
+  prototypeId: CigCartonBlue
+
+- type: sponsorShopListing
+  id: SponsorShopSmoke4
+  name: блок сигарет Nomads
+  description: Картонная коробка, содержащая 6 пачек сигарет Nomads.
+  cost: 1
+  priority: 22
+  prototypeId: CigCartonBlack
+
+- type: sponsorShopListing
+  id: SponsorShopSmoke5
+  name: пропитанные сигареты Дэна
+  description: Картонная коробка, содержащая 3 пачки пропитанных сигарет Дэна.
+  cost: 1
+  priority: 22
+  prototypeId: CigCartonMixed
+
+- type: sponsorShopListing
+  id: SponsorShopCigar1
+  name: портсигар
+  description: Футляр для хранения сигар, пока вы их не курите.
+  cost: 2
+  priority: 22
+  state: closed
+  prototypeId: CigarCase
+
+- type: sponsorShopListing
+  id: SponsorShopCigar2
+  name: премиум портсигар
+  description: Футляр премиальных Гаванских сигар. С ними вы увидите только головы.
+  cost: 2
+  priority: 22
+  state: closed
+  prototypeId: CigarGoldCase
+
+- type: sponsorShopListing
+  id: SponsorShopCigar3
+  name: премиум портсигар "Генералиссимус №3"
+  description: Тонко выгравировано и помечено "12/40". Пахнет кедром.
+  cost: 2
+  priority: 22
+  state: closed
+  prototypeId: CigarPlatinumCase
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack1
+  name: упакованный автолат
+  description: Упаковка, при помощи которой можно создать автолат.
+  cost: 2
+  priority: 24
+  state: engineering_lathe
+  prototypeId: AutolatheFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack2
+  name: упакованный зарядник энергооружия
+  description: Упаковка, при помощи которой можно зарядник энергооружия.
+  cost: 2
+  priority: 24
+  state: power_charger
+  prototypeId: WeaponCapacitorRechargerFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack3
+  name: упакованная станция зарядки боргов
+  description: Упаковка, при помощи которой можно создать станцию зарядки боргов.
+  cost: 2
+  priority: 24
+  state: power_charger
+  prototypeId: BorgChargerFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack4
+  name: упакованный блюспейс голопад
+  description: Упаковка, при помощи которой можно создать блюспейс голопад.
+  cost: 2
+  priority: 24
+  state: engineering_lathe
+  prototypeId: NFHolopadShipFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack5
+  name: упакованный утилизационный техфаб
+  description: Упаковка, при помощи которой можно создать утилизационный техфаб.
+  cost: 2
+  priority: 24
+  state: supply_lathe
+  prototypeId: SalvageTechfabNFFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack6
+  name: упакованный переработчик руды
+  description: Упаковка, при помощи которой можно создать переработчик руды.
+  cost: 2
+  priority: 24
+  state: supply_lathe
+  prototypeId: OreProcessorFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack7
+  name: упакованный переработчик материалов
+  description: Упаковка, при помощи которой можно создать переработчик материалов.
+  cost: 2
+  priority: 24
+  state: supply_lathe
+  prototypeId: MaterialReclaimerFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack8
+  name: упакованный переработчик лома
+  description: Упаковка, при помощи которой можно создать переработчик лома.
+  cost: 2
+  priority: 24
+  state: supply_lathe
+  prototypeId: ScrapProcessorFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack9
+  name: упакованный PTK-800 "Дематериализатор материи"
+  description: Упаковка, при помощи которой можно создать PTK-800 "Дематериализатор материи"
+  cost: 2
+  priority: 24
+  state: supply_gun
+  prototypeId: ShuttleGunKineticFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack10
+  name: упакованный сервисный техфаб
+  description: Упаковка, при помощи которой можно создать сервисный техфаб.
+  cost: 2
+  priority: 24
+  state: service_lathe
+  prototypeId: ServiceTechFabFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack11
+  name: упакованный резак
+  description: Упаковка, при помощи которой можно создать резательный станок.
+  cost: 2
+  priority: 24
+  state: service_lathe
+  prototypeId: CutterMachineFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack12
+  name: упакованный банкомат
+  description: Упаковка, при помощи которой можно создать банкомат.
+  cost: 2
+  priority: 24
+  state: engineering_lathe
+  prototypeId: ComputerWithdrawBankATMFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack13
+  name: упакованный телевизор
+  description: Упаковка, при помощи которой можно создать телевизор.
+  cost: 2
+  priority: 24
+  state: service_lathe
+  prototypeId: TelevisionFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack14
+  name: упакованный принтер униформы
+  description: Упаковка, при помощи которой можно создать принтер униформы.
+  cost: 2
+  priority: 24
+  state: service_lathe
+  prototypeId: UniformPrinterFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack15
+  name: упакованный инженерный техфаб
+  description: Упаковка, при помощи которой можно создать инженерный техфаб.
+  cost: 2
+  priority: 24
+  state: engineering_lathe
+  prototypeId: EngineeringTechFabFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack16
+  name: упакованное хранилище материалов
+  description: Упаковка, при помощи которой можно создать хранилище материалов.
+  cost: 2
+  priority: 24
+  state: engineering_lathe
+  prototypeId: MaterialSiloFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack17
+  name: упакованный Упаковщик 1001
+  description: Упаковка, при помощи которой можно создать Упаковщик 1001.
+  cost: 2
+  priority: 24
+  state: engineering_lathe
+  prototypeId: MachineFlatpackerFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack18
+  name: упакованный фабрикатор экзокостюмов
+  description: Упаковка, при помощи которой можно создатьn фабрикатор экзокостюмов.
+  cost: 2
+  priority: 24
+  state: science_lathe
+  prototypeId: ExosuitFabricatorFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack19
+  name: упакованный принтер схем
+  description: Упаковка, при помощи которой можно создать принтер схем.
+  cost: 2
+  priority: 24
+  state: science_lathe
+  prototypeId: CircuitImprinterFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack20
+  name: упакованный охладитель
+  description: Упаковка, при помощи которой можно создать Охладитель.
+  cost: 2
+  priority: 24
+  state: engineering_lathe
+  prototypeId: GasThermoMachineFreezerFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack21
+  name: упакованный М.И.Н.И.П.А.К.М.А.Н.
+  description: Упаковка, при помощи которой можно создать М.И.Н.И.П.А.К.М.А.Н.
+  cost: 2
+  priority: 24
+  state: power_generator
+  prototypeId: PortableGeneratorJrPacmanFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack22
+  name: упакованный П.А.К.М.А.Н.
+  description: Упаковка, при помощи которой можно создать П.А.К.М.А.Н.
+  cost: 2
+  priority: 24
+  state: power_generator
+  prototypeId: PortableGeneratorPacmanFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack23
+  name: упакованный С.У.П.Е.Р.П.А.К.М.А.Н.
+  description: Упаковка, при помощи которой можно создать С.У.П.Е.Р.П.А.К.М.А.Н.
+  cost: 2
+  priority: 24
+  state: power_generator
+  prototypeId: PortableGeneratorSuperPacmanFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack24
+  name: плоскоблок солнечной батареи
+  description: Упаковка для создания солнечной батареи.
+  cost: 2
+  priority: 24
+  state: solar-assembly-part
+  prototypeId: SolarAssemblyFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack25
+  name: упакованная консоль контроля солнечных батарей
+  description: Упаковка, при помощи которой можно создать консоль контроля солнечных батарей.
+  cost: 2
+  priority: 24
+  state: engineering_lathe
+  prototypeId: ComputerSolarControlFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack26
+  name: упаковка мини-генератора гравитации
+  description: Упаковка, при помощи которой можно создать мини-генератор гравитации.
+  cost: 2
+  priority: 24
+  state: engineering_lathe
+  prototypeId: GravityGeneratorMiniFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack27
+  name: плоскоблок двигателя
+  description: Упаковка для создания двигателя корабля.
+  cost: 2
+  priority: 24
+  state: base
+  prototypeId: ThrusterFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack28
+  name: плоскоблок гироскопа
+  description: Упаковка для создания гироскопа корабля.
+  cost: 2
+  priority: 24
+  state: base
+  prototypeId: GyroscopeFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack29
+  name: упакованный малый гироскоп
+  description: Упаковка, при помощи которой можно создать малый гироскоп.
+  cost: 2
+  priority: 24
+  state: engineering_lathe
+  prototypeId: SmallGyroscopeFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack30
+  name: упакованный малый двигатель
+  description: Упаковка, при помощи которой можно создать малый двигатель.
+  cost: 2
+  priority: 24
+  state: engineering_lathe
+  prototypeId: SmallThrusterFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack31
+  name: плоскоблок обогревателя
+  description: Упаковка для создания космического обогревателя.
+  cost: 2
+  priority: 24
+  state: base
+  prototypeId: SpaceHeaterFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack32
+  name: упакованный воздушный шлюз
+  description: Упаковка, при помощи которой можно создать воздушный шлюз.
+  cost: 2
+  priority: 24
+  state: command_airlock
+  prototypeId: AirlockFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack33
+  name: упакованный стеклянный воздушный шлюз
+  description: Упаковка, при помощи которой можно создать стеклянный воздушный шлюз.
+  cost: 2
+  priority: 24
+  state: command_airlock
+  prototypeId: AirlockGlassFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack34
+  name: упакованный стыковочный шлюз
+  description: Упаковка, при помощи которой можно создать стыковочный шлюз.
+  cost: 2
+  priority: 24
+  state: command_airlock_directional
+  prototypeId: AirlockShuttleFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack35
+  name: упакованный стеклянный стыковочный шлюз
+  description: Упаковка, при помощи которой можно создать стеклянный стыковочный шлюз.
+  cost: 2
+  priority: 24
+  state: command_airlock_directional
+  prototypeId: AirlockGlassShuttleFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack36
+  name: упакованный аналиазатор артефактов
+  description: Упаковка, при помощи которой можно создать анализатор артефактов.
+  cost: 2
+  priority: 24
+  state: science_artifact_analyzer
+  prototypeId: MachineArtifactAnalyzerFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack37
+  name: упакованный сервер НИО
+  description: Упаковка, при помощи которой можно создать сервер НИО
+  cost: 2
+  priority: 24
+  state: science_server
+  prototypeId: ResearchAndDevelopmentServerFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack38
+  name: упакованная литографическая машина
+  description: Упаковка, при помощи которой можно создать литографическую машину.
+  cost: 2
+  priority: 24
+  state: science_lathe
+  prototypeId: BlueprintLithographFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack39
+  name: плоскоблок заземляющего стержня Теслы
+  description: Упаковка для создания заземляющего стержня для защиты от молний.
+  cost: 2
+  priority: 24
+  state: grounding-rod
+  prototypeId: TeslaGroundingRodFlatpack
+
+- type: sponsorShopListing
+  id: SponsorShopFlatpack40
+  name: упакованный медицинский техфаб
+  description: Упаковка, при помощи которой можно создать медицинский техфаб.
+  cost: 2
+  priority: 24
+  state: medical_lathe
+  prototypeId: MedicalTechFabFlatpack
+
+# region Диски
+- type: sponsorShopListing
+  id: SponsorShopDisk1
+  name: диск исследовательских очков (10000)
+  description: Диск для сервера НИО, содержащий 10000 очков.
+  cost: 3
+  priority: 24
+  state: icon
+  prototypeId: ResearchDisk10000
+
+- type: sponsorShopListing
+  id: SponsorShopDisk2
+  name: технологический подарок
+  description: Маленькая коробочка с ценным диском технологий внутри.
+  cost: 7
+  priority: 24
+  state: present
+  prototypeId: PresentTechDisk
+
+- type: sponsorShopListing
+  id: SponsorShopDisk3
+  name: диск-здоровье
+  description: Увеличивает здоровье существа, жертвуя скоростью
+  cost: 5
+  priority: 24
+  state: green
+  prototypeId: CytologyDiskHealthSpeed
+
+- type: sponsorShopListing
+  id: SponsorShopDisk4
+  name: диск-урон
+  description: Увеличивает урон в ближнем бою существа, за счет увеличения метаболизма
+  cost: 5
+  priority: 24
+  state: red
+  prototypeId: CytologyDiskMeleeDamage
+
+- type: sponsorShopListing
+  id: SponsorShopDisk5
+  name: диск-скорость
+  description: Увеличивает скорость передвижения существа, за счет увеличения метаболизма
+  cost: 5
+  priority: 24
+  state: grey
+  prototypeId: CytologyDiskSpeedHunger
+
+- type: sponsorShopListing
+  id: SponsorShopDisk6
+  name: диск технологий [ПКА модули]
+  description: Диск, содержащий технологию модулей для протокинетического вооружения.
+  cost: 15
+  priority: 24
+  state: rndmajordisk
+  prototypeId: TechnologyDiscAdvancedPKAModules
+
+- type: sponsorShopListing
+  id: SponsorShopDisk7
+  name: диск технологий [штурмовые мехи]
+  description: Диск, содержащий технологию производства тяжелого боевого меха Дюранд.
+  cost: 15
+  priority: 24
+  state: rndmajordisk
+  prototypeId: TechnologyDiscDurandTechnology
+
+- type: sponsorShopListing
+  id: SponsorShopDisk8
+  name: диск технологий [экспериментальные мехи]
+  description: Диск, содержащий технологию производства экспериментального меха Фазон.
+  cost: 15
+  priority: 24
+  state: rndmajordisk
+  prototypeId: TechnologyDiscPhazonTechnology
+
+- type: sponsorShopListing
+  id: SponsorShopDisk9
+  name: диск технологий [ботанический ДНК манипулятор]
+  description: Диск, содержащий технологию манипулятора ДНК растений.
+  cost: 15
+  priority: 24
+  state: rndmajordisk
+  prototypeId: TechnologyDiscHydroponicsDNAManip
+
+- type: sponsorShopListing
+  id: SponsorShopDisk10
+  name: диск технологий [подствольные боеприпасы]
+  description: Диск, содержащий технологию производства подствольных боеприпасов.
+  cost: 15
+  priority: 24
+  state: rndmajordisk
+  prototypeId: TechnologyDiscArsenalAmmoModules
+
+- type: sponsorShopListing
+  id: SponsorShopDisk11
+  name: диск технологий [арсенальные боеприпасы]
+  description: Диск, содержащий технологию производства различных боеприпасов.
+  cost: 15
+  priority: 24
+  state: rndmajordisk
+  prototypeId: TechnologyDiscArsenalAmmunition
+
+- type: sponsorShopListing
+  id: SponsorShopDisk12
+  name: диск технологий [универсальный переводчик]
+  description: Диск, содержащий технологию производства универсального переводчика.
+  cost: 15
+  priority: 24
+  state: rndmajordisk
+  prototypeId: TechnologyDiscUniversalTranslator
+
+- type: sponsorShopListing
+  id: SponsorShopDisk13
+  name: диск технологий [боевые киберконечности]
+  description: Диск, содержащий технологию производства боевых киберконечностей.
+  cost: 15
+  priority: 24
+  state: rndmajordisk
+  prototypeId: TechnologyDiscCombatCybernetics
+
+- type: sponsorShopListing
+  id: SponsorShopDisk14
+  name: диск технологий [боевые киборги]
+  description: Диск, содержащий технологию производства боевых киборгов.
+  cost: 15
+  priority: 24
+  state: rndmajordisk
+  prototypeId: TechnologyDiscCombatCyborgs

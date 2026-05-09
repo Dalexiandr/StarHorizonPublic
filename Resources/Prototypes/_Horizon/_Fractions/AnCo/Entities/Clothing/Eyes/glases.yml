@@ -1,0 +1,33 @@
+- type: entity
+  parent: [ClothingEyesBase, ShowSecurityIcons, BaseAnCoContraband]
+  id: ClothingEyesGlassesAnCo
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Eyes/glasseshud.rsi
+  - type: Tag
+    tags: [] # Выносим с ВЛа для хамелеонки
+  - type: Clothing
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Eyes/glasseshud.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+  - type: IdentityBlocker
+    coverage: EYES
+  - type: StaticPrice
+    price: 50000
+
+- type: entity
+  id: ClothingEyesVisionAnCo
+  parent: ClothingEyesVision
+  components:
+  - type: Item
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Eyes/glassesnight.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Eyes/glassesnight.rsi
+  - type: FlashImmunity
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
+  - type: ShowCriminalRecordIcons
+  - type: PNV
+  - type: ShowHealthBars

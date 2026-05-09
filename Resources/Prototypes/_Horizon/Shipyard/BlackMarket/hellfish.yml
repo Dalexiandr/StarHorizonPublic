@@ -1,0 +1,45 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: lnqz1tor
+
+# Информация об сопровождающем
+# GitHub/Gitea: ??? 
+# Discord: helloohello
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: hellfish
+  parent: BaseVessel
+  name: BM Hellfish
+  description: Назван в честь одноименной рыбы за свою скорость и маневренность.
+  price: 27500 # ~25000, наценка верфи 10% = 27500
+  category: Small
+  group: BlackMarket
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/BlackMarket/hellfish.yml
+  class:
+  - Pirate
+  engine:
+  - Uranium
+
+
+- type: gameMap
+  id: hellfish
+  mapName: 'BM Hellfish'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/BlackMarket/hellfish.yml
+  minPlayers: 0
+  stations:
+    hellfish:
+      stationProto: StandardFrontierAntagVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Hellfish {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}
+
+
+
+

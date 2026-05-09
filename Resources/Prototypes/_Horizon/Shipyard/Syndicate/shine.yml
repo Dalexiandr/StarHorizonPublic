@@ -1,0 +1,40 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: amir7036
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: Shine
+  parent: BaseVesselAntag
+  name: Shine
+  description: Придвинутый научный шаттл синдиката.
+  price: 300000
+  category: Medium
+  group: Syndicate
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/Syndicate/shine.yml
+  class:
+  - Syndicate
+  engine:
+  - Bananium
+
+- type: gameMap
+  id: Shine
+  mapName: 'Shine'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/Syndicate/shine.yml
+  minPlayers: 0
+  stations:
+    Shine:
+      stationProto: StandardFrontierAntagVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Shine {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

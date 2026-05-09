@@ -1,0 +1,9 @@
+ent-GrasslandsFaunaSpawner = grasslands fauna spawner
+    .desc = { ent-MarkerBase.desc }
+ent-LavalandFaunaSpawner = lavaland fauna spawner
+    .desc = { ent-MarkerBase.desc }
+ent-IcelandFaunaSpawner = iceland fauna spawner
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobArgocytes = xeno spawner
+    .suffix = AI, Hostile
+    .desc = { ent-MarkerBase.desc }

@@ -1,0 +1,456 @@
+# Экипаж
+- type: expeditionGoal
+  id: BountyBaseballBat
+  specification: Crew
+  randomAmount:
+    min: 4
+    max: 10
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-baseball-bat
+    iconEntity: BaseballBat
+    reward: 4000
+    requiredTag: BaseballBat
+
+- type: expeditionGoal
+  id: BountyBread
+  specification: Crew
+  randomAmount:
+    min: 1
+    max: 5
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-bread
+    iconEntity: FoodBreadPlain
+    reward: 2000
+    requiredTag: Bread
+
+- type: expeditionGoal
+  id: BountyPie
+  specification: Crew
+  randomAmount:
+    min: 1
+    max: 5
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-pie
+    iconEntity: FoodPieApple
+    reward: 3141
+    requiredTag: Pie
+
+- type: expeditionGoal
+  id: BountyPancake
+  specification: Crew
+  randomAmount:
+    min: 6
+    max: 13
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-pancake
+    iconEntity: FoodBakedPancake
+    reward: 10000
+    requiredTag: Pancake
+
+- type: expeditionGoal
+  id: BountyCardboardBox
+  specification: Crew
+  randomAmount:
+    min: 10
+    max: 15
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-cardboard-box
+    iconEntity: BoxCardboard
+    reward: 1500
+    requiredTag: BoxCardboard
+
+- type: expeditionGoal
+  id: BountyCarrot
+  specification: Crew
+  randomAmount:
+    min: 5
+    max: 10
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-carrot
+    iconEntity: FoodCarrot
+    reward: 7500
+    requiredTag: Carrot
+
+- type: expeditionGoal
+  id: BountyCarrotFries
+  specification: Crew
+  randomAmount:
+    min: 3
+    max: 7
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-carrot-fries
+    iconEntity: FoodMealFriesCarrot
+    reward: 7000
+    requiredTag: CarrotFries
+
+- type: expeditionGoal
+  id: BountyCorn
+  specification: Crew
+  randomAmount:
+    min: 5
+    max: 10
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-corn
+    iconEntity: FoodCorn
+    reward: 10000
+    requiredTag: Corn
+
+- type: expeditionGoal
+  id: BountyVegetable
+  specification: Crew
+  randomAmount:
+    min: 4
+    max: 14
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-vegetable
+    iconEntity: FoodOnion
+    reward: 6000
+    requiredTag: Vegetable
+
+- type: expeditionGoal
+  id: BountyLemon
+  specification: Crew
+  randomAmount:
+    min: 5
+    max: 15
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-lemon
+    iconEntity: FoodLemon
+    reward: 10000
+    requiredTag: Lemon
+
+- type: expeditionGoal
+  id: BountyLime
+  specification: Crew
+  randomAmount:
+    min: 4
+    max: 10
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-lime
+    iconEntity: FoodLime
+    reward: 10000
+    requiredTag: Lime
+
+- type: expeditionGoal
+  id: BountyBanana
+  specification: Crew
+  randomAmount:
+    min: 6
+    max: 9
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-banana
+    iconEntity: FoodBanana
+    reward: 6009
+    requiredTag: Banana
+
+- type: expeditionGoal
+  id: BountyFruit
+  specification: Crew
+  randomAmount:
+    min: 10
+    max: 15
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-fruit
+    iconEntity: FoodApple
+    reward: 5000
+    requiredTag: Fruit
+
+- type: expeditionGoal
+  id: BountyBandana
+  specification: Crew
+  randomAmount:
+    min: 5
+    max: 8
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-bandana
+    iconEntity: ClothingHeadBandBlack
+    reward: 4000
+    requiredTag: Bandana
+
+- type: expeditionGoal
+  id: BountyHiVizVest
+  specification: Crew
+  randomAmount:
+    min: 3
+    max: 3
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-hi-viz-vest
+    iconEntity: ClothingOuterVestHazard
+    reward: 3030
+    requiredTag: HiViz
+
+- type: expeditionGoal
+  id: BountyWarmCloth
+  specification: Crew
+  randomAmount:
+    min: 5
+    max: 8
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-warm-cloth
+    iconEntity: ClothingNeckScarfStripedRed
+    reward: 2000
+    requiredTag: Scarf
+
+- type: expeditionGoal
+  id: BountyCottonBol
+  specification: Crew
+  randomAmount:
+    min: 4
+    max: 9
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-cotton-boll
+    iconEntity: CottonBol
+    reward: 8600
+    requiredTag: CottonBoll
+
+- type: expeditionGoal
+  id: BountyFigurine
+  specification: Crew
+  randomAmount:
+    min: 4
+    max: 6
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-figurine
+    iconEntity: ToyFigurineCaptain
+    reward: 8000
+    requiredTag: Figurine
+
+- type: expeditionGoal
+  id: BountyBedsheet
+  specification: Crew
+  randomAmount:
+    min: 4
+    max: 8
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-bedsheet
+    iconEntity: BedsheetBlack
+    reward: 4100
+    requiredTag: Bedsheet
+
+- type: expeditionGoal
+  id: BountyPercussion
+  specification: Crew
+  randomAmount:
+    min: 3
+    max: 4
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-percussion
+    iconEntity: TrumpetInstrument
+    reward: 15000
+    requiredTag: PercussionInstrument
+
+- type: expeditionGoal
+  id: BountyFlower
+  specification: Crew
+  randomAmount:
+    min: 3
+    max: 3
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-flower
+    iconEntity: ClothingHeadHatFlowerWreath
+    reward: 2000
+    requiredTag: Flower
+
+- type: expeditionGoal
+  id: BountySoap
+  specification: Crew
+  randomAmount:
+    min: 3
+    max: 6
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-soap
+    iconEntity: Soap
+    reward: 4000
+    requiredTag: Soap
+
+- type: expeditionGoal
+  id: BountyTrash
+  specification: Crew
+  randomAmount:
+    min: 10
+    max: 20
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-trash
+    iconEntity: TrashBag
+    reward: 500
+    requiredTag: Trash
+
+- type: expeditionGoal
+  id: BountyRing
+  specification: Crew
+  randomAmount:
+    min: 1
+    max: 2
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-ring
+    iconEntity: GoldRingDiamond
+    reward: 12500
+    requiredTag: Ring
+
+- type: expeditionGoal
+  id: BountyBeer
+  specification: Crew
+  randomAmount:
+    min: 3
+    max: 6
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-beer
+    iconEntity: DrinkBeerBottleFull
+    reward: 3100
+    requiredTag: Beer
+
+- type: expeditionGoal
+  id: BountyWine
+  specification: Crew
+  randomAmount:
+    min: 2
+    max: 3
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-wine
+    iconEntity: DrinkWineBottleFull
+    reward: 3000
+    requiredTag: Wine
+
+- type: expeditionGoal
+  id: BountyFood
+  specification: Crew
+  randomAmount:
+    min: 20
+    max: 30
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-food
+    iconEntity: FoodMeat
+    reward: 4000
+    requiredTag: Meat
+
+- type: expeditionGoal
+  id: BountyClownMask
+  specification: Crew
+  randomAmount:
+    min: 1
+    max: 1
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-clown-costume
+    iconEntity: ClothingUniformJumpsuitClown
+    reward: 1700
+    requiredTag: ClownSuit
+
+- type: expeditionGoal
+  id: BountySteak
+  specification: Crew
+  randomAmount:
+    min: 4
+    max: 8
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-steak
+    iconEntity: FoodMeatCooked
+    reward: 3200
+    requiredTag: Steak
+
+- type: expeditionGoal
+  id: BountyChili
+  specification: Crew
+  randomAmount:
+    min: 3
+    max: 6
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-chili
+    iconEntity: FoodSoupChiliHot
+    reward: 5555
+    requiredTag: ChiliBowl
+
+- type: expeditionGoal
+  id: BountySoup
+  specification: Crew
+  randomAmount:
+    min: 3
+    max: 6
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-soup
+    iconEntity: FoodSoupBeet
+    reward: 6000
+    requiredTag: Soup
+
+- type: expeditionGoal
+  id: BountyDonut
+  specification: Crew
+  randomAmount:
+    min: 7
+    max: 10
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-donut
+    iconEntity: FoodDonutPlain
+    reward: 6000
+    requiredTag: Donut
+
+- type: expeditionGoal
+  id: BountyMonkeyCube
+  specification: Crew
+  randomAmount:
+    min: 3
+    max: 5
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-monkey-cube
+    iconEntity: MonkeyCube
+    reward: 2000
+    requiredTag: MonkeyCube
+
+- type: expeditionGoal
+  id: BountyCrayon
+  specification: Crew
+  randomAmount:
+    min: 12
+    max: 24
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-crayon
+    iconEntity: Crayon
+    reward: 4000
+    requiredTag: Crayon
+
+- type: expeditionGoal
+  id: BountyPen
+  specification: Crew
+  randomAmount:
+    min: 5
+    max: 8
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-pen
+    iconEntity: Pen
+    reward: 8000
+    requiredTag: Pen
+
+- type: expeditionGoal
+  id: BountyToolbox
+  specification: Crew
+  randomAmount:
+    min: 3
+    max: 6
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-toolbox
+    iconEntity: ToolboxMechanical
+    reward: 8000
+    requiredTag: Toolbox
+
+- type: expeditionGoal
+  id: BountyLabeler
+  specification: Crew
+  randomAmount:
+    min: 4
+    max: 6
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-labeler
+    iconEntity: HandLabeler
+    reward: 6660
+    requiredTag: HandLabeler
+
+- type: expeditionGoal
+  id: BountyMouse
+  specification: Crew
+  randomAmount:
+    min: 2
+    max: 5
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-mouse
+    iconEntity: MobMouse
+    reward: 2400
+    requiredTag: Mouse

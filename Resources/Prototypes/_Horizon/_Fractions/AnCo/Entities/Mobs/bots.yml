@@ -1,0 +1,358 @@
+- type: entity
+  id: BaseAnCoMob
+  suffix: StarHorizon, AnCo
+  abstract: true
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: NpcFactionMember
+    factions:
+      - HostileUniversally
+  - type: Transform
+  - type: Appearance
+  - type: LagCompensation
+  - type: Clickable
+  - type: Damageable
+    damageContainer: StructuralInorganic
+  - type: InteractionOutline
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 50
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2
+    baseSprintSpeed : 3
+  - type: Sprite
+    noRot: true
+    drawdepth: Mobs
+  - type: MovedByPressure
+  - type: Physics
+    bodyType: KinematicController # Same for all inheritors
+  - type: StatusEffects
+    allowed:
+    - Stutter
+    - Electrocution
+  - type: Pullable
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+  - type: Input
+    context: "human"
+  - type: InputMover
+  - type: MobMover
+  - type: ZombieImmune
+  - type: ProtectedFromStepTriggers
+  - type: CombatMode
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Machines/button.ogg
+  - type: DoAfter
+
+- type: entity
+  id: AnCoDroneDungeon
+  parent: BaseAnCoMob
+  name: защитный бот АнКо
+  description: Бот необходимый для защиты важного оборудования АнКо
+  suffix: StarHorizon, AnCo, Dungeon
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Mobs/bot.rsi
+    state: crab-bot
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 20
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          KazmieSheet1:
+            min: 0
+            max: 1
+          ArdonSheet1:
+            min: 0
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      path: /Audio/Effects/sparks4.ogg
+    damage:
+      types:
+        Blunt: 2
+        Heat: 3
+  - type: StaminaDamageOnHit
+    damage: 25
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+  - type: Item
+    size: Small
+
+
+- type: entity
+  id: AnCoDroneCombatDungeon
+  parent: BaseAnCoMob
+  name: боевой бот АнКо
+  description: Бот с модификацией мантибул и корпуса, предназначен для боевых действий.
+  suffix: StarHorizon, AnCo, Dungeon
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Mobs/bot.rsi
+    state: combat-bot
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      path: /Audio/Effects/sparks4.ogg
+    damage:
+      types:
+        Blunt: 10
+        Heat: 10
+  - type: StaminaDamageOnHit
+    damage: 0
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          KazmieSheet1:
+            min: 1
+            max: 3
+          ArdonSheet1:
+            min: 0
+            max: 3
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+  - type: Item
+    size: Small
+
+- type: entity
+  id: AnCoDroneMineDungeon
+  parent: BaseAnCoMob
+  name: бот бомба АнКо
+  description: Бот с модификацией корпуса с зарядом Ардония, предназначен для боевых действий.
+  suffix: StarHorizon, AnCo, Dungeon
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Mobs/bot.rsi
+    state: mine-bot
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      path: /Audio/Effects/sparks4.ogg
+    damage:
+      types:
+        Blunt: 5
+        Heat: 5
+  - type: StaminaDamageOnHit
+    damage: 10
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          KazmieSheet1:
+            min: 1
+            max: 3
+          ArdonSheet1:
+            min: 0
+            max: 3
+      - !type:TriggerBehavior
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: AnCoExplodes
+    maxIntensity: 5
+    intensitySlope: 3
+    totalIntensity: 40
+    canCreateVacuum: false
+  - type: EmpOnTrigger
+    range: 2
+    energyConsumption: 2700000
+  - type: Item
+    size: Small
+
+- type: entity
+  id: AnCoDrone
+  parent: AnCoDroneDungeon
+  suffix: StarHorizon, AnCo, Mob
+  components:
+  - type: SpawnItemsOnUse
+    items:
+      - id: AnCoDroneOff
+  - type: NpcFactionMember
+    factions:
+     - AnCoSecurBot
+  - type: Item
+    size: Small
+
+- type: entity
+  id: AnCoDroneMine
+  parent: AnCoDroneMineDungeon
+  suffix: StarHorizon, AnCo, Mob
+  components:
+  - type: SpawnItemsOnUse
+    items:
+      - id: AnCoDroneMineOff
+  - type: NpcFactionMember
+    factions:
+     - AnCoSecurBot
+  - type: Item
+    size: Small
+
+- type: entity
+  id: AnCoDroneCombat
+  parent: AnCoDroneCombatDungeon
+  suffix: StarHorizon, AnCo, Mob
+  components:
+  - type: SpawnItemsOnUse
+    items:
+      - id: AnCoDroneCombatOff
+  - type: NpcFactionMember
+    factions:
+     - AnCoSecurBot
+  - type: Item
+    size: Small
+
+# начало отключенные версии
+- type: entity
+  id: AnCoDroneOff
+  name: отключенный защитный бот АнКо
+  suffix: StarHorizon, AnCo, Mob
+  parent: BaseItem
+  components:
+  - type: DeleteOnTrigger
+  - type: OnUseTimerTrigger
+    delay: 3.5
+  - type: SpawnOnTrigger
+    proto: AnCoDrone
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Mobs/bot.rsi
+    state: crab-off
+  - type: Item
+    sprite: _Horizon/_Fractions/AnCo/Mobs/bot.rsi
+    state: crab-off
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Machines/button.ogg
+
+- type: entity
+  id: AnCoDroneCombatOff
+  name: отключенный боевой бот АнКо
+  suffix: StarHorizon, AnCo, Mob
+  parent: BaseItem
+  components:
+  - type: DeleteOnTrigger
+  - type: OnUseTimerTrigger
+    delay: 3.5
+  - type: SpawnOnTrigger
+    proto: AnCoDroneCombat
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Mobs/bot.rsi
+    state: combat-off
+  - type: Item
+    sprite: _Horizon/_Fractions/AnCo/Mobs/bot.rsi
+    state: combat-off
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Machines/button.ogg
+
+- type: entity
+  id: AnCoDroneMineOff
+  name: отключенный бот бомба АнКо
+  suffix: StarHorizon, AnCo, Mob
+  parent: BaseItem
+  components:
+  - type: DeleteOnTrigger
+  - type: OnUseTimerTrigger
+    delay: 3.5
+  - type: SpawnOnTrigger
+    proto: AnCoDroneMine
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Mobs/bot.rsi
+    state: mine-off
+  - type: Item
+    sprite: _Horizon/_Fractions/AnCo/Mobs/bot.rsi
+    state: mine-off
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Machines/button.ogg
+
+# уээээээ разделитель уэээээээ
+
+- type: entity
+  id: AnCoCrab
+  suffix: StarHorizon, AnCo, Mob, Anomaly
+  name: защитный бот АнКо
+  description: Бот необходимый для защиты важного оборудования АнКо
+  parent: [BaseAnCoMob]
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Mobs/bot.rsi
+    state: crab-bot
+  - type: MeleeWeapon
+    hidden: true
+    soundHit:
+      path: /Audio/Effects/sparks4.ogg
+    damage:
+      types:
+        Blunt: 2
+        Heat: 3
+  - type: StaminaDamageOnHit
+    damage: 25
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2
+    baseSprintSpeed : 4
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+  - type: NpcFactionMember
+    factions:
+     - AnCoSecurBot
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 20
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          KazmieSheet1:
+            min: 0
+            max: 1
+          ArdonSheet1:
+            min: 0
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]

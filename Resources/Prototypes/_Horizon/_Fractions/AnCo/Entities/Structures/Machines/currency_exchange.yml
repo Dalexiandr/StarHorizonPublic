@@ -1,0 +1,85 @@
+- type: entity
+  id: AnCoEndiDispanser
+  parent: [ BaseMachinePowered, BaseStructureDisableToolUse, BaseStructureIndestructible, BaseAnCoContraband ]
+  name: валюто обменник АнКо
+  suffix: StarHorizon, AnCo, Structure
+  description: Обменяет ваши жалкие деньги на крутые Енды.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Machines/endimachine.rsi
+    snapCardinals: true
+    layers:
+    - state: base
+    - state: base-unshaded
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+      visible: False
+    - state: disk-unshaded
+      visible: False
+      shader: unshaded
+  - type: Icon
+    sprite: _Horizon/_Fractions/AnCo/Structures/Machines/endimachine.rsi
+    state: icon
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.4,0.25,0.4"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: ApcPowerReceiver
+    powerLoad: 250
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.PowerDeviceVisualLayers.Powered:
+          True: { visible: true }
+          False: { visible: false }
+  - type: AmbientOnPowered
+  - type: AmbientSound
+    volume: -12
+    range: 3
+    sound:
+      path: /Audio/Ambience/Objects/server_fans.ogg
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      disk_slot: !type:ContainerSlot
+  - type: ExtensionCableReceiver
+  - type: ActivatableUI
+    key: enum.CurrencyExchangeUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.CurrencyExchangeUiKey.Key:
+        type: CurrencyExchangeBoundUserInterface
+  - type: ItemSlots
+    slots:
+      disk_slot:
+        name: currency-exchange-slot-disk
+        whitelist:
+          tags:
+            - CryptominerDisk
+  - type: CurrencyExchange
+    baseExchangeRate: 1.0
+    minExchangeRate: 0.5
+    maxExchangeRate: 2.0
+    rateVolatility: 0.05
+    updateInterval: 60
+    commission: 0.05
+  - type: ItemMapper
+    mapLayers:
+      disk-unshaded:
+        minCount: 1
+        whitelist:
+          components:
+          - CryptominerDisk

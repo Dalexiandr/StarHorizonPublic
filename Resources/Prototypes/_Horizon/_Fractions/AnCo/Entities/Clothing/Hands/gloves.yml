@@ -1,0 +1,32 @@
+- type: entity
+  parent: [ClothingHandsGlovesSyntheticBase, BaseAnCoContraband]
+  id: AnCoGlovesIsolate
+  suffix: StarHorizon, AnCo
+  name: продвинутые перчатки АнКо
+  description: Перчатки из волокна Ардония со вшитой защитной пластиной.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Hands/Gloves/glovesisolate.rsi
+  - type: Tag
+    tags: [] # Выносим с ВЛа для хамелеонки
+  - type: Clothing
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Hands/Gloves/glovesisolate.rsi
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: красные переливающиеся
+  - type: StaticPrice
+    price: 5000
+
+- type: entity
+  parent: AnCoGlovesIsolate
+  id: AnCoGloves
+  suffix: StarHorizon, AnCo
+  name: Ардониевые перчатки
+  description: Перчатки из волокна Ардония. Кажется, они тёплые.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Hands/Gloves/gloves.rsi
+  - type: Clothing
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Hands/Gloves/gloves.rsi
+  - type: StaticPrice
+    price: 5000

@@ -1,0 +1,16 @@
+ent-BulletFireBolt = fire bolt
+    .desc = { ent-BaseBulletTrigger.desc }
+ent-BulletMagicBolt = magic bolt
+    .desc = { ent-BaseBulletTrigger.desc }
+ent-BulletBloodCultDarkBolt = blood bolt
+    .desc = { ent-BaseBulletTrigger.desc }
+ent-BulletBloodCultHand = blood hand
+    .desc = { ent-BaseBulletTrigger.desc }
+ent-BulletTRexRoar = t-rex roar
+    .desc = { ent-BaseBullet.desc }
+ent-BulletIceGlobe = ice globe
+    .desc = { ent-BaseBulletTrigger.desc }
+ent-ProjectileIcicleLowDamage = { ent-ProjectileIcicle }
+    .desc = { ent-ProjectileIcicle.desc }
+ent-BulletEldritchHand = eldritch hand
+    .desc = { ent-BaseBullet.desc }

@@ -1,0 +1,43 @@
+# Guns
+
+- type: entity
+  parent: NFBaseBlueprintExpeditionArmory
+  id: NFBlueprintWeaponLaserCannon
+  name: laser cannon blueprint
+  description: A blueprint with a schematic of a laser cannon. It can be inserted into a protolathe or techfab.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - NFWeaponEnergyRifleSniperCannon
+
+- type: entity
+  parent: NFBaseBlueprintExpeditionArmory
+  id: NFBlueprintWeaponXrayCannon
+  name: x-ray cannon blueprint
+  description: A blueprint with a schematic of an x-ray cannon. It can be inserted into a protolathe or techfab.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - NFWeaponEnergyRifleSniperXrayCannon
+
+- type: entity
+  parent: NFBaseBlueprintExpeditionArmory
+  id: NFBlueprintWeaponTemperatureGun
+  name: temperature gun blueprint
+  description: A blueprint with a schematic of a temperature gun. It can be inserted into a protolathe or techfab.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - NFWeaponEnergyRifleTemperature
+
+# Tools
+
+- type: entity
+  parent: NFBaseBlueprintExpeditionSalvage
+  id: NFBlueprintEnergyPickaxe
+  name: holopickaxe blueprint
+  description: A blueprint with a schematic of a holopickaxe. It can be inserted into a protolathe or techfab.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - NFEnergyPickaxe

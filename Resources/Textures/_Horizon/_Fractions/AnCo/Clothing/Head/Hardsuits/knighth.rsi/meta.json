@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "license": "CLA with hosting restrictions",
+  "copyright": "Sprited by Xigovir DS:623559319543349268",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "icon-flash"
+    },
+    {
+      "name": "off-equipped-HELMET",
+      "directions": 4
+    },
+    {
+      "name": "on-equipped-HELMET",
+      "directions": 4
+    },
+    {
+      "name": "off-equipped-HELMET-cat",
+      "directions": 4
+    },
+    {
+      "name": "on-equipped-HELMET-cat",
+      "directions": 4
+    }
+  ]
+}

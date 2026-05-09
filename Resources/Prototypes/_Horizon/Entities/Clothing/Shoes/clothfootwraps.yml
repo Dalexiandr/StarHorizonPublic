@@ -1,0 +1,97 @@
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesClothfootwrapsWhite
+  name: white cloth footwraps
+  description: White cloth footwraps made of durable and soft fabric, designed to protect your sensitive feet or paws.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Shoes/Clothfootwraps/clothfootwraps_white.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Shoes/Clothfootwraps/clothfootwraps_white.rsi
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepClothfootwraps
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesClothfootwrapsBlack
+  name: black cloth footwraps
+  description: Black cloth footwraps made of durable and soft fabric, designed to protect your sensitive feet or paws.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Shoes/Clothfootwraps/clothfootwraps_black.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Shoes/Clothfootwraps/clothfootwraps_black.rsi
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepClothfootwraps
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesClothfootwrapsBlue
+  name: blue cloth footwraps
+  description: Blue cloth footwraps made of durable and soft fabric, designed to protect your sensitive feet or paws.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Shoes/Clothfootwraps/clothfootwraps_blue.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Shoes/Clothfootwraps/clothfootwraps_blue.rsi
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepClothfootwraps
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesClothfootwrapsBrown
+  name: brown cloth footwraps
+  description: Brown cloth footwraps made of durable and soft fabric, designed to protect your sensitive feet or paws.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Shoes/Clothfootwraps/clothfootwraps_brown.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Shoes/Clothfootwraps/clothfootwraps_brown.rsi
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepClothfootwraps
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesClothfootwrapsRed
+  name: red cloth footwraps
+  description: Red cloth footwraps made of durable and soft fabric, designed to protect your sensitive feet or paws.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Shoes/Clothfootwraps/clothfootwraps_red.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Shoes/Clothfootwraps/clothfootwraps_red.rsi
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepClothfootwraps
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesClothfootwrapsSilver
+  name: silver cloth footwraps
+  description: Silver cloth footwraps made of durable and soft fabric, designed to protect your sensitive feet or paws.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Shoes/Clothfootwraps/clothfootwraps_silver.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Shoes/Clothfootwraps/clothfootwraps_silver.rsi
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepClothfootwraps
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesClothfootwrapsYellow
+  name: yellow cloth footwraps
+  description: Yellow cloth footwraps made of durable and soft fabric, designed to protect your sensitive feet or paws.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Shoes/Clothfootwraps/clothfootwraps_yellow.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Shoes/Clothfootwraps/clothfootwraps_yellow.rsi
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepClothfootwraps

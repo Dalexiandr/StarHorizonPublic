@@ -1,0 +1,182 @@
+- type: entity
+  parent: WallPlastitaniumIndestructible
+  id: AnCoWallKazmie
+  name: казмиевая стена
+  description: Держите секреты внутри, сотрудников снаружи
+  suffix: StarHorizon, AnCo, Structure
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structure/Walls/kamie-walls.rsi
+    color: "#ffffff"
+  - type: WallReplacementMarker
+  - type: Icon
+    sprite: _Horizon/_Fractions/AnCo/Structure/Walls/kamie-walls.rsi
+  - type: RCDDeconstructable
+    cost: 6
+    delay: 8
+    fx: EffectRCDDeconstruct8
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+      - !type:ChangeConstructionNodeBehavior
+        node: girder
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: IconSmooth
+    key: walls
+    base: solid
+  - type: Construction
+    graph: WallKazmie
+    node: wallkazmie
+
+- type: entity
+  parent: WallPlastitaniumIndestructible
+  id: AnCoWallKazmieIndestructible
+  name: казмиевая стена
+  description: Держите секреты внутри, сотрудников снаружи.
+  suffix: StarHorizon, AnCo, Indestructible
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structure/Walls/kamie-walls.rsi
+    color: "#ffffff"
+  - type: WallReplacementMarker
+  - type: Icon
+    sprite: _Horizon/_Fractions/AnCo/Structure/Walls/kamie-walls.rsi
+  - type: IconSmooth
+    key: walls
+    base: solid
+
+- type: entity
+  id: AnCoWindowArdon
+  parent: Window
+  name: ардониевое окно
+  suffix: StarHorizon, AnCo, Structure
+  description: Окно для любителей подглядывать секреты.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Window
+  components:
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        collection: GlassSmack
+  - type: WallMount
+    arc: 360 # interact despite grilles
+  - type: Tag
+    tags:
+      - ForceFixRotations
+      - Window
+  - type: Sprite
+    drawdepth: WallTops
+    sprite: _Horizon/_Fractions/AnCo/Structure/Walls/ardon-window.rsi
+  - type: Icon
+    sprite: _Horizon/_Fractions/AnCo/Structure/Walls/ardon-window.rsi
+    state: full
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb {}
+        mask:
+        - FullTileMask
+        layer:
+        - GlassLayer
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Glass
+  - type: ExaminableDamage
+    messages: WindowMessages
+  - type: Repairable
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300 #excess damage (nuke?). avoid computational cost of spawning entities.
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ArdonSheet1:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Airtight
+  - type: DeltaPressure
+    minPressure: 10000
+    minPressureDelta: 750
+    scalingType: Linear
+    scalingPower: 0.0005
+  - type: IconSmooth
+    key: walls
+    base: window
+  - type: InteractionPopup
+    interactSuccessString: comp-window-knock
+    messagePerceivedByOthers: comp-window-knock
+    interactSuccessSound:
+      path: /Audio/Effects/glass_knock.ogg
+  - type: Appearance
+  - type: DamageVisuals
+    thresholds: [5, 10, 20]
+    damageDivisor: 2
+    trackAllDamage: true
+    damageOverlay:
+      sprite: Structures/Windows/cracks.rsi
+  - type: StaticPrice
+    price: 100
+  - type: BlockWeather
+  - type: RadiationBlocker
+    resistance: 4
+  - type: Construction
+    graph: WindowArdon
+    node: ardonwindow
+
+- type: entity
+  id: AnCoWindowArdonDungeon
+  parent: AnCoWindowArdon
+  name: ардониевое окно
+  suffix: StarHorizon, AnCo, Dungeon
+  description: Окно для любителей подглядывать секреты.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Window
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb {}
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer

@@ -1,0 +1,13 @@
+- type: entity
+  parent: BaseStructureWallmount
+  id: SignScenery
+  name: картина пейзажа
+  description: Прекрасная картина пейзажа, вам она нравится.
+  components:
+  - type: Sprite
+    drawdepth: WallMountedItems
+    sprite: _Horizon/Structures/Decoration/painting.rsi
+    state: painting
+  - type: InteractionOutline
+  - type: WallMount
+    arc: 360

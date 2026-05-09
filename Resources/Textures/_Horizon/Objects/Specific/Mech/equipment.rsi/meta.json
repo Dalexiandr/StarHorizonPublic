@@ -1,0 +1,285 @@
+{
+  "copyright" : "Taken from https://github.com/tgstation/tgstation",
+  "license" : "CC-BY-SA-3.0",
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "cc_claw"
+    },
+    {
+      "name": "cc_hammer"
+    },
+    {
+      "name": "cc_spear"
+    },
+    {
+      "name": "cc_sword"
+    },
+    {
+      "name": "else_bananamrtr"
+    },
+    {
+      "name": "else_honker"
+    },
+    {
+      "name": "else_humanstealer"
+    },
+    {
+      "name": "else_mime"
+    },
+    {
+      "name": "else_mousetrapmrtr"
+    },
+    {
+      "name": "else_punching_glove"
+    },
+    {
+      "name": "energy_blaster"
+    },
+    {
+      "name": "energy_disabler"
+    },
+    {
+      "name": "energy_ion"
+    },
+    {
+      "name": "energy_laser"
+    },
+    {
+      "name": "energy_pulse"
+    },
+    {
+      "name": "energy_taser",
+      "delays": [
+        [
+          0.3,
+          0.225,
+          0.2,
+          0.175,
+          0.15,
+          0.1,
+          0.075,
+          0.075,
+          0.075,
+          0.075,
+          0.075,
+          0.1,
+          0.15,
+          0.125,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "energy_tesla",
+      "delays": [
+        [
+          2.5,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "energy_xray"
+    },
+    {
+      "name": "energy_cryogun"
+    },
+    {
+      "name": "energy_pyrogun"
+    },
+    {
+      "name": "engi_exting"
+    },
+    {
+      "name": "engi_plasmacutter"
+    },
+    {
+      "name": "engi_rcd"
+    },
+    {
+      "name": "engi_teleport"
+    },
+    {
+      "name": "engi_wholegen",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "engi_wire"
+    },
+    {
+      "name": "generator_plasma",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "generator_tesla",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "generator_uranium",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "kinetic_carbine"
+    },
+    {
+      "name": "kinetic_gauss"
+    },
+    {
+      "name": "kinetic_grenade"
+    },
+    {
+      "name": "kinetic_minigun"
+    },
+    {
+      "name": "kinetic_scatter"
+    },
+    {
+      "name": "mecha_weapon_bay"
+    },
+    {
+      "name": "medi_gun_blue"
+    },
+    {
+      "name": "medi_gun_green"
+    },
+    {
+      "name": "medi_gun_red"
+    },
+    {
+      "name": "medi_gun_yellow"
+    },
+    {
+      "name": "medi_sleeper"
+    },
+    {
+      "name": "medi_syringe_gun"
+    },
+    {
+      "name": "medi_syringe_gun_advanced"
+    },
+    {
+      "name": "medi_syringe_gun_toxic"
+    },
+    {
+      "name": "mining_analyzer"
+    },
+    {
+      "name": "mining_clamp"
+    },
+    {
+      "name": "mining_clamp_small"
+    },
+    {
+      "name": "mining_drill"
+    },
+    {
+      "name": "mining_drill_diamond"
+    },
+    {
+      "name": "mining_drill_resonant"
+    },
+    {
+      "name": "mining_kineticgun"
+    },
+    {
+      "name": "mining_kineticgun_heavy"
+    },
+    {
+      "name": "mining_paddy_claw"
+    },
+    {
+      "name": "missile_long"
+    },
+    {
+      "name": "missile_shortflame"
+    },
+    {
+      "name": "missile_shortfrag"
+    },
+    {
+      "name": "repair_droid"
+    },
+    {
+      "name": "repair_droid_a",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "ripleyupgrade"
+    },
+    {
+      "name": "shield_cc"
+    },
+    {
+      "name": "shield_proj"
+    },
+    {
+      "name": "thrusters"
+    }
+  ]
+}

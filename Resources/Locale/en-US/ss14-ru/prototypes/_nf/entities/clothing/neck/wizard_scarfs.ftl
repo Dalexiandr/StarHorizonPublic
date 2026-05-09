@@ -1,0 +1,12 @@
+ent-ClothingNeckScarfWizardBlue = blue wizard stole
+    .desc = A scarf imbued with minor enchantments to protect the wearer from cold and minor magical effects.
+ent-ClothingNeckScarfWizardRed = red wizard stole
+    .desc = { ent-ClothingNeckScarfWizardBlue.desc }
+ent-ClothingNeckScarfWizardPurple = purple wizard stole
+    .desc = { ent-ClothingNeckScarfWizardBlue.desc }
+ent-ClothingNeckScarfBloodCult = blood cult stole
+    .desc = { ent-BaseC3CultContrabandUnredeemable.desc }
+ent-ClothingNeckScarfWizardWarmth = wizard scarf of warmth
+    .desc = You don't feel neither cold nor warm wearing it. Wonder if it keeps you safe from plasmafires?
+ent-ClothingNeckCloakWizardHolding = wizard's portal cloak of holding
+    .desc = What happens when your wizardry instructor forbids portal conjuring, yet you do it anyway and attempt to conceal it under your cloak when they are back to check on you?

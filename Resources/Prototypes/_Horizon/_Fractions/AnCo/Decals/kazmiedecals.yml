@@ -1,0 +1,80 @@
+﻿- type: decal
+  id: kazmie1
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/kazmie.rsi
+    state: kazmie1
+
+- type: decal
+  id: kazmie2
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/kazmie.rsi
+    state: kazmie2
+
+- type: decal
+  id: kazmie3
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/kazmie.rsi
+    state: kazmie3
+
+- type: decal
+  id: kazmie4
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/kazmie.rsi
+    state: kazmie4
+
+- type: decal
+  id: kazmie5
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/kazmie.rsi
+    state: kazmie5
+
+- type: decal
+  id: kazmie6
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/kazmie.rsi
+    state: kazmie6
+
+- type: decal
+  id: kazmie7
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/kazmie.rsi
+    state: kazmie7
+
+- type: decal
+  id: kazmie8
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/kazmie.rsi
+    state: kazmie8
+
+- type: decal
+  id: kazmie9
+  tags: ["flora"]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/kazmie.rsi
+    state: kazmie9

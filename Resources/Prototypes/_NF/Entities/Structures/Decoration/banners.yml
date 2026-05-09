@@ -1,0 +1,61 @@
+- type: entity
+  id: BannerNfsd
+  parent: BannerBase
+  name: NFSD banner
+  description: A banner displaying the colors of the New Frontier Sheriff's Department.
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Decoration/banner.rsi
+    state: nfsd-banner
+  - type: Construction
+    graph: BannersGraph
+    node: BannerSecurityNode
+
+- type: entity
+  id: FlagNfsd
+  parent: BannerBase
+  name: NFSD flag
+  description: A flag displaying the colors of the New Frontier Sheriff's Department.
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Decoration/banner.rsi
+    state: nfsd-flag
+  - type: Construction
+    graph: BannersGraph
+    node: BannerSecurityNode
+
+- type: entity
+  id: BannerGoblin01
+  parent: BannerBase
+  name: goblin banner
+  description: A banner displaying one of goblin clan symbols.
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Decoration/banner.rsi
+    state: banner_goblin
+  - type: Construction
+    graph: NFGoblinMadeBanner
+    node: BannerGoblin01
+
+- type: entity
+  id: BannerFsb
+  parent: BannerBase
+  name: FSB banner
+  description: A banner displaying the sigil of the Far Star Biotech corporation.
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Decoration/banner.rsi
+    state: banner-fsb
+  - type: Construction
+    graph: BannersGraph
+    node: BannerFsb
+
+- type: entity
+  id: NFBannerWizard
+  parent: BannerBase
+  name: wizard federation banner
+  description: A banner displaying the sigil of the Wizard Federation.
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Decoration/banner.rsi
+    state: banner-wizard

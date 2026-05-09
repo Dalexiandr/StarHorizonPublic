@@ -1,0 +1,120 @@
+# Captain
+- type: startingGear
+  id: PirateMatrosGearA
+  equipment:
+    head: ClothingHeadHatPirates
+    jumpsuit: ClothingUniformJumpsuitPirateSlops
+    shoes: ClothingShoesBootsPirate
+    gloves: ClothingHandsGlovesColorBlackPirateRevolver
+    ears: ClothingHeadsetFreelance
+    pocket2: ClothingPocketPirateMatrosLootA
+
+- type: startingGear
+  id: PirateMatrosGearB
+  equipment:
+    head: ClothingHeadHatPirates
+    jumpsuit: ClothingUniformJumpsuitPirate
+    shoes: ClothingShoesBootsPirate
+    gloves: ClothingHandsGlovesColorBlackFlintstock
+    ears: ClothingHeadsetFreelance
+    pocket2: ClothingPocketPirateMatrosLootA
+
+- type: startingGear
+  id: PirateMatrosGearC
+  equipment:
+    head: ClothingHeadBandSkull
+    jumpsuit: ClothingUniformJumpsuitPirate
+    shoes: ClothingShoesBootsPirate
+    gloves: ClothingHandsGlovesColorBlackFlintstock
+    ears: ClothingHeadsetFreelance
+    pocket2: ClothingPocketPirateMatrosLootA
+
+- type: startingGear
+  id: PirateMatrosGearD
+  equipment:
+    head: ClothingHeadBandSkull
+    jumpsuit: ClothingUniformJumpsuitPirate
+    shoes: ClothingShoesBootsPirate
+    gloves: ClothingHandsGlovesColorBlackCombatKnife
+    ears: ClothingHeadsetFreelance
+    pocket2: ClothingPocketPirateMatrosLootB
+  inhand:
+  - CombatKnife
+
+- type: startingGear
+  id: PirateAbordajGearA
+  equipment:
+    head: ClothingHeadBandSkull
+    jumpsuit: ClothingUniformJumpsuitPirate
+    shoes: ClothingShoesBootsPirate
+    gloves: ClothingHandsGlovesColorBlackCutlass
+    ears: ClothingHeadsetFreelance
+    outerClothing: ClothingOuterCoatPirate
+    pocket2: ClothingPocketPirateAbordajLootA
+  inhand:
+  - Cutlass
+
+- type: startingGear
+  id: PirateAbordajGearB
+  equipment:
+    head: ClothingHeadHatPirates
+    jumpsuit: ClothingUniformJumpsuitPirateSlops
+    shoes: ClothingShoesBootsPirate
+    gloves: ClothingHandsGlovesColorBlackCutlass
+    ears: ClothingHeadsetFreelance
+    outerClothing: ClothingOuterCoatPirate
+    pocket2: ClothingPocketPirateAbordajLootA
+  inhand:
+  - Cutlass
+
+- type: startingGear
+  id: PirateAbordajGearC
+  equipment:
+    head: ClothingHeadEVAHelmetPirate
+    jumpsuit: ClothingUniformJumpsuitPirateSlops
+    shoes: ClothingShoesBootsMagPirateFilled
+    gloves: ClothingHandsGlovesColorBlackCutlass
+    ears: ClothingHeadsetFreelance
+    outerClothing: ClothingOuterEVASuitPirate
+    back: JetpackBlackFilled
+    suitstorage: NFTankO2N2EqualFilled
+    pocket2: ClothingPocketPirateEVALootA
+  inhand:
+  - Cutlass
+
+- type: startingGear
+  id: PirateQuartermasterGearA
+  equipment:
+    head: ClothingHeadHatPirateLuffy
+    eyes: ClothingEyesGlassesSRed
+    neck: ClothingNeckMantleQM
+    jumpsuit: ClothingUniformJumpsuitPirateLuffy
+    shoes: ClothingShoesBootsPirate
+    belt: BoxFolderClipboard
+    gloves: ClothingHandsGlovesColorBlackPirateCannon
+    ears: ClothingHeadsetFreelance
+    outerClothing: ClothingOuterCoatPirate
+    pocket2: ClothingPocketPirateQuartermasterLootA
+
+- type: startingGear
+  id: PirateBotsmanGearA
+  equipment:
+    head: ClothingHeadHatPirate
+    jumpsuit: ClothingUniformJumpsuitPirateSlops
+    shoes: ClothingShoesBootsPirateLuffy
+    belt: ClothingBeltSheath
+    gloves: ClothingHandsGlovesColorBlackPirateSabre
+    ears: ClothingHeadsetFreelance
+    outerClothing: ClothingOuterCoatPirateCaptain
+    pocket2: ClothingPocketPirateBotsmanLootA
+  inhand:
+  - CaptainSabre
+
+- type: startingGear
+  id: PirateCaptainGearA
+  equipment:
+    head: ClothingHeadHelmetHardsuitPirateCap
+    gloves: ClothingHandsGlovesColorBlackPirateCutlassEnergy
+    neck: ClothingNeckCloakPirateCap
+    outerClothing: ClothingOuterHardsuitPirateCap
+    pocket2: ClothingPocketPirateCaptainLootA

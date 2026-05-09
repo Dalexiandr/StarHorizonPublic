@@ -1,0 +1,221 @@
+- type: job
+  id: SyndicateOfficerTeleCommunication
+  name: Офицер теле-коммуникаций
+  description: Командующий в данном секторе всеми операциями Синдиката.
+  playTimeTracker: JobSyndicateOfficerTeleCommunication
+  forceFaction: FactionSyndicate # Horizon
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 288000 # 80 hours # Horizon
+    - !type:RoleTimeRequirement
+      role: JobSeniorOfficer
+      time: 10800 # 3 hours
+  startingGear: BaseSyndicateOfficerTeleCommunicationGear
+  whitelisted: true
+  alwaysUseSpawner: true
+  hideConsoleVisibility: true
+  canBeAntag: true
+  icon: "JobIconSyndicateOfficer"
+  supervisors: Офицеру теле-коммуникаций и Оперативнику
+  weight: 20
+  displayWeight: 20
+  setPreference: true
+  newPlayerMessage: false
+  access:
+   - NuclearOperative
+   - SyndicateAgent
+  accessGroups:
+  - GeneralAccess
+  special:
+  - !type:RemoveComponentSpecial
+    components:
+    - type: NpcFactionMember
+  - !type:AddComponentSpecial
+    components:
+    - type: NukeOperative
+    - type: NpcFactionMember
+      factions:
+      - Syndicate
+      - NFSyndicate
+    - type: SpecialSectorStationRecord # must be given on spawn
+      recordGeneration: FalseRecord
+    - type: DisableSuitSensors
+  - !type:GiveItemOnHolidaySpecial # Even pirates get a piece of cake.
+    holiday: FrontierBirthday
+    prototype: FrontierBirthdayGift
+  - !type:AddImplantSpecial
+    implants: [ DeathRattleImplant ]
+
+- type: job
+  id: SyndicateOperative
+  name: Оперативник
+  description: Основная боевая единица синдиката.
+  playTimeTracker: JobSyndicateOperative
+  forceFaction: FactionSyndicate # Horizon
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 216000 # 60 hours # Horizon
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 10800 # 3 hours
+  startingGear: BaseSyndicateOperativeGear
+  whitelisted: true
+  alwaysUseSpawner: true
+  hideConsoleVisibility: true
+  canBeAntag: true
+  icon: "JobIconSyndicateOperative"
+  supervisors: Офицеру теле-коммуникаций
+  weight: 20
+  displayWeight: 20
+  setPreference: true
+  newPlayerMessage: false
+  access:
+   - NuclearOperative
+   - SyndicateAgent
+  accessGroups:
+  - GeneralAccess
+  special:
+  - !type:RemoveComponentSpecial
+    components:
+    - type: NpcFactionMember
+  - !type:AddComponentSpecial
+    components:
+    - type: NukeOperative
+    - type: NpcFactionMember
+      factions:
+      - Syndicate
+      - NFSyndicate
+    - type: SpecialSectorStationRecord # must be given on spawn
+      recordGeneration: FalseRecord
+    - type: DisableSuitSensors
+  - !type:GiveItemOnHolidaySpecial # Even pirates get a piece of cake.
+    holiday: FrontierBirthday
+    prototype: FrontierBirthdayGift
+  - !type:AddImplantSpecial
+    implants: [ DeathRattleImplant ]
+
+- type: job
+  id: SyndicateMedic
+  name: job-name-horizon-syndicate-medic
+  description: job-description-horizon-syndicate-medic
+  playTimeTracker: JobSyndicateMedic
+  forceFaction: FactionSyndicate # Horizon
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 216000 # 60 hours # Horizon
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 10800 # 3 hours
+  startingGear: BaseSyndicateMedicGear
+  whitelisted: true
+  alwaysUseSpawner: true
+  hideConsoleVisibility: true
+  canBeAntag: true
+  icon: "JobIconSyndicateMedic"
+  supervisors: Офицеру теле-коммуникаций
+  weight: 20
+  displayWeight: 20
+  setPreference: true
+  newPlayerMessage: false
+  access:
+   - NuclearOperative
+   - SyndicateAgent
+  accessGroups:
+  - GeneralAccess
+  special:
+  - !type:RemoveComponentSpecial
+    components:
+    - type: NpcFactionMember
+  - !type:AddComponentSpecial
+    components:
+    - type: NukeOperative
+    - type: NpcFactionMember
+      factions:
+      - Syndicate
+      - NFSyndicate
+    - type: SpecialSectorStationRecord # must be given on spawn
+      recordGeneration: FalseRecord
+    - type: DisableSuitSensors
+  - !type:GiveItemOnHolidaySpecial # Even pirates get a piece of cake.
+    holiday: FrontierBirthday
+    prototype: FrontierBirthdayGift
+  - !type:AddImplantSpecial
+    implants: [ DeathRattleImplant ]
+
+- type: job
+  id: SyndicateCargo
+  name: Курьер
+  description: Основная единица по распространению и доставке контрабанды.
+  playTimeTracker: JobSyndicateCargo
+  forceFaction: FactionSyndicate # Horizon
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 172800 # 48 hours # Horizon
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 10800 # 3 hrs
+  startingGear: BaseSyndicateCargoGear
+  whitelisted: true
+  alwaysUseSpawner: true
+  hideConsoleVisibility: true
+  canBeAntag: true
+  icon: "JobIconSyndicateDelivery"
+  supervisors: Офицеру теле-коммуникаций и Оперативнику
+  weight: 20
+  displayWeight: 20
+  setPreference: true
+  newPlayerMessage: false
+  access:
+   - NuclearOperative
+   - SyndicateAgent
+  accessGroups:
+  - GeneralAccess
+  special:
+  - !type:RemoveComponentSpecial
+    components:
+    - type: NpcFactionMember
+  - !type:AddComponentSpecial
+    components:
+    - type: NukeOperative
+    - type: NpcFactionMember
+      factions:
+      - Syndicate
+      - NFSyndicate
+    - type: SpecialSectorStationRecord # must be given on spawn
+      recordGeneration: FalseRecord
+    - type: DisableSuitSensors
+  - !type:GiveItemOnHolidaySpecial # Even pirates get a piece of cake.
+    holiday: FrontierBirthday
+    prototype: FrontierBirthdayGift
+  - !type:AddImplantSpecial
+    implants: [ DeathRattleImplant ]
+
+
+- type: startingGear
+  id: BaseSyndicateOperativeGear
+  equipment:
+    pocket2: BaseUplinkRadio40TC
+    eyes: ClothingEyesHudSyndicate
+
+- type: startingGear
+  id: BaseSyndicateCargoGear
+  equipment:
+    pocket1: Telecrystal10
+    pocket2: UplinkImplanter
+    eyes: ClothingEyesHudSyndicate
+
+- type: startingGear
+  id: BaseSyndicateOfficerTeleCommunicationGear
+  equipment:
+    pocket1: SyndicateEncryptionKeyMaster
+    pocket2: BaseUplinkRadio40TC
+    eyes: ClothingEyesHudSyndicate
+    outerClothing: ClothingOuterHardsuitSyndieCommander
+
+- type: startingGear
+  id: BaseSyndicateMedicGear
+  equipment:
+    pocket1: SyndiHypo
+    pocket2: BaseUplinkRadio40TC
+    eyes: ClothingEyesHudSyndicateAgent
+    outerClothing: ClothingOuterHardsuitSyndieMedic

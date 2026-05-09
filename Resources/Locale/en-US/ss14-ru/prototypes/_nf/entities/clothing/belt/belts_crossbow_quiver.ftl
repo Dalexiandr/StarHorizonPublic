@@ -1,0 +1,11 @@
+ent-ClothingBeltQuiverCrossbow = quiver (bolts, any)
+    .desc = Can hold up to 25 bolts, and fits snug around your waist.
+ent-ClothingBeltQuiverCrossbowFilledBolt = quiver (bolts)
+    .suffix = Filled, Bolts
+    .desc = { ent-ClothingBeltQuiverCrossbow.desc }
+ent-ClothingBeltQuiverCrossbowFilledUranium = quiver (bolts, uranium)
+    .suffix = Filled, Uranium Tip
+    .desc = { ent-ClothingBeltQuiverCrossbow.desc }
+ent-ClothingBeltQuiverCrossbowFilledPlasma = quiver (bolts, plasma)
+    .suffix = Filled, Plasma Tip
+    .desc = { ent-ClothingBeltQuiverCrossbow.desc }

@@ -1,0 +1,53 @@
+- type: entity
+  parent: Airlock
+  id: AirlockDFILocked
+  suffix: DFI, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDFI ]
+
+- type: entity
+  parent: AirlockGlass
+  id: AirlockGlassDFILocked
+  suffix: DFI, Locked, Glass
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDFI ]
+
+- type: entity
+  parent: AirlockExternal
+  id: AirlockExternalDFILocked
+  suffix: DFI, Locked, External
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDFI ]
+
+- type: entity
+  parent: AirlockExternalGlass
+  id: AirlockExternalGlassDFILocked
+  suffix: DFI, Locked, External, Glass
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDFI ]
+
+- type: entity
+  parent: AirlockShuttle
+  id: AirlockShuttleDFILocked
+  suffix: DFI, Locked, Docking
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDFI ]
+
+- type: entity
+  parent: AirlockGlassShuttle
+  id: AirlockGlassShuttleDFILocked
+  suffix: DFI, Locked, Docking, Glass
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDFI ]

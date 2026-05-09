@@ -1,0 +1,43 @@
+- type: entity
+  name: набор медикоментов джаггернаута
+  parent: BoxCardboard
+  id: ERTJuggernautBox
+  description: Специальная коробка созданная для джаггернаута ОБР, защищена от внешних угроз и имеет в себе лишь самые важные и необходимые медикоменты.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Storage/Boxes/ertjuggernautbox.rsi
+    layers:
+     - state: box
+  - type: Storage
+    grid:
+    - 0,0,7,7
+    maxItemSize: Normal
+  - type: Item
+    size: Huge
+  - type: StorageFill
+    contents:
+      - id: ERTRedMedipen
+      - id: ERTRedMedipen
+      - id: ERTRedMedipen
+      - id: ERTRedMedipen
+      - id: ERTOrangeMedipen
+      - id: ERTOrangeMedipen
+      - id: ERTOrangeMedipen
+      - id: ERTOrangeMedipen
+      - id: ERTDarkMedipen
+      - id: ERTDarkMedipen
+      - id: ERTLightMedipen
+      - id: ERTLightMedipen
+      - id: ERTBrownMedipen
+      - id: ERTBrownMedipen
+      - id: ERTBrownMedipen
+      - id: ERTBrownMedipen
+      - id: MedicatedSuture
+      - id: MedicatedSuture
+      - id: RegenerativeMesh
+      - id: RegenerativeMesh
+      - id: Brutepack
+      - id: Brutepack
+      - id: Gauze
+      - id: HandheldHealthAnalyzerUnpowered

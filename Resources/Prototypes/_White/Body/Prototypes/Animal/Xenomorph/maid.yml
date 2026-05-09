@@ -1,0 +1,59 @@
+- type: body
+  id: XenomorphMaid
+  name: xenomorph maid
+  root: chest
+  slots:
+    head:
+      part: HeadXenomorph
+      connections:
+      - chest
+      organs:
+        brain: OrganXenomorphBrain
+        eyes: OrganXenomorphEyes
+        hive_node: OrganXenomorphHiveNode
+    chest:
+      part: ChestXenomorph
+      connections:
+      - right arm
+      - left arm
+#      - groin //No shitmed :pepeSad:
+      - right leg # No shitmed :pepeSad:
+      - left leg # No shitmed :pepeSad:
+      - head
+      organs:
+        plasma_vessel: OrganXenomorphPlasmaVessel
+        stomach: OrganXenomorphStomach # No shitmed :pepeSad:
+        liver: OrganXenomorphLiver # No shitmed :pepeSad:
+#    groin: //No shitmed :pepeSad:
+#      part: GroinXenomorph
+#      connections:
+#      - right leg
+#      - left leg
+#      - head
+#      organs:
+#        stomach: OrganXenomorphStomach
+#        liver: OrganXenomorphLiver
+    right arm:
+      part: RightArmXenomorph
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmXenomorph
+      connections:
+      - left hand
+    right hand:
+      part: RightHandXenomorph
+    left hand:
+      part: LeftHandXenomorph
+    right leg:
+      part: RightLegXenomorph
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegXenomorph
+      connections:
+      - left foot
+    right foot:
+      part: RightFootXenomorph
+    left foot:
+      part: LeftFootXenomorph

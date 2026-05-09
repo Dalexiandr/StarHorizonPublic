@@ -1,0 +1,41 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: Wisdom
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: Nighthawk
+  parent: BaseVesselAntag
+  name: Nighthawk
+  description: штурмовой шаттл синдиката.
+  price: 50000
+  category: Large
+  group: Syndicate
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/Syndicate/nighthawk.yml
+  class:
+  - Syndicate
+  - Fighter
+  engine:
+  - RTG
+
+- type: gameMap
+  id: Nighthawk
+  mapName: 'Nighthawk'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/Syndicate/nighthawk.yml
+  minPlayers: 0
+  stations:
+    Nighthawk:
+      stationProto: StandardFrontierAntagVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Nighthawk {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

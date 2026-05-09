@@ -1,0 +1,35 @@
+- type: entity
+  name: казмиевый молот АнКо
+  parent: BaseAnCoWeapon
+  id: AnCoHammer
+  description: Тяжёлый казмиевый молот, способный накапливать кинетическую энергию и при полном заполнений высвобождает её.
+  suffix: StarHorizon, AnCo, Weapon
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Melee/molot.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 15
+        Structural: 15
+    soundHit:
+      path: /Audio/_Horizon/_Fractions/AnCo/bonk.ogg
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Blunt: 15
+        Structural: 20
+  - type: Item
+    size: Ginormous
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Melee/molot.rsi
+  - type: UseDelay
+    delay: 5
+  - type: AnCoHammerRepulse
+    staminaDamagePercent: 0.5
+    throwStrength: 10
+    distance: 5
+  - type: StaticPrice
+    price: 8000

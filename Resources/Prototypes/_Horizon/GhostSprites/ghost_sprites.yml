@@ -1,0 +1,149 @@
+# Ghost sprite prototypes for player customization
+# Players can select these sprites when in ghost mode
+
+# ============================================
+# EVERY - Available to all players
+# ============================================
+
+- type: ghostSprite
+  id: GhostSpriteDefault
+  name: Стандартный
+  rsiPath: Mobs/Ghosts/ghost_human.rsi
+  state: animated
+
+- type: ghostSprite
+  id: GhostSpriteAngel
+  name: Ангел
+  rsiPath: _Horizon/Sponsors/Ghosts/every/angel.rsi
+  state: animated
+
+- type: ghostSprite
+  id: GhostSpriteDemon
+  name: Демон
+  rsiPath: _Horizon/Sponsors/Ghosts/every/demon.rsi
+  state: animated
+
+# ============================================
+# SPONSORS - Available only to sponsors
+# ============================================
+
+- type: ghostSprite
+  id: GhostSpriteRunTime
+  name: Рантайм
+  rsiPath: _Horizon/Sponsors/Ghosts/sponsors/runtime.rsi
+  state: animated
+  sponsorOnly: true
+
+- type: ghostSprite
+  id: GhostSpriteHarpy
+  name: Гарпия
+  rsiPath: _Horizon/Sponsors/Ghosts/sponsors/harpy.rsi
+  state: animated
+  sponsorOnly: true
+
+- type: ghostSprite
+  id: GhostSpriteAmerica
+  name: Америка
+  rsiPath: _Horizon/Sponsors/Ghosts/sponsors/america.rsi
+  state: animated
+  sponsorOnly: true
+
+- type: ghostSprite
+  id: GhostSpriteJoker
+  name: Джокер
+  rsiPath: _Horizon/Sponsors/Ghosts/sponsors/joker.rsi
+  state: animated
+  sponsorOnly: true
+
+- type: ghostSprite
+  id: GhostSpriteJudge
+  name: Судья
+  rsiPath: _Horizon/Sponsors/Ghosts/sponsors/judge.rsi
+  state: animated
+  sponsorOnly: true
+
+- type: ghostSprite
+  id: GhostSpriteHellsing
+  name: Hellsing
+  rsiPath: _Horizon/Sponsors/Ghosts/sponsors/hellsing.rsi
+  state: animated
+  sponsorOnly: true
+
+
+# ============================================
+# INDIVIDUAL - Available only to specific players by ckey
+# These are personal sprites for specific players
+# ============================================
+
+- type: ghostSprite
+  id: GhostSpriteIndividualEvilBug
+  name: EvilBug (Личный)
+  rsiPath: _Horizon/Sponsors/Ghosts/individual/evilneko.rsi
+  state: animated
+  allowedPlayers:
+    - EvilBug
+    - localhost@EvilBug
+
+- type: ghostSprite
+  id: GhostSpriteIndividualJoulerk
+  name: Joulerk (Личный)
+  rsiPath: _Horizon/Sponsors/Ghosts/individual/Joulerk.rsi
+  state: animated
+  allowedPlayers:
+    - Joulerk
+    - localhost@Joulerk
+
+- type: ghostSprite
+  id: GhostSpriteIndividualUAS
+  name: UAS (Личный)
+  rsiPath: _Horizon/Sponsors/Ghosts/individual/uas.rsi
+  state: animated
+  allowedPlayers:
+    - Xigovir
+    - localhost@Xigovir
+
+- type: ghostSprite
+  id: GhostSpriteIndividualBaron
+  name: Барон (Личный)
+  rsiPath: _Horizon/Sponsors/Ghosts/individual/baron.rsi
+  state: animated
+  allowedPlayers:
+    - TheGypsyBaron
+    - localhost@CTheGypsyBaron
+
+- type: ghostSprite
+  id: GhostSpriteIndividualCvartet
+  name: Cvartet (Личный)
+  rsiPath: _Horizon/Sponsors/Ghosts/individual/cvartet.rsi
+  state: animated
+  allowedPlayers:
+    - Cvartet
+    - localhost@Cvartet
+
+- type: ghostSprite
+  id: GhostSpriteIndividualKitsunes
+  name: Kitsunes (Личный)
+  rsiPath: _Horizon/Sponsors/Ghosts/individual/kitsunes.rsi
+  state: animated
+  allowedPlayers:
+    - DesBy
+    - localhost@DesBy
+
+- type: ghostSprite
+  id: GhostSpriteIndividualV3rnios
+  name: V3rnios (Личный)
+  rsiPath: _Horizon/Sponsors/Ghosts/individual/v3rnios.rsi
+  state: animated
+  allowedPlayers:
+    - v3rnios
+    - localhost@v3rnios
+
+
+- type: ghostSprite
+  id: GhostSpriteIndividualSistina
+  name: Sistina (Личный)
+  rsiPath: _Horizon/Sponsors/Ghosts/individual/fox.rsi
+  state: animated
+  allowedPlayers:
+    - Sistina
+    - localhost@Sistina

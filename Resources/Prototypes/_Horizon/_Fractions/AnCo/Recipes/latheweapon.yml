@@ -1,0 +1,153 @@
+
+- type: entity
+  id: AnCoWeaponFabricator
+  parent: [BaseLatheLube, BaseAnCoContraband]
+  name: фабрикатор вооружения АнКо
+  description: Как вы его собрали?
+  suffix: StarHorizon, AnCo, Structure
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Machines/fabricatorweapon.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+  - type: Machine
+    board: AnCoWeaponCircuitboard
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - AnCoMaterial
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    unlitIdleState: unlit
+    staticPacks:
+    - AnCoWeaponCraft
+
+- type: latheRecipePack
+  id: AnCoWeaponCraft
+  recipes:
+  - WeaponRiflesAnCo
+  - WeaponAutoPistolAnCo
+  - WeaponPistolAnCo
+  - PMLaserAnCoGun
+  - AnCoWeaponHeater
+  - AnCoSplah
+  - AnCoSabre
+  - AnCoLine
+  - AnCoHammer
+  - AnCoShovel
+  - AnCoSpearPlasma
+  - AnCoAxe
+  - AnCoKnife
+
+ # интересно что еще сломалось пушо используем (Frontier)
+
+# рецепты
+- type: latheRecipe
+  id: AnCoKnife
+  result: AnCoKnife
+  completetime: 10
+  materials:
+    Ardon: 1500
+    Kazmie: 1000
+
+- type: latheRecipe
+  id: AnCoAxe
+  result: AnCoAxe
+  completetime: 10
+  materials:
+    Ardon: 3000
+    Kazmie: 3000
+
+- type: latheRecipe
+  id: AnCoSpearPlasma
+  result: AnCoSpearPlasma
+  completetime: 10
+  materials:
+    Ardon: 1500
+    Kazmie: 3000
+
+- type: latheRecipe
+  id: AnCoShovel
+  result: AnCoShovel
+  completetime: 10
+  materials:
+    Kazmie: 4000
+
+- type: latheRecipe
+  id: AnCoHammer
+  result: AnCoHammer
+  completetime: 10
+  materials:
+    Kazmie: 5000
+
+- type: latheRecipe
+  id: AnCoLine
+  result: AnCoLine
+  completetime: 10
+  materials:
+    Ardon: 1500
+    Kazmie: 1000
+
+- type: latheRecipe
+  id: AnCoSabre
+  result: AnCoSabre
+  completetime: 10
+  materials:
+    Ardon: 2000
+    Kazmie: 1500
+
+- type: latheRecipe
+  id: AnCoSplah
+  result: AnCoSplah
+  completetime: 10
+  materials:
+    Ardon: 1500
+    Kazmie: 2000
+
+- type: latheRecipe
+  id: PMLaserAnCoGun
+  result: PMLaserAnCoGun
+  completetime: 10
+  materials:
+    Ardon: 2000
+    Kazmie: 4000
+
+- type: latheRecipe
+  id: AnCoWeaponHeater
+  result: AnCoWeaponHeater
+  completetime: 10
+  materials:
+    Ardon: 2000
+    Kazmie: 3000
+
+- type: latheRecipe
+  id: WeaponRiflesAnCo
+  result: WeaponRiflesAnCo
+  completetime: 10
+  materials:
+    Ardon: 2000
+    Kazmie: 4000
+
+- type: latheRecipe
+  id: WeaponPistolAnCo
+  result: WeaponPistolAnCo
+  completetime: 10
+  materials:
+    Ardon: 1000
+    Kazmie: 2000
+
+- type: latheRecipe
+  id: WeaponAutoPistolAnCo
+  result: WeaponAutoPistolAnCo
+  completetime: 10
+  materials:
+    Ardon: 2000
+    Kazmie: 3000

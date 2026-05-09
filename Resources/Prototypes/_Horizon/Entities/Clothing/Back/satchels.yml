@@ -1,0 +1,79 @@
+- type: entity
+  parent: ClothingBackpackSatchelMedical
+  id: ClothingBackpackSatchelEliteCMO
+  suffix: StarHorizon
+  name: medical satchel
+  description: A sterile satchel used in medical departments.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Satchels/ecmo.rsi
+
+- type: entity
+  parent: ClothingBackpackSatchelEliteCMO
+  id: ClothingBackpackSatchelEliteCMOFilled
+  suffix: StarHorizon, Filled
+  name: сумка элитного главного врача
+  description: Стерильная сумка из белоснежного шёлка с золотой окантовкой. Предназначена для высококлассных специалистов.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingCloakEliteCmo
+      - id: ClothingUniformJumpskirtCMO
+      - id: ECMOPDA
+      - id: ClothingHeadHatBeretEliteCmo
+
+- type: entity
+  parent: ClothingBackpackSatchelSalvage
+  id: ClothingBackpackSatchelSalvageFilled
+  suffix: StarHorizon, Filled
+  name: сумка утилизатора
+  description: Прочная сумка для хранения добычи.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingHandsGlovesFingerless
+      - id: ClothingShoesBootsSalvage
+      - id: ClothingUniformJumpsuitAncient
+      - id: ClothingOuterHoodieBlack
+
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: ClothingBackpackSatchelBlueshield
+  name: сумка офицера "Синий щит"
+  description: В неё удобно сбрасывать магазины.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Satchels/blueshield.rsi
+
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: ClothingBackpackSatchelRoboticist
+  name: сумка робототехника
+  description: Высокотехнологичная сумка для робототехников, оснащённая надёжными отделениями для схем, сенсоров и банок пива.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Satchels/roboticist.rsi
+
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: ClothingBackpackSatchelCentcom
+  suffix: StarHorizon
+  name: сумка Центком
+  description: Сделана из лучшей взрывоустойчивой ткани. Крайне удобна для извлечения стопок увольнительных документов.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Satchels/centcom.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.6
+
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: ClothingBackpackSatchelCentcomOld
+  name: сумка ЦентКома
+  description: На страже бюрократической моды.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Back/Satchels/oldcentcom.rsi
+

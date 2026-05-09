@@ -1,0 +1,133 @@
+# region Security
+
+- type: storeCategory
+  id: UplinkSecurityWeapons
+  name: store-category-secweapons
+  priority: 0
+
+- type: storeCategory
+  id: UplinkSecurityAmmo
+  name: store-category-secammo
+  priority: 1
+
+- type: storeCategory
+  id: UplinkSecurityExplosives
+  name: store-category-secexplosives
+  priority: 2
+
+- type: storeCategory
+  id: UplinkSecurityHardsuits
+  name: store-category-sechardsuits
+  priority: 3
+
+- type: storeCategory
+  id: UplinkSecurityUtility
+  name: store-category-secutility
+  priority: 4
+
+- type: storeCategory
+  id: UplinkSecurityBundles
+  name: store-category-secbundles
+  priority: 5
+
+- type: storeCategory
+  id: UplinkSecurityGunneryMissile
+  name: store-category-secgunnery-missile
+  priority: 6
+
+- type: storeCategory
+  id: UplinkSecurityGunneryKinetic
+  name: store-category-secgunnery-kinetic
+  priority: 7
+
+- type: storeCategory
+  id: UplinkSecurityGunneryEnergy
+  name: store-category-secgunnery-energy
+  priority: 8
+
+- type: storeCategory
+  id: UplinkSecurityGunneryAmmo
+  name: store-category-secgunnery-ammo
+  priority: 9
+
+- type: storeCategory
+  id: UplinkSecurityGunneryConsoles
+  name: store-category-secgunnery-consoles
+  priority: 10
+
+- type: storeCategory
+  id: UplinkSecurityMechas
+  name: store-category-secmechas
+  priority: 11
+
+- type: storeCategory
+  id: UplinkSecurityBorges
+  name: store-category-secborges
+  priority: 12
+
+# region Pirate
+
+- type: storeCategory
+  id: UplinkPirateWeapons
+  name: store-category-pirateweapons
+  priority: 0
+
+- type: storeCategory
+  id: UplinkPirateAmmo
+  name: store-category-pirateammo
+  priority: 1
+
+- type: storeCategory
+  id: UplinkPirateExplosives
+  name: store-category-pirateexplosives
+  priority: 2
+
+- type: storeCategory
+  id: UplinkPirateHardsuits
+  name: store-category-piratehardsuits
+  priority: 3
+
+- type: storeCategory
+  id: UplinkPirateUtility
+  name: store-category-pirateutility
+  priority: 4
+
+- type: storeCategory
+  id: UplinkPirateBundles
+  name: store-category-piratebundles
+  priority: 5
+
+- type: storeCategory
+  id: UplinkPirateGunneryEnergy
+  name: store-category-pirategunnery-energy
+  priority: 6
+
+- type: storeCategory
+  id: UplinkPirateGunneryKinetic
+  name: store-category-pirategunnery-kinetic
+  priority: 7
+
+- type: storeCategory
+  id: UplinkPirateGunneryMissile
+  name: store-category-pirategunnery-missile
+  priority: 8
+
+- type: storeCategory
+  id: UplinkPirateGunneryAmmo
+  name: store-category-pirategunnery-ammo
+  priority: 9
+
+- type: storeCategory
+  id: UplinkPirateGunneryConsoles
+  name: store-category-pirategunnery-consoles
+  priority: 10
+
+- type: storeCategory
+  id: UplinkPirateMechas
+  name: store-category-piratemechas
+  priority: 11
+
+- type: storeCategory
+  id: UplinkPirateBorges
+  name: store-category-pirateborges
+  priority: 12

@@ -1,0 +1,48 @@
+- type: trait
+  id: Talons
+  name: trait-talons-name
+  description: trait-talons-desc
+  category: HorizonNeutral
+  cost: 0
+  components:
+  - type: MeleeWeapon
+    soundHit:
+      collection: AlienClaw
+    angle: 30
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Piercing: 5
+
+- type: trait
+  id: Claws
+  name: trait-claws-name
+  description: trait-claws-desc
+  category: HorizonNeutral
+  cost: 0
+  components:
+  - type: MeleeWeapon
+    soundHit:
+      collection: AlienClaw
+    angle: 30
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 5
+
+- type: trait
+  id: NaturalWeaponRemoval
+  name: trait-natural-weapon-removal-name
+  description: trait-natural-weapon-removal-desc
+  category: HorizonNeutral
+  cost: 0
+  components:
+  - type: MeleeWeapon
+    soundHit:
+      collection: Punch
+    angle: 30
+    animation: WeaponArcFist
+    attackRate: 1
+    damage:
+      types:
+        Blunt: 5

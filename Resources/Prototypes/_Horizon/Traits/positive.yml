@@ -1,0 +1,757 @@
+# region Positive
+
+- type: trait
+  id: WillToLive
+  name: trait-will-to-live-name
+  description: trait-will-to-live-desc
+  category: HorizonPositive
+  cost: 1
+  effects:
+  - !type:ModifyHealth
+    healthChange:
+      Dead: 10
+
+- type: trait
+  id: Tenacity
+  name: trait-tenacity-name
+  description: trait-tenacity-desc
+  category: HorizonPositive
+  cost: 1
+  effects:
+  - !type:ModifyHealth
+    healthChange:
+      Dead: 5
+      Critical: 5
+
+- type: trait
+  id: PryingArm
+  name: trait-prying-name
+  description: trait-prying-desc
+  category: HorizonPositive
+  cost: 2
+  components:
+  - type: Prying
+    speedModifier: 0.4
+
+- type: trait
+  id: Vigor
+  name: trait-vigor-name
+  description: trait-vigor-desc
+  category: HorizonPositive
+  cost: 6
+  effects:
+  - !type:ModifyStamina
+    critThresholdModifier: 1.1
+    cooldownModifier: 1.2
+    afterCritDecayMultiplier: 0.9
+    stunModifier: 0.8
+
+- type: trait
+  id: MartialArtist
+  name: trait-martial-artist-name
+  description: trait-martial-artist-desc
+  category: HorizonPositive
+  cost: 5
+  priority: 2
+  effects:
+  - !type:ModifyMelee
+    damageModifier: 1.2
+    speedModifier: 1.25
+    rangeModifier: 1.1
+
+- type: trait
+  id: Steadfast
+  name: trait-steadfast-name
+  description: trait-steadfast-desc
+  category: HorizonPositive
+  cost: 3
+  effects:
+  - !type:ModifyDamageSlowdown
+    modifier: 0.15
+
+- type: trait
+  id: StrikingCalluses
+  name: trait-striking-calluses-name
+  description: trait-striking-calluses-desc
+  category: HorizonPositive
+  cost: 2
+  priority: 2
+  effects:
+  - !type:ModifyMelee
+    damageModifier: 1.4
+
+- type: trait
+  id: PlateletFactories
+  name: trait-platelet-factories-name
+  description: trait-platelet-factories-desc
+  category: HorizonPositive
+  cost: 10
+  components:
+  - type: PassiveDamage
+    allowedStates:
+    - Alive
+    damageCap: 100
+    damage:
+      groups:
+        Brute: -0.13
+        Burn: -0.13
+        Toxin: -0.13
+
+- type: trait
+  id: TrapAvoider
+  name: trait-trap-avoider-name
+  description: trait-trap-avoider-desc
+  category: HorizonPositive
+  cost: 3
+  components:
+  - type: ProtectedFromStepTriggers
+
+# region Temperature
+
+- type: trait
+  id: TemperatureTolerance
+  name: trait-temperature-tolerance-name
+  description: trait-temperature-tolerance-desc
+  category: HorizonPositive
+  group: TraitTemperature
+  cost: 1
+  components:
+  - type: Temperature
+    heatDamageThreshold: 335 # 325 base
+    coldDamageThreshold: 250 # 260 base
+    currentTemperature: 310.15 # 310,15 base
+    specificHeat: 42 # 42 base
+    coldDamage:
+      types:
+        Cold: 0.1 # 0.1 base
+    heatDamage:
+      types:
+        Heat: 1.5 # 1.5 base
+
+- type: trait
+  id: TemperatureColdHearted
+  name: trait-temperature-cold-hearted-name
+  description: trait-temperature-cold-hearted-desc
+  category: HorizonPositive
+  group: TraitTemperature
+  cost: 3
+  components:
+  - type: Temperature
+    heatDamageThreshold: 335 # 325 base
+    coldDamageThreshold: 210 # 260 base
+    currentTemperature: 310.15 # 310,15 base
+    specificHeat: 42 # 42 base
+    coldDamage:
+      types:
+        Cold: 0.05 # 0.1 base
+    heatDamage:
+      types:
+        Heat: 1.5 # 1.5 base
+
+- type: trait
+  id: TemperatureColdBlooded
+  name: trait-temperature-cold-blood-name
+  description: trait-temperature-cold-blood-desc
+  category: HorizonPositive
+  group: TraitTemperature
+  cost: 5
+  components:
+  - type: Temperature
+    heatDamageThreshold: 335 # 325 base
+    coldDamageThreshold: 160 # 260 base
+    currentTemperature: 310.15 # 310,15 base
+    specificHeat: 42 # 42 base
+    coldDamage:
+      types:
+        Cold: 0.05 # 0.1 base
+    heatDamage:
+      types:
+        Heat: 1.5 # 1.5 base
+
+- type: trait
+  id: TemperatureFlameHearted
+  name: trait-temperature-flame-heart-name
+  description: trait-temperature-flame-heart-desc
+  category: HorizonPositive
+  group: TraitTemperature
+  cost: 3
+  components:
+  - type: Temperature
+    heatDamageThreshold: 375 # 325 base
+    coldDamageThreshold: 250 # 260 base
+    currentTemperature: 310.15 # 310,15 base
+    specificHeat: 42 # 42 base
+    coldDamage:
+      types:
+        Cold: 0.1 # 0.1 base
+    heatDamage:
+      types:
+        Heat: 1.0 # 1.5 base
+
+- type: trait
+  id: TemperatureFlameBlooded
+  name: trait-temperature-flame-blood-name
+  description: trait-temperature-flame-blood-desc
+  category: HorizonPositive
+  group: TraitTemperature
+  cost: 5
+  components:
+  - type: Temperature
+    heatDamageThreshold: 425 # 325 base
+    coldDamageThreshold: 250 # 260 base
+    currentTemperature: 310.15 # 310,15 base
+    specificHeat: 42 # 42 base
+    coldDamage:
+      types:
+        Cold: 0.1 # 0.1 base
+    heatDamage:
+      types:
+        Heat: 0.5 # 1.5 base
+
+# region TraitCombat
+
+- type: trait
+  id: GoodShooter
+  name: trait-good-shooter-name
+  description: trait-good-shooter-desc
+  category: HorizonPositive
+  group: TraitCombat
+  cost: 6
+  components:
+  - type: RangedWeaponSpreadModifiers
+    modifier: 0.55
+
+# region TraitChef
+
+- type: trait
+  id: Cook
+  name: trait-cook-name
+  description: trait-cook-desc
+  category: HorizonPositive
+  group: TraitChef
+  cost: 3
+  components:
+  - type: Chef
+
+- type: trait
+  id: Chef
+  name: trait-chef-name
+  description: trait-chef-desc
+  category: HorizonPositive
+  group: TraitChef
+  cost: 5
+  components:
+  - type: Chef
+    advanced: true
+
+# region TraitEyes
+
+- type: trait
+  id: EyeImplantWeldingTrait
+  name: trait-eye-implant-welding-name
+  description: trait-eye-implant-welding-desc
+  category: HorizonPositive
+  group: TraitEyes
+  cost: 3
+  effects:
+    - !type:ModifyOrgans
+      protoId: EyeImplantWelding
+      slotId: eye_implant
+
+- type: trait
+  id: EyeImplantDiagnosticTrait
+  name: trait-eye-implant-diagnostic-name
+  description: trait-eye-implant-diagnostic-desc
+  category: HorizonPositive
+  group: TraitEyes
+  cost: 5
+  effects:
+    - !type:ModifyOrgans
+      protoId: EyeImplantDiagnostic
+      slotId: eye_implant
+
+- type: trait
+  id: EyeImplantMedicalTrait
+  name: trait-eye-implant-medical-name
+  description: trait-eye-implant-medical-desc
+  category: HorizonPositive
+  group: TraitEyes
+  cost: 5
+  effects:
+    - !type:ModifyOrgans
+      protoId: EyeImplantMedical
+      slotId: eye_implant
+
+- type: trait
+  id: EyeImplantChemicalTrait
+  name: trait-eye-implant-chemical-name
+  description: trait-eye-implant-chemical-desc
+  category: HorizonPositive
+  group: TraitEyes
+  cost: 5
+  effects:
+    - !type:ModifyOrgans
+      protoId: EyeImplantChemical
+      slotId: eye_implant
+
+- type: trait
+  id: EyeImplantSecurityTrait
+  name: trait-eye-implant-security-name
+  description: trait-eye-implant-security-desc
+  category: HorizonPositive
+  group: TraitEyes
+  cost: 5
+  effects:
+    - !type:ModifyOrgans
+      protoId: EyeImplantSecurity
+      slotId: eye_implant
+
+- type: trait
+  id: EyeImplantNightTrait
+  name: trait-eye-implant-night-name
+  description: trait-eye-implant-night-desc
+  category: HorizonPositive
+  group: TraitEyes
+  cost: 10
+  effects:
+    - !type:ModifyOrgans
+      protoId: EyeImplantNight
+      slotId: eye_implant
+
+
+# region TraitOrgans
+
+- type: trait
+  id: CyberneticAugmentation
+  name: trait-cybernetic-augmentation-name
+  description: trait-cybernetic-augmentation-desc
+  category: HorizonPositive
+  group: TraitAugmentation
+  cost: 10
+  effects:
+    - !type:ModifyOrgans
+      protoId: OrganCyberHeart
+      slotId: heart
+    - !type:ModifyOrgans
+      protoId: OrganCyberLungs
+      slotId: lungs
+    - !type:ModifyOrgans
+      protoId: OrganCyberLiver
+      slotId: liver
+    - !type:ModifyOrgans
+      protoId: OrganCyberStomach
+      slotId: stomach
+    - !type:ModifyOrgans
+      protoId: OrganCyberKidneys
+      slotId: kidneys
+
+- type: trait
+  id: BionicAugmentation
+  name: trait-bionic-augmentation-name
+  description: trait-bionic-augmentation-desc
+  category: HorizonPositive
+  group: TraitAugmentation
+  cost: 10
+  effects:
+    - !type:ModifyOrgans
+      protoId: OrganBioHeart
+      slotId: heart
+    - !type:ModifyOrgans
+      protoId: OrganBioLungs
+      slotId: lungs
+    - !type:ModifyOrgans
+      protoId: OrganBioLiver
+      slotId: liver
+    - !type:ModifyOrgans
+      protoId: OrganBioStomach
+      slotId: stomach
+    - !type:ModifyOrgans
+      protoId: OrganBioKidneys
+      slotId: kidneys
+
+- type: trait
+  id: BluespaceAugmentation
+  name: trait-bluespace-augmentation-name
+  description: trait-bluespace-augmentation-desc
+  category: HorizonPositive
+  group: TraitAugmentation
+  cost: 10
+  effects:
+    - !type:ModifyOrgans
+      protoId: OrganBsHeart
+      slotId: heart
+    - !type:ModifyOrgans
+      protoId: OrganBsLungs
+      slotId: lungs
+    - !type:ModifyOrgans
+      protoId: OrganBsLiver
+      slotId: liver
+    - !type:ModifyOrgans
+      protoId: OrganBsStomach
+      slotId: stomach
+    - !type:ModifyOrgans
+      protoId: OrganBsKidneys
+      slotId: kidneys
+
+# region TraitArm
+
+- type: trait
+  id: CyberArmReaperRight
+  name: trait-cyber-arm-reaper-name
+  description: trait-cyber-arm-reaper-desc
+  category: HorizonPositive
+  group: TraitArm
+  cost: 2
+  effects:
+    - !type:ModifyBodyParts
+      partType: Hand
+      symmetry: Right
+      protoId: RightHandCyber
+      slotId: right hand
+      parentPartType: Arm
+    - !type:ModifyBodyParts
+      partType: Arm
+      symmetry: Right
+      protoId: RightArmCyberReaper
+      slotId: right arm
+
+- type: trait
+  id: CyberArmMechwrightRight
+  name: trait-cyber-arm-mechwright-name
+  description: trait-cyber-arm-mechwright-desc
+  category: HorizonPositive
+  group: TraitArm
+  cost: 2
+  effects:
+    - !type:ModifyBodyParts
+      partType: Hand
+      symmetry: Right
+      protoId: RightHandCyber
+      slotId: right hand
+      parentPartType: Arm
+    - !type:ModifyBodyParts
+      partType: Arm
+      symmetry: Right
+      protoId: RightArmCyberMechwright
+      slotId: right arm
+
+- type: trait
+  id: CyberArmEngiRight
+  name: trait-cyber-arm-engi-name
+  description: trait-cyber-arm-engi-desc
+  category: HorizonPositive
+  group: TraitArm
+  cost: 5
+  effects:
+    - !type:ModifyBodyParts
+      partType: Hand
+      symmetry: Right
+      protoId: RightHandCyber
+      slotId: right hand
+      parentPartType: Arm
+    - !type:ModifyBodyParts
+      partType: Arm
+      symmetry: Right
+      protoId: RightArmCyberEngi
+      slotId: right arm
+
+- type: trait
+  id: CyberArmAtmosRight
+  name: trait-cyber-arm-atmos-name
+  description: trait-cyber-arm-atmos-desc
+  category: HorizonPositive
+  group: TraitArm
+  cost: 2
+  effects:
+    - !type:ModifyBodyParts
+      partType: Hand
+      symmetry: Right
+      protoId: RightHandCyber
+      slotId: right hand
+      parentPartType: Arm
+    - !type:ModifyBodyParts
+      partType: Arm
+      symmetry: Right
+      protoId: RightArmCyberAtmos
+      slotId: right arm
+
+- type: trait
+  id: CyberArmAstroRight
+  name: trait-cyber-arm-astro-name
+  description: trait-cyber-arm-astro-desc
+  category: HorizonPositive
+  group: TraitArm
+  cost: 2
+  effects:
+    - !type:ModifyBodyParts
+      partType: Hand
+      symmetry: Right
+      protoId: RightHandCyber
+      slotId: right hand
+      parentPartType: Arm
+    - !type:ModifyBodyParts
+      partType: Arm
+      symmetry: Right
+      protoId: RightArmCyberAstro
+      slotId: right arm
+
+- type: trait
+  id: CyberArmGardenRight
+  name: trait-cyber-arm-garden-name
+  description: trait-cyber-arm-garden-desc
+  category: HorizonPositive
+  group: TraitArm
+  cost: 2
+  effects:
+    - !type:ModifyBodyParts
+      partType: Hand
+      symmetry: Right
+      protoId: RightHandCyber
+      slotId: right hand
+      parentPartType: Arm
+    - !type:ModifyBodyParts
+      partType: Arm
+      symmetry: Right
+      protoId: RightArmCyberGarden
+      slotId: right arm
+
+# Basic Combat Arms - Shotgun Sawn
+- type: trait
+  id: CyberArmWeaponShotgunSawnRight
+  name: trait-cyber-arm-weapon-shotgun-sawn-name
+  description: trait-cyber-arm-weapon-shotgun-sawn-desc
+  category: HorizonPositive
+  group: TraitArm
+  cost: 3
+  effects:
+    - !type:ModifyBodyParts
+      partType: Hand
+      symmetry: Right
+      protoId: RightHandCyber
+      slotId: right hand
+      parentPartType: Arm
+    - !type:ModifyBodyParts
+      partType: Arm
+      symmetry: Right
+      protoId: RightArmProtoCyberWeaponShotgunSawn
+      slotId: right arm
+
+- type: trait
+  id: CyberArmWeaponEnergyPistolLaserRight
+  name: trait-cyber-arm-weapon-energy-pistol-laser-name
+  description: trait-cyber-arm-weapon-energy-pistol-laser-desc
+  category: HorizonPositive
+  group: TraitArm
+  cost: 3
+  effects:
+    - !type:ModifyBodyParts
+      partType: Hand
+      symmetry: Right
+      protoId: RightHandCyber
+      slotId: right hand
+      parentPartType: Arm
+    - !type:ModifyBodyParts
+      partType: Arm
+      symmetry: Right
+      protoId: RightArmProtoCyberWeaponEnergyPistolLaser
+      slotId: right arm
+
+- type: trait
+  id: CyberArmWeaponPkaSawnRight
+  name: trait-cyber-arm-weapon-pka-sawn-name
+  description: trait-cyber-arm-weapon-pka-sawn-desc
+  category: HorizonPositive
+  group: TraitArm
+  cost: 3
+  effects:
+    - !type:ModifyBodyParts
+      partType: Hand
+      symmetry: Right
+      protoId: RightHandCyber
+      slotId: right hand
+      parentPartType: Arm
+    - !type:ModifyBodyParts
+      partType: Arm
+      symmetry: Right
+      protoId: RightArmProtoCyberWeaponPkaSawn
+      slotId: right arm
+
+- type: trait
+  id: CyberArmWeaponEnergyPistolDisablerRight
+  name: trait-cyber-arm-weapon-energy-pistol-disabler-name
+  description: trait-cyber-arm-weapon-energy-pistol-disabler-desc
+  category: HorizonPositive
+  group: TraitArm
+  cost: 3
+  effects:
+    - !type:ModifyBodyParts
+      partType: Hand
+      symmetry: Right
+      protoId: RightHandCyber
+      slotId: right hand
+      parentPartType: Arm
+    - !type:ModifyBodyParts
+      partType: Arm
+      symmetry: Right
+      protoId: RightArmProtoCyberWeaponEnergyPistolDisabler
+      slotId: right arm
+
+- type: trait
+  id: CyberArmWeaponProtoKineticAcceleratorRight
+  name: trait-cyber-arm-weapon-proto-kinetic-accelerator-name
+  description: trait-cyber-arm-weapon-proto-kinetic-accelerator-desc
+  category: HorizonPositive
+  group: TraitArm
+  cost: 7
+  effects:
+    - !type:ModifyBodyParts
+      partType: Hand
+      symmetry: Right
+      protoId: RightHandCyber
+      slotId: right hand
+      parentPartType: Arm
+    - !type:ModifyBodyParts
+      partType: Arm
+      symmetry: Right
+      protoId: RightArmCyberWeaponProtoKineticAccelerator
+      slotId: right arm
+
+- type: trait
+  id: CyberArmWeaponEnergySmgDisablerRight
+  name: trait-cyber-arm-weapon-energy-smg-disabler-name
+  description: trait-cyber-arm-weapon-energy-smg-disabler-desc
+  category: HorizonPositive
+  group: TraitArm
+  cost: 7
+  effects:
+    - !type:ModifyBodyParts
+      partType: Hand
+      symmetry: Right
+      protoId: RightHandCyber
+      slotId: right hand
+      parentPartType: Arm
+    - !type:ModifyBodyParts
+      partType: Arm
+      symmetry: Right
+      protoId: RightArmCyberWeaponEnergySubMachineGunDisabler
+      slotId: right arm
+
+- type: trait
+  id: CyberArmWeaponEnergyPistolLaserAdvancedRight
+  name: trait-cyber-arm-weapon-energy-pistol-laser-advanced-name
+  description: trait-cyber-arm-weapon-energy-pistol-laser-advanced-desc
+  category: HorizonPositive
+  group: TraitArm
+  cost: 7
+  effects:
+    - !type:ModifyBodyParts
+      partType: Hand
+      symmetry: Right
+      protoId: RightHandCyber
+      slotId: right hand
+      parentPartType: Arm
+    - !type:ModifyBodyParts
+      partType: Arm
+      symmetry: Right
+      protoId: RightArmCyberWeaponEnergyPistolLaserAdvanced
+      slotId: right arm
+
+- type: trait
+  id: CyberArmWeaponShotgunAdvancedRight
+  name: trait-cyber-arm-weapon-shotgun-advanced-name
+  description: trait-cyber-arm-weapon-shotgun-advanced-desc
+  category: HorizonPositive
+  group: TraitArm
+  cost: 7
+  effects:
+    - !type:ModifyBodyParts
+      partType: Hand
+      symmetry: Right
+      protoId: RightHandCyber
+      slotId: right hand
+      parentPartType: Arm
+    - !type:ModifyBodyParts
+      partType: Arm
+      symmetry: Right
+      protoId: RightArmCyberWeaponShotgunAdvanced
+      slotId: right arm
+
+- type: trait
+  id: CyberArmClawRendingRight
+  name: trait-cyber-arm-claw-rending-name
+  description: trait-cyber-arm-claw-rending-desc
+  category: HorizonPositive
+  group: TraitArm
+  cost: 7
+  effects:
+    - !type:ModifyBodyParts
+      partType: Hand
+      symmetry: Right
+      protoId: RightHandCyber
+      slotId: right hand
+      parentPartType: Arm
+    - !type:ModifyBodyParts
+      partType: Arm
+      symmetry: Right
+      protoId: RightArmCyberClawRending
+      slotId: right arm
+
+- type: trait
+  id: CyberArmClawPiersingRight
+  name: trait-cyber-arm-claw-piercing-name
+  description: trait-cyber-arm-claw-piercing-desc
+  category: HorizonPositive
+  group: TraitArm
+  cost: 7
+  effects:
+    - !type:ModifyBodyParts
+      partType: Hand
+      symmetry: Right
+      protoId: RightHandCyber
+      slotId: right hand
+      parentPartType: Arm
+    - !type:ModifyBodyParts
+      partType: Arm
+      symmetry: Right
+      protoId: RightArmCyberClawPiercing
+      slotId: right arm
+
+- type: trait
+  id: CyberArmClawPoisonRight
+  name: trait-cyber-arm-claw-poison-name
+  description: trait-cyber-arm-claw-poison-desc
+  category: HorizonPositive
+  group: TraitArm
+  cost: 7
+  effects:
+    - !type:ModifyBodyParts
+      partType: Hand
+      symmetry: Right
+      protoId: RightHandCyber
+      slotId: right hand
+      parentPartType: Arm
+    - !type:ModifyBodyParts
+      partType: Arm
+      symmetry: Right
+      protoId: RightArmCyberClawPoison
+      slotId: right arm
+
+- type: trait
+  id: CyberArmLashRight
+  name: trait-cyber-arm-lash-name
+  description: trait-cyber-arm-lash-desc
+  category: HorizonPositive
+  group: TraitArm
+  cost: 7
+  effects:
+    - !type:ModifyBodyParts
+      partType: Hand
+      symmetry: Right
+      protoId: RightHandCyber
+      slotId: right hand
+      parentPartType: Arm
+    - !type:ModifyBodyParts
+      partType: Arm
+      symmetry: Right
+      protoId: RightArmCyberLash
+      slotId: right arm

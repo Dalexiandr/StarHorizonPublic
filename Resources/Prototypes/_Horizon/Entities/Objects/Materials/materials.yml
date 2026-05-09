@@ -1,0 +1,209 @@
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: MaterialBaseFar
+  description: A raw material.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Materials/materials.rsi
+  - type: Item
+    sprite: _Horizon/Objects/Materials/materials.rsi
+    size: Normal
+  - type: Tag
+    tags:
+    - DroneUsable
+    - RawMaterial
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: MaterialBaseFar
+  id: MaterialEmerald
+  name: refined emerald
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: Emerald
+    baseLayer: base
+    layerStates:
+    - emerald
+    - emerald_2
+    - emerald_3
+  - type: Sprite
+    state: emerald
+    layers:
+    - state: emerald
+      map: ["base"]
+  - type: Appearance
+  - type: Item
+    heldPrefix: emerald
+  - type: Extractable
+    grindableSolutionName: emerald
+  - type: SolutionContainerManager
+    solutions:
+      emerald:
+        reagents:
+        - ReagentId: Carbon
+          Quantity: 20
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Emerald: 100
+  - type: Tag
+    tags:
+    - RawMaterial
+    - Emerald
+
+- type: entity
+  parent: MaterialEmerald
+  id: MaterialEmerald1
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: MaterialBaseFar
+  id: MaterialRuby
+  name: refined ruby
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: Ruby
+    baseLayer: base
+    layerStates:
+    - ruby
+    - ruby_2
+    - ruby_3
+  - type: Sprite
+    state: ruby
+    layers:
+    - state: ruby
+      map: ["base"]
+  - type: Appearance
+  - type: Item
+    heldPrefix: ruby
+  - type: Extractable
+    grindableSolutionName: ruby
+  - type: SolutionContainerManager
+    solutions:
+      ruby:
+        reagents:
+        - ReagentId: Carbon
+          Quantity: 20
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Ruby: 100
+  - type: Tag
+    tags:
+    - RawMaterial
+    - Ruby
+
+- type: entity
+  parent: MaterialRuby
+  id: MaterialRuby1
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: MaterialBaseFar
+  id: MaterialSapphire
+  name: refined sapphire
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: Sapphire
+    baseLayer: base
+    layerStates:
+    - sapphire
+    - sapphire_2
+    - sapphire_3
+  - type: Sprite
+    state: sapphire
+    layers:
+    - state: sapphire
+      map: ["base"]
+  - type: Appearance
+  - type: Item
+    heldPrefix: sapphire
+  - type: Extractable
+    grindableSolutionName: sapphire
+  - type: SolutionContainerManager
+    solutions:
+      sapphire:
+        reagents:
+        - ReagentId: Carbon
+          Quantity: 20
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Sapphire: 100
+  - type: Tag
+    tags:
+    - RawMaterial
+    - Sapphire
+
+- type: entity
+  parent: MaterialSapphire
+  id: MaterialSapphire1
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: MaterialBaseFar
+  id: MaterialTopaz
+  name: refined topaz
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: Topaz
+    baseLayer: base
+    layerStates:
+    - topaz
+    - topaz_2
+    - topaz_3
+  - type: Sprite
+    state: topaz
+    layers:
+    - state: topaz
+      map: ["base"]
+  - type: Appearance
+  - type: Item
+    heldPrefix: topaz
+  - type: Extractable
+    grindableSolutionName: topaz
+  - type: SolutionContainerManager
+    solutions:
+      topaz:
+        reagents:
+        - ReagentId: Carbon
+          Quantity: 20
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Topaz: 100
+  - type: Tag
+    tags:
+    - RawMaterial
+    - Topaz
+
+- type: entity
+  parent: MaterialTopaz
+  id: MaterialTopaz1
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1

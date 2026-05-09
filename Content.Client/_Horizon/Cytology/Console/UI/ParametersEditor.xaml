@@ -1,0 +1,13 @@
+<Control xmlns="https://spacestation14.io"
+         xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client">
+    <BoxContainer Orientation="Vertical" HorizontalExpand="True" VerticalExpand="True">
+        <Label Text="{Loc 'cytology-console-available-disks'}" />
+        <ScrollContainer
+            HScrollEnabled="False"
+            HorizontalExpand="True"
+            VerticalExpand="True">
+            <BoxContainer Name="DisksList" Orientation="Vertical" Margin="4" HorizontalExpand="True" SeparationOverride="6">
+            </BoxContainer>
+        </ScrollContainer>
+    </BoxContainer>
+</Control>

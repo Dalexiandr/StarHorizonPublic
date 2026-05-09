@@ -1,0 +1,168 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "adder, ambition, bocadillo, brigand, bulker, ceres, chisel, comet, construct, copperhead, garden, gasbender, harbormaster, investigator, kestrel, kilderkin, stringer, liquidator, loader, pathfinder, prospector, searchlight and vagabond by erhardsteinhauer (discord/github), used font from https://github.com/tgstation/tgstation/blob/master/icons/obj/signs.dmi.",
+    "extra_copyright": [
+        "spirit by iNoahGuy/actualcatmoment (discord/github).",
+        "apothecary, caladrius, charon, courier, druid, pulsar, retort, stasis, surveyor by dustylens (discord/github).",
+        "barge, eagle, hauler, phoenix, placebo, skipper by Mygnol (discord/github)",
+        "aegis, apothecary, charon, caladrius, dragoon, gaslight, druid, pulsar, retort, stasis, surveyor by dustylens (discord/github).",
+        "barge, eagle, hauler, phoenix, placebo, skipper, sparrow by Mygnol (discord/github)",
+        "izakaya by AmbitiousFailure (discord/github)",
+        "nook by Chervjakys (discord/github)"
+    ],
+    "metaAtlas": false,
+    "size": {
+        "x": 128,
+        "y": 96
+    },
+    "states": [
+        {
+            "name": "adder"
+        },
+        {
+            "name": "ambition"
+        },
+        {
+            "name": "aegis"
+        },
+        {
+            "name": "apothecary"
+        },
+        {
+            "name": "barge"
+        },
+        {
+            "name": "bocadillo"
+        },
+        {
+            "name": "brigand"
+        },
+        {
+            "name": "bulker"
+        },
+        {
+            "name": "caladrius"
+        },
+        {
+            "name": "ceres"
+        },
+        {
+            "name": "charon"
+        },
+        {
+            "name": "chisel"
+        },
+        {
+            "name": "comet"
+        },
+        {
+            "name": "construct"
+        },
+        {
+            "name": "copperhead"
+        },
+        {
+            "name": "courier"
+        },
+        {
+            "name": "dragoon"
+        },
+        {
+            "name": "druid"
+        },
+        {
+            "name": "eagle"
+        },
+        {
+            "name": "garden"
+        },
+        {
+            "name": "gasbender"
+        },
+        {
+            "name": "gaslight"
+        },
+        {
+            "name": "harbormaster"
+        },
+        {
+            "name": "hauler"
+        },
+        {
+            "name": "honker"
+        },
+        {
+            "name": "investigator"
+        },
+        {
+            "name": "izakaya"
+        },
+        {
+            "name": "kestrel"
+        },
+        {
+            "name": "kilderkin"
+        },
+        {
+            "name": "liquidator"
+        },
+        {
+            "name": "loader"
+        },
+        {
+            "name": "nightlight"
+        },
+        {
+            "name": "pathfinder"
+        },
+        {
+            "name": "phoenix"
+        },
+        {
+            "name": "pioneer"
+        },
+        {
+            "name": "placebo"
+        },
+        {
+            "name": "prospector"
+        },
+        {
+            "name": "pulsar"
+        },
+        {
+            "name": "retort"
+        },
+        {
+            "name": "searchlight"
+        },
+        {
+            "name": "sparrow"
+        },
+        {
+            "name": "skipper"
+        },
+        {
+            "name": "spirit"
+        },
+        {
+            "name": "stasis"
+        },
+        {
+            "name": "stringer"
+        },
+        {
+            "name": "surveyor"
+        },
+        {
+            "name": "tide"
+        },
+        {
+            "name": "vagabond"
+        },
+        {
+            "name": "nook"
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+# Имплантер
+
+- type: entity
+  id: ExtractImplanter
+  name: Имплантер аварийной пены
+  parent: BaseImplantOnlyImplanter
+  components:
+  - type: Implanter
+    implant: ExtractImplant
+
+# Имплант
+
+- type: entity
+  parent: BaseSubdermalImplant
+  id: ExtractImplant
+  name: Аварийная пена
+  description: Имплант который запенивает носителя после его смерти для спасения парамедиками. Может перенести тело если есть приёмник аварийного телепорта.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SubdermalImplant
+    implantAction: ActionActivateExtractImplant
+  - type: TriggerImplantAction
+  - type: TriggerOnMobstateChange
+    mobState:
+    - Dead
+  - type: AnCoExtractImplant
+
+# Действия
+
+- type: entity
+  parent: [BaseSuicideAction, BaseImplantAction]
+  id: ActionActivateExtractImplant
+  name: Аварийная пенна
+  description: Обволакивает вас пеной для экстренного спасения. ВЫ НЕ СМОЖЕТЕ ВЫБРАТСЯ НИКАК.
+  components:
+  - type: LimitedCharges
+    maxCharges: 1
+  - type: Action
+    checkCanInteract: false
+    useDelay: 1
+    itemIconStyle: BigAction
+    priority: -20
+    icon:
+      sprite: Objects/Specific/Medical/Morgue/bodybags.rsi
+      state: bag

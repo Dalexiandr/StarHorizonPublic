@@ -1,0 +1,193 @@
+- type: entity
+  id: MobMimicBase
+  parent: SimpleMobBase
+  abstract: true
+  components:
+  - type: Insulated
+  - type: CombatMode
+  - type: InputMover
+  - type: MobMover
+  - type: Tag
+    tags:
+    - CannotSuicide
+    - FootstepSound
+    - DoorBumpOpener
+  - type: MeleeWeapon
+    altDisarm: false
+    angle: 0
+    soundHit:
+     collection: Punch
+    animation: WeaponArcFist
+    damage:
+      types:
+        Brute: 15
+  - type: GhostRole
+    allowMovement: true
+    allowSpeech: false
+    makeSentient: true
+  - type: GhostTakeoverAvailable
+  - type: HTN
+    rootTask:
+      task: XenoCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 4
+    baseSprintSpeed : 4
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Dead
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Dead
+  - type: DamageStateVisuals
+    rotate: true
+    states:
+      Alive:
+        Base: running
+      Dead:
+        Base: dead
+  - type: Bloodstream
+    bloodMaxVolume: 60
+    bloodReagent: Slime
+  - type: Butcherable
+    spawned:
+    - id: FoodMeat
+  - type: Tool
+    speedModifier: 1.5
+    qualities:
+      - Prying
+  - type: Prying
+    pryPowered: !type:Bool
+        true
+    force: !type:Bool
+      true
+    useSound:
+      path: /Audio/Items/crowbar.ogg
+  - type: Hands
+  - type: SolutionContainerManager
+    solutions:
+      melee:
+        reagents:
+        - ReagentId: MuteToxin
+          Quantity: 100
+  - type: MeleeChemicalInjector
+    solution: melee
+    transferAmount: 3
+    maxTransferAmount: 5
+  - type: StaticPrice
+    price: 5000
+  - type: NpcFactionMember
+    factions:
+    - Xeno
+
+- type: entity
+  name: Жнец
+  id: MobReaper
+  parent: MobMimicBase
+  description: Что это за существо?..Что?!На что оно смотрит... на меня?...Нет, не подходи ко мне. Остановись.Остановись.Пожалуйста...Неееет
+  components:
+  - type: FootstepModifier
+    footstepSoundCollection:
+      path: /Audio/_Horizon/Misc/footsteps.ogg
+      params:
+        volume: 5
+  - type: Reactive
+    groups:
+      Flammable: [Touch]
+      Extinguish: [Touch]
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: running
+        BaseUnshaded: reaper_eyes
+      Dead:
+        Base: dead
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _Horizon/Mobs/Demons/reaper.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
+    - map: ["enum.DamageStateVisualLayers.BaseUnshaded"]
+      state: reaper_eyes
+      shader: unshaded
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 70
+        Structural: 100
+    soundHit:
+      path: /Audio/_Horizon/Misc/hit.ogg
+      volume: 3
+  - type: Devourer
+    foodPreference: Humanoid
+    shouldStoreDevoured: true
+    chemical: Ichor
+    healRate: 25.0
+    whitelist:
+      components:
+      - MobState
+      - Door
+      tags:
+      - Wall
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 3
+    baseSprintSpeed : 3
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      900: Critical
+      1000: Dead
+  - type: Stamina
+    critThreshold: 2000
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      600: 0.8
+      350: 0.5
+  - type: EmitSoundOnSpawn
+    sound:
+      path: /Audio/_Horizon/Misc/growling.ogg
+      params:
+        volume: 50
+        maxDistance: 100
+        pitchscale: 0.5
+
+  - type: GhostRole
+    name: Жнец
+    description: Вы - Жнец. Ваша задача сеять ужас и разрушения, уничтожая всё, что встанет на вашем пути.
+    rules: Вы - Жнец. Ваша задача сеять ужас и разрушения, уничтожая всё, что встанет на вашем пути.
+  - type: Bloodstream
+    bloodMaxVolume: 700
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 1000
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: StaticPrice
+    price: 20000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.4
+        Slash: 0.4
+        Piercing: 0.6
+        Heat: 0.6
+        Caustic: 0.7
+  - type: ExplosionResistance
+    damageCoefficient: 0.7

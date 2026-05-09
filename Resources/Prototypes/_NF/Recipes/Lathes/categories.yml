@@ -1,0 +1,56 @@
+# TODO: migrate these to NF prefixes
+- type: latheCategory
+  id: EVASuits
+  name: lathe-category-evasuits
+
+- type: latheCategory
+  id: ArmorNF
+  name: lathe-category-armor-nf
+
+- type: latheCategory
+  id: StorageNF
+  name: lathe-category-storage-nf
+
+- type: latheCategory
+  id: KitchenNF
+  name: lathe-category-kitchen-nf
+
+- type: latheCategory
+  id: Brand
+  name: lathe-category-brand
+
+- type: latheCategory
+  id: ClothesNF
+  name: lathe-category-clothes-nf
+
+- type: latheCategory
+  id: MedicalNF
+  name: lathe-category-medical-nf
+
+- type: latheCategory
+  id: Seeds
+  name: lathe-category-seeds
+
+- type: latheCategory
+  id: Soda
+  name: lathe-category-soda
+
+- type: latheCategory
+  id: NFAnimalCubes
+  name: lathe-category-nf-animal-cubes
+
+- type: latheCategory
+  id: NFMagazines
+  name: lathe-category-magazines-nf
+
+- type: latheCategory
+  id: NFInflatables
+  name: lathe-category-inflatables-nf
+
+- type: latheCategory
+  id: NFPiety
+  name: lathe-category-piety-nf
+
+- type: latheCategory
+  id: NFCandles
+  name: lathe-category-candles-nf

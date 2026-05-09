@@ -1,0 +1,49 @@
+- type: randomHumanoidSettings
+  id: ERTJuggernautSettings
+  randomizeName: false
+  speciesBlacklist:
+  - Geth
+  - Diona
+  - Dwarf
+  - SlimePerson
+  - Arachnid
+  - Vulpkanin
+  - Katunian
+  - Gingerbread
+  - SkeletonPerson
+  - Moth
+  - Vox
+  - TajaranSpecies
+  - Geth
+  components:
+  - type: GhostRole
+    name: ОБР Джаггернаут
+    description: Выдающийся боец, обладающий мощной броней и оружием. Его задача - вести команду в опасных миссиях для обеспечения безопасности и выполнения важных задач.
+  - type: GhostTakeoverAvailable
+  - type: Loadout
+    prototypes: [ ERTJuggernautGearEVA ]
+  - type: RandomMetadata
+    nameSegments:
+    - NamesMilitaryFirst
+    - NamesMilitaryLast
+  - type: Speech
+    speechSounds: JaggernautSpeech
+  - type: MindShield
+  - type: Juggernaut
+
+- type: entity
+  id: RandomHumanoidSpawnerERTJuggernaut
+  name: ОБР джаггернаут
+  suffix: Роль ОБР, Броня EVA, StarHorizon
+  components:
+    - type: Sprite
+      sprite: _StarHorizon/Markers/Jobs/ertjuggernaut.rsi
+      state: ertjuggernaut
+    - type: RandomMetadata
+      nameSegments:
+      - NamesMilitaryFirst
+      - NamesMilitaryLast
+    - type: RandomHumanoidSpawner
+      settings: ERTJuggernautSettings
+    - type: Speech
+      speechSounds: JaggernautSpeech

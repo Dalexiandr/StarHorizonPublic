@@ -1,0 +1,27 @@
+- type: stack
+  id: Emerald
+  name: stack-emerald
+  icon: { sprite: "/Textures/_Horizon/Objects/Materials/materials.rsi", state: emerald }
+  spawn: MaterialEmerald1
+  maxCount: 30
+
+- type: stack
+  id: Ruby
+  name: stack-ruby
+  icon: { sprite: "/Textures/_Horizon/Objects/Materials/materials.rsi", state: ruby }
+  spawn: MaterialRuby1
+  maxCount: 30
+
+- type: stack
+  id: Sapphire
+  name: stack-sapphire
+  icon: { sprite: "/Textures/_Horizon/Objects/Materials/materials.rsi", state: sapphire }
+  spawn: MaterialSapphire1
+  maxCount: 30
+
+- type: stack
+  id: Topaz
+  name: stack-topaz
+  icon: { sprite: "/Textures/_Horizon/Objects/Materials/materials.rsi", state: topaz }
+  spawn: MaterialTopaz1
+  maxCount: 30

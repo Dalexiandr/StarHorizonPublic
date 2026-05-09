@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "license": "CLA with hosting restrictions",
+  "copyright": "Sprited by Xigovir DS:623559319543349268",
+  "size": {
+    "x": 32,
+    "y": 32
+   },
+   "states" : [
+    {
+      "name": "crab-bot",
+      "directions": 4
+    },
+    {
+        "name": "crab-off"
+    },
+    {
+        "name": "crab-icon"
+    },
+    {
+      "name": "combat-bot",
+      "directions": 4
+    },
+    {
+        "name": "combat-off"
+    },
+    {
+        "name": "combat-icon"
+    },
+    {
+      "name": "mine-bot",
+      "directions": 4
+    },
+    {
+        "name": "mine-off"
+    },
+    {
+        "name": "mine-icon"
+    },
+    {
+        "name": "titan-icon"
+    },
+    {
+      "name": "titan-bot",
+      "directions": 4
+    },
+    {
+        "name": "cyclop-icon"
+    },
+    {
+      "name": "cyclop-bot",
+      "directions": 4
+    },
+    {
+        "name": "begemoth-icon"
+    },
+    {
+      "name": "begemoth-bot",
+      "directions": 4
+    },
+    {
+        "name": "mush-icon"
+    },
+    {
+      "name": "mush-bot",
+      "directions": 4
+    },
+    {
+        "name": "mush-death"
+    },
+    {
+        "name": "begemoth-death"
+    },
+    {
+        "name": "titan-death"
+    },
+    {
+        "name": "cyclop-death"
+    }
+  ]
+}

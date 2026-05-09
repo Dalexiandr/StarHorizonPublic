@@ -1,0 +1,77 @@
+- type: guideEntry
+  id: Species
+  name: guide-entry-species
+  text: "/ServerInfo/Guidebook/Mobs/Species.xml"
+  children:
+    - Arachnid
+    - Diona # Note: Frontier changes inside
+    - Dwarf # Note: Frontier changes inside
+    - Human
+    - Moth
+    - Reptilian
+    - SlimePerson
+    - Vox
+    - Goblin # Frontier
+    - Sheleg # Frontier
+    - Vulpkanin # DeltaV
+    - Harpy # DeltaV
+    - Felinid # DeltaV
+    - Oni # DeltaV
+    - Demon # Horizon
+    - Katunian # Horizon
+    - Tajaran # Horizon
+
+- type: guideEntry
+  id: Arachnid
+  name: species-name-arachnid
+  text: "/ServerInfo/Guidebook/Mobs/Arachnid.xml"
+
+- type: guideEntry
+  id: Diona
+  name: species-name-diona
+  text: "/ServerInfo/_NF/Guidebook/Mobs/Diona.xml" # Frontier: moved to _NF folder
+
+- type: guideEntry
+  id: Dwarf
+  name: species-name-dwarf
+  text: "/ServerInfo/_NF/Guidebook/Mobs/Dwarf.xml" # Frontier: moved to _NF folder
+
+- type: guideEntry
+  id: Human
+  name: species-name-human
+  text: "/ServerInfo/Guidebook/Mobs/Human.xml"
+
+- type: guideEntry
+  id: Moth
+  name: species-name-moth
+  text: "/ServerInfo/Guidebook/Mobs/Moth.xml"
+
+- type: guideEntry
+  id: Reptilian
+  name: species-name-reptilian
+  text: "/ServerInfo/Guidebook/Mobs/Reptilian.xml"
+
+- type: guideEntry
+  id: SlimePerson
+  name: species-name-slime
+  text: "/ServerInfo/Guidebook/Mobs/SlimePerson.xml"
+
+- type: guideEntry
+  id: Vox
+  name: species-name-vox
+  text: "/ServerInfo/Guidebook/Mobs/Vox.xml"
+
+- type: guideEntry
+  id: Demon
+  name: species-name-demon
+  text: "/ServerInfo/Guidebook/Mobs/Demon.xml"
+
+- type: guideEntry
+  id: Katunian
+  name: species-name-katunian
+  text: "/ServerInfo/Guidebook/Mobs/Katunian.xml"
+
+- type: guideEntry
+  id: Tajaran
+  name: species-name-tajaran
+  text: "/ServerInfo/Guidebook/Mobs/Tajaran.xml"

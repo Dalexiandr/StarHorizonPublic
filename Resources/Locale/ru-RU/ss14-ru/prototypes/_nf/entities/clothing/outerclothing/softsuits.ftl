@@ -1,0 +1,9 @@
+ent-NFClothingOuterEVASuitBase = { ent-ClothingOuterStorageBase }
+    .desc = { ent-ClothingOuterStorageBase.desc }
+    .suffix = Фронтир
+ent-ClothingOuterEVASuitFsa = EVA скафандр FSA
+    .desc = Стандартный костюм EVA для судов Far Star Arms. Он поставляется со стандартным камуфляжем зеленого цвета.
+ent-ClothingOuterEVASuitFsb = скафандр EVA FSB
+    .desc = Стандартный костюм EVA для судов корпорации "Far Star Biotech". Он поставляется с двумя подстаканниками.
+ent-ClothingOuterEVASuitFsc = EVA скафандр FSC
+    .desc = Стандартный костюм EVA для судов Far Star Commerce. Он поставляется с локтевой смазкой.

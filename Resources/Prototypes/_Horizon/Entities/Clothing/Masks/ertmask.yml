@@ -1,0 +1,19 @@
+- type: entity
+  parent: ClothingMaskGasERT
+  id: ClothingMaskGasJuggernautERT
+  name: противогаз джаггернаута ОБР
+  description: Этот противогаз создан, чтобы внушать страх врагам NanoTrasen.
+  suffix: StarHorizon, неснимаемый
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Mask/ertjuggernautmask.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Mask/ertjuggernautmask.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.80
+        Slash: 0.80
+        Piercing: 0.90
+        Heat: 0.90
+  - type: Unremoveable

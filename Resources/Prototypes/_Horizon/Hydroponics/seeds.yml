@@ -1,0 +1,1478 @@
+- type: seed
+  id: mintplant
+  name: seeds-mintplant-name
+  noun: seeds-noun-seeds
+  displayName: seeds-mintplant-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/mint.rsi
+  packetPrototype: MintPlantSeeds
+  productPrototypes:
+    - MintPlantLeaves
+  mutationPrototypes:
+    - catnip
+  harvestRepeat: Repeat
+  lifespan: 50
+  maturation: 6
+  production: 6
+  growthStages: 5
+  yield: 2
+  potency: 5
+  idealLight: 9
+  chemicals:
+    MintExtract:
+      Min: 1
+      Max: 20
+      PotencyDivisor: 10
+
+- type: seed
+  id: catnip
+  name: seeds-catnip-name
+  noun: seeds-noun-seeds
+  displayName: seeds-catnip-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/catnip.rsi
+  packetPrototype: CatNipSeeds
+  productPrototypes:
+    - CatNipLeaves
+  harvestRepeat: Repeat
+  lifespan: 50
+  maturation: 6
+  production: 6
+  growthStages: 5
+  yield: 2
+  potency: 5
+  idealLight: 9
+  chemicals:
+    CatNipExtract:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+
+- type: seed
+  id: glasscap
+  name: seeds-glasscap-name
+  noun: seeds-noun-seeds
+  displayName: seeds-glasscap-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/glasscap.rsi
+  packetPrototype: GlasscapSeeds
+  productPrototypes:
+    - GlassLog
+  lifespan: 80
+  maturation: 15
+  ligneous: true
+  production: 3
+  yield: 5
+  potency: 1
+  growthStages: 3
+  waterConsumption: 0.60
+  nutrientConsumption: 0.50
+  lightTolerance: 6
+  idealHeat: 288
+
+- type: seed
+  id: plaststeelcap
+  name: seeds-plaststeelcap-name
+  noun: seeds-noun-seeds
+  displayName: seeds-plaststeelcap-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/plaststeelcap.rsi
+  packetPrototype: PlastSteelcapSeeds
+  productPrototypes:
+    - PlastSteelLog
+  lifespan: 80
+  maturation: 15
+  ligneous: true
+  production: 3
+  yield: 3
+  potency: 1
+  growthStages: 3
+  waterConsumption: 0.60
+  nutrientConsumption: 0.80
+  lightTolerance: 6
+  idealHeat: 288
+
+- type: seed
+  id: berriesbluespace
+  name: seeds-berriesbluespace-name
+  noun: seeds-noun-seeds
+  displayName: seeds-berriesbluespace-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/berriesbluespace.rsi
+  packetPrototype: BerriesbluespaceSeeds
+  productPrototypes:
+    - FoodBerriesbluespace
+  harvestRepeat: Repeat
+  lifespan: 50
+  maturation: 6
+  production: 6
+  yield: 4
+  idealLight: 7
+  nutrientConsumption: 0.6
+  chemicals:
+    Barozine:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 40
+    Leporazine:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+
+- type: seed
+  id: berriesdeath
+  name: seeds-berriesdeath-name
+  noun: seeds-noun-seeds
+  displayName: seeds-berriesdeath-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/berriesdeath.rsi
+  packetPrototype: BerriesdeathSeeds
+  productPrototypes:
+    - FoodBerriesdeath
+  harvestRepeat: Repeat
+  lifespan: 50
+  maturation: 6
+  production: 6
+  yield: 4
+  idealLight: 7
+  nutrientConsumption: 0.6
+  chemicals:
+    Lead:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 20
+
+- type: seed
+  id: berriesice
+  name: seeds-berriesice-name
+  noun: seeds-noun-seeds
+  displayName: seeds-berriesice-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/berriesice.rsi
+  packetPrototype: BerriesiceSeeds
+  productPrototypes:
+    - FoodBerriesice
+  harvestRepeat: Repeat
+  lifespan: 50
+  maturation: 6
+  production: 6
+  yield: 4
+  idealLight: 7
+  nutrientConsumption: 0.6
+  exudeGasses:
+    Frezon: 0.01
+  chemicals:
+    Fresium:
+      Min: 2
+      Max: 5
+      PotencyDivisor: 30
+    FrostOil:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+
+- type: seed
+  id: berriesflame
+  name: seeds-berriesflame-name
+  noun: seeds-noun-seeds
+  displayName: seeds-berriesflame-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/berriesflame.rsi
+  packetPrototype: BerriesflameSeeds
+  productPrototypes:
+    - FoodBerriesflame
+  harvestRepeat: Repeat
+  lifespan: 50
+  maturation: 6
+  production: 6
+  yield: 4
+  idealLight: 7
+  nutrientConsumption: 0.6
+  exudeGasses:
+    Plasma: 0.05
+  chemicals:
+    Pyrazine:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 30
+    Insuzine:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 30
+    Leporazine:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+
+- type: seed
+  id: lightmushroom
+  name: seeds-lightmushroom-name
+  noun: seeds-noun-seeds
+  displayName: seeds-lightmushroom-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/lightmushroom.rsi
+  packetPrototype: LightmushroomSeeds
+  productPrototypes:
+    - FoodLightmushroom
+  mutationPrototypes:
+    - mushroompolymore
+    - mushroominocybe
+    - mushroompornici
+  lifespan: 35
+  maturation: 10
+  production: 7
+  yield: 5
+  potency: 1
+  growthStages: 3
+  lightTolerance: 6
+  waterConsumption: 0.60
+  nutrientConsumption: 0.50
+  idealHeat: 288
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+    Nocturine:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 50
+
+- type: seed
+  id: whitemushroom
+  name: seeds-whitemushroom-name
+  noun: seeds-noun-seeds
+  displayName: seeds-whitemushroom-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/whitemushroom.rsi
+  packetPrototype: WhitemushroomSeeds
+  productPrototypes:
+    - FoodWhitemushroom
+  lifespan: 35
+  maturation: 10
+  production: 7
+  yield: 5
+  potency: 1
+  growthStages: 3
+  lightTolerance: 6
+  waterConsumption: 0.60
+  nutrientConsumption: 0.50
+  idealHeat: 288
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 50
+      PotencyDivisor: 3
+
+- type: seed
+  id: wineshop
+  name: seeds-wineshop-name
+  noun: seeds-noun-seeds
+  displayName: seeds-wineshop-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/wineshop.rsi
+  packetPrototype: WineshopSeeds
+  productPrototypes:
+    - FoodWineshopCones
+  lifespan: 25
+  maturation: 6
+  production: 3
+  yield: 3
+  potency: 5
+  idealLight: 8
+  nutrientConsumption: 0.40
+  chemicals:
+    Ethanol:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+
+- type: seed
+  id: coffeearabica
+  name: seeds-coffeearabica-name
+  noun: seeds-noun-seeds
+  displayName: seeds-coffeearabica-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/coffeearabica.rsi
+  packetPrototype: CoffeearabicaSeeds
+  productPrototypes:
+    - FoodCoffeearabicaRaw
+  mutationPrototypes:
+    - coffeeliberica
+    - coffeerobusta
+  harvestRepeat: Repeat
+  lifespan: 50
+  maturation: 6
+  production: 6
+  yield: 3
+  idealLight: 7
+  waterConsumption: 1
+  nutrientConsumption: 0.8
+  idealHeat: 298
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 25
+    Vitamin:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 50
+    CoffeearabicaPowder:
+      Min: 1
+      Max: 20
+      PotencyDivisor: 10
+
+- type: seed
+  id: coffeeliberica
+  name: seeds-coffeeliberica-name
+  noun: seeds-noun-seeds
+  displayName: seeds-coffeeliberica-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/coffeeliberica.rsi
+  packetPrototype: CoffeelibericaSeeds
+  productPrototypes:
+    - FoodCoffeelibericaRaw
+  harvestRepeat: Repeat
+  lifespan: 50
+  maturation: 6
+  production: 6
+  yield: 3
+  idealLight: 7
+  waterConsumption: 1
+  nutrientConsumption: 0.8
+  idealHeat: 298
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 4
+      PotencyDivisor: 25
+    Vitamin:
+      Min: 1
+      Max: 2
+      PotencyDivisor: 50
+    CoffeelibericaPowder:
+      Min: 1
+      Max: 20
+      PotencyDivisor: 10
+
+- type: seed
+  id: coffeerobusta
+  name: seeds-coffeerobusta-name
+  noun: seeds-noun-seeds
+  displayName: seeds-coffeerobusta-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/coffeerobusta.rsi
+  packetPrototype: CoffeerobustaSeeds
+  productPrototypes:
+    - FoodCoffeerobustaRaw
+  harvestRepeat: Repeat
+  lifespan: 50
+  maturation: 6
+  production: 6
+  yield: 3
+  idealLight: 7
+  waterConsumption: 1
+  nutrientConsumption: 0.8
+  idealHeat: 298
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 4
+      PotencyDivisor: 25
+    Vitamin:
+      Min: 1
+      Max: 2
+      PotencyDivisor: 50
+    CoffeerobustaPowder:
+      Min: 1
+      Max: 20
+      PotencyDivisor: 10
+
+- type: seed
+  id: durotton
+  name: seeds-durotton-name
+  noun: seeds-noun-seeds
+  displayName: seeds-durotton-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/durotton.rsi
+  packetPrototype: DurottonSeeds
+  productPrototypes:
+    - DurottonBol
+  harvestRepeat: NoRepeat
+  lifespan: 25
+  maturation: 8
+  production: 3
+  yield: 2
+  potency: 5
+  idealLight: 8
+  growthStages: 3
+  waterConsumption: 0.80
+  chemicals:
+    Fiber:
+      Min: 5
+      Max: 10
+      PotencyDivisor: 20
+    Phosphorus:
+      Min: 4
+      Max: 8
+      PotencyDivisor: 30
+
+- type: seed
+  id: lifeweed
+  name: seeds-lifeweed-name
+  noun: seeds-noun-seeds
+  displayName: seeds-lifeweed-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/lifeweed.rsi
+  packetPrototype: LifeweedSeeds
+  productPrototypes:
+    - LifeweedLeaves
+  harvestRepeat: Repeat
+  lifespan: 40
+  maturation: 8
+  production: 12
+  yield: 2
+  potency: 20
+  growthStages: 3
+  idealLight: 11
+  idealHeat: 298
+  consumeGasses:
+    Oxygen: 0.1
+  chemicals:
+    Omnizine:
+      Min: 1
+      Max: 20
+      PotencyDivisor: 15
+
+- type: seed
+  id: deathweed
+  name: seeds-deathweed-name
+  noun: seeds-noun-seeds
+  displayName: seeds-deathweed-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/deathweed.rsi
+  packetPrototype: DeathweedSeeds
+  productPrototypes:
+    - DeathweedLeaves
+  harvestRepeat: Repeat
+  lifespan: 50
+  maturation: 8
+  production: 12
+  yield: 2
+  potency: 20
+  growthStages: 3
+  idealLight: 2
+  idealHeat: 298
+  exudeGasses:
+    Tritium: 0.05
+  chemicals:
+    Toxin:
+      Min: 8
+      Max: 30
+      PotencyDivisor: 15
+    ChloralHydrate:
+      Min: 4
+      Max: 15
+      PotencyDivisor: 15
+
+- type: seed
+  id: ambrosiaGaia
+  name: seeds-ambrosiagaia-name
+  noun: seeds-noun-seeds
+  displayName: seeds-ambrosiagaia-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/ambrosia_gaia.rsi
+  packetPrototype: AmbrosiaGaiaSeeds
+  productPrototypes:
+    - FoodAmbrosiaGaia
+  lifespan: 25
+  maturation: 10
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 6
+  waterConsumption: 0.60
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 2
+      PotencyDivisor: 10
+    Vitamin:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    EarthBlood:
+      Min: 1
+      Max: 3
+      PotencyDivisor: 35
+
+- type: seed
+  id: moneycabbage
+  name: seeds-moneycabbage-name
+  noun: seeds-noun-seeds
+  displayName: seeds-moneycabbage-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/moneycabbage.rsi
+  packetPrototype: MoneyCabbageSeeds
+  productPrototypes:
+    - MoneyCabbageLog
+  lifespan: 50
+  maturation: 7
+  production: 5
+  yield: 3
+  potency: 10
+  growthStages: 1
+
+- type: seed
+  id: plasmacabbage
+  name: seeds-plasmacabbage-name
+  noun: seeds-noun-seeds
+  displayName: seeds-plasmacabbage-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/plasmacabbage.rsi
+  packetPrototype: PlasmaCabbageSeeds
+  productPrototypes:
+    - FoodPlasmaCabbage
+  lifespan: 50
+  maturation: 7
+  production: 5
+  yield: 3
+  potency: 10
+  exudeGasses:
+    Plasma: 0.05
+  growthStages: 1
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+    Plasma:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+
+- type: seed
+  id: barrelmelon
+  name: seeds-barrelmelon-name
+  noun: seeds-noun-seeds
+  displayName: seeds-barrelmelon-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/barrelmelon.rsi
+  packetPrototype: BarrelmelonSeeds
+  productPrototypes:
+    - FoodBarrelmelon
+  lifespan: 55
+  maturation: 12
+  production: 3
+  yield: 1
+  potency: 1
+  idealLight: 8
+  chemicals:
+    Moonshine:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+    Vitamin:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+
+- type: seed
+  id: clovey
+  name: seeds-clovey-name
+  noun: seeds-noun-seeds
+  displayName: seeds-clovey-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/clovey.rsi
+  packetPrototype: CloveySeeds
+  productPrototypes:
+    - FloverClovey
+  lifespan: 25
+  maturation: 10
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 3
+  waterConsumption: 0.60
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Vitamin:
+      Min: 1
+      Max: 2
+      PotencyDivisor: 50
+
+- type: seed
+  id: clovew
+  name: seeds-clovew-name
+  noun: seeds-noun-seeds
+  displayName: seeds-clovew-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/clovew.rsi
+  packetPrototype: ClovewSeeds
+  productPrototypes:
+    - FloverClovew
+  lifespan: 25
+  maturation: 10
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 3
+  waterConsumption: 0.60
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Vitamin:
+      Min: 1
+      Max: 2
+      PotencyDivisor: 50
+
+- type: seed
+  id: clover
+  name: seeds-clover-name
+  noun: seeds-noun-seeds
+  displayName: seeds-clover-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/clover.rsi
+  packetPrototype: CloverSeeds
+  productPrototypes:
+    - FloverClover
+  lifespan: 25
+  maturation: 10
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 3
+  waterConsumption: 0.60
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Vitamin:
+      Min: 1
+      Max: 2
+      PotencyDivisor: 50
+
+- type: seed
+  id: clovep
+  name: seeds-clovep-name
+  noun: seeds-noun-seeds
+  displayName: seeds-clovep-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/clovep.rsi
+  packetPrototype: ClovepSeeds
+  productPrototypes:
+    - FloverClovep
+  lifespan: 25
+  maturation: 10
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 3
+  waterConsumption: 0.60
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Vitamin:
+      Min: 1
+      Max: 2
+      PotencyDivisor: 50
+
+- type: seed
+  id: lilyp
+  name: seeds-lilyp-name
+  noun: seeds-noun-seeds
+  displayName: seeds-lilyp-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/lilyp.rsi
+  packetPrototype: LilypSeeds
+  productPrototypes:
+    - FloverLilyp
+  lifespan: 25
+  maturation: 10
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 3
+  waterConsumption: 0.60
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Vitamin:
+      Min: 1
+      Max: 2
+      PotencyDivisor: 50
+
+- type: seed
+  id: lilyo
+  name: seeds-lilyo-name
+  noun: seeds-noun-seeds
+  displayName: seeds-lilyo-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/lilyo.rsi
+  packetPrototype: LilyoSeeds
+  productPrototypes:
+    - FloverLilyo
+  lifespan: 25
+  maturation: 10
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 3
+  waterConsumption: 0.60
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Vitamin:
+      Min: 1
+      Max: 2
+      PotencyDivisor: 50
+
+- type: seed
+  id: lilyb
+  name: seeds-lilyb-name
+  noun: seeds-noun-seeds
+  displayName: seeds-lilyb-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/lilyb.rsi
+  packetPrototype: LilybSeeds
+  productPrototypes:
+    - FloverLilyb
+  lifespan: 25
+  maturation: 10
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 3
+  waterConsumption: 0.60
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Vitamin:
+      Min: 1
+      Max: 2
+      PotencyDivisor: 50
+
+- type: seed
+  id: rosew
+  name: seeds-rosew-name
+  noun: seeds-noun-seeds
+  displayName: seeds-rosew-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/rosew.rsi
+  packetPrototype: RosewSeeds
+  productPrototypes:
+    - FloverRosew
+  lifespan: 25
+  maturation: 10
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 3
+  waterConsumption: 0.60
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Vitamin:
+      Min: 1
+      Max: 2
+      PotencyDivisor: 50
+
+- type: seed
+  id: roser
+  name: seeds-roser-name
+  noun: seeds-noun-seeds
+  displayName: seeds-roser-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/roser.rsi
+  packetPrototype: RoserSeeds
+  productPrototypes:
+    - FloverRoser
+  lifespan: 25
+  maturation: 10
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 3
+  waterConsumption: 0.60
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Vitamin:
+      Min: 1
+      Max: 2
+      PotencyDivisor: 50
+
+- type: seed
+  id: rosep
+  name: seeds-rosep-name
+  noun: seeds-noun-seeds
+  displayName: seeds-rosep-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/rosep.rsi
+  packetPrototype: RosepSeeds
+  productPrototypes:
+    - FloverRosep
+  lifespan: 25
+  maturation: 10
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 3
+  waterConsumption: 0.60
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Vitamin:
+      Min: 1
+      Max: 2
+      PotencyDivisor: 50
+
+- type: seed
+  id: roselp
+  name: seeds-roselp-name
+  noun: seeds-noun-seeds
+  displayName: seeds-roselp-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/roselp.rsi
+  packetPrototype: RoselpSeeds
+  productPrototypes:
+    - FloverRoselp
+  lifespan: 25
+  maturation: 10
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 3
+  waterConsumption: 0.60
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Vitamin:
+      Min: 1
+      Max: 2
+      PotencyDivisor: 50
+
+- type: seed
+  id: chamomiler
+  name: seeds-chamomiler-name
+  noun: seeds-noun-seeds
+  displayName: seeds-chamomiler-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/chamomiler.rsi
+  packetPrototype: ChamomilerSeeds
+  productPrototypes:
+    - FloverChamomiler
+  lifespan: 25
+  maturation: 10
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 3
+  waterConsumption: 0.60
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Vitamin:
+      Min: 1
+      Max: 2
+      PotencyDivisor: 50
+
+- type: seed
+  id: chamomilev
+  name: seeds-chamomilev-name
+  noun: seeds-noun-seeds
+  displayName: seeds-chamomilev-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/chamomilev.rsi
+  packetPrototype: ChamomilevSeeds
+  productPrototypes:
+    - FloverChamomilev
+  lifespan: 25
+  maturation: 10
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 3
+  waterConsumption: 0.60
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Vitamin:
+      Min: 1
+      Max: 2
+      PotencyDivisor: 50
+
+- type: seed
+  id: tuliplp
+  name: seeds-tuliplp-name
+  noun: seeds-noun-seeds
+  displayName: seeds-tuliplp-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/tuliplp.rsi
+  packetPrototype: TuliplpSeeds
+  productPrototypes:
+    - FloverTuliplp
+  lifespan: 25
+  maturation: 10
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 3
+  waterConsumption: 0.60
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Vitamin:
+      Min: 1
+      Max: 2
+      PotencyDivisor: 50
+
+- type: seed
+  id: tulipp
+  name: seeds-tulipp-name
+  noun: seeds-noun-seeds
+  displayName: seeds-tulipp-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/tulipp.rsi
+  packetPrototype: TulippSeeds
+  productPrototypes:
+    - FloverTulipp
+  lifespan: 25
+  maturation: 10
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 3
+  waterConsumption: 0.60
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Vitamin:
+      Min: 1
+      Max: 2
+      PotencyDivisor: 50
+
+- type: seed
+  id: tulipr
+  name: seeds-tulipr-name
+  noun: seeds-noun-seeds
+  displayName: seeds-tulipr-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/tulipr.rsi
+  packetPrototype: TuliprSeeds
+  productPrototypes:
+    - FloverTulipr
+  lifespan: 25
+  maturation: 10
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 3
+  waterConsumption: 0.60
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Vitamin:
+      Min: 1
+      Max: 2
+      PotencyDivisor: 50
+
+- type: seed
+  id: tulipy
+  name: seeds-tulipy-name
+  noun: seeds-noun-seeds
+  displayName: seeds-tulipy-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/tulipy.rsi
+  packetPrototype: TulipySeeds
+  productPrototypes:
+    - FloverTulipy
+  lifespan: 25
+  maturation: 10
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 3
+  waterConsumption: 0.60
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Vitamin:
+      Min: 1
+      Max: 2
+      PotencyDivisor: 50
+
+- type: seed
+  id: chillfire
+  name: seeds-chillfire-name
+  noun: seeds-noun-seeds
+  displayName: seeds-chillfire-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/chillfire.rsi
+  packetPrototype: ChillFireSeeds
+  productPrototypes:
+    - FoodChillFirePepper
+  harvestRepeat: Repeat
+  lifespan: 25
+  maturation: 6
+  production: 6
+  yield: 2
+  potency: 20
+  idealLight: 9
+  idealHeat: 298
+  chemicals:
+    HorseradishSauce:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+    Nutriment:
+      Min: 1
+      Max: 4
+      PotencyDivisor: 25
+    Vitamin:
+      Min: 1
+      Max: 4
+      PotencyDivisor: 25
+
+- type: seed
+  id: grapeg
+  name: seeds-grapeg-name
+  noun: seeds-noun-seeds
+  displayName: seeds-grapeg-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/grapeg.rsi
+  packetPrototype: GrapegSeeds
+  productPrototypes:
+    - FoodGrapeg
+  lifespan: 50
+  maturation: 6
+  production: 5
+  yield: 3
+  potency: 10
+  growthStages: 2
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Vitamin:
+      Min: 1
+      Max: 4
+      PotencyDivisor: 25
+
+- type: seed
+  id: grapeb
+  name: seeds-grapeb-name
+  noun: seeds-noun-seeds
+  displayName: seeds-grapeb-display-name
+  suffix: Horizon
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/grapeb.rsi
+  packetPrototype: GrapebSeeds
+  productPrototypes:
+    - FoodGrapeb
+  lifespan: 50
+  maturation: 6
+  production: 5
+  yield: 3
+  potency: 10
+  growthStages: 2
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Vitamin:
+      Min: 1
+      Max: 4
+      PotencyDivisor: 25
+
+- type: seed
+  id: acidTomato
+  name: seeds-acidtomato-name
+  noun: seeds-noun-seeds
+  displayName: seeds-acidtomato-display-name
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/acid_tomato.rsi
+  packetPrototype: AcidTomatoSeeds
+  productPrototypes:
+    - FoodAcidTomato
+  harvestRepeat: Repeat
+  lifespan: 60
+  maturation: 8
+  production: 6
+  yield: 2
+  potency: 10
+  waterConsumption: 0.60
+  nutrientConsumption: 0.70
+  idealLight: 8
+  idealHeat: 298
+  splatPrototype: PuddleSplatter
+  chemicals:
+    FerrochromicAcid:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+
+- type: seed
+  id: mushroompolymore
+  name: seeds-mushroompolymore-name
+  noun: seeds-noun-seeds
+  displayName: seeds-mushroompolymore-display-name
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/mushroompolymore.rsi
+  packetPrototype: MushroompolymoreSeeds
+  productPrototypes:
+    - FoodMushroompolymore
+  lifespan: 50
+  maturation: 6
+  production: 5
+  yield: 3
+  potency: 10
+  growthStages: 3
+  chemicals:
+    Toxin:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Sugar:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Ethanol:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+
+- type: seed
+  id: mushroominocybe
+  name: seeds-mushroominocybe-name
+  noun: seeds-noun-seeds
+  displayName: seeds-mushroominocybe-display-name
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/mushroominocybe.rsi
+  packetPrototype: MushroominocybeSeeds
+  productPrototypes:
+    - FoodMushroominocybe
+  lifespan: 50
+  maturation: 6
+  production: 5
+  yield: 3
+  potency: 10
+  growthStages: 3
+  chemicals:
+    MindbreakerToxin:
+      Min: 1
+      Max: 4
+      PotencyDivisor: 25
+    Mechanotoxin:
+      Min: 1
+      Max: 2
+      PotencyDivisor: 50
+
+- type: seed
+  id: mushroomporcini
+  name: seeds-mushroomporcini-name
+  noun: seeds-noun-seeds
+  displayName: seeds-mushroomporcini-display-name
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/mushroomporcini.rsi
+  packetPrototype: MushroomporciniSeeds
+  productPrototypes:
+    - FoodMushroomporcini
+  lifespan: 50
+  maturation: 6
+  production: 5
+  yield: 3
+  potency: 10
+  growthStages: 3
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Omnizine:
+      Min: 1
+      Max: 3
+      PotencyDivisor: 35
+    Nicotine:
+      Min: 1
+      Max: 4
+      PotencyDivisor: 25
+
+- type: seed
+  id: sunflower
+  name: seeds-sunflower-name
+  noun: seeds-noun-seeds
+  displayName: seeds-sunflower-display-name
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/sunflower.rsi
+  packetPrototype: SunflowerSeeds
+  productPrototypes:
+    - FoodSunflower
+  mutationPrototypes:
+    - novaflower
+    - moonflower
+  lifespan: 50
+  maturation: 6
+  production: 5
+  yield: 3
+  potency: 10
+  growthStages: 3
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Oil:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+
+- type: seed
+  id: novaflower
+  name: seeds-novaflower-name
+  noun: seeds-noun-seeds
+  displayName: seeds-novaflower-display-name
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/novaflower.rsi
+  packetPrototype: NovaflowerSeeds
+  productPrototypes:
+    - FoodNovaflower
+  lifespan: 50
+  maturation: 6
+  production: 5
+  yield: 3
+  potency: 10
+  growthStages: 3
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    CapsaicinOil:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+
+- type: seed
+  id: moonflower
+  name: seeds-moonflower-name
+  noun: seeds-noun-seeds
+  displayName: seeds-moonflower-display-name
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/moonflower.rsi
+  packetPrototype: MoonflowerSeeds
+  productPrototypes:
+    - FoodMoonflower
+  lifespan: 50
+  maturation: 6
+  production: 5
+  yield: 3
+  potency: 10
+  growthStages: 3
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Vitamin:
+      Min: 1
+      Max: 2
+      PotencyDivisor: 50
+    Moonshine:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+
+- type: seed
+  id: cherrybulb
+  name: seeds-cherrybulb-name
+  noun: seeds-noun-seeds
+  displayName: seeds-cherrybulb-display-name
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/cherrybulb.rsi
+  packetPrototype: CherrybulbSeeds
+  productPrototypes:
+    - FoodCherryBulb
+  mutationPrototypes:
+    - cherrybomb
+  harvestRepeat: Repeat
+  lifespan: 50
+  maturation: 6
+  production: 5
+  yield: 3
+  potency: 10
+  growthStages: 6
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 7
+      PotencyDivisor: 15
+    Sugar:
+      Min: 1
+      Max: 7
+      PotencyDivisor: 15
+
+- type: seed
+  id: cherrybomb
+  name: seeds-cherrybomb-name
+  noun: seeds-noun-seeds
+  displayName: seeds-cherrybomb-display-name
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/cherrybomb.rsi
+  packetPrototype: CherrybombSeeds
+  productPrototypes:
+    - FoodCherryBomb
+  harvestRepeat: Repeat
+  lifespan: 50
+  maturation: 6
+  production: 5
+  yield: 3
+  potency: 10
+  growthStages: 6
+  chemicals:
+    Potassium:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+
+- type: seed
+  id: cherryblue
+  name: seeds-cherryblue-name
+  noun: seeds-noun-seeds
+  displayName: seeds-cherryblue-display-name
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/cherryblue.rsi
+  packetPrototype: CherryblueSeeds
+  productPrototypes:
+    - FoodCherryBlue
+  harvestRepeat: Repeat
+  lifespan: 50
+  maturation: 6
+  production: 5
+  yield: 3
+  potency: 10
+  growthStages: 6
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 7
+      PotencyDivisor: 15
+    Sugar:
+      Min: 1
+      Max: 7
+      PotencyDivisor: 15
+
+- type: seed
+  id: diamondcarrot
+  name: seeds-diamondcarrot-name
+  noun: seeds-noun-seeds
+  displayName: seeds-diamondcarrot-display-name
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/diamondcarrot.rsi
+  packetPrototype: DiamondcarrotSeeds
+  productPrototypes:
+    - FoodDiamondCarrot
+  lifespan: 50
+  maturation: 6
+  production: 5
+  yield: 3
+  potency: 10
+  growthStages: 3
+  chemicals:
+    JuiceCarrot:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Omnizine:
+      Min: 1
+      Max: 2
+      PotencyDivisor: 50
+    Vitamin:
+      Min: 1
+      Max: 4
+      PotencyDivisor: 25
+
+- type: seed
+  id: bluespaceTomato
+  name: seeds-bluespace-tomato-name
+  noun: seeds-noun-seeds
+  displayName: seeds-bluespace-tomato-display-name
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/bluespace_tomato.rsi
+  packetPrototype: BlueTomatoSeeds
+  productPrototypes:
+  - FoodBluespaceTomato
+  harvestRepeat: Repeat
+  lifespan: 25
+  maturation: 8
+  production: 6
+  yield: 2
+  potency: 10
+  waterConsumption: 0.5
+  nutrientConsumption: 0.6
+  idealLight: 8
+  idealHeat: 298
+  splatPrototype: PuddleSplatter
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 3
+      PotencyDivisor: 20
+    Singulo:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+
+- type: seed
+  id: peach
+  name: seeds-peach-name
+  noun: seeds-noun-seeds
+  displayName: seeds-peach-display-name
+  plantRsi: _Horizon/Objects/Specific/Hydroponics/peach.rsi
+  packetPrototype: PeachSeeds
+  productPrototypes:
+  - FoodPeach
+  harvestRepeat: Repeat
+  lifespan: 55
+  maturation: 6
+  production: 6
+  yield: 3
+  potency: 10
+  idealLight: 8
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    Vitamin:
+      Min: 1
+      Max: 4
+      PotencyDivisor: 20
+    Sugar:
+      Min: 1
+      Max: 7
+      PotencyDivisor: 10

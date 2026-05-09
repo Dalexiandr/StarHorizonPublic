@@ -1,0 +1,244 @@
+- type: entity
+  id: AnCoMechCyclopDungeon
+  suffix: StarHorizon, AnCo, Dungeon
+  name: АМЕ Циклоп
+  description: боевой тип тяжелого АВС АМЕ Циклоп. Момент когда прогресс победил.
+  parent: [BaseAnCoMob, MobHumanoidHostileAISimpleRanged]
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Mobs/bot.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: cyclop-bot
+  - type: Gun
+    fireRate: 0.5
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: BallisticAmmoProvider
+    proto: EMPStandartExplodesAnCo
+    capacity: 100
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          KazmieSheet1:
+            min: 0
+            max: 10
+          ArdonSheet1:
+            min: 0
+            max: 10
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: MobState
+    allowedStates:
+      - Alive
+      - Critical
+      - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      890: Critical
+      900: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: cyclop-bot
+      Critical:
+        Base: cyclop-death
+      Dead:
+        Base: cyclop-death
+
+- type: entity
+  id: AnCoMechMushDungeon
+  suffix: StarHorizon, AnCo, Dungeon
+  name: АМЕ Муш
+  description: Что это такое? Это ошибка вселенной? почему оно существует?
+  parent: [BaseAnCoMob, MobHumanoidHostileAISimpleRanged]
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Mobs/bot.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: mush-bot
+  - type: Gun
+    fireRate: 0.5
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: BallisticAmmoProvider
+    proto: StandartLaserAnCo
+    capacity: 100
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          KazmieSheet1:
+            min: 10
+            max: 1
+          ArdonSheet1:
+            min: 0
+            max: 5
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: MobState
+    allowedStates:
+      - Alive
+      - Critical
+      - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      200: Critical
+      300: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: mush-bot
+      Critical:
+        Base: mush-death
+      Dead:
+        Base: mush-death
+
+- type: entity
+  id: AnCoMechTitanDungeon
+  suffix: StarHorizon, AnCo, Dungeon
+  name: АМЕ Титан
+  description: Это не офицер Титан, но бояться его нужно не меньше.
+  parent: [BaseAnCoMob, MobHumanoidHostileAISimpleRanged]
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Mobs/bot.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: titan-bot
+  - type: Gun
+    fireRate: 5
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: BallisticAmmoProvider
+    proto: StandartLaserAnCo
+    capacity: 1000
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 800
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          KazmieSheet1:
+            min: 10
+            max: 1
+          ArdonSheet1:
+            min: 0
+            max: 5
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: MobState
+    allowedStates:
+      - Alive
+      - Critical
+      - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      600: Critical
+      700: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: titan-bot
+      Critical:
+        Base: titan-death
+      Dead:
+        Base: titan-death
+
+- type: entity
+  id: AnCoMechBegemothDungeon
+  suffix: StarHorizon, AnCo, Dungeon
+  name: АМЕ Бегемот
+  description: Большой, толстый, неповоротливый, его название говорит само за себя.
+  parent: [BaseAnCoMob, MobHumanoidHostileAISimpleRanged]
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Mobs/bot.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: begemoth-bot
+  - type: Gun
+    fireRate: 2
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: BallisticAmmoProvider
+    proto: AnCoDroneCombatDungeon
+    capacity: 10
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          KazmieSheet1:
+            min: 10
+            max: 1
+          ArdonSheet1:
+            min: 0
+            max: 5
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: MobState
+    allowedStates:
+      - Alive
+      - Critical
+      - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      200: Critical
+      210: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: begemoth-bot
+      Critical:
+        Base: begemoth-death
+      Dead:
+        Base: begemoth-death
+# боты для игры (переключение)

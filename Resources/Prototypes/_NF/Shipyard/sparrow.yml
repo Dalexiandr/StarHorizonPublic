@@ -1,0 +1,62 @@
+# Revert
+
+# Author Info
+# GitHub: ???
+# Discord: ???
+
+# Maintainer Info
+# GitHub: ???
+# Discord: ???
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Sparrow
+  parent: BaseVessel
+  name: NR Sparrow
+  description: A small research and engineering vessel.
+  price: 35000
+  category: Small
+  group: Shipyard
+  shuttlePath: /Maps/_NF/Shuttles/sparrow.yml
+  guidebookPage: ShipyardSparrow
+  class:
+  - Science
+  - Engineering
+  engine:
+  - Uranium
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:FactionCostModifier
+      faction: "FactionSIU"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionArcadia"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: Sparrow
+  mapName: 'NR Sparrow'
+  mapPath: /Maps/_NF/Shuttles/sparrow.yml
+  minPlayers: 0
+  stations:
+    Sparrow:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Sparrow {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

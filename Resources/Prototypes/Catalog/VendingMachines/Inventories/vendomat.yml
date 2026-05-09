@@ -1,0 +1,18 @@
+- type: vendingMachineInventory
+  id: VendomatInventory
+  startingInventory:
+    RemoteSignaller: 10
+    Igniter: 2
+    Wirecutter: 2
+    Screwdriver: 2
+    CableApcStack: 2
+    FlashlightLantern: 2
+    PowerCellSmallPrinted: 3
+    MicroManipulatorStockPart: 4 # Frontier: 12<4
+    MatterBinStockPart: 4 # Frontier
+    CapacitorStockPart: 4 # Frontier
+    Beaker: 8 # Frontier
+    AirFreshener: 10 # Frontier
+  contrabandInventory:
+    ProximitySensor: 1
+    LeftArmBorg: 1

@@ -1,0 +1,20 @@
+# AI packages for Inferno difficulty NPCs - can see through walls
+
+- type: entity
+  id: MobRogueSiliconAIInfernoRanged
+  abstract: true
+  components:
+  - type: HTN
+    rootTask:
+       task: InfernoSimpleRangedHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        false
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+      SoundTargetInLOS: !type:SoundPathSpecifier
+        path: /Audio/Effects/double_beep.ogg

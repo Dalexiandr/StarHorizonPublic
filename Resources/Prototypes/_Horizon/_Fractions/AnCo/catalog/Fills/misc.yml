@@ -1,0 +1,122 @@
+- type: entity
+  id: ClosetAnCoFillDungeon
+  suffix: Starhorizon, AnCo, Dungeon
+  parent: ClosetBaseAnCo
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: ClosetAnCoLoot
+
+- type: entityTable
+  id: ClosetAnCoLoot
+  table: !type:AllSelector
+    children:
+    # Special
+    - !type:NestedSelector
+      tableId: AnCoSpecialTable
+      prob: 0.05
+    # Mask
+    - !type:NestedSelector
+      tableId: AnCoMaskTable
+      prob: 0.05
+    # Suit
+    - !type:NestedSelector
+      tableId: AnCoSuitTable
+      prob: 0.3
+    # Fluff
+    - !type:NestedSelector
+      tableId: AnCoPlushTable
+      prob: 0.1
+    # Weapons
+    - !type:NestedSelector
+      tableId: AnCoWeaponTable
+      prob: 0.05
+    # Shoes
+    - !type:NestedSelector
+      tableId: AnCoShoesTable
+      prob: 0.2
+
+
+- type: entityTable
+  id: AnCoPlushTable
+  table: !type:GroupSelector
+    children:
+      - id: RipsiPlushin
+      - id: KnightPlushin
+      - id: TitanPlushin
+      - id: CyclopPlushin
+      - id: EngiPlushin
+      - id: LumaPlushina
+
+- type: entityTable
+  id: AnCoWeaponTable
+  table: !type:GroupSelector
+    children:
+      - id: AnCoKnife
+        weight: 3
+      - id: WeaponPistolAnCo
+        weight: 2
+      - id: AnCoWeaponHeater
+        weight: 1
+
+- type: entityTable
+  id: AnCoSpecialTable
+  table: !type:GroupSelector
+    children:
+      - id: AnCoMechMushInferno
+        weight: 4
+      - id: ReliableContainerAnConanits
+        weight: 3
+      - id: NanitMedipenAnCo
+        weight: 2
+      - id: CombatMedipenAnCo
+        weight: 1
+
+- type: entityTable
+  id: AnCoShoesTable
+  table: !type:GroupSelector
+    children:
+      - id: AnCoBoots
+        weight: 2
+      - id: AnCoClothingShoesBootsMag
+        weight: 1
+
+- type: entityTable
+  id: AnCoMaskTable
+  table: !type:GroupSelector
+    children:
+      - id: AnCoClothingMaskBio
+        weight: 2
+      - id: AnCoClothingMaskCombat
+        weight: 1
+
+- type: entityTable
+  id: AnCoSuitTable
+  table: !type:GroupSelector
+    children:
+      - id: TurtleneckLessPocketAnCo
+        weight: 2
+      - id: TurtleneckLessAnCo
+        weight: 2
+      - id: TurtleneckPocketAnCo
+        weight: 2
+      - id: TurtleneckAnCo
+        weight: 2
+      - id: HydrosuitAnCo
+        weight: 2
+      - id: HydrosuitLessAnCo
+        weight: 2
+      - id: AnCoVests
+        weight: 1
+      - id: ClothingOuterHardsuitPetal
+        weight: 1
+      - id: ClothingEyesVisionAnCo
+        weight: 1
+      - id: ClothingAnCoHeadArmorHelmet
+        weight: 1
+      - id: ClothingAnCoHeadCombatHelmet
+        weight: 1
+      - id: ClothingBeltAnCo
+        weight: 1
+      - id: ClothingBeltWebbingAnCo

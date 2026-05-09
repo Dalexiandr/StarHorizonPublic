@@ -1,0 +1,41 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: amir7036
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: Thera
+  parent: BaseVesselAntag
+  name: Thera
+  description: Универсальный синдикатовский шаттл среднего класса с модульной конструкцией для различных операций.
+  price: 80000
+  category: Medium
+  group: Syndicate
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/Syndicate/thera.yml
+  class:
+  - Syndicate
+  - Fighter
+  engine:
+  - RTG
+
+- type: gameMap
+  id: Thera
+  mapName: 'Thera'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/Syndicate/thera.yml
+  minPlayers: 0
+  stations:
+    Thera:
+      stationProto: StandardFrontierAntagVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Thera {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

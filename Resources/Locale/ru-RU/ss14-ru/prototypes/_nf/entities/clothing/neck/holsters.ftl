@@ -1,0 +1,12 @@
+ent-NFBaseClothingNeckHolster = { ent-ClothingNeckBase }
+    .desc = { ent-ClothingNeckBase.desc }
+ent-NFBaseClothingNeckSheath = { ent-ClothingNeckBase }
+    .desc = { ent-ClothingNeckBase.desc }
+ent-NFBaseClothingNeckHolsterThigh = бедренная кобура
+    .desc = Кобура, предназначенная для крепления на бедро для легкого доступа к боевому пистолету. Имеет дополнительный карман для магазина.
+ent-NFBaseClothingNeckHolsterThighNfsd = кобура ДШНФ
+    .desc = { ent-BaseC2ContrabandUnredeemable.desc }
+ent-NFBaseClothingNeckSheathThigh = бедренные ножны
+    .desc = Ножны, предназначенные для крепления на бедро для легкого доступа к кинжалу.
+ent-NFBaseClothingNeckSheathThighNfsd = ножны ДШНФ
+    .desc = { ent-BaseC2ContrabandUnredeemable.desc }

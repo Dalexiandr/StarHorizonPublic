@@ -1,0 +1,39 @@
+- type: tile
+  id: FloorKazmie
+  name: Казмий
+  sprite: /Textures/_Horizon/_Fractions/AnCo/Tiles/kazmie.png
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000
+  weather: true
+  indestructible: true
+
+- type: tile
+  id: FloorKazmieSolid
+  name: Твёрдный Казмий
+  sprite: /Textures/_Horizon/_Fractions/AnCo/Tiles/kazmie-solid.png
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000
+  weather: true
+  indestructible: true
+
+- type: tile
+  id: FloorArdon
+  name: Ардониевый стеклянный пол
+  sprite: /Textures/_Horizon/_Fractions/AnCo/Tiles/ardon-floor.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: ArdonSheet1
+  heatCapacity: 15000

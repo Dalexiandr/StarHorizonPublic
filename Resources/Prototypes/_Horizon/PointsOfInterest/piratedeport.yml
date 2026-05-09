@@ -1,0 +1,38 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: amir7036
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип аванпоста:
+#
+- type: pointOfInterest
+  id: PirateDeport
+  parent: BasePOI
+  name: "Точка Продажи Пиратов"
+  minimumDistance: 12000
+  maximumDistance: 15000
+  spawnGroup: Required
+  gridPath: /Maps/_Horizon/POI/piratedeport.yml
+  addComponents:
+  - type: SolarPoweredGrid
+    trackOnInit: true
+    doNotCull: true
+
+- type: gameMap
+  id: PirateDeport
+  mapName: "Точка Продажи Пиратов"
+  mapPath: /Maps/_Horizon/POI/piratedeport.yml
+  minPlayers: 0
+  stations:
+    PirateDeport:
+      stationProto: StandardFrontierOutpost
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Точка Продажи Пиратов"
+        - type: BindToStationVariationPassExemption
+        - type: NoMailStation # Horizon: Disable mail for Pirates
+        - type: HorizonStationFaction
+          faction: Pirate

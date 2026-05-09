@@ -1,0 +1,62 @@
+- type: entity
+  parent: BaseSubdermalImplant
+  id: AnCoAcidifierImplant
+  name: имплант с растворяющими нанитами
+  description: Имплант с растворяющим типом нанитов.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SubdermalImplant
+    permanent: true
+    implantAction: AnCoActionhAcidifier
+  - type: TriggerOnMobstateChange
+    mobState:
+    - Dead
+  - type: TriggerImplantAction
+  - type: GibOnTrigger
+    deleteItems: true
+  - type: SpawnOnTrigger
+    proto: AnCoNanitAcid
+  - type: Tag
+    tags:
+    - SubdermalImplant
+    - HideContextMenu
+    - DeathAcidifier
+
+- type: entity
+  parent: BaseSubdermalImplant
+  id: AnCoTrakerImplant
+  name: имплант с транслирующим чипом
+  description: Имплант для трансляции местоположения пользователя.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: SubdermalImplant
+      whitelist:
+        components:
+        - MobState
+      activationContainer: "implant"
+    - type: DeviceNetwork
+      deviceNetId: Wireless
+      transmitFrequencyId: SuitSensor
+    - type: StationLimitedNetwork
+    - type: WirelessNetworkConnection
+      range: 500
+    - type: TriggerOnMobstateChange
+      mobState:
+      - Critical
+    - type: Rattle
+      radioChannel: "AnCoRadio"
+
+# из за того что спавнер привязан к хуману это уээээээ
+- type: entity
+  parent: BaseSubdermalImplant
+  id: AnCoDroneImplant
+  name: имплант с дронами
+  description: Имплант, содержащий дронов внутри.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SubdermalImplant
+    permanent: true
+    implantAction: AnCoCreateDrone
+  - type: TriggerImplantAction
+  - type: SpawnOnTrigger
+    proto: AnCoDroneOff

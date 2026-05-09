@@ -1,0 +1,13 @@
+- type: entity
+  parent: [ClothingOuterArmorBlueshieldAbstract, ClothingOuterWinterCoatToggleable]
+  id: ClothingOuterWintercoatBlueshield
+  name: зимняя куртка офицера "Синий щит"
+  description: Не стесняющая движений тёплая зимняя куртка синего цвета с внешним бронежилетом.
+  suffix: StarHorizon
+  components:
+    - type: Sprite
+      sprite: _StarHorizon/Clothing/OuterClothing/WinterCoats/blueshield_winter_armor_coat.rsi
+    - type: Clothing
+      sprite: _StarHorizon/Clothing/OuterClothing/WinterCoats/blueshield_winter_armor_coat.rsi
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHatHoodWinterBlueshield

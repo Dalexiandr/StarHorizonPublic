@@ -1,0 +1,196 @@
+<Document>
+  # Военно-морские силы Синдиката
+
+  В далекой Спинвардской периферии коалиция корпоративных структур объединилась против NanoTrasen.
+  В обширной Спинвардской периферии несколько десятилетий назад появились скрытые силы, известные как Спинвардский Синдикат, руководимый Cybersun Industries. Это разнородная коалиция групп, объединенных решимостью бросить вызов господству NanoTrasen. Военно-морское крыло Синдиката (SUN) состоит в основном из Gorlex Marauders и отвечает за подрыв усилий NanoTrasen в Секторе Фронтир.
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  # Известные разновидности
+  # "Палубный матрос Синдиката"
+
+  Низший чин Военно-морских сил Синдиката. Ваш типичный "мальчик на побегушках" для черной работы.
+
+  <Box>
+    <GuideEntityEmbed Entity="MobSyndicateNavalDeckhandA"/>
+    <GuideEntityEmbed Entity="MobSyndicateNavalDeckhandVoid"/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 130 (смерть)
+  - [bold][color=#a4885c]Скорость:[/color][/bold] 4.5 м/с (бег), 2.5 м/с (ходьба)[bold][color=#a4885c]*[/color][/bold]
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] 16 [color=yellow]Колющий[/color] (патрон .35)
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] [color=red]Ударный[/color], [color=red]Режущий[/color] и [color=yellow]Колющий[/color] 30%; [color=orange]Термальный[/color] 20%; [color=orange]Коррозийный[/color] 10%; [color=yellow]Взрывной[/color] 10% (бронежилет)
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] Стрелок (Viper)
+
+  [bold][color=#a4885c]*[/color][/bold] - [italic]средний человек бегает со скоростью 4.5 м/с и ходит со скоростью 2.5 м/с.[/italic]
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  # "Инженер Синдиката"
+
+  На шаттле инженер выполняет раздражающую работу по поддержанию всех систем в рабочем состоянии. Шаттлы Синдиката - не исключение.
+
+  <Box>
+    <GuideEntityEmbed Entity="MobSyndicateNavalEngineerA"/>
+    <GuideEntityEmbed Entity="MobSyndicateNavalEngineerVoid"/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 130 (смерть)
+  - [bold][color=#a4885c]Скорость:[/color][/bold] 4.5 м/с (бег), 2.5 м/с (ходьба)
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] 10 [color=yellow]Колющий[/color] (дробь)
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] [color=red]Ударный[/color], [color=red]Режущий[/color] и [color=yellow]Колющий[/color] 30%; [color=orange]Термальный[/color] 20%; [color=orange]Коррозийный[/color] 10%; [color=yellow]Взрывной[/color] 10% (бронежилет)
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] Стрелок (Дробовик)
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  # "Диверсант Синдиката"
+
+  Специалист по саботажу шаттлов и объектов NT. Оснащен EMP-патронами, будьте осторожны.
+
+  <Box>
+    <GuideEntityEmbed Entity="MobSyndicateNavalSaboteurA"/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 130 (смерть)
+  - [bold][color=#a4885c]Скорость:[/color][/bold] 4.5 м/с (бег), 2.5 м/с (ходьба)
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] 0; EMP-патроны (разряжают батареи)
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] [color=red]Ударный[/color], [color=red]Режущий[/color] и [color=yellow]Колющий[/color] 30%; [color=orange]Термальный[/color] 20%; [color=orange]Коррозийный[/color] 10%; [color=yellow]Взрывной[/color] 10% (бронежилет)
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] Стрелок (Viper)
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  # "Медик Синдиката"
+
+  Медицинский специалист. Знает, как лечить пациентов гуманно, а заключенных - бесчеловечно. Использует дротики с вредными химикатами - импедрезеном или хлоралгидратом.
+
+  <Box>
+    <GuideEntityEmbed Entity="MobSyndicateNavalMedicA"/>
+    <GuideEntityEmbed Entity="MobSyndicateNavalMedicVoid"/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 130 (смерть)
+  - [bold][color=#a4885c]Скорость:[/color][/bold] 4.5 м/с (бег), 2.5 м/с (ходьба)
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] 6 [color=yellow]Колющий[/color], 6 [color=lime]Ядовитый[/color] (дротик Синдиката)
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] [color=red]Ударный[/color] 20%; [color=red]Режущий[/color] 15%; [color=yellow]Колющий[/color] 35%; [color=orange]Термальный[/color] 15%; [color=orange]Коррозийный[/color] 25% (бронированный медицинский халат)
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] Стрелок (дротик Синдиката)
+
+  <GuideReagentEmbed Reagent="Impedrezene"/>
+  <GuideReagentEmbed Reagent="ChloralHydrate"/>
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  # "Оперативник Синдиката"
+
+  "Если у тебя есть молоток, все похоже на гвоздь." В данном случае все - мишени, потому что у него есть ПП и зудящий палец на спусковом крючке.
+
+  <Box>
+    <GuideEntityEmbed Entity="MobSyndicateNavalOperatorA"/>
+    <GuideEntityEmbed Entity="MobSyndicateNavalOperatorVoid"/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 130 (смерть)
+  - [bold][color=#a4885c]Скорость:[/color][/bold] 4.5 м/с (бег), 2.5 м/с (ходьба)
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] 16 [color=yellow]Колющий[/color] (патрон .35)
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] [color=red]Ударный[/color] и [color=red]Режущий[/color] 10%; [color=yellow]Колющий[/color] 60%; [color=orange]Термальный[/color] 10%; [color=yellow]Взрывной[/color] 20% (пуленепробиваемый жилет)
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] Стрелок (ПП)
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  # "Гренадер Синдиката"
+
+  "Что? Говори громче! Я не слышу!" Оснащен печально известной China Lake, гренадеры обладают огромной разрушительной силой и должны быть приоритетными целями.
+
+  <Box>
+    <GuideEntityEmbed Entity="MobSyndicateNavalGrenadierA"/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 130 (смерть)
+  - [bold][color=#a4885c]Скорость:[/color][/bold] 4.5 м/с (бег), 2.5 м/с (ходьба)
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] Различный [color=yellow]Взрывной[/color]
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] [color=red]Ударный[/color], [color=red]Режущий[/color] и [color=yellow]Колющий[/color] 10%; [color=orange]Термальный[/color] 25%; [color=yellow]Взрывной[/color] 85% (костюм сапера Синдиката)
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] Стрелок (China Lake)
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  # "Химвоин Синдиката"
+
+  Перенося баллоны с опасными химикатами, химвоины атакуют врагов ядовитыми струями.
+
+  <Box>
+    <GuideEntityEmbed Entity="MobSyndicateNavalChemwarriorA"/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 130 (смерть)
+  - [bold][color=#a4885c]Скорость:[/color][/bold] 4.5 м/с (бег), 2.5 м/с (ходьба)
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] различный
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] нет
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] Стрелок (распылитель)
+
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  <Box>
+    <GuideEntityEmbed Entity="MobSyndicateNavalChemwarriorB"/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 130 (смерть)
+  - [bold][color=#a4885c]Скорость:[/color][/bold] 4.5 м/с (бег), 2.5 м/с (ходьба)
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] различный
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] [color=yellow]Колющий[/color] 60%; [color=orange]Термальный[/color] 40%; [color=yellow]Коррозийный[/color] 60% (биокостюм Синдиката)
+  - [bold][color=#a4885c]Уязвимости:[/color][/bold] [color=red]Режущий[/color] 20%; [color=yellow]Взрывной[/color] 40%
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] Стрелок (распылитель)
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  # "Второй офицер Синдиката"
+
+  Правая рука капитана, отвечает за передачу приказов капитана экипажу и следит за их немедленным исполнением. Носит лазерный пистолет для самообороны.
+
+  <Box>
+    <GuideEntityEmbed Entity="MobSyndicateNavalSecondOfficerA"/>
+    <GuideEntityEmbed Entity="MobSyndicateNavalSecondOfficerVoid"/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 130 (смерть)
+  - [bold][color=#a4885c]Скорость:[/color][/bold] 4.5 м/с (бег), 2.5 м/с (ходьба)
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] 17 [color=orange]Термальный[/color] (продвинутый лазерный пистолет)
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] [color=red]Ударный[/color], [color=red]Режущий[/color] и [color=yellow]Колющий[/color] 30%; [color=orange]Термальный[/color] 20%; [color=orange]Коррозийный[/color] 10%; [color=yellow]Взрывной[/color] 10% (бронежилет)
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] Стрелок (продвинутый лазерный пистолет)
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  # "Капитан Синдиката"
+
+  Исполнительный офицер вместо командира, капитаны Синдиката обеспечивают бесперебойную работу на борту. Оснащен револьвером магнум.
+
+  <Box>
+    <GuideEntityEmbed Entity="MobSyndicateNavalCaptainA"/>
+    <GuideEntityEmbed Entity="MobSyndicateNavalCaptainVoid"/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 130 (смерть)
+  - [bold][color=#a4885c]Скорость:[/color][/bold] 4.5 м/с (бег), 2.5 м/с (ходьба)
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] 35 [color=yellow]Колющий[/color] (патрон .45)
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] [color=red]Ударный[/color], [color=red]Режущий[/color], [color=yellow]Колющий[/color] и [color=orange]Термальный[/color] 30%;  [color=orange]Коррозийный[/color] 25%; [color=yellow]Взрывной[/color] 10% (бронированное пальто Синдиката)
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] Стрелок (револьвер Python)
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  # "Командир Синдиката"
+
+  Региональный командир операций Синдиката, этот офицер обладает полномочиями и ответственностью на местном уровне. Вооружен штурмовой винтовкой и тяжелой броней.
+
+  <Box>
+    <GuideEntityEmbed Entity="MobSyndicateNavalCommanderA"/>
+  </Box>
+  - [bold][color=#a4885c]Пороги здоровья:[/color][/bold] 100 (крит), 130 (смерть)
+  - [bold][color=#a4885c]Скорость:[/color][/bold] 4.5 м/с (бег), 2.5 м/с (ходьба)
+  - [bold][color=#a4885c]Урон (тип):[/color][/bold] 35 [color=yellow]Колющий[/color] (патрон .30)
+  - [bold][color=#a4885c]Сопротивления:[/color][/bold] [color=red]Ударный[/color], [color=red]Режущий[/color], [color=yellow]Колющий[/color] 40%; [color=orange]Термальный[/color] 80%; [color=orange]Коррозийный[/color] 50%; [color=lime]Радиационный[/color] 99%; [color=yellow]Взрывной[/color] 80% (элитный хардсьют Синдиката)
+  - [bold][color=#a4885c]Особые способности:[/color][/bold] Стрелок (АКМС)
+
+  [bold][color=#a4885c]________________________________________________________________________[/color]
+
+  # Цели миссий
+  ## Уничтожение
+  <Box>
+    <GuideEntityEmbed Entity="MobSyndicateNavalCommanderA"/>
+  </Box>
+  Ликвидируйте крупное и опасное существо - [color=#a4885c]командира Синдиката[/color] в установленные сроки, чтобы получить денежное вознаграждение.
+
+  ## Разрушение
+  <Box>
+    <GuideEntityEmbed Entity="CybersunDataMiner"/>
+  </Box>
+  Уничтожьте указанное количество [color=#a4885c]дата-майнеров Cybersun[/color] в установленные сроки, чтобы получить денежное вознаграждение.
+</Document>

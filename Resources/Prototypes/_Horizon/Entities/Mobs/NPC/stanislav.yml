@@ -1,0 +1,35 @@
+- type: entity
+  id: MobCatStanislav
+  name: Станислав
+  suffix: Адмем
+  parent: MobNonHumanHostileBase
+  description: Это не военное преступление, если тебе весело!
+  components:
+  - type: Sprite
+    sprite: Mobs/Pets/caracal.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: stanislav
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: stanislav
+      Dead:
+        Base: stanislav_dead
+  - type: Gun
+    fireRate: 5
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot: /Audio/Weapons/Guns/Gunshots/rifle2.ogg
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 30
+    rechargeSound:
+      path: /Audio/_NF/Effects/silence.ogg
+  - type: BasicEntityAmmoProvider
+    proto: NFCartridgeRifle30
+    capacity: 30
+  - type: NpcFactionMember
+    factions:
+    - MercenariesExpeditionNF
+  

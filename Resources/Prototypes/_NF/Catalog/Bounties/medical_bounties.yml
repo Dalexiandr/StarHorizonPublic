@@ -1,0 +1,289 @@
+# Medical bounty prototypes, unidentified corpses may spawn with one of these damage prototypes.
+- type: medicalBounty
+  id: MurderedBlunt
+  damageSets:
+    Blunt:
+      min: 150
+      max: 800
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+    Asphyxiation:
+      min: 50
+      max: 400
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+  baseReward: 3000 # Horizon
+
+- type: medicalBounty
+  id: MurderedPierce
+  damageSets:
+    Piercing:
+      min: 150
+      max: 800
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+    Bloodloss:
+      min: 50
+      max: 400
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+  baseReward: 3000 # Horizon
+
+- type: medicalBounty
+  id: MurderedSlash
+  damageSets:
+    Slash:
+      min: 150
+      max: 800
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+    Bloodloss:
+      min: 50
+      max: 400
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+  baseReward: 3000 # Horizon
+
+- type: medicalBounty
+  id: MildBruteMix
+  damageSets:
+    Blunt:
+      min: 75
+      max: 300
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+    Piercing:
+      min: 75
+      max: 300
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+    Slash:
+      min: 75
+      max: 300
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+    Bloodloss:
+      min: 75
+      max: 300
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+  baseReward: 3000 # Horizon
+
+- type: medicalBounty
+  id: Suffocated
+  damageSets:
+    Asphyxiation:
+      min: 150
+      max: 800
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+    Bloodloss:
+      min: 50
+      max: 400
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+  baseReward: 3000 # Horizon
+
+- type: medicalBounty
+  id: PlasmaFire
+  damageSets:
+    Heat:
+      min: 1000
+      max: 12000
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+  baseReward: 3000 # Horizon
+
+- type: medicalBounty
+  id: Spaced
+  damageSets:
+    Blunt:
+      min: 50
+      max: 200
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+    Piercing:
+      min: 50
+      max: 200
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+    Slash:
+      min: 50
+      max: 200
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+    Cold:
+      min: 600
+      max: 8000
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+  baseReward: 1500 # Horizon
+
+- type: medicalBounty
+  id: MildBurnMix
+  damageSets:
+    Heat:
+      min: 50
+      max: 300
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+    Cold:
+      min: 50
+      max: 300
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+    Shock:
+      min: 50
+      max: 300
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+    Caustic:
+      min: 50
+      max: 300
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+  baseReward: 3000 # Horizon
+
+- type: medicalBounty
+  id: Insuls
+  damageSets:
+    Heat:
+      min: 200
+      max: 800
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+    Shock:
+      min: 400
+      max: 1200
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+  baseReward: 3000 # Horizon
+
+- type: medicalBounty
+  id: AcidSlimes
+  damageSets:
+    Caustic:
+      min: 300
+      max: 2000
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+  baseReward: 3000 # Horizon
+
+- type: medicalBounty
+  id: SpiderAttackMild
+  damageSets:
+    Poison:
+      min: 100
+      max: 400
+      value: 50 # Horizon
+      penalty: 50 # Horizon
+    Asphyxiation:
+      min: 100
+      max: 400
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+  reagents:
+    Mechanotoxin:
+      min: 30
+      max: 100
+      value: 30 # Horizon
+  baseReward: 5000 # Horizon
+
+- type: medicalBounty
+  id: SpiderAttack
+  damageSets:
+    Poison:
+      min: 200
+      max: 800
+      value: 50 # Horizon
+      penalty: 50 # Horizon
+  reagents:
+    Mechanotoxin:
+      min: 30
+      max: 100
+      value: 30 # Horizon
+  baseReward: 5000 # Horizon
+
+- type: medicalBounty
+  id: DeliciousMushroom
+  damageSets:
+    Poison:
+      min: 100
+      max: 400
+      value: 50 # Horizon
+      penalty: 50 # Horizon
+    Asphyxiation:
+      min: 100
+      max: 400
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+  reagents:
+    Amatoxin:
+      min: 30
+      max: 100
+      value: 80 # Horizon
+  baseReward: 5000 # Horizon
+
+- type: medicalBounty
+  id: HyperpacmanGoneWrong
+  damageSets:
+    Radiation:
+      min: 150
+      max: 1600
+      value: 50 # Horizon
+      penalty: 50 # Horizon
+    Cellular:
+      min: 60
+      max: 280
+      value: 70 # Horizon
+      penalty: 70 # Horizon
+    Asphyxiation:
+      min: 100
+      max: 400
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+  baseReward: 2500 # Horizon
+
+- type: medicalBounty
+  id: AsphyxAndCellular
+  damageSets:
+    Asphyxiation:
+      min: 200
+      max: 800
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+    Cellular:
+      min: 60
+      max: 280
+      value: 70 # Horizon
+      penalty: 70 # Horizon
+  baseReward: 3000 # Horizon
+
+- type: medicalBounty
+  id: DeliciousUranium
+  damageSets:
+    Radiation:
+      min: 50
+      max: 600
+      value: 50 # Horizon
+      penalty: 50 # Horizon
+    Cellular:
+      min: 60
+      max: 200
+      value: 70 # Horizon
+      penalty: 70 # Horizon
+    Asphyxiation: # Value padding
+      min: 100
+      max: 400
+      value: 30 # Horizon
+      penalty: 30 # Horizon
+  reagents:
+    Uranium:
+      min: 30
+      max: 100
+      value: 70 # Horizon
+    Radium:
+      min: 30
+      max: 100
+      value: 70 # Horizon
+  baseReward: 3000 # Horizon

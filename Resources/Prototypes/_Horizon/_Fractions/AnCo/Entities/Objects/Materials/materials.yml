@@ -1,0 +1,268 @@
+# ----------
+# казмий
+
+# стак
+
+- type: stack
+  id: KazmieOreStack
+  name: казмиевая руда
+  icon: { sprite: _Horizon/_Fractions/AnCo/Objects/Materials/material.rsi, state: kazmieore }
+  spawn: KazmieOre1
+  maxCount: 100
+
+# начало спавн этити
+
+- type: entity
+  parent: KazmieOre
+  id: KazmieOre1
+  suffix: StarHorizon, AnCo, Material, Single
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Materials/material.rsi
+    state: kazmieore
+  - type: Stack
+    stackType: KazmieOreStack
+    count: 1
+
+- type: entity
+  parent: OreBase
+  id: KazmieOre
+  name: куб казмия
+  description: Вы точно знаете что с ним делать?
+  suffix: StarHorizon, AnCo, Material, Full
+  components:
+  - type: Stack
+    stackType: KazmieOreStack
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      RawKazmie: 100
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Materials/material.rsi
+    state: kazmieore
+  - type: Tag
+    tags:
+      - AnCoOre
+      - Ore
+
+# конец спавн этити
+
+# ресурс внутренний
+
+- type: material
+  id: RawKazmie
+  stackEntity: KazmieOre1
+  name: куб казмия
+  unit: куски необработанного казмия
+  icon: { sprite: _Horizon/_Fractions/AnCo/Objects/Materials/material.rsi, state: kazmieore }
+  price: 0.05
+
+# ----------
+
+# ----------
+# ардоний
+
+# стак
+
+- type: stack
+  id: ArdonOreStack
+  name: ардониевый кристалл
+  icon: { sprite: _Horizon/_Fractions/AnCo/Objects/Materials/material.rsi, state: ardonore }
+  spawn: ArdonOre1
+  maxCount: 100
+
+# начало спавн этити
+
+- type: entity
+  parent: ArdonOre
+  id: ArdonOre1
+  suffix: StarHorizon, AnCo, Material, Single
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Materials/material.rsi
+    state: ardonore
+  - type: Stack
+    stackType: ArdonOreStack
+    count: 1
+
+- type: entity
+  parent: OreBase
+  id: ArdonOre
+  name: ардониевый кристалл
+  description: Вам срочно это надо выбросить, нет времени объяснять!
+  suffix: StarHorizon, AnCo, Material, Full
+  components:
+  - type: Stack
+    stackType: ArdonOreStack
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      RawArdon: 100
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Materials/material.rsi
+    state: ardonore
+  - type: Tag
+    tags:
+      - AnCoOre
+      - Ore
+
+# конец спавн этити
+
+# ресурс внутренний
+
+- type: material
+  id: RawArdon
+  stackEntity: ArdonOre1
+  name: ардониевый кристалл
+  unit: кристаллы необработанного ардония
+  icon: { sprite: _Horizon/_Fractions/AnCo/Objects/Materials/material.rsi, state: ardonore }
+  price: 0.05
+
+# ----------
+# ----------
+# ардоний листы
+
+# стак
+
+- type: stack
+  id: ArdonSheetStack
+  name: ардониевый листы
+  icon: { sprite: _Horizon/_Fractions/AnCo/Objects/Materials/material.rsi, state: ardon_3 }
+  spawn: ArdonSheet1
+  maxCount: 30
+
+# начало спавн этити
+
+- type: entity
+  parent: ArdonSheet
+  id: ArdonSheet1
+  suffix: StarHorizon, AnCo, Material, Single
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Materials/material.rsi
+    state: ardon_3
+  - type: Stack
+    stackType: ArdonSheetStack
+    count: 1
+
+- type: entity
+  parent: SheetMetalBase
+  id: ArdonSheet
+  name: лист ардония
+  description: Лист чистого ардония, не подходит для вне корпоративных исследований.
+  suffix: StarHorizon, AnCo, Material, Full
+  components:
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Ardon: 100
+  - type: Stack
+    stackType: ArdonSheetStack
+    baseLayer: base
+    layerStates:
+    - ardon
+    - ardon_2
+    - ardon_3
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Materials/material.rsi
+    state: ardon_3
+    layers:
+    - state: ardon_3
+      map: ["base"]
+  - type: Item
+    sprite: _Horizon/_Fractions/AnCo/Objects/Materials/material.rsi
+    heldPrefix: ardon
+  - type: Appearance
+  - type: Tag
+    tags:
+      - AnCoMaterial
+      - Sheet
+  - type: FloorTile
+    outputs:
+    - FloorArdon
+
+# конец спавн этити
+
+# ресурс внутренний
+
+- type: material
+  id: Ardon
+  stackEntity: ArdonSheet1
+  name: лист ардония
+  unit: листы обработанного ардония
+  icon: { sprite: _Horizon/_Fractions/AnCo/Objects/Materials/material.rsi, state: ardon_3 }
+  price: 0.05
+
+# ----------
+# ----------
+# казмий листы
+
+# стак
+
+- type: stack
+  id: KazmieSheetStack
+  name: ардониевый листы
+  icon: { sprite: _Horizon/_Fractions/AnCo/Objects/Materials/material.rsi, state: kazmie_3 }
+  spawn: KazmieSheet1
+  maxCount: 30
+
+# начало спавн этити
+
+- type: entity
+  parent: KazmieSheet
+  id: KazmieSheet1
+  suffix: StarHorizon, AnCo, Material, Single
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Materials/material.rsi
+    state: kazmie-stack-3
+  - type: Stack
+    stackType: KazmieSheetStack
+    count: 1
+
+- type: entity
+  parent: SheetMetalBase
+  id: KazmieSheet
+  name: лист казмия
+  description: Лист казмия, так же прочный, как и ваша вера в корпорат.
+  suffix: StarHorizon, AnCo, Material, Full
+  components:
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Kazmie: 100
+  - type: Stack
+    stackType: KazmieSheetStack
+    baseLayer: base
+    layerStates:
+    - kazmie
+    - kazmie_2
+    - kazmie_3
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Materials/material.rsi
+    state: kazmie_3
+    layers:
+    - state: kazmie_3
+      map: ["base"]
+  - type: Item
+    sprite: _Horizon/_Fractions/AnCo/Objects/Materials/material.rsi
+    heldPrefix: kazmie
+  - type: Appearance
+  - type: Tag
+    tags:
+      - AnCoMaterial
+      - Sheet
+
+# конец спавн этити
+
+# ресурс внутренний
+
+- type: material
+  id: Kazmie
+  stackEntity: KazmieSheet1
+  name: лист казмия
+  unit: листы темного казмия
+  icon: { sprite: _Horizon/_Fractions/AnCo/Objects/Materials/material.rsi, state: kazmie_3 }
+  price: 0.05
+
+# ----------

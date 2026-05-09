@@ -1,0 +1,106 @@
+<Document>
+  # ИССЛЕДОВАТЕЛЬСКИЙ ШАТТЛ КЛАССА "INVESTIGATOR"
+  <Box>
+  <GuideEntityEmbed Entity="ComplexXenoArtifactItem"/>
+  <GuideEntityEmbed Entity="MachineArtifactAnalyzer"/>
+  <GuideEntityEmbed Entity="ComputerTabletopAnalysisConsole"/>
+  <GuideEntityEmbed Entity="ResearchAndDevelopmentServer"/>
+  </Box>
+  <Box>
+  <GuideEntityEmbed Entity="ShuttleMapInvestigator" Caption=""/>
+  </Box>
+    [color=#a4885c]Размер корабля:[/color] Средний
+	
+	[color=#a4885c]Рекомендуемый экипаж:[/color] 2–3
+	
+	[color=#a4885c]Тип генератора энергии:[/color] Солнечный/Плазменный
+	
+	[color=#a4885c]Экспедиции:[/color] Отсутствуют
+	
+	[color=#a4885c]Консоль IFF:[/color] Отсутствует
+	
+  "Средний исследовательский шаттл, предназначенный для ксеноархеологических исследований."
+    
+  # КОНТРОЛЬНЫЙ СПИСОК ПЕРЕД ВЫЛЕТОМ
+  
+  ## 1. Электропитание
+  
+  ## 1.1. Батарейные блоки
+  <Box>
+  <GuideEntityEmbed Entity="SMESBasic"/>
+  <GuideEntityEmbed Entity="SubstationBasic"/>
+  <GuideEntityEmbed Entity="APCBasic"/>
+  </Box>
+  
+  - Убедитесь, что блок СМЭС закреплён на полу.
+  - Убедитесь, что подстанция закреплена на полу.
+  - Убедитесь, что главный выключатель блока ЛКП включён.
+  - Проверьте текущую нагрузку блока ЛКП* (Вт).
+  
+  ## 1.2. Генераторы P.A.C.M.A.N.
+  <Box>
+  <GuideEntityEmbed Entity="PortableGeneratorPacmanShuttle"/>
+  <GuideEntityEmbed Entity="SheetPlasma"/>
+  </Box>
+  
+  - Убедитесь, что генераторы P.A.C.M.A.N. закреплены на полу.
+  - Убедитесь, что генераторы заправлены топливом. Для длительных полётов обеспечьте запас топлива.
+  - Убедитесь, что генераторы настроены на HV-выход.
+  - Установите целевую мощность на 15–20** [bold]кВт[/bold].
+  - Убедитесь, что генераторы включены.
+  
+  ## 1.3. Солнечные панели
+  <Box>
+  <GuideEntityEmbed Entity="ComputerSolarControl"/>
+  <GuideEntityEmbed Entity="SolarTracker"/>
+  <GuideEntityEmbed Entity="SolarPanel"/>
+  </Box>
+  - Проверьте консоль управления солнечными панелями (расположен в кабине шаттла).
+  - Отрегулируйте угловую скорость панелей.
+  - Отрегулируйте угол наклона панелей.
+  
+  ## 2. Атмосфера
+  
+  ## 2.1. Цикл распределения
+  <Box>
+  <GuideEntityEmbed Entity="OxygenCanister"/>
+  <GuideEntityEmbed Entity="NitrogenCanister"/>
+  <GuideEntityEmbed Entity="GasPort"/>
+  <GuideEntityEmbed Entity="GasMixer"/>
+  <GuideEntityEmbed Entity="GasPressurePump"/>
+  </Box>
+  
+  - Убедитесь, что баллон с кислородом закреплён на соединительном порте.
+  - Убедитесь, что баллон с азотом закреплён.
+  - Убедитесь, что газовый миксер настроен на соотношение 21% кислорода и 79% азота.
+  - Установите давление на миксере — 101 кПа.
+  - Убедитесь, что миксер включён.
+  
+  ## 2.2. Цикл отходов
+  <Box>
+  <GuideEntityEmbed Entity="GasPressurePump"/>
+  <GuideEntityEmbed Entity="AirAlarm"/>
+  </Box>
+    
+  - Убедитесь, что насос отходящего цикла включён.
+  - Отключите автоматический режим воздушной сигнализации в машинном отделении.
+  - Установите воздушную сигнализацию на режим фильтрации (Широкий).
+  
+  ## 3. Прочие проверки
+  <Box>
+  <GuideEntityEmbed Entity="Gyroscope"/>
+  <GuideEntityEmbed Entity="GravityGeneratorMini"/>
+  <GuideEntityEmbed Entity="BlastDoor"/>
+  </Box>
+  
+  - Убедитесь, что гироскоп закреплён, запитан и включён.
+  - Убедитесь, что мини-гравитационный генератор закреплён, запитан и включён.
+  - Убедитесь, что противовзрывные двери закрыты.
+  
+  ## Примечания
+  
+  * — Шаттлы класса «Investigator» оснащены двумя блоками ЛКП, позволяющими отслеживать общее энергопотребление. В стандартной конфигурации шаттлу необходимо 39,6 кВт для стабильной работы.
+  
+  ** — Энергопотребление превышает возможности одного стандартного генератора P.A.C.M.A.N., однако в комплекте предусмотрены дополнительные генераторы и 67 солнечных панелей, способных производить до 33,5 кВт при идеальных условиях. Учитывая, что солнечные панели в среднем выдают треть от максимальной мощности, рекомендуется установить целевую мощность 15 кВт на каждый генератор.
+
+</Document>

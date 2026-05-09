@@ -1,0 +1,10 @@
+ent-LiquidOxygenCanisterBroken = { ent-GasCanisterBrokenBase }
+    .desc = { ent-GasCanisterBrokenBase.desc }
+ent-LiquidNitrogenCanisterBroken = { ent-GasCanisterBrokenBase }
+    .desc = { ent-GasCanisterBrokenBase.desc }
+ent-LiquidCarbonDioxideCanisterBroken = { ent-GasCanisterBrokenBase }
+    .desc = { ent-GasCanisterBrokenBase.desc }
+ent-RespironCanister = respiron canister
+    .desc = A canister that can contain any type of gas. This one is supposed to contain respiron. It can be attached to connector ports using a wrench.
+ent-RespironCanisterBroken = { ent-GasCanisterBrokenBase }
+    .desc = { ent-GasCanisterBrokenBase.desc }

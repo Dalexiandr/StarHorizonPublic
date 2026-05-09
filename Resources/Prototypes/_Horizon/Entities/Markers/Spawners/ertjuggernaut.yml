@@ -1,0 +1,12 @@
+- type: entity
+  id: SpawnPointERTJuggernaut
+  parent: SpawnPointJobBase
+  name: джаггернаут ОБР
+  components:
+  - type: SpawnPoint
+    job_id: ERTJuggernaut
+  - type: Sprite
+    layers:
+     - state: green
+     - sprite: _StarHorizon/Markers/Jobs/ertjuggernaut.rsi
+       state: ertjuggernaut

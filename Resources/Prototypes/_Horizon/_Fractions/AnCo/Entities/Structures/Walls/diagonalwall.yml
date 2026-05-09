@@ -1,0 +1,38 @@
+- type: entity
+  parent: WallDiagonalBase
+  id: AnCoKazmieWallDiagonal
+  name: казмиевая стена
+  description: Держите секреты внутри, сотрудников снаружи
+  components:
+  - type: Sprite
+    drawdepth: Walls
+    sprite: _Horizon/_Fractions/AnCo/Structure/Walls/kazmie_diagonal.rsi
+    state: state0
+  - type: Icon
+    sprite: _Horizon/_Fractions/AnCo/Structure/Walls/kazmie_diagonal.rsi
+    state: state0
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+      - !type:ChangeConstructionNodeBehavior
+        node: girder
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Construction
+    graph: WallKazmie
+    node: wallkazmiediagonaly

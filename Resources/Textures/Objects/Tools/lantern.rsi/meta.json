@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "license": "CLA",
+  "copyright": "by TheGypsyBaron",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "lantern"
+    },
+    {
+      "name": "lantern-on"
+    },
+    {
+      "name": "off-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "off-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "on-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "burnt"
+    },
+    {
+      "name": "flashing"
+    },
+    {
+      "name": "on-inhand-right",
+      "directions": 4
+    },
+	{
+	  "name": "on-equipped-BELT",
+	  "directions": 4
+	},
+	{
+	  "name": "off-equipped-BELT",
+	  "directions": 4
+	},
+  {
+    "name": "lantern_world"
+  },
+  {
+    "name": "lantern-on_world"
+  },
+  {
+    "name": "burnt_world"
+  },
+  {
+    "name": "flashing_world"
+  }
+  ]
+}

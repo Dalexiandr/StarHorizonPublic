@@ -1,0 +1,35 @@
+- type: accessLevel
+  id: AnCo
+  name: id-card-access-level-anco
+
+- type: accessLevel
+  id: AccessAnCoWelcome
+  name: id-card-access-level-welcome
+
+- type: accessLevel
+  id: AccessAnCoRipsoid
+  name: id-card-access-level-ripsoid
+
+- type: accessLevel
+  id: AccessAnCoCadet
+  name: id-card-access-level-cadet
+
+- type: accessLevel
+  id: AccessAnCoOfficer
+  name: id-card-access-level-officer
+
+- type: accessLevel
+  id: AccessAnCoSpider
+  name: id-card-access-level-spider
+
+- type: accessLevel
+  id: AccessAnCoKnight
+  name: id-card-access-level-knight
+
+- type: accessLevel
+  id: AccessAnCoTitan
+  name: id-card-access-level-titan
+
+- type: accessLevel
+  id: AccessAnCoCounselor
+  name: id-card-access-level-counselor

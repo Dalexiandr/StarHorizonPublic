@@ -1,0 +1,44 @@
+- type: Tag
+  id: AttachmentUnderbarrel
+
+- type: Tag
+  id: AttachmentM90GrenadeLauncher
+
+- type: Tag
+  id: AttachmentM90UnderbarrelShotgun
+
+- type: Tag
+  id: AttachmentBarrel
+
+#- type: Tag
+#  id: SurvivalKnifeAttachment
+
+- type: Tag
+  id: AttachmentRail
+
+- type: Tag
+  id: AttachmentMagneticHarness
+
+- type: Tag
+  id: AttachmentHristovScope
+
+#- type: Tag
+#  id: MosinBayonetAttachment
+
+- type: Tag
+  id: AttachmentT2Miniscope
+
+- type: Tag
+  id: AttachmentVerticalGrip
+
+- type: Tag
+  id: AttachmentReflexSight
+
+- type: Tag
+  id: AttachmentLaserSight
+
+- type: Tag
+  id: AttachmentSuppressor
+
+- type: Tag
+  id: AttachmentAntiLyingWarrior

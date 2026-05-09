@@ -1,0 +1,64 @@
+
+#
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconAgentDFI
+  icon:
+    sprite: /Textures/_Horizon/_Fractions/DFI/Interface/Misc/jobicon.rsi
+    state: agent
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconCriminologistDFI
+  icon:
+    sprite: /Textures/_Horizon/_Fractions/DFI/Interface/Misc/jobicon.rsi
+    state: criminologist
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconDetectiveDFI
+  icon:
+    sprite: /Textures/_Horizon/_Fractions/DFI/Interface/Misc/jobicon.rsi
+    state: detective
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconDetectiveSergeantDFI
+  icon:
+    sprite: /Textures/_Horizon/_Fractions/DFI/Interface/Misc/jobicon.rsi
+    state: detective-sergeant
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconEngineerDFI
+  icon:
+    sprite: /Textures/_Horizon/_Fractions/DFI/Interface/Misc/jobicon.rsi
+    state: engineer
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconCadetDFI
+  icon:
+    sprite: /Textures/_Horizon/_Fractions/DFI/Interface/Misc/jobicon.rsi
+    state: cadet
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconMedicDFI
+  icon:
+    sprite: /Textures/_Horizon/_Fractions/DFI/Interface/Misc/jobicon.rsi
+    state: medic
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconSSEmployeeDFI
+  icon:
+    sprite: /Textures/_Horizon/_Fractions/DFI/Interface/Misc/jobicon.rsi
+    state: ss-employee
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconOfficerDFI
+  icon:
+    sprite: /Textures/_Horizon/_Fractions/DFI/Interface/Misc/jobicon.rsi
+    state: officer

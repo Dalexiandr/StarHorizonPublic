@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "license": "CLA",
+  "copyright": "Sprites by TheGypsyBaron DS:701266770429739008",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "crate"
+    },
+    {
+      "name": "crate_door"
+    },
+    {
+      "name": "crate_icon"
+    },
+    {
+      "name": "crate_open"
+    },
+    {
+      "name": "welded"
+    },
+    {
+      "name": "sparking",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    }
+  ]
+}

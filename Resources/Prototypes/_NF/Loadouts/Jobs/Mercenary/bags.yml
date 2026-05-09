@@ -1,0 +1,35 @@
+- type: loadout
+  id: MercenaryClothingBackpackMercenary
+  price: 0
+  equipment:
+    back: ClothingBackpackMercenary
+
+- type: loadout
+  id: MercenaryClothingBackpackDuffelMercenary
+  price: 0
+  equipment:
+    back: ClothingBackpackDuffelMercenary
+
+- type: loadout
+  id: MercenaryClothingBackpackSatchelMercenary
+  price: 0
+  equipment:
+    back: ClothingBackpackSatchelMercenary
+
+- type: loadout
+  id: MercenaryClothingBackpackMessengerMercenary
+  price: 0
+  equipment:
+    back: ClothingBackpackMessengerMercenary
+
+- type: loadout
+  id: MercenaryClothingBackpackDuffelPrivateSecurity
+  price: 0
+  equipment:
+    back: ClothingBackpackDuffelPrivateSecurity
+
+- type: loadout
+  id: MercenaryClothingBackpackMessengerPrivateSecurity
+  price: 0
+  equipment:
+    back: ClothingBackpackMessengerPrivateSecurity

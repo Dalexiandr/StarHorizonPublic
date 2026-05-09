@@ -1,0 +1,348 @@
+# Does not inherit from simplemob
+- type: entity
+  abstract: true
+  name: GuardianBase
+  id: MobDemonMBase
+  description: Demon
+  save: false
+  components:
+    - type: LagCompensation
+    - type: GhostRole
+      allowMovement: true
+      allowSpeech: true
+      makeSentient: true
+      name: Неизвестный зверь
+      description: ghost-role-information-guardian-description
+      rules: ghost-role-information-familiar-rules
+      mindRoles:
+      - MindRoleGhostRoleFamiliar
+      raffle:
+        settings: default
+    - type: GhostTakeoverAvailable
+    - type: Input
+      context: "human"
+    - type: MobMover
+    - type: InputMover
+    - type: MovementSpeedModifier
+      baseWalkSpeed: 2.5 # было 4, 2.5 - стандарт
+      baseSprintSpeed: 4.5 # было 5.5, 4.5 - стандарт
+    - type: DamageOnHighSpeedImpact
+      damage:
+        types:
+          Blunt: 5
+      soundHit:
+        collection: AlienClaw
+    - type: Sprite
+      drawdepth: Mobs
+      noRot: true
+      scale: 1.3, 1.3
+      sprite: _Horizon/Mobs/Demons/zmeya.rsi
+      layers:
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
+        state: icon
+      - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+        state: icon-unshaded
+        shader: unshaded
+    - type: Clickable
+    - type: InteractionOutline
+    - type: Physics
+      bodyType: KinematicController
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.40
+          density: 100
+          mask:
+            - FlyingMobMask
+          layer:
+            - FlyingMobLayer
+    - type: Damageable
+      damageContainer: Biological
+    - type: MobState
+      allowedStates:
+        - Alive
+    - type: CombatMode
+    - type: Internals
+    - type: Examiner
+    - type: TypingIndicator
+      proto: holo
+    - type: Pullable
+    - type: MeleeWeapon
+      hidden: false
+      altDisarm: false
+      animation: WeaponArcClaw
+      attackRate: 2 #1.8
+      autoAttack: true
+      soundHit:
+        collection: AlienClaw
+      damage:
+        types:
+          Blunt: 7
+          Piercing: 7
+          Slash: 15
+          Structural: 30
+    - type: SolutionContainerManager
+      solutions:
+        melee:
+          reagents:
+          - ReagentId: Toxin
+            Quantity: 1000
+    - type: MeleeChemicalInjector
+      solution: melee
+    - type: IntrinsicUI
+      uis:
+        enum.CommunicationsConsoleUiKey.Key:
+          toggleAction: ActionSmiteDemon
+        enum.RadarConsoleUiKey.Key:
+          toggleAction: ActionDemonWall
+        enum.SolarControlConsoleUiKey.Key:
+          toggleAction: ActionDemonBlink #ActionOpenStorageImplant
+        enum.CrewMonitoringUIKey.Key:
+          toggleAction: ActionDemonTentacle #ActionTogglePhaseCloak
+    - type: Guardian
+      distanceAllowed: 700
+      damageShare: 0.05
+      injectSound: !type:SoundPathSpecifier
+        path: /Audio/_Horizon/Magic/Eldritch/voidblink.ogg
+      deathSound: !type:SoundPathSpecifier
+        path: /Audio/_Horizon/Magic/Demon/demon_attack1.ogg
+      criticalSound: !type:SoundPathSpecifier
+        path: /Audio/_Horizon/Magic/Demon/demon_dies.ogg
+    - type: InteractionPopup
+      interactSuccessString: Получив ментальное разрешение, вы гладите Тессерона по его тяжелой, темной хитиновой чешуе
+      interactFailureString: Вы тянете руку в сторону Тессерона, но его взгляд пробивает вас до мурашек... Это плохая идея...
+      successChance: 0.7
+    - type: Tag
+      tags:
+        - CannotSuicide
+        - DoorBumpOpener
+    - type: Actions
+    - type: ComplexInteraction
+    - type: FloatingVisuals
+    - type: MovementAlwaysTouching
+    - type: ActiveRadio
+      channels: ["Demon"]
+    - type: IntrinsicRadioReceiver
+    - type: IntrinsicRadioTransmitter
+      channels: ["Demon"]
+    - type: BodyEmotes
+      soundsId: ReptilianBodyEmotes
+    - type: Puller
+      needsHands: false
+    - type: DoAfter
+    - type: Prying
+      pryPowered: true
+      force: true
+      speedModifier: 2.5 # fast because dragon strong
+      useSound:
+        path: /Audio/Items/crowbar.ogg
+    - type: ContentEye
+    - type: Body
+      prototype: Reptilian
+    - type: LizardAccent
+    #- type: stripping
+    - type: NightVision
+      isToggle: true
+      color: "#DC143C"
+    - type: MobCollision
+
+# From the uplink injector
+- type: entity
+  name: Неизвестный зверь
+  id: MobDemonM
+  categories: [ HideSpawnMenu ]
+  parent: [MobDemonMBase, InventoryBase]
+  description: Перед вами огромное существо, облаченный в черно-фиолетовую, природную, хитиновую броню. Его хвост является продолжением тела, его хитрый взгляд, продолжением разума, а прямой зрительный контакт вызывает у вас головокружение.
+  components:
+    - type: GhostRole
+      allowMovement: true
+      allowSpeech: true
+      makeSentient: true
+      name: Неизвестный зверь
+      description: ghost-role-information-holoparasite-description
+      rules: ghost-role-information-familiar-rules
+      raffle:
+        settings: default
+    - type: NpcFactionMember
+      factions:
+      - AllHostile
+    - type: GhostTakeoverAvailable
+    - type: TypingIndicator
+      proto: holo
+    - type: Sprite
+      drawdepth: Mobs
+      noRot: true
+      sprite: _Horizon/Mobs/Demons/zmeya.rsi
+      scale: 1.3, 1.3
+      layers:
+      - map: [ "enum.DamageStateVisualLayers.Base" ]
+        state: icon
+      - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+        state: icon-unshaded
+        shader: unshaded
+    - type: Speech
+      speechSounds: Lizard
+      speechVerb: Reptilian
+    - type: Inventory
+      templateId: demonTemplate
+    - type: Hands
+      hands:
+        hand_right:
+          location: Right
+        hand_left:
+          location: Left
+      sortedHands:
+      - hand_right
+      - hand_left
+
+###Способности
+#тп
+- type: entity
+  id: ActionDemonBlink
+  name: Blink
+  description: Teleport to the clicked location.
+  components:
+  - type: Action
+    useDelay: 5
+    itemIconStyle: BigAction
+    sound: !type:SoundPathSpecifier
+      path: /Audio/_Horizon/Magic/Eldritch/voidblink.ogg
+    icon:
+      sprite: _Horizon/Objects/Magic/demon.rsi
+      state: blink
+  - type: TargetAction
+    range: 25
+    repeat: false
+    checkCanAccess: false
+  - type: WorldTargetAction
+    event: !type:TeleportSpellEvent
+
+#стена
+- type: entity
+  id: ActionDemonWall
+  name: forcewall
+  description: Creates a magical barrier.
+  components:
+  - type: Action
+    useDelay: 4
+    itemIconStyle: BigAction
+    sound: !type:SoundPathSpecifier
+      path: /Audio/_Horizon/Magic/Demon/demon_consume.ogg
+    icon:
+      sprite: _Horizon/Objects/Magic/demon.rsi
+      state: shield
+  - type: InstantAction
+    event: !type:InstantSpawnSpellEvent
+      prototype: WallDemon
+      posData: !type:TargetInFront
+
+#тентакли
+- type: entity
+  id: ActionDemonTentacle
+  name: "[color=red]Tentacle Slam[/color]"
+  description: Use your tentacles to grab and stun a target player!
+  components:
+  - type: Action
+    raiseOnUser: true
+    icon:
+      sprite: _Horizon/Objects/Magic/demon.rsi
+      state: goliath_tentacle_spawn
+    iconOn:
+      sprite: _Horizon/Objects/Magic/demon.rsi
+      state: goliath_tentacle_wiggle
+    sound:
+      path: "/Audio/Magic/Demon/demon_consume.ogg"
+    useDelay: 5
+  - type: TargetAction
+    range: 20
+  - type: WorldTargetAction
+    event: !type:GoliathSummonTentacleAction
+
+#инста гиб
+- type: entity
+  id: ActionSmiteDemon
+  name: Smite
+  description: Instantly gibs a target.
+  components:
+  - type: Action
+    useDelay: 90
+    itemIconStyle: BigAction
+    whitelist:
+      components:
+      - Body
+    canTargetSelf: false
+    interactOnMiss: false
+    sound: !type:SoundPathSpecifier
+      path: /Audio/_Horizon/Magic/Demon/demon_attack1.ogg
+    icon:
+      sprite: _Horizon/Objects/Magic/demon.rsi
+      state: gib
+  - type: EntityTargetAction
+    event: !type:SmiteSpellEvent
+
+###misc
+- type: inventoryTemplate
+  id: demonTemplate
+  slots:
+    - name: pocket1
+      slotTexture: pocket
+      fullTextureName: template_small
+      slotFlags: POCKET
+      slotGroup: MainHotbar
+      stripTime: 3
+      uiWindowPos: 0,3
+      strippingWindowPos: 0,4
+      displayName: Pocket 1
+      stripHidden: true
+    - name: pocket2
+      slotTexture: pocket
+      fullTextureName: template_small
+      slotFlags: POCKET
+      slotGroup: MainHotbar
+      stripTime: 3
+      uiWindowPos: 2,3
+      strippingWindowPos: 1,4
+      displayName: Pocket 2
+      stripHidden: true
+    - name: back
+      slotTexture: back
+      slotFlags: BACK
+      slotGroup: SecondHotbar
+      stripTime: 6
+      uiWindowPos: 2,1
+      strippingWindowPos: 2,4
+      displayName: ID
+      stripHidden: true
+
+### Прототипы способностей
+- type: entity
+  id: WallDemon
+  categories: [ HideSpawnMenu ]
+  name: force wall
+  components:
+    - type: TimedDespawn
+      lifetime: 20
+    - type: Tag
+      tags:
+        - Wall
+    - type: Physics
+      bodyType: Static
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.5,-0.5,0.5,0.5"
+          mask:
+            - FullTileMask
+          layer:
+            - WallLayer
+    - type: Airtight
+    - type: Sprite
+      sprite: _Horizon/Objects/Magic/demon.rsi
+      state: goliath_tentacle_wiggle
+    - type: Icon
+      sprite: _Horizon/Objects/Magic/demon.rsi
+      state: goliath_tentacle_wiggle

@@ -1,0 +1,39 @@
+- type: entity
+  save: false
+  name: Urist McHands The Dwarf
+  parent: BaseMobDwarf
+  id: MobDwarf
+  components:
+  - type: NpcFactionMember
+    factions:
+    - NanoTrasen
+    - Dwarf # Frontier
+  # Horizon
+  - type: SampleSource
+    availableCellSamples:
+    - protoID: CellSampleDwarf
+
+# Cytology
+- type: entity
+  name: Urist Grown Dwarf
+  parent: MobDwarf
+  id: MobDwarfGrown
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StaticPrice
+    price: 2500
+  - type: RandomMetadata
+    nameSegments:
+      - NamesFirst
+      - NamesLast
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: ghost-role-information-grown-dwarf-name
+    description: Вы гном, выращенный в цитологической ванне. Коротыш, но крепкий! Исследуйте этот мир с достоинством истинного гнома!
+    raffle:
+      settings: short
+  - type: GhostTakeoverAvailable

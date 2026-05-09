@@ -1,0 +1,14 @@
+- type: entity
+  id: FanTinyElectronics
+  parent: BaseElectronics
+  name: микросхема маленького вентилятора
+  description: Микросхема, используемая для создания маленького вентилятора.
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/module.rsi
+      state: cell_con_micro
+    - type: Tag
+      tags:
+        - FanTinyElectronics
+    - type: Item
+      size: Tiny

@@ -1,0 +1,17 @@
+- type: entity
+  id: ActionMorphGeras
+  name: Превратиться в гераса
+  description:  Превращает вас в гераса - миниатюрную версию вас, которая позволит вам бежать быстрее ценой инвентаря.
+  components:
+  - type: ConfirmableAction
+    popup: gera-transformation-popup
+  - type: Action
+    itemIconStyle: BigAction
+    useDelay: 10 # prevent spam
+    priority: -20
+    icon:
+      sprite: Mobs/Aliens/slimes.rsi
+      state: blue_adult_slime
+  - type: InstantAction
+    event: !type:MorphIntoGeras
+      protoId: SlimeMorphGeras

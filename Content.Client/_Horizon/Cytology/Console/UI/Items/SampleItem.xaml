@@ -1,0 +1,13 @@
+<Button xmlns="https://spacestation14.io">
+    <BoxContainer Orientation="Vertical" HorizontalExpand="True">
+        <BoxContainer>
+            <Label Name="SampleName" HorizontalExpand="True"/>
+            <BoxContainer HorizontalAlignment="Right" HorizontalExpand="True" VerticalAlignment="Top">
+                <TextureButton Name="CloseButton" StyleClasses="windowCloseButton"/>
+            </BoxContainer>
+        </BoxContainer>
+        <BoxContainer Orientation="Vertical">
+            <Label Name="Progress" HorizontalExpand="True"/>
+        </BoxContainer>
+    </BoxContainer>
+</Button>

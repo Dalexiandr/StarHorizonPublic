@@ -1,0 +1,61 @@
+- type: entity
+  parent: ClothingBeltNfsdWebbing
+  id: ClothingBeltNfsdWebbingCat
+  name: Котячий РПС ДСБФ
+  description: Тактический боевой разгрузочный жилет. Cпециально для котов.
+  suffix: Только коты
+  components:
+  - type: Storage
+    maxItemSize: Huge
+  - type: ContainerContainer
+    containers:
+      Webbing: !type:ContainerSlot
+      Webbing2: !type:ContainerSlot
+  - type: Matchbox
+  - type: Tag
+    tags:
+    - PetOnly
+  - type: ItemSlots
+    slots:
+      Webbing:
+        priority: 1
+        insertVerbText: Прикрепить к РПС
+        ejectVerbText: Открепить с РПС
+        name: РПС
+        swap: false
+        whitelist:
+          components:
+          - Item
+      Webbing2:
+        priority: 2
+        insertVerbText: Прикрепить к РПС
+        ejectVerbText: Открепить с РПС
+        name: РПС
+        swap: false
+        whitelist:
+          components:
+          - Item
+
+- type: entity
+  parent: ClothingBeltNfsdWebbingCat
+  id: ClothingBeltMercenaryWebbingCat
+  name: Котячий РПС наёмника
+  description: Идеально подходит для хранения всего от патронов до оружия и предметов боевой необходимости. Cпециально для котов.
+  suffix: Только коты
+  components:
+  - type: Sprite
+    sprite: Clothing/Belt/mercwebbing.rsi
+  - type: Clothing
+    sprite: Clothing/Belt/mercwebbing.rsi
+
+- type: entity
+  parent: ClothingBeltNfsdWebbingCat
+  id: ClothingBeltSalvageWebbingCat
+  name: Котячий РПС утилизаторов
+  description: Универсальный разгрузочный жилет для работы в космосе. Cпециально для котов.
+  suffix: Только коты
+  components:
+  - type: Sprite
+    sprite: Clothing/Belt/salvagewebbing.rsi
+  - type: Clothing
+    sprite: Clothing/Belt/salvagewebbing.rsi

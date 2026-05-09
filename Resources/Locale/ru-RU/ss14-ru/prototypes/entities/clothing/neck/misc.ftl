@@ -1,0 +1,17 @@
+ent-ClothingNeckHeadphones = наушники
+    .desc = Качественные наушники от Drunk Masters, с хорошей звукоизоляцией.
+    .suffix = { ent-ClothingNeckBase.suffix }
+ent-ClothingNeckStethoscope = стетоскоп
+    .desc = Устаревший медицинский аппарат для прослушивания звуков человеческого тела. С ним вы будете выглядеть так, будто знаете, что делаете.
+    .suffix = { ent-ClothingNeckBase.suffix }
+ent-ClothingNeckBling = побрякушки
+    .desc = Чертовски круто быть гангстером.
+    .suffix = { ent-ClothingNeckBase.suffix }
+ent-ClothingNeckLawyerbadge = значок юридического отдела
+    .desc = Значок, свидетельствующий что владелец является "законным" юрисконсультом, сдавшим экзамен НТ, необходимый для занятия юридической практикой.
+    .suffix = { ent-ClothingNeckBase.suffix }
+ent-ActionStethoscope = Слушать стетоскопом
+    .desc = { "" }
+    .suffix = { "" }
+ent-Dinkystar = наклейка-звёздочка
+    .desc = Маленькая звёздочка только для самых трудолюбивых сотрудников службы безопасности! Она уже даже не липкая.

@@ -1,0 +1,190 @@
+- type: entity
+  name: казмиевая лопата АнКо
+  parent: BaseAnCoWeapon
+  id: AnCoShovel
+  description: Универсальный инструмент для копания, скручивания, раскручивания, резания, нарезки, вскрытия. Да и в конце концов универсальный щит для защиты и оглушения.
+  suffix: StarHorizon, AnCo, Weapon
+  components:
+  - type: Sharp
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Melee/shovel.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: 225
+    damage:
+      types:
+        Blunt: 10
+        Slash: 8
+    soundHit:
+      path: /Audio/_Horizon/_Fractions/AnCo/metal-pipe-falling.ogg
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Blunt: 5
+        Slash: 5
+  - type: Item
+    size: Large
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Melee/shovel.rsi
+  - type: Tag
+    tags:
+    - BotanyShovel
+    - Wirecutter
+    - Screwdriver
+    - Crowbar
+    - Pickaxe
+  - type: Tool
+    qualities:
+    - Digging
+    speedModifier: 0.5
+    useSound:
+      path: /Audio/Items/shovel_dig.ogg
+  - type: Shovel
+  - type: ToolTileCompatible
+  - type: Prying
+    enabled: false
+  - type: MultipleTool
+    statusShowBehavior: true
+    entries:
+    - behavior: Digging
+      sprite:
+        sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Melee/shovel.rsi
+        state: icon
+      useSound:
+        path: /Audio/Items/shovel_dig.ogg
+      changeSound:
+        path: /Audio/Items/shovel_dig.ogg
+    - behavior: Screwing
+      sprite:
+        sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Melee/shovel.rsi
+        state: icon
+      useSound:
+        path: /Audio/Items/screwdriver.ogg
+      changeSound:
+        path: /Audio/Items/shovel_dig.ogg
+    - behavior: Anchoring
+      sprite:
+        sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Melee/shovel.rsi
+        state: icon
+      useSound:
+        path: /Audio/Items/ratchet.ogg
+      changeSound:
+        path: /Audio/Items/shovel_dig.ogg
+    - behavior:
+      - Prying
+      - Axing
+      sprite:
+        sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Melee/shovel.rsi
+        state: icon
+      useSound:
+        path: /Audio/Items/crowbar.ogg
+      changeSound:
+        path: /Audio/Items/shovel_dig.ogg
+    - behavior:
+      - Cutting
+      - Slicing
+      - Sawing
+      sprite:
+        sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Melee/shovel.rsi
+        state: icon
+      useSound:
+        path: /Audio/Items/wirecutter.ogg
+      changeSound:
+        path: /Audio/Items/shovel_dig.ogg
+  - type: AnCoBlockingOnWield
+  - type: Blocking
+    passiveBlockModifier:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.9
+    activeBlockModifier:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.8
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: ThrowingAngle
+    angle: 45
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 8
+        Slash: 4
+  - type: BalloonPopper
+  - type: Utensil
+    types:
+    - Knife
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 80
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          KazmieSheet:
+            min: 1
+            max: 5
+  - type: StaticPrice
+    price: 7000
+
+- type: entity
+  name: казмиевая лопата АнКо
+  parent: AnCoShovel
+  id: AnCoShovelDEBUG
+  description: Универсальный инструмент для копания, скручивания, раскручивания, резания, нарезки, вскрытия. Да и в конце концов универсальный щит для защиты и оглушения.
+  suffix: StarHorizon, AnCo, Weapon, Боньк
+  components:
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          KazmieSheet:
+            min: 1
+            max: 5
+  - type: Blocking
+    passiveBlockModifier:
+      coefficients:
+        Blunt: 1
+        Slash: 1
+        Piercing: 1
+        Heat: 1
+        Cold: 1
+        Energy: 1
+        Radiation: 1
+    activeBlockModifier:
+      coefficients:
+        Blunt: 1
+        Slash: 1
+        Piercing: 1
+        Heat: 1
+        Cold: 1
+        Energy: 1
+        Radiation: 1
+      flatReductions:
+        Blunt: 9999
+        Slash: 9999
+        Piercing: 9999
+        Heat: 9999
+        Cold: 9999
+        Energy: 9999
+        Radiation: 9999

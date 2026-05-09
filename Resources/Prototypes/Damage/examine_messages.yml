@@ -1,0 +1,5 @@
+﻿- type: localizedDataset
+  id: WindowMessages
+  values:
+    prefix: comp-window-damaged-
+    count: 6

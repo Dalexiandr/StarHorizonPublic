@@ -1,0 +1,39 @@
+- type: latheRecipe
+  parent: BaseCircuitboardRecipe
+  id: BotanicDNACircuitboard
+  result: BotanicDNACircuitboard
+
+- type: latheRecipe
+  parent: BaseCircuitboardRecipe
+  id: BotanicDNADisk
+  result: BotanicDNADisk
+  materials:
+    Steel: 100
+    Glass: 100
+
+- type: latheRecipe
+  id: FanTinyElectronics
+  result: FanTinyElectronics
+  categories:
+  - Machines
+  - Engineering
+  completetime: 4
+  materials:
+     Steel: 200
+     Plastic: 100
+     Silver: 10
+
+- type: latheRecipe
+  id: PortableGeneratorStarPacmanMachineCircuitboard
+  parent: [ BaseGoldCircuitboardRecipe, BaseEngineeringMachineRecipeCategory ]
+  result: PortableGeneratorStarPacmanMachineCircuitboard
+
+- type: latheRecipe
+  parent: [BaseCircuitboardRecipe, BaseEngineeringMachineRecipeCategory]
+  id: OreMiningDrillMachineCircuitboard
+  result: OreMiningDrillMachineCircuitboard
+  materials:
+    Steel: 800
+    Glass: 900
+    Gold: 100
+    

@@ -1,0 +1,15 @@
+<Button xmlns="https://spacestation14.io" ToggleMode="True">
+    <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
+        <BoxContainer HorizontalExpand="False" >
+            <TextureRect Name="DiskIcon" TextureScale="2 2" Stretch="KeepCentered"/>
+        </BoxContainer>
+        <BoxContainer Orientation="Vertical">
+            <BoxContainer VerticalExpand="True" HorizontalExpand="True">
+                <Label Name="DiskName" HorizontalExpand="True"/> 
+            </BoxContainer>
+            <BoxContainer VerticalExpand="True" HorizontalExpand="False">
+                <RichTextLabel Name="DiskDesc" HorizontalExpand="True" VerticalExpand="True" MaxWidth="550"/>
+            </BoxContainer>
+        </BoxContainer>
+    </BoxContainer>
+</Button>

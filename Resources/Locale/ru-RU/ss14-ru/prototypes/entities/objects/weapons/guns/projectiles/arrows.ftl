@@ -1,0 +1,12 @@
+ent-BaseArrow = { ent-BaseItem }
+    .desc = { ent-BaseItem.desc }
+ent-ArrowRegular = стрела
+    .desc = Вы чувствуете в себе силу степи.
+ent-ArrowImprovised = стрела из осколка стекла
+    .desc = Любимый снаряд грейтайдов.
+ent-ArrowImprovisedPlasma = стрела из осколка плазменного стекла
+    .desc = Любимый снаряд грейтайдов. Теперь с большей летальностью!
+ent-ArrowImprovisedUranium = стрела из осколка уранового стекла
+    .desc = Любимый снаряд грейтайдов. Теперь с радиацией!
+ent-ArrowImprovisedCarp = стела из зуба карпа
+    .desc = Любимый снаряд утилизаторов. Убивайте врагов зубами их семьи.

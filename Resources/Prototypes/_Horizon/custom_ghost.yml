@@ -1,0 +1,9 @@
+# Конфиг для кастомных призраков
+# Если нет в списке используем стандартный AdminObserver
+
+- type: customGhost
+  id: CustomGhostConfig
+  customGhost:
+    "Astrolaris": "CatShadowAdminObserver"
+    # и так далее ниже по форме
+    # "CKey": "Prototype"

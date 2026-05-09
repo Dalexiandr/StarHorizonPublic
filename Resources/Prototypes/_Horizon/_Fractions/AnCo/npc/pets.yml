@@ -1,0 +1,104 @@
+- type: entity
+  id: MobCatUmaAnCo
+  parent: [NFMobPet, MobCatGhost, ShowSecurityIcons]
+  name: Юми
+  suffix: StarHorizon, AnCo, Cat
+  description: Корпоративная кошка АнКо.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _Horizon/_Fractions/AnCo/Mobs/Cat/uma.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: uma
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: uma
+      Critical:
+        Base: uma-death
+      Dead:
+        Base: uma-death
+  - type: RandomMetadata
+    nameSegments: null
+  - type: AutoImplant
+    implants:
+    - LightImplant
+  - type: FlashImmunity
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - AnCoRadio
+  - type: ActiveRadio
+    channels:
+    - AnCoRadio
+  - type: MeleeWeapon
+    damage:
+      types:
+        Piercing: 10 # Declawed cat
+  - type: StaminaDamageOnHit
+    damage: 18
+  - type: NpcFactionMember
+    factions:
+    - Cat
+    - AnCoSecurBot
+  - type: CharacterFactionMember
+    faction: FactionAnCo
+
+# - type: entity
+#   id: MobCatSoidAnCo
+#   parent: [AnCoPlayerSiliconBase, ShowSecurityIcons]
+#   name: Котсоид
+#   suffix: StarHorizon, AnCo, Cat
+#   description: Это пушка или кот? Или блять собака? НЕТ! ЭТО КОТСОИД.
+#   components:
+#   - type: Sprite
+#     drawdepth: Mobs
+#     sprite: _Horizon/_Fractions/AnCo/Mobs/Cat/catsoid.rsi
+#     layers:
+#     - map: ["enum.DamageStateVisualLayers.Base"]
+#       state: catsoid
+#   - type: DamageStateVisuals
+#     states:
+#       Alive:
+#         Base: catsoid
+#       Critical:
+#         Base: catsoid-death
+#       Dead:
+#         Base: catsoid-death
+#   - type: RandomMetadata
+#     nameSegments: null
+#   - type: AutoImplant
+#     implants:
+#     - LightImplant
+#   - type: FlashImmunity
+#   - type: IntrinsicRadioTransmitter
+#     channels:
+#     - AnCoRadio
+#   - type: ActiveRadio
+#     channels:
+#     - AnCoRadio
+#   - type: MeleeWeapon
+#     damage:
+#       types:
+#         Piercing: 10 # Declawed cat
+#   - type: StaminaDamageOnHit
+#     damage: 18
+#   - type: NpcFactionMember
+#     factions:
+#     - Cat
+#     - AnCoSecurBot
+#   - type: CharacterFactionMember
+#     faction: FactionAnCo
+#   - type: Battery
+#     maxCharge: 3000
+#     startingCharge: 3000
+#   - type: Gun
+#     fireRate: 3
+#     soundGunshot:
+#       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+#   - type: HitscanBatteryAmmoProvider
+#     proto: AnCoRedHeavyLaser
+#     fireCost: 100
+#   - type: BatterySelfRecharger
+#     autoRecharge: true
+#     autoRechargeRate: 10

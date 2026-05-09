@@ -1,0 +1,78 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakSheriff
+  name: sheriff's cloak
+  description: An exquisite brown and green cloak fitting for those who can assert dominance over wrongdoers. Take a stab at being civil in prosecution!
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Neck/Cloaks/nfsdsheriff.rsi
+  - type: StealTarget
+    stealGroup: HeadCloak
+
+- type: entity
+  parent: ClothingNeckCloakHop
+  id: ClothingNeckCloakSr
+  name: station representative's cloak
+  description: A top of the line cloak for Frontier Outpost's station representative. Made from exquisite fibers and furs, this thing must have cost a fortune! The fact this cloak was even issued shows the trust Central Command is placing in their representative on this outpost.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Neck/Cloaks/sr.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakRosy
+  name: rosy the maple mothroach cloak
+  description: A cloak made of pink and floof and roach.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Neck/Cloaks/rosy.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodRosyCloak
+    requiredSlot:
+    - neck
+    slot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: Construction
+    graph: ClothingNeckCloakRosyGraph
+    node: ClothingNeckCloakRosy
+
+- type: entity
+  parent: ClothingNeckBase
+  id: NFGoblinMadeClothingNeckTrashCloak
+  name: cloakash
+  description: A cloak stitched from a patchwork of food wrappings. Somehow, wearing it always makes your mind wander to the nearest food joint.
+  components:
+  - type: GoblinMade
+  - type: Sprite
+    sprite: _NF/Clothing/Neck/Cloaks/goblin_trash_cloak.rsi
+  - type: ToggleableClothing
+    clothingPrototype: NFGoblinMadeClothingHeadHatHoodTrashCloak
+    requiredSlot:
+    - neck
+    slot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: Construction
+    graph: NFGoblinMadeClothingNeckTrashCloak
+    node: NFGoblinMadeClothingNeckTrashCloak
+  - type: Butcherable
+    spawned:
+    - id: ScrapOre1
+      amount: 2
+  - type: PhysicalComposition
+    materialComposition:
+      RawScrap: 400
+
+# Upstream removed
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakMiner
+  name: miner's cloak
+  description: You move sixteen tons, and what do you get? This cloak. For the distinguished miner.
+  components:
+  - type: Sprite
+    sprite: Clothing/Neck/Cloaks/miner.rsi

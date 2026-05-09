@@ -1,0 +1,71 @@
+{
+    "version": 1,
+    "license": "CLA with hosting restrictions",
+    "copyright": "Sprited by Xigovir DS:623559319543349268",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "ripsoid"
+        },
+        {
+            "name": "ships"
+        },
+        {
+            "name": "ancologo"
+        },
+        {
+            "name": "reactor"
+        },
+        {
+            "name": "temperature"
+        },
+        {
+            "name": "core"
+        },
+        {
+            "name": "anco"
+        },
+        {
+            "name": "ardon"
+        },
+        {
+            "name": "citadel"
+        },
+        {
+            "name": "dcs"
+        },
+        {
+            "name": "join"
+        },
+        {
+            "name": "miligalax"
+        },
+        {
+            "name": "money"
+        },
+        {
+            "name": "power"
+        },
+        {
+            "name": "sifina"
+        },
+        {
+            "name": "stardust"
+        },
+        {
+            "name": "load"
+        },
+        {
+            "name": "subea"
+        },
+        {
+            "name": "erotic"
+        },
+        {
+            "name": "corporate"
+        }
+    ]
+}

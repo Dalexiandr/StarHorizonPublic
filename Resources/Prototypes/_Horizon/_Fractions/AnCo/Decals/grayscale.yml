@@ -1,0 +1,161 @@
+﻿- type: decal
+  id: AnCoEffency
+  tags: ["station", "overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/grafiti.rsi
+    state: ancoeffency
+
+- type: decal
+  id: AnCoLogo
+  tags: ["station", "overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/grafiti.rsi
+    state: ancologo
+
+- type: decal
+  id: AnCoLogo1
+  tags: ["station", "overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/grafiti.rsi
+    state: ancologo1
+
+- type: decal
+  id: AnCoLogo2
+  tags: ["station", "overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/grafiti.rsi
+    state: ancologo2
+
+- type: decal
+  id: AnCoLogo3
+  tags: ["station", "overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/grafiti.rsi
+    state: ancologo3
+
+- type: decal
+  id: AnCoLogoBig1
+  tags: ["station", "overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/grafiti.rsi
+    state: ancologobigpart1
+
+- type: decal
+  id: AnCoLogoBig2
+  tags: ["station", "overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/grafiti.rsi
+    state: ancologobigpart2
+
+- type: decal
+  id: AnCoLogoBig3
+  tags: ["station", "overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/grafiti.rsi
+    state: ancologobigpart3
+
+- type: decal
+  id: AnCoLogoBig4
+  tags: ["station", "overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/grafiti.rsi
+    state: ancologobigpart4
+
+- type: decal
+  id: AnCoLogoBig5
+  tags: ["station", "overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/grafiti.rsi
+    state: ancologobigpart5
+
+- type: decal
+  id: AnCoLogoBig6
+  tags: ["station", "overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/grafiti.rsi
+    state: ancologobigpart6
+
+- type: decal
+  id: AnCoLogoBig7
+  tags: ["station", "overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/grafiti.rsi
+    state: ancologobigpart7
+
+- type: decal
+  id: AnCoLogoBig8
+  tags: ["station", "overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/grafiti.rsi
+    state: ancologobigpart8
+
+- type: decal
+  id: AnCoLogoBig9
+  tags: ["station", "overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/grafiti.rsi
+    state: ancologobigpart9
+
+- type: decal
+  id: AnCoMiliGalax
+  tags: ["station", "overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/grafiti.rsi
+    state: ancologomiligalax
+
+- type: decal
+  id: AnCoSubea
+  tags: ["station", "overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/grafiti.rsi
+    state: ancologosubea
+
+- type: decal
+  id: AnCoStarDust
+  tags: ["station", "overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/grafiti.rsi
+    state: ancologostardust
+
+- type: decal
+  id: AnCoTitans
+  tags: ["station", "overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/grafiti.rsi
+    state: ancotitans
+
+- type: decal
+  id: AnCoLogoPart1
+  tags: ["station", "overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/grafiti.rsi
+    state: ancologopart1
+
+- type: decal
+  id: AnCoLogoPart2
+  tags: ["station", "overlay"]
+  defaultCustomColor: true
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Decals/grafiti.rsi
+    state: ancologopart2
+
+

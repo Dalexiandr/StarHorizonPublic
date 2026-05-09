@@ -1,0 +1,168 @@
+# region Negative
+
+- type: trait
+  id: Deaf
+  name: trait-deaf-name
+  description: trait-deaf-desc
+  category: HorizonNegative
+  cost: -8
+  components:
+  - type: DeafTrait
+
+- type: trait
+  id: Sluggish
+  name: trait-sluggish-name
+  description: trait-sluggish-desc
+  category: HorizonNegative
+  cost: -5
+  effects:
+  - !type:ModifySpeed
+    walkModifier: 0.84
+    sprintModifier: 0.84
+
+- type: trait
+  id: SnailPaced
+  name: trait-snail-name
+  description: trait-snail-desc
+  category: HorizonNegative
+  cost: -8
+  effects:
+  - !type:ModifySpeed
+    walkModifier: 0.68
+    sprintModifier: 0.68
+
+- type: trait
+  id: BloodDeficiency
+  name: trait-blood-defiency-name
+  description: trait-blood-defiency-desc
+  category: HorizonNegative
+  cost: -4
+  effects:
+  - !type:ModifyBloodstream
+    refreshModifier: 0.22
+
+- type: trait
+  id: Hemophilia
+  name: trait-hemophilia-name
+  description: trait-hemophilia-desc
+  category: HorizonNegative
+  cost: -4
+  effects:
+  - !type:ModifyBloodstream
+    bleedReductionModifier: 0.5
+
+- type: trait
+  id: WillToDie
+  name: trait-will-to-die-name
+  description: trait-will-to-die-desc
+  category: HorizonNegative
+  cost: -5
+  effects:
+  - !type:ModifyHealth
+    healthChange:
+      Critical: -20
+      Dead: -20
+
+- type: trait
+  id: GlassJaw
+  name: trait-glass-jaw-name
+  description: trait-glass-jaw-desc
+  category: HorizonNegative
+  cost: -3
+  effects:
+  - !type:ModifyHealth
+    healthChange:
+      Critical: -20
+
+- type: trait
+  id: BadKnees
+  name: trait-bad-knees-name
+  description: trait-bad-knees-desc
+  category: HorizonNegative
+  cost: -3
+  effects:
+  - !type:ModifyStamina
+    stunModifier: 1.5
+
+- type: trait
+  id: Lethargy
+  name: trait-lethargy-name
+  description: trait-lethargy-desc
+  category: HorizonNegative
+  cost: -4
+  effects:
+  - !type:ModifyStamina
+    critThresholdModifier: 0.85
+    cooldownModifier: 0.8
+    afterCritDecayMultiplier: 1.3
+
+- type: trait
+  id: Feeble
+  name: trait-feeble-name
+  description: trait-feeble-desc
+  category: HorizonNegative
+  cost: -4
+  effects:
+  - !type:ModifyDamageSlowdown
+    modifier: -0.1
+
+- type: trait
+  id: Redshirt
+  name: trait-redshirt-name
+  description: trait-redshirt-desc
+  category: HorizonNegative
+  cost: -10
+  effects:
+  - !type:ModifyHealth
+    healthChange:
+      Critical: -5
+      Dead: -100
+
+- type: trait
+  id: BrittleBoneDisease
+  name: trait-brittle-bone-name
+  description: trait-brittle-bone-desc
+  category: HorizonNegative
+  cost: -6
+  effects:
+  - !type:ModifyHealth
+    healthChange:
+      Critical: -50
+
+- type: trait
+  id: LowPainTolerance
+  name: trait-low-pain-tolerance-name
+  description: trait-low-pain-tolerance-desc
+  category: HorizonNegative
+  cost: -3
+  components:
+  - type: LowPainTolerance
+
+# region TraitArm
+
+- type: trait
+  id: AmputatedArm
+  name: trait-amputated-arm-name
+  description: trait-amputated-arm-desc
+  category: HorizonNegative
+  group: TraitArm
+  cost: -3
+  effects:
+    - !type:ModifyBodyParts
+      partType: Arm
+      symmetry: Right
+      protoId: null
+      slotId: null
+
+# region TraitCombat
+
+- type: trait
+  id: BadShooter
+  name: trait-bad-shooter-name
+  description: trait-bad-shooter-desc
+  category: HorizonNegative
+  group: TraitCombat
+  cost: -5
+  components:
+  - type: RangedWeaponSpreadModifiers
+    modifier: 1.4

@@ -1,0 +1,12 @@
+- type: entity
+  name: Dungeon Spawner
+  id: SpawnMineshaftDungeon
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: Objects/Fun/Plushies/atmosian.rsi
+        state: icon # Великий атмос прийдёт и накажет того кто сменит спрайт
+  - type: AnCoDungeonMarker
+    dungeonPreset: NFMineshaft

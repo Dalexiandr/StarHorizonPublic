@@ -1,0 +1,28 @@
+- type: entity
+  id: DefaultOutpostConsole
+  parent: BaseComputer
+  name: Консоль аванпоста
+  components:
+  - type: Computer
+    board: Null
+  - type: ActivatableUI
+    key: enum.CaptureUIKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.CaptureUIKey.Key:
+        type: OutpostConsoleBoundInterface
+  - type: ItemSlots # TODO: move ItemSlot to be nullable, withdraw shouldn't have one at all
+  - type: ContainerContainer
+    containers:
+      board: !type:Container
+      id-card-slot: !type:ContainerSlot
+  - type: OutpostConsole # Логика тут!
+    canUseAsSpawnPoint: true # Будет ли использоватся в качестве точки для спавна ресурсов! Размещать такую одну на аванпост!
+    captureTime: 10 # Время захвата данной консоли, если она одна - время захвата всего аванпоста!
+    idCardSlot: {whitelist: {components: IdCard}}
+
+- type: outpostSpawn # Прототип для спавна, собстна...
+  id: default
+  spawn:
+    - id: CardDeckNanotrasen # Хлам чтобы спавнить!
+      amount: 0 # Количество хлама собстна...

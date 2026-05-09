@@ -1,0 +1,969 @@
+- type: loadout
+  id: ContractorForcedClothingOuterEVASuitContractor
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: NFOuterSuitRequired
+  price: 0
+  equipment:
+    outerClothing: ClothingOuterEVASuitContractor
+
+- type: loadout
+  id: ContractorClothingOuterHardsuitVoidParamed
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1300
+  equipment:
+    outerClothing: ClothingOuterHardsuitVoidParamed
+
+- type: loadout
+  id: ContractorClothingOuterHoodieGrey
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 200
+  equipment:
+    outerClothing: ClothingOuterHoodieGrey
+
+- type: loadout
+  id: ContractorClothingOuterVestHazard
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 200
+  equipment:
+    outerClothing: ClothingOuterVestHazard
+
+- type: loadout
+  id: ContractorClothingOuterApron
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 200
+  equipment:
+    outerClothing: ClothingOuterApron
+
+- type: loadout
+  id: ContractorClothingOuterApronBar
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 200
+  equipment:
+    outerClothing: ClothingOuterApronBar
+
+- type: loadout
+  id: ContractorClothingOuterApronBotanist
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 200
+  equipment:
+    outerClothing: ClothingOuterApronBotanist
+
+- type: loadout
+  id: ContractorClothingOuterApronChef
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 200
+  equipment:
+    outerClothing: ClothingOuterApronChef
+
+#T1
+- type: loadout
+  id: ContractorClothingOuterHoodieBlack
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterHoodieBlack
+
+- type: loadout
+  id: ContractorClothingOuterCoatJensen
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterCoatJensen
+
+- type: loadout
+  id: ContractorClothingOuterCoatGentle
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterCoatGentle
+
+- type: loadout
+  id: ContractorClothingOuterJacketChef
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterJacketChef
+
+- type: loadout
+  id: ContractorClothingOuterHoodieChaplain
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterHoodieChaplain
+
+- type: loadout
+  id: ContractorClothingOuterNunRobe
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterNunRobe
+
+- type: loadout
+  id: ContractorClothingOuterCoatLab
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterCoatLab
+
+- type: loadout
+  id: ContractorClothingOuterCoatLabGene
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterCoatLabGene
+
+- type: loadout
+  id: ContractorClothingOuterCoatLabChem
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterCoatLabChem
+
+- type: loadout
+  id: ContractorClothingOuterCoatRobo
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterCoatRobo
+
+- type: loadout
+  id: ContractorClothingOuterCoatLabViro
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterCoatLabViro
+
+- type: loadout
+  id: ContractorClothingOuterBioScientist
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterBioScientist
+
+- type: loadout
+  id: ContractorClothingOuterWinterCoat
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterWinterCoat
+
+- type: loadout
+  id: ContractorClothingOuterWinterCoatLong
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterWinterCoatLong
+
+- type: loadout
+  id: ContractorClothingOuterWinterAtmos
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterWinterAtmos
+
+- type: loadout
+  id: ContractorClothingOuterWinterHydro
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterWinterHydro
+
+- type: loadout
+  id: ContractorClothingOuterWinterBar
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterWinterBar
+
+- type: loadout
+  id: ContractorClothingOuterWinterChef
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterWinterChef
+
+- type: loadout
+  id: ContractorClothingOuterWinterCap
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterWinterCap
+
+- type: loadout
+  id: ContractorClothingOuterWinterMusician
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterWinterMusician
+
+- type: loadout
+  id: ContractorClothingOuterWinterCargo
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterWinterCargo
+
+- type: loadout
+  id: ContractorClothingOuterWinterMiner
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterWinterMiner
+
+- type: loadout
+  id: ContractorClothingOuterWinterEngi
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterWinterEngi
+
+- type: loadout
+  id: ContractorClothingOuterWinterMed
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterWinterMed
+
+- type: loadout
+  id: ContractorClothingOuterWinterChem
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterWinterChem
+
+- type: loadout
+  id: ContractorClothingOuterCoatParamedicWB
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterCoatParamedicWB
+
+- type: loadout
+  id: ContractorClothingOuterWinterPara
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterWinterPara
+
+- type: loadout
+  id: ContractorClothingOuterWinterGen
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterWinterGen
+
+- type: loadout
+  id: ContractorClothingOuterWinterSci
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterWinterSci
+
+- type: loadout
+  id: ContractorClothingOuterWinterRobo
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterWinterRobo
+
+- type: loadout
+  id: ContractorClothingOuterWinterViro
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 800
+  equipment:
+    outerClothing: ClothingOuterWinterViro
+
+#T2
+- type: loadout
+  id: ContractorClothingOuterWinterClown
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterWinterClown
+
+- type: loadout
+  id: ContractorClothingOuterWinterMime
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterWinterMime
+
+- type: loadout
+  id: ContractorClothingOuterWinterQM
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterWinterQM
+
+- type: loadout
+  id: ContractorClothingOuterWinterRD
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterWinterRD
+
+- type: loadout
+  id: ContractorClothingOuterWinterCMO
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterWinterCMO
+
+- type: loadout
+  id: ContractorClothingOuterWinterCE
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterWinterCE
+
+- type: loadout
+  id: ContractorClothingOuterCoatLabCmo
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatLabCmo
+
+- type: loadout
+  id: ContractorClothingOuterCoatLabSeniorPhysician
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatLabSeniorPhysician
+
+- type: loadout
+  id: ContractorClothingOuterCoatRD
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatRD
+
+- type: loadout
+  id: ContractorClothingOuterCoatLabSeniorResearcher
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatLabSeniorResearcher
+
+- type: loadout
+  id: ContractorClothingOuterFlannelRed
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterFlannelRed
+
+- type: loadout
+  id: ContractorClothingOuterFlannelBlue
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterFlannelBlue
+
+- type: loadout
+  id: ContractorClothingOuterFlannelGreen
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterFlannelGreen
+
+- type: loadout
+  id: ContractorClothingOuterCoatHyenhSweater
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatHyenhSweater
+
+- type: loadout
+  id: ContractorClothingOuterCoatInspector
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatDetectiveLoadout
+
+- type: loadout
+  id: ContractorClothingOuterCoatTrench
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatTrench
+
+- type: loadout
+  id: ContractorClothingOuterDameDane
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterDameDane
+
+- type: loadout
+  id: ContractorClothingOuterWinterCoatPlaid
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterWinterCoatPlaid
+
+- type: loadout
+  id: ContractorClothingOuterCoatBomber
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatBomber
+
+- type: loadout
+  id: ContractorClothingOuterPlagueSuit
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterPlagueSuit
+
+- type: loadout
+  id: ContractorClothingOuterCoatBishop
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatBishop
+
+- type: loadout
+  id: ContractorClothingOuterCoatWitchHunter
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatWitchHunter
+
+- type: loadout
+  id: ContractorClothingOuterCoatCardinal
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatCardinal
+
+# Punk stuff
+- type: loadout
+  id: ContractorClothingOuterCoatBomberPunkRed
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatBomberPunkRed
+
+- type: loadout
+  id: ContractorClothingOuterCoatJacketLeather
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatJacketLeather
+
+- type: loadout
+  id: ContractorClothingOuterCoatJacketBiker
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatJacketBiker
+
+- type: loadout
+  id: ContractorClothingOuterCoatJacketJamrock
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatJacketJamrock
+
+- type: loadout
+  id: ContractorClothingOuterCoatBomberAerostatic
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatBomberAerostatic
+
+- type: loadout
+  id: ContractorClothingOuterCoatJacketLettermanBlue
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatJacketLettermanBlue
+
+- type: loadout
+  id: ContractorClothingOuterCoatJacketLettermanBrown
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatJacketLettermanBrown
+
+- type: loadout
+  id: ContractorClothingOuterCoatJacketLettermanRed
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatJacketLettermanRed
+
+- type: loadout
+  id: ContractorClothingOuterCoatJacketLettermanMagenta
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatJacketLettermanMagenta
+
+- type: loadout
+  id: ContractorClothingOuterCoatBomberPinkSleeves
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatBomberPinkSleeves
+
+- type: loadout
+  id: ContractorClothingOuterCoatBomberRandomized
+  name: punk jacket (random)
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatBomberRandomized
+
+- type: loadout
+  id: ContractorClothingOuterCoatRandomized
+  name: punk coat (random)
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatRandomized
+
+- type: loadout
+  id: ContractorClothingOuterCoatAcidRaincoat
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatAcidRaincoat
+
+- type: loadout
+  id: ContractorClothingOuterCoatAcidRaincoatBlue
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatAcidRaincoatBlue
+
+- type: loadout
+  id: ContractorClothingOuterCoatAcidRaincoatGreen
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatAcidRaincoatGreen
+
+- type: loadout
+  id: ContractorClothingOuterCoatAcidRaincoatMagenta
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatAcidRaincoatMagenta
+
+- type: loadout
+  id: ContractorClothingOuterCoatAcidRaincoatYellow
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: ClothingOuterCoatAcidRaincoatYellow
+
+
+#T3 for lols
+- type: loadout
+  id: ContractorWetFloorSign
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT3
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 1200
+  equipment:
+    outerClothing: WetFloorSign
+
+- type: loadout
+  id: ContractorClothingOuterCoatExpensive
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT3
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 6000
+  equipment:
+    outerClothing: ClothingOuterCoatExpensive
+
+- type: loadout
+  id: ContractorClothingOuterCoatSpaceAsshole
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT3
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 8000
+  equipment:
+    outerClothing: ClothingOuterCoatSpaceAsshole

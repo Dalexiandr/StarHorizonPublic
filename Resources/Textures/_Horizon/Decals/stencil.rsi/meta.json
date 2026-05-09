@@ -1,0 +1,71 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-4.0",
+    "copyright": "made by RavenReaper for Horizon",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "stencilЙ"
+        },
+        {
+            "name": "stencilЦ"
+        },
+        {
+            "name": "stencilГ"
+        },
+        {
+            "name": "stencilШ"
+        },
+        {
+            "name": "stencilЩ"
+        },
+        {
+            "name": "stencilЪ"
+        },
+        {
+            "name": "stencilФ"
+        },
+        {
+            "name": "stencilЫ"
+        },
+        {
+            "name": "stencilП"
+        },
+        {
+            "name": "stencilЛ"
+        },
+        {
+            "name": "stencilД"
+        },
+        {
+            "name": "stencilЖ"
+        },
+        {
+            "name": "stencilЭ"
+        },
+        {
+            "name": "stencilЯ"
+        },
+        {
+            "name": "stencilЧ"
+        },
+        {
+            "name": "stencilИ"
+        },
+        {
+            "name": "stencilЬ"
+        },
+        {
+            "name": "stencilБ"
+        },
+        {
+            "name": "stencilЮ"
+        },
+        {
+            "name": "stencil_aza"
+        }
+    ]
+}

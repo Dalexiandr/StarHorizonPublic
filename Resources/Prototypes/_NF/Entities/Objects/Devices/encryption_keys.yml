@@ -1,0 +1,76 @@
+- type: entity
+  parent: [EncryptionKey, RecyclableItemDeviceTiny]
+  id: EncryptionKeyTraffic
+  name: traffic control encryption key
+  description: An encryption key for the space traffic control channel.
+  components:
+  - type: EncryptionKey
+    channels:
+    - Traffic
+    defaultChannel: Traffic
+  - type: Item
+    sprite: _NF/Objects/Devices/encryption_keys.rsi
+  - type: Sprite
+    sprite: _NF/Objects/Devices/encryption_keys.rsi
+    layers:
+    - state: crypt_gray
+    - state: stc_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyNfsd
+  name: NFSD encryption key
+  categories: [ DoNotMap ]
+  description: An encryption key for the New Frontier Sheriff's Department channel.
+  components:
+  - type: EncryptionKey
+    channels:
+    - Nfsd
+    defaultChannel: Nfsd
+  - type: Item
+    sprite: _NF/Objects/Devices/encryption_keys.rsi
+  - type: Sprite
+    sprite: _NF/Objects/Devices/encryption_keys.rsi
+    layers:
+    - state: crypt_gray
+    - state: nfsd_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyDoc
+  name: medical dispatch encryption key
+  categories: [ DoNotMap ]
+  description: An encryption key for coordinating medical dispatch.
+  components:
+  - type: EncryptionKey
+    channels:
+    - Common
+    - Medical
+    - Command
+    defaultChannel: Common
+  - type: Item
+    sprite: _NF/Objects/Devices/encryption_keys.rsi
+  - type: Sprite
+    sprite: _NF/Objects/Devices/encryption_keys.rsi
+    layers:
+    - state: crypt_silver
+    - state: cmo_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyGreeting
+  name: greeting encryption key
+  categories: [ DoNotMap ]
+  description: An encryption key for the Frontier Outpost intercom.
+  components:
+  - type: EncryptionKey
+    channels:
+    - Greeting
+    defaultChannel: Greeting
+  - type: Item
+    sprite: _NF/Objects/Devices/encryption_keys.rsi
+  - type: Sprite
+    sprite: _NF/Objects/Devices/encryption_keys.rsi
+    layers:
+    - state: crypt_gray
+    - state: greeting_label

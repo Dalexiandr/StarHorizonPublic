@@ -1,0 +1,54 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: helloohelloo
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: NightlightL
+  parent: BaseVessel
+  name: NECG Nightlight-L
+  description: '"Да напиши просто расширенна версия NightLight повышенной комфортности, все."'
+  price: 250000 # 50463, наценка верфи 30% = 65602
+  category: Medium
+  group: Shipyard
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/Sponsor/nightlight-l.yml
+  class:
+  - Botany
+  - Civilian
+  - Kitchen
+  engine:
+  - Uranium
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+  # Horizon end
+
+- type: gameMap
+  id: NightlightL
+  mapName: 'NECG Nightlight-L'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/Sponsor/nightlight-l.yml
+  minPlayers: 0
+  stations:
+    NightlightL:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Nightlight-L {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

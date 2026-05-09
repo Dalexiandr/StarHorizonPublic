@@ -1,0 +1,16 @@
+- type: entity
+  parent: BaseGateway
+  id: AnCoGateway
+  name: блюспейс врата АнКо
+  description: Энергия ардония способна разрывать не только технологические шаблоны, но и само пространство.
+  suffix: StarHorizon, AnCo, Structure
+  components:
+  - type: ActivatableUI
+    key: enum.GatewayUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.GatewayUiKey.Key:
+        type: GatewayBoundUserInterface
+  - type: Gateway
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Machines/gateway.rsi

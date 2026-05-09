@@ -1,0 +1,29 @@
+- type: entity
+  parent: CoordinatesDisk
+  id: CoordinatesDiskSyndicate
+  name: syndicate coordinates disk
+  description: An old disk with unknown data. Who still uses optical drives?
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/cd.rsi
+    layers:
+    - state: icon
+      color: "#C83737"
+  - type: ShuttleDestinationCoordinates
+  - type: AutoLinkCoordinatesDisk
+    targetStationId: SindiOutpost
+
+- type: entity
+  parent: CoordinatesDisk
+  id: CoordinatesDiskPirate
+  name: worn coordinates disk
+  description: A worn disk with unknown data. Who still uses optical drives?
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/cd.rsi
+    layers:
+    - state: icon
+      color: "#8B4513"
+  - type: ShuttleDestinationCoordinates
+  - type: AutoLinkCoordinatesDisk
+    targetStationId: Cove

@@ -1,0 +1,88 @@
+- type: entity
+  parent: MarkerBase
+  id: GrasslandsFaunaSpawner
+  name: grasslands fauna spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: unshaded
+      sprite: Mobs/Aliens/Lavaland/watcher.rsi
+      color: deepskyblue
+    - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+    - MobBearSpace
+    - MobCobraSpace
+    - MobCarp
+    - MobKangarooSpace
+    - MobSpiderSpace
+    - MobCarp
+
+- type: entity
+  parent: MarkerBase
+  id: LavalandFaunaSpawner
+  name: lavaland fauna spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: unshaded
+      sprite: Mobs/Aliens/Lavaland/watcher.rsi
+      color: deepskyblue
+    - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+    - MobWatcherLavaland
+    - MobWatcherIcewing
+    - MobGoliath
+    - MobGoliath
+    - MobBasilisk
+
+- type: entity
+  parent: MarkerBase
+  id: IcelandFaunaSpawner
+  name: iceland fauna spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: unshaded
+      sprite: Mobs/Aliens/Lavaland/watcher.rsi
+      color: deepskyblue
+    - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+    - NFSpawnMobXenoT1
+    - NFSpawnMobXenoT2
+    - SpawnMobArgocytes
+    - SpawnMobArgocytes
+
+- type: entity
+  name: xeno spawner
+  suffix: AI, Hostile
+  parent: MarkerBase
+  id: SpawnMobArgocytes
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: Mobs/Aliens/Argocyte/argocyte_large.rsi
+      state: leviathing
+    - sprite: _NF/Markers/general.rsi
+      state: questionmark
+      color: red
+  - type: RandomSpawner
+    prototypes:
+    - MobArgocyteSkitter
+    - MobArgocyteSwiper
+    - MobArgocyteMolder
+    - MobArgocytePouncer
+    - MobArgocyteGlider
+    - MobArgocyteHarvester
+    - MobArgocyteCrawler
+    rarePrototypes:
+    - MobArgocyteEnforcer
+    - MobArgocyteFounder
+    - MobArgocyteLeviathing
+    rareChance: 0.10

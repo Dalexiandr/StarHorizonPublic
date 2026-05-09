@@ -1,0 +1,16 @@
+ent-BaseRecharger = { ent-BaseMachinePowered }
+    .desc = { ent-BaseMachinePowered.desc }
+ent-BaseItemRecharger = { ent-BaseRecharger }
+    .desc = { ent-BaseRecharger.desc }
+ent-PowerCellRecharger = cell recharger
+    .desc = { ent-BaseItemRecharger.desc }
+ent-PowerCageRecharger = cage recharger
+    .desc = A specialized machine made for recharging the heavy cage batteries used by ship-mounted weapons.
+ent-WeaponCapacitorRecharger = recharger
+    .desc = A modern recharging station that can fit both power cells and small electronic devices.
+ent-TurboItemRecharger = turbo recharger
+    .desc = An overclocked recharger, fits both power cells and small electronic devices. Not recommended for use around asthmatics.
+ent-WallWeaponCapacitorRecharger = wall recharger
+    .desc = A sleek wall recharger, fits both power cells and small electronic devices.
+ent-BorgCharger = cyborg recharging station
+    .desc = A stationary charger for various robotic and cyborg entities. Surprisingly spacious.

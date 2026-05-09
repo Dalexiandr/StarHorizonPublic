@@ -1,0 +1,12 @@
+ent-ClothingHeadHelmetEVA = шлем EVA
+    .desc = Старый добрый шлем, предназначенный для работы в космосе. Прославился тем, что делает офицеров службы безопасности параноиками.
+ent-ClothingHeadHelmetEVALarge = шлем EVA
+    .desc = Старый добрый шлем, предназначенный для работы в космосе.
+ent-ClothingHeadHelmetSyndicate = шлем EVA синдиката
+    .desc = Простой, стильный шлем EVA. Предназначен для максимального скромного космо-засранца.
+ent-ClothingHeadHelmetCosmonaut = шлем космонавта
+    .desc = Древний дизайн, но передовая технология.
+ent-ClothingHeadHelmetVoidParamed = пустотный шлем парамедика
+    .desc = Пустотный шлем, созданный для парамедиков.
+ent-ClothingHeadHelmetAncient = пустотный шлем NTSRA
+    .desc = Древний космический шлем, разработанный подразделением Центкома NTSRA.

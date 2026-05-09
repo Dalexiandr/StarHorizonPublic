@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from RMC-14: https://github.com/RMC-14/RMC-14/blob/master/Resources/Textures/_RMC14/Mobs/Xenonids",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "xenomorph",
+      "directions": 4
+    },
+    {
+      "name": "xenomorph-moving",
+      "directions": 4
+    },
+    {
+      "name": "xenomorph_sleep"
+    },
+    {
+      "name": "xenomorph_unconscious"
+    },
+    {
+      "name": "xenomorph_dead"
+    }
+  ]
+}
+

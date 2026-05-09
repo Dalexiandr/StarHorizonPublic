@@ -1,0 +1,465 @@
+#SOFTSUITS
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitGoblin ]
+  id: SuitStorageEVAGoblin
+  suffix: EVA, Goblin
+  components:
+  - type: AccessReader
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitContractor ]
+  id: SuitStorageEVAContractor
+  suffix: EVA, Contractor
+  components:
+  - type: AccessReader
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitPilot ]
+  id: SuitStorageEVAPilot
+  suffix: EVA, Pilot
+  components:
+  - type: AccessReader
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitSr ]
+  id: SuitStorageEVASr
+  suffix: EVA, Station Representative
+  components:
+  - type: AccessReader
+    access: [["HeadOfPersonnel"]]
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitStc ]
+  id: SuitStorageEVAStc
+  suffix: EVA, Station Traffic Controller
+  components:
+  - type: AccessReader
+    access: [["StationTrafficController"]]
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitCaptain ]
+  id: SuitStorageEVACaptain
+  suffix: EVA, Captain
+  components:
+  - type: AccessReader
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitEngineer ]
+  id: SuitStorageEVAEngineer
+  suffix: EVA, Engineer
+  components:
+  - type: AccessReader
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitAtmosTech ]
+  id: SuitStorageEVAAtmosTech
+  suffix: EVA, Atmospherics Technician
+  components:
+  - type: AccessReader
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitCargo ]
+  id: SuitStorageEVACargo
+  suffix: EVA, Cargo Technician
+  components:
+  - type: AccessReader
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitSalvage ]
+  id: SuitStorageEVASalvage
+  suffix: EVA, Salvage Specialist
+  components:
+  - type: AccessReader
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitMedic ]
+  id: SuitStorageEVAMedical
+  suffix: EVA, Medical Doctor
+  components:
+  - type: AccessReader
+
+- type: entity
+  parent: [ LockerSalvageSpecialistFilled, StorageFillEVASuitSalvage ]
+  id: SuitStorageEVASalvageFilled
+  suffix: EVA, Salvage Specialist, Filled
+  components:
+  - type: AccessReader
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitParamedic ]
+  id: SuitStorageParamedic
+  suffix: Voidsuit, Paramedic
+  components:
+  - type: AccessReader
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitParamedicAlt ]
+  id: SuitStorageParamedicAlt
+  suffix: EVA, Paramedic
+  components:
+  - type: AccessReader
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitScientist ]
+  id: SuitStorageEVAScientist
+  suffix: EVA, Scientist
+  components:
+  - type: AccessReader
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitJanitor ]
+  id: SuitStorageEVAJanitor
+  suffix: EVA, Janitor
+  components:
+  - type: AccessReader
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitServiceWorker ]
+  id: SuitStorageEVAServiceWorker
+  suffix: EVA, Service Worker
+  components:
+  - type: AccessReader
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitChaplain ]
+  id: SuitStorageEVAChaplain
+  suffix: EVA, Chaplain
+  components:
+  - type: AccessReader
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitBoxerRed ]
+  id: SuitStorageEVABoxerRed
+  suffix: EVA, Boxer, Red
+  components:
+  - type: AccessReader
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitBoxerGreen ]
+  id: SuitStorageEVABoxerGreen
+  suffix: EVA, Boxer, Green
+  components:
+  - type: AccessReader
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitBoxerBlue ]
+  id: SuitStorageEVABoxerBlue
+  suffix: EVA, Boxer, Blue
+  components:
+  - type: AccessReader
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitBoxerYellow ]
+  id: SuitStorageEVABoxerYellow
+  suffix: EVA, Boxer, Yellow
+  components:
+  - type: AccessReader
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitBoxerRandom ]
+  id: SuitStorageEVABoxerRandom
+  suffix: EVA, Boxer, Random
+  components:
+  - type: AccessReader
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitHydro ]
+  id: SuitStorageEVAHydro
+  suffix: EVA, Hydroponics
+  components:
+  - type: AccessReader
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitMail ]
+  id: SuitStorageEVAMail
+  suffix: EVA, Mail Carrier
+  components:
+  - type: AccessReader
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitMercenary ]
+  id: SuitStorageEVAMercenary
+  suffix: EVA, Mercenary
+  components:
+  - type: AccessReader
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitPrivateSec ]
+  id: SuitStorageEVAPrivateSec
+  suffix: EVA, Private Security
+  components:
+  - type: AccessReader
+
+- type: entity
+  parent: [ SuitStorageBase, StorageFillEVASuitNfsd ]
+  id: SuitStorageEVANfsd
+  suffix: EVA, NFSD
+  components:
+  - type: AccessReader
+    access: [["Security"]]
+
+#HARDSUITS
+#Quartermaster hardsuit
+- type: entity
+  id: SuitStorageQuartermaster
+  parent: SuitStorageBase
+  suffix: Quartermaster
+  components:
+  - type: StorageFill
+    contents:
+        - id: NFTankO2N2EqualFilled
+        - id: ClothingShoesBootsMag
+        - id: ClothingOuterHardsuitLuxury
+        - id: ClothingMaskGasExplorer
+        - id: JetpackMiniFilled
+  - type: AccessReader
+
+#Mining hardsuit
+- type: entity
+  id: SuitStorageMining
+  parent: SuitStorageBase
+  suffix: Mining
+  components:
+  - type: StorageFill
+    contents:
+        - id: NFTankO2N2EqualFilled
+        - id: ClothingShoesBootsMag
+        - id: ClothingOuterHardsuitSalvage
+        - id: ClothingMaskGasExplorer
+        - id: JetpackMiniFilled
+  - type: AccessReader
+
+#Mercenary hardsuit
+- type: entity
+  id: SuitStorageMercenary
+  parent: SuitStorageBase
+  suffix: Mercenary
+  components:
+  - type: StorageFill
+    contents:
+        - id: NFTankO2N2EqualFilled
+        - id: ClothingOuterHardsuitMercenary
+        - id: ClothingMaskGasMercenary
+        - id: JetpackMiniFilled
+        - id: ClothingShoesBootsMagMercenaryFilled
+  - type: AccessReader
+    access: [["Captain"], ["Mercenary"]]
+
+- type: entity
+  id: SuitStoragePrivateSecurity
+  parent: SuitStorageBase
+  suffix: Private Security
+  components:
+  - type: StorageFill
+    contents:
+        - id: NFTankO2N2EqualFilled
+        - id: ClothingOuterHardsuitPrivateSecurity
+        - id: ClothingMaskGasSecurity
+        - id: JetpackMiniFilled
+        - id: ClothingShoesBootsMagSecurity
+  - type: AccessReader
+    access: [["Captain"], ["Mercenary"]]
+
+#SCAF hardsuit
+- type: entity
+  id: SuitStorageScaf
+  parent: SuitStorageBase
+  suffix: SCAF
+  components:
+  - type: StorageFill
+    contents:
+        - id: NFTankO2N2EqualFilled
+        - id: ClothingOuterHardsuitScaf
+        - id: ClothingMaskGasMercenary
+        - id: JetpackMiniFilled
+        - id: ClothingShoesBootsMagMercenaryFilled
+  - type: AccessReader
+    access: [["Captain"], ["Mercenary"]]
+
+#Surplus hardsuit
+- type: entity
+  id: SuitStorageSurplus
+  parent: SuitStorageBase
+  suffix: Surplus
+  components:
+  - type: StorageFill
+    contents:
+        - id: NFTankO2N2EqualFilled
+        - id: ClothingOuterHardsuitSurplus
+        - id: ClothingMaskGasSecurity
+        - id: JetpackMiniFilled
+        - id: ClothingShoesBootsMagSecurity
+  - type: AccessReader
+    access: [["Captain"], ["Mercenary"]]
+
+#Noble hardsuit
+- type: entity
+  id: SuitStorageNoble
+  parent: SuitStorageBase
+  suffix: Noble
+  components:
+  - type: StorageFill
+    contents:
+        - id: NFTankO2N2EqualFilled
+        - id: ClothingOuterHardsuitNoble
+        - id: ClothingMaskGasSecurity
+        - id: JetpackMiniFilled
+        - id: ClothingShoesBootsMagSecurity
+  - type: AccessReader
+    access: [["Captain"], ["Mercenary"]]
+
+#Pilot hardsuit
+- type: entity
+  id: SuitStoragePilot
+  parent: SuitStorageBase
+  suffix: Pilot
+  components:
+  - type: StorageFill
+    contents:
+        - id: NFTankO2N2EqualFilled
+        - id: ClothingOuterHardsuitPilot
+        - id: ClothingMaskBreath
+        - id: JetpackMiniFilled
+  - type: AccessReader
+
+#Clown hardsuit
+- type: entity
+  id: SuitStorageClown
+  parent: SuitStorageBase
+  suffix: Clown
+  components:
+  - type: StorageFill
+    contents:
+        - id: NFTankO2N2EqualFilled
+        - id: ClothingOuterHardsuitClown
+        - id: ClothingMaskBreath
+        - id: JetpackMiniFilled
+  - type: AccessReader
+
+#Cadet hardsuit
+- type: entity
+  id: SuitStorageCadet
+  parent: SuitStorageBase
+  suffix: NFSD Cadet
+  components:
+  - type: StorageFill
+    contents:
+        - id: NFTankO2N2EqualFilled
+        - id: ClothingOuterHardsuitNfsdBronze
+        - id: ClothingMaskGasNfsd
+        - id: JetpackNfsdFilled
+        - id: ClothingShoesBootsMagNfsd
+  - type: AccessReader
+    access: [["Security"]]
+
+#Deputy hardsuit
+- type: entity
+  id: SuitStorageDeputy
+  parent: SuitStorageBase
+  suffix: NFSD Deputy
+  components:
+  - type: StorageFill
+    contents:
+        - id: NFTankO2N2EqualFilled
+        - id: ClothingOuterHardsuitNfsdSilver
+        - id: ClothingMaskGasNfsd
+        - id: JetpackNfsdFilled
+        - id: ClothingShoesBootsMagNfsd
+  - type: AccessReader
+    access: [["Security"]]
+
+#Brigmed hardsuit
+- type: entity
+  id: SuitStorageBrigmedic
+  parent: SuitStorageBase
+  suffix: NFSD Brigmedic
+  components:
+  - type: StorageFill
+    contents:
+        - id: NFTankO2N2EqualFilled
+        - id: ClothingOuterHardsuitNfsdBrigmedic
+        - id: ClothingMaskGasNfsd
+        - id: JetpackNfsdFilled
+        - id: ClothingShoesBootsMagNfsd
+  - type: AccessReader
+    access: [["Brigmedic"]]
+
+#Sergeant hardsuit
+- type: entity
+  id: SuitStorageSergeant
+  parent: SuitStorageBase
+  suffix: NFSD Sergeant
+  components:
+  - type: StorageFill
+    contents:
+        - id: NFTankO2N2EqualFilled
+        - id: ClothingOuterHardsuitNfsdGold
+        - id: ClothingMaskGasNfsd
+        - id: JetpackNfsdFilled
+        - id: ClothingShoesBootsMagNfsd
+  - type: AccessReader
+    access: [["Security"]]
+
+#Bailiff hardsuit
+- type: entity
+  id: SuitStorageBailiff
+  parent: SuitStorageBase
+  suffix: NFSD Bailiff
+  components:
+  - type: StorageFill
+    contents:
+        - id: NFTankO2N2EqualFilled
+        - id: ClothingOuterHardsuitNfsdGold
+        - id: ClothingMaskGasNfsd
+        - id: JetpackNfsdFilled
+        - id: ClothingShoesBootsMagNfsd
+  - type: AccessReader
+    access: [["Security"]]
+
+#Sheriff hardsuit
+- type: entity
+  id: SuitStorageSheriff
+  parent: SuitStorageBase
+  suffix: NFSD Sheriff
+  components:
+  - type: StorageFill
+    contents:
+        - id: NFTankO2N2EqualFilled
+        - id: ClothingOuterHardsuitNfsdSheriff
+        - id: ClothingMaskGasSheriff
+        - id: JetpackNfsdFilled
+        - id: ClothingShoesBootsMagNfsd
+  - type: AccessReader
+    access: [["Security"]]
+
+#Combat hardsuit
+- type: entity
+  id: SuitStorageNfsdCombat
+  parent: SuitStorageBase
+  suffix: NFSD Combat
+  components:
+  - type: StorageFill
+    contents:
+        - id: NFTankO2N2EqualFilled
+        - id: ClothingOuterHardsuitNfsdCombat
+        - id: ClothingMaskGasNfsd
+        - id: JetpackNfsdFilled
+        - id: ClothingShoesBootsMagNfsd
+  - type: AccessReader
+    access: [["Security"]]
+
+#Command hardsuit
+- type: entity
+  id: SuitStorageNfsdCommand
+  parent: SuitStorageBase
+  suffix: NFSD Command
+  components:
+  - type: StorageFill
+    contents:
+        - id: NFTankO2N2EqualFilled
+        - id: ClothingOuterHardsuitNfsdCommand
+        - id: ClothingMaskGasNfsd
+        - id: JetpackNfsdFilled
+        - id: ClothingShoesBootsMagNfsd
+  - type: AccessReader
+    access: [["Security"]]

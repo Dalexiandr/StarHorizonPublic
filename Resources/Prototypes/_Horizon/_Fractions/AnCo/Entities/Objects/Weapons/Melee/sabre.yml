@@ -1,0 +1,33 @@
+- type: entity
+  name: сабля АнКо
+  parent: BaseAnCoSharpWeapon
+  id: AnCoSabre
+  description: Элегантная и смертоносная сабля, символ офицерского состава AnCo.
+  suffix: StarHorizon, AnCo, Weapon
+  components:
+  - type: Execution
+    doAfterDuration: 4.0
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Melee/sabre.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -45
+    attackRate: 1.5
+    damage:
+      types:
+        Slash: 18
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Item
+    size: Normal
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Melee/sabre.rsi
+  - type: DisarmMalus
+  - type: Utensil
+    types:
+    - Knife
+  - type: Tool
+    qualities:
+    - Slicing
+  - type: AnCoSabre
+  - type: StaticPrice
+    price: 6000

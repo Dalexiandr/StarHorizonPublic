@@ -1,0 +1,10 @@
+# Xenobiology - slimeperson
+# Да, это просто уристмак слайм с именем и рандомной внешностью
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: RandomSlimePerson
+  parent: MobSlimePerson
+  name: Random slime person
+  components:
+    - type: RandomHumanoidAppearance
+      randomizeName: true

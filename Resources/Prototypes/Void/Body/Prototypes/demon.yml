@@ -1,0 +1,61 @@
+- type: body
+  name: "demon"
+  id: Demon
+  root: torso
+  slots:
+    head:
+      part: HeadDemon
+      connections:
+      - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganHumanEyes
+        tongue: OrganHumanTongue # Horizon
+        eye_implant: null # _Horizon
+        cyberdeka_implant: null # _Horizon
+    torso:
+      part: TorsoDemon
+      organs:
+        heart: OrganAnimalHeart
+        lungs: OrganHumanLungs
+        stomach: OrganDemonStomach
+        liver: OrganAnimalLiver
+        kidneys: OrganHumanKidneys
+        vessels_implant: null # _Horizon
+        blood_pump_implant: null
+        skin_implant: null # _Horizon
+        bone_implant: null # _Horizon
+        cavity: null # _Starlight
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+    right arm:
+      part: RightArmDemon
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmDemon
+      connections:
+      - left hand
+    right hand:
+      part: RightHandDemon
+      organs:
+        hands_implant: null # _Horizon
+    left hand:
+      part: LeftHandDemon
+      organs:
+        hands_implant: null # _Horizon
+    right leg:
+      part: RightLegDemon
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegDemon
+      connections:
+      - left foot
+    right foot:
+      part: RightFootDemon
+    left foot:
+      part: LeftFootDemon

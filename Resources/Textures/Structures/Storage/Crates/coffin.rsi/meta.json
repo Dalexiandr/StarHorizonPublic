@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "license": "CC BY-NC-ND 3.0",
+  "copyright": "Sprites by TheGypsyBaron DS:701266770429739008",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "base"
+    },
+    {
+      "name": "open"
+    },
+    {
+      "name": "closed"
+    },
+    {
+      "name": "paper"
+    },
+    {
+      "name": "bounty"
+    },
+    {
+      "name": "captains_paper"
+    },
+    {
+      "name": "invoice"
+    }
+  ]
+}

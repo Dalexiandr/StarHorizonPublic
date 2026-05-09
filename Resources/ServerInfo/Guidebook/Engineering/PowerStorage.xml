@@ -1,0 +1,26 @@
+﻿<Document>
+  # Накопители энергии
+  Необходимы для сглаживания перепадов потребления энергии.
+
+  ## SMES
+  Сверхпроводящий накопитель энергии.
+
+  <Box>
+    <GuideEntityEmbed Entity="SMESBasic"/>
+  </Box>
+
+  Характеристики:
+  - Емкость: [color=orange][protodata="SMESBasic" comp="Battery" member="MaxCharge" format="N0"/] Дж[/color]
+  - Макс. отдача: [color=orange][protodata="SMESBasic" comp="PowerNetworkBattery" member="MaxSupply" format="N0"/] Вт[/color]
+  - Подключение через [textlink="HV кабели" link="VoltageNetworks"]
+
+  ## Продвинутый SMES
+  <Box>
+    <GuideEntityEmbed Entity="SMESAdvanced"/>
+  </Box>
+
+  Улучшенная версия:
+  - Емкость: [color=orange][protodata="SMESAdvanced" comp="Battery" member="MaxCharge" format="N0"/] Дж[/color]
+  - Макс. отдача: [color=orange][protodata="SMESAdvanced" comp="PowerNetworkBattery" member="MaxSupply" format="N0"/] Вт[/color]
+  - Используется в основных энергосистемах станции
+</Document>

@@ -1,0 +1,98 @@
+- type: entity
+  id: AnCoEmergencyFabricator
+  parent: [BaseStructure, BaseAnCoContraband]
+  name: аварийный фабрикатор
+  description: Одноразовый фабрикатор для экстренного получения снаряжения. Выберите нужные наборы и подтвердите выбор.
+  suffix: StarHorizon, AnCo, Structure
+  components:
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Machines/onefabtic.rsi
+    layers:
+    - state: icon
+      map: ["enum.AnCoDisposableFabricatorVisualLayers.IsWorking"]
+  - type: AnCoDisposableFabricator
+    possibleSets:
+    - SamplePistol
+    - SampleAmmo35
+    - SampleHumanities
+    - SampleHardSuitPetal
+    - SampleHardSuitDusk
+    - SampleHardSuitGranite
+    maxSelectedSets: 1
+    workDuration: 3.1
+    idleState: icon
+    workingState: work
+  - type: AnCoDisposableFabricatorVisuals
+    idleState: icon
+    workingState: work
+  - type: Appearance
+  - type: ActivatableUI
+    key: enum.AnCoDisposableFabricatorUIKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.AnCoDisposableFabricatorUIKey.Key:
+        type: AnCoDisposableFabricatorBoundUserInterface
+  - type: InteractionOutline
+
+- type: anCoDisposableFabricatorSet
+  id: SampleHardSuitPetal
+  name: Шаблон скафандра Лепесток
+  description: Стандартный шаблон ЛО скафандра
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Clothing/OuterClothing/Hardsuits/petal.rsi
+    state: icon
+  content:
+  - CrateBaseAnCoPetal
+
+- type: anCoDisposableFabricatorSet
+  id: SampleHardSuitDusk
+  name: Шаблон скафандра Сумрак
+  description: Стандартный шаблон ЛО скафандра
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Clothing/OuterClothing/Hardsuits/dusk.rsi
+    state: icon
+  content:
+  - CrateBaseAnCoDusk
+
+- type: anCoDisposableFabricatorSet
+  id: SampleHardSuitGranite
+  name: Шаблон скафандра Гранит
+  description: Стандартный шаблон СО скафандра
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Clothing/OuterClothing/Hardsuits/granite.rsi
+    state: icon
+  content:
+  - CrateBaseAnCoGranite
+
+- type: anCoDisposableFabricatorSet
+  id: SampleHumanities
+  name: Гумманитарная помощь
+  description: Шаблон суточного пропитания и медикаментов
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Objects/Misc/ration.rsi
+    state: icon
+  content:
+  - CrateBaseAnCoHumanities
+
+- type: anCoDisposableFabricatorSet
+  id: SamplePistol
+  name: Средства самообороны
+  description: Шаблон пистолета и боеприпасов
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Guns/Ballistic/semiauto-pistol.rsi
+    state: icon
+  content:
+  - CrateBaseAnCoPistol
+
+- type: anCoDisposableFabricatorSet
+  id: SampleAmmo35
+  name: Шаблон боеприпасов
+  description: Шаблон боеприпасов .35 калибра
+  sprite:
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Ammo/Magazine/35_pistol_mag.rsi
+    state: icon
+  content:
+  - CrateBaseAnCoAmmo35

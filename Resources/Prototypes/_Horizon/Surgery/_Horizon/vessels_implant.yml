@@ -1,0 +1,24 @@
+- type: entity
+  id: BaseVesselsImplant
+  abstract: true
+  parent: [ BaseItem, BaseImplant ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/implants.rsi
+  - type: Organ
+  - type: VesselsImplant
+  - type: Gibbable
+
+- type: entity
+  id: VesselsImplant
+  name: Искуственные бионические сосуды
+  description: Очень странно видеть сосуды вне тела. Они кажется извиваются и всегда пытаются себя соединить.
+  parent: BaseVesselsImplant
+  components:
+  - type: Sprite
+    state: implant
+  - type: FunctionalOrgan
+    armor:
+      modifiers:
+      coefficients:
+        Bloodloss: 0.4

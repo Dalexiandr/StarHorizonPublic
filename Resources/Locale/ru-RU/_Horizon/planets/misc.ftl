@@ -1,0 +1,1 @@
+planet-taxi-text = Планеты

@@ -1,0 +1,14 @@
+- type: job
+  id: ERTJuggernaut
+  name: джаггернаут ОБР
+  description: Это мощная и технологически продвинутая боевая единица, созданная для устранения критических угроз компании Nanotrasen.
+  playTimeTracker: JobERTJuggernaut
+  setPreference: false
+  startingGear: ERTJuggernautGearEVA
+  icon: "JobIconNanotrasen"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  access:
+  - CentralCommand

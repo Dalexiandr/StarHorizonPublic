@@ -1,0 +1,55 @@
+- type: Tag
+  id: PowerAnCo
+
+- type: Tag
+  id: AnCoMagazineShotgun50
+
+- type: Tag
+  id: AnCoBulletShotgun50
+
+- type: Tag
+  id: AnCoMagazinePistol35
+
+- type: Tag
+  id: AnCoBulletPistol35
+
+- type: Tag
+  id: AnCoMagazineRifle20
+
+- type: Tag
+  id: AnCoBulletRifle20
+
+- type: Tag
+  id: AnCoMagazineRifle30
+
+- type: Tag
+  id: AnCoBulletRifle30
+
+- type: Tag
+  id: AnCoMagazineSniper70
+
+- type: Tag
+  id: AnCoBulletSniper70
+
+- type: Tag
+  id: AnCoWater
+
+- type: Tag
+  id: AnCoTin
+
+- type: Tag
+  id: AnCoMaterial
+
+- type: Tag
+  id: AnCoOre
+
+- type: Tag
+  id: AnCoCapsule
+
+# Cryptominer
+
+- type: Tag
+  id: CryptominerDisk
+
+- type: Tag
+  id: AnCoComplex

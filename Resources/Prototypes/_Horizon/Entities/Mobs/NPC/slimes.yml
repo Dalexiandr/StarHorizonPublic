@@ -1,0 +1,1019 @@
+- type: entity
+  name: герас
+  description: Маленькая версия крупного куска слизи, по совместительству им и является
+  id: MobSlimesGeras
+  parent: BaseMobAdultSlimes
+  categories: [ HideSpawnMenu ]
+  components:
+  # they portable...
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 4
+    baseSprintSpeed: 6 # +.5 from normal movement speed
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      80: Dead # weak af tho
+  - type: NpcFactionMember
+    factions:
+    - NanoTrasen
+  - type: MultiHandedItem
+  - type: Item
+    size: Huge
+  - type: Sprite
+    color: "#FFFFFF55"
+  - type: MeleeWeapon
+    attackRate: 2
+    damage:
+      types:
+        Blunt: 4
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: blue_adult_slime
+      Dead:
+        Base: blue_adult_slime_dead
+
+# Good slimes
+
+- type: entity
+  name: grey slime
+  id: MobAdultSlimesGrey
+  parent: MobAdultSlimes
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: grey_adult_slime
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: grey_adult_slime
+      Dead:
+        Base: grey_adult_slime_dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSlime
+      amount: 1
+    - id: GreySlimeExtract
+      amount: 1
+  - type: XenoBiology
+    mutagen: RandomGreySlimeMutation
+  - type: StaticPrice
+    price: 300
+
+- type: entity
+  name: orange slime
+  id: MobAdultSlimesOrange
+  parent: MobAdultSlimes
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: orange_adult_slime
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: orange_adult_slime
+      Dead:
+        Base: orange_adult_slime_dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSlime
+      amount: 1
+    - id: OrangeSlimeExtract
+      amount: 1
+  - type: XenoBiology
+    mutagen: RandomOrangeSlimeMutation
+  - type: StaticPrice
+    price: 600
+
+- type: entity
+  name: purple slime
+  id: MobAdultSlimesPurple
+  parent: MobAdultSlimes
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: purple_adult_slime
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: purple_adult_slime
+      Dead:
+        Base: purple_adult_slime_dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSlime
+      amount: 1
+    - id: PurpleSlimeExtract
+      amount: 1
+  - type: XenoBiology
+    mutagen: RandomPurpleSlimeMutation
+  - type: StaticPrice
+    price: 600
+
+- type: entity
+  name: металлический слайм
+  id: MobAdultSlimesMetall
+  parent: MobAdultSlimes
+  description: Это так похоже на желе. Интересно, какой он на вкус?
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: metal_adult_slime
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: metal_adult_slime
+      Dead:
+        Base: metal_adult_slime_dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSlime
+      amount: 1
+    - id: MetallSlimeExtract
+      amount: 1
+  - type: XenoBiology
+    mutagen: RandomMetallSlimeMutation
+  - type: StaticPrice
+    price: 600
+
+- type: entity
+  name: синий слайм
+  id: MobAdultSlimesBlue
+  parent: MobAdultSlimes
+  description: Это так похоже на желе. Интересно, какой он на вкус?
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: blue_adult_slime
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: blue_adult_slime
+      Dead:
+        Base: blue_adult_slime_dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSlime
+      amount: 1
+    - id: BlueSlimeExtract
+      amount: 1
+  - type: XenoBiology
+    mutagen: RandomBlueSlimeMutation
+  - type: StaticPrice
+    price: 600
+
+- type: entity
+  name: red slime
+  id: MobAdultSlimesRed
+  parent: MobAdultSlimes
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: red_adult_slime
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: red_adult_slime
+      Dead:
+        Base: red_adult_slime_dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSlime
+      amount: 1
+    - id: RedSlimeExtract
+      amount: 1
+  - type: XenoBiology
+    mutagen: RandomRedSlimeMutation
+  - type: StaticPrice
+    price: 900
+
+- type: entity
+  name: dark blue slime
+  id: MobAdultSlimesDarkBlue
+  parent: MobAdultSlimes
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: dark_blue_adult_slime
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: dark_blue_adult_slime
+      Dead:
+        Base: dark_blue_adult_slime_dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSlime
+      amount: 1
+    - id: DarkBlueSlimeExtract
+      amount: 1
+  - type: XenoBiology
+    mutagen: RandomDarkBlueSlimeMutation
+  - type: StaticPrice
+    price: 900
+
+- type: entity
+  name: тёмно-фиолетовый слайм
+  id: MobAdultSlimesDarkPurple
+  parent: MobAdultSlimes
+  description: Это так похоже на желе. Интересно, какой он на вкус?
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: dark_purple_adult_slime
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: dark_purple_adult_slime
+      Dead:
+        Base: dark_purple_adult_slime_dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSlime
+      amount: 1
+    - id: DarkPurpleSlimeExtract
+      amount: 1
+  - type: XenoBiology
+    mutagen: RandomDarkPurpleSlimeMutation
+  - type: StaticPrice
+    price: 900
+
+- type: entity
+  name: золотой слайм
+  id: MobAdultSlimesGold
+  parent: MobAdultSlimes
+  description: Это так похоже на желе. Интересно, какой он на вкус?
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: gold_adult_slime
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: gold_adult_slime
+      Dead:
+        Base: gold_adult_slime_dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSlime
+      amount: 1
+    - id: GoldSlimeExtract
+      amount: 1
+  - type: XenoBiology
+    mutagen: RandomGoldSlimeMutation
+  - type: StaticPrice
+    price: 900
+
+- type: entity
+  name: серебрянный слайм
+  id: MobAdultSlimesSilver
+  parent: MobAdultSlimes
+  description: Это так похоже на желе. Интересно, какой он на вкус?
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: silver_adult_slime
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: silver_adult_slime
+      Dead:
+        Base: silver_adult_slime_dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSlime
+      amount: 1
+    - id: SilverSlimeExtract
+      amount: 1
+  - type: XenoBiology
+    mutagen: RandomSilverSlimeMutation
+  - type: StaticPrice
+    price: 900
+
+- type: entity
+  name: розовый слайм
+  id: MobAdultSlimesPink
+  parent: MobAdultSlimes
+  description: Это так похоже на желе. Интересно, какой он на вкус?
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: pink_adult_slime
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: pink_adult_slime
+      Dead:
+        Base: pink_adult_slime_dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSlime
+      amount: 1
+    - id: PinkSlimeExtract
+      amount: 1
+  - type: XenoBiology
+    mutagen: RandomPinkSlimeMutation
+  - type: StaticPrice
+    price: 900
+
+- type: entity
+  name: зеленый слайм
+  id: MobAdultSlimesGreen
+  parent: MobAdultSlimes
+  description: Это так похоже на желе. Интересно, какой он на вкус?
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: green_adult_slime
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: green_adult_slime
+      Dead:
+        Base: green_adult_slime_dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSlime
+      amount: 1
+    - id: GreenSlimeExtract
+      amount: 1
+  - type: XenoBiology
+    mutagen: RandomGreenSlimeMutation
+  - type: StaticPrice
+    price: 900
+
+- type: entity
+  name: yellow slime
+  parent: MobAdultSlimes
+  id: MobAdultSlimesYellow
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: yellow_adult_slime
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: yellow_adult_slime
+      Dead:
+        Base: yellow_adult_slime_dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSlime
+      amount: 1
+    - id: YellowSlimeExtract
+      amount: 1
+  - type: XenoBiology
+    mutagen: MobAdultSlimesYellow
+  - type: StaticPrice
+    price: 900
+
+- type: entity
+  name: блюспейс слайм
+  id: MobAdultSlimesBlueSpace
+  parent: MobAdultSlimes
+  description: Это так похоже на желе. Интересно, какой он на вкус?
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: bluespace_adult_slime
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: bluespace_adult_slime
+      Dead:
+        Base: bluespace_adult_slime_dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSlime
+      amount: 1
+    - id: BlueSpaceSlimeExtract
+      amount: 1
+  - type: XenoBiology
+    mutagen: RandomBlueSpaceSlimeMutation
+  - type: StaticPrice
+    price: 1500
+
+- type: entity
+  name: нефтяной слайм
+  id: MobAdultSlimesOil
+  parent: MobAdultSlimes
+  description: Это так похоже на желе. Интересно, какой он на вкус?
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: oil_adult_slime
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: oil_adult_slime
+      Dead:
+        Base: oil_adult_slime_dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSlime
+      amount: 1
+    - id: OilSlimeExtract
+      amount: 1
+  - type: XenoBiology
+    mutagen: RandomOilSlimeMutation
+  - type: StaticPrice
+    price: 1500
+
+- type: entity
+  name: адамантитовый слайм
+  id: MobAdultSlimesAdamantite
+  parent: MobAdultSlimes
+  description: Это так похоже на желе. Интересно, какой он на вкус?
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: adamantine_adult_slime
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: adamantine_adult_slime
+      Dead:
+        Base: adamantine_adult_slime_dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSlime
+      amount: 1
+    - id: AdamantiteSlimeExtract
+      amount: 1
+  - type: XenoBiology
+    mutagen: RandomAdamantiteSlimeMutation
+  - type: StaticPrice
+    price: 1500
+
+- type: entity
+  name: сепиа слайм
+  id: MobAdultSlimesSepia
+  parent: MobAdultSlimes
+  description: Это так похоже на желе. Интересно, какой он на вкус?
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: sepia_adult_slime
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: sepia_adult_slime
+      Dead:
+        Base: sepia_adult_slime_dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSlime
+      amount: 1
+    - id: SepiaSlimeExtract
+      amount: 1
+  - type: XenoBiology
+    mutagen: RandomSepiaSlimeMutation
+  - type: StaticPrice
+    price: 1500
+
+- type: entity
+  name: пиритовый слайм
+  id: MobAdultSlimesPyrite
+  parent: MobAdultSlimes
+  description: Это так похоже на желе. Интересно, какой он на вкус?
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: pyrite_adult_slime
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: pyrite_adult_slime
+      Dead:
+        Base: pyrite_adult_slime_dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSlime
+      amount: 1
+    - id: PyriteSlimeExtract
+      amount: 1
+  - type: XenoBiology
+    mutagen: RandomPyriteSlimeMutation
+  - type: StaticPrice
+    price: 1500
+
+- type: entity
+  name: чёрный слайм
+  id: MobAdultSlimesBlack
+  parent: MobAdultSlimes
+  description: Это так похоже на желе. Интересно, какой он на вкус?
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: black_adult_slime
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: black_adult_slime
+      Dead:
+        Base: black_adult_slime_dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSlime
+      amount: 1
+    - id: BlackSlimeExtract
+      amount: 1
+  - type: XenoBiology
+    mutagen: RandomBlackSlimeMutation
+  - type: StaticPrice
+    price: 1500
+
+- type: entity
+  name: светло розовый слайм
+  id: MobAdultSlimesLightPink
+  parent: MobAdultSlimes
+  description: Это так похоже на желе. Интересно, какой он на вкус?
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: light_pink_adult_slime
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: light_pink_adult_slime
+      Dead:
+        Base: light_pink_adult_slime_dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSlime
+      amount: 1
+    - id: LightPinkSlimeExtract
+      amount: 1
+  - type: XenoBiology
+    mutagen: RandomLightPinkSlimeMutation
+  - type: StaticPrice
+    price: 1500
+
+- type: entity
+  name: лазурный слайм
+  id: MobAdultSlimesCerulean
+  parent: MobAdultSlimes
+  description: Это так похоже на желе. Интересно, какой он на вкус?
+  components:
+  - type: Sprite
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: cerulean_adult_slime
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: cerulean_adult_slime
+      Dead:
+        Base: cerulean_adult_slime_dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSlime
+      amount: 1
+    - id: CeruleanSlimeExtract
+      amount: 1
+  - type: XenoBiology
+    mutagen: RandomCeruleanSlimeMutation
+  - type: StaticPrice
+    price: 1500
+
+# Angry slimes
+
+- type: entity
+  name: лазурный слайм
+  parent: MobAdultSlimesCerulean
+  id: MobAdultSlimesCeruleanAngry
+  suffix: Angry
+  components:
+  - type: GhostTakeoverAvailable # Frontier
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: GhostRole
+    makeSentient: true # Horizon
+    name: ghost-role-information-slimes-name # Horizon
+    description: ghost-role-information-angry-slimes-description
+    rules: ghost-role-information-angry-slimes-rules
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+    raffle:
+      settings: short
+
+- type: entity
+  name: розовый слайм
+  parent: MobAdultSlimesPink
+  id: MobAdultSlimesPinkAngry
+  suffix: Angry
+  components:
+  - type: GhostTakeoverAvailable # Frontier
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: GhostRole
+    makeSentient: true # Horizon
+    name: ghost-role-information-slimes-name # Horizon
+    description: ghost-role-information-angry-slimes-description
+    rules: ghost-role-information-angry-slimes-rules
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+    raffle:
+      settings: short
+
+- type: entity
+  name: светло-розовый слайм
+  parent: MobAdultSlimesLightPink
+  id: MobAdultSlimesLightPinkAngry
+  suffix: Angry
+  components:
+  - type: GhostTakeoverAvailable # Frontier
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: GhostRole
+    makeSentient: true # Horizon
+    name: ghost-role-information-slimes-name # Horizon
+    description: ghost-role-information-angry-slimes-description
+    rules: ghost-role-information-angry-slimes-rules
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+    raffle:
+      settings: short
+
+- type: entity
+  name: чёрный слайм
+  parent: MobAdultSlimesBlack
+  id: MobAdultSlimesBlackAngry
+  suffix: Angry
+  components:
+  - type: GhostTakeoverAvailable # Frontier
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: GhostRole
+    makeSentient: true # Horizon
+    name: ghost-role-information-slimes-name # Horizon
+    description: ghost-role-information-angry-slimes-description
+    rules: ghost-role-information-angry-slimes-rules
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+    raffle:
+      settings: short
+
+- type: entity
+  name: серебрянный слайм
+  parent: MobAdultSlimesSilver
+  id: MobAdultSlimesSilverAngry
+  suffix: Angry
+  components:
+  - type: GhostTakeoverAvailable # Frontier
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: GhostRole
+    makeSentient: true # Horizon
+    name: ghost-role-information-slimes-name # Horizon
+    description: ghost-role-information-angry-slimes-description
+    rules: ghost-role-information-angry-slimes-rules
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+    raffle:
+      settings: short
+
+- type: entity
+  name: пиритовый слайм
+  parent: MobAdultSlimesPyrite
+  id: MobAdultSlimesPyriteAngry
+  suffix: Angry
+  components:
+  - type: GhostTakeoverAvailable # Frontier
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: GhostRole
+    makeSentient: true # Horizon
+    name: ghost-role-information-slimes-name # Horizon
+    description: ghost-role-information-angry-slimes-description
+    rules: ghost-role-information-angry-slimes-rules
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+    raffle:
+      settings: short
+
+- type: entity
+  name: металлический слайм
+  parent: MobAdultSlimesMetall
+  id: MobAdultSlimesMetallAngry
+  suffix: Angry
+  components:
+  - type: GhostTakeoverAvailable # Frontier
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: GhostRole
+    makeSentient: true # Horizon
+    name: ghost-role-information-slimes-name # Horizon
+    description: ghost-role-information-angry-slimes-description
+    rules: ghost-role-information-angry-slimes-rules
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+    raffle:
+      settings: short
+
+- type: entity
+  name: золотой слайм
+  parent: MobAdultSlimesGold
+  id: MobAdultSlimesGoldAngry
+  suffix: Angry
+  components:
+  - type: GhostTakeoverAvailable # Frontier
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: GhostRole
+    makeSentient: true # Horizon
+    name: ghost-role-information-slimes-name # Horizon
+    description: ghost-role-information-angry-slimes-description
+    rules: ghost-role-information-angry-slimes-rules
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+    raffle:
+      settings: short
+
+- type: entity
+  name: сепиа слайм
+  parent: MobAdultSlimesSepia
+  id: MobAdultSlimesSepiaAngry
+  suffix: Angry
+  components:
+  - type: GhostTakeoverAvailable # Frontier
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: GhostRole
+    makeSentient: true # Horizon
+    name: ghost-role-information-slimes-name # Horizon
+    description: ghost-role-information-angry-slimes-description
+    rules: ghost-role-information-angry-slimes-rules
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+    raffle:
+      settings: short
+
+- type: entity
+  name: тёмно-фиолетовый слайм
+  parent: MobAdultSlimesDarkPurple
+  id: MobAdultSlimesDarkPurpleAngry
+  suffix: Angry
+  components:
+  - type: GhostTakeoverAvailable # Frontier
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: GhostRole
+    makeSentient: true # Horizon
+    name: ghost-role-information-slimes-name # Horizon
+    description: ghost-role-information-angry-slimes-description
+    rules: ghost-role-information-angry-slimes-rules
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+    raffle:
+      settings: short
+
+- type: entity
+  name: адамантитовый слайм
+  parent: MobAdultSlimesAdamantite
+  id: MobAdultSlimesAdamantiteAngry
+  suffix: Angry
+  components:
+  - type: GhostTakeoverAvailable # Frontier
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: GhostRole
+    makeSentient: true # Horizon
+    name: ghost-role-information-slimes-name # Horizon
+    description: ghost-role-information-angry-slimes-description
+    rules: ghost-role-information-angry-slimes-rules
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+    raffle:
+      settings: short
+
+- type: entity
+  name: нефтяной слайм
+  parent: MobAdultSlimesOil
+  id: MobAdultSlimesOilAngry
+  suffix: Angry
+  components:
+  - type: GhostTakeoverAvailable # Frontier
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: GhostRole
+    makeSentient: true # Horizon
+    name: ghost-role-information-slimes-name # Horizon
+    description: ghost-role-information-angry-slimes-description
+    rules: ghost-role-information-angry-slimes-rules
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+    raffle:
+      settings: short
+
+- type: entity
+  name: блюспейс слайм
+  parent: MobAdultSlimesBlueSpace
+  id: MobAdultSlimesBlueSpaceAngry
+  suffix: Angry
+  components:
+  - type: GhostTakeoverAvailable # Frontier
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: GhostRole
+    makeSentient: true # Horizon
+    name: ghost-role-information-slimes-name # Horizon
+    description: ghost-role-information-angry-slimes-description
+    rules: ghost-role-information-angry-slimes-rules
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+    raffle:
+      settings: short
+
+- type: entity
+  name: grey slime
+  parent: MobAdultSlimesGrey
+  id: MobAdultSlimesGreyAngry
+  suffix: Angry
+  components:
+  - type: GhostTakeoverAvailable # Frontier
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: GhostRole
+    makeSentient: true # Horizon
+    name: ghost-role-information-slimes-name # Horizon
+    description: ghost-role-information-angry-slimes-description
+    rules: ghost-role-information-angry-slimes-rules
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+    raffle:
+      settings: short
+
+- type: entity
+  name: orange slime
+  parent: MobAdultSlimesOrange
+  id: MobAdultSlimesOrangeAngry
+  suffix: Angry
+  components:
+  - type: GhostTakeoverAvailable # Frontier
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: GhostRole
+    makeSentient: true # Horizon
+    name: ghost-role-information-slimes-name # Horizon
+    description: ghost-role-information-angry-slimes-description
+    rules: ghost-role-information-angry-slimes-rules
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+    raffle:
+      settings: short
+
+- type: entity
+  name: purple slime
+  parent: MobAdultSlimesPurple
+  id: MobAdultSlimesPurpleAngry
+  suffix: Angry
+  components:
+  - type: GhostTakeoverAvailable # Frontier
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: GhostRole
+    makeSentient: true # Horizon
+    name: ghost-role-information-slimes-name # Horizon
+    description: ghost-role-information-angry-slimes-description
+    rules: ghost-role-information-angry-slimes-rules
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+    raffle:
+      settings: short
+
+- type: entity
+  name: red slime
+  parent: MobAdultSlimesRed
+  id: MobAdultSlimesRedAngry
+  suffix: Angry
+  components:
+  - type: GhostTakeoverAvailable # Frontier
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: GhostRole
+    makeSentient: true # Horizon
+    name: ghost-role-information-slimes-name # Horizon
+    description: ghost-role-information-angry-slimes-description
+    rules: ghost-role-information-angry-slimes-rules
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+    raffle:
+      settings: short
+
+- type: entity
+  name: dark blue slime
+  parent: MobAdultSlimesDarkBlue
+  id: MobAdultSlimesDarkBlueAngry
+  suffix: Angry
+  components:
+  - type: GhostTakeoverAvailable # Frontier
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: GhostRole
+    makeSentient: true # Horizon
+    name: ghost-role-information-slimes-name # Horizon
+    description: ghost-role-information-angry-slimes-description
+    rules: ghost-role-information-angry-slimes-rules
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+    raffle:
+      settings: short
+
+- type: entity
+  name: blue slime
+  parent: MobAdultSlimesBlue
+  id: MobAdultSlimesBlueAngry
+  suffix: Angry
+  components:
+  - type: GhostTakeoverAvailable # Frontier
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: GhostRole
+    makeSentient: true # Horizon
+    name: ghost-role-information-slimes-name # Horizon
+    description: ghost-role-information-angry-slimes-description
+    rules: ghost-role-information-angry-slimes-rules
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+    raffle:
+      settings: short
+
+- type: entity
+  name: green slime
+  parent: MobAdultSlimesGreen
+  id: MobAdultSlimesGreenAngry
+  suffix: Angry
+  components:
+  - type: GhostTakeoverAvailable # Frontier
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: GhostRole
+    makeSentient: true # Horizon
+    name: ghost-role-information-slimes-name # Horizon
+    description: ghost-role-information-angry-slimes-description
+    rules: ghost-role-information-angry-slimes-rules
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+    raffle:
+      settings: short
+
+- type: entity
+  name: yellow slime
+  parent: MobAdultSlimesYellow
+  id: MobAdultSlimesYellowAngry
+  suffix: Angry
+  components:
+  - type: GhostTakeoverAvailable # Frontier
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: GhostRole
+    makeSentient: true # Horizon
+    name: ghost-role-information-slimes-name # Horizon
+    description: ghost-role-information-angry-slimes-description
+    rules: ghost-role-information-angry-slimes-rules
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+    raffle:
+      settings: short

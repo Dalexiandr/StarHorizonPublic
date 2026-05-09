@@ -1,0 +1,48 @@
+{
+    "version": 1,
+    "license": "CLA with hosting restrictions",
+    "copyright": "Sprited by Xigovir DS:623559319543349268",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "anco-bomb"
+        },
+        {
+            "name": "anco-bomb-wires"
+        },
+        {
+            "name": "anco-bomb-active",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "anco-bomb-R"
+        },
+        {
+            "name": "anco-bomb-active-R",
+            "delays": [
+                [
+                    0.25,
+                    0.25
+                ]
+            ]
+        }
+    ]
+}

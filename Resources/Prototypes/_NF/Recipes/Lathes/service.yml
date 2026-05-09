@@ -1,0 +1,372 @@
+# Base prototypes
+
+- type: latheRecipe
+  abstract: true
+  id: BaseServiceItemsRecipe
+  categories:
+  - KitchenNF
+  completetime: 1
+  materials:
+    Steel: 75
+
+- type: latheRecipe
+  abstract: true
+  id: BaseServiceItemsRecipePiety
+  categories:
+  - NFPiety
+  completetime: 1
+  materials:
+    Steel: 200
+
+- type: latheRecipe
+  abstract: true
+  id: BaseServiceItemsRecipeCandle
+  categories:
+  - NFCandles
+  completetime: 1
+  materials:
+    Cloth: 20
+    Wood: 25
+
+- type: latheRecipe
+  abstract: true
+  parent: BaseServiceItemsRecipeCandle
+  id: BaseServiceItemsRecipeCandleSmall
+  materials:
+    Cloth: 20
+    Wood: 20
+
+# Recipes
+
+- type: latheRecipe
+  id: ServiceRollingPin
+  result: RollingPin
+  parent: BaseServiceItemsRecipe
+  materials:
+    Wood: 200
+
+- type: latheRecipe
+  id: ServiceSpoon
+  result: Spoon
+  parent: BaseServiceItemsRecipe
+
+- type: latheRecipe
+  id: ServiceFork
+  result: Fork
+  parent: BaseServiceItemsRecipe
+
+- type: latheRecipe
+  id: ServicePairedChopsticks
+  result: PairedChopsticks
+  parent: BaseServiceItemsRecipe
+  materials:
+    Glass: 100
+
+- type: latheRecipe
+  id: NapkinDrum
+  result: NapkinDrum
+  parent: BaseServiceItemsRecipe
+  applyMaterialDiscount: false
+
+- type: latheRecipe
+  id: Napkin
+  result: Napkin
+  parent: BaseServiceItemsRecipe
+  completetime: 0.1
+  applyMaterialDiscount: false
+  materials:
+    Paper: 10
+
+- type: latheRecipe
+  id: ServiceSelectiveDropper
+  result: ServiceSelectiveDropper
+  parent: BaseServiceItemsRecipe
+  materials:
+    Glass: 200
+    Plastic: 100
+    Steel: 100
+
+- type: latheRecipe
+  id: CondimentCupDispenser
+  result: CondimentCupDispenser
+  parent: BaseServiceItemsRecipe
+  applyMaterialDiscount: false
+
+- type: latheRecipe
+  id: CondimentCup
+  result: CondimentCup
+  parent: BaseServiceItemsRecipe
+  completetime: 0.1
+  applyMaterialDiscount: false
+  materials:
+    Steel: 10
+
+- type: latheRecipe
+  id: FoodCondimentSqueezeBottleClear
+  result: FoodCondimentSqueezeBottleClear
+  parent: BaseServiceItemsRecipe
+  applyMaterialDiscount: false
+  materials:
+    Plastic: 50
+
+- type: latheRecipe
+  id: SodiumLightBulb
+  result: SodiumLightBulb
+  parent: BaseLightRecipe
+
+- type: latheRecipe
+  id: ExteriorLightBulb
+  result: ExteriorLightBulb
+  parent: BaseLightRecipe
+
+- type: latheRecipe
+  id: DrinkIceBucketEmpty
+  result: DrinkIceBucketEmpty
+  parent: BaseServiceItemsRecipe
+  completetime: 2
+  materials:
+    Steel: 100
+
+- type: latheRecipe
+  id: DeskBell
+  result: DeskBell
+  parent: BaseServiceItemsRecipe
+  completetime: 2
+  materials:
+    Steel: 200
+
+- type: latheRecipe
+  id: BrbSign
+  result: BrbSign
+  parent: BaseServiceItemsRecipe
+  materials:
+    Cardboard: 200
+
+- type: latheRecipe
+  id: DrinkKegSteel
+  name: lathe-recipe-DrinkKegSteel-name
+  result: DrinkKegSteel
+  completetime: 2
+  materials:
+    Steel: 300
+
+- type: latheRecipe
+  id: DrinkKegPlastic
+  name: lathe-recipe-DrinkKegPlastic-name
+  result: DrinkKegPlastic
+  completetime: 2
+  materials:
+    Plastic: 300
+
+- type: latheRecipe
+  id: DrinkKegWood
+  name: lathe-recipe-DrinkKegWood-name
+  result: DrinkKegWood
+  completetime: 2
+  materials:
+    Wood: 300
+
+- type: latheRecipe
+  id: FoodFrozenPopsicleTrash
+  result: FoodFrozenPopsicleTrash # I know, it has 'trash' in the name, but it's used in cooking!
+  completetime: 0.5
+  materials:
+    Wood: 25
+
+- type: latheRecipe
+  id: DrinkWaterCup
+  result: DrinkWaterCup
+  completetime: 0.5
+  materials:
+    Paper: 25
+
+# Smokes
+- type: latheRecipe
+  id: CigPackMcCargo
+  result: CigPackMcCargo
+  completetime: 2
+  applyMaterialDiscount: false
+  categories:
+  - Brand
+  - General
+  - StorageNF
+  materials:
+    Plastic: 100
+    Steel: 100
+    Paper: 100
+
+# Coffee cup
+- type: latheRecipe
+  parent: BaseToolRecipe
+  id: DrinkDisposableCup
+  result: DrinkDisposableCup
+  materials:
+    Cardboard: 50
+
+- type: latheRecipe
+  parent: BaseToolRecipe
+  id: DrinkDisposableMcCup
+  result: DrinkDisposableMcCup
+  materials:
+    Cardboard: 50
+
+#region piety
+- type: latheRecipe
+  id: NFServiceCenser
+  result: Censer
+  parent: BaseServiceItemsRecipePiety
+
+- type: latheRecipe
+  id: NFServiceClothingNeckCrucifix
+  result: ClothingNeckCrucifix
+  parent: BaseServiceItemsRecipePiety
+
+- type: latheRecipe
+  id: NFServiceUrnMortuary
+  result: UrnMortuary
+  parent: BaseServiceItemsRecipePiety
+  materials:
+    Steel: 400
+
+- type: latheRecipe
+  id: NFServiceUrn
+  result: Urn
+  parent: BaseServiceItemsRecipePiety
+
+- type: latheRecipe
+  id: NFServiceClothingMaskPlague
+  result: ClothingMaskPlague
+  parent: BaseServiceItemsRecipePiety
+  materials:
+    Steel: 300
+    Cloth: 200
+
+- type: latheRecipe
+  id: NFSilverRingPrinted
+  result: NFSilverRingPrinted
+  parent: BaseServiceItemsRecipePiety
+  materials:
+    Silver: 250
+
+- type: latheRecipe
+  id: NFSilverRingGemPrinted
+  result: NFSilverRingGemPrinted
+  parent: BaseServiceItemsRecipePiety
+  materials:
+    Silver: 250
+    Glass: 100
+
+- type: latheRecipe
+  id: NFSilverRingDiamondPrinted
+  result: NFSilverRingDiamondPrinted
+  parent: BaseServiceItemsRecipePiety
+  materials:
+    Silver: 250
+    ReinforcedGlass: 100
+
+- type: latheRecipe
+  id: NFGoldRingPrinted
+  result: NFGoldRingPrinted
+  parent: BaseServiceItemsRecipePiety
+  materials:
+    Gold: 200
+
+- type: latheRecipe
+  id: NFGoldRingGemPrinted
+  result: NFGoldRingGemPrinted
+  parent: BaseServiceItemsRecipePiety
+  materials:
+    Gold: 200
+    Glass: 100
+
+- type: latheRecipe
+  id: NFGoldRingDiamondPrinted
+  result: NFGoldRingDiamondPrinted
+  parent: BaseServiceItemsRecipePiety
+  materials:
+    Gold: 200
+    ReinforcedGlass: 100
+
+- type: latheRecipe
+  id: NFPlasteelRingPrinted
+  result: NFPlasteelRingPrinted
+  parent: BaseServiceItemsRecipePiety
+  materials:
+    Plasteel: 200
+
+- type: latheRecipe
+  id: NFPlasteelRingGem
+  result: NFPlasteelRingGem
+  parent: BaseServiceItemsRecipePiety
+  materials:
+    Plasteel: 200
+    Glass: 100
+
+- type: latheRecipe
+  id: NFPlasteelRingDiamond
+  result: NFPlasteelRingDiamond
+  parent: BaseServiceItemsRecipePiety
+  materials:
+    Plasteel: 200
+    ReinforcedGlass: 100
+
+# region candles
+- type: latheRecipe
+  parent: BaseServiceItemsRecipeCandle
+  id: CandleBlack
+  result: CandleBlack
+
+- type: latheRecipe
+  parent: BaseServiceItemsRecipeCandle
+  id: CandleBlue
+  result: CandleBlue
+
+- type: latheRecipe
+  parent: BaseServiceItemsRecipeCandle
+  id: CandleGreen
+  result: CandleGreen
+
+- type: latheRecipe
+  parent: BaseServiceItemsRecipeCandle
+  id: CandleRed
+  result: CandleRed
+
+- type: latheRecipe
+  parent: BaseServiceItemsRecipeCandle
+  id: CandlePurple
+  result: CandlePurple
+
+- type: latheRecipe
+  parent: BaseServiceItemsRecipeCandle
+  id: Candle
+  result: Candle
+
+- type: latheRecipe
+  parent: BaseServiceItemsRecipeCandleSmall
+  id: CandleBlackSmall
+  result: CandleBlackSmall
+
+- type: latheRecipe
+  parent: BaseServiceItemsRecipeCandleSmall
+  id: CandleBlueSmall
+  result: CandleBlueSmall
+
+- type: latheRecipe
+  parent: BaseServiceItemsRecipeCandleSmall
+  id: CandleGreenSmall
+  result: CandleGreenSmall
+
+- type: latheRecipe
+  parent: BaseServiceItemsRecipeCandleSmall
+  id: CandleRedSmall
+  result: CandleRedSmall
+
+- type: latheRecipe
+  parent: BaseServiceItemsRecipeCandleSmall
+  id: CandlePurpleSmall
+  result: CandlePurpleSmall
+
+- type: latheRecipe
+  parent: BaseServiceItemsRecipeCandleSmall
+  id: CandleSmall
+  result: CandleSmall

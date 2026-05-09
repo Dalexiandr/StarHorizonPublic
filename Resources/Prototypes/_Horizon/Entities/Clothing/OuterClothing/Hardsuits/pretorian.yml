@@ -1,0 +1,92 @@
+- type: entity
+  parent: [ClothingOuterHardsuitSyndie, BaseC3SyndicateContraband, ContrabandClothing] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband, added ContrabandClothing as parent
+  id: ClothingOuterHardsuitPretorian
+  name: преторианский скафандр синдиката
+  description: Реплика преторианского скафандра найденого на [Данные удалены]. Все права пренадлежат Cybersun Industries.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Hardsuits/Pretorian.rsi
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: _Horizon/Clothing/OuterClothing/Hardsuits/Pretorian.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitPretorian
+
+- type: entity
+  parent: ClothingHeadHelmetHardsuitDoomSlayer
+  id: ClothingHeadHelmetHardsuitPretorian
+  name: шлем преторианского скафандра синдиката
+  description: Реплика преторианского скафандра найденого на [Данные удалены]. Все права пренадлежат Cybersun Industries.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Head/Hardsuits/Pretorian.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Head/Hardsuits/Pretorian.rsi
+
+
+- type: entity
+  parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband, ContrabandClothing] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContraband, added ContrabandClothing as parent
+  id: ClothingOuterHardsuitDoomSlayer
+  name: Преторианский скафандр
+  description: In the first age, in the first battle, when the shadows first lengthened, one stood. Burned by the embers of Armageddon, his soul blistered by the fires of Hell and tainted beyond ascension, he chose the path of perpetual torment. In his ravenous hatred he found no peace; and with boiling blood he scoured the Umbral Plains seeking vengeance against the dark lords who had wronged him. He wore the crown of the Night Sentinels and those that tasted the bite of his sword named him... the Doom Slayer.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Hardsuits/doom.rsi
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: _Horizon/Clothing/OuterClothing/Hardsuits/doom.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: FireProtection
+    reduction: 0.5
+  - type: StaminaResistance
+    damageCoefficient: 0.5
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.4
+        Slash: 0.4
+        Piercing: 0.3
+        Heat: 0.5
+        Radiation: 0.25
+        Caustic: 0.4
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitDoomSlayer
+
+- type: entity
+  parent: ClothingHeadHardsuitBase
+  id: ClothingHeadHelmetHardsuitDoomSlayer
+  name: Шлем преторианского скафандра
+  description: In the first age, in the first battle, when the shadows first lengthened, one stood. Burned by the embers of Armageddon, his soul blistered by the fires of Hell and tainted beyond ascension, he chose the path of perpetual torment. In his ravenous hatred he found no peace; and with boiling blood he scoured the Umbral Plains seeking vengeance against the dark lords who had wronged him. He wore the crown of the Night Sentinels and those that tasted the bite of his sword named him... the Doom Slayer.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Head/Hardsuits/doom.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Head/Hardsuits/doom.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.005
+    coolingCoefficient: 0.005
+  - type: FireProtection
+    reduction: 0.2
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.8
+        Heat: 0.85
+        Radiation: 0.25
+  - type: ExplosionResistance
+    damageCoefficient: 0.8

@@ -1,0 +1,101 @@
+<Document>
+  # ШАТТЛ ДЛЯ НАУЧНЫХ ИССЛЕДОВАНИЙ КЛАССА PULSAR
+  <Box>
+  <GuideEntityEmbed Entity="SignAnomaly" Caption="Обнаружение"/>
+  <GuideEntityEmbed Entity="BannerFsb" Caption="Исследование"/>
+  <GuideEntityEmbed Entity="SignAnomaly2" Caption="Использование"/>
+  </Box>
+  <Box>
+  <GuideEntityEmbed Entity="ShuttleMapPulsar" Caption=""/>
+  </Box>
+  [color=#a4885c]Размер корабля:[/color] Средний
+
+  [color=#a4885c]Рекомендуемый экипаж:[/color] 2-4
+
+  [color=#a4885c]Тип генератора энергии:[/color] Бананиум
+
+  [color=#a4885c]Базовое потребление энергии:[/color] 45 кВт
+
+  [color=#a4885c]Экспедиции:[/color] Нет
+
+  [color=#a4885c]Консоль IFF:[/color] Отсутствует
+
+  [color=#a4885c]Доступные роли:[/color] Контрактник, Пилот, Наёмник
+
+  # Пилотирование
+  <Box>
+    <GuideEntityEmbed Entity="ComputerShuttle"/>
+  </Box>
+  После нажатия на консоль шаттла вы увидите радарное изображение. Порядок управления шаттлом следующий:
+
+  - Сначала отсоедините все шлюзы, подключённые к док-станции.
+  - Затем вы можете управлять шаттлом. Управление довольно простое: [color=#028ed9]"W"[/color] и [color=#028ed9]"S"[/color] — вперёд и назад, [color=#028ed9]"A"[/color] и [color=#028ed9]"D"[/color] — влево и вправо, [color=#028ed9]"Q"[/color] и [color=#028ed9]"E"[/color] — поворот влево и вправо; а [color=#028ed9]"Пробел"[/color] — тормоз и точное перемещение при удержании [color=#028ed9]"Пробела"[/color] вместе с другими клавишами.
+
+  # Наём экипажа
+  <Box>
+    <GuideEntityEmbed Entity="ComputerStationRecords"/>
+    <GuideEntityEmbed Entity="ClothingHeadsetGrey"/>
+    <GuideEntityEmbed Entity="IntercomCommon"/>
+  </Box>
+  Как капитан судна Nanotrasen, вы имеете право нанимать, увольнять, понижать или повышать членов экипажа по своему усмотрению. Есть два способа нанять экипаж: вы можете использовать [color=#a4885c]компьютер учёта экипажа[/color] на своём корабле, чтобы открыть вакансии (доступные должности различаются в зависимости от корабля), или приглашать других игроков через внутриигровую связь.
+
+  # КОНТРОЛЬНЫЙ СПИСОК ПЕРЕД ВЫЛЕТОМ
+
+  ## 1. Электропитание
+
+  ## 1.1. Аккумуляторные блоки
+  <Box>
+  <GuideEntityEmbed Entity="SubstationBasic"/>
+  <GuideEntityEmbed Entity="APCBasic"/>
+  </Box>
+
+    - Проверьте, включён ли главный выключатель блока ЛКП.
+    - Проверьте текущую нагрузку блока ЛКП* (Вт).
+
+  ## 1.2. Генератор D-K Jr.
+  <Box>
+    <GuideEntityEmbed Entity="PortableGeneratorDKJr"/>
+    <GuideEntityEmbed Entity="FuelBananium"/>
+    <GuideEntityEmbed Entity="SignRadiation"/>
+  </Box>
+
+  - Проверьте, закреплён ли генератор D-K Jr. на полу.
+  - Проверьте, есть ли в генераторе D-K Jr. топливо. Для длительных полётов убедитесь, что у вас достаточно запаса топлива для поддержания генерации энергии во время полёта.
+  - Проверьте, настроен ли генератор D-K Jr. на выход HV.
+  - Установите целевую мощность на 45 [bold]к[/bold]Вт.
+  - Запустите генератор D-K Jr.
+  - Закройте радиационную защиту.
+
+  ## 2. Атмосферные системы
+
+  ## 2.1. Контур распределения
+  <Box>
+  <GuideEntityEmbed Entity="AirCanister"/>
+  <GuideEntityEmbed Entity="GasPort"/>
+  <GuideEntityEmbed Entity="GasPressurePump"/>
+  </Box>
+
+  - Проверьте, закреплён ли баллон с воздухом на соединительном порту.
+  - Проверьте, установлено ли давление распределительного насоса на нормальное (101 кПа).
+  - Включите распределительный насос.
+
+  ## 2.2. Контур отходов
+  <Box>
+  <GuideEntityEmbed Entity="GasPressurePump"/>
+  <GuideEntityEmbed Entity="AirAlarm"/>
+  </Box>
+
+  - Включите насос контура отходов.
+  - Отключите автоматический режим на воздушной сигнализации в машинном отделении.
+  - Установите воздушную сигнализацию в машинном отделении на фильтрацию (широкая).
+
+  ## 3. Прочие проверки
+  <Box>
+  <GuideEntityEmbed Entity="Gyroscope"/>
+  <GuideEntityEmbed Entity="GravityGeneratorMini"/>
+  </Box>
+
+  - Проверьте, закреплён ли гироскоп, подключён к питанию и включён.
+  - Проверьте, закреплён ли мини-гравитационный генератор, подключён к питанию и включён.
+
+</Document>

@@ -1,0 +1,58 @@
+- type: entity
+  id: AnCoToggleInvisibilitySpider
+  name: Невидимость Паука
+  description: Переключение режима метаматериала для маскировки
+  components:
+  - type: InstantAction
+    useDelay: 10
+    icon:
+      sprite: _Horizon/_Fractions/AnCo/Interface/Actions/action.rsi
+      state: invisibility
+    itemIconStyle: NoItem
+    event: !type:ToggleActionEvent
+
+- type: entity
+  id: AnCoToggshield
+  name: Метаматериал
+  description: Переключение режима метаматериала для защиты
+  components:
+  - type: InstantAction
+    useDelay: 10
+    icon:
+      sprite: _Horizon/_Fractions/AnCo/Interface/Actions/action.rsi
+      state: shield
+    itemIconStyle: NoItem
+    event: !type:ToggleActionEvent
+
+- type: entity
+  parent: BaseSuicideAction
+  id: AnCoActionhAcidifier
+  name: Активировать деление нанитов
+  description: Активация деления нанитов. Внимание! Вероятность смерти пользователя 99.9%!
+  components:
+  - type: InstantAction
+    checkCanInteract: false
+    checkConsciousness: false
+    itemIconStyle: NoItem
+    priority: -20
+    icon:
+      sprite: _Horizon/_Fractions/AnCo/Interface/Actions/action.rsi
+      state: acid
+    event: !type:ActivateImplantEvent
+
+- type: entity
+  id: AnCoCreateDrone
+  name: Синтезировать бота
+  description: Синтез защитного бота АнКо из нанитов в организме
+  components:
+  - type: InstantAction
+    checkCanInteract: false
+    charges: 3
+    checkConsciousness: false
+    itemIconStyle: NoItem
+    priority: -19
+    icon:
+      sprite: _Horizon/_Fractions/AnCo/Interface/Actions/action.rsi
+      state: drone
+    event: !type:ActivateImplantEvent
+

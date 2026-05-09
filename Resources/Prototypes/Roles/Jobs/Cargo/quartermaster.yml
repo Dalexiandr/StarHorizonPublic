@@ -1,0 +1,61 @@
+- type: job
+  id: Quartermaster
+  name: job-name-qm
+  description: job-description-qm
+  playTimeTracker: JobQuartermaster
+  setPreference: false # Frontier
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobCargoTechnician
+      time: 18000 #5 hrs
+    - !type:RoleTimeRequirement
+      role: JobSalvageSpecialist
+      time: 9000 #2.5 hrs
+    - !type:DepartmentTimeRequirement
+      department: Cargo
+      time: 36000 #10 hours
+  weight: 10
+  startingGear: QuartermasterGear
+  icon: "JobIconQuarterMaster"
+  supervisors: job-supervisors-captain
+  canBeAntag: false
+  # access: # Frontier
+  # - Cargo # Frontier
+  # - Salvage # Frontier
+  # - Quartermaster # Frontier
+  # - Maintenance # Frontier
+  # - External # Frontier
+  # - Command # Frontier
+  # - Brig # Frontier
+  # - Cryogenics # Frontier
+  accessGroups: # Frontier
+  - GeneralAccess # Frontier
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: QuartermasterGear
+  equipment:
+    id: QuartermasterPDA
+    ears: ClothingHeadsetQM
+    belt: BoxFolderClipboard
+    pocket1: AppraisalTool
+  storage:
+    back:
+    - Flash
+
+- type: chameleonOutfit
+  id: QuartermasterChameleonOutfit
+  job: Quartermaster
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHatQMsoft
+    eyes: ClothingEyesGlassesSunglasses
+    mask: ClothingMaskBreath
+    outerClothing: ClothingOuterWinterQM
+    neck: ClothingNeckCloakQm
+    gloves: ClothingHandsKnuckleDustersQM

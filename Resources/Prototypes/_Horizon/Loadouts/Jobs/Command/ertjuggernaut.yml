@@ -1,0 +1,17 @@
+- type: startingGear
+  id: ERTJuggernautGearEVA
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitJuggernautERT
+    back: WeaponMinigunERT
+    shoes: ERTJuggernautBoots
+    mask: ClothingMaskGasJuggernautERT
+    eyes: ClothingEyesVisionERTJuggernaut
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitExosuit
+    suitstorage: ERTJuggernautClothingPouch
+    id: ERTJuggernautPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ERTJuggernautBeltMercWebbing
+    underwearb: ClothingUnderwearBottomBoxersWhite
+  underweart: ClothingUnderwearTopBraWhite
+  underwearb: ClothingUnderwearBottomPantiesWhite

@@ -1,0 +1,58 @@
+- type: entity
+  id: BaseImplantOnlyImplanterAnCo
+  parent: [BaseImplantOnlyImplanter, BaseAnCoContraband]
+  suffix: StarHorizon, AnCo
+  name: ручной имплантер АнКо
+  description: Имплантер для вживления нанитов в организм пользователя или их перепрограммирования.
+  abstract: true
+  components:
+    - type: Item
+      sprite: _Horizon/_Fractions/AnCo/Objects/Specific/Medical/implanter.rsi
+    - type: Sprite
+      sprite: _Horizon/_Fractions/AnCo/Objects/Specific/Medical/implanter.rsi
+      state: implanter1
+      layers:
+        - state: implanter0
+          map: [ "implantFull" ]
+          visible: true
+        - state: implanter1
+          map: [ "implantOnly" ]
+    - type: GenericVisualizer
+      visuals:
+        enum.ImplanterVisuals.Full:
+          implantFull:
+            True: {visible: true}
+            False: {visible: false}
+        enum.ImplanterImplantOnlyVisuals.ImplantOnly:
+          implantOnly:
+            True: {state: broken}
+            False: {state: implanter1}
+    - type: Tag
+      tags: []
+
+- type: entity
+  id: AnCoDeathAcidifierImplanter
+  suffix: StarHorizon, AnCo
+  name: имплантер с растворяющимися нанитами АнКо
+  parent: BaseImplantOnlyImplanterAnCo
+  components:
+  - type: Implanter
+    implant: AnCoAcidifierImplant
+
+- type: entity
+  id: AnCoImplanterTreker
+  suffix: StarHorizon, AnCo
+  name: имплантер с трекером АнКо
+  parent: BaseImplantOnlyImplanterAnCo
+  components:
+  - type: Implanter
+    implant: AnCoTrakerImplant
+
+- type: entity
+  id: AnCoImplanterDrone
+  suffix: StarHorizon, AnCo
+  name: имплантер с дронами АнКо
+  parent: BaseImplantOnlyImplanterAnCo
+  components:
+  - type: Implanter
+    implant: AnCoDroneImplant

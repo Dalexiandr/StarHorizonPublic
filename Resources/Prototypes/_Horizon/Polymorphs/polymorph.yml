@@ -1,0 +1,33 @@
+- type: polymorph
+  id: SlimeMorphGeras
+  configuration:
+    entity: MobSlimesGeras
+    transferName: true
+    transferHumanoidAppearance: false
+    inventory: Drop
+    transferDamage: true
+    revertOnDeath: true
+    revertOnCrit: true
+
+- type: polymorph
+  id: CatPoly
+  configuration:
+    entity: MobCat
+    forced: true
+    transferName: true
+    transferHumanoidAppearance: true
+    inventory: None
+    revertOnDeath: true
+    revertOnCrit: true
+    duration: 30
+
+#Xenobiology
+- type: polymorph
+  id: RandomSlimePerson
+  configuration:
+    forced: true
+    entity: RandomSlimePerson
+    transferName: false
+    inventory: None
+    revertOnDeath: false
+    revertOnCrit: false

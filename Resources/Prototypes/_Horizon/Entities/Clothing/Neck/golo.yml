@@ -1,0 +1,13 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckGolo
+  suffix: StarHorizon
+  name: плащ голокарпа
+  description: Плащ созданный... Из голокарпа?!
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Neck/golo.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Neck/golo.rsi
+  - type: StaticPrice
+    price: 1500

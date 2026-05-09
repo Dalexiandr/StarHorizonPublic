@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "license": "CLA",
+  "copyright": "by TheGypsyBaron",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "seclite"
+    },
+    {
+      "name": "seclite-on"
+    },
+    {
+      "name": "seclite-overlay"
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "inhand-left-light",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right-light",
+      "directions": 4
+    },
+    {
+      "name": "equipped-BELT",
+      "directions": 4
+    },
+        {
+      "name": "seclite_world"
+    },
+    {
+      "name": "seclite-on_world"
+    },
+    {
+      "name": "seclite-overlay_world"
+    }
+  ]
+}

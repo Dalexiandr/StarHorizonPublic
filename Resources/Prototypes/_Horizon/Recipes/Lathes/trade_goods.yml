@@ -1,0 +1,271 @@
+# Рецепты производства торговых товаров
+# Для использования в торговых фабрикаторах
+# Стоимость крафта ~20-30% от базовой цены продажи
+# Только рецепты с существующими result-прототипами в trade_goods.yml
+
+# === Инженерные товары ===
+
+- type: latheRecipe
+  id: TradeGoodsEngineerToolsRecipe
+  result: TradeGoodsEngineerTools
+  completetime: 3
+  materials:
+    Steel: 500
+    Glass: 200
+
+- type: latheRecipe
+  id: TradeGoodsEngineerFuelRecipe
+  result: TradeGoodsEngineerFuel
+  completetime: 3
+  materials:
+    Steel: 300
+    Plasma: 400
+
+- type: latheRecipe
+  id: TradeGoodsEngineerElecRecipe
+  result: TradeGoodsEngineerElec
+  completetime: 3
+  materials:
+    Steel: 300
+    Glass: 300
+    Gold: 100
+
+# === Медицинские товары ===
+
+- type: latheRecipe
+  id: TradeGoodsMedBaseRecipe
+  result: TradeGoodsMedBase
+  completetime: 3
+  materials:
+    Biomass: 25
+    Glass: 200
+    Plastic: 150
+
+- type: latheRecipe
+  id: TradeGoodsMedChemRecipe
+  result: TradeGoodsMedChem
+  completetime: 3
+  materials:
+    Biomass: 40
+    Glass: 400
+    Plastic: 200
+
+- type: latheRecipe
+  id: TradeGoodsMedImplantsRecipe
+  result: TradeGoodsMedImplants
+  completetime: 4
+  materials:
+    Steel: 200
+    Glass: 200
+    Gold: 150
+    Plastic: 150
+
+# === Научные товары ===
+
+- type: latheRecipe
+  id: TradeGoodsSciBaseRecipe
+  result: TradeGoodsSciBase
+  completetime: 3
+  materials:
+    Steel: 200
+    Glass: 400
+    Plastic: 150
+
+- type: latheRecipe
+  id: TradeGoodsSciArtifactsRecipe
+  result: TradeGoodsSciArtifacts
+  completetime: 4
+  materials:
+    Steel: 400
+    Glass: 400
+    Gold: 200
+    Silver: 150
+
+- type: latheRecipe
+  id: TradeGoodsSciProtoRecipe
+  result: TradeGoodsSciProto
+  completetime: 5
+  materials:
+    Steel: 400
+    Glass: 400
+    Gold: 300
+    Plasma: 200
+
+# === Сервисные товары ===
+
+- type: latheRecipe
+  id: TradeGoodsServiceFoodRecipe
+  result: TradeGoodsServiceFood
+  completetime: 2
+  materials:
+    Biomass: 30
+    Plastic: 150
+
+- type: latheRecipe
+  id: TradeGoodsServiceBeverageRecipe
+  result: TradeGoodsServiceBeverage
+  completetime: 2
+  materials:
+    Biomass: 25
+    Glass: 300
+    Plastic: 100
+
+- type: latheRecipe
+  id: TradeGoodsServiceBotanyRecipe
+  result: TradeGoodsServiceBotany
+  completetime: 2
+  materials:
+    Biomass: 40
+    Plastic: 200
+
+- type: latheRecipe
+  id: TradeGoodsServiceCleaningRecipe
+  result: TradeGoodsServiceCleaning
+  completetime: 2
+  materials:
+    Plastic: 300
+    Glass: 150
+
+# === Товары общего назначения ===
+
+- type: latheRecipe
+  id: TradeGoodsGeneralSuppliesRecipe
+  result: TradeGoodsGeneralSupplies
+  completetime: 2
+  materials:
+    Steel: 200
+    Plastic: 200
+
+- type: latheRecipe
+  id: TradeGoodsGeneralClothingRecipe
+  result: TradeGoodsGeneralClothing
+  completetime: 2
+  materials:
+    Cloth: 600
+    Plastic: 150
+
+# === Военные товары ===
+
+- type: latheRecipe
+  id: TradeGoodAmmoRecipe
+  result: TradeGoodAmmo
+  completetime: 2
+  materials:
+    Steel: 400
+
+- type: latheRecipe
+  id: TradeGoodGunpartsRecipe
+  result: TradeGoodGunparts
+  completetime: 2
+  materials:
+    Steel: 500
+
+- type: latheRecipe
+  id: TradeGoodAlloysRecipe
+  result: TradeGoodAlloys
+  completetime: 3
+  materials:
+    Steel: 600
+    Plasma: 300
+
+# === Промышленные товары ===
+
+- type: latheRecipe
+  id: TradeGoodScrapRecipe
+  result: TradeGoodScrap
+  completetime: 2
+  materials:
+    Steel: 200
+
+# === Текстиль ===
+
+- type: latheRecipe
+  id: TradeGoodFabricsRecipe
+  result: TradeGoodFabrics
+  completetime: 2
+  materials:
+    Cloth: 700
+    Plastic: 300
+
+# === Товары Союза (AnCo) ===
+
+- type: latheRecipe
+  id: TradeGoodAnCoWeaponRecipe
+  result: TradeGoodUnionWeapon
+  completetime: 2
+  materials:
+    Steel: 400
+
+- type: latheRecipe
+  id: TradeGoodAnCoArmorRecipe
+  result: TradeGoodUnionArmor
+  completetime: 2
+  materials:
+    Steel: 400
+
+- type: latheRecipe
+  id: TradeGoodAnCoBallisticRecipe
+  result: TradeGoodUnionBallistic
+  completetime: 3
+  materials:
+    Steel: 600
+    Uranium: 300
+
+# === Пиратские товары ===
+
+- type: latheRecipe
+  id: TradeGoodPirateWaterRecipe
+  result: TradeGoodPirateWater
+  completetime: 2
+  materials:
+    Biomass: 50
+    Glass: 500
+    Plastic: 200
+
+- type: latheRecipe
+  id: TradeGoodPirateGoldRecipe
+  result: TradeGoodPirateGold
+  completetime: 3
+  materials:
+    Steel: 200
+    Gold: 1000
+    Silver: 500
+    Diamond: 500
+
+- type: latheRecipe
+  id: TradeGoodPirateNarcRecipe
+  result: TradeGoodPirateNarc
+  completetime: 2
+  materials:
+    Biomass: 75
+    Glass: 500
+    Plastic: 300
+
+# === Синдикатские товары ===
+
+- type: latheRecipe
+  id: TradeGoodSyndicateFuelRecipe
+  result: TradeGoodSyndicateFuel
+  completetime: 2
+  materials:
+    Bananium: 300
+    Plasma: 300
+    Uranium: 300
+
+- type: latheRecipe
+  id: TradeGoodSyndicateSubsRecipe
+  result: TradeGoodSyndicateSubs
+  completetime: 2
+  materials:
+    Biomass: 50
+    Glass: 500
+    Plastic: 500
+
+- type: latheRecipe
+  id: TradeGoodSyndicateDetalRecipe
+  result: TradeGoodSyndicateDetal
+  completetime: 2
+  materials:
+    Steel: 200
+    Gold: 300
+    Plasteel: 500

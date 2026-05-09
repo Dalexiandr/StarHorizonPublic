@@ -1,0 +1,1174 @@
+# region Energy Weapons
+# Легкие энергетические орудия (доступны всем сотрудникам безопасности)
+- type: listing
+  id: SecWeaponTurretM25
+  name: M25 Импульсный бурильщик
+  description: Использует механизмы для запуска... чего-то. Легко разрушает породу.
+  productEntity: WeaponTurretM25
+  cost:
+    FrontierUplinkCoin: 10
+  categories:
+    - UplinkSecurityGunneryEnergy
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
+  id: SecWeaponTurretM220
+  name: M220 РУБИКОН EMP пусковая установка
+  description: Запускает EMP снаряды по кораблям, выводя системы из строя мощными электромагнитными импульсами. Идеально для нелетальных столкновений.
+  productEntity: WeaponTurretM220
+  cost:
+    FrontierUplinkCoin: 20
+  categories:
+    - UplinkSecurityGunneryEnergy
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+# Средние энергетические орудия (доступны Bailiff, SeniorOfficer, Sheriff)
+- type: listing
+  id: SecWeaponTurretType35
+  name: Type-35 МАРОДЁР плазменная пушка
+  description: Запускает магнетически сдерживаемые шары плазмы по целям.
+  productEntity: WeaponTurretType35
+  cost:
+    FrontierUplinkCoin: 40
+  categories:
+    - UplinkSecurityGunneryEnergy
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecWeaponTurretTarnyxReload
+  name: АДБХ-31 ТАРНИКС 150мм ЭМИ Пушка
+  description: Тяжелая ЭМИ пушка, созданная Aetherion Dynamics, предназначенная для выведения из строя больших участков вражеских кораблей одним мощным выстрелом. Эффективна в асимметричных боях.
+  productEntity: WeaponTurretTarnyxReload
+  cost:
+    FrontierUplinkCoin: 40
+  categories:
+    - UplinkSecurityGunneryEnergy
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+# Тяжелые и сверхтяжелые энергетические орудия (доступны только Sheriff)
+- type: listing
+  id: SecWeaponTurretType54
+  name: Type-54C Плазменный автопульсер
+  description: Быстрострельное энергетическое оружие, наносящее огромный урон целям. Требует длительной перезарядки.
+  productEntity: WeaponTurretType54
+  cost:
+    FrontierUplinkCoin: 160
+  categories:
+    - UplinkSecurityGunneryEnergy
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Sheriff
+
+- type: listing
+  id: SecWeaponTurretType241
+  name: Type-241 Плазменный лансер
+  description: Разрушительное оружие, обычно используемое для крупномасштабной огневой поддержки и стратегического уничтожения.
+  productEntity: WeaponTurretType241
+  cost:
+    FrontierUplinkCoin: 160
+  categories:
+    - UplinkSecurityGunneryEnergy
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Sheriff
+
+- type: listing
+  id: SecWeaponTurretDymere
+  name: ADEX-9 ДАЙМИР Турболазер
+  description: Самая знаковая суперкапитальная батарея Aetherion Dynamics. Выстреливает огромные ионизированные газовые снаряды, прожигающие самую прочную броню кораблей.
+  productEntity: WeaponTurretDymere
+  cost:
+    FrontierUplinkCoin: 160
+  categories:
+    - UplinkSecurityGunneryEnergy
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Sheriff
+
+# region Kinetic Weapons
+# Легкие кинетические орудия (доступны всем сотрудникам безопасности)
+- type: listing
+  id: SecWeaponTurretL85Autocannon
+  name: автопушка L85 калибра 20мм
+  description: Лёгкая 20мм баллистическая автопушка, предназначенная для быстрого огня и подавления небольших целей на ближней дистанции. Дешёвая, лёгкая.
+  productEntity: WeaponTurretL85Autocannon
+  cost:
+    FrontierUplinkCoin: 20
+  categories:
+    - UplinkSecurityGunneryKinetic
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+# Средние кинетические орудия (доступны Bailiff, SeniorOfficer, Sheriff)
+- type: listing
+  id: SecWeaponTurretDravon
+  name: автопушка ADBP-7 ДРАВОН 57мм
+  description: Одноствольная автопушка от Aetherion Dynamics. Среднее артиллерийское орудие с высокой скорострельностью, но относительно низкой мощностью, использующее снаряды HEAT для поражения брони и систем корабля.
+  productEntity: WeaponTurretDravon
+  cost:
+    FrontierUplinkCoin: 40
+  categories:
+    - UplinkSecurityGunneryKinetic
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecWeaponTurretAK570
+  name: тяжёлая автопушка AK570 калибра 90мм
+  description: Двуствольная тяжёлая 90мм автопушка, стреляющая универсальными снарядами APHE, эффективна для продолжительного огня по средним целям.
+  productEntity: WeaponTurretAK570
+  cost:
+    FrontierUplinkCoin: 40
+  categories:
+    - UplinkSecurityGunneryKinetic
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecWeaponTurretCharonette
+  name: ускоритель массы M194 ШАРОНЕТТ
+  description: Меньший, более компактный рельсотрон, стреляющий крупными снарядами на высокой скорости, способный нанести значительный урон вражеским кораблям. Средний линейный ускоритель.
+  productEntity: WeaponTurretCharonette
+  cost:
+    FrontierUplinkCoin: 40
+  categories:
+    - UplinkSecurityGunneryKinetic
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+# Тяжелые и сверхтяжелые кинетические орудия (доступны только Sheriff)
+- type: listing
+  id: SecWeaponTurretCharonReload
+  name: M381 ХАРОН ускоритель массы
+  description: Рельсотрон, линкорное орудие, стреляющее массивным снарядом на экстремальной скорости, способное нанести катастрофический урон вражеским шаттлам. Тяжёлый линейный ускоритель.
+  productEntity: WeaponTurretCharonReload
+  cost:
+    FrontierUplinkCoin: 160
+  categories:
+    - UplinkSecurityGunneryKinetic
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Sheriff
+
+- type: listing
+  id: SecWeaponTurretCyrexa
+  name: CYREXA 220мм пушка
+  description: Основная батарея с двумя стволами, наносящая быстрые сокрушительные залпы на экстремальной дистанции. Стреляет 220мм автоматическими снарядами со слегка сниженной разрушительной силой.
+  productEntity: WeaponTurretCyrexa
+  cost:
+    FrontierUplinkCoin: 160
+  categories:
+    - UplinkSecurityGunneryKinetic
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Sheriff
+
+- type: listing
+  id: SecWeaponTurretHades
+  name: HADES 305мм пушка
+  description: Одно из крупнейших химических кинетических орудий в секторе. Его мощность сравнима только с масс-драйверами, такими как M381.
+  productEntity: WeaponTurretHades
+  cost:
+    FrontierUplinkCoin: 160
+  categories:
+    - UplinkSecurityGunneryKinetic
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Sheriff
+
+# region Missile Weapons
+# Легкие ракетные орудия (доступны всем сотрудникам безопасности)
+- type: listing
+  id: SecWeaponTurretLightMunitionsBay
+  name: легкая пусковая установка GPOB-L
+  description: Относительно небольшой бронированный отсек для боеприпасов, способный вместить до двух легких боевых зарядов. Обычно используется на легких космических кораблях, особенно на бомбардировщиках, и обеспечивает ограниченный способ нанесения урона целям, значительно превосходящим пользователя по массе.
+  productEntity: WeaponTurretLightMunitionsBay
+  cost:
+    FrontierUplinkCoin: 20
+  categories:
+    - UplinkSecurityGunneryMissile
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+# Средние ракетные орудия (доступны Bailiff, SeniorOfficer, Sheriff)
+- type: listing
+  id: SecWeaponTurretVespera
+  name: АДМП-27 ВЕСПЕРА быстрострельная установка
+  description: Быстрострельная ройная ракетная установка, произведённая Aetherion Dynamics. Насыщает цели управляемыми боеголовками, чтобы подавить защиту.
+  productEntity: WeaponTurretVespera
+  cost:
+    FrontierUplinkCoin: 40
+  categories:
+    - UplinkSecurityGunneryMissile
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecWeaponTurretASM501
+  name: установка АСМ-501
+  description: Торпедная установка для крейсеров. Выпускает тяжёлые торпеды для нанесения высоких повреждений большим кораблям и станциям.
+  productEntity: WeaponTurretASM501
+  cost:
+    FrontierUplinkCoin: 40
+  categories:
+    - UplinkSecurityGunneryMissile
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecWeaponTurretVanyk
+  name: АСМ-302 установка
+  description: Эскортная ракетная установка, произведённая Aetherion Dynamics. Запускает управляемые ракеты для базового корабельного боя и блокирования зон.
+  productEntity: WeaponTurretVanyk
+  cost:
+    FrontierUplinkCoin: 40
+  categories:
+    - UplinkSecurityGunneryMissile
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecWeaponTurretASM220
+  name: торпедная установка ASM-220
+  description: Тяжелая торпедная установка вертикального пуска, работающая на ручной загрузке, обычно выполняемой в порту. Однако она оснащена высокоэффективными ракетами для своего размера.
+  productEntity: WeaponTurretASM220
+  cost:
+    FrontierUplinkCoin: 40
+  categories:
+    - UplinkSecurityGunneryMissile
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+# Тяжелые ракетные орудия (доступны только Sheriff)
+- type: listing
+  id: SecWeaponTurretTovek
+  name: АДМХ-23 ТОВЕК гибридная ЭМИ установка
+  description: Гибридная ЭМИ ракетная установка от Aetherion Dynamics. Выпускает боеголовки ЭМИВВ для отключения и ослабления вражеских кораблей на дальних дистанциях.
+  productEntity: WeaponTurretTovek
+  cost:
+    FrontierUplinkCoin: 160
+  categories:
+    - UplinkSecurityGunneryMissile
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Sheriff
+
+# region Shuttle Equpment
+# Различные консоли, сервера и экипировка для шаттла
+- type: listing
+  id: SecShuttleEquipmentAdvRadar
+  name: Продвинутая консоль сканера массы
+  description: Печатная плата для продвинутой консоли сканера массы. Этот усовершествованный радар позволяет обнаруживать удаленные объекты, обеспечивая дополнительное тактическое преимущество.
+  productEntity: AdvancedRadarConsoleCircuitboard
+  cost:
+    FrontierUplinkCoin: 5
+  categories:
+    - UplinkSecurityGunneryConsoles
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
+  id: SecShuttleEquipmentGunneryControl
+  name: Консоль контроля орудий
+  description: Машинная плата для консоли контроля орудий. Позволяет управлять корабельными орудиями и координировать огонь.
+  productEntity: GunneryControlComputerCircuitboard
+  cost:
+    FrontierUplinkCoin: 5
+  categories:
+    - UplinkSecurityGunneryConsoles
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
+  id: SecShuttleEquipmentGCSLow
+  name: Маломощный сервер контроля орудий
+  description: Машинная плата для СКО. Базовый сервер для управления корабельными орудиями с ограниченной производительностью.
+  productEntity: MachineGCSLowCircuitboard
+  cost:
+    FrontierUplinkCoin: 10
+  categories:
+    - UplinkSecurityGunneryConsoles
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
+  id: SecShuttleEquipmentGCSMedium
+  name: Среднемощный сервер контроля орудий
+  description: Машинная плата для СКО. Улучшенный сервер для управления корабельными орудиями с повышенной производительностью.
+  productEntity: MachineGCSMediumCircuitboard
+  cost:
+    FrontierUplinkCoin: 20
+  categories:
+    - UplinkSecurityGunneryConsoles
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecShuttleEquipmentShieldLight
+  name: Генератор щита CIR-C1A
+  description: Машинная плата для генератора щита CIR-C1A. Легкий генератор защитного поля для базовой защиты корабля.
+  productEntity: MachineShieldLightCircuitboard
+  cost:
+    FrontierUplinkCoin: 40
+  categories:
+    - UplinkSecurityGunneryConsoles
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
+  id: SecShuttleEquipmentShieldMedium
+  name: Генератор щита CIR-C2B
+  description: Машинная плата для генератора щита CIR-C2B. Средний генератор защитного поля для усиленной защиты корабля.
+  productEntity: MachineShieldMediumCircuitboard
+  cost:
+    FrontierUplinkCoin: 80
+  categories:
+    - UplinkSecurityGunneryConsoles
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+# region Kinetic Ammunition
+# Легкие кинетические боеприпасы (доступны всем сотрудникам безопасности)
+- type: listing
+  id: SecAmmoGPO
+  name: Бомба GPO-L 50кг неуправляемая
+  description: Прочная и мощная неуправляемая бомба. Наносит сокрушительный урон при прямом попадании.
+  productEntity: LightFighterOrdinanceGPOItem
+  cost:
+    FrontierUplinkCoin: 4
+  categories:
+    - UplinkSecurityGunneryAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
+  id: SecAmmoZenith
+  name: Ракета ASM(LF)5 'Zenith' противокорабельная
+  description: Управляемая ракета для легких космических кораблей. Точная и быстрая, но не очень прочная.
+  productEntity: LightFighterOrdinanceZenithItem
+  cost:
+    FrontierUplinkCoin: 6
+  categories:
+    - UplinkSecurityGunneryAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
+  id: SecAmmoQuasar
+  name: Гиперпенетратор AD-901 'QUASAR'
+  description: Экспериментальный гиперускорительный боеприпас. Слабая, но сверхбыстрая ракета, неуязвимая для ПРО.
+  productEntity: LightFighterOrdinanceQuasarItem
+  cost:
+    FrontierUplinkCoin: 10
+  categories:
+    - UplinkSecurityGunneryAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+# Средние кинетические боеприпасы (доступны Bailiff, SeniorOfficer, Sheriff)
+- type: listing
+  id: SecAmmoTarnyxAP
+  name: Снаряд TARNYX 150мм бронебойный
+  description: Бронебойный снаряд для 150мм пушки TARNYX. Не самое эффективное решение, но работает в ближнем бою.
+  productEntity: 150mmApShell
+  cost:
+    FrontierUplinkCoin: 6
+  categories:
+    - UplinkSecurityGunneryAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecAmmoASM220HE
+  name: Торпеда ASM-220 фугасная
+  description: Торпеда с мощным фугасным зарядом. Наносит огромные повреждения корпусам кораблей.
+  productEntity: Asm220TorpedoHE
+  cost:
+    FrontierUplinkCoin: 9
+  categories:
+    - UplinkSecurityGunneryAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecAmmoASM220LOSAT
+  name: Ракета ASM-220 LOSAT гиперпенетратор
+  description: Сверхпрочный гиперпенетратор из синтасплава. Легко пробивает самые прочные корпуса.
+  productEntity: Asm220TorpedoLOSAT
+  cost:
+    FrontierUplinkCoin: 15
+  categories:
+    - UplinkSecurityGunneryAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+# Тяжелые кинетические боеприпасы (доступны только Sheriff)
+- type: listing
+  id: SecAmmoCharonStandard
+  name: Снаряд M381 CHARON 280мм 26.5кг
+  description: Стандартный снаряд для рельсотрона CHARON. Содержит плазменный газ для ионизации в линейном ускорителе и сам снаряд.
+  productEntity: CharonSlugAmmo
+  cost:
+    FrontierUplinkCoin: 12
+  categories:
+    - UplinkSecurityGunneryAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Sheriff
+
+- type: listing
+  id: SecAmmoCharonSubnuclear
+  name: Снаряд M381 CHARON 280мм субъядерный
+  description: Субъядерный снаряд для рельсотрона CHARON. Несет разрушительный субъядерный заряд повышенной мощности.
+  productEntity: CharonSubnuclearSlugAmmo
+  cost:
+    FrontierUplinkCoin: 25
+  categories:
+    - UplinkSecurityGunneryAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Sheriff
+
+# region Energy Ammunition
+# Средние энергетические боеприпасы (доступны Bailiff, SeniorOfficer, Sheriff)
+- type: listing
+  id: SecAmmoTarnyxEMP
+  name: Снаряд TARNYX 150мм EMP
+  description: EMP снаряд для 150мм пушки TARNYX. Выводит из строя электронику вражеских кораблей мощным электромагнитным импульсом.
+  productEntity: 150mmEmpShell
+  cost:
+    FrontierUplinkCoin: 8
+  categories:
+    - UplinkSecurityGunneryAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecAmmoASM220ECM
+  name: Торпеда ASM-220 ECM
+  description: EMP торпеда. Крайне опасна для электроники, но почти безвредна для корпусов.
+  productEntity: Asm220TorpedoECM
+  cost:
+    FrontierUplinkCoin: 11
+  categories:
+    - UplinkSecurityGunneryAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+# region Mechas
+
+# region Mechas
+- type: listing
+  id: SecMechGygaxHermes
+  name: Гигакс Гермес
+  description: Вариант Гигакса, предназначенный для нужд Департамента Шерифа. Обладает особенно теплыми сидениями и запасом пончиков.
+  productEntity: MechGygaxHermesBattery
+  cost:
+    FrontierUplinkCoin: 100
+  categories:
+    - UplinkSecurityMechas
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecMechDurAres
+  name: Дюранд Арес
+  description: Вариант Дюранда, предназначенный для нужд Департамента Шерифа. Обладает особенно теплыми сидениями и запасом пончиков.
+  productEntity: MechDurAresBattery
+  cost:
+    FrontierUplinkCoin: 200
+  categories:
+    - UplinkSecurityMechas
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Sheriff
+
+# region Mech Weapons
+# Легкое кинетическое оружие для мехов (доступны Bailiff, SeniorOfficer, Sheriff)
+- type: listing
+  id: SecMechGunScattershot
+  name: LBX AC 10 "Scattershot"
+  description: Дробовик для меха. Эффективен на ближней дистанции.
+  productEntity: MechGunScattershot
+  cost:
+    FrontierUplinkCoin: 20
+  categories:
+    - UplinkSecurityMechas
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecMechGunAutocannonUAC2
+  name: Ultra AC 2
+  description: Скорострельная автопушка для меха. Высокая скорострельность, умеренный урон.
+  productEntity: MechGunAutocannonUAC2
+  cost:
+    FrontierUplinkCoin: 20
+  categories:
+    - UplinkSecurityMechas
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecMechGunCarbineHades
+  name: FNX-99 "Hades" Carbine
+  description: Карбин с зажигательными патронами. Наносит тепловой урон.
+  productEntity: MechGunCarbineHades
+  cost:
+    FrontierUplinkCoin: 20
+  categories:
+    - UplinkSecurityMechas
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+# Легкое энергетическое оружие для мехов (доступны Bailiff, SeniorOfficer, Sheriff)
+- type: listing
+  id: SecMechGunLaser
+  name: CH-PS "Immolator" Laser
+  description: Лазерная пушка для меха. Надежное энергетическое оружие.
+  productEntity: MechGunLaser
+  cost:
+    FrontierUplinkCoin: 15
+  categories:
+    - UplinkSecurityMechas
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecMechGunDisabler
+  name: Disabler "Peacemaker"
+  description: Оглушающее энергетическое оружие. Идеально для нелетальных операций.
+  productEntity: MechGunDisabler
+  cost:
+    FrontierUplinkCoin: 15
+  categories:
+    - UplinkSecurityMechas
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+# Ракетное оружие для мехов (доступны Sheriff)
+- type: listing
+  id: SecMechGunMissileLRM6
+  name: LRM-6 Missile Rack
+  description: Ракетная установка дальнего радиуса действия. Повышенная пробиваемость.
+  productEntity: MechGunMissileLRM6
+  cost:
+    FrontierUplinkCoin: 25
+  categories:
+    - UplinkSecurityMechas
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Sheriff
+
+# region Mech Ammunition
+# Боеприпасы для мехов (доступны Bailiff, SeniorOfficer, Sheriff)
+- type: listing
+  id: SecMechAmmoAC2Ultra
+  name: Патроны AC-2 "ultra"
+  description: Боеприпасы для скорострельной автопушки Ultra AC 2.
+  productEntity: BoxAmmoAC2Ultra
+  cost:
+    FrontierUplinkCoin: 3
+  categories:
+    - UplinkSecurityMechas
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecMechAmmoScattershot
+  name: Патроны LBX AC 10 "Scattershot"
+  description: Дробовые патроны для дробовика Scattershot.
+  productEntity: BoxAmmoScattershot
+  cost:
+    FrontierUplinkCoin: 3
+  categories:
+    - UplinkSecurityMechas
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecMechAmmoHades
+  name: Патроны FNX-99 "Hades"
+  description: Зажигательные патроны для карбина Hades.
+  productEntity: BoxAmmoHades
+  cost:
+    FrontierUplinkCoin: 3
+  categories:
+    - UplinkSecurityMechas
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+# Боеприпасы для мехов (доступны Sheriff)
+
+- type: listing
+  id: SecMechAmmoGranade
+  name: Универсальные гранаты
+  description: Гранаты для ракетной установки LRM-6.
+  productEntity: BoxAmmoGranade
+  cost:
+    FrontierUplinkCoin: 3
+  categories:
+    - UplinkSecurityMechas
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Sheriff
+
+- type: listing
+  id: SecTechDiskDelivery
+  name: uplink-sec-tech-disk-delivery-name
+  description: uplink-sec-tech-disk-delivery-desc
+  icon: { sprite: Objects/Specific/Cargo/mail.rsi, state: icon }
+  productEntity: PresentTechDisk
+  cost:
+    FrontierUplinkCoin: 40
+  categories:
+    - UplinkSecurityBundles
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecUplinkCombatBorg
+  name: uplink-combat-borg-name
+  description: uplink-combat-borg-desc
+  productEntity: BorgChassisSelectableCombat
+  cost:
+    FrontierUplinkCoin: 50
+  categories:
+  - UplinkSecurityBorges
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+# region Combat Borg Modules
+
+- type: listing
+  id: SecUplinkCombatBorgPKA
+  name: uplink-sec-borg-pka-name
+  description: uplink-sec-borg-pka-desc
+  productEntity: BorgModuleCombatPKA
+  cost:
+    FrontierUplinkCoin: 10
+  categories:
+    - UplinkSecurityBorges
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecUplinkCombatBorgEchis
+  name: uplink-sec-borg-echis-name
+  description: uplink-sec-borg-echis-desc
+  productEntity: BorgModuleCombatEchis
+  cost:
+    FrontierUplinkCoin: 15
+  categories:
+    - UplinkSecurityBorges
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecUplinkCombatBorgLaserAdvanced
+  name: uplink-sec-borg-laser-advanced-name
+  description: uplink-sec-borg-laser-advanced-desc
+  productEntity: BorgModuleCombatLaserAdvanced
+  cost:
+    FrontierUplinkCoin: 15
+  categories:
+    - UplinkSecurityBorges
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecUplinkCombatBorgPKAHeavy
+  name: uplink-sec-borg-pka-heavy-name
+  description: uplink-sec-borg-pka-heavy-desc
+  productEntity: BorgModuleCombatPKAHeavy
+  cost:
+    FrontierUplinkCoin: 15
+  categories:
+    - UplinkSecurityBorges
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecUplinkCombatBorgL6C
+  name: uplink-sec-borg-l6c-name
+  description: uplink-sec-borg-l6c-desc
+  productEntity: BorgModuleCombatL6C
+  cost:
+    FrontierUplinkCoin: 25
+  categories:
+    - UplinkSecurityBorges
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecUplinkCombatBorgPKARailgun
+  name: uplink-sec-borg-pka-railgun-name
+  description: uplink-sec-borg-pka-railgun-desc
+  productEntity: BorgModuleCombatPKARailgun
+  cost:
+    FrontierUplinkCoin: 25
+  categories:
+    - UplinkSecurityBorges
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecUplinkCombatBorgPKARepeater
+  name: uplink-sec-borg-pka-repeater-name
+  description: uplink-sec-borg-pka-repeater-desc
+  productEntity: BorgModuleCombatPKARepeater
+  cost:
+    FrontierUplinkCoin: 25
+  categories:
+    - UplinkSecurityBorges
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecUplinkCombatBorgPKAShotgun
+  name: uplink-sec-borg-pka-shotgun-name
+  description: uplink-sec-borg-pka-shotgun-desc
+  productEntity: BorgModuleCombatPKAShotgun
+  cost:
+    FrontierUplinkCoin: 25
+  categories:
+    - UplinkSecurityBorges
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecUplinkCombatBorgLaserHeavy
+  name: uplink-sec-borg-laser-heavy-name
+  description: uplink-sec-borg-laser-heavy-desc
+  productEntity: BorgModuleCombatLaserHeavy
+  cost:
+    FrontierUplinkCoin: 25
+  categories:
+    - UplinkSecurityBorges
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecUplinkRemoteControlConsole
+  name: uplink-sec-remote-control-console-name
+  description: uplink-sec-remote-control-console-desc
+  productEntity: RemoteControllerComputer
+  cost:
+    FrontierUplinkCoin: 5
+  categories:
+    - UplinkSecurityBorges
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff
+
+- type: listing
+  id: SecUplinkRemoteControlDevice
+  name: uplink-sec-remote-control-device-name
+  description: uplink-sec-remote-control-device-desc
+  productEntity: RemoteControlDevice
+  cost:
+    FrontierUplinkCoin: 5
+  categories:
+    - UplinkSecurityBorges
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - Bailiff
+        - SeniorOfficer
+        - Sheriff

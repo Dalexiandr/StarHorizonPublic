@@ -1,0 +1,16 @@
+ent-HorizonLocateHeartPumps = Locate heart pumps
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonClampGeneralValves = Clamp general vavles
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonDisconnectVavles = Disconnect the heart valves
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonInsertPumpImplant = Insert pump implant
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonExtractPumpImplant = Extract a subcutaneous implant
+    .desc = { ent-SurgeryStepBase.desc }
+ent-HorizonConnectValvesToHeart = Connect valves to heart
+    .desc = { ent-SurgeryStepBase.desc }
+ent-SurgeryInsertHeartPumpImplant = Insert a heart pump implant
+    .desc = Surgical attachment of a implant.
+ent-SurgeryExstractHeartPumpImplant = Extract a heart pump implant
+    .desc = Surgical attachment of a implant.

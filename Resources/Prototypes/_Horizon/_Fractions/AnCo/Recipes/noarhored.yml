@@ -1,0 +1,134 @@
+- type: entity
+  id: AnCoFabricatorDisableToolUse
+  parent: AnCoFabricator
+  suffix: StarHorizon, AnCo, Dungeon
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: DisableToolUse
+    anchoring: true
+    prying: true
+    screwing: true
+    cutting: true
+    welding: true
+    pulsing: true
+    slicing: true
+    sawing: true
+    honking: true
+    rolling: true
+    digging: true
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 0
+
+- type: entity
+  id: AnCoEmergencyFabricatorDisableToolUse
+  parent: AnCoEmergencyFabricator
+  suffix: StarHorizon, AnCo, Dungeon
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: DisableToolUse
+    anchoring: true
+    prying: true
+    screwing: true
+    cutting: true
+    welding: true
+    pulsing: true
+    slicing: true
+    sawing: true
+    honking: true
+    rolling: true
+    digging: true
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 0
+
+- type: entity
+  id: AnCoWeaponFabricatorDisableToolUse
+  parent: AnCoWeaponFabricator
+  suffix: StarHorizon, AnCo, Dungeon
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: DisableToolUse
+    anchoring: true
+    prying: true
+    screwing: true
+    cutting: true
+    welding: true
+    pulsing: true
+    slicing: true
+    sawing: true
+    honking: true
+    rolling: true
+    digging: true
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 0
+
+- type: entity
+  id: AnCoSuitFabricatorDisableToolUse
+  parent: AnCoSuitFabricator
+  suffix: StarHorizon, AnCo, Dungeon
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: DisableToolUse
+    anchoring: true
+    prying: true
+    screwing: true
+    cutting: true
+    welding: true
+    pulsing: true
+    slicing: true
+    sawing: true
+    honking: true
+    rolling: true
+    digging: true
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 0
+
+- type: entity
+  id: AnCoOtherFabricatorDisableToolUse
+  parent: AnCoOtherFabricator
+  suffix: StarHorizon, AnCo, Dungeon
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: DisableToolUse
+    anchoring: true
+    prying: true
+    screwing: true
+    cutting: true
+    welding: true
+    pulsing: true
+    slicing: true
+    sawing: true
+    honking: true
+    rolling: true
+    digging: true
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 0

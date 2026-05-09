@@ -1,0 +1,28 @@
+- type: entity
+  name: наручники АнКо
+  description: Тяжёлые оковы из казмия не позволят преступнику сбежать.
+  id: AnCoHandcuffs
+  suffix: StarHorizon, AnCo
+  parent: [BaseItem, BaseAnCoContraband]
+  components:
+  - type: Item
+    size: Small
+    storedRotation: 90
+  - type: Handcuff
+    cuffedRSI: _Horizon/_Fractions/AnCo/Objects/Misc/handcuffs.rsi
+    bodyIconState: body-overlay
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Misc/handcuffs.rsi
+    state: handcuff
+  - type: Tag
+    tags:
+    - Handcuffs
+  - type: MeleeWeapon
+    wideAnimationRotation: 90
+    resetOnHandSelected: false
+    animation: WeaponArcDisarm
+    damage:
+      types:
+        Heat: 10
+  - type: UseDelay
+    delay: 10

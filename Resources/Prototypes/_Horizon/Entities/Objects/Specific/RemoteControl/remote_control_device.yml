@@ -1,0 +1,25 @@
+- type: entity
+  parent: BaseItem
+  id: RemoteControlDevice
+  name: remote control device
+  description: A gadget which can remote control
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Devices/remote_control_divice.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+    - state: indicator
+      shader: unshaded
+      map: ["enum.RemoteControlDeviceVisualLayers.Indicator"]
+      visible: false
+  - type: Item
+    storedRotation: -90
+  - type: RemoteControlDevice
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.RemoteControlDeviceVisualStates.IsActive:
+        enum.RemoteControlDeviceVisualLayers.Indicator:
+          True: {visible: true}
+          False: {visible: false}

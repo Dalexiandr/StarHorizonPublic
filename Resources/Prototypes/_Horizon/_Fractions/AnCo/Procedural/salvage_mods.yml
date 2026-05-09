@@ -1,0 +1,15 @@
+- type: salvageBiomeMod
+  id: ArdoniumWastes
+  desc: salvage-biome-mod-ardonium-wastes
+  biome: ArdoniumWastes
+  difficulties:
+    - Inferno
+  minDuration: 1200
+  maxDuration: 3000
+
+- type: salvageDungeonMod
+  id: Complex
+  desc: salvage-dungeon-mod-complex
+  proto: Complex
+  biomes:
+    - ArdoniumWastes

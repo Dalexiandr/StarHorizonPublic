@@ -1,0 +1,107 @@
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: ClothingOuterHardsuitExosuit
+  name: экзоскелет H2CR
+  description: Громоздкий экзоскелет со своим названием в виде принта на плечах.
+  suffix: StarHorizon, Неснимаемый
+  components:
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.1
+        Slash: 0.3
+        Piercing: 0.4
+        Heat: 0.3
+        Shock: 0.65
+        Radiation: 0.95
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Outer/exosuit.rsi
+  - type: Item
+    sprite: _StarHorizon/Clothing/Outer/exosuit.rsi
+    size: Ginormous
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Outer/exosuit.rsi
+    equipSound:
+    unequipSound:
+    slots:
+    - OuterClothing
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+  - type: ClothingSpeedModifier
+    walkModifier: 0.4
+    sprintModifier: 0.5
+  - type: Storage
+    grid:
+    - 0,0,5,5
+    maxItemSize: Huge
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitExosuit
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+      enum.SharedGasTankUiKey.Key:
+        type: GasTankBoundUserInterface
+  - type: PressureProtection
+    highPressureMultiplier: 100
+    lowPressureMultiplier: 100
+  - type: Unremoveable
+  - type: CanMoveInAir
+  - type: GasTank
+    outputPressure: 42.6
+    air:
+      volume: 5
+      temperature: 293.15
+      moles:
+        - 3692.3077 # oxygen for 2h use + jetpack
+        - 3692.3077 # nitrogen for 2h use + jetpack
+  - type: Jetpack
+    moleUsage: 0.00085
+  - type: InputMover
+    toParent: true
+  - type: MovementSpeedModifier
+    weightlessAcceleration: 1
+    weightlessFriction: 0.3
+    weightlessModifier: 1.2
+
+- type: entity
+  parent: ClothingHeadHardsuitBase
+  id: ClothingHeadHelmetHardsuitExosuit
+  categories: [ HideSpawnMenu ]
+  name: модульный шлем H2CR
+  description: Крепкий шлем экзоскелета, обеспечивающий превосходную защиту головы и глаз.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Outer/exosuithelemt.rsi
+    layers:
+    - state: icon
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Outer/exosuithelemt.rsi
+    equipSound: /Audio/Mecha/mechmove03.ogg
+    unequipSound: /Audio/Mecha/mechmove03.ogg
+    quickEquip: false
+    slots: [ HEAD ]
+  - type: FlashImmunity
+  - type: EyeProtection
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.88
+        Piercing: 0.6
+        Heat: 0.9
+        Asphyxiation: 0.95
+        Cold: 0.95
+        Shock: 0.95
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: BreathMask
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: PressureProtection
+    highPressureMultiplier: 100
+    lowPressureMultiplier: 100

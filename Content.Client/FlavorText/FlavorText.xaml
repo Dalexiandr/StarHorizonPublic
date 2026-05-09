@@ -1,0 +1,15 @@
+﻿<Control Name="CFlavorText" xmlns="https://spacestation14.io"
+    xmlns:cc="clr-namespace:Content.Client.Administration.UI.CustomControls">   <!-- Horizon - cc added -->
+    <BoxContainer Orientation="Vertical" HorizontalExpand="True">
+        <TextEdit Name="CFlavorTextInput" Access="Public" MinSize="220 100" Margin="10" HorizontalExpand="True" VerticalExpand="True" />
+        <!-- Horizon start -->
+        <cc:HSeparator Margin="8 4"/>
+        <TextEdit Name="OOCFlavorTextInput" Access="Public" MinSize="220 100" Margin="10" HorizontalExpand="True" VerticalExpand="True" />
+        <cc:HSeparator Margin="8 4"/>
+        <BoxContainer Orientation="Vertical">
+            <OptionButton Name="ERPStatusButton" Access="Public" MinHeight="38" Margin="10 4" HorizontalExpand="True" />
+            <RichTextLabel Name="ERPStatusDescription" Access="Public" MinSize="220 100" Margin="10 4" HorizontalExpand="True" VerticalExpand="True" VerticalAlignment="Top" />
+        </BoxContainer>
+        <!-- Horizon end -->
+    </BoxContainer>
+</Control>

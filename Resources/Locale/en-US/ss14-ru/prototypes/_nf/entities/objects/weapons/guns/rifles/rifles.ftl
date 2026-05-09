@@ -1,0 +1,16 @@
+ent-NFWeaponRifleBarlowsBolt = Barlows bolt-action rifle
+    .desc = A weapon for hunting, or endless trench warfare. Equipped with bayonet.
+ent-NFWeaponRifleMusket = musket
+    .desc = This should've been in a museum long before you were born.
+ent-NFWeaponRifleFoam = Foam Force Astro Ace
+    .desc = A premium foam rifle of the highest quality. Its plastic feels rugged, and its mechanisms sturdy.
+    .suffix = Frontier
+ent-NFWeaponRifleBarlowsBoltLessLethal = { ent-NFWeaponRifleBarlowsBolt }
+    .suffix = Frontier, Less-lethal
+    .desc = { ent-NFWeaponRifleBarlowsBolt.desc }
+ent-NFWeaponRifleCeremonial = ceremonial rifle
+    .desc = A ceremonial variant of the Mark 1 Rifle, in tasteful blue and white.
+ent-NFWeaponRifleRepeater = N2524 pattern repeater
+    .desc = A civilian grade lever action firearm, favored by space cowboys across the Frontier for its reliability.
+ent-NFWeaponRifleSVS = SVS-42
+    .desc = Originally designed by Samonov, this old surplus battle rifle looks like it's seen a few wars. Equipped with bayonet.

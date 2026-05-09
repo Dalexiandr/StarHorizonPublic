@@ -1,0 +1,44 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: lnqz1tor
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: Millenium
+  parent: BaseVessel
+  name: MP Millenium
+  description: Новейший корабль медицинского класса произведенный Mawr Pharmaceutics
+  price: 160000 # 122933, наценка верфи 30% = 159812
+  category: Medium
+  group: Medical
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/Medical/millenium.yml
+  class:
+  - Medical
+  - Chemistry
+  engine:
+  - AME
+
+- type: gameMap
+  id: Millenium
+  mapName: 'MP Millenium'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/Medical/millenium.yml
+  minPlayers: 0
+  stations:
+    Millenium:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Millenium {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

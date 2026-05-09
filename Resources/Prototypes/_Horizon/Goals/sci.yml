@@ -1,0 +1,36 @@
+# Научные
+- type: expeditionGoal
+  id: BountyArtifact
+  specification: Science
+  randomAmount:
+    min: 1
+    max: 1
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-artifact
+    iconEntity: ComplexXenoArtifactItem
+    reward: 2500
+    requiredTag: Artifact
+
+- type: expeditionGoal
+  id: BountyAnomalyCore
+  specification: Science
+  randomAmount:
+    min: 1
+    max: 1
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-anomaly-core
+    iconEntity: AnomalyCorePyroclastic
+    reward: 10000
+    requiredTag: AnomalyCore
+
+- type: expeditionGoal
+  id: BountyArtifactFragment
+  specification: Science
+  randomAmount:
+    min: 7
+    max: 7
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-artifact-fragment
+    iconEntity: ArtifactFragment1
+    reward: 32500
+    requiredTag: ArtifactFragment

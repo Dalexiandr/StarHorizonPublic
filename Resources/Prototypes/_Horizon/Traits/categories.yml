@@ -1,0 +1,11 @@
+- type: traitCategory
+  id: HorizonPositive
+  name: trait-category-positive
+
+- type: traitCategory
+  id: HorizonNeutral
+  name: trait-category-neutral
+
+- type: traitCategory
+  id: HorizonNegative
+  name: trait-category-negative

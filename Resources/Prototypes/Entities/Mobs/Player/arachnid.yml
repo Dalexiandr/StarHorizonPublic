@@ -1,0 +1,42 @@
+- type: entity
+  save: false
+  name: Urist McWeb
+  parent: BaseMobArachnid
+  id: MobArachnid
+  components:
+  - type: Respirator
+    damage:
+      types:
+        Asphyxiation: 1.5 # This makes space and crit more lethal to arachnids.
+    damageRecovery:
+      types:
+        Asphyxiation: -0.5 # Recovery will suck without chems
+  # Horizon
+  - type: SampleSource
+    availableCellSamples:
+    - protoID: CellSampleArachnid
+
+# Cytology
+- type: entity
+  name: Urist Grown Arachnid
+  parent: MobArachnid
+  id: MobArachnidGrown
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StaticPrice
+    price: 2500
+  - type: RandomMetadata
+    nameSegments:
+      - NamesFirst
+      - NamesLast
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: ghost-role-information-grown-arachnid-name
+    description: Вы арахнид, выращенный в цитологической ванне. Множество конечностей и глаз откроют новые возможности. Изучайте этот мир вокруг вас!
+    raffle:
+      settings: short
+  - type: GhostTakeoverAvailable

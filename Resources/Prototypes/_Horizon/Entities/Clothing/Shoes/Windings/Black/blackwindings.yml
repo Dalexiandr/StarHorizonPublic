@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingShoesBlackWindings
+  name: Чёрные обмотки
+  description: Плотные куски ткани для тех, кто не привык к обычный обуви.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Misc/blackwindings.rsi
+  - type: Clothing
+    sprite: Clothing/Shoes/Misc/blackwindings.rsi

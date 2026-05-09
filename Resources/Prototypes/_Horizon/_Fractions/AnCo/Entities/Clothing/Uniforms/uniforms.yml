@@ -1,0 +1,132 @@
+- type: entity
+  suffix: StarHorizon, AnCo
+  description: Стандартный комбинезон АнКо без рукавов.
+  name: комбинезон АнКо
+  parent: [ClothingUniformBase, BaseAnCoContraband]
+  id: SuitAnCo
+  components:
+  - type: FactionClothing
+    faction: AnCoSecurBot
+  - type: Tag
+    tags: [] # Выносим с ВЛа для хамелеонки
+  - type: Sprite
+    sprite:  _Horizon/_Fractions/AnCo/Clothing/Uniforms/uniform.rsi
+  - type: Clothing
+    sprite:  _Horizon/_Fractions/AnCo/Clothing/Uniforms/uniform.rsi
+  - type: StaticPrice
+    price: 5000
+
+- type: entity
+  suffix: StarHorizon, AnCo
+  description: Защитный комбинезон АнКо с укреплёнными рёбрами из казмия.
+  name: защитный комбинезон АнКо
+  parent: SuitAnCo
+  id: SuitProtectiveAnCo
+  components:
+  - type: FactionClothing
+    faction: AnCoSecurBot
+  - type: Sprite
+    sprite:  _Horizon/_Fractions/AnCo/Clothing/Uniforms/jumpsuith.rsi
+  - type: Clothing
+    sprite:  _Horizon/_Fractions/AnCo/Clothing/Uniforms/jumpsuith.rsi
+
+- type: entity
+  suffix: StarHorizon, AnCo
+  description: Стандартная юбка-комбинезон АнКо с укреплёнными рёбрами из Казмия.
+  name: защитная юбка-комбинезон АнКо
+  parent: SuitAnCo
+  id: SkirtProtectiveAnCo
+  components:
+  - type: FactionClothing
+    faction: AnCoSecurBot
+  - type: Sprite
+    sprite:  _Horizon/_Fractions/AnCo/Clothing/Uniforms/jumpskirth.rsi
+  - type: Clothing
+    sprite:  _Horizon/_Fractions/AnCo/Clothing/Uniforms/jumpskirth.rsi
+
+- type: entity
+  suffix: StarHorizon, AnCo
+  description: Стандартная юбка-комбинезон АнКо без рукавов.
+  name: юбка-комбинезон АнКо
+  parent: SuitAnCo
+  id: SkirtAnCo
+  components:
+  - type: FactionClothing
+    faction: AnCoSecurBot
+  - type: Sprite
+    sprite:  _Horizon/_Fractions/AnCo/Clothing/Uniforms/jumpskirt.rsi
+  - type: Clothing
+    sprite:  _Horizon/_Fractions/AnCo/Clothing/Uniforms/jumpskirt.rsi
+
+- type: entity
+  suffix: StarHorizon, AnCo
+  description: Гидро-костюм, он точно защищает от влаги?
+  name: гидро-костюм АнКо
+  parent: SuitAnCo
+  id: HydrosuitAnCo
+  components:
+  - type: Sprite
+    sprite:  _Horizon/_Fractions/AnCo/Clothing/Uniforms/hydrosuit.rsi
+  - type: Clothing
+    sprite:  _Horizon/_Fractions/AnCo/Clothing/Uniforms/hydrosuit.rsi
+
+- type: entity
+  suffix: StarHorizon, AnCo
+  description: Расскажи мне о более бесполезном предмете
+  name: гидро-костюм без рукавов АнКо
+  parent: SuitAnCo
+  id: HydrosuitLessAnCo
+  components:
+  - type: Sprite
+    sprite:  _Horizon/_Fractions/AnCo/Clothing/Uniforms/hydrosuitless.rsi
+  - type: Clothing
+    sprite:  _Horizon/_Fractions/AnCo/Clothing/Uniforms/hydrosuitless.rsi
+
+- type: entity
+  suffix: StarHorizon, AnCo
+  description: Качество, надежность, долговечность. Мы просто не хотим везти вам вторую
+  name: Водолазка оперативника АнКо
+  parent: SuitAnCo
+  id: TurtleneckAnCo
+  components:
+  - type: Sprite
+    sprite:  _Horizon/_Fractions/AnCo/Clothing/Uniforms/turtleneck.rsi
+  - type: Clothing
+    sprite:  _Horizon/_Fractions/AnCo/Clothing/Uniforms/turtleneck.rsi
+
+- type: entity
+  suffix: StarHorizon, AnCo
+  description: Создана специально для операций требующих свободу рук
+  name: Водолазка без рукавов АнКо
+  parent: SuitAnCo
+  id: TurtleneckLessAnCo
+  components:
+  - type: Sprite
+    sprite:  _Horizon/_Fractions/AnCo/Clothing/Uniforms/turtleneckless.rsi
+  - type: Clothing
+    sprite:  _Horizon/_Fractions/AnCo/Clothing/Uniforms/turtleneckless.rsi
+
+- type: entity
+  suffix: StarHorizon, AnCo
+  description: Вы реально отвалили столько бабла ради карманов?
+  name: Водолазка оперативника АнКо
+  parent: SuitAnCo
+  id: TurtleneckPocketAnCo
+  components:
+  - type: Sprite
+    sprite:  _Horizon/_Fractions/AnCo/Clothing/Uniforms/turtleneckpocket.rsi
+  - type: Clothing
+    sprite:  _Horizon/_Fractions/AnCo/Clothing/Uniforms/turtleneckpocket.rsi
+
+- type: entity
+  suffix: StarHorizon, AnCo
+  description: Вы обменяли рукава на карманы, какая гениальность
+  name: Водолазка без рукавов АнКо
+  parent: SuitAnCo
+  id: TurtleneckLessPocketAnCo
+  components:
+  - type: Sprite
+    sprite:  _Horizon/_Fractions/AnCo/Clothing/Uniforms/turtlenecklesspocket.rsi
+  - type: Clothing
+    sprite:  _Horizon/_Fractions/AnCo/Clothing/Uniforms/turtlenecklesspocket.rsi
+

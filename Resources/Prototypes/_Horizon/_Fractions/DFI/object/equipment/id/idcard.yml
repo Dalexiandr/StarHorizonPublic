@@ -1,0 +1,176 @@
+- type: entity
+  parent: IDCardStandard
+  id: DFIAgentID
+  suffix: DFI
+  name: DFI agent ID card
+  description: An ID card for DFI agents.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/DFI/id_card_dfi.rsi
+    layers:
+    - state: default
+  - type: Clothing
+    slots:
+    - idcard
+    sprite: _Horizon/_Fractions/DFI/id_card_dfi.rsi
+  - type: Item
+    size: Small
+    sprite: _Horizon/_Fractions/DFI/id_card_dfi.rsi
+  - type: IdCard
+    jobTitle: Агент DFI
+    jobIcon: JobIconAgentDFI
+  - type: Access
+    tags:
+    - DFI
+    - DFI-Cadet
+    - DFI-Officer
+    - DFI-IU
+    - DFI-CAU
+    - DFI-TRC
+    - DFI-ShiftManager
+    - DFI-Evidence
+    - DFI-Observation
+    - DFI-Armory
+    - DFI-APS
+    - External
+    - Maintenance
+
+- type: entity
+  parent: DFIAgentID
+  id: DFICadetID
+  suffix: DFI
+  name:
+  description: An ID card for DFI agents.
+  components:
+  - type: IdCard
+    jobTitle: Кадет DFI
+    jobIcon: JobIconCadetDFI
+  - type: Access
+    tags:
+    - DFI
+    - DFI-Cadet
+    - External
+    - Maintenance
+
+- type: entity
+  parent: DFIAgentID
+  id: DFICriminologistID
+  suffix: DFI
+  name:
+  description: An ID card for DFI agents.
+  components:
+  - type: IdCard
+    jobTitle: Криминалист DFI
+    jobIcon: JobIconCriminologistDFI
+  - type: Access
+    tags:
+    - DFI
+    - DFI-IU
+    - DFI-APS
+    - External
+    - Maintenance
+
+- type: entity
+  parent: DFIAgentID
+  id: DFIDetectiveID
+  suffix: DFI
+  name:
+  description: An ID card for DFI agents.
+  components:
+  - type: IdCard
+    jobTitle: Детектив DFI
+    jobIcon: JobIconDetectiveDFI
+  - type: Access
+    tags:
+    - DFI
+    - DFI-IU
+    - DFI-Officer
+    - External
+    - Maintenance
+
+- type: entity
+  parent: DFIAgentID
+  id: DFIDetectiveSergeantID
+  suffix: DFI
+  name:
+  description: An ID card for DFI agents.
+  components:
+  - type: IdCard
+    jobTitle: Детектив-сержант DFI
+    jobIcon: JobIconDetectiveSergeantDFI
+  - type: Access
+    tags:
+    - DFI
+    - DFI-IU
+    - DFI-Officer
+    - DFI-Observation
+    - DFI-APS
+    - External
+    - Maintenance
+
+- type: entity
+  parent: DFIAgentID
+  id: DFIEngineerID
+  suffix: DFI
+  name:
+  description: An ID card for DFI agents.
+  components:
+  - type: IdCard
+    jobTitle: Инженер DFI
+    jobIcon: JobIconEngineerDFI
+  - type: Access
+    tags:
+    - DFI
+    - DFI-APS
+    - External
+    - Maintenance
+
+- type: entity
+  parent: DFIAgentID
+  id: DFIMedicID
+  suffix: DFI
+  name:
+  description: An ID card for DFI agents.
+  components:
+  - type: IdCard
+    jobTitle: Медик DFI
+    jobIcon: JobIconMedicDFI
+  - type: Access
+    tags:
+    - DFI
+    - DFI-APS
+    - External
+    - Maintenance
+
+- type: entity
+  parent: DFIAgentID
+  id: DFIOfficerID
+  suffix: DFI
+  name:
+  description: An ID card for DFI agents.
+  components:
+  - type: IdCard
+    jobTitle: Кадет DFI
+    jobIcon: JobIconOfficerDFI
+  - type: Access
+    tags:
+    - DFI
+    - DFI-Officer
+    - External
+    - Maintenance
+
+- type: entity
+  parent: DFIAgentID
+  id: DFISSEmployeeID
+  suffix: DFI
+  name:
+  description: An ID card for DFI agents.
+  components:
+  - type: IdCard
+    jobTitle: Кадет DFI
+    jobIcon: JobIconSSEmployeeDFI
+  - type: Access
+    tags:
+    - DFI
+    - External
+    - Maintenance

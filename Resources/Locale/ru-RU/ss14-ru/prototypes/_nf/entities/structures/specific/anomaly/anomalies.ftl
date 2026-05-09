@@ -1,0 +1,6 @@
+ent-AnomalyRockPlasma = { ent-AnomalyRockBase }
+    .suffix = Камень, Плазма
+    .desc = { ent-AnomalyRockBase.desc }
+ent-AnomalyRockSalt = { ent-AnomalyRockBase }
+    .suffix = Камень, Соль
+    .desc = { ent-AnomalyRockBase.desc }

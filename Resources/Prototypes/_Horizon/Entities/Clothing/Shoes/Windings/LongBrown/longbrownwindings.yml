@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingShoesLongBrownWindings
+  name: Длинные коричнивые обмотки
+  description: Плотные куски ткани для тех, кто не привык к обычный обуви.
+  components:
+  - type: Sprite
+    sprite: Clothing/Shoes/Misc/longbrownwindings.rsi
+  - type: Clothing
+    sprite: Clothing/Shoes/Misc/longbrownwindings.rsi

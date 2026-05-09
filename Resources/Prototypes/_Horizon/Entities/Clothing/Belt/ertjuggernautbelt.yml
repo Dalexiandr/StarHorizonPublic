@@ -1,0 +1,33 @@
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: ERTJuggernautBeltMercWebbing
+  name: РПС ОБР джаггернаута
+  description: РПС, предназначенная для использования в военных целях. В комплекте идут трубки, подключающиеся напрямую к носителю, отчего снять снаряжение без хирургического вмешательства становится невозможно. Очень объёмный.
+  suffix: StarHorizon, неснимаемый
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Belt/ertjuggernautbeltmercwebbing.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Belt/ertjuggernautbeltmercwebbing.rsi
+  - type: Storage
+    grid:
+    - 0,0,7,7
+    maxItemSize: Huge
+  - type: Item
+    size: Huge
+  - type: StorageFill
+    contents:
+      - id: ERTJuggernautBox
+      - id: ExGrenade
+      - id: ExGrenade
+      - id: ExGrenade
+      - id: ExGrenade
+      - id: ExGrenade
+      - id: JawsOfLife
+      - id: PowerDrill
+      - id: WelderExperimental
+      - id: Multitool
+      - id: TelescopicShield
+      - id: HoloprojectorSecurity
+      - id: HolofanProjector
+  - type: Unremoveable

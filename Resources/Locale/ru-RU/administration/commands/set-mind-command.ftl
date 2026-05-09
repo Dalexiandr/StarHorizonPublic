@@ -1,0 +1,9 @@
+cmd-setmind-desc = Transfers a mind to the specified entity. The entity must have a { $requiredComponent }. By default this will force minds that are currently visiting other entities to return (i.e., return a ghost to their main body).
+cmd-setmind-help = Usage: { $command } <entityUid> <username> [unvisit]
+cmd-setmind-command-target-has-no-content-data-message = Target player does not have content data (wtf?)
+cmd-setmind-command-target-has-no-mind-message = Target entity does not have a mind (did you forget to make sentient?)
+set-mind-command-description = Перемещает сознание в указанную сущность. Сущность должна иметь { $requiredComponent }.
+set-mind-command-help-text = Использование: { $command } <entityUid> <username>
+set-mind-command-target-has-no-content-data-message = Целевой игрок не имеет данных о содержимом (wtf?)
+set-mind-command-target-has-no-mind-message = Целевая сущность не обладает разумом (Вы забыли сделать ее разумной?)
+cmd-mind-command-hint = CKey

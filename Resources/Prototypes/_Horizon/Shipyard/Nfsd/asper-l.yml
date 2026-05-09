@@ -1,0 +1,54 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: helloohelloo
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: AsperL
+  parent: BaseVessel
+  name: NRZN Asper L
+  description: Малый добывающй шаттл для пилотирования командой до двух человек, используется для добычи и переработки ресурсов.
+  price: 13700 # 12367, наценка верфи 10% = 13604
+  access: Security
+  mapchecker_group_override: Security
+  category: Micro
+  group: Custom
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/Nfsd/asper-l.yml
+  class:
+  - Salvage
+  engine:
+  - APU
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:FactionCostModifier
+      faction: "FactionNFSD"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: AsperL
+  mapName: 'NRZN Asper L'
+  mapPath: /Uploaded/Ophiophagus/Nfsd/asper-l.yml
+  minPlayers: 0
+  stations:
+    AsperL:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Asper L {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

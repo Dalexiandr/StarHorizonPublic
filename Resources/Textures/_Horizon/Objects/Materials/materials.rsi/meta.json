@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "license": "CLA",
+  "copyright": "by Malanisa",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "emerald"
+    },
+    {
+      "name": "emerald_2"
+    },
+    {
+      "name": "emerald_3"
+    },
+    {
+      "name": "emerald-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "emerald-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "ruby"
+    },
+    {
+      "name": "ruby_2"
+    },
+    {
+      "name": "ruby_3"
+    },
+    {
+      "name": "ruby-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "ruby-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "sapphire"
+    },
+    {
+      "name": "sapphire_2"
+    },
+    {
+      "name": "sapphire_3"
+    },
+    {
+      "name": "sapphire-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "sapphire-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "topaz"
+    },
+    {
+      "name": "topaz_2"
+    },
+    {
+      "name": "topaz_3"
+    },
+    {
+      "name": "topaz-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "topaz-inhand-right",
+      "directions": 4
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+ent-ClothingNeckCloakAnCo = плащ АнКо
+    .desc = Плащ с логотипом корпорации на спине. Слава АнКо!
+    .suffix = StarHorizon, AnCo
+ent-AnCoGloryMedal = Медаль АнКо
+    .desc = Медаль, выдаваемая только за крупные заслуги перед корпорацией AnCo
+    .suffix = StarHorizon, AnCo
+ent-AnCoGloryMedalMiliGalax = Медаль МилиГалакс
+    .desc = Выдается лишь лучшим воинам, которые одержали победу даже над самой смертью
+    .suffix = StarHorizon, AnCo
+ent-AnCoGloryMedalSubea = Медаль Subea
+    .desc = Выдается лишь лучшим ученым в медицинской сфере или лучшим медикам сотворившим чудо
+    .suffix = StarHorizon, AnCo
+ent-AnCoGloryMedalStarDust = Медаль StarDust
+    .desc = Выдается за астрономическую оптимизацию логистики или за открытия в сфере Ардония
+    .suffix = StarHorizon, AnCo

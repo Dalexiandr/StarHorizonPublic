@@ -1,0 +1,25 @@
+- files: ["fishing_rod_cast.ogg"]
+  license: "CC-BY-NC-SA-4.0"
+  copyright: "Taken from Goon at commit 0c11a46275f493f295d6d05d1aa5fad1d935efb4"
+  source: "https://github.com/goonstation/goonstation/blob/master/sound/items/fishing_rod_cast.ogg"
+
+- files: ["fishing_rod_reel.ogg"]
+  license: "CC-BY-NC-SA-4.0"
+  copyright: "Taken from Goon at commit 0c11a46275f493f295d6d05d1aa5fad1d935efb4"
+  source: "https://github.com/goonstation/goonstation/blob/master/sound/items/fishing_rod_cast.ogg"
+
+- files: ["footsteps.ogg"]
+  license: "CC-BY-3.0"
+  copyright: "Created by https://vsezvuki.com/"
+  source: "https://vsezvuki.com/"
+
+- files: ["growling.ogg"]
+  license: "CC-BY-3.0"
+  copyright: "Created by https://vsezvuki.com/"
+  source: "https://vsezvuki.com/"
+
+- files: ["hit.ogg"]
+  license: "CC-BY-3.0"
+  copyright: "https://vsezvuki.com/"
+  source: "https://vsezvuki.co.m/"
+

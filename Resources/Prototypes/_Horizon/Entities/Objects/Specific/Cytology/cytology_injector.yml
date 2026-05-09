@@ -1,0 +1,27 @@
+- type: entity
+  id: CytologyInjector
+  name: injector
+  parent: BaseItem
+  description: The injector to collect cells
+  components:
+  - type: Item
+    size: Tiny
+  - type: CytologyInjector
+    TakeDelay: 5.0
+  - type: CytologySampleContainer
+    maxSamples: 5
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Cytology/injector.rsi
+    layers:
+    - state: icon
+    - state: indicator
+      shader: unshaded
+      map: ["enum.CytologyInjectorVisualLayers.Indicator"]
+      visible: false
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.CytologyInjectorVisualStates.HasSamples:
+        enum.CytologyInjectorVisualLayers.Indicator:
+          True: {visible: true}
+          False: {visible: false}

@@ -1,0 +1,128 @@
+- type: entity
+  id: CrateBaseAnCo
+  parent: [CrateGeneric, BaseAnCoContraband]
+  name: аварийное хранилище АнКо
+  description: ящик для хранения продукции аварийного фабрикатора.
+  suffix: StarHorizon, AnCo, Structure
+  components:
+  - type: ResistLocker
+  - type: Transform
+    noRot: true
+    anchored: True
+  - type: Sprite
+    noRot: true
+    sprite: _Horizon/_Fractions/AnCo/Structures/Storage/Closets/crate.rsi
+    layers:
+    - state: ancocrate
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: ancocrate_door
+      map: ["enum.StorageVisualLayers.Door"]
+  - type: MovedByPressure
+  - type: PlaceableSurface
+    placeCentered: true
+    isPlaceable: false
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+        - !type:SpawnEntitiesBehavior
+            spawn:
+              KazmieSheet1:
+                min: 1
+                max: 5
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: ancocrate
+    stateDoorOpen: ancocrate_open
+    stateDoorClosed: ancocrate_door
+  - type: StaticPrice
+    price: 75
+
+
+
+- type: entity
+  id: CrateBaseAnCoPetal
+  parent: CrateBaseAnCo
+  suffix: StarHorizon, AnCo, Structure, Petal
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterHardsuitPetal
+        amount: 1
+      - id: JetpackAnCoFilled
+        amount: 1
+
+- type: entity
+  id: CrateBaseAnCoDusk
+  parent: CrateBaseAnCo
+  suffix: StarHorizon, AnCo, Structure, Dusk
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterHardsuitDusk
+        amount: 1
+      - id: GasTankAnCo
+        amount: 1
+
+- type: entity
+  id: CrateBaseAnCoGranite
+  parent: CrateBaseAnCo
+  suffix: StarHorizon, AnCo, Structure, Granite
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterHardsuitGranite
+        amount: 1
+      - id: GasTankAnCo
+        amount: 1
+
+- type: entity
+  id: CrateBaseAnCoHumanities
+  parent: CrateBaseAnCo
+  suffix: StarHorizon, AnCo, Structure, Humanities
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: ReliableContainerAnConanits
+        amount: 1
+      - id: BoxRationAnCo
+        amount: 1
+      - id: CombatMedipenAnCo
+        amount: 2
+
+- type: entity
+  id: CrateBaseAnCoPistol
+  parent: CrateBaseAnCo
+  suffix: StarHorizon, AnCo, Structure, Pistol
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponPistolAnCo
+        amount: 1
+
+- type: entity
+  id: CrateBaseAnCoAmmo35
+  parent: CrateBaseAnCo
+  suffix: StarHorizon, AnCo, Structure, Ammo35
+  category: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazinePistol35
+        amount: 2
+

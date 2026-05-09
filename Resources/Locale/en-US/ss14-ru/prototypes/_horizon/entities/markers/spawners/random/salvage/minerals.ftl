@@ -1,0 +1,9 @@
+ent-NFChromiteMineralSoftFar = chromite mineral spawner
+    .suffix = Soft
+    .desc = { ent-MarkerBase.desc }
+ent-NFChromiteMineralHardFar = { ent-NFChromiteMineralSoft }
+    .suffix = Hard
+    .desc = { ent-NFChromiteMineralSoft.desc }
+ent-NFChromiteMineralHardRichFar = { ent-NFChromiteMineralSoft }
+    .suffix = Hard, Rich
+    .desc = { ent-NFChromiteMineralSoft.desc }

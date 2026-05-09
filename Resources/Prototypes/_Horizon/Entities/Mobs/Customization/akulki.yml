@@ -1,0 +1,170 @@
+- type: marking
+  id: AkulkiTailSmoothPrime
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Akulki]
+  sprites:
+  - sprite: _StarHorizon/Mobs/Species/Akulki/Markings.rsi
+    state: tail_smooth_primary
+
+- type: marking
+  id: AkulkiTailSmooth
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Akulki]
+  sprites:
+  - sprite: _StarHorizon/Mobs/Species/Akulki/Markings.rsi
+    state: tail_smooth
+
+- type: marking
+  id: AkulkiTailSpikes
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Akulki]
+  sprites:
+  - sprite: _StarHorizon/Mobs/Species/Akulki/Markings.rsi
+    state: tail_spikes
+
+- type: marking
+  id: AkulkiTailSpikesAnimated
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Akulki]
+  sprites:
+  - sprite: _StarHorizon/Mobs/Species/Akulki/Markings.rsi
+    state: tail_spikes_wagging
+
+- type: marking
+  id: AkulkiTailSmoothAnimated
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Akulki]
+  sprites:
+  - sprite: _StarHorizon/Mobs/Species/Akulki/Markings.rsi
+    state: tail_smooth_wagging
+
+- type: marking
+  id: AkulkiEars
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Akulki]
+  sprites:
+  - sprite: _StarHorizon/Mobs/Species/Akulki/Markings.rsi
+    state: ears
+
+- type: marking
+  id: AkulkiEarsLong
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Akulki]
+  sprites:
+  - sprite: _StarHorizon/Mobs/Species/Akulki/Markings.rsi
+    state: ears_long
+
+- type: marking
+  id: AkulkiEarsLow
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Akulki]
+  sprites:
+  - sprite: _StarHorizon/Mobs/Species/Akulki/Markings.rsi
+    state: ears_low
+
+- type: marking
+  id: AkulkiEarsTop
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Akulki]
+  sprites:
+  - sprite: _StarHorizon/Mobs/Species/Akulki/Markings.rsi
+    state: ears_top
+
+- type: marking
+  id: AkulkiBodyTigerFat
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Akulki]
+  sprites:
+  - sprite: _StarHorizon/Mobs/Species/Akulki/Markings.rsi
+    state: body_tiger_fat
+
+- type: marking
+  id: AkulkiFrillsaquatic
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Akulki]
+  sprites:
+  - sprite: _StarHorizon/Mobs/Species/Akulki/Markings.rsi
+    state: frills_aquatic
+
+- type: marking
+  id: AkulkiFrillsAxolotl
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Akulki]
+  sprites:
+  - sprite: _StarHorizon/Mobs/Species/Akulki/Markings.rsi
+    state: frills_axolotl
+
+- type: marking
+  id: AkulkiFrillsBig
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Akulki]
+  sprites:
+  - sprite: _StarHorizon/Mobs/Species/Akulki/Markings.rsi
+    state: frills_big
+
+- type: marking
+  id: AkulkiFrillsGills
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Akulki]
+  sprites:
+  - sprite: _StarHorizon/Mobs/Species/Akulki/Markings.rsi
+    state: frills_gills
+
+- type: marking
+  id: AkulkiFrillsNeckfull
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Akulki]
+  sprites:
+  - sprite: _StarHorizon/Mobs/Species/Akulki/Markings.rsi
+    state: frills_neckfull
+
+- type: marking
+  id: AkulkiFrillsSharp
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Akulki]
+  sprites:
+  - sprite: _StarHorizon/Mobs/Species/Akulki/Markings.rsi
+    state: frills_sharp
+
+- type: marking
+  id: AkulkiFrillsShort
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Akulki]
+  sprites:
+  - sprite: _StarHorizon/Mobs/Species/Akulki/Markings.rsi
+    state: frills_short
+
+- type: marking
+  id: AkulkiFrillsSimple
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Akulki]
+  sprites:
+  - sprite: _StarHorizon/Mobs/Species/Akulki/Markings.rsi
+    state: frills_simple
+
+- type: marking
+  id: AkulkiFrillsWide
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Akulki]
+  sprites:
+  - sprite: _StarHorizon/Mobs/Species/Akulki/Markings.rsi
+    state: frills_wide

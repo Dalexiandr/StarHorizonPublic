@@ -1,0 +1,25 @@
+﻿- type: entity
+  id: DrumsetInstrument
+  parent: BasePlaceableInstrument
+  name: ударная установка
+  description: Набор из барабанов и тарелок для настоящих стукачей.
+  components:
+  - type: Instrument
+    allowPercussion: true
+    program: 128
+  - type: Sprite
+    drawdepth: OverMobs
+    sprite: _Horizon/Objects/Fun/Instruments/structureinstruments.rsi
+    state: drumset
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.30
+        density: 180
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+

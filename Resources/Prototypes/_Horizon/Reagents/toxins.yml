@@ -1,0 +1,212 @@
+﻿- type: reagent
+  id: XenoidAcidW
+  name: reagent-name-xenoidw-acid
+  group: Toxins
+  desc: reagent-desc-xenoidw-acid
+  physicalDesc: reagent-physical-desc-strong-smelling
+  flavor: acid
+  color: "#15e61c"
+  boilingPoint: 165
+  meltingPoint: -87
+  reactiveEffects:
+    Acidic:
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: false
+        damage:
+          types:
+            Caustic: 0.3
+      - !type:Emote
+        emote: Scream
+        probability: 0.2
+  metabolisms:
+    Poison:
+      metabolismRate: 3.00 # High damage, high metabolism rate. You need a lot of units to crit. Simulates acid burning through you fast.
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Caustic: 8
+      - !type:PopupMessage
+        type: Local
+        visualType: Large
+        messages: [ "generic-reagent-effect-burning-insides" ]
+        probability: 0.33
+      - !type:Emote
+        emote: Scream
+        probability: 0.25
+  pricePerUnit: 4
+
+- type: reagent
+  id: XenoidAcidH
+  name: reagent-name-xenoidh-acid
+  group: Toxins
+  desc: reagent-desc-xenoidh-acid
+  physicalDesc: reagent-physical-desc-strong-smelling
+  flavor: acid
+  color: "#15e61c"
+  boilingPoint: 165
+  meltingPoint: -87
+  reactiveEffects:
+    Acidic:
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: false
+        damage:
+          types:
+            Caustic: 0.3
+      - !type:Emote
+        emote: Scream
+        probability: 0.2
+  metabolisms:
+    Poison:
+      metabolismRate: 3.00 # High damage, high metabolism rate. You need a lot of units to crit. Simulates acid burning through you fast.
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Caustic: 8
+      - !type:PopupMessage
+        type: Local
+        visualType: Large
+        messages: [ "generic-reagent-effect-burning-insides" ]
+        probability: 0.33
+      - !type:Emote
+        emote: Scream
+        probability: 0.25
+  pricePerUnit: 4
+
+- type: reagent
+  id: XenoidAcidK
+  name: reagent-name-xenoidk-acid
+  group: Toxins
+  desc: reagent-desc-xenoidk-acid
+  physicalDesc: reagent-physical-desc-strong-smelling
+  flavor: acid
+  color: "#15e61c"
+  boilingPoint: 165
+  meltingPoint: -87
+  reactiveEffects:
+    Acidic:
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: false
+        damage:
+          types:
+            Caustic: 0.3
+      - !type:Emote
+        emote: Scream
+        probability: 0.2
+  metabolisms:
+    Poison:
+      metabolismRate: 3.00 # High damage, high metabolism rate. You need a lot of units to crit. Simulates acid burning through you fast.
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Caustic: 8
+      - !type:PopupMessage
+        type: Local
+        visualType: Large
+        messages: [ "generic-reagent-effect-burning-insides" ]
+        probability: 0.33
+      - !type:Emote
+        emote: Scream
+        probability: 0.25
+  pricePerUnit: 4
+
+- type: reagent
+  id: ExtractW
+  name: reagent-name-extractw
+  group: Toxins
+  desc: reagent-desc-extractw
+  physicalDesc: reagent-physical-desc-strong-smelling
+  flavor: acid
+  color: "#f6fa00"
+  boilingPoint: 165
+  meltingPoint: -87
+  metabolisms:
+    Medicine:
+      metabolismRate : 0.2
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Airloss: -3
+            Brute: -1
+            Burn: -1
+            Toxin: -1
+    Poison:
+      metabolismRate: 0.2
+      effects:
+      - !type:HealthChange
+          damage:
+            types:
+              Cellular: 0.01
+  pricePerUnit: 5
+
+- type: reagent
+  id: ExtractH
+  name: reagent-name-extracth
+  group: Toxins
+  desc: reagent-desc-extracth
+  physicalDesc: reagent-physical-desc-strong-smelling
+  flavor: acid
+  color: "#f6fa00"
+  boilingPoint: 165
+  meltingPoint: -87
+  metabolisms:
+    Medicine:
+      metabolismRate : 0.2
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Airloss: -3
+            Brute: -2
+            Burn: -2
+            Toxin: -2
+    Poison:
+      metabolismRate: 0.2
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Cellular: 0.02
+  pricePerUnit: 7
+
+- type: reagent
+  id: ExtractK
+  name: reagent-name-extractk
+  group: Toxins
+  desc: reagent-desc-extractk
+  physicalDesc: reagent-physical-desc-strong-smelling
+  flavor: acid
+  color: "#f6fa00"
+  boilingPoint: 165
+  meltingPoint: -87
+  metabolisms:
+    Medicine:
+      metabolismRate : 0.2
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Airloss: -5
+            Brute: -3
+            Burn: -3
+            Toxin: -3
+    Poison:
+      metabolismRate: 0.2
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Cellular: 0.03
+  pricePerUnit: 9

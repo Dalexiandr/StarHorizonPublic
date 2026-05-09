@@ -1,0 +1,91 @@
+<Document>
+  # ШАТТЛ ЭКСПЕДИЦИИ КЛАССА PATHFINDER
+  <Box>
+    <GuideEntityEmbed Entity="ClothingMaskGasExplorer"/>
+    <GuideEntityEmbed Entity="WeaponProtoKineticAccelerator"/>
+    <GuideEntityEmbed Entity="IngotSilver"/>
+    <GuideEntityEmbed Entity="MobRandomCargoCorpse"/>
+  </Box>
+  <Box>
+    <GuideEntityEmbed Entity="ShuttleMapPathfinder" Caption=""/>
+  </Box>
+  [color=#a4885c]Размер корабля:[/color] Средний
+
+  [color=#a4885c]Рекомендуемый экипаж:[/color] 2-4
+
+  [color=#a4885c]Тип генератора энергии:[/color] ДАМ
+
+  [color=#a4885c]Экспедиции:[/color] Да
+
+  [color=#a4885c]Консоль IFF:[/color] Отсутствует
+
+  "Когда-то шаттл, использовавшийся в составе Экспедиционных Сил NanoTrasen, теперь этот выведенный из эксплуатации корабль с возможностями для экспедиций может стать вашим!"
+
+  # КОНТРОЛЬНЫЙ СПИСОК ПЕРЕД ВЫЛЕТОМ
+
+  ## 1. Источник питания
+
+  ### 1.1. Аккумуляторные модули
+  <Box>
+    <GuideEntityEmbed Entity="SMESBasic"/>
+    <GuideEntityEmbed Entity="SubstationWallBasic"/>
+    <GuideEntityEmbed Entity="APCBasic"/>
+  </Box>
+
+  - Убедитесь, что блок SMES закреплен на полу.
+  - Убедитесь, что блок подстанции закреплен на полу.
+  - Убедитесь, что главный автоматический выключатель блока ЛКП включен.
+  - Проверьте текущее потребление нагрузки* блока ЛКП (Вт).
+
+  ### 1.2. Генератор ДАМ
+  <Box>
+    <GuideEntityEmbed Entity="AmeController"/>
+    <GuideEntityEmbed Entity="AmeJar"/>
+  </Box>
+
+  - Убедитесь, что ядро ДАМ должным образом экранировано.
+  - Убедитесь, что блок управления ДАМ закреплен на полу.
+  - Проверьте статус топлива в блоке управления ДАМ.
+  - Проверьте количество впрыска в блоке управления ДАМ.
+  - Переключите впрыск.
+
+ ## 2. Атмосферные системы
+
+  ### 2.1. Цикл распределения
+  <Box>
+    <GuideEntityEmbed Entity="OxygenCanister"/>
+    <GuideEntityEmbed Entity="NitrogenCanister"/>
+    <GuideEntityEmbed Entity="GasPort"/>
+    <GuideEntityEmbed Entity="GasMixer"/>
+    <GuideEntityEmbed Entity="GasPressurePump"/>
+  </Box>
+
+  - Убедитесь, что баллон с кислородом закреплен на порт подключения.
+  - Убедитесь, что баллон с азотом закреплен на порт подключения.
+  - Убедитесь, что газовый смеситель настроен на правильное соотношение (21% кислорода, 79% азота).
+  - Убедитесь, что газовый смеситель настроен на 101 кПа.
+  - Включите газовый смеситель.
+
+  ### 2.2. Цикл отходов
+  <Box>
+    <GuideEntityEmbed Entity="GasPressurePump"/>
+  </Box>
+
+  - Включите насос в цикле отходов (находится в грузовом отсеке).
+
+  ## 3. Другие проверки
+  <Box>
+    <GuideEntityEmbed Entity="Gyroscope"/>
+    <GuideEntityEmbed Entity="GravityGeneratorMini"/>
+    <GuideEntityEmbed Entity="BlastDoor"/>
+  </Box>
+
+  - Убедитесь, что гироскоп закреплен, работает и включен.
+  - Убедитесь, что мини-гравитационный генератор закреплен, работает и включен.
+  - Убедитесь, что защитные двери закрыты.
+
+  ## Примечания
+
+  * - Шаттлы класса Pathfinder оснащены двумя блоками ЛКП, которые могут быть использованы для оценки общего потребления энергии кораблем. Не модифицированный корабль класса Brigand требует 16,8 кВт для поддержания работоспособности.
+
+</Document>

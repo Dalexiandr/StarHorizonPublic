@@ -1,0 +1,34 @@
+# Рецепты плат торговых фабрикаторов
+
+- type: latheRecipe
+  id: TradeFabricatorCircuitboardRecipe
+  result: TradeFabricatorCircuitboard
+  completetime: 4
+  materials:
+    Steel: 800
+    Glass: 900
+
+- type: latheRecipe
+  id: TradeFabricatorMilitaryCircuitboardRecipe
+  result: TradeFabricatorMilitaryCircuitboard
+  completetime: 4
+  materials:
+    Steel: 800
+    Glass: 900
+    Gold: 200
+
+- type: latheRecipe
+  id: TradeFabricatorIndustrialCircuitboardRecipe
+  result: TradeFabricatorIndustrialCircuitboard
+  completetime: 4
+  materials:
+    Steel: 1000
+    Glass: 900
+
+- type: latheRecipe
+  id: TradeFabricatorFoodCircuitboardRecipe
+  result: TradeFabricatorFoodCircuitboard
+  completetime: 4
+  materials:
+    Steel: 800
+    Glass: 700

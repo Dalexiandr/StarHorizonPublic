@@ -1,0 +1,143 @@
+- type: entity
+  parent: BaseItem
+  id: LumaPlushina
+  name: плюшевый советник
+  suffix: StarHorizon, AnCo
+  description: Плюшевый Советник АнКо, но кто они такие?
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Fun/plushene.rsi
+    state: Luma
+  - type: EmitSoundOnActivate
+    sound:
+      collection: ToySqueak
+  - type: EmitSoundOnUse
+    sound:
+      collection: ToySqueak
+  - type: UseDelay
+    delay: 2
+  - type: EmitSoundOnLand
+    sound:
+      collection: ToySqueak
+  - type: StaticPrice
+    price: 5000
+
+- type: entity
+  parent: BaseItem
+  id: RipsiPlushin
+  name: плюшевый Рипсоид
+  suffix: StarHorizon, AnCo
+  description: Плюшевый Рипсоид, машина смерти в виде игрушки
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Fun/plushene.rsi
+    state: ripsi
+  - type: EmitSoundOnActivate
+    sound:
+      collection: ToySqueak
+  - type: EmitSoundOnUse
+    sound:
+      collection: ToySqueak
+  - type: UseDelay
+    delay: 2
+  - type: EmitSoundOnLand
+    sound:
+      collection: ToySqueak
+  - type: StaticPrice
+    price: 5000
+
+- type: entity
+  parent: BaseItem
+  id: TitanPlushin
+  name: плюшевый Титан
+  suffix: StarHorizon, AnCo
+  description: Он только с виду такой страшный, но в душе он мягкий и теплый
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Fun/plushene.rsi
+    state: titan
+  - type: EmitSoundOnActivate
+    sound:
+      collection: ToySqueak
+  - type: EmitSoundOnUse
+    sound:
+      collection: ToySqueak
+  - type: UseDelay
+    delay: 2
+  - type: EmitSoundOnLand
+    sound:
+      collection: ToySqueak
+  - type: StaticPrice
+    price: 5000
+
+- type: entity
+  parent: BaseItem
+  id: KnightPlushin
+  name: плюшевый Рыцарь
+  suffix: StarHorizon, AnCo
+  description: Рыцарь как из легенд, только без щита и меча
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Fun/plushene.rsi
+    state: knight
+  - type: EmitSoundOnActivate
+    sound:
+      collection: ToySqueak
+  - type: EmitSoundOnUse
+    sound:
+      collection: ToySqueak
+  - type: UseDelay
+    delay: 2
+  - type: EmitSoundOnLand
+    sound:
+      collection: ToySqueak
+  - type: StaticPrice
+    price: 5000
+
+- type: entity
+  parent: BaseItem
+  id: CyclopPlushin
+  name: плюшевый Циклоп
+  suffix: StarHorizon, AnCo
+  description: Огромная грозная машина теперь маленькая и мягкая
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Fun/plushene.rsi
+    state: cyclop
+  - type: EmitSoundOnActivate
+    sound:
+      collection: ToySqueak
+  - type: EmitSoundOnUse
+    sound:
+      collection: ToySqueak
+  - type: UseDelay
+    delay: 2
+  - type: EmitSoundOnLand
+    sound:
+      collection: ToySqueak
+  - type: StaticPrice
+    price: 5000
+
+- type: entity
+  parent: BaseItem
+  id: EngiPlushin
+  name: плюшевый инженер
+  suffix: StarHorizon, AnCo
+  description: Плюшевый инженер сделал огромный вклад в корпорацию и теперь он.. Плюшевый
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Fun/plushene.rsi
+    state: engineer
+  - type: EmitSoundOnActivate
+    sound:
+      collection: ToySqueak
+  - type: EmitSoundOnUse
+    sound:
+      collection: ToySqueak
+  - type: UseDelay
+    delay: 2
+  - type: EmitSoundOnLand
+    sound:
+      collection: ToySqueak
+  - type: StaticPrice
+    price: 5000

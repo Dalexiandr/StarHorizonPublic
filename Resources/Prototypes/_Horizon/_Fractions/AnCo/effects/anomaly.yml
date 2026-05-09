@@ -1,0 +1,66 @@
+- type: entity
+  id: AnCoAnomaly
+  parent: BaseAnomaly
+  suffix: StarHorizon, AnCo, Anomaly
+  name: аномалия
+  description: От аномалии исходит отчётливый скрежет металла...
+  components:
+  - type: Anomaly
+    corePrototype: AnCoAnomalyCircuitboard
+    coreInertPrototype: AnCoAnomalyCircuitboard
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Specific/Anomaly/anomaly.rsi
+    layers:
+    - state: anom
+      map: ["enum.AnomalyVisualLayers.Base"]
+    - state: pulse
+      map: ["enum.AnomalyVisualLayers.Animated"]
+  - type: DamageOnInteract
+    damage:
+      types:
+        Heat: 10
+    popupText: anomaly-component-contact-damage
+  - type: DamageOnAttacked
+    damage:
+      types:
+        Heat: 10
+  - type: EntitySpawnAnomaly
+    entries:
+    - settings:
+        spawnOnPulse: true
+        minAmount: 5
+        maxAmount: 15
+        minRange: 3
+        maxRange: 5
+      spawns:
+      - AnCoRock
+      - AnCoEFSCrystal
+    - settings:
+        spawnOnPulse: true
+        spawnOnStabilityChanged: true
+        minAmount: 1
+        maxAmount: 1
+        minRange: 0
+        maxRange: 3
+      spawns:
+      - AnCoCrab
+    - settings:
+        spawnOnSuperCritical: true
+        minAmount: 30
+        maxAmount: 40
+        minRange: 10
+        maxRange: 15
+      spawns:
+      - AnCoRock
+      - AnCoEFSCrystal
+    - settings:
+        spawnOnSuperCritical: true
+        minAmount: 7
+        maxAmount: 15
+        minRange: 10
+        maxRange: 30
+      spawns:
+      - AnCoCrab
+
+
+

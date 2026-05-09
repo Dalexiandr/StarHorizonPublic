@@ -1,0 +1,127 @@
+# 1
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonLocateImplantPlace
+  name: Locate implant place
+  components:
+  - type: SurgeryStep
+    duration: 10
+  - type: Sprite
+# 2
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonPreparePlace
+  name: Prepare a place for the implant
+  components:
+  - type: SurgeryStep
+    duration: 3
+    tools:
+    - type: Hemostat
+  - type: Sprite
+    sprite: Objects/Specific/Medical/Surgery/scissors.rsi
+    state: hemostat
+# 3 HorizonStopBloodloss
+
+# 4 Insert the implant!
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonInsertIzolationImplant
+  name: Insert implant
+  components:
+  - type: SurgeryStep
+    duration: 12
+    tools:
+    - type: HandImplant
+  - type: SurgeryStepOrganInsert
+    slot: hands_implant
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/implants.rsi
+    state: implant
+
+# 4 Also five but extract!
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonExtractIzolationImplant
+  name: Extract implant
+  components:
+  - type: SurgeryStep
+    duration: 12
+  - type: SurgeryStepOrganExtract
+    organ:
+    - type: HandImplant
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/implants.rsi
+    state: implant
+
+# 5 Done operation
+- type: entity
+  parent: SurgeryStepBase
+  id: HorizonConnectImplantToNerves
+  name: Connect implant to nerves
+  components:
+  - type: SurgeryStep
+    duration: 2
+    tools:
+    - type: Hemostat
+  - type: Sprite
+    sprite: Objects/Specific/Medical/Surgery/scissors.rsi
+    state: hemostat
+
+#Operation Insert
+- type: entity
+  parent: SurgeryBase
+  id: SurgeryInsertIzolationImplant
+  name: Insert a izolation implant
+  description: Surgical attachment of a implant.
+  components:
+  - type: Surgery
+    requirement:
+    - SurgeryOpenAbdomen
+    steps:
+    - HorizonLocateImplantPlace
+    - HorizonPreparePlace
+    - HorizonStopBloodloss
+    - HorizonInsertIzolationImplant
+    - HorizonConnectImplantToNerves
+  - type: SurgerySpeciesCondition
+    speciesBlacklist:
+    - SlimePerson # Не любим слаймолюдов
+  - type: SurgeryPartCondition
+    parts:
+    - Hand
+  - type: SurgeryOrganDontExistCondition # Не даём, вытащить, того чего нет
+    organ:
+    - type: HandImplant
+    container: hands_implant
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/implants.rsi
+    state: implant
+
+#Operation Extract
+- type: entity
+  parent: SurgeryBase
+  id: SurgeryExstractIzolationImplant
+  name: Extract a izolation implant
+  description: Surgical attachment of a implant.
+  components:
+  - type: Surgery
+    requirement:
+    - SurgeryOpenAbdomen
+    steps:
+    - HorizonLocateImplantPlace
+    - HorizonPreparePlace
+    - HorizonStopBloodloss
+    - HorizonExtractIzolationImplant
+  - type: SurgerySpeciesCondition
+    speciesBlacklist:
+    - SlimePerson  # Всё ещё не любим слаймолюдов
+  - type: SurgeryPartCondition
+    parts:
+    - Hand
+  - type: SurgeryOrganExistCondition # Не даём, вытащить, того чего нет
+    organ:
+    - type: HandImplant
+    container: hands_implant
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/implants.rsi
+    state: implant

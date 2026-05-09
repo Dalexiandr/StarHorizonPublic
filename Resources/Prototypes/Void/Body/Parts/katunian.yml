@@ -1,0 +1,109 @@
+- type: entity
+  id: PartKatunian
+  parent: [ BaseItem, BasePart ]
+  name: часть тела катунианца
+  abstract: true
+  components:
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 3
+      - ReagentId: Blood
+        Quantity: 10
+  - type: Sprite
+    netsync: false
+    sprite: _Void/Mobs/Species/Katunian/parts.rsi
+
+- type: entity
+  id: TorsoKatunian
+  name: торс катунианца
+  parent: [ PartKatunian, BaseTorso ]
+  components:
+  - type: Sprite
+    state: "torso_m"
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 10
+      - ReagentId: Blood
+        Quantity: 20
+
+- type: entity
+  id: HeadKatunian
+  name: голова катунианца
+  parent: [ PartKatunian, BaseHead ]
+  components:
+  - type: Sprite
+    state: "head_m"
+
+- type: entity
+  id: LeftArmKatunian
+  name: левая рука катунианцев
+  parent: [ PartKatunian, BaseLeftArm ]
+  components:
+  - type: Sprite
+    state: "l_arm"
+
+- type: entity
+  id: RightArmKatunian
+  name: правая рука катунианца
+  parent: [ PartKatunian, BaseRightArm ]
+  components:
+  - type: Sprite
+    state: "r_arm"
+
+- type: entity
+  id: LeftHandKatunian
+  name: левая кисть катунианца
+  parent: [ PartKatunian, BaseLeftHand ]
+  components:
+  - type: Sprite
+    state: "l_hand"
+
+- type: entity
+  id: RightHandKatunian
+  name: правая кисть катунианца
+  parent: [ PartKatunian, BaseRightHand ]
+  components:
+  - type: Sprite
+    state: "r_hand"
+
+- type: entity
+  id: LeftLegKatunian
+  name: левая нога катунианца
+  parent: [ PartKatunian, BaseLeftLeg ]
+  components:
+  - type: Sprite
+    state: "l_leg"
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.7
+    baseSprintSpeed: 4.5
+
+- type: entity
+  id: RightLegKatunian
+  name: правая нога катунианца
+  parent: [ PartKatunian, BaseRightLeg ]
+  components:
+  - type: Sprite
+    state: "r_leg"
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.7
+    baseSprintSpeed: 4.5
+
+- type: entity
+  id: LeftFootKatunian
+  name: левая ступня катунианца
+  parent: [ PartKatunian, BaseLeftFoot ]
+  components:
+  - type: Sprite
+    state: "l_foot"
+
+- type: entity
+  id: RightFootKatunian
+  name: правая ступня катунианца
+  parent: [ PartKatunian, BaseRightFoot ]
+  components:
+  - type: Sprite
+    state: "r_foot"

@@ -1,0 +1,30 @@
+<cartridges:CompanionUiFragment xmlns:cartridges="clr-namespace:Content.Client._Horizon._Fractions.AnCo.CartridgeLoader.Cartridges"
+                                xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                                xmlns="https://spacestation14.io" Margin="1 0 2 0">
+    <PanelContainer StyleClasses="BackgroundDark"></PanelContainer>
+    <!-- Главный контейнер со всем контентом -->
+    <BoxContainer Orientation="Vertical" HorizontalExpand="True" VerticalExpand="True">
+
+        <Label Text="Компаньон: Бла-Бла-Бла" />
+        <Label Text="Заряд батареи: 100%" />
+        <Label Text="Мозг: Отсутствует" />
+        <Label Text="Модули: 1 шт." />
+
+        <BoxContainer Orientation="Horizontal" HorizontalExpand="True" VerticalExpand="True" >
+
+            <ScrollContainer HorizontalExpand="True" VerticalExpand="True" >
+                <BoxContainer Orientation="Vertical">
+                    <Button Text="Борг1" />
+                </BoxContainer>
+            </ScrollContainer>
+
+            <BoxContainer Orientation="Vertical" HorizontalExpand="True" VerticalExpand="True">
+                <Button HorizontalAlignment="Center" Name="DeleteCompanion" Text="Отвязать" />
+                <Button HorizontalAlignment="Center" Name="ShutdownCompanion" Text="Отключить" />
+                <Button HorizontalAlignment="Center" Name="CommandCompanion" Text="Команды" />
+            </BoxContainer>
+        </BoxContainer>
+
+    </BoxContainer>
+    <!-- Конец всего контента -->
+</cartridges:CompanionUiFragment>

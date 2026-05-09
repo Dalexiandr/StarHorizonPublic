@@ -1,0 +1,60 @@
+# Инженерная
+- type: expeditionGoal
+  id: BountyRadio
+  specification: Engineer
+  randomAmount:
+    min: 5
+    max: 7
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-radio
+    iconEntity: ClothingHeadsetGrey
+    reward: 6500
+    requiredTag: Radio
+
+- type: expeditionGoal
+  id: BountyBattery
+  specification: Engineer
+  randomAmount:
+    min: 10
+    max: 15
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-battery
+    iconEntity: PowerCellSmall
+    reward: 15000
+    requiredTag: PowerCell
+
+- type: expeditionGoal
+  id: BountyTechDisk
+  specification: Engineer
+  randomAmount:
+    min: 5
+    max: 8
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-tech-disk
+    iconEntity: TechnologyDisk
+    reward: 25000
+    requiredTag: TechDisk
+
+- type: expeditionGoal
+  id: BountyBorgModule
+  specification: Engineer
+  randomAmount:
+    min: 3
+    max: 5
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-borg-module
+    iconEntity: BorgModuleTool
+    reward: 3500
+    requiredTag: BorgModule
+
+- type: expeditionGoal
+  id: BountyMicrowaveMachineBoard
+  specification: Engineer
+  randomAmount:
+    min: 1
+    max: 2
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-microwave-machine-board
+    iconEntity: MicrowaveMachineCircuitboard
+    reward: 4000
+    requiredTag: MicrowaveMachineBoard

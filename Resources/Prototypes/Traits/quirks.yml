@@ -1,0 +1,29 @@
+# If you add a new trait, make sure to add the corresponding component to the whitelist in \Resources\Prototypes\Entities\Mobs\Player\clone.yml so it gets copied to clones correctly!
+
+- type: trait
+  id: Pacifist
+  name: trait-pacifist-name
+  description: trait-pacifist-desc
+  category: HorizonNegative # Horizon tweak
+  group: TraitCombat # Horizon tweak
+  cost: -6 # Horizon tweak
+  components:
+  - type: Pacified
+
+- type: trait
+  id: LightweightDrunk
+  name: trait-lightweight-name
+  description: trait-lightweight-desc
+  category: HorizonNegative # Horizon tweak
+  cost: -1 # Horizon tweak
+  components:
+  - type: LightweightDrunk
+    boozeStrengthMultiplier: 2
+
+- type: trait
+  id: Snoring
+  name: trait-snoring-name
+  description: trait-snoring-desc
+  category: HorizonNeutral # Horizon tweak
+  components:
+  - type: Snoring

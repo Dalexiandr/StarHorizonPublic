@@ -1,0 +1,262 @@
+#region BASE
+- type: entity
+  parent: BaseItem
+  id: PirateBasicGiftBox
+  name: Набор пирата
+  description: Лутбоксы? Здесь?
+  abstract: true
+  categories: [ HideSpawnMenu ]
+  suffix: NPC Loot
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Storage/Pouches/pouch.rsi
+    state: pirate-icon
+  - type: Item
+    size: Normal
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+    sprite: _NF/Objects/Storage/Pouches/pouch.rsi
+  - type: SpawnItemsOnUse
+    items:
+      - id: SpaceCash10
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+- type: entity
+  parent: PirateBasicGiftBox
+  id: PirateEliteGiftBox
+  name: Набор элитного пирата
+  description: Лутбоксы? Здесь?
+  abstract: true
+  categories: [ HideSpawnMenu ]
+  suffix: NPC Loot
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Storage/Pouches/pouch.rsi
+    state: pirate-captain-icon
+  - type: Item
+    size: Normal
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+    sprite: _NF/Objects/Storage/Pouches/pouch.rsi
+  - type: SpawnItemsOnUse
+    items:
+      - id: SpaceCash10
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+#region Captain
+- type: entity
+  parent: PirateBasicGiftBox
+  id: ClothingPocketPirateMatrosLootA
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Storage/Pouches/pouch.rsi
+    state: pirate-icon
+  - type: Item
+  - type: Clothing
+    sprite: _NF/Objects/Storage/Pouches/pouch.rsi
+  - type: SpawnItemsOnUse
+    items:
+      - id: NFWeaponRevolverPirate
+      - id: NFCartridgePistol45
+        amount: 4
+      - id: SpaceCash500
+      - id: TreasureCoinSilver
+      # Bonus Loot T3
+      - id: SpaceCash500
+        prob: 0.8
+      - id: SpaceCash500
+        prob: 0.8
+      - id: SpawnDungeonLootMaterialsBasicFull
+        prob: 0.7
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+- type: entity
+  parent: PirateBasicGiftBox
+  id: ClothingPocketPirateMatrosLootB
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Storage/Pouches/pouch.rsi
+    state: pirate-icon
+  - type: Item
+  - type: Clothing
+    sprite: _NF/Objects/Storage/Pouches/pouch.rsi
+  - type: SpawnItemsOnUse
+    items:
+      - id: SpaceCash500
+      - id: TreasureCoinSilver
+      - id: CombatKnife
+      # Bonus Loot T3
+      - id: SpaceCash500
+        prob: 0.8
+      - id: SpaceCash500
+        prob: 0.8
+      - id: SpawnDungeonLootMaterialsBasicFull
+        prob: 0.7
+      - id:
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+- type: entity
+  parent: PirateBasicGiftBox
+  id: ClothingPocketPirateAbordajLootA
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Storage/Pouches/pouch.rsi
+    state: pirate-icon
+  - type: Item
+  - type: Clothing
+    sprite: _NF/Objects/Storage/Pouches/pouch.rsi
+  - type: SpawnItemsOnUse
+    items:
+      - id: SpaceCash1000
+      - id: TreasureCoinSilver
+      # Bonus Loot T3
+      - id: SpaceCash1000
+        prob: 0.9
+      - id: SpawnDungeonLootMaterialsBasicFull
+        prob: 0.7
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+- type: entity
+  parent: PirateBasicGiftBox
+  id: ClothingPocketPirateEVALootA
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Storage/Pouches/pouch.rsi
+    state: pirate-icon
+  - type: Item
+  - type: Clothing
+    sprite: _NF/Objects/Storage/Pouches/pouch.rsi
+  - type: SpawnItemsOnUse
+    items:
+      - id: SpaceCash500
+      - id: TreasureCoinSilver
+      # Bonus Loot T3
+      - id: SpaceCash1000
+        prob: 0.8
+      - id: SpaceCash500
+        prob: 0.8
+      - id: SpawnDungeonLootMaterialsBasicFull
+        prob: 0.7
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+- type: entity
+  parent: PirateEliteGiftBox
+  id: ClothingPocketPirateQuartermasterLootA
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Storage/Pouches/pouch.rsi
+    state: pirate-captain-icon
+  - type: Item
+  - type: Clothing
+    sprite: _NF/Objects/Storage/Pouches/pouch.rsi
+  - type: SpawnItemsOnUse
+    items:
+      - id: BoxFolderClipboard
+      - id: NFCannonBall
+        amount: 2
+      - id: NFWeaponLauncherPirateCannon
+      - id: SpaceCash2500
+      - id: TreasureCoinGold
+        amount: 3
+      # Bonus Loot T3
+      - id: SpaceCash1000
+        amount: 2
+        prob: 0.8
+      - id: SpaceCash500
+        prob: 0.8
+      - id: SpawnDungeonLootMaterialsBasicFull
+        prob: 0.7
+      - id: SpawnDungeonLootMaterialsValuableFull
+        prob: 0.7
+      - id: SpawnDungeonLootPartsEngi
+        amount: 2
+        prob: 0.7
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+- type: entity
+  parent: PirateEliteGiftBox
+  id: ClothingPocketPirateBotsmanLootA
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Storage/Pouches/pouch.rsi
+    state: pirate-captain-icon
+  - type: Item
+  - type: Clothing
+    sprite: _NF/Objects/Storage/Pouches/pouch.rsi
+  - type: SpawnItemsOnUse
+    items:
+      - id: SpaceCash2500
+      - id: TreasureCoinGold
+        amount: 3
+      # Bonus Loot T3
+      - id: SpaceCash1000
+        amount: 2
+        prob: 0.8
+      - id: SpaceCash500
+        prob: 0.8
+      - id: SpawnDungeonLootMaterialsBasicFull
+        prob: 0.7
+      - id: SpawnDungeonLootMaterialsValuableFull
+        prob: 0.7
+      - id: SpawnDungeonLootPartsEngi
+        amount: 2
+        prob: 0.7
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+- type: entity
+  parent: PirateEliteGiftBox
+  id: ClothingPocketPirateCaptainLootA
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Storage/Pouches/pouch.rsi
+    state: pirate-captain-icon
+  - type: Item
+  - type: Clothing
+    sprite: _NF/Objects/Storage/Pouches/pouch.rsi
+  - type: SpawnItemsOnUse
+    items:
+      - id: SpaceCash5000
+      - id: TreasureCoinDiamond3
+        amount: 1
+      - id: TreasureCoinGold3
+        amount: 2
+      - id: TreasureCoinSilver3
+        amount: 2
+      - id: NFWeaponEnergyPistolLaserX01Multiphase
+      # Bonus Loot T3
+      - id: SpaceCash2500
+        prob: 0.8
+      - id: SpaceCash2500
+        prob: 0.8
+      - id: SpawnDungeonLootMaterialsBasicFull
+        prob: 0.7
+      - id: SpawnDungeonLootMaterialsValuableFull
+        prob: 0.7
+      - id: SpawnDungeonLootPartsEngi
+        amount: 2
+        prob: 0.7
+      - id: SpawnDungeonLootFlatpacks
+        prob: 0.5
+      - id: SpawnDungeonLootToolsAdvancedEngineering
+        prob: 0.4
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg

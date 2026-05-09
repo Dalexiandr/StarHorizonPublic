@@ -1,0 +1,17 @@
+spooky-speaker-generic-1 = ...ooOoooOOoooo...
+spooky-speaker-generic-2 = ...меня кто-нибудь слышит...?
+spooky-speaker-generic-3 = ...присоединяйся к нам...
+spooky-speaker-generic-4 = ...поиграй с нами...
+spooky-speaker-generic-5 = ПРОКЛЯТЬЕ 220!!!
+spooky-speaker-generic-6 = Кхкххккххх
+spooky-speaker-generic-7 = Кфсщщфффххсссс
+spooky-speaker-generic-8 = ...
+spooky-speaker-generic-9 = ...п-п-привет...?
+spooky-speaker-generic-10 = Бззз
+spooky-speaker-generic-11 = Вех
+spooky-speaker-generic-12 = ТРОГАЙТЕ, СМЕРТНЫЕ!
+spooky-speaker-generic-13 = 4444444444
+spooky-speaker-generic-14 = ...Я найду тебя...
+spooky-speaker-recycler-1 = Я ГОЛОДЕН
+spooky-speaker-recycler-2 = БОЛЬШЕ! ДАЙТЕ МНЕ БОЛЬШЕ!
+spooky-speaker-recycler-3 = ПОКОРМИ МЕНЯ

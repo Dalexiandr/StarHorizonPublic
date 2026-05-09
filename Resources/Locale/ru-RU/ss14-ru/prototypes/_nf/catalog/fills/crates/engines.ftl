@@ -1,0 +1,14 @@
+ent-CrateEngineeringSmallThruster = ящик с малым двигателем
+    .desc = { ent-CrateEngineering.desc }
+ent-CrateEngineeringSmallGyroscope = ящик с малым гироскопом
+    .desc = { ent-CrateEngineering.desc }
+ent-CrateEngineeringEmitterBulk = ящик с эммитерами
+    .desc = Набор из восьми эммитеров для сдерживания сингулярности или теслы.
+ent-CrateEngineeringTeslaCoilBulk = ящик с катушками Теслы
+    .desc = Набор из шести катушек Теслы. Притягивает молнии и генерирует из них энергию.
+ent-CrateEngineeringSingularityCollectorBulk = ящик с коллекторами радиаций
+    .desc = Набор из шести коллекторов радиаций, лучше всего подходящих для двигателей на сингулярности. Плазма включена.
+ent-CrateEngineeringSingularityContainmentBulk = ящик с генераторами поля сдерживания
+    .desc = Набор из восьми генераторов поля сдерживания, помогающих удерживать сингулярность или теслу.
+ent-CrateEngineeringTeslaGroundingRodBulk = ящик с заземляющими стержнями для теслы
+    .desc = Набор из четырёх заземляющих стержней, лучше всего подходящих для защиты от молний.

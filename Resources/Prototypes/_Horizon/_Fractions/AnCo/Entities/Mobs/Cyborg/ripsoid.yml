@@ -1,0 +1,253 @@
+- type: entity
+  parent: AnCoPlayerSiliconBase
+  id: BaseRipsoidAnCo
+  name: Рипсоид
+  suffix: StarHorizon
+  description: Гибрид машины и человека, созданный во имя прогресса
+  components:
+  - type: SpeechBarks
+    data:
+      proto: SiliconClassic
+      sound: /Audio/Voice/Talk/Silicon/borg.ogg
+      maxVar: 0.3
+      minVar: 0.3
+      pitch: 0.7
+  - type: MeleeWeapon
+    attackRate: 1
+    damage:
+      types:
+        Slash: 14
+  - type: Sprite
+    noRot: true
+    drawdepth: Mobs
+    sprite: _Horizon/_Fractions/AnCo/Mobs/Species/Ripsoid/parts.rsi
+    layers:
+    - state: full
+      map: ["enum.DamageStateVisualLayers.Base"]
+    - state: full-unshaded
+      shader: unshaded
+    - map: ["enum.HumanoidVisualLayers.Handcuffs"]
+      color: "#ffffff"
+      sprite: Objects/Misc/handcuffs.rsi
+      state: body-overlay-2
+      visible: false
+  - type: IntrinsicRadioReceiver
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Binary
+    - AnCoRadio
+  - type: ActiveRadio
+    channels:
+    - Binary
+    - AnCoRadio
+  - type: Repairable
+    doAfterDelay: 20
+  - type: Body
+    prototype: IPC
+  - type: CombatMode
+  - type: StatusEffects
+    allowed:
+    - Stun
+    - KnockedDown
+    - SlowedDown
+    - Flashed
+  - type: Speech
+    speechVerb: Robotic
+    speechSounds: Borg
+  - type: Vocal
+    sounds:
+      Unsexed: UnisexSilicon
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: FireResStrongMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+          spawn:
+            KazmieSheet:
+              min: 1
+              max: 10
+            ArdonSheet:
+              min: 1
+              max: 5
+  - type: Inventory
+    templateId: RipsoidTemplate
+  - type: MobState
+    allowedStates:
+    - Alive
+    - Dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      200: Dead
+    stateAlertDict:
+      Alive: BorgHealth
+      Dead: BorgDead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: full
+      Dead:
+        Base: full
+  - type: NoSlip
+  - type: ProtectedFromStepTriggers
+# КПБ
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+    fitsInCharger: true
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        locked: true
+        name: power-cell-slot-component-slot-name-default
+        startingItem: AnCoEnergyCore
+        whitelist:
+          tags:
+            - PowerAnCo
+  - type: BatterySlotRequiresLock
+    itemSlot: cell_slot
+  - type: EncryptionHolderRequiresLock
+  - type: SiliconEmitSoundOnDrained
+    sound: "/Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg"
+    minInterval: 15
+    maxInterval: 30
+    popUp: "silicon-power-low"
+  - type: Lock
+    locked: true
+    lockOnClick: false
+    unlockOnClick: false
+    lockTime: 5
+    unlockTime: 5
+  - type: NpcFactionMember
+    factions:
+      - NanoTrasen
+#  - type: MobThresholds
+#    thresholds:
+#      0: Alive
+#      114.999: Critical
+#      125: Dead
+#    stateAlertDict:
+#      Alive: BorgHealth
+#      Critical: BorgCrit
+#      Dead: BorgDead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      30: 0.90
+      60: 0.75
+      90: 0.5
+      120: 0.3
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3.4
+    baseSprintSpeed: 3.4
+  - type: SiliconDownOnDead
+  - type: Silicon
+    entityType: enum.SiliconType.Player
+    batteryPowered: true
+    drainPerSecond: 0.5
+    chargeThresholdMid: 0.80
+    chargeThresholdLow: 0.35
+    chargeThresholdCritical: 0.10
+    speedModifierThresholds:
+      4: 1
+      3: 1
+      2: 0.80
+      1: 0.45
+      0: 0.10
+  - type: BatteryDrinker
+  - type: EncryptionKeyHolder
+    keySlots: 4
+    examineWhileLocked: false
+    keysExtractionMethod: Cutting
+    keysUnlocked: false
+  - type: DeadStartupButton
+    sound:
+      path: /Audio/Effects/Silicon/startup.ogg
+  - type: EmitBuzzWhileDamaged
+  - type: StatusIcon
+    bounds: -0.5,-0.5,0.5,0.5
+  - type: UnpoweredFlashlight
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepBorg
+  - type: Tag
+    tags:
+    - CanPilot
+    - FootstepSound
+    - DoorBumpOpener
+    - SiliconEmotes
+  - type: Stamina
+    critThreshold: 200
+
+- type: inventoryTemplate
+  id: RipsoidTemplate
+  slots:
+    - name: head
+      slotTexture: head
+      slotFlags: HEAD
+      uiWindowPos: 1,3
+      strippingWindowPos: 1,0
+      displayName: Head
+    - name: pocket1
+      slotTexture: pocket
+      fullTextureName: template_small
+      slotFlags: POCKET
+      slotGroup: MainHotbar
+      stripTime: 3
+      uiWindowPos: 0,3
+      strippingWindowPos: 0,4
+      displayName: Pocket 1
+      stripHidden: true
+    - name: pocket2
+      slotTexture: pocket
+      fullTextureName: template_small
+      slotFlags: POCKET
+      slotGroup: MainHotbar
+      stripTime: 3
+      uiWindowPos: 2,3
+      strippingWindowPos: 1,4
+      displayName: Pocket 2
+      stripHidden: true
+    - name: suitstorage
+      slotTexture: suit_storage
+      slotFlags:   SUITSTORAGE
+      slotGroup: MainHotbar
+      stripTime: 3
+      uiWindowPos: 2,0
+      strippingWindowPos: 2,5
+      displayName: Suit Storage
+    - name: id
+      slotTexture: id
+      fullTextureName: template_small
+      slotFlags: IDCARD
+      slotGroup: SecondHotbar
+      stripTime: 6
+      uiWindowPos: 2,1
+      strippingWindowPos: 2,4
+      displayName: ID
+    - name: belt
+      slotTexture: belt
+      fullTextureName: template_small
+      slotFlags: BELT
+      slotGroup: SecondHotbar
+      stripTime: 6
+      uiWindowPos: 3,1
+      strippingWindowPos: 1,5
+      displayName: Belt
+    - name: back
+      slotTexture: back
+      fullTextureName: template_small
+      slotFlags: BACK
+      slotGroup: SecondHotbar
+      stripTime: 6
+      uiWindowPos: 3,0
+      strippingWindowPos: 0,5
+      displayName: Back

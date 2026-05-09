@@ -1,0 +1,16 @@
+ent-MachineShieldLightCircuitboard = light shield circuit board
+    .desc = A machine board for a CIR-C1A Shield Emitter.
+ent-MachineShieldMediumCircuitboard = medium shield circuit board
+    .desc = A machine board for a CIR-C2B Shield Emitter.
+ent-MachineShieldLargeCircuitboard = large shield circuit board
+    .desc = A machine board for a CIR-C3C Shield Emitter.
+ent-MachineGCSLowCircuitboard = low-power gunnery control server board
+    .desc = A machine board for a GCS.
+ent-MachineGCSMediumCircuitboard = medium-power gunnery control server board
+    .desc = A machine board for a GCS.
+ent-MachineGCSHighCircuitboard = high-power gunnery control server board
+    .desc = A machine board for a GCS.
+ent-MachineGCSUltraCircuitboard = ultra-high-power gunnery control server board
+    .desc = A machine board for a GCS.
+ent-MachineGCSStationCircuitboard = station gunnery control server board
+    .desc = A machine board for a GCS.

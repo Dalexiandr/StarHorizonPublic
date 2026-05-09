@@ -1,0 +1,73 @@
+- type: entity
+  parent: FaxMachineBase
+  id: AnCoFaxMachineShip
+  description: Напугай случайного человека, давай, сделай это!
+  name: факс дальнего действия АнКо
+  suffix: StarHorizon, Structure, AnCo
+  components:
+  - type: FaxMachine
+    useStationName: true
+  - type: PowerSwitch
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Machines/fax_machine.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          KazmieSheet1:
+            min: 1
+            max: 3
+          ArdonSheet1:
+            min: 0
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: FaxMachineBase
+  id: AnCoFaxMachineZone
+  description: Напугай случайного человека, давай, сделай это!
+  name: факс дальнего действия оператора зоны АнКо
+  suffix: StarHorizon, Structure, AnCo, Zone
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Machines/fax_machine.rsi
+  - type: FaxMachine
+    name: "Оператор Зоны|АнКо"
+    notifyAdmins: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          KazmieSheet1:
+            min: 1
+            max: 3
+          ArdonSheet1:
+            min: 0
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: AnCoFaxMachineZone
+  id: AnCoFaxMachineZonePing
+  name: факс дальнего действия оператора зоны АнКо
+  suffix: StarHorizon, AnCo, Structure, Zone, Ping
+  components:
+  - type: FaxMachine
+    name: "Оператор Зоны|АнКо"
+    notifyAdmins: true

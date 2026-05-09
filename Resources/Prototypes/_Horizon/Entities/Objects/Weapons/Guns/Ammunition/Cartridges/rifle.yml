@@ -1,0 +1,63 @@
+# region .20 rifle
+
+- type: entity
+  id: NFCartridgeRifle20Piercing
+  name: cartridge (.20 rifle, piercing)
+  parent: NFBaseCartridgeRifle20
+  components:
+  - type: CartridgeAmmo
+    proto: NFBulletRifle20Piercing
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#ededed"
+
+- type: entity
+  id: NFCartridgeRifle20Psycore
+  name: cartridge (.20 rifle, psycore)
+  parent: NFBaseCartridgeRifle20
+  components:
+  - type: CartridgeAmmo
+    proto: NFBulletRifle20Psycore
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#8a1a7b"
+
+# region .30 rifle
+
+- type: entity
+  id: NFCartridgeRifle30Piercing
+  name: cartridge (.30 rifle, piercing)
+  parent: NFBaseCartridgeRifle30
+  components:
+  - type: CartridgeAmmo
+    proto: NFBulletRifle30Piercing
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#ededed"
+
+- type: entity
+  id: NFCartridgeRifle30Psycore
+  name: cartridge (.30 rifle, psycore)
+  parent: NFBaseCartridgeRifle30
+  components:
+  - type: CartridgeAmmo
+    proto: NFBulletRifle30Psycore
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#8a1a7b"

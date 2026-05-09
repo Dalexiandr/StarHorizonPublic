@@ -1,0 +1,26 @@
+- type: constructionGraph
+  id: GaslockConstruction
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: building
+          steps:
+            - !type:MaterialConstructionGraphStep
+              material: Steel
+              amount: 10 
+              doAfter: 5
+    
+    - node: building
+      entity: Gaslock
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 5
+            - !type:DeleteEntity {}
+          steps:
+            - !type:ToolConstructionGraphStep
+              tool: Screwing
+              doAfter: 5

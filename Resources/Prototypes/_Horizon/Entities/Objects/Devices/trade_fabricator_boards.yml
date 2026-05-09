@@ -1,0 +1,195 @@
+# Платы торговых фабрикаторов
+
+# Базовый торговый фабрикатор
+- type: entity
+  id: TradeFabricatorCircuitboard
+  parent: BaseMachineCircuitboard
+  name: плата торгового фабрикатора
+  description: Печатная плата для торгового фабрикатора.
+  components:
+  - type: Sprite
+    state: supply
+  - type: MachineBoard
+    prototype: TradeFabricator
+    requirements:
+      MatterBin: 2
+      Manipulator: 2
+    materialRequirements:
+      Steel: 5
+
+# Инженерный торговый фабрикатор
+- type: entity
+  id: TradeFabricatorEngineerCircuitboard
+  parent: BaseMachineCircuitboard
+  name: плата инженерного торгового фабрикатора
+  description: Печатная плата для инженерного торгового фабрикатора.
+  components:
+  - type: Sprite
+    state: engineering
+  - type: MachineBoard
+    prototype: TradeFabricatorEngineer
+    requirements:
+      MatterBin: 2
+      Manipulator: 2
+    materialRequirements:
+      Steel: 5
+
+# Медицинский торговый фабрикатор
+- type: entity
+  id: TradeFabricatorMedicalCircuitboard
+  parent: BaseMachineCircuitboard
+  name: плата медицинского торгового фабрикатора
+  description: Печатная плата для медицинского торгового фабрикатора.
+  components:
+  - type: Sprite
+    state: medical
+  - type: MachineBoard
+    prototype: TradeFabricatorMedical
+    requirements:
+      MatterBin: 2
+      Manipulator: 2
+    materialRequirements:
+      Steel: 5
+      Glass: 2
+
+# Научный торговый фабрикатор
+- type: entity
+  id: TradeFabricatorScienceCircuitboard
+  parent: BaseMachineCircuitboard
+  name: плата научного торгового фабрикатора
+  description: Печатная плата для научного торгового фабрикатора.
+  components:
+  - type: Sprite
+    state: science
+  - type: MachineBoard
+    prototype: TradeFabricatorScience
+    requirements:
+      MatterBin: 2
+      Manipulator: 2
+    materialRequirements:
+      Steel: 5
+      Gold: 1
+
+# Сервисный торговый фабрикатор
+- type: entity
+  id: TradeFabricatorServiceCircuitboard
+  parent: BaseMachineCircuitboard
+  name: плата сервисного торгового фабрикатора
+  description: Печатная плата для сервисного торгового фабрикатора.
+  components:
+  - type: Sprite
+    state: service
+  - type: MachineBoard
+    prototype: TradeFabricatorService
+    requirements:
+      MatterBin: 2
+      Manipulator: 1
+    materialRequirements:
+      Steel: 5
+
+# Универсальный торговый фабрикатор
+- type: entity
+  id: TradeFabricatorGeneralCircuitboard
+  parent: BaseMachineCircuitboard
+  name: плата универсального торгового фабрикатора
+  description: Печатная плата для универсального торгового фабрикатора.
+  components:
+  - type: Sprite
+    state: supply
+  - type: MachineBoard
+    prototype: TradeFabricatorGeneral
+    requirements:
+      MatterBin: 2
+      Manipulator: 1
+    materialRequirements:
+      Steel: 5
+
+# Военный торговый фабрикатор
+- type: entity
+  id: TradeFabricatorMilitaryCircuitboard
+  parent: BaseMachineCircuitboard
+  name: плата военного торгового фабрикатора
+  description: Печатная плата для военного торгового фабрикатора.
+  components:
+  - type: Sprite
+    state: security
+  - type: MachineBoard
+    prototype: TradeFabricatorMilitary
+    requirements:
+      MatterBin: 2
+      Manipulator: 2
+    materialRequirements:
+      Steel: 5
+      Plasteel: 2
+
+# Промышленный торговый фабрикатор
+- type: entity
+  id: TradeFabricatorIndustrialCircuitboard
+  parent: BaseMachineCircuitboard
+  name: плата промышленного торгового фабрикатора
+  description: Печатная плата для промышленного торгового фабрикатора.
+  components:
+  - type: Sprite
+    state: engineering
+  - type: MachineBoard
+    prototype: TradeFabricatorIndustrial
+    requirements:
+      MatterBin: 3
+      Manipulator: 2
+    materialRequirements:
+      Steel: 5
+
+# Продовольственный торговый фабрикатор
+- type: entity
+  id: TradeFabricatorFoodCircuitboard
+  parent: BaseMachineCircuitboard
+  name: плата продовольственного фабрикатора
+  description: Печатная плата для продовольственного фабрикатора.
+  components:
+  - type: Sprite
+    state: service
+  - type: MachineBoard
+    prototype: TradeFabricatorFood
+    requirements:
+      MatterBin: 2
+      Manipulator: 1
+    materialRequirements:
+      Steel: 5
+
+# Пиратский торговый фабрикатор
+
+- type: entity
+  id: TradeFabricatorPirateCircuitboard
+  parent: BaseMachineCircuitboard
+  name: плата пиратского торгового фабрикатора
+  description: Печатная плата для пиратского торгового фабрикатора.
+  components:
+  - type: Sprite
+    state: security
+  - type: MachineBoard
+    prototype: TradeFabricatorPirate
+    requirements:
+      MatterBin: 2
+      Manipulator: 2
+    materialRequirements:
+      Steel: 5
+      Plasteel: 2
+
+# Синдикатовский торговый фабрикатор
+
+- type: entity
+  id: TradeFabricatorSyndicateCircuitboard
+  parent: BaseMachineCircuitboard
+  name: плата синдикатского торгового фабрикатора
+  description: Печатная плата для синдикатского торгового фабрикатора.
+  components:
+  - type: Sprite
+    state: security
+  - type: MachineBoard
+    prototype: TradeFabricatorSyndicate
+    requirements:
+      MatterBin: 2
+      Manipulator: 2
+    materialRequirements:
+      Steel: 5
+      Plasteel: 2

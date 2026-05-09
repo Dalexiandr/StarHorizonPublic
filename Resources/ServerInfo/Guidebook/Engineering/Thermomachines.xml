@@ -1,0 +1,73 @@
+﻿<Document>
+  # Термомашины
+  Термомашины регулируют температуру газов в [textlink="трубопроводе" link="PipeNetworks"] или открытой атмосфере.
+  <Box>
+    <GuideEntityEmbed Entity="SpaceHeater" Caption=""/>
+    <GuideEntityEmbed Entity="GasThermoMachineHeater" Caption=""/>
+    <GuideEntityEmbed Entity="GasThermoMachineFreezer" Caption=""/>
+  </Box>
+  Они необходимы для контроля температуры в различных системах.
+
+  Все термомашины используют [textlink="электричество" link="Power"] для нагрева/охлаждения.
+  Мощность нагрева/охлаждения прямо пропорциональна потребляемой энергии.
+
+  Коэффициент эффективности определяет производительность на единицу энергии.
+
+  Для предотвращения перегрева/переохлаждения термомашины снижают мощность при приближении к целевой температуре.
+  Однако они продолжают потреблять энергию даже в режиме ожидания.
+
+  Допуск температуры: [color=orange][protodata="GasThermoMachineFreezer" comp="GasThermoMachine" member="TemperatureTolerance"/] K[/color].
+
+  ## Обогреватель
+  Портативный терморегулятор для помещений.
+  Простое решение без необходимости строить трубопровод.
+
+  <Box>
+    <GuideEntityEmbed Entity="SpaceHeater"/>
+  </Box>
+
+  Обычно находятся в атмосфере, но платы можно изготовить в научном отделе.
+
+  Диапазон: от [color=orange][protodata="SpaceHeater" comp="SpaceHeater" member="MinTemperature"/] K[/color] до [color=orange][protodata="SpaceHeater" comp="SpaceHeater" member="MaxTemperature"/] K[/color].
+  Имеет три уровня мощности.
+
+  Часто запрашиваются ботаникой и наукой.
+
+  ## Термомашины трубопровода
+  Стационарные мощные устройства для трубопроводов.
+
+  <Box>
+    <GuideEntityEmbed Entity="GasThermoMachineHeater"/>
+    <GuideEntityEmbed Entity="GasThermoMachineFreezer"/>
+  </Box>
+
+  Потребляют [color=orange][protodata="GasThermoMachineFreezer" comp="GasThermoMachine" member="HeatCapacity" format="N0"/] Вт[/color].
+  Диапазон: от [color=orange][protodata="GasThermoMachineFreezer" comp="GasThermoMachine" member="MinTemperature"/] K[/color] до [color=orange][protodata="GasThermoMachineFreezer" comp="GasThermoMachine" member="MaxTemperature"/] K[/color].
+
+  Режим можно изменить, разобрав устройство и переключив плату отверткой.
+  Платы изготавливаются в научном отделе.
+
+  <Box>
+    <GuideEntityEmbed Entity="GasThermoMachineFreezer" Caption=""/>
+    <GuideEntityEmbed Entity="MachineFrame" Caption=""/>
+    <GuideEntityEmbed Entity="ThermomachineFreezerMachineCircuitBoard" Caption=""/>
+    <GuideEntityEmbed Entity="Screwdriver" Caption=""/>
+    <GuideEntityEmbed Entity="ThermomachineHeaterMachineCircuitBoard" Caption=""/>
+    <GuideEntityEmbed Entity="MachineFrame" Caption=""/>
+    <GuideEntityEmbed Entity="GasThermoMachineHeater" Caption=""/>
+  </Box>
+
+  ## Адские термомашины
+  Наука может разработать более мощные версии с повышенным энергопотреблением.
+
+  <Box>
+    <GuideEntityEmbed Entity="GasThermoMachineHellfireHeater"/>
+    <GuideEntityEmbed Entity="GasThermoMachineHellfireFreezer"/>
+  </Box>
+
+  Потребляют [color=orange][protodata="GasThermoMachineHellfireFreezer" comp="GasThermoMachine" member="HeatCapacity" format="N0"/] Вт[/color].
+  Диапазон: от [color=orange][protodata="GasThermoMachineHellfireFreezer" comp="GasThermoMachine" member="MinTemperature"/] K[/color] до [color=orange][protodata="GasThermoMachineHellfireFreezer" comp="GasThermoMachine" member="MaxTemperature"/] K[/color].
+
+  Теряют [color=orange][protodata="GasThermoMachineHellfireFreezer" comp="GasThermoMachine" member="EnergyLeakPercentage" format="P0"/][/color] энергии в окружающую среду, что может быть опасно.
+
+</Document>

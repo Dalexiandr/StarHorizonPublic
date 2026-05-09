@@ -1,0 +1,85 @@
+# Экспедиционые
+- type: expeditionGoal
+  id: BountyCarp
+  specification: Expeditionary
+  randomAmount:
+    min: 1
+    max: 1
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-carp
+    iconEntity: MobCarp
+    reward: 12500
+    requiredTag: Carp
+
+- type: expeditionGoal
+  id: BountyCubanCarp
+  specification: Expeditionary
+  randomAmount:
+    min: 1
+    max: 1
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-cuban-carp
+    iconEntity: MobCarpMagic
+    reward: 16000
+    requiredTag: CubanCarp
+
+- type: expeditionGoal
+  id: BountyTorch
+  specification: Expeditionary
+  randomAmount:
+    min: 6
+    max: 8
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-torch
+    iconEntity: Torch
+    reward: 2220
+    requiredTag: Torch
+
+- type: expeditionGoal
+  id: BountyKnife
+  specification: Expeditionary
+  randomAmount:
+    min: 4
+    max: 6
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-knife
+    iconEntity: KitchenKnife
+    reward: 6000
+    requiredTag: Knife
+
+- type: expeditionGoal
+  id: BountySpear
+  specification: Expeditionary
+  randomAmount:
+    min: 4
+    max: 6
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-spear
+    iconEntity: Spear
+    reward: 8000
+    requiredTag: Spear
+
+- type: expeditionGoal
+  id: BountyShiv
+  specification: Expeditionary
+  randomAmount:
+    min: 4
+    max: 6
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-shiv
+    iconEntity: Shiv
+    reward: 4000
+    requiredTag: Shiv
+
+- type: expeditionGoal
+  id: BountyGalaxyThistle
+  specification: Expeditionary
+  randomAmount:
+    min: 6
+    max: 12
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-galaxythistle
+    iconEntity: FoodGalaxythistle
+    reward: 12000
+    requiredTag: Galaxythistle
+

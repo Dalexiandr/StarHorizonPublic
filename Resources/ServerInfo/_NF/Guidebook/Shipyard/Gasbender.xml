@@ -1,0 +1,103 @@
+<Document>
+  # ИНЖЕНЕРНЫЙ ШАТТЛ КЛАССА GASBENDER
+  <Box>
+  <GuideEntityEmbed Entity="PowerDrill"/>
+  <GuideEntityEmbed Entity="JawsOfLife"/>
+  <GuideEntityEmbed Entity="ShipyardRCD"/>
+  <GuideEntityEmbed Entity="HolofanProjector"/>
+  </Box>
+  <Box>
+  <GuideEntityEmbed Entity="GasPressurePump"/>
+  <GuideEntityEmbed Entity="GasFilterFlipped"/>
+  <GuideEntityEmbed Entity="GasVentScrubber"/>
+  </Box>
+  <Box>
+  <GuideEntityEmbed Entity="ShuttleMapGasbender" Caption=""/>
+  </Box>
+
+  [color=#a4885c]Размер корабля:[/color] Средний
+
+  [color=#a4885c]Рекомендуемый экипаж:[/color] 3-6
+
+  [color=#a4885c]Тип генератора энергии:[/color] ДАМ
+
+  [color=#a4885c]Экспедиции:[/color] Да
+
+  [color=#a4885c]Консоль IFF:[/color] Нет
+
+  "Gasbender — это инженерное судно среднего размера, предназначенное для строительства в глубоком космосе и сбора газов на планетах. Оснащено атмосферной системой с камерой смешивания и воспламенения. Предназначено для работы в паре с меньшим кораблём утилизаторов. Производитель: Langstad-Voigt Heavy Industries."
+
+  # КОНТРОЛЬНЫЙ СПИСОК ПЕРЕД ВЫЛЕТОМ
+
+  ## 1. Энергоснабжение
+
+  ### 1.1. Батарейные блоки
+  <Box>
+  <GuideEntityEmbed Entity="SMESBasic"/>
+  <GuideEntityEmbed Entity="SubstationBasic"/>
+  <GuideEntityEmbed Entity="APCBasic"/>
+  </Box>
+
+  - Убедитесь, что блок СМЭС закреплён на полу.
+  - Убедитесь, что подстанция закреплена на полу.
+  - Убедитесь, что главный выключатель ЛКП включён.
+  - Проверьте текущую нагрузку ЛКП (Вт).
+
+  ### 1.2. Генератор ДАМ
+  <Box>
+  <GuideEntityEmbed Entity="AmeController"/>
+  <GuideEntityEmbed Entity="AmeJar"/>
+  </Box>
+
+  - Убедитесь, что ядро ДАМ должным образом экранировано.
+  - Убедитесь, что контроллер ДАМ закреплён на полу.
+  - Проверьте уровень топлива в контроллере ДАМ.
+  - Проверьте значение подачи топлива.
+  - Включите подачу топлива (Injection).
+
+  ## 2. Атмосфера
+
+  ### 2.1. Петля распределения
+  <Box>
+  <GuideEntityEmbed Entity="OxygenCanister"/>
+  <GuideEntityEmbed Entity="NitrogenCanister"/>
+  <GuideEntityEmbed Entity="GasMixer"/>
+  <GuideEntityEmbed Entity="GasPressurePump"/>
+  </Box>
+
+  - Убедитесь, что выходной насос кислорода установлен на 101 кПа.
+  - Включите выходной насос кислорода.
+  - Убедитесь, что выходной насос азота установлен на 101 кПа.
+  - Включите выходной насос азота.
+  - Убедитесь, что смеситель газов настроен на соотношение 21% кислорода, 79% азота.
+  - Убедитесь, что смеситель газов установлен на 101 кПа.
+  - Включите смеситель.
+  - Убедитесь, что насос распределения установлен на 101 кПа.
+  - Включите насос распределения.
+
+  ### 2.2. Петля отходов
+  <Box>
+  <GuideEntityEmbed Entity="GasPressurePump"/>
+  <GuideEntityEmbed Entity="AirAlarm"/>
+  </Box>
+
+  - Включите насос петли отходов.
+  - Отключите автоматический режим на воздушной сигнализации в реакторной.
+  - Переведите воздушную сигнализацию в реакторной в режим фильтрации (широкий).
+
+  ## 3. Прочие проверки
+  <Box>
+  <GuideEntityEmbed Entity="Gyroscope"/>
+  <GuideEntityEmbed Entity="GravityGeneratorMini"/>
+  <GuideEntityEmbed Entity="BlastDoor"/>
+  </Box>
+
+  - Убедитесь, что гироскоп закреплён, запитан и включён.
+  - Убедитесь, что мини-гравитационный генератор закреплён, запитан и включён.
+  - Убедитесь, что взрывозащитные двери закрыты.
+
+  ## Примечания
+
+  * — Корабли класса Gasbender оснащены пятью ЛКП, позволяющими оценить общую потребляемую мощность корабля. Немодифицированный корабль требует 40 кВт для нормальной работы.
+
+</Document>

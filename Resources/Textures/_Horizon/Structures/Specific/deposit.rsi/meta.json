@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "license": "CLA",
+  "copyright": "Sprite by Astrolaris",
+  "size": {
+    "x": 16,
+    "y": 16
+  },
+  "states": [
+    {
+      "name": "deposit1"
+    },
+    {
+      "name": "deposit2"
+    },
+    {
+      "name": "deposit3"
+    },
+    {
+      "name": "deposit4"
+    },
+    {
+      "name": "deposit5"
+    },
+    {
+      "name": "deposit6"
+    },
+    {
+      "name": "deposit7"
+    },
+    {
+      "name": "deposit8"
+    },
+    {
+      "name": "deposit9"
+    },
+    {
+      "name": "deposit10"
+    }
+  ]
+}

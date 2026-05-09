@@ -1,0 +1,1931 @@
+{
+  "version": 1,
+  "license": "CC BY-NC-ND 3.0",
+  "copyright": "Sprites by TheGypsyBaron DS:701266770429739008, xenoborg sprites, created and modified by Samuka-C (github).",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "clown",
+      "directions": 4
+    },
+    {
+      "name": "clown_e",
+      "directions": 4
+    },
+    {
+      "name": "clown_e_r",
+      "directions": 4
+    },
+    {
+      "name": "clown_l",
+      "directions": 4
+    },
+    {
+      "name": "derelict",
+      "directions": 4
+    },
+    {
+      "name": "derelict_e",
+      "directions": 4
+    },
+    {
+      "name": "derelict_e_r",
+      "directions": 4
+    },
+    {
+      "name": "derelict_icon",
+      "directions": 1
+    },
+    {
+      "name": "derelict_l",
+      "directions": 4
+    },
+    {
+      "name": "engineer",
+      "directions": 4
+    },
+    {
+      "name": "engineer_e",
+      "directions": 4
+    },
+    {
+      "name": "engineer_e_r",
+      "directions": 4
+    },
+    {
+      "name": "engineer_l",
+      "directions": 4
+    },
+    {
+      "name": "janitor",
+      "directions": 4
+    },
+    {
+      "name": "janitor_moving",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "janitor_e",
+      "directions": 4
+    },
+    {
+      "name": "janitor_e_r",
+      "directions": 4
+    },
+    {
+      "name": "janitor_l",
+      "directions": 4
+    },
+    {
+      "name": "janitorbox",
+      "directions": 4
+    },
+    {
+      "name": "janitorbox_e",
+      "directions": 4
+    },
+    {
+      "name": "janitorbox_e_r",
+      "directions": 4
+    },
+    {
+      "name": "janitorbox_l",
+      "directions": 4
+    },
+    {
+      "name": "janitorh",
+      "directions": 4
+    },
+    {
+      "name": "janitorh_e",
+      "directions": 4
+    },
+    {
+      "name": "janitorh_e_r",
+      "directions": 4
+    },
+    {
+      "name": "janitorh_l",
+      "directions": 4
+    },
+    {
+      "name": "janitorw",
+      "directions": 4
+    },
+    {
+      "name": "janitorw_e",
+      "directions": 4
+    },
+    {
+      "name": "janitorw_e_r",
+      "directions": 4
+    },
+    {
+      "name": "janitorw_l",
+      "directions": 4
+    },
+    {
+      "name": "medical",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "medical_moving",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "medical_e",
+      "directions": 4
+    },
+    {
+      "name": "medical_e_r",
+      "directions": 4
+    },
+    {
+      "name": "medical_l",
+      "directions": 4
+    },
+    {
+      "name": "miner",
+      "directions": 4
+    },
+    {
+      "name": "miner_moving",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "miner_e",
+      "directions": 4
+    },
+    {
+      "name": "miner_e_r",
+      "directions": 4
+    },
+    {
+      "name": "miner_l",
+      "directions": 4
+    },
+    {
+      "name": "robot",
+      "directions": 4
+    },
+    {
+      "name": "robot_e",
+      "directions": 4
+    },
+    {
+      "name": "robot_e_r",
+      "directions": 4
+    },
+    {
+      "name": "robot_l",
+      "directions": 4
+    },
+    {
+      "name": "peace",
+      "directions": 4
+    },
+    {
+      "name": "peace_e",
+      "directions": 4
+    },
+    {
+      "name": "peace_e_r",
+      "directions": 4
+    },
+    {
+      "name": "peace_l",
+      "directions": 4
+    },
+    {
+      "name": "service",
+      "directions": 4
+    },
+    {
+      "name": "service_e",
+      "directions": 4
+    },
+    {
+      "name": "service_e_r",
+      "directions": 4
+    },
+    {
+      "name": "service_l",
+      "directions": 4
+    },
+    {
+      "name": "synd_sec",
+      "directions": 4
+    },
+    {
+      "name": "synd_sec_e",
+      "directions": 4
+    },
+    {
+      "name": "synd_sec_l",
+      "directions": 4
+    },
+    {
+      "name": "synd_medical",
+      "directions": 4
+    },
+    {
+      "name": "synd_medical_l",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "synd_medical_e",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "synd_engi",
+      "directions": 4
+    },
+    {
+      "name": "synd_engi_e",
+      "directions": 4
+    },
+    {
+      "name": "synd_engi_l",
+      "directions": 4
+    },
+    {
+      "name": "xenoborg_heavy",
+      "directions": 4
+    },
+    {
+      "name": "xenoborg_heavy_e",
+      "directions": 4
+    },
+    {
+      "name": "xenoborg_heavy_e_r",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "xenoborg_heavy_l",
+      "directions": 4
+    },
+    {
+      "name": "xenoborg_scout",
+      "directions": 4
+    },
+    {
+      "name": "xenoborg_scout_l",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "xenoborg_scout_e",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "xenoborg_scout_e_r",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "xenoborg_engi",
+      "directions": 4
+    },
+    {
+      "name": "xenoborg_engi_e",
+      "directions": 4
+    },
+    {
+      "name": "xenoborg_engi_e_r",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "xenoborg_engi_l",
+      "directions": 4
+    },
+    {
+      "name": "xenoborg_stealth",
+      "directions": 4
+    },
+    {
+      "name": "xenoborg_stealth_e",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "xenoborg_stealth_e_r",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "xenoborg_stealth_l",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "kerfusmaid",
+      "directions": 4
+    },
+    {
+      "name": "kerfusmaid_e",
+      "directions": 4,
+      "delays": [
+        [
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "name": "kerfusmaid_e_r",
+      "directions": 4,
+      "delays": [
+        [
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "name": "kerfusmaid_l",
+      "directions": 4
+    },
+    {
+      "name": "kerfusnoerp",
+      "directions": 4
+    },
+    {
+      "name": "kerfusnoerp_e",
+      "directions": 4
+    },
+    {
+      "name": "kerfusnoerp_e_r",
+      "directions": 4
+    },
+    {
+      "name": "kerfusnoerp_l",
+      "directions": 4
+    },
+    {
+      "name": "kerfuswhite",
+      "directions": 4
+    },
+    {
+      "name": "kerfuswhite_e",
+      "directions": 4,
+      "delays": [
+        [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "name": "kerfuswhite_e_r",
+      "directions": 4,
+      "delays": [
+        [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "name": "kerfuswhite_l",
+      "directions": 4
+    },
+    {
+      "name": "kerfusyellow",
+      "directions": 4
+    },
+    {
+      "name": "kerfusyellow_e",
+      "directions": 4
+    },
+    {
+      "name": "kerfusyellow_e_r",
+      "directions": 4
+    },
+    {
+      "name": "kerfusyellow_l",
+      "directions": 4
+    },
+    {
+      "name": "sexybar",
+      "directions": 4
+    },
+    {
+      "name": "sexybar_e",
+      "directions": 4
+    },
+    {
+      "name": "sexybar_e_r",
+      "directions": 4
+    },
+    {
+      "name": "sexybar_l",
+      "directions": 4
+    },
+    {
+      "name": "pneumaj",
+      "directions": 4
+    },
+    {
+      "name": "pneumaj_e",
+      "directions": 4
+    },
+    {
+      "name": "pneumaj_e_r",
+      "directions": 4
+    },
+    {
+      "name": "pneumaj_l",
+      "directions": 4
+    },
+    {
+      "name": "pneumas",
+      "directions": 4
+    },
+    {
+      "name": "pneumas_e",
+      "directions": 4
+    },
+    {
+      "name": "pneumas_e_r",
+      "directions": 4
+    },
+    {
+      "name": "pneumas_l",
+      "directions": 4
+    },
+    {
+      "name": "spiderb",
+      "directions": 4
+    },
+    {
+      "name": "spiderb_e",
+      "directions": 4
+    },
+    {
+      "name": "spiderb_e_r",
+      "directions": 4
+    },
+    {
+      "name": "spiderb_l",
+      "directions": 4
+    },
+    {
+      "name": "spiderm",
+      "directions": 4
+    },
+    {
+      "name": "spiderm_e",
+      "directions": 4
+    },
+    {
+      "name": "spiderm_e_r",
+      "directions": 4
+    },
+    {
+      "name": "spiderm_l",
+      "directions": 4
+    },
+    {
+      "name": "spiders",
+      "directions": 4
+    },
+    {
+      "name": "spiders_e",
+      "directions": 4
+    },
+    {
+      "name": "spiders_e_r",
+      "directions": 4
+    },
+    {
+      "name": "spiders_l",
+      "directions": 4
+    },
+    {
+      "name": "spidery",
+      "directions": 4
+    },
+    {
+      "name": "spidery_e",
+      "directions": 4
+    },
+    {
+      "name": "spidery_e_r",
+      "directions": 4
+    },
+    {
+      "name": "spidery_l",
+      "directions": 4
+    },
+    {
+      "name": "medicalg",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "medicalg_l",
+      "directions": 4
+    },
+    {
+      "name": "medicals",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "medicals_l",
+      "directions": 4
+    },
+    {
+      "name": "medicalv",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ],
+        [
+          0.1,
+          0.2,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "medicalv_l",
+      "directions": 4
+    },
+    {
+      "name": "engineera",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "engineera_e",
+      "directions": 4
+    },
+    {
+      "name": "engineera_e_r",
+      "directions": 4
+    },
+    {
+      "name": "engineera_l",
+      "directions": 4
+    },
+    {
+      "name": "engineere",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "engineere_e",
+      "directions": 4
+    },
+    {
+      "name": "engineere_e_r",
+      "directions": 4
+    },
+    {
+      "name": "engineere_l",
+      "directions": 4
+    },
+    {
+      "name": "engineert",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "engineert_e",
+      "directions": 4
+    },
+    {
+      "name": "engineert_e_r",
+      "directions": 4
+    },
+    {
+      "name": "engineert_l",
+      "directions": 4
+    },
+    {
+      "name": "crawlerla_bloodhound",
+      "directions": 4
+    },
+    {
+      "name": "crawlerla_bloodhound_e",
+      "directions": 4
+    },
+    {
+      "name": "crawlerla_bloodhound_e_r",
+      "directions": 4
+    },
+    {
+      "name": "crawlerla_bloodhound_l",
+      "directions": 4
+    },
+    {
+      "name": "crawlerla_clerical",
+      "directions": 4
+    },
+    {
+      "name": "crawlerla_clerical_e",
+      "directions": 4
+    },
+    {
+      "name": "crawlerla_clerical_e_r",
+      "directions": 4
+    },
+    {
+      "name": "crawlerla_clerical_l",
+      "directions": 4
+    },
+    {
+      "name": "crawlerla_grey",
+      "directions": 4
+    },
+    {
+      "name": "crawlerla_grey_e",
+      "directions": 4
+    },
+    {
+      "name": "crawlerla_grey_e_r",
+      "directions": 4
+    },
+    {
+      "name": "crawlerla_grey_l",
+      "directions": 4
+    },
+    {
+      "name": "crawlerla_shadow",
+      "directions": 4
+    },
+    {
+      "name": "crawlerla_shadow_e",
+      "directions": 4
+    },
+    {
+      "name": "crawlerla_shadow_e_r",
+      "directions": 4
+    },
+    {
+      "name": "crawlerla_shadow_l",
+      "directions": 4
+    },
+    {
+      "name": "crawlerha_bloodhound",
+      "directions": 4
+    },
+    {
+      "name": "crawlerha_bloodhound_e",
+      "directions": 4
+    },
+    {
+      "name": "crawlerha_bloodhound_e_r",
+      "directions": 4
+    },
+    {
+      "name": "crawlerha_bloodhound_l",
+      "directions": 4
+    },
+    {
+      "name": "crawlerha_reaper",
+      "directions": 4
+    },
+    {
+      "name": "crawlerha_reaper_e",
+      "directions": 4
+    },
+    {
+      "name": "crawlerha_reaper_e_r",
+      "directions": 4
+    },
+    {
+      "name": "crawlerha_reaper_l",
+      "directions": 4
+    },
+    {
+      "name": "crawlerha_shadow",
+      "directions": 4
+    },
+    {
+      "name": "crawlerha_shadow_e",
+      "directions": 4
+    },
+    {
+      "name": "crawlerha_shadow_e_r",
+      "directions": 4
+    },
+    {
+      "name": "crawlerha_shadow_l",
+      "directions": 4
+    },
+    {
+      "name": "crawlerha_siege",
+      "directions": 4
+    },
+    {
+      "name": "crawlerha_siege_e",
+      "directions": 4
+    },
+    {
+      "name": "crawlerha_siege_e_r",
+      "directions": 4
+    },
+    {
+      "name": "crawlerha_siege_l",
+      "directions": 4
+    },
+    {
+      "name": "walkerla_crimson",
+      "directions": 4
+    },
+    {
+      "name": "walkerla_crimson_e",
+      "directions": 4
+    },
+    {
+      "name": "walkerla_crimson_e_r",
+      "directions": 4
+    },
+    {
+      "name": "walkerla_crimson_l",
+      "directions": 4
+    },
+    {
+      "name": "walkerla_flame",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "walkerla_flame_e",
+      "directions": 4
+    },
+    {
+      "name": "walkerla_flame_e_r",
+      "directions": 4
+    },
+    {
+      "name": "walkerla_flame_l",
+      "directions": 4
+    },
+    {
+      "name": "walkerla_grey",
+      "directions": 4
+    },
+    {
+      "name": "walkerla_grey_e",
+      "directions": 4
+    },
+    {
+      "name": "walkerla_grey_e_r",
+      "directions": 4
+    },
+    {
+      "name": "walkerla_grey_l",
+      "directions": 4
+    },
+    {
+      "name": "walkerla_support",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "walkerla_support_e",
+      "directions": 4
+    },
+    {
+      "name": "walkerla_support_e_r",
+      "directions": 4
+    },
+    {
+      "name": "walkerla_support_l",
+      "directions": 4
+    },
+    {
+      "name": "walkerha_crimson",
+      "directions": 4
+    },
+    {
+      "name": "walkerha_crimson_e",
+      "directions": 4
+    },
+    {
+      "name": "walkerha_crimson_e_r",
+      "directions": 4
+    },
+    {
+      "name": "walkerha_crimson_l",
+      "directions": 4
+    },
+    {
+      "name": "walkerha_flame",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "walkerha_flame_e",
+      "directions": 4
+    },
+    {
+      "name": "walkerha_flame_e_r",
+      "directions": 4
+    },
+    {
+      "name": "walkerha_flame_l",
+      "directions": 4
+    },
+    {
+      "name": "walkerha_grey",
+      "directions": 4
+    },
+    {
+      "name": "walkerha_grey_e",
+      "directions": 4
+    },
+    {
+      "name": "walkerha_grey_e_r",
+      "directions": 4
+    },
+    {
+      "name": "walkerha_grey_l",
+      "directions": 4
+    },
+    {
+      "name": "walkerha_support",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "walkerha_support_e",
+      "directions": 4
+    },
+    {
+      "name": "walkerha_support_e_r",
+      "directions": 4
+    },
+    {
+      "name": "walkerha_support_l",
+      "directions": 4
+    },
+    {
+      "name": "sputnik_blue",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "sputnik_blue_e",
+      "directions": 4
+    },
+    {
+      "name": "sputnik_blue_e_r",
+      "directions": 4
+    },
+    {
+      "name": "sputnik_blue_l",
+      "directions": 4
+    },
+    {
+      "name": "sputnik_green",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "sputnik_green_e",
+      "directions": 4
+    },
+    {
+      "name": "sputnik_green_e_r",
+      "directions": 4
+    },
+    {
+      "name": "sputnik_green_l",
+      "directions": 4
+    },
+    {
+      "name": "sputnik_red",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "sputnik_red_e",
+      "directions": 4
+    },
+    {
+      "name": "sputnik_red_e_r",
+      "directions": 4
+    },
+    {
+      "name": "sputnik_red_l",
+      "directions": 4
+    },
+    {
+      "name": "sputnik_violet",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "sputnik_violet_e",
+      "directions": 4
+    },
+    {
+      "name": "sputnik_violet_e_r",
+      "directions": 4
+    },
+    {
+      "name": "sputnik_violet_l",
+      "directions": 4
+    },
+    {
+      "name": "drone_hs",
+      "directions": 4,
+      "delays": [
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "drone_hs_e",
+      "directions": 4
+    },
+    {
+      "name": "drone_hs_e_r",
+      "directions": 4
+    },
+    {
+      "name": "drone_hs_l",
+      "directions": 4
+    },
+    {
+      "name": "drone_jn",
+      "directions": 4,
+      "delays": [
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "drone_jn_e",
+      "directions": 4
+    },
+    {
+      "name": "drone_jn_e_r",
+      "directions": 4
+    },
+    {
+      "name": "drone_jn_l",
+      "directions": 4
+    },
+    {
+      "name": "drone_ls",
+      "directions": 4,
+      "delays": [
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "drone_ls_e",
+      "directions": 4
+    },
+    {
+      "name": "drone_ls_e_r",
+      "directions": 4
+    },
+    {
+      "name": "drone_ls_l",
+      "directions": 4
+    },
+    {
+      "name": "drone_sc",
+      "directions": 4,
+      "delays": [
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
+      "name": "drone_sc_e",
+      "directions": 4
+    },
+    {
+      "name": "drone_sc_e_r",
+      "directions": 4
+    },
+    {
+      "name": "drone_sc_l",
+      "directions": 4
+    }
+  ]
+}

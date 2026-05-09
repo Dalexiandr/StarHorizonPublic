@@ -1,0 +1,28 @@
+# Тут описаны составные задачи, хранящие в себе примитивные задачи.
+# Примитивные задачи это конечные узлы, они превращаются в конкретные
+# operator (код на C#), которые заставляют сущность идти, открывать двери,
+# атаковать и тд.
+
+# - type: htnCompound
+#   id: CompanionFollowCompound
+#   branches:
+#     Ветка 1: Разовый поход (Сработает, если в памяти установлен режим 1)
+#     - tasks:
+#         - !type:HTNPrimitiveTask
+#           preconditions:
+#             - !type:KeyEqualsPrecondition { key: "CompanionMode", value: 1 }
+#           operator: !type:MoveToOperator
+#             pathfindInPlanning: true
+#             targetKey: "FollowTarget"
+#             rangeKey: "FollowCloseRange"
+#             removeKeyOnFinish: true
+#     Ветка 2: Повторяющееся действие (Сработает, если в памяти установлен режим 2)
+#     - tasks:
+#         - !type:HTNPrimitiveTask
+#           preconditions:
+#             - !type:KeyEqualsPrecondition { key: "CompanionMode", value: 2 }
+#           operator: !type:MoveToOperator
+#             pathfindInPlanning: true
+#             targetKey: "FollowTarget"
+#             rangeKey: "FollowCloseRange"
+#             removeKeyOnFinish: false

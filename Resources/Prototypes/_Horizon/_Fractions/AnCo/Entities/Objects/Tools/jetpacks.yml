@@ -1,0 +1,62 @@
+- type: entity
+  id: JetpackAnCo
+  parent: BaseJetpack
+  name: джетпак АнКо
+  suffix: StarHorizon, AnCo, Empty
+  components:
+  - type: Item
+    sprite: _Horizon/_Fractions/AnCo/Objects/Tanks/Jetpacks/jet.rsi
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Tanks/Jetpacks/jet.rsi
+    weightlessModifier: 2
+  - type: Clothing
+    sprite: _Horizon/_Fractions/AnCo/Objects/Tanks/Jetpacks/jet.rsi
+    slots:
+      - Back
+      - suitStorage
+      - Belt
+  - type: PhysicalComposition
+    materialComposition:
+      Kazmie: 300
+      Ardon: 200
+
+- type: entity
+  id: JetpackAnCoFilled
+  parent: JetpackAnCo
+  suffix: StarHorizon, AnCo, Filled
+  description: укрепленный джетпак, внимание! Не нагревайте.
+  components:
+  - type: GasTank
+    outputPressure: 21.3
+    air:
+      # 13 minutes of thrust
+      volume: 5
+      temperature: 293.15
+      moles:
+        - 4.069931438757837 # oxygen
+
+
+- type: entity
+  id: JetpackAnCoFilledNoSpawn
+  parent: JetpackAnCoFilled
+  name: продвинутый джетпак АнКо
+  suffix: StarHorizon, AnCo, NOSPAWN
+  components:
+  - type: GasTank
+    outputPressure: 21.3
+    air:
+      # 13 minutes of thrust
+      volume: 5
+      temperature: 293.15
+      moles:
+        - 3.052448579068411 # oxygen
+
+- type: entity
+  id: JetpackAnCoFilledUpgrade
+  parent: JetpackAnCoFilled
+  name: продвинутый джетпак АнКо
+  components:
+  - type: Jetpack
+    moleUsage: 0.00085
+    acceleration: 10
+    friction: 100

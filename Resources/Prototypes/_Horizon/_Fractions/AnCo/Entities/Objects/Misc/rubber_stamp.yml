@@ -1,0 +1,83 @@
+- type: entity
+  name: печать АнКо
+  parent: [RubberStampBase, BaseAnCoContraband]
+  suffix: StarHorizon, AnCo
+  id: RubberStampAnCo
+  components:
+  - type: Stamp
+    stampedName: AnroxComputer’s
+    stampedColor: "#b30e0e"
+    stampState: "paper_stamp-anco"
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Misc/stamps.rsi
+    state: stamp
+
+- type: entity
+  name: печать ДЗИС
+  parent: [RubberStampBase, BaseAnCoContraband]
+  suffix: StarHorizon, AnCo
+  id: RubberStampAnCoDIPP
+  components:
+  - type: Stamp
+    stampedName: ДЗИС
+    stampedColor: "#b30e0e"
+    stampState: "paper_stamp-dipp"
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Misc/stamps.rsi
+    state: stamp
+
+- type: entity
+  name: печать ДКБ
+  parent: [RubberStampBase, BaseAnCoContraband]
+  suffix: StarHorizon, AnCo
+  id: RubberStampAnCoDCS
+  components:
+  - type: Stamp
+    stampedName: ДКБ
+    stampedColor: "#b30e0e"
+    stampState: "paper_stamp-dcs"
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Misc/stamps.rsi
+    state: stamp
+
+- type: entity
+  name: печать СтарДаст
+  parent: [RubberStampBase, BaseAnCoContraband]
+  suffix: StarHorizon, AnCo
+  id: RubberStampAnCoStarDust
+  components:
+  - type: Stamp
+    stampedName: StarDust Ind.
+    stampedColor: "#b30e0e"
+    stampState: "paper_stamp-stardust"
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Misc/stamps.rsi
+    state: stamp
+
+- type: entity
+  name: печать МилиГалакс
+  parent: [RubberStampBase, BaseAnCoContraband]
+  suffix: StarHorizon, AnCo
+  id: RubberStampAnCoMiliGalax
+  components:
+  - type: Stamp
+    stampedName: MiliGalax Sec.
+    stampedColor: "#b30e0e"
+    stampState: "paper_stamp-miligalax"
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Misc/stamps.rsi
+    state: stamp
+
+- type: entity
+  name: печать Сабеа
+  parent: [RubberStampBase, BaseAnCoContraband]
+  suffix: StarHorizon, AnCo
+  id: RubberStampAnCoSubea
+  components:
+  - type: Stamp
+    stampedName: Subea Farm.
+    stampedColor: "#b30e0e"
+    stampState: "paper_stamp-subea"
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Misc/stamps.rsi
+    state: stamp

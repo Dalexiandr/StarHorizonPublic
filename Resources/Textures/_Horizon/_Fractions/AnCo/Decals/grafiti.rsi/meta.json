@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "license": "CLA with hosting restrictions",
+  "copyright": "Sprited by Xigovir DS:623559319543349268",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "ancoeffency"
+    },
+    {
+      "name": "ancologo"
+    },
+    {
+      "name": "ancologo1"
+    },
+    {
+      "name": "ancologo2"
+    },
+    {
+      "name": "ancologo3"
+    },
+    {
+      "name": "ancologobigpart1"
+    },
+    {
+      "name": "ancologobigpart2"
+    },
+    {
+      "name": "ancologobigpart3"
+    },
+    {
+      "name": "ancologobigpart4"
+    },
+    {
+      "name": "ancologobigpart5"
+    },
+    {
+      "name": "ancologobigpart6"
+    },
+    {
+      "name": "ancologobigpart7"
+    },
+    {
+      "name": "ancologobigpart8"
+    },
+    {
+      "name": "ancologobigpart9"
+    },
+    {
+      "name": "ancologomiligalax"
+    },
+    {
+      "name": "ancologopart1"
+    },
+    {
+      "name": "ancologopart2"
+    },
+    {
+      "name": "ancologostardust"
+    },
+    {
+      "name": "ancologosubea"
+    },
+    {
+      "name": "ancotitans"
+    }
+  ]
+}

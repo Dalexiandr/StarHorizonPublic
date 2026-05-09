@@ -1,0 +1,9 @@
+ent-GuitarCase = гитарный чехол
+    .desc = Обычно используется для того, чтобы переносить в нём гитары. Достаточно вместителен.
+    .suffix = StarHorizon
+ent-GuitarCaseSyndicate = { ent-GuitarCase }
+    .suffix = StarHorizon, Cиндикат
+    .desc = { ent-GuitarCase.desc }
+ent-PokerCase = Чёрный дипломат
+    .desc = Чёрный кейс с символикой Nanotrasen.
+    .suffix = StarHorizon, Пустой

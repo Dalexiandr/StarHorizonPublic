@@ -1,0 +1,14 @@
+- type: npcFaction
+  id: AnCoSecurBot
+  hostile:
+  - Xeno
+  - Revolutionary
+  - Dragon
+  - SimpleNeutral
+  - Passive
+  - Mouse
+  - SimpleHostile
+  - NanoTrasen
+  - Syndicate
+  - PetsNT
+  - Zombie

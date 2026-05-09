@@ -1,0 +1,17 @@
+ent-CultistMessengerGiftBox = blood cultist bundle
+    .desc = Loot boxes? Here?
+    .suffix = NPC Loot
+ent-ClothingBackpackBloodCultZealotLootA = cultist gear bundle
+    .desc = { ent-CultistMessengerGiftBox.desc }
+ent-ClothingBackpackBloodCultZealotLootC = { ent-ClothingBackpackBloodCultZealotLootA }
+    .desc = { ent-ClothingBackpackBloodCultZealotLootA.desc }
+ent-ClothingBackpackBloodCultZealotLootCaster = { ent-ClothingBackpackBloodCultZealotLootA }
+    .desc = { ent-ClothingBackpackBloodCultZealotLootA.desc }
+ent-ClothingBackpackBloodCultLootJanitor = { ent-ClothingBackpackBloodCultZealotLootA }
+    .desc = { ent-ClothingBackpackBloodCultZealotLootA.desc }
+ent-ClothingBackpackBloodCultLootPriest = { ent-ClothingBackpackBloodCultZealotLootA }
+    .desc = { ent-ClothingBackpackBloodCultZealotLootA.desc }
+ent-ClothingBackpackBloodCultLootB = { ent-ClothingBackpackBloodCultZealotLootA }
+    .desc = { ent-ClothingBackpackBloodCultZealotLootA.desc }
+ent-ClothingBackpackBloodCultLootD = { ent-ClothingBackpackBloodCultZealotLootA }
+    .desc = { ent-ClothingBackpackBloodCultZealotLootA.desc }

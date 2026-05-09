@@ -1,0 +1,29 @@
+- type: latheRecipe
+  id: Level5OreScanner
+  result: Level5OreScanner
+  categories:
+  - Tools
+  completetime: 3
+  materials:
+    Steel: 400
+    Glass: 100
+
+- type: latheRecipe
+  id: UniversalTranslator
+  result: UniversalTranslator
+  categories:
+  - Tools
+  completetime: 3
+  materials:
+    Steel: 400
+    Glass: 100
+
+- type: latheRecipe
+  id: RareTranslator
+  result: RareTranslator
+  categories:
+  - Tools
+  completetime: 3
+  materials:
+    Steel: 400
+    Glass: 100

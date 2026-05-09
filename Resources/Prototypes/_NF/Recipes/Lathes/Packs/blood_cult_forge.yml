@@ -1,0 +1,23 @@
+- type: latheRecipePack
+  id: NFBloodCultStatic
+  recipes:
+  - RitualDagger
+  - EldritchBlade
+  - UnholyHalberd
+  - SpearBone
+  - WeaponInertStaffCultistBoltDark
+  - WeaponInertStaffCultistHand
+  - WeaponInertStaffCultistLightning
+  - WeaponInertStaffCultistSoap
+  - ClothingHeadHelmetCultJanitor
+  - ClothingMaskCultJanitor
+  - ClothingOuterCoatCultJanitor
+  - ClothingHeadHelmetCult
+  - ClothingOuterArmorCult
+  - ClothingShoesCult
+  - ClothingOuterCoatBloodCultRobes
+  - ClothingHeadHelmetBone
+  - ClothingOuterArmorBone
+  - ClothingBackpackMessengerBloodCult
+  - PumpkinLanternSmall
+  - CandleRedInfinite

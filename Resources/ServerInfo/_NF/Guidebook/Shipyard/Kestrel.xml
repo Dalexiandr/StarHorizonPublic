@@ -1,0 +1,103 @@
+<Document>
+  # УТИЛЬСКИЙ ШАТТЛ КЛАССА "KESTREL"
+  <Box>
+  <GuideEntityEmbed Entity="MiningDrill"/>
+  <GuideEntityEmbed Entity="OreBag"/>
+  <GuideEntityEmbed Entity="VendingMachineSalvage"/>
+  <GuideEntityEmbed Entity="RipleyChassis"/>
+  </Box>  
+  <Box>
+  <GuideEntityEmbed Entity="ShuttleMapKestrel" Caption=""/>
+  </Box>
+    [color=#a4885c]Размер корабля:[/color] Малый
+	
+	[color=#a4885c]Рекомендуемый экипаж:[/color] 2–4
+	
+	[color=#a4885c]Тип генератора энергии:[/color] Урановый
+	
+	[color=#a4885c]Экспедиции:[/color] Отсутствуют
+	
+	[color=#a4885c]Консоль IFF:[/color] Отсутствует
+	
+  "Ранее — грузовое судно, курсирующее по местным маршрутам, теперь переделано для горнодобывающих и утилизационных операций в космическом мусоре."
+    
+  # КОНТРОЛЬНЫЙ СПИСОК ПЕРЕД ВЫЛЕТОМ
+  
+  ## 1. Электропитание
+  
+  ## 1.1. Батарейные блоки
+  <Box>
+  <GuideEntityEmbed Entity="SMESBasic"/>
+  <GuideEntityEmbed Entity="SubstationBasic"/>
+  <GuideEntityEmbed Entity="APCBasic"/>
+  </Box>
+  
+  - Убедитесь, что блок СМЭС закреплён на полу.
+  - Убедитесь, что подстанция закреплена на полу.
+  - Убедитесь, что главный выключатель блока ЛКП включён.
+  - Проверьте текущую нагрузку блока ЛКП* (Вт).
+  
+  ## 1.2. Генератор S.U.P.E.R.P.A.C.M.A.N.
+  <Box>
+  <GuideEntityEmbed Entity="PortableGeneratorSuperPacman"/>
+  <GuideEntityEmbed Entity="SheetUranium"/>
+  <GuideEntityEmbed Entity="SignRadiationMed"/>
+  </Box>
+  
+  - Убедитесь, что генератор S.U.P.E.R.P.A.C.M.A.N. закреплён на полу.
+  - Убедитесь, что генератор заправлен топливом. Для длительных полётов обеспечьте достаточный запас.
+  - Убедитесь, что генератор настроен на HV-выход.
+  - Установите целевую мощность на 29–30** [bold]кВт[/bold].
+  - Запустите генератор.
+  
+  ## 2. Атмосфера
+  
+  ## 2.1. Цикл распределения
+  <Box>
+  <GuideEntityEmbed Entity="GasPort"/>
+  <GuideEntityEmbed Entity="OxygenCanister"/>
+  <GuideEntityEmbed Entity="NitrogenCanister"/>
+  <GuideEntityEmbed Entity="GasMixer"/>
+  <GuideEntityEmbed Entity="GasPressurePump"/>
+  </Box>
+  
+  - Убедитесь, что баллон с O₂ закреплён на соединительном порте.
+  - Убедитесь, что баллон с N₂ закреплён.
+  - Убедитесь, что газовый миксер настроен на правильное соотношение (21% кислорода, 79% азота).
+  - Установите давление миксера на 101 кПа.
+  - Включите миксер.
+  
+  ## 2.2. Цикл отходов
+  <Box>
+  <GuideEntityEmbed Entity="GasPressurePump"/>
+  <GuideEntityEmbed Entity="AirAlarm"/>
+  </Box>
+    
+  - Включите насос отходящего цикла.
+  
+  ## 3. Прочие проверки
+  <Box>
+  <GuideEntityEmbed Entity="Gyroscope"/>
+  <GuideEntityEmbed Entity="GravityGeneratorMini"/>
+  <GuideEntityEmbed Entity="BlastDoor"/>
+  </Box>
+  
+  - Убедитесь, что гироскоп закреплён, запитан и включён.
+  - Убедитесь, что мини-гравитационный генератор закреплён, запитан и включён.
+  - Убедитесь, что противовзрывные двери закрыты.
+  
+  ## Примечания
+  
+  * — Шаттлы класса «Kestrel» оснащены пятью блоками ЛКП, которые позволяют отслеживать общее энергопотребление судна. В стандартной конфигурации требуется 28,6 кВт для стабильной работы.
+
+  ** — Энергопотребление выше, чем способен обеспечить стандартный генератор P.A.C.M.A.N., поэтому установлен генератор S.U.P.E.R.P.A.C.M.A.N. Рекомендуется устанавливать целевую мощность на уровне 30 кВт во избежание отключений при зарядке гравитационного генератора.
+  
+  <Box>
+  <GuideEntityEmbed Entity="SignRadiationMed"/>
+  <GuideEntityEmbed Entity="ClothingOuterSuitRad"/>
+  <GuideEntityEmbed Entity="GeigerCounter"/>
+  <GuideEntityEmbed Entity="ShuttersRadiation"/>
+  </Box>
+  Примечание: При работе с радиоактивными материалами обязательно соблюдайте меры безопасности: надевайте защитный костюм, включайте внутреннее дыхание, активируйте счётчик Гейгера, мойте руки после работы и держите радиационные ставни закрытыми.
+
+</Document>

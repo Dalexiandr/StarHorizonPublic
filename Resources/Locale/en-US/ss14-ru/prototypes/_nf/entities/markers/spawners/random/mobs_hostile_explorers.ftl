@@ -1,0 +1,15 @@
+ent-SpawnMobExplorerT1 = explorer spawner
+    .suffix = AI, Hostile, T1
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobExplorerT2 = explorer spawner
+    .suffix = AI, Hostile, T2
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobExplorerT3 = explorer spawner
+    .suffix = AI, Hostile, T3
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobExplorerEVAT1 = { ent-SpawnMobExplorerT1 }
+    .desc = { ent-SpawnMobExplorerT1.desc }
+ent-SpawnMobExplorerEVAT2 = { ent-SpawnMobExplorerT2 }
+    .desc = { ent-SpawnMobExplorerT2.desc }
+ent-SpawnMobExplorerEVAT3 = { ent-SpawnMobExplorerT3 }
+    .desc = { ent-SpawnMobExplorerT3.desc }

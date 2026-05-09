@@ -1,0 +1,41 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: amir7036
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: Ister
+  parent: BaseVesselAntag
+  name: NRZH Ister
+  description: Разведовательный шаттл синдиката имеющий меньший размер и большую возможность для манёвров, не обладает вооружением но может быть пригоден к его установке.
+  price: 75000
+  category: Small
+  group: Syndicate
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/Syndicate/ister.yml
+  class:
+  - Syndicate
+  - Patrol
+  engine:
+  - RTG
+
+- type: gameMap
+  id: Ister
+  mapName: 'Ister'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/Syndicate/ister.yml
+  minPlayers: 0
+  stations:
+    Ister:
+      stationProto: StandardFrontierAntagVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Ister {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

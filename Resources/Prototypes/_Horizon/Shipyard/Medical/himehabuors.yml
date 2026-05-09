@@ -1,0 +1,45 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: orange_fish
+
+# Информация об сопровождающем
+# GitHub/Gitea: ???
+# Discord: helloohello
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: Himehabu
+  parent: BaseVessel
+  name: ORS type 3R2 "Himehabu"
+  description: Цитологический шаттл с небольшой ксеноархеологией и гидропоникой. 
+  price: 75000 # 70000, наценка верфи 10% = 75000
+  category: Small
+  group: Medical
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/Medical/himehabuors.yml
+  class:
+  - Medical
+  - Science
+  engine:
+  - Bananium
+
+
+- type: gameMap
+  id: Himehabu
+  mapName: 'type 3R2 "Himehabu"'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/Medical/himehabuors.yml
+  minPlayers: 0
+  stations:
+    Himehabu:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'type 3R2 "Himehabu" {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

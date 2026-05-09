@@ -1,0 +1,128 @@
+- type: entity
+  id: ClosetBaseAnCo
+  parent: BaseStructureDynamic
+  name: шкаф АнКо
+  description: Стандартное хранилище корпорации АнКо
+  suffix: StarHorizon, AnCo, Structure
+  components:
+  - type: ResistLocker
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: Sprite
+    noRot: true
+    sprite: _Horizon/_Fractions/AnCo/Structures/Storage/Closets/closet.rsi
+    layers:
+    - state: ancocloset
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: ancocloset_door
+      map: ["enum.StorageVisualLayers.Door"]
+    - state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+  - type: MovedByPressure
+  - type: DamageOnHighSpeedImpact
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      collection: MetalThud
+  - type: InteractionOutline
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.48,0.25,0.48"
+        density: 75
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: EntityStorage
+  - type: ContainerContainer
+    containers:
+      entity_storage: !type:Container
+  - type: Weldable
+  - type: PlaceableSurface
+    placeCentered: true
+    isPlaceable: false
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+        - !type:SpawnEntitiesBehavior
+            spawn:
+              KazmieSheet1:
+                min: 1
+                max: 5
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: ancocloset
+    stateDoorOpen: ancocloset_open
+    stateDoorClosed: ancocloset_door
+  - type: StaticPrice
+    price: 75
+
+- type: entity
+  id: ClosetOfficer
+  name: шкаф с снаряжением Офицера
+  parent: ClosetBaseAnCo
+  suffix: StarHorizon, AnCo
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingEyesGlassesAnCo
+    - id: ClothingHeadsetAnCo
+    - id: AnCoVests
+    - id: SuitProtectiveAnCo
+    - id: AnCoBoots
+    - id: AnCosatchelOfficer
+    - id: PDAOfficerAnCo
+    - id: WeaponStunprodAnCo
+    - id: AnCoGloves
+
+- type: entity
+  id: ClosetSpider
+  name: шкаф с снаряжением Паука
+  parent: ClosetBaseAnCo
+  suffix: StarHorizon, AnCo
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingEyesGlassesAnCo
+    - id: ClothingHeadsetAnCo
+    - id: ClothingOuterHardsuitSpider
+    - id: SuitProtectiveAnCo
+    - id: AnCoClothingShoesBootsMag
+    - id: AnCosatchelSpider
+    - id: PDASpiderAnCo
+    - id: AnCoGlovesIsolate
+
+- type: entity
+  id: ClosetKnight
+  name: шкаф с снаряжением Рыцаря
+  parent: ClosetBaseAnCo
+  suffix: StarHorizon, AnCo
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingEyesGlassesAnCo
+    - id: ClothingHeadsetAnCo
+    - id: ClothingOuterHardsuitKnight
+    - id: SuitProtectiveAnCo
+    - id: AnCoBoots
+    - id: AnCosatchelKnight
+    - id: PDAKnightAnCo
+    - id: AnCoGlovesIsolate

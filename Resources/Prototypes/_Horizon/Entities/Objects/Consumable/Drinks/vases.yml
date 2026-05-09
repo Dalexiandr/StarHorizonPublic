@@ -1,0 +1,205 @@
+- type: entity
+  name: стеклянная ваза
+  description: Красивая стеклянная ваза, предназначенная для цветов.
+  parent: DrinkGlassBase
+  id: DrinkGlassVaseOne
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Consumable/Drinks/vase_one.rsi
+    layers:
+      - state: icon
+        map: [ "enum.SolutionContainerLayers.Base" ]
+  - type: Appearance
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+  - type: Construction
+    graph: craftvaseone
+    node: CraftVaseOne
+  - type: Matchbox
+  - type: ContainerContainer
+    containers:
+      item: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      item:
+        name: цветок в вазе
+        whitelist:
+          tags:
+          - chamomiler
+          - chamomilev
+          - clovep
+          - clover
+          - clovew
+          - clovey
+          - roselp
+          - rosep
+          - roser
+          - rosew
+          - tuliplp
+          - tulipp
+          - tulipr
+          - tulipy
+  - type: ItemMapper
+    mapLayers:
+      chamomiler:
+        whitelist:
+          tags:
+          - chamomiler
+      chamomilev:
+        whitelist:
+          tags:
+          - chamomilev
+      clovep:
+        whitelist:
+          tags:
+          - clovep
+      clover:
+        whitelist:
+          tags:
+          - clover
+      clovew:
+        whitelist:
+          tags:
+          - clovew
+      clovey:
+        whitelist:
+          tags:
+          - clovey
+      roselp:
+        whitelist:
+          tags:
+          - roselp
+      rosep:
+        whitelist:
+          tags:
+          - rosep
+      roser:
+        whitelist:
+          tags:
+          - roser
+      rosew:
+        whitelist:
+          tags:
+          - rosew
+      tuliplp:
+        whitelist:
+          tags:
+          - tuliplp
+      tulipp:
+        whitelist:
+          tags:
+          - tulipp
+      tulipr:
+        whitelist:
+          tags:
+          - tulipr
+      tulipy:
+        whitelist:
+          tags:
+          - tulipy
+    sprite: _Horizon/Objects/Consumable/Drinks/vase_one.rsi
+
+- type: entity
+  name: стеклянная ваза
+  description: Красивая стеклянная ваза, предназначенная для цветов.
+  parent: DrinkGlassBase
+  id: DrinkGlassVaseTwo
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Consumable/Drinks/vase_two.rsi
+    layers:
+      - state: icon
+        map: [ "enum.SolutionContainerLayers.Base" ]
+  - type: Appearance
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+  - type: Construction
+    graph: craftvasetwo
+    node: CraftVaseTwo
+  - type: Matchbox
+  - type: ContainerContainer
+    containers:
+      item: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      item:
+        name: цветок в вазе
+        whitelist:
+          tags:
+          - chamomiler
+          - chamomilev
+          - clovep
+          - clover
+          - clovew
+          - clovey
+          - roselp
+          - rosep
+          - roser
+          - rosew
+          - tuliplp
+          - tulipp
+          - tulipr
+          - tulipy
+  - type: ItemMapper
+    mapLayers:
+      chamomiler:
+        whitelist:
+          tags:
+          - chamomiler
+      chamomilev:
+        whitelist:
+          tags:
+          - chamomilev
+      clovep:
+        whitelist:
+          tags:
+          - clovep
+      clover:
+        whitelist:
+          tags:
+          - clover
+      clovew:
+        whitelist:
+          tags:
+          - clovew
+      clovey:
+        whitelist:
+          tags:
+          - clovey
+      roselp:
+        whitelist:
+          tags:
+          - roselp
+      rosep:
+        whitelist:
+          tags:
+          - rosep
+      roser:
+        whitelist:
+          tags:
+          - roser
+      rosew:
+        whitelist:
+          tags:
+          - rosew
+      tuliplp:
+        whitelist:
+          tags:
+          - tuliplp
+      tulipp:
+        whitelist:
+          tags:
+          - tulipp
+      tulipr:
+        whitelist:
+          tags:
+          - tulipr
+      tulipy:
+        whitelist:
+          tags:
+          - tulipy
+    sprite: _Horizon/Objects/Consumable/Drinks/vase_two.rsi

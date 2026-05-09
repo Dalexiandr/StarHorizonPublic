@@ -1,0 +1,9 @@
+ent-ClothingUnderwearBottomChameleon = трусы
+    .desc = Нижнее бельё из голографических волокон. Может принимать вид любой другой модели.
+    .suffix = Хамелеон
+ent-ClothingUnderwearTopChameleon = бюстгальтер
+    .desc = Верхнее бельё из голографических волокон. Может принимать вид любой другой модели.
+    .suffix = Хамелеон
+ent-ClothingUnderwearSocksChameleon = носки
+    .desc = Носки из голографических волокон. Могут принимать вид любой другой модели.
+    .suffix = Хамелеон

@@ -1,0 +1,14 @@
+ent-BoxAmmoAC2Ultra = ящик боеприпасов AC-2 "ультра"
+    .desc = { ent-BaseItem.desc }
+ent-BoxAmmoScattershot = ящик боеприпасов LBX AC 10 "Залп"
+    .desc = { ent-BaseItem.desc }
+ent-BoxAmmoHades = ящик боеприпасов FNX-99 "Аид"
+    .desc = { ent-BaseItem.desc }
+ent-BoxAmmoSniper = ящик боеприпасов mHAR-21 "Ma Deuce"
+    .desc = { ent-BaseItem.desc }
+ent-BoxAmmoGranade = универсальный ящик гранат и ракет
+    .desc = { ent-BaseItem.desc }
+ent-BoxPlasmaBox = ящик плазменных боеприпасов
+    .desc = { ent-BaseItem.desc }
+ent-BoxChemBox = ящик химических боеприпасов
+    .desc = { ent-BaseItem.desc }

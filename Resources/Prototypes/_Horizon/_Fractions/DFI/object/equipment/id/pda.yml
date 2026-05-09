@@ -1,0 +1,106 @@
+- type: entity
+  parent: BasePDA
+  id: PDADFI
+  suffix: DFI
+  name: DFI PDA
+  description: A PDA used by DFI agents.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/DFI/pda_dfi.rsi
+    state: pda-dfi
+  - type: Icon
+    sprite: _Horizon/_Fractions/DFI/pda_dfi.rsi
+    state: pda-dfi
+  - type: Pda
+    id: DFIAgentID
+    state: pda-dfi
+  - type: PdaBorderColor
+    borderColor: "#9999FF"
+
+- type: entity
+  parent: PDADFI
+  id: PDACadetDFI
+  suffix: DFI
+  name: КПК кадета DFI
+  description: КПК используемое агентами DFI.
+  components:
+  - type: Pda
+    id: DFICadetID
+    state: pda-dfi
+
+- type: entity
+  parent: PDADFI
+  id: PDACriminologistDFI
+  suffix: DFI
+  name: КПК криминалиста DFI
+  description: КПК используемое агентами DFI.
+  components:
+  - type: Pda
+    id: DFICriminologistID
+    state: pda-dfi
+
+- type: entity
+  parent: PDADFI
+  id: PDADetectiveDFI
+  suffix: DFI
+  name: КПК детектива DFI
+  description: КПК используемое агентами DFI.
+  components:
+  - type: Pda
+    id: DFIDetectiveID
+    state: pda-dfi
+
+- type: entity
+  parent: PDADFI
+  id: PDADetectiveSergeantDFI
+  suffix: DFI
+  name: КПК детектива-сержанта DFI
+  description: КПК используемое агентами DFI.
+  components:
+  - type: Pda
+    id: DFIDetectiveSergeantID
+    state: pda-dfi
+
+- type: entity
+  parent: PDADFI
+  id: PDAEngineerDFI
+  suffix: DFI
+  name: КПК инженера DFI
+  description: КПК используемое агентами DFI.
+  components:
+  - type: Pda
+    id: DFIEngineerID
+    state: pda-dfi
+
+- type: entity
+  parent: PDADFI
+  id: PDAMedicDFI
+  suffix: DFI
+  name: КПК медика DFI
+  description: КПК используемое агентами DFI.
+  components:
+  - type: Pda
+    id: DFIMedicID
+    state: pda-dfi
+
+- type: entity
+  parent: PDADFI
+  id: PDAOfficerDFI
+  suffix: DFI
+  name: КПК офицера DFI
+  description: КПК используемое агентами DFI.
+  components:
+  - type: Pda
+    id: DFIOfficerID
+    state: pda-dfi
+
+- type: entity
+  parent: PDADFI
+  id: PDASSEmployeeDFI
+  suffix: DFI
+  name: КПК сотрудника службы обеспечения DFI
+  description: КПК используемое агентами DFI.
+  components:
+  - type: Pda
+    id: DFISSEmployeeID
+    state: pda-dfi

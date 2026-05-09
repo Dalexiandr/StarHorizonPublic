@@ -1,0 +1,171 @@
+- type: entity
+  id: Cryptominer
+  parent: [ BaseMachinePowered, ConstructibleMachine, BaseAnCoContraband ]
+  name: cryptominer
+  suffix: StarHorizon, AnCo, Structure
+  description: A cryptocurrency mining device. Consumes power and generates heat. Earned credits are automatically transferred to the station's bank account.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: AnCoCryptominer
+    baseCreditsPerSecond: 50
+    powerConsumption: 500
+    baseHeatEnergyPerSecond: 5000
+    warningTemperature: 373.15
+    overheatTemperature: 423.15
+    criticalTemperature: 473.15
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Machines/miner.rsi
+    snapCardinals: true
+    layers:
+      - state: base
+        map: [ "enum.CryptominerVisualLayers.Base" ]
+      - state: base-unshaded
+        map: [ "enum.CryptominerVisualLayers.Base" ]
+        shader: unshaded
+      - state: level-1
+        map: [ "enum.CryptominerVisualLayers.Level" ]
+        visible: false
+        shader: unshaded
+      - state: lock
+        map: [ "enum.CryptominerVisualLayers.Lock" ]
+      - state: disk-1
+        map: [ "enum.CryptominerVisualLayers.Disks" ]
+        visible: false
+        shader: unshaded
+  - type: Appearance
+  - type: Matchbox
+  - type: ItemSlots
+    slots:
+      disk_slot_1:
+        name: cryptominer-slot-disk-1
+        whitelist:
+          tags:
+            - CryptominerDisk
+      disk_slot_2:
+        name: cryptominer-slot-disk-2
+        whitelist:
+          tags:
+            - CryptominerDisk
+      disk_slot_3:
+        name: cryptominer-slot-disk-3
+        whitelist:
+          tags:
+            - CryptominerDisk
+      disk_slot_4:
+        name: cryptominer-slot-disk-4
+        whitelist:
+          tags:
+            - CryptominerDisk
+  - type: ApcPowerReceiver
+    powerLoad: 500
+  - type: ExtensionCableReceiver
+  - type: ActivatableUI
+    key: enum.CryptominerUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.CryptominerUiKey.Key:
+        type: CryptominerBoundUserInterface
+  - type: Machine
+    board: CryptominerMachineCircuitboard
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 1
+            max: 2
+  - type: AmbientOnPowered
+  - type: AmbientSound
+    volume: -9
+    range: 5
+    sound:
+      path: /Audio/Ambience/Objects/server_fans.ogg
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      disk_slot_1: !type:ContainerSlot
+      disk_slot_2: !type:ContainerSlot
+      disk_slot_3: !type:ContainerSlot
+      disk_slot_4: !type:ContainerSlot
+
+- type: entity
+  parent: [CybersunDataMiner, BaseAnCoContraband]
+  id: AnCoMines
+  name: сервер АнКо
+  suffix: StarHorizon, AnCo, Dungeon
+  description: Древний сервер для анализа метаданных блюспейса.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Machines/miner.rsi
+    snapCardinals: true
+    layers:
+      - state: base
+        map: [ "enum.CryptominerVisualLayers.Base" ]
+      - state: base-unshaded
+        shader: unshaded
+      - state: level-1
+        shader: unshaded
+      - state: lock
+      - state: disk-4
+        shader: unshaded
+  - type: PointLight
+    radius: 3
+    energy: 3
+    color: "#cc0000"
+    castShadows: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 60
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SpawnAnCominerDrop:
+            min: 1
+            max: 1
+
+- type: entity
+  name: спавнер лута с майнера АнКо
+  id: SpawnAnCominerDrop
+  parent: MarkerBase
+  suffix: StarHorizon, AnCo, Dungeon
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/_Fractions/AnCo/Structures/Machines/miner.rsi
+        state: base
+  - type: RandomSpawner
+    prototypes:
+    - AnCoDiskCryptonimer
+    chance: 0.2
+    offset: 0.0
+    rarePrototypes:
+    - CryptominerMachineCircuitboard
+    rareChance: 0.1

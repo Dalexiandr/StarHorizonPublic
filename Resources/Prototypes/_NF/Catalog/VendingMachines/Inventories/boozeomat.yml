@@ -1,0 +1,59 @@
+# Horizon - POI version with infinite stock
+- type: vendingMachineInventory
+  id: BoozeOMatPOIInventory
+  startingInventory:
+    DrinkGlass: 4294967295 # Infinite
+    DrinkShotGlass: 4294967295 # Infinite
+    DrinkGlassCoupeShaped: 4294967295 # Infinite
+    DrinkSakeCupEmpty: 4294967295 # Infinite
+    DrinkShaker: 4294967295 # Infinite
+    DrinkJigger: 4294967295 # Infinite
+    DrinkIceBucket: 4294967295 # Infinite
+    BarSpoon: 4294967295 # Infinite
+    DrinkKegSteel: 4294967295 # Infinite
+    DrinkKegWood: 4294967295 # Infinite
+    DrinkKegPlastic: 4294967295 # Infinite
+    CustomDrinkJug: 4294967295 # Infinite
+    DrinkAbsintheBottleFull: 4294967295 # Infinite
+    DrinkAleBottleFull: 4294967295 # Infinite
+    DrinkBeerBottleFull: 4294967295 # Infinite
+    DrinkBlueCuracaoBottleFull: 4294967295 # Infinite
+    DrinkCognacBottleFull: 4294967295 # Infinite
+    DrinkCoconutWaterCarton: 4294967295 # Infinite
+    DrinkColaBottleFull: 4294967295 # Infinite
+    DrinkEnergyDrinkCan: 4294967295 # Infinite
+    DrinkMilkCarton: 4294967295 # Infinite
+    DrinkCreamCarton: 4294967295 # Infinite
+    DrinkGinBottleFull: 4294967295 # Infinite
+    DrinkGildlagerBottleFull: 4294967295 # Infinite
+    DrinkGrenadineBottleFull: 4294967295 # Infinite
+    DrinkJuiceLimeCarton: 4294967295 # Infinite
+    DrinkJuiceLemonCarton: 4294967295 # Infinite
+    DrinkJuicePineappleCarton: 4294967295 # Infinite
+    DrinkJuiceOrangeCarton: 4294967295 # Infinite
+    DrinkJuiceTomatoCarton: 4294967295 # Infinite
+    DrinkCoffeeLiqueurBottleFull: 4294967295 # Infinite
+    DrinkMelonLiquorBottleFull: 4294967295 # Infinite
+    DrinkPatronBottleFull: 4294967295 # Infinite
+    DrinkRumBottleFull: 4294967295 # Infinite
+    DrinkSodaWaterCan: 4294967295 # Infinite
+    DrinkSolDryCan: 4294967295 # Infinite
+    DrinkSpaceMountainWindBottleFull: 4294967295 # Infinite
+    DrinkSpaceUpBottleFull: 4294967295 # Infinite
+    DrinkTequilaBottleFull: 4294967295 # Infinite
+    DrinkTonicWaterCan: 4294967295 # Infinite
+    DrinkVermouthBottleFull: 4294967295 # Infinite
+    DrinkVodkaBottleFull: 4294967295 # Infinite
+    DrinkWhiskeyBottleFull: 4294967295 # Infinite
+    DrinkWineBottleFull: 4294967295 # Infinite
+    DrinkChampagneBottleFull: 4294967295 # Infinite
+    DrinkSakeBottleFull: 4294967295 # Infinite
+    DrinkBeerCan: 4294967295 # Infinite
+    DrinkWineCan: 4294967295 # Infinite
+    DrinkDisposableCup: 4294967295 # Infinite
+    EthylredoxrazineAutoInjector: 4294967295 # Infinite
+  contrabandInventory:
+    ChemistryBottleEthanol: 4294967295 # Infinite
+    DrinkBottleOfNothingFull: 4294967295 # Infinite
+  emaggedInventory:
+    DrinkPoisonWinebottleFull: 1

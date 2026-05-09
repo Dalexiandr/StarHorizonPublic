@@ -1,0 +1,15 @@
+ent-BaseCartridgePistolAnCo = мелко-кабилерный патрон .35
+    .suffix = StarHorizon, AnCo, Ammo
+    .desc = { ent-BaseCartridge.desc }
+ent-BaseCartridgeRifleAnCo = средне-кабилерный патрон .20
+    .suffix = StarHorizon, AnCo, Ammo
+    .desc = { ent-BaseCartridge.desc }
+ent-BaseCartridgeRifleAnCoBuff = средне-кабилерный патрон .30
+    .suffix = StarHorizon, AnCo, Ammo
+    .desc = { ent-BaseCartridge.desc }
+ent-BaseCartridgeSniperAnCo = высоко-кабилерный патрон .70
+    .suffix = StarHorizon, AnCo, Ammo
+    .desc = { ent-BaseCartridge.desc }
+ent-BaseCartridgeShotgunAnCo = патрон для дробовика .50
+    .suffix = StarHorizon, AnCo, Ammo
+    .desc = { ent-BaseCartridge.desc }

@@ -1,0 +1,221 @@
+- type: entity
+  parent: PosterBase
+  id: AnCoPosterRipsoid
+  suffix: StarHorizon, AnCo
+  name: рипсоид
+  description: Флагманский  продукт "Рипсоид". Ни боли, ни страха.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Wallmounts/posters.rsi
+    state: ripsoid
+
+- type: entity
+  parent: PosterBase
+  id: AnCoPosterShips
+  suffix: StarHorizon, AnCo
+  name: лучший флот
+  description: Лучшие шаттлы во всей галактике! Всего за-...
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Wallmounts/posters.rsi
+    state: ships
+
+- type: entity
+  parent: PosterBase
+  id: AnCoPosterAnCologo
+  suffix: StarHorizon, AnCo
+  name: любовь АнКо
+  description: Усердно работайте на лучшую корпорацию в галактике, и она полюбит вас!
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Wallmounts/posters.rsi
+    state: ancologo
+
+- type: entity
+  parent: PosterBase
+  id: AnCoPosterReactor
+  suffix: StarHorizon, AnCo
+  name: лучшие продукты АнКо
+  description: Два лучших продукта АнКо! Реактор и мини-реактор на EFS. Меньше размер - больше энергии!
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Wallmounts/posters.rsi
+    state: reactor
+
+- type: entity
+  parent: PosterBase
+  id: AnCoPosterTemperature
+  suffix: StarHorizon, AnCo
+  name: осторожно горячо
+  description: Плакат предупреждает вас о том, что Ардоний очень горячий.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Wallmounts/posters.rsi
+    state: temperature
+
+- type: entity
+  parent: PosterBase
+  id: AnCoPosterCore
+  suffix: StarHorizon, AnCo
+  name: ядро 53743
+  description: Продукт под номером "53743", что был снят с производства.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Wallmounts/posters.rsi
+    state: core
+
+# новые постеры
+
+- type: entity
+  parent: PosterBase
+  id: AnCoPosterPower
+  suffix: StarHorizon, AnCo
+  name: Сила корпората
+  description: Корпорат уничтожит каждого на своем пути, ради вас, ради корпорации
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Wallmounts/posters.rsi
+    state: power
+
+- type: entity
+  parent: PosterBase
+  id: AnCoPosterCitadel
+  suffix: StarHorizon, AnCo
+  name: Цитадель
+  description: Цитадель место доступное только избранным, только для тех кто знает слишком много
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Wallmounts/posters.rsi
+    state: citadel
+
+- type: entity
+  parent: PosterBase
+  id: AnCoPosterAnCo
+  suffix: StarHorizon, AnCo
+  name: Мы корпорация
+  description: Наши главные дочерние компании MiliGalax, StarDust и Subea, именно на этих трех китах держится корпорация
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Wallmounts/posters.rsi
+    state: anco
+
+- type: entity
+  parent: PosterBase
+  id: AnCoPosterDCS
+  suffix: StarHorizon, AnCo
+  name: Департамент КБ
+  description: ДКБ следит за вами, за каждым вашим шагом, все ради вашей же безопасности конечно
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Wallmounts/posters.rsi
+    state: dcs
+
+- type: entity
+  parent: PosterBase
+  id: AnCoPosterSifina
+  suffix: StarHorizon, AnCo
+  name: Сифина
+  description: Мифический корабль который больше самого Горизонта Событий
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Wallmounts/posters.rsi
+    state: sifina
+
+- type: entity
+  parent: PosterBase
+  id: AnCoPosterMoney
+  suffix: StarHorizon, AnCo
+  name: Активы растут
+  description: Активы корпорации растут и все благодаря вам, вы наш лучший сотрудник!
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Wallmounts/posters.rsi
+    state: money
+
+- type: entity
+  parent: PosterBase
+  id: AnCoPosterMiliGalax
+  suffix: StarHorizon, AnCo
+  name: МилиГалакс
+  description: Они наше оружие, они наша защита, они наши великие воины
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Wallmounts/posters.rsi
+    state: miligalax
+
+- type: entity
+  parent: PosterBase
+  id: AnCoPosterStarDust
+  suffix: StarHorizon, AnCo
+  name: СтарДаст
+  description: Каждый грам Ардония и Казмия который вы держите и видите произвели именно они
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Wallmounts/posters.rsi
+    state: stardust
+
+- type: entity
+  parent: PosterBase
+  id: AnCoPosterSubea
+  suffix: StarHorizon, AnCo
+  name: Сабеа
+  description: Они производят лучшие лекарства, импланты, и спасают жизни даже обреченных на смерть сотрудников
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Wallmounts/posters.rsi
+    state: subea
+
+- type: entity
+  parent: PosterBase
+  id: AnCoPosterLoading
+  suffix: StarHorizon, AnCo
+  name: Загрузка
+  description: Вот сейчас все будет. А. Постойте, это просто плакат
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Wallmounts/posters.rsi
+    state: load
+
+- type: entity
+  parent: PosterBase
+  id: AnCoPosterArdon
+  suffix: StarHorizon, AnCo
+  name: Наш Ардоний
+  description: Ардоний это достояние корпорации, он его кровь и нейроны, и мы должны защитить его любой ценой, от рук врагов корпорации
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Wallmounts/posters.rsi
+    state: ardon
+
+- type: entity
+  parent: PosterBase
+  id: AnCoPosterJoin
+  suffix: StarHorizon, AnCo
+  name: Вступай в АнКо
+  description: Вступи в АнКо, к лучшим из лучших, бесплатное проживание, пропитание и простой карьерный рост
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Wallmounts/posters.rsi
+    state: join
+
+- type: entity
+  parent: PosterBase
+  id: AnCoPosterCorporate
+  suffix: StarHorizon, AnCo
+  name: Корпорат помнит вас
+  description: Корпорат помнит героев. Героев несущих свет Ардония в каждый уголок галактики.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Wallmounts/posters.rsi
+    state: corporate
+
+- type: entity
+  parent: PosterBase
+  id: AnCoPosterErotic
+  suffix: StarHorizon, AnCo
+  name: Новый выпуск G&G
+  description: Встречайте новую модель журнала G&G. Ищите ее в 37 выпуске!
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Wallmounts/posters.rsi
+    state: erotic

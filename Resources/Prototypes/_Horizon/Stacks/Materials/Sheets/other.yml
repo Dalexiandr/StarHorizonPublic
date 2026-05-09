@@ -1,0 +1,20 @@
+- type: stack
+  id: Torium
+  name: stack-torium
+  icon: { sprite: /Textures/Objects/Materials/Sheets/other.rsi, state: torium }
+  spawn: SheetTorium1
+  maxCount: 30
+
+- type: stack
+  id: Plutonium
+  name: stack-plutonium
+  icon: { sprite: /Textures/Objects/Materials/Sheets/other.rsi, state: plutonium }
+  spawn: SheetPlutonium1
+  maxCount: 30
+
+- type: stack
+  id: Neptunium
+  name: stack-neptunium
+  icon: { sprite: /Textures/Objects/Materials/Sheets/other.rsi, state: neptunium }
+  spawn: SheetNeptunium1
+  maxCount: 30

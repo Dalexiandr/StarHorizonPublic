@@ -1,0 +1,24 @@
+- type: entity
+  id: MediaPlayer
+  name: media player
+  parent: BaseItem
+  description: A machine capable of playing a wide variety of tunes. Enjoyment not guaranteed.
+  components:
+  - type: Item
+    size: Small
+    sprite: _NF/Structures/Wallmounts/memorial_sign.rsi # Нужны новые текстуры
+  - type: Sprite
+    sprite: _NF/Structures/Wallmounts/memorial_sign.rsi # Нужны новые текстуры
+    state: memorial
+  - type: Transform
+  - type: MediaPlayer
+  - type: ActivatableUI
+    key: enum.MediaPlayerUIKey.Key
+  - type: UserInterface
+    interfaces:
+        enum.MediaPlayerUIKey.Key:
+          type: MediaPlayerBoundUserInterface
+        enum.WiresUiKey.Key:
+          type: WiresBoundUserInterface
+  - type: StaticPrice
+    price: 200

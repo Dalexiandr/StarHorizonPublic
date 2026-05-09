@@ -1,0 +1,9 @@
+ent-PoweredlightUltraviolet = { ent-Poweredlight }
+    .suffix = UV
+    .desc = { ent-Poweredlight.desc }
+ent-NFPoweredlightShieldedEmpty = экранированный светильник
+    .desc = Осветительный прибор. Потребляет энергию и производит свет при установленной лампе. Усилен пласталью для защиты от солнечных вспышек.
+    .suffix = Пустой
+ent-NFPoweredSmallLightShieldedEmpty = экранированный малый светильник
+    .desc = Осветительный прибор. Потребляет энергию и производит свет при установленной лампе. Усилен пласталью для защиты от солнечных вспышек.
+    .suffix = Пустой

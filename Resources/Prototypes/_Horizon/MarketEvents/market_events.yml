@@ -1,0 +1,68 @@
+# Horizon: Прототипы рыночных событий
+# Каждые 2-3 часа система случайным образом выбирает одно из этих событий
+# и активирует его на подходящей станции на указанное время.
+#
+# Поля:
+#   description — ключ локализации для объявления (параметры: {$station}, {$duration})
+#   stations — ID прототипов станций (пустой = любая станция)
+#   items — ID прототипов предметов, цена которых меняется
+#   priceModifier — множитель цены (2.0 = в 2 раза выше, 0.5 = в 2 раза ниже)
+#   duration — длительность в секундах (по умолчанию 1800 = 30 минут)
+#
+# ВАЖНО: items должен содержать ОБА варианта ID — полный стак и одиночный!
+# Например: SheetUranium (стак) и SheetUranium1 (одиночный)
+
+- type: marketEvent
+  id: DeficitPlasma
+  description: market-event-deficit-plasma
+  stations:
+  - DebugFrontierStation
+  items:
+  - SheetPlasma
+  - SheetPlasma1
+  priceModifier: 2.0
+  duration: 1700
+
+- type: marketEvent
+  id: SurplusSteel
+  description: market-event-surplus-steel
+  stations:
+  - DebugFrontierStation
+  items:
+  - SheetSteel
+  - SheetSteel1
+  priceModifier: 0.5
+  duration: 1700
+
+- type: marketEvent
+  id: DeficitUranium
+  description: market-event-deficit-uranium
+  stations:
+  - DebugFrontierStation
+  items:
+  - SheetUranium
+  - SheetUranium1
+  priceModifier: 2.0
+  duration: 1800
+
+- type: marketEvent
+  id: DeficitGold
+  description: market-event-deficit-gold
+  stations:
+  - DebugFrontierStation
+  items:
+  - IngotGold
+  - IngotGold1
+  priceModifier: 2.0
+  duration: 1800
+
+- type: marketEvent
+  id: SurplusGlass
+  description: market-event-surplus-glass
+  stations:
+  - DebugFrontierStation
+  items:
+  - SheetGlass
+  - SheetGlass1
+  priceModifier: 0.5
+  duration: 1800

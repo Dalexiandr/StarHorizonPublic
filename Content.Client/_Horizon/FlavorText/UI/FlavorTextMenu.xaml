@@ -1,0 +1,36 @@
+<controls:FancyWindow xmlns="https://spacestation14.io"
+                      xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls;assembly=Content.Client"
+                      xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls;assembly=Content.Client"
+                      Title="{Loc 'flavor-text-menu-title'}"
+                      SetSize="500 600">
+    <BoxContainer Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True" Margin="4">
+        <TabContainer Name="TabContainer" HorizontalExpand="True" VerticalExpand="True" Margin="10">
+            <BoxContainer Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True" Margin="4">
+                <BoxContainer Orientation="Horizontal" HorizontalExpand="True" SetHeight="70">
+                    <SpriteView Name="IcSprite" SetSize="64 64" VerticalAlignment="Center" HorizontalAlignment="Left" OverrideDirection="South" Scale="2 2"/>
+                    <RichTextLabel Name="IcNameLabel" HorizontalExpand="True" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                </BoxContainer>
+                <customControls:HSeparator Margin="2"/>
+                <ScrollContainer HScrollEnabled="False" HorizontalExpand="True" VerticalExpand="True" >
+                    <RichTextLabel Name="ICDescriptionLabel" HorizontalExpand="True" VerticalAlignment="Top" Margin="2" />
+                </ScrollContainer>
+            </BoxContainer>
+
+            <BoxContainer Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True" Margin="4">
+                <BoxContainer Orientation="Horizontal" HorizontalExpand="True" SetHeight="70">
+                    <SpriteView Name="OocSprite" SetSize="64 64" VerticalAlignment="Center" HorizontalAlignment="Left" OverrideDirection="South" Scale="2 2"/>
+                    <RichTextLabel Name="OocNameLabel" HorizontalExpand="True" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                </BoxContainer>
+                <customControls:HSeparator Margin="2"/>
+                <ScrollContainer HScrollEnabled="False" HorizontalExpand="True" VerticalExpand="True" >
+                    <BoxContainer Orientation="Vertical" VerticalAlignment="Top">
+                        <RichTextLabel Name="ErpStatusLabel" HorizontalExpand="True" Margin="2" />
+                        <customControls:HSeparator Margin="2"/>
+                        <RichTextLabel Name="OOCDescriptionLabel" HorizontalExpand="True" Margin="2" />
+                    </BoxContainer>
+                </ScrollContainer>
+            </BoxContainer>
+        </TabContainer>
+        <Button Name="BottomCloseButton" Text="{Loc 'character-setup-gui-character-setup-close-button'}" SetSize="250 42" HorizontalAlignment="Center"/>
+    </BoxContainer>
+</controls:FancyWindow>

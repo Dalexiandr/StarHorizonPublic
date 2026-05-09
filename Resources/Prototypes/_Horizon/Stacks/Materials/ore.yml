@@ -1,0 +1,62 @@
+- type: stack
+  id: PsycoreOre
+  name: stack-rough-psycore
+  icon: { sprite: /Textures/_Horizon/Objects/Materials/ore.rsi, state: psycore }
+  spawn: PsycoreOre1
+  maxCount: 100
+
+- type: stack
+  id: TitanOre
+  name: stack-rough-titan
+  icon: { sprite: /Textures/_Horizon/Objects/Materials/ore.rsi, state: titan }
+  spawn: TitanOre1
+  maxCount: 100
+
+- type: stack
+  id: EmeraldOre
+  name: stack-rough-emerald
+  icon: { sprite: /Textures/_Horizon/Objects/Materials/ore.rsi, state: emerald }
+  spawn: EmeraldOre1
+  maxCount: 30
+
+- type: stack
+  id: RubyOre
+  name: stack-rough-ruby
+  icon: { sprite: /Textures/_Horizon/Objects/Materials/ore.rsi, state: ruby }
+  spawn: RubyOre1
+  maxCount: 30
+
+- type: stack
+  id: SapphireOre
+  name: stack-rough-sapphire
+  icon: { sprite: /Textures/_Horizon/Objects/Materials/ore.rsi, state: sapphire }
+  spawn: SapphireOre1
+  maxCount: 30
+
+- type: stack
+  id: TopazOre
+  name: stack-rough-topaz
+  icon: { sprite: /Textures/_Horizon/Objects/Materials/ore.rsi, state: topaz }
+  spawn: TopazOre1
+  maxCount: 30
+
+- type: stack
+  id: ToriumOre
+  name: stack-rough-torium
+  icon: { sprite: /Textures/_Horizon/Objects/Materials/ore.rsi, state: torium }
+  spawn: ToriumOre1
+  maxCount: 100
+
+- type: stack
+  id: PlutoniumOre
+  name: stack-rough-plutonium
+  icon: { sprite: /Textures/_Horizon/Objects/Materials/ore.rsi, state: plutonium }
+  spawn: PlutoniumOre1
+  maxCount: 100
+
+- type: stack
+  id: NeptuniumOre
+  name: stack-rough-neptunium
+  icon: { sprite: /Textures/_Horizon/Objects/Materials/ore.rsi, state: neptunium }
+  spawn: TopazOre1
+  maxCount: 100

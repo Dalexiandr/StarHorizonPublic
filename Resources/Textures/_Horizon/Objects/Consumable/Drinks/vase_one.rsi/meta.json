@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "license": "CLA with hosting restrictions",
+  "copyright": "Sprites by Malanisa",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "chamomiler"
+    },
+    {
+      "name": "chamomilev"
+    },
+    {
+      "name": "clovep"
+    },
+    {
+      "name": "clover"
+    },
+    {
+      "name": "clovew"
+    },
+    {
+      "name": "clovey"
+    },
+    {
+      "name": "icon"
+    },
+    {
+      "name": "roselp"
+    },
+    {
+      "name": "rosep"
+    },
+    {
+      "name": "roser"
+    },
+    {
+      "name": "rosew"
+    },
+    {
+      "name": "tuliplp"
+    },
+    {
+      "name": "tulipp"
+    },
+    {
+      "name": "tulipr"
+    },
+    {
+      "name": "tulipy"
+    }
+  ]
+}

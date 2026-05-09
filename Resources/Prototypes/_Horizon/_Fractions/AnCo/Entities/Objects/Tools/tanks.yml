@@ -1,0 +1,41 @@
+- type: entity
+  id: GasTankAnCo
+  parent: BaseItem
+  name: укрепленный газовый баллон
+  description: укрепленный газовый баллон, вы не уверены что там.
+  suffix: StarHorizon, AnCo, Empty
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Tanks/tanks.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Horizon/_Fractions/AnCo/Objects/Tanks/tanks.rsi
+    slots:
+      - Back
+      - suitStorage
+  - type: PhysicalComposition
+    materialComposition:
+      Kazmie: 300
+  - type: GasTank
+    outputPressure: 21.3
+    air:
+      # 13 minutes of thrust
+      volume: 5
+      temperature: 293.15
+      moles:
+        - 4.069931438757837 # oxygen
+  - type: ActivatableUI
+    key: enum.SharedGasTankUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.SharedGasTankUiKey.Key:
+        type: GasTankBoundUserInterface
+  - type: UseDelay
+    delays:
+      gasTank:
+        length: 1.0
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+    - GasTank

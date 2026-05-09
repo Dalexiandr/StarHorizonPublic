@@ -1,0 +1,65 @@
+{
+    "version": 1,
+    "license": "CLA with hosting restrictions",
+    "copyright": "Sprited by Xigovir DS:623559319543349268",
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+    "states": [
+      {
+        "name": "default"
+      },
+      {
+        "name": "counselor"
+      },
+      {
+        "name": "titan"
+      },
+      {
+        "name": "spider"
+      },
+      {
+        "name": "knight"
+      },
+      {
+        "name": "officer"
+      },
+      {
+        "name": "cadet"
+      },
+      {
+        "name": "ripsoid"
+      },
+      {
+        "name": "welcome"
+      },
+      {
+        "name": "default_world"
+      },
+      {
+        "name": "counselor_world"
+      },
+      {
+        "name": "titan_world"
+      },
+      {
+        "name": "spider_world"
+      },
+      {
+        "name": "knight_world"
+      },
+      {
+        "name": "officer_world"
+      },
+      {
+        "name": "cadet_world"
+      },
+      {
+        "name": "ripsoid_world"
+      },
+      {
+        "name": "welcome_world"
+      }
+    ]
+  }

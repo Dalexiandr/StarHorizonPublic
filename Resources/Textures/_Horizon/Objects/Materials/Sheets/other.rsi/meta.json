@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "license": "CLA",
+  "copyright": "by Malanisa",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "neptunium"
+    },
+    {
+      "name": "neptunium_2"
+    },
+    {
+      "name": "neptunium_3"
+    },
+    {
+      "name": "neptunium-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "neptunium-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "plutonium"
+    },
+    {
+      "name": "plutonium_2"
+    },
+    {
+      "name": "plutonium_3"
+    },
+    {
+      "name": "plutonium-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "plutonium-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "torium"
+    },
+    {
+      "name": "torium_2"
+    },
+    {
+      "name": "torium_3"
+    },
+    {
+      "name": "torium-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "torium-inhand-right",
+      "directions": 4
+    }
+  ]
+}

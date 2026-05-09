@@ -1,0 +1,125 @@
+- type: startingGear
+  id: DFIAgentGear
+  suffix: StarHorizon
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDFI
+    back: ClothingBackpackCadetFillDFI
+    eyes: ClothingEyesGlassesDFI
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorDFI
+    shoes: ClothingShoesSwat
+    id: PDADFI
+    ears: ClothingHeadsetDFI
+    belt: ClothingBeltMilitaryWebbingCadetFill
+
+- type: startingGear
+  id: DFICadetGear
+  suffix: StarHorizon
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDFI
+    back: ClothingBackpackCadetFillDFI
+    eyes: ClothingEyesGlassesDFI
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorDFI
+    shoes: ClothingShoesSwat
+    id: PDACadetDFI
+    ears: ClothingHeadsetDFI
+    belt: ClothingBeltMilitaryWebbingCadetFill
+
+- type: startingGear
+  id: DFICriminologistGear
+  suffix: StarHorizon
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDFI
+    back: ClothingBackpackCadetFillDFI
+    eyes: ClothingEyesGlassesDFI
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorDFI
+    shoes: ClothingShoesSwat
+    id: PDACriminologistDFI
+    ears: ClothingHeadsetDFI
+    belt: ClothingBeltMilitaryWebbingCadetFill
+
+- type: startingGear
+  id: DFIDetectiveGear
+  suffix: StarHorizon
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDFI
+    back: ClothingBackpackCadetFillDFI
+    eyes: ClothingEyesGlassesDFI
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorDFI
+    shoes: ClothingShoesSwat
+    id: PDADetectiveDFI
+    ears: ClothingHeadsetDFI
+    belt: ClothingBeltMilitaryWebbingCadetFill
+
+- type: startingGear
+  id: DFIDetectiveSergeantGear
+  suffix: StarHorizon
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDFI
+    back: ClothingBackpackCadetFillDFI
+    eyes: ClothingEyesGlassesDFI
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorDFI
+    shoes: ClothingShoesSwat
+    id: PDADetectiveSergeantDFI
+    ears: ClothingHeadsetDFI
+    belt: ClothingBeltMilitaryWebbingCadetFill
+
+- type: startingGear
+  id: DFIEngineerGear
+  suffix: StarHorizon
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDFI
+    back: ClothingBackpackCadetFillDFI
+    eyes: ClothingEyesGlassesDFI
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorDFI
+    shoes: ClothingShoesSwat
+    id: PDAEngineerDFI
+    ears: ClothingHeadsetDFI
+    belt: ClothingBeltMilitaryWebbingCadetFill
+
+- type: startingGear
+  id: DFIMedicGear
+  suffix: StarHorizon
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDFI
+    back: ClothingBackpackCadetFillDFI
+    eyes: ClothingEyesGlassesDFI
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorDFI
+    shoes: ClothingShoesSwat
+    id: PDAMedicDFI
+    ears: ClothingHeadsetDFI
+    belt: ClothingBeltMilitaryWebbingCadetFill
+
+- type: startingGear
+  id: DFIOfficerGear
+  suffix: StarHorizon
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDFI
+    back: ClothingBackpackCadetFillDFI
+    eyes: ClothingEyesGlassesDFI
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorDFI
+    shoes: ClothingShoesSwat
+    id: PDAOfficerDFI
+    ears: ClothingHeadsetDFI
+    belt: ClothingBeltMilitaryWebbingCadetFill
+
+- type: startingGear
+  id: DFISSEmployeeGear
+  suffix: StarHorizon
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDFI
+    back: ClothingBackpackCadetFillDFI
+    eyes: ClothingEyesGlassesDFI
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorDFI
+    shoes: ClothingShoesSwat
+    id: PDASSEmployeeDFI
+    ears: ClothingHeadsetDFI
+    belt: ClothingBeltMilitaryWebbingCadetFill

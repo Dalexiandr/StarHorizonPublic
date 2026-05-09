@@ -1,0 +1,23 @@
+- type: construction
+  id: FanTinyRecipe
+  graph: FanTiny
+  startNode: start
+  targetNode: fantiny
+  category: construction-category-utilities
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked
+
+- type: construction
+  id: FanDirectionalRecipe
+  graph: fandirectional
+  startNode: start
+  targetNode: fandirectional
+  category: construction-category-utilities
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked

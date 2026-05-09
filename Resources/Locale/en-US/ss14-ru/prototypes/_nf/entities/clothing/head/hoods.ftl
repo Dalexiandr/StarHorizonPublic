@@ -1,0 +1,10 @@
+ent-ClothingHeadHatHoodArcadia = arcadia coat hood
+    .desc = { ent-ClothingHeadHatHoodWinterBase.desc }
+ent-ClothingHeadHatHoodRosyCloak = rosy the maple mothroach hood
+    .desc = The adorable visage of a rosy maple mothroach. You have never felt cuter.
+ent-NFGoblinMadeClothingHeadHatHoodTrashMantle = trashtle hood
+    .desc = The hood of a trash mantle.
+ent-NFGoblinMadeClothingHeadHatHoodTrashCloak = cloakash hood
+    .desc = The hood of a trash cloak.
+ent-ClothingHeadHatHoodBioArmoredMercenray = mercenary bio hood
+    .desc = A hood that protects the head and face from biological contaminants.

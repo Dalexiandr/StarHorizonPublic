@@ -1,0 +1,30 @@
+- type: entity
+  parent: BaseWeaponRevolver
+  id: WeaponRevolverWoyceh
+  name: РШ-60
+  description: Револьвер Штурмовой, модернезированный под крупнокалиберный винтовочный патрон. Большая пушка, для больших мальчиков.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Weapons/Guns/Revolvers/rsh-60.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Objects/Weapons/Guns/Revolvers/rsh-60.rsi
+  - type: Gun
+    selectedMode: SemiAuto
+    fireRate: 2
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
+      params:
+        volume: 2.25
+  - type: StaticPrice
+    price: 1
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeAntiMateriel # возможно запихать антиматериаль
+    mayTransfer: true # Frontier
+    proto: NFCartridgeRifle60 # прототип пули
+    capacity: 6
+    chambers: [ True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null ]

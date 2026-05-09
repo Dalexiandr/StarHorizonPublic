@@ -1,0 +1,77 @@
+# Lumber mill — processes wood and mushroom caps (anything with Log) into planks/sheets as stacks.
+# Sprite same as OreProcessor.
+- type: entity
+  parent: [ BaseMachinePowered, ConstructibleMachine ]
+  id: LumberMill
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/ore_processor.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Appearance
+  - type: WiresVisuals
+  - type: PowerSwitch
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalGlassBreak
+      - !type:ChangeConstructionNodeBehavior
+        node: machineFrame
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Machine
+    board: LumberMillMachineCircuitboard
+  - type: WiresPanel
+  - type: LumberMill
+    whitelist:
+      components:
+      - Log
+    processDuration: 2
+    sound:
+      path: /Audio/Ambience/Objects/crushing.ogg
+      params:
+        volume: 5
+        maxDistance: 5
+        loop: true
+    soundCooldown: 0
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+      active-lumber-mill-container: !type:Container
+      machine_board: !type:Container
+      machine_parts: !type:Container
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,7,2
+    quickInsert: false
+    areaInsert: false
+    clickInsert: false
+    openOnActivate: false
+    storageInsertSound: null
+    whitelist:
+      components:
+      - Log
+  - type: MagnetPickup
+    range: 0.30
+    magnetEnabled: true
+    magnetCanBeEnabled: true
+  - type: StaticPrice
+    price: 400
+  - type: ApcPowerReceiver
+    powerLoad: 500

@@ -1,0 +1,12 @@
+department-Cargo-description = Покупайте и доставляйте экипажу полезные припасы.
+department-Civilian-description = Выполняйте небольшие полезные задания для поддержания нормальной работы станции.
+department-Command-description = Управляйте экипажем и обеспечивайте его эффективную работу.
+department-CentralCommand-description = Отвечайте на факсы и стреляйте из БСА по карго.
+department-Medical-description = Поддерживайте здоровье экипажа.
+department-Security-description = Поддерживайте порядок на станции.
+department-Science-description = Изучайте артефакты и аномалии, обеспечивайте членов экипажа новыми продвинутыми устройствами.
+department-Silicon-description = Подчиняйтесь законам и служите экипажу.
+department-Specific-description = Должности, которые есть не на всех станциях.
+department-Legal-description = Следите за исполнением закона, требуйте бумажки от всех и на все.
+department-Syndicate-description = Стройте козни Нанотрейзен, следите за ними и выполняйте задачи Триглава.
+department-Freelance-description = Выполняйте задания для Нанотрейзен, Синдиката или других организаций, не привязываясь к одной из них.

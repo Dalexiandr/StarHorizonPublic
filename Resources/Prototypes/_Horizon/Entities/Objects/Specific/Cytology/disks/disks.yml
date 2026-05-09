@@ -1,0 +1,61 @@
+# component types:
+# MovementSpeedModifier
+# MeleeWeaponDamage
+# MobHealth
+# HungerRate
+# Stamina
+# MaxPlasma - for xeno
+# PlasmaRechargeSpeed - for xeno
+# GunFireRate -for xeno
+
+- type: entity
+  id: CytologyDiskHealthSpeed
+  name: Health disk
+  parent: BaseItem
+  description: Increases a creature's Health by sacrificing speed
+  components:
+  - type: Item
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Cytology/disks.rsi
+    state: green
+  - type: CytologyDisk
+    modifiers:
+      - componentType: MobHealth
+        percentModifier: 1.5
+      - componentType: MovementSpeedModifier
+        percentModifier: 0.5
+
+- type: entity
+  id: CytologyDiskMeleeDamage
+  name: Melee disk
+  parent: BaseItem
+  description: Increases creature damage but increasing metabolism
+  components:
+  - type: Item
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Cytology/disks.rsi
+    state: red
+  - type: CytologyDisk
+    modifiers:
+      - componentType: MeleeWeaponDamage
+        percentModifier: 1.5
+      - componentType: HungerRate
+        percentModifier: 1.5
+
+- type: entity
+  id: CytologyDiskSpeedHunger
+  name: Speed disk
+  parent: BaseItem
+  description: Increases creature speed but increasing metabolism
+  components:
+  - type: Item
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Cytology/disks.rsi
+    state: grey
+  - type: CytologyDisk
+    modifiers:
+      - componentType: MovementSpeedModifier
+        percentModifier: 1.25
+      - componentType: HungerRate
+        percentModifier: 1.5
+

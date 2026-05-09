@@ -1,0 +1,76 @@
+﻿- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ClothingBackpackDuffelSyndicateFilledChinaLikeGrenadeLauncher
+  name: China-Lake bundle
+  description: "An old China-Lake grenade launcher bundled with 11 rounds of various destruction capability."
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponLauncherChinaLake
+    - id: 40mmGrenadeBlast
+      amount: 4
+    - id: 40mmGrenadeHEAT
+      amount: 8
+    - id: 40mmGrenadeSmoke
+      amount: 4
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ClothingBackpackDuffelSyndicateFilledRailAttachments
+  name: rail attachments bundle
+  components:
+  - type: StorageFill
+    contents:
+    - id: AttachmentT2Miniscope
+    - id: AttachmentMagneticHarness
+    - id: AttachmentReflexSight
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ClothingBackpackDuffelSyndicateFilledBarrelAttachments
+  name: barrel attachments bundle
+  components:
+  - type: StorageFill
+    contents:
+    - id: AttachmentSuppressor
+    - id: AttachmentAntiLyingWarrior
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ClothingBackpackDuffelSyndicateFilledUnderAttachments
+  name: underbarrel attachments bundle
+  components:
+  - type: StorageFill
+    contents:
+    - id: AttachmentVerticalGrip
+    - id: AttachmentLaserSight
+    - id: AttachmentM90UnderbarrelShotgun
+    - id: AttachmentM90GrenadeLauncher
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ClothingBackpackDuffelSyndicateFilledLethalGrenades
+  name: lethal grenades bundle
+  components:
+  - type: StorageFill
+    contents:
+    - id: 40mmGrenadeHEAT
+      amount: 3
+    - id: 40mmGrenadeBlast
+      amount: 3
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ClothingBackpackDuffelSyndicateFilledNonLethalGrenades
+  name: non-lethal grenades bundle
+  components:
+  - type: StorageFill
+    contents:
+    - id: 40mmGrenadeBaton
+      amount: 3
+    - id: 40mmGrenadeEMP
+      amount: 3
+    - id: 40mmGrenadeFlash
+      amount: 3
+    - id: 40mmGrenadeSmoke
+      amount: 3

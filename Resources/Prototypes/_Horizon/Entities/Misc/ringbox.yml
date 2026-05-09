@@ -1,0 +1,42 @@
+- type: entity
+  parent: [ BoxCardboard, BaseBagOpenClose ]
+  id: BoxRing
+  name: футляр для колец
+  description: Удобно хранить маленькие дорогие кольца в одном месте.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Misc/ringbox.rsi
+    state: close
+    layers:
+    - state: close
+    - state: open
+      map: ["openLayer"]
+      visible: false
+    - state: ring1
+      map: ["ring1"]
+      visible: false
+    - state: ring2
+      map: ["ring2"]
+      visible: false
+  - type: Storage
+    grid:
+    - 0,0,1,0
+    whitelist:
+      tags:
+      - Ring
+  - type: Item
+    sprite: _Horizon/Objects/Misc/ringbox.rsi
+    size: Tiny
+    heldPrefix: box
+  - type: StorageFill
+    contents:
+    - id: ClothingHandsRingWedding
+      amount: 2
+  - type: ItemCounter
+    count:
+      tags: [Ring]
+    composite: true
+    layerStates:
+    - ring1
+    - ring2
+  - type: Appearance

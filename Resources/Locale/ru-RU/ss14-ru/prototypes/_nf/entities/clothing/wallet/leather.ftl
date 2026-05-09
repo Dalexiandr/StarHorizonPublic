@@ -1,0 +1,10 @@
+ent-ClothingWalletLeatherBrown = кожаный кошелёк
+    .desc = Удивительно толстый. Будьте осторожны, не потеряйте его, и не садитесь на него.
+ent-ClothingWalletLeatherBlack = { ent-ClothingWalletLeatherBrown }
+    .desc = { ent-ClothingWalletLeatherBrown.desc }
+ent-ClothingWalletLeatherMail = { ent-ClothingWalletLeatherBrown }
+    .desc = Внутри вышитая картинка кота, сердца и слово "КЛИППИ".
+ent-ClothingWalletLeatherPirate = { ent-ClothingWalletLeatherBrown }
+    .desc = Внутри старая фотография кота с бородой.
+ent-ClothingWalletLeatherPrisoner = тюремный кошелёк
+    .desc = Не то, что вы ожидали.

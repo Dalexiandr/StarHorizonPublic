@@ -1,0 +1,104 @@
+# melee weapon
+
+- type: entity
+  id: MechWeaponSword
+  parent: BaseItem
+  name: механический плазменный меч
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: cc_sword
+  - type: Item
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    size: Ginormous
+    state: cc_sword
+  - type: MeleeWeapon
+    attackRate: 1.0
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Slash: 20
+        Heat: 40
+  - type: Appearance
+  - type: Tag
+    tags:
+    - MechEquipmentSecCC
+  - type: MechEquipment
+
+- type: entity
+  id: MechWeaponSpear
+  parent: BaseItem
+  name: механическое плазменное копье
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: cc_spear
+  - type: Item
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    size: Ginormous
+    state: cc_spear
+  - type: MeleeWeapon
+    attackRate: 1.0
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Piercing: 30
+        Heat: 30
+  - type: Appearance
+  - type: Tag
+    tags:
+    - MechEquipmentSecCC
+  - type: MechEquipment
+
+- type: entity
+  id: MechWeaponClaws
+  parent: BaseItem
+  name: механические плазменные когти
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: cc_claw
+  - type: Item
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    size: Ginormous
+    state: cc_claw
+  - type: MeleeWeapon
+    attackRate: 1.5
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Slash: 10
+        Heat: 10
+  - type: Appearance
+  - type: Tag
+    tags:
+    - MechEquipmentSecCC
+  - type: MechEquipment
+
+- type: entity
+  id: MechWeaponWarhammer
+  parent: BaseItem
+  name: механический плазменный молот
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    state: cc_hammer
+  - type: Item
+    sprite: _Horizon/Objects/Specific/Mech/equipment.rsi
+    size: Ginormous
+    state: cc_hammer
+  - type: MeleeWeapon
+    attackRate: 0.5
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 30
+        Heat: 10
+  - type: Appearance
+  - type: MeleeThrowOnHit
+    speed: 5
+    lifetime: 1
+  - type: Tag
+    tags:
+    - MechEquipmentSecCC
+  - type: MechEquipment

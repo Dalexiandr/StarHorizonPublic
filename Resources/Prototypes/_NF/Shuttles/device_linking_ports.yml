@@ -1,0 +1,41 @@
+# Shuttle Console Button Source Ports
+
+- type: sourcePort
+  id: device-button-1
+  name: Порт 1
+  description: "Порт 1"
+
+- type: sourcePort
+  id: device-button-2
+  name: Порт 2
+  description: "Порт 2"
+
+- type: sourcePort
+  id: device-button-3
+  name: Порт 3
+  description: "Порт 3"
+
+- type: sourcePort
+  id: device-button-4
+  name: Порт 4
+  description: "Порт 4"
+
+- type: sourcePort
+  id: device-button-5
+  name: Порт 5
+  description: "Порт 5"
+
+- type: sourcePort
+  id: device-button-6
+  name: Порт 6
+  description: "Порт 6"
+
+- type: sourcePort
+  id: device-button-7
+  name: Порт 7
+  description: "Порт 7"
+
+- type: sourcePort
+  id: device-button-8
+  name: Порт 8
+  description: "Порт 8"

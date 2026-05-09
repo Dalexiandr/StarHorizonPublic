@@ -1,0 +1,25 @@
+﻿- type: entity
+  parent: AdminObserver
+  id: CatShadowAdminObserver
+  name: призрачный котик
+  description: Кажется он потерялся между призрачным и реальным миром
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    color: "#793a80dd"
+    overrideContainerOcclusion: true
+    drawdepth: Mobs
+    sprite: Mobs/Pets/cat.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: cat
+  - type: PointLight
+    color: "#793a80dd"
+    radius: 1.1
+  - type: InteractionPopup
+    successChance: 0.1
+    interactSuccessString: petting-success-cat
+    interactFailureString: petting-failure-shadow
+    interactSuccessSpawn: EffectHearts
+    interactSuccessSound:
+      path: /Audio/Animals/cat_meow.ogg

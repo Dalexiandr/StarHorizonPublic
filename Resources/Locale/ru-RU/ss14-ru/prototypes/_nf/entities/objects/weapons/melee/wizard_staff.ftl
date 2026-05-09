@@ -1,0 +1,17 @@
+ent-WizardStaffMeleeBase = волшебный посох
+    .desc = Символ мастерства волшебника в тайных искусствах.
+ent-WizardStaffMeleeBaseNF = волшебный посох nf
+    .desc = { ent-WizardStaffMeleeBase.desc }
+ent-WizardStaffMeleeRed = красный волшебный посох
+    .desc = { ent-WizardStaffMeleeBase.desc }
+ent-WizardStaffMeleeViolet = фиолетовый волшебный посох
+    .desc = { ent-WizardStaffMeleeBase.desc }
+ent-WizardStaffMeleeSoap = мыльный волшебный посох
+    .desc = { ent-WizardStaffMeleeBase.desc }
+ent-WizardStaffMeleeBrick = инертный кирпичный волшебный посох
+    .desc = { ent-WizardStaffMeleeBaseNF.desc }
+ent-WizardStaffMeleeBlood = окровавленный волшебный посох
+    .desc = { ent-WizardStaffMeleeRed.desc }
+ent-WizardStaffDarkBolt = посох культиста
+    .suffix = Тёмный снаряд
+    .desc = { ent-WizardStaffMeleeBlood.desc }

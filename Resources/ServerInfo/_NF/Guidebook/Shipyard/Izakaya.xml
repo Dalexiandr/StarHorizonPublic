@@ -1,0 +1,101 @@
+<Document>
+  # РЕСТОРАННЫЙ ШАТТЛ КЛАССА IZAKAYA
+  <Box>
+  <GuideEntityEmbed Entity="SignKitchen" Caption=""/>
+  <GuideEntityEmbed Entity="KitchenAssembler" Caption=""/>
+  <GuideEntityEmbed Entity="KitchenMicrowave" Caption=""/>
+  <GuideEntityEmbed Entity="KitchenDeepFryer" Caption=""/>
+  <GuideEntityEmbed Entity="KitchenElectricRange" Caption=""/>
+  <GuideEntityEmbed Entity="SignKitchen" Caption=""/>
+  </Box>
+  <Box>
+  <GuideEntityEmbed Entity="ShuttleMapIzakaya" Caption=""/>
+  </Box>
+  <Box>
+  <GuideEntityEmbed Entity="SignBar" Caption=""/>
+  <GuideEntityEmbed Entity="BoozeDispenser" Caption=""/>
+  <GuideEntityEmbed Entity="VendingMachineBooze" Caption=""/>
+  <GuideEntityEmbed Entity="SodaDispenser" Caption=""/>
+  <GuideEntityEmbed Entity="SignBar" Caption=""/>
+  </Box>
+    [color=#a4885c]Размер корабля:[/color] Средний
+
+  [color=#a4885c]Рекомендуемый экипаж:[/color] 4-8
+
+  [color=#a4885c]Тип генератора питания:[/color] Урановый
+
+  [color=#a4885c]Экспедиции:[/color] Нет
+
+  [color=#a4885c]Консоль IFF:[/color] Нет
+
+  "Ресторан/паб среднего размера в японском стиле с большой обеденной зоной и такой же большой кухней."
+
+  "Этот ресторанный шаттл вмещает до 28 клиентов в обеденной зоне, что позволяет шаттлу одновременно обслуживать людей по всему сектору."
+
+  "На кухне есть основная зона для приготовления пищи, которой могут комфортно пользоваться до 2 поваров, отдельная зона для напитков для бармена, кладовая для хранения ингредиентов, морозильная камера для разделки мяса и долгосрочного хранения ингредиентов, а также зона для фритюра."
+
+  "Внутренняя ботаника имеет 5 гидропонных лотков и загон для животных, она расположена рядом с кухней для удобства транспортировки."
+
+  [italic]Предоставлено Settler's LLC.[/italic]
+
+  # КОНТРОЛЬНЫЙ СПИСОК ПЕРЕД ВЫЛЕТОМ
+
+  ## 1. Электропитание
+
+  ## 1.1. Аккумуляторные модули
+  <Box>
+  <GuideEntityEmbed Entity="SMESBasic"/>
+  <GuideEntityEmbed Entity="SubstationBasic"/>
+  <GuideEntityEmbed Entity="APCBasic"/>
+  </Box>
+
+  - Проверьте, что блок СМЭС закреплен на полу.
+  - Проверьте, что блок подстанции закреплен на полу.
+  - Проверьте, что главный автомат блока ЛКП включен.
+  - Проверьте текущую нагрузку блока ЛКП (Вт).
+
+  ## 1.2. Генераторный блок S.U.P.E.R.P.A.C.M.A.N.
+  <Box>
+  <GuideEntityEmbed Entity="PortableGeneratorSuperPacmanShuttle"/>
+  <GuideEntityEmbed Entity="FuelUranium"/>
+  </Box>
+
+  - Проверьте, что генераторные блоки S.U.P.E.R.P.A.C.M.A.N. закреплены на полу.
+  - Проверьте, что генераторные блоки S.U.P.E.R.P.A.C.M.A.N. имеют топливо. Для длительных полетов убедитесь, что у вас достаточно запасов топлива для поддержания выработки электроэнергии во время полета.
+  - Проверьте, что генераторные блоки S.U.P.E.R.P.A.C.M.A.N. настроены на выход HV.
+  - Установите целевую мощность на 28-30 [bold]кВт[/bold].
+  - Запустите генераторные блоки S.U.P.E.R.P.A.C.M.A.N.
+
+  ## 2. Атмосферные системы
+
+  ## 2.1. Распределительная петля
+  <Box>
+  <GuideEntityEmbed Entity="OxygenCanister"/>
+  <GuideEntityEmbed Entity="NitrogenCanister"/>
+  <GuideEntityEmbed Entity="GasPort"/>
+  <GuideEntityEmbed Entity="GasMixer"/>
+  </Box>
+
+  - Проверьте, что баллон с O2 закреплен на соединительном порту.
+  - Проверьте, что оба баллона с N2 закреплены на соединительном порту.
+  - Проверьте, что газовый смеситель настроен на правильное соотношение смешивания (21% Кислорода, 79% Азота).
+  - Проверьте, что газовый смеситель установлен на 101 кПа.
+  - Убедитесь, что газовый смеситель включен.
+
+  ## 2.2. Петля отходов
+
+  <Box>
+  <GuideEntityEmbed Entity="AirAlarm"/>
+  </Box>
+
+  - Убедитесь, что все трубы петли отходов правильно установлены.
+
+  ## 3. Прочие проверки
+  <Box>
+  <GuideEntityEmbed Entity="Gyroscope"/>
+  <GuideEntityEmbed Entity="GravityGeneratorMini"/>
+  </Box>
+
+  - Проверьте, что гироскоп закреплен, подключен к питанию и включен.
+  - Проверьте, что мини-гравитационный генератор закреплен, подключен к питанию и включен.
+</Document>

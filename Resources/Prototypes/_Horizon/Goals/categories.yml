@@ -1,0 +1,26 @@
+- type: expeditionGoalCategory
+  id: Crew
+
+- type: expeditionGoalCategory
+  id: Science
+
+- type: expeditionGoalCategory
+  id: Engineer
+
+- type: expeditionGoalCategory
+  id: Security
+
+- type: expeditionGoalCategory
+  id: Expeditionary
+
+- type: expeditionGoalCategory
+  id: Mining
+
+- type: expeditionGoalCategory
+  id: Medical
+
+- type: expeditionGoalCategory
+  id: Syndicate
+
+- type: expeditionGoalCategory
+  id: Pirates

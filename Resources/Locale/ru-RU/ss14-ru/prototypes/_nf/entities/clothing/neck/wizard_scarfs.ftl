@@ -1,0 +1,12 @@
+ent-ClothingNeckScarfWizardBlue = синий волшебный шарф
+    .desc = Шарф, пропитанный слабыми чарами для защиты носителя от холода и незначительных магических эффектов.
+ent-ClothingNeckScarfWizardRed = красный волшебный шарф
+    .desc = { ent-ClothingNeckScarfWizardBlue.desc }
+ent-ClothingNeckScarfWizardPurple = фиолетовый волшебный шарф
+    .desc = { ent-ClothingNeckScarfWizardBlue.desc }
+ent-ClothingNeckScarfBloodCult = шарф культа крови
+    .desc = { ent-BaseC3CultContrabandUnredeemable.desc }
+ent-ClothingNeckScarfWizardWarmth = волшебный шарф тепла
+    .desc = В нём ты не чувствуешь ни холода, ни тепла. Интересно, защитит ли он от плазменного пламени?
+ent-ClothingNeckCloakWizardHolding = волшебный портальный плащ вместимости
+    .desc = Что происходит, когда твой учитель волшебства запрещает вызывать порталы, но ты всё равно это делаешь и пытаешься спрятать это под плащ, когда он возвращается проверить тебя?

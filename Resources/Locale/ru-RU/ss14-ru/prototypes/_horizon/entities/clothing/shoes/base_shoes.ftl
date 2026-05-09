@@ -1,0 +1,12 @@
+ent-ClothingShoesWeddingShoes = свадебные туфельки
+    .desc = Прекрасная обувь, что прекрасно подчёркивает походку невесты.
+    .suffix = StarHorizon
+ent-ClothingShoesWeddingGlaceups = свадебные туфли
+    .desc = На самом деле универсальны, но с костюмом смотрятся лучше.
+    .suffix = StarHorizon
+ent-ClothingShoesChameleonStealsBootsJack = подкованные сапоги
+    .desc = Обувь службы безопасности Nanotrasen, для боевых операций или боевых действий. Борьба - всё, борьба - всегда.
+    .suffix = Стелс
+ent-ClothingShoesColorStorageBlack = чёрные туфли
+    .desc = Стильные, большие чёрные туфли.
+    .suffix = Тайное хранилище

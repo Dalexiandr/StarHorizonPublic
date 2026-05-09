@@ -1,0 +1,13 @@
+- type: loadout
+  id: MercenaryClothingMaskGasMercenary
+  price: 0
+  storage:
+    back:
+    - ClothingMaskGasMercenary
+
+- type: loadout
+  id: MercenaryClothingMaskGasSecurity
+  price: 0
+  storage:
+    back:
+    - ClothingMaskGasSecurity

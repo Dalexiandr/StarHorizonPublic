@@ -1,0 +1,15 @@
+- type: entity
+  parent: [ NFClothingHeadHardsuitWithLightBase ]
+  id: DraugHead
+  name: Шлем скафандра Драуг
+  description: прочный,удобный,красивый,обновлённый
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/draug.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/draug.rsi
+  - type: PointLight
+    color: "#9e1126"
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000

@@ -1,0 +1,1003 @@
+# region Generic borg
+- type: borgType
+  id: generic
+  category: standard
+
+  # Description
+  dummyPrototype: BorgChassisGeneric
+
+  # Functional
+  extraModuleCount: 5
+  moduleWhitelist:
+    tags:
+    - BorgModuleGeneric
+    - BorgModuleScience #until sciborgs are added
+
+  defaultModules:
+  - BorgModuleTool
+  - BorgModuleArtifact
+  - BorgModuleAnomaly
+  - BorgModuleJetpack # Frontier
+
+  radioChannels:
+  - Science
+
+  # Visual
+  inventoryTemplateId: borgShort
+  spriteBodyState: robot
+  spriteHasMindState: robot_e
+  spriteNoMindState: robot_e_r
+  spriteToggleLightState: robot_l
+
+  # Pet
+  petSuccessString: petting-success-generic-cyborg
+  petFailureString: petting-failure-generic-cyborg
+
+  # Horizon skins
+  skins:
+  - name: Default
+    spriteBodyState: robot
+    spriteHasMindState: robot_e
+    spriteNoMindState: robot_e_r
+    spriteToggleLightState: robot_l
+    petSuccessString: petting-success-generic-cyborg
+    petFailureString: petting-failure-generic-cyborg
+
+# region Engineering borg
+- type: borgType
+  id: engineering
+  category: standard
+
+  # Description
+  dummyPrototype: BorgChassisEngineer
+
+  # Functional
+  extraModuleCount: 3
+  moduleWhitelist:
+    tags:
+    - BorgModuleGeneric
+    - BorgModuleEngineering
+
+  defaultModules:
+  - BorgModuleTool
+  - BorgModuleConstruction
+  - BorgModuleRCDShipyard # Frontier: RCD<RCDShipyard
+  - BorgModuleCable
+  - BorgModuleJetpack # Frontier
+
+  radioChannels:
+  - Engineering
+  - Science
+
+  # Visual
+  inventoryTemplateId: borgShort
+  spriteBodyState: engineer
+  spriteHasMindState: engineer_e
+  spriteNoMindState: engineer_e_r
+  spriteToggleLightState: engineer_l
+
+  # Pet
+  petSuccessString: petting-success-engineer-cyborg
+  petFailureString: petting-failure-engineer-cyborg
+
+  # Horizon skins
+  skins:
+  - name: Стандартный
+    spriteBodyState: engineer
+    spriteHasMindState: engineer_e
+    spriteNoMindState: engineer_e_r
+    spriteToggleLightState: engineer_l
+    petSuccessString: petting-success-engineer-cyborg
+    petFailureString: petting-failure-engineer-cyborg
+  - name: Павук
+    spriteBodyState: engineera
+    spriteHasMindState: engineera_e
+    spriteNoMindState: engineera_e_r
+    spriteToggleLightState: engineera_l
+    petSuccessString: petting-success-engineer-cyborg
+    petFailureString: petting-failure-engineer-cyborg
+  - name: Тяжелый гученичный
+    spriteBodyState: engineere
+    spriteHasMindState: engineere_e
+    spriteNoMindState: engineere_e_r
+    spriteToggleLightState: engineere_l
+    petSuccessString: petting-success-engineer-cyborg
+    petFailureString: petting-failure-engineer-cyborg
+  - name: Легкий гусеничный
+    spriteBodyState: engineert
+    spriteHasMindState: engineert_e
+    spriteNoMindState: engineert_e_r
+    spriteToggleLightState: engineert_l
+    petSuccessString: petting-success-engineer-cyborg
+    petFailureString: petting-failure-engineer-cyborg
+
+
+# region Salvage borg
+- type: borgType
+  id: mining
+  category: standard
+
+  # Description
+  dummyPrototype: BorgChassisMining
+
+  # Functional
+  extraModuleCount: 3
+  moduleWhitelist:
+    tags:
+    - BorgModuleGeneric
+    - BorgModuleCargo
+
+  defaultModules:
+  - BorgModuleTool
+  - BorgModuleMining
+  - BorgModuleTraversal
+  - BorgModuleAppraisal
+  - BorgModuleJetpack # Frontier
+
+  radioChannels:
+  - Supply
+  - Science
+
+  # Visual
+  inventoryTemplateId: borgTall
+  spriteBodyState: spiderb
+  spriteHasMindState: spiderb_e
+  spriteNoMindState: spiderb_e_r
+  spriteToggleLightState: spiderb_l
+
+  # Pet
+  petSuccessString: petting-success-mining-cyborg
+  petFailureString: petting-failure-mining-cyborg
+
+  # Horizon skins
+  skins:
+  - name: Черный
+    spriteBodyState: spiderb
+    spriteHasMindState: spiderb_e
+    spriteNoMindState: spiderb_e_r
+    spriteToggleLightState: spiderb_l
+    petSuccessString: petting-success-spiderb-cyborg
+    petFailureString: petting-failure-spiderb-cyborg
+  - name: Шахтерский
+    spriteBodyState: spiderm
+    spriteHasMindState: spiderm_e
+    spriteNoMindState: spiderm_e_r
+    spriteToggleLightState: spiderm_l
+    petSuccessString: petting-success-spiderm-cyborg
+    petFailureString: petting-failure-spiderm-cyborg
+  - name: Серый
+    spriteBodyState: spiders
+    spriteHasMindState: spiders_e
+    spriteNoMindState: spiders_e_r
+    spriteToggleLightState: spiders_l
+    petSuccessString: petting-success-spiders-cyborg
+    petFailureString: petting-failure-spiders-cyborg
+  - name: Желтый
+    spriteBodyState: spidery
+    spriteHasMindState: spidery_e
+    spriteNoMindState: spidery_e_r
+    spriteToggleLightState: spidery_l
+    petSuccessString: petting-success-spidery-cyborg
+    petFailureString: petting-failure-spidery-cyborg
+
+
+# region Janitor borg
+- type: borgType
+  id: janitor
+  category: standard
+
+  # Description
+  dummyPrototype: BorgChassisJanitor
+
+  # Functional
+  extraModuleCount: 3
+  moduleWhitelist:
+    tags:
+    - BorgModuleGeneric
+    - BorgModuleJanitor
+
+  defaultModules:
+  - BorgModuleTool
+  - BorgModuleCleaning
+  - BorgModuleCustodial
+  - BorgModuleJetpack # Frontier
+
+  radioChannels:
+  - Science
+  - Service
+
+  # Visual
+  inventoryTemplateId: borgShort
+  spriteBodyState: janitor
+  spriteBodyMovementState: janitor_moving
+  spriteHasMindState: janitor_e
+  spriteNoMindState: janitor_e_r
+  spriteToggleLightState: janitor_l
+
+  # Pet
+  petSuccessString: petting-success-janitor-cyborg
+  petFailureString: petting-failure-janitor-cyborg
+
+  # Horizon skins
+  skins:
+  - name: Классический
+    spriteBodyState: janitor
+    spriteBodyMovementState: janitor_moving
+    spriteHasMindState: janitor_e
+    spriteNoMindState: janitor_e_r
+    spriteToggleLightState: janitor_l
+    petSuccessString: petting-success-janitor-cyborg
+    petFailureString: petting-failure-janitor-cyborg
+  - name: Коробка
+    spriteBodyState: janitorbox
+    spriteHasMindState: janitorbox_e
+    spriteNoMindState: janitorbox_e_r
+    spriteToggleLightState: janitorbox_l
+    petSuccessString: petting-success-janitor-cyborg
+    petFailureString: petting-failure-janitor-cyborg
+  - name: Хомячок
+    spriteBodyState: janitorh
+    spriteHasMindState: janitorh_e
+    spriteNoMindState: janitorh_e_r
+    spriteToggleLightState: janitorh_l
+    petSuccessString: petting-success-janitor-cyborg
+    petFailureString: petting-failure-janitor-cyborg
+  - name: Мордочка
+    spriteBodyState: janitorw
+    spriteHasMindState: janitorw_e
+    spriteNoMindState: janitorw_e_r
+    spriteToggleLightState: janitorw_l
+    petSuccessString: petting-success-janitor-cyborg
+    petFailureString: petting-failure-janitor-cyborg
+
+
+# region Medical borg
+- type: borgType
+  id: medical
+  category: standard
+
+  # Description
+  dummyPrototype: BorgChassisMedical
+
+  # Functional
+  extraModuleCount: 3
+  moduleWhitelist:
+    tags:
+    - BorgModuleGeneric
+    - BorgModuleMedical
+
+  defaultModules:
+  - BorgModuleTool
+  - BorgModuleChemical
+  - BorgModuleTopicals
+  - BorgModuleRescue
+  # - BorgModuleAdvancedTreatment # Frontier
+  # - BorgModuleDefibrillator # Frontier
+  - BorgModuleJetpack # Frontier
+
+  radioChannels:
+  - Science
+  - Medical
+
+  addComponents:
+  - type: SolutionScanner
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+  - type: ShowHealthIcons
+    damageContainers:
+    - Biological
+
+  # Visual
+  inventoryTemplateId: borgDutch
+  spriteBodyState: medical
+  spriteBodyMovementState: medical_moving
+  spriteHasMindState: medical_e
+  spriteNoMindState: medical_e_r
+  spriteToggleLightState: medical_l
+
+  # Pet
+  petSuccessString: petting-success-medical-cyborg
+  petFailureString: petting-failure-medical-cyborg
+
+  # Sounds
+  footstepCollection:
+    collection: FootstepHoverBorg
+
+  # Horizon skins
+  skins:
+  - name: Медик
+    spriteBodyState: medical
+    spriteBodyMovementState: medical_moving
+    spriteHasMindState: medical_e
+    spriteNoMindState: medical_e_r
+    spriteToggleLightState: medical_l
+    petSuccessString: petting-success-medical-cyborg
+    petFailureString: petting-failure-medical-cyborg
+    footstepCollection:
+      collection: FootstepHoverBorg
+  - name: Генетик
+    spriteBodyState: medicalg
+    spriteToggleLightState: medicalg_l
+    petSuccessString: petting-success-medicalg-cyborg
+    petFailureString: petting-failure-medicalg-cyborg
+    footstepCollection:
+      collection: FootstepHoverBorg
+  - name: Хирург
+    spriteBodyState: medicals
+    spriteToggleLightState: medicals_l
+    petSuccessString: petting-success-medicals-cyborg
+    petFailureString: petting-failure-medicals-cyborg
+    footstepCollection:
+      collection: FootstepHoverBorg
+  - name: Вирусолог
+    spriteBodyState: medicalv
+    spriteToggleLightState: medicalv_l
+    petSuccessString: petting-success-medicalv-cyborg
+    petFailureString: petting-failure-medicalv-cyborg
+    footstepCollection:
+      collection: FootstepHoverBorg
+
+
+# region Service borg
+- type: borgType
+  id: service
+  category: standard
+
+  # Description
+  dummyPrototype: BorgChassisService
+
+  # Functional
+  extraModuleCount: 3
+  moduleWhitelist:
+    tags:
+    - BorgModuleGeneric
+    - BorgModuleService
+
+  defaultModules:
+  - BorgModuleTool
+  - BorgModuleMusique
+  # - BorgModuleService # Frontier: deprecated, use NF variant
+  - BorgModuleClowning
+  - BorgModuleGardening
+  - BorgModuleHarvesting
+  - BorgModuleBureaucracy # Frontier: FIXME - stacked as hell
+  - BorgModuleNFService # Frontier
+  - BorgModuleChef # Frontier
+  - BorgModuleJetpack # Frontier
+
+  radioChannels:
+  - Science
+  - Service
+
+  # Visual
+  inventoryTemplateId: borgTall
+  spriteBodyState: service
+  spriteHasMindState: service_e
+  spriteNoMindState: service_e_r
+  spriteToggleLightState: service_l
+
+  # Pet
+  petSuccessString: petting-success-service-cyborg
+  petFailureString: petting-failure-service-cyborg
+
+  # Horizon skins
+  skins:
+  - name: Суровый
+    spriteBodyState: service
+    spriteHasMindState: service_e
+    spriteNoMindState: service_e_r
+    spriteToggleLightState: service_l
+    petSuccessString: petting-success-service-cyborg
+    petFailureString: petting-failure-service-cyborg
+  - name: Бармен
+    spriteBodyState: sexybar
+    spriteHasMindState: sexybar_e
+    spriteNoMindState: sexybar_e_r
+    spriteToggleLightState: sexybar_l
+    petSuccessString: petting-success-sexybar-cyborg
+    petFailureString: petting-failure-sexybar-cyborg
+  - name: Повар
+    spriteBodyState: pneumaj
+    spriteHasMindState: pneumaj_e
+    spriteNoMindState: pneumaj_e_r
+    spriteToggleLightState: pneumaj_l
+    petSuccessString: petting-success-pneumaj-cyborg
+    petFailureString: petting-failure-pneumaj-cyborg
+  - name: Официант
+    spriteBodyState: pneumas
+    spriteHasMindState: pneumas_e
+    spriteNoMindState: pneumas_e_r
+    spriteToggleLightState: pneumas_l
+    petSuccessString: petting-success-pneumas-cyborg
+    petFailureString: petting-failure-pneumas-cyborg
+
+# region Kerfus
+- type: borgType
+  id: servicek
+  category: standard
+  # Description
+  dummyPrototype: BorgChassisServiceKerfus
+  # Functional
+  extraModuleCount: 2
+  moduleWhitelist:
+    tags:
+    - BorgModuleGeneric
+    - BorgModuleService
+  defaultModules:
+  - BorgModuleTool
+  - BorgModuleMusique
+  - BorgModuleTranslation
+  - BorgModuleGardening
+  - BorgModuleHarvesting
+  - BorgModuleBureaucracy
+  - BorgModuleNFService
+  - BorgModuleChef
+  - BorgModuleJetpack
+  radioChannels:
+  - Science
+  - Service
+  # Visual
+  inventoryTemplateId: borgTall
+  spriteBodyState: service
+  spriteHasMindState: service_e
+  spriteNoMindState: service_e_r
+  spriteToggleLightState: service_l
+  # Pet
+  petSuccessString: petting-success-service-cyborg
+  petFailureString: petting-failure-service-cyborg
+  # Horizon skins
+  skins:
+  - name: Белая
+    inventoryTemplateId: borgDutch
+    spriteBodyState: kerfuswhite
+    spriteHasMindState: kerfuswhite_e
+    spriteNoMindState: kerfuswhite_e_r
+    spriteToggleLightState: kerfuswhite_l
+    petSuccessString: petting-success-service-cyborg
+    petFailureString: petting-failure-service-cyborg
+  - name: Миленькая
+    inventoryTemplateId: borgTall
+    spriteBodyState: kerfusnoerp
+    spriteHasMindState: kerfusnoerp_e
+    spriteNoMindState: kerfusnoerp_e_r
+    spriteToggleLightState: kerfusnoerp_l
+    petSuccessString: petting-success-kerfusnoerp-cyborg
+    petFailureString: petting-failure-kerfusnoerp-cyborg
+  - name: Инженерная
+    inventoryTemplateId: borgShort
+    spriteBodyState: kerfusyellow
+    spriteHasMindState: kerfusyellow_e
+    spriteNoMindState: kerfusyellow_e_r
+    spriteToggleLightState: kerfusyellow_l
+    petSuccessString: petting-success-kerfusyellow-cyborg
+    petFailureString: petting-failure-kerfusyellow-cyborg
+  - name: Горничная
+    inventoryTemplateId: borgShort
+    spriteBodyState: kerfusmaid
+    spriteHasMindState: kerfusmaid_e
+    spriteNoMindState: kerfusmaid_e_r
+    spriteToggleLightState: kerfusmaid_l
+    petSuccessString: petting-success-kerfusmaid-cyborg
+    petFailureString: petting-failure-kerfusmaid-cyborg
+
+# region Combat cyborgs
+
+- type: borgType
+  id: assassin
+  category: combat
+
+  # Description
+  dummyPrototype: BorgChassisCombatAssassin
+
+  # Functional
+  extraModuleCount: 2
+  moduleWhitelist:
+    tags:
+    - BorgModuleGeneric
+    - BorgModuleCombat
+    - BorgModuleMedical
+
+  defaultModules:
+  - BorgModuleTool
+  - BorgModuleCombatCloakingDevice
+  - BorgModuleCombatEchis
+  - BorgModuleJetpack
+
+  radioChannels:
+  - Common
+  - Binary
+
+  addComponents:
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      120: Critical
+      240: Dead
+  - type: DamageOnInteractProtection
+    damageProtection:
+      flatReductions:
+        Heat: 5
+      modifiers:
+        types:
+          Blunt: 0.92      # 8% reduction - minimal armor
+          Slash: 0.92
+          Piercing: 0.95   # 5% reduction
+          Shock: 0.85      # 15% reduction
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3.6
+    baseSprintSpeed: 4.5
+
+  # Visual
+  inventoryTemplateId: borgShort
+  spriteBodyState: sputnik_blue
+  spriteHasMindState: sputnik_blue_e
+  spriteNoMindState: sputnik_blue
+  spriteToggleLightState: sputnik_blue_l
+
+  # Pet
+  petSuccessString: petting-success-assassin-cyborg
+  petFailureString: petting-failure-assassin-cyborg
+
+  # Horizon skins
+  skins:
+  - name: Синий
+    spriteBodyState: sputnik_blue
+    spriteHasMindState: sputnik_blue_e
+    spriteNoMindState: sputnik_blue
+    spriteToggleLightState: sputnik_blue_l
+    petSuccessString: petting-success-assassin-cyborg
+    petFailureString: petting-failure-assassin-cyborg
+  - name: Зелёный
+    spriteBodyState: sputnik_green
+    spriteHasMindState: sputnik_green_e
+    spriteNoMindState: sputnik_green
+    spriteToggleLightState: sputnik_green_l
+    petSuccessString: petting-success-assassin-cyborg
+    petFailureString: petting-failure-assassin-cyborg
+  - name: Красный
+    spriteBodyState: sputnik_red
+    spriteHasMindState: sputnik_red_e
+    spriteNoMindState: sputnik_red
+    spriteToggleLightState: sputnik_red_l
+    petSuccessString: petting-success-assassin-cyborg
+    petFailureString: petting-failure-assassin-cyborg
+  - name: Фиолетовый
+    spriteBodyState: sputnik_violet
+    spriteHasMindState: sputnik_violet_e
+    spriteNoMindState: sputnik_violet
+    spriteToggleLightState: sputnik_violet_l
+    petSuccessString: petting-success-assassin-cyborg
+    petFailureString: petting-failure-assassin-cyborg
+
+- type: borgType
+  id: scout
+  category: combat
+
+  # Description
+  dummyPrototype: BorgChassisCombatScout
+
+  # Functional
+  extraModuleCount: 2
+  moduleWhitelist:
+    tags:
+    - BorgModuleGeneric
+    - BorgModuleCombat
+    - BorgModuleMedical
+
+  defaultModules:
+  - BorgModuleTool
+  - BorgModuleCombatCloakingDevice
+  - BorgModuleJetpack
+
+  radioChannels:
+  - Common
+  - Binary
+
+  addComponents:
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      160: Critical
+      320: Dead
+  - type: DamageOnInteractProtection
+    damageProtection:
+      flatReductions:
+        Heat: 10
+      modifiers:
+        types:
+          Blunt: 0.85      # 15% reduction - light armor
+          Slash: 0.85
+          Piercing: 0.90   # 10% reduction
+          Shock: 0.80      # 20% reduction
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3.8
+    baseSprintSpeed: 5.8
+
+  # Visual
+  inventoryTemplateId: borgShort
+  spriteBodyState: drone_hs
+  spriteHasMindState: drone_hs_e
+  spriteNoMindState: drone_hs
+  spriteToggleLightState: drone_hs_l
+
+  # Pet
+  petSuccessString: petting-success-scout-cyborg
+  petFailureString: petting-failure-scout-cyborg
+
+  # Horizon skins
+  skins:
+  - name: Стандартный
+    spriteBodyState: drone_hs
+    spriteHasMindState: drone_hs_e
+    spriteNoMindState: drone_hs
+    spriteToggleLightState: drone_hs_l
+    petSuccessString: petting-success-scout-cyborg
+    petFailureString: petting-failure-scout-cyborg
+  - name: Янтарь
+    spriteBodyState: drone_jn
+    spriteHasMindState: drone_jn_e
+    spriteNoMindState: drone_jn
+    spriteToggleLightState: drone_jn_l
+    petSuccessString: petting-success-scout-cyborg
+    petFailureString: petting-failure-scout-cyborg
+  - name: Лазурь
+    spriteBodyState: drone_ls
+    spriteHasMindState: drone_ls_e
+    spriteNoMindState: drone_ls
+    spriteToggleLightState: drone_ls_l
+    petSuccessString: petting-success-scout-cyborg
+    petFailureString: petting-failure-scout-cyborg
+  - name: Алый
+    spriteBodyState: drone_sc
+    spriteHasMindState: drone_sc_e
+    spriteNoMindState: drone_sc
+    spriteToggleLightState: drone_sc_l
+    petSuccessString: petting-success-scout-cyborg
+    petFailureString: petting-failure-scout-cyborg
+
+- type: borgType
+  id: spider
+  category: combat
+
+  # Description
+  dummyPrototype: BorgChassisCombatCrawler
+
+  # Functional
+  extraModuleCount: 3
+  moduleWhitelist:
+    tags:
+    - BorgModuleGeneric
+    - BorgModuleCombat
+    - BorgModuleCargo
+
+  defaultModules:
+  - BorgModuleTool
+  - BorgModuleCombatPKARepeater
+  - BorgModuleJetpack
+
+  radioChannels:
+  - Common
+  - Binary
+
+  addComponents:
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      200: Critical
+      440: Dead
+  - type: DamageOnInteractProtection
+    damageProtection:
+      flatReductions:
+        Heat: 20
+      modifiers:
+        types:
+          Blunt: 0.75      # 25% reduction - medium armor
+          Slash: 0.75
+          Piercing: 0.75   # 25% reduction
+          Shock: 0.75
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3.0
+    baseSprintSpeed: 4.8
+
+  # Visual
+  inventoryTemplateId: borgShort
+  spriteBodyState: crawlerla_grey
+  spriteHasMindState: crawlerla_grey_e
+  spriteNoMindState: crawlerla_grey
+  spriteToggleLightState: crawlerla_grey_l
+
+  # Pet
+  petSuccessString: petting-success-syndicate-cyborg
+  petFailureString: petting-failure-syndicate-cyborg
+
+  # Horizon skins
+  skins:
+  - name: Серый
+    spriteBodyState: crawlerla_grey
+    spriteHasMindState: crawlerla_grey_e
+    spriteNoMindState: crawlerla_grey
+    spriteToggleLightState: crawlerla_grey_l
+    petSuccessString: petting-success-syndicate-cyborg
+    petFailureString: petting-failure-syndicate-cyborg
+  - name: Кровожадный
+    spriteBodyState: crawlerla_bloodhound
+    spriteHasMindState: crawlerla_bloodhound_e
+    spriteNoMindState: crawlerla_bloodhound
+    spriteToggleLightState: crawlerla_bloodhound_l
+    petSuccessString: petting-success-syndicate-cyborg
+    petFailureString: petting-failure-syndicate-cyborg
+  - name: Тень
+    spriteBodyState: crawlerla_shadow
+    spriteHasMindState: crawlerla_shadow_e
+    spriteNoMindState: crawlerla_shadow
+    spriteToggleLightState: crawlerla_shadow_l
+    petSuccessString: petting-success-syndicate-cyborg
+    petFailureString: petting-failure-syndicate-cyborg
+  - name: Канцлер
+    spriteBodyState: crawlerla_clerical
+    spriteHasMindState: crawlerla_clerical_e
+    spriteNoMindState: crawlerla_clerical
+    spriteToggleLightState: crawlerla_clerical_l
+    petSuccessString: petting-success-syndicate-cyborg
+    petFailureString: petting-failure-syndicate-cyborg
+
+- type: borgType
+  id: heavycrawler
+  category: combat
+
+  # Description
+  dummyPrototype: BorgChassisCombatCrawlerHeavy
+
+  # Functional
+  extraModuleCount: 4
+  moduleWhitelist:
+    tags:
+    - BorgModuleGeneric
+    - BorgModuleCombat
+    - BorgModuleCargo
+
+  defaultModules:
+  - BorgModuleTool
+  - BorgModuleCombatPKARailgun
+  - BorgModuleJetpack
+
+  radioChannels:
+  - Common
+  - Binary
+
+  addComponents:
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      260: Critical
+      520: Dead
+  - type: DamageOnInteractProtection
+    damageProtection:
+      flatReductions:
+        Heat: 25
+      modifiers:
+        types:
+          Blunt: 0.70      # 30% reduction - medium+ armor
+          Slash: 0.70
+          Piercing: 0.72   # 28% reduction
+          Shock: 0.70
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.6
+    baseSprintSpeed: 4.3
+
+  # Visual
+  inventoryTemplateId: borgTall
+  spriteBodyState: crawlerha_siege
+  spriteHasMindState: crawlerha_siege_e
+  spriteNoMindState: crawlerha_siege
+  spriteToggleLightState: crawlerha_siege_l
+
+  # Pet
+  petSuccessString: petting-success-syndicate-cyborg
+  petFailureString: petting-failure-syndicate-cyborg
+
+  # Horizon skins
+  skins:
+  - name: Осада
+    spriteBodyState: crawlerha_siege
+    spriteHasMindState: crawlerha_siege_e
+    spriteNoMindState: crawlerha_siege
+    spriteToggleLightState: crawlerha_siege_l
+    petSuccessString: petting-success-syndicate-cyborg
+    petFailureString: petting-failure-syndicate-cyborg
+  - name: Кровожадный
+    spriteBodyState: crawlerha_bloodhound
+    spriteHasMindState: crawlerha_bloodhound_e
+    spriteNoMindState: crawlerha_bloodhound
+    spriteToggleLightState: crawlerha_bloodhound_l
+    petSuccessString: petting-success-syndicate-cyborg
+    petFailureString: petting-failure-syndicate-cyborg
+  - name: Жнец
+    spriteBodyState: crawlerha_reaper
+    spriteHasMindState: crawlerha_reaper_e
+    spriteNoMindState: crawlerha_reaper
+    spriteToggleLightState: crawlerha_reaper_l
+    petSuccessString: petting-success-syndicate-cyborg
+    petFailureString: petting-failure-syndicate-cyborg
+  - name: Тень
+    spriteBodyState: crawlerha_shadow
+    spriteHasMindState: crawlerha_shadow_e
+    spriteNoMindState: crawlerha_shadow
+    spriteToggleLightState: crawlerha_shadow_l
+    petSuccessString: petting-success-syndicate-cyborg
+    petFailureString: petting-failure-syndicate-cyborg
+
+- type: borgType
+  id: walkerassault
+  category: combat
+
+  # Description
+  dummyPrototype: BorgChassisCombatWalker
+
+  # Functional
+  extraModuleCount: 2
+  moduleWhitelist:
+    tags:
+    - BorgModuleGeneric
+    - BorgModuleCombat
+    - BorgModuleEngineering
+
+  defaultModules:
+  - BorgModuleTool
+  - BorgModuleCombatLaserAdvanced
+  - BorgModuleJetpack
+
+  radioChannels:
+  - Common
+  - Binary
+
+  addComponents:
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      180: Critical
+      360: Dead
+  - type: DamageOnInteractProtection
+    damageProtection:
+      flatReductions:
+        Heat: 15
+      modifiers:
+        types:
+          Blunt: 0.78      # 22% reduction - light-medium armor
+          Slash: 0.78
+          Piercing: 0.82   # 18% reduction
+          Shock: 0.80      # 20% reduction
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3.2
+    baseSprintSpeed: 5.0
+
+  # Visual
+  inventoryTemplateId: borgTall
+  spriteBodyState: walkerla_crimson
+  spriteHasMindState: walkerla_crimson_e
+  spriteNoMindState: walkerla_crimson
+  spriteToggleLightState: walkerla_crimson_l
+
+  # Pet
+  petSuccessString: petting-success-syndicate-cyborg
+  petFailureString: petting-failure-syndicate-cyborg
+
+  # Horizon skins
+  skins:
+  - name: Малиновый
+    spriteBodyState: walkerla_crimson
+    spriteHasMindState: walkerla_crimson_e
+    spriteNoMindState: walkerla_crimson
+    spriteToggleLightState: walkerla_crimson_l
+    petSuccessString: petting-success-syndicate-cyborg
+    petFailureString: petting-failure-syndicate-cyborg
+  - name: Пламя
+    spriteBodyState: walkerla_flame
+    spriteHasMindState: walkerla_flame_e
+    spriteNoMindState: walkerla_flame
+    spriteToggleLightState: walkerla_flame_l
+    petSuccessString: petting-success-syndicate-cyborg
+    petFailureString: petting-failure-syndicate-cyborg
+  - name: Серый
+    spriteBodyState: walkerla_grey
+    spriteHasMindState: walkerla_grey_e
+    spriteNoMindState: walkerla_grey
+    spriteToggleLightState: walkerla_grey_l
+    petSuccessString: petting-success-syndicate-cyborg
+    petFailureString: petting-failure-syndicate-cyborg
+  - name: Поддержка
+    spriteBodyState: walkerla_support
+    spriteHasMindState: walkerla_support_e
+    spriteNoMindState: walkerla_support
+    spriteToggleLightState: walkerla_support_l
+    petSuccessString: petting-success-syndicate-cyborg
+    petFailureString: petting-failure-syndicate-cyborg
+
+- type: borgType
+  id: walkerstrike
+  category: combat
+
+  # Description
+  dummyPrototype: BorgChassisCombatWalkerHeavy
+
+  # Functional
+  extraModuleCount: 3
+  moduleWhitelist:
+    tags:
+    - BorgModuleGeneric
+    - BorgModuleCombat
+    - BorgModuleEngineering
+
+  defaultModules:
+  - BorgModuleTool
+  - BorgModuleCombatLaserHeavy
+  - BorgModuleJetpack
+
+  radioChannels:
+  - Common
+  - Binary
+
+  addComponents:
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      240: Critical
+      480: Dead
+  - type: DamageOnInteractProtection
+    damageProtection:
+      flatReductions:
+        Heat: 22
+      modifiers:
+        types:
+          Blunt: 0.73      # 27% reduction - medium armor
+          Slash: 0.73
+          Piercing: 0.76   # 24% reduction
+          Shock: 0.73
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2.8
+    baseSprintSpeed: 4.5
+
+  # Visual
+  inventoryTemplateId: borgTall
+  spriteBodyState: walkerha_flame
+  spriteHasMindState: walkerha_flame_e
+  spriteNoMindState: walkerha_flame
+  spriteToggleLightState: walkerha_flame_l
+
+  # Pet
+  petSuccessString: petting-success-syndicate-cyborg
+  petFailureString: petting-failure-syndicate-cyborg
+
+  # Horizon skins
+  skins:
+  - name: Пламя
+    spriteBodyState: walkerha_flame
+    spriteHasMindState: walkerha_flame_e
+    spriteNoMindState: walkerha_flame
+    spriteToggleLightState: walkerha_flame_l
+    petSuccessString: petting-success-syndicate-cyborg
+    petFailureString: petting-failure-syndicate-cyborg
+  - name: Малиновый
+    spriteBodyState: walkerha_crimson
+    spriteHasMindState: walkerha_crimson_e
+    spriteNoMindState: walkerha_crimson
+    spriteToggleLightState: walkerha_crimson_l
+    petSuccessString: petting-success-syndicate-cyborg
+    petFailureString: petting-failure-syndicate-cyborg
+  - name: Серый
+    spriteBodyState: walkerha_grey
+    spriteHasMindState: walkerha_grey_e
+    spriteNoMindState: walkerha_grey
+    spriteToggleLightState: walkerha_grey_l
+    petSuccessString: petting-success-syndicate-cyborg
+    petFailureString: petting-failure-syndicate-cyborg
+  - name: Поддержка
+    spriteBodyState: walkerha_support
+    spriteHasMindState: walkerha_support_e
+    spriteNoMindState: walkerha_support
+    spriteToggleLightState: walkerha_support_l
+    petSuccessString: petting-success-syndicate-cyborg
+    petFailureString: petting-failure-syndicate-cyborg
+
+# endregion

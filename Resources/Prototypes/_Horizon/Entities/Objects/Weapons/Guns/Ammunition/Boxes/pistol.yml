@@ -1,0 +1,76 @@
+# Frontier
+# .35 pistol
+- type: entity
+  id: NFAmmunitionBoxPistol35Piercing
+  parent: NFBaseAmmunitionBoxPistol35
+  name: ammunition box (.35 pistol, piercing)
+  components:
+  - type: BallisticAmmoProvider
+    proto: NFCartridgePistol35Piercing
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+      color: "#3b7b9c"
+    - state: decal-01
+      color: "#ededed"
+    - state: decal-calibre-35
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: NFAmmunitionBoxPistol35Psycore
+  parent: NFBaseAmmunitionBoxPistol35
+  name: ammunition box (.35 pistol, psycore)
+  components:
+  - type: BallisticAmmoProvider
+    proto: NFCartridgePistol35Psycore
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+      color: "#3b7b9c"
+    - state: decal-01
+      color: "#8a1a7b"
+    - state: decal-calibre-35
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+# WizDen
+# region .45 pistol
+
+- type: entity
+  id: NFAmmunitionBoxPistol45Piercing
+  parent: NFBaseAmmunitionBoxPistol45
+  name: ammunition box (.45 pistol, piercing)
+  components:
+  - type: BallisticAmmoProvider
+    proto: NFCartridgePistol45Piercing
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+      color: "#7d3c40"
+    - state: decal-01
+      color: "#ededed"
+    - state: decal-calibre-45
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: NFAmmunitionBoxPistol45Psycore
+  parent: NFBaseAmmunitionBoxPistol45
+  name: ammunition box (.45 pistol, psycore)
+  components:
+  - type: BallisticAmmoProvider
+    proto: NFCartridgePistol45Psycore
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+      color: "#7d3c40"
+    - state: decal-01
+      color: "#8a1a7b"
+    - state: decal-calibre-45
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]

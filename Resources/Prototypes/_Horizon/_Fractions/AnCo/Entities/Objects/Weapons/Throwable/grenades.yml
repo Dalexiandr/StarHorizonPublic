@@ -1,0 +1,23 @@
+- type: entity
+  name: Ардониевая граната
+  description: Граната, содержащая в себе кристалл Ардония.
+  suffix: StarHorizon, AnCo
+  parent: [GrenadeBase, BaseAnCoContraband]
+  id: AnCoGranade
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Grenades/grenade.rsi
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: AnCoExplodes
+    maxIntensity: 10
+    intensitySlope: 3
+    totalIntensity: 120
+    canCreateVacuum: false
+  - type: OnUseTimerTrigger
+    beepSound:
+      path: "/Audio/Effects/beep1.ogg"
+      params:
+        volume: 5
+    initialBeepDelay: 0
+    beepInterval: 1

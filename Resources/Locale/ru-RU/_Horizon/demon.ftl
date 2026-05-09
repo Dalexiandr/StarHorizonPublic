@@ -1,0 +1,12 @@
+marking-DemonTail = Демонический хвост
+marking-DemonTailBigArrow = Демонический хвост (Стрела)
+marking-DemonTailBigArrow-d_tail_big_arrow = Хвост
+marking-DemonTail-d_tail = Хвост
+marking-HornsBig = Демонические рожки (Большие)
+marking-HornsBig-horns_big = Рожки
+marking-HornsBuffalo = Демонические рожки (Буффало)
+marking-HornsBuffalo-horns_buffalo = Рожки
+marking-HornsSpiral = Демонические рожки (Спиралью)
+marking-HornsSpiral-horns_spiral = Рожки
+marking-HornsStandart = Демонические рожки
+marking-HornsStandart-horns_standart = Рожки

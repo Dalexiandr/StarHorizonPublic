@@ -1,0 +1,244 @@
+- type: entity
+  id: SpawnPointContractor
+  parent: SpawnPointPassenger
+  name: contractor
+  components:
+  - type: SpawnPoint
+    job_id: Contractor
+
+- type: entity
+  id: SpawnPointContractorInterview
+  parent: SpawnPointContractor
+  name: contractor applicant
+  components:
+  - type: SpawnPoint
+    job_id: ContractorInterview
+
+- type: entity
+  id: SpawnPointMercenary
+  parent: SpawnPointJobBase
+  name: mercenary
+  components:
+  - type: SpawnPoint
+    job_id: Mercenary
+  - type: Sprite
+    sprite: _NF/Markers/jobs.rsi
+    layers:
+      - state: green
+      - state: mercenary
+
+- type: entity
+  id: SpawnPointMercenaryInterview
+  parent: SpawnPointMercenary
+  name: mercenary applicant
+  components:
+  - type: SpawnPoint
+    job_id: MercenaryInterview
+
+- type: entity
+  id: SpawnPointPilot
+  parent: SpawnPointJobBase
+  name: pilot
+  components:
+  - type: SpawnPoint
+    job_id: Pilot
+  - type: Sprite
+    sprite: _NF/Markers/jobs.rsi
+    layers:
+      - state: green
+      - state: pilot
+
+- type: entity
+  id: SpawnPointPilotInterview
+  parent: SpawnPointPilot
+  name: pilot applicant
+  components:
+  - type: SpawnPoint
+    job_id: PilotInterview
+
+- type: entity
+  id: SpawnPointNFPirate
+  parent: SpawnPointJobBase
+  name: pirate
+  suffix: Frontier
+  components:
+  - type: SpawnPoint
+    job_id: NFPirate
+  - type: Sprite
+    sprite: Structures/Decoration/banner.rsi
+    state: banner-red
+
+- type: entity
+  id: SpawnPointNFPirateFirstMate
+  parent: SpawnPointJobBase
+  name: pirate first mate
+  suffix: Frontier
+  components:
+  - type: SpawnPoint
+    job_id: NFPirateFirstMate
+  - type: Sprite
+    sprite: Structures/Decoration/banner.rsi
+    state: banner-red
+
+- type: entity
+  id: SpawnPointNFPirateCaptain
+  parent: SpawnPointJobBase
+  name: pirate captain
+  suffix: Frontier
+  components:
+  - type: SpawnPoint
+    job_id: NFPirateCaptain
+  - type: Sprite
+    sprite: Structures/Decoration/banner.rsi
+    state: banner-red
+
+- type: entity
+  id: SpawnPointStc
+  parent: SpawnPointJobBase
+  name: station traffic controller
+  components:
+  - type: SpawnPoint
+    job_id: StationTrafficController
+  - type: Sprite
+    sprite: _NF/Markers/jobs.rsi
+    layers:
+      - state: green
+      - state: stc
+
+- type: entity
+  id: SpawnPointSecurityGuard
+  parent: SpawnPointJobBase
+  name: security guard
+  components:
+  - type: SpawnPoint
+    job_id: SecurityGuard
+  - type: Sprite
+    sprite: _NF/Markers/jobs.rsi
+    layers:
+      - state: green
+      - state: securityguard
+
+- type: entity
+  id: SpawnPointERTMailCarrier
+  parent: SpawnPointJobBase
+  name: ERT mail carrier
+  components:
+  - type: SpawnPoint
+    job_id: ERTMailCarrier
+  - type: Sprite
+    sprite: _NF/Markers/jobs.rsi
+    layers:
+      - state: green
+      - state: ertmailcarrier
+
+- type: entity
+  id: SpawnPointDirectorOfCare
+  parent: SpawnPointJobBase
+  name: director of care
+  components:
+  - type: SpawnPoint
+    job_id: DirectorOfCare
+  - type: Sprite
+    sprite: _NF/Markers/jobs.rsi
+    layers:
+      - state: green
+      - state: medic
+
+- type: entity
+  id: SpawnPointStationRepresentative
+  parent: SpawnPointHeadOfPersonnel
+  name: station representative
+  components:
+  - type: SpawnPoint
+    job_id: StationRepresentative
+
+- type: entity
+  id: SpawnPointSheriff
+  parent: SpawnPointHeadOfSecurity
+  name: sheriff
+  components:
+  - type: SpawnPoint
+    job_id: Sheriff
+
+- type: entity
+  id: SpawnPointBailiff
+  parent: SpawnPointWarden
+  name: bailiff
+  components:
+  - type: SpawnPoint
+    job_id: Bailiff
+
+- type: entity
+  id: NFSpawnPointSeniorOfficer
+  parent: SpawnPointWarden
+  name: sergeant
+  components:
+  - type: SpawnPoint
+    job_id: SeniorOfficer
+
+- type: entity
+  id: SpawnPointDeputy
+  parent: SpawnPointSecurityOfficer
+  name: deputy
+  components:
+  - type: SpawnPoint
+    job_id: Deputy
+
+- type: entity
+  id: SpawnPointCadet
+  parent: SpawnPointSecurityCadet
+  name: cadet
+  components:
+  - type: SpawnPoint
+    job_id: Cadet
+
+- type: entity
+  id: NFSpawnPointDetective
+  parent: SpawnPointDetective
+  name: detective
+  suffix: Frontier
+  components:
+  - type: SpawnPoint
+    job_id: NFDetective
+
+- type: entity
+  id: SpawnPointPublicAffairsLiaison
+  parent: SpawnPointLawyer
+  name: public affairs liaison
+  components:
+  - type: SpawnPoint
+    job_id: PublicAffairsLiaison
+
+- type: entity
+  id: NFSpawnPointJanitor
+  parent: SpawnPointJanitor
+  suffix: Frontier
+  components:
+  - type: SpawnPoint
+    job_id: NFJanitor
+
+- type: entity
+  id: SpawnPointPlantManager
+  parent: SpawnPointJobBase
+  name: plant manager
+  components:
+  - type: SpawnPoint
+    job_id: PlantManager
+  - type: Sprite
+    sprite: _NF/Markers/jobs.rsi
+    layers:
+      - state: green
+      - state: plantmanager
+
+- type: entity
+  id: SpawnPointPlantTechnician
+  parent: SpawnPointJobBase
+  name: plant technician
+  components:
+  - type: SpawnPoint
+    job_id: PlantTechnician
+  - type: Sprite
+    sprite: _NF/Markers/jobs.rsi
+    layers:
+      - state: green
+      - state: planttechnician

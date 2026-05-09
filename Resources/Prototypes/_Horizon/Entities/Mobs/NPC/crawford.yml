@@ -1,0 +1,187 @@
+- type: entity # Horizon
+  save: false
+  suffix: AI, Hostile
+  abstract: true
+  parent:
+  - NFMobAtmos
+  - MobMovementSpeedModifierMelee
+  - MobStaminaFodder
+  - MobBloodstream
+  - MobFlammable
+  - MobEnhancedMovement
+  - BaseMobSpecies
+  - MobHumanoidHostileAIComplex
+  - BaseC3MobHuman
+  - NFBaseMobRestrictions
+  id: MobHumanoidHostileBaseNoRandom
+  components:
+  - type: NPCRetaliation
+    attackMemoryLength: 10
+  - type: MobMover
+  - type: StandingState
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      80: Critical
+      120: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      40: 0.7
+      60: 0.5
+  - type: Blindable
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatRotten
+      amount: 2
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: Carriable
+  - type: FTLKnockdownImmune
+  - type: Respirator
+    updateInterval: 99999
+    suffocationThreshold: -100
+    damage:
+      types: {}
+    damageRecovery:
+      types: {}
+
+- type: entity
+  name: Crawford Mob
+  abstract: true
+  categories: [ HideSpawnMenu ]
+  parent:
+  - NFMobNoEquipmentOnGib
+  - MobStaminaFodder
+  - MobHumanoidHostileBase # для отображения внешности, моб НЕ БУДЕТ АТАКОВАТЬ НИ ПРИ КАКИХ СИТУАЦИЯХ
+  - MobHumanoidInvetory
+  id: MobCrawfordBase
+  components:
+  - type: Body
+    prototype: HumanSyntheticOrgans
+    requiredLegs: 2
+  - type: NpcFactionMember
+    factions:
+    - Crawford
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: RandomMetadata
+  - type: AutoWakeUp
+
+- type: entity
+  name: Дипломат НТ "Кроуфорд"
+  parent: MobCrawfordBase
+  id: MobCrawfordFollower
+  description: Элегантно одетый в чёрный смокинг дипломат, он следует за вами
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Loadout
+      prototypes:
+        - CrawfordGearA
+    - type: NpcFactionMember
+      factions:
+        - Crawford
+    - type: Dialogue
+      dialogueTree: CrawfordDialogue
+      canFollowAfterDialogue: true
+    - type: DialogueState
+
+- type: entity
+  name: Лемирда
+  abstract: true
+  categories: [ HideSpawnMenu ]
+  parent:
+  - NFMobNoEquipmentOnGib
+  - MobStaminaFodder
+  - MobHumanoidHostileBaseNoRandom
+  - MobHumanoidInvetory
+  id: MobLemirdBase
+  components:
+  - type: Body
+    prototype: HumanSyntheticOrgans
+    requiredLegs: 2
+  - type: NpcFactionMember
+    factions:
+    - Crawford
+  - type: AutoWakeUp
+  - type: HumanoidAppearance
+    species: Felinid
+    sex: Female
+    gender: Female
+
+- type: entity
+  name: Лемирда
+  parent: MobLemirdBase
+  id: MobLemird
+  description: ..Царица небесная...
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Loadout
+      prototypes:
+        - LemirdGearA
+    - type: NpcFactionMember
+      factions:
+        - Crawford
+    - type: LemirdFollow
+      followDistance: 2.0
+      maxFollowDistance: 200.0
+      onlyFirstTarget: true
+    - type: FixedAppearance
+      hairStyleId: "HumanHairModern"
+      hairColor: "#FF2400"
+      facialHairStyleId: "FacialHairShaved"
+      facialHairColor: "#FF2400"
+      eyeColor: "#000000"
+      skinColor: "#FFDBB4"
+      sex: Female
+      gender: Female
+      age: 20
+      species: Felinid
+      markings:
+        HeadTop:
+        - markingId: FelinidEarsBasic
+          colors:
+          - "#FF2400"  # Внешняя часть ушей
+          - "#FFFFFF"  # Внутренняя часть ушей
+        Tail:
+        - markingId: FelinidTailBasic
+          colors:
+          - "#FFFFFF"  # Кончик хвоста (первый слой)
+          - "#FF2400"  # Полосы четные (второй слой)
+          - "#FF2400"  # Полосы нечетные (третий слой)
+    - type: Grammar
+      attributes:
+        gender: Female
+
+- type: entity
+  name: Мифри
+  parent: MobLemirdBase
+  id: MobMiifri
+  description: ..Она пахнет розами, облитые дешёвым вином...
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Loadout
+      prototypes:
+        - MiifriGearA
+    - type: NpcFactionMember
+      factions:
+        - Crawford
+    - type: LemirdFollow
+      followDistance: 2.0
+      maxFollowDistance: 200.0
+      onlyFirstTarget: true
+    - type: FixedAppearance
+      hairStyleId: "HumanHairLong2"
+      hairColor: "#ae6db2"
+      facialHairStyleId: "FacialHairShaved"
+      facialHairColor: "#FF2400"
+      eyeColor: "#00a2b2"
+      skinColor: "#FFDBB4"
+      sex: Female
+      gender: Female
+      age: 20
+      species: Human
+    - type: Grammar
+      attributes:
+        gender: Female

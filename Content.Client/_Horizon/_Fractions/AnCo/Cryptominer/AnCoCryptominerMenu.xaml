@@ -1,0 +1,46 @@
+<controls:FancyWindow xmlns="https://spacestation14.io"
+                     xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                     Title="{Loc 'cryptominer-window-title'}"
+                     MinSize="320 280">
+    <BoxContainer Orientation="Vertical" Margin="10">
+        <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
+            <Label Text="{Loc 'cryptominer-window-status'}" StyleClasses="StatusFieldTitle"/>
+            <Control HorizontalExpand="True"/>
+            <Label Name="StatusLabel" Text="Off"/>
+        </BoxContainer>
+        <controls:HLine Color="#404040" Thickness="2" Margin="0 5"/>
+
+        <GridContainer Columns="2" Margin="0 5">
+            <Label Text="{Loc 'cryptominer-window-temperature'}" StyleClasses="StatusFieldTitle"/>
+            <Label Name="TemperatureLabel" Text="293.15 K"/>
+
+            <Label Text="{Loc 'cryptominer-window-efficiency'}" StyleClasses="StatusFieldTitle"/>
+            <Label Name="EfficiencyLabel" Text="100%"/>
+
+            <Label Text="{Loc 'cryptominer-window-credits-per-second'}" StyleClasses="StatusFieldTitle"/>
+            <Label Name="CreditsPerSecondLabel" Text="10"/>
+
+            <Label Text="{Loc 'cryptominer-window-power'}" StyleClasses="StatusFieldTitle"/>
+            <Label Name="PowerLabel" Text="500 W"/>
+        </GridContainer>
+
+        <controls:HLine Color="#404040" Thickness="2" Margin="0 5"/>
+
+        <BoxContainer Orientation="Horizontal" HorizontalExpand="True" Margin="0 5">
+            <Label Text="{Loc 'cryptominer-window-temperature-bar'}" StyleClasses="StatusFieldTitle"/>
+        </BoxContainer>
+        <ProgressBar Name="TemperatureBar"
+                     HorizontalExpand="True"
+                     MinValue="0"
+                     MaxValue="1"
+                     SetHeight="20"
+                     Margin="0 5"/>
+
+        <Control VerticalExpand="True"/>
+
+        <Button Name="ToggleButton"
+                Text="{Loc 'cryptominer-window-toggle-on'}"
+                HorizontalExpand="True"
+                Margin="0 10 0 0"/>
+    </BoxContainer>
+</controls:FancyWindow>

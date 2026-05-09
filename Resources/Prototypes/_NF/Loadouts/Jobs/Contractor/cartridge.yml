@@ -1,0 +1,36 @@
+#T1
+- type: loadout
+  id: ContractorAppraisalCartridge
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 1000
+  cartridges:
+  - AppraisalCartridge
+
+- type: loadout
+  id: ContractorMedTekCartridge
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 1000
+  cartridges:
+  - MedTekCartridge
+
+- type: loadout
+  id: ContractorNetProbeCartridge
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 1000
+  cartridges:
+  - NetProbeCartridge
+
+- type: loadout
+  id: ContractorLogProbeCartridge
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 1000
+  cartridges:
+  - LogProbeCartridge

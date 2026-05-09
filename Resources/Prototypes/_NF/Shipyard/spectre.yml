@@ -1,0 +1,59 @@
+# Author Info
+# GitHub: Wolfhauler
+# Discord: wolfhauler
+
+# Maintainer Info
+# GitHub: ThatOneGoblin25
+# Discord: thedaarkgoblin
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Spectre
+  parent: BaseVessel
+  name: NR Spectre
+  description: A large, attractive but dated vessel with a pure focus on research and development. It is capable of generating anomalies.
+  price: 230000 # StarHorizon-RND-debuff
+  category: Large
+  group: Shipyard
+  shuttlePath: /Maps/_NF/Shuttles/spectre.yml
+  guidebookPage: Null
+  class:
+  - Science
+  engine:
+  - AME
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:FactionCostModifier
+      faction: "FactionSIU"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionArcadia"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: Spectre
+  mapName: 'NR Spectre'
+  mapPath: /Maps/_NF/Shuttles/spectre.yml
+  minPlayers: 0
+  stations:
+    Spectre:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Spectre {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

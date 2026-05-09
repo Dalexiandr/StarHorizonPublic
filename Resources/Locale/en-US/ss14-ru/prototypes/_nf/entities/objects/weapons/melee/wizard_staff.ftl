@@ -1,0 +1,17 @@
+ent-WizardStaffMeleeBase = wizard staff
+    .desc = Symbol of wizard's mastery of arcane arts.
+ent-WizardStaffMeleeBaseNF = wizard staff nf
+    .desc = { ent-WizardStaffMeleeBase.desc }
+ent-WizardStaffMeleeRed = inert red wizard staff
+    .desc = { ent-WizardStaffMeleeBase.desc }
+ent-WizardStaffMeleeViolet = inert violet wizard staff
+    .desc = { ent-WizardStaffMeleeBase.desc }
+ent-WizardStaffMeleeSoap = inert soap wizard staff
+    .desc = { ent-WizardStaffMeleeBase.desc }
+ent-WizardStaffMeleeBrick = inert brick wizard staff
+    .desc = { ent-WizardStaffMeleeBaseNF.desc }
+ent-WizardStaffMeleeBlood = inert cultist staff
+    .desc = { ent-BaseC3CultContraband.desc }
+ent-WizardStaffDarkBolt = cultist staff
+    .suffix = Dark bolt
+    .desc = { ent-BaseC3CultContraband.desc }

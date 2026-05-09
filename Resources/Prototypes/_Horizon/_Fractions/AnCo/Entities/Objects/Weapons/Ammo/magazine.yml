@@ -1,0 +1,216 @@
+- type: entity
+  id: BaseMagazineAnCoShotgun50
+  name: магазин для дробовика
+  parent: [BaseItem, BaseAnCoContraband]
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - AnCoMagazineShotgun50
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - AnCoBulletShotgun50
+    capacity: 12
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Ammo/Magazine/50_shotgun_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 13
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: MagazineAnCoShotgun50
+  name: магазин для дробовика .50
+  suffix: StarHorizon, AnCo, Ammo
+  parent: BaseMagazineAnCoShotgun50
+  components:
+  - type: BallisticAmmoProvider
+    proto: BaseCartridgeShotgunAnCo
+
+- type: entity
+  id: BaseMagazinePistol35
+  name: магазин для пистолета
+  parent: [BaseItem, BaseAnCoContraband]
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - AnCoMagazinePistol35
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - AnCoBulletPistol35
+    capacity: 20
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Ammo/Magazine/35_pistol_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+  - type: StaticPrice
+    price: 4000
+
+- type: entity
+  id: MagazinePistol35
+  name: магазин для пистолета .35
+  suffix: StarHorizon, AnCo, Ammo
+  parent: BaseMagazinePistol35
+  components:
+  - type: BallisticAmmoProvider
+    proto: BaseCartridgePistolAnCo
+
+- type: entity
+  id: BaseMagazineRifle20
+  name: магазин для винтовки
+  parent: [BaseItem, BaseAnCoContraband]
+  suffix: StarHorizon, AnCo, Ammo
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - AnCoMagazineRifle20
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - AnCoBulletRifle20
+    capacity: 45
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Ammo/Magazine/20_rifle_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+  - type: StaticPrice
+    price: 4000
+
+- type: entity
+  id: MagazineRifle20
+  name: магазин для винтовки .20
+  suffix: StarHorizon, AnCo, Ammo
+  parent: BaseMagazineRifle20
+  components:
+  - type: BallisticAmmoProvider
+    proto: BaseCartridgeRifleAnCo
+
+- type: entity
+  id: BaseMagazineRifle30
+  name: магазин для винтовки
+  parent: [BaseItem, BaseAnCoContraband]
+  suffix: StarHorizon, AnCo, Ammo
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - AnCoMagazineRifle30
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - AnCoBulletRifle30
+    capacity: 100
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Ammo/Magazine/30_rifle_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: MagazineRifle30
+  name: магазин для винтовки .30
+  suffix: StarHorizon, AnCo, Ammo
+  parent: BaseMagazineRifle30
+  components:
+  - type: BallisticAmmoProvider
+    proto: BaseCartridgeRifleAnCoBuff
+
+- type: entity
+  id: BaseMagazineSniper70
+  name: магазин для винтовки
+  parent: [BaseItem, BaseAnCoContraband]
+  suffix: StarHorizon, AnCo, Ammo
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - AnCoMagazineSniper70
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - AnCoBulletSniper70
+    capacity: 5
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Ammo/Magazine/70_sniper_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: MagazineSniper70
+  name: магазин для винтовки .70
+  suffix: StarHorizon, AnCo, Ammo
+  parent: BaseMagazineSniper70
+  components:
+  - type: BallisticAmmoProvider
+    proto: BaseCartridgeSniperAnCo

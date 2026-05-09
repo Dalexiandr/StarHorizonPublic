@@ -1,0 +1,13 @@
+- type: salvageDifficulty
+  id: Inferno
+  lootTable: InfernoSalvageLoot
+  lootBudget: 80
+  mobBudget: 240
+  modifierBudget: 5
+  color: "#FF450096"
+  recommendedPlayers: 6
+  destructionStructures: 18
+  endSound:
+    collection: AnCoInfernoEnd
+    params:
+      volume: -5

@@ -1,0 +1,12 @@
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsWeddingRing
+  name: обручальное кольцо
+  description: Главное не уронить в важный момент... Или не потерять палец.
+  suffix: StarHorizon
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Hands/weddingring.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Hands/weddingring.rsi
+  - type: FingerprintMask

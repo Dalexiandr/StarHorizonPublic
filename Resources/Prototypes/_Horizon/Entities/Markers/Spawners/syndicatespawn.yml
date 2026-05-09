@@ -1,0 +1,47 @@
+- type: entity
+  id: SpawnSyndicateOfficerTeleCommunication
+  parent: SpawnPointJobBase
+  components:
+  - type: SpawnPoint
+    job_id: SyndicateOfficerTeleCommunication
+  - type: Sprite
+    layers:
+     - state: green
+     - sprite: _StarHorizon/Markers/Jobs/syndicate.rsi
+       state: SyndicateOfficerTeleCommunication
+
+- type: entity
+  id: SpawnSyndicateOperative
+  parent: SpawnPointJobBase
+  components:
+  - type: SpawnPoint
+    job_id: SyndicateOperative
+  - type: Sprite
+    layers:
+     - state: green
+     - sprite: _StarHorizon/Markers/Jobs/syndicate.rsi
+       state: SyndicateOperative
+
+- type: entity
+  id: SpawnSyndicateMedic
+  parent: SpawnPointJobBase
+  components:
+  - type: SpawnPoint
+    job_id: SyndicateMedic
+  - type: Sprite
+    layers:
+     - state: green
+     - sprite: _StarHorizon/Markers/Jobs/syndicate.rsi
+       state: SyndicateMedic
+
+- type: entity
+  id: SpawnSyndicateCargo
+  parent: SpawnPointJobBase
+  components:
+  - type: SpawnPoint
+    job_id: SyndicateCargo
+  - type: Sprite
+    layers:
+     - state: green
+     - sprite: _StarHorizon/Markers/Jobs/syndicate.rsi
+       state: SyndicateCargo

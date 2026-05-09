@@ -1,0 +1,49 @@
+{
+    "version": 1,
+    "license": "CLA with hosting restrictions",
+    "copyright": "by Joulerk",
+    "size": {
+      "x": 64,
+      "y": 64
+    },
+    "states": [
+      {
+        "name": "animated",
+        "directions": 4,
+        "delays": [
+          [
+            0.1,
+            0.1,
+            0.1,
+            0.1,
+            0.1,
+            0.1
+          ],
+          [
+            0.1,
+            0.1,
+            0.1,
+            0.1,
+            0.1,
+            0.1
+          ],
+          [
+            0.1,
+            0.1,
+            0.1,
+            0.1,
+            0.1,
+            0.1
+          ],
+          [
+            0.1,
+            0.1,
+            0.1,
+            0.1,
+            0.1,
+            0.1
+          ]
+        ]
+      }
+    ]
+  }

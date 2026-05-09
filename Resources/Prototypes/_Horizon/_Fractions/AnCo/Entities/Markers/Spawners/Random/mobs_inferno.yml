@@ -1,0 +1,167 @@
+- type: entity
+  name: спавнер защитного бота АнКо
+  id: SpawnAnCoCrabInferno
+  parent: MarkerBase
+  suffix: Starhorizon, AnCo, Dungeon
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/_Fractions/AnCo/Mobs/bot.rsi
+        state: crab-icon
+  - type: ConditionalSpawner
+    prototypes:
+    - AnCoCrabInferno
+
+- type: entity
+  name: спавнер боевого бота АнКо
+  id: SpawnAnCoDroneCombatInferno
+  parent: MarkerBase
+  suffix: Starhorizon, AnCo, Dungeon
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/_Fractions/AnCo/Mobs/bot.rsi
+        state: combat-icon
+  - type: ConditionalSpawner
+    prototypes:
+    - AnCoDroneCombatInferno
+
+- type: entity
+  name: спавнер бота-бомбы АнКо
+  id: SpawnAnCoDroneMineInferno
+  parent: MarkerBase
+  suffix: Starhorizon, AnCo, Dungeon
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/_Fractions/AnCo/Mobs/bot.rsi
+        state: mine-icon
+  - type: ConditionalSpawner
+    prototypes:
+    - AnCoDroneMineInferno
+
+- type: entity
+  name: спавнер дрона-компаньона АнКо
+  id: SpawnAnCoFlyDroneSmallInferno
+  parent: MarkerBase
+  suffix: Starhorizon, AnCo, Dungeon
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/_Fractions/AnCo/Mobs/flybot.rsi
+        state: flysmall
+  - type: ConditionalSpawner
+    prototypes:
+    - AnCoFlyDroneSmallInferno
+
+- type: entity
+  name: спавнер боевого дрона АнКо
+  id: SpawnAnCoFlyDroneHugeInferno
+  parent: MarkerBase
+  suffix: Starhorizon, AnCo, Dungeon
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/_Fractions/AnCo/Mobs/flybot.rsi
+        state: flyhuge
+  - type: ConditionalSpawner
+    prototypes:
+    - AnCoFlyDroneHugeInferno
+
+- type: entity
+  name: спавнер Титана
+  id: SpawnAnCoMechTitanInferno
+  parent: MarkerBase
+  suffix: Starhorizon, AnCo, Dungeon
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/_Fractions/AnCo/Mobs/bot.rsi
+        state: titan-icon
+  - type: ConditionalSpawner
+    prototypes:
+    - AnCoMechTitanInferno
+
+- type: entity
+  name: спавнер Циклопа
+  id: SpawnAnCoMechCyclopInferno
+  parent: MarkerBase
+  suffix: Starhorizon, AnCo, Dungeon
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/_Fractions/AnCo/Mobs/bot.rsi
+        state: cyclop-icon
+  - type: ConditionalSpawner
+    prototypes:
+    - AnCoMechCyclopInferno
+
+- type: entity
+  name: спавнер Бегемота
+  id: SpawnAnCoMechBegemothInferno
+  parent: MarkerBase
+  suffix: Starhorizon, AnCo, Dungeon
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/_Fractions/AnCo/Mobs/bot.rsi
+        state: begemoth-icon
+  - type: ConditionalSpawner
+    prototypes:
+    - AnCoMechBegemothInferno
+
+- type: entity
+  name: спавнер Муша
+  id: SpawnAnCoMechMushInferno
+  parent: MarkerBase
+  suffix: Starhorizon, AnCo, Dungeon
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/_Fractions/AnCo/Mobs/bot.rsi
+        state: mush-icon
+  - type: ConditionalSpawner
+    prototypes:
+    - AnCoMechMushInferno
+
+- type: entity
+  name: случайный спавнер мобов АнКо Инферно
+  id: SpawnAnCoInfernoMobsRandom
+  parent: MarkerBase
+  suffix: StarHorizon, AnCo, Dungeon
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/_Fractions/AnCo/Mobs/bot.rsi
+        state: crab-icon
+  - type: RandomSpawner
+    # Базовые мобы (часто)
+    prototypes:
+    - AnCoCrabInferno
+    - AnCoCrabInferno
+    - AnCoCrabInferno
+    - AnCoDroneCombatInferno
+    - AnCoDroneCombatInferno
+    - AnCoDroneMineInferno
+    - AnCoFlyDroneSmallInferno
+    - AnCoFlyDroneSmallInferno
+    # Редкие мобы (средний шанс)
+    rarePrototypes:
+    - AnCoFlyDroneHugeInferno
+    - AnCoMechTitanInferno
+    - AnCoMechCyclopInferno
+    - AnCoMechBegemothInferno
+    - AnCoMechMushInferno
+    rareChance: 0.35
+    chance: 1.0
+    offset: 0.0

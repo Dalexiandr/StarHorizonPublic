@@ -1,0 +1,72 @@
+# Revert + Remap
+
+# Author Info
+# GitHub: erhardsteinhauer
+# Discord: erhardsteinhauer
+
+# Maintainer Info
+# GitHub: erhardsteinhauer
+# Discord: erhardsteinhauer
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Pioneer
+  parent: BaseVessel
+  name: LVHI Pioneer
+  description: A cargo container outfitted to be space-capable and equipped for salvaging and mining either on its own or as part of a fleet. Manufactured by Langstad-Voigt Heavy Industries.
+  price: 12750 # ~9781$ on mapinit + 15% markup #StarHorizon + 15% markup
+  category: Small
+  group: Shipyard
+  shuttlePath: /Maps/_NF/Shuttles/pioneer.yml
+  guidebookPage: ShipyardPioneer
+  class:
+  - Salvage
+  engine:
+  - Plasma
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:RoleModifier
+      role: "PlantTechnician"
+      costMultiplier: 0.9
+    - !type:RoleModifier
+      role: "PlantManager"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionEdison"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionLVHI"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionUAC"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionNakamura"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: Pioneer
+  mapName: 'Pioneer'
+  mapPath: /Maps/_NF/Shuttles/pioneer.yml
+  minPlayers: 0
+  stations:
+    Pioneer:
+      stationProto: StandardFrontierVessel
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: 'Pioneer {1}'
+        nameGenerator: !type:NanotrasenNameGenerator
+          prefixCreator: '14'
+      - type: StationJobs
+        availableJobs:
+          ContractorInterview: [ 0, 0 ]
+          PilotInterview: [ 0, 0 ]
+          MercenaryInterview: [ 0, 0 ]

@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "license": "CLA with hosting restrictions",
+  "copyright": "Sprited by Xigovir DS:623559319543349268",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "open",
+      "delays":
+      [
+        [
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2
+        ]
+      ]
+    },
+    {
+      "name": "close",
+      "delays":
+      [
+        [
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2,
+            0.2
+        ]
+      ]
+    },
+    {
+      "name": "disk-1"
+    },
+    {
+      "name": "disk-2"
+    },
+    {
+      "name": "disk-3"
+    },
+    {
+      "name": "disk-4"
+    },
+    {
+      "name": "level-1"
+    },
+    {
+      "name": "level-2"
+    },
+    {
+      "name": "level-3"
+    },
+    {
+      "name": "level-4"
+    },
+    {
+      "name": "lock"
+    },
+    {
+      "name": "base"
+    },
+    {
+      "name": "base-unshaded"
+    },
+    {
+      "name": "icon"
+    }
+  ]
+}

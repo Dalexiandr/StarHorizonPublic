@@ -1,0 +1,15 @@
+- type: entity
+  parent: [ NFClothingHeadHardsuitWithLightBase ]
+  id: DamiroHead
+  name: Шлем скафандра Дамиро
+  description: простой и удобный
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/damiro.rsi
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Head/Hardsuits/damiro.rsi
+  - type: PointLight
+    color: "#9e1126"
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000

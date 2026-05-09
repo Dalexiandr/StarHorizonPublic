@@ -1,0 +1,10 @@
+ent-BaseSlimePotion = зелье слайма
+    .desc = Зелье слайма.
+ent-PowerCellSlime = слаймовая батарея
+    .desc = Перезаряжаемая слаймовая ячейка.
+ent-SlimeLight = светильник слайма
+    .desc = Экстракт слайма.
+ent-SpeedSlimePotion = зелье скорости слайма
+    .desc = Зелье слайма.
+ent-PressureSlimePotion = зелье давления слайма
+    .desc = Зелье слайма.

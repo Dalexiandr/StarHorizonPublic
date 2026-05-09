@@ -1,0 +1,59 @@
+- type: entity
+  id: AnCoMiningDrill
+  parent: OreMiningDrill
+  name: Буровая установка АнКо
+  suffix: StarHorizon, AnCo, Structure
+  description: У вас появилось непреодалимое желание сделать из этого винтовку.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Machines/drill.rsi
+    snapCardinals: true
+    granularLayersRendering: true
+    layers:
+      - state: drill-off
+        map: [ "drill" ]
+      - state: base
+      - state: base-powered
+        shader: unshaded
+        visible: false
+        map: [ "enum.PowerDeviceVisualLayers.Powered" ]
+      - state: drill-empty-unlit
+        shader: unshaded
+        map: [ "light" ]
+        visible: false
+  - type: MagnetPickup # Притягивание руды, сделано что бы не нагружать сервер в лишний раз
+    magnetEnabled: true
+    magnetCanBeEnabled: true
+    range: 1
+  - type: Machine
+    board: AnCoDrillCircuitboard
+  - type: Transform
+    noRot: true
+  - type: OreExtractor
+    luck: 2
+    efficiency: 5.0
+
+- type: entity
+  id: AnCoDrillCircuitboard
+  parent: [BaseItem, BaseAnCoContraband]
+  name: микросхема бура АнКо
+  suffix: StarHorizon, AnCo
+  description: Красная прозрачная микросхема. Вы ощущаете исходящее от неё тепло.
+  components:
+    - type: Sprite
+      sprite: _Horizon/_Fractions/AnCo/Objects/Misc/ciruitboard.rsi
+      state: boarddrill
+    - type: Item
+      storedRotation: -90
+    - type: StaticPrice
+      price: 100
+    - type: MachineBoard
+      prototype: AnCoMiningDrill
+      stackRequirements:
+        ArdonSheetStack: 10
+        KazmieSheetStack: 10
+      requirements:
+        MatterBin: 3
+        Manipulator: 3

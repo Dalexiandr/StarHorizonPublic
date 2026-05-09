@@ -1,0 +1,45 @@
+# Region Pellets
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: NFPelletShotgunPiercing
+  name: pellet (.50, piercing)
+  parent: NFBasePellet
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 7
+    ignoreResistances: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: NFPelletShotgunPsycore
+  name: pellet (.50 psycore)
+  parent: NFBasePellet
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 5
+        Caustic: 5
+  - type: StaminaDamageOnCollide
+    damage: 5
+
+#region PelletsSpread
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: NFPelletShotgunPiercingSpread
+  parent: [NFBasePelletShotgunSpread, NFPelletShotgunPiercing]
+  components:
+  - type: ProjectileSpread
+    proto: NFPelletShotgunPiercing
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: NFPelletShotgunPsycoreSpread
+  parent: [NFBasePelletShotgunSpread, NFPelletShotgunPsycore]
+  components:
+  - type: ProjectileSpread
+    proto: NFPelletShotgunPsycore

@@ -1,0 +1,84 @@
+- type: entity
+  id: ChemDispenserEmpty
+  name: chemical dispenser
+  suffix: Empty
+  parent: ReagentDispenserBase
+  description: An industrial grade chemical dispenser.
+  components:
+  - type: Sprite
+    sprite: Structures/dispensers.rsi
+    state: industrial-working
+    snapCardinals: true
+  - type: Storage
+    openOnActivate: false
+    whitelist:
+      tags:
+      - ChemDispensable
+    maxItemSize: Large # Frontier
+    grid: # Frontier
+    - 0,0,20,8 # Frontier
+  - type: ReagentDispenser # Frontier
+    canAutoLabel: true # Frontier
+  - type: ApcPowerReceiver
+  - type: ExtensionCableReceiver
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalGlassBreak
+      - !type:ChangeConstructionNodeBehavior
+        node: machineFrame
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Machine
+    board: ChemDispenserMachineCircuitboard
+  - type: GuideHelp
+    guides:
+    - Chemicals
+    - Chemist
+  - type: StealTarget
+    stealGroup: ChemDispenser
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25, -0.4, 0.25, 0.4"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+
+- type: entity
+  id: ChemDispenser
+  suffix: Filled
+  parent: ChemDispenserEmpty
+  components:
+  - type: ReagentDispenser
+  - type: StorageFill
+    contents:
+      - id: JugAluminium
+      - id: ReinforcedJugCarbon # Frontier
+      - id: ReinforcedJugChlorine # Frontier
+      - id: JugCopper
+      - id: ReinforcedJugEthanol # Frontier
+      - id: JugFluorine
+      - id: ReinforcedJugSugar # Frontier
+      - id: ReinforcedJugHydrogen # Frontier
+      - id: JugIodine
+      - id: JugIron
+      - id: ReinforcedJugLithium # Frontier
+      - id: JugMercury
+      - id: ReinforcedJugNitrogen # Frontier
+      - id: ReinforcedJugOxygen # Frontier
+      - id: ReinforcedJugPhosphorus # Frontie
+      - id: ReinforcedJugPotassium # Frontier
+      - id: JugRadium
+      - id: ReinforcedJugSilicon # Frontier
+      - id: JugSodium
+      - id: JugSulfur

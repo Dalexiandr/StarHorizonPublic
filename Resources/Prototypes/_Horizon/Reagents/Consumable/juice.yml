@@ -1,0 +1,61 @@
+- type: reagent
+  id: JuiceBerriesbluespace
+  name: сок блюспейсинки
+  parent: BaseJuice
+  desc: вращающийся, как сингулярность
+  physicalDesc: reagent-physical-desc-starry
+  flavor: singulo
+  color: "#3d85c6"
+
+- type: reagent
+  id: JuiceBerriesdeath
+  name: сок смертовицы
+  parent: BaseJuice
+  desc: смертельно растекающийся
+  physicalDesc: reagent-physical-desc-enigmatic
+  flavor: chaos
+  color: "#D4D8EB"
+
+- type: reagent
+  id: JuiceBerriesice
+  name: сок ледовицы
+  parent: BaseJuice
+  desc: замораживающий, как стужа
+  physicalDesc: reagent-physical-desc-cold
+  flavor: cold
+  color: "#D4D8EB"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:AdjustTemperature
+        conditions:
+        - !type:Temperature
+          min: 293.15
+        amount: -10000
+      - !type:PopupMessage
+        type: Local
+        visualType: Medium
+        messages: [ "leporazine-effect-temperature-adjusting" ]
+        probability: 0.2
+
+- type: reagent
+  id: JuiceBerriesflame
+  name: сок тепловицы
+  parent: BaseJuice
+  desc: смертельно пламенный
+  physicalDesc: reagent-physical-desc-burning
+  flavor: bee
+  color: "#f44336"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:AdjustTemperature
+        conditions:
+        - !type:Temperature
+          max: 293.15
+        amount: 100000
+      - !type:PopupMessage
+        type: Local
+        visualType: Medium
+        messages: [ "leporazine-effect-temperature-adjusting" ]
+        probability: 0.2

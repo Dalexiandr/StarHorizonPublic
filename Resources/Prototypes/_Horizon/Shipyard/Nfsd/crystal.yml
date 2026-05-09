@@ -1,0 +1,53 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: lnqz1tor
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/SpidernAteing
+# Discord: helloohelloo
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: Crystal
+  parent: BaseVessel
+  name: NFS Crystal
+  description: Научный шаттл оснащенный нужными прибораи
+  price: 95000 # ???, 63058 50% = 94000
+  category: Medium
+  group: Security
+  access: Security
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/Nfsd/crystal.yml
+  class:
+  - Science
+  engine:
+  - Bananium
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:FactionCostModifier
+      faction: "FactionNFSD"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: Crystal
+  mapName: 'NFS Crystal'
+  mapPath:  /Maps/_Horizon/Shuttles/Shipyard/Nfsd/crystal.yml
+  minPlayers: 0
+  stations:
+    Crystal:
+      stationProto: StandardFrontierSecurityVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Crystal {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

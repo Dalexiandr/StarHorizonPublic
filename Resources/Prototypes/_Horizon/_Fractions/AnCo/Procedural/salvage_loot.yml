@@ -1,0 +1,11 @@
+- type: salvageLoot
+  id: InfernoSalvageLoot
+  loots:
+    - !type:RandomSpawnsLoot
+      entries:
+        - proto: SalvageSpawnerEquipmentValuable100
+          prob: 0.5
+        - proto: SalvageSpawnerEquipment100
+          prob: 0.8
+        - proto: SalvageSpawnerTreasureValuable100
+        - proto: SalvageSpawnerTreasure100

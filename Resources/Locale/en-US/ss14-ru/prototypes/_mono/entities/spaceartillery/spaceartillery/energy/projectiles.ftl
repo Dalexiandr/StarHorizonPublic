@@ -1,0 +1,12 @@
+ent-ShipMediumPlasmaProjectile = plasma projectile
+    .desc = { ent-BaseBulletTrigger.desc }
+ent-ShipAutopulserPlasmaProjectile = plasma projectile
+    .desc = { ent-BaseBulletTrigger.desc }
+ent-ShipGlassingBeamPlasmaProjectile = plasma projectile
+    .desc = { ent-BaseBulletTrigger.desc }
+ent-ShipM25Projectile = M25 projectile
+    .desc = { ent-BaseBulletTrigger.desc }
+ent-ShipRubiconProjectile = EMP projectile
+    .desc = { ent-BaseBulletTrigger.desc }
+ent-ShipDymereProjectile = Ionized Gas Projectile
+    .desc = { ent-BaseBulletTrigger.desc }

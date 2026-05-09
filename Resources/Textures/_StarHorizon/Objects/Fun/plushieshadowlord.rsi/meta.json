@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "license": "CLA with hosting restrictions",
+  "copyright": "Sprites by ravenreaper DS:256194220132401153",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+    "states": [
+        {
+            "name": "icon"
+        }
+    ]
+}
+

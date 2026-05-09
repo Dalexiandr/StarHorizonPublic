@@ -1,0 +1,12 @@
+research-discipline-biochemical = Биохимия
+research-technology-basic-surgery = Стандартная хирургия
+research-technology-advanced-surgery = Продвинутая хирургия
+research-technology-basic-cyberlimbs = Кибернетические конечности
+research-technology-advanced-cyberlimbs = Продвинутые киберконечности
+research-technology-basic-eye-implants = Глазные имплантаты
+research-technology-functional-cyberlimbs = Функциональные киберконечности
+research-technology-nightvision-eyes = Кибер-глаза с ночным видением
+research-technology-thermalvision-eyes = Кибер-глаза с тепловизором
+research-technology-ion-weaponry = Ионное оружие
+research-technology-declone-technology = Технология деклонов
+research-discipline-medical = Биохимия

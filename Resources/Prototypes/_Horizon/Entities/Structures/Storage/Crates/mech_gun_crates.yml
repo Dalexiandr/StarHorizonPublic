@@ -1,0 +1,198 @@
+- type: entity
+  parent: CrateBaseSecure
+  id: CrateMechWeaponSecure
+  name: secure mech weapon crate
+  components:
+  - type: Icon
+    sprite: Structures/Storage/Crates/weapon.rsi
+  - type: Sprite
+    sprite: Structures/Storage/Crates/weapon.rsi
+  - type: AccessReader
+    access: [["Frontier"]] # Horizon Temp
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200 # Horizon Temp
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+
+- type: entity
+  id: MechGunLaserCrate
+  parent: CrateMechWeaponSecure
+  name: Immolator Crate
+  description: Immolator Crate
+  components:
+  - type: StorageFill
+    contents:
+      - id: MechGunLaser
+        amount: 1
+
+- type: entity
+  id: MechGunHeavyLaserCrate
+  parent: CrateMechWeaponSecure
+  name: Solaris Crate
+  description: Solaris Crate
+  components:
+  - type: StorageFill
+    contents:
+      - id: MechGunHeavyLaser
+        amount: 1
+
+- type: entity
+  id: MechGunHeavyPulseRifleCrate
+  parent: CrateMechWeaponSecure
+  name: eZ-13 mk2 Heavy pulse rifle Crate
+  description: eZ-13 mk2 Heavy pulse rifle Crate
+  components:
+  - type: StorageFill
+    contents:
+      - id: MechGunHeavyPulseRifle
+        amount: 1
+
+- type: entity
+  id: MechGunDisablerCrate
+  parent: CrateMechWeaponSecure
+  name: Peacemaker Crate
+  description: Peacemaker Crate
+  components:
+  - type: StorageFill
+    contents:
+      - id: MechGunDisabler
+        amount: 1
+
+- type: entity
+  id: MechGunTeslaCannonCrate
+  parent: CrateMechWeaponSecure
+  name: Tesla Gun Crate
+  description: Tesla Gun Crate
+  components:
+  - type: StorageFill
+    contents:
+      - id: MechGunTeslaCannon
+        amount: 1
+
+- type: entity
+  id: MechGunScattershotCrate
+  parent: CrateMechWeaponSecure
+  name: Scattershot Crate
+  description: Scattershot Crate
+  components:
+  - type: StorageFill
+    contents:
+      - id: MechGunScattershot
+        amount: 1
+
+- type: entity
+  id: MechGunAutocannonUAC2Crate
+  parent: CrateMechWeaponSecure
+  name: Ultra AC2 Crate
+  description: Ultra AC2 Crate
+  components:
+  - type: StorageFill
+    contents:
+      - id: MechGunAutocannonUAC2
+        amount: 1
+
+- type: entity
+  id: MechGunCarbineHadesCrate
+  parent: CrateMechWeaponSecure
+  name: Hades Crate
+  description: Hades Crate
+  components:
+  - type: StorageFill
+    contents:
+      - id: MechGunCarbineHades
+        amount: 1
+
+- type: entity
+  id: MechGunAntiMatterRifleCrate
+  parent: CrateMechWeaponSecure
+  name: MHAR21 Crate
+  description: MHAR21 Crate
+  components:
+  - type: StorageFill
+    contents:
+      - id: MechGunAntiMatterRifle
+        amount: 1
+
+- type: entity
+  id: MechGunGrenadeCrate
+  parent: CrateMechWeaponSecure
+  name: SGL6 Crate
+  description: SGL6 Crate
+  components:
+  - type: StorageFill
+    contents:
+      - id: MechGunGrenade
+        amount: 1
+
+- type: entity
+  id: MechGunMissileLRM6Crate
+  parent: CrateMechWeaponSecure
+  name: SRM8 Crate
+  description: SRM8 Crate
+  components:
+  - type: StorageFill
+    contents:
+      - id: MechGunMissileLRM6
+        amount: 1
+
+- type: entity
+  id: MechGunMissileSRM8FragCrate
+  parent: CrateMechWeaponSecure
+  name: SRM8Frag Crate
+  description: SRM8Frag Crate
+  components:
+  - type: StorageFill
+    contents:
+      - id: MechGunMissileSRM8Frag
+        amount: 1
+
+- type: entity
+  id: MechGunMissileSRM8IgniteCrate
+  parent: CrateMechWeaponSecure
+  name: SRM8Ignite Crate
+  description: SRM8Ignite Crate
+  components:
+  - type: StorageFill
+    contents:
+    - id: MechGunMissileSRM8Ignite
+      amount: 1
+
+- type: entity
+  id: MechGunPKACrate
+  parent: CrateMechWeaponSecure
+  name: PKA Crate
+  description: PKA Crate
+  components:
+  - type: StorageFill
+    contents:
+    - id: MechGunPKA
+      amount: 1
+
+- type: entity
+  id: MechGunPKAHeavyCrate
+  parent: CrateMechWeaponSecure
+  name: PKA Crate
+  description: PKA Crate
+  components:
+  - type: StorageFill
+    contents:
+    - id: MechGunPKAHeavy
+      amount: 1
+
+- type: entity
+  id: MechGunXRayRifleCrate
+  parent: CrateMechWeaponSecure
+  name: Mech Gun XRay Rifle Crate
+  description: Mech Gun XRay Rifle Crate
+  components:
+  - type: StorageFill
+    contents:
+    - id: MechGunXRayRifle
+      amount: 1

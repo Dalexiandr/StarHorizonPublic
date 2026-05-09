@@ -1,0 +1,23 @@
+﻿<Document>
+  # Пневмоклапан
+  Двунаправленный клапан с управлением давлением.
+  <Box>
+    <GuideEntityEmbed Entity="PressureControlledValve"/>
+  </Box>
+
+  Имеет 3 соединения:
+  - Два двунаправленных (вход/выход)
+  - Управляющее
+
+  Логика работы:
+  - [color=green]Открывается[/color] при давлении на выходе ниже контрольного на [color=orange][protodata="PressureControlledValve" comp="PressureControlledValve" member="Threshold"/] кПа[/color]
+  - [color=red]Закрывается[/color] при выравнивании давлений
+
+  Преимущества перед [textlink="насосами" link="Pumps"]:
+  - Более быстрая подача
+  - Пассивная работа
+
+  Применение:
+  - Автоматический сброс газов
+  - Быстрое заполнение объемов
+</Document>

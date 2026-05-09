@@ -1,0 +1,559 @@
+- type: entity
+  id: CrystalGreenMedium
+  parent: CrystalGreen
+  name: кристалл
+  suffix: зелёный
+  components:
+    - type: Sprite
+      sprite: _Horizon/Structures/Decoration/crystal.rsi
+      state: crystal_grey_medium
+      color: "#52ff39"
+      noRot: true
+
+- type: entity
+  id: CrystalPinkMedium
+  parent: CrystalGreenMedium
+  suffix: розовый
+  components:
+    - type: Sprite
+      color: "#ff66cc"
+    - type: PointLight
+      radius: 3
+      energy: 3
+      color: "#ff66cc"
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 20
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:PlaySoundBehavior
+              sound:
+                collection: GlassBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ShardCrystalPink:
+                  min: 1
+                  max: 1
+
+- type: entity
+  id: CrystalRedMedium
+  parent: CrystalGreenMedium
+  suffix: красный
+  components:
+    - type: Sprite
+      color: "#fb4747"
+    - type: PointLight
+      color: "#fb4747"
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 20
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:PlaySoundBehavior
+              sound:
+                collection: GlassBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ShardCrystalRed:
+                  min: 1
+                  max: 2
+
+- type: entity
+  id: CrystalOrangeMedium
+  parent: CrystalGreenMedium
+  suffix: оранжевый
+  components:
+    - type: Sprite
+      color: "#ff8227"
+    - type: PointLight
+      radius: 3
+      energy: 3
+      color: "#ff8227"
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 20
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:PlaySoundBehavior
+              sound:
+                collection: GlassBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ShardCrystalOrange:
+                  min: 1
+                  max: 2
+
+- type: entity
+  id: CrystalBlackMedium
+  parent: CrystalGreenMedium
+  suffix: черный
+  components:
+    - type: Sprite
+      color: "#363636"
+    - type: PointLight
+      radius: 3
+      energy: 3
+      color: "#363636"
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 20
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:PlaySoundBehavior
+              sound:
+                collection: GlassBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ShardCrystalBlack:
+                  min: 1
+                  max: 2
+
+- type: entity
+  id: CrystalBlueMedium
+  parent: CrystalGreenMedium
+  suffix: синий
+  components:
+    - type: Sprite
+      color: "#39a1ff"
+    - type: PointLight
+      radius: 3
+      energy: 3
+      color: "#39a1ff"
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 20
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:PlaySoundBehavior
+              sound:
+                collection: GlassBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ShardCrystalBlue:
+                  min: 1
+                  max: 2
+
+- type: entity
+  id: CrystalYellowMedium
+  parent: CrystalGreenMedium
+  suffix: жёлтый
+  components:
+    - type: Sprite
+      color: "#ffde46"
+    - type: PointLight
+      radius: 3
+      energy: 3
+      color: "#ffde46"
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 20
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:PlaySoundBehavior
+              sound:
+                collection: GlassBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ShardCrystalYellow:
+                  min: 1
+                  max: 2
+
+- type: entity
+  id: CrystalCyanMedium
+  parent: CrystalGreenMedium
+  suffix: голубой
+  components:
+    - type: Sprite
+      color: "#47f8ff"
+    - type: PointLight
+      radius: 3
+      energy: 3
+      color: "#47f8ff"
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 20
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: GlassBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ShardCrystalCyan:
+                  min: 1
+                  max: 2
+            - !type:DoActsBehavior
+               acts: [ "Destruction" ]
+
+####################################### Tiny
+
+- type: entity
+  id: CrystalGreenTiny
+  parent: CrystalGreen
+  suffix: зелёный
+  name: кристалл
+  components:
+    - type: Sprite
+      sprite: _Horizon/Structures/Decoration/crystal.rsi
+      state: crystal_grey_small
+      color: "#52ff39"
+      noRot: true
+
+- type: entity
+  id: CrystalPinkTiny
+  parent: CrystalGreenTiny
+  suffix: розовый
+  components:
+    - type: Sprite
+      color: "#ff66cc"
+    - type: PointLight
+      radius: 3
+      energy: 3
+      color: "#ff66cc"
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 20
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:PlaySoundBehavior
+              sound:
+                collection: GlassBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ShardCrystalPink:
+                  min: 1
+                  max: 1
+
+- type: entity
+  id: CrystalRedTiny
+  parent: CrystalGreenTiny
+  suffix: красный
+  components:
+    - type: Sprite
+      color: "#fb4747"
+    - type: PointLight
+      color: "#fb4747"
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 20
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:PlaySoundBehavior
+              sound:
+                collection: GlassBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ShardCrystalRed:
+                  min: 1
+                  max: 2
+
+- type: entity
+  id: CrystalOrangeTiny
+  parent: CrystalGreenTiny
+  suffix: оранжевый
+  components:
+    - type: Sprite
+      color: "#ff8227"
+    - type: PointLight
+      radius: 3
+      energy: 3
+      color: "#ff8227"
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 20
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:PlaySoundBehavior
+              sound:
+                collection: GlassBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ShardCrystalOrange:
+                  min: 1
+                  max: 2
+
+- type: entity
+  id: CrystalBlackTiny
+  parent: CrystalGreenTiny
+  suffix: черный
+  components:
+    - type: Sprite
+      color: "#363636"
+    - type: PointLight
+      radius: 3
+      energy: 3
+      color: "#363636"
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 20
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:PlaySoundBehavior
+              sound:
+                collection: GlassBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ShardCrystalBlack:
+                  min: 1
+                  max: 2
+
+- type: entity
+  id: CrystalBlueTiny
+  parent: CrystalGreenTiny
+  suffix: синий
+  components:
+    - type: Sprite
+      color: "#39a1ff"
+    - type: PointLight
+      radius: 3
+      energy: 3
+      color: "#39a1ff"
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 20
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:PlaySoundBehavior
+              sound:
+                collection: GlassBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ShardCrystalBlue:
+                  min: 1
+                  max: 2
+
+- type: entity
+  id: CrystalYellowTiny
+  parent: CrystalGreenTiny
+  suffix: жёлтый
+  components:
+    - type: Sprite
+      color: "#ffde46"
+    - type: PointLight
+      radius: 3
+      energy: 3
+      color: "#ffde46"
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 20
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:PlaySoundBehavior
+              sound:
+                collection: GlassBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ShardCrystalYellow:
+                  min: 1
+                  max: 2
+
+- type: entity
+  id: CrystalCyanTiny
+  parent: CrystalGreenTiny
+  suffix: голубой
+  components:
+    - type: Sprite
+      color: "#47f8ff"
+    - type: PointLight
+      radius: 3
+      energy: 3
+      color: "#47f8ff"
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 20
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: GlassBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ShardCrystalCyan:
+                  min: 1
+                  max: 2
+            - !type:DoActsBehavior
+               acts: [ "Destruction" ]
+
+####################################### Random Spawn
+
+- type: entity
+  id: RandomGreenCrystal
+  name: случайный спавнер кристаллов
+  suffix: зелёный
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Structures/Decoration/crystal.rsi
+        state: crystal_grey_medium
+  - type: RandomSpawner
+    prototypes:
+      - CrystalGreen
+      - CrystalGreenMedium
+      - CrystalGreenTiny
+    chance: 1
+
+- type: entity
+  id: RandomPinkCrystal
+  name: случайный спавнер кристаллов
+  suffix: розовый
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Structures/Decoration/crystal.rsi
+        state: crystal_grey_medium
+  - type: RandomSpawner
+    prototypes:
+      - CrystalPink
+      - CrystalPinkMedium
+      - CrystalPinkTiny
+    chance: 1 
+
+- type: entity
+  id: RandomRedCrystal
+  name: случайный спавнер кристаллов
+  suffix: красный
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Structures/Decoration/crystal.rsi
+        state: crystal_grey_medium
+  - type: RandomSpawner
+    prototypes:
+      - CrystalGrey
+      - CrystalRedMedium
+      - CrystalRedTiny
+    chance: 1    
+
+- type: entity
+  id: RandomOrangeCrystal
+  name: случайный спавнер кристаллов
+  suffix: оранжевый
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Structures/Decoration/crystal.rsi
+        state: crystal_grey_medium
+  - type: RandomSpawner
+    prototypes:
+      - CrystalOrange
+      - CrystalOrangeMedium
+      - CrystalOrangeTiny
+    chance: 1    
+
+- type: entity
+  id: RandomBlackCrystal
+  name: случайный спавнер кристаллов
+  suffix: черный
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Structures/Decoration/crystal.rsi
+        state: crystal_grey_medium
+  - type: RandomSpawner
+    prototypes:
+      - CrystalBlack
+      - CrystalBlackMedium
+      - CrystalBlackTiny
+    chance: 1     
+
+- type: entity
+  id: RandomYellowCrystal
+  name: случайный спавнер кристаллов
+  suffix: жёлтый
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Structures/Decoration/crystal.rsi
+        state: crystal_grey_medium
+  - type: RandomSpawner
+    prototypes:
+      - CrystalYellow
+      - CrystalYellowMedium
+      - CrystalYellowTiny
+    chance: 1     
+
+- type: entity
+  id: RandomCyanCrystal
+  name: случайный спавнер кристаллов
+  suffix: голубой
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Structures/Decoration/crystal.rsi
+        state: crystal_grey_medium
+  - type: RandomSpawner
+    prototypes:
+      - CrystalCyan
+      - CrystalCyanMedium
+      - CrystalCyanTiny
+    chance: 1        
+
+- type: entity
+  id: RandomBlueCrystal
+  name: случайный спавнер кристаллов
+  suffix: синий
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Horizon/Structures/Decoration/crystal.rsi
+        state: crystal_grey_medium
+  - type: RandomSpawner
+    prototypes:
+      - CrystalBlue
+      - CrystalBlueMedium
+      - CrystalBlueTiny
+    chance: 1

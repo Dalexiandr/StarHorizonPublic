@@ -1,0 +1,267 @@
+- type: randomHumanoidSettings
+  id: EventHumanoidAnCoAgent
+  parent: EventHumanoid
+  components:
+    - type: AntagImmune
+
+# советник
+- type: randomHumanoidSettings
+  id: GhostAnCoCounselor
+  parent: EventHumanoidAnCoAgent
+  randomizeName: false
+  speciesBlacklist:
+  - Geth
+  - Diona
+  - Gingerbread
+  - SkeletonPerson
+  - Vox
+  - Orc
+  components:
+    - type: GhostRole
+      name: советник AnCo
+      description: AnCo-Counselor-agent-description
+      rules: AnCo-Counselor-agent-rule
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ AnCoCounselorGear ]
+    - type: RandomMetadata
+      nameSegments:
+        - NamesFirst
+        - NamesLast
+    - type: AutoImplant
+      implants:
+      - AnCoTrakerImplant
+# титан
+- type: randomHumanoidSettings
+  id: GhostAnCoTitan
+  parent: EventHumanoidAnCoAgent
+  randomizeName: false
+  speciesBlacklist:
+  - Geth
+  - Diona
+  - Gingerbread
+  - SkeletonPerson
+  - Vox
+  - Orc
+  components:
+    - type: GhostRole
+      name: офицер Титан АнКо
+      description: AnCo-Titan-agent-description
+      rules: AnCo-Titan-agent-rule
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ AnCoTitanGear ]
+    - type: RandomMetadata
+      nameSegments:
+        - NamesFirst
+        - NamesLast
+    - type: AutoImplant
+      implants:
+      - AnCoTrakerImplant
+# паук
+- type: randomHumanoidSettings
+  id: GhostAnCoSpider
+  parent: EventHumanoidAnCoAgent
+  randomizeName: false
+  speciesBlacklist:
+  - Geth
+  - Diona
+  - Gingerbread
+  - SkeletonPerson
+  - Vox
+  - Orc
+  components:
+    - type: GhostRole
+      name: офицер Паук АнКо
+      description: AnCo-Spider-agent-description
+      rules: AnCo-Spider-agent-rule
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ AnCoSpiderGear ]
+    - type: RandomMetadata
+      nameSegments:
+        - NamesFirst
+        - NamesLast
+    - type: AutoImplant
+      implants:
+      - AnCoTrakerImplant
+# рыцарь
+- type: randomHumanoidSettings
+  id: GhostAnCoKnight
+  parent: EventHumanoidAnCoAgent
+  randomizeName: false
+  speciesBlacklist:
+  - Geth
+  - Diona
+  - Gingerbread
+  - SkeletonPerson
+  - Vox
+  - Orc
+  components:
+    - type: GhostRole
+      name: офицер Рыцарь АнКо
+      description: AnCo-Knight-agent-description
+      rules: AnCo-Knight-agent-rule
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ AnCoKnightGear ]
+    - type: RandomMetadata
+      nameSegments:
+        - NamesFirst
+        - NamesLast
+    - type: AutoImplant
+      implants:
+      - AnCoTrakerImplant
+# офицер
+- type: randomHumanoidSettings
+  id: GhostAnCoOfficer
+  parent: EventHumanoidAnCoAgent
+  randomizeName: false
+  speciesBlacklist:
+  - Geth
+  - Diona
+  - Gingerbread
+  - SkeletonPerson
+  - Vox
+  - Orc
+  components:
+    - type: GhostRole
+      name: офицер АнКо
+      description: AnCo-Officer-agent-description
+      rules: AnCo-Officer-agent-rule
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ AnCoOfficerGear ]
+    - type: RandomMetadata
+      nameSegments:
+        - NamesFirst
+        - NamesLast
+    - type: AutoImplant
+      implants:
+      - AnCoTrakerImplant
+# Кадет
+- type: randomHumanoidSettings
+  id: GhostAnCoCadet
+  parent: EventHumanoidAnCoAgent
+  randomizeName: false
+  speciesBlacklist:
+  - Geth
+  - Diona
+  - Gingerbread
+  - SkeletonPerson
+  - Vox
+  - Orc
+  components:
+    - type: GhostRole
+      name: кадет АнКо
+      description: AnCo-Cadet-agent-description
+      rules: AnCo-Cadet-agent-rule
+      raffle:
+        settings: short
+    - type: Loadout
+      prototypes: [ AnCoCadetGear ]
+    - type: RandomMetadata
+      nameSegments:
+        - NamesFirst
+        - NamesLast
+    - type: AutoImplant
+      implants:
+      - AnCoTrakerImplant
+# короче да, заново
+# Совет
+- type: entity
+  id: RandomHumanoidSpawnerAnCoCounselor
+  name: советник АнКо
+  suffix: StarHorizon, AnCo
+  components:
+    - type: Sprite
+      sprite: _Horizon/_Fractions/AnCo/Markers/markers.rsi
+      state: counselor
+    - type: CharacterFactionMember
+      faction: FactionAnCo
+    - type: RandomMetadata
+      nameSegments:
+        - NamesFirst
+        - NamesLast
+    - type: RandomHumanoidSpawner
+      settings: GhostAnCoCounselor
+# Титан
+- type: entity
+  id: RandomHumanoidSpawnerAnCoTitan
+  name: офицер Титан АнКо
+  suffix: StarHorizon, AnCo
+  components:
+    - type: Sprite
+      sprite: _Horizon/_Fractions/AnCo/Markers/markers.rsi
+      state: titan
+    - type: RandomMetadata
+      nameSegments:
+        - NamesFirst
+        - NamesLast
+    - type: RandomHumanoidSpawner
+      settings: GhostAnCoTitan
+# Паук
+- type: entity
+  id: RandomHumanoidSpawnerAnCoSpider
+  name: офицер Паук АнКо
+  suffix: StarHorizon, AnCo
+  components:
+    - type: Sprite
+      sprite: _Horizon/_Fractions/AnCo/Markers/markers.rsi
+      state: spider
+    - type: RandomMetadata
+      nameSegments:
+        - NamesFirst
+        - NamesLast
+    - type: RandomHumanoidSpawner
+      settings: GhostAnCoSpider
+# Рыцарь
+- type: entity
+  id: RandomHumanoidSpawnerAnCoKnight
+  name: офицер Рыцарь АнКо
+  suffix: StarHorizon, AnCo
+  components:
+    - type: Sprite
+      sprite: _Horizon/_Fractions/AnCo/Markers/markers.rsi
+      state: knight
+    - type: RandomMetadata
+      nameSegments:
+        - NamesFirst
+        - NamesLast
+    - type: RandomHumanoidSpawner
+      settings: GhostAnCoKnight
+# Офицер
+- type: entity
+  id: RandomHumanoidSpawnerAnCoOfficer
+  name: офицер АнКо
+  suffix: StarHorizon, AnCo
+  components:
+    - type: Sprite
+      sprite: _Horizon/_Fractions/AnCo/Markers/markers.rsi
+      state: officer
+    - type: RandomMetadata
+      nameSegments:
+        - NamesFirst
+        - NamesLast
+    - type: RandomHumanoidSpawner
+      settings: GhostAnCoOfficer
+# Кадет
+- type: entity
+  id: RandomHumanoidSpawnerAnCoCadet
+  name: кадет АнКо
+  suffix: StarHorizon, AnCo
+  components:
+    - type: Sprite
+      sprite: _Horizon/_Fractions/AnCo/Markers/markers.rsi
+      state: cadet
+    - type: RandomMetadata
+      nameSegments:
+        - NamesFirst
+        - NamesLast
+    - type: RandomHumanoidSpawner
+      settings: GhostAnCoCadet

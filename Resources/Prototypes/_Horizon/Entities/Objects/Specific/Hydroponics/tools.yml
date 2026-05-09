@@ -1,0 +1,28 @@
+- type: entity
+  name: advanced scythe
+  parent: BaseItem
+  id: HydroponicsToolScytheAdv
+  description: A sharp and curved blade on a long fibremetal handle, this tool makes it easy to reap what you sow.
+  components:
+  - type: WorldItem
+    overridePrefix: icon_world
+  - type: Sharp
+  - type: Sprite
+    sprite: _Horizon/Objects/Tools/Hydroponics/advancedscythe.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: 135
+    damage:
+      types:
+        Slash: 15
+  - type: Item
+    size: Normal
+  - type: Clothing
+    sprite: Objects/Tools/Hydroponics/scythe.rsi
+    slots:
+    - back
+  - type: StaticPrice
+    price: 100
+  - type: Tag
+    tags:
+    - AdvBotanyInstrument

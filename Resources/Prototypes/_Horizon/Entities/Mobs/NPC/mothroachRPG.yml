@@ -1,0 +1,111 @@
+- type: entity
+  name: Обыкноваеная таракамоль с РПГ
+  parent:
+  - NFMobNoEquipmentOnGib
+  - MobStaminaFodder
+  - MobMovementSpeedModifierRanged
+  - MobNonHumanHostileBase
+  suffix: Адмем
+  id: MobMothroachRPG
+  description: Самая обычная Таракамоль но только.. С РУЧНЫМ ПРОТИВОТАНКОВЫМ ГРАНАТОМЁТОМ GSW-7В2. Вопросы?
+  components:
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 60
+    rechargeSound:
+      path: /Audio/_NF/Effects/silence.ogg
+  - type: Gun
+    showExamineText: false
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+  - type: BasicEntityAmmoProvider
+    proto: NFBulletRocket
+    capacity: 1
+    count: 1
+  - type: Sprite
+    sprite: _Horizon/Mobs/Admeme/mothroachRPG.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: mothroach
+  - type: NpcFactionMember
+    factions:
+    - MercenariesExpeditionNF
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.2
+        density: 120
+        mask:
+        - SmallMobMask
+        layer:
+        - SmallMobLayer
+  - type: Speech
+    speechVerb: Moth
+    speechSounds: Squeak
+    allowedEmotes: ['Chitter', 'Squeak']
+  - type: FaxableObject
+    insertingState: inserting_mothroach
+  - type: MothAccent
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: mothroach-moving
+    noMovementLayers:
+      movement:
+        state: mothroach
+  - type: Appearance
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: mothroach
+      Critical:
+        Base: mothroach_dead
+      Dead:
+        Base: mothroach_dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      40: Critical
+      60: Dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 2.5
+    baseSprintSpeed : 4
+    weightlessAcceleration: 1.5
+    weightlessFriction: 1
+    weightlessModifier: 1
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: MobMercenaryDamageModifierSet
+  - type: Bloodstream
+    bloodReagent: InsectBlood
+  - type: CombatMode
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSlime
+      amount: 2
+    - id: HideMothroach # Frontier
+      amount: 1 # Frontier
+      prob: 0.3 # Frontier
+  - type: Extractable
+    grindableSolutionName: food
+  - type: ReplacementAccent
+    accent: mothroach
+  - type: Vocal
+    sounds:
+      Male: UnisexMoth
+      Female: UnisexMoth
+      Unsexed: UnisexMoth
+    wilhelmProbability: 0.001
+  - type: MobPrice
+    price: 150
+  - type: Body
+    prototype: Mothroach
+  - type: TypingIndicator
+    proto: moth
+  - type: FireVisuals
+    sprite: Mobs/Effects/onfire.rsi
+    normalState: Mouse_burning

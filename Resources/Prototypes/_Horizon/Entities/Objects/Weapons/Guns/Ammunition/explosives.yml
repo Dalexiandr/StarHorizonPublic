@@ -1,0 +1,20 @@
+- type: entity
+  id: CartridgeChubby
+  name: ядерный заряд
+  parent: [BaseItem] 
+  description: Ядерный заряд, который способен уничтожить небольшой шаттл.
+  suffix: Адмем
+  components:
+  - type: Tag
+    tags:
+      - ChubbyBomb
+  - type: Item
+    size: Small
+  - type: CartridgeAmmo
+    proto: ChubbyBomb
+    deleteOnSpawn: true
+  - type: Sprite
+    sprite: _Horizon/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    state: chubbybomb
+  - type: StaticPrice
+    price: 20

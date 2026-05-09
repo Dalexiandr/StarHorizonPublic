@@ -1,0 +1,16 @@
+ent-NFBaseSpeedLoaderPistol45 = спидлоадер (.45 пистолетный)
+    .desc = { ent-BaseC1Contraband.desc }
+ent-NFSpeedLoaderPistol45Empty = спидлоадер (.45 пистолетный, пустой)
+    .desc = { ent-NFBaseSpeedLoaderPistol45.desc }
+ent-NFSpeedLoaderPistol45 = спидлоадер (.45 пистолетный)
+    .desc = { ent-NFBaseSpeedLoaderPistol45.desc }
+ent-NFSpeedLoaderPistol45Overpressure = спидлоадер (.45 пистолетный, повышенноное давление)
+    .desc = { ent-NFBaseSpeedLoaderPistol45.desc }
+ent-NFSpeedLoaderPistol45Incendiary = спидлоадер (.45 пистолетный, зажигательные)
+    .desc = { ent-NFBaseSpeedLoaderPistol45.desc }
+ent-NFSpeedLoaderPistol45Uranium = спидлоадер (.45 пистолетный, урановые)
+    .desc = { ent-NFBaseSpeedLoaderPistol45.desc }
+ent-NFSpeedLoaderPistol45Practice = спидлоадер (.45 пистолетный, учебные)
+    .desc = { ent-NFBaseSpeedLoaderPistol45.desc }
+ent-NFSpeedLoaderPistol45Rubber = спидлоадер (.45 пистолетный, резиновые)
+    .desc = { ent-NFBaseSpeedLoaderPistol45.desc }

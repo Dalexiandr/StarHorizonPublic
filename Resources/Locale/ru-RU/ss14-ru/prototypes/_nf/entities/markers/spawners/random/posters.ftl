@@ -1,0 +1,12 @@
+ent-NFSpawnerRandomPosterFrontier = спавнер случайного плаката
+    .suffix = Фронтировские плакаты
+    .desc = { ent-MarkerBase.desc }
+ent-NFSpawnerRandomPosterLvhi = { ent-NFSpawnerRandomPosterFrontier }
+    .suffix = Фронтир, LVHI
+    .desc = { ent-NFSpawnerRandomPosterFrontier.desc }
+ent-NFSpawnerRandomPosterGoblin = { ent-NFSpawnerRandomPosterFrontier }
+    .suffix = Фронтир, Гоблин
+    .desc = { ent-NFSpawnerRandomPosterFrontier.desc }
+ent-NFSpawnerRandomPosterFsb = { ent-NFSpawnerRandomPosterFrontier }
+    .suffix = Фронтир, FSB
+    .desc = { ent-NFSpawnerRandomPosterFrontier.desc }

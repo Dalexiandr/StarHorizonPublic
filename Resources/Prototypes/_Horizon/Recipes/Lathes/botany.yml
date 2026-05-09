@@ -1,0 +1,15 @@
+﻿- type: latheRecipe
+  id: HydroponicsTrayUpgradeKit
+  result: HydroponicsTrayUpgradeKit
+  completetime: 3
+  materials:
+    Steel: 500
+    Glass: 500
+
+- type: latheRecipe
+  parent: BaseHydroToolRecipe
+  id: HydroponicsToolScytheAdv
+  result: HydroponicsToolScytheAdv
+  materials:
+    Steel: 500
+    Plastic: 500

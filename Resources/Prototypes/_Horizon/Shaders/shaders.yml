@@ -1,0 +1,19 @@
+# Monolith addition
+# Cuts out everything outside of a circle
+# Anti-aliased so the edges are smooth
+# Radius is relative to target size (0.5 is a full circle)
+- type: shader
+  id: CircleAlphaMask
+  kind: source
+  path: "/Textures/_Horizon/Shaders/circle_alpha_mask.swsl"
+
+# _Horizon: Hair gradient — linear gradient tint for hair/facial hair/markings
+- type: shader
+  id: HairGradient
+  kind: source
+  path: "/Textures/_Horizon/Shaders/hair_linear_gradient.swsl"
+  light_mode: shaded
+  params:
+    color1: 1, 1, 1
+    color2: 1, 1, 1
+    direction: 0

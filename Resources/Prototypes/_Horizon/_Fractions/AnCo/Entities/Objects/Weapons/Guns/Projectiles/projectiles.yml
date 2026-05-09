@@ -1,0 +1,205 @@
+
+- type: entity
+  name: AnCo Bullet
+  id: StandartBallisticAnCoPistol
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Guns/Projectiles/proj.rsi
+    layers:
+    - state: Ballistic
+      shader: unshaded
+  - type: Projectile
+    damage:
+      types:
+        Heat: 5
+        Piercing: 10
+  - type: PointLight
+    color: "#F05A5A"
+  - type: Tracer
+    color: "#f05a5a"
+    length: 50
+
+- type: entity
+  name: AnCo Bullet
+  id: StandartBallisticAnCoRifle30
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Guns/Projectiles/proj.rsi
+    layers:
+    - state: BallisticRifle30
+      shader: unshaded
+  - type: Projectile
+    damage:
+      types:
+        Heat: 12
+        Piercing: 8
+  - type: Tracer
+    color: "#f05a5a"
+    length: 5
+
+- type: entity
+  name: AnCo Bullet
+  id: StandartBallisticAnCoShotgun
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Guns/Projectiles/proj.rsi
+    layers:
+    - state: BallisticShotGun
+      shader: unshaded
+  - type: Projectile
+    damage:
+      types:
+        Heat: 7
+        Piercing: 3
+  - type: Tracer
+    color: "#f05a5a"
+    length: 3
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: StandartBallisticAnCoShotgunSpread
+  parent: [NFBasePelletShotgunSpread, StandartBallisticAnCoShotgun]
+  components:
+  - type: ProjectileSpread
+    proto: StandartBallisticAnCoShotgun
+
+- type: entity
+  name: AnCo Bullet
+  id: StandartBallisticAnCoRifle
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Guns/Projectiles/proj.rsi
+    layers:
+    - state: BallisticRifle
+      shader: unshaded
+  - type: Projectile
+    damage:
+      types:
+        Heat: 8
+        Piercing: 12
+  - type: PointLight
+    color: "#F05A5A"
+  - type: Tracer
+    color: "#f05a5a"
+    length: 3
+
+- type: entity
+  name: AnCo Bullet
+  id: StandartLaserAnCo
+  parent: EmitterBolt
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Guns/Projectiles/proj.rsi
+    layers:
+    - state: StanLas
+      shader: unshaded
+  - type: Projectile
+    damage:
+      types:
+        Heat: 25
+  - type: PointLight
+    color: "#F05A5A"
+
+- type: entity
+  name: AnCo Bullet Disabler
+  id: StandartDisablerAnCo
+  parent: EmitterBolt
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Guns/Projectiles/proj.rsi
+    layers:
+    - state: DisablerAnCo
+      shader: unshaded
+  - type: StaminaDamageOnCollide
+    damage: 40
+  - type: Projectile
+    damage:
+      types:
+        Heat: 10
+  - type: PointLight
+    color: "#F05A5A"
+
+- type: entity
+  name: AnCo Bullet Disabler
+  id: SniperDisablerAnCo
+  parent: StandartDisablerAnCo
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StaminaDamageOnCollide
+    damage: 110
+  - type: Projectile
+    damage:
+      types:
+        Heat: 25
+  - type: PointLight
+    color: "#F05A5A"
+
+- type: entity
+  name: Bullet Disabler Smg AnCo
+  id: BulletDisablerSmgAnCo
+  parent: StandartDisablerAnCo
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StaminaDamageOnCollide
+    damage: 25
+  - type: Projectile
+    damage:
+      types:
+        Heat: 5
+  - type: PointLight
+    color: "#F05A5A"
+
+- type: hitscan
+  id: AnCoRedHeavyLaser
+  damage:
+    types:
+      Heat: 35
+  muzzleFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: muzzle_beam_heavy
+  travelFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: beam_heavy
+  impactFlash:
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+    state: impact_beam_heavy
+
+- type: entity
+  id: StandartExplodesAnCo
+  name: AnCo Bullet Boom
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Guns/Projectiles/proj.rsi
+    layers:
+      - state: StanLasBoom
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: AnCoExplodes
+    totalIntensity: 24
+    intensitySlope: 1
+    maxIntensity: 10
+  - type: PointLight
+    color: "#F05A5A"
+
+- type: entity
+  id: EMPStandartExplodesAnCo
+  name: AnCo Bullet Boom
+  parent: StandartExplodesAnCo
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: EmpOnTrigger
+    range: 1
+    energyConsumption: 2700000
+

@@ -1,0 +1,25 @@
+- type: construction
+  name: стеклянная ваза
+  id: CraftVase
+  graph: craftvaseone
+  startNode: start
+  targetNode: CraftVaseOne
+  category: construction-category-misc
+  objectType: Item
+  description: Красивая стеклянная ваза, предназначенная для цветов.
+  icon:
+    sprite: _Horizon/Objects/Consumable/Drinks/vase_one.rsi
+    state: icon
+
+- type: construction
+  name: стеклянная ваза
+  id: CraftVaseTwo
+  graph: craftvasetwo
+  startNode: start
+  targetNode: CraftVaseTwo
+  category: construction-category-misc
+  objectType: Item
+  description: Красивая стеклянная ваза, предназначенная для цветов.
+  icon:
+    sprite: _Horizon/Objects/Consumable/Drinks/vase_two.rsi
+    state: icon

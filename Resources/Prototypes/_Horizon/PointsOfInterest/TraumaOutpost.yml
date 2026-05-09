@@ -1,0 +1,38 @@
+#- type: pointOfInterest
+#  id: TTIOutpost
+#  parent: BasePOI
+#  name: 'TTI Outpost'
+#  minimumDistance: 2500
+#  maximumDistance: 5400
+#  minimumClearance: 1000
+#  spawnGroup: Required
+#  gridPath: /Maps/_Horizon/POI/TraumaStation.yml
+#  addComponents:
+#  - type: IFF
+#    color: "#00ab86"
+  # - type: StationTransit
+  #   routes:
+  #     SpawnPoints: 60
+
+- type: gameMap
+  id: TTIOutpost
+  mapName: 'TTI Outpost'
+  mapPath: /Maps/_Horizon/POI/TraumaStation.yml
+  minPlayers: 0
+  stations:
+    TTIOutpost:
+      stationProto: RecordsFrontierOutpost
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'TTI Outpost'
+        - type: ExtraStationInformation
+          iconPath: /Textures/_Horizon/Interface/banner_trauma.png # Horizon
+          stationSubtext: 'frontier-lobby-trauma-subtext'
+          stationDescription: 'frontier-lobby-trauma-description'
+          lobbySortOrder: 0
+        - type: StationJobs
+          availableJobs:
+            TraumaParamedic: [ 4, 4 ]
+            TraumaMedTech: [ 2, 2 ]
+            TraumaRessurector: [ 2, 2 ]
+            TraumaRepresentative: [ 2, 2 ]

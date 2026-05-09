@@ -1,0 +1,40 @@
+- type: entity
+  parent: ClothingBeltBase
+  id: ClothingBeltCursedKatanaSheath
+  name: мистические ножны
+  description: Особые ножны с мистическими символами, предназначенны для хранения проклятой катаны.
+  suffix: Horizon
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Belt/cursedsheath.rsi
+    state: sheath
+  - type: Clothing
+    sprite: _Horizon/Clothing/Belt/cursedsheath.rsi
+  - type: ItemSlots
+    slots:
+      item:
+        name: Проклятая катана
+        insertVerbText: sheath-insert-verb
+        ejectVerbText: sheath-eject-verb
+        insertSound: /Audio/Items/sheath.ogg
+        ejectSound: /Audio/Items/unsheath.ogg
+        whitelist:
+          tags:
+          - CursedKatana
+  - type: ItemMapper
+    mapLayers:
+      sheath-sabre:
+        whitelist:
+          tags:
+          - CursedKatana
+  - type: Appearance
+
+- type: entity
+  id: ClothingBeltCursedKatanaSheathFilled
+  parent: ClothingBeltCursedKatanaSheath
+  suffix: Horizon, Filled
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - CursedKatana 

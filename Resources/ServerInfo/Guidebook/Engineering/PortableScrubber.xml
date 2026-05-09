@@ -1,0 +1,13 @@
+﻿<Document>
+  # Переносной скруббер
+  Мобильное устройство для очистки атмосферы.
+  <Box>
+    <GuideEntityEmbed Entity="PortableScrubber"/>
+  </Box>
+
+  Особенности:
+  - Требует [textlink="питания" link="Power"] через [textlink="LV кабель" link="VoltageNetworks"]
+  - Автоматически фильтрует недыхаемые газы при закреплении
+  - Вместимость: [color=orange][protodata="PortableScrubber" comp="PortableScrubber" member="Volume"/] л[/color]
+  - Очищается через [textlink="коннектор" link="GasCanisters"]
+</Document>

@@ -1,0 +1,25 @@
+- type: entity
+  id: NVToggleAction
+  name: Переключение ПНВ
+  description: Переключает ваше ПНВ
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    icon:
+      sprite: _Horizon/Clothing/Eyes/ninjavisor.rsi
+      state: icon
+  - type: InstantAction
+    event: !type:NVInstantActionEvent
+
+- type: entity
+  id: SwitchNightVision
+  name: Переключение ночного зрения
+  description: Переключает ночное зрение
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    icon:
+      sprite: _Horizon/Interface/Actions/nv.rsi
+      state: nv
+  - type: InstantAction
+    event: !type:NVInstantActionEvent

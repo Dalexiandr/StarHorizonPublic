@@ -1,0 +1,28 @@
+- type: entity
+  id: OreDepositKazieOre
+  parent: BaseOreDeposit
+  name: жила с казмием
+  description: Рудная жила с металлами для машиностроения.
+  suffix: StarHorizon, AnCo, Material
+  components:
+  - type: OreDeposit
+    oreCounts:
+      KazmieOre1: 100
+    hardness: 3
+  - type: Sprite
+    drawdepth: FloorTiles
+    sprite: _Horizon/_Fractions/AnCo/Structures/Specific/kazmie.rsi
+    layers:
+    - state: deposit
+
+- type: entity
+  id: OreDepositKazieOreBig
+  parent: OreDepositKazieOre
+  name: глубокая жила с казмием
+  description: Рудная жила уходящая глубоко под землю
+  suffix: StarHorizon, AnCo, Material
+  components:
+  - type: OreDeposit
+    oreCounts:
+      KazmieOre1: 1000
+    hardness: 4

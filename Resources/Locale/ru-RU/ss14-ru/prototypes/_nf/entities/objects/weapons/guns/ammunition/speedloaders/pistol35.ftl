@@ -1,0 +1,10 @@
+ent-NFBaseSpeedLoaderPistol35 = спидлоадер (.35 пистолетный)
+    .desc = { ent-BaseC1Contraband.desc }
+ent-NFSpeedLoaderPistol35Empty = спидлоадер (.35 пистолетный, пустой)
+    .desc = { ent-NFBaseSpeedLoaderPistol35.desc }
+ent-NFSpeedLoaderPistol35 = спидлоадер (.35 пистолетный)
+    .desc = { ent-NFBaseSpeedLoaderPistol35.desc }
+ent-NFSpeedLoaderPistol35Practice = спидлоадер (.35 пистолетный, учебный)
+    .desc = { ent-NFBaseSpeedLoaderPistol35.desc }
+ent-NFSpeedLoaderPistol35Rubber = спидлоадер (.35 пистолетный, резиновый)
+    .desc = { ent-NFBaseSpeedLoaderPistol35.desc }

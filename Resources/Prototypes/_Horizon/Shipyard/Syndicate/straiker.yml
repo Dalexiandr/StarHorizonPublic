@@ -1,0 +1,41 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: amir7036
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: Straiker
+  parent: BaseVesselAntag
+  name: Straiker
+  description: Тяжелый синдикатовский линкор. Флагманский корабль для крупномасштабных операций с мощным вооружением и надежной броней.
+  price: 120000
+  category: Large
+  group: Syndicate
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/Syndicate/straiker.yml
+  class:
+  - Syndicate
+  - Capital
+  engine:
+  - RTG
+
+- type: gameMap
+  id: Straiker
+  mapName: 'Straiker'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/Syndicate/straiker.yml
+  minPlayers: 0
+  stations:
+    Straiker:
+      stationProto: StandardFrontierAntagVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Straiker {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

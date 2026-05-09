@@ -1,0 +1,83 @@
+- type: entity
+  name: прибор ночного видения
+  id: ClothingEyesVision
+  parent: [BaseItem, ShowSecurityIcons]
+  description: Обеспечивает оператора изображением местности в условиях низкой освещенности.
+  suffix: Horizon
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Eyes/ninjavisor.rsi
+    state: icon
+  - type: Clickable
+  - type: Clothing
+    sprite: _Horizon/Clothing/Eyes/ninjavisor.rsi
+    quickEquip: true
+    slots: [ Eyes ]
+  - type: Item
+    size: Small
+  - type: GroupExamine
+  - type: EyeProtection
+  - type: UseDelay
+    delay: 4
+  - type: PNV
+
+- type: entity
+  name: прибор ночного видения синдиката
+  id: ClothingEyesVisionSyndicate
+  parent: ClothingEyesVision
+  description: Прибор ночного видения, использующийся оперативниками Синдиката.
+  components:
+  - type: Item
+  - type: Sprite
+    sprite: _Horizon/Clothing/Eyes/nvgsynd.rsi
+    state: icon
+  - type: Clickable
+  - type: Clothing
+    sprite: _Horizon/Clothing/Eyes/nvgsynd.rsi
+    quickEquip: true
+    slots: [ Eyes ]
+  - type: GroupExamine
+  - type: UseDelay
+    delay: 4
+  - type: PNV
+  - type: ShowSyndicateIcons
+  - type: FlashImmunity
+
+- type: entity
+  name: прибор ночного видения военного образца
+  id: ClothingEyesVisionSec
+  parent: ClothingEyesVision
+  description: Визор и прибор ночного видения в одном флаконе, предназначен для службы безопасности.
+  components:
+  - type: Item
+  - type: Sprite
+    sprite: _Horizon/Clothing/Eyes/nvgsec.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Horizon/Clothing/Eyes/nvgsec.rsi
+  - type: FlashImmunity
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
+  - type: ShowCriminalRecordIcons
+
+- type: entity
+  name: прибор ночного видения ОБР джаггернаута
+  id: ClothingEyesVisionERTJuggernaut
+  parent: ClothingEyesVision
+  description: Один его взгляд может убить тебя.
+  components:
+  - type: Item
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Eyes/nvgjugert.rsi
+    state: icon
+  - type: Clothing
+    sprite: _StarHorizon/Clothing/Eyes/nvgjugert.rsi
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+  - type: FlashImmunity
+  - type: Unremoveable
+  - type: Tag
+    tags:
+    - HudMedical
+    - HudSecurity

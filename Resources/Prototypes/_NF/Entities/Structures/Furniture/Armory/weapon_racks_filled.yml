@@ -1,0 +1,83 @@
+#region Mercenary
+# Sidearm racks
+- type: entity
+  id: StructurePistolRackWallmountedMercenaryFilled
+  parent: StructurePistolRackWallmountedMercenary
+  suffix: Dunegeon, Mercenary, Filled, Wallmount
+  components:
+  - type: ContainerFill
+    containers:
+      weapon1:
+      - NFWeaponRevolverArgenti
+
+#region Salvage
+# Melee weapon racks
+- type: entity
+  id: StructureMeleeWeaponRackWallmountedSalvageFilled
+  parent: StructureMeleeWeaponRackWallmountedSalvage
+  suffix: Salvage, Filled, Wallmount
+  components:
+  - type: ContainerFill
+    containers:
+      weapon1:
+      - WeaponCrusher
+      weapon2:
+      - Pickaxe
+
+#region Pirates/Freelancers
+# Sidearm racks
+- type: entity
+  id: StructurePistolRackPiratesFilled
+  parent: StructurePistolRackPirates
+  suffix: Pirate, Filled
+  components:
+  - type: ContainerFill
+    containers:
+      weapon1:
+      - NFWeaponEnergyPistolDisabler
+      weapon2:
+      - NFWeaponEnergyPistolDisabler
+      weapon3:
+      - NFWeaponEnergyPistolDisabler
+      weapon4:
+      - NFWeaponEnergyPistolDisabler
+
+#region Blood Cult
+# Melee weapon racks
+- type: entity
+  id: StructureMeleeWeaponRackBloodCultFilled
+  parent: StructureMeleeWeaponRackBloodCult
+  suffix: Blood Cult, Filled
+  components:
+  - type: ContainerFill
+    containers:
+      weapon1:
+      - RitualDagger
+      weapon2:
+      - PlasteelArmingSword
+      weapon3:
+      - RitualDagger
+      weapon4:
+      - SpearBone
+      weapon5:
+      - PlasteelArmingSword
+
+#region Wizard
+# Melee weapon racks
+- type: entity
+  id: StructureMeleeWeaponRackWallmountedWizardFilled
+  parent: StructureMeleeWeaponRackWallmountedWizard
+  suffix: Wizard, Wallmount, Filled
+  components:
+  - type: ContainerFill
+    containers:
+      weapon1:
+      - WeaponInertStaffWizardIceAdept
+      weapon2:
+      - WeaponInertStaffWizardLightningAdept
+      weapon3:
+      - WeaponInertStaffWizardBoltFireAdept
+      weapon4:
+      - WeaponInertStaffWizardCausticAdept
+      weapon5:
+      - WeaponInertStaffWizardSoapAdept

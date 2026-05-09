@@ -1,0 +1,13 @@
+- type: entity
+  name: печать Траумы
+  parent: RubberStampBase
+  id: RubberStampTrauma
+  categories: [ DoNotMap ]
+  components:
+  - type: Stamp
+    stampedName: ✱ТТИ✱
+    stampedColor: "#ff0303"
+    stampState: "paper_stamp-nf-stc"
+  - type: Sprite
+    sprite: Objects/Misc/stamps.rsi
+    state: stamp-hos

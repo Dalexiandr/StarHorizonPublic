@@ -1,0 +1,11 @@
+- type: localizedDataset
+  id: AnCoClothesMateAds
+  values:
+    prefix: corporate-clothes-
+    count: 7
+
+- type: localizedDataset
+  id: AnCoWeaponMateAds
+  values:
+    prefix: corporateweapon-clothes-
+    count: 7

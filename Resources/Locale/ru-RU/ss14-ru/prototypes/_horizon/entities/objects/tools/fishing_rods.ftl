@@ -1,0 +1,13 @@
+ent-FishingRod = удочка
+    .desc = Обычная удочка для рыбалки.
+ent-FishingRodGoon = { ent-FishingRod }
+    .desc = { ent-FishingRod.desc }
+    .suffix = Goon
+ent-FishingRodMakeshift = самодельная удочка
+    .desc = С помощью этого поймать рыбу будет затруднительно.
+ent-FishingRodGolden = золотая удочка
+    .desc = Вы выполнили 250 заданий от странного карлика? Вот ваша награда.
+ent-FishingLure = поплавок
+    .desc = Здесь плывет сюда.
+ent-FishingLureMakeshift = поплавок
+    .desc = Здесь плывет сюда.

@@ -1,0 +1,8 @@
+- type: entity
+  parent: GunSafe
+  id: GunSafeShuttleCaptain
+  name: shuttle safe
+  suffix: Empty, Captain
+  components:
+  - type: AccessReader
+    access: [["Captain"], ["Mercenary"]]

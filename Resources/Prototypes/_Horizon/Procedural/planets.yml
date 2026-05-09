@@ -1,0 +1,181 @@
+- type: planet
+  id: Grasslands
+  biome: GrasslandsMobs
+  mapName: shuttle-destination-grasslands
+  mapLight: "#413e2c"
+  spawnRoundstart: true
+  mapPath: /Maps/_Horizon/Nonstations/grasslands-outpost.yml
+  addedComponents:
+  - type: SpawnInRange
+    spawns:
+      GenericDungeonMarker:
+        min: 3
+        max: 5
+    minRange: 120
+    maxRange: 500
+    minDistanceBetweenSpawns: 120
+  - type: FTLDestination
+  - type: WeatherCycle
+    stages:
+    - duration:
+        min: 400
+        max: 1800
+    - weather: Rain
+      duration:
+        min: 400
+        max: 800
+    - duration:
+        min: 400
+        max: 1800
+    - weather: Rain
+      duration:
+        min: 20
+        max: 30
+    - weather: Storm
+      duration:
+        min: 400
+        max: 800
+  - type: LightCycle
+    minLevel: "#675d8d"
+    clipLevel: "#948671"
+    maxLevel: "#fffcc2"
+    clipLight: 2
+    maxLightLevel: 6
+    minLightLevel: 0.4
+  atmosphere:
+    volume: 2500
+    temperature: 293.15
+    moles:
+    - 21.824879
+    - 82.10312
+  biomeMarkerLayers:
+  - OreIron
+  - OreQuartz
+  - OreCoal
+  - OreGold
+  - OreSilver
+  - OreArtifactFragment
+
+- type: planet
+  id: Lavaland
+  biome: LavaLand
+  mapName: shuttle-destination-lavaland
+  mapLight: "#664940"
+  spawnRoundstart: true
+  mapPath: /Maps/_Horizon/Nonstations/lavaland-outpost.yml
+  addedComponents:
+  - type: SpawnInRange
+    spawns:
+      LavaDungeonRoomMarker:
+        min: 7
+        max: 9
+    minRange: 80
+    maxRange: 300
+    minDistanceBetweenSpawns: 25
+  - type: FTLDestination
+  - type: WeatherCycle
+    stages:
+    - duration: # 5-10 minutes of calm
+        min: 400
+        max: 600
+    - weather: AshfallLight # ash starts to fall, 30 second warning
+      duration:
+        min: 30
+        max: 30
+    - weather: Ashfall # 1-2 minutes of damaging storm
+      duration:
+        min: 60
+        max: 120
+    - weather: AshfallLight # ash clears away for 30 seconds
+      duration:
+        min: 30
+        max: 30
+  - type: LightCycle
+    minLevel: "#8d745d"
+    clipLevel: "#7c4534"
+    maxLevel: "#913f39"
+    clipLight: 2
+    maxLightLevel: 1.25
+    minLightLevel: 1
+  atmosphere:
+    volume: 2500
+    temperature: 313.15 # 40C
+    moles: # 82ka, 14% O2 (unbreathable)
+    - 13.65346
+    - 23.24754
+  biomeMarkerLayers:
+  - OreIron
+  - OreQuartz
+  - OreCoal
+  - OreGold
+  - OreSilver
+  - OrePlasma
+  - OreUranium
+  - OreDiamond
+  - OreArtifactFragment
+
+- type: planet
+  id: Snow
+  biome: SnowMobs
+  mapName: shuttle-destination-snow
+  mapLight: "#2c4041"
+  spawnRoundstart: true
+  mapPath: /Maps/_Horizon/Nonstations/iceland-outpost.yml
+  addedComponents:
+  - type: SpawnInRange
+    spawns:
+      SnowDungeonMarker:
+        min: 3
+        max: 4
+    minRange: 120
+    maxRange: 450
+    minDistanceBetweenSpawns: 50
+  - type: FTLDestination
+  - type: WeatherCycle
+    stages:
+    - duration:
+        min: 400
+        max: 1800
+    - weather: SnowfallLight
+      duration:
+        min: 30
+        max: 30
+    - weather: SnowfallMedium
+      duration:
+        min: 45
+        max: 90
+    - weather: SnowfallMedium
+      duration:
+        min: 60
+        max: 120
+    - weather: SnowfallMedium
+      duration:
+        min: 25
+        max: 70
+    - weather: SnowfallLight
+      duration:
+        min: 10
+        max: 30
+  - type: LightCycle
+    minLevel: "#49445c"
+    clipLevel: "#545a77"
+    maxLevel: "#f6ffc2"
+    clipLight: 2
+    maxLightLevel: 2
+    minLightLevel: 0.2
+  atmosphere:
+    volume: 2500
+    temperature: 273.15
+    moles:
+    - 21.824879
+    - 82.10312
+  biomeMarkerLayers:
+  - OreIron
+  - OreQuartz
+  - OreCoal
+  - OreGold
+  - OreSilver
+  - OrePlasma
+  - OreUranium
+  - OreDiamond
+  - OreArtifactFragment

@@ -1,0 +1,25 @@
+- type: entity
+  id: BaseBloodFilter
+  abstract: true
+  parent: [ BaseItem, BaseImplant ]
+  components:
+  - type: Sprite
+    sprite: _Horizon/Objects/Specific/Medical/implants.rsi
+  - type: Organ
+  - type: OrganLiver
+  - type: Gibbable
+
+# То же самое что и печень ставить вместо печени.
+- type: entity
+  id: BloodFilterImplant
+  name: Кибернетический Фильтр Крови
+  description: На вид напоминает печень. Похоже на многослоенный пирог с фильтрами по всей поверхности.
+  parent: BaseBloodFilter
+  components:
+  - type: Sprite
+    state: implant
+  - type: FunctionalOrgan
+    armor:
+      modifiers:
+      coefficients:
+        Poison: 0.4

@@ -1,0 +1,16 @@
+<Control xmlns="https://spacestation14.io"
+         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+         MinHeight="52">
+        <PanelContainer Name="BackgroundPanel" HorizontalExpand="True" VerticalExpand="True">
+            <PanelContainer.PanelOverride>
+                <gfx:StyleBoxFlat BackgroundColor="#18374060" BorderColor="#45a7c4" BorderThickness="2" />
+            </PanelContainer.PanelOverride>
+        </PanelContainer>
+        <BoxContainer Name="Container"
+                      Orientation="Horizontal">
+            <CheckBox Name="Checkbox" HorizontalExpand="True" VerticalExpand="True" Access="Public" Margin="12 4">
+                <RichTextLabel Name="NameLabel" Text="Aboba" HorizontalExpand="True" VerticalExpand="True" Margin="32 0 0 0"/>
+            </CheckBox>
+        </BoxContainer>
+</Control>

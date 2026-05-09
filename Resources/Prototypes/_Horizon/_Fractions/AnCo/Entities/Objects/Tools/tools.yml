@@ -1,0 +1,65 @@
+- type: entity
+  name: омега-инструмент АнКо
+  parent: [BaseItem, BaseAnCoContraband]
+  suffix: StarHorizon, AnCo
+  id: AnCoOmegaTool
+  description: Мульти-инструмент модели "Омега" от корпорации АнКо.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Tools/omegatool.rsi
+    state: omnitool-screwing
+  - type: Item
+    sprite: _Horizon/_Fractions/AnCo/Objects/Tools/omegatool.rsi
+    size: Normal
+  - type: Tag
+    tags:
+    - Multitool
+  - type: Prying
+    enabled: false
+  - type: Tool
+    qualities:
+      - Screwing
+    speedModifier: 2.5 # Kept for future adjustments. Currently 1.2x for balance
+    useSound: /Audio/Items/drill_use.ogg
+  - type: ToolTileCompatible
+  - type: MultipleTool
+    statusShowBehavior: true
+    entries:
+      - behavior: Screwing
+        sprite:
+          sprite: _Horizon/_Fractions/AnCo/Objects/Tools/omegatool.rsi
+          state: omnitool-screwing
+        useSound:
+          path: /Audio/Items/drill_use.ogg
+        changeSound:
+          path: /Audio/Items/change_drill.ogg
+      - behavior: Prying
+        sprite:
+          sprite: _Horizon/_Fractions/AnCo/Objects/Tools/omegatool.rsi
+          state: omnitool-prying
+        useSound:
+          path: /Audio/Items/jaws_pry.ogg
+        changeSound:
+          path: /Audio/Items/change_drill.ogg
+      - behavior: Anchoring
+        sprite:
+          sprite: _Horizon/_Fractions/AnCo/Objects/Tools/omegatool.rsi
+          state: omnitool-wrenching
+        useSound:
+          path: /Audio/Items/ratchet.ogg
+        changeSound:
+          path: /Audio/Items/change_drill.ogg
+      - behavior: Cutting
+        sprite:
+          sprite: _Horizon/_Fractions/AnCo/Objects/Tools/omegatool.rsi
+          state: omnitool-snipping
+        useSound:
+          path: /Audio/Items/jaws_cut.ogg
+        changeSound:
+          path: /Audio/Items/change_drill.ogg
+      - behavior: Pulsing
+        sprite:
+          sprite: _Horizon/_Fractions/AnCo/Objects/Tools/omegatool.rsi
+          state: omnitool-pulsing
+        changeSound:
+          path: /Audio/Items/change_drill.ogg

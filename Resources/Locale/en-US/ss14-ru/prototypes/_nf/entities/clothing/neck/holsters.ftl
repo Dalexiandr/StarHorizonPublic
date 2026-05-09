@@ -1,0 +1,12 @@
+ent-NFBaseClothingNeckHolster = { ent-ClothingNeckBase }
+    .desc = { ent-ClothingNeckBase.desc }
+ent-NFBaseClothingNeckSheath = { ent-ClothingNeckBase }
+    .desc = { ent-ClothingNeckBase.desc }
+ent-NFBaseClothingNeckHolsterThigh = drop leg holster
+    .desc = A holster designed to be strapped to the thigh for easy access to a sidearm. Provides additional pouch for a magazine.
+ent-NFBaseClothingNeckHolsterThighNfsd = nfsd drop leg holster
+    .desc = { ent-BaseC2ContrabandUnredeemable.desc }
+ent-NFBaseClothingNeckSheathThigh = drop leg sheath
+    .desc = A sheath designed to be strapped to the thigh for easy access to a dagger.
+ent-NFBaseClothingNeckSheathThighNfsd = nfsd drop leg sheath
+    .desc = { ent-BaseC2ContrabandUnredeemable.desc }

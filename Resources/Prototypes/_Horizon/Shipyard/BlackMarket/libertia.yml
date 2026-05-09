@@ -1,0 +1,42 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: lnqz1tor
+
+# Информация об сопровождающем
+# GitHub/Gitea: ???
+# Discord: helloohello
+# Прототип шаттла:
+#
+- type: vessel
+  id: libertia
+  parent: BaseVessel
+  name: BM Libertia
+  description: компактный пиратский истребитель.
+  price: 50000 # 45000, наценка верфи 10% = 50000
+  category: Small
+  group: BlackMarket
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/BlackMarket/libertia.yml
+  class:
+  - Pirate
+  engine:
+  - Uranium
+
+
+- type: gameMap
+  id: libertia
+  mapName: 'BM Libertia'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/BlackMarket/libertia.yml
+  minPlayers: 0
+  stations:
+    libertia:
+      stationProto: StandardFrontierAntagVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Libertia {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}
+
+

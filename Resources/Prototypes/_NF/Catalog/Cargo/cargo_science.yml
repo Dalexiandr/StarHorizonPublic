@@ -1,0 +1,10 @@
+- type: cargoProduct
+  id: ScienceLabBundle
+  #  abstract: true # Horizon
+  icon:
+    sprite: Objects/Misc/module.rsi
+    state: cpu_science
+  product: CrateScienceLabBundle
+  cost: 30000
+  category: cargoproduct-category-name-science
+  group: market

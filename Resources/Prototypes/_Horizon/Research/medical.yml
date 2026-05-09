@@ -1,0 +1,467 @@
+# region Tier 1
+
+- type: technology
+  id: SurgeryTech
+  name: research-technology-basic-surgery
+  entityIcon: Scalpel
+  discipline: NFMedical
+  tier: 1
+  cost: 2500
+  recipeUnlocks:
+    - BoneSetter
+    - BoneGel
+    - Scalpel
+    - Retractor
+    - Cautery
+    - Saw
+    - Hemostat
+  position: 0, 15
+
+- type: technology
+  id: CyberLimbsTech
+  name: research-technology-basic-cyberlimbs
+  entityIcon: TechCyberBase
+  discipline: NFMedical
+  tier: 1
+  cost: 2500
+  recipeUnlocks:
+    - LeftArmCyber
+    - RightArmCyber
+    - LeftHandCyber
+    - RightHandCyber
+    - LeftLegCyber
+    - RightLegCyber
+    - LeftFootCyber
+    - RightFootCyber
+  technologyPrerequisites:
+  - SurgeryTech
+  position: 1, 15
+
+# region Tier 2
+
+- type: technology
+  id: NekomimiTech
+  name: research-technology-nekomimi
+  entityIcon: ClothingHeadHatCatEars
+  discipline: NFMedical
+  tier: 2
+  cost: 5000
+  recipeUnlocks:
+  - ClothingHeadHatBunny
+  - ClothingHeadHatCatEars
+  - ClothingHeadHatBunnyEars
+  - ClothingHeadHatDogEars
+  - ClothingHeadHatCatEarsRobot
+  technologyPrerequisites:
+  - CyberLimbsTech
+  position: 2, 19
+
+#- type: technology # _DV Import
+#  id: SyringeGun
+#  name: research-technology-syringe-gun
+#  icon:
+#    sprite: Objects/Weapons/Guns/Cannons/syringe_gun.rsi
+#    state: syringe_gun
+#  discipline: NFMedical # Horizon
+#  tier: 2
+#  cost: 10000
+#  recipeUnlocks:
+#  - LauncherSyringe
+#  - MiniSyringe
+#  position: 4, 9
+
+- type: technology
+  id: SurgeryTechAdvanced
+  name: research-technology-advanced-surgery
+  entityIcon: ScalpelAdvanced
+  discipline: NFMedical
+  tier: 2
+  cost: 5000
+  recipeUnlocks:
+    - Drill
+    - SawAdvanced
+    - ScalpelAdvanced
+    - BoneSetterAdvanced
+    - RetractorAdvanced
+    - HemostatAdvanced
+  technologyPrerequisites:
+    - SurgeryTech
+  prerequisiteLineType: Diagonal
+  position: 1, 14
+
+- type: technology
+  id: CyberImplantsTech
+  name: research-technology-basic-eye-implants
+  entityIcon: EyeImplantChemical
+  discipline: NFMedical
+  tier: 2
+  cost: 5000
+  recipeUnlocks:
+    - EyeImplantWelding
+    - EyeImplantMedical
+    - EyeImplantSecurity
+    - EyeImplantChemical
+  technologyPrerequisites:
+    - CyberLimbsTech
+  position: 2, 15
+
+- type: technology
+  id: OdysseusTechnology
+  name: research-technology-mech-odysseus
+  entityIcon: MechOdysseus
+  discipline: NFMedical
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+    - OdysseusHarness
+    - OdysseusLArm
+    - OdysseusRArm
+    - OdysseusLLeg
+    - OdysseusRLeg
+    - OdysseusHead
+    - OdysseusCentralElectronics
+    - OdysseusPeripheralsElectronics
+  technologyPrerequisites:
+  - RipleyMKIITechnology
+  position: 3, 31
+
+- type: technology
+  id: MechTechnologyCarrier
+  name: research-technology-mech-carrier
+  entityIcon: MechEquipmentHumanGrabber
+  discipline: NFMedical
+  tier: 2
+  cost: 2500
+  recipeUnlocks:
+  - MechEquipmentHumanGrabber
+  technologyPrerequisites:
+  - OdysseusTechnology
+  prerequisiteLineType: Tree
+  position: 4, 32
+
+- type: technology
+  id: MechTechnologySleeper
+  name: research-technology-mech-sleeper
+  entityIcon: MechEquipmentHumanSleeper
+  discipline: NFMedical
+  tier: 2
+  cost: 2500
+  recipeUnlocks:
+    - MechEquipmentHumanSleeper
+  technologyPrerequisites:
+  - MechTechnologyCarrier
+  position: 5, 32
+
+- type: technology
+  id: MechTechnologySyringesBasic
+  name: research-technology-mech-syringes-basic
+  entityIcon: MechGunSyringeBasic
+  discipline: NFMedical
+  tier: 2
+  cost: 15000
+  recipeUnlocks:
+  - MechGunSyringeBasic
+  - BoxChemBox
+  technologyPrerequisites:
+  - OdysseusTechnology
+  prerequisiteLineType: Tree
+  position: 4, 31
+
+- type: technology
+  id: MechTechnologySyringesAdvanced
+  name: research-technology-mech-syringes-advanced
+  entityIcon: MechGunSyringeCombat
+  discipline: NFMedical
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - MechGunSyringeAdvanced
+  - MechGunSyringeCombat
+  technologyPrerequisites:
+  - MechTechnologySyringesBasic
+  prerequisiteLineType: Tree
+  position: 5, 31
+
+- type: technology
+  id: MechTechnologyMedigunBasic
+  name: research-technology-mech-medigun-basic
+  entityIcon: MechGunMedigunRed
+  discipline: NFMedical
+  tier: 2
+  cost: 5000
+  recipeUnlocks:
+    - MechGunMedigunRed
+    - MechGunMedigunYellow
+  technologyPrerequisites:
+  - OdysseusTechnology
+  position: 4, 33
+
+- type: technology
+  id: MechTechnologyMedigunAdvanced
+  name: research-technology-mech-medigun-advanced
+  entityIcon: MechGunMedigunGreen
+  discipline: NFMedical
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+    - MechGunMedigunBlue
+    - MechGunMedigunGreen
+  technologyPrerequisites:
+  - MechTechnologyMedigunBasic
+  position: 5, 33
+
+- type: technology
+  id: CyberOrgansTech
+  name: research-technology-advanced-cyberorgans
+  entityIcon: OrganCyberHeart
+  discipline: NFMedical
+  tier: 2
+  cost: 5000
+  recipeUnlocks:
+  - OrganCyberStomach
+  - OrganCyberLungs
+  - OrganCyberHeart
+  - OrganCyberLiver
+  - OrganCyberKidneys
+  technologyPrerequisites:
+  - CyberImplantsTech
+  prerequisiteLineType: Tree
+  position: 3, 16
+
+- type: technology
+  id: BsOrgansTech
+  name: research-technology-advanced-bsorgans
+  entityIcon: OrganBsHeart
+  discipline: NFMedical
+  tier: 2
+  cost: 5000
+  recipeUnlocks:
+  - OrganBsStomach
+  - OrganBsLungs
+  - OrganBsHeart
+  - OrganBsLiver
+  - OrganBsKidneys
+  technologyPrerequisites:
+  - CyberImplantsTech
+  position: 3, 18
+
+- type: technology
+  id: BioOrgansTech
+  name: research-technology-advanced-bioorgans
+  entityIcon: OrganBioHeart
+  discipline: NFMedical
+  tier: 2
+  cost: 5000
+  recipeUnlocks:
+  - OrganBioStomach
+  - OrganBioLungs
+  - OrganBioHeart
+  - OrganBioLiver
+  - OrganBioKidneys
+  technologyPrerequisites:
+  - CyberImplantsTech
+  position: 3, 17
+
+# region Tier 3
+
+- type: technology
+  id: FunctionalCyberLimbsTech
+  name: research-technology-functional-cyberlimbs
+  entityIcon: TechCyberArmImplants
+  discipline: NFMedical
+  tier: 3
+  cost: 7500
+  recipeUnlocks:
+    - LeftArmCyberReaper
+    - RightArmCyberReaper
+    - LeftArmCyberMechwright
+    - RightArmCyberMechwright
+    - LeftArmCyberAstro
+    - RightArmCyberAstro
+    - LeftArmCyberGarden
+    - RightArmCyberGarden
+  technologyPrerequisites:
+    - CyberLimbsTech
+  position: 2, 20
+
+- type: technology
+  id: FunctionalEngineeringLimbsTech
+  name: research-technology-functional-engineeringlimbs
+  entityIcon: TechCyberArmAdvanced
+  discipline: NFMedical
+  tier: 3
+  cost: 7500
+  recipeUnlocks:
+  - LeftArmCyberEngi
+  - RightArmCyberEngi
+  - LeftArmCyberAtmos
+  - RightArmCyberAtmos
+  technologyPrerequisites:
+  - FunctionalCyberLimbsTech
+  position: 3, 20
+
+- type: technology
+  id: FunctionalCombatLimbsTechBase
+  name: research-technology-functional-combatlimbs-b
+  entityIcon: TechCombatLimbsBase
+  discipline: NFMedical
+  tier: 3
+  cost: 7500
+  recipeUnlocks:
+  - LeftArmProtoCyberWeaponShotgunSawn
+  - RightArmProtoCyberWeaponShotgunSawn
+  - LeftArmProtoCyberWeaponEnergyPistolLaser
+  - RightArmProtoCyberWeaponEnergyPistolLaser
+  - LeftArmProtoCyberWeaponPkaSawn
+  - RightArmProtoCyberWeaponPkaSawn
+  - LeftArmProtoCyberWeaponEnergyPistolDisabler
+  - RightArmProtoCyberWeaponEnergyPistolDisabler
+  technologyPrerequisites:
+  - FunctionalCyberLimbsTech
+  researchTargets:
+  - TechnologyDiscCombatCybernetics
+  position: 3, 21
+
+- type: technology
+  id: FunctionalCombatLimbsTechAdvanced
+  name: research-technology-functional-combatlimbs-adv
+  entityIcon: TechCombatLimbsAdvanced
+  discipline: NFMedical
+  tier: 3
+  cost: 7500
+  recipeUnlocks:
+  - LeftArmCyberWeaponProtoKineticAccelerator
+  - RightArmCyberWeaponProtoKineticAccelerator
+  - LeftArmCyberWeaponEnergySubMachineGunDisabler
+  - RightArmCyberWeaponEnergySubMachineGunDisabler
+  - LeftArmCyberWeaponEnergyPistolLaserAdvanced
+  - RightArmCyberWeaponEnergyPistolLaserAdvanced
+  - LeftArmCyberWeaponShotgunAdvanced
+  - RightArmCyberWeaponShotgunAdvanced
+  technologyPrerequisites:
+  - FunctionalCombatLimbsTechBase
+  position: 4, 21
+
+- type: technology
+  id: FunctionalCombatLimbsTechClose
+  name: research-technology-functional-combatlimbs-cc
+  entityIcon: TechCombatLimbsClose
+  discipline: NFMedical
+  tier: 3
+  cost: 7500
+  recipeUnlocks:
+  - LeftArmCyberClawRending
+  - RightArmCyberClawRending
+  - LeftArmCyberClawPiercing
+  - RightArmCyberClawPiercing
+  - LeftArmCyberClawPoison
+  - RightArmCyberClawPoison
+  - LeftArmCyberLash
+  - RightArmCyberLash
+  technologyPrerequisites:
+  - FunctionalCombatLimbsTechBase
+  position: 4, 22
+
+- type: technology
+  id: CyberImplantsNight
+  name: research-technology-cyber-night-vision
+  entityIcon: EyeImplantNight
+  discipline: NFMedical
+  tier: 3
+  cost: 5000
+  recipeUnlocks:
+  - EyeImplantNight
+  technologyPrerequisites:
+  - CyberImplantsTech
+  position: 3, 15
+
+- type: technology
+  id: OdyssMechPaintExp
+  name: research-technology-mech-odysseus-paint-exp
+  entityIcon: MechOdysseusHermes
+  discipline: NFMedical
+  tier: 3
+  cost: 10000
+  recipeUnlocks:
+  - MechOdysseusHermesUpgradeKit
+  technologyPrerequisites:
+  - OdysseusTechnology
+  position: 4, 29
+
+- type: technology
+  id: OdyssMechPaintCombat
+  name: research-technology-mech-odysseus-paint-combat
+  entityIcon: MechOdysseusMurdy
+  discipline: NFMedical
+  tier: 3
+  cost: 10000
+  recipeUnlocks:
+  - MechOdysseusMurdyUpgradeKit
+  technologyPrerequisites:
+  - OdysseusTechnology
+  position: 4, 30
+
+- type: technology
+  id: ProtectiveImplantsTech
+  name: research-technology-protective-implants
+  entityIcon: SubcutaneousArmor
+  discipline: NFMedical
+  tier: 3
+  cost: 7500
+  recipeUnlocks:
+  - BoneLightImplant
+  - SubcutaneousArmor
+  - HeatSubcutaneousArmor
+  technologyPrerequisites:
+  - CyberImplantsTech
+  position: 3, 14
+
+- type: technology
+  id: AdvProtectiveImplantsTech
+  name: research-technology-adv-protective-implants
+  entityIcon: BoneHeavyImplant
+  discipline: NFMedical
+  tier: 3
+  cost: 7500
+  recipeUnlocks:
+  - BoneHeavyImplant
+  - UpgradedSubcutaneousArmor
+  - HeatUpgradeSubcutaneousArmor
+  - RadiationSubcutaneousArmor
+  technologyPrerequisites:
+  - ProtectiveImplantsTech
+  position: 4, 14
+
+- type: technology
+  id: AdvPerformanceImplantsTech
+  name: research-technology-adv-performance-implants
+  entityIcon: VesselsImplant
+  discipline: NFMedical
+  tier: 3
+  cost: 7500
+  recipeUnlocks:
+  - BloodFilterImplant
+  - BloodPumpImplant
+  - IzolationHandImplant
+  - VesselsImplant
+  technologyPrerequisites:
+  - ProtectiveImplantsTech
+  position: 4, 13
+
+- type: technology
+  id: Cytology
+  name: research-technology-cytology
+  entityIcon: CytologyGrowingVat
+  discipline: NFMedical
+  tier: 3
+  cost: 20000
+  recipeUnlocks:
+  - CytologyGrowingVatMachineCircuitboard
+  - CytologyMicroscopeMachineCircuitboard
+  - CytologySampleCombinatorComputerCircuitboard
+  - CytologySwab
+  - CytologyInjector
+  - CytologyPetriDish
+  technologyPrerequisites:
+  - NFEngineeringMedicine
+  position: 2, 12

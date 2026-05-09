@@ -1,0 +1,145 @@
+
+- type: entity
+  id: AnCoOtherFabricator
+  parent: [BaseLatheLube, BaseAnCoContraband]
+  name: фабрикатор снаряжения АнКо
+  description: Как вы его собрали?
+  suffix: StarHorizon, AnCo, Structure
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Machines/fabricatorother.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+  - type: Machine
+    board: AnCoOtherCircuitboard
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - AnCoMaterial
+        - AnCoOre
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    unlitIdleState: unlit
+    staticPacks:
+    - AnCoOtherCraft
+
+- type: latheRecipePack
+  id: AnCoOtherCraft
+  recipes:
+  - ArdonSheet1
+  - KazmieSheet1
+  - MagazinePistol35
+  - MagazineRifle20
+  - MagazineRifle30
+  - MagazineAnCoShotgun50
+  - AnCoEnergyCore
+  - PDAAnCo
+  - AnCoOmegaTool
+  - AnCoHandcuffs
+  - AnCoWeaponCircuitboard
+  - AnCoSuitCircuitboard
+  - AnCoAnomalyCircuitboard
+ # интересно что еще сломалось пушо используем (Frontier)
+
+# рецепты
+- type: latheRecipe
+  id: ArdonSheet1
+  result: ArdonSheet1
+  completetime: 0
+  materials:
+    RawArdon: 100
+
+- type: latheRecipe
+  id: KazmieSheet1
+  result: KazmieSheet1
+  completetime: 0
+  materials:
+    RawKazmie: 100
+
+- type: latheRecipe
+  id: MagazinePistol35
+  result: MagazinePistol35
+  completetime: 10
+  materials:
+    Ardon: 2000
+    Kazmie: 2000
+
+- type: latheRecipe
+  id: MagazineRifle20
+  result: MagazineRifle20
+  completetime: 10
+  materials:
+    Ardon: 3000
+    Kazmie: 3000
+
+- type: latheRecipe
+  id: MagazineRifle30
+  result: MagazineRifle30
+  completetime: 10
+  materials:
+    Ardon: 4000
+    Kazmie: 4000
+
+- type: latheRecipe
+  id: MagazineAnCoShotgun50
+  result: MagazineAnCoShotgun50
+  completetime: 10
+  materials:
+    Ardon: 4000
+    Kazmie: 4000
+
+- type: latheRecipe
+  id: AnCoEnergyCore
+  result: AnCoEnergyCore
+  completetime: 10
+  materials:
+    Ardon: 5000
+    Kazmie: 2000
+
+- type: latheRecipe
+  id: PDAAnCo
+  result: PDAAnCo
+  completetime: 10
+  materials:
+    Ardon: 2000
+    Kazmie: 2000
+
+- type: latheRecipe
+  id: AnCoHandcuffs
+  result: AnCoHandcuffs
+  completetime: 10
+  materials:
+    Ardon: 500
+    Kazmie: 500
+
+- type: latheRecipe
+  id: AnCoWeaponCircuitboard
+  result: AnCoWeaponCircuitboard
+  completetime: 10
+  materials:
+    Ardon: 10000
+    Kazmie: 10000
+
+- type: latheRecipe
+  id: AnCoSuitCircuitboard
+  result: AnCoSuitCircuitboard
+  completetime: 10
+  materials:
+    Ardon: 10000
+    Kazmie: 10000
+
+- type: latheRecipe
+  id: AnCoAnomalyCircuitboard
+  result: AnCoAnomalyCircuitboard
+  completetime: 10
+  materials:
+    Ardon: 10000
+    Kazmie: 10000

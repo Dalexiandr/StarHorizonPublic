@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CLA",
+    "copyright": "Sprited by PuroSlavKing (Github) for Space Station 14, resprite by TheGypsyBaron",
+    "states": [
+        {
+            "name": "state0"
+        },
+        {
+            "name": "state1"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: lnqz1tor
+
+# Информация об сопровождающем
+# GitHub/Gitea: ???
+# Discord: helloohello
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: kraken
+  parent: BaseVessel
+  name: BM Kraken
+  description: Сделанный лучшими умами Пиратской бухты для исследования и разработок.
+  price: 75000 # 65000, наценка верфи 15% = 75000
+  category: Medium
+  group: BlackMarket
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/BlackMarket/kraken.yml
+  class:
+  - Pirate
+  - Science
+  engine:
+  - Bananium
+
+
+- type: gameMap
+  id: kraken
+  mapName: 'BM Kraken'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/BlackMarket/kraken.yml
+  minPlayers: 0
+  stations:
+    kraken:
+      stationProto: StandardFrontierAntagVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Kraken {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

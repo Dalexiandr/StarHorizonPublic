@@ -1,0 +1,30 @@
+- type: entity
+  id: AnCoBusinessCard
+  name: визитка АнКо
+  parent: [ Paper, BaseAnCoContraband ] # Frontier: BaseSyndicateContraband<BaseC3SyndicateContrabandNoValue
+  description: Черная карточка из казмия с голотипом AnroxComputer`s
+  components:
+    - type: Sprite
+      sprite: _Horizon/_Fractions/AnCo/Objects/Misc/bureaucracy.rsi
+      layers:
+      - state: anrox_card
+      - state: anrox_card
+        map: ["enum.PaperVisualLayers.Writing"]
+        visible: false
+      - state: paper_stamp-generic
+        sprite: Objects/Misc/bureaucracy.rsi
+        map: ["enum.PaperVisualLayers.Stamp"]
+        visible: false
+    - type: Paper
+      editingDisabled: True
+      content: "[head=5][color=#d21e1e]Спасибо что выбрали AnroxComputer`s          За услугами обращайтесь к Оператору[/color]"
+      destroyOnFax: true # Frontier: avoid spamming these, they cause lag
+      destroyMessage: fax-delete-paper-generic # Frontier
+    - type: PaperVisuals
+      headerImagePath: "/Textures/Interface/Paper/paper_heading_anco_logo.png"
+      headerMargin: 0.0, 0.0, 0.0, 0.0
+      backgroundImagePath: "/Textures/Interface/Paper/paper_background_black_ardon.png"
+      backgroundPatchMargin: 4.0, 4.0, 4.0, 4.0
+      contentMargin: 4.0, 4.0, 4.0, 4.0
+      maxWritableArea: 460.0, 250.0
+

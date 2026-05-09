@@ -1,0 +1,41 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: amir7036
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: Iran
+  parent: BaseVesselAntag
+  name: NRZH Iran
+  description: Стандартный шаттл для отдыха и небольших экспедиций явно не скопированный с Кампера НТ.
+  price: 50000
+  category: Small
+  group: Syndicate
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/Syndicate/iran.yml
+  class:
+  - Syndicate
+  - Civilian
+  engine:
+  - Plasma
+
+- type: gameMap
+  id: Iran
+  mapName: 'Iran'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/Syndicate/iran.yml
+  minPlayers: 0
+  stations:
+    Iran:
+      stationProto: StandardFrontierAntagVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Iran {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

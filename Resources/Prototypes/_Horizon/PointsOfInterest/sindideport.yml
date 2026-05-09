@@ -1,0 +1,38 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: ???
+
+# Информация об сопровождающем
+# GitHub/Gitea: ???
+# Discord: ???
+
+# Прототип аванпоста:
+#
+- type: pointOfInterest
+  id: SindicateDeport
+  parent: BasePOI
+  name: "Точка Продажи Синдиката"
+  minimumDistance: 12000
+  maximumDistance: 15000
+  spawnGroup: Required
+  gridPath: /Maps/_Horizon/POI/sindideport.yml
+  addComponents:
+  - type: SolarPoweredGrid
+    trackOnInit: true
+    doNotCull: true
+
+- type: gameMap
+  id: SindicateDeport
+  mapName: "Точка Продажи Синдиката"
+  mapPath: /Maps/_Horizon/POI/sindideport.yml
+  minPlayers: 0
+  stations:
+    SindicateDeport:
+      stationProto: StandardFrontierOutpost
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Точка Продажи Синдиката"
+        - type: BindToStationVariationPassExemption
+        - type: NoMailStation # Horizon: Disable mail for Syndicate
+        - type: HorizonStationFaction
+          faction: Syndicate

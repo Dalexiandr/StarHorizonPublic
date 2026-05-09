@@ -1,0 +1,1122 @@
+- type: cellSample
+  id: CellSampleMurine
+  name: клетки мыши
+  growthRateInSeconds: 50
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Nutriment"
+  supplementaryChemicals:
+    "Cornoil": 2
+    "Rice": 1
+    "Nutriment": 1
+    "Vitamin": 1
+    "Sugar": 1
+  suppressiveChemicals:
+    "Astrotame": -4
+    "Rubberneck": -3
+  spawnMobByPrototype:
+  - MobMouse
+  - MobMouse
+  textureState: "black"
+
+- type: cellSample
+  id: CellSampleChicken
+  name: клетки курицы
+  growthRateInSeconds: 50
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Nutriment"
+  supplementaryChemicals:
+    "Rice": 4
+    "Vitamin": 2
+    "Nutriment": 1
+  suppressiveChemicals:
+    "Oil": -4
+    "Toxin": -2
+  spawnMobByPrototype:
+  - MobChicken
+  textureState: "yellow"
+
+- type: cellSample
+  id: CellSampleCow
+  name: клетки коровы
+  growthRateInSeconds: 50
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "Rice": 2
+    "Flour": 1
+  suppressiveChemicals:
+    "CarpoToxin": -5
+    "Toxin": -2
+  spawnMobByPrototype:
+  - MobCow
+  textureState: "green"
+
+- type: cellSample
+  id: CellSampleCat
+  name: клетки кошки
+  growthRateInSeconds: 50
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "Oculine": 2
+    "Milk": 1
+  suppressiveChemicals:
+    "CocoaPowder": -4
+    "HotCocoa": -2
+    "Theobromine": -2
+  spawnMobByPrototype:
+  - MobCat
+  textureState: "black"
+
+- type: cellSample
+  id: CellSampleCorgi
+  name: клетки корги
+  growthRateInSeconds: 50
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 2
+  suppressiveChemicals:
+    "CocoaPowder": -2
+  spawnMobByPrototype:
+  - MobCorgi
+  textureState: "brown"
+
+- type: cellSample
+  id: CellSampleSpaceCarp
+  name: клетки космического карпа
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "CarpoToxin": 3
+    "Vitamin": 2
+  suppressiveChemicals:
+    "Bungotoxin": -6
+    "Mercury": -4
+    "Oxygen": -3
+  spawnMobByPrototype:
+  - NFMobCarp
+  textureState: "violet"
+
+- type: cellSample
+  id: CellSampleMegaSpaceCarp
+  name: клетки космической акулы
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "CarpoToxin": 3
+    "Cornoil": 3
+    "Vitamin": 2
+  suppressiveChemicals:
+    "Bungotoxin": -6
+    "Oxygen": -3
+  spawnMobByPrototype:
+  - NFMobShark
+  textureState: "violet"
+
+- type: cellSample
+  id: CellSampleSnake
+  name: клетки змеи
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "Egg": 2
+  suppressiveChemicals:
+    "Syrup": -6
+    "Sulfur": -3
+  spawnMobByPrototype:
+  - MobSnake
+  textureState: "green"
+
+- type: cellSample
+  id: CellSampleCockroach
+  name: клетки таракана
+  growthRateInSeconds: 50
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Nutriment"
+  supplementaryChemicals:
+    "Slime": 2
+    "Vitamin": 1
+  suppressiveChemicals:
+    "JuiceBerryPoison": -4
+    "PestKiller": -2
+  spawnMobByPrototype:
+  - MobCockroach
+  - MobCockroach
+  - MobCockroach
+  - MobCockroach
+  - MobCockroach
+  textureState: "brown"
+
+- type: cellSample
+  id: CellSampleFrog
+  name: клетки лягушки
+  growthRateInSeconds: 50
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "Egg": 1
+  suppressiveChemicals:
+    "Toxin": -6
+    "Sulfur": -3
+  spawnMobByPrototype:
+  - MobFrog
+  textureState: "green"
+
+- type: cellSample
+  id: CellSampleSlime
+  name: частицы слайма
+  growthRateInSeconds: 50
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Nutriment"
+  supplementaryChemicals:
+    "Slime": 2
+    "Enzyme": 1
+  suppressiveChemicals:
+    "FrostOil": -4
+    "Ice": -2
+  spawnMobByPrototype:
+  - MobAdultSlimesGrey
+  textureState: "violet"
+
+# ===== DINOSAURS =====
+
+- type: cellSample
+  id: CellSampleDinosaurCompy
+  name: клетки компсогната
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "UncookedAnimalProteins": 3
+  suppressiveChemicals:
+    "Toxin": -3
+    "Oil": -2
+  spawnMobByPrototype:
+  - MobDinosaurCompyExpeditions
+  textureState: "brown"
+
+- type: cellSample
+  id: CellSampleDinosaurDilo
+  name: клетки дилофозавра
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "UncookedAnimalProteins": 3
+    "CarpoToxin": 1
+  suppressiveChemicals:
+    "Toxin": -4
+    "Sulfur": -2
+  spawnMobByPrototype:
+  - MobDinosaurDiloExpeditions
+  textureState: "green"
+
+- type: cellSample
+  id: CellSampleDinosaurRaptor
+  name: клетки велоцираптора
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 3
+    "UncookedAnimalProteins": 5
+  suppressiveChemicals:
+    "Toxin": -5
+    "Sulfur": -3
+  spawnMobByPrototype:
+  - MobDinosaurRaptorExpeditions
+  textureState: "brown"
+
+- type: cellSample
+  id: CellSampleDinosaurPara
+  name: клетки паразауролофа
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "Rice": 3
+  suppressiveChemicals:
+    "UncookedAnimalProteins": -2
+    "Toxin": -3
+  spawnMobByPrototype:
+  - MobDinosaurParaExpeditions
+  textureState: "green"
+
+- type: cellSample
+  id: CellSampleDinosaurKentro
+  name: клетки кентрозавра
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "Rice": 3
+    "Flour": 1
+  suppressiveChemicals:
+    "UncookedAnimalProteins": -3
+    "Toxin": -3
+  spawnMobByPrototype:
+  - MobDinosaurKentroExpeditions
+  textureState: "green"
+
+- type: cellSample
+  id: CellSampleDinosaurTrike
+  name: клетки трицератопса
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 4
+    "Rice": 4
+  suppressiveChemicals:
+    "UncookedAnimalProteins": -4
+    "Toxin": -4
+  spawnMobByPrototype:
+  - MobDinosaurTrikeExpeditions
+  textureState: "yellow"
+
+- type: cellSample
+  id: CellSampleDinosaurAnki
+  name: клетки анкилозавра
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "Rice": 3
+    "Iron": 2
+  suppressiveChemicals:
+    "UncookedAnimalProteins": -3
+    "Toxin": -4
+  spawnMobByPrototype:
+  - MobDinosaurAnkiExpeditions
+  textureState: "brown"
+
+- type: cellSample
+  id: CellSampleDinosaurSpino
+  name: клетки спинозавра
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 3
+    "UncookedAnimalProteins": 3
+    "Nutriment": 2
+  suppressiveChemicals:
+    "Toxin": -5
+    "Oil": -3
+  spawnMobByPrototype:
+  - MobDinosaurSpinoExpeditions
+  textureState: "brown"
+
+- type: cellSample
+  id: CellSampleDinosaurStego
+  name: клетки стегозавра
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "Rice": 3
+    "Flour": 2
+  suppressiveChemicals:
+    "UncookedAnimalProteins": -5
+    "Toxin": -3
+  spawnMobByPrototype:
+  - MobDinosaurStegoExpeditions
+  textureState: "green"
+
+# ===== XENOMORPHS =====
+
+- type: cellSample
+  id: CellSampleXenomorphLarva
+  name: клетки личинки
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  - "XenoidAcidH"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "Enzyme": 2
+  suppressiveChemicals:
+    "FrostOil": -3
+    "SulfuricAcid": -1
+  spawnMobByPrototype:
+  - MobXenomorphLarva
+  textureState: "violet"
+
+- type: cellSample
+  id: CellSampleXenomorphDrone
+  name: клетки дрона
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  - "XenoidAcidH"
+  supplementaryChemicals:
+    "Vitamin": 3
+    "Enzyme": 3
+  suppressiveChemicals:
+    "FrostOil": -4
+    "SulfuricAcid": -2
+  spawnMobByPrototype:
+  - MobXenomorphDrone
+  textureState: "violet"
+
+- type: cellSample
+  id: CellSampleXenomorphPraetorian
+  name: клетки преторианца
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  - "XenoidAcidK"
+  supplementaryChemicals:
+    "Vitamin": 3
+    "Enzyme": 4
+  suppressiveChemicals:
+    "FrostOil": -5
+    "SulfuricAcid": -4
+  spawnMobByPrototype:
+  - MobXenomorphPraetorian
+  textureState: "violet"
+
+- type: cellSample
+  id: CellSampleXenomorphHunter
+  name: клетки охотника
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  - "XenoidAcidW"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "Enzyme": 2
+  suppressiveChemicals:
+    "FrostOil": -3
+    "SulfuricAcid": -2
+  spawnMobByPrototype:
+  - MobXenomorphHunter
+  textureState: "violet"
+
+- type: cellSample
+  id: CellSampleXenomorphSentinel
+  name: клетки защитника
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  - "XenoidAcidW"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "Enzyme": 3
+  suppressiveChemicals:
+    "FrostOil": -3
+    "SulfuricAcid": -2
+  spawnMobByPrototype:
+  - MobXenomorphSentinel
+  textureState: "violet"
+
+# ===== XENOMORPHS (NPC) =====
+
+- type: cellSample
+  id: CellSampleXenoRouny
+  name: клетки Руни
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  - "XenoidAcidH"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "Enzyme": 3
+  suppressiveChemicals:
+    "FrostOil": -4
+    "SulfuricAcid": -3
+  spawnMobByPrototype:
+  - MobXenoRouny
+  textureState: "violet"
+
+- type: cellSample
+  id: CellSampleXenoDrone
+  name: клетки дрона
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  - "XenoidAcidH"
+  supplementaryChemicals:
+    "Vitamin": 3
+    "Enzyme": 3
+  suppressiveChemicals:
+    "FrostOil": -4
+    "SulfuricAcid": -2
+  spawnMobByPrototype:
+  - MobXenoDrone
+  textureState: "violet"
+
+- type: cellSample
+  id: CellSampleXenoPraetorian
+  name: клетки преторианца
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  - "XenoidAcidK"
+  supplementaryChemicals:
+    "Vitamin": 3
+    "Enzyme": 4
+  suppressiveChemicals:
+    "FrostOil": -5
+    "SulfuricAcid": -4
+  spawnMobByPrototype:
+  - MobXenoPraetorian
+  textureState: "violet"
+
+- type: cellSample
+  id: CellSampleXeno
+  name: клетки норника
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  - "XenoidAcidW"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "Enzyme": 3
+  suppressiveChemicals:
+    "FrostOil": -4
+    "SulfuricAcid": -3
+  spawnMobByPrototype:
+  - MobXeno
+  textureState: "violet"
+
+- type: cellSample
+  id: CellSampleXenoRavager
+  name: клетки разорителя
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  - "XenoidAcidH"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "Enzyme": 3
+  suppressiveChemicals:
+    "FrostOil": -4
+    "SulfuricAcid": -3
+  spawnMobByPrototype:
+  - MobXenoRavager
+  textureState: "violet"
+
+- type: cellSample
+  id: CellSampleXenoRunner
+  name: клетки бегуна
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  - "XenoidAcidW"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "Enzyme": 2
+  suppressiveChemicals:
+    "FrostOil": -3
+    "SulfuricAcid": -2
+  spawnMobByPrototype:
+  - MobXenoRunner
+  textureState: "violet"
+
+- type: cellSample
+  id: CellSampleXenoSpitter
+  name: клетки плевальщика
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  - "XenoidAcidW"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "Enzyme": 3
+  suppressiveChemicals:
+    "FrostOil": -3
+    "SulfuricAcid": -2
+  spawnMobByPrototype:
+  - MobXenoSpitter
+  textureState: "violet"
+
+# ===== SPACE FAUNA =====
+
+- type: cellSample
+  id: CellSampleSpaceSpider
+  name: клетки космического паука
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "Enzyme": 3
+    "UncookedAnimalProteins": 2
+  suppressiveChemicals:
+    "Toxin": -4
+    "Phlogiston": -3
+  spawnMobByPrototype:
+  - MobSpiderSpace
+  textureState: "brown"
+
+- type: cellSample
+  id: CellSampleSpaceBear
+  name: клетки космического медведя
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 3
+    "UncookedAnimalProteins": 4
+  suppressiveChemicals:
+    "Toxin": -5
+    "Sulfur": -2
+  spawnMobByPrototype:
+  - MobBearSpace
+  textureState: "brown"
+
+- type: cellSample
+  id: CellSampleSpaceViper
+  name: клетки космической кобры
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "Enzyme": 2
+    "Toxin": 2
+  suppressiveChemicals:
+    "Dylovene": -5
+    "Sulfur": -2
+  spawnMobByPrototype:
+  - MobPurpleSnake
+  textureState: "violet"
+
+# ===== HUMANOIDS (URISTS) =====
+
+- type: cellSample
+  id: CellSampleHuman
+  name: клетки человека
+  growthRateInSeconds: 150
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "Enzyme": 2
+  suppressiveChemicals:
+    "Toxin": -4
+  spawnMobByPrototype:
+  - MobHumanGrown
+  textureState: "white"
+
+- type: cellSample
+  id: CellSampleReptilian
+  name: клетки унатха
+  growthRateInSeconds: 150
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "UncookedAnimalProteins": 2
+    "Enzyme": 1
+  suppressiveChemicals:
+    "Toxin": -3
+    "FrostOil": -2
+  spawnMobByPrototype:
+  - MobReptilianGrown
+  textureState: "green"
+
+- type: cellSample
+  id: CellSampleArachnid
+  name: клетки арахнида
+  growthRateInSeconds: 150
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "Enzyme": 3
+    "UncookedAnimalProteins": 1
+  suppressiveChemicals:
+    "Toxin": -2
+    "PlantBGone": -4
+  spawnMobByPrototype:
+  - MobArachnidGrown
+  textureState: "white"
+
+- type: cellSample
+  id: CellSampleMoth
+  name: клетки мотылька
+  growthRateInSeconds: 150
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 3
+    "Enzyme": 2
+  suppressiveChemicals:
+    "Phlogiston": -5
+  spawnMobByPrototype:
+  - MobMothGrown
+  textureState: "brown"
+
+- type: cellSample
+  id: CellSampleDiona
+  name: клетки дионы
+  growthRateInSeconds: 150
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 3
+    "Nutriment": 2
+    "Cellulose": 4
+  suppressiveChemicals:
+    "Toxin": -4
+    "WeedKiller": -5
+  spawnMobByPrototype:
+  - MobDionaGrown
+  textureState: "green"
+
+- type: cellSample
+  id: CellSampleDwarf
+  name: клетки дварфа
+  growthRateInSeconds: 150
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "UncookedAnimalProteins": 1
+    "Iron": 2
+  suppressiveChemicals:
+    "Toxin": -5
+  spawnMobByPrototype:
+  - MobDwarfGrown
+  textureState: "white"
+
+- type: cellSample
+  id: CellSampleVox
+  name: клетки вокса
+  growthRateInSeconds: 150
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 3
+    "Enzyme": 2
+    "Phlogiston": 1
+  suppressiveChemicals:
+    "FrostOil": -4
+    "Toxin": -2
+  spawnMobByPrototype:
+  - MobVoxGrown
+  textureState: "white"
+
+- type: cellSample
+  id: CellSampleSlimePerson
+  name: клетки слаймолюда
+  growthRateInSeconds: 150
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Sugar": 3
+    "Enzyme": 4
+  suppressiveChemicals:
+    "Toxin": -3
+    "Phlogiston": -4
+  spawnMobByPrototype:
+  - MobSlimePersonGrown
+  textureState: "purple"
+
+- type: cellSample
+  id: CellSampleAkulki
+  name: клетки акулки
+  growthRateInSeconds: 150
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 3
+    "UncookedAnimalProteins": 2
+    "Enzyme": 1
+  suppressiveChemicals:
+    "Toxin": -3
+    "SulfuricAcid": -3
+  spawnMobByPrototype:
+  - MobAkulkiGrown
+  textureState: "blue"
+
+- type: cellSample
+  id: CellSampleGoblin
+  name: клетки гоблина
+  growthRateInSeconds: 150
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "UncookedAnimalProteins": 1
+  suppressiveChemicals:
+    "Toxin": -2
+    "Phlogiston": -1
+  spawnMobByPrototype:
+  - MobGoblinGrown
+  textureState: "green"
+
+- type: cellSample
+  id: CellSampleSheleg
+  name: клетки шелега
+  growthRateInSeconds: 150
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 3
+    "FrostOil": 2
+  suppressiveChemicals:
+    "Phlogiston": -5
+  spawnMobByPrototype:
+  - MobShelegGrown
+  textureState: "white"
+
+- type: cellSample
+  id: CellSampleHarpy
+  name: клетки гарпии
+  growthRateInSeconds: 150
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "Enzyme": 2
+  suppressiveChemicals:
+    "Lead": -2
+    "Iron": -2
+  spawnMobByPrototype:
+  - MobHarpyGrown
+  textureState: "white"
+
+- type: cellSample
+  id: CellSampleVulpkanin
+  name: клетки вульпканина
+  growthRateInSeconds: 150
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "UncookedAnimalProteins": 2
+    "Enzyme": 1
+  suppressiveChemicals:
+    "Toxin": -2
+    "FrostOil": -3
+  spawnMobByPrototype:
+  - MobVulpkaninGrown
+  textureState: "orange"
+
+- type: cellSample
+  id: CellSampleFelinid
+  name: клетки фелинида
+  growthRateInSeconds: 150
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "UncookedAnimalProteins": 3
+  suppressiveChemicals:
+    "Toxin": -2
+    "CocoaPowder": -3
+  spawnMobByPrototype:
+  - MobFelinidGrown
+  textureState: "white"
+
+- type: cellSample
+  id: CellSampleOni
+  name: клетки они
+  growthRateInSeconds: 150
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 4
+    "Phlogiston": 2
+  suppressiveChemicals:
+    "FrostOil": -4
+    "Toxin": -2
+  spawnMobByPrototype:
+  - MobOniGrown
+  textureState: "red"
+
+- type: cellSample
+  id: CellSampleDemon
+  name: клетки демона
+  growthRateInSeconds: 150
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 3
+    "Phlogiston": 5
+  suppressiveChemicals:
+    "Holywater": -5
+    "Water": -3
+  spawnMobByPrototype:
+  - MobDemonGrown
+  textureState: "red"
+
+- type: cellSample
+  id: CellSampleKatunian
+  name: клетки катунианца
+  growthRateInSeconds: 150
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 3
+    "Enzyme": 3
+    "Nutriment": 1
+  suppressiveChemicals:
+    "Toxin": -4
+    "SulfuricAcid": -3
+  spawnMobByPrototype:
+  - MobKatunianGrown
+  textureState: "purple"
+
+- type: cellSample
+  id: CellSampleTajaran
+  name: клетки таяра
+  growthRateInSeconds: 150
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "UncookedAnimalProteins": 2
+    "Enzyme": 1
+  suppressiveChemicals:
+    "Toxin": -3
+    "Phlogiston": -2
+  spawnMobByPrototype:
+  - MobTajaranGrown
+  textureState: "orange"
+
+# Space Fauna - Advanced Carps
+- type: cellSample
+  id: CellSampleCarpMagic
+  name: клетки мэджикарпа
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "CarpoToxin": 4
+    "Vitamin": 3
+    "Enzyme": 2
+  suppressiveChemicals:
+    "Bungotoxin": -6
+    "Oxygen": -3
+  spawnMobByPrototype:
+  - NFMobCarpMagic
+  textureState: "violet"
+
+- type: cellSample
+  id: CellSampleCarpHolo
+  name: клетки голокарпа
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "CarpoToxin": 3
+    "Vitamin": 3
+    "Silicon": 2
+  suppressiveChemicals:
+    "Bungotoxin": -5
+    "Oxygen": -3
+  spawnMobByPrototype:
+  - NFMobCarpHolo
+  textureState: "blue"
+
+- type: cellSample
+  id: CellSampleCarpRainbow
+  name: клетки радужного карпа
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "CarpoToxin": 4
+    "Vitamin": 3
+    "Sugar": 4
+  suppressiveChemicals:
+    "Bungotoxin": -7
+    "Oxygen": -4
+  spawnMobByPrototype:
+  - NFMobCarpRainbow
+  textureState: "rainbow"
+
+- type: cellSample
+  id: CellSampleRainbowSnake
+  name: клетки радужной змеи
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 3
+    "Enzyme": 2
+    "Sugar": 3
+  suppressiveChemicals:
+    "Toxin": -5
+    "Sulfur": -3
+  spawnMobByPrototype:
+  - NFMobSmallRainbowSnake
+  textureState: "rainbow"
+
+# Space Fauna - Wyverns
+- type: cellSample
+  id: CellSampleWyvernIce
+  name: клетки ледяной виверны
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "Enzyme": 2
+    "FrostOil": 2
+  suppressiveChemicals:
+    "Phlogiston": -6
+  spawnMobByPrototype:
+  - NFMobRainbowWyvernIce
+  textureState: "blue"
+
+- type: cellSample
+  id: CellSampleWyvernFire
+  name: клетки огненной виверны
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "Enzyme": 2
+    "Phlogiston": 2
+  suppressiveChemicals:
+    "FrostOil": -6
+  spawnMobByPrototype:
+  - NFMobRainbowWyvernFire
+  textureState: "red"
+
+- type: cellSample
+  id: CellSampleWyvernCaustic
+  name: клетки едкой виверны
+  growthRateInSeconds: 100
+  viralSusceptibility: 2
+  requiredChemicals:
+  - "Protein"
+  - "Nutriment"
+  supplementaryChemicals:
+    "Vitamin": 2
+    "Enzyme": 2
+    "SulfuricAcid": 2
+  suppressiveChemicals:
+    "Dylovene": -6
+  spawnMobByPrototype:
+  - NFMobRainbowWyvernCaustic
+  textureState: "green"

@@ -1,0 +1,45 @@
+- type: entity
+  id: ComputerExpeditionGoals
+  parent: BaseComputerAiAccess
+  name: expedition goals computer
+  description: Used to manage currently active bounties.
+  components:
+  - type: Sprite
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: bounty
+    - map: ["computerLayerKeys"]
+      state: tech_key
+    - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      state: generic_panel_open
+  - type: ExpeditionGoalsConsole
+  - type: ActivatableUI
+    key: enum.ExpeditionGoalsConsoleUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.ExpeditionGoalsConsoleUiKey.Key:
+        type: ExpeditionGoalsConsoleBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
+  - type: Computer
+    board: CargoExpeditionGoalsComputerCircuitboard
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#b89f25"
+
+- type: entity
+  id: CargoExpeditionGoalsComputerCircuitboard
+  parent: BaseComputerCircuitboard
+  name: cargo bounty computer board
+  description: A computer printed circuit board for a cargo bounty computer.
+  components:
+  - type: Sprite
+    state: cpu_supply
+  - type: ComputerBoard
+    prototype: ComputerExpeditionGoals
+  - type: StaticPrice

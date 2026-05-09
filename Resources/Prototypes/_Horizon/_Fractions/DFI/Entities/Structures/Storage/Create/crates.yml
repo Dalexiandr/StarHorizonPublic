@@ -1,0 +1,11 @@
+- type: entity
+  parent: CrateBaseSecure
+  suffix: DFI
+  id: CrateStorageSecureDFI
+  name: защищенный ящик хранения контрабанды DFI
+  description: Запираемый ящик для хранения контрабанды, конфискованного имущества у подозреваемых или заключённых под стражу сотрудников Department of Frontier Investigations.
+  components:
+  - type: Sprite
+    sprite: Structures/Storage/Crates/sec_gear.rsi
+  - type: AccessReader
+    access: [["DFI-Armory"]]

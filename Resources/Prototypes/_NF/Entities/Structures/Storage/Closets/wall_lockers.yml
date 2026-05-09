@@ -1,0 +1,410 @@
+#region base
+- type: entity # Base for yml-colored lockers
+  abstract: true
+  id: LockerWallColorBase
+  parent: [ BaseWallCloset, BaseStructureWallmount ]
+  suffix: Frontier
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Storage/wall_locker_color.rsi
+  - type: Lock
+  - type: LockVisuals
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: base
+    stateDoorOpen: open
+    stateDoorClosed: door
+  - type: GenericVisualizer
+    visuals:
+      enum.StorageVisuals.Open:
+        decal1:
+          True: { visible: false }
+          False: { visible: true }
+        decal2:
+          True: { visible: false }
+          False: { visible: true }
+  - type: ContainerContainer
+    containers:
+      entity_storage: !type:Container
+      paper_label: !type:ContainerSlot # Defined for any locker inheriting a physical one.
+
+# base for yml-colored lockers with grid inventories
+- type: entity
+  id: NFBaseLockerGridInvWallColor
+  parent: [ ShelfBaseReinforced, BaseStructureWallmount ]
+  suffix: Frontier
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Storage/wall_locker_color.rsi
+    layers:
+    - state: base
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: door
+      map: ["enum.StorageVisualLayers.Door"]
+    - state: locked
+      map: ["enum.LockVisualLayers.Lock"]
+      shader: unshaded
+  - type: EntityStorageVisuals
+    stateDoorOpen: open
+    stateDoorClosed: door
+  - type: Storage
+    grid:
+    - 0,0,5,6
+    maxItemSize: Ginormous
+  - type: GenericVisualizer
+    visuals:
+      enum.StorageVisuals.Open:
+        decal1:
+          True: { visible: false }
+          False: { visible: true }
+        decal2:
+          True: { visible: false }
+          False: { visible: true }
+        enum.StorageFillLayers.Fill:
+          True: { visible: true }
+          False: { visible: false }
+# endregion
+
+#region Fuel / mats storage
+- type: entity
+  categories: [ HideSpawnMenu ] # debloat spawn menu
+  id: LockerWallColorFuelPlasma
+  parent: NFBaseLockerGridInvWallColor
+  name: plasma fuel wall locker
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.StorageVisualLayers.Base"]
+      color: "#b97644"
+    - state: fillFuelCell-0
+      map: ["enum.StorageFillLayers.Fill"]
+      color: "#93057a"
+    - state: door
+      map: ["enum.StorageVisualLayers.Door"]
+      color: "#b97644"
+    - state: door-decal-line-01
+      map: [ decal1 ]
+      color: "#fff4e2"
+    - state: door-decal-fuel-plasma
+      map: [ decal2 ]
+      color: "#fff4e2"
+    - state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+    - state: locked
+      map: ["enum.LockVisualLayers.Lock"]
+  - type: StorageFillVisualizer
+    maxFillLevels: 5
+    fillBaseName: fillFuelCell
+
+- type: entity
+  categories: [ HideSpawnMenu ] # debloat spawn menu
+  id: LockerWallColorUranium
+  parent: NFBaseLockerGridInvWallColor
+  name: uranium fuel wall locker
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.StorageVisualLayers.Base"]
+      color: "#287529"
+    - state: fillFuelCell-0
+      map: ["enum.StorageFillLayers.Fill"]
+      color: "#226b22"
+    - state: door
+      map: ["enum.StorageVisualLayers.Door"]
+      color: "#287529"
+    - state: door-decal-line-01
+      map: [ decal1 ]
+      color: "#f4d81e"
+    - state: door-decal-fuel-uranium
+      map: [ decal2 ]
+    - state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+    - state: locked
+      map: ["enum.LockVisualLayers.Lock"]
+  - type: StorageFillVisualizer
+    maxFillLevels: 5
+    fillBaseName: fillFuelCell
+
+- type: entity
+  categories: [ HideSpawnMenu ] # debloat spawn menu
+  id: LockerWallColorWelding
+  parent: NFBaseLockerGridInvWallColor
+  name: welding fuel wall locker
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.StorageVisualLayers.Base"]
+      color: "#ae2023"
+    - state: fillFuelCell-0
+      map: ["enum.StorageFillLayers.Fill"]
+    - state: door
+      map: ["enum.StorageVisualLayers.Door"]
+      color: "#ae2023"
+    - state: door-decal-line-01
+      map: [ decal1 ]
+      color: "#dba124"
+    - state: door-decal-fuel-welding
+      map: [ decal2 ]
+      color: "#dba124"
+    - state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+    - state: locked
+      map: ["enum.LockVisualLayers.Lock"]
+  - type: StorageFillVisualizer
+    maxFillLevels: 5
+    fillBaseName: fillFuelWelding
+
+- type: entity
+  categories: [ HideSpawnMenu ] # debloat spawn menu
+  id: LockerWallColorAme
+  parent: NFBaseLockerGridInvWallColor
+  name: AME fuel wall locker
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.StorageVisualLayers.Base"]
+      color: "#b97644"
+    - state: fillFuelCell-0
+      map: ["enum.StorageFillLayers.Fill"]
+      color: "#0777c2"
+    - state: door
+      map: ["enum.StorageVisualLayers.Door"]
+      color: "#b97644"
+    - state: door-decal-line-01
+      map: [ decal1 ]
+      color: "#fff4e2"
+    - state: door-decal-fuel-ame
+      map: [ decal2 ]
+      color: "#fff4e2"
+    - state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+    - state: locked
+      map: ["enum.LockVisualLayers.Lock"]
+  - type: StorageFillVisualizer
+    maxFillLevels: 5
+    fillBaseName: fillFuelCell
+
+- type: entity
+  categories: [ HideSpawnMenu ] # debloat spawn menu
+  id: LockerWallColorBananium
+  parent: NFBaseLockerGridInvWallColor
+  name: bananium fuel wall locker
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.StorageVisualLayers.Base"]
+      color: "#c67421"
+    - state: fillFuelCell-0
+      map: ["enum.StorageFillLayers.Fill"]
+      color: "#b8ad1a"
+    - state: door
+      map: ["enum.StorageVisualLayers.Door"]
+      color: "#c67421"
+    - state: door-decal-line-01
+      map: [ decal1 ]
+      color: "#ac221c"
+    - state: door-decal-fuel-uranium
+      map: [ decal2 ]
+    - state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+    - state: locked
+      map: ["enum.LockVisualLayers.Lock"]
+  - type: StorageFillVisualizer
+    maxFillLevels: 5
+    fillBaseName: fillFuelCell
+
+- type: entity
+  categories: [ HideSpawnMenu ] # debloat spawn menu
+  id: LockerWallColorMaterials
+  parent: NFBaseLockerGridInvWallColor
+  name: materials wall locker
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.StorageVisualLayers.Base"]
+      color: "#707070"
+    - state: fillGeneric-0
+      map: ["enum.StorageFillLayers.Fill"]
+    - state: door
+      map: ["enum.StorageVisualLayers.Door"]
+      color: "#707070"
+    - state: door-decal-line-01
+      map: [ decal1 ]
+      color: "#ad8c27"
+    - state: door-decal-engi-01
+      map: [ decal2 ]
+      color: "#ad8c27"
+    - state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+    - state: locked
+      map: ["enum.LockVisualLayers.Lock"]
+  - type: StorageFillVisualizer
+    maxFillLevels: 9
+    fillBaseName: fillGeneric
+# endregion
+
+#region safety equipment
+- type: entity
+  categories: [ HideSpawnMenu ] # debloat spawn menu
+  id: LockerWallColorL1Fire
+  parent: NFBaseLockerGridInvWallColor
+  name: L1 fire suit wall locker
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.StorageVisualLayers.Base"]
+      color: "#c82d2d"
+    - state: fillGeneric-0
+      map: ["enum.StorageFillLayers.Fill"]
+    - state: door
+      map: ["enum.StorageVisualLayers.Door"]
+      color: "#c82d2d"
+    - state: door-decal-l1-fire
+      map: [ decal1 ]
+    - state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+    - state: locked
+      map: ["enum.LockVisualLayers.Lock"]
+  - type: StorageFillVisualizer
+    maxFillLevels: 9
+    fillBaseName: fillGeneric
+
+- type: entity
+  categories: [ HideSpawnMenu ] # debloat spawn menu
+  id: LockerWallColorL2Radiation
+  parent: NFBaseLockerGridInvWallColor
+  name: L2 radiation suit wall locker
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.StorageVisualLayers.Base"]
+      color: "#ead152"
+    - state: fillGeneric-0
+      map: ["enum.StorageFillLayers.Fill"]
+    - state: door
+      map: ["enum.StorageVisualLayers.Door"]
+      color: "#ead152"
+    - state: door-decal-l2-rad
+      map: [ decal1 ]
+      color: "#202020"
+    - state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+    - state: locked
+      map: ["enum.LockVisualLayers.Lock"]
+  - type: StorageFillVisualizer
+    maxFillLevels: 9
+    fillBaseName: fillGeneric
+
+- type: entity
+  categories: [ HideSpawnMenu ] # debloat spawn menu
+  id: LockerWallColorL3Biohazard
+  parent: NFBaseLockerGridInvWallColor
+  name: L3 biohazard suit wall locker
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.StorageVisualLayers.Base"]
+      color: "#7c2900"
+    - state: fillGeneric-0
+      map: ["enum.StorageFillLayers.Fill"]
+    - state: door
+      map: ["enum.StorageVisualLayers.Door"]
+      color: "#7c2900"
+    - state: door-decal-l3-bio
+      map: [ decal1 ]
+    - state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+    - state: locked
+      map: ["enum.LockVisualLayers.Lock"]
+  - type: StorageFillVisualizer
+    maxFillLevels: 9
+    fillBaseName: fillGeneric
+
+- type: entity
+  categories: [ HideSpawnMenu ] # debloat spawn menu
+  id: LockerWallColorL4Bomb
+  parent: NFBaseLockerGridInvWallColor
+  name: L4 bomb suit wall locker
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.StorageVisualLayers.Base"]
+      color: "#3a493e"
+    - state: fillGeneric-0
+      map: ["enum.StorageFillLayers.Fill"]
+    - state: door
+      map: ["enum.StorageVisualLayers.Door"]
+      color: "#3a493e"
+    - state: door-decal-l4-expl
+      map: [ decal1 ]
+    - state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+    - state: locked
+      map: ["enum.LockVisualLayers.Lock"]
+  - type: StorageFillVisualizer
+    maxFillLevels: 9
+    fillBaseName: fillGeneric
+# endregion
+
+#region Other
+- type: entity
+  id: ClosetWallN2
+  name: emergency nitrogen wall closet
+  parent: BaseWallCloset
+  description: It's a storage unit for emergency breath masks and N2 tanks.
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Storage/wall_locker.rsi
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: n2
+    stateDoorOpen: n2_open
+    stateDoorClosed: n2_door
+
+- type: entity
+  id: ClosetWallO2N2
+  name: emergency internals wall closet
+  parent: BaseWallCloset
+  description: It's a storage unit for emergency breathing equipment for all species.
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Storage/wall_locker.rsi
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: o2n2
+    stateDoorOpen: o2n2_open
+    stateDoorClosed: o2n2_door
+
+- type: entity
+  id: NFPrisonerClosetWallOrange
+  parent: BaseWallCloset
+  name: prisoner wall closet
+  description: It's a storage unit for Space Law compliant prisoner garb.
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: generic
+    stateDoorOpen: generic_open
+    stateDoorClosed: orange_door
+# endregion

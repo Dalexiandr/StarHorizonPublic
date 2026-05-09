@@ -1,0 +1,72 @@
+# Author Info
+# GitHub: https://github.com/DustScoundrel
+# Discord: 691415110282903552
+
+# Maintainer Info
+# GitHub: https://github.com/MoistBiscuits
+# Discord: 159375107855351808
+
+# Shuttle Notes:
+#
+
+- type: vessel
+  id: Vagabond
+  parent: BaseVessel
+  name: NT Vagabond
+  description: A adaptable long-haul industrial freighter that pilots have adapted to many different purposes.
+  price: 61000 # 50579 0.2 60694.8
+  category: Medium
+  group: Shipyard
+  shuttlePath: /Maps/_NF/Shuttles/vagabond.yml
+  guidebookPage: ShipyardVagabond
+  class:
+  - Cargo
+  engine:
+  - Plasma
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:RoleModifier
+      role: "PlantTechnician"
+      costMultiplier: 0.9
+    - !type:RoleModifier
+      role: "PlantManager"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionEdison"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionLVHI"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionUAC"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionNakamura"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: Vagabond
+  mapName: 'NT Vagabond'
+  mapPath: /Maps/_NF/Shuttles/vagabond.yml
+  minPlayers: 0
+  stations:
+    Vagabond:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Vagabond {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

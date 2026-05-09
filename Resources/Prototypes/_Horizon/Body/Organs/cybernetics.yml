@@ -1,0 +1,469 @@
+- type: entity
+  id: OrganBsStomach
+  parent: OrganHumanStomach
+  name: блюспейс желудок
+  description: "Продвинутый блюспейс-желудок, обладающий увеличенной вместимостью. Имеет маркировку HR-BX-100-4-1. Произведён и импортирован корпорацией BioXen."
+  suffix: Horizon, BioXen
+  components:
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/organs_bs.rsi
+    state: stomach
+  - type: Item
+    size: Small
+    heldPrefix: stomach
+  - type: SolutionContainerManager
+    solutions:
+      stomach:
+        maxVol: 240
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+  - type: OrganDamage
+    insertDamage:
+      types:
+        Poison: -80
+        Cellular: -10
+        Bloodloss: -20
+        Caustic: -10
+        Radiation: -10
+  - type: Metabolizer
+    maxReagents: 4
+
+- type: entity
+  id: OrganCyberStomach
+  parent: OrganHumanStomach
+  name: кибернетический желудок
+  description: "Кибернетическй желудок с увеличенной продуктивностью. Имеет маркировку HR-IP-60/4/0,5. Чертежи предоставлены Interdyne Pharmaceutics, произведён и импортирован корпорацией BioXen."
+  suffix: Horizon, BioXen
+  components:
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/organs_cyber.rsi
+    state: stomach
+  - type: Item
+    size: Small
+    heldPrefix: stomach
+  - type: Stomach
+    updateInterval: 0.5
+  - type: SolutionContainerManager
+    solutions:
+      stomach:
+        maxVol: 75
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+  - type: OrganDamage
+    insertDamage:
+      types:
+        Poison: -80
+        Cellular: -15
+        Bloodloss: -20
+        Caustic: -15
+        Radiation: -10
+  - type: Metabolizer
+    maxReagents: 4
+    updateInterval: 0.5
+
+- type: entity
+  id: OrganBioStomach
+  parent: OrganHumanStomach
+  name: бионический желудок
+  description: "Бионический желудок с увеличенным числом одновременно усваивающихся реагентов. Имеет маркировку HR-IP-60/6/1. Чертежи предоставлены Interdyne Pharmaceutics, произведён и импортирован корпорацией BioXen."
+  suffix: Horizon, BioXen
+  components:
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/organs_bio.rsi
+    state: stomach
+  - type: Item
+    size: Small
+    heldPrefix: stomach
+  - type: Stomach
+    updateInterval: 0.75
+  - type: SolutionContainerManager
+    solutions:
+      stomach:
+        maxVol: 60
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+  - type: OrganDamage
+    insertDamage:
+      types:
+        Poison: -120
+        Cellular: -15
+        Bloodloss: -20
+        Caustic: -15
+        Radiation: -10
+  - type: Metabolizer
+    maxReagents: 6
+
+- type: entity
+  id: OrganBsLungs
+  parent: OrganHumanLungs
+  name: блюспейс лёгкие
+  description: "Продвинутые блюспейс-лёгкие, обладающией увеличенной вместимостью. Имеют маркировку LG-BX-2000-100-1. Произведены и импортированы корпорацией BioXen."
+  suffix: Horizon, BioXen
+  components:
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/organs_bs.rsi
+    layers:
+      - state: lung-l
+      - state: lung-r
+  - type: Metabolizer
+    removeEmpty: true
+    solutionOnBody: false
+    solution: "Lung"
+    metabolizerTypes: [ Human ]
+    groups:
+    - id: Gas
+      rateModifier: 75.0
+  - type: OrganDamage
+    insertDamage:
+      types:
+        Asphyxiation: -120
+        Cellular: -10
+        Bloodloss: -20
+        Radiation: -20
+  - type: SolutionContainerManager
+    solutions:
+      Lung:
+        maxVol: 7500.0
+        canReact: false
+
+- type: entity
+  id: OrganCyberLungs
+  parent: OrganHumanLungs
+  name: кибернетические лёгкие
+  description: "Кибернетическе лёгкие, обеспечивающие замедленное поглощение газов. Имеют маркировку BX-150/50/1. Чертежи предоставлены Interdyne Pharmaceutics, произведены и импортированы корпорацией BioXen."
+  suffix: Horizon, BioXen
+  components:
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/organs_cyber.rsi
+    state: lungs
+  - type: Metabolizer
+    removeEmpty: true
+    solutionOnBody: false
+    solution: "Lung"
+    metabolizerTypes: [ OrganCyber ]
+    groups:
+    - id: Gas
+      rateModifier: 50.0
+  - type: OrganDamage
+    insertDamage:
+      types:
+        Asphyxiation: -90
+        Cellular: -15
+        Bloodloss: -20
+        Radiation: -25
+  - type: SolutionContainerManager
+    solutions:
+      Lung:
+        maxVol: 150.0
+        canReact: false
+
+- type: entity
+  id: OrganBioLungs
+  parent: OrganHumanLungs
+  name: бионические лёгкие
+  description: "Бионические лёгкие с улучшенной системой фильтрации. Имеют маркировку LG-IP-100-100-5. Чертежи предоставлены Interdyne Pharmaceutics, произведены и импортированы корпорацией BioXen."
+  suffix: Horizon, BioXen
+  components:
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/organs_bio.rsi
+    state: lungs
+  - type: Metabolizer
+    removeEmpty: true
+    solutionOnBody: false
+    solution: "Lung"
+    metabolizerTypes: [ OrganBio ]
+    groups:
+    - id: Gas
+      rateModifier: 100.0
+  - type: OrganDamage
+    insertDamage:
+      types:
+        Poison: -15
+        Asphyxiation: -80
+        Cellular: -10
+        Bloodloss: -15
+        Radiation: -20
+  - type: SolutionContainerManager
+    solutions:
+      Lung:
+        maxVol: 100
+        canReact: False
+
+- type: entity
+  id: OrganBsHeart
+  parent: OrganHumanHeart
+  name: блюспейс сердце
+  description: " Блюспейс-сердце. Максимально эффективно распределяет химикаты по всему телу за счёт блюспейс технологий. Имеет маркировку HR-BX-3-1. Произведено и импортировано корпорацией BioXen."
+  suffix: Horizon, BioXen
+  components:
+  - type: WorldItem
+    overridePrefix: heart-off_world
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/organs_bs.rsi
+    layers:
+      - state: heart
+  - type: Metabolizer
+    updateInterval: 0.3
+    maxReagents: 3
+    metabolizerTypes: [Human]
+    groups:
+    - id: Medicine
+    - id: Poison
+    - id: Narcotic
+  - type: OrganDamage
+    insertDamage:
+      types:
+        Shock: -80
+        Cellular: -10
+        Bloodloss: -20
+        Caustic: -10
+        Radiation: -10
+
+- type: entity
+  id: OrganCyberHeart
+  parent: OrganHumanHeart
+  name: кибернетическое сердце
+  description: "Кибернетическое сердце, лучшего качества, чем его биологический прародитель. Имеет маркировку IP-BX-4-0,5. Чертежи предоставлены Interdyne Pharmaceutics, произведены и импортированы корпорацией BioXen."
+  suffix: Horizon, BioXen
+  components:
+  - type: WorldItem
+    overridePrefix: heart-off_world
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/organs_cyber.rsi
+    layers:
+      - state: heart
+  - type: Metabolizer
+    updateInterval: 0.5
+    maxReagents: 4
+    metabolizerTypes: [Human]
+    groups:
+    - id: Medicine
+    - id: Poison
+    - id: Narcotic
+  - type: OrganDamage
+    insertDamage:
+      types:
+        Shock: -80
+        Cellular: -20
+        Bloodloss: -20
+        Caustic: -20
+        Radiation: -20
+
+- type: entity
+  id: OrganBioHeart
+  parent: OrganArachnidHeart
+  name: бионическое сердце
+  description: "Бионическое сердце с улучшенной системой фильтрации. Имеет маркировку IP-BX-2-1,5. Чертежи предоставлены Interdyne Pharmaceutics, произведены и импортированы корпорацией BioXen."
+  suffix: Horizon, BioXen
+  components:
+  - type: WorldItem
+    overridePrefix: heart-off_world
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/organs_bio.rsi
+    layers:
+      - state: heart
+  - type: Metabolizer
+    updateInterval: 1.5
+    maxReagents: 2
+    metabolizerTypes: [Arachnid]
+    groups:
+    - id: Medicine
+    - id: Poison
+    - id: Narcotic
+  - type: OrganDamage
+    insertDamage:
+      types:
+        Shock: -100
+        Cellular: -10
+        Bloodloss: -20
+        Caustic: -10
+        Radiation: -10
+
+- type: entity
+  id: OrganBsLiver
+  parent: OrganHumanLiver
+  name: блюспейс печень
+  description: "Блюспейс печень. Имеет маркировку LV-BX-3-1. Произведено и импортировано корпорацией BioXen."
+  suffix: Horizon, BioXen
+  components:
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/organs_bs.rsi
+    layers:
+      - state: liver
+  - type: Item
+    size: Small
+    heldPrefix: liver
+  - type: Metabolizer
+    updateInterval: 1.0
+    maxReagents: 3
+    metabolizerTypes: [Human]
+    groups:
+    - id: Alcohol
+      rateModifier: 0.1
+  - type: OrganDamage
+    insertDamage:
+      types:
+        Poison: -75
+        Cellular: -10
+        Bloodloss: -10
+        Caustic: -10
+        Radiation: -25
+
+- type: entity
+  id: OrganCyberLiver
+  parent: OrganHumanLiver
+  name: кибернетическая печень
+  description: "Кибернетическая печень. Имеет маркировку LV-IP-2-0,5. Чертежи предоставлены Interdyne Pharmaceutics, произведены и импортированы корпорацией BioXen."
+  suffix: Horizon, BioXen
+  components:
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/organs_cyber.rsi
+    layers:
+      - state: liver
+  - type: Item
+    size: Small
+    heldPrefix: liver
+  - type: Metabolizer
+    updateInterval: 0.5
+    maxReagents: 2
+    metabolizerTypes: [Human]
+    groups:
+    - id: Alcohol
+      rateModifier: 0.2
+  - type: OrganDamage
+    insertDamage:
+      types:
+        Poison: -75
+        Cellular: -10
+        Bloodloss: -10
+        Caustic: -10
+        Radiation: -25
+
+- type: entity
+  id: OrganBioLiver
+  parent: OrganArachnidLiver
+  name: бионическая печень
+  description: "Бионическая печень. Имеет маркировку LV-IP-3-1,5. Чертежи предоставлены Interdyne Pharmaceutics, произведены и импортированы корпорацией BioXen."
+  suffix: Horizon, BioXen
+  components:
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/organs_bio.rsi
+    layers:
+      - state: liver
+  - type: Item
+    size: Small
+    heldPrefix: liver
+  - type: Metabolizer
+    updateInterval: 1.5
+    maxReagents: 3
+    metabolizerTypes: [Arachnid]
+    groups:
+    - id: Alcohol
+      rateModifier: 0.2
+  - type: OrganDamage
+    insertDamage:
+      types:
+        Poison: -75
+        Cellular: -10
+        Bloodloss: -10
+        Caustic: -10
+        Radiation: -25
+
+- type: entity
+  id: OrganBsKidneys
+  parent: OrganHumanKidneys
+  name: блюспейс почки
+  description: "Пара блюспейс почек. Нет, ты не можешь теперь пить непрерывно. Имеет маркировку KD-BX-5-1. Произведено и импортировано корпорацией BioXen."
+  suffix: Horizon, BioXen
+  components:
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/organs_bs.rsi
+    layers:
+      - state: kidney-l
+      - state: kidney-r
+  - type: Item
+    size: Small
+    heldPrefix: kidneys
+  - type: Metabolizer
+    updateInterval: 1.0
+    maxReagents: 5
+    metabolizerTypes: [Human]
+    removeEmpty: true
+  - type: OrganDamage
+    insertDamage:
+      types:
+        Poison: -5
+        Cellular: -10
+        Bloodloss: -10
+        Caustic: -10
+        Radiation: -5
+        Cold: -100
+
+- type: entity
+  id: OrganCyberKidneys
+  parent: OrganHumanKidneys
+  name: кибернетические почки
+  description: "Пара кибернетических почек. Нет, ты не можешь теперь пить непрерывно. Имеет маркировку KD-BX-5-0,5. Чертежи предоставлены Interdyne Pharmaceutics, произведены и импортированы корпорацией BioXen."
+  suffix: Horizon, BioXen
+  components:
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/organs_cyber.rsi
+    layers:
+      - state: kidney-l
+      - state: kidney-r
+  - type: Item
+    size: Small
+    heldPrefix: kidneys
+  - type: Metabolizer
+    updateInterval: 0.5
+    maxReagents: 5
+    metabolizerTypes: [Human]
+    removeEmpty: true
+  - type: OrganDamage
+    insertDamage:
+      types:
+        Poison: -10
+        Cellular: -15
+        Bloodloss: -15
+        Caustic: -10
+        Radiation: -5
+        Cold: -80
+
+- type: entity
+  id: OrganBioKidneys
+  parent: OrganArachnidKidneys
+  name: бионические почки
+  description: "Пара бионических почек. Нет, ты не можешь теперь пить непрерывно. Имеет маркировку KD-BX-7-1. Чертежи предоставлены Interdyne Pharmaceutics, произведены и импортированы корпорацией BioXen."
+  suffix: Horizon, BioXen
+  components:
+  - type: Sprite
+    sprite: _Horizon/Mobs/Species/Cyberlimbs/organs_bio.rsi
+    layers:
+      - state: kidney-l
+      - state: kidney-r
+  - type: Item
+    size: Small
+    heldPrefix: kidneys
+  - type: Metabolizer
+    updateInterval: 1.0
+    maxReagents: 10
+    metabolizerTypes: [Arachnid]
+    removeEmpty: true
+  - type: OrganDamage
+    insertDamage:
+      types:
+        Poison: -20
+        Cellular: -10
+        Bloodloss: -10
+        Caustic: -10
+        Radiation: -5
+        Cold: -80

@@ -1,0 +1,72 @@
+# Author Info
+# GitHub: Shodhans
+# Discord: ???
+
+# Maintainer Info
+# GitHub: dustylens (https://github.com/dustylens)
+# Discord: dustylens
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Comet
+  parent: BaseVessel
+  name: NT Comet
+  description: A mining and construction vessel intended to help build or repair quickly.
+  price: 62000 # 47022 0.3 61128.6
+  category: Medium
+  group: Shipyard
+  shuttlePath: /Maps/_NF/Shuttles/comet.yml
+  guidebookPage: ShipyardComet
+  class:
+  - Salvage
+  - Engineering
+  engine:
+  - Uranium
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:RoleModifier
+      role: "PlantTechnician"
+      costMultiplier: 0.9
+    - !type:RoleModifier
+      role: "PlantManager"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionEdison"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionLVHI"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionUAC"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionNakamura"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: Comet
+  mapName: 'NT Comet'
+  mapPath: /Maps/_NF/Shuttles/comet.yml
+  minPlayers: 0
+  stations:
+    Comet:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Comet {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

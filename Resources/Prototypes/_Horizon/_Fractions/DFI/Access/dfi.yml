@@ -1,0 +1,51 @@
+- type: accessLevel
+  id: DFI
+  name: id-card-access-level-dfi
+
+- type: accessLevel
+  id: DFI-Cadet
+  name: id-card-access-level-dfi-Cadet
+
+- type: accessLevel
+  id: DFI-Officer
+  name: id-card-access-level-dfi-Officer
+
+- type: accessLevel
+  id: DFI-IU
+  name: id-card-access-level-dfi-IU
+
+- type: accessLevel
+  id: DFI-CAU
+  name: id-card-access-level-dfi-CAU
+
+- type: accessLevel
+  id: DFI-ShiftManager
+  name: id-card-access-level-dfi-ShiftManager
+
+- type: accessLevel
+  id: DFI-Evidence
+  name: id-card-access-level-dfi-Evidence
+
+- type: accessLevel
+  id: DFI-Observation
+  name: id-card-access-level-dfi-Observation
+
+- type: accessLevel
+  id: DFI-Special
+  name: id-card-access-level-dfi-Special
+
+- type: accessLevel
+  id: DFI-CIC
+  name: id-card-access-level-dfi-CIC
+
+- type: accessLevel
+  id: DFI-Armory
+  name: id-card-access-level-dfi-Armory
+
+- type: accessLevel
+  id: DFI-TRC
+  name: id-card-access-level-dfi-TRC
+
+- type: accessLevel
+  id: DFI-APS
+  name: id-card-access-level-dfi-APS

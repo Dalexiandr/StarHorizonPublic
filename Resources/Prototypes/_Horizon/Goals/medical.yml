@@ -1,0 +1,60 @@
+# Медицинские
+- type: expeditionGoal
+  id: BountyBrain
+  specification: Medical
+  randomAmount:
+    min: 1
+    max: 1
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-brain
+    iconEntity: OrganHumanBrain
+    reward: 12500
+    requiredTag: Brain
+
+- type: expeditionGoal
+  id: BountyLung
+  specification: Medical
+  randomAmount:
+    min: 1
+    max: 3
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-lung
+    iconEntity: OrganHumanLungs
+    reward: 2000
+    requiredTag: Lung
+
+- type: expeditionGoal
+  id: BountyOrgans
+  specification: Medical
+  randomAmount:
+    min: 4
+    max: 8
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-organs
+    iconEntity: OrganHumanHeart
+    reward: 2000
+    requiredTag: Organ
+
+- type: expeditionGoal
+  id: BountySyringe
+  specification: Medical
+  randomAmount:
+    min: 8
+    max: 15
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-syringe
+    iconEntity: Syringe
+    reward: 5000
+    requiredTag: Syringe
+
+- type: expeditionGoal
+  id: BountyMedkitBox
+  specification: Medical
+  randomAmount:
+    min: 4
+    max: 6
+  goal: !type:EntityExpeditionGoal
+    description: bounty-description-medkit-box
+    iconEntity: Medkit
+    reward: 2300
+    requiredTag: Medkit

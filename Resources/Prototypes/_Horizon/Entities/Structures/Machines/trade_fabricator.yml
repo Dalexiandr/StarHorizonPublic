@@ -1,0 +1,302 @@
+# Фабрикатор торговых товаров
+# Специализированный латт для производства экспортных товаров
+
+- type: entity
+  parent: [BaseLatheLube, BaseStructureDisableToolUse]
+  id: TradeFabricator
+  name: торговый фабрикатор
+  description: Промышленный фабрикатор для производства экспортных торговых товаров. Превращает сырьё в запечатанные ящики для межфракционной торговли.
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Machines/techfab.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: salvage
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: TradeFabricatorCircuitboard
+  - type: Lathe
+    idleState: icon
+    runningState: icon
+    staticPacks:
+    - HorizonTradeGoodsPack
+  - type: MaterialStorage
+    whitelist:
+      tags:
+      - Sheet
+      - RawMaterial
+      - Ingot
+  - type: OreSiloClient
+  - type: StaticPrice
+    price: 2500
+
+
+# === Инженерный торговый фабрикатор ===
+- type: entity
+  parent: TradeFabricator
+  id: TradeFabricatorEngineer
+  name: инженерный торговый фабрикатор
+  description: Фабрикатор для производства инженерных торговых товаров. Специализируется на инструментах, топливе и электронике.
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Machines/techfab.rsi
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: engineering
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: TradeFabricatorEngineerCircuitboard
+  - type: Lathe
+    staticPacks:
+    - HorizonTradeGoodsEngineerPack
+
+# === Медицинский торговый фабрикатор ===
+- type: entity
+  parent: TradeFabricator
+  id: TradeFabricatorMedical
+  name: медицинский торговый фабрикатор
+  description: Фабрикатор для производства медицинских торговых товаров. Специализируется на медикаментах, химикатах и имплантах.
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Machines/techfab.rsi
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: medical
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: TradeFabricatorMedicalCircuitboard
+  - type: Lathe
+    staticPacks:
+    - HorizonTradeGoodsMedicalPack
+
+# === Научный торговый фабрикатор ===
+- type: entity
+  parent: TradeFabricator
+  id: TradeFabricatorScience
+  name: научный торговый фабрикатор
+  description: Фабрикатор для производства научных торговых товаров. Специализируется на лабораторном оборудовании и реагентах.
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Machines/techfab.rsi
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: science
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: TradeFabricatorScienceCircuitboard
+  - type: Lathe
+    staticPacks:
+    - HorizonTradeGoodsSciencePack
+
+# === Сервисный торговый фабрикатор ===
+- type: entity
+  parent: TradeFabricator
+  id: TradeFabricatorService
+  name: сервисный торговый фабрикатор
+  description: Фабрикатор для производства сервисных торговых товаров. Специализируется на провизии, напитках и предметах роскоши.
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Machines/techfab.rsi
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: mcservice
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: TradeFabricatorServiceCircuitboard
+  - type: Lathe
+    staticPacks:
+    - HorizonTradeGoodsServicePack
+
+# === Универсальный торговый фабрикатор ===
+- type: entity
+  parent: TradeFabricator
+  id: TradeFabricatorGeneral
+  name: универсальный торговый фабрикатор
+  description: Фабрикатор для производства товаров общего назначения. Простые, но востребованные товары.
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Machines/techfab.rsi
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: cargo
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: TradeFabricatorGeneralCircuitboard
+  - type: Lathe
+    staticPacks:
+    - HorizonTradeGoodsGeneralPack
+
+# === Военный торговый фабрикатор (специализация AnCo) ===
+- type: entity
+  parent: TradeFabricator
+  id: TradeFabricatorMilitary
+  name: военный торговый фабрикатор
+  description: Военный вариант торгового фабрикатора. Специализируется на производстве военных товаров и кибернетики.
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Machines/techfab.rsi
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: mercenary
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: TradeFabricatorMilitaryCircuitboard
+  - type: Lathe
+    staticPacks:
+    - HorizonTradeGoodsMilitaryPack
+
+# === Промышленный торговый фабрикатор (специализация DFI) ===
+- type: entity
+  parent: TradeFabricator
+  id: TradeFabricatorIndustrial
+  name: промышленный торговый фабрикатор
+  description: Промышленный вариант торгового фабрикатора. Специализируется на производстве плазмы, сплавов и переработке лома.
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Machines/techfab.rsi
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: nfsd
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: TradeFabricatorIndustrialCircuitboard
+  - type: Lathe
+    staticPacks:
+    - HorizonTradeGoodsIndustrialPack
+
+# === Продовольственный торговый фабрикатор ===
+- type: entity
+  parent: TradeFabricator
+  id: TradeFabricatorFood
+  name: продовольственный фабрикатор
+  description: Фабрикатор для производства экспортного продовольствия. Превращает биомассу в упакованные продукты питания.
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Machines/techfab.rsi
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: mcservice
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: TradeFabricatorFoodCircuitboard
+  - type: Lathe
+    staticPacks:
+    - HorizonTradeGoodsFoodPack
+
+# === Пиратский торговый фабрикатор ===
+
+- type: entity
+  parent: TradeFabricator
+  id: TradeFabricatorPirate
+  name: пиратский фабрикатор
+  description: Фабрикатор для производства контрабанды пиратов. Превращает не крутое в крутое.
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Machines/techfab.rsi
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: pirate
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: TradeFabricatorPirateCircuitboard
+  - type: Lathe
+    staticPacks:
+    - HorizonTradeGoodsPiratePack
+
+# === Синди торговый фабрикатор ===
+
+- type: entity
+  parent: TradeFabricator
+  id: TradeFabricatorSyndicate
+  name: синдикатский фабрикатор
+  description: Фабрикатор для производства контрабанды Синдиката. Превращает обыденное в запрещенное.
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Machines/techfab.rsi
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: syndicate
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: TradeFabricatorSyndicateCircuitboard
+  - type: Lathe
+    staticPacks:
+    - HorizonTradeGoodsSyndicatePack

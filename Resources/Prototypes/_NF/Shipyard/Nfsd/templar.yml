@@ -1,0 +1,44 @@
+- type: vessel
+  id: Templar
+  parent: BaseVessel
+  name: NSF Templar
+  description: Малый охранный шаттл предназначенный для ведения боя.
+  price: 24220
+  category: Small
+  group: Security
+  access: Security
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/Nfsd/templar.yml # Horizon
+  guidebookPage: Null
+  class:
+  - Pursuit
+  engine:
+  - APU
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:FactionCostModifier
+      faction: "FactionNFSD"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: Templar
+  mapName: 'NSF Templar'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/Nfsd/templar.yml # Horizon
+  minPlayers: 0
+  stations:
+    Templar:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Templar {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs: {}

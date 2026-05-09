@@ -1,0 +1,52 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: https://github.com/OHoro4ek1
+# Discord: ohoro4ek
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: Ikarus
+  parent: BaseVessel
+  name: NRZN Ikarus
+  description: Гражданский шаттл для отдыха и развлечений, всё что нужно тем, кто устал от постоянных приключений и хочет просто отдохнуть.
+  price: 60000 # 47904, наценка верфи 25% = 59880
+  category: Medium
+  group: Shipyard
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/ikarus.yml
+  class:
+  - Civilian
+  engine:
+  - Uranium
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+  # Horizon end
+
+- type: gameMap
+  id: Ikarus
+  mapName: 'NRZN Ikarus'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/ikarus.yml
+  minPlayers: 0
+  stations:
+    Ikarus:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Ikarus {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

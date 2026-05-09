@@ -1,0 +1,17 @@
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyTrauma
+  name: ключ шифрования Траумы
+  categories: [ DoNotMap ]
+  description: Ключ шифрования для канала экипажей Траумы.
+  components:
+  - type: EncryptionKey
+    channels:
+    - Trauma
+    defaultChannel: Trauma
+  - type: Item
+    sprite: _StarHorizon/Objects/Devices/traumaencryptionkey.rsi
+  - type: Sprite
+    sprite: _StarHorizon/Objects/Devices/traumaencryptionkey.rsi
+    layers:
+    - state: crypto-base

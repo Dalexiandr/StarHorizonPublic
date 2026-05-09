@@ -1,0 +1,29 @@
+- type: reaction
+  id: HotCoffeearabica
+  reactants:
+    CoffeearabicaPowder:
+      amount: 1
+    Water:
+      amount: 3
+  products:
+    HotCoffeearabica: 4
+
+- type: reaction
+  id: HotCoffeeliberica
+  reactants:
+    CoffeelibericaPowder:
+      amount: 1
+    Water:
+      amount: 3
+  products:
+    HotCoffeeliberica: 4
+
+- type: reaction
+  id: HotCoffeerobusta
+  reactants:
+    CoffeerobustaPowder:
+      amount: 1
+    Water:
+      amount: 3
+  products:
+    HotCoffeerobusta: 4

@@ -1,0 +1,70 @@
+# Информация об авторе шаттла
+# GitHub/Gitea: ???
+# Discord: lnqz1tor
+
+# Информация об сопровождающем
+# GitHub/Gitea: https://git.starhorizon.ru/Astrolaris
+# Discord: astr0laris
+
+# Прототип шаттла:
+#
+- type: vessel
+  id: Scarab
+  parent: BaseVessel
+  name: NRZN Scarab
+  description: Продвинутый шахтёрский шаттл с возможностью оперативной добычи большей части ресурсов в дальних зонах.
+  price: 70000 # 58713, наценка верфи 15% = 67519
+  category: Medium
+  group: Shipyard
+  shuttlePath: /Maps/_Horizon/Shuttles/Shipyard/scarab.yml
+  class:
+  - Salvage
+  engine:
+  - AME
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:RoleModifier
+      role: "PlantTechnician"
+      costMultiplier: 0.9
+    - !type:RoleModifier
+      role: "PlantManager"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionEdison"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionLVHI"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionUAC"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionNakamura"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: Scarab
+  mapName: 'NRZN Scarab'
+  mapPath: /Maps/_Horizon/Shuttles/Shipyard/scarab.yml
+  minPlayers: 0
+  stations:
+    Scarab:
+      stationProto: StandardFrontierVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Scarab {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

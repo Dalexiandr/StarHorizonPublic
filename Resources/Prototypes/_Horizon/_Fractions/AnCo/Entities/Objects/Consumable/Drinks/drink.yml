@@ -1,0 +1,41 @@
+- type: entity
+  parent: [DrinkBottleVisualsAll, DrinkBottlePlasticBaseFull, BaseAnCoContraband]
+  id: DrinkWaterAnCoBottleFull
+  name: бутылка питьевой жидкости
+  description: Поверьте вам лучше не знать откуда она.
+  suffix: StarHorizon, AnCo, Food
+  components:
+  - type: Tag
+    tags:
+    - DrinkCup
+    - DrinkBottle
+    - AnCoWater
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: Water
+          Quantity: 100
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Food/drink.rsi
+  - type: SolutionContainerVisuals
+    maxFillLevels: 2
+    fillBaseName: fill-
+  - type: Label
+    currentLabel: reagent-name-water
+  - type: Sealable
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:SpillBehavior { }
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: PhysicalComposition
+    materialComposition:
+      Ardon: 100
+      Kazmie: 200
+
+

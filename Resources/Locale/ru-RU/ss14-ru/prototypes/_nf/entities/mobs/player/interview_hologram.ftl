@@ -1,0 +1,12 @@
+ent-InterviewHologram = { ent-BaseMob }
+    .desc = { ent-BaseMob.desc }
+ent-InterviewHologramContractor = { ent-InterviewHologram }
+    .desc = { ent-InterviewHologram.desc }
+ent-InterviewHologramPilot = { ent-InterviewHologram }
+    .desc = { ent-InterviewHologram.desc }
+ent-InterviewHologramMercenary = { ent-InterviewHologram }
+    .desc = { ent-InterviewHologram.desc }
+ent-ActionInterviewToggleApproval = Изменить одобрение
+    .desc = Включает или выключает ваше согласие на работу с этим экипажем.
+ent-ActionInterviewCancel = Отменить заявку
+    .desc = Отменить вашу заявку и вернуться в лобби.

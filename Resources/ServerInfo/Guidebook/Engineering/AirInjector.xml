@@ -1,0 +1,14 @@
+﻿<Document>
+  # Воздушный инжектор
+  Специальный вентиляционный блок для принудительной подачи газов в атмосферу.
+  <Box>
+    <GuideEntityEmbed Entity="GasOutletInjector"/>
+  </Box>
+  Основное применение - нагнетание газов в помещения с высоким давлением, такие как [textlink="хранилища газов" link="GasMiningAndStorage"] или термокамеры.
+
+  Для работы не требует [textlink="электропитания" link="Power"].
+
+  Будет нагнетать газы до достижения давления [color=orange][protodata="GasOutletInjector" comp="GasOutletInjector" member="MaxPressure"/] кПа[/color].
+
+  Скорость подачи пропорциональна количеству газа в инжекторе.
+</Document>

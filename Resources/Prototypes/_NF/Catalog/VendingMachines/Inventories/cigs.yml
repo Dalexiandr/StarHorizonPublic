@@ -1,0 +1,30 @@
+# Horizon - POI version with infinite stock
+- type: vendingMachineInventory
+  id: CigaretteMachinePOIInventory
+  startingInventory:
+    CigPackGreen: 4294967295 # Infinite
+    CigPackRed: 4294967295 # Infinite
+    CigPackBlue: 4294967295 # Infinite
+    CigPackBlack: 4294967295 # Infinite
+    CigPackMixed: 4294967295 # Infinite
+    CigarCase: 4294967295 # Infinite
+    SmokingPipeFilledTobacco: 4294967295 # Infinite
+    Vape: 4294967295 # Infinite
+    Matchbox: 4294967295 # Infinite
+    PackPaperRollingFilters: 4294967295 # Infinite
+    CheapLighter: 4294967295 # Infinite
+    Lighter: 4294967295 # Infinite
+    FlippoLighter: 4294967295 # Infinite
+    NFAshtray: 4294967295 # Infinite
+    SmokingPipe: 4294967295 # Infinite
+    TobaccoPouchBrownFilled: 4294967295 # Infinite
+    TobaccoPouchBlueFilled: 4294967295 # Infinite
+    TobaccoPouchPurpleFilled: 4294967295 # Infinite
+  contrabandInventory:
+    TobaccoPouchRedFilled: 4294967295 # Infinite
+    GroundTobacco: 4294967295 # Infinite
+    CigarGold: 4294967295 # Infinite
+    Igniter: 4294967295 # Infinite
+  emaggedInventory:
+    CigarPlatinumCase: 1
+    CigPackSyndicate: 1

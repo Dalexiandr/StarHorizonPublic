@@ -1,0 +1,35 @@
+- type: entity
+  parent: [ClothingBackpack, BaseAnCoContraband]
+  id: AnCosatchel
+  suffix: StarHorizon, AnCo
+  name: глубокая сумка АнКо
+  description: Сумка с углубленными карманами на удобном магнитном крепеже.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Back/Satchels/satchel.rsi
+  - type: Tag
+    tags: [] # Выносим с ВЛа для хамелеонки
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,7,4
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
+  - type: StaticPrice
+    price: 50000
+
+- type: entity
+  parent: [ClothingBackpack, BaseAnCoContraband]
+  id: AnCosatchelDEBUG
+  suffix: StarHorizon, AnCo, DEBUG
+  name: ОЧЕНЬ глубокая сумка АнКо
+  description: Сумка с дохуя углубленными карманами на удобном магнитном крепеже.
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Clothing/Back/Satchels/satchel.rsi
+  - type: Storage
+    maxItemSize: Ginormous
+    grid:
+    - 0,0,39,24
+  - type: ExplosionResistance
+    damageCoefficient: 0.01

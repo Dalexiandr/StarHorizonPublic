@@ -1,0 +1,44 @@
+- type: entity
+  parent: BaseComputerTabletopStationAdminBankATM
+  id: ComputerTabletopStationAdminBankATMTrauma
+  description: Используется для доступа к банковскому счету Trauma Team.
+  suffix: TraumaTeam, Настольный
+  components:
+    - type: StationBankATM
+      account: Trauma
+
+- type: entity
+  parent: ComputerTabletopShuttleAntag
+  id: ComputerTabletopShuttleAntagSyndicate
+  suffix: Syndicate, Disk
+  components:
+  - type: ItemSlots
+    slots:
+      disk_slot:
+        name: Disk
+        startingItem: CoordinatesDiskSyndicate
+        insertSound:
+          path: /Audio/Machines/terminal_insert_disc.ogg
+        ejectSound:
+          path: /Audio/Machines/terminal_insert_disc.ogg
+        whitelist:
+          components:
+          - ShuttleDestinationCoordinates
+
+- type: entity
+  parent: ComputerTabletopShuttleAntag
+  id: ComputerTabletopShuttleAntagPirate
+  suffix: Pirate, Disk
+  components:
+  - type: ItemSlots
+    slots:
+      disk_slot:
+        name: Disk
+        startingItem: CoordinatesDiskPirate
+        insertSound:
+          path: /Audio/Machines/terminal_insert_disc.ogg
+        ejectSound:
+          path: /Audio/Machines/terminal_insert_disc.ogg
+        whitelist:
+          components:
+          - ShuttleDestinationCoordinates

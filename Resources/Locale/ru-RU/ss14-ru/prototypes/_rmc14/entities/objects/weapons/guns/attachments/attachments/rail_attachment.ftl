@@ -1,0 +1,12 @@
+ent-RailAttachmentBase = { ent-AttachableBase }
+    .desc = { ent-AttachableBase.desc }
+ent-AttachmentMagneticHarness = магнитный ремень
+    .desc = Комплект из ремня и магнитных креплений, которые крепятся к верхней планке. В случае потери бойцом равновесия - оружие не падает на землю и остается с владельцем.
+ent-AttachmentScopeBase = { ent-RailAttachmentBase }
+    .desc = { ent-RailAttachmentBase.desc }
+ent-AttachmentHristovScope = оптический прицел Христова
+    .desc = Штатный прицел для снайперской винтовки "Христов", с шестикратным увеличением.
+ent-AttachmentT2Miniscope = оптический прицел
+    .desc = Оптический прицел малой кратности, подходящий для ведения боя в замкнутых пространствах. Производства Shellguard Munitions.
+ent-AttachmentReflexSight = коллиматорный прицел
+    .desc = Коллиматорный прицел, повышающий меткость стрельбы с одной руки и из неустойчивых положений. Производства Shellguard Munitions.

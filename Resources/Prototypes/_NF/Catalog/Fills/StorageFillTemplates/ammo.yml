@@ -1,0 +1,365 @@
+#region .20 rifle ammo
+- type: entity # Lethal
+  abstract: true
+  id: StorageFillAmmoBoxLethal20
+  suffix: .20 rifle, Lethal, x4 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxRifle20
+      amount: 4
+
+- type: entity # Lethal
+  abstract: true
+  id: StorageFillAmmoBoxBigLethal20
+  suffix: .20 rifle, Lethal, x2 big boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxBigRifle20
+      amount: 2
+
+- type: entity # Rubber
+  abstract: true
+  id: StorageFillAmmoBoxRubber20
+  suffix: .20 rifle, Rubber, x4 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxRifle20Rubber
+      amount: 4
+
+- type: entity # Rubber
+  abstract: true
+  id: StorageFillAmmoBoxBigRubber20
+  suffix: .20 rifle, Rubber, x2 big boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxBigRifle20Rubber
+      amount: 2
+
+- type: entity # Practice
+  abstract: true
+  id: StorageFillAmmoBoxPractice20
+  suffix: .20 rifle, Practice, x4 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxRifle20Practice
+      amount: 4
+
+- type: entity # Incendiary
+  abstract: true
+  id: StorageFillAmmoBoxIncendiary20
+  suffix: .20 rifle, Incendiary, x2 big boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxBigRifle20Incendiary
+      amount: 2
+
+- type: entity # Uranium
+  abstract: true
+  id: StorageFillAmmoBoxUranium20
+  suffix: .20 rifle, Uranium, x2 big boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxBigRifle20Uranium
+      amount: 2
+
+#region .30 rifle ammo
+- type: entity # Lethal
+  abstract: true
+  id: StorageFillAmmoBoxLethal30
+  suffix: .30 rifle, Lethal, x4 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxRifle30
+      amount: 4
+
+- type: entity # Lethal
+  abstract: true
+  id: StorageFillAmmoBoxBigLethal30
+  suffix: .30 rifle, Lethal, x2 big boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxBigRifle30
+      amount: 2
+
+- type: entity # Rubber
+  abstract: true
+  id: StorageFillAmmoBoxRubber30
+  suffix: .30 rifle, Rubber, x4 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxRifle30Rubber
+      amount: 4
+
+- type: entity # Practice
+  abstract: true
+  id: StorageFillAmmoBoxPractice30
+  suffix: .30 rifle, Practice, x4 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxRifle30Practice
+      amount: 4
+
+- type: entity # Incendiary
+  abstract: true
+  id: StorageFillAmmoBoxIncendiary30
+  suffix: .30 rifle, Incendiary, x4 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxRifle30Incendiary
+      amount: 4
+
+- type: entity # Uranium
+  abstract: true
+  id: StorageFillAmmoBoxUranium30
+  suffix: .30 rifle, Uranium, x4 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxRifle30Uranium
+      amount: 4
+
+#region .35 pistol ammo
+- type: entity # Lethal
+  abstract: true
+  id: StorageFillAmmoBoxLethal35
+  suffix: .35 pistol, Lethal, x4 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxPistol35
+      amount: 4
+
+- type: entity # Rubber
+  abstract: true
+  id: StorageFillAmmoBoxRubber35
+  suffix: .35 pistol, Rubber, x4 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxPistol35Rubber
+      amount: 4
+
+- type: entity # Practice
+  abstract: true
+  id: StorageFillAmmoBoxPractice35
+  suffix: .35 pistol, Practice, x4 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxPistol35Practice
+      amount: 4
+
+- type: entity # Incendiary
+  abstract: true
+  id: StorageFillAmmoBoxIncendiary35
+  suffix: .35 pistol, Incendiary, x4 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxPistol35Incendiary
+      amount: 4
+
+- type: entity # Uranium
+  abstract: true
+  id: StorageFillAmmoBoxUranium35
+  suffix: .35 pistol, Uranium, x4 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxPistol35Uranium
+      amount: 4
+
+- type: entity # EMP
+  abstract: true
+  id: StorageFillAmmoBoxEmp35
+  suffix: .35 pistol, EMP, x4 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxPistol35Emp
+      amount: 4
+
+#region .25 caseless ammo
+- type: entity # Lethal
+  abstract: true
+  id: StorageFillAmmoBoxLethal25
+  suffix: .25 caseless, Lethal, x4 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxRifle25
+      amount: 4
+
+- type: entity # Lethal
+  abstract: true
+  id: StorageFillAmmoBoxBigLethal25
+  suffix: .25 caseless, Lethal, x2 big boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxBigRifle25
+      amount: 2
+
+- type: entity # Rubber
+  abstract: true
+  id: StorageFillAmmoBoxRubber25
+  suffix: .25 caseless, Rubber, x4 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxRifle25Rubber
+      amount: 4
+
+- type: entity # Rubber
+  abstract: true
+  id: StorageFillAmmoBoxBigRubber25
+  suffix: .25 caseless, Rubber, x2 big boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxBigRifle25Rubber
+      amount: 2
+
+- type: entity # Practice
+  abstract: true
+  id: StorageFillAmmoBoxPractice25
+  suffix: .25 caseless, Practice, x4 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxRifle25Practice
+      amount: 4
+
+#region Shotgun ammo
+- type: entity # Lethal
+  abstract: true
+  id: StorageFillAmmoBoxLethalShotgun
+  suffix: Shotgun, Lethal, x2 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxShellShotgunBuckshot
+      amount: 2
+
+- type: entity # Rubber
+  abstract: true
+  id: StorageFillAmmoBoxRubberShotgun
+  suffix: Shotgun, Rubber, x2 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxShellShotgunBeanbag
+      amount: 2
+
+- type: entity # Practice
+  abstract: true
+  id: StorageFillAmmoBoxPracticeShotgun
+  suffix: Shotgun, Practice, x2 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxShellShotgunPractice
+      amount: 2
+
+- type: entity # Incendiary
+  abstract: true
+  id: StorageFillAmmoBoxIncendiaryShotgun
+  suffix: Shotgun, Incendiary, x2 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxShellShotgunIncendiary
+      amount: 2
+
+- type: entity # Uranium
+  abstract: true
+  id: StorageFillAmmoBoxUraniumShotgun
+  suffix: Shotgun, Uranium, x2 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxShellShotgunUranium
+      amount: 2
+
+- type: entity # Slugs
+  abstract: true
+  id: StorageFillAmmoBoxSlugShotgun
+  suffix: Shotgun, Slugs, x2 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxShellShotgunSlug
+      amount: 2
+
+- type: entity # Flare
+  abstract: true
+  id: StorageFillAmmoBoxFlareShotgun
+  suffix: Shotgun, Flare, x2 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxShellShotgunFlare
+      amount: 2
+
+#region .45 pistol ammo
+- type: entity # Lethal
+  abstract: true
+  id: StorageFillAmmoBoxLethal45
+  suffix: .45, Lethal, x4 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxPistol45
+      amount: 4
+
+- type: entity # Rubber
+  abstract: true
+  id: StorageFillAmmoBoxRubber45
+  suffix: .45, Rubber, x4 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxPistol45Rubber
+      amount: 4
+
+- type: entity # Practice
+  abstract: true
+  id: StorageFillAmmoBoxPractice45
+  suffix: .45, Practice, x4 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxPistol45Practice
+      amount: 4
+
+- type: entity # Incendiary
+  abstract: true
+  id: StorageFillAmmoBoxIncendiary45
+  suffix: .45, Incendiary, x4 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxPistol45Incendiary
+      amount: 4
+
+- type: entity # Uranium
+  abstract: true
+  id: StorageFillAmmoBoxUranium45
+  suffix: .45, Uranium, x4 boxes
+  components:
+  - type: StorageFill
+    contents:
+    - id: NFAmmunitionBoxPistol45Uranium
+      amount: 4

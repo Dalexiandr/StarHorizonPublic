@@ -1,0 +1,84 @@
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesBlackDress
+  name: чёрные туфли
+  description: Вечерный шик.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Shoes/Misc/blackdressshoes.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Shoes/Misc/blackdressshoes.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesRedDress
+  name: красные туфли
+  description: Вечерный шик.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Shoes/Misc/redshoes.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Shoes/Misc/redshoes.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesRichDress
+  name: дорогие туфли
+  description: В этом вы чувствуете себя богаче.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Shoes/Misc/richshoes.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Shoes/Misc/richshoes.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesStarDress
+  name: звёздные туфли
+  description: Они сияют!
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Shoes/Misc/starshoes.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Shoes/Misc/starshoes.rsi
+    clothingVisuals:
+      shoes:
+      - state: equipped-FEET
+      - state: equipped-FEET_unsh
+        shader: unshaded
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesBootsSilkDress
+  name: шёлковые туфли
+  description: Украшенные жемчугом туфли
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Shoes/Misc/silkdressshoes.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Shoes/Misc/silkdressshoes.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesBootsPinkDress
+  name: розовые туфли
+  description: Украшены милыми бантиками
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Shoes/Misc/pinkdressshoes.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Shoes/Misc/pinkdressshoes.rsi
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: ClothingShoesBootsDragon
+  name: сапоги из драконьей кожи
+  suffix: Вещи Маланисы
+  description: Подкованные сапоги из дорогого материала.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/Shoes/Boots/duskboot.rsi
+  - type: Clothing
+    sprite: _Horizon/Clothing/Shoes/Boots/duskboot.rsi
+
+

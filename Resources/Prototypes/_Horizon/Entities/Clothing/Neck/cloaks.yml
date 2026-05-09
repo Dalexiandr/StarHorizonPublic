@@ -1,0 +1,210 @@
+- type: entity
+  parent: ClothingCloakCmo
+  id: ClothingCloakEliteCmo
+  name: chief medical officer's cloak
+  description: A sterile blue cloak with a green cross, radiating with a sense of duty and willingness to help others.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/Cloaks/ecmo.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingCloakEliteBotanist
+  suffix: StarHorizon
+  name: плащ ботаника
+  description: Красивый зелёный плащ, сотканный из самых прочных тканей.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/Cloaks/botanist.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingCloakBishop
+  suffix: StarHorizon
+  name: плащ епископа
+  description: Станьте космическим папой.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/Cloaks/bishop.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingCloakBishopBlack
+  suffix: StarHorizon
+  name: плащ епископа
+  description: Станьте космическим папой.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/Cloaks/bishopblack.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingCloakNTRCloak
+  suffix: StarHorizon
+  name: плащ представителя НТ
+  description: Носит представитель NanoTrasen. Из-под плаща доносится слабый обличительный шепот.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/Cloaks/ntrcloak.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingCloakRoyalBlue
+  suffix: StarHorizon
+  name: плащ знати
+  description: Изысканная шаль для знати, изготовленная из высококачественных материалов.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/Cloaks/royalbluecloak.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingCloakRoyalRed
+  suffix: StarHorizon
+  name: плащ знати
+  description: Изысканная шаль для знати, изготовленная из высококачественных материалов.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/Cloaks/royalredcloak.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingCloakRoyalViolet
+  suffix: StarHorizon
+  name: плащ знати
+  description: Изысканная шаль для знати, изготовленная из высококачественных материалов.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/Cloaks/royalviocloak.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingCloakSec
+  suffix: StarHorizon
+  name: плащ офицера
+  description: Носим сотрудниками службы безопасности.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/Cloaks/seccloak.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingCloakSen
+  suffix: StarHorizon
+  name: плащ офицера
+  description: Носим сотрудниками службы безопасности.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/Cloaks/sencloak.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingCloakSyndAdmiral
+  suffix: StarHorizon
+  name: плащ адмирала
+  description: Тёмный плащ, сделанный на заказ для старших офицеров. Состоит из очень прочной кожи и бронеткани. На внутренней стороне воротника есть бирка с надписью «V».
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/Cloaks/syndadmiral.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingCloakSyndCapt
+  suffix: StarHorizon
+  name: плащ офицера
+  description: Плащ, ранее носимый величайшим офицером Синдиката. Внушает страх сотрудникам NanoTrasen.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/Cloaks/syndcapt.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCobraCloak
+  name: стильный плащ
+  suffix: StarHorizon
+  description: Утончённость этого плащ подчёркивает невероятно качественно вышитая буква "S", идеально мимикрирующая под очертания кобры.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/Cloaks/cobra.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakIanCloak
+  name: плащ Иана
+  suffix: StarHorizon
+  description: При создании плаща ни один Ианчик не пострадал! Вуф!
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/Cloaks/ian.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakFire
+  name: плащ гуррен-дана
+  suffix: StarHorizon
+  description: Магма течёт в наших венах, раскаляя сердца!
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/Cloaks/fire.rsi
+  - type: TypingIndicatorClothing
+    proto: alien
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakWhitehole
+  name: плащ белой дыры
+  suffix: StarHorizon
+  description: Иногда и Бесконечность всматривается в вас!
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/Cloaks/whitehole.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakSinitsa
+  name: плащ-синица
+  suffix: StarHorizon
+  description: Какая интересная синичка...
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/Cloaks/sinitsa.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakCeElite
+  name: плащ элитного инженера
+  suffix: StarHorizon
+  description: Выдаётся самым ответственным и выдающимся инженерам. Пахнет сингулярностью.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/Cloaks/ce_elite.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakCapWhite
+  name: белый торжественный плащ капитана
+  suffix: StarHorizon
+  description: Создан, чтобы Вы воссияли.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/Cloaks/cap_white.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakBlueshield
+  name: плащ офицера "Синий щит"
+  suffix: StarHorizon
+  description: Великолепная пластичная синяя ткань не помешает выхватить оружие из кобуры.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/Cloaks/blueshield_cloak.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakSpriter
+  name: плащ спрайтера
+  suffix: StarHorizon
+  description: Был сплетён и покрашен самым ловким хвостом.
+  components:
+  - type: Sprite
+    sprite: _StarHorizon/Clothing/Neck/Cloaks/spriter.rsi

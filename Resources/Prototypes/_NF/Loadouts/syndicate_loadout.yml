@@ -1,0 +1,124 @@
+
+# Униформа
+- type: loadoutGroup
+  id: SyndicateJumpsuit
+  name: Униформа Синдиката
+  loadouts:
+  - LoadoutSyndicateClothingUniformJumpsuitOperative
+  - LoadoutSyndicateClothingUniformJumpskirtOperative
+  - LoadoutSyndicateClothingUniformJumpsuitSyndieFormal
+  - LoadoutSyndicateClothingUniformJumpskirtSyndieFormalDress
+  - LoadoutSyndicateClothingUniformJumpsuitPyjamaSyndicateRed
+  - LoadoutSyndicateClothingUniformJumpsuitPyjamaSyndicatePink
+  - LoadoutSyndicateClothingUniformJumpsuitPyjamaSyndicateBlack
+  - LoadoutSyndicateClothingUniformJumpsuitRecruitSyndieNF
+  - LoadoutSyndicateClothingUniformJumpsuitParamedicSyndieNF
+  - LoadoutSyndicateClothingUniformJumpsuitRepairmanSyndieNF
+  - LoadoutSyndicateClothingUniformJumpsuitChiefEngineerSyndieNF
+  fallbacks:
+  - LoadoutSyndicateClothingUniformJumpsuitOperative
+  - LoadoutSyndicateClothingUniformJumpskirtOperative
+
+# рюкзаки (хранилища)
+- type: loadoutGroup
+  id: SyndicateBack
+  name: Рюкзаки Синдиката
+  loadouts:
+  - LoadoutSyndicateClothingBackpackSyndicate
+  - LoadoutSyndicateClothingBackpackDuffelSyndicate
+  - LoadoutSyndicateClothingBackpackMessengerSyndicate
+  fallbacks:
+  - LoadoutSyndicateClothingBackpackSyndicate
+
+# КПК
+- type: loadoutGroup
+  id: SyndicatePDA
+  name: loadout-group-syndicate-pda
+  loadouts:
+  - LoadoutSyndicateSyndiPDA
+  fallbacks:
+  - LoadoutSyndicateSyndiPDA
+
+- type: loadoutGroup
+  id: SyndicatePDAOfficer
+  name: loadout-group-syndicate-pda
+  loadouts:
+  - LoadoutSyndicateSyndiPDAOfficer
+  fallbacks:
+  - LoadoutSyndicateSyndiPDAOfficer
+
+- type: loadoutGroup
+  id: SyndicatePDAOperative
+  name: loadout-group-syndicate-pda
+  loadouts:
+  - LoadoutSyndicateSyndiPDAOperative
+  fallbacks:
+  - LoadoutSyndicateSyndiPDAOperative
+
+- type: loadoutGroup
+  id: SyndicatePDAMedic
+  name: loadout-group-syndicate-pda
+  loadouts:
+  - LoadoutSyndicateSyndiPDAMedic
+  fallbacks:
+  - LoadoutSyndicateSyndiPDAMedic
+
+- type: loadoutGroup
+  id: SyndicatePDADelivery
+  name: loadout-group-syndicate-pda
+  loadouts:
+  - LoadoutSyndicateSyndiPDADelivery
+  fallbacks:
+  - LoadoutSyndicateSyndiPDADelivery
+
+# Шапки
+- type: loadoutGroup
+  id: SyndicateHead
+  name: Головные уборы Синдиката
+  loadouts:
+  - LoadoutSyndicateClothingHeadHatSyndie
+  - LoadoutSyndicateClothingHeadHatOutlawHat
+  - LoadoutSyndicateClothingHeadHatSyndieMAA
+  - LoadoutSyndicateClothingHeadPyjamaSyndicateRed
+  - LoadoutSyndicateClothingHeadPyjamaSyndicatePink
+  - LoadoutSyndicateClothingHeadPyjamaSyndicateBlack
+
+# верхняя одежда
+- type: loadoutGroup
+  id: SyndicateOuterClothing
+  name: Верхняя одежда Синдиката
+  loadouts:
+  - LoadoutSyndicateClothingOuterArmorBasic
+  - LoadoutSyndicateClothingOuterVestWeb
+  - LoadoutSyndicateClothingOuterCoatSyndieCapArmored
+  - LoadoutSyndicateClothingOuterWinterSyndieCap
+  - LoadoutSyndicateClothingOuterCoatSyndieCap
+  - LoadoutSyndicateClothingOuterWinterSyndie
+
+
+# гарнитура
+- type: loadoutGroup
+  id: SyndicateEars
+  name: Гарнитура Синдиката
+  loadouts:
+  - LoadoutSyndicateClothingHeadsetAltSyndicate
+
+# обувь
+- type: loadoutGroup
+  id: SyndicateBoots
+  name: Обувь Синдиката
+  loadouts:
+  - LoadoutSyndicateClothingShoesBootsJack
+  - LoadoutSyndicateClothingShoesBootsWinterSyndicate
+
+  # маски
+- type: loadoutGroup
+  id: SyndicateMask
+  name: Обувь Синдиката
+  loadouts:
+  - LoadoutSyndicateClothingMaskGasSyndicate
+  - LoadoutSyndicateClothingMaskClownSecurity
+
+
+
+

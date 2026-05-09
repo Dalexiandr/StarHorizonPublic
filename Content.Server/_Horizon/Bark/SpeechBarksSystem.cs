@@ -1,0 +1,54 @@
+using Robust.Shared.Prototypes;
+using Content.Shared._Horizon.Bark;
+using Content.Server.Chat.Systems;
+using Robust.Shared.Configuration;
+using Content.Shared._Horizon.CCVar;
+using Content.Server.Mind;
+
+namespace Content.Server._Horizon.Bark;
+
+public sealed class SpeechBarksSystem : SharedSpeechBarksSystem
+{
+    [Dependency] private readonly IPrototypeManager _proto = default!;
+    [Dependency] private readonly IConfigurationManager _cfg = default!;
+    [Dependency] private readonly EntityLookupSystem _lookup = default!;
+    [Dependency] private readonly MindSystem _mind = default!;
+
+    private bool _isEnabled = false;
+
+    public override void Initialize()
+    {
+        base.Initialize();
+
+        _cfg.OnValueChanged(HorizonCCVars.BarksEnabled, v => _isEnabled = v, true);
+
+        SubscribeLocalEvent<SpeechBarksComponent, EntitySpokeEvent>(OnEntitySpoke);
+
+    }
+    private void OnEntitySpoke(EntityUid uid, SpeechBarksComponent component, EntitySpokeEvent args)
+    {
+        if (!_isEnabled)
+            return;
+
+        var ev = new TransformSpeakerBarkEvent(uid, component.Data.Copy());
+        RaiseLocalEvent(uid, ev);
+
+        var message = args.ObfuscatedMessage ?? args.Message;
+        var sound = _proto.Index(ev.Data.Proto).Sound;
+
+        foreach (var ent in _lookup.GetEntitiesInRange(Transform(uid).Coordinates, 10f))
+        {
+            if (!_mind.TryGetMind(ent, out _, out var mind) || mind.CurrentEntity == null)
+                continue;
+
+            RaiseNetworkEvent(new PlaySpeechBarksEvent(
+                        GetNetEntity(uid),
+                        message,
+                        sound,
+                        ev.Data.Pitch,
+                        ev.Data.MinVar,
+                        ev.Data.MaxVar,
+                        args.Whisper), mind.CurrentEntity.Value);
+        }
+    }
+}

@@ -1,0 +1,13 @@
+ent-BoxFolderStc = Папка диспетчера аванпоста
+    .desc = Папка, наполненная шаблонами документов контроля трафика судов
+    .suffix = Forms
+ent-PaperWrittenStcFormCitationParking = штраф за нарушение правил парковки
+    .desc = { ent-Paper.desc }
+ent-PaperWrittenStcFormCitationTraffic = штраф за нарушение правил трафика
+    .desc = { ent-Paper.desc }
+ent-PaperWrittenStcFormProsecutionRequest = запрос на возбуждение уголовного дела
+    .desc = { ent-Paper.desc }
+ent-PaperWrittenStcFormTrafficLog = почасовой журнал движения
+    .desc = { ent-Paper.desc }
+ent-PaperWrittenStcFormWellnessCheck = проверка благополучия
+    .desc = { ent-Paper.desc }

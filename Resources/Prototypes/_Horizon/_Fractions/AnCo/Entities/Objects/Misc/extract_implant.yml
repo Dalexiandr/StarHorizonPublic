@@ -1,0 +1,95 @@
+# Имплантер
+
+- type: entity
+  id: AnCoExtractImplanter
+  name: имплантер аварийной эвакуации
+  parent: BaseImplantOnlyImplanterAnCo
+  components:
+  - type: Implanter
+    implant: AnCoExtractImplant
+
+- type: entity
+  id: AnCoExtractImplanterCrystall
+  name: имплантер аварийной кристаллизации
+  parent: BaseImplantOnlyImplanterAnCo
+  components:
+  - type: Implanter
+    implant: AnCoExtractImplantCrystall
+
+# Имплант
+
+- type: entity
+  parent: BaseSubdermalImplant
+  id: AnCoExtractImplant
+  name: Аварийная капсула
+  description: Имплант который кристаллизирует носителя после его смерти для спасения.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SubdermalImplant
+    implantAction: AnCoActionActivateExtractImplant
+  - type: TriggerImplantAction
+  - type: TriggerOnMobstateChange
+    mobState:
+    - Dead
+  - type: AnCoExtractImplant
+    teleportAnywhere: true
+    teleportEffect: "BluespaceAnCoTeleport"
+    telepadPrototypeId: "AnCoExtractTelepad"
+    bodyBagPrototype: "AnCoCrystallExtractBox"
+    teleportDelay: 10
+
+- type: entity
+  parent: BaseSubdermalImplant
+  id: AnCoExtractImplantCrystall
+  name: Аварийная кристаллизация
+  description: Имплант который кристаллизирует носителя после его смерти для спасения.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SubdermalImplant
+    implantAction: AnCoActionActivateExtractImplantCrystall
+  - type: TriggerImplantAction
+  - type: TriggerOnMobstateChange
+    mobState:
+    - Dead
+  - type: AnCoExtractImplant
+    teleportAnywhere: true
+    teleportEffect: "BluespaceAnCoTeleport"
+    telepadPrototypeId: "AnCoExtractTelepad"
+    bodyBagPrototype: "AnCoCrystallExtract"
+    teleportDelay: 20
+
+# Действия
+
+- type: entity
+  parent: [BaseSuicideAction, BaseImplantAction]
+  id: AnCoActionActivateExtractImplant
+  name: Аварийная кристаллизация
+  description: Кристаллизирует вас для экстренного спасения.
+  components:
+  - type: LimitedCharges
+    maxCharges: 1
+  - type: Action
+    checkCanInteract: false
+    useDelay: 1
+    itemIconStyle: BigAction
+    priority: -20
+    icon:
+      sprite: _Horizon/_Fractions/AnCo/Structures/Storage/Closets/boximplant.rsi
+      state: icon
+
+- type: entity
+  parent: AnCoActionActivateExtractImplant
+  id: AnCoActionActivateExtractImplantCrystall
+  name: Аварийная кристаллизация
+  description: Кристаллизирует вас для экстренного спасения.
+  components:
+  - type: LimitedCharges
+    maxCharges: 1
+  - type: Action
+    checkCanInteract: false
+    useDelay: 1
+    itemIconStyle: BigAction
+    priority: -20
+    icon:
+      sprite: _Horizon/_Fractions/AnCo/Structures/Specific/crystallardon.rsi
+      state: crystall

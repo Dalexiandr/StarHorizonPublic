@@ -1,0 +1,15 @@
+ent-SpawnMobMercenaryT1 = mercenary spawner
+    .suffix = AI, Hostile, T1
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobMercenaryT2 = mercenary spawner
+    .suffix = AI, Hostile, T2
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobMercenaryT3 = mercenary spawner
+    .suffix = AI, Hostile, T3
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnMobMercenaryEVAT1 = { ent-SpawnMobMercenaryT1 }
+    .desc = { ent-SpawnMobMercenaryT1.desc }
+ent-SpawnMobMercenaryEVAT2 = { ent-SpawnMobMercenaryT2 }
+    .desc = { ent-SpawnMobMercenaryT2.desc }
+ent-SpawnMobMercenaryEVAT3 = { ent-SpawnMobMercenaryT3 }
+    .desc = { ent-SpawnMobMercenaryT3.desc }

@@ -1,0 +1,9 @@
+atmos-pipe-layers-component-layer-primary = основная
+atmos-pipe-layers-component-layer-secondary = вторичная
+atmos-pipe-layers-component-layer-tertiary = третичная
+atmos-pipe-layers-component-change-layer = Отрегулирована { $layerName } конфигурация.
+atmos-pipe-layers-component-current-layer = Установлена { $layerName } конфигурация.
+atmos-pipe-layers-component-select-layer = { CAPITALIZE($layerName) } конфигурация
+atmos-pipe-layers-component-tool-missing = Требует { INDEFINITE($toolName) } { $toolName }
+atmos-pipe-layers-component-pipes-are-covered = Трубы скрыты
+atmos-pipe-layers-component-cannot-adjust-pipes = Вам нужно открыть трубы, прежде чем их можно будет отрегулировать.

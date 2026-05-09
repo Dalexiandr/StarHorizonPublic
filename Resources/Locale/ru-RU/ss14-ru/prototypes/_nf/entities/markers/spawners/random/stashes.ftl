@@ -1,0 +1,12 @@
+ent-SpawnDungeonLootStash = случайный мусор
+    .suffix = Мусор, 100
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnDungeonLootStash50 = случайный мусор
+    .suffix = Мусор, 50
+    .desc = { ent-SpawnDungeonLootStash.desc }
+ent-SpawnDungeonLootStash25 = случайный мусор
+    .suffix = Мусор, 25
+    .desc = { ent-SpawnDungeonLootStash.desc }
+ent-SpawnDungeonLootStash10 = случайный мусор
+    .suffix = Мусор, 10
+    .desc = { ent-SpawnDungeonLootStash.desc }

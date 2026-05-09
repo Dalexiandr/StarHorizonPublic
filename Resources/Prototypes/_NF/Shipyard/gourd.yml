@@ -1,0 +1,62 @@
+# Revet + Remap
+
+# Author Info
+# GitHub: YumiGumi (https://github.com/YumiGumi)
+# Discord: ???
+
+# Maintainer Info
+# GitHub: ???
+# Discord: ???
+
+# Shuttle Notes:
+#
+- type: vessel
+  id: Gourd
+  parent: BaseVessel
+  name: SLI Gourd
+  description: The Gourd is a Science/Civilian vessel with a dedicated blast chamber.
+  price: 135000 # ~115000$ on mapinit + ~34000$ from 30% markup #StarHorizon -10%
+  category: Large
+  group: Shipyard
+  shuttlePath: /Maps/_NF/Shuttles/gourd.yml
+  guidebookPage: ShipyardGourd
+  class:
+  - Science
+  - Civilian
+  engine:
+  - AME
+  # Horizon start
+  costModifiers:
+    - !type:RoleModifier
+      role: "Pilot"
+      costMultiplier: 0.8
+    - !type:RoleModifier
+      role: "Mercenary"
+      costMultiplier: 1.2
+    - !type:FactionCostModifier
+      faction: "FactionSIU"
+      costMultiplier: 0.9
+    - !type:FactionCostModifier
+      faction: "FactionArcadia"
+      costMultiplier: 0.9
+  # Horizon end
+
+- type: gameMap
+  id: Gourd
+  mapName: 'SLI Gourd'
+  mapPath: /Maps/_NF/Shuttles/gourd.yml
+  minPlayers: 0
+  stations:
+    Gourd:
+      stationProto: StandardFrontierExpeditionVessel
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Gourd {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: '14'
+        - type: StationJobs
+          availableJobs:
+            ContractorInterview: [ 0, 0 ]
+            PilotInterview: [ 0, 0 ]
+            MercenaryInterview: [ 0, 0 ]

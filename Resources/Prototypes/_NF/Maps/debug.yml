@@ -1,0 +1,96 @@
+- type: gameMap
+  id: NFDev
+  mapName: NFDev
+  mapPath: /Maps/_NF/Test/dev_map.yml
+  minPlayers: 0
+  stations:
+    NFDev:
+      stationProto: DebugFrontierStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "NFDev"
+        - type: StationJobs
+          availableJobs:
+            # Command
+            Captain: [ -1, -1 ]
+            HeadOfPersonnel: [ -1, -1 ]
+            # Engineering
+            ChiefEngineer: [ -1, -1 ]
+            StationEngineer: [ -1, -1 ]
+            AtmosphericTechnician: [ -1, -1 ]
+            TechnicalAssistant: [ -1, -1 ]
+            PlantManager: [ -1, -1 ]
+            PlantTechnician: [ -1, -1 ]
+            # Medical
+            ChiefMedicalOfficer: [ -1, -1 ]
+            MedicalDoctor: [ -1, -1 ]
+            Paramedic: [ -1, -1 ]
+            Chemist: [ -1, -1 ]
+            MedicalIntern: [ -1, -1 ]
+            DirectorOfCare: [ -1, -1 ]
+            # Science
+            ResearchDirector: [ -1, -1 ]
+            Scientist: [ -1, -1 ]
+            ResearchAssistant: [ -1, -1 ]
+            Borg: [ -1, -1 ]
+            StationAi: [ -1, -1 ]
+            # Security
+            HeadOfSecurity: [ -1, -1 ]
+            Warden: [ -1, -1 ]
+            SecurityOfficer: [ -1, -1 ]
+            Detective: [ -1, -1 ]
+            SecurityCadet: [ -1, -1 ]
+            # Cargo
+            Quartermaster: [ -1, -1 ]
+            CargoTechnician: [ -1, -1 ]
+            SalvageSpecialist: [ -1, -1 ]
+            # Service
+            Bartender: [ -1, -1 ]
+            Botanist: [ -1, -1 ]
+            Chef: [ -1, -1 ]
+            Janitor: [ -1, -1 ]
+            Chaplain: [ -1, -1 ]
+            Lawyer: [ -1, -1 ]
+            Librarian: [ -1, -1 ]
+            Clown: [ -1, -1 ]
+            Mime: [ -1, -1 ]
+            Musician: [ -1, -1 ]
+            Reporter: [ -1, -1 ]
+            Psychologist: [ -1, -1 ]
+            Boxer: [ -1, -1 ]
+            Zookeeper: [ -1, -1 ]
+            ServiceWorker: [ -1, -1 ]
+            Visitor: [ -1, -1 ]
+            Passenger: [ -1, -1 ]
+            # NF — Frontier
+            Contractor: [ -1, -1 ]
+            Pilot: [ -1, -1 ]
+            Mercenary: [ -1, -1 ]
+            SecurityGuard: [ -1, -1 ]
+            StationRepresentative: [ -1, -1 ]
+            StationTrafficController: [ -1, -1 ]
+            MailCarrier: [ -1, -1 ]
+            Valet: [ -1, -1 ]
+            NFJanitor: [ -1, -1 ]
+            # NF — NFSD
+            Sheriff: [ -1, -1 ]
+            Bailiff: [ -1, -1 ]
+            SeniorOfficer: [ -1, -1 ]
+            Deputy: [ -1, -1 ]
+            NFDetective: [ -1, -1 ]
+            Brigmedic: [ -1, -1 ]
+            Cadet: [ -1, -1 ]
+            PublicAffairsLiaison: [ -1, -1 ]
+            PrisonGuard: [ -1, -1 ]
+            # NF — Pirates
+            NFPirateCaptain: [ -1, -1 ]
+            NFPirateFirstMate: [ -1, -1 ]
+            NFPirate: [ -1, -1 ]
+            Prisoner: [ -1, -1 ]
+            # Horizon — Trauma
+            TraumaRepresentative: [ -1, -1 ]
+            TraumaMedTech: [ -1, -1 ]
+            TraumaParamedic: [ -1, -1 ]
+            TraumaRessurector: [ -1, -1 ]
+        - type: StationDeadDrop
+          maxDeadDrops: 20 # Testing

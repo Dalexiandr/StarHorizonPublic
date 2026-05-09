@@ -1,0 +1,291 @@
+# Human NPC without inventory when alive (like Explorers)
+- type: entity
+  save: false
+  suffix: AI, Hostile
+  abstract: true
+  parent:
+  - NFMobAtmos
+  - MobMovementSpeedModifierMelee
+  - MobStaminaFodder
+  - MobBloodstream
+  - MobFlammable
+  - MobEnhancedMovement
+  - BaseMobSpecies
+  - BaseC3MobHuman
+  - NFBaseMobRestrictions
+  id: MobHumanoidHostileBaseNoInventory
+  components:
+  - type: NPCRetaliation
+    attackMemoryLength: 10
+  - type: MobMover
+  - type: StandingState
+  - type: RandomHumanoidAppearance
+    randomizeName: true
+  - type: MobThresholds
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      40: 0.7
+      60: 0.5
+  - type: Blindable
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatRotten
+      amount: 2
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: Carriable # Carrying system from nyanotrasen.
+  - type: FTLKnockdownImmune
+  - type: Respirator
+    updateInterval: 99999 # Shouldn't run often, if ever.
+    suffocationThreshold: -100 # Should never happen.
+    damage:
+      types: {}
+    damageRecovery:
+      types: {}
+#region base
+- type: entity
+  name: pirate mob ranged
+  abstract: true
+  categories: [ HideSpawnMenu ]
+  parent:
+  - NFMobNoEquipmentOnGib
+  - MobStaminaFodder
+  - MobMovementSpeedModifierRanged
+  - MobHumanoidHostileBase
+  - MobHumanoidInvetory
+  - MobHumanoidHostileAISimpleRanged
+  - MobHumanoidHostileBaseNoInventory
+  id: MobPirateBase
+  components:
+  - type: Body
+    prototype: HumanSyntheticOrgans # New set of synthetic organs grants faster removal of toxins from bloodstream
+    requiredLegs: 2
+  - type: NpcFactionMember
+    factions:
+    - NFPirate
+  - type: RandomHumanoidAppearance
+    randomizeName: true
+  - type: RandomMetadata
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 1
+    rechargeSound:
+      path: /Audio/_NF/Effects/silence.ogg
+  - type: AutoWakeUp
+
+#region Humans
+# Корсар-наёмник??
+#-
+# Матрос
+- type: entity
+  name: Матрос
+  parent: MobPirateBase
+  id: MobPirateMatrosA
+  description: Низкоранговый матрос, вооружённый устаревшим огнестрельным оружием. Выполняет черновую работу на корабле и участвует в абордажах.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Loadout
+      prototypes:
+        - PirateMatrosGearA
+    - type: RechargeBasicEntityAmmo
+      rechargeCooldown: 3
+      rechargeSound:
+        path: /Audio/_NF/Effects/silence.ogg
+    - type: BasicEntityAmmoProvider
+      proto: NFCartridgePistol45
+      capacity: 1
+      count: 1
+    - type: Gun
+      showExamineText: false
+      fireRate: 3
+      selectedMode: SemiAuto
+      availableModes:
+      - SemiAuto
+      soundGunshot: /Audio/Weapons/Guns/Gunshots/revolver.ogg
+
+- type: entity
+  parent: MobPirateMatrosA
+  id: MobPirateMatrosB
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Loadout
+      prototypes:
+        - PirateMatrosGearB
+    - type: BasicEntityAmmoProvider
+      proto: NFBulletPistol45
+      capacity: 1
+      count: 1
+
+- type: entity
+  parent: MobPirateMatrosA
+  id: MobPirateMatrosC
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Loadout
+      prototypes:
+        - PirateMatrosGearC
+    - type: BasicEntityAmmoProvider
+      proto: NFBulletPistol45
+      capacity: 1
+      count: 1
+
+- type: entity
+  name: pirate mob melee
+  abstract: true
+  categories: [ HideSpawnMenu ]
+  parent:
+  - NFMobNoEquipmentOnGib
+  - MobStaminaFodder
+  - MobHumanoidHostileBase
+  - MobHumanoidInvetory
+  - MobHumanoidHostileAISimpleMelee
+  id: MobPirateKnifeBase
+  components:
+  - type: Body
+    prototype: HumanSyntheticOrgans # New set of synthetic organs grants faster removal of toxins from bloodstream
+    requiredLegs: 2
+  - type: NpcFactionMember
+    factions:
+    - NFPirate
+  - type: RandomHumanoidAppearance
+    randomizeName: true
+  - type: RandomMetadata
+  - type: AutoWakeUp
+  - type: MeleeWeapon
+    attackRate: 1.0
+    altDisarm: false
+    angle: 0
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Slash: 5
+        Piercing: 5
+        Structural: 20
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+
+- type: entity
+  name: Матрос
+  parent: MobPirateKnifeBase
+  id: MobPirateMatrosD
+  description: Низкоранговый матрос, вооружённый устаревшим холодным оружием. Выполняет черновую работу на корабле и участвует в абордажах.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Loadout
+      prototypes:
+        - PirateMatrosGearD
+
+- type: entity
+  name: Абордажник
+  parent: MobPirateKnifeBase
+  id: MobPirateAbordajA
+  description: Специалист по ближнему бою и абордажу. Первым бросается на вражеские корабли, создавая плацдарм для остальных.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Loadout
+      prototypes:
+        - PirateAbordajGearA
+    - type: MeleeWeapon
+      damage:
+        types:
+          Slash: 7
+          Piercing: 7
+          Structural: 20
+
+- type: entity
+  parent: MobPirateAbordajA
+  id: MobPirateAbordajB
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Loadout
+      prototypes:
+        - PirateAbordajGearB
+
+- type: entity
+  parent:
+  - MobPirateAbordajA
+  - MobMovementSpeedModifierRanged
+  id: MobPirateAbordajC
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Loadout
+      prototypes:
+        - PirateAbordajGearC
+
+- type: entity
+  parent:
+  - MobPirateMatrosA
+  - MobMovementSpeedModifierRanged
+  id: MobPirateQuartermaster
+  description: Квартирмейстер пиратов. Отвечает за снабжение и тяжёлое вооружение. Использует импровизированные гранатомёты для разрушения укреплений. Лучше займите укрытие.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Loadout
+      prototypes:
+        - PirateQuartermasterGearA
+    - type: RechargeBasicEntityAmmo
+      rechargeCooldown: 8
+      rechargeSound:
+        path: /Audio/_NF/Effects/silence.ogg
+    - type: BasicEntityAmmoProvider
+      proto: NFCannonBall
+      capacity: 1
+      count: 1
+    - type: Gun
+      showExamineText: false
+      fireRate: 1
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+
+- type: entity
+  parent:
+  - MobPirateAbordajA
+  - MobMovementSpeedModifierRanged
+  id: MobPirateBotsman
+  description: Боцман пиратов. Поддерживает дисциплину среди матросов как словом, так и силой. Вооружён мощным клинком для наказаний и боёв.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Loadout
+      prototypes:
+        - PirateBotsmanGearA
+    - type: MeleeWeapon
+      damage:
+        types:
+          Slash: 8
+          Piercing: 8
+          Structural: 20
+
+- type: entity
+  parent:
+  - MobPirateBase
+  - MobMovementSpeedModifierRanged
+  id: MobPirateCaptain
+  description: Капитан пиратов. Опытный лидер и смертоносный боец. Вооружён энергетическим оружием, демонстрирующим его статус и технологические возможности экипажа.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Loadout
+      prototypes:
+        - PirateCaptainGearA
+    - type: ProjectileBatteryAmmoProvider
+      proto: NFBulletLaserHeavy
+      fireCost: 100
+    - type: BatterySelfRecharger
+      autoRecharge: true
+      autoRechargeRate: 50
+    - type: Battery
+      maxCharge: 600
+      startingCharge: 600
+    - type: Gun
+      showExamineText: false
+      fireRate: 1
+      minAngle: 5
+      maxAngle: 20
+      angleIncrease: 1
+      angleDecay: 3
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg

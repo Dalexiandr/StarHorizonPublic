@@ -1,0 +1,104 @@
+- type: entity
+  name: Игла
+  parent: [BaseWeaponPistol, BaseAnCoContraband]
+  id: WeaponPistolAnCo
+  description: Небольшой, но эффективный полу-автоматический пистолет, выдается как штатное вооружение для офицеров.
+  suffix: StarHorizon, AnCo, Weapon
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Guns/Ballistic/semiauto-pistol.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    fireRate: 4
+    minAngle: 0
+    maxAngle: 15
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
+  - type: ChamberMagazineAmmoProvider
+    autoEject: true
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: true
+  - type: Appearance
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistol35
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - AnCoMagazinePistol35
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BaseCartridgePistolAnCo
+        priority: 1
+        whitelist:
+          tags:
+            - AnCoBulletPistol35
+  - type: DualWield
+  - type: StaticPrice
+    price: 5000
+
+- type: entity
+  name: Роевик
+  parent: [BaseWeaponPistol, BaseAnCoContraband]
+  id: WeaponAutoPistolAnCo
+  description: Модифицированная версия пистолета "Игла" с более эффективной подачей патронов.
+  suffix: StarHorizon, AnCo, Weapon
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Objects/Weapons/Guns/Ballistic/fullauto-pistol.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    fireRate: 5
+    minAngle: 0
+    maxAngle: 15
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
+  - type: ChamberMagazineAmmoProvider
+    autoEject: true
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: true
+  - type: Appearance
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistol35
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - AnCoMagazinePistol35
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BaseCartridgePistolAnCo
+        priority: 1
+        whitelist:
+          tags:
+            - AnCoBulletPistol35
+  - type: DualWield
+  - type: StaticPrice
+    price: 7500

@@ -1,0 +1,99 @@
+- type: entity
+  id: AnomalyRockPlasma
+  parent: AnomalyRockBase
+  suffix: Rock, Plasma
+  components:
+  - type: Sprite
+    color: "#eef066"
+  - type: PointLight
+    radius: 2.0
+    energy: 7.5
+    color: "#eef066"
+  - type: EntitySpawnAnomaly
+    entries:
+    - settings:
+        spawnOnPulse: true
+        minAmount: 8
+        maxAmount: 15
+        minRange: 4.5
+        maxRange: 7.5
+      spawns:
+      - WallSpawnAsteroid
+      - WallSpawnAsteroid
+      - WallSpawnAsteroidPlasma
+      - NFWallSpawnAsteroidPlasmaCrab
+    - settings:
+        spawnOnPulse: true
+        maxAmount: 3
+        minRange: 2.5
+        maxRange: 4.5
+      spawns:
+      - RandomPinkCrystal
+    - settings:
+        spawnOnSuperCritical: true
+        minAmount: 30
+        maxAmount: 40
+        minRange: 5
+        maxRange: 15
+      spawns:
+      - RandomPinkCrystal
+      - WallSpawnAsteroid
+      - WallSpawnAsteroid
+      - NFWallSpawnAsteroidPlasmaCrab
+    - settings:
+        spawnOnSuperCritical: true
+        minAmount: 6
+        maxAmount: 10
+        maxRange: 5
+      spawns:
+      - NFMobSpawnCrabPlasma
+
+- type: entity
+  id: AnomalyRockSalt
+  parent: AnomalyRockBase
+  suffix: Rock, Salt
+  components:
+  - type: Sprite
+    color: "#ffe4ce"
+  - type: PointLight
+    radius: 2.0
+    energy: 7.5
+    color: "#ffe4ce"
+  - type: EntitySpawnAnomaly
+    entries:
+    - settings:
+        spawnOnPulse: true
+        minAmount: 8
+        maxAmount: 15
+        minRange: 4.5
+        maxRange: 7.5
+      spawns:
+      - WallSpawnAsteroid
+      - WallSpawnAsteroid
+      - WallSpawnAsteroidSalt
+      - NFWallSpawnAsteroidSaltCrab
+    - settings:
+        spawnOnPulse: true
+        maxAmount: 3
+        minRange: 2.5
+        maxRange: 4.5
+      spawns:
+      - RandomBlueCrystal
+    - settings:
+        spawnOnSuperCritical: true
+        minAmount: 30
+        maxAmount: 40
+        minRange: 5
+        maxRange: 15
+      spawns:
+      - RandomBlueCrystal
+      - WallSpawnAsteroid
+      - WallSpawnAsteroid
+      - NFWallSpawnAsteroidSaltCrab
+    - settings:
+        spawnOnSuperCritical: true
+        minAmount: 6
+        maxAmount: 10
+        maxRange: 5
+      spawns:
+      - NFMobSpawnCrabSalt

@@ -1,0 +1,60 @@
+<Document>
+  # Криогеника
+  Криогенные системы могут показаться сложными, но после быстрого ознакомления с этой схемой вы поймете принцип их работы! Давайте разберем назначение каждого элемента:
+
+  - Подача воздуха: Воздух поступает через систему вентиляции или из баллона, обеспечивая дыхание пациентам и охлаждающую среду.
+  - Газовый насос: Регулирует давление в системе, предотвращая опасное сжатие пациентов в капсуле.
+  - Охладитель: Охлаждает воздух и, соответственно, пациентов в капсуле для активации Криоксадона.
+  - Газовые фильтры: Удаляют отработанные газы (углекислый газ и закись азота) из системы.
+  - Отвод воздуха: Отработанные газы направляются сюда - либо в накопительный баллон, либо в систему отвода.
+
+  <Box>
+    <GuideEntityEmbed Entity="GasPipeBend" Rotation="90"/>
+    <GuideEntityEmbed Entity="GasPipeStraight" Rotation="90"/>
+    <GuideEntityEmbed Entity="GasPipeStraight" Rotation="90"/>
+    <GuideEntityEmbed Entity="GasPipeBend" Rotation="0"/>
+    <GuideEntityEmbed Entity="CryoPod" Caption="криокапсула" Rotation="0"/>
+    <GuideEntityEmbed Entity="GasThermoMachineFreezerEnabled" Rotation="0"/>
+  </Box>
+
+  <Box>
+    <GuideEntityEmbed Entity="GasPipeBend" Rotation="180"/>
+    <GuideEntityEmbed Entity="GasFilterFlipped" Rotation="90"/>
+    <GuideEntityEmbed Entity="GasFilterFlipped" Rotation="90"/>
+    <GuideEntityEmbed Entity="GasPipeTJunction" Rotation="180"/>
+    <GuideEntityEmbed Entity="GasPipeTJunction" Rotation="180"/>
+    <GuideEntityEmbed Entity="GasPipeTJunction" Rotation="270"/>
+  </Box>
+
+  <Box>
+    <GuideEntityEmbed Entity="GasPort" Caption="отвод воздуха" Rotation="90"/>
+    <GuideEntityEmbed Entity="GasPipeTJunction" Rotation="180"/>
+    <GuideEntityEmbed Entity="GasPipeBend" Rotation="270"/>
+    <GuideEntityEmbed Entity="GasPort" Caption="подача воздуха" Rotation="90"/>
+    <GuideEntityEmbed Entity="GasPressurePump" Rotation="90"/>
+    <GuideEntityEmbed Entity="GasPipeBend" Rotation="270"/>
+  </Box>
+
+  Не все системы выглядят одинаково, но эта схема дает базовое понимание принципа работы.
+
+  Важно: зимняя одежда (и скафандры) снижают или полностью блокируют эффективность криогенного лечения. Обязательно снимайте утепленную одежду перед помещением пациентов в капсулу.
+
+  ## Использование капсулы
+
+  После настройки системы потребуются криогенные препараты (перечислены ниже). Они обеспечивают лечение при охлаждении пациента и загружаются непосредственно в капсулу с помощью мензурки. Учтите, что лечение начнется только после достижения нужной температуры - возможно, стоит подождать перед загрузкой мензурки.
+
+  ## Дополнительная информация:
+
+  Стандартное давление для газового насоса - 100.325 кПа. Криогенные препараты работают при температуре ниже 213K (150K для Оппорозидона), но обычно охладитель настраивают на 100K для более быстрого охлаждения.
+
+  Криокапсулы фильтруют препараты из мензурки, постепенно вводя малые дозы каждого лекарства пациенту. Это делает введение препаратов в два раза эффективнее, чем инъекции или пероральный прием.
+
+  <GuideReagentEmbed Reagent="Aloxadone"/>
+  <GuideReagentEmbed Reagent="Cryoxadone"/>
+  <GuideReagentEmbed Reagent="Doxarubixadone"/>
+  <GuideReagentEmbed Reagent="Necrosol"/>
+  <GuideReagentEmbed Reagent="Opporozidone"/>
+  <GuideReagentEmbed Reagent="Stelloxadone"/>
+  <GuideReagentEmbed Reagent="Traumoxadone"/>
+
+</Document>

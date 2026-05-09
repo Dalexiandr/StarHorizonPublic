@@ -1,0 +1,40 @@
+
+- type: entity
+  parent: SyndiPDA
+  id: SyndiPDAOfficer
+  suffix: Syndicate
+  name: КПК Офицер теле-коммуникаций
+  description: КПК используемое агентами Синдиката.
+  components:
+  - type: Pda
+    id: SyndicateIDCardOfficer
+
+- type: entity
+  parent: SyndiPDA
+  id: SyndiPDAOperative
+  suffix: Syndicate
+  name: КПК Оперативника
+  description: КПК используемое агентами Синдиката.
+  components:
+  - type: Pda
+    id: SyndicateIDCardOperative
+
+- type: entity
+  parent: SyndiPDA
+  id: SyndiPDAMedic
+  suffix: Syndicate
+  name: КПК Медика
+  description: КПК используемое агентами Синдиката.
+  components:
+  - type: Pda
+    id: SyndicateIDCardMedic
+
+- type: entity
+  parent: SyndiPDA
+  id: SyndiPDACargo
+  suffix: Syndicate
+  name: КПК Курьера
+  description: КПК используемое агентами Синдиката.
+  components:
+  - type: Pda
+    id: SyndicateIDCardDelivery

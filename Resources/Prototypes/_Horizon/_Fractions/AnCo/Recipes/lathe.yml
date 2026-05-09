@@ -1,0 +1,166 @@
+
+- type: entity
+  id: AnCoFabricator
+  parent: [BaseLatheLube, BaseAnCoContraband]
+  name: фабрикатор АнКо
+  description: Как вы его собрали?
+  suffix: StarHorizon, AnCo, Structure
+  components:
+  - type: Sprite
+    sprite: _Horizon/_Fractions/AnCo/Structures/Machines/protoplat.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+  - type: Machine
+    board: AnCoAnomalyCircuitboard
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - AnCoMaterial
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    unlitIdleState: unlit
+    staticPacks:
+    - AnCoStandartCraft
+
+- type: latheRecipePack
+  id: AnCoStandartCraft
+  recipes:
+  - AnCocap
+  - AnCoberet
+  - SuitAnCo
+  - SuitProtectiveAnCo
+  - SkirtAnCo
+  - SkirtProtectiveAnCo
+  - AnCoGloves
+  - AnCoGlovesIsolate
+  - AnCoBoots
+  - ClothingNeckCloakAnCo
+  - ReliableContainerAnConanits
+  - AnCoOmegaTool
+  - AnCoVests
+  - RipsiPlushin
+
+ # интересно что еще сломалось пушо используем (Frontier)
+
+# рецепты
+- type: latheRecipe
+  id: AnCoGloves
+  result: AnCoGloves
+  completetime: 10
+  materials:
+    Ardon: 1000
+    Kazmie: 500
+
+- type: latheRecipe
+  id: AnCoGlovesIsolate
+  result: AnCoGlovesIsolate
+  completetime: 15
+  materials:
+    Ardon: 1000
+    Kazmie: 1500
+
+- type: latheRecipe
+  id: SuitAnCo
+  result: SuitAnCo
+  completetime: 20
+  materials:
+    Ardon: 500
+    Kazmie: 2000
+
+- type: latheRecipe
+  id: SuitProtectiveAnCo
+  result: SuitProtectiveAnCo
+  completetime: 20
+  materials:
+    Ardon: 1000
+    Kazmie: 2500
+
+- type: latheRecipe
+  id: SkirtAnCo
+  result: SkirtAnCo
+  completetime: 20
+  materials:
+    Ardon: 500
+    Kazmie: 2000
+
+- type: latheRecipe
+  id: SkirtProtectiveAnCo
+  result: SkirtProtectiveAnCo
+  completetime: 20
+  materials:
+    Ardon: 1000
+    Kazmie: 2500
+
+- type: latheRecipe
+  id: AnCoBoots
+  result: AnCoBoots
+  completetime: 15
+  materials:
+    Ardon: 500
+    Kazmie: 1000
+
+- type: latheRecipe
+  id: ClothingNeckCloakAnCo
+  result: ClothingNeckCloakAnCo
+  completetime: 15
+  materials:
+    Ardon: 1000
+    Kazmie: 1500
+
+- type: latheRecipe
+  id: AnCoberet
+  result: AnCoberet
+  completetime: 10
+  materials:
+    Ardon: 500
+    Kazmie: 1000
+
+- type: latheRecipe
+  id: AnCocap
+  result: AnCocap
+  completetime: 10
+  materials:
+    Ardon: 500
+    Kazmie: 1000
+
+- type: latheRecipe
+  id: ReliableContainerAnConanits
+  result: ReliableContainerAnConanits
+  completetime: 30
+  materials:
+    Ardon: 3000
+    Kazmie: 3500
+
+- type: latheRecipe
+  id: AnCoOmegaTool
+  result: AnCoOmegaTool
+  completetime: 25
+  materials:
+    Ardon: 1500
+    Kazmie: 2500
+
+- type: latheRecipe
+  id: AnCoVests
+  result: AnCoVests
+  completetime: 20
+  materials:
+    Ardon: 1500
+    Kazmie: 4000
+
+- type: latheRecipe
+  id: RipsiPlushin
+  result: RipsiPlushin
+  completetime: 10
+  materials:
+    Ardon: 500
+    Kazmie: 1000
+
+

@@ -1,0 +1,177 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingOuterDress
+  name: свадебное платье
+  description: Пышное свадебное платье, сделанное из шёлка, усыпанное узорами из цветов.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/dress.rsi
+  - type: Clothing
+    slots: [ outerClothing ]
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/dress.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingOuterRichDress
+  name: дорогое платье
+  description: Бальное платье с бантами и золотыми вставками.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/richdress.rsi
+  - type: Clothing
+    slots: [ outerClothing ]
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/richdress.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingOuterRedDress
+  name: красное платье
+  description: Платье идеально впишется под бокал красного вина в дивный вечер.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/reddress.rsi
+  - type: Clothing
+    slots: [ outerClothing ]
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/reddress.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingOuterStarDress
+  name: звёздное платье
+  description: Оно сияет!
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/stardress.rsi
+  - type: Clothing
+    slots: [ outerClothing ]
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/stardress.rsi
+    clothingVisuals:
+      outerClothing:
+      - state: equipped-OUTERCLOTHING
+      - state: unshad_equipped-OUTERCLOTHING
+        shader: unshaded
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingOuterCosmoDress
+  name: космическое платье
+  description: Россыпь звёзд у ваших ног
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/cosmodress.rsi
+  - type: Clothing
+    slots: [ outerClothing ]
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/cosmodress.rsi
+    clothingVisuals:
+      outerClothing:
+      - state: equipped-OUTERCLOTHING
+      - state: unshad_equipped-OUTERCLOTHING
+        shader: unshaded
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingOuterBlackDress
+  name: чёрное платье
+  description: Платье идеально впишется под бокал красного вина в дивный вечер.
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/blackdress.rsi
+  - type: Clothing
+    slots: [ outerClothing ]
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/blackdress.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingOuterSilkDress
+  name: шёлковое платье
+  description: Стань жемчужиной на мероприятии
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/silkdress.rsi
+  - type: Clothing
+    slots: [ outerClothing ]
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/silkdress.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingOuterPinkDress
+  name: розовое платье
+  description: Милый бантик делает вас привлекательнее
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/pinkdress.rsi
+  - type: Clothing
+    slots: [ outerClothing ]
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/pinkdress.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingOuterSundressBlue
+  name: синий сарафан
+  description: Простой но милый сарафан с бантиком
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/sundress_blue.rsi
+  - type: Clothing
+    slots: [ outerClothing ]
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/sundress_blue.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingOuterSundressBrown
+  name: коричневый сарафан
+  description: Простой но милый сарафан с бантиком
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/sundress_brown.rsi
+  - type: Clothing
+    slots: [ outerClothing ]
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/sundress_brown.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingOuterSundressPurple
+  name: фиолетовый сарафан
+  description: Простой но милый сарафан с бантиком
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/sundress_purple.rsi
+  - type: Clothing
+    slots: [ outerClothing ]
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/sundress_purple.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingOuterSundressTeal
+  name: бирюзовый сарафан
+  description: Простой но милый сарафан с бантиком
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/sundress_teal.rsi
+  - type: Clothing
+    slots: [ outerClothing ]
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/sundress_teal.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingOuterSummerdressBlack
+  name: летнее чёрное платье
+  description: Лёгкое платье на дивный вечер
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/black_dress.rsi
+  - type: Clothing
+    slots: [ outerClothing ]
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/black_dress.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingOuterSummerdressRed
+  name: летнее красное платье
+  description: В нем вы будете словно алая роза
+  components:
+  - type: Sprite
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/red_dress.rsi
+  - type: Clothing
+    slots: [ outerClothing ]
+    sprite: _Horizon/Clothing/OuterClothing/Dresses/red_dress.rsi

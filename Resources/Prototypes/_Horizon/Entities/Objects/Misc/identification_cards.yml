@@ -1,0 +1,125 @@
+- type: entity
+  parent: CentcomIDCard
+  id: ERTJuggernautIDCard
+  name: ID карта джаггернаута ОБР
+  description: Карта, необходимая для доступа в различные области станции.
+  suffix: StarHorizon
+  components:
+    - type: Sprite
+      sprite: _StarHorizon/Objects/Devices/ertjuggernautidcard.rsi
+      layers:
+        - state: ID_ERT_Juggernaut
+    - type: Item
+      heldPrefix: ID_ERT_Juggernaut
+
+- type: entity
+  parent: IDCardStandard
+  id: TraumaParamedicIDCard
+  name: ID карта парамедика Траумы
+  suffix: TraumaTeam
+  components:
+    - type: PresetIdCard
+      job: TraumaParamedic
+    - type: Sprite
+      sprite: _StarHorizon/Objects/Devices/traumaparamedic.rsi
+      layers:
+        - state: default
+        - state: idpilot
+    - type: Clothing
+      sprite: _StarHorizon/Objects/Devices/traumaparamedic.rsi
+
+- type: entity
+  parent: IDCardStandard
+  id: TraumaMedTechIDCard
+  name: ID карта медицинского техника Траумы
+  suffix: TraumaTeam
+  components:
+    - type: PresetIdCard
+      job: TraumaMedTech
+    - type: Sprite
+      sprite: _StarHorizon/Objects/Devices/traumamedtech.rsi
+      layers:
+        - state: default
+        - state: idpilot
+    - type: Clothing
+      sprite: _StarHorizon/Objects/Devices/traumamedtech.rsi
+
+- type: entity
+  parent: IDCardStandard
+  id: TraumaRessurectorIDCard
+  name: ID карта реаниматора Траумы
+  suffix: TraumaTeam
+  components:
+    - type: PresetIdCard
+      job: TraumaRessurector
+    - type: Sprite
+      sprite: _StarHorizon/Objects/Devices/traumaressurector.rsi
+      layers:
+        - state: default
+        - state: idpilot
+    - type: Clothing
+      sprite: _StarHorizon/Objects/Devices/traumaressurector.rsi
+
+- type: entity
+  parent: IDCardStandard
+  id: TraumaRepresentativeIDCard
+  name: ID карта представителя Траумы
+  suffix: TraumaTeam
+  components:
+    - type: PresetIdCard
+      job: TraumaRepresentative
+    - type: Sprite
+      sprite: _StarHorizon/Objects/Devices/traumarepresentative.rsi
+      layers:
+        - state: default
+        - state: idpilot
+    - type: Clothing
+      sprite: _StarHorizon/Objects/Devices/traumarepresentative.rsi
+
+- type: entity
+  parent: IDCardStandard
+  id: TraumaClientCardStandart
+  name: ID карта клиента Траумы
+  suffix: TraumaTeam
+  components:
+    - type: PresetIdCard
+      job: Contractor
+    - type: Sprite
+      sprite: _StarHorizon/Objects/Devices/traumastandart.rsi
+      layers:
+        - state: default
+        - state: idpilot
+    - type: Clothing
+      sprite: _StarHorizon/Objects/Devices/traumastandart.rsi
+
+- type: entity
+  parent: IDCardStandard
+  id: TraumaTraumaClientCardGold
+  name: ID карта клиента Траумы
+  suffix: TraumaTeam
+  components:
+    - type: PresetIdCard
+      job: Contractor
+    - type: Sprite
+      sprite: _StarHorizon/Objects/Devices/traumagold.rsi
+      layers:
+        - state: default
+        - state: idpilot
+    - type: Clothing
+      sprite: _StarHorizon/Objects/Devices/traumagold.rsi
+
+- type: entity
+  parent: IDCardStandard
+  id: TraumaTraumaClientCardPlatinum
+  name: ID карта клиента Траумы
+  suffix: TraumaTeam
+  components:
+    - type: PresetIdCard
+      job: Contractor
+    - type: Sprite
+      sprite: _StarHorizon/Objects/Devices/traumaplatinum.rsi
+      layers:
+        - state: default
+        - state: idpilot
+    - type: Clothing
+      sprite: _StarHorizon/Objects/Devices/traumaplatinum.rsi

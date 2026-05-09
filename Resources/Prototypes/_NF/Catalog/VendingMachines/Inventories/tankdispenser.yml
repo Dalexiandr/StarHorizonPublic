@@ -1,0 +1,9 @@
+- type: vendingMachineInventory
+  id: TankDispenserEVAPOIInventory
+  startingInventory:
+    NFTankO2N2EqualFilled: 4294967295 # Infinite
+    DoubleEmergencyTankO2N2EqualFilled: 4294967295 # Infinite
+    OxygenTankFilled: 4294967295 # Infinite
+    DoubleEmergencyOxygenTankFilled: 4294967295 # Infinite
+    NitrogenTankFilled: 4294967295 # Infinite
+    DoubleEmergencyNitrogenTankFilled: 4294967295 # Infinite

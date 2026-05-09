@@ -1,0 +1,10 @@
+ent-ClothingHeadHatHoodArcadia = капюшон аркадианского пальто
+    .desc = { ent-ClothingHeadHatHoodWinterBase.desc }
+ent-ClothingHeadHatHoodRosyCloak = капюшон из розовой моли
+    .desc = Очаровательное личико розовой кленовой бабочки-мотылька. Вы никогда не чувствовали себя милее.
+ent-NFGoblinMadeClothingHeadHatHoodTrashMantle = капюшон плаща из мусора
+    .desc = Капюшон плаща из мусора.
+ent-NFGoblinMadeClothingHeadHatHoodTrashCloak = капюшон мусорного плаща
+    .desc = Капюшон мусорного плаща.
+ent-ClothingHeadHatHoodBioArmoredMercenray = капюшон биобронированного наёмника
+    .desc = Капюшон, защищающий голову и лицо от биологических загрязнений.

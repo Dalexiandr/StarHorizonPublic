@@ -1,0 +1,15 @@
+ent-ClosetBaseAnCo = шкаф АнКо
+    .desc = Стандартное хранилище корпорации АнКо
+    .suffix = StarHorizon, AnCo, Structure
+ent-ClosetAnCoDebug = шкаф со структурами АнКо
+    .desc = Блюспейс хранилище со всеми вещами структурами АнКо
+    .suffix = StarHorizon, AnCo, DEBUG
+ent-ClosetOfficer = шкаф с снаряжением Офицера
+    .suffix = StarHorizon, AnCo
+    .desc = { ent-ClosetBaseAnCo.desc }
+ent-ClosetSpider = шкаф с снаряжением Паука
+    .suffix = StarHorizon, AnCo
+    .desc = { ent-ClosetBaseAnCo.desc }
+ent-ClosetKnight = шкаф с снаряжением Рыцаря
+    .suffix = StarHorizon, AnCo
+    .desc = { ent-ClosetBaseAnCo.desc }

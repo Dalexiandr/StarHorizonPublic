@@ -1,0 +1,31 @@
+# Captain
+- type: startingGear
+  id: CrawfordGearA
+  equipment:
+    head: ClothingHeadHatTophat
+    jumpsuit: ClothingUniformJumpsuitBlacksm
+    shoes: ClothingShoesBootsLaceup
+    gloves: WristwatchGold
+    eyes: ClothingEyesGlasses
+    neck: ClothingNeckTieDet
+  inhand:
+    - PokerCase
+
+- type: startingGear
+  id: LemirdGearA
+  equipment:
+    jumpsuit: UniformSchoolgirlRed
+    shoes: ClothingShoesBlackDress
+
+- type: startingGear
+  id: MiifriGearA
+  equipment:
+    head: ClothingHeadHatFlowerWreath
+    jumpsuit: ClothingUniformJumpskirtOperative
+    shoes: ClothingShoesBootsCombat
+    gloves: ClothingHandsGlovesColorBlack
+    eyes: ClothingEyesGlassesSunglasses
+    neck: ClothingNeckScarfStripedSyndieRed
+    outerClothing: ClothingOuterCoatDetectiveLoadout
+  inhand:
+    - PlushieAmmaYakiama
