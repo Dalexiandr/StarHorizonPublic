@@ -21,4 +21,11 @@ loadout-group-contractor-wallet = wallet
 loadout-group-contractor-implanter = implanters
 
 # Syndicate (Horizon)
-loadout-group-syndicate-pda = Syndicate PDA
+loadout-group-syndicate-pda =  PDA
+loadout-group-syndicate-jumpsuit = jumpsuit 
+loadout-group-syndicate-backpack = backpack
+loadout-group-syndicate-head = head
+loadout-group-syndicate-outerclothing = outer clothing
+loadout-group-syndicate-ears = ears
+loadout-group-syndicate-shoes = shoes
+loadout-group-syndicate-face = mask

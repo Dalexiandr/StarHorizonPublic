@@ -2,7 +2,7 @@
 # Униформа
 - type: loadoutGroup
   id: SyndicateJumpsuit
-  name: Униформа Синдиката
+  name: loadout-group-syndicate-jumpsuit
   loadouts:
   - LoadoutSyndicateClothingUniformJumpsuitOperative
   - LoadoutSyndicateClothingUniformJumpskirtOperative
@@ -22,7 +22,7 @@
 # рюкзаки (хранилища)
 - type: loadoutGroup
   id: SyndicateBack
-  name: Рюкзаки Синдиката
+  name: loadout-group-syndicate-backpack
   loadouts:
   - LoadoutSyndicateClothingBackpackSyndicate
   - LoadoutSyndicateClothingBackpackDuffelSyndicate
@@ -74,7 +74,8 @@
 # Шапки
 - type: loadoutGroup
   id: SyndicateHead
-  name: Головные уборы Синдиката
+  name: loadout-group-syndicate-head
+  minLimit: 0
   loadouts:
   - LoadoutSyndicateClothingHeadHatSyndie
   - LoadoutSyndicateClothingHeadHatOutlawHat
@@ -86,7 +87,8 @@
 # верхняя одежда
 - type: loadoutGroup
   id: SyndicateOuterClothing
-  name: Верхняя одежда Синдиката
+  name: loadout-group-syndicate-outerclothing
+  minLimit: 0
   loadouts:
   - LoadoutSyndicateClothingOuterArmorBasic
   - LoadoutSyndicateClothingOuterVestWeb
@@ -99,14 +101,14 @@
 # гарнитура
 - type: loadoutGroup
   id: SyndicateEars
-  name: Гарнитура Синдиката
+  name: loadout-group-syndicate-ears
   loadouts:
   - LoadoutSyndicateClothingHeadsetAltSyndicate
 
 # обувь
 - type: loadoutGroup
   id: SyndicateBoots
-  name: Обувь Синдиката
+  name: loadout-group-syndicate-shoes
   loadouts:
   - LoadoutSyndicateClothingShoesBootsJack
   - LoadoutSyndicateClothingShoesBootsWinterSyndicate
@@ -114,11 +116,20 @@
   # маски
 - type: loadoutGroup
   id: SyndicateMask
-  name: Обувь Синдиката
+  name: loadout-group-syndicate-face
   loadouts:
   - LoadoutSyndicateClothingMaskGasSyndicate
   - LoadoutSyndicateClothingMaskClownSecurity
 
-
-
-
+  # импланты
+- type: loadoutGroup
+  id: SyndicateImplanter
+  name: loadout-group-contractor-implanter
+  minLimit: 0
+  maxLimit: 2
+  loadouts:
+  - ContractorLightImplanter
+  - ContractorBikeHornImplanter
+  - ContractorSadTromboneImplanter
+  - ContractorMimePowersImplanter
+  - ContractorBibleUserImplanter
