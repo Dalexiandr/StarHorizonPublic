@@ -25,4 +25,11 @@ loadout-group-contractor-implanter = импланты
 loadout-group-contractor-bureaucracy = бюрократия
 
 # Syndicate (Horizon)
-loadout-group-syndicate-pda = КПК Синдиката
+loadout-group-syndicate-pda = КПК
+loadout-group-syndicate-jumpsuit = униформа
+loadout-group-syndicate-backpack = рюкзаки
+loadout-group-syndicate-head = головные уборы
+loadout-group-syndicate-outerclothing = верхняя одежда
+loadout-group-syndicate-ears = гарнитуры
+loadout-group-syndicate-shoes = обувь
+loadout-group-syndicate-face = маски
