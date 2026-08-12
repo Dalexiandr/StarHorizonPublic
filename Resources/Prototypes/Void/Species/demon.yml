@@ -9,10 +9,10 @@
   markingLimits: MobDemonMarkingLimits
   dollPrototype: MobDemonDummy
   skinColoration: Hues
-  maleFirstNames: NamesOniMale
-  femaleFirstNames: NamesOniFemale
-  lastNames: NamesOniLocation
-  naming: LastNoFirst
+  maleFirstNames: NameDemonMaleFirst
+  femaleFirstNames: NameDemonFemaleFirst
+  lastNames: NameDemonLast
+  naming: FirstLast
   # Horizon start
   prosCount: 2
   specialCount: 1
