@@ -1,0 +1,17 @@
+- type: localizedDataset
+  id: NameDemonMaleFirst
+  values:
+    prefix: names-demon-first-male-dataset-
+    count: 53
+
+- type: localizedDataset
+  id: NameDemonFemaleFirst
+  values:
+    prefix: names-demon-first-female-dataset-
+    count: 53
+
+- type: localizedDataset
+  id: NameDemonLast
+  values:
+    prefix: names-demon-last-dataset-
+    count: 41
